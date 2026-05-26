@@ -1,0 +1,55 @@
+{
+  "templates": [
+    {
+      "id": "top_customers_by_revenue",
+      "description": "Top N customers by total revenue in a period.",
+      "supported_dbs": ["postgres", "cloudsql"],
+      "params": {
+        "limit":  {"type": "int", "min": 1, "max": 100, "default": 10},
+        "period": {"type": "enum", "values": ["last_week", "last_month", "last_quarter"], "default": "last_month"}
+      },
+      "derived_params": ["start", "end"],
+      "sql": {
+        "postgres": "SELECT customer_id, SUM(amount) AS revenue FROM orders WHERE created_at >= %(start)s AND created_at < %(end)s GROUP BY customer_id ORDER BY revenue DESC LIMIT %(limit)s",
+        "cloudsql": "SELECT customer_id, SUM(amount) AS revenue FROM orders WHERE created_at >= %(start)s AND created_at < %(end)s GROUP BY customer_id ORDER BY revenue DESC LIMIT %(limit)s"
+      }
+    },
+    {
+      "id": "revenue_over_time",
+      "description": "Daily revenue total over a period.",
+      "supported_dbs": ["postgres", "cloudsql"],
+      "params": {
+        "period": {"type": "enum", "values": ["last_week", "last_month", "last_quarter"], "default": "last_month"}
+      },
+      "derived_params": ["start", "end"],
+      "sql": {
+        "postgres": "SELECT DATE_TRUNC('day', created_at)::date AS day, SUM(amount) AS revenue FROM orders WHERE created_at >= %(start)s AND created_at < %(end)s GROUP BY 1 ORDER BY 1",
+        "cloudsql": "SELECT DATE_TRUNC('day', created_at)::date AS day, SUM(amount) AS revenue FROM orders WHERE created_at >= %(start)s AND created_at < %(end)s GROUP BY 1 ORDER BY 1"
+      }
+    },
+    {
+      "id": "active_users_count",
+      "description": "Count of distinct active users in a period.",
+      "supported_dbs": ["postgres", "cloudsql"],
+      "params": {
+        "period": {"type": "enum", "values": ["last_week", "last_month", "last_quarter"], "default": "last_month"}
+      },
+      "derived_params": ["start", "end"],
+      "sql": {
+        "postgres": "SELECT COUNT(DISTINCT user_id) AS active_users FROM events WHERE created_at >= %(start)s AND created_at < %(end)s",
+        "cloudsql": "SELECT COUNT(DISTINCT user_id) AS active_users FROM events WHERE created_at >= %(start)s AND created_at < %(end)s"
+      }
+    },
+    {
+      "id": "ping",
+      "description": "Connectivity check.",
+      "supported_dbs": ["postgres", "cloudsql"],
+      "params": {},
+      "derived_params": [],
+      "sql": {
+        "postgres": "SELECT 1 AS ok",
+        "cloudsql": "SELECT 1 AS ok"
+      }
+    }
+  ]
+}

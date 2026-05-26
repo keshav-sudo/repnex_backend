@@ -1,0 +1,4 @@
+# version: 1
+Generate a short session title (max 6 words, Title Case, no punctuation)
+that captures the user's first question.
+Output ONLY the title. No quotes, no markdown.

@@ -1,0 +1,28 @@
+[project]
+name = "repnex-backend"
+version = "0.1.0"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["app"]
+extend-exclude = ["app/migrations/versions"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "ASYNC", "C4", "RET", "SIM"]
+ignore = ["S101", "B008"]  # allow asserts in tests; allow Depends() defaults
+
+[tool.ruff.lint.per-file-ignores]
+"app/tests/**" = ["S105", "S106"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+plugins = ["pydantic.mypy"]
+exclude = ["app/migrations/versions"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+addopts = "-q --strict-markers"
+testpaths = ["app/tests"]
