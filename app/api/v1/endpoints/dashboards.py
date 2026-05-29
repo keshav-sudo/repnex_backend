@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, Response, status
+from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.tenancy import bind_tenant_context
@@ -57,14 +57,14 @@ async def update(
     return await dashboard_service.update(db, current, dashboard_id, data)
 
 
-@router.delete("/{dashboard_id}", status_code=status.HTTP_204_NO_CONTENT, response_model=None)
+@router.delete("/{dashboard_id}", status_code=status.HTTP_200_OK)
 async def delete(
     dashboard_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-) -> Response:
+) -> dict:
     await dashboard_service.delete(db, current, dashboard_id)
-    return Response(status_code=status.HTTP_204_NO_CONTENT)
+    return {"ok": True}
 
 
 @router.post(
@@ -90,12 +90,12 @@ async def update_item(
     return await dashboard_service.update_item(db, current, dashboard_id, item_id, data)
 
 
-@router.delete("/{dashboard_id}/items/{item_id}", status_code=status.HTTP_204_NO_CONTENT, response_model=None)
+@router.delete("/{dashboard_id}/items/{item_id}", status_code=status.HTTP_200_OK)
 async def remove_item(
     dashboard_id: uuid.UUID,
     item_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-) -> Response:
+) -> dict:
     await dashboard_service.remove_item(db, current, dashboard_id, item_id)
-    return Response(status_code=status.HTTP_204_NO_CONTENT)
+    return {"ok": True}

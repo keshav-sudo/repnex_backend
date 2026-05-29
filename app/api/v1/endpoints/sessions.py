@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, Response, status
+from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.tenancy import bind_tenant_context
@@ -64,11 +64,11 @@ async def archive(
     return await session_service.archive(db, current, session_id)
 
 
-@router.delete("/{session_id}", status_code=status.HTTP_204_NO_CONTENT, response_model=None)
+@router.delete("/{session_id}", status_code=status.HTTP_200_OK)
 async def delete(
     session_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-) -> Response:
+) -> dict:
     await session_service.delete(db, current, session_id)
-    return Response(status_code=status.HTTP_204_NO_CONTENT)
+    return {"ok": True}

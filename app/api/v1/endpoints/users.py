@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, Response, status
+from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.rate_limit import rate_limit
@@ -64,12 +64,12 @@ async def change_role(
     return await user_service.update_role(db, current, user_id, data)
 
 
-@router.post("/me/password", status_code=status.HTTP_204_NO_CONTENT, response_model=None)
+@router.post("/me/password", status_code=status.HTTP_200_OK)
 async def change_password(
     data: PasswordChangeRequest,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
     _rl: None = Depends(rate_limit("auth")),
-) -> Response:
+) -> dict:
     await user_service.change_password(db, current, data.current_password, data.new_password)
-    return Response(status_code=status.HTTP_204_NO_CONTENT)
+    return {"ok": True}

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, Response, status
+from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.rate_limit import rate_limit
@@ -61,14 +61,14 @@ async def update(
     return await connection_service.update_connection(db, current, conn_id, data)
 
 
-@router.delete("/{conn_id}", status_code=status.HTTP_204_NO_CONTENT, response_model=None)
+@router.delete("/{conn_id}", status_code=status.HTTP_200_OK)
 async def delete(
     conn_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-) -> Response:
+) -> dict:
     await connection_service.delete_connection(db, current, conn_id)
-    return Response(status_code=status.HTTP_204_NO_CONTENT)
+    return {"ok": True}
 
 
 @router.post("/{conn_id}/test", response_model=TestConnectionResponse)
@@ -91,11 +91,11 @@ async def grant_access(
     return await connection_service.grant_access(db, current, conn_id, data)
 
 
-@router.delete("/access/{grant_id}", status_code=status.HTTP_204_NO_CONTENT, response_model=None)
+@router.delete("/access/{grant_id}", status_code=status.HTTP_200_OK)
 async def revoke_access(
     grant_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-) -> Response:
+) -> dict:
     await connection_service.revoke_access(db, current, grant_id)
-    return Response(status_code=status.HTTP_204_NO_CONTENT)
+    return {"ok": True}
