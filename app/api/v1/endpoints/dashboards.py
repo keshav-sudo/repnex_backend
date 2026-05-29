@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, Response, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.tenancy import bind_tenant_context
@@ -62,8 +62,9 @@ async def delete(
     dashboard_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-) -> None:
+) -> Response:
     await dashboard_service.delete(db, current, dashboard_id)
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 
 @router.post(
@@ -95,5 +96,6 @@ async def remove_item(
     item_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-) -> None:
+) -> Response:
     await dashboard_service.remove_item(db, current, dashboard_id, item_id)
+    return Response(status_code=status.HTTP_204_NO_CONTENT)

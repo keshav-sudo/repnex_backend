@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, Response, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.rate_limit import rate_limit
@@ -66,8 +66,9 @@ async def delete(
     conn_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-) -> None:
+) -> Response:
     await connection_service.delete_connection(db, current, conn_id)
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 
 @router.post("/{conn_id}/test", response_model=TestConnectionResponse)
@@ -95,5 +96,6 @@ async def revoke_access(
     grant_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-) -> None:
+) -> Response:
     await connection_service.revoke_access(db, current, grant_id)
+    return Response(status_code=status.HTTP_204_NO_CONTENT)

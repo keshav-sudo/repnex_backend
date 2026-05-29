@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, Response, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.rate_limit import rate_limit
@@ -63,8 +63,9 @@ async def delete(
     report_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-) -> None:
+) -> Response:
     await report_service.delete_report(db, current, report_id)
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 
 @router.post("/{report_id}/run", response_model=RunReportResponse)

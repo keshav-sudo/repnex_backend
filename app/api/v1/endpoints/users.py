@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, Response, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.rate_limit import rate_limit
@@ -70,5 +70,6 @@ async def change_password(
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
     _rl: None = Depends(rate_limit("auth")),
-) -> None:
+) -> Response:
     await user_service.change_password(db, current, data.current_password, data.new_password)
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
