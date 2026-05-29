@@ -3,7 +3,7 @@ from __future__ import annotations
 import uuid
 from typing import Annotated
 
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, Field, AliasChoices
 
 from app.schemas.common import ORMBase
 
@@ -11,7 +11,14 @@ from app.schemas.common import ORMBase
 class SignupRequest(BaseModel):
     email: EmailStr
     password: Annotated[str, Field(min_length=8, max_length=128)]
-    org_name: Annotated[str, Field(min_length=2, max_length=255)]
+    org_name: Annotated[
+        str,
+        Field(
+            default="",
+            max_length=255,
+            validation_alias=AliasChoices("org_name", "company"),
+        ),
+    ] = ""
 
 
 class LoginRequest(BaseModel):
@@ -40,6 +47,11 @@ class UserPublic(ORMBase):
     email: EmailStr
     role: str
     status: str
+    name: str = ""
+    company: str = ""
+    organizationId: uuid.UUID | None = None
+    organizationName: str = ""
+    onboardingCompleted: bool = True
 
 
 class OrgPublic(ORMBase):
@@ -52,3 +64,4 @@ class AuthResponse(BaseModel):
     tokens: TokenPair
     user: UserPublic
     org: OrgPublic
+    token: str = ""

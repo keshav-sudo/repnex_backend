@@ -26,7 +26,9 @@ from app.schemas.auth import (
 
 
 async def signup(db: AsyncSession, data: SignupRequest) -> AuthResponse:
-    org = Organization(name=data.org_name, plan_type=PlanType.free)
+    # Derive organization name from email if company field was left blank
+    org_name = data.org_name.strip() if data.org_name.strip() else data.email.split("@")[0].capitalize()
+    org = Organization(name=org_name, plan_type=PlanType.free)
     db.add(org)
     try:
         await db.flush()
@@ -54,18 +56,25 @@ async def signup(db: AsyncSession, data: SignupRequest) -> AuthResponse:
 
 async def login(db: AsyncSession, data: LoginRequest) -> AuthResponse:
     stmt = select(User).where(User.email == data.email.lower())
-    user = (await db.execute(stmt)).scalar_one_or_none()
-    if not user or not user.hashed_password or not verify_password(
-        data.password, user.hashed_password
-    ):
+    result = await db.execute(stmt)
+    users = result.scalars().all()
+    
+    matching_user = None
+    for u in users:
+        if u.hashed_password and verify_password(data.password, u.hashed_password):
+            matching_user = u
+            break
+            
+    if not matching_user:
         raise Unauthorized("Invalid credentials")
-    if user.status != UserStatus.active:
+        
+    if matching_user.status != UserStatus.active:
         raise Unauthorized("User is not active")
 
     org = (
-        await db.execute(select(Organization).where(Organization.id == user.org_id))
+        await db.execute(select(Organization).where(Organization.id == matching_user.org_id))
     ).scalar_one()
-    return _build_auth(user, org)
+    return _build_auth(matching_user, org)
 
 
 async def refresh(db: AsyncSession, refresh_token: str) -> TokenPair:
@@ -80,7 +89,6 @@ async def refresh(db: AsyncSession, refresh_token: str) -> TokenPair:
     if not user or user.status != UserStatus.active:
         raise Unauthorized("User invalid")
 
-    # Rotate: denylist old jti for its remaining ttl
     await r.set(f"jwt:denylist:{jti}", "1", ex=60 * 60 * 24 * 14)
 
     access = create_access_token(
@@ -102,8 +110,26 @@ def _build_auth(user: User, org: Organization) -> AuthResponse:
         user_id=user.id, org_id=user.org_id, email=user.email, role=user.role.value
     )
     refresh_t = create_refresh_token(user_id=user.id, org_id=user.org_id)
+    
+    # Extract name from email
+    email_name = user.email.split("@")[0].capitalize()
+    
+    user_public = UserPublic(
+        id=user.id,
+        org_id=user.org_id,
+        email=user.email,
+        role=user.role.value,
+        status=user.status.value,
+        name=email_name,
+        company=org.name,
+        organizationId=org.id,
+        organizationName=org.name,
+        onboardingCompleted=True,
+    )
+    
     return AuthResponse(
         tokens=TokenPair(access_token=access, refresh_token=refresh_t),
-        user=UserPublic.model_validate(user),
+        user=user_public,
         org=OrgPublic.model_validate(org),
+        token=access,
     )

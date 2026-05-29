@@ -89,7 +89,7 @@ def _envelope(code: str, message: str, **extra: Any) -> dict[str, Any]:
 def register_exception_handlers(app: FastAPI) -> None:
     @app.exception_handler(AppError)
     async def _app_error(_: Request, exc: AppError) -> JSONResponse:
-        log.warning("app_error", extra={"code": exc.code, "message": exc.message})
+        log.warning("app_error", extra={"code": exc.code, "detail": exc.message})
         return JSONResponse(
             status_code=exc.status_code,
             content=_envelope(exc.code, exc.message, **exc.details),
@@ -97,9 +97,20 @@ def register_exception_handlers(app: FastAPI) -> None:
 
     @app.exception_handler(RequestValidationError)
     async def _validation(_: Request, exc: RequestValidationError) -> JSONResponse:
+        # Pydantic v2 stores the raw Python exception in error["ctx"]["error"].
+        # Raw exceptions are not JSON-serializable — stringify them first.
+        safe_errors = []
+        for err in exc.errors():
+            safe_err = dict(err)
+            if "ctx" in safe_err and isinstance(safe_err["ctx"], dict):
+                safe_err["ctx"] = {
+                    k: str(v) if isinstance(v, Exception) else v
+                    for k, v in safe_err["ctx"].items()
+                }
+            safe_errors.append(safe_err)
         return JSONResponse(
             status_code=422,
-            content=_envelope("validation_failed", "Invalid request", errors=exc.errors()),
+            content=_envelope("validation_failed", "Invalid request", errors=safe_errors),
         )
 
     @app.exception_handler(StarletteHTTPException)

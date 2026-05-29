@@ -12,6 +12,7 @@ from app.api.v1.endpoints import (
     query,
     reports,
     sessions,
+    templates,
     users,
     websocket,
 )
@@ -24,6 +25,7 @@ api_router.include_router(organizations.router)
 api_router.include_router(connections.router)
 api_router.include_router(sessions.router)
 api_router.include_router(query.router)
+api_router.include_router(templates.router)
 api_router.include_router(reports.router)
 api_router.include_router(dashboards.router)
 api_router.include_router(admin.router)

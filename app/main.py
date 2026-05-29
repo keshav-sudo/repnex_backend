@@ -17,6 +17,7 @@ from app.core.database.target_pool import (
 )
 from app.core.exceptions import register_exception_handlers
 from app.core.logging import get_logger, request_id_ctx, setup_logging
+from app.core.pinecone_client import init_pinecone_store
 from app.core.redis import close_redis, init_redis
 from app.query_engine.template_loader import init_template_registry
 from app.services.websocket_manager import init_ws_manager, shutdown_ws_manager
@@ -34,6 +35,7 @@ async def lifespan(app: FastAPI):
     await init_redis()
     init_template_registry()
     init_target_pool_registry()
+    init_pinecone_store()
     init_ws_manager()
 
     log.info("ready")

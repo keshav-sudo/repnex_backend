@@ -19,24 +19,27 @@ depends_on: str | Sequence[str] | None = None
 
 
 def upgrade() -> None:
-    plan_type = postgresql.ENUM("free", "pro", "enterprise", name="plan_type", create_type=True)
-    user_role = postgresql.ENUM("admin", "editor", "viewer", name="user_role", create_type=True)
+    plan_type = postgresql.ENUM("free", "pro", "enterprise", name="plan_type", create_type=False)
+    user_role = postgresql.ENUM("admin", "editor", "viewer", name="user_role", create_type=False)
     user_status = postgresql.ENUM(
-        "pending", "active", "expired", name="user_status", create_type=True
+        "pending", "active", "expired", name="user_status", create_type=False
     )
     db_type = postgresql.ENUM(
-        "postgres", "mysql", "mssql", "oracle", "cloudsql", name="db_type", create_type=True
+        "postgres", "mysql", "mssql", "oracle", "cloudsql", name="db_type", create_type=False
     )
     session_status = postgresql.ENUM(
-        "active", "archived", name="session_status", create_type=True
+        "active", "archived", name="session_status", create_type=False
     )
     exec_status = postgresql.ENUM(
-        "success", "error", "rate_limited", name="execution_status", create_type=True
+        "success", "error", "rate_limited", name="execution_status", create_type=False
     )
 
     bind = op.get_bind()
-    for e in (plan_type, user_role, user_status, db_type, session_status, exec_status):
-        e.create(bind, checkfirst=True)
+    # for e in (plan_type, user_role, user_status, db_type, session_status, exec_status):
+    #     try:
+    #         e.create(bind, checkfirst=True)
+    #     except Exception:
+    #         pass
 
     op.create_table(
         "organizations",

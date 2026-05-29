@@ -11,16 +11,96 @@ from app.schemas.common import ORMBase
 ExecStatus = Literal["success", "error", "rate_limited"]
 
 
+# ── Request schemas ──────────────────────────────────────────────────
+
 class RunQueryRequest(BaseModel):
     session_id: uuid.UUID
     natural_language: str = Field(min_length=1, max_length=4000)
 
 
-class IntentResult(BaseModel):
+class ChatRequest(BaseModel):
+    """Unified chat endpoint request."""
+    natural_language: str = Field(min_length=1, max_length=4000)
+    connection_id: uuid.UUID | None = None
+    session_id: uuid.UUID | None = None
+
+
+class ExecuteRequest(BaseModel):
+    """Execute a specific template with all params provided."""
     template_id: str
-    params: dict[str, Any] = Field(default_factory=dict)
+    params: dict[str, Any]
+    connection_id: uuid.UUID
+    session_id: uuid.UUID | None = None
+
+
+# ── Intent schemas ───────────────────────────────────────────────────
+
+class IntentClassification(BaseModel):
+    type: Literal["conversational", "executable"]
     confidence: float = Field(ge=0.0, le=1.0)
+    reasoning: str | None = None
+
+
+class MissingParam(BaseModel):
+    name: str
+    type: str
+    description: str | None = None
+    options: list[str] | None = None  # For enum types
+    default: Any | None = None
+    required: bool = True
+    min_val: float | None = Field(None, alias="min")
+    max_val: float | None = Field(None, alias="max")
+
+    model_config = {"populate_by_name": True}
+
+
+class IntentResult(BaseModel):
+    template_id: str = ""
+    params: dict[str, Any] = Field(default_factory=dict)
+    missing_params: list[str] = Field(default_factory=list)
+    confidence: float = Field(ge=0.0, le=1.0, default=0.0)
     rationale: str | None = None
+
+
+# ── Response schemas ─────────────────────────────────────────────────
+
+class TemplateMatch(BaseModel):
+    """A template candidate returned from Pinecone search."""
+    id: str
+    score: float
+    description: str
+    module: str
+    category: str
+
+
+class ChatResponse(BaseModel):
+    """Unified response for the chat endpoint."""
+    type: Literal["conversational", "executable", "params_needed", "template_preview", "error"]
+
+    message: str | None = None
+
+    # Template info (for executable / params_needed)
+    template_id: str | None = None
+    template_description: str | None = None
+    template_module: str | None = None
+
+    # Extracted and missing params
+    extracted_params: dict[str, Any] | None = None
+    missing_params: list[MissingParam] | None = None
+
+    # Execution results (for executable)
+    sql: str | None = None
+    rows: list[dict[str, Any]] | None = None
+    rows_returned: int | None = None
+    execution_time_ms: int | None = None
+    summary: str | None = None
+
+    # Follow-up suggestions
+    suggestions: list[str] = Field(default_factory=list)
+
+    # Intent metadata
+    intent: IntentResult | None = None
+    candidates: list[TemplateMatch] | None = None
 
 
 class RunQueryResponse(BaseModel):
@@ -32,6 +112,8 @@ class RunQueryResponse(BaseModel):
     intent: IntentResult
     summary: str | None = None
 
+
+# ── History ──────────────────────────────────────────────────────────
 
 class QueryHistoryRead(ORMBase):
     id: uuid.UUID
