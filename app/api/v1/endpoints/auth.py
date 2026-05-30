@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, Response, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.tenancy import bind_tenant_context
@@ -62,10 +62,10 @@ async def refresh(data: RefreshRequest, db: AsyncSession = Depends(get_db)) -> T
     return await auth_service.refresh(db, data.refresh_token)
 
 
-@router.post("/logout", status_code=status.HTTP_200_OK)
-async def logout(data: RefreshRequest) -> dict:
+@router.post("/logout", status_code=status.HTTP_204_NO_CONTENT)
+async def logout(data: RefreshRequest) -> Response:
     await auth_service.logout(data.refresh_token)
-    return {"ok": True}
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 
 @router.post("/accept-invite", response_model=AuthResponse)
