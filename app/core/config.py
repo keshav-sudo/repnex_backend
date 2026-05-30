@@ -29,7 +29,7 @@ class Settings(BaseSettings):
     RUN_MIGRATIONS: bool = True
 
     # Redis
-    REDIS_URL: str
+    REDIS_URL: str = ""
 
     # JWT
     JWT_SECRET: str = Field(min_length=32)

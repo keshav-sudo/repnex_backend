@@ -25,7 +25,11 @@ async def ready() -> dict:
         out["status"] = "degraded"
         out["db"] = e.__class__.__name__
     try:
-        await get_redis().ping()
+        r = get_redis()
+        if r is not None:
+            await r.ping()
+        else:
+            out["redis"] = "disabled"
     except Exception as e:
         out["status"] = "degraded"
         out["redis"] = e.__class__.__name__

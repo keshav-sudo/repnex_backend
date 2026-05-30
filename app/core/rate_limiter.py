@@ -46,6 +46,9 @@ class TokenBucket:
 
     async def consume(self, identity: str, cost: int = 1) -> None:
         r = get_redis()
+        # If Redis is unavailable, fail open (allow the request)
+        if r is None:
+            return
         key = f"rl:{self.name}:{identity}"
         result = await r.eval(  # type: ignore[no-untyped-call]
             _LUA, 1, key, self.capacity, self.refill_per_sec, int(time.time() * 1000), cost

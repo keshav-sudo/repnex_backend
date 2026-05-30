@@ -81,7 +81,7 @@ async def refresh(db: AsyncSession, refresh_token: str) -> TokenPair:
     payload = decode_token(refresh_token, expected_type="refresh")
     jti = payload["jti"]
     r = get_redis()
-    if await r.exists(f"jwt:denylist:{jti}"):
+    if r is not None and await r.exists(f"jwt:denylist:{jti}"):
         raise Unauthorized("Refresh token revoked")
 
     user_id = uuid.UUID(payload["sub"])
@@ -89,7 +89,8 @@ async def refresh(db: AsyncSession, refresh_token: str) -> TokenPair:
     if not user or user.status != UserStatus.active:
         raise Unauthorized("User invalid")
 
-    await r.set(f"jwt:denylist:{jti}", "1", ex=60 * 60 * 24 * 14)
+    if r is not None:
+        await r.set(f"jwt:denylist:{jti}", "1", ex=60 * 60 * 24 * 14)
 
     access = create_access_token(
         user_id=user.id, org_id=user.org_id, email=user.email, role=user.role.value
@@ -100,9 +101,11 @@ async def refresh(db: AsyncSession, refresh_token: str) -> TokenPair:
 
 async def logout(refresh_token: str) -> None:
     payload = decode_token(refresh_token, expected_type="refresh")
-    await get_redis().set(
-        f"jwt:denylist:{payload['jti']}", "1", ex=60 * 60 * 24 * 14
-    )
+    r = get_redis()
+    if r is not None:
+        await r.set(
+            f"jwt:denylist:{payload['jti']}", "1", ex=60 * 60 * 24 * 14
+        )
 
 
 def _build_auth(user: User, org: Organization) -> AuthResponse:
