@@ -62,10 +62,9 @@ async def refresh(data: RefreshRequest, db: AsyncSession = Depends(get_db)) -> T
     return await auth_service.refresh(db, data.refresh_token)
 
 
-@router.post("/logout", status_code=status.HTTP_204_NO_CONTENT)
-async def logout(data: RefreshRequest) -> Response:
+@router.post("/logout", status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
+async def logout(data: RefreshRequest) -> None:
     await auth_service.logout(data.refresh_token)
-    return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 
 @router.post("/accept-invite", response_model=AuthResponse)
