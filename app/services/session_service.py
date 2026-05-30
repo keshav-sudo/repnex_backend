@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.database.models import GISession, SessionStatus
+from app.core.database.models import DBConnection, GISession, SessionStatus
 from app.core.exceptions import NotFound
 from app.core.security.auth import CurrentUser
 from app.schemas.session import SessionCreate, SessionDetail, SessionRead, SessionUpdate
@@ -51,14 +51,30 @@ async def get_detail(
 async def create(
     db: AsyncSession, current: CurrentUser, data: SessionCreate
 ) -> SessionRead:
-    # Verifies access
-    await connection_service.get_connection(db, current, data.connection_id)
+    conn_id = data.connection_id
+
+    # Auto-resolve connection if not provided
+    if conn_id is None:
+        first_conn = (
+            await db.execute(
+                select(DBConnection)
+                .where(DBConnection.org_id == current.org_id)
+                .order_by(DBConnection.created_at.asc())
+                .limit(1)
+            )
+        ).scalar_one_or_none()
+        if first_conn is None:
+            raise NotFound("No database connection found. Please add a connection first.")
+        conn_id = first_conn.id
+    else:
+        # Verifies access when connection_id is explicitly provided
+        await connection_service.get_connection(db, current, conn_id)
 
     title = data.title or f"New chat {datetime.now(timezone.utc):%Y-%m-%d %H:%M}"
     s = GISession(
         user_id=current.user_id,
         org_id=current.org_id,
-        connection_id=data.connection_id,
+        connection_id=conn_id,
         title=title,
         context_window=[],
         token_count=0,

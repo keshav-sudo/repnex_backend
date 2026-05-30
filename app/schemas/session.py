@@ -12,7 +12,7 @@ SessionStatus = Literal["active", "archived"]
 
 
 class SessionCreate(BaseModel):
-    connection_id: uuid.UUID
+    connection_id: uuid.UUID | None = None
     title: Annotated[str | None, Field(max_length=255)] = None
 
 
