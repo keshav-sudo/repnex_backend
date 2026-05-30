@@ -72,6 +72,14 @@ async def chat(
     s = get_settings()
     nl = data.natural_language
 
+    session = None
+    if data.session_id:
+        try:
+            session = await session_service.get(db, current, data.session_id)
+            await session_service.append_turn(db, session, role="user", content=nl)
+        except Exception as e:
+            log.warning("session_load_or_append_failed", extra={"err": str(e)})
+
     # ── Step 1: Classify intent ──────────────────────────────────────
     try:
         classification = await classify_intent(nl)
@@ -92,6 +100,12 @@ async def chat(
             message = await generate_conversational_response(nl)
         except LLMError:
             message = "I'm sorry, I couldn't process that. Try asking a data question like 'Show overdue invoices'."
+
+        if session:
+            try:
+                await session_service.append_turn(db, session, role="assistant", content=message)
+            except Exception as e:
+                log.warning("session_append_assistant_conversational_failed", extra={"err": str(e)})
 
         return ChatResponse(
             type="conversational",
@@ -250,14 +264,22 @@ async def chat(
         if template.sql_by_dialect:
             sql_preview = next(iter(template.sql_by_dialect.values()))
 
+        msg = (
+            f"✅ I matched your query to: **{template.description}**\n\n"
+            f"📂 Module: {template.module} → {template.category}\n\n"
+            f"To run this report, please **connect a database** from the Connections page. "
+            f"Here's a preview of the SQL that will execute:"
+        )
+
+        if session:
+            try:
+                await session_service.append_turn(db, session, role="assistant", content=msg)
+            except Exception as e:
+                log.warning("session_append_assistant_preview_failed", extra={"err": str(e)})
+
         return ChatResponse(
             type="template_preview",
-            message=(
-                f"✅ I matched your query to: **{template.description}**\n\n"
-                f"📂 Module: {template.module} → {template.category}\n\n"
-                f"To run this report, please **connect a database** from the Connections page. "
-                f"Here's a preview of the SQL that will execute:"
-            ),
+            message=msg,
             template_id=template.id,
             template_description=template.description,
             template_module=template.module,
@@ -285,6 +307,15 @@ async def chat(
     try:
         result = await execute_collect(conn, bound)
     except TargetDBError as e:
+        if session:
+            try:
+                await session_service.append_turn(db, session, role="assistant", content=f"Database error: {e.message}")
+                await _record_history(
+                    db, session, conn, current, nl, intent, bound.sql,
+                    ExecutionStatus.error, error_message=e.message
+                )
+            except Exception as ex:
+                log.warning("record_history_failed_error", extra={"err": str(ex)})
         return ChatResponse(
             type="error",
             message=f"Database error: {e.message}",
@@ -324,9 +355,22 @@ async def chat(
         for c in template_candidates[:5]
     ]
 
+    msg = summary or f"Query executed successfully. Found {result.rows_returned} rows."
+    if session:
+        try:
+            await session_service.append_turn(db, session, role="assistant", content=msg)
+            await _record_history(
+                db, session, conn, current, nl, intent, bound.sql,
+                ExecutionStatus.success,
+                execution_time_ms=result.execution_time_ms,
+                rows_returned=result.rows_returned,
+            )
+        except Exception as e:
+            log.warning("record_history_success_failed", extra={"err": str(e)})
+
     return ChatResponse(
         type="executable",
-        message=summary or f"Query executed successfully. Found {result.rows_returned} rows.",
+        message=msg,
         template_id=template.id,
         template_description=template.description,
         template_module=template.module,
