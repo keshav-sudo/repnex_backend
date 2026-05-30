@@ -42,7 +42,40 @@ async def list_connections(
             )
         )
         base = base.where(DBConnection.id.in_(access))
-    rows = (await db.execute(base.order_by(DBConnection.created_at.desc()))).scalars().all()
+    rows = list((await db.execute(base.order_by(DBConnection.created_at.desc()))).scalars().all())
+
+    if not rows:
+        try:
+            demo_conn = DBConnection(
+                org_id=current.org_id,
+                created_by=current.user_id,
+                name="Demo Database",
+                db_type=DBType.postgres,
+                host="localhost",
+                port=5432,
+                db_name="demo_db",
+                encrypted_username=encrypt("demo_user"),
+                encrypted_password=encrypt("demo_pass"),
+                ssl_enabled=False,
+                is_active=True,
+            )
+            db.add(demo_conn)
+            await db.flush()
+
+            db.add(
+                DBConnectionAccess(
+                    connection_id=demo_conn.id,
+                    user_id=None,  # whole org by default
+                    org_id=current.org_id,
+                    granted_by=current.user_id,
+                )
+            )
+            await db.commit()
+            await db.refresh(demo_conn)
+            rows = [demo_conn]
+        except Exception:
+            pass
+
     return [ConnectionRead.model_validate(r) for r in rows]
 
 
