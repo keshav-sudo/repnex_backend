@@ -49,16 +49,42 @@ async def list_connections(
 async def get_connection(
     db: AsyncSession, current: CurrentUser, conn_id: uuid.UUID
 ) -> DBConnection:
-    conn = (
-        await db.execute(
-            select(DBConnection).where(
-                DBConnection.id == conn_id, DBConnection.org_id == current.org_id
+    if current.role == "admin":
+        # Admin: single lookup by id + org
+        conn = (
+            await db.execute(
+                select(DBConnection).where(
+                    DBConnection.id == conn_id, DBConnection.org_id == current.org_id
+                )
             )
+        ).scalar_one_or_none()
+    else:
+        # Non-admin: merge access check into the same query via EXISTS
+        from sqlalchemy import exists
+        access_exists = (
+            select(DBConnectionAccess.id)
+            .where(DBConnectionAccess.connection_id == conn_id)
+            .where(DBConnectionAccess.org_id == current.org_id)
+            .where(
+                or_(
+                    DBConnectionAccess.user_id == current.user_id,
+                    DBConnectionAccess.user_id.is_(None),
+                )
+            )
+            .limit(1)
+            .correlate_except(DBConnectionAccess)
         )
-    ).scalar_one_or_none()
+        conn = (
+            await db.execute(
+                select(DBConnection).where(
+                    DBConnection.id == conn_id,
+                    DBConnection.org_id == current.org_id,
+                    exists(access_exists),
+                )
+            )
+        ).scalar_one_or_none()
     if not conn:
         raise NotFound("Connection not found")
-    await _assert_access(db, current, conn_id)
     return conn
 
 

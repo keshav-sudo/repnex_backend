@@ -26,6 +26,7 @@ class Settings(BaseSettings):
     DB_POOL_SIZE: int = 10
     DB_MAX_OVERFLOW: int = 20
     DB_POOL_TIMEOUT: int = 30
+    DB_POOL_RECYCLE: int = 1800  # recycle connections every 30min (prevents Neon idle drops)
     RUN_MIGRATIONS: bool = True
 
     # Redis
@@ -70,8 +71,8 @@ class Settings(BaseSettings):
     EXECUTOR_MAX_ROWS: int = 100_000
     EXECUTOR_BATCH_SIZE: int = 500
     TARGET_POOL_MAX: int = 64
-    TARGET_POOL_MIN_SIZE: int = 1
-    TARGET_POOL_MAX_SIZE: int = 5
+    TARGET_POOL_MIN_SIZE: int = 2
+    TARGET_POOL_MAX_SIZE: int = 10
 
     # Email
     EMAIL_PROVIDER: Literal["console", "smtp"] = "console"

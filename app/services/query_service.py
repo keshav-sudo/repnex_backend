@@ -1,6 +1,7 @@
 """Query service — orchestrates intent classification, RAG retrieval, and execution."""
 from __future__ import annotations
 
+import asyncio
 import time
 import uuid
 from collections.abc import AsyncIterator, Awaitable, Callable
@@ -291,25 +292,26 @@ async def chat(
             template_id=template.id,
         )
 
-    # Generate insight summary
+    # Generate insight + suggestions in parallel (saves 1 LLM RTT)
     summary: str | None = None
+    suggestions: list = []
     try:
-        summary = await generate_insight(
-            intent=intent.model_dump(), rows=result.rows
-        )
-    except LLMError as e:
-        log.warning("insight_failed", extra={"err": str(e)})
-
-    # Generate follow-up suggestions
-    try:
-        suggestions = await generate_suggestions(
+        insight_task = generate_insight(intent=intent.model_dump(), rows=result.rows)
+        suggestions_task = generate_suggestions(
             template_id=template.id,
             module=template.module,
             category=template.category,
             description=template.description,
         )
-    except Exception:
-        suggestions = []
+        results_parallel = await asyncio.gather(insight_task, suggestions_task, return_exceptions=True)
+        if not isinstance(results_parallel[0], Exception):
+            summary = results_parallel[0]
+        else:
+            log.warning("insight_failed", extra={"err": str(results_parallel[0])})
+        if not isinstance(results_parallel[1], Exception):
+            suggestions = results_parallel[1]
+    except Exception as e:
+        log.warning("parallel_llm_failed", extra={"err": str(e)})
 
     top_suggestions = [
         TemplateMatch(

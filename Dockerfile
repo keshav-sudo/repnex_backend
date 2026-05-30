@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=builder /install /usr/local
 WORKDIR /app
 # CACHEBUST: forces Docker to never cache the COPY layer
-ARG CACHEBUST=1780114435
+ARG CACHEBUST=1780114625
 COPY --chown=app:app . /app
 
 USER app

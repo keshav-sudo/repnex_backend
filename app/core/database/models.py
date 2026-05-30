@@ -134,7 +134,11 @@ class DBConnection(Base):
 
 class DBConnectionAccess(Base):
     __tablename__ = "db_connection_access"
-    __table_args__ = (UniqueConstraint("connection_id", "user_id", name="uq_dca_conn_user"),)
+    __table_args__ = (
+        UniqueConstraint("connection_id", "user_id", name="uq_dca_conn_user"),
+        Index("ix_dca_connection_id", "connection_id"),
+        Index("ix_dca_org_user", "org_id", "user_id"),
+    )
 
     id: Mapped[uuid.UUID] = _uuid_pk()
     connection_id: Mapped[uuid.UUID] = mapped_column(
@@ -177,7 +181,10 @@ class GISession(Base):
 
 class QueryHistory(Base):
     __tablename__ = "query_history"
-    __table_args__ = (Index("ix_query_history_session_id", "session_id"),)
+    __table_args__ = (
+        Index("ix_query_history_session_id", "session_id"),
+        Index("ix_query_history_user_created", "user_id", "created_at"),
+    )
 
     id: Mapped[uuid.UUID] = _uuid_pk()
     session_id: Mapped[uuid.UUID] = mapped_column(
