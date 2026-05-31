@@ -17,15 +17,26 @@ os.environ.setdefault("FERNET_KEY", "Q5p_T8u-3JkM4G2HzVx6yYbN7cJgKLpQRsTuVwXyZaA
 os.environ.setdefault("APP_ENV", "development")
 os.environ.setdefault("OPENAI_API_KEY", "dummy")
 
-# Real Pinecone credentials
-PINECONE_API_KEY = "pcsk_8uNjs_JEnKJ8fThatyMGp8pdLM59ukbadsy3ga5awHrUCfBVbrvKmnaXqasWmUfHTAkuX"
-PINECONE_HOST   = "https://repnex-0kl271f.svc.aped-4627-b74a.pinecone.io"
-PINECONE_INDEX  = "repnex-sql-templates"
-NAMESPACE       = "sql-templates"
-EMBED_MODEL     = "llama-text-embed-v2"  # must match Pinecone index native model
-BATCH_SIZE      = 50
+# Real Pinecone credentials (env overrides preferred)
+PINECONE_API_KEY = os.getenv(
+    "PINECONE_API_KEY",
+    "pcsk_8uNjs_JEnKJ8fThatyMGp8pdLM59ukbadsy3ga5awHrUCfBVbrvKmnaXqasWmUfHTAkuX",
+)
+PINECONE_HOST = os.getenv(
+    "PINECONE_HOST",
+    "https://repnex-0kl271f.svc.aped-4627-b74a.pinecone.io",
+)
+PINECONE_INDEX = os.getenv("PINECONE_INDEX", "repnex")
+NAMESPACE = os.getenv("PINECONE_NAMESPACE", "repnex")
+EMBED_MODEL = "llama-text-embed-v2"  # must match Pinecone index native model
+BATCH_SIZE = 50
 
-TEMPLATES_PATH = Path(__file__).parents[1] / ".." / "repnex_sql_templates" / "all_templates_combined.json"
+TEMPLATES_PATH = Path(
+    os.getenv(
+        "PINECONE_TEMPLATES_PATH",
+        str(Path(__file__).parents[1] / ".." / "repnex_sql_templates" / "repnex_sql_templates_2988.json"),
+    )
+)
 
 
 def build_embedding_text(entry: dict) -> str:
@@ -54,6 +65,15 @@ def run():
     raw = json.loads(TEMPLATES_PATH.read_text(encoding="utf-8"))
     entries = raw if isinstance(raw, list) else raw.get("templates", [])
     print(f"✅ Loaded {len(entries)} templates")
+
+    stats = index.describe_index_stats()
+    existing_namespaces = stats.get("namespaces", {}) or {}
+    if NAMESPACE in existing_namespaces:
+        print(f"🧹 Clearing namespace \"{NAMESPACE}\" in index \"{PINECONE_INDEX}\" …", end=" ", flush=True)
+        index.delete(delete_all=True, namespace=NAMESPACE)
+        print("✅ cleared")
+    else:
+        print(f"ℹ️ Namespace \"{NAMESPACE}\" not found; skipping delete.")
 
     ids, texts, metadata_list = [], [], []
     for entry in entries:

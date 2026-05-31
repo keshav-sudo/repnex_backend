@@ -170,6 +170,38 @@ async def test_connection(
     )
 
 
+async def test_raw_connection(
+    current: CurrentUser, data: ConnectionCreate
+) -> TestConnectionResponse:
+    # Build a temporary DBConnection object to feed to pool registry
+    temp_conn = DBConnection(
+        id=uuid.uuid4(),
+        org_id=current.org_id,
+        created_by=current.user_id,
+        name=data.name,
+        db_type=DBType(data.db_type),
+        host=data.host,
+        port=data.port,
+        db_name=data.db_name,
+        encrypted_username=encrypt(data.username),
+        encrypted_password=encrypt(data.password),
+        ssl_enabled=data.ssl_enabled,
+        is_active=True,
+    )
+    started = time.perf_counter()
+    try:
+        registry = get_target_pool_registry()
+        pool = await registry._build(temp_conn)
+        # Verify connection by executing simple scalar query
+        await pool.execute_one("SELECT 1", {}, timeout=5.0)
+        await pool.close()
+    except Exception as e:
+        return TestConnectionResponse(ok=False, error=str(e) or e.__class__.__name__)
+    return TestConnectionResponse(
+        ok=True, latency_ms=int((time.perf_counter() - started) * 1000)
+    )
+
+
 async def grant_access(
     db: AsyncSession, current: CurrentUser, conn_id: uuid.UUID, data: AccessGrantRequest
 ) -> AccessGrantRead:

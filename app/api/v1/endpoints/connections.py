@@ -71,6 +71,15 @@ async def delete(
     return {"ok": True}
 
 
+@router.post("/test", response_model=TestConnectionResponse)
+async def test_raw(
+    data: ConnectionCreate,
+    current: CurrentUser = Depends(bind_tenant_context),
+    _rl: None = Depends(rate_limit("api")),
+) -> TestConnectionResponse:
+    return await connection_service.test_raw_connection(current, data)
+
+
 @router.post("/{conn_id}/test", response_model=TestConnectionResponse)
 async def test(
     conn_id: uuid.UUID,
