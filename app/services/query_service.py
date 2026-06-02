@@ -72,6 +72,15 @@ async def chat(
     s = get_settings()
     nl = data.natural_language
 
+    # Build user context for personalization
+    user_name: str | None = None
+    ai_tone: str = "friendly"
+    if data.personalization:
+        user_name = data.personalization.preferred_name or data.personalization.display_name or None
+        ai_tone = data.personalization.ai_tone or "friendly"
+    if not user_name:
+        user_name = current.email.split("@")[0] if "@" in current.email else current.email
+
     session = None
     if data.session_id:
         try:
@@ -82,7 +91,7 @@ async def chat(
 
     # ── Step 1: Classify intent ──────────────────────────────────────
     try:
-        classification = await classify_intent(nl)
+        classification = await classify_intent(nl, user_name=user_name)
     except LLMError as e:
         log.warning("classify_failed", extra={"err": str(e)})
         # Default to executable on LLM failure
@@ -97,7 +106,9 @@ async def chat(
     # ── Step 2a: Conversational response ─────────────────────────────
     if is_conversational:
         try:
-            message = await generate_conversational_response(nl)
+            message = await generate_conversational_response(
+                nl, user_name=user_name, ai_tone=ai_tone
+            )
         except LLMError:
             message = "I'm sorry, I couldn't process that. Try asking a data question like 'Show overdue invoices'."
 
@@ -139,6 +150,7 @@ async def chat(
         intent = await extract_intent(
             nl,
             template_candidates=template_candidates,
+            user_name=user_name,
         )
     except LLMError as e:
         return ChatResponse(
@@ -201,6 +213,7 @@ async def chat(
                 module=template.module,
                 category=template.category,
                 description=template.description,
+                user_name=user_name,
             )
         except Exception:
             suggestions = []
@@ -250,6 +263,7 @@ async def chat(
                 module=template.module,
                 category=template.category,
                 description=template.description,
+                user_name=user_name,
             )
         except Exception:
             suggestions = [
@@ -327,12 +341,15 @@ async def chat(
     summary: str | None = None
     suggestions: list = []
     try:
-        insight_task = generate_insight(intent=intent.model_dump(), rows=result.rows)
+        insight_task = generate_insight(
+            intent=intent.model_dump(), rows=result.rows, user_name=user_name
+        )
         suggestions_task = generate_suggestions(
             template_id=template.id,
             module=template.module,
             category=template.category,
             description=template.description,
+            user_name=user_name,
         )
         results_parallel = await asyncio.gather(insight_task, suggestions_task, return_exceptions=True)
         if not isinstance(results_parallel[0], Exception):
@@ -440,7 +457,9 @@ async def execute_with_params(
     summary: str | None = None
     try:
         intent_dict = {"template_id": template.id, "params": data.params}
-        summary = await generate_insight(intent=intent_dict, rows=result.rows)
+        summary = await generate_insight(
+            intent=intent_dict, rows=result.rows, user_name=None
+        )
     except LLMError:
         pass
 
@@ -450,6 +469,7 @@ async def execute_with_params(
             module=template.module,
             category=template.category,
             description=template.description,
+            user_name=None,
         )
     except Exception:
         suggestions = []
@@ -508,7 +528,9 @@ async def run_via_rest(
 
     summary: str | None = None
     try:
-        summary = await generate_insight(intent=intent.model_dump(), rows=result.rows)
+        summary = await generate_insight(
+            intent=intent.model_dump(), rows=result.rows, user_name=None
+        )
         await session_service.append_turn(db, session, role="assistant", content=summary)
     except LLMError as e:
         log.warning("insight_failed", extra={"err": str(e)})

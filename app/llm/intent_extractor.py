@@ -12,13 +12,20 @@ from app.llm.client import get_llm, load_prompt
 from app.schemas.query import IntentClassification, IntentResult
 
 
+def _inject_user_name(prompt: str, user_name: str | None) -> str:
+    if user_name:
+        return prompt.replace("{user_name}", user_name)
+    return prompt.replace("{user_name}", "User")
+
+
 async def classify_intent(
     natural_language: str,
     *,
     context_window: list[dict[str, Any]] | None = None,
+    user_name: str | None = None,
 ) -> IntentClassification:
     """Step 1: Is this conversational or executable?"""
-    system = load_prompt("classify")
+    system = _inject_user_name(load_prompt("classify"), user_name)
     user = json.dumps(
         {
             "question": natural_language,
@@ -38,9 +45,10 @@ async def extract_intent(
     *,
     template_candidates: list[dict[str, Any]],
     context_window: list[dict[str, Any]] | None = None,
+    user_name: str | None = None,
 ) -> IntentResult:
     """Step 2: Map NL → template_id + params (with missing-param detection)."""
-    system = load_prompt("intent")
+    system = _inject_user_name(load_prompt("intent"), user_name)
     # Inject today's date so LLM can resolve relative phrases like 'last 6 months'
     today_str = date.today().isoformat()
     system = f"Today's date is {today_str}.\n\n{system}"
@@ -63,9 +71,12 @@ async def generate_conversational_response(
     natural_language: str,
     *,
     context_window: list[dict[str, Any]] | None = None,
+    user_name: str | None = None,
+    ai_tone: str = "friendly",
 ) -> str:
     """Generate a helpful text response for conversational queries."""
-    system = load_prompt("conversational")
+    system = _inject_user_name(load_prompt("conversational"), user_name)
+    system = system.replace("{ai_tone}", ai_tone)
     ctx_text = ""
     if context_window:
         recent = context_window[-4:]

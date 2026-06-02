@@ -13,6 +13,14 @@ ExecStatus = Literal["success", "error", "rate_limited"]
 
 # ── Request schemas ──────────────────────────────────────────────────
 
+class UserPersonalization(BaseModel):
+    """User's personalization preferences for AI responses."""
+    display_name: str = ""
+    preferred_name: str = ""
+    greeting_style: str = "time-based"
+    ai_tone: str = "friendly"
+
+
 class RunQueryRequest(BaseModel):
     session_id: uuid.UUID
     natural_language: str = Field(min_length=1, max_length=4000)
@@ -23,6 +31,7 @@ class ChatRequest(BaseModel):
     natural_language: str = Field(min_length=1, max_length=4000)
     connection_id: uuid.UUID | None = None
     session_id: uuid.UUID | None = None
+    personalization: UserPersonalization | None = None
 
 
 class ExecuteRequest(BaseModel):

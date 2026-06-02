@@ -17,9 +17,12 @@ async def generate_suggestions(
     module: str,
     category: str,
     description: str,
+    user_name: str | None = None,
 ) -> list[str]:
     """Return 3-4 contextual follow-up query suggestions."""
     system = load_prompt("suggestions")
+    if user_name:
+        system = f"The user you are suggesting for is named {user_name}.\n\n{system}"
     user = json.dumps(
         {
             "template_id": template_id,
@@ -30,12 +33,9 @@ async def generate_suggestions(
     )
     try:
         raw = await get_llm().chat_json(system=system, user=user)
-        # The prompt asks for a JSON array directly but chat_json wraps in object
-        # Handle both: raw list or {"suggestions": [...]}
         if isinstance(raw, list):
             return [str(s) for s in raw[:4]]
         if isinstance(raw, dict):
-            # LLM might wrap it
             for key in ("suggestions", "questions", "follow_ups"):
                 if key in raw and isinstance(raw[key], list):
                     return [str(s) for s in raw[key][:4]]
