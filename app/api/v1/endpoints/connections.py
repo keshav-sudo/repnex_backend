@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.rate_limit import rate_limit
@@ -15,6 +15,8 @@ from app.schemas.connection import (
     ConnectionCreate,
     ConnectionRead,
     ConnectionUpdate,
+    ListDatabasesRequest,
+    ListDatabasesResponse,
     TestConnectionResponse,
 )
 from app.services import connection_service
@@ -40,6 +42,38 @@ async def create(
 ) -> ConnectionRead:
     return await connection_service.create_connection(db, current, data)
 
+
+# ── Static sub-routes MUST come before /{conn_id} dynamic routes ─────────────
+# If /test or /list-databases are placed after /{conn_id}, FastAPI will treat
+# the string literal "test" / "list-databases" as a UUID → 422 Unprocessable.
+
+@router.post("/test", response_model=TestConnectionResponse)
+async def test_raw(
+    data: ConnectionCreate,
+    current: CurrentUser = Depends(bind_tenant_context),
+    _rl: None = Depends(rate_limit("api")),
+) -> TestConnectionResponse:
+    """Test credentials without saving — used by the 'Test Connection' button."""
+    return await connection_service.test_raw_connection(current, data)
+
+
+@router.post("/list-databases", response_model=ListDatabasesResponse)
+async def list_databases(
+    data: ListDatabasesRequest,
+    current: CurrentUser = Depends(bind_tenant_context),
+    _rl: None = Depends(rate_limit("api")),
+) -> ListDatabasesResponse:
+    """
+    Connect to the server with provided credentials and return available databases.
+    Used to populate the database dropdown before the user picks one.
+    """
+    try:
+        return await connection_service.list_databases(current, data)
+    except ValueError as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+
+
+# ── Dynamic /{conn_id} routes ─────────────────────────────────────────────────
 
 @router.get("/{conn_id}", response_model=ConnectionRead)
 async def get(
@@ -69,15 +103,6 @@ async def delete(
 ) -> dict:
     await connection_service.delete_connection(db, current, conn_id)
     return {"ok": True}
-
-
-@router.post("/test", response_model=TestConnectionResponse)
-async def test_raw(
-    data: ConnectionCreate,
-    current: CurrentUser = Depends(bind_tenant_context),
-    _rl: None = Depends(rate_limit("api")),
-) -> TestConnectionResponse:
-    return await connection_service.test_raw_connection(current, data)
 
 
 @router.post("/{conn_id}/test", response_model=TestConnectionResponse)

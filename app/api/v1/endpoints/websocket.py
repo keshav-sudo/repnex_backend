@@ -134,3 +134,40 @@ async def _run(
             await anext(db_iter)  # type: ignore[arg-type]
         except StopAsyncIteration:
             pass
+
+
+@router.websocket("/ws/gateway")
+async def ws_gateway(
+    websocket: WebSocket,
+    agent_name: str = Query(...),
+    token: str = Query(...),
+) -> None:
+    try:
+        payload = decode_token(token, expected_type="access")
+        current = current_user_from_payload(payload)
+    except AppError:
+        # Cannot accept if authentication fails
+        return
+
+    org_id_ctx.set(str(current.org_id))
+    user_id_ctx.set(str(current.user_id))
+
+    from app.services.gateway_manager import get_gateway_manager
+    gateway_mgr = get_gateway_manager()
+
+    await websocket.accept()
+    await gateway_mgr.register(current.org_id, agent_name, websocket)
+
+    try:
+        while True:
+            raw = await websocket.receive_json()
+            if isinstance(raw, dict) and raw.get("action") == "query_response":
+                gateway_mgr.handle_response(raw)
+            elif isinstance(raw, dict) and raw.get("action") == "ping":
+                await websocket.send_json({"action": "pong"})
+    except WebSocketDisconnect:
+        pass
+    except Exception:
+        log.exception("gateway_ws_unhandled")
+    finally:
+        await gateway_mgr.unregister(current.org_id, agent_name)

@@ -21,6 +21,7 @@ from app.core.pinecone_client import init_pinecone_store
 from app.core.redis import close_redis, init_redis
 from app.query_engine.template_loader import init_template_registry
 from app.services.websocket_manager import init_ws_manager, shutdown_ws_manager
+from app.services.gateway_manager import init_gateway_manager
 
 log = get_logger(__name__)
 
@@ -37,6 +38,7 @@ async def lifespan(app: FastAPI):
     init_target_pool_registry()
     init_pinecone_store()
     init_ws_manager()
+    init_gateway_manager()
 
     log.info("ready")
     try:

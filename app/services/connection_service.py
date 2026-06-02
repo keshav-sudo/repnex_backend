@@ -22,6 +22,8 @@ from app.schemas.connection import (
     ConnectionCreate,
     ConnectionRead,
     ConnectionUpdate,
+    ListDatabasesRequest,
+    ListDatabasesResponse,
     TestConnectionResponse,
 )
 
@@ -200,6 +202,92 @@ async def test_raw_connection(
     return TestConnectionResponse(
         ok=True, latency_ms=int((time.perf_counter() - started) * 1000)
     )
+
+
+async def list_databases(
+    current: CurrentUser, data: ListDatabasesRequest
+) -> ListDatabasesResponse:
+    """
+    Connect to the DB server using the provided credentials and return
+    a list of database names the user can access.
+
+    MSSQL / SysPro : queries sys.databases (filters system DBs)
+    PostgreSQL      : queries pg_database
+    """
+    from app.core.database.models import DBType as ModelDBType
+
+    db_type = ModelDBType(data.db_type)
+
+    # ── MSSQL / SysPro ────────────────────────────────────────────────
+    if db_type == ModelDBType.mssql:
+        import asyncio
+        from concurrent.futures import ThreadPoolExecutor
+
+        def _fetch_mssql_databases() -> list[str]:
+            import pymssql
+            # Connect to "master" — always exists, read-only safe
+            with pymssql.connect(
+                server=data.host,
+                port=data.port,
+                user=data.username,
+                password=data.password,
+                database="master",
+                login_timeout=10,
+                timeout=15,
+            ) as conn:
+                with conn.cursor(as_dict=True) as cursor:
+                    # Exclude system databases that users shouldn't pick
+                    cursor.execute(
+                        """
+                        SELECT name
+                        FROM sys.databases
+                        WHERE name NOT IN ('tempdb', 'model', 'msdb')
+                          AND state_desc = 'ONLINE'
+                        ORDER BY name
+                        """
+                    )
+                    return [row["name"] for row in cursor.fetchall()]
+
+        loop = asyncio.get_running_loop()
+        with ThreadPoolExecutor(max_workers=4) as ex:
+            try:
+                databases = await asyncio.wait_for(
+                    loop.run_in_executor(ex, _fetch_mssql_databases),
+                    timeout=20.0,
+                )
+            except asyncio.TimeoutError:
+                raise ValueError("Server did not respond in time — check host/port")
+            except Exception as e:
+                raise ValueError(f"Cannot connect to server: {e}")
+        return ListDatabasesResponse(databases=databases)
+
+    # ── PostgreSQL / CloudSQL ──────────────────────────────────────────
+    if db_type in (ModelDBType.postgres, ModelDBType.cloudsql):
+        import asyncpg
+        try:
+            conn = await asyncpg.connect(
+                host=data.host,
+                port=data.port,
+                user=data.username,
+                password=data.password,
+                database="postgres",  # default system DB
+                timeout=10,
+                ssl="require" if data.ssl_enabled else None,
+            )
+            rows = await conn.fetch(
+                """
+                SELECT datname FROM pg_database
+                WHERE datistemplate = false
+                  AND datallowconn = true
+                ORDER BY datname
+                """
+            )
+            await conn.close()
+            return ListDatabasesResponse(databases=[r["datname"] for r in rows])
+        except Exception as e:
+            raise ValueError(f"Cannot connect to server: {e}")
+
+    raise ValueError(f"list_databases not supported for db_type: {data.db_type}")
 
 
 async def grant_access(

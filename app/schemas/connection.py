@@ -139,6 +139,19 @@ class ConnectionCreate(BaseModel):
         return self
 
 
+class ListDatabasesRequest(BaseModel):
+    """Credentials needed to connect to a server and list its databases.
+    db_name is intentionally optional — we connect to the default/master DB
+    just to enumerate what exists.
+    """
+    db_type: DBType
+    host: Annotated[str, Field(min_length=1, max_length=255)]
+    port: int
+    username: Annotated[str, Field(min_length=1, max_length=255)]
+    password: Annotated[str, Field(min_length=1, max_length=512)]
+    ssl_enabled: bool = False
+
+
 class ConnectionUpdate(BaseModel):
     name: str | None = None
     host: str | None = None
@@ -169,6 +182,10 @@ class TestConnectionResponse(BaseModel):
     ok: bool
     latency_ms: int | None = None
     error: str | None = None
+
+
+class ListDatabasesResponse(BaseModel):
+    databases: list[str]
 
 
 class AccessGrantRequest(BaseModel):

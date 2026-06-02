@@ -75,6 +75,11 @@ class TargetPool:
     async def fetch_stream(
         self, sql: str, params: dict[str, Any], *, batch_size: int, timeout: float
     ):
+        if self._conn_params and self._conn_params.get("gateway"):
+            async for batch in self._fetch_gateway(sql, params, batch_size, timeout):
+                yield batch
+            return
+
         if self.db_type in (DBType.postgres, DBType.cloudsql):
             async for batch in self._fetch_pg(sql, params, batch_size, timeout):
                 yield batch
@@ -153,6 +158,9 @@ class TargetPool:
     # ── Scalar helper ──────────────────────────────────────────────────────
 
     async def execute_one(self, sql: str, params: dict[str, Any], *, timeout: float) -> Any:
+        if self._conn_params and self._conn_params.get("gateway"):
+            return await self._execute_one_gateway(sql, params, timeout=timeout)
+
         if self.db_type in (DBType.postgres, DBType.cloudsql):
             pg_sql, bound = _to_positional_pg(sql, params)
             async with asyncio.timeout(timeout):
@@ -180,6 +188,54 @@ class TargetPool:
 
             return await loop.run_in_executor(_MSSQL_EXECUTOR, _run_sync)
         raise TargetDBError(f"execute_one not implemented for {self.db_type.value}")
+
+    async def _fetch_gateway(
+        self, sql: str, params: dict[str, Any], batch_size: int, timeout: float
+    ):
+        from app.services.gateway_manager import get_gateway_manager
+        mgr = get_gateway_manager()
+        org_id = self._conn_params["org_id"]
+        agent_name = self._conn_params["agent_name"]
+        db_name = self._conn_params["database"]
+        db_type = self._conn_params["db_type"]
+        
+        rows = await mgr.execute_query(
+            org_id=org_id,
+            agent_name=agent_name,
+            sql=sql,
+            params=params,
+            db_name=db_name,
+            db_type=db_type,
+            timeout=timeout,
+        )
+        for i in range(0, len(rows), batch_size):
+            yield rows[i : i + batch_size]
+
+    async def _execute_one_gateway(self, sql: str, params: dict[str, Any], *, timeout: float) -> Any:
+        from app.services.gateway_manager import get_gateway_manager
+        mgr = get_gateway_manager()
+        org_id = self._conn_params["org_id"]
+        agent_name = self._conn_params["agent_name"]
+        db_name = self._conn_params["database"]
+        db_type = self._conn_params["db_type"]
+        
+        rows = await mgr.execute_query(
+            org_id=org_id,
+            agent_name=agent_name,
+            sql=sql,
+            params=params,
+            db_name=db_name,
+            db_type=db_type,
+            timeout=timeout,
+        )
+        if rows and len(rows) > 0:
+            first = rows[0]
+            if isinstance(first, dict):
+                return list(first.values())[0]
+            elif isinstance(first, (list, tuple)):
+                return first[0]
+            return first
+        return None
 
     async def close(self) -> None:
         try:
@@ -234,6 +290,18 @@ class TargetPoolRegistry:
             await pool.close()
 
     async def _build(self, conn: DBConnection) -> TargetPool:
+        # ── Gateway Mode ───────────────────────────────────────────────────
+        if conn.host.startswith("gateway:") or conn.host == "gateway":
+            agent_name = conn.host.split("gateway:")[1] if "gateway:" in conn.host else "default"
+            conn_params = {
+                "gateway": True,
+                "org_id": conn.org_id,
+                "agent_name": agent_name,
+                "database": conn.db_name,
+                "db_type": conn.db_type.value,
+            }
+            return TargetPool(conn.db_type, None, conn_params=conn_params)
+
         username = decrypt(conn.encrypted_username)
         password = decrypt(conn.encrypted_password)
 
