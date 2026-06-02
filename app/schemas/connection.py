@@ -130,12 +130,25 @@ class ConnectionCreate(BaseModel):
         # Final validation after resolution
         if not self.db_type:
             raise ValueError("db_type is required when connection_string is not provided")
-        if not self.host:
-            raise ValueError("host is required (or provide a connection_string)")
-        if not self.port:
-            raise ValueError("port is required (or provide a connection_string)")
-        if not self.db_name:
-            raise ValueError("db_name is required (or provide a connection_string)")
+        if self.host.startswith("gateway:") or self.host == "gateway":
+            # For gateway, traditional port and credentials validation is bypassed
+            pass
+        else:
+            if not self.host:
+                raise ValueError("host is required (or provide a connection_string)")
+            if not self.port:
+                default_ports = {
+                    "postgres": 5432,
+                    "mysql": 3306,
+                    "mssql": 1433,
+                    "oracle": 1521,
+                    "cloudsql": 5432,
+                }
+                self.port = default_ports.get(self.db_type, 1433)
+                if not self.port:
+                    raise ValueError("port is required (or provide a connection_string)")
+            if not self.db_name:
+                raise ValueError("db_name is required (or provide a connection_string)")
         return self
 
 
@@ -146,10 +159,23 @@ class ListDatabasesRequest(BaseModel):
     """
     db_type: DBType
     host: Annotated[str, Field(min_length=1, max_length=255)]
-    port: int
+    port: int = 0
     username: Annotated[str, Field(min_length=1, max_length=255)]
-    password: Annotated[str, Field(min_length=1, max_length=512)]
+    password: Annotated[str, Field(min_length=0, max_length=512)] = ""
     ssl_enabled: bool = False
+
+    @model_validator(mode="after")
+    def _resolve_defaults(self) -> "ListDatabasesRequest":
+        if not self.port:
+            default_ports = {
+                "postgres": 5432,
+                "mysql": 3306,
+                "mssql": 1433,
+                "oracle": 1521,
+                "cloudsql": 5432,
+            }
+            self.port = default_ports.get(self.db_type, 1433)
+        return self
 
 
 class ConnectionUpdate(BaseModel):
