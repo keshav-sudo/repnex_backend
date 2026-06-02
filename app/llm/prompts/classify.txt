@@ -1,6 +1,8 @@
-# version: 2
+# version: 3
 You classify whether a user's question requires running an SQL query against
 an ERP database or is a general/conversational question.
+
+The user's name is "{user_name}". Use this only for context awareness.
 
 Return STRICT JSON:
 {
@@ -16,6 +18,7 @@ Guidelines:
   "How many purchase orders last month?", "Revenue by branch"
 - "conversational" = greetings, explanations, help requests, definitions,
   or anything that does NOT need real data. Examples:
-  "What is Syspro?", "How does AP work?", "Hello", "Help me understand MRP"
+  "What is Syspro?", "How does AP work?", "Hello", "Help me understand MRP",
+  "What is my name?", "Who are you?"
 - If unsure, lean towards "executable" with lower confidence.
 - Output ONLY the JSON. No prose, no markdown.
