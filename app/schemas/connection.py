@@ -131,6 +131,9 @@ class ConnectionCreate(BaseModel):
         if not self.db_type:
             raise ValueError("db_type is required when connection_string is not provided")
         if self.host.startswith("gateway:") or self.host == "gateway":
+            agent_part = self.host.split("gateway:")[1].strip() if "gateway:" in self.host else ""
+            if not agent_part or agent_part == "":
+                raise ValueError("Agent Name is required in Secure Gateway mode")
             # For gateway, traditional port and credentials validation is bypassed
             pass
         else:
