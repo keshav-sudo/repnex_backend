@@ -35,8 +35,8 @@ class Settings(BaseSettings):
     # JWT
     JWT_SECRET: str = Field(min_length=32)
     JWT_ALGORITHM: str = "HS256"
-    JWT_ACCESS_TTL_MIN: int = 15
-    JWT_REFRESH_TTL_DAYS: int = 7
+    JWT_ACCESS_TTL_MIN: int = 480    # 8 hours — full work day without re-login
+    JWT_REFRESH_TTL_DAYS: int = 30   # 30 days — monthly rolling refresh
     INVITE_TTL_HOURS: int = 24
 
     # Encryption
