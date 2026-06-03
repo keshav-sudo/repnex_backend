@@ -359,6 +359,13 @@ def main():
     parser.add_argument("--db-password", default="")
 
     args = parser.parse_args()
+
+    # Clean up single or double quotes passed by Windows command prompts / Task Scheduler
+    for key in ["token", "agent_name", "server", "db_type", "db_host", "db_port", "db_user", "db_password"]:
+        val = getattr(args, key, None)
+        if isinstance(val, str):
+            setattr(args, key, val.strip("'\""))
+
     os_name = platform.system()
 
     # ── Service management ────────────────────────────────────────────────────
