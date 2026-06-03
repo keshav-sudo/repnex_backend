@@ -73,6 +73,19 @@ async def list_databases(
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
 
 
+@router.get("/gateway-agents", response_model=list[str])
+async def list_gateway_agents(
+    current: CurrentUser = Depends(bind_tenant_context),
+) -> list[str]:
+    """Return names of gateway agents currently connected for this org."""
+    from app.services.gateway_manager import get_gateway_manager
+    try:
+        mgr = get_gateway_manager()
+        return mgr.list_active_agents(current.org_id)
+    except Exception:
+        return []
+
+
 # ── Dynamic /{conn_id} routes ─────────────────────────────────────────────────
 
 @router.get("/{conn_id}", response_model=ConnectionRead)
