@@ -53,13 +53,22 @@ def run_mssql_query(sql, params, db_name, args):
             user=args.db_user,
             password=args.db_password,
             database=db_name,
-            login_timeout=10,
-            timeout=30
+            login_timeout=15,
+            timeout=60
         )
-        with conn.cursor(as_dict=True) as cursor:
+        with conn.cursor() as cursor:
             cursor.execute(sql, params)
-            rows = cursor.fetchall()
-            for r in rows:
+            raw_rows = cursor.fetchall()
+
+            # Build column names — fallback for unnamed columns (e.g. SELECT 1)
+            col_names = []
+            if cursor.description:
+                for i, desc in enumerate(cursor.description):
+                    col_names.append(desc[0] if desc[0] else f"column_{i}")
+
+            result = []
+            for row in raw_rows:
+                r = dict(zip(col_names, row))
                 for k, v in r.items():
                     if hasattr(v, 'isoformat'):
                         r[k] = v.isoformat()
@@ -67,7 +76,8 @@ def run_mssql_query(sql, params, db_name, args):
                         r[k] = str(v)
                     elif hasattr(v, '__str__') and type(v).__name__ in ('Decimal', 'UUID'):
                         r[k] = str(v)
-            return rows
+                result.append(r)
+            return result
     except Exception as e:
         logger.error(f"MSSQL Execution error: {e}")
         raise

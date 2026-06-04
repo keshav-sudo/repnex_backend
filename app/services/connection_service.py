@@ -162,7 +162,7 @@ async def test_connection(
     started = time.perf_counter()
     try:
         pool = await get_target_pool_registry().get_pool(conn)
-        await pool.execute_one("SELECT 1", {}, timeout=5.0)
+        await pool.execute_one("SELECT 1 AS ok", {}, timeout=30.0)
     except Exception as e:
         return TestConnectionResponse(ok=False, error=e.__class__.__name__)
     conn.last_tested_at = datetime.now(timezone.utc)
@@ -195,7 +195,7 @@ async def test_raw_connection(
         registry = get_target_pool_registry()
         pool = await registry._build(temp_conn)
         # Verify connection by executing simple scalar query
-        await pool.execute_one("SELECT 1", {}, timeout=5.0)
+        await pool.execute_one("SELECT 1 AS ok", {}, timeout=30.0)
         await pool.close()
     except Exception as e:
         return TestConnectionResponse(ok=False, error=str(e) or e.__class__.__name__)
@@ -235,7 +235,7 @@ async def list_databases(
                 login_timeout=10,
                 timeout=15,
             ) as conn:
-                with conn.cursor(as_dict=True) as cursor:
+                with conn.cursor() as cursor:
                     # Exclude system databases that users shouldn't pick
                     cursor.execute(
                         """
@@ -246,7 +246,7 @@ async def list_databases(
                         ORDER BY name
                         """
                     )
-                    return [row["name"] for row in cursor.fetchall()]
+                    return [row[0] for row in cursor.fetchall()]
 
         loop = asyncio.get_running_loop()
         with ThreadPoolExecutor(max_workers=4) as ex:

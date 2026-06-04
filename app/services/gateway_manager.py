@@ -55,7 +55,7 @@ class GatewayManager:
         params: dict[str, Any],
         db_name: str,
         db_type: str,
-        timeout: float = 30.0,
+        timeout: float = 60.0,
     ) -> list[dict[str, Any]]:
         key = f"{org_id}:{agent_name}"
         ws = self._agents.get(key)

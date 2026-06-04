@@ -132,14 +132,19 @@ class TargetPool:
                 timeout=int(timeout),
                 login_timeout=10,
             ) as raw_conn:
-                with raw_conn.cursor(as_dict=True) as cursor:
+                with raw_conn.cursor() as cursor:
                     cursor.execute(mssql_sql, tuple(bound))
+                    # Build column names with fallback for unnamed cols
+                    col_names = []
+                    if cursor.description:
+                        for i, desc in enumerate(cursor.description):
+                            col_names.append(desc[0] if desc[0] else f"column_{i}")
                     batches: list[list[dict]] = []
                     while True:
                         rows = cursor.fetchmany(batch_size)
                         if not rows:
                             break
-                        batches.append(rows)
+                        batches.append([dict(zip(col_names, row)) for row in rows])
                     return batches
 
         try:
