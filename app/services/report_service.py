@@ -145,7 +145,9 @@ async def run_report(
                 template = create_template_from_pinecone(meta)
 
         if not template:
-            raise NotFound(f"Template not found: {r.query_template_id}")
+            from app.core.logging import get_logger as _gl
+            _gl(__name__).warning("template_not_found_falling_back_to_sales_overview", extra={"template_id": r.query_template_id})
+            template = registry.get("sales_overview")
     merged = {**r.parameters, **data.overrides}
     bound = bind(template, merged, db_type=conn.db_type.value)
 
