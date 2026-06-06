@@ -34,6 +34,7 @@ class ReportCreate(BaseModel):
     query_template_id: Annotated[str, Field(min_length=1, max_length=128)]
     parameters: dict[str, Any] = Field(default_factory=dict)
     is_public: bool = False
+    is_pinned: bool = False
     columns: list[ReportColumnIn] = Field(default_factory=list)
 
 
@@ -42,6 +43,7 @@ class ReportUpdate(BaseModel):
     description: str | None = None
     parameters: dict[str, Any] | None = None
     is_public: bool | None = None
+    is_pinned: bool | None = None
     columns: list[ReportColumnIn] | None = None
 
 
@@ -54,6 +56,7 @@ class ReportRead(ORMBase):
     query_template_id: str
     parameters: dict[str, Any]
     is_public: bool
+    is_pinned: bool
     created_at: datetime
     columns: list[ReportColumnRead]
 

@@ -73,6 +73,7 @@ async def create_report(db: AsyncSession, current: CurrentUser, data: ReportCrea
         query_template_id=data.query_template_id,
         parameters=data.parameters,
         is_public=data.is_public,
+        is_pinned=data.is_pinned,
     )
     db.add(r)
     await db.flush()

@@ -225,6 +225,7 @@ class Report(Base):
     query_template_id: Mapped[str] = mapped_column(String(128), nullable=False)
     parameters: Mapped[dict] = mapped_column(JSONB, default=dict, nullable=False)
     is_public: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    is_pinned: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     created_at: Mapped[datetime] = _ts_created()
 
     columns: Mapped[list["ReportColumn"]] = relationship(

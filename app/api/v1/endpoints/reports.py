@@ -58,6 +58,19 @@ async def update(
     return await report_service.update_report(db, current, report_id, data)
 
 
+@router.patch("/{report_id}/pin", response_model=ReportRead)
+async def toggle_pin(
+    report_id: uuid.UUID,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncSession = Depends(get_db),
+) -> ReportRead:
+    r = await report_service.get_report(db, current, report_id)
+    r.is_pinned = not r.is_pinned
+    await db.commit()
+    await db.refresh(r)
+    return ReportRead.model_validate(r)
+
+
 @router.delete("/{report_id}", status_code=status.HTTP_200_OK)
 async def delete(
     report_id: uuid.UUID,
