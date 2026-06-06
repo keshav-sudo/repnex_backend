@@ -111,21 +111,25 @@ async def chat(
         except LLMError:
             message = "I'm sorry, I couldn't process that. Try asking a data question like 'Show overdue invoices'."
 
+        conversational_suggestions = [
+            "Show AP ageing report",
+            "List overdue supplier invoices",
+            "Top 10 customers by revenue",
+            "Stock on hand summary",
+        ]
         if session:
             try:
-                await session_service.append_turn(db, session, role="assistant", content=message)
+                await session_service.append_turn(
+                    db, session, role="assistant", content=message,
+                    type="conversational", suggestions=conversational_suggestions,
+                )
             except Exception as e:
                 log.warning("session_append_assistant_conversational_failed", extra={"err": str(e)})
 
         return ChatResponse(
             type="conversational",
             message=message,
-            suggestions=[
-                "Show AP ageing report",
-                "List overdue supplier invoices",
-                "Top 10 customers by revenue",
-                "Stock on hand summary",
-            ],
+            suggestions=conversational_suggestions,
         )
 
     # ── Step 2b: Executable flow ─────────────────────────────────────
@@ -296,6 +300,7 @@ async def chat(
                     template_description=template.description,
                     extracted_params=intent.params,
                     sql=sql_preview,
+                    suggestions=suggestions,
                 )
             except Exception as e:
                 log.warning("session_append_assistant_preview_failed", extra={"err": str(e)})
@@ -408,6 +413,7 @@ async def chat(
                 template_id=template.id,
                 template_description=template.description,
                 extracted_params=intent.params,
+                suggestions=suggestions,
             )
             await _record_history(
                 db,
@@ -578,6 +584,7 @@ async def execute_with_params(
                 template_id=template.id,
                 template_description=template.description,
                 extracted_params=data.params,
+                suggestions=suggestions,
             )
             await _record_history(
                 db,
