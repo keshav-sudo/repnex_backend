@@ -115,13 +115,39 @@ async def delete(
     await db.commit()
 
 
+from typing import Any
+
+def make_json_safe(obj: Any) -> Any:
+    import decimal
+    import uuid
+    if isinstance(obj, dict):
+        return {k: make_json_safe(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [make_json_safe(x) for x in obj]
+    elif isinstance(obj, (tuple, set)):
+        return [make_json_safe(x) for x in obj]
+    elif hasattr(obj, "isoformat"):
+        return obj.isoformat()
+    elif isinstance(obj, decimal.Decimal):
+        try:
+            return float(obj)
+        except Exception:
+            return str(obj)
+    elif isinstance(obj, uuid.UUID):
+        return str(obj)
+    elif isinstance(obj, (int, float, str, bool)) or obj is None:
+        return obj
+    return str(obj)
+
+
 async def append_turn(
     db: AsyncSession, session: GISession, *, role: str, content: str, **kwargs
 ) -> None:
     cw = list(session.context_window or [])
     turn = {"role": role, "content": content}
     if kwargs:
-        turn.update(kwargs)
+        safe_kwargs = make_json_safe(kwargs)
+        turn.update(safe_kwargs)
     cw.append(turn)
     if len(cw) > MAX_CONTEXT_TURNS:
         cw = cw[-MAX_CONTEXT_TURNS:]

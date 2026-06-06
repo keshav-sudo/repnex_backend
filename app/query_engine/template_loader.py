@@ -9,6 +9,7 @@ from typing import Any
 from app.core.exceptions import NotFound, ValidationFailed
 
 TEMPLATES_PATH = Path(__file__).parent / "templates" / "query_templates.json"
+COMBINED_TEMPLATES_PATH_PACKAGED = Path(__file__).parent / "templates" / "all_templates_combined.json"
 COMBINED_TEMPLATES_PATH = (
     Path(__file__).parents[3] / "repnex_sql_templates" / "all_templates_combined.json"
 )
@@ -270,9 +271,11 @@ _registry: TemplateRegistry | None = None
 
 def init_template_registry() -> TemplateRegistry:
     global _registry
-    # Try combined templates first, fall back to original
-    if COMBINED_TEMPLATES_PATH.exists():
-        _registry = load_combined_registry()
+    # Try combined templates (packaged first, then dev path), fall back to original
+    if COMBINED_TEMPLATES_PATH_PACKAGED.exists():
+        _registry = load_combined_registry(COMBINED_TEMPLATES_PATH_PACKAGED)
+    elif COMBINED_TEMPLATES_PATH.exists():
+        _registry = load_combined_registry(COMBINED_TEMPLATES_PATH)
     else:
         _registry = load_registry()
     return _registry
