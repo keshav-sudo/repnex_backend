@@ -62,6 +62,18 @@ class GatewayManager:
         if ws is None:
             raise RuntimeError(f"Gateway Agent '{agent_name}' is not connected.")
 
+        # Verify the WebSocket is still alive before sending
+        try:
+            if ws.client_state.name != "CONNECTED":
+                async with self._lock:
+                    self._agents.pop(key, None)
+                raise RuntimeError(
+                    f"Gateway Agent '{agent_name}' connection is stale. "
+                    f"Please restart the agent or wait for auto-reconnect."
+                )
+        except AttributeError:
+            pass  # client_state may not exist on all WebSocket implementations
+
         query_id = str(uuid.uuid4())
         fut = asyncio.get_running_loop().create_future()
         self._pending_queries[query_id] = fut

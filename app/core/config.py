@@ -73,6 +73,7 @@ class Settings(BaseSettings):
     TARGET_POOL_MAX: int = 64
     TARGET_POOL_MIN_SIZE: int = 2
     TARGET_POOL_MAX_SIZE: int = 10
+    MSSQL_POOL_WORKERS: int = 32
 
     # Email
     EMAIL_PROVIDER: Literal["console", "smtp"] = "console"

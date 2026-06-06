@@ -34,3 +34,20 @@ async def ready() -> dict:
         out["status"] = "degraded"
         out["redis"] = e.__class__.__name__
     return out
+
+
+@router.get("/metrics")
+async def metrics() -> dict:
+    """Scalability metrics endpoint for monitoring dashboards."""
+    from app.services.websocket_manager import get_ws_manager
+    from app.services.gateway_manager import get_gateway_manager
+
+    ws_mgr = get_ws_manager()
+    gw_mgr = get_gateway_manager()
+
+    return {
+        "websocket_connections": ws_mgr.total_connections,
+        "gateway_agents": len(gw_mgr._agents),
+        "ws_warn_threshold": ws_mgr.WARN_TOTAL_CONNECTIONS,
+        "ws_max_per_session": ws_mgr.MAX_CONNECTIONS_PER_SESSION,
+    }

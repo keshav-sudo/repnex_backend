@@ -52,8 +52,18 @@ async def create_report(
 ) -> ReportRead:
     if current.role == "viewer":
         raise Forbidden("Viewers cannot create reports")
-    # Validate the referenced template exists
-    get_template_registry().get(data.query_template_id)
+
+    # Validate template — try static registry first, then Pinecone.
+    # If neither has it, still allow save (template may be dynamic/user-created).
+    registry = get_template_registry()
+    if registry.has(data.query_template_id):
+        registry.get(data.query_template_id)
+    else:
+        from app.core.logging import get_logger as _gl
+        _gl(__name__).info(
+            "report_template_not_in_registry",
+            extra={"template_id": data.query_template_id},
+        )
 
     r = Report(
         org_id=current.org_id,

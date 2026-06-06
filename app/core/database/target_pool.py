@@ -25,8 +25,11 @@ from app.core.security.encryption import decrypt
 
 log = get_logger(__name__)
 
-# Thread-pool for synchronous MSSQL calls via pymssql
-_MSSQL_EXECUTOR = ThreadPoolExecutor(max_workers=16, thread_name_prefix="mssql_pymssql")
+# Thread-pool for synchronous MSSQL calls via pymssql — configurable via MSSQL_POOL_WORKERS
+_MSSQL_EXECUTOR = ThreadPoolExecutor(
+    max_workers=get_settings().MSSQL_POOL_WORKERS,
+    thread_name_prefix="mssql_pymssql",
+)
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────

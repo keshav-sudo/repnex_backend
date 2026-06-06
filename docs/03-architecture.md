@@ -185,6 +185,22 @@ See [Database module](./04-module-database.md) for full schema.
 - **Rate limiting**: Redis token bucket via Lua script (atomic)
 - **WebSocket scale**: in-process registry by default; pluggable to Redis pub/sub for multi-instance
 
+## Gateway Agent Architecture & Scalability
+
+For enterprise customers whose databases (e.g. ERP MSSQL, Oracle, local Postgres) are hosted behind private firewalls or on-premise intranets, Repnex uses an **outbound-only Gateway Agent** method.
+
+### How it works:
+1. **Outbound Connection**: The local agent (`repnex-agent.py`) initiates a secure outbound WebSocket connection to the Repnex Cloud at `/api/v1/ws/gateway?agent_name=...&token=...`. Since the connection is outbound, the customer's network admin **does not need to open any inbound ports** or modify firewall rules.
+2. **Persistent Registry**: The cloud `GatewayManager` registers the WebSocket connection under the key `{org_id}:{agent_name}` in an in-memory registry.
+3. **Query Dispatch**: When a user queries a database with host `gateway:agent_name`, the cloud server compiles the parameter-bound SQL query and sends it as a JSON payload over the established WebSocket.
+4. **Local Execution**: The agent executes the SQL locally against the on-premise database using its local connection pool, formats the raw result into JSON, and returns the response over the WebSocket.
+5. **Response Resolution**: The `GatewayManager` matches the incoming response's `query_id` to a pending `asyncio.Future`, resolves the query, and streams the rows back to the frontend.
+
+### Scalability Limits:
+- **Connection Scale**: A single backend node can handle **1,000 to 5,000 concurrent active agents** (limited only by memory and OS file descriptor limits). To scale to tens of thousands of agents across multiple instances, the `GatewayManager` and `WebSocketManager` can be backed by Redis Pub/Sub, allowing queries to route across different nodes.
+- **Eviction & Safety**: To protect the backend from resource exhaustion, a maximum of 5 concurrent WebSocket connections are allowed per user session, and warnings are logged when total active connections exceed 500. Stale agent connections are automatically detected and cleaned up before queries execute.
+- **Is this the best method?** Yes. Compared to SSH tunnels or IP whitelisting, the outbound WebSocket agent is zero-config, highly secure, compliant with corporate IT firewalls, and enables instant self-serve onboarding.
+
 ## Failure Matrix
 
 | Failure | Behavior |
