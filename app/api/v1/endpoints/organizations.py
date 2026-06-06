@@ -1,20 +1,17 @@
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends
-from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
-
 from app.api.v1.dependencies.tenancy import bind_tenant_context
 from app.core.database.models import Organization
 from app.core.database.session import get_db
 from app.core.exceptions import Forbidden, NotFound
 from app.core.security.auth import CurrentUser
 from app.schemas.organization import OrgRead, OrgUpdate
-
-from pydantic import BaseModel
 from app.schemas.user import InviteRequest, InviteResponse
 from app.services import invitation_service
-from fastapi import status
+from fastapi import APIRouter, Depends, status
+from pydantic import BaseModel
+from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
 
 router = APIRouter(prefix="/organizations", tags=["organizations"])
 
@@ -37,24 +34,29 @@ async def complete_onboarding(
         await db.execute(select(Organization).where(Organization.id == current.org_id))
     ).scalar_one()
     org.name = data.organizationName
-    
+
     # Commit changes
     await db.commit()
     await db.refresh(org)
-    
+
     # Send welcome email asynchronously (fire-and-forget)
     try:
-        from app.utils.email import send_email_async
         import asyncio
+
+        from app.core.config import get_settings
+        from app.utils.email import send_email_async
+
+        s = get_settings()
+        dashboard_url = f"{s.APP_BASE_URL.rstrip('/')}/dashboard"
         asyncio.create_task(
             send_email_async(
                 to=current.email,
                 subject=f"🎉 Welcome to Repnex — {org.name} is all set!",
                 body_text=f"Hi {current.email.split('@')[0].capitalize()},\n\n"
-                          f"Your organization '{org.name}' has been set up on Repnex.\n"
-                          f"You can now connect your databases and start asking questions.\n\n"
-                          f"Get started: https://repnex.ai/dashboard\n\n"
-                          f"— The Repnex Team",
+                f"Your organization '{org.name}' has been set up on Repnex.\n"
+                f"You can now connect your databases and start asking questions.\n\n"
+                f"Get started: {dashboard_url}\n\n"
+                f"— The Repnex Team",
                 body_html=f"""
                 <div style="font-family:'Segoe UI',sans-serif;max-width:520px;margin:40px auto;
                             background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.08);overflow:hidden;">
@@ -74,7 +76,7 @@ async def complete_onboarding(
                       <li>Generate instant reports & dashboards</li>
                     </ul>
                     <div style="text-align:center;margin:28px 0;">
-                      <a href="https://repnex.ai/dashboard"
+                      <a href="{dashboard_url}"
                          style="display:inline-block;background:linear-gradient(135deg,#2563eb,#1d4ed8);
                                 color:#fff;text-decoration:none;padding:14px 36px;border-radius:12px;
                                 font-size:15px;font-weight:600;">
@@ -89,7 +91,7 @@ async def complete_onboarding(
         )
     except Exception:
         pass  # Non-critical — don't fail onboarding if email fails
-    
+
     # 2. Build session user
     email_name = current.email.split("@")[0].capitalize()
     user_data = {
@@ -104,7 +106,7 @@ async def complete_onboarding(
         "organizationName": org.name,
         "onboardingCompleted": True,
     }
-    
+
     org_data = {
         "id": str(org.id),
         "name": org.name,
@@ -112,7 +114,7 @@ async def complete_onboarding(
         "erpSystem": data.erpSystem,
         "teamSize": data.teamSize,
     }
-    
+
     return {
         "user": user_data,
         "organization": org_data,
@@ -165,4 +167,3 @@ async def update_my_org(
     await db.commit()
     await db.refresh(org)
     return OrgRead.model_validate(org)
-

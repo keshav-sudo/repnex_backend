@@ -3,9 +3,6 @@ from __future__ import annotations
 import time
 import uuid
 
-from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
-
 from app.core.database.models import Report, ReportColumn
 from app.core.exceptions import Forbidden, NotFound
 from app.core.security.auth import CurrentUser
@@ -21,22 +18,26 @@ from app.schemas.report import (
     RunReportResponse,
 )
 from app.services import connection_service
+from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
 
 
 async def list_reports(db: AsyncSession, current: CurrentUser) -> list[ReportRead]:
     rows = (
-        await db.execute(
-            select(Report).where(Report.org_id == current.org_id).order_by(
-                Report.created_at.desc()
+        (
+            await db.execute(
+                select(Report)
+                .where(Report.org_id == current.org_id)
+                .order_by(Report.created_at.desc())
             )
         )
-    ).scalars().all()
+        .scalars()
+        .all()
+    )
     return [ReportRead.model_validate(r) for r in rows]
 
 
-async def get_report(
-    db: AsyncSession, current: CurrentUser, report_id: uuid.UUID
-) -> Report:
+async def get_report(db: AsyncSession, current: CurrentUser, report_id: uuid.UUID) -> Report:
     r = (
         await db.execute(
             select(Report).where(Report.id == report_id, Report.org_id == current.org_id)
@@ -47,9 +48,7 @@ async def get_report(
     return r
 
 
-async def create_report(
-    db: AsyncSession, current: CurrentUser, data: ReportCreate
-) -> ReportRead:
+async def create_report(db: AsyncSession, current: CurrentUser, data: ReportCreate) -> ReportRead:
     if current.role == "viewer":
         raise Forbidden("Viewers cannot create reports")
 
@@ -60,6 +59,7 @@ async def create_report(
         registry.get(data.query_template_id)
     else:
         from app.core.logging import get_logger as _gl
+
         _gl(__name__).info(
             "report_template_not_in_registry",
             extra={"template_id": data.query_template_id},
@@ -114,9 +114,7 @@ async def update_report(
     return ReportRead.model_validate(r)
 
 
-async def delete_report(
-    db: AsyncSession, current: CurrentUser, report_id: uuid.UUID
-) -> None:
+async def delete_report(db: AsyncSession, current: CurrentUser, report_id: uuid.UUID) -> None:
     if current.role != "admin":
         raise Forbidden("Only admins can delete reports")
     r = await get_report(db, current, report_id)
@@ -132,7 +130,22 @@ async def run_report(
 ) -> RunReportResponse:
     r = await get_report(db, current, report_id)
     conn = await connection_service.get_connection(db, current, data.connection_id)
-    template = get_template_registry().get(r.query_template_id)
+    registry = get_template_registry()
+    if registry.has(r.query_template_id):
+        template = registry.get(r.query_template_id)
+    else:
+        from app.core.pinecone_client import get_pinecone_store_optional
+        from app.query_engine.template_loader import create_template_from_pinecone
+
+        store = get_pinecone_store_optional()
+        template = None
+        if store:
+            meta = store.get_template_by_id(r.query_template_id)
+            if meta:
+                template = create_template_from_pinecone(meta)
+
+        if not template:
+            raise NotFound(f"Template not found: {r.query_template_id}")
     merged = {**r.parameters, **data.overrides}
     bound = bind(template, merged, db_type=conn.db_type.value)
 

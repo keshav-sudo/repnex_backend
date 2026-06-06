@@ -1,13 +1,13 @@
 """Pinecone vector-store client for SQL template retrieval (RAG)."""
+
 from __future__ import annotations
 
 import json
 from typing import Any
 
-from pinecone import Pinecone
-
 from app.core.config import get_settings
 from app.core.logging import get_logger
+from pinecone import Pinecone
 
 log = get_logger(__name__)
 
@@ -88,6 +88,40 @@ class PineconeTemplateStore:
                 }
             )
         return templates
+
+    def get_template_by_id(self, template_id: str) -> dict[str, Any] | None:
+        """Fetch a specific template by ID from the index namespace."""
+        try:
+            res = self._index.fetch(ids=[template_id], namespace=self._namespace)
+            vectors = res.get("vectors", {})
+            if template_id not in vectors:
+                return None
+            vector_data = vectors[template_id]
+            meta = vector_data.get("metadata", {})
+            params = meta.get("params", "{}")
+            if isinstance(params, str):
+                try:
+                    params = json.loads(params)
+                except json.JSONDecodeError:
+                    params = {}
+            result_columns = meta.get("result_columns", "[]")
+            if isinstance(result_columns, str):
+                try:
+                    result_columns = json.loads(result_columns)
+                except json.JSONDecodeError:
+                    result_columns = []
+            return {
+                "id": template_id,
+                "description": meta.get("description", ""),
+                "module": meta.get("module", ""),
+                "category": meta.get("category", ""),
+                "sql": meta.get("sql", ""),
+                "params": params,
+                "result_columns": result_columns,
+            }
+        except Exception as e:
+            log.warning("pinecone_fetch_failed", extra={"template_id": template_id, "err": str(e)})
+            return None
 
     # ── upsert (for ingestion) ───────────────────────────────────────
     def upsert_batch(

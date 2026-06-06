@@ -16,7 +16,9 @@ def _send_smtp(*, to: str, subject: str, body_text: str, body_html: str | None =
     """Synchronous SMTP send — run inside executor to avoid blocking event loop."""
     s = get_settings()
     if s.EMAIL_PROVIDER == "console" or not s.SMTP_HOST:
-        log.info("email_sent_console", extra={"to": to, "subject": subject, "body": body_text[:200]})
+        log.info(
+            "email_sent_console", extra={"to": to, "subject": subject, "body": body_text[:200]}
+        )
         return
 
     if body_html:
@@ -33,12 +35,25 @@ def _send_smtp(*, to: str, subject: str, body_text: str, body_html: str | None =
         msg["Subject"] = subject
         msg.set_content(body_text)
 
-    with smtplib.SMTP(s.SMTP_HOST, s.SMTP_PORT) as smtp:
-        smtp.starttls()
-        if s.SMTP_USER:
-            smtp.login(s.SMTP_USER, s.SMTP_PASSWORD)
-        smtp.send_message(msg)
-    log.info("email_sent_smtp", extra={"to": to, "subject": subject})
+    try:
+        if s.SMTP_PORT == 465:
+            with smtplib.SMTP_SSL(s.SMTP_HOST, s.SMTP_PORT) as smtp:
+                if s.SMTP_USER:
+                    smtp.login(s.SMTP_USER, s.SMTP_PASSWORD)
+                smtp.send_message(msg)
+        else:
+            with smtplib.SMTP(s.SMTP_HOST, s.SMTP_PORT) as smtp:
+                try:
+                    smtp.starttls()
+                except Exception:
+                    pass
+                if s.SMTP_USER:
+                    smtp.login(s.SMTP_USER, s.SMTP_PASSWORD)
+                smtp.send_message(msg)
+        log.info("email_sent_smtp", extra={"to": to, "subject": subject})
+    except Exception as e:
+        log.error("email_smtp_connection_failed", extra={"to": to, "err": str(e)})
+        raise
 
 
 def send_email(*, to: str, subject: str, body: str) -> None:
@@ -46,12 +61,15 @@ def send_email(*, to: str, subject: str, body: str) -> None:
     _send_smtp(to=to, subject=subject, body_text=body)
 
 
-async def send_email_async(*, to: str, subject: str, body_text: str, body_html: str | None = None) -> None:
+async def send_email_async(
+    *, to: str, subject: str, body_text: str, body_html: str | None = None
+) -> None:
     """Non-blocking email send via thread executor."""
     loop = asyncio.get_running_loop()
     try:
         await loop.run_in_executor(
-            None, lambda: _send_smtp(to=to, subject=subject, body_text=body_text, body_html=body_html)
+            None,
+            lambda: _send_smtp(to=to, subject=subject, body_text=body_text, body_html=body_html),
         )
     except Exception as e:
         log.error("email_send_failed", extra={"to": to, "error": str(e)})
@@ -116,4 +134,9 @@ def send_invite_email(*, to: str, accept_url: str, org_name: str) -> None:
     </body>
     </html>
     """
-    _send_smtp(to=to, subject=f"🎉 You're invited to join {org_name} on Repnex", body_text=body_text, body_html=body_html)
+    _send_smtp(
+        to=to,
+        subject=f"🎉 You're invited to join {org_name} on Repnex",
+        body_text=body_text,
+        body_html=body_html,
+    )

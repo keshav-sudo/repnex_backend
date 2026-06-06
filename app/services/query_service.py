@@ -1,13 +1,12 @@
 """Query service — orchestrates intent classification, RAG retrieval, and execution."""
+
 from __future__ import annotations
 
 import asyncio
 import time
 import uuid
-from collections.abc import AsyncIterator, Awaitable, Callable
+from collections.abc import Awaitable, Callable
 from typing import Any
-
-from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import get_settings
 from app.core.database.models import (
@@ -17,9 +16,8 @@ from app.core.database.models import (
     QueryHistory,
 )
 from app.core.exceptions import (
-    AppError,
+    Forbidden,
     LLMError,
-    NotFound,
     TargetDBError,
     ValidationFailed,
 )
@@ -44,11 +42,11 @@ from app.schemas.query import (
     ChatResponse,
     ExecuteRequest,
     IntentResult,
-    MissingParam,
     RunQueryResponse,
     TemplateMatch,
 )
 from app.services import connection_service, session_service
+from sqlalchemy.ext.asyncio import AsyncSession
 
 log = get_logger(__name__)
 
@@ -56,6 +54,7 @@ log = get_logger(__name__)
 # ═══════════════════════════════════════════════════════════════════════
 # NEW: Unified chat endpoint
 # ═══════════════════════════════════════════════════════════════════════
+
 
 async def chat(
     db: AsyncSession,
@@ -333,10 +332,19 @@ async def chat(
     except TargetDBError as e:
         if session:
             try:
-                await session_service.append_turn(db, session, role="assistant", content=f"Database error: {e.message}")
+                await session_service.append_turn(
+                    db, session, role="assistant", content=f"Database error: {e.message}"
+                )
                 await _record_history(
-                    db, session, conn, current, nl, intent, bound.sql,
-                    ExecutionStatus.error, error_message=e.message
+                    db,
+                    session,
+                    conn,
+                    current,
+                    nl,
+                    intent,
+                    bound.sql,
+                    ExecutionStatus.error,
+                    error_message=e.message,
                 )
             except Exception as ex:
                 log.warning("record_history_failed_error", extra={"err": str(ex)})
@@ -361,7 +369,9 @@ async def chat(
             description=template.description,
             user_name=user_name,
         )
-        results_parallel = await asyncio.gather(insight_task, suggestions_task, return_exceptions=True)
+        results_parallel = await asyncio.gather(
+            insight_task, suggestions_task, return_exceptions=True
+        )
         if not isinstance(results_parallel[0], Exception):
             summary = results_parallel[0]
         else:
@@ -400,7 +410,13 @@ async def chat(
                 extracted_params=intent.params,
             )
             await _record_history(
-                db, session, conn, current, nl, intent, bound.sql,
+                db,
+                session,
+                conn,
+                current,
+                nl,
+                intent,
+                bound.sql,
                 ExecutionStatus.success,
                 execution_time_ms=result.execution_time_ms,
                 rows_returned=result.rows_returned,
@@ -430,6 +446,7 @@ async def chat(
 # NEW: Direct execute with explicit params
 # ═══════════════════════════════════════════════════════════════════════
 
+
 async def execute_with_params(
     db: AsyncSession,
     current: CurrentUser,
@@ -449,15 +466,11 @@ async def execute_with_params(
 
     # Try Pinecone first for the template
     template = None
-    template_meta = None
     if store:
         try:
-            results = store.search_templates(data.template_id, top_k=1)
-            for r in results:
-                if r["id"] == data.template_id:
-                    template = create_template_from_pinecone(r)
-                    template_meta = r
-                    break
+            meta = store.get_template_by_id(data.template_id)
+            if meta:
+                template = create_template_from_pinecone(meta)
         except Exception:
             pass
 
@@ -471,7 +484,9 @@ async def execute_with_params(
     db_type = conn.db_type.value
 
     # Reconstruct parameter summary for user log
-    nl_repr = f"Execute report '{template.description || template.id}' with parameters: {data.params}"
+    nl_repr = (
+        f"Execute report '{template.description or template.id}' with parameters: {data.params}"
+    )
     if session:
         try:
             await session_service.append_turn(db, session, role="user", content=nl_repr)
@@ -504,12 +519,19 @@ async def execute_with_params(
                     params=data.params,
                     missing_params=[],
                     confidence=1.0,
-                    rationale="Executed via parameters"
+                    rationale="Executed via parameters",
                 )
                 await session_service.append_turn(db, session, role="assistant", content=err_msg)
                 await _record_history(
-                    db, session, conn, current, nl_repr, intent_obj, bound.sql,
-                    ExecutionStatus.error, error_message=e.message
+                    db,
+                    session,
+                    conn,
+                    current,
+                    nl_repr,
+                    intent_obj,
+                    bound.sql,
+                    ExecutionStatus.error,
+                    error_message=e.message,
                 )
             except Exception as ex:
                 log.warning("record_history_failed_error_execute", extra={"err": str(ex)})
@@ -518,9 +540,7 @@ async def execute_with_params(
     summary: str | None = None
     try:
         intent_dict = {"template_id": template.id, "params": data.params}
-        summary = await generate_insight(
-            intent=intent_dict, rows=result.rows, user_name=None
-        )
+        summary = await generate_insight(intent=intent_dict, rows=result.rows, user_name=None)
     except LLMError:
         pass
 
@@ -543,7 +563,7 @@ async def execute_with_params(
                 params=data.params,
                 missing_params=[],
                 confidence=1.0,
-                rationale="Executed via parameters"
+                rationale="Executed via parameters",
             )
             await session_service.append_turn(
                 db,
@@ -560,7 +580,13 @@ async def execute_with_params(
                 extracted_params=data.params,
             )
             await _record_history(
-                db, session, conn, current, nl_repr, intent_obj, bound.sql,
+                db,
+                session,
+                conn,
+                current,
+                nl_repr,
+                intent_obj,
+                bound.sql,
                 ExecutionStatus.success,
                 execution_time_ms=result.execution_time_ms,
                 rows_returned=result.rows_returned,
@@ -588,6 +614,7 @@ async def execute_with_params(
 # LEGACY: Original REST endpoint (kept for backward compat)
 # ═══════════════════════════════════════════════════════════════════════
 
+
 async def run_via_rest(
     db: AsyncSession,
     current: CurrentUser,
@@ -606,13 +633,26 @@ async def run_via_rest(
         result = await execute_collect(conn, bound)
     except TargetDBError as e:
         await _record_history(
-            db, session, conn, current, natural_language, intent, bound.sql,
-            ExecutionStatus.error, error_message=e.message
+            db,
+            session,
+            conn,
+            current,
+            natural_language,
+            intent,
+            bound.sql,
+            ExecutionStatus.error,
+            error_message=e.message,
         )
         raise
 
     history = await _record_history(
-        db, session, conn, current, natural_language, intent, bound.sql,
+        db,
+        session,
+        conn,
+        current,
+        natural_language,
+        intent,
+        bound.sql,
         ExecutionStatus.success,
         execution_time_ms=result.execution_time_ms,
         rows_returned=result.rows_returned,
@@ -676,14 +716,27 @@ async def run_streaming(
             await on_event({"type": "data", "batch": batch_no, "rows": batch})
     except TargetDBError as e:
         await _record_history(
-            db, session, conn, current, natural_language, intent, bound.sql,
-            ExecutionStatus.error, error_message=e.message
+            db,
+            session,
+            conn,
+            current,
+            natural_language,
+            intent,
+            bound.sql,
+            ExecutionStatus.error,
+            error_message=e.message,
         )
         raise
 
     exec_ms = int((time.perf_counter() - started) * 1000)
     history = await _record_history(
-        db, session, conn, current, natural_language, intent, bound.sql,
+        db,
+        session,
+        conn,
+        current,
+        natural_language,
+        intent,
+        bound.sql,
         ExecutionStatus.success,
         execution_time_ms=exec_ms,
         rows_returned=rows_returned,
@@ -707,6 +760,7 @@ async def run_streaming(
 
 # ── private helpers ──────────────────────────────────────────────────
 
+
 async def _intent(natural_language: str, ctx: list) -> IntentResult:
     s = get_settings()
 
@@ -728,9 +782,7 @@ async def _intent(natural_language: str, ctx: list) -> IntentResult:
 
     # Fall back to static catalog
     catalog = get_template_registry().list_for_llm()
-    intent = await extract_intent(
-        natural_language, template_candidates=catalog, context_window=ctx
-    )
+    intent = await extract_intent(natural_language, template_candidates=catalog, context_window=ctx)
     if not intent.template_id or intent.confidence < s.INTENT_MIN_CONFIDENCE:
         raise ValidationFailed(
             "Could not match a query template with sufficient confidence",
