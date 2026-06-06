@@ -116,10 +116,13 @@ async def delete(
 
 
 async def append_turn(
-    db: AsyncSession, session: GISession, *, role: str, content: str
+    db: AsyncSession, session: GISession, *, role: str, content: str, **kwargs
 ) -> None:
     cw = list(session.context_window or [])
-    cw.append({"role": role, "content": content})
+    turn = {"role": role, "content": content}
+    if kwargs:
+        turn.update(kwargs)
+    cw.append(turn)
     if len(cw) > MAX_CONTEXT_TURNS:
         cw = cw[-MAX_CONTEXT_TURNS:]
     session.context_window = cw

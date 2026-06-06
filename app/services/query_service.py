@@ -287,7 +287,17 @@ async def chat(
 
         if session:
             try:
-                await session_service.append_turn(db, session, role="assistant", content=msg)
+                await session_service.append_turn(
+                    db,
+                    session,
+                    role="assistant",
+                    content=msg,
+                    type="template_preview",
+                    template_id=template.id,
+                    template_description=template.description,
+                    extracted_params=intent.params,
+                    sql=sql_preview,
+                )
             except Exception as e:
                 log.warning("session_append_assistant_preview_failed", extra={"err": str(e)})
 
@@ -375,7 +385,20 @@ async def chat(
     msg = summary or f"Query executed successfully. Found {result.rows_returned} rows."
     if session:
         try:
-            await session_service.append_turn(db, session, role="assistant", content=msg)
+            await session_service.append_turn(
+                db,
+                session,
+                role="assistant",
+                content=msg,
+                type="executable",
+                sql=bound.sql,
+                rows=result.rows,
+                rows_returned=result.rows_returned,
+                execution_time_ms=result.execution_time_ms,
+                template_id=template.id,
+                template_description=template.description,
+                extracted_params=intent.params,
+            )
             await _record_history(
                 db, session, conn, current, nl, intent, bound.sql,
                 ExecutionStatus.success,
@@ -417,6 +440,13 @@ async def execute_with_params(
     registry = get_template_registry()
     store = get_pinecone_store_optional()
 
+    # Load session if provided
+    session = None
+    if data.session_id:
+        session = await session_service.get(db, current, data.session_id)
+        if session.org_id != current.org_id:
+            raise Forbidden("Session does not belong to your organization")
+
     # Try Pinecone first for the template
     template = None
     template_meta = None
@@ -440,19 +470,50 @@ async def execute_with_params(
     conn = await connection_service.get_connection(db, current, data.connection_id)
     db_type = conn.db_type.value
 
+    # Reconstruct parameter summary for user log
+    nl_repr = f"Execute report '{template.description || template.id}' with parameters: {data.params}"
+    if session:
+        try:
+            await session_service.append_turn(db, session, role="user", content=nl_repr)
+        except Exception as e:
+            log.warning("session_append_user_execute_failed", extra={"err": str(e)})
+
     try:
         bound = bind(template, data.params, db_type=db_type)
     except ValidationFailed as e:
+        err_msg = f"Parameter error: {e.message}"
+        if session:
+            try:
+                await session_service.append_turn(db, session, role="assistant", content=err_msg)
+            except Exception as ex:
+                log.warning("session_append_param_error_failed", extra={"err": str(ex)})
         return ChatResponse(
             type="error",
-            message=f"Parameter error: {e.message}",
+            message=err_msg,
             template_id=template.id,
         )
 
     try:
         result = await execute_collect(conn, bound)
     except TargetDBError as e:
-        return ChatResponse(type="error", message=f"Database error: {e.message}", sql=bound.sql)
+        err_msg = f"Database error: {e.message}"
+        if session:
+            try:
+                intent_obj = IntentResult(
+                    template_id=template.id,
+                    params=data.params,
+                    missing_params=[],
+                    confidence=1.0,
+                    rationale="Executed via parameters"
+                )
+                await session_service.append_turn(db, session, role="assistant", content=err_msg)
+                await _record_history(
+                    db, session, conn, current, nl_repr, intent_obj, bound.sql,
+                    ExecutionStatus.error, error_message=e.message
+                )
+            except Exception as ex:
+                log.warning("record_history_failed_error_execute", extra={"err": str(ex)})
+        return ChatResponse(type="error", message=err_msg, sql=bound.sql)
 
     summary: str | None = None
     try:
@@ -474,9 +535,42 @@ async def execute_with_params(
     except Exception:
         suggestions = []
 
+    msg = summary or f"Executed. {result.rows_returned} rows returned."
+    if session:
+        try:
+            intent_obj = IntentResult(
+                template_id=template.id,
+                params=data.params,
+                missing_params=[],
+                confidence=1.0,
+                rationale="Executed via parameters"
+            )
+            await session_service.append_turn(
+                db,
+                session,
+                role="assistant",
+                content=msg,
+                type="executable",
+                sql=bound.sql,
+                rows=result.rows,
+                rows_returned=result.rows_returned,
+                execution_time_ms=result.execution_time_ms,
+                template_id=template.id,
+                template_description=template.description,
+                extracted_params=data.params,
+            )
+            await _record_history(
+                db, session, conn, current, nl_repr, intent_obj, bound.sql,
+                ExecutionStatus.success,
+                execution_time_ms=result.execution_time_ms,
+                rows_returned=result.rows_returned,
+            )
+        except Exception as e:
+            log.warning("record_history_success_execute_failed", extra={"err": str(e)})
+
     return ChatResponse(
         type="executable",
-        message=summary or f"Executed. {result.rows_returned} rows returned.",
+        message=msg,
         template_id=template.id,
         template_description=template.description,
         template_module=template.module,
