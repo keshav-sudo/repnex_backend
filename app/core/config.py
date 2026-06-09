@@ -83,7 +83,7 @@ class Settings(BaseSettings):
     SMTP_USER: str = "helicalconsulting@gmail.com"
     SMTP_PASSWORD: str = "cishyizfyoqehjhk"
     SMTP_FROM: str = "helicalconsulting@gmail.com"
-    APP_BASE_URL: str = "http://localhost:3000"
+    APP_BASE_URL: str = "http://localhost:5173"
 
     @field_validator("CORS_ORIGINS")
     @classmethod
