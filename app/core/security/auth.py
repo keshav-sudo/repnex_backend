@@ -10,7 +10,7 @@ from jose import JWTError, jwt
 from app.core.config import get_settings
 from app.core.exceptions import Unauthorized
 
-TokenType = Literal["access", "refresh", "invite"]
+TokenType = Literal["access", "refresh", "invite", "reset"]
 
 
 @dataclass(frozen=True, slots=True)
@@ -58,6 +58,14 @@ def create_invite_token(*, user_id: uuid.UUID, org_id: uuid.UUID) -> str:
     return _encode(
         {"sub": str(user_id), "org": str(org_id), "type": "invite"},
         timedelta(hours=s.INVITE_TTL_HOURS),
+    )
+
+
+def create_reset_token(*, user_id: uuid.UUID, org_id: uuid.UUID, email: str) -> str:
+    s = get_settings()
+    return _encode(
+        {"sub": str(user_id), "org": str(org_id), "email": email, "type": "reset"},
+        timedelta(minutes=s.PASSWORD_RESET_TTL_MIN),
     )
 
 

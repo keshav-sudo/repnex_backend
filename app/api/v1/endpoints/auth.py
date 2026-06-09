@@ -9,8 +9,11 @@ from app.core.database.session import get_db
 from app.schemas.auth import (
     AcceptInviteRequest,
     AuthResponse,
+    ForgotPasswordRequest,
+    InvitePreview,
     LoginRequest,
     RefreshRequest,
+    ResetPasswordRequest,
     SignupRequest,
     TokenPair,
     UserPublic,
@@ -57,6 +60,20 @@ async def login(data: LoginRequest, db: AsyncSession = Depends(get_db)) -> AuthR
     return await auth_service.login(db, data)
 
 
+@router.post("/forgot-password", status_code=status.HTTP_200_OK)
+async def forgot_password(
+    data: ForgotPasswordRequest, db: AsyncSession = Depends(get_db)
+) -> dict:
+    return await auth_service.forgot_password(db, data.email)
+
+
+@router.post("/reset-password", status_code=status.HTTP_200_OK)
+async def reset_password(
+    data: ResetPasswordRequest, db: AsyncSession = Depends(get_db)
+) -> dict:
+    return await auth_service.reset_password(db, data.token, data.password)
+
+
 @router.post("/refresh", response_model=TokenPair)
 async def refresh(data: RefreshRequest, db: AsyncSession = Depends(get_db)) -> TokenPair:
     return await auth_service.refresh(db, data.refresh_token)
@@ -73,3 +90,8 @@ async def accept_invite(
     data: AcceptInviteRequest, db: AsyncSession = Depends(get_db)
 ) -> AuthResponse:
     return await invitation_service.accept(db, data)
+
+
+@router.get("/invite", response_model=InvitePreview)
+async def invite_preview(token: str, db: AsyncSession = Depends(get_db)) -> InvitePreview:
+    return await invitation_service.preview(db, token)

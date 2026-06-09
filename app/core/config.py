@@ -38,6 +38,7 @@ class Settings(BaseSettings):
     JWT_ACCESS_TTL_MIN: int = 480    # 8 hours — full work day without re-login
     JWT_REFRESH_TTL_DAYS: int = 30   # 30 days — monthly rolling refresh
     INVITE_TTL_HOURS: int = 24
+    PASSWORD_RESET_TTL_MIN: int = 30
 
     # Encryption
     FERNET_KEY: str
@@ -76,12 +77,12 @@ class Settings(BaseSettings):
     MSSQL_POOL_WORKERS: int = 32
 
     # Email
-    EMAIL_PROVIDER: Literal["console", "smtp"] = "console"
-    SMTP_HOST: str = ""
+    EMAIL_PROVIDER: Literal["console", "smtp"] = "smtp"
+    SMTP_HOST: str = "smtp.gmail.com"
     SMTP_PORT: int = 587
-    SMTP_USER: str = ""
-    SMTP_PASSWORD: str = ""
-    SMTP_FROM: str = "no-reply@repnex.local"
+    SMTP_USER: str = "helicalconsulting@gmail.com"
+    SMTP_PASSWORD: str = "cishyizfyoqehjhk"
+    SMTP_FROM: str = "helicalconsulting@gmail.com"
     APP_BASE_URL: str = "http://localhost:3000"
 
     @field_validator("CORS_ORIGINS")

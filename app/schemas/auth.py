@@ -3,9 +3,19 @@ from __future__ import annotations
 import uuid
 from typing import Annotated
 
-from pydantic import BaseModel, EmailStr, Field, AliasChoices
+from pydantic import AliasChoices, BaseModel, EmailStr, Field, field_validator
 
 from app.schemas.common import ORMBase
+
+
+def _validate_password_complexity(password: str) -> str:
+    if not any(ch.isupper() for ch in password):
+        raise ValueError("Password must include at least one uppercase letter")
+    if not any(ch.islower() for ch in password):
+        raise ValueError("Password must include at least one lowercase letter")
+    if not any(ch.isdigit() for ch in password):
+        raise ValueError("Password must include at least one number")
+    return password
 
 
 class SignupRequest(BaseModel):
@@ -20,10 +30,29 @@ class SignupRequest(BaseModel):
         ),
     ] = ""
 
+    @field_validator("password")
+    @classmethod
+    def password_complexity(cls, value: str) -> str:
+        return _validate_password_complexity(value)
+
 
 class LoginRequest(BaseModel):
     email: EmailStr
     password: Annotated[str, Field(min_length=1, max_length=128)]
+
+
+class ForgotPasswordRequest(BaseModel):
+    email: EmailStr
+
+
+class ResetPasswordRequest(BaseModel):
+    token: str
+    password: Annotated[str, Field(min_length=8, max_length=128)]
+
+    @field_validator("password")
+    @classmethod
+    def password_complexity(cls, value: str) -> str:
+        return _validate_password_complexity(value)
 
 
 class RefreshRequest(BaseModel):
@@ -33,6 +62,18 @@ class RefreshRequest(BaseModel):
 class AcceptInviteRequest(BaseModel):
     token: str
     password: Annotated[str, Field(min_length=8, max_length=128)]
+
+    @field_validator("password")
+    @classmethod
+    def password_complexity(cls, value: str) -> str:
+        return _validate_password_complexity(value)
+
+
+class InvitePreview(BaseModel):
+    email: EmailStr
+    organization_name: str
+    role: str
+    status: str
 
 
 class TokenPair(BaseModel):
