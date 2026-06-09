@@ -27,6 +27,9 @@ from app.schemas.auth import (
 )
 from app.schemas.user import InviteRequest, InviteResponse
 from app.utils.email import send_email_async, send_invite_email
+from app.core.logging import get_logger
+
+log = get_logger(__name__)
 
 
 async def invite(
@@ -181,8 +184,8 @@ async def _send_invite_async(*, to: str, accept_url: str, org_name: str) -> None
             body_text=body_text,
             body_html=body_html,
         )
-    except Exception:
-        pass  # Non-critical — invitation record is already created
+    except Exception as e:
+        log.exception("invite_email_send_failed", extra={"to": to, "error": str(e)})
 
 
 async def accept(db: AsyncSession, data: AcceptInviteRequest) -> AuthResponse:
@@ -271,8 +274,8 @@ async def accept(db: AsyncSession, data: AcceptInviteRequest) -> AuthResponse:
             ),
             name=f"welcome_email_{user.id}",
         )
-    except Exception:
-        pass  # Non-critical
+    except Exception as e:
+        log.exception("welcome_email_send_failed", extra={"to": user.email, "error": str(e)})
 
     return AuthResponse(
         tokens=TokenPair(access_token=access, refresh_token=refresh_t),
