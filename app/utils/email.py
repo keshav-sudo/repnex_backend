@@ -140,3 +140,19 @@ def send_invite_email(*, to: str, accept_url: str, org_name: str) -> None:
         body_text=body_text,
         body_html=body_html,
     )
+
+
+_running_tasks: set[asyncio.Task] = set()
+
+
+def fire_and_forget(coro) -> None:
+    """Safely spawn a background task keeping a strong reference to prevent GC."""
+    try:
+        loop = asyncio.get_running_loop()
+        task = loop.create_task(coro)
+        _running_tasks.add(task)
+        task.add_done_callback(_running_tasks.discard)
+    except RuntimeError:
+        # Fallback if no running loop (e.g. testing)
+        asyncio.run(coro)
+

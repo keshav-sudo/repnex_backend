@@ -17,8 +17,10 @@ from app.schemas.auth import (
     SignupRequest,
     TokenPair,
     UserPublic,
+    SendOtpRequest,
 )
 from app.services import auth_service, invitation_service
+
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -58,6 +60,14 @@ async def get_session(
 @router.post("/login", response_model=AuthResponse)
 async def login(data: LoginRequest, db: AsyncSession = Depends(get_db)) -> AuthResponse:
     return await auth_service.login(db, data)
+
+
+@router.post("/send-otp", status_code=status.HTTP_200_OK)
+async def send_otp(
+    data: SendOtpRequest, db: AsyncSession = Depends(get_db)
+) -> dict:
+    return await auth_service.send_otp(db, data.email)
+
 
 
 @router.post("/forgot-password", status_code=status.HTTP_200_OK)

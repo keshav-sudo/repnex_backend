@@ -29,11 +29,17 @@ class SignupRequest(BaseModel):
             validation_alias=AliasChoices("org_name", "company"),
         ),
     ] = ""
+    otp: str
 
     @field_validator("password")
     @classmethod
     def password_complexity(cls, value: str) -> str:
         return _validate_password_complexity(value)
+
+
+class SendOtpRequest(BaseModel):
+    email: EmailStr
+
 
 
 class LoginRequest(BaseModel):

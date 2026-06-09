@@ -26,7 +26,7 @@ from app.schemas.auth import (
     UserPublic,
 )
 from app.schemas.user import InviteRequest, InviteResponse
-from app.utils.email import send_email_async, send_invite_email
+from app.utils.email import send_email_async, send_invite_email, fire_and_forget
 from app.core.logging import get_logger
 
 log = get_logger(__name__)
@@ -84,15 +84,9 @@ async def invite(
     settings = get_settings()
     accept_url = f"{settings.APP_BASE_URL}/accept-invite?token={token}"
 
-    # Fire-and-forget async email — does NOT block the API response
-    try:
-        asyncio.create_task(
-            _send_invite_async(to=user.email, accept_url=accept_url, org_name=org.name),
-            name=f"invite_email_{user.id}",
-        )
-    except RuntimeError:
-        # Fallback: if no running event loop (tests/cli)
-        send_invite_email(to=user.email, accept_url=accept_url, org_name=org.name)
+    fire_and_forget(
+        _send_invite_async(to=user.email, accept_url=accept_url, org_name=org.name)
+    )
 
     return InviteResponse(user_id=user.id, status=user.status.value)
 
@@ -232,50 +226,43 @@ async def accept(db: AsyncSession, data: AcceptInviteRequest) -> AuthResponse:
         onboardingCompleted=True,  # Invited users join existing org — no extra onboarding
     )
 
-    # Send a welcome email async (fire-and-forget)
-    try:
-        settings = get_settings()
-        dashboard_url = f"{settings.APP_BASE_URL.rstrip('/')}/dashboard"
-        asyncio.create_task(
-            send_email_async(
-                to=user.email,
-                subject=f"✅ You're now a member of {org.name} on Repnex",
-                body_text=(
-                    f"Hi {email_name},\n\n"
-                    f"Your account on Repnex has been activated. You are now a member of {org.name}.\n\n"
-                    f"Get started: {dashboard_url}\n\n"
-                    f"— The Repnex Team"
-                ),
-                body_html=f"""
-                <div style="font-family:'Segoe UI',sans-serif;max-width:520px;margin:40px auto;
-                            background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.08);overflow:hidden;">
-                  <div style="background:linear-gradient(135deg,#2563eb,#3b82f6);padding:32px 24px;text-align:center;">
-                    <h1 style="margin:0;color:#fff;font-size:22px;">Welcome to Repnex! ✅</h1>
-                  </div>
-                  <div style="padding:32px 24px;">
-                    <p style="color:#374151;font-size:15px;line-height:1.6;">
-                      Hi <strong>{email_name}</strong>,
-                    </p>
-                    <p style="color:#6b7280;font-size:14px;line-height:1.6;">
-                      Your account has been activated and you are now a member of
-                      <strong>{org.name}</strong> on Repnex.
-                    </p>
-                    <div style="text-align:center;margin:28px 0;">
-                      <a href="{dashboard_url}"
-                         style="display:inline-block;background:linear-gradient(135deg,#2563eb,#1d4ed8);
-                                color:#fff;text-decoration:none;padding:14px 36px;border-radius:12px;
-                                font-size:15px;font-weight:600;">
-                        Go to Dashboard →
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                """,
+    fire_and_forget(
+        send_email_async(
+            to=user.email,
+            subject=f"✅ You're now a member of {org.name} on Repnex",
+            body_text=(
+                f"Hi {email_name},\n\n"
+                f"Your account on Repnex has been activated. You are now a member of {org.name}.\n\n"
+                f"Get started: {dashboard_url}\n\n"
+                f"— The Repnex Team"
             ),
-            name=f"welcome_email_{user.id}",
+            body_html=f"""
+            <div style="font-family:'Segoe UI',sans-serif;max-width:520px;margin:40px auto;
+                        background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.08);overflow:hidden;">
+              <div style="background:linear-gradient(135deg,#2563eb,#3b82f6);padding:32px 24px;text-align:center;">
+                <h1 style="margin:0;color:#fff;font-size:22px;">Welcome to Repnex! ✅</h1>
+              </div>
+              <div style="padding:32px 24px;">
+                <p style="color:#374151;font-size:15px;line-height:1.6;">
+                  Hi <strong>{email_name}</strong>,
+                </p>
+                <p style="color:#6b7280;font-size:14px;line-height:1.6;">
+                  Your account has been activated and you are now a member of
+                  <strong>{org.name}</strong> on Repnex.
+                </p>
+                <div style="text-align:center;margin:28px 0;">
+                  <a href="{dashboard_url}"
+                     style="display:inline-block;background:linear-gradient(135deg,#2563eb,#1d4ed8);
+                            color:#fff;text-decoration:none;padding:14px 36px;border-radius:12px;
+                            font-size:15px;font-weight:600;">
+                    Go to Dashboard →
+                  </a>
+                </div>
+              </div>
+            </div>
+            """,
         )
-    except Exception as e:
-        log.exception("welcome_email_send_failed", extra={"to": user.email, "error": str(e)})
+    )
 
     return AuthResponse(
         tokens=TokenPair(access_token=access, refresh_token=refresh_t),
