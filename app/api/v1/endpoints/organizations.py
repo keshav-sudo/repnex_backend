@@ -41,14 +41,12 @@ async def complete_onboarding(
 
     # Send welcome email asynchronously (fire-and-forget)
     try:
-        import asyncio
-
         from app.core.config import get_settings
-        from app.utils.email import send_email_async
+        from app.utils.email import send_email_async, fire_and_forget
 
         s = get_settings()
         dashboard_url = f"{s.APP_BASE_URL.rstrip('/')}/dashboard"
-        asyncio.create_task(
+        fire_and_forget(
             send_email_async(
                 to=current.email,
                 subject=f"🎉 Welcome to Repnex — {org.name} is all set!",
@@ -86,8 +84,7 @@ async def complete_onboarding(
                   </div>
                 </div>
                 """,
-            ),
-            name="onboarding_welcome_email",
+            )
         )
     except Exception:
         pass  # Non-critical — don't fail onboarding if email fails
