@@ -194,8 +194,13 @@ For real-time streaming, use the WebSocket endpoint (below) instead.
 | GET | `/reports/{id}` | Detail with columns |
 | PATCH | `/reports/{id}` | Update |
 | DELETE | `/reports/{id}` | Delete |
-| POST | `/reports/{id}/run` | Execute |
-| POST | `/reports/{id}/columns` | Add column |
+| PATCH | `/reports/{id}/pin` | Toggle pinning status of a report |
+| POST | `/reports/{id}/run` | Execute report immediately (ad-hoc) |
+| PATCH | `/reports/{id}/schedule` | Configure or clear the background auto-refresh interval |
+| POST | `/reports/{id}/refresh` | Manually run and store result in a new ReportSnapshot |
+| GET | `/reports/{id}/snapshots` | List run snapshots (metadata only, paginated) |
+| GET | `/reports/{id}/snapshots/{sid}` | Retrieve specific snapshot detail including raw row data |
+| POST | `/reports/{id}/columns` | Add column configuration |
 | PATCH | `/reports/{id}/columns/{col_id}` | Update column |
 | DELETE | `/reports/{id}/columns/{col_id}` | Remove column |
 
@@ -204,6 +209,41 @@ For real-time streaming, use the WebSocket endpoint (below) instead.
 { "override_params": { "period_days": 7 } }
 ```
 Returns rows + columns (no LLM step).
+
+### `PATCH /reports/{id}/schedule`
+Configure auto-refresh intervals. Pass `interval_days=0` or `null` to disable auto-refresh.
+```json
+{
+  "interval_days": 3,
+  "auto_refresh_connection_id": "8b51d8b7-4c28-444f-9556-9a2cf1114b0b"
+}
+```
+
+### `POST /reports/{id}/refresh`
+```json
+{
+  "connection_id": "8b51d8b7-4c28-444f-9556-9a2cf1114b0b"
+}
+```
+Returns the generated `SnapshotDetailRead` representation including rows.
+
+### `GET /reports/{id}/snapshots/{snapshot_id}`
+Returns full historical snapshot details:
+```json
+{
+  "id": "7fae2a04-94ef-4b47-8149-a6873328e1aa",
+  "report_id": "d047321a-7b3b-4889-bb0e-1aa38bc74e99",
+  "run_status": "success",
+  "rows_returned": 2,
+  "execution_time_ms": 142,
+  "raw_data": [
+    { "Customer": "1001", "CustomerName": "Acme Corp", "CurrentBalance": 50000 },
+    { "Customer": "1002", "CustomerName": "Beta LLC", "CurrentBalance": 25000 }
+  ],
+  "error_message": null,
+  "created_at": "2026-06-12T10:44:20Z"
+}
+```
 
 ---
 

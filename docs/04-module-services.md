@@ -198,8 +198,14 @@ A **report** is a saved query template + parameters + column display config.
 | `run(db, ctx, report_id, override_params)` | Re-uses query engine without LLM step |
 | `add_column(db, ctx, report_id, column)` | Position auto-incremented |
 | `update(...)` / `delete(...)` | Standard CRUD |
+| `set_schedule(db, ctx, report_id, data)` | Sets `refresh_interval_days`, recalculates `next_refresh_at` |
+| `manual_refresh(db, ctx, report_id, conn_id)` | Runs query directly, saves snapshot, updates report's `next_refresh_at` |
+| `list_snapshots(db, ctx, report_id, limit)` | Fetches list of query snapshots for a report (metadata only) |
+| `get_snapshot_detail(db, ctx, report_id, snapshot_id)` | Fetches single snapshot with complete row results (`raw_data`) |
+| `run_due_reports(db_session)` | Background worker job (invoked by APScheduler hourly) that executes outstanding scheduled reports |
 
 Reports do **not** invoke the LLM — they're parameterized templates.
+For a complete overview of background scheduled report processing and system-level db connection bypass mechanics, see [Data Execution & Gateway Agent Flows](./09-data-execution-and-gateway-flows.md).
 
 ---
 

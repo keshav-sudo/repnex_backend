@@ -188,6 +188,8 @@ Customers connect their own DBs. We don't want to open a new pool per request â€
 - Idle pools closed after `TARGET_POOL_IDLE_TTL_SECONDS`
 - All operations are async-safe (lock per connection_id)
 
+For a complete breakdown of target pool caching, connection locking, Reverse WebSocket Agent tunneling, and thread-pool execution for synchronous drivers, see [Data Execution & Gateway Agent Flows](./09-data-execution-and-gateway-flows.md).
+
 ### Usage
 
 ```python

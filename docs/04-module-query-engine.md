@@ -66,6 +66,16 @@ Called on app startup. Reads `query_templates.json`, validates:
 
 Returns the loaded template or raises `NotFound`.
 
+### Dialect Translation & Adaptation
+To support multi-database environments without maintaining duplicate SQL templates for each dialect, `template_loader.py` contains a dynamic SQL dialect translation engine. If a template has SQL written only for MSSQL (`mssql` key) and the target database is PostgreSQL or CloudSQL, the loader adapts the SQL statements on-the-fly when calling `sql_for(db_type)`:
+
+1. **`SELECT TOP` translation**: Translates `SELECT TOP %(limit)s ...` or `SELECT TOP N ...` into standard SELECT queries with trailing `LIMIT %(limit)s` or `LIMIT N`.
+2. **Date function translation**: Rewrites `GETDATE()` to PostgreSQL's `CURRENT_DATE`.
+3. **Difference calculator translation**: Rewrites `DATEDIFF(day, dateA, dateB)` to date arithmetic: `((dateB) - (dateA))`.
+4. **Coalesce helper translation**: Rewrites `ISNULL(valA, valB)` to standard `COALESCE(valA, valB)`.
+
+This design ensures single-template source-of-truth while remaining cross-compatible across target databases.
+
 ### `list_templates() -> list[TemplateMeta]`
 
 Returns id + description + param schema. Used by `intent_extractor` to render the registry into the system prompt.

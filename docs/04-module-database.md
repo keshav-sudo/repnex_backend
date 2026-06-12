@@ -118,17 +118,23 @@ INDEX(session_id)
 
 #### `reports` — saved queries
 ```
-id                 UUID PK
-org_id             UUID FK→organizations.id (CASCADE)
-created_by         UUID FK→users.id (RESTRICT)
-name               VARCHAR(255)
-description        TEXT NULL
-query_template_id  VARCHAR(128)         ← references template in JSON
-parameters         JSONB DEFAULT '{}'
-is_public          BOOL DEFAULT false   ← shared with org
-created_at         TIMESTAMPTZ DEFAULT NOW()
+id                           UUID PK
+org_id                       UUID FK→organizations.id (CASCADE)
+created_by                   UUID FK→users.id (RESTRICT)
+name                         VARCHAR(255)
+description                  TEXT NULL
+query_template_id            VARCHAR(128)         ← references template in JSON
+parameters                   JSONB DEFAULT '{}'
+is_public                    BOOL DEFAULT false   ← shared with org
+is_pinned                    BOOL DEFAULT false   ← pinned to dashboard
+refresh_interval_days        INT NULL             ← interval in days (0/null = disabled)
+next_refresh_at              TIMESTAMPTZ NULL     ← scheduled next execution time
+last_refreshed_at            TIMESTAMPTZ NULL     ← actual timestamp of last run
+auto_refresh_connection_id   UUID FK→db_connections.id (SET NULL)
+created_at                   TIMESTAMPTZ DEFAULT NOW()
 
 INDEX(org_id)
+INDEX(next_refresh_at) WHERE next_refresh_at IS NOT NULL
 ```
 
 #### `report_columns` — column display config
@@ -141,6 +147,21 @@ position      INT
 is_visible    BOOL DEFAULT true
 data_type     VARCHAR(32)          ← 'number', 'currency', 'date', 'string', ...
 format_config JSONB DEFAULT '{}'   ← {"decimals":2, "currency":"USD", ...}
+```
+
+#### `report_snapshots` — historical run snapshots
+```
+id                UUID PK
+report_id         UUID FK→reports.id (CASCADE)
+org_id            UUID FK→organizations.id (CASCADE)
+triggered_by      VARCHAR(32)          ← 'manual' or 'scheduled'
+rows_data         JSONB DEFAULT '[]'   ← serialized query output rows
+rows_returned     INT DEFAULT 0        ← total rows returned in this run
+execution_time_ms INT NULL             ← duration of query execution
+created_at        TIMESTAMPTZ DEFAULT NOW()
+
+INDEX(report_id)
+INDEX(org_id)
 ```
 
 #### `dashboards`
@@ -275,23 +296,18 @@ See [Module: Core](./04-module-core.md#databasetarget_poolpy--per-connection-poo
                                                     │  reports    │
                                                     └──────┬──────┘
                                                            │ 1
-                                                ┌──────────┴────────┐
-                                                ▼ N                 │
-                                       ┌────────────────────┐       │
-                                       │  report_columns    │       │
-                                       └────────────────────┘       │
-                                                                    │
-                                                    ┌───────────────┘
-                                                    ▼
-                                          ┌────────────────────┐
-                                          │  dashboards        │
-                                          └─────┬──────────────┘
-                                                │ 1
-                                          ┌─────┴───────────┐
-                                          ▼ N
-                                  ┌────────────────────┐
-                                  │ dashboard_reports  │
-                                  └────────────────────┘
+                                           ┌───────────────┼───────────────┐
+                                           │ 1             │ 1             │ 1
+                                           ▼ N             ▼ N             ▼ N
+                                   ┌───────────────┐ ┌───────────────┐ ┌───────────────┐
+                                   │report_columns │ │report_        │ │ dashboards    │
+                                   │               │ │snapshots      │ └──────┬────────┘
+                                   └───────────────┘ └───────────────┘        │ 1
+                                                                              ▼ N
+                                                                      ┌───────────────┐
+                                                                      │dashboard_     │
+                                                                      │reports        │
+                                                                      └───────────────┘
 ```
 
 Next → [API Reference](./05-api-reference.md)
