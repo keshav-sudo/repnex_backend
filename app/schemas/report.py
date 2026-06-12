@@ -57,6 +57,12 @@ class ReportRead(ORMBase):
     parameters: dict[str, Any]
     is_public: bool
     is_pinned: bool
+    # ── Scheduled refresh fields ──────────────────────────────────────────
+    refresh_interval_days: int | None = None
+    next_refresh_at: datetime | None = None
+    last_refreshed_at: datetime | None = None
+    auto_refresh_connection_id: uuid.UUID | None = None
+    # ─────────────────────────────────────────────────────────────────────
     created_at: datetime
     columns: list[ReportColumnRead]
 
@@ -72,3 +78,33 @@ class RunReportResponse(BaseModel):
     columns: list[ReportColumnRead]
     rows_returned: int
     execution_time_ms: int
+
+
+# ── Schedule & Snapshot schemas ───────────────────────────────────────────────
+
+class ScheduleRequest(BaseModel):
+    """Request body for PATCH /reports/:id/schedule"""
+    # 0 or None = disable schedule, 1/2/3 = days between refreshes
+    interval_days: Annotated[int | None, Field(ge=0, le=30)] = None
+    connection_id: uuid.UUID | None = None
+
+
+class RefreshRequest(BaseModel):
+    """Request body for POST /reports/:id/refresh (manual trigger)"""
+    connection_id: uuid.UUID
+
+
+class SnapshotRead(ORMBase):
+    """Read schema for a single historical report snapshot."""
+    id: uuid.UUID
+    report_id: uuid.UUID
+    org_id: uuid.UUID
+    triggered_by: str       # "manual" | "scheduled"
+    rows_returned: int
+    execution_time_ms: int | None
+    created_at: datetime
+
+
+class SnapshotDetailRead(SnapshotRead):
+    """Includes full rows_data for inline preview."""
+    rows_data: list[dict[str, Any]]

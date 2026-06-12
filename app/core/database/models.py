@@ -226,10 +226,23 @@ class Report(Base):
     parameters: Mapped[dict] = mapped_column(JSONB, default=dict, nullable=False)
     is_public: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     is_pinned: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    # ── Scheduled auto-refresh fields ──────────────────────────────────────
+    # refresh_interval_days: None/0 = manual only, 1 = daily, 2 = every 2d, 3 = every 3d
+    refresh_interval_days: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    next_refresh_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    last_refreshed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    auto_refresh_connection_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("db_connections.id", ondelete="SET NULL"),
+        nullable=True,
+    )
     created_at: Mapped[datetime] = _ts_created()
 
     columns: Mapped[list["ReportColumn"]] = relationship(
         back_populates="report", cascade="all, delete-orphan", lazy="selectin"
+    )
+    snapshots: Mapped[list["ReportSnapshot"]] = relationship(
+        back_populates="report", cascade="all, delete-orphan", lazy="noload"
     )
 
 
@@ -248,6 +261,35 @@ class ReportColumn(Base):
     format_config: Mapped[dict] = mapped_column(JSONB, default=dict, nullable=False)
 
     report: Mapped[Report] = relationship(back_populates="columns")
+
+
+# ── Report Snapshot (historical run results) ──────────────────────────────────
+
+class ReportSnapshot(Base):
+    """Stores the result-set of every report execution (scheduled or manual).
+    This enables a full history/timeline so users can compare data across dates.
+    """
+    __tablename__ = "report_snapshots"
+    __table_args__ = (
+        Index("ix_report_snapshots_report_id", "report_id"),
+        Index("ix_report_snapshots_org_id", "org_id"),
+    )
+
+    id: Mapped[uuid.UUID] = _uuid_pk()
+    report_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("reports.id", ondelete="CASCADE"), nullable=False
+    )
+    org_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("organizations.id", ondelete="CASCADE"), nullable=False
+    )
+    # "manual" | "scheduled"
+    triggered_by: Mapped[str] = mapped_column(String(32), default="manual", nullable=False)
+    rows_data: Mapped[list] = mapped_column(JSONB, default=list, nullable=False)
+    rows_returned: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    execution_time_ms: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    created_at: Mapped[datetime] = _ts_created()
+
+    report: Mapped["Report"] = relationship(back_populates="snapshots")
 
 
 class Dashboard(Base):

@@ -24,6 +24,10 @@ pymssql==2.3.13
 # --- Redis / rate limit ---
 redis==5.2.1
 
+# --- Background scheduling ---
+apscheduler==3.10.4
+
+
 # --- Security ---
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4

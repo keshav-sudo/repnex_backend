@@ -90,6 +90,22 @@ async def get_connection(
     return conn
 
 
+async def get_connection_by_id(
+    db: AsyncSession, conn_id: uuid.UUID
+) -> DBConnection:
+    """System-level lookup (no user ACL check).
+    Used by the APScheduler background job which has no user context.
+    """
+    conn = (
+        await db.execute(
+            select(DBConnection).where(DBConnection.id == conn_id)
+        )
+    ).scalar_one_or_none()
+    if not conn:
+        raise NotFound(f"Connection {conn_id} not found")
+    return conn
+
+
 async def create_connection(
     db: AsyncSession, current: CurrentUser, data: ConnectionCreate
 ) -> ConnectionRead:

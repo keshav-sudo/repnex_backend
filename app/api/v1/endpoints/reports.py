@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, Query, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.rate_limit import rate_limit
@@ -13,8 +13,12 @@ from app.schemas.report import (
     ReportCreate,
     ReportRead,
     ReportUpdate,
+    RefreshRequest,
     RunReportRequest,
     RunReportResponse,
+    ScheduleRequest,
+    SnapshotDetailRead,
+    SnapshotRead,
 )
 from app.services import report_service
 
@@ -90,3 +94,62 @@ async def run(
     _rl: None = Depends(rate_limit("query")),
 ) -> RunReportResponse:
     return await report_service.run_report(db, current, report_id, data)
+
+
+# ── Schedule & Snapshot endpoints ─────────────────────────────────────────────
+
+@router.patch("/{report_id}/schedule", response_model=ReportRead)
+async def set_schedule(
+    report_id: uuid.UUID,
+    data: ScheduleRequest,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncSession = Depends(get_db),
+) -> ReportRead:
+    """Set or clear the auto-refresh schedule for a report.
+
+    - `interval_days` = 0 or null → disable auto-refresh
+    - `interval_days` = 1/2/3 → refresh every N days
+    - `connection_id` → which DB connection to use for the scheduled run
+    """
+    return await report_service.set_schedule(db, current, report_id, data)
+
+
+@router.post(
+    "/{report_id}/refresh",
+    response_model=SnapshotDetailRead,
+    status_code=status.HTTP_201_CREATED,
+)
+async def manual_refresh(
+    report_id: uuid.UUID,
+    data: RefreshRequest,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncSession = Depends(get_db),
+    _rl: None = Depends(rate_limit("query")),
+) -> SnapshotDetailRead:
+    """Manually trigger a report refresh and save result as a snapshot."""
+    return await report_service.manual_refresh(db, current, report_id, data.connection_id)
+
+
+@router.get("/{report_id}/snapshots", response_model=list[SnapshotRead])
+async def list_snapshots(
+    report_id: uuid.UUID,
+    limit: int = Query(default=20, ge=1, le=100),
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncSession = Depends(get_db),
+) -> list[SnapshotRead]:
+    """List historical run snapshots (metadata only, no row data)."""
+    return await report_service.list_snapshots(db, current, report_id, limit=limit)
+
+
+@router.get(
+    "/{report_id}/snapshots/{snapshot_id}",
+    response_model=SnapshotDetailRead,
+)
+async def get_snapshot(
+    report_id: uuid.UUID,
+    snapshot_id: uuid.UUID,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncSession = Depends(get_db),
+) -> SnapshotDetailRead:
+    """Get a single snapshot including full row data for preview."""
+    return await report_service.get_snapshot_detail(db, current, report_id, snapshot_id)

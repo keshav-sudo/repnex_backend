@@ -10,7 +10,7 @@ from starlette.middleware.base import BaseHTTPMiddleware
 
 from app.api.v1.router import api_router, ws_router
 from app.core.config import get_settings
-from app.core.database.session import dispose_engine, init_engine
+from app.core.database.session import dispose_engine, get_db, init_engine
 from app.core.database.target_pool import (
     close_target_pool_registry,
     init_target_pool_registry,
@@ -22,8 +22,28 @@ from app.core.redis import close_redis, init_redis
 from app.query_engine.template_loader import init_template_registry
 from app.services.websocket_manager import init_ws_manager, shutdown_ws_manager
 from app.services.gateway_manager import init_gateway_manager
+from app.services import report_service
 
 log = get_logger(__name__)
+
+
+# ── APScheduler setup ─────────────────────────────────────────────────────────
+try:
+    from apscheduler.schedulers.asyncio import AsyncIOScheduler
+    _scheduler = AsyncIOScheduler()
+    _scheduler_available = True
+except ImportError:
+    _scheduler = None  # type: ignore[assignment]
+    _scheduler_available = False
+
+
+async def _scheduled_refresh_job() -> None:
+    """Hourly APScheduler job: run all reports whose next_refresh_at is due."""
+    try:
+        async for db in get_db():
+            await report_service.run_due_reports(db)
+    except Exception as exc:  # noqa: BLE001
+        log.error("scheduled_refresh_job_error", extra={"error": str(exc)})
 
 
 @asynccontextmanager
@@ -40,11 +60,29 @@ async def lifespan(app: FastAPI):
     init_ws_manager()
     init_gateway_manager()
 
+    # ── Start scheduled report refresh ────────────────────────────────────
+    if _scheduler_available and _scheduler is not None:
+        _scheduler.add_job(
+            _scheduled_refresh_job,
+            trigger="interval",
+            hours=1,
+            id="report_auto_refresh",
+            replace_existing=True,
+            max_instances=1,
+        )
+        _scheduler.start()
+        log.info("scheduler_started", extra={"job": "report_auto_refresh", "interval": "1h"})
+    else:
+        log.warning("apscheduler_not_available", extra={"hint": "pip install apscheduler"})
+
     log.info("ready")
     try:
         yield
     finally:
         log.info("shutdown_begin")
+        if _scheduler_available and _scheduler is not None and _scheduler.running:
+            _scheduler.shutdown(wait=False)
+            log.info("scheduler_stopped")
         try:
             await asyncio.wait_for(
                 shutdown_ws_manager(), timeout=settings.GRACEFUL_SHUTDOWN_SECONDS
