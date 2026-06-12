@@ -20,6 +20,8 @@ Welcome to the Repnex Backend documentation. This directory contains a complete 
 | 12 | [Deployment](./06-deployment.md) | Docker, env vars, production setup |
 | 13 | [Development](./07-development.md) | Local dev, tests, code style |
 | 14 | [Security](./08-security.md) | Multi-tenancy, encryption, auth |
+| 15 | [Data Execution & Gateway Agent](./09-data-execution-and-gateway-flows.md) | Dynamic queries, dialect translator, reverse tunnels, and scheduler |
+
 
 ## 🎯 Quick Links
 

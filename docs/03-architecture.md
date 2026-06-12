@@ -201,6 +201,8 @@ For enterprise customers whose databases (e.g. ERP MSSQL, Oracle, local Postgres
 - **Eviction & Safety**: To protect the backend from resource exhaustion, a maximum of 5 concurrent WebSocket connections are allowed per user session, and warnings are logged when total active connections exceed 500. Stale agent connections are automatically detected and cleaned up before queries execute.
 - **Is this the best method?** Yes. Compared to SSH tunnels or IP whitelisting, the outbound WebSocket agent is zero-config, highly secure, compliant with corporate IT firewalls, and enables instant self-serve onboarding.
 
+For a deep dive into the network frames, dialect translation, and execution stages of this flow, see [Data Execution & Gateway Agent Flows](./09-data-execution-and-gateway-flows.md).
+
 ## Failure Matrix
 
 | Failure | Behavior |
