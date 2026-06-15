@@ -5,6 +5,7 @@ import uuid
 from datetime import UTC, datetime, timedelta
 
 from sqlalchemy import select
+from sqlalchemy.orm import load_only
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database.models import Report, ReportColumn, ReportSnapshot
@@ -299,6 +300,17 @@ async def list_snapshots(
     rows = (
         await db.execute(
             select(ReportSnapshot)
+            .options(
+                load_only(
+                    ReportSnapshot.id,
+                    ReportSnapshot.report_id,
+                    ReportSnapshot.org_id,
+                    ReportSnapshot.triggered_by,
+                    ReportSnapshot.rows_returned,
+                    ReportSnapshot.execution_time_ms,
+                    ReportSnapshot.created_at,
+                )
+            )
             .where(ReportSnapshot.report_id == r.id)
             .order_by(ReportSnapshot.created_at.desc())
             .limit(limit)

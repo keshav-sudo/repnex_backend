@@ -106,8 +106,14 @@ class TargetPool:
                     # Use server-side cursor via connection.cursor() for streaming
                     stmt = await conn.prepare(pg_sql)
                     async with conn.transaction():
+                        batch: list[dict[str, Any]] = []
                         async for record in stmt.cursor(*bound, prefetch=batch_size):
-                            yield [dict(record)]
+                            batch.append(dict(record))
+                            if len(batch) >= batch_size:
+                                yield batch
+                                batch = []
+                        if batch:
+                            yield batch
         except asyncpg.PostgresError as e:
             raise TargetDBError(f"Target DB error: {e.__class__.__name__}: {e}") from e
         except asyncio.TimeoutError as e:
@@ -143,11 +149,13 @@ class TargetPool:
                         for i, desc in enumerate(cursor.description):
                             col_names.append(desc[0] if desc[0] else f"column_{i}")
                     batches: list[list[dict]] = []
-                    while True:
-                        rows = cursor.fetchmany(batch_size)
+                    remaining = get_settings().EXECUTOR_MAX_ROWS
+                    while remaining > 0:
+                        rows = cursor.fetchmany(min(batch_size, remaining))
                         if not rows:
                             break
                         batches.append([dict(zip(col_names, row)) for row in rows])
+                        remaining -= len(rows)
                     return batches
 
         try:

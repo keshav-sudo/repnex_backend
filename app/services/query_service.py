@@ -544,22 +544,27 @@ async def execute_with_params(
         return ChatResponse(type="error", message=err_msg, sql=bound.sql)
 
     summary: str | None = None
-    try:
-        intent_dict = {"template_id": template.id, "params": data.params}
-        summary = await generate_insight(intent=intent_dict, rows=result.rows, user_name=None)
-    except LLMError:
-        pass
-
-    try:
-        suggestions = await generate_suggestions(
+    suggestions: list[str] = []
+    intent_dict = {"template_id": template.id, "params": data.params}
+    results_parallel = await asyncio.gather(
+        generate_insight(intent=intent_dict, rows=result.rows, user_name=None),
+        generate_suggestions(
             template_id=template.id,
             module=template.module,
             category=template.category,
             description=template.description,
             user_name=None,
-        )
-    except Exception:
-        suggestions = []
+        ),
+        return_exceptions=True,
+    )
+    if not isinstance(results_parallel[0], Exception):
+        summary = results_parallel[0]
+    else:
+        log.warning("execute_insight_failed", extra={"err": str(results_parallel[0])})
+    if not isinstance(results_parallel[1], Exception):
+        suggestions = results_parallel[1]
+    else:
+        log.warning("execute_suggestions_failed", extra={"err": str(results_parallel[1])})
 
     msg = summary or f"Executed. {result.rows_returned} rows returned."
     if session:

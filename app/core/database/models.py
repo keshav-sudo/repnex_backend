@@ -87,7 +87,9 @@ class User(Base):
     __tablename__ = "users"
     __table_args__ = (
         UniqueConstraint("org_id", "email", name="uq_users_org_email"),
+        Index("ix_users_email", "email"),
         Index("ix_users_org_id", "org_id"),
+        Index("ix_users_org_created_at", "org_id", "created_at"),
     )
 
     id: Mapped[uuid.UUID] = _uuid_pk()
@@ -110,7 +112,10 @@ class User(Base):
 
 class DBConnection(Base):
     __tablename__ = "db_connections"
-    __table_args__ = (Index("ix_db_connections_org_id", "org_id"),)
+    __table_args__ = (
+        Index("ix_db_connections_org_id", "org_id"),
+        Index("ix_db_connections_org_created_at", "org_id", "created_at"),
+    )
 
     id: Mapped[uuid.UUID] = _uuid_pk()
     org_id: Mapped[uuid.UUID] = mapped_column(
@@ -137,6 +142,7 @@ class DBConnectionAccess(Base):
     __table_args__ = (
         UniqueConstraint("connection_id", "user_id", name="uq_dca_conn_user"),
         Index("ix_dca_connection_id", "connection_id"),
+        Index("ix_dca_connection_org_user", "connection_id", "org_id", "user_id"),
         Index("ix_dca_org_user", "org_id", "user_id"),
     )
 
@@ -158,7 +164,10 @@ class DBConnectionAccess(Base):
 
 class GISession(Base):
     __tablename__ = "gi_sessions"
-    __table_args__ = (Index("ix_gi_sessions_user_id", "user_id"),)
+    __table_args__ = (
+        Index("ix_gi_sessions_user_id", "user_id"),
+        Index("ix_gi_sessions_org_user_created_at", "org_id", "user_id", "created_at"),
+    )
 
     id: Mapped[uuid.UUID] = _uuid_pk()
     user_id: Mapped[uuid.UUID] = mapped_column(
@@ -211,7 +220,11 @@ class QueryHistory(Base):
 
 class Report(Base):
     __tablename__ = "reports"
-    __table_args__ = (Index("ix_reports_org_id", "org_id"),)
+    __table_args__ = (
+        Index("ix_reports_org_id", "org_id"),
+        Index("ix_reports_org_created_at", "org_id", "created_at"),
+        Index("ix_reports_next_refresh_due", "next_refresh_at", "refresh_interval_days"),
+    )
 
     id: Mapped[uuid.UUID] = _uuid_pk()
     org_id: Mapped[uuid.UUID] = mapped_column(
@@ -248,6 +261,7 @@ class Report(Base):
 
 class ReportColumn(Base):
     __tablename__ = "report_columns"
+    __table_args__ = (Index("ix_report_columns_report_position", "report_id", "position"),)
 
     id: Mapped[uuid.UUID] = _uuid_pk()
     report_id: Mapped[uuid.UUID] = mapped_column(
@@ -273,6 +287,8 @@ class ReportSnapshot(Base):
     __table_args__ = (
         Index("ix_report_snapshots_report_id", "report_id"),
         Index("ix_report_snapshots_org_id", "org_id"),
+        Index("ix_report_snapshots_report_created_at", "report_id", "created_at"),
+        Index("ix_report_snapshots_org_created_at", "org_id", "created_at"),
     )
 
     id: Mapped[uuid.UUID] = _uuid_pk()
@@ -294,7 +310,10 @@ class ReportSnapshot(Base):
 
 class Dashboard(Base):
     __tablename__ = "dashboards"
-    __table_args__ = (Index("ix_dashboards_org_id", "org_id"),)
+    __table_args__ = (
+        Index("ix_dashboards_org_id", "org_id"),
+        Index("ix_dashboards_org_created_at", "org_id", "created_at"),
+    )
 
     id: Mapped[uuid.UUID] = _uuid_pk()
     org_id: Mapped[uuid.UUID] = mapped_column(
@@ -315,7 +334,10 @@ class Dashboard(Base):
 
 class DashboardReport(Base):
     __tablename__ = "dashboard_reports"
-    __table_args__ = (UniqueConstraint("dashboard_id", "report_id", name="uq_dr_dash_report"),)
+    __table_args__ = (
+        UniqueConstraint("dashboard_id", "report_id", name="uq_dr_dash_report"),
+        Index("ix_dashboard_reports_report_id", "report_id"),
+    )
 
     id: Mapped[uuid.UUID] = _uuid_pk()
     dashboard_id: Mapped[uuid.UUID] = mapped_column(
