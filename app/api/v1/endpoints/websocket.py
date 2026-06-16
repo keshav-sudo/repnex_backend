@@ -173,4 +173,4 @@ async def ws_gateway(
     except Exception:
         log.exception("gateway_ws_unhandled")
     finally:
-        await gateway_mgr.unregister(current.org_id, agent_name)
+        await gateway_mgr.unregister(current.org_id, agent_name, websocket)

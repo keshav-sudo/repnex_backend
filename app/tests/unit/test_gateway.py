@@ -68,5 +68,5 @@ async def test_gateway_manager_flow():
     assert result == [{"id": 10, "username": "alice"}]
 
     # Unregister
-    await mgr.unregister(org_id, agent_name)
+    await mgr.unregister(org_id, agent_name, mock_ws)
     assert not mgr.is_agent_active(org_id, agent_name)

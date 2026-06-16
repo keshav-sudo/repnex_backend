@@ -291,6 +291,13 @@ async def handle_query(payload, args):
         response = {"action": "query_response", "query_id": query_id, "status": "error", "error": str(e)}
         return json.dumps(response)
 
+# ── Thread-safe and Async-safe concurrent WebSocket sending ───────────────────
+_send_lock = asyncio.Lock()
+
+async def safe_send(websocket, message: str) -> None:
+    async with _send_lock:
+        await websocket.send(message)
+
 
 # ── Heartbeat monitor task ────────────────────────────────────────────────────
 
@@ -309,7 +316,7 @@ async def heartbeat_monitor(websocket, last_pong_ref, ping_interval=30):
             # Send ping if interval is exceeded
             if now - last_ping_sent >= ping_interval:
                 logger.debug("Sending application-level ping...")
-                await websocket.send(json.dumps({"action": "ping"}))
+                await safe_send(websocket, json.dumps({"action": "ping"}))
                 last_ping_sent = now
             
             # Check if we missed pongs (allowing 20s grace period)
@@ -332,6 +339,15 @@ async def heartbeat_monitor(websocket, last_pong_ref, ping_interval=30):
 
 # ── WebSocket loop with exponential backoff ───────────────────────────────────
 
+async def run_and_send_query(websocket, payload, args):
+    query_id = payload.get("query_id")
+    try:
+        response_json = await handle_query(payload, args)
+        await safe_send(websocket, response_json)
+        logger.info(f"Query answered: {query_id}")
+    except Exception as e:
+        logger.error(f"Failed to execute or send query response for {query_id}: {e}")
+
 async def agent_loop(args):
     uri = f"{args.server}/ws/gateway?token={args.token}&agent_name={args.agent_name}"
     logger.info(f"Connecting to Repnex Backend at: {args.server}")
@@ -348,7 +364,7 @@ async def agent_loop(args):
             async with websockets.connect(uri, ping_interval=30, ping_timeout=30) as websocket:
                 logger.info("✅ Connected and registered with cloud. Waiting for queries...")
                 # Reset backoff on successful connection
-                retry_delay = 5
+                retry_delay = 2
                 consecutive_failures = 0
 
                 # Tracks last application-level pong
@@ -373,9 +389,10 @@ async def agent_loop(args):
                         # Handle query message
                         if payload.get("action") == "query":
                             logger.info(f"Query received: {payload.get('query_id')}")
-                            response_json = await handle_query(payload, args)
-                            await websocket.send(response_json)
-                            logger.info(f"Query answered: {payload.get('query_id')}")
+                            # Process query in a background task so the main loop can keep calling recv()
+                            asyncio.create_task(
+                                run_and_send_query(websocket, payload, args)
+                            )
                 finally:
                     monitor_task.cancel()
                     try:

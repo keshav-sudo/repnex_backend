@@ -34,11 +34,12 @@ class GatewayManager:
             self._agents[key] = websocket
         log.info("gateway_agent_registered", extra={"org_id": str(org_id), "agent_name": agent_name})
 
-    async def unregister(self, org_id: uuid.UUID | str, agent_name: str) -> None:
+    async def unregister(self, org_id: uuid.UUID | str, agent_name: str, websocket: WebSocket) -> None:
         key = f"{org_id}:{agent_name}"
         async with self._lock:
-            self._agents.pop(key, None)
-        log.info("gateway_agent_unregistered", extra={"org_id": str(org_id), "agent_name": agent_name})
+            if self._agents.get(key) == websocket:
+                self._agents.pop(key, None)
+                log.info("gateway_agent_unregistered", extra={"org_id": str(org_id), "agent_name": agent_name})
 
     def is_agent_active(self, org_id: uuid.UUID | str, agent_name: str) -> bool:
         return f"{org_id}:{agent_name}" in self._agents
