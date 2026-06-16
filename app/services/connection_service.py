@@ -364,3 +364,69 @@ async def _assert_access(
     ).scalar_one_or_none()
     if not has:
         raise NotFound("Connection not found")
+
+
+async def sync_schema(
+    db: AsyncSession, current: CurrentUser, conn_id: uuid.UUID
+) -> ConnectionRead:
+    conn = await get_connection(db, current, conn_id)
+    pool = await get_target_pool_registry().get_pool(conn)
+    
+    if conn.db_type == DBType.postgres or conn.db_type == DBType.cloudsql:
+        tables_query = """
+            SELECT 
+                table_name, 
+                column_name, 
+                data_type 
+            FROM information_schema.columns 
+            WHERE table_schema = 'public'
+            ORDER BY table_name, ordinal_position;
+        """
+    elif conn.db_type == DBType.mssql:
+        tables_query = """
+            SELECT 
+                TABLE_NAME, 
+                COLUMN_NAME, 
+                DATA_TYPE 
+            FROM INFORMATION_SCHEMA.COLUMNS 
+            WHERE TABLE_SCHEMA = 'dbo'
+            ORDER BY TABLE_NAME, ORDINAL_POSITION;
+        """
+    else:
+        tables_query = """
+            SELECT 
+                TABLE_NAME, 
+                COLUMN_NAME, 
+                DATA_TYPE 
+            FROM INFORMATION_SCHEMA.COLUMNS 
+            ORDER BY TABLE_NAME, ORDINAL_POSITION;
+        """
+        
+    try:
+        rows = []
+        async for batch in pool.fetch_stream(tables_query, {}, batch_size=1000, timeout=30.0):
+            rows.extend(batch)
+            
+        tables_map = {}
+        for row in rows:
+            t_name = row.get("table_name") or row.get("TABLE_NAME") or ""
+            c_name = row.get("column_name") or row.get("COLUMN_NAME") or ""
+            c_type = row.get("data_type") or row.get("DATA_TYPE") or ""
+            
+            if not t_name:
+                continue
+                
+            if t_name not in tables_map:
+                tables_map[t_name] = []
+            tables_map[t_name].append({"name": c_name, "type": c_type})
+            
+        tables_list = [{"name": name, "columns": cols} for name, cols in tables_map.items()]
+        
+        conn.schema_info = {"tables": tables_list}
+        conn.schema_last_synced_at = datetime.now(timezone.utc)
+        await db.commit()
+        await db.refresh(conn)
+    except Exception as e:
+        raise ValueError(f"Schema sync failed: {str(e)}")
+        
+    return ConnectionRead.model_validate(conn)

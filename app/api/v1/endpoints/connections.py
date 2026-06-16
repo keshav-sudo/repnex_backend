@@ -128,6 +128,19 @@ async def test(
     return await connection_service.test_connection(db, current, conn_id)
 
 
+@router.post("/{conn_id}/sync-schema", response_model=ConnectionRead)
+async def sync_schema(
+    conn_id: uuid.UUID,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncSession = Depends(get_db),
+    _rl: None = Depends(rate_limit("api")),
+) -> ConnectionRead:
+    try:
+        return await connection_service.sync_schema(db, current, conn_id)
+    except Exception as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+
+
 @router.post("/{conn_id}/access", response_model=AccessGrantRead, status_code=status.HTTP_201_CREATED)
 async def grant_access(
     conn_id: uuid.UUID,

@@ -204,6 +204,8 @@ class ConnectionRead(ORMBase):
     ssl_enabled: bool
     is_active: bool
     last_tested_at: datetime | None
+    schema_info: dict | None = None
+    schema_last_synced_at: datetime | None = None
     created_at: datetime
 
 
