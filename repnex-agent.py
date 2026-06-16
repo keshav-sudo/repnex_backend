@@ -70,7 +70,7 @@ class AgentConnectionPool:
         conn = getattr(self._local, 'conn', None)
         last_db = getattr(self._local, 'db_name', None)
         last_used = getattr(self._local, 'last_used', 0)
-        target_db = db_name or self._args.db_password  # fallback
+        target_db = db_name if db_name else None
 
         # If database changed, close and reconnect
         if conn is not None and last_db != target_db:
@@ -101,18 +101,22 @@ class AgentConnectionPool:
         # Create new connection with retries
         for attempt in range(1, self._max_retries + 1):
             try:
-                conn = pymssql.connect(
-                    server=self._args.db_host,
-                    port=int(self._args.db_port),
-                    user=self._args.db_user,
-                    password=self._args.db_password,
-                    database=target_db,
-                    login_timeout=15,
-                    timeout=60,
-                )
+                connect_kwargs = {
+                    "server": self._args.db_host,
+                    "port": int(self._args.db_port),
+                    "user": self._args.db_user,
+                    "password": self._args.db_password,
+                    "login_timeout": 15,
+                    "timeout": 60,
+                }
+                if target_db:
+                    connect_kwargs["database"] = target_db
+
+                conn = pymssql.connect(**connect_kwargs)
                 self._local.conn = conn
                 self._local.db_name = target_db
                 self._local.last_used = time.monotonic()
+                
                 tid = threading.current_thread().ident
                 with self._lock:
                     self._active[tid] = conn
@@ -140,7 +144,10 @@ class AgentConnectionPool:
 
     def execute_query(self, sql, params, db_name):
         """Execute a query with auto-reconnection."""
-        conn = self._get_connection(db_name)
+        try:
+            conn = self._get_connection(db_name)
+        except Exception as e:
+            raise RuntimeError(f"Database connection failed: {e}") from e
 
         try:
             with conn.cursor() as cursor:
@@ -170,8 +177,11 @@ class AgentConnectionPool:
             logger.warning(f"Query failed, reconnecting: {e}")
             self._close_current()
 
-            # Retry with fresh connection
-            conn = self._get_connection(db_name)
+            try:
+                conn = self._get_connection(db_name)
+            except Exception as conn_err:
+                raise RuntimeError(f"Reconnection failed: {conn_err}") from conn_err
+
             try:
                 with conn.cursor() as cursor:
                     cursor.execute(sql, params)
@@ -272,9 +282,52 @@ async def handle_query(payload, args):
             data = await run_postgres_query(sql, params, db_name, args)
         else:
             raise NotImplementedError(f"Database type '{db_type}' not supported by agent.")
-        return {"action": "query_response", "query_id": query_id, "status": "success", "data": data}
+        
+        response = {"action": "query_response", "query_id": query_id, "status": "success", "data": data}
+        # Safe serialization using default=str to prevent crash on custom datatypes
+        return json.dumps(response, default=str)
     except Exception as e:
-        return {"action": "query_response", "query_id": query_id, "status": "error", "error": str(e)}
+        logger.error(f"Error executing query {query_id}: {e}")
+        response = {"action": "query_response", "query_id": query_id, "status": "error", "error": str(e)}
+        return json.dumps(response)
+
+
+# ── Heartbeat monitor task ────────────────────────────────────────────────────
+
+async def heartbeat_monitor(websocket, last_pong_ref, ping_interval=30):
+    """
+    Sends application-level pings and checks if pongs are received.
+    If no pong is received within the timeout window, closes the stale connection
+    to trigger a clean reconnection loop.
+    """
+    last_ping_sent = time.monotonic()
+    try:
+        while True:
+            await asyncio.sleep(5)
+            now = time.monotonic()
+            
+            # Send ping if interval is exceeded
+            if now - last_ping_sent >= ping_interval:
+                logger.debug("Sending application-level ping...")
+                await websocket.send(json.dumps({"action": "ping"}))
+                last_ping_sent = now
+            
+            # Check if we missed pongs (allowing 20s grace period)
+            if now - last_pong_ref[0] > ping_interval + 20:
+                logger.warning(
+                    f"No pong received for {int(now - last_pong_ref[0])}s. "
+                    "Closing stale connection..."
+                )
+                await websocket.close()
+                break
+    except asyncio.CancelledError:
+        pass
+    except Exception as e:
+        logger.warning(f"Heartbeat monitor error: {e}")
+        try:
+            await websocket.close()
+        except Exception:
+            pass
 
 
 # ── WebSocket loop with exponential backoff ───────────────────────────────────
@@ -292,20 +345,43 @@ async def agent_loop(args):
 
     while True:
         try:
-            async with websockets.connect(uri, ping_interval=20, ping_timeout=20) as websocket:
+            async with websockets.connect(uri, ping_interval=30, ping_timeout=30) as websocket:
                 logger.info("✅ Connected and registered with cloud. Waiting for queries...")
                 # Reset backoff on successful connection
                 retry_delay = 5
                 consecutive_failures = 0
 
-                while True:
-                    message_raw = await websocket.recv()
-                    payload = json.loads(message_raw)
-                    if payload.get("action") == "query":
-                        logger.info(f"Query received: {payload.get('query_id')}")
-                        response = await handle_query(payload, args)
-                        await websocket.send(json.dumps(response))
-                        logger.info(f"Query answered: {payload.get('query_id')}")
+                # Tracks last application-level pong
+                last_pong_ref = [time.monotonic()]
+                
+                # Start background task to send pings and monitor connection health
+                monitor_task = asyncio.create_task(
+                    heartbeat_monitor(websocket, last_pong_ref, ping_interval=30)
+                )
+
+                try:
+                    while True:
+                        message_raw = await websocket.recv()
+                        payload = json.loads(message_raw)
+                        
+                        # Handle pong message
+                        if payload.get("action") == "pong":
+                            last_pong_ref[0] = time.monotonic()
+                            logger.debug("Received application-level pong.")
+                            continue
+
+                        # Handle query message
+                        if payload.get("action") == "query":
+                            logger.info(f"Query received: {payload.get('query_id')}")
+                            response_json = await handle_query(payload, args)
+                            await websocket.send(response_json)
+                            logger.info(f"Query answered: {payload.get('query_id')}")
+                finally:
+                    monitor_task.cancel()
+                    try:
+                        await monitor_task
+                    except asyncio.CancelledError:
+                        pass
         except (websockets.exceptions.ConnectionClosed, OSError) as e:
             consecutive_failures += 1
             logger.warning(
