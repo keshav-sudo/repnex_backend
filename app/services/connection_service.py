@@ -404,7 +404,7 @@ async def sync_schema(
         
     try:
         rows = []
-        async for batch in pool.fetch_stream(tables_query, {}, batch_size=1000, timeout=30.0):
+        async for batch in pool.fetch_stream(tables_query, {}, batch_size=1000, timeout=300.0):
             rows.extend(batch)
             
         tables_map = {}

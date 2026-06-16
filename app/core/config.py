@@ -68,7 +68,7 @@ class Settings(BaseSettings):
     WS_MSG_PER_MIN: int = 30
 
     # Query executor
-    EXECUTOR_TIMEOUT_S: int = 30
+    EXECUTOR_TIMEOUT_S: int = 120
     EXECUTOR_MAX_ROWS: int = 100_000
     EXECUTOR_BATCH_SIZE: int = 500
     TARGET_POOL_MAX: int = 64
