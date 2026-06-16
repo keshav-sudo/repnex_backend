@@ -9,6 +9,10 @@ from app.core.logging import get_logger
 
 log = get_logger(__name__)
 
+class DatabaseQueryError(Exception):
+    """Exception raised when a query fails on the gateway agent database side."""
+    pass
+
 class GatewayManager:
     """
     Manages active outbound WebSocket connections from local Gateway Agents.
@@ -111,27 +115,31 @@ class GatewayManager:
             }
 
             try:
-                await ws.send_json(payload)
-                # Wait for response with timeout
-                result = await asyncio.wait_for(fut, timeout=timeout)
-                if result.get("status") == "error":
-                    raise RuntimeError(f"Database error on agent: {result.get('error')}")
-                return result.get("data", [])
-            except asyncio.TimeoutError:
-                raise TimeoutError(f"Gateway Agent '{agent_name}' query timed out after {timeout}s.")
-            except Exception as e:
-                # Connection was lost or closed while sending/waiting
-                async with self._lock:
-                    if self._agents.get(key) == ws:
-                        self._agents.pop(key, None)
+                try:
+                    await ws.send_json(payload)
+                    # Wait for response with timeout
+                    result = await asyncio.wait_for(fut, timeout=timeout)
+                    if result.get("status") == "error":
+                        raise DatabaseQueryError(result.get('error'))
+                    return result.get("data", [])
+                except DatabaseQueryError as e:
+                    raise RuntimeError(f"Database error on agent: {str(e)}") from e
+                except asyncio.TimeoutError:
+                    raise TimeoutError(f"Gateway Agent '{agent_name}' query timed out after {timeout}s.")
+                except Exception as e:
+                    # Connection was lost or closed while sending/waiting
+                    async with self._lock:
+                        if self._agents.get(key) == ws:
+                            self._agents.pop(key, None)
+                    
+                    if attempt == 0:
+                        log.warning("gateway_query_attempt_failed_retrying", extra={"agent_name": agent_name, "error": str(e)})
+                        await asyncio.sleep(0.5)
+                        continue
+                    else:
+                        raise RuntimeError(f"Failed to communicate with Gateway Agent '{agent_name}': {str(e)}") from e
+            finally:
                 self._pending_queries.pop(query_id, None)
-                
-                if attempt == 0:
-                    log.warning("gateway_query_attempt_failed_retrying", extra={"agent_name": agent_name, "error": str(e)})
-                    await asyncio.sleep(0.5)
-                    continue
-                else:
-                    raise RuntimeError(f"Failed to communicate with Gateway Agent '{agent_name}': {str(e)}") from e
 
 
     def handle_response(self, response: dict[str, Any]) -> None:
