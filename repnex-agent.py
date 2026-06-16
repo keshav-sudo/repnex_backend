@@ -377,7 +377,7 @@ async def agent_loop(args):
         try:
             # Disable protocol-level pings (ping_interval=None) because proxies/CDNs frequently drop them,
             # causing false-positive timeouts. We rely on our application-level JSON ping/pong instead.
-            async with websockets.connect(uri, ping_interval=None, ping_timeout=None) as websocket:
+            async with websockets.connect(uri, ping_interval=None, ping_timeout=None, max_size=None) as websocket:
                 logger.info("✅ Connected and registered with cloud. Waiting for queries...")
                 # Reset backoff on successful connection
                 retry_delay = 2
