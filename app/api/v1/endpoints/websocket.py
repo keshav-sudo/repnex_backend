@@ -145,8 +145,11 @@ async def ws_gateway(
     try:
         payload = decode_token(token, expected_type="access")
         current = current_user_from_payload(payload)
-    except AppError:
-        # Cannot accept if authentication fails
+    except AppError as e:
+        log.warning("ws_gateway_auth_failed", extra={"agent_name": agent_name, "error": str(e)})
+        # Accept and immediately close with 1008 policy violation
+        await websocket.accept()
+        await websocket.close(code=1008, reason=f"Authentication failed: {str(e)}")
         return
 
     org_id_ctx.set(str(current.org_id))

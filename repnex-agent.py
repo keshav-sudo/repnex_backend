@@ -339,7 +339,7 @@ async def agent_loop(args):
     logger.info(f"Database    : {args.db_host}:{args.db_port} ({args.db_type.upper()})")
 
     # Exponential backoff state
-    retry_delay = 5        # Start at 5s
+    retry_delay = 2        # Start at 2s
     max_retry_delay = 120  # Cap at 2 minutes
     consecutive_failures = 0
 
@@ -382,14 +382,28 @@ async def agent_loop(args):
                         await monitor_task
                     except asyncio.CancelledError:
                         pass
-        except (websockets.exceptions.ConnectionClosed, OSError) as e:
+        except websockets.exceptions.ConnectionClosed as e:
+            consecutive_failures += 1
+            if getattr(e, "code", None) == 1008:
+                logger.error(
+                    f"❌ Authentication failed: {getattr(e, 'reason', 'Invalid token')}. "
+                    "Please generate a new token from the Repnex UI and restart the agent."
+                )
+                await asyncio.sleep(10)
+            else:
+                logger.warning(
+                    f"Connection lost: {e}. "
+                    f"Retry #{consecutive_failures} in {retry_delay}s..."
+                )
+                await asyncio.sleep(retry_delay)
+                retry_delay = min(retry_delay * 1.5, max_retry_delay)
+        except OSError as e:
             consecutive_failures += 1
             logger.warning(
-                f"Connection lost: {e}. "
+                f"Network / connection error: {e}. "
                 f"Retry #{consecutive_failures} in {retry_delay}s..."
             )
             await asyncio.sleep(retry_delay)
-            # Exponential backoff with cap
             retry_delay = min(retry_delay * 1.5, max_retry_delay)
         except Exception as e:
             consecutive_failures += 1
