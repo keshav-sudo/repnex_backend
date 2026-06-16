@@ -122,10 +122,12 @@ class GatewayManager:
                 "db_name": db_name,
                 "db_type": db_type,
             }
+            from fastapi.encoders import jsonable_encoder
+            serialized_payload = jsonable_encoder(payload)
 
             try:
                 try:
-                    await ws.send_json(payload)
+                    await ws.send_json(serialized_payload)
                     # Wait for response with timeout
                     result = await asyncio.wait_for(fut, timeout=timeout)
                     if result.get("status") == "error":
