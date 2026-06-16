@@ -356,12 +356,14 @@ async def agent_loop(args):
 
     # Exponential backoff state
     retry_delay = 2        # Start at 2s
-    max_retry_delay = 120  # Cap at 2 minutes
+    max_retry_delay = 5    # Cap at 5 seconds to ensure near-instant reconnection
     consecutive_failures = 0
 
     while True:
         try:
-            async with websockets.connect(uri, ping_interval=30, ping_timeout=30) as websocket:
+            # Disable protocol-level pings (ping_interval=None) because proxies/CDNs frequently drop them,
+            # causing false-positive timeouts. We rely on our application-level JSON ping/pong instead.
+            async with websockets.connect(uri, ping_interval=None, ping_timeout=None) as websocket:
                 logger.info("✅ Connected and registered with cloud. Waiting for queries...")
                 # Reset backoff on successful connection
                 retry_delay = 2

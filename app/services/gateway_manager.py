@@ -79,11 +79,11 @@ class GatewayManager:
                 except AttributeError:
                     pass
 
-            # If not valid, wait up to 8 seconds for the agent to reconnect and register
+            # If not valid, wait up to 15 seconds for the agent to reconnect and register
             if not is_valid:
                 log.info("gateway_agent_offline_waiting", extra={"agent_name": agent_name, "attempt": attempt})
                 wait_start = asyncio.get_event_loop().time()
-                while asyncio.get_event_loop().time() - wait_start < 8.0:
+                while asyncio.get_event_loop().time() - wait_start < 15.0:
                     ws = self._agents.get(key)
                     if ws is not None:
                         try:
