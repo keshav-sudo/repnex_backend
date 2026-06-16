@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 import uuid
 from datetime import datetime
-from typing import Annotated, Literal
+from typing import Annotated, Literal, Any
 from urllib.parse import urlparse, unquote
 
 from pydantic import BaseModel, Field, model_validator
@@ -204,9 +204,22 @@ class ConnectionRead(ORMBase):
     ssl_enabled: bool
     is_active: bool
     last_tested_at: datetime | None
-    schema_info: dict | None = None
     schema_last_synced_at: datetime | None = None
     created_at: datetime
+    tables_count: int = 0
+
+    @model_validator(mode="before")
+    @classmethod
+    def calculate_tables_count(cls, data: Any) -> Any:
+        if hasattr(data, "schema_info") and data.schema_info:
+            tables = data.schema_info.get("tables", [])
+            data.tables_count = len(tables)
+        elif isinstance(data, dict):
+            schema_info = data.get("schema_info")
+            if schema_info:
+                tables = schema_info.get("tables", [])
+                data["tables_count"] = len(tables)
+        return data
 
 
 class TestConnectionResponse(BaseModel):

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import uuid
+from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -159,3 +160,41 @@ async def revoke_access(
 ) -> dict:
     await connection_service.revoke_access(db, current, grant_id)
     return {"ok": True}
+
+
+@router.get("/{conn_id}/tables", response_model=list[dict[str, Any]])
+async def get_tables(
+    conn_id: uuid.UUID,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncSession = Depends(get_db),
+) -> list[dict[str, Any]]:
+    conn = await connection_service.get_connection(db, current, conn_id)
+    if not conn.schema_info:
+        return []
+    tables = conn.schema_info.get("tables", [])
+    return [
+        {
+            "name": t.get("name", ""),
+            "columns_count": len(t.get("columns", []))
+        }
+        for t in tables
+    ]
+
+
+@router.get("/{conn_id}/tables/{table_name}", response_model=list[dict[str, str]])
+async def get_table_columns(
+    conn_id: uuid.UUID,
+    table_name: str,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncSession = Depends(get_db),
+) -> list[dict[str, str]]:
+    conn = await connection_service.get_connection(db, current, conn_id)
+    if not conn.schema_info:
+        raise HTTPException(status_code=404, detail="Schema not synced yet")
+    
+    tables = conn.schema_info.get("tables", [])
+    for t in tables:
+        if t.get("name") == table_name:
+            return t.get("columns", [])
+            
+    raise HTTPException(status_code=404, detail=f"Table '{table_name}' not found")
