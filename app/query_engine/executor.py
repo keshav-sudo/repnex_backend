@@ -62,4 +62,5 @@ async def execute_stream(
     except TargetDBError:
         raise
     except Exception as e:  # pragma: no cover
-        raise TargetDBError(f"Unexpected target error: {e.__class__.__name__}") from e
+        raise TargetDBError(f"Unexpected target error: {str(e)}") from e
+

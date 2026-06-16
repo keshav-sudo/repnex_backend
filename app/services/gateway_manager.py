@@ -58,46 +58,80 @@ class GatewayManager:
         timeout: float = 60.0,
     ) -> list[dict[str, Any]]:
         key = f"{org_id}:{agent_name}"
-        ws = self._agents.get(key)
-        if ws is None:
-            raise RuntimeError(f"Gateway Agent '{agent_name}' is not connected.")
+        
+        # Try sending the query, with up to 1 retry if connection is lost or stale
+        for attempt in range(2):
+            ws = self._agents.get(key)
+            
+            # Check if WebSocket is missing or not connected
+            is_valid = True
+            if ws is None:
+                is_valid = False
+            else:
+                try:
+                    if ws.client_state.name != "CONNECTED":
+                        is_valid = False
+                except AttributeError:
+                    pass
 
-        # Verify the WebSocket is still alive before sending
-        try:
-            if ws.client_state.name != "CONNECTED":
+            # If not valid, wait up to 8 seconds for the agent to reconnect and register
+            if not is_valid:
+                log.info("gateway_agent_offline_waiting", extra={"agent_name": agent_name, "attempt": attempt})
+                wait_start = asyncio.get_event_loop().time()
+                while asyncio.get_event_loop().time() - wait_start < 8.0:
+                    ws = self._agents.get(key)
+                    if ws is not None:
+                        try:
+                            if ws.client_state.name == "CONNECTED":
+                                is_valid = True
+                                break
+                        except AttributeError:
+                            is_valid = True
+                            break
+                    await asyncio.sleep(0.5)
+                
+                if not is_valid or ws is None:
+                    raise RuntimeError(
+                        f"Gateway Agent '{agent_name}' is not connected. "
+                        f"Please check if the agent script is running on the host machine."
+                    )
+
+            query_id = str(uuid.uuid4())
+            fut = asyncio.get_running_loop().create_future()
+            self._pending_queries[query_id] = fut
+
+            payload = {
+                "action": "query",
+                "query_id": query_id,
+                "sql": sql,
+                "params": params,
+                "db_name": db_name,
+                "db_type": db_type,
+            }
+
+            try:
+                await ws.send_json(payload)
+                # Wait for response with timeout
+                result = await asyncio.wait_for(fut, timeout=timeout)
+                if result.get("status") == "error":
+                    raise RuntimeError(f"Database error on agent: {result.get('error')}")
+                return result.get("data", [])
+            except asyncio.TimeoutError:
+                raise TimeoutError(f"Gateway Agent '{agent_name}' query timed out after {timeout}s.")
+            except Exception as e:
+                # Connection was lost or closed while sending/waiting
                 async with self._lock:
-                    self._agents.pop(key, None)
-                raise RuntimeError(
-                    f"Gateway Agent '{agent_name}' connection is stale. "
-                    f"Please restart the agent or wait for auto-reconnect."
-                )
-        except AttributeError:
-            pass  # client_state may not exist on all WebSocket implementations
+                    if self._agents.get(key) == ws:
+                        self._agents.pop(key, None)
+                self._pending_queries.pop(query_id, None)
+                
+                if attempt == 0:
+                    log.warning("gateway_query_attempt_failed_retrying", extra={"agent_name": agent_name, "error": str(e)})
+                    await asyncio.sleep(0.5)
+                    continue
+                else:
+                    raise RuntimeError(f"Failed to communicate with Gateway Agent '{agent_name}': {str(e)}") from e
 
-        query_id = str(uuid.uuid4())
-        fut = asyncio.get_running_loop().create_future()
-        self._pending_queries[query_id] = fut
-
-        payload = {
-            "action": "query",
-            "query_id": query_id,
-            "sql": sql,
-            "params": params,
-            "db_name": db_name,
-            "db_type": db_type,
-        }
-
-        try:
-            await ws.send_json(payload)
-            # Wait for response with timeout
-            result = await asyncio.wait_for(fut, timeout=timeout)
-            if result.get("status") == "error":
-                raise RuntimeError(f"Database error on agent: {result.get('error')}")
-            return result.get("data", [])
-        except asyncio.TimeoutError:
-            raise TimeoutError(f"Gateway Agent '{agent_name}' query timed out after {timeout}s.")
-        finally:
-            self._pending_queries.pop(query_id, None)
 
     def handle_response(self, response: dict[str, Any]) -> None:
         query_id = response.get("query_id")
