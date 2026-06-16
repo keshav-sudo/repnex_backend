@@ -180,7 +180,7 @@ async def test_connection(
         pool = await get_target_pool_registry().get_pool(conn)
         await pool.execute_one("SELECT 1 AS ok", {}, timeout=30.0)
     except Exception as e:
-        return TestConnectionResponse(ok=False, error=e.__class__.__name__)
+        return TestConnectionResponse(ok=False, error=str(e))
     conn.last_tested_at = datetime.now(timezone.utc)
     await db.commit()
     return TestConnectionResponse(

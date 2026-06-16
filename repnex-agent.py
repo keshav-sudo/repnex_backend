@@ -401,9 +401,17 @@ async def agent_loop(args):
                         pass
         except websockets.exceptions.ConnectionClosed as e:
             consecutive_failures += 1
-            if getattr(e, "code", None) == 1008:
+            code = getattr(e, "code", None)
+            reason = getattr(e, "reason", "")
+            if code == 1008:
+                if "Newer agent registered" in reason or "already connected" in reason:
+                    logger.error(
+                        f"❌ Connection closed: {reason or 'Another instance is already running'}. "
+                        "Exiting to prevent infinite reconnection loop with background agent."
+                    )
+                    sys.exit(1)
                 logger.error(
-                    f"❌ Authentication failed: {getattr(e, 'reason', 'Invalid token')}. "
+                    f"❌ Authentication failed: {reason or 'Invalid token'}. "
                     "Please generate a new token from the Repnex UI and restart the agent."
                 )
                 await asyncio.sleep(10)
