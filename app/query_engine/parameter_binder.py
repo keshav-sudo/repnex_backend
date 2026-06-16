@@ -23,11 +23,59 @@ _PERIOD_DELTAS = {
 }
 
 
+import re as _re
+
+# Max length for string parameters (prevents LLM cost explosion / DoS)
+_MAX_STRING_PARAM_LEN = 500
+
+# Patterns to strip from string parameters (XSS / injection defense)
+_DANGEROUS_PATTERNS = _re.compile(
+    r"<script|javascript:|on\w+=|&#|%3C|%3E|UNION\s+SELECT|INTO\s+OUTFILE|xp_cmdshell",
+    _re.IGNORECASE,
+)
+
+
+def _sanitize_string(value: str) -> str:
+    """Strip dangerous patterns and enforce length limits on string params."""
+    cleaned = value.strip()
+    if len(cleaned) > _MAX_STRING_PARAM_LEN:
+        cleaned = cleaned[:_MAX_STRING_PARAM_LEN]
+    # Remove dangerous patterns
+    cleaned = _DANGEROUS_PATTERNS.sub("", cleaned)
+    return cleaned
+
+
 def _coerce(name: str, spec: dict[str, Any], value: Any) -> Any:
     t = spec.get("type", "str")
+
+    # Handle null / None / empty from LLM
+    if value is None or (isinstance(value, str) and value.strip().lower() in ("null", "none", "")):
+        default = spec.get("default")
+        if default is not None:
+            return default
+        if not spec.get("required", True):
+            return None
+        raise ValidationFailed(f"param {name}: received null/empty but is required")
+
+    # Handle arrays — LLM sometimes wraps values in a list
+    if isinstance(value, (list, tuple)):
+        if len(value) == 1:
+            value = value[0]
+        elif len(value) == 0:
+            default = spec.get("default")
+            if default is not None:
+                return default
+            raise ValidationFailed(f"param {name}: empty array")
+        else:
+            # For string types, join; for others, take first
+            if t in ("str", "string"):
+                value = ", ".join(str(v) for v in value)
+            else:
+                value = value[0]
+
     if t == "int":
         try:
-            v = int(value)
+            v = int(float(value))  # float() first to handle "10.0"
         except (TypeError, ValueError) as e:
             raise ValidationFailed(f"param {name}: must be int") from e
         if "min" in spec and v < spec["min"]:
@@ -41,11 +89,17 @@ def _coerce(name: str, spec: dict[str, Any], value: Any) -> Any:
         except (TypeError, ValueError) as e:
             raise ValidationFailed(f"param {name}: must be float") from e
     if t in ("str", "string"):
-        return str(value)
+        return _sanitize_string(str(value))
     if t == "enum":
-        if value not in spec.get("values", []):
-            raise ValidationFailed(f"param {name}: must be one of {spec.get('values', [])}")
-        return value
+        str_val = str(value).strip()
+        allowed = spec.get("values", [])
+        if str_val not in allowed:
+            # Case-insensitive fallback
+            lower_map = {v.lower(): v for v in allowed}
+            if str_val.lower() in lower_map:
+                return lower_map[str_val.lower()]
+            raise ValidationFailed(f"param {name}: must be one of {allowed}")
+        return str_val
     if t == "bool":
         if isinstance(value, bool):
             return value
@@ -55,17 +109,24 @@ def _coerce(name: str, spec: dict[str, Any], value: Any) -> Any:
     if t == "date":
         if isinstance(value, datetime):
             return value.date()
+        str_val = str(value).strip()
+        # Handle common date formats
+        for fmt in ("%Y-%m-%d", "%d/%m/%Y", "%m/%d/%Y", "%Y/%m/%d"):
+            try:
+                return datetime.strptime(str_val, fmt).date()
+            except ValueError:
+                continue
         try:
-            return datetime.fromisoformat(str(value)).date()
+            return datetime.fromisoformat(str_val).date()
         except ValueError as e:
-            raise ValidationFailed(f"param {name}: invalid date") from e
+            raise ValidationFailed(f"param {name}: invalid date '{str_val}'") from e
     if t == "datetime":
         try:
             return datetime.fromisoformat(str(value))
         except ValueError as e:
             raise ValidationFailed(f"param {name}: invalid datetime") from e
-    # Unknown type — pass through as string
-    return str(value)
+    # Unknown type — pass through as sanitized string
+    return _sanitize_string(str(value))
 
 
 def _derive_period(params: dict[str, Any]) -> dict[str, Any]:

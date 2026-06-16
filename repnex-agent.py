@@ -27,6 +27,8 @@ import sys
 import platform
 import subprocess
 import textwrap
+import time
+import threading
 import websockets
 
 # ── Logging ───────────────────────────────────────────────────────────────────
@@ -41,49 +43,182 @@ SCRIPT_PATH = os.path.abspath(__file__)
 PYTHON_PATH = sys.executable
 SERVICE_NAME = "RepnexGatewayAgent"
 
+
+# ── Thread-local MSSQL connection pool ────────────────────────────────────────
+
+class AgentConnectionPool:
+    """
+    Thread-local persistent connection pool for the gateway agent.
+    
+    Keeps one persistent connection per thread instead of opening/closing
+    a new TCP+TDS connection on every query. Connections are validated
+    before use and auto-reconnected if stale.
+    """
+
+    def __init__(self, args, *, max_idle_seconds=300, max_retries=2):
+        self._args = args
+        self._max_idle = max_idle_seconds
+        self._max_retries = max_retries
+        self._local = threading.local()
+        self._lock = threading.Lock()
+        self._active: dict[int, object] = {}
+
+    def _get_connection(self, db_name=None):
+        """Get or create a persistent connection for the current thread."""
+        import pymssql
+
+        conn = getattr(self._local, 'conn', None)
+        last_db = getattr(self._local, 'db_name', None)
+        last_used = getattr(self._local, 'last_used', 0)
+        target_db = db_name or self._args.db_password  # fallback
+
+        # If database changed, close and reconnect
+        if conn is not None and last_db != target_db:
+            self._close_current()
+            conn = None
+
+        # Check idle timeout
+        if conn is not None:
+            idle = time.monotonic() - last_used
+            if idle > self._max_idle:
+                logger.debug(f"Connection idle for {int(idle)}s, recycling...")
+                self._close_current()
+                conn = None
+
+        # Health check
+        if conn is not None:
+            try:
+                with conn.cursor() as cur:
+                    cur.execute("SELECT 1")
+                    cur.fetchone()
+                self._local.last_used = time.monotonic()
+                return conn
+            except Exception as e:
+                logger.warning(f"Connection health check failed: {e}")
+                self._close_current()
+                conn = None
+
+        # Create new connection with retries
+        for attempt in range(1, self._max_retries + 1):
+            try:
+                conn = pymssql.connect(
+                    server=self._args.db_host,
+                    port=int(self._args.db_port),
+                    user=self._args.db_user,
+                    password=self._args.db_password,
+                    database=target_db,
+                    login_timeout=15,
+                    timeout=60,
+                )
+                self._local.conn = conn
+                self._local.db_name = target_db
+                self._local.last_used = time.monotonic()
+                tid = threading.current_thread().ident
+                with self._lock:
+                    self._active[tid] = conn
+                logger.info(f"MSSQL connection established (attempt {attempt}, db={target_db})")
+                return conn
+            except Exception as e:
+                logger.warning(f"Connection attempt {attempt}/{self._max_retries} failed: {e}")
+                if attempt == self._max_retries:
+                    raise
+                time.sleep(min(1.0 * attempt, 3.0))
+
+    def _close_current(self):
+        conn = getattr(self._local, 'conn', None)
+        if conn:
+            try:
+                conn.close()
+            except Exception:
+                pass
+            self._local.conn = None
+            self._local.db_name = None
+            self._local.last_used = 0
+            tid = threading.current_thread().ident
+            with self._lock:
+                self._active.pop(tid, None)
+
+    def execute_query(self, sql, params, db_name):
+        """Execute a query with auto-reconnection."""
+        conn = self._get_connection(db_name)
+
+        try:
+            with conn.cursor() as cursor:
+                cursor.execute(sql, params)
+                raw_rows = cursor.fetchall()
+
+                col_names = []
+                if cursor.description:
+                    for i, desc in enumerate(cursor.description):
+                        col_names.append(desc[0] if desc[0] else f"column_{i}")
+
+                result = []
+                for row in raw_rows:
+                    r = dict(zip(col_names, row))
+                    for k, v in r.items():
+                        if hasattr(v, 'isoformat'):
+                            r[k] = v.isoformat()
+                        elif hasattr(v, 'to_eng_string'):
+                            r[k] = str(v)
+                        elif hasattr(v, '__str__') and type(v).__name__ in ('Decimal', 'UUID'):
+                            r[k] = str(v)
+                    result.append(r)
+
+                self._local.last_used = time.monotonic()
+                return result
+        except Exception as e:
+            logger.warning(f"Query failed, reconnecting: {e}")
+            self._close_current()
+
+            # Retry with fresh connection
+            conn = self._get_connection(db_name)
+            try:
+                with conn.cursor() as cursor:
+                    cursor.execute(sql, params)
+                    raw_rows = cursor.fetchall()
+                    col_names = []
+                    if cursor.description:
+                        for i, desc in enumerate(cursor.description):
+                            col_names.append(desc[0] if desc[0] else f"column_{i}")
+                    result = []
+                    for row in raw_rows:
+                        r = dict(zip(col_names, row))
+                        for k, v in r.items():
+                            if hasattr(v, 'isoformat'):
+                                r[k] = v.isoformat()
+                            elif hasattr(v, 'to_eng_string'):
+                                r[k] = str(v)
+                            elif hasattr(v, '__str__') and type(v).__name__ in ('Decimal', 'UUID'):
+                                r[k] = str(v)
+                        result.append(r)
+                    self._local.last_used = time.monotonic()
+                    return result
+            except Exception as retry_err:
+                self._close_current()
+                raise RuntimeError(f"Query failed after reconnection: {retry_err}") from retry_err
+
+    def close_all(self):
+        with self._lock:
+            for conn in self._active.values():
+                try:
+                    conn.close()
+                except Exception:
+                    pass
+            self._active.clear()
+
+
+# Global connection pools (one per db_name encountered)
+_mssql_pool: AgentConnectionPool | None = None
+
+
 # ── Database drivers ──────────────────────────────────────────────────────────
 
 def run_mssql_query(sql, params, db_name, args):
-    import pymssql
+    global _mssql_pool
+    if _mssql_pool is None:
+        _mssql_pool = AgentConnectionPool(args)
     logger.info(f"Executing MSSQL query on database '{db_name}'...")
-    try:
-        conn = pymssql.connect(
-            server=args.db_host,
-            port=int(args.db_port),
-            user=args.db_user,
-            password=args.db_password,
-            database=db_name,
-            login_timeout=15,
-            timeout=60
-        )
-        with conn.cursor() as cursor:
-            cursor.execute(sql, params)
-            raw_rows = cursor.fetchall()
-
-            # Build column names — fallback for unnamed columns (e.g. SELECT 1)
-            col_names = []
-            if cursor.description:
-                for i, desc in enumerate(cursor.description):
-                    col_names.append(desc[0] if desc[0] else f"column_{i}")
-
-            result = []
-            for row in raw_rows:
-                r = dict(zip(col_names, row))
-                for k, v in r.items():
-                    if hasattr(v, 'isoformat'):
-                        r[k] = v.isoformat()
-                    elif hasattr(v, 'to_eng_string'):
-                        r[k] = str(v)
-                    elif hasattr(v, '__str__') and type(v).__name__ in ('Decimal', 'UUID'):
-                        r[k] = str(v)
-                result.append(r)
-            return result
-    except Exception as e:
-        logger.error(f"MSSQL Execution error: {e}")
-        raise
-    finally:
-        if 'conn' in locals():
-            conn.close()
+    return _mssql_pool.execute_query(sql, params, db_name)
 
 
 async def run_postgres_query(sql, params, db_name, args):
@@ -142,7 +277,7 @@ async def handle_query(payload, args):
         return {"action": "query_response", "query_id": query_id, "status": "error", "error": str(e)}
 
 
-# ── WebSocket loop ────────────────────────────────────────────────────────────
+# ── WebSocket loop with exponential backoff ───────────────────────────────────
 
 async def agent_loop(args):
     uri = f"{args.server}/ws/gateway?token={args.token}&agent_name={args.agent_name}"
@@ -150,10 +285,19 @@ async def agent_loop(args):
     logger.info(f"Agent Name  : '{args.agent_name}'")
     logger.info(f"Database    : {args.db_host}:{args.db_port} ({args.db_type.upper()})")
 
+    # Exponential backoff state
+    retry_delay = 5        # Start at 5s
+    max_retry_delay = 120  # Cap at 2 minutes
+    consecutive_failures = 0
+
     while True:
         try:
             async with websockets.connect(uri, ping_interval=20, ping_timeout=20) as websocket:
                 logger.info("✅ Connected and registered with cloud. Waiting for queries...")
+                # Reset backoff on successful connection
+                retry_delay = 5
+                consecutive_failures = 0
+
                 while True:
                     message_raw = await websocket.recv()
                     payload = json.loads(message_raw)
@@ -163,11 +307,22 @@ async def agent_loop(args):
                         await websocket.send(json.dumps(response))
                         logger.info(f"Query answered: {payload.get('query_id')}")
         except (websockets.exceptions.ConnectionClosed, OSError) as e:
-            logger.warning(f"Connection lost: {e}. Retrying in 5 seconds...")
-            await asyncio.sleep(5)
+            consecutive_failures += 1
+            logger.warning(
+                f"Connection lost: {e}. "
+                f"Retry #{consecutive_failures} in {retry_delay}s..."
+            )
+            await asyncio.sleep(retry_delay)
+            # Exponential backoff with cap
+            retry_delay = min(retry_delay * 1.5, max_retry_delay)
         except Exception as e:
-            logger.error(f"Unexpected error: {e}. Retrying in 5 seconds...")
-            await asyncio.sleep(5)
+            consecutive_failures += 1
+            logger.error(
+                f"Unexpected error: {e}. "
+                f"Retry #{consecutive_failures} in {retry_delay}s..."
+            )
+            await asyncio.sleep(retry_delay)
+            retry_delay = min(retry_delay * 1.5, max_retry_delay)
 
 
 # ── Service installer helpers ─────────────────────────────────────────────────
@@ -405,6 +560,9 @@ def main():
         asyncio.run(agent_loop(args))
     except KeyboardInterrupt:
         logger.info("Agent stopped by user.")
+        # Clean up connection pool
+        if _mssql_pool:
+            _mssql_pool.close_all()
 
 
 if __name__ == "__main__":

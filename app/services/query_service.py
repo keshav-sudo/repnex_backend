@@ -34,6 +34,7 @@ from app.llm.suggestion_generator import generate_suggestions
 from app.query_engine.executor import execute_collect, execute_stream
 from app.query_engine.parameter_binder import bind, find_missing_params
 from app.query_engine.template_loader import (
+    TemplateRegistry,
     create_template_from_pinecone,
     get_template_registry,
 )
@@ -136,17 +137,27 @@ async def chat(
     store = get_pinecone_store_optional()
     registry = get_template_registry()
 
-    # Search Pinecone for matching templates
+    # Detect module hint from natural language for Pinecone filtering
+    module_filter = _detect_module_from_query(nl)
+
+    # Search Pinecone for matching templates (with keyword reranking)
     template_candidates: list[dict[str, Any]] = []
     if store:
         try:
-            template_candidates = store.search_templates(nl, top_k=5)
+            template_candidates = store.search_with_rerank(
+                nl, top_k=5, module_filter=module_filter
+            )
         except Exception as e:
             log.warning("pinecone_search_failed", extra={"err": str(e)})
+            # Fallback to basic search without module filter
+            try:
+                template_candidates = store.search_templates(nl, top_k=5)
+            except Exception:
+                pass
 
-    # Fall back to static registry if no Pinecone results
+    # Fall back to keyword-matched static registry if no Pinecone results
     if not template_candidates:
-        template_candidates = registry.list_for_llm()[:10]
+        template_candidates = _smart_static_fallback(registry, nl)
 
     # ── Step 3: Extract intent from candidates ───────────────────────
     try:
@@ -773,14 +784,102 @@ async def run_streaming(
 # ── private helpers ──────────────────────────────────────────────────
 
 
+# Module detection keywords → Pinecone module filter
+_MODULE_KEYWORDS: dict[str, list[str]] = {
+    "ap": [
+        "accounts payable", "payable", "supplier", "vendor", "purchase invoice",
+        "ap aging", "ap ageing", "supplier invoice", "creditor", "bill",
+    ],
+    "ar": [
+        "accounts receivable", "receivable", "customer", "debtor", "sales invoice",
+        "ar aging", "ar ageing", "customer invoice", "revenue", "customer balance",
+    ],
+    "inventory": [
+        "inventory", "stock", "warehouse", "stock on hand", "bin", "location",
+        "slow moving", "dead stock", "valuation", "reorder",
+    ],
+    "so": [
+        "sales order", "sales orders", "backlog", "outstanding sales",
+        "order book", "sales backlog",
+    ],
+    "po": [
+        "purchase order", "purchase orders", "po receipt", "grn",
+        "goods received", "supplier delivery",
+    ],
+    "gl": [
+        "general ledger", "gl", "trial balance", "journal", "p&l",
+        "profit and loss", "balance sheet", "cashbook", "cash book",
+    ],
+}
+
+
+def _detect_module_from_query(query: str) -> str | None:
+    """
+    Detect the ERP module from the user's natural language query.
+    Returns a module key (ap, ar, inventory, etc.) or None.
+    """
+    q = query.lower()
+    best_module = None
+    best_hits = 0
+
+    for module, keywords in _MODULE_KEYWORDS.items():
+        hits = sum(1 for kw in keywords if kw in q)
+        if hits > best_hits:
+            best_hits = hits
+            best_module = module
+
+    return best_module
+
+
+def _smart_static_fallback(
+    registry: TemplateRegistry,
+    query: str,
+    max_results: int = 10,
+) -> list[dict[str, Any]]:
+    """
+    Keyword-based fallback when Pinecone is unavailable.
+    Instead of returning first N templates alphabetically,
+    scores templates by word overlap with the query.
+    """
+    q_words = set(query.lower().split())
+    all_templates = registry.list_for_llm()
+
+    scored = []
+    for t in all_templates:
+        desc_words = set(t.get("description", "").lower().split())
+        category_words = set(t.get("category", "").lower().replace("_", " ").split())
+        module_words = set(t.get("module", "").lower().replace("_", " ").split())
+
+        # Score by overlap
+        desc_overlap = len(q_words & desc_words)
+        cat_overlap = len(q_words & category_words)
+        mod_overlap = len(q_words & module_words)
+        score = desc_overlap * 2 + cat_overlap * 3 + mod_overlap * 3
+
+        if score > 0:
+            scored.append((score, t))
+
+    if scored:
+        scored.sort(key=lambda x: x[0], reverse=True)
+        return [t for _, t in scored[:max_results]]
+
+    # Absolute fallback — return first N
+    return all_templates[:max_results]
+
+
 async def _intent(natural_language: str, ctx: list) -> IntentResult:
     s = get_settings()
 
-    # Try Pinecone first
+    # Detect module hint from query
+    module_filter = _detect_module_from_query(natural_language)
+
+    # Try Pinecone with reranking first
     store = get_pinecone_store_optional()
     if store:
         try:
-            candidates = store.search_templates(natural_language, top_k=5)
+            candidates = store.search_with_rerank(
+                natural_language, top_k=5, module_filter=module_filter
+            )
             if candidates:
                 intent = await extract_intent(
                     natural_language,
@@ -792,8 +891,9 @@ async def _intent(natural_language: str, ctx: list) -> IntentResult:
         except Exception as e:
             log.warning("pinecone_intent_failed", extra={"err": str(e)})
 
-    # Fall back to static catalog
-    catalog = get_template_registry().list_for_llm()
+    # Fall back to keyword-matched static catalog
+    registry = get_template_registry()
+    catalog = _smart_static_fallback(registry, natural_language)
     intent = await extract_intent(natural_language, template_candidates=catalog, context_window=ctx)
     if not intent.template_id or intent.confidence < s.INTENT_MIN_CONFIDENCE:
         raise ValidationFailed(

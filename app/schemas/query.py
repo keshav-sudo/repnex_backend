@@ -23,12 +23,12 @@ class UserPersonalization(BaseModel):
 
 class RunQueryRequest(BaseModel):
     session_id: uuid.UUID
-    natural_language: str = Field(min_length=1, max_length=4000)
+    natural_language: str = Field(min_length=1, max_length=2000)
 
 
 class ChatRequest(BaseModel):
     """Unified chat endpoint request."""
-    natural_language: str = Field(min_length=1, max_length=4000)
+    natural_language: str = Field(min_length=1, max_length=2000)
     connection_id: uuid.UUID | None = None
     session_id: uuid.UUID | None = None
     personalization: UserPersonalization | None = None

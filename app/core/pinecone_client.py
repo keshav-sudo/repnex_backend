@@ -26,6 +26,7 @@ class PineconeTemplateStore:
         log.info("pinecone_connected", extra={"index": s.PINECONE_INDEX_NAME})
 
     # ── search ───────────────────────────────────────────────────────
+
     def search_templates(
         self,
         query_text: str,
@@ -75,6 +76,15 @@ class PineconeTemplateStore:
                 except json.JSONDecodeError:
                     result_columns = []
 
+            keywords_raw = meta.get("keywords", "[]")
+            if isinstance(keywords_raw, str):
+                try:
+                    keywords_list = json.loads(keywords_raw)
+                except json.JSONDecodeError:
+                    keywords_list = []
+            else:
+                keywords_list = keywords_raw if isinstance(keywords_raw, list) else []
+
             templates.append(
                 {
                     "id": match["id"],
@@ -85,9 +95,75 @@ class PineconeTemplateStore:
                     "sql": meta.get("sql", ""),
                     "params": params,
                     "result_columns": result_columns,
+                    "keywords": keywords_list,
                 }
             )
         return templates
+
+    def search_with_rerank(
+        self,
+        query_text: str,
+        top_k: int = 5,
+        module_filter: str | None = None,
+    ) -> list[dict[str, Any]]:
+        """
+        Two-stage retrieval: broad vector search → keyword/semantic reranking.
+
+        Stage 1: Fetch top_k * 3 candidates from Pinecone
+        Stage 2: Re-rank using keyword overlap + description similarity
+        """
+        # Stage 1: Broad retrieval
+        candidates = self.search_templates(
+            query_text, top_k=top_k * 3, module_filter=module_filter
+        )
+
+        if not candidates:
+            return []
+
+        # Stage 2: Keyword-boosted reranking
+        query_lower = query_text.lower()
+        query_words = set(query_lower.split())
+
+        scored = []
+        for c in candidates:
+            base_score = c.get("score", 0.0)
+
+            # Keyword overlap boost
+            keywords = c.get("keywords", [])
+            if isinstance(keywords, str):
+                try:
+                    keywords = json.loads(keywords)
+                except Exception:
+                    keywords = []
+
+            keyword_hits = sum(
+                1 for kw in keywords
+                if kw.lower() in query_lower or any(w in kw.lower() for w in query_words)
+            )
+            keyword_boost = min(keyword_hits * 0.03, 0.12)  # max 12% boost
+
+            # Description word overlap boost
+            desc_words = set(c.get("description", "").lower().split())
+            desc_overlap = len(query_words & desc_words)
+            desc_boost = min(desc_overlap * 0.02, 0.08)  # max 8% boost
+
+            # Module/category match boost from query keywords
+            module = c.get("module", "").lower()
+            category = c.get("category", "").lower()
+            module_boost = 0.05 if module and module in query_lower else 0
+            category_boost = 0.03 if category and category in query_lower else 0
+
+            final_score = base_score + keyword_boost + desc_boost + module_boost + category_boost
+            scored.append((final_score, c))
+
+        # Sort by final score and return top_k
+        scored.sort(key=lambda x: x[0], reverse=True)
+        results = []
+        for score, c in scored[:top_k]:
+            c["score"] = score  # Update with reranked score
+            results.append(c)
+
+        return results
 
     def get_template_by_id(self, template_id: str) -> dict[str, Any] | None:
         """Fetch a specific template by ID from the index namespace."""
