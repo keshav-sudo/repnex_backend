@@ -29,7 +29,21 @@ import subprocess
 import textwrap
 import time
 import threading
-import websockets
+
+try:
+    import websockets
+except ImportError:
+    import subprocess
+    import sys
+    print("📦 Missing required dependency 'websockets'. Auto-installing via pip...")
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "websockets"])
+        import websockets
+        print("✅ 'websockets' installed successfully!")
+    except Exception as e:
+        print(f"❌ Failed to install 'websockets' automatically: {e}")
+        print("💡 Please run: pip install websockets")
+        sys.exit(1)
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -648,6 +662,14 @@ def main():
         if isinstance(val, str):
             setattr(args, key, val.strip("'\""))
 
+    # Normalize server URL: remove trailing slashes and convert http/https to ws/wss
+    if args.server:
+        args.server = args.server.rstrip("/")
+        if args.server.startswith("http://"):
+            args.server = args.server.replace("http://", "ws://", 1)
+        elif args.server.startswith("https://"):
+            args.server = args.server.replace("https://", "wss://", 1)
+
     os_name = platform.system()
 
     # ── Service management ────────────────────────────────────────────────────
@@ -672,6 +694,32 @@ def main():
     if not args.token:
         print("❌ --token is required. Get it from the Repnex UI (Gateway Mode > copy command).")
         sys.exit(1)
+
+    # Programmatic self-healing for database driver packages
+    if args.db_type == "mssql":
+        try:
+            import pymssql
+        except ImportError:
+            print("📦 Missing database driver 'pymssql'. Auto-installing via pip...")
+            try:
+                subprocess.check_call([sys.executable, "-m", "pip", "install", "pymssql"])
+                print("✅ 'pymssql' installed successfully!")
+            except Exception as e:
+                print(f"❌ Failed to install 'pymssql': {e}")
+                print("💡 Please run: pip install pymssql")
+                sys.exit(1)
+    elif args.db_type == "postgres":
+        try:
+            import asyncpg
+        except ImportError:
+            print("📦 Missing database driver 'asyncpg'. Auto-installing via pip...")
+            try:
+                subprocess.check_call([sys.executable, "-m", "pip", "install", "asyncpg"])
+                print("✅ 'asyncpg' installed successfully!")
+            except Exception as e:
+                print(f"❌ Failed to install 'asyncpg': {e}")
+                print("💡 Please run: pip install asyncpg")
+                sys.exit(1)
 
     try:
         asyncio.run(agent_loop(args))

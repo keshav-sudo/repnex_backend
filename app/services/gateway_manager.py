@@ -96,10 +96,19 @@ class GatewayManager:
                     await asyncio.sleep(0.5)
                 
                 if not is_valid or ws is None:
-                    raise RuntimeError(
-                        f"Gateway Agent '{agent_name}' is not connected. "
-                        f"Please check if the agent script is running on the host machine."
-                    )
+                    active = self.list_active_agents(org_id)
+                    if active:
+                        raise RuntimeError(
+                            f"Gateway Agent '{agent_name}' is not connected. "
+                            f"(Currently connected agents for your organization: {active}). "
+                            f"Please check if the agent script is running with the correct --agent-name parameter."
+                        )
+                    else:
+                        raise RuntimeError(
+                            f"Gateway Agent '{agent_name}' is not connected. "
+                            f"No active agents are currently connected for your organization. "
+                            f"Please verify if the agent script is running on the host machine."
+                        )
 
             query_id = str(uuid.uuid4())
             fut = asyncio.get_running_loop().create_future()
