@@ -80,6 +80,7 @@ class Organization(Base):
     plan_type: Mapped[PlanType] = mapped_column(
         Enum(PlanType, name="plan_type"), default=PlanType.free, nullable=False
     )
+    hide_sql_queries: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     created_at: Mapped[datetime] = _ts_created()
 
 

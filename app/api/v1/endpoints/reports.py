@@ -22,6 +22,7 @@ from app.schemas.report import (
     SnapshotDetailRead,
     SnapshotRead,
     ReportExportRequest,
+    BulkExportRequest,
 )
 from app.services import report_service, export_service
 
@@ -70,6 +71,35 @@ async def export_pdf(
         io.BytesIO(pdf_bytes),
         media_type="application/pdf",
         headers={"Content-Disposition": f"attachment; filename=export.pdf"},
+    )
+
+
+@router.post("/export/bulk")
+async def export_bulk(
+    data: BulkExportRequest,
+    current: CurrentUser = Depends(bind_tenant_context),
+) -> StreamingResponse:
+    """Export multiple reports combined into a single file or a ZIP package."""
+    reports_dict = [{"title": r.title, "headers": r.headers, "rows": r.rows} for r in data.reports]
+    
+    if data.format == "excel":
+        file_bytes = export_service.generate_bulk_excel(reports_dict)
+        media_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        filename = "bulk_export.xlsx"
+    elif data.format == "pdf":
+        file_bytes = export_service.generate_bulk_pdf(reports_dict)
+        media_type = "application/pdf"
+        filename = "bulk_export.pdf"
+    else:  # zip or csv
+        # If format is csv, we package individual CSVs in a ZIP
+        file_bytes = export_service.generate_bulk_zip(reports_dict, format_type="csv" if data.format == "csv" else "excel")
+        media_type = "application/zip"
+        filename = "bulk_export.zip"
+        
+    return StreamingResponse(
+        io.BytesIO(file_bytes),
+        media_type=media_type,
+        headers={"Content-Disposition": f"attachment; filename={filename}"},
     )
 
 

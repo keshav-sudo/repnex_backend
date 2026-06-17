@@ -32,6 +32,15 @@ async def list_users(
     return [UserRead.model_validate(u) for u in rows]
 
 
+import uuid
+from app.core.database.models import Organization
+
+async def is_sql_hidden(db: AsyncSession, org_id: uuid.UUID) -> bool:
+    stmt = select(Organization.hide_sql_queries).where(Organization.id == org_id)
+    res = await db.execute(stmt)
+    return bool(res.scalar())
+
+
 @router.get("/query-history", response_model=list[QueryHistoryRead])
 async def query_history(
     current: CurrentUser = Depends(bind_tenant_context),
@@ -47,4 +56,12 @@ async def query_history(
             .limit(min(limit, 500))
         )
     ).scalars().all()
-    return [QueryHistoryRead.model_validate(h) for h in rows]
+    hide = await is_sql_hidden(db, current.org_id)
+    result = []
+    for h in rows:
+        val = QueryHistoryRead.model_validate(h)
+        if hide:
+            val.generated_sql = "-- SQL hidden by organization settings"
+        result.append(val)
+    return result
+

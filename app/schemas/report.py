@@ -115,3 +115,9 @@ class ReportExportRequest(BaseModel):
     headers: list[str]
     rows: list[dict[str, Any]]
 
+
+class BulkExportRequest(BaseModel):
+    reports: list[ReportExportRequest]
+    format: Literal["excel", "pdf", "zip", "csv"] = "zip"
+
+

@@ -16,9 +16,12 @@ class OrgRead(ORMBase):
     name: str
     owner_id: uuid.UUID | None
     plan_type: PlanType
+    hide_sql_queries: bool
     created_at: datetime
 
 
 class OrgUpdate(BaseModel):
     name: str | None = None
     plan_type: PlanType | None = None
+    hide_sql_queries: bool | None = None
+
