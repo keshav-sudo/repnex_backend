@@ -114,7 +114,32 @@ async def export_bulk(
         )
         snap_obj = (await db.execute(snap_stmt)).scalars().first()
         
-        rows = snap_obj.rows_data if snap_obj else []
+        if snap_obj:
+            rows = snap_obj.rows_data
+        else:
+            conn_id = report_obj.auto_refresh_connection_id
+            if not conn_id:
+                from app.services import connection_service
+                conns = await connection_service.list_connections(db, current)
+                if conns:
+                    conn_id = conns[0].id
+            
+            if conn_id:
+                try:
+                    from app.services import report_service
+                    snap = await report_service._execute_and_snapshot(
+                        db, report_obj, conn_id, triggered_by="manual"
+                    )
+                    await db.commit()
+                    rows = snap.rows_data
+                except Exception as e:
+                    import logging
+                    logging.getLogger("app").warning(
+                        f"Failed to auto-generate snapshot for report {report_id}: {e}"
+                    )
+                    rows = []
+            else:
+                rows = []
         
         reports_dict.append({
             "title": report_obj.name or "Report",
