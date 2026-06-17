@@ -108,3 +108,10 @@ class SnapshotRead(ORMBase):
 class SnapshotDetailRead(SnapshotRead):
     """Includes full rows_data for inline preview."""
     rows_data: list[dict[str, Any]]
+
+
+class ReportExportRequest(BaseModel):
+    title: str
+    headers: list[str]
+    rows: list[dict[str, Any]]
+
