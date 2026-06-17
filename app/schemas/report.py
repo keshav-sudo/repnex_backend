@@ -117,7 +117,7 @@ class ReportExportRequest(BaseModel):
 
 
 class BulkExportRequest(BaseModel):
-    reports: list[ReportExportRequest]
+    report_ids: list[uuid.UUID]
     format: Literal["excel", "pdf", "zip", "csv"] = "zip"
 
 

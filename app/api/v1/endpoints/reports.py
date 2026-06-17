@@ -11,6 +11,7 @@ from app.api.v1.dependencies.rate_limit import rate_limit
 from app.api.v1.dependencies.tenancy import bind_tenant_context
 from app.core.database.session import get_db
 from app.core.security.auth import CurrentUser
+from app.core.exceptions import Forbidden
 from app.schemas.report import (
     ReportCreate,
     ReportRead,
@@ -52,6 +53,8 @@ async def export_excel(
     current: CurrentUser = Depends(bind_tenant_context),
 ) -> StreamingResponse:
     """Export report data to Excel (.xlsx)."""
+    if current.role == "viewer":
+        raise Forbidden("Viewers are not allowed to export report data")
     excel_bytes = export_service.generate_excel(data.title, data.headers, data.rows)
     return StreamingResponse(
         io.BytesIO(excel_bytes),
@@ -66,6 +69,8 @@ async def export_pdf(
     current: CurrentUser = Depends(bind_tenant_context),
 ) -> StreamingResponse:
     """Export report data to PDF (.pdf)."""
+    if current.role == "viewer":
+        raise Forbidden("Viewers are not allowed to export report data")
     pdf_bytes = export_service.generate_pdf(data.title, data.headers, data.rows)
     return StreamingResponse(
         io.BytesIO(pdf_bytes),
@@ -78,9 +83,44 @@ async def export_pdf(
 async def export_bulk(
     data: BulkExportRequest,
     current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncSession = Depends(get_db),
 ) -> StreamingResponse:
     """Export multiple reports combined into a single file or a ZIP package."""
-    reports_dict = [{"title": r.title, "headers": r.headers, "rows": r.rows} for r in data.reports]
+    if current.role == "viewer":
+        raise Forbidden("Viewers are not allowed to export report data")
+        
+    from sqlalchemy import select
+    from app.core.database.models import Report, ReportSnapshot
+
+    reports_dict = []
+    for report_id in data.report_ids:
+        # 1. Fetch report configuration
+        stmt = select(Report).where(
+            Report.id == report_id,
+            Report.org_id == current.org_id
+        )
+        report_obj = (await db.execute(stmt)).scalars().first()
+        if not report_obj:
+            continue
+            
+        headers = [c.column_name for c in report_obj.columns if c.is_visible]
+        
+        # 2. Fetch latest snapshot for this report
+        snap_stmt = (
+            select(ReportSnapshot)
+            .where(ReportSnapshot.report_id == report_id)
+            .order_by(ReportSnapshot.created_at.desc())
+            .limit(1)
+        )
+        snap_obj = (await db.execute(snap_stmt)).scalars().first()
+        
+        rows = snap_obj.rows_data if snap_obj else []
+        
+        reports_dict.append({
+            "title": report_obj.name or "Report",
+            "headers": headers,
+            "rows": rows
+        })
     
     if data.format == "excel":
         file_bytes = export_service.generate_bulk_excel(reports_dict)
