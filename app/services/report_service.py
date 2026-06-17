@@ -168,6 +168,22 @@ async def run_report(
     result = await execute_collect(conn, bound)
     exec_ms = int((time.perf_counter() - started) * 1000)
 
+    # Save snapshot in database
+    try:
+        snap = ReportSnapshot(
+            report_id=r.id,
+            org_id=r.org_id,
+            triggered_by="manual",
+            rows_data=result.rows,
+            rows_returned=result.rows_returned,
+            execution_time_ms=exec_ms,
+        )
+        db.add(snap)
+        r.last_refreshed_at = datetime.now(UTC)
+        await db.commit()
+    except Exception as e:
+        log.warning("failed_to_save_run_snapshot", extra={"report_id": str(r.id), "error": str(e)})
+
     return RunReportResponse(
         report_id=r.id,
         rows=result.rows,

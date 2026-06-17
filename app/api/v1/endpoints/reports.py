@@ -117,7 +117,7 @@ async def export_bulk(
         if snap_obj:
             rows = snap_obj.rows_data
         else:
-            conn_id = report_obj.auto_refresh_connection_id
+            conn_id = data.connection_id or report_obj.auto_refresh_connection_id
             if not conn_id:
                 from app.services import connection_service
                 conns = await connection_service.list_connections(db, current)
