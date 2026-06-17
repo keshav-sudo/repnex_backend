@@ -45,6 +45,34 @@ async def create(
     return await report_service.create_report(db, current, data)
 
 
+@router.post("/export/excel")
+async def export_excel(
+    data: ReportExportRequest,
+    current: CurrentUser = Depends(bind_tenant_context),
+) -> StreamingResponse:
+    """Export report data to Excel (.xlsx)."""
+    excel_bytes = export_service.generate_excel(data.title, data.headers, data.rows)
+    return StreamingResponse(
+        io.BytesIO(excel_bytes),
+        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        headers={"Content-Disposition": f"attachment; filename=export.xlsx"},
+    )
+
+
+@router.post("/export/pdf")
+async def export_pdf(
+    data: ReportExportRequest,
+    current: CurrentUser = Depends(bind_tenant_context),
+) -> StreamingResponse:
+    """Export report data to PDF (.pdf)."""
+    pdf_bytes = export_service.generate_pdf(data.title, data.headers, data.rows)
+    return StreamingResponse(
+        io.BytesIO(pdf_bytes),
+        media_type="application/pdf",
+        headers={"Content-Disposition": f"attachment; filename=export.pdf"},
+    )
+
+
 @router.get("/{report_id}", response_model=ReportRead)
 async def get(
     report_id: uuid.UUID,
@@ -156,32 +184,4 @@ async def get_snapshot(
 ) -> SnapshotDetailRead:
     """Get a single snapshot including full row data for preview."""
     return await report_service.get_snapshot_detail(db, current, report_id, snapshot_id)
-
-
-@router.post("/export/excel")
-async def export_excel(
-    data: ReportExportRequest,
-    current: CurrentUser = Depends(bind_tenant_context),
-) -> StreamingResponse:
-    """Export report data to Excel (.xlsx)."""
-    excel_bytes = export_service.generate_excel(data.title, data.headers, data.rows)
-    return StreamingResponse(
-        io.BytesIO(excel_bytes),
-        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-        headers={"Content-Disposition": f"attachment; filename=export.xlsx"},
-    )
-
-
-@router.post("/export/pdf")
-async def export_pdf(
-    data: ReportExportRequest,
-    current: CurrentUser = Depends(bind_tenant_context),
-) -> StreamingResponse:
-    """Export report data to PDF (.pdf)."""
-    pdf_bytes = export_service.generate_pdf(data.title, data.headers, data.rows)
-    return StreamingResponse(
-        io.BytesIO(pdf_bytes),
-        media_type="application/pdf",
-        headers={"Content-Disposition": f"attachment; filename=export.pdf"},
-    )
 
