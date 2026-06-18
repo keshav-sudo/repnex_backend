@@ -56,7 +56,7 @@ async def chat(
     data: ChatRequest,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-    _rl: None = Depends(rate_limit("query")),
+    # _rl: None = Depends(rate_limit("query")),
 ) -> ChatResponse:
     """Unified chat endpoint: classifies intent and returns appropriate response."""
     res = await query_service.chat(db, current, data=data)
@@ -68,7 +68,7 @@ async def execute_with_params(
     data: ExecuteRequest,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-    _rl: None = Depends(rate_limit("query")),
+    # _rl: None = Depends(rate_limit("query")),
 ) -> ChatResponse:
     """Execute a template with explicit parameters (after params_needed)."""
     res = await query_service.execute_with_params(db, current, data=data)
@@ -80,7 +80,7 @@ async def run_query(
     data: RunQueryRequest,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncSession = Depends(get_db),
-    _rl: None = Depends(rate_limit("query")),
+    # _rl: None = Depends(rate_limit("query")),
 ) -> RunQueryResponse:
     """Legacy endpoint: run query in one shot."""
     res = await query_service.run_via_rest(
