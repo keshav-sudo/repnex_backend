@@ -9,7 +9,7 @@ from app.core.database.models import User, UserRole
 from app.core.exceptions import Forbidden, NotFound
 from app.core.security.auth import CurrentUser
 from app.core.security.passwords import hash_password, verify_password
-from app.schemas.user import RoleUpdateRequest, UserRead
+from app.schemas.user import RoleUpdateRequest, UserRead, PermissionsUpdateRequest
 
 
 async def get_me(db: AsyncSession, current: CurrentUser) -> UserRead:
@@ -43,6 +43,29 @@ async def update_role(
     if not user:
         raise NotFound("User not found")
     user.role = UserRole(data.role)
+    await db.commit()
+    await db.refresh(user)
+    return UserRead.model_validate(user)
+
+
+async def update_permissions(
+    db: AsyncSession, current: CurrentUser, user_id: uuid.UUID, data: PermissionsUpdateRequest
+) -> UserRead:
+    if current.role != "admin":
+        raise Forbidden("Only admins can manage permissions")
+    user = (
+        await db.execute(
+            select(User).where(User.id == user_id, User.org_id == current.org_id)
+        )
+    ).scalar_one_or_none()
+    if not user:
+        raise NotFound("User not found")
+    
+    # Merge or set permissions
+    current_perms = dict(user.module_permissions or {})
+    current_perms.update(data.module_permissions)
+    user.module_permissions = current_perms
+    
     await db.commit()
     await db.refresh(user)
     return UserRead.model_validate(user)

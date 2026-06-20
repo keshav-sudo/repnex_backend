@@ -15,6 +15,7 @@ from app.schemas.user import (
     PasswordChangeRequest,
     RoleUpdateRequest,
     UserRead,
+    PermissionsUpdateRequest,
 )
 from app.services import invitation_service, user_service
 
@@ -62,6 +63,16 @@ async def change_role(
     db: AsyncSession = Depends(get_db),
 ) -> UserRead:
     return await user_service.update_role(db, current, user_id, data)
+
+
+@router.patch("/{user_id}/permissions", response_model=UserRead)
+async def update_permissions(
+    user_id: uuid.UUID,
+    data: PermissionsUpdateRequest,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncSession = Depends(get_db),
+) -> UserRead:
+    return await user_service.update_permissions(db, current, user_id, data)
 
 
 @router.post("/me/password", status_code=status.HTTP_200_OK)

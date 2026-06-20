@@ -18,6 +18,7 @@ class UserRead(ORMBase):
     role: Role
     status: str
     invited_by: uuid.UUID | None = None
+    module_permissions: dict[str, bool] | None = None
     created_at: datetime
 
 
@@ -33,6 +34,10 @@ class InviteResponse(BaseModel):
 
 class RoleUpdateRequest(BaseModel):
     role: Role
+
+
+class PermissionsUpdateRequest(BaseModel):
+    module_permissions: dict[str, bool]
 
 
 class UserUpdate(BaseModel):
