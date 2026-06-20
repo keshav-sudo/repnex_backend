@@ -10,8 +10,7 @@ from app.schemas.user import InviteRequest, InviteResponse
 from app.services import invitation_service
 from fastapi import APIRouter, Depends, status
 from pydantic import BaseModel
-from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 router = APIRouter(prefix="/organizations", tags=["organizations"])
 
@@ -27,17 +26,18 @@ class OnboardingPayload(BaseModel):
 async def complete_onboarding(
     data: OnboardingPayload,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ):
     # 1. Update organization name
-    org = (
-        await db.execute(select(Organization).where(Organization.id == current.org_id))
-    ).scalar_one()
-    org.name = data.organizationName
+    org = await db[Organization.COLLECTION].find_one({"_id": str(current.org_id)})
+    if not org:
+        raise NotFound("Organization not found")
 
-    # Commit changes
-    await db.commit()
-    await db.refresh(org)
+    await db[Organization.COLLECTION].update_one(
+        {"_id": str(current.org_id)},
+        {"$set": {"name": data.organizationName}}
+    )
+    org_name = data.organizationName
 
     # Send welcome email asynchronously (fire-and-forget)
     try:
@@ -49,9 +49,9 @@ async def complete_onboarding(
         fire_and_forget(
             send_email_async(
                 to=current.email,
-                subject=f"🎉 Welcome to Repnex — {org.name} is all set!",
+                subject=f"🎉 Welcome to Repnex — {org_name} is all set!",
                 body_text=f"Hi {current.email.split('@')[0].capitalize()},\n\n"
-                f"Your organization '{org.name}' has been set up on Repnex.\n"
+                f"Your organization '{org_name}' has been set up on Repnex.\n"
                 f"You can now connect your databases and start asking questions.\n\n"
                 f"Get started: {dashboard_url}\n\n"
                 f"— The Repnex Team",
@@ -66,7 +66,7 @@ async def complete_onboarding(
                       Hi <strong>{current.email.split('@')[0].capitalize()}</strong>,
                     </p>
                     <p style="color:#6b7280;font-size:14px;line-height:1.6;">
-                      Your organization <strong>{org.name}</strong> is all set up. You can now:
+                      Your organization <strong>{org_name}</strong> is all set up. You can now:
                     </p>
                     <ul style="color:#6b7280;font-size:14px;line-height:2;">
                       <li>Connect your ERP databases</li>
@@ -98,15 +98,15 @@ async def complete_onboarding(
         "role": current.role,
         "status": "active",
         "name": email_name,
-        "company": org.name,
+        "company": org_name,
         "organizationId": str(current.org_id),
-        "organizationName": org.name,
+        "organizationName": org_name,
         "onboardingCompleted": True,
     }
 
     org_data = {
-        "id": str(org.id),
-        "name": org.name,
+        "id": str(current.org_id),
+        "name": org_name,
         "industry": data.industry,
         "erpSystem": data.erpSystem,
         "teamSize": data.teamSize,
@@ -122,7 +122,7 @@ async def complete_onboarding(
 async def invite(
     data: InviteRequest,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> InviteResponse:
     return await invitation_service.invite(
         db,
@@ -136,31 +136,31 @@ async def invite(
 @router.get("/me", response_model=OrgRead)
 async def my_org(
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> OrgRead:
-    org = (
-        await db.execute(select(Organization).where(Organization.id == current.org_id))
-    ).scalar_one_or_none()
+    org = await db[Organization.COLLECTION].find_one({"_id": str(current.org_id)})
     if not org:
         raise NotFound("Organization not found")
-    return OrgRead.model_validate(org)
+    return OrgRead.model_validate(Organization(**org))
 
 
 @router.patch("/me", response_model=OrgRead)
 async def update_my_org(
     data: OrgUpdate,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> OrgRead:
     if current.role != "admin":
         raise Forbidden("Only admins can update org")
-    org = (
-        await db.execute(select(Organization).where(Organization.id == current.org_id))
-    ).scalar_one_or_none()
+    org = await db[Organization.COLLECTION].find_one({"_id": str(current.org_id)})
     if not org:
         raise NotFound("Organization not found")
-    for k, v in data.model_dump(exclude_unset=True).items():
-        setattr(org, k, v)
-    await db.commit()
-    await db.refresh(org)
-    return OrgRead.model_validate(org)
+
+    payload = data.model_dump(exclude_unset=True)
+    if payload:
+        await db[Organization.COLLECTION].update_one(
+            {"_id": str(current.org_id)},
+            {"$set": payload}
+        )
+        org.update(payload)
+    return OrgRead.model_validate(Organization(**org))

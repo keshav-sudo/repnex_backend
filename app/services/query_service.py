@@ -7,6 +7,7 @@ import time
 import uuid
 from collections.abc import Awaitable, Callable
 from typing import Any
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.core.config import get_settings
 from app.core.database.models import (
@@ -47,7 +48,6 @@ from app.schemas.query import (
     TemplateMatch,
 )
 from app.services import connection_service, session_service
-from sqlalchemy.ext.asyncio import AsyncSession
 
 log = get_logger(__name__)
 
@@ -58,7 +58,7 @@ log = get_logger(__name__)
 
 
 async def chat(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     *,
     data: ChatRequest,
@@ -148,7 +148,7 @@ async def chat(
             extra={
                 "user_id": str(current.user_id),
                 "role": current.role,
-                "module": module_filter,
+                "detected_module": module_filter,
             },
         )
         return ChatResponse(
@@ -180,7 +180,7 @@ async def chat(
     if not template_candidates:
         template_candidates = _smart_static_fallback(registry, nl)
 
-    # ── Step 3: Extract intent from candidates ───────────────────────
+    # ── Step 3: Intent extraction ────────────────────────────────────
     try:
         intent = await extract_intent(
             nl,
@@ -215,7 +215,7 @@ async def chat(
             ],
         )
 
-    # ── Step 4: Get the template ─────────────────────────────────────
+    # ── Step 4: Get template ─────────────────────────────────────────
     template_meta = None
     for c in template_candidates:
         if c["id"] == intent.template_id:
@@ -241,7 +241,6 @@ async def chat(
     missing = find_missing_params(template, intent.params)
 
     if missing:
-        # Generate suggestions in parallel
         try:
             suggestions = await generate_suggestions(
                 template_id=template.id,
@@ -277,10 +276,8 @@ async def chat(
             candidates=top_suggestions,
         )
 
-    # ── Step 6: Execute the query (or preview if no DB) ─────────────────
+    # ── Step 6: Execute query (or preview if no DB) ─────────────────
     if not data.connection_id:
-        # No DB connected — return template preview + suggestions so the user
-        # still gets useful info about what the query WOULD do.
         top_suggestions = [
             TemplateMatch(
                 id=c["id"],
@@ -308,7 +305,6 @@ async def chat(
                 "Stock on hand summary",
             ]
 
-        # Show the SQL preview (pick first available dialect)
         sql_preview: str | None = None
         if template.sql_by_dialect:
             sql_preview = next(iter(template.sql_by_dialect.values()))
@@ -392,7 +388,6 @@ async def chat(
             template_id=template.id,
         )
 
-    # Generate insight + suggestions in parallel (saves 1 LLM RTT)
     summary: str | None = None
     suggestions: list = []
     try:
@@ -486,7 +481,7 @@ async def chat(
 
 
 async def execute_with_params(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     *,
     data: ExecuteRequest,
@@ -660,7 +655,7 @@ async def execute_with_params(
 
 
 async def run_via_rest(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     *,
     session_id: uuid.UUID,
@@ -725,7 +720,7 @@ async def run_via_rest(
 
 
 async def run_streaming(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     *,
     session_id: uuid.UUID,
@@ -805,90 +800,105 @@ async def run_streaming(
 # ── private helpers ──────────────────────────────────────────────────
 
 
-# Module detection keywords → Pinecone module filter
 _MODULE_KEYWORDS: dict[str, list[str]] = {
-    "ap": [
-        "accounts payable", "payable", "supplier", "vendor", "purchase invoice",
-        "ap aging", "ap ageing", "supplier invoice", "creditor", "bill",
-    ],
     "ar": [
         "accounts receivable", "receivable", "customer", "debtor", "sales invoice",
-        "ar aging", "ar ageing", "customer invoice", "revenue", "customer balance",
+        "ar aging", "ar ageing", "customer invoice", "customer balance", "credit control"
     ],
-    "inventory": [
-        "inventory", "stock", "warehouse", "stock on hand", "bin", "location",
-        "slow moving", "dead stock", "valuation", "reorder",
+    "ap": [
+        "accounts payable", "payable", "supplier", "vendor", "purchase invoice",
+        "ap aging", "ap ageing", "supplier invoice", "creditor", "bill"
     ],
-    "so": [
-        "sales order", "sales orders", "backlog", "outstanding sales",
-        "order book", "sales backlog",
-    ],
-    "po": [
-        "purchase order", "purchase orders", "po receipt", "grn",
-        "goods received", "supplier delivery",
+    "cashbook": [
+        "cashbook", "cash book", "bank account", "bank balance", "cash transaction", "petty cash"
     ],
     "gl": [
-        "general ledger", "gl", "trial balance", "journal", "p&l",
-        "profit and loss", "balance sheet", "cashbook", "cash book",
+        "general ledger", "gl", "trial balance", "journal", "p&l", "profit and loss", "balance sheet"
     ],
-    # Manufacturing sub-modules — were missing, causing RBAC bypass (returned None)
-    "manufacturing": [
-        "manufacturing", "production", "work order", "production order",
+    "sorder": [
+        "sales order", "sales orders", "so ", "so_"
+    ],
+    "sinvoice": [
+        "sales invoice", "invoice sales", "customer invoice"
+    ],
+    "dispatch": [
+        "dispatch", "delivery note", "shipment", "shipping log", "shipped"
+    ],
+    "porder": [
+        "purchase order", "purchase orders", "po ", "po_"
+    ],
+    "pinvoice": [
+        "purchase invoice", "supplier bill", "vendor invoice"
+    ],
+    "grn": [
+        "grn", "goods received", "goods receipt", "receipt note"
     ],
     "bom": [
-        "bill of material", "bill of materials", "bom", "product structure",
-        "component", "raw material",
+        "bill of material", "bill of materials", "bom", "product structure", "component list", "raw material"
     ],
     "wip": [
-        "work in progress", "wip", "in progress", "semi finished",
-        "production status", "active production",
+        "work in progress", "wip", "semi finished", "production status", "active production"
     ],
     "jobcosting": [
-        "job costing", "job cost", "cost variance", "actual vs budget",
-        "job profitability", "job order cost",
+        "job costing", "job cost", "cost variance", "actual vs budget", "job profitability", "job order cost"
+    ],
+    "invvaluation": [
+        "inventory valuation", "stock valuation", "valuation", "item cost", "inventory cost"
+    ],
+    "invholding": [
+        "inventory holding", "stock on hand", "warehouse", "bin location", "slow moving", "dead stock", "reorder"
+    ],
+    "finance": [
+        "finance", "financial", "accounting", "ledger"
+    ],
+    "sales": [
+        "sales", "sold", "sales report", "revenue"
+    ],
+    "purchase": [
+        "purchase", "purchasing", "procurement"
+    ],
+    "manufacturing": [
+        "manufacturing", "production", "work order", "production order"
+    ],
+    "inventory": [
+        "inventory", "stock", "warehouse"
     ],
 }
 
 
-# ── Module-level Role-Based Access Control (2-level design) ──────────
-#
-# Level 1: detected module key → parent ERP module name
-#   Each keyword-detected key maps to a single parent module.
-#   All Finance sub-modules (ap, ar, gl) inherit the same "finance" rule.
-#   This prevents duplication and makes adding new sub-modules trivial.
-#
-# Level 2: parent ERP module → allowed roles
-#   One rule per parent module — the single source of truth.
-#   To restrict a module: just change its entry here.
-
 _MODULE_KEY_TO_PARENT: dict[str, str] = {
-    # Finance sub-modules → all belong to "finance"
-    "ap":            "finance",
-    "ar":            "finance",
-    "gl":            "finance",
-    # Sales sub-modules → "sales"
-    "so":            "sales",
-    # Purchase sub-modules → "purchase"
-    "po":            "purchase",
-    # Inventory → "inventory"
-    "inventory":     "inventory",
-    # Manufacturing sub-modules → all belong to "manufacturing"
+    "ar": "finance",
+    "ap": "finance",
+    "cashbook": "finance",
+    "gl": "finance",
+    "finance": "finance",
+    "sorder": "sales",
+    "sinvoice": "sales",
+    "dispatch": "sales",
+    "sales": "sales",
+    "porder": "purchase",
+    "pinvoice": "purchase",
+    "grn": "purchase",
+    "purchase": "purchase",
+    "bom": "manufacturing",
+    "wip": "manufacturing",
+    "jobcosting": "manufacturing",
     "manufacturing": "manufacturing",
-    "bom":           "manufacturing",
-    "wip":           "manufacturing",
-    "jobcosting":    "manufacturing",
+    "invvaluation": "inventory",
+    "invholding": "inventory",
+    "inventory": "inventory",
 }
 
-# Single source of truth: parent ERP module → allowed roles
+
 _ERP_MODULE_ROLES: dict[str, list[str]] = {
-    "finance":       ["admin", "editor", "viewer"],   # all roles
-    "sales":         ["admin", "editor", "viewer"],   # all roles
-    "inventory":     ["admin", "editor", "viewer"],   # all roles
-    "purchase":      ["admin", "editor"],              # no viewer
-    "manufacturing": ["admin", "editor"],              # no viewer
+    "finance":       ["admin", "editor", "viewer"],
+    "sales":         ["admin", "editor", "viewer"],
+    "inventory":     ["admin", "editor", "viewer"],
+    "purchase":      ["admin", "editor"],
+    "manufacturing": ["admin", "editor"],
 }
 
-# Display names for clean error messages
+
 _ERP_MODULE_DISPLAY: dict[str, str] = {
     "finance":       "Finance",
     "sales":         "Sales",
@@ -897,55 +907,64 @@ _ERP_MODULE_DISPLAY: dict[str, str] = {
     "manufacturing": "Manufacturing",
 }
 
+_SUB_MODULE_DISPLAY: dict[str, str] = {
+    "ar": "Accounts Receivable (AR)",
+    "ap": "Accounts Payable (AP)",
+    "cashbook": "Cashbook",
+    "gl": "General Ledger (GL)",
+    "sorder": "Sales Order (S Order)",
+    "sinvoice": "Sales Invoice (S Invoice)",
+    "dispatch": "Dispatch",
+    "porder": "Purchase Order (P Order)",
+    "pinvoice": "Purchase Invoice (P Invoice)",
+    "grn": "Goods Received Note (GRN)",
+    "bom": "Bill of Material (BOM)",
+    "wip": "Work in Progress (WIP)",
+    "jobcosting": "Job Costing",
+    "invvaluation": "Inventory Valuation",
+    "invholding": "Inventory Holding",
+}
+
 
 def _check_module_access(module_key: str | None, current: CurrentUser) -> tuple[bool, str]:
-    """
-    2-level customizable RBAC check:
-      1. Map detected module key → parent ERP module name.
-      2. Check user-level module_permissions overrides (e.g. {"purchase": True/False}).
-      3. If no user-level override exists, fallback to default role-based checks.
-
-    Returns (is_allowed, denial_message).
-    If module_key is None (undetected query), access is always granted.
-    """
     if module_key is None:
         return True, ""
 
     parent = _MODULE_KEY_TO_PARENT.get(module_key)
     if parent is None:
-        # Unrecognised key — allow through; intent extraction will handle it.
         return True, ""
 
-    # --- User-Based Customizable Permissions Override ---
-    display = _ERP_MODULE_DISPLAY.get(parent, parent.title())
+    display_name = _SUB_MODULE_DISPLAY.get(module_key) or _ERP_MODULE_DISPLAY.get(module_key) or module_key.title()
+
     if current.module_permissions is not None:
-        # Explicit user-based permission override (True = allow, False = block)
-        user_override = current.module_permissions.get(parent)
-        if user_override is not None:
-            if user_override:
+        override = current.module_permissions.get(module_key)
+        if override is not None:
+            if override:
                 return True, ""
             else:
-                return False, (
-                    f"Access denied: Your account has been explicitly restricted from "
-                    f"accessing the {display} module. Please contact your administrator."
-                )
+                return False, f"Access denied: Your account has been explicitly restricted from accessing {display_name}."
 
-    # --- Role-Based Fallback ---
+        if module_key != parent:
+            parent_override = current.module_permissions.get(parent)
+            if parent_override is not None:
+                if parent_override:
+                    return True, ""
+                else:
+                    parent_display = _ERP_MODULE_DISPLAY.get(parent, parent.title())
+                    return False, f"Access denied: Your account has been explicitly restricted from accessing the {parent_display} module (which includes {display_name})."
+
     allowed_roles = _ERP_MODULE_ROLES.get(parent, [])
     if current.role not in allowed_roles:
+        parent_display = _ERP_MODULE_DISPLAY.get(parent, parent.title())
         return False, (
-            f"Access denied: Your role (\'{current.role}\') does not have permission "
-            f"to run queries in the {display} module. "
+            f"Access denied: Your role ('{current.role}') does not have permission "
+            f"to run queries in the {parent_display} module (which includes {display_name}). "
             f"Contact your administrator to request elevated access."
         )
     return True, ""
 
 
 def _detect_module_from_query(query: str) -> str | None:
-    """
-    Detect the ERP module from the user's natural language query.
-    Returns a module key (ap, ar, inventory, etc.) or None.
-    """
     q = query.lower()
     best_module = None
     best_hits = 0
@@ -964,11 +983,6 @@ def _smart_static_fallback(
     query: str,
     max_results: int = 10,
 ) -> list[dict[str, Any]]:
-    """
-    Keyword-based fallback when Pinecone is unavailable.
-    Instead of returning first N templates alphabetically,
-    scores templates by word overlap with the query.
-    """
     q_words = set(query.lower().split())
     all_templates = registry.list_for_llm()
 
@@ -978,7 +992,6 @@ def _smart_static_fallback(
         category_words = set(t.get("category", "").lower().replace("_", " ").split())
         module_words = set(t.get("module", "").lower().replace("_", " ").split())
 
-        # Score by overlap
         desc_overlap = len(q_words & desc_words)
         cat_overlap = len(q_words & category_words)
         mod_overlap = len(q_words & module_words)
@@ -991,17 +1004,14 @@ def _smart_static_fallback(
         scored.sort(key=lambda x: x[0], reverse=True)
         return [t for _, t in scored[:max_results]]
 
-    # Absolute fallback — return first N
     return all_templates[:max_results]
 
 
 async def _intent(natural_language: str, ctx: list) -> IntentResult:
     s = get_settings()
 
-    # Detect module hint from query
     module_filter = _detect_module_from_query(natural_language)
 
-    # Try Pinecone with reranking first
     store = get_pinecone_store_optional()
     if store:
         try:
@@ -1019,7 +1029,6 @@ async def _intent(natural_language: str, ctx: list) -> IntentResult:
         except Exception as e:
             log.warning("pinecone_intent_failed", extra={"err": str(e)})
 
-    # Fall back to keyword-matched static catalog
     registry = get_template_registry()
     catalog = _smart_static_fallback(registry, natural_language)
     intent = await extract_intent(natural_language, template_candidates=catalog, context_window=ctx)
@@ -1033,7 +1042,7 @@ async def _intent(natural_language: str, ctx: list) -> IntentResult:
 
 
 async def _record_history(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     session: GISession,
     conn: DBConnection,
     current: CurrentUser,
@@ -1046,19 +1055,19 @@ async def _record_history(
     rows_returned: int | None = None,
     error_message: str | None = None,
 ) -> QueryHistory:
-    h = QueryHistory(
-        session_id=session.id,
-        user_id=current.user_id,
-        connection_id=conn.id,
+    h_doc = QueryHistory.new(
+        session_id=str(session.id),
+        user_id=str(current.user_id),
+        org_id=str(current.org_id),
+        connection_id=str(conn.id),
         natural_language_input=nl,
         generated_sql=sql,
+        row_size=None,
         intent=intent.model_dump(),
         execution_status=status,
         error_message=error_message,
         execution_time_ms=execution_time_ms,
         rows_returned=rows_returned,
     )
-    db.add(h)
-    await db.commit()
-    await db.refresh(h)
-    return h
+    await db[QueryHistory.COLLECTION].insert_one(h_doc)
+    return QueryHistory(**h_doc)

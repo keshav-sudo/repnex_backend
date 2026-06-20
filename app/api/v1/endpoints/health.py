@@ -1,9 +1,8 @@
 from __future__ import annotations
 
 from fastapi import APIRouter
-from sqlalchemy import text
 
-from app.core.database.session import get_engine
+from app.core.database.mongo import get_db as get_mongo_db
 from app.core.redis import get_redis
 
 router = APIRouter(prefix="/health", tags=["health"])
@@ -18,9 +17,8 @@ async def live() -> dict:
 async def ready() -> dict:
     out: dict = {"status": "ok", "db": "ok", "redis": "ok"}
     try:
-        engine = get_engine()
-        async with engine.connect() as c:
-            await c.execute(text("SELECT 1"))
+        db = get_mongo_db()
+        await db.client.admin.command('ping')
     except Exception as e:
         out["status"] = "degraded"
         out["db"] = e.__class__.__name__

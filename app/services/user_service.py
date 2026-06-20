@@ -1,9 +1,7 @@
 from __future__ import annotations
 
 import uuid
-
-from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.core.database.models import User, UserRole
 from app.core.exceptions import Forbidden, NotFound
@@ -12,74 +10,76 @@ from app.core.security.passwords import hash_password, verify_password
 from app.schemas.user import RoleUpdateRequest, UserRead, PermissionsUpdateRequest
 
 
-async def get_me(db: AsyncSession, current: CurrentUser) -> UserRead:
-    user = (
-        await db.execute(select(User).where(User.id == current.user_id))
-    ).scalar_one_or_none()
+async def get_me(db: AsyncIOMotorDatabase, current: CurrentUser) -> UserRead:
+    user = await db[User.COLLECTION].find_one({"_id": str(current.user_id)})
     if not user:
         raise NotFound("User not found")
-    return UserRead.model_validate(user)
+    return UserRead.model_validate(User(**user))
 
 
-async def list_org_users(db: AsyncSession, current: CurrentUser) -> list[UserRead]:
-    rows = (
-        await db.execute(
-            select(User).where(User.org_id == current.org_id).order_by(User.created_at.desc())
-        )
-    ).scalars().all()
-    return [UserRead.model_validate(u) for u in rows]
+async def list_org_users(db: AsyncIOMotorDatabase, current: CurrentUser) -> list[UserRead]:
+    cursor = db[User.COLLECTION].find({"org_id": str(current.org_id)})
+    rows = await cursor.sort("created_at", -1).to_list(length=1000)
+    return [UserRead.model_validate(User(**u)) for u in rows]
 
 
 async def update_role(
-    db: AsyncSession, current: CurrentUser, user_id: uuid.UUID, data: RoleUpdateRequest
+    db: AsyncIOMotorDatabase, current: CurrentUser, user_id: uuid.UUID, data: RoleUpdateRequest
 ) -> UserRead:
     if current.role != "admin":
         raise Forbidden("Only admins can change roles")
-    user = (
-        await db.execute(
-            select(User).where(User.id == user_id, User.org_id == current.org_id)
-        )
-    ).scalar_one_or_none()
+
+    user = await db[User.COLLECTION].find_one({
+        "_id": str(user_id),
+        "org_id": str(current.org_id)
+    })
     if not user:
         raise NotFound("User not found")
-    user.role = UserRole(data.role)
-    await db.commit()
-    await db.refresh(user)
-    return UserRead.model_validate(user)
+
+    await db[User.COLLECTION].update_one(
+        {"_id": str(user_id)},
+        {"$set": {"role": UserRole(data.role).value}}
+    )
+
+    updated_doc = await db[User.COLLECTION].find_one({"_id": str(user_id)})
+    return UserRead.model_validate(User(**updated_doc))
 
 
 async def update_permissions(
-    db: AsyncSession, current: CurrentUser, user_id: uuid.UUID, data: PermissionsUpdateRequest
+    db: AsyncIOMotorDatabase, current: CurrentUser, user_id: uuid.UUID, data: PermissionsUpdateRequest
 ) -> UserRead:
     if current.role != "admin":
         raise Forbidden("Only admins can manage permissions")
-    user = (
-        await db.execute(
-            select(User).where(User.id == user_id, User.org_id == current.org_id)
-        )
-    ).scalar_one_or_none()
+
+    user = await db[User.COLLECTION].find_one({
+        "_id": str(user_id),
+        "org_id": str(current.org_id)
+    })
     if not user:
         raise NotFound("User not found")
-    
-    # Merge or set permissions
-    current_perms = dict(user.module_permissions or {})
+
+    current_perms = dict(user.get("module_permissions") or {})
     current_perms.update(data.module_permissions)
-    user.module_permissions = current_perms
-    
-    await db.commit()
-    await db.refresh(user)
-    return UserRead.model_validate(user)
+
+    await db[User.COLLECTION].update_one(
+        {"_id": str(user_id)},
+        {"$set": {"module_permissions": current_perms}}
+    )
+
+    updated_doc = await db[User.COLLECTION].find_one({"_id": str(user_id)})
+    return UserRead.model_validate(User(**updated_doc))
 
 
 async def change_password(
-    db: AsyncSession, current: CurrentUser, current_password: str, new_password: str
+    db: AsyncIOMotorDatabase, current: CurrentUser, current_password: str, new_password: str
 ) -> None:
-    user = (
-        await db.execute(select(User).where(User.id == current.user_id))
-    ).scalar_one_or_none()
-    if not user or not user.hashed_password or not verify_password(
-        current_password, user.hashed_password
+    user = await db[User.COLLECTION].find_one({"_id": str(current.user_id)})
+    if not user or not user.get("hashed_password") or not verify_password(
+        current_password, user["hashed_password"]
     ):
         raise Forbidden("Current password is incorrect")
-    user.hashed_password = hash_password(new_password)
-    await db.commit()
+
+    await db[User.COLLECTION].update_one(
+        {"_id": str(current.user_id)},
+        {"$set": {"hashed_password": hash_password(new_password)}}
+    )

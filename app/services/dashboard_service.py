@@ -1,10 +1,8 @@
 from __future__ import annotations
 
 import uuid
-
-from sqlalchemy import select
-from sqlalchemy.exc import IntegrityError
-from sqlalchemy.ext.asyncio import AsyncSession
+from datetime import datetime, timezone
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.core.database.models import Dashboard, DashboardReport, Report
 from app.core.exceptions import Conflict, Forbidden, NotFound
@@ -19,53 +17,52 @@ from app.schemas.dashboard import (
 
 
 async def list_dashboards(
-    db: AsyncSession, current: CurrentUser
+    db: AsyncIOMotorDatabase, current: CurrentUser
 ) -> list[DashboardRead]:
-    rows = (
-        await db.execute(
-            select(Dashboard)
-            .where(Dashboard.org_id == current.org_id)
-            .order_by(Dashboard.created_at.desc())
-        )
-    ).scalars().all()
-    return [DashboardRead.model_validate(d) for d in rows]
+    cursor = db[Dashboard.COLLECTION].find({"org_id": str(current.org_id)})
+    rows = await cursor.sort("created_at", -1).to_list(length=1000)
+    return [DashboardRead.model_validate(Dashboard(**d)) for d in rows]
 
 
 async def get_dashboard(
-    db: AsyncSession, current: CurrentUser, dashboard_id: uuid.UUID
+    db: AsyncIOMotorDatabase, current: CurrentUser, dashboard_id: uuid.UUID
 ) -> Dashboard:
-    d = (
-        await db.execute(
-            select(Dashboard).where(
-                Dashboard.id == dashboard_id, Dashboard.org_id == current.org_id
-            )
-        )
-    ).scalar_one_or_none()
+    d = await db[Dashboard.COLLECTION].find_one({
+        "_id": str(dashboard_id),
+        "org_id": str(current.org_id)
+    })
     if not d:
         raise NotFound("Dashboard not found")
-    return d
+    return Dashboard(**d)
 
 
 async def create(
-    db: AsyncSession, current: CurrentUser, data: DashboardCreate
+    db: AsyncIOMotorDatabase, current: CurrentUser, data: DashboardCreate
 ) -> DashboardRead:
     if current.role == "viewer":
         raise Forbidden("Viewers cannot create dashboards")
-    d = Dashboard(
-        org_id=current.org_id,
-        created_by=current.user_id,
+
+    if data.is_default:
+        await db[Dashboard.COLLECTION].update_many(
+            {"org_id": str(current.org_id)},
+            {"$set": {"is_default": False}}
+        )
+
+    d_doc = Dashboard.new(
+        org_id=str(current.org_id),
+        created_by=str(current.user_id),
         name=data.name,
         is_default=data.is_default,
         layout_config=data.layout_config,
     )
-    db.add(d)
-    await db.commit()
-    await db.refresh(d)
-    return DashboardRead.model_validate(d)
+    d_doc["items"] = []
+
+    await db[Dashboard.COLLECTION].insert_one(d_doc)
+    return DashboardRead.model_validate(Dashboard(**d_doc))
 
 
 async def update(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     dashboard_id: uuid.UUID,
     data: DashboardUpdate,
@@ -73,25 +70,35 @@ async def update(
     if current.role == "viewer":
         raise Forbidden("Viewers cannot update dashboards")
     d = await get_dashboard(db, current, dashboard_id)
-    for k, v in data.model_dump(exclude_unset=True).items():
-        setattr(d, k, v)
-    await db.commit()
-    await db.refresh(d)
-    return DashboardRead.model_validate(d)
+
+    payload = data.model_dump(exclude_unset=True)
+    if payload.get("is_default"):
+        await db[Dashboard.COLLECTION].update_many(
+            {"org_id": str(current.org_id)},
+            {"$set": {"is_default": False}}
+        )
+
+    if payload:
+        await db[Dashboard.COLLECTION].update_one(
+            {"_id": str(dashboard_id)},
+            {"$set": payload}
+        )
+
+    updated_doc = await db[Dashboard.COLLECTION].find_one({"_id": str(dashboard_id)})
+    return DashboardRead.model_validate(Dashboard(**updated_doc))
 
 
 async def delete(
-    db: AsyncSession, current: CurrentUser, dashboard_id: uuid.UUID
+    db: AsyncIOMotorDatabase, current: CurrentUser, dashboard_id: uuid.UUID
 ) -> None:
     if current.role != "admin":
         raise Forbidden("Only admins can delete dashboards")
     d = await get_dashboard(db, current, dashboard_id)
-    await db.delete(d)
-    await db.commit()
+    await db[Dashboard.COLLECTION].delete_one({"_id": str(dashboard_id)})
 
 
 async def add_item(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     dashboard_id: uuid.UUID,
     data: DashboardItemAdd,
@@ -99,33 +106,39 @@ async def add_item(
     if current.role == "viewer":
         raise Forbidden("Viewers cannot edit dashboards")
     d = await get_dashboard(db, current, dashboard_id)
-    report = (
-        await db.execute(
-            select(Report).where(Report.id == data.report_id, Report.org_id == current.org_id)
-        )
-    ).scalar_one_or_none()
+
+    report = await db[Report.COLLECTION].find_one({
+        "_id": str(data.report_id),
+        "org_id": str(current.org_id)
+    })
     if not report:
         raise NotFound("Report not found")
-    item = DashboardReport(
-        dashboard_id=d.id,
-        report_id=report.id,
-        position_x=data.position_x,
-        position_y=data.position_y,
-        width=data.width,
-        height=data.height,
+
+    existing_items = getattr(d, "items", [])
+    if any(str(item.report_id) == str(data.report_id) for item in existing_items):
+        raise Conflict("Report already on dashboard")
+
+    new_item = {
+        "id": str(uuid.uuid4()),
+        "report_id": str(data.report_id),
+        "position_x": data.position_x,
+        "position_y": data.position_y,
+        "width": data.width,
+        "height": data.height,
+        "added_at": datetime.now(timezone.utc),
+    }
+
+    await db[Dashboard.COLLECTION].update_one(
+        {"_id": str(dashboard_id)},
+        {"$push": {"items": new_item}}
     )
-    db.add(item)
-    try:
-        await db.commit()
-    except IntegrityError as e:
-        await db.rollback()
-        raise Conflict("Report already on dashboard") from e
-    await db.refresh(d)
-    return DashboardRead.model_validate(d)
+
+    updated_doc = await db[Dashboard.COLLECTION].find_one({"_id": str(dashboard_id)})
+    return DashboardRead.model_validate(Dashboard(**updated_doc))
 
 
 async def update_item(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     dashboard_id: uuid.UUID,
     item_id: uuid.UUID,
@@ -134,25 +147,26 @@ async def update_item(
     if current.role == "viewer":
         raise Forbidden("Viewers cannot edit dashboards")
     d = await get_dashboard(db, current, dashboard_id)
-    item = (
-        await db.execute(
-            select(DashboardReport).where(
-                DashboardReport.id == item_id,
-                DashboardReport.dashboard_id == d.id,
-            )
+
+    update_fields = {}
+    payload = data.model_dump(exclude_unset=True)
+    for k, v in payload.items():
+        update_fields[f"items.$.{k}"] = v
+
+    if update_fields:
+        res = await db[Dashboard.COLLECTION].update_one(
+            {"_id": str(dashboard_id), "items.id": str(item_id)},
+            {"$set": update_fields}
         )
-    ).scalar_one_or_none()
-    if not item:
-        raise NotFound("Dashboard item not found")
-    for k, v in data.model_dump(exclude_unset=True).items():
-        setattr(item, k, v)
-    await db.commit()
-    await db.refresh(d)
-    return DashboardRead.model_validate(d)
+        if res.matched_count == 0:
+            raise NotFound("Dashboard item not found")
+
+    updated_doc = await db[Dashboard.COLLECTION].find_one({"_id": str(dashboard_id)})
+    return DashboardRead.model_validate(Dashboard(**updated_doc))
 
 
 async def remove_item(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     dashboard_id: uuid.UUID,
     item_id: uuid.UUID,
@@ -160,15 +174,10 @@ async def remove_item(
     if current.role == "viewer":
         raise Forbidden("Viewers cannot edit dashboards")
     d = await get_dashboard(db, current, dashboard_id)
-    item = (
-        await db.execute(
-            select(DashboardReport).where(
-                DashboardReport.id == item_id,
-                DashboardReport.dashboard_id == d.id,
-            )
-        )
-    ).scalar_one_or_none()
-    if not item:
+
+    res = await db[Dashboard.COLLECTION].update_one(
+        {"_id": str(dashboard_id)},
+        {"$pull": {"items": {"id": str(item_id)}}}
+    )
+    if res.modified_count == 0:
         raise NotFound("Dashboard item not found")
-    await db.delete(item)
-    await db.commit()

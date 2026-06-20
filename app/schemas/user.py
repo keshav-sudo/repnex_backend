@@ -30,6 +30,7 @@ class InviteRequest(BaseModel):
 class InviteResponse(BaseModel):
     user_id: uuid.UUID
     status: str
+    accept_url: str | None = None
 
 
 class RoleUpdateRequest(BaseModel):
@@ -47,3 +48,21 @@ class UserUpdate(BaseModel):
 class PasswordChangeRequest(BaseModel):
     current_password: Annotated[str, Field(min_length=1, max_length=128)]
     new_password: Annotated[str, Field(min_length=8, max_length=128)]
+
+
+class PermissionRequestCreate(BaseModel):
+    module_key: str
+
+
+class PermissionRequestRead(ORMBase):
+    id: uuid.UUID
+    org_id: uuid.UUID
+    user_id: uuid.UUID
+    module_key: str
+    status: str
+    created_at: datetime
+    user_email: str | None = None
+
+
+class PermissionRequestAction(BaseModel):
+    action: Literal["approve", "deny"]

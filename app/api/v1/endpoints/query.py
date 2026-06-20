@@ -2,8 +2,7 @@ import re
 import uuid
 from typing import Any
 from fastapi import APIRouter, Depends
-from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.api.v1.dependencies.rate_limit import rate_limit
 from app.api.v1.dependencies.tenancy import bind_tenant_context
@@ -23,10 +22,9 @@ from app.services import query_service
 router = APIRouter(prefix="/query", tags=["query"])
 
 
-async def is_sql_hidden(db: AsyncSession, org_id: uuid.UUID) -> bool:
-    stmt = select(Organization.hide_sql_queries).where(Organization.id == org_id)
-    res = await db.execute(stmt)
-    return bool(res.scalar())
+async def is_sql_hidden(db: AsyncIOMotorDatabase, org_id: uuid.UUID) -> bool:
+    org = await db[Organization.COLLECTION].find_one({"_id": str(org_id)})
+    return bool(org.get("hide_sql_queries") if org else False)
 
 
 def redact_sql_blocks(text: str | None) -> str | None:
@@ -40,12 +38,15 @@ def redact_sql_blocks(text: str | None) -> str | None:
     )
 
 
-async def apply_sql_redaction(db: AsyncSession, org_id: uuid.UUID, res: Any) -> Any:
+async def apply_sql_redaction(db: AsyncIOMotorDatabase, org_id: uuid.UUID, res: Any) -> Any:
     if await is_sql_hidden(db, org_id):
-        if hasattr(res, "sql") and res.sql:
-            res.sql = "-- SQL hidden by organization settings"
+        if hasattr(res, "sql"):
+            res.sql = None
         if hasattr(res, "message") and res.message:
-            res.message = redact_sql_blocks(res.message)
+            cleaned = res.message
+            cleaned = cleaned.replace(" Here's a preview of the SQL that will execute:", "")
+            cleaned = cleaned.replace("Here's a preview of the SQL that will execute:", "")
+            res.message = redact_sql_blocks(cleaned)
         if hasattr(res, "summary") and res.summary:
             res.summary = redact_sql_blocks(res.summary)
     return res
@@ -55,7 +56,7 @@ async def apply_sql_redaction(db: AsyncSession, org_id: uuid.UUID, res: Any) -> 
 async def chat(
     data: ChatRequest,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
     # _rl: None = Depends(rate_limit("query")),
 ) -> ChatResponse:
     """Unified chat endpoint: classifies intent and returns appropriate response."""
@@ -67,7 +68,7 @@ async def chat(
 async def execute_with_params(
     data: ExecuteRequest,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
     # _rl: None = Depends(rate_limit("query")),
 ) -> ChatResponse:
     """Execute a template with explicit parameters (after params_needed)."""
@@ -79,7 +80,7 @@ async def execute_with_params(
 async def run_query(
     data: RunQueryRequest,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
     # _rl: None = Depends(rate_limit("query")),
 ) -> RunQueryResponse:
     """Legacy endpoint: run query in one shot."""
@@ -97,4 +98,3 @@ async def list_templates(
     _: CurrentUser = Depends(bind_tenant_context),
 ) -> list[dict]:
     return get_template_registry().list_for_llm()
-
