@@ -273,7 +273,11 @@ async def refresh(db: AsyncSession, refresh_token: str) -> TokenPair:
         await r.set(f"jwt:denylist:{jti}", "1", ex=60 * 60 * 24 * 14)
 
     access = create_access_token(
-        user_id=user.id, org_id=user.org_id, email=user.email, role=user.role.value
+        user_id=user.id,
+        org_id=user.org_id,
+        email=user.email,
+        role=user.role.value,
+        module_permissions=user.module_permissions,
     )
     new_refresh = create_refresh_token(user_id=user.id, org_id=user.org_id)
     return TokenPair(access_token=access, refresh_token=new_refresh)
@@ -290,7 +294,11 @@ async def logout(refresh_token: str) -> None:
 
 def _build_auth(user: User, org: Organization) -> AuthResponse:
     access = create_access_token(
-        user_id=user.id, org_id=user.org_id, email=user.email, role=user.role.value
+        user_id=user.id,
+        org_id=user.org_id,
+        email=user.email,
+        role=user.role.value,
+        module_permissions=user.module_permissions,
     )
     refresh_t = create_refresh_token(user_id=user.id, org_id=user.org_id)
     
@@ -308,6 +316,7 @@ def _build_auth(user: User, org: Organization) -> AuthResponse:
         organizationId=org.id,
         organizationName=org.name,
         onboardingCompleted=True,
+        module_permissions=user.module_permissions,
     )
     
     return AuthResponse(

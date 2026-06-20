@@ -19,6 +19,7 @@ class CurrentUser:
     org_id: uuid.UUID
     email: str
     role: str
+    module_permissions: dict[str, bool] | None = None
 
 
 def _now() -> datetime:
@@ -37,10 +38,10 @@ def _encode(payload: dict[str, Any], ttl: timedelta) -> str:
     return jwt.encode(body, settings.JWT_SECRET, algorithm=settings.JWT_ALGORITHM)
 
 
-def create_access_token(*, user_id: uuid.UUID, org_id: uuid.UUID, email: str, role: str) -> str:
+def create_access_token(*, user_id: uuid.UUID, org_id: uuid.UUID, email: str, role: str, module_permissions: dict[str, bool] | None = None) -> str:
     s = get_settings()
     return _encode(
-        {"sub": str(user_id), "org": str(org_id), "email": email, "role": role, "type": "access"},
+        {"sub": str(user_id), "org": str(org_id), "email": email, "role": role, "perms": module_permissions, "type": "access"},
         timedelta(minutes=s.JWT_ACCESS_TTL_MIN),
     )
 
@@ -87,6 +88,7 @@ def current_user_from_payload(payload: dict[str, Any]) -> CurrentUser:
             org_id=uuid.UUID(payload["org"]),
             email=payload.get("email", ""),
             role=payload.get("role", "viewer"),
+            module_permissions=payload.get("perms"),
         )
     except (KeyError, ValueError) as e:
         raise Unauthorized("Malformed token") from e

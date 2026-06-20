@@ -108,6 +108,7 @@ class User(Base):
     status: Mapped[UserStatus] = mapped_column(
         Enum(UserStatus, name="user_status"), default=UserStatus.pending, nullable=False
     )
+    module_permissions: Mapped[dict | None] = mapped_column(JSONB, nullable=True, default=None)
     created_at: Mapped[datetime] = _ts_created()
 
 

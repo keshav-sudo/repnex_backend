@@ -140,6 +140,27 @@ async def chat(
     # Detect module hint from natural language for Pinecone filtering
     module_filter = _detect_module_from_query(nl)
 
+    # ── Backend RBAC: Check module access before any LLM/Pinecone work ──
+    is_allowed, deny_msg = _check_module_access(module_filter, current)
+    if not is_allowed:
+        log.warning(
+            "module_access_denied",
+            extra={
+                "user_id": str(current.user_id),
+                "role": current.role,
+                "module": module_filter,
+            },
+        )
+        return ChatResponse(
+            type="access_denied",
+            message=deny_msg,
+            template_module=module_filter,
+            suggestions=[
+                "Try a Finance or Inventory report instead",
+                "Contact your admin to request module access",
+            ],
+        )
+
     # Search Pinecone for matching templates (with keyword reranking)
     template_candidates: list[dict[str, Any]] = []
     if store:
@@ -810,7 +831,114 @@ _MODULE_KEYWORDS: dict[str, list[str]] = {
         "general ledger", "gl", "trial balance", "journal", "p&l",
         "profit and loss", "balance sheet", "cashbook", "cash book",
     ],
+    # Manufacturing sub-modules — were missing, causing RBAC bypass (returned None)
+    "manufacturing": [
+        "manufacturing", "production", "work order", "production order",
+    ],
+    "bom": [
+        "bill of material", "bill of materials", "bom", "product structure",
+        "component", "raw material",
+    ],
+    "wip": [
+        "work in progress", "wip", "in progress", "semi finished",
+        "production status", "active production",
+    ],
+    "jobcosting": [
+        "job costing", "job cost", "cost variance", "actual vs budget",
+        "job profitability", "job order cost",
+    ],
 }
+
+
+# ── Module-level Role-Based Access Control (2-level design) ──────────
+#
+# Level 1: detected module key → parent ERP module name
+#   Each keyword-detected key maps to a single parent module.
+#   All Finance sub-modules (ap, ar, gl) inherit the same "finance" rule.
+#   This prevents duplication and makes adding new sub-modules trivial.
+#
+# Level 2: parent ERP module → allowed roles
+#   One rule per parent module — the single source of truth.
+#   To restrict a module: just change its entry here.
+
+_MODULE_KEY_TO_PARENT: dict[str, str] = {
+    # Finance sub-modules → all belong to "finance"
+    "ap":            "finance",
+    "ar":            "finance",
+    "gl":            "finance",
+    # Sales sub-modules → "sales"
+    "so":            "sales",
+    # Purchase sub-modules → "purchase"
+    "po":            "purchase",
+    # Inventory → "inventory"
+    "inventory":     "inventory",
+    # Manufacturing sub-modules → all belong to "manufacturing"
+    "manufacturing": "manufacturing",
+    "bom":           "manufacturing",
+    "wip":           "manufacturing",
+    "jobcosting":    "manufacturing",
+}
+
+# Single source of truth: parent ERP module → allowed roles
+_ERP_MODULE_ROLES: dict[str, list[str]] = {
+    "finance":       ["admin", "editor", "viewer"],   # all roles
+    "sales":         ["admin", "editor", "viewer"],   # all roles
+    "inventory":     ["admin", "editor", "viewer"],   # all roles
+    "purchase":      ["admin", "editor"],              # no viewer
+    "manufacturing": ["admin", "editor"],              # no viewer
+}
+
+# Display names for clean error messages
+_ERP_MODULE_DISPLAY: dict[str, str] = {
+    "finance":       "Finance",
+    "sales":         "Sales",
+    "inventory":     "Inventory",
+    "purchase":      "Purchase",
+    "manufacturing": "Manufacturing",
+}
+
+
+def _check_module_access(module_key: str | None, current: CurrentUser) -> tuple[bool, str]:
+    """
+    2-level customizable RBAC check:
+      1. Map detected module key → parent ERP module name.
+      2. Check user-level module_permissions overrides (e.g. {"purchase": True/False}).
+      3. If no user-level override exists, fallback to default role-based checks.
+
+    Returns (is_allowed, denial_message).
+    If module_key is None (undetected query), access is always granted.
+    """
+    if module_key is None:
+        return True, ""
+
+    parent = _MODULE_KEY_TO_PARENT.get(module_key)
+    if parent is None:
+        # Unrecognised key — allow through; intent extraction will handle it.
+        return True, ""
+
+    # --- User-Based Customizable Permissions Override ---
+    display = _ERP_MODULE_DISPLAY.get(parent, parent.title())
+    if current.module_permissions is not None:
+        # Explicit user-based permission override (True = allow, False = block)
+        user_override = current.module_permissions.get(parent)
+        if user_override is not None:
+            if user_override:
+                return True, ""
+            else:
+                return False, (
+                    f"Access denied: Your account has been explicitly restricted from "
+                    f"accessing the {display} module. Please contact your administrator."
+                )
+
+    # --- Role-Based Fallback ---
+    allowed_roles = _ERP_MODULE_ROLES.get(parent, [])
+    if current.role not in allowed_roles:
+        return False, (
+            f"Access denied: Your role (\'{current.role}\') does not have permission "
+            f"to run queries in the {display} module. "
+            f"Contact your administrator to request elevated access."
+        )
+    return True, ""
 
 
 def _detect_module_from_query(query: str) -> str | None:

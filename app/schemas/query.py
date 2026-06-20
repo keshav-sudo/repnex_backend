@@ -84,7 +84,7 @@ class TemplateMatch(BaseModel):
 
 class ChatResponse(BaseModel):
     """Unified response for the chat endpoint."""
-    type: Literal["conversational", "executable", "params_needed", "template_preview", "error"]
+    type: Literal["conversational", "executable", "params_needed", "template_preview", "error", "access_denied"]
 
     message: str | None = None
 

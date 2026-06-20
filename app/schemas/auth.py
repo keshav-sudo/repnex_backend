@@ -99,6 +99,7 @@ class UserPublic(ORMBase):
     organizationId: uuid.UUID | None = None
     organizationName: str = ""
     onboardingCompleted: bool = True
+    module_permissions: dict[str, bool] | None = None
 
 
 class OrgPublic(ORMBase):
