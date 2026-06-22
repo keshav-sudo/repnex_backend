@@ -53,25 +53,45 @@ async def create_report(db: AsyncIOMotorDatabase, current: CurrentUser, data: Re
         raise Forbidden("Viewers cannot create reports")
 
     registry = get_template_registry()
+    template = None
     if registry.has(data.query_template_id):
-        registry.get(data.query_template_id)
+        template = registry.get(data.query_template_id)
     else:
         log.info(
             "report_template_not_in_registry",
             extra={"template_id": data.query_template_id},
         )
+        from app.core.pinecone_client import get_pinecone_store_optional
+        from app.query_engine.template_loader import create_template_from_pinecone
+        store = get_pinecone_store_optional()
+        if store:
+            meta = store.get_template_by_id(data.query_template_id)
+            if meta:
+                template = create_template_from_pinecone(meta)
 
     cols_list = []
-    for c in data.columns:
-        cols_list.append({
-            "id": str(uuid.uuid4()),
-            "column_name": c.column_name,
-            "display_name": c.display_name,
-            "position": c.position,
-            "is_visible": c.is_visible,
-            "data_type": c.data_type,
-            "format_config": c.format_config,
-        })
+    if data.columns:
+        for c in data.columns:
+            cols_list.append({
+                "id": str(uuid.uuid4()),
+                "column_name": c.column_name,
+                "display_name": c.display_name,
+                "position": c.position,
+                "is_visible": c.is_visible,
+                "data_type": c.data_type,
+                "format_config": c.format_config,
+            })
+    elif template and template.result_columns:
+        for idx, col_name in enumerate(template.result_columns):
+            cols_list.append({
+                "id": str(uuid.uuid4()),
+                "column_name": col_name,
+                "display_name": col_name.replace("_", " ").title(),
+                "position": idx,
+                "is_visible": True,
+                "data_type": "string",
+                "format_config": {},
+            })
 
     report_doc = Report.new(
         org_id=str(current.org_id),
