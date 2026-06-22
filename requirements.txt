@@ -12,12 +12,14 @@ email-validator==2.2.0
 # --- Database (metadata) ---
 motor==3.6.0
 pymongo==4.9.1
+certifi>=2024.7.4
 
 # --- Target DB drivers (multi-tenant target connections) ---
 aiomysql==0.2.0
 aioodbc==0.5.0
 oracledb==2.5.1
 pymssql==2.3.13
+asyncpg==0.29.0
 
 # --- Redis / rate limit ---
 redis==5.2.1

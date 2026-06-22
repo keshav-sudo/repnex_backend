@@ -344,6 +344,8 @@ class Report:
                 self.created_by = uuid.UUID(v) if isinstance(v, str) else v
             elif k == "auto_refresh_connection_id" and v:
                 self.auto_refresh_connection_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "columns" and isinstance(v, list):
+                self.columns = [ReportColumn(**col) if isinstance(col, dict) else col for col in v]
             else:
                 setattr(self, k, v)
 

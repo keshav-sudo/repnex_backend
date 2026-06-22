@@ -102,7 +102,11 @@ async def export_bulk(
             continue
         report_obj = Report(**report_doc)
 
-        headers = [c.column_name for c in report_obj.columns if c.is_visible]
+        headers = [
+            c.column_name if hasattr(c, "column_name") else c.get("column_name")
+            for c in report_obj.columns
+            if (c.is_visible if hasattr(c, "is_visible") else c.get("is_visible", True))
+        ]
 
         # 2. Fetch latest snapshot for this report
         snap_doc = await db[ReportSnapshot.COLLECTION].find_one(
