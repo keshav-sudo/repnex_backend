@@ -983,28 +983,70 @@ def _smart_static_fallback(
     query: str,
     max_results: int = 10,
 ) -> list[dict[str, Any]]:
-    q_words = set(query.lower().split())
-    all_templates = registry.list_for_llm()
+    q_lower = query.lower()
+    q_words = set(q_lower.split())
+    all_templates = registry.all()
+
+    # Detect the heuristically matched module first to boost it
+    detected_module = _detect_module_from_query(query)
 
     scored = []
     for t in all_templates:
-        desc_words = set(t.get("description", "").lower().split())
-        category_words = set(t.get("category", "").lower().replace("_", " ").split())
-        module_words = set(t.get("module", "").lower().replace("_", " ").split())
-
+        # Check description overlap
+        desc_words = set(t.description.lower().split())
         desc_overlap = len(q_words & desc_words)
+
+        # Check category and module overlap
+        category_words = set(t.category.lower().replace("_", " ").split())
+        module_words = set(t.module.lower().replace("_", " ").split())
         cat_overlap = len(q_words & category_words)
         mod_overlap = len(q_words & module_words)
-        score = desc_overlap * 2 + cat_overlap * 3 + mod_overlap * 3
+
+        # Check keywords overlap
+        kw_hits = 0
+        for kw in t.keywords:
+            kw_lower = kw.lower()
+            if kw_lower in q_lower or any(w in kw_lower for w in q_words):
+                kw_hits += 1
+
+        # Check detected module match
+        module_match = 1 if detected_module and t.module.lower() == detected_module.lower() else 0
+
+        # Calculate a robust score
+        score = (
+            desc_overlap * 3
+            + cat_overlap * 2
+            + mod_overlap * 2
+            + kw_hits * 4
+            + module_match * 10
+        )
 
         if score > 0:
-            scored.append((score, t))
+            scored.append((score, {
+                "id": t.id,
+                "description": t.description,
+                "module": t.module,
+                "category": t.category,
+                "params": t.params,
+                "supported_dbs": list(t.supported_dbs),
+            }))
 
     if scored:
         scored.sort(key=lambda x: x[0], reverse=True)
-        return [t for _, t in scored[:max_results]]
+        return [item[1] for item in scored[:max_results]]
 
-    return all_templates[:max_results]
+    # If no match at all, list first max_results formatted templates
+    return [
+        {
+            "id": t.id,
+            "description": t.description,
+            "module": t.module,
+            "category": t.category,
+            "params": t.params,
+            "supported_dbs": list(t.supported_dbs),
+        }
+        for t in all_templates[:max_results]
+    ]
 
 
 async def _intent(natural_language: str, ctx: list) -> IntentResult:

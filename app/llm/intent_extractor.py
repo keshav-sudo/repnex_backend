@@ -52,11 +52,23 @@ async def extract_intent(
     # Inject today's date so LLM can resolve relative phrases like 'last 6 months'
     today_str = date.today().isoformat()
     system = f"Today's date is {today_str}.\n\n{system}"
+
+    # Clean templates to only include what LLM needs, preventing SQL noise/hallucination
+    cleaned_candidates = []
+    for c in template_candidates:
+        cleaned_candidates.append({
+            "id": c.get("id"),
+            "description": c.get("description", ""),
+            "module": c.get("module", ""),
+            "category": c.get("category", ""),
+            "params": c.get("params", {}),
+        })
+
     user = json.dumps(
         {
             "question": natural_language,
             "context": (context_window or [])[-6:],
-            "templates": template_candidates,
+            "templates": cleaned_candidates,
         },
         default=str,
     )

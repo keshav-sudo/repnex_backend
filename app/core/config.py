@@ -49,7 +49,7 @@ class Settings(BaseSettings):
     OPENAI_MODEL: str = "gpt-4o-mini"
     LLM_TIMEOUT_S: int = 20
     LLM_MAX_RETRIES: int = 2
-    INTENT_MIN_CONFIDENCE: float = 0.72
+    INTENT_MIN_CONFIDENCE: float = 0.55
 
     # LLM — DeepSeek (OpenAI-compatible, used as primary when key is set)
     DEEPSEEK_API_KEY: str = ""

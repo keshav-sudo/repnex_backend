@@ -109,12 +109,15 @@ class PineconeTemplateStore:
         """
         Two-stage retrieval: broad vector search → keyword/semantic reranking.
 
-        Stage 1: Fetch top_k * 3 candidates from Pinecone
-        Stage 2: Re-rank using keyword overlap + description similarity
+        Stage 1: Fetch top_k * 4 candidates from Pinecone (NO module filter
+                 — filtering was silently returning 0 results when module names
+                 didn't match Pinecone's vocabulary)
+        Stage 2: Re-rank using keyword overlap + description similarity,
+                 with module_filter used as a soft boost signal
         """
-        # Stage 1: Broad retrieval
+        # Stage 1: Broad retrieval — always unfiltered for maximum recall
         candidates = self.search_templates(
-            query_text, top_k=top_k * 3, module_filter=module_filter
+            query_text, top_k=top_k * 4, module_filter=None
         )
 
         if not candidates:
@@ -145,15 +148,24 @@ class PineconeTemplateStore:
             # Description word overlap boost
             desc_words = set(c.get("description", "").lower().split())
             desc_overlap = len(query_words & desc_words)
-            desc_boost = min(desc_overlap * 0.02, 0.08)  # max 8% boost
+            desc_boost = min(desc_overlap * 0.025, 0.10)  # max 10% boost
 
             # Module/category match boost from query keywords
             module = c.get("module", "").lower()
             category = c.get("category", "").lower()
-            module_boost = 0.05 if module and module in query_lower else 0
-            category_boost = 0.03 if category and category in query_lower else 0
+            module_boost = 0.06 if module and module in query_lower else 0
+            category_boost = 0.04 if category and category in query_lower else 0
 
-            final_score = base_score + keyword_boost + desc_boost + module_boost + category_boost
+            # Detected module soft boost — reward candidates matching the
+            # heuristically-detected module from the user's query
+            detected_boost = 0.0
+            if module_filter and module:
+                if module == module_filter.lower():
+                    detected_boost = 0.08  # strong signal
+                elif module_filter.lower() in module or module in module_filter.lower():
+                    detected_boost = 0.04  # partial match
+
+            final_score = base_score + keyword_boost + desc_boost + module_boost + category_boost + detected_boost
             scored.append((final_score, c))
 
         # Sort by final score and return top_k
