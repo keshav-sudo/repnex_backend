@@ -208,10 +208,32 @@ async def run_report(
     except Exception as e:
         log.warning("failed_to_save_run_snapshot", extra={"report_id": str(r.id), "error": str(e)})
 
+    cols = [ReportColumnRead.model_validate(c) for c in r.columns]
+    if not cols:
+        col_names = []
+        if template and template.result_columns:
+            col_names = list(template.result_columns)
+        elif result.rows:
+            col_names = list(result.rows[0].keys())
+
+        if col_names:
+            cols = [
+                ReportColumnRead(
+                    id=uuid.uuid4(),
+                    column_name=name,
+                    display_name=name.replace("_", " ").title(),
+                    position=idx,
+                    is_visible=True,
+                    data_type="string",
+                    format_config={},
+                )
+                for idx, name in enumerate(col_names)
+            ]
+
     return RunReportResponse(
         report_id=r.id,
         rows=result.rows,
-        columns=[ReportColumnRead.model_validate(c) for c in r.columns],
+        columns=cols,
         rows_returned=result.rows_returned,
         execution_time_ms=exec_ms,
     )
