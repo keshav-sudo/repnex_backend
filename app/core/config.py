@@ -60,6 +60,7 @@ class Settings(BaseSettings):
     PINECONE_API_KEY: str = ""
     PINECONE_HOST: str = ""
     PINECONE_INDEX_NAME: str = "repnex-sql-templates"
+    PINECONE_NAMESPACE: str = "repnex"
 
     # Rate limits (per minute, per user)
     RATE_LIMIT_AUTH_PER_MIN: int = 10

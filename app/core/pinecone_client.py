@@ -22,8 +22,8 @@ class PineconeTemplateStore:
             name=s.PINECONE_INDEX_NAME,
             host=s.PINECONE_HOST,
         )
-        self._namespace = "sql-templates"
-        log.info("pinecone_connected", extra={"index": s.PINECONE_INDEX_NAME})
+        self._namespace = s.PINECONE_NAMESPACE
+        log.info("pinecone_connected", extra={"index": s.PINECONE_INDEX_NAME, "namespace": self._namespace})
 
     # ── search ───────────────────────────────────────────────────────
 

@@ -10,7 +10,7 @@ from pinecone import Pinecone
 PINECONE_API_KEY = "pcsk_8uNjs_JEnKJ8fThatyMGp8pdLM59ukbadsy3ga5awHrUCfBVbrvKmnaXqasWmUfHTAkuX"
 PINECONE_HOST    = "https://repnex-0kl271f.svc.aped-4627-b74a.pinecone.io"
 PINECONE_INDEX   = "repnex-sql-templates"
-NAMESPACE        = "sql-templates"
+NAMESPACE        = "repnex"
 EMBED_MODEL      = "llama-text-embed-v2"
 
 
