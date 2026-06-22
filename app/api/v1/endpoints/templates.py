@@ -2,10 +2,8 @@
 from __future__ import annotations
 
 from fastapi import APIRouter, Depends
-from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.v1.dependencies.tenancy import bind_tenant_context
-from app.core.database.session import get_db
 from app.core.pinecone_client import get_pinecone_store
 from app.core.security.auth import CurrentUser
 from app.services.ingest_templates import ingest_templates

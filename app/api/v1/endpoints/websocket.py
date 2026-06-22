@@ -6,7 +6,7 @@ from typing import Any
 
 from fastapi import APIRouter, Query, WebSocket, WebSocketDisconnect
 from pydantic import TypeAdapter, ValidationError
-from sqlalchemy.ext.asyncio import AsyncSession
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.api.v1.dependencies.rate_limit import consume_ws_msg
 from app.core.database.session import get_db
@@ -53,8 +53,43 @@ async def ws_query(
         websocket, user_id=current.user_id, org_id=current.org_id, session_id=session_id
     )
 
+    db_iter = get_db()
+    db: AsyncIOMotorDatabase = await anext(db_iter)  # type: ignore[arg-type]
+    from app.core.database.models import Organization
+    org = await db[Organization.COLLECTION].find_one({"_id": str(current.org_id)})
+    hide_sql = bool(org.get("hide_sql_queries") if org else False)
+
+    def redact_sql_blocks(text: str | None) -> str | None:
+        import re
+        if not text:
+            return text
+        return re.sub(
+            r"(```sql\s+)(.*?)(```)",
+            r"\1-- SQL hidden by organization settings\n\3",
+            text,
+            flags=re.DOTALL | re.IGNORECASE
+        )
+
+    def apply_ws_redaction(msg: dict[str, Any]) -> dict[str, Any] | None:
+        if not hide_sql:
+            return msg
+        if msg.get("type") == "sql":
+            return None
+        if "sql" in msg:
+            msg["sql"] = None
+        if "message" in msg and isinstance(msg["message"], str):
+            cleaned = msg["message"]
+            cleaned = cleaned.replace(" Here's a preview of the SQL that will execute:", "")
+            cleaned = cleaned.replace("Here's a preview of the SQL that will execute:", "")
+            msg["message"] = redact_sql_blocks(cleaned)
+        if "summary" in msg and isinstance(msg["summary"], str):
+            msg["summary"] = redact_sql_blocks(msg["summary"])
+        return msg
+
     async def send(msg: dict[str, Any]) -> None:
-        await mgr.send(entry, msg)
+        redacted = apply_ws_redaction(msg)
+        if redacted is not None:
+            await mgr.send(entry, redacted)
 
     try:
         await send(ReadyMsg(session_id=str(session_id)).model_dump())
@@ -111,7 +146,7 @@ async def _run(
     natural_language: str,
 ) -> None:
     db_iter = get_db()
-    db: AsyncSession = await anext(db_iter)  # type: ignore[arg-type]
+    db: AsyncIOMotorDatabase = await anext(db_iter)  # type: ignore[arg-type]
     try:
         result = await query_service.run_streaming(
             db,

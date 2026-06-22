@@ -1,27 +1,26 @@
+"""
+app/core/database/models.py
+───────────────────────────
+MongoDB document schemas with thin class wrappers.
+Allows construction via new() -> dict (for MongoDB insertion)
+and instantiating via Model(**mongo_dict) (for SQLAlchemy compatibility across services).
+"""
 from __future__ import annotations
 
 import enum
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 
-from sqlalchemy import (
-    JSON,
-    Boolean,
-    DateTime,
-    Enum,
-    ForeignKey,
-    Index,
-    Integer,
-    String,
-    Text,
-    UniqueConstraint,
-    func,
-)
-from sqlalchemy.dialects.postgresql import JSONB, UUID
-from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from app.core.database.base import Base
+def _now() -> datetime:
+    return datetime.now(timezone.utc)
 
+
+def _uid() -> str:
+    return str(uuid.uuid4())
+
+
+# ── Enums ─────────────────────────────────────────────────────────────────────
 
 class PlanType(str, enum.Enum):
     free = "free"
@@ -60,300 +59,511 @@ class ExecutionStatus(str, enum.Enum):
     rate_limited = "rate_limited"
 
 
-def _uuid_pk() -> Mapped[uuid.UUID]:
-    return mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+class PermissionRequestStatus(str, enum.Enum):
+    pending = "pending"
+    approved = "approved"
+    denied = "denied"
 
 
-def _ts_created() -> Mapped[datetime]:
-    return mapped_column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+# ── Model Wrapper Classes ─────────────────────────────────────────────────────
+
+class Organization:
+    COLLECTION = "organizations"
+
+    def __init__(self, **kwargs):
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "owner_id" and v:
+                self.owner_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "plan_type" and v:
+                self.plan_type = PlanType(v)
+            else:
+                setattr(self, k, v)
+
+    @staticmethod
+    def new(
+        *,
+        name: str,
+        owner_id: str | None = None,
+        plan_type: PlanType = PlanType.free,
+        hide_sql_queries: bool = False,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "name": name,
+            "owner_id": owner_id,
+            "plan_type": plan_type.value,
+            "hide_sql_queries": hide_sql_queries,
+            "created_at": _now(),
+        }
 
 
-# ──────────────────────────────────────────────────────────────────────────────
-class Organization(Base):
-    __tablename__ = "organizations"
+class User:
+    COLLECTION = "users"
 
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    name: Mapped[str] = mapped_column(String(255), unique=True, nullable=False)
-    owner_id: Mapped[uuid.UUID | None] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id", use_alter=True, ondelete="SET NULL")
-    )
-    plan_type: Mapped[PlanType] = mapped_column(
-        Enum(PlanType, name="plan_type"), default=PlanType.free, nullable=False
-    )
-    hide_sql_queries: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
-    created_at: Mapped[datetime] = _ts_created()
+    def __init__(self, **kwargs):
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "org_id" and v:
+                self.org_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "invited_by" and v:
+                self.invited_by = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "role" and v:
+                self.role = UserRole(v)
+            elif k == "status" and v:
+                self.status = UserStatus(v)
+            else:
+                setattr(self, k, v)
 
-
-class User(Base):
-    __tablename__ = "users"
-    __table_args__ = (
-        UniqueConstraint("org_id", "email", name="uq_users_org_email"),
-        Index("ix_users_email", "email"),
-        Index("ix_users_org_id", "org_id"),
-        Index("ix_users_org_created_at", "org_id", "created_at"),
-    )
-
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    org_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("organizations.id", ondelete="CASCADE"), nullable=False
-    )
-    email: Mapped[str] = mapped_column(String(320), nullable=False)
-    hashed_password: Mapped[str | None] = mapped_column(String(255), nullable=True)
-    role: Mapped[UserRole] = mapped_column(
-        Enum(UserRole, name="user_role"), default=UserRole.viewer, nullable=False
-    )
-    invited_by: Mapped[uuid.UUID | None] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id", ondelete="SET NULL"), nullable=True
-    )
-    status: Mapped[UserStatus] = mapped_column(
-        Enum(UserStatus, name="user_status"), default=UserStatus.pending, nullable=False
-    )
-    module_permissions: Mapped[dict | None] = mapped_column(JSONB, nullable=True, default=None)
-    created_at: Mapped[datetime] = _ts_created()
-
-
-class DBConnection(Base):
-    __tablename__ = "db_connections"
-    __table_args__ = (
-        Index("ix_db_connections_org_id", "org_id"),
-        Index("ix_db_connections_org_created_at", "org_id", "created_at"),
-    )
-
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    org_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("organizations.id", ondelete="CASCADE"), nullable=False
-    )
-    created_by: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id", ondelete="RESTRICT"), nullable=False
-    )
-    name: Mapped[str] = mapped_column(String(255), nullable=False)
-    db_type: Mapped[DBType] = mapped_column(Enum(DBType, name="db_type"), nullable=False)
-    host: Mapped[str] = mapped_column(String(255), nullable=False)
-    port: Mapped[int] = mapped_column(Integer, nullable=False)
-    db_name: Mapped[str] = mapped_column(String(255), nullable=False)
-    encrypted_username: Mapped[str] = mapped_column(Text, nullable=False)
-    encrypted_password: Mapped[str] = mapped_column(Text, nullable=False)
-    ssl_enabled: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
-    is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
-    last_tested_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    schema_info: Mapped[dict | None] = mapped_column(JSONB, nullable=True)
-    schema_last_synced_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
-    created_at: Mapped[datetime] = _ts_created()
+    @staticmethod
+    def new(
+        *,
+        org_id: str,
+        email: str,
+        hashed_password: str | None,
+        role: UserRole = UserRole.viewer,
+        status: UserStatus = UserStatus.pending,
+        invited_by: str | None = None,
+        module_permissions: dict | None = None,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "org_id": org_id,
+            "email": email.lower(),
+            "hashed_password": hashed_password,
+            "role": role.value,
+            "status": status.value,
+            "invited_by": invited_by,
+            "module_permissions": module_permissions,
+            "created_at": _now(),
+        }
 
 
-class DBConnectionAccess(Base):
-    __tablename__ = "db_connection_access"
-    __table_args__ = (
-        UniqueConstraint("connection_id", "user_id", name="uq_dca_conn_user"),
-        Index("ix_dca_connection_id", "connection_id"),
-        Index("ix_dca_connection_org_user", "connection_id", "org_id", "user_id"),
-        Index("ix_dca_org_user", "org_id", "user_id"),
-    )
+class DBConnection:
+    COLLECTION = "db_connections"
 
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    connection_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("db_connections.id", ondelete="CASCADE"), nullable=False
-    )
-    user_id: Mapped[uuid.UUID | None] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=True
-    )
-    org_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("organizations.id", ondelete="CASCADE"), nullable=False
-    )
-    granted_by: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id", ondelete="RESTRICT"), nullable=False
-    )
-    created_at: Mapped[datetime] = _ts_created()
+    def __init__(self, **kwargs):
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "org_id" and v:
+                self.org_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "created_by" and v:
+                self.created_by = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "db_type" and v:
+                self.db_type = DBType(v)
+            else:
+                setattr(self, k, v)
 
-
-class GISession(Base):
-    __tablename__ = "gi_sessions"
-    __table_args__ = (
-        Index("ix_gi_sessions_user_id", "user_id"),
-        Index("ix_gi_sessions_org_user_created_at", "org_id", "user_id", "created_at"),
-    )
-
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    user_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False
-    )
-    org_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("organizations.id", ondelete="CASCADE"), nullable=False
-    )
-    connection_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("db_connections.id", ondelete="CASCADE"), nullable=False
-    )
-    title: Mapped[str] = mapped_column(String(255), nullable=False)
-    context_window: Mapped[list] = mapped_column(JSONB, default=list, nullable=False)
-    token_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
-    status: Mapped[SessionStatus] = mapped_column(
-        Enum(SessionStatus, name="session_status"), default=SessionStatus.active, nullable=False
-    )
-    created_at: Mapped[datetime] = _ts_created()
-
-
-class QueryHistory(Base):
-    __tablename__ = "query_history"
-    __table_args__ = (
-        Index("ix_query_history_session_id", "session_id"),
-        Index("ix_query_history_user_created", "user_id", "created_at"),
-    )
-
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    session_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("gi_sessions.id", ondelete="CASCADE"), nullable=False
-    )
-    user_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False
-    )
-    connection_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("db_connections.id", ondelete="CASCADE"), nullable=False
-    )
-    natural_language_input: Mapped[str] = mapped_column(Text, nullable=False)
-    generated_sql: Mapped[str | None] = mapped_column(Text)
-    row_size: Mapped[bool | None] = mapped_column(Boolean, default=False)
-    intent: Mapped[dict] = mapped_column(JSONB, default=dict, nullable=False)
-    execution_status: Mapped[ExecutionStatus] = mapped_column(
-        Enum(ExecutionStatus, name="execution_status"), nullable=False
-    )
-    error_message: Mapped[str | None] = mapped_column(Text)
-    execution_time_ms: Mapped[int | None] = mapped_column(Integer)
-    rows_returned: Mapped[int | None] = mapped_column(Integer)
-    created_at: Mapped[datetime] = _ts_created()
+    @staticmethod
+    def new(
+        *,
+        org_id: str,
+        created_by: str,
+        name: str,
+        db_type: DBType,
+        host: str,
+        port: int,
+        db_name: str,
+        encrypted_username: str,
+        encrypted_password: str,
+        ssl_enabled: bool = False,
+        is_active: bool = True,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "org_id": org_id,
+            "created_by": created_by,
+            "name": name,
+            "db_type": db_type.value,
+            "host": host,
+            "port": port,
+            "db_name": db_name,
+            "encrypted_username": encrypted_username,
+            "encrypted_password": encrypted_password,
+            "ssl_enabled": ssl_enabled,
+            "is_active": is_active,
+            "last_tested_at": None,
+            "schema_info": None,
+            "schema_last_synced_at": None,
+            "created_at": _now(),
+        }
 
 
-class Report(Base):
-    __tablename__ = "reports"
-    __table_args__ = (
-        Index("ix_reports_org_id", "org_id"),
-        Index("ix_reports_org_created_at", "org_id", "created_at"),
-        Index("ix_reports_next_refresh_due", "next_refresh_at", "refresh_interval_days"),
-    )
+class DBConnectionAccess:
+    COLLECTION = "db_connection_access"
 
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    org_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("organizations.id", ondelete="CASCADE"), nullable=False
-    )
-    created_by: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id", ondelete="RESTRICT"), nullable=False
-    )
-    name: Mapped[str] = mapped_column(String(255), nullable=False)
-    description: Mapped[str | None] = mapped_column(Text)
-    query_template_id: Mapped[str] = mapped_column(String(128), nullable=False)
-    parameters: Mapped[dict] = mapped_column(JSONB, default=dict, nullable=False)
-    is_public: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
-    is_pinned: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
-    # ── Scheduled auto-refresh fields ──────────────────────────────────────
-    # refresh_interval_days: None/0 = manual only, 1 = daily, 2 = every 2d, 3 = every 3d
-    refresh_interval_days: Mapped[int | None] = mapped_column(Integer, nullable=True)
-    next_refresh_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
-    last_refreshed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
-    auto_refresh_connection_id: Mapped[uuid.UUID | None] = mapped_column(
-        UUID(as_uuid=True),
-        ForeignKey("db_connections.id", ondelete="SET NULL"),
-        nullable=True,
-    )
-    created_at: Mapped[datetime] = _ts_created()
+    def __init__(self, **kwargs):
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "connection_id" and v:
+                self.connection_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "user_id" and v:
+                self.user_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "org_id" and v:
+                self.org_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "granted_by" and v:
+                self.granted_by = uuid.UUID(v) if isinstance(v, str) else v
+            else:
+                setattr(self, k, v)
 
-    columns: Mapped[list["ReportColumn"]] = relationship(
-        back_populates="report", cascade="all, delete-orphan", lazy="selectin"
-    )
-    snapshots: Mapped[list["ReportSnapshot"]] = relationship(
-        back_populates="report", cascade="all, delete-orphan", lazy="noload"
-    )
+    @staticmethod
+    def new(
+        *,
+        connection_id: str,
+        org_id: str,
+        granted_by: str,
+        user_id: str | None = None,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "connection_id": connection_id,
+            "user_id": user_id,
+            "org_id": org_id,
+            "granted_by": granted_by,
+            "created_at": _now(),
+        }
 
 
-class ReportColumn(Base):
-    __tablename__ = "report_columns"
-    __table_args__ = (Index("ix_report_columns_report_position", "report_id", "position"),)
+class GISession:
+    COLLECTION = "gi_sessions"
 
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    report_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("reports.id", ondelete="CASCADE"), nullable=False
-    )
-    column_name: Mapped[str] = mapped_column(String(128), nullable=False)
-    display_name: Mapped[str] = mapped_column(String(128), nullable=False)
-    position: Mapped[int] = mapped_column(Integer, nullable=False)
-    is_visible: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
-    data_type: Mapped[str] = mapped_column(String(32), nullable=False)
-    format_config: Mapped[dict] = mapped_column(JSONB, default=dict, nullable=False)
+    def __init__(self, **kwargs):
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "user_id" and v:
+                self.user_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "org_id" and v:
+                self.org_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "connection_id" and v:
+                self.connection_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "status" and v:
+                self.status = SessionStatus(v)
+            else:
+                setattr(self, k, v)
 
-    report: Mapped[Report] = relationship(back_populates="columns")
-
-
-# ── Report Snapshot (historical run results) ──────────────────────────────────
-
-class ReportSnapshot(Base):
-    """Stores the result-set of every report execution (scheduled or manual).
-    This enables a full history/timeline so users can compare data across dates.
-    """
-    __tablename__ = "report_snapshots"
-    __table_args__ = (
-        Index("ix_report_snapshots_report_id", "report_id"),
-        Index("ix_report_snapshots_org_id", "org_id"),
-        Index("ix_report_snapshots_report_created_at", "report_id", "created_at"),
-        Index("ix_report_snapshots_org_created_at", "org_id", "created_at"),
-    )
-
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    report_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("reports.id", ondelete="CASCADE"), nullable=False
-    )
-    org_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("organizations.id", ondelete="CASCADE"), nullable=False
-    )
-    # "manual" | "scheduled"
-    triggered_by: Mapped[str] = mapped_column(String(32), default="manual", nullable=False)
-    rows_data: Mapped[list] = mapped_column(JSONB, default=list, nullable=False)
-    rows_returned: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
-    execution_time_ms: Mapped[int | None] = mapped_column(Integer, nullable=True)
-    created_at: Mapped[datetime] = _ts_created()
-
-    report: Mapped["Report"] = relationship(back_populates="snapshots")
+    @staticmethod
+    def new(
+        *,
+        user_id: str,
+        org_id: str,
+        connection_id: str,
+        title: str,
+        context_window: list | None = None,
+        token_count: int = 0,
+        status: SessionStatus = SessionStatus.active,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "user_id": user_id,
+            "org_id": org_id,
+            "connection_id": connection_id,
+            "title": title,
+            "context_window": context_window or [],
+            "token_count": token_count,
+            "status": status.value,
+            "created_at": _now(),
+        }
 
 
-class Dashboard(Base):
-    __tablename__ = "dashboards"
-    __table_args__ = (
-        Index("ix_dashboards_org_id", "org_id"),
-        Index("ix_dashboards_org_created_at", "org_id", "created_at"),
-    )
+class QueryHistory:
+    COLLECTION = "query_history"
 
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    org_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("organizations.id", ondelete="CASCADE"), nullable=False
-    )
-    created_by: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id", ondelete="RESTRICT"), nullable=False
-    )
-    name: Mapped[str] = mapped_column(String(255), nullable=False)
-    is_default: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
-    layout_config: Mapped[dict] = mapped_column(JSONB, default=dict, nullable=False)
-    created_at: Mapped[datetime] = _ts_created()
+    def __init__(self, **kwargs):
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "session_id" and v:
+                self.session_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "user_id" and v:
+                self.user_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "org_id" and v:
+                self.org_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "connection_id" and v:
+                self.connection_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "execution_status" and v:
+                self.execution_status = ExecutionStatus(v)
+            else:
+                setattr(self, k, v)
 
-    items: Mapped[list["DashboardReport"]] = relationship(
-        back_populates="dashboard", cascade="all, delete-orphan", lazy="selectin"
-    )
+    @staticmethod
+    def new(
+        *,
+        session_id: str,
+        user_id: str,
+        org_id: str,
+        connection_id: str,
+        natural_language_input: str,
+        generated_sql: str | None,
+        row_size: bool | None,
+        intent: dict,
+        execution_status: ExecutionStatus,
+        error_message: str | None = None,
+        execution_time_ms: int | None = None,
+        rows_returned: int | None = None,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "session_id": session_id,
+            "user_id": user_id,
+            "org_id": org_id,
+            "connection_id": connection_id,
+            "natural_language_input": natural_language_input,
+            "generated_sql": generated_sql,
+            "row_size": row_size,
+            "intent": intent,
+            "execution_status": execution_status.value,
+            "error_message": error_message,
+            "execution_time_ms": execution_time_ms,
+            "rows_returned": rows_returned,
+            "created_at": _now(),
+        }
 
 
-class DashboardReport(Base):
-    __tablename__ = "dashboard_reports"
-    __table_args__ = (
-        UniqueConstraint("dashboard_id", "report_id", name="uq_dr_dash_report"),
-        Index("ix_dashboard_reports_report_id", "report_id"),
-    )
+class Report:
+    COLLECTION = "reports"
 
-    id: Mapped[uuid.UUID] = _uuid_pk()
-    dashboard_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("dashboards.id", ondelete="CASCADE"), nullable=False
-    )
-    report_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("reports.id", ondelete="CASCADE"), nullable=False
-    )
-    position_x: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
-    position_y: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
-    width: Mapped[int] = mapped_column(Integer, default=4, nullable=False)
-    height: Mapped[int] = mapped_column(Integer, default=4, nullable=False)
-    added_at: Mapped[datetime] = _ts_created()
+    def __init__(self, **kwargs):
+        self.columns = []
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "org_id" and v:
+                self.org_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "created_by" and v:
+                self.created_by = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "auto_refresh_connection_id" and v:
+                self.auto_refresh_connection_id = uuid.UUID(v) if isinstance(v, str) else v
+            else:
+                setattr(self, k, v)
 
-    dashboard: Mapped[Dashboard] = relationship(back_populates="items")
+    @staticmethod
+    def new(
+        *,
+        org_id: str,
+        created_by: str,
+        name: str,
+        description: str | None,
+        query_template_id: str,
+        parameters: dict,
+        is_public: bool = False,
+        is_pinned: bool = False,
+        refresh_interval_days: int | None = None,
+        next_refresh_at: datetime | None = None,
+        last_refreshed_at: datetime | None = None,
+        auto_refresh_connection_id: str | None = None,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "org_id": org_id,
+            "created_by": created_by,
+            "name": name,
+            "description": description,
+            "query_template_id": query_template_id,
+            "parameters": parameters,
+            "is_public": is_public,
+            "is_pinned": is_pinned,
+            "refresh_interval_days": refresh_interval_days,
+            "next_refresh_at": next_refresh_at,
+            "last_refreshed_at": last_refreshed_at,
+            "auto_refresh_connection_id": auto_refresh_connection_id,
+            "created_at": _now(),
+        }
+
+
+class ReportColumn:
+    COLLECTION = "report_columns"
+
+    def __init__(self, **kwargs):
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "report_id" and v:
+                self.report_id = uuid.UUID(v) if isinstance(v, str) else v
+            else:
+                setattr(self, k, v)
+
+    @staticmethod
+    def new(
+        *,
+        report_id: str,
+        column_name: str,
+        display_name: str,
+        position: int,
+        is_visible: bool = True,
+        data_type: str,
+        format_config: dict | None = None,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "report_id": report_id,
+            "column_name": column_name,
+            "display_name": display_name,
+            "position": position,
+            "is_visible": is_visible,
+            "data_type": data_type,
+            "format_config": format_config or {},
+        }
+
+
+class ReportSnapshot:
+    COLLECTION = "report_snapshots"
+
+    def __init__(self, **kwargs):
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "report_id" and v:
+                self.report_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "org_id" and v:
+                self.org_id = uuid.UUID(v) if isinstance(v, str) else v
+            else:
+                setattr(self, k, v)
+
+    @staticmethod
+    def new(
+        *,
+        report_id: str,
+        org_id: str,
+        triggered_by: str = "manual",
+        rows_data: list | None = None,
+        rows_returned: int = 0,
+        execution_time_ms: int | None = None,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "report_id": report_id,
+            "org_id": org_id,
+            "triggered_by": triggered_by,
+            "rows_data": rows_data or [],
+            "rows_returned": rows_returned,
+            "execution_time_ms": execution_time_ms,
+            "created_at": _now(),
+        }
+
+
+class Dashboard:
+    COLLECTION = "dashboards"
+
+    def __init__(self, **kwargs):
+        self.items = []
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "org_id" and v:
+                self.org_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "created_by" and v:
+                self.created_by = uuid.UUID(v) if isinstance(v, str) else v
+            else:
+                setattr(self, k, v)
+
+    @staticmethod
+    def new(
+        *,
+        org_id: str,
+        created_by: str,
+        name: str,
+        is_default: bool = False,
+        layout_config: dict | None = None,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "org_id": org_id,
+            "created_by": created_by,
+            "name": name,
+            "is_default": is_default,
+            "layout_config": layout_config or {},
+            "created_at": _now(),
+        }
+
+
+class DashboardReport:
+    COLLECTION = "dashboard_reports"
+
+    def __init__(self, **kwargs):
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "dashboard_id" and v:
+                self.dashboard_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "report_id" and v:
+                self.report_id = uuid.UUID(v) if isinstance(v, str) else v
+            else:
+                setattr(self, k, v)
+
+    @staticmethod
+    def new(
+        *,
+        dashboard_id: str,
+        report_id: str,
+        position_x: int = 0,
+        position_y: int = 0,
+        width: int = 4,
+        height: int = 4,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "dashboard_id": dashboard_id,
+            "report_id": report_id,
+            "position_x": position_x,
+            "position_y": position_y,
+            "width": width,
+            "height": height,
+            "added_at": _now(),
+        }
+
+
+class PermissionRequestStatus(str, enum.Enum):
+    pending = "pending"
+    approved = "approved"
+    denied = "denied"
+
+
+class PermissionRequest:
+    COLLECTION = "permission_requests"
+
+    def __init__(self, **kwargs):
+        for k, v in kwargs.items():
+            if k == "_id":
+                self.id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "org_id" and v:
+                self.org_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "user_id" and v:
+                self.user_id = uuid.UUID(v) if isinstance(v, str) else v
+            elif k == "status" and v:
+                self.status = PermissionRequestStatus(v)
+            else:
+                setattr(self, k, v)
+
+    @staticmethod
+    def new(
+        *,
+        org_id: str,
+        user_id: str,
+        module_key: str,
+        status: PermissionRequestStatus = PermissionRequestStatus.pending,
+        doc_id: str | None = None,
+    ) -> dict:
+        return {
+            "_id": doc_id or _uid(),
+            "org_id": org_id,
+            "user_id": user_id,
+            "module_key": module_key,
+            "status": status.value,
+            "created_at": _now(),
+        }

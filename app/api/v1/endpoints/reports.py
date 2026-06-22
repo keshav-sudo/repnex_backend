@@ -5,7 +5,7 @@ import uuid
 
 from fastapi import APIRouter, Depends, Query, status
 from fastapi.responses import StreamingResponse
-from sqlalchemy.ext.asyncio import AsyncSession
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.api.v1.dependencies.rate_limit import rate_limit
 from app.api.v1.dependencies.tenancy import bind_tenant_context
@@ -33,7 +33,7 @@ router = APIRouter(prefix="/reports", tags=["reports"])
 @router.get("", response_model=list[ReportRead])
 async def list_(
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> list[ReportRead]:
     return await report_service.list_reports(db, current)
 
@@ -42,7 +42,7 @@ async def list_(
 async def create(
     data: ReportCreate,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> ReportRead:
     return await report_service.create_report(db, current, data)
 
@@ -83,39 +83,35 @@ async def export_pdf(
 async def export_bulk(
     data: BulkExportRequest,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> StreamingResponse:
     """Export multiple reports combined into a single file or a ZIP package."""
     if current.role == "viewer":
         raise Forbidden("Viewers are not allowed to export report data")
-        
-    from sqlalchemy import select
+
     from app.core.database.models import Report, ReportSnapshot
 
     reports_dict = []
     for report_id in data.report_ids:
         # 1. Fetch report configuration
-        stmt = select(Report).where(
-            Report.id == report_id,
-            Report.org_id == current.org_id
-        )
-        report_obj = (await db.execute(stmt)).scalars().first()
-        if not report_obj:
+        report_doc = await db[Report.COLLECTION].find_one({
+            "_id": str(report_id),
+            "org_id": str(current.org_id)
+        })
+        if not report_doc:
             continue
-            
+        report_obj = Report(**report_doc)
+
         headers = [c.column_name for c in report_obj.columns if c.is_visible]
-        
+
         # 2. Fetch latest snapshot for this report
-        snap_stmt = (
-            select(ReportSnapshot)
-            .where(ReportSnapshot.report_id == report_id)
-            .order_by(ReportSnapshot.created_at.desc())
-            .limit(1)
+        snap_doc = await db[ReportSnapshot.COLLECTION].find_one(
+            {"report_id": str(report_id)},
+            sort=[("created_at", -1)]
         )
-        snap_obj = (await db.execute(snap_stmt)).scalars().first()
-        
-        if snap_obj:
-            rows = snap_obj.rows_data
+
+        if snap_doc:
+            rows = snap_doc.get("rows_data", [])
         else:
             conn_id = data.connection_id or report_obj.auto_refresh_connection_id
             if not conn_id:
@@ -123,14 +119,13 @@ async def export_bulk(
                 conns = await connection_service.list_connections(db, current)
                 if conns:
                     conn_id = conns[0].id
-            
+
             if conn_id:
                 try:
                     from app.services import report_service
                     snap = await report_service._execute_and_snapshot(
                         db, report_obj, conn_id, triggered_by="manual"
                     )
-                    await db.commit()
                     rows = snap.rows_data
                 except Exception as e:
                     import logging
@@ -140,13 +135,13 @@ async def export_bulk(
                     rows = []
             else:
                 rows = []
-        
+
         reports_dict.append({
             "title": report_obj.name or "Report",
             "headers": headers,
             "rows": rows
         })
-    
+
     if data.format == "excel":
         file_bytes = export_service.generate_bulk_excel(reports_dict)
         media_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
@@ -155,12 +150,11 @@ async def export_bulk(
         file_bytes = export_service.generate_bulk_pdf(reports_dict)
         media_type = "application/pdf"
         filename = "bulk_export.pdf"
-    else:  # zip or csv
-        # If format is csv, we package individual CSVs in a ZIP
+    else:
         file_bytes = export_service.generate_bulk_zip(reports_dict, format_type="csv" if data.format == "csv" else "excel")
         media_type = "application/zip"
         filename = "bulk_export.zip"
-        
+
     return StreamingResponse(
         io.BytesIO(file_bytes),
         media_type=media_type,
@@ -172,7 +166,7 @@ async def export_bulk(
 async def get(
     report_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> ReportRead:
     r = await report_service.get_report(db, current, report_id)
     return ReportRead.model_validate(r)
@@ -183,7 +177,7 @@ async def update(
     report_id: uuid.UUID,
     data: ReportUpdate,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> ReportRead:
     return await report_service.update_report(db, current, report_id, data)
 
@@ -192,12 +186,15 @@ async def update(
 async def toggle_pin(
     report_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> ReportRead:
     r = await report_service.get_report(db, current, report_id)
-    r.is_pinned = not r.is_pinned
-    await db.commit()
-    await db.refresh(r)
+    new_pinned = not getattr(r, "is_pinned", False)
+    await db["reports"].update_one(
+        {"_id": str(report_id)},
+        {"$set": {"is_pinned": new_pinned}}
+    )
+    r.is_pinned = new_pinned
     return ReportRead.model_validate(r)
 
 
@@ -205,7 +202,7 @@ async def toggle_pin(
 async def delete(
     report_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> dict:
     await report_service.delete_report(db, current, report_id)
     return {"ok": True}
@@ -216,7 +213,7 @@ async def run(
     report_id: uuid.UUID,
     data: RunReportRequest,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
     _rl: None = Depends(rate_limit("query")),
 ) -> RunReportResponse:
     return await report_service.run_report(db, current, report_id, data)
@@ -229,14 +226,9 @@ async def set_schedule(
     report_id: uuid.UUID,
     data: ScheduleRequest,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> ReportRead:
-    """Set or clear the auto-refresh schedule for a report.
-
-    - `interval_days` = 0 or null → disable auto-refresh
-    - `interval_days` = 1/2/3 → refresh every N days
-    - `connection_id` → which DB connection to use for the scheduled run
-    """
+    """Set or clear the auto-refresh schedule for a report."""
     return await report_service.set_schedule(db, current, report_id, data)
 
 
@@ -249,7 +241,7 @@ async def manual_refresh(
     report_id: uuid.UUID,
     data: RefreshRequest,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
     _rl: None = Depends(rate_limit("query")),
 ) -> SnapshotDetailRead:
     """Manually trigger a report refresh and save result as a snapshot."""
@@ -261,7 +253,7 @@ async def list_snapshots(
     report_id: uuid.UUID,
     limit: int = Query(default=20, ge=1, le=100),
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> list[SnapshotRead]:
     """List historical run snapshots (metadata only, no row data)."""
     return await report_service.list_snapshots(db, current, report_id, limit=limit)
@@ -275,8 +267,7 @@ async def get_snapshot(
     report_id: uuid.UUID,
     snapshot_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> SnapshotDetailRead:
     """Get a single snapshot including full row data for preview."""
     return await report_service.get_snapshot_detail(db, current, report_id, snapshot_id)
-

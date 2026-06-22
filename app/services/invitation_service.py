@@ -2,10 +2,8 @@ from __future__ import annotations
 
 import asyncio
 import uuid
-
-from sqlalchemy import select
-from sqlalchemy.exc import IntegrityError
-from sqlalchemy.ext.asyncio import AsyncSession
+from motor.motor_asyncio import AsyncIOMotorDatabase
+from pymongo.errors import DuplicateKeyError
 
 from app.core.config import get_settings
 from app.core.database.models import Organization, User, UserRole, UserStatus
@@ -26,94 +24,82 @@ from app.schemas.auth import (
     UserPublic,
 )
 from app.schemas.user import InviteRequest, InviteResponse
-from app.utils.email import send_email_async, send_invite_email, fire_and_forget
+from app.utils.email import send_email_async, fire_and_forget
 from app.core.logging import get_logger
 
 log = get_logger(__name__)
 
 
 async def invite(
-    db: AsyncSession, *, current_user_id: uuid.UUID, current_org_id: uuid.UUID,
+    db: AsyncIOMotorDatabase, *, current_user_id: uuid.UUID, current_org_id: uuid.UUID,
     current_role: str, data: InviteRequest,
 ) -> InviteResponse:
-    """
-    Create a pending user record and dispatch an invitation email.
-    Only org admins may invite. The generated JWT invite token is single-use
-    and expires per the SECRET_KEY / INVITE_TOKEN_EXPIRE_HOURS setting.
-    """
     if current_role != "admin":
         raise Forbidden("Only admins may invite")
 
-    # Check for existing pending invite — re-send rather than duplicate
-    existing = (
-        await db.execute(
-            select(User).where(
-                User.org_id == current_org_id,
-                User.email == data.email.lower(),
-            )
-        )
-    ).scalar_one_or_none()
+    existing = await db[User.COLLECTION].find_one({
+        "org_id": str(current_org_id),
+        "email": data.email.lower(),
+    })
 
     if existing:
-        if existing.status == UserStatus.active:
+        if existing.get("status") == UserStatus.active.value:
             raise Conflict("A user with that email is already an active member of this org")
-        # Re-invite: generate a new token for the existing pending/expired user
-        user = existing
+        user_id_str = existing["_id"]
+        user_status = existing["status"]
     else:
-        user = User(
-            org_id=current_org_id,
+        user_doc = User.new(
+            org_id=str(current_org_id),
             email=data.email.lower(),
             hashed_password=None,
             role=UserRole(data.role),
             status=UserStatus.pending,
-            invited_by=current_user_id,
+            invited_by=str(current_user_id),
         )
-        db.add(user)
         try:
-            await db.flush()
-        except IntegrityError as e:
-            await db.rollback()
+            await db[User.COLLECTION].insert_one(user_doc)
+        except DuplicateKeyError as e:
             raise Conflict("A user with that email already exists in this org") from e
+        user_id_str = user_doc["_id"]
+        user_status = user_doc["status"]
 
-    token = create_invite_token(user_id=user.id, org_id=current_org_id)
-    org = (
-        await db.execute(select(Organization).where(Organization.id == current_org_id))
-    ).scalar_one()
-    await db.commit()
+    token = create_invite_token(user_id=uuid.UUID(user_id_str), org_id=current_org_id)
+    org = await db[Organization.COLLECTION].find_one({"_id": str(current_org_id)})
+    if not org:
+        raise NotFound("Organization not found")
 
     settings = get_settings()
     accept_url = f"{settings.APP_BASE_URL}/accept-invite?token={token}"
 
+    print(f"\n--- [INVITE DEBUG] Invitation URL for {data.email.lower()} is: {accept_url} ---\n", flush=True)
+
     fire_and_forget(
-        _send_invite_async(to=user.email, accept_url=accept_url, org_name=org.name)
+        _send_invite_async(to=data.email.lower(), accept_url=accept_url, org_name=org["name"])
     )
 
-    return InviteResponse(user_id=user.id, status=user.status.value)
+    return InviteResponse(user_id=uuid.UUID(user_id_str), status=user_status, accept_url=accept_url)
 
 
-async def preview(db: AsyncSession, token: str) -> InvitePreview:
+async def preview(db: AsyncIOMotorDatabase, token: str) -> InvitePreview:
     payload = decode_token(token, expected_type="invite")
-    user_id = uuid.UUID(payload["sub"])
-    user = (
-        await db.execute(select(User).where(User.id == user_id))
-    ).scalar_one_or_none()
+    user_id = payload["sub"]
+    user = await db[User.COLLECTION].find_one({"_id": user_id})
     if not user:
         raise NotFound("Invitation invalid or user not found")
 
-    org = (
-        await db.execute(select(Organization).where(Organization.id == user.org_id))
-    ).scalar_one()
+    org = await db[Organization.COLLECTION].find_one({"_id": user["org_id"]})
+    if not org:
+        raise NotFound("Organization not found")
 
     return InvitePreview(
-        email=user.email,
-        organization_name=org.name,
-        role=user.role.value,
-        status=user.status.value,
+        email=user["email"],
+        organization_name=org["name"],
+        role=user["role"],
+        status=user["status"],
     )
 
 
 async def _send_invite_async(*, to: str, accept_url: str, org_name: str) -> None:
-    """Async wrapper around the synchronous SMTP invite send."""
     body_text = (
         f"You have been invited to join {org_name} on Repnex.\n\n"
         f"Accept your invite here: {accept_url}\n\n"
@@ -182,57 +168,71 @@ async def _send_invite_async(*, to: str, accept_url: str, org_name: str) -> None
         log.exception("invite_email_send_failed", extra={"to": to, "error": str(e)})
 
 
-async def accept(db: AsyncSession, data: AcceptInviteRequest) -> AuthResponse:
-    """
-    Validate the invite JWT, set the user's password, activate their account,
-    and return a full auth response so the frontend can immediately log them in.
-    """
+async def accept(db: AsyncIOMotorDatabase, data: AcceptInviteRequest) -> AuthResponse:
+    settings = get_settings()
+    dashboard_url = f"{settings.APP_BASE_URL.rstrip('/')}/dashboard"
+
     payload = decode_token(data.token, expected_type="invite")
-    user_id = uuid.UUID(payload["sub"])
-    user = (
-        await db.execute(select(User).where(User.id == user_id))
-    ).scalar_one_or_none()
+    user_id = payload["sub"]
+    user = await db[User.COLLECTION].find_one({"_id": user_id})
     if not user:
         raise NotFound("Invitation invalid or user not found")
-    if user.status not in (UserStatus.pending, UserStatus.expired):
+    if user.get("status") not in (UserStatus.pending.value, UserStatus.expired.value):
         raise Conflict("This invitation has already been accepted")
 
-    user.hashed_password = hash_password(data.password)
-    user.status = UserStatus.active
-
-    org = (
-        await db.execute(select(Organization).where(Organization.id == user.org_id))
-    ).scalar_one()
-    await db.commit()
-    await db.refresh(user)
-
-    # Build full auth response — invited members bypass the separate onboarding page
-    email_name = user.email.split("@")[0].capitalize()
-    access = create_access_token(
-        user_id=user.id, org_id=user.org_id, email=user.email, role=user.role.value
+    hashed_pw = hash_password(data.password)
+    await db[User.COLLECTION].update_one(
+        {"_id": user_id},
+        {"$set": {
+            "hashed_password": hashed_pw,
+            "status": UserStatus.active.value
+        }}
     )
-    refresh_t = create_refresh_token(user_id=user.id, org_id=user.org_id)
+    user["status"] = UserStatus.active.value
+    user["hashed_password"] = hashed_pw
+
+    org = await db[Organization.COLLECTION].find_one({"_id": user["org_id"]})
+    if not org:
+        raise NotFound("Organization not found")
+
+    email_name = user["email"].split("@")[0].capitalize()
+    access = create_access_token(
+        user_id=uuid.UUID(user["_id"]),
+        org_id=uuid.UUID(user["org_id"]),
+        email=user["email"],
+        role=user["role"]
+    )
+    refresh_t = create_refresh_token(
+        user_id=uuid.UUID(user["_id"]),
+        org_id=uuid.UUID(user["org_id"])
+    )
 
     user_public = UserPublic(
-        id=user.id,
-        org_id=user.org_id,
-        email=user.email,
-        role=user.role.value,
-        status=user.status.value,
+        id=user["_id"],
+        org_id=user["org_id"],
+        email=user["email"],
+        role=user["role"],
+        status=user["status"],
         name=email_name,
-        company=org.name,
-        organizationId=org.id,
-        organizationName=org.name,
-        onboardingCompleted=True,  # Invited users join existing org — no extra onboarding
+        company=org["name"],
+        organizationId=org["_id"],
+        organizationName=org["name"],
+        onboardingCompleted=True,
+    )
+
+    org_public = OrgPublic(
+        id=org["_id"],
+        name=org["name"],
+        plan_type=org["plan_type"],
     )
 
     fire_and_forget(
         send_email_async(
-            to=user.email,
-            subject=f"✅ You're now a member of {org.name} on Repnex",
+            to=user["email"],
+            subject=f"✅ You're now a member of {org['name']} on Repnex",
             body_text=(
                 f"Hi {email_name},\n\n"
-                f"Your account on Repnex has been activated. You are now a member of {org.name}.\n\n"
+                f"Your account on Repnex has been activated. You are now a member of {org['name']}.\n\n"
                 f"Get started: {dashboard_url}\n\n"
                 f"— The Repnex Team"
             ),
@@ -248,7 +248,7 @@ async def accept(db: AsyncSession, data: AcceptInviteRequest) -> AuthResponse:
                 </p>
                 <p style="color:#6b7280;font-size:14px;line-height:1.6;">
                   Your account has been activated and you are now a member of
-                  <strong>{org.name}</strong> on Repnex.
+                  <strong>{org['name']}</strong> on Repnex.
                 </p>
                 <div style="text-align:center;margin:28px 0;">
                   <a href="{dashboard_url}"
@@ -267,6 +267,6 @@ async def accept(db: AsyncSession, data: AcceptInviteRequest) -> AuthResponse:
     return AuthResponse(
         tokens=TokenPair(access_token=access, refresh_token=refresh_t),
         user=user_public,
-        org=OrgPublic.model_validate(org),
+        org=org_public,
         token=access,
     )

@@ -2,11 +2,8 @@ from __future__ import annotations
 
 import time
 import uuid
-from datetime import UTC, datetime, timedelta
-
-from sqlalchemy import select
-from sqlalchemy.orm import load_only
-from sqlalchemy.ext.asyncio import AsyncSession
+from datetime import datetime, timezone, timedelta
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.core.database.models import Report, ReportColumn, ReportSnapshot
 from app.core.exceptions import Forbidden, NotFound
@@ -33,40 +30,28 @@ log = get_logger(__name__)
 
 # ── List / Get ────────────────────────────────────────────────────────────────
 
-async def list_reports(db: AsyncSession, current: CurrentUser) -> list[ReportRead]:
-    rows = (
-        (
-            await db.execute(
-                select(Report)
-                .where(Report.org_id == current.org_id)
-                .order_by(Report.created_at.desc())
-            )
-        )
-        .scalars()
-        .all()
-    )
-    return [ReportRead.model_validate(r) for r in rows]
+async def list_reports(db: AsyncIOMotorDatabase, current: CurrentUser) -> list[ReportRead]:
+    cursor = db[Report.COLLECTION].find({"org_id": str(current.org_id)})
+    rows = await cursor.sort("created_at", -1).to_list(length=1000)
+    return [ReportRead.model_validate(Report(**r)) for r in rows]
 
 
-async def get_report(db: AsyncSession, current: CurrentUser, report_id: uuid.UUID) -> Report:
-    r = (
-        await db.execute(
-            select(Report).where(Report.id == report_id, Report.org_id == current.org_id)
-        )
-    ).scalar_one_or_none()
-    if not r:
+async def get_report(db: AsyncIOMotorDatabase, current: CurrentUser, report_id: uuid.UUID) -> Report:
+    doc = await db[Report.COLLECTION].find_one({
+        "_id": str(report_id),
+        "org_id": str(current.org_id)
+    })
+    if not doc:
         raise NotFound("Report not found")
-    return r
+    return Report(**doc)
 
 
 # ── Create / Update / Delete ──────────────────────────────────────────────────
 
-async def create_report(db: AsyncSession, current: CurrentUser, data: ReportCreate) -> ReportRead:
+async def create_report(db: AsyncIOMotorDatabase, current: CurrentUser, data: ReportCreate) -> ReportRead:
     if current.role == "viewer":
         raise Forbidden("Viewers cannot create reports")
 
-    # Validate template — try static registry first, then Pinecone.
-    # If neither has it, still allow save (template may be dynamic/user-created).
     registry = get_template_registry()
     if registry.has(data.query_template_id):
         registry.get(data.query_template_id)
@@ -76,9 +61,21 @@ async def create_report(db: AsyncSession, current: CurrentUser, data: ReportCrea
             extra={"template_id": data.query_template_id},
         )
 
-    r = Report(
-        org_id=current.org_id,
-        created_by=current.user_id,
+    cols_list = []
+    for c in data.columns:
+        cols_list.append({
+            "id": str(uuid.uuid4()),
+            "column_name": c.column_name,
+            "display_name": c.display_name,
+            "position": c.position,
+            "is_visible": c.is_visible,
+            "data_type": c.data_type,
+            "format_config": c.format_config,
+        })
+
+    report_doc = Report.new(
+        org_id=str(current.org_id),
+        created_by=str(current.user_id),
         name=data.name,
         description=data.description,
         query_template_id=data.query_template_id,
@@ -86,58 +83,62 @@ async def create_report(db: AsyncSession, current: CurrentUser, data: ReportCrea
         is_public=data.is_public,
         is_pinned=data.is_pinned,
     )
-    db.add(r)
-    await db.flush()
-    for c in data.columns:
-        db.add(
-            ReportColumn(
-                report_id=r.id,
-                column_name=c.column_name,
-                display_name=c.display_name,
-                position=c.position,
-                is_visible=c.is_visible,
-                data_type=c.data_type,
-                format_config=c.format_config,
-            )
-        )
-    await db.commit()
-    await db.refresh(r)
-    return ReportRead.model_validate(r)
+    report_doc["columns"] = cols_list
+
+    await db[Report.COLLECTION].insert_one(report_doc)
+    return ReportRead.model_validate(Report(**report_doc))
 
 
 async def update_report(
-    db: AsyncSession, current: CurrentUser, report_id: uuid.UUID, data: ReportUpdate
+    db: AsyncIOMotorDatabase, current: CurrentUser, report_id: uuid.UUID, data: ReportUpdate
 ) -> ReportRead:
     if current.role == "viewer":
         raise Forbidden("Viewers cannot update reports")
     r = await get_report(db, current, report_id)
+
     payload = data.model_dump(exclude_unset=True)
     cols = payload.pop("columns", None)
+
+    update_fields = {}
     for k, v in payload.items():
-        setattr(r, k, v)
+        update_fields[k] = v
+
     if cols is not None:
-        for c in list(r.columns):
-            await db.delete(c)
-        await db.flush()
+        cols_list = []
         for c in cols:
-            db.add(ReportColumn(report_id=r.id, **c))
-    await db.commit()
-    await db.refresh(r)
-    return ReportRead.model_validate(r)
+            cols_list.append({
+                "id": str(uuid.uuid4()),
+                "column_name": c["column_name"],
+                "display_name": c["display_name"],
+                "position": c["position"],
+                "is_visible": c["is_visible"],
+                "data_type": c["data_type"],
+                "format_config": c["format_config"],
+            })
+        update_fields["columns"] = cols_list
+
+    if update_fields:
+        await db[Report.COLLECTION].update_one(
+            {"_id": str(report_id)},
+            {"$set": update_fields}
+        )
+
+    updated_doc = await db[Report.COLLECTION].find_one({"_id": str(report_id)})
+    return ReportRead.model_validate(Report(**updated_doc))
 
 
-async def delete_report(db: AsyncSession, current: CurrentUser, report_id: uuid.UUID) -> None:
+async def delete_report(db: AsyncIOMotorDatabase, current: CurrentUser, report_id: uuid.UUID) -> None:
     if current.role != "admin":
         raise Forbidden("Only admins can delete reports")
     r = await get_report(db, current, report_id)
-    await db.delete(r)
-    await db.commit()
+    await db[Report.COLLECTION].delete_one({"_id": str(report_id)})
+    await db[ReportSnapshot.COLLECTION].delete_many({"report_id": str(report_id)})
 
 
-# ── Run Report (original — does NOT save snapshot) ────────────────────────────
+# ── Run Report (original — saves snapshot) ────────────────────────────
 
 async def run_report(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     report_id: uuid.UUID,
     data: RunReportRequest,
@@ -170,17 +171,20 @@ async def run_report(
 
     # Save snapshot in database
     try:
-        snap = ReportSnapshot(
-            report_id=r.id,
-            org_id=r.org_id,
+        snap_doc = ReportSnapshot.new(
+            report_id=str(r.id),
+            org_id=str(r.org_id),
             triggered_by="manual",
             rows_data=result.rows,
             rows_returned=result.rows_returned,
             execution_time_ms=exec_ms,
         )
-        db.add(snap)
-        r.last_refreshed_at = datetime.now(UTC)
-        await db.commit()
+        await db[ReportSnapshot.COLLECTION].insert_one(snap_doc)
+
+        await db[Report.COLLECTION].update_one(
+            {"_id": str(r.id)},
+            {"$set": {"last_refreshed_at": datetime.now(timezone.utc)}}
+        )
     except Exception as e:
         log.warning("failed_to_save_run_snapshot", extra={"report_id": str(r.id), "error": str(e)})
 
@@ -196,7 +200,7 @@ async def run_report(
 # ── Scheduled Refresh ─────────────────────────────────────────────────────────
 
 async def set_schedule(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     report_id: uuid.UUID,
     data: ScheduleRequest,
@@ -206,17 +210,23 @@ async def set_schedule(
         raise Forbidden("Viewers cannot modify report schedules")
 
     r = await get_report(db, current, report_id)
-    r.refresh_interval_days = data.interval_days
-    r.auto_refresh_connection_id = data.connection_id
+
+    update_fields = {
+        "refresh_interval_days": data.interval_days,
+        "auto_refresh_connection_id": str(data.connection_id) if data.connection_id else None
+    }
 
     if data.interval_days and data.interval_days > 0 and data.connection_id:
-        r.next_refresh_at = datetime.now(UTC) + timedelta(days=data.interval_days)
+        update_fields["next_refresh_at"] = datetime.now(timezone.utc) + timedelta(days=data.interval_days)
     else:
-        # Disable schedule
-        r.next_refresh_at = None
+        update_fields["next_refresh_at"] = None
 
-    await db.commit()
-    await db.refresh(r)
+    await db[Report.COLLECTION].update_one(
+        {"_id": str(report_id)},
+        {"$set": update_fields}
+    )
+
+    updated_doc = await db[Report.COLLECTION].find_one({"_id": str(report_id)})
     log.info(
         "report_schedule_updated",
         extra={
@@ -224,11 +234,11 @@ async def set_schedule(
             "interval_days": data.interval_days,
         },
     )
-    return ReportRead.model_validate(r)
+    return ReportRead.model_validate(Report(**updated_doc))
 
 
 async def _execute_and_snapshot(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     r: Report,
     connection_id: uuid.UUID,
     triggered_by: str = "manual",
@@ -262,28 +272,32 @@ async def _execute_and_snapshot(
     result = await execute_collect(conn, bound)
     exec_ms = int((time.perf_counter() - started) * 1000)
 
-    snap = ReportSnapshot(
-        report_id=r.id,
-        org_id=r.org_id,
+    snap_doc = ReportSnapshot.new(
+        report_id=str(r.id),
+        org_id=str(r.org_id),
         triggered_by=triggered_by,
         rows_data=result.rows,
         rows_returned=result.rows_returned,
         execution_time_ms=exec_ms,
     )
-    db.add(snap)
+    await db[ReportSnapshot.COLLECTION].insert_one(snap_doc)
 
     # Update report timestamps + schedule next run
-    r.last_refreshed_at = datetime.now(UTC)
+    now = datetime.now(timezone.utc)
+    update_fields = {"last_refreshed_at": now}
     if r.refresh_interval_days and r.refresh_interval_days > 0:
-        r.next_refresh_at = datetime.now(UTC) + timedelta(days=r.refresh_interval_days)
+        update_fields["next_refresh_at"] = now + timedelta(days=r.refresh_interval_days)
 
-    await db.commit()
-    await db.refresh(snap)
-    return snap
+    await db[Report.COLLECTION].update_one(
+        {"_id": str(r.id)},
+        {"$set": update_fields}
+    )
+
+    return ReportSnapshot(**snap_doc)
 
 
 async def manual_refresh(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     report_id: uuid.UUID,
     connection_id: uuid.UUID,
@@ -293,119 +307,69 @@ async def manual_refresh(
         raise Forbidden("Viewers cannot refresh reports")
     r = await get_report(db, current, report_id)
     snap = await _execute_and_snapshot(db, r, connection_id, triggered_by="manual")
-    return SnapshotDetailRead(
-        id=snap.id,
-        report_id=snap.report_id,
-        org_id=snap.org_id,
-        triggered_by=snap.triggered_by,
-        rows_returned=snap.rows_returned,
-        execution_time_ms=snap.execution_time_ms,
-        created_at=snap.created_at,
-        rows_data=snap.rows_data,
-    )
+    return SnapshotDetailRead.model_validate(snap)
 
 
 async def list_snapshots(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     report_id: uuid.UUID,
     limit: int = 20,
 ) -> list[SnapshotRead]:
     """Return the N most recent snapshots for a report (metadata only, no row data)."""
     r = await get_report(db, current, report_id)
-    rows = (
-        await db.execute(
-            select(ReportSnapshot)
-            .options(
-                load_only(
-                    ReportSnapshot.id,
-                    ReportSnapshot.report_id,
-                    ReportSnapshot.org_id,
-                    ReportSnapshot.triggered_by,
-                    ReportSnapshot.rows_returned,
-                    ReportSnapshot.execution_time_ms,
-                    ReportSnapshot.created_at,
-                )
-            )
-            .where(ReportSnapshot.report_id == r.id)
-            .order_by(ReportSnapshot.created_at.desc())
-            .limit(limit)
-        )
-    ).scalars().all()
-    return [
-        SnapshotRead(
-            id=s.id,
-            report_id=s.report_id,
-            org_id=s.org_id,
-            triggered_by=s.triggered_by,
-            rows_returned=s.rows_returned,
-            execution_time_ms=s.execution_time_ms,
-            created_at=s.created_at,
-        )
-        for s in rows
-    ]
+    cursor = db[ReportSnapshot.COLLECTION].find(
+        {"report_id": str(r.id)},
+        projection={"rows_data": 0}
+    )
+    rows = await cursor.sort("created_at", -1).limit(limit).to_list(length=limit)
+    return [SnapshotRead.model_validate(ReportSnapshot(**s)) for s in rows]
 
 
 async def get_snapshot_detail(
-    db: AsyncSession,
+    db: AsyncIOMotorDatabase,
     current: CurrentUser,
     report_id: uuid.UUID,
     snapshot_id: uuid.UUID,
 ) -> SnapshotDetailRead:
     """Return a single snapshot including full row data for preview."""
     r = await get_report(db, current, report_id)
-    snap = (
-        await db.execute(
-            select(ReportSnapshot).where(
-                ReportSnapshot.id == snapshot_id,
-                ReportSnapshot.report_id == r.id,
-            )
-        )
-    ).scalar_one_or_none()
+    snap = await db[ReportSnapshot.COLLECTION].find_one({
+        "_id": str(snapshot_id),
+        "report_id": str(r.id),
+    })
     if not snap:
         raise NotFound("Snapshot not found")
-    return SnapshotDetailRead(
-        id=snap.id,
-        report_id=snap.report_id,
-        org_id=snap.org_id,
-        triggered_by=snap.triggered_by,
-        rows_returned=snap.rows_returned,
-        execution_time_ms=snap.execution_time_ms,
-        created_at=snap.created_at,
-        rows_data=snap.rows_data,
-    )
+    return SnapshotDetailRead.model_validate(ReportSnapshot(**snap))
 
 
 # ── APScheduler background job ────────────────────────────────────────────────
 
-async def run_due_reports(db: AsyncSession) -> None:
+async def run_due_reports(db: AsyncIOMotorDatabase) -> None:
     """Called by APScheduler every hour.
     Finds all reports whose next_refresh_at <= now and runs them.
     """
-    now = datetime.now(UTC)
-    due = (
-        await db.execute(
-            select(Report)
-            .where(
-                Report.next_refresh_at <= now,
-                Report.refresh_interval_days > 0,
-                Report.auto_refresh_connection_id.is_not(None),
-            )
-        )
-    ).scalars().all()
+    now = datetime.now(timezone.utc)
+    cursor = db[Report.COLLECTION].find({
+        "next_refresh_at": {"$lte": now},
+        "refresh_interval_days": {"$gt": 0},
+        "auto_refresh_connection_id": {"$ne": None}
+    })
+    due = await cursor.to_list(length=1000)
 
     log.info("scheduled_refresh_scan", extra={"due_count": len(due)})
 
-    for r in due:
+    for r_doc in due:
+        r = Report(**r_doc)
         try:
             await _execute_and_snapshot(
-                db, r, r.auto_refresh_connection_id, triggered_by="scheduled"
+                db, r, uuid.UUID(r_doc["auto_refresh_connection_id"]), triggered_by="scheduled"
             )
             log.info(
                 "scheduled_refresh_success",
                 extra={"report_id": str(r.id), "name": r.name},
             )
-        except Exception as exc:  # noqa: BLE001
+        except Exception as exc:
             log.error(
                 "scheduled_refresh_failed",
                 extra={"report_id": str(r.id), "error": str(exc)},

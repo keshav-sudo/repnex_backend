@@ -1,14 +1,19 @@
 from __future__ import annotations
 
 import asyncio
+import random
 import uuid
-
-from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.exc import IntegrityError
+from motor.motor_asyncio import AsyncIOMotorDatabase
+from pymongo.errors import DuplicateKeyError
 
 from app.core.config import get_settings
-from app.core.database.models import Organization, PlanType, User, UserRole, UserStatus
+from app.core.database.models import (
+    Organization as OrgModel,
+    PlanType,
+    User as UserModel,
+    UserRole,
+    UserStatus,
+)
 from app.core.exceptions import Conflict, Unauthorized
 from app.core.redis import get_redis
 from app.core.security.auth import (
@@ -28,19 +33,15 @@ from app.schemas.auth import (
 )
 from app.utils.email import send_email_async, fire_and_forget
 
-
-import random
-
 _local_otps: dict[str, str] = {}
 
 
-async def send_otp(db: AsyncSession, email: str) -> dict:
+async def send_otp(db: AsyncIOMotorDatabase, email: str) -> dict:
     normalized_email = email.lower()
 
     # 1. Check if email already registered
-    stmt = select(User).where(User.email == normalized_email)
-    res = await db.execute(stmt)
-    if res.scalars().first():
+    existing_user = await db[UserModel.COLLECTION].find_one({"email": normalized_email})
+    if existing_user:
         raise Conflict("Email already registered")
 
     # 2. Generate 6-digit OTP
@@ -92,7 +93,7 @@ async def send_otp(db: AsyncSession, email: str) -> dict:
     return {"ok": True}
 
 
-async def signup(db: AsyncSession, data: SignupRequest) -> AuthResponse:
+async def signup(db: AsyncIOMotorDatabase, data: SignupRequest) -> AuthResponse:
     # 1. Verify OTP
     normalized_email = data.email.lower()
     otp_key = f"otp:{normalized_email}"
@@ -123,83 +124,82 @@ async def signup(db: AsyncSession, data: SignupRequest) -> AuthResponse:
     # Derive organization name from email if company field was left blank
     org_name = data.org_name.strip() if data.org_name.strip() else data.email.split("@")[0].capitalize()
 
-    org = Organization(name=org_name, plan_type=PlanType.free)
-    db.add(org)
+    org_doc = OrgModel.new(name=org_name, plan_type=PlanType.free)
     try:
-        await db.flush()
-    except IntegrityError as e:
-        await db.rollback()
+        await db[OrgModel.COLLECTION].insert_one(org_doc)
+    except DuplicateKeyError as e:
         raise Conflict("Organization name already taken") from e
 
-    user = User(
-        org_id=org.id,
+    user_doc = UserModel.new(
+        org_id=org_doc["_id"],
         email=data.email.lower(),
         hashed_password=hash_password(data.password),
         role=UserRole.admin,
         status=UserStatus.active,
     )
-    db.add(user)
-    await db.flush()
+    try:
+        await db[UserModel.COLLECTION].insert_one(user_doc)
+    except DuplicateKeyError as e:
+        await db[OrgModel.COLLECTION].delete_one({"_id": org_doc["_id"]})
+        raise Conflict("A user with that email already exists in this org") from e
 
-    org.owner_id = user.id
-    await db.commit()
-    await db.refresh(user)
-    await db.refresh(org)
+    # Link organization owner
+    await db[OrgModel.COLLECTION].update_one(
+        {"_id": org_doc["_id"]},
+        {"$set": {"owner_id": user_doc["_id"]}}
+    )
+    org_doc["owner_id"] = user_doc["_id"]
 
-    return _build_auth(user, org)
+    return _build_auth(user_doc, org_doc)
 
 
-async def login(db: AsyncSession, data: LoginRequest) -> AuthResponse:
-    stmt = select(User).where(User.email == data.email.lower())
-    result = await db.execute(stmt)
-    users = result.scalars().all()
-    
+async def login(db: AsyncIOMotorDatabase, data: LoginRequest) -> AuthResponse:
+    users = await db[UserModel.COLLECTION].find({"email": data.email.lower()}).to_list(length=100)
+
     matching_user = None
     for u in users:
-        if u.hashed_password and verify_password(data.password, u.hashed_password):
+        if u.get("hashed_password") and verify_password(data.password, u["hashed_password"]):
             matching_user = u
             break
-            
+
     if not matching_user:
         raise Unauthorized("Invalid credentials")
-        
-    if matching_user.status != UserStatus.active:
+
+    if matching_user.get("status") != UserStatus.active.value:
         raise Unauthorized("User is not active")
 
-    org = (
-        await db.execute(select(Organization).where(Organization.id == matching_user.org_id))
-    ).scalar_one()
+    org = await db[OrgModel.COLLECTION].find_one({"_id": matching_user["org_id"]})
+    if not org:
+        raise Unauthorized("Invalid credentials")
+
     return _build_auth(matching_user, org)
 
 
-async def forgot_password(db: AsyncSession, email: str) -> dict:
+async def forgot_password(db: AsyncIOMotorDatabase, email: str) -> dict:
     normalized_email = email.lower()
-    user = (
-        await db.execute(
-            select(User).where(
-                User.email == normalized_email,
-                User.status == UserStatus.active,
-                User.hashed_password.is_not(None),
-            )
-        )
-    ).scalars().first()
+    user = await db[UserModel.COLLECTION].find_one({
+        "email": normalized_email,
+        "status": UserStatus.active.value,
+        "hashed_password": {"$ne": None}
+    })
 
     if not user:
         return {"ok": True}
 
-    org = (
-        await db.execute(select(Organization).where(Organization.id == user.org_id))
-    ).scalar_one()
-    token = create_reset_token(user_id=user.id, org_id=user.org_id, email=user.email)
+    org = await db[OrgModel.COLLECTION].find_one({"_id": user["org_id"]})
+    if not org:
+        return {"ok": True}
+
+    token = create_reset_token(user_id=user["_id"], org_id=user["org_id"], email=user["email"])
     reset_url = f"{get_settings().APP_BASE_URL.rstrip('/')}/reset-password?token={token}"
 
     fire_and_forget(
         send_email_async(
-            to=user.email,
+            to=user["email"],
             subject="Reset your Repnex password",
             body_text=(
-                f"Hi {user.email.split('@')[0].capitalize()},\n\n"
-                f"We received a request to reset your Repnex password for {org.name}.\n\n"
+                f"Hi {user['email'].split('@')[0].capitalize()},\n\n"
+                f"We received a request to reset your Repnex password for {org['name']}.\n\n"
                 f"Reset your password here: {reset_url}\n\n"
                 "This link expires in 30 minutes. If you did not request this, ignore this email."
             ),
@@ -212,7 +212,7 @@ async def forgot_password(db: AsyncSession, email: str) -> dict:
               <div style="padding:30px 24px;">
                 <p style="color:#374151;font-size:15px;line-height:1.6;">
                   We received a request to reset your Repnex password for
-                  <strong>{org.name}</strong>.
+                  <strong>{org['name']}</strong>.
                 </p>
                 <div style="text-align:center;margin:28px 0;">
                   <a href="{reset_url}"
@@ -234,22 +234,22 @@ async def forgot_password(db: AsyncSession, email: str) -> dict:
     return {"ok": True}
 
 
-async def reset_password(db: AsyncSession, token: str, password: str) -> dict:
+async def reset_password(db: AsyncIOMotorDatabase, token: str, password: str) -> dict:
     payload = decode_token(token, expected_type="reset")
     jti = payload["jti"]
     r = get_redis()
     if r is not None and await r.exists(f"jwt:denylist:{jti}"):
         raise Unauthorized("Reset link already used")
 
-    user_id = uuid.UUID(payload["sub"])
-    user = (
-        await db.execute(select(User).where(User.id == user_id))
-    ).scalar_one_or_none()
-    if not user or user.status != UserStatus.active:
+    user_id = payload["sub"]
+    user = await db[UserModel.COLLECTION].find_one({"_id": user_id})
+    if not user or user.get("status") != UserStatus.active.value:
         raise Unauthorized("Invalid reset link")
 
-    user.hashed_password = hash_password(password)
-    await db.commit()
+    await db[UserModel.COLLECTION].update_one(
+        {"_id": user_id},
+        {"$set": {"hashed_password": hash_password(password)}}
+    )
 
     if r is not None:
         await r.set(f"jwt:denylist:{jti}", "1", ex=60 * 60)
@@ -257,29 +257,29 @@ async def reset_password(db: AsyncSession, token: str, password: str) -> dict:
     return {"ok": True}
 
 
-async def refresh(db: AsyncSession, refresh_token: str) -> TokenPair:
+async def refresh(db: AsyncIOMotorDatabase, refresh_token: str) -> TokenPair:
     payload = decode_token(refresh_token, expected_type="refresh")
     jti = payload["jti"]
     r = get_redis()
     if r is not None and await r.exists(f"jwt:denylist:{jti}"):
         raise Unauthorized("Refresh token revoked")
 
-    user_id = uuid.UUID(payload["sub"])
-    user = (await db.execute(select(User).where(User.id == user_id))).scalar_one_or_none()
-    if not user or user.status != UserStatus.active:
+    user_id = payload["sub"]
+    user = await db[UserModel.COLLECTION].find_one({"_id": user_id})
+    if not user or user.get("status") != UserStatus.active.value:
         raise Unauthorized("User invalid")
 
     if r is not None:
         await r.set(f"jwt:denylist:{jti}", "1", ex=60 * 60 * 24 * 14)
 
     access = create_access_token(
-        user_id=user.id,
-        org_id=user.org_id,
-        email=user.email,
-        role=user.role.value,
-        module_permissions=user.module_permissions,
+        user_id=user["_id"],
+        org_id=user["org_id"],
+        email=user["email"],
+        role=user["role"],
+        module_permissions=user.get("module_permissions"),
     )
-    new_refresh = create_refresh_token(user_id=user.id, org_id=user.org_id)
+    new_refresh = create_refresh_token(user_id=user["_id"], org_id=user["org_id"])
     return TokenPair(access_token=access, refresh_token=new_refresh)
 
 
@@ -292,36 +292,42 @@ async def logout(refresh_token: str) -> None:
         )
 
 
-def _build_auth(user: User, org: Organization) -> AuthResponse:
+def _build_auth(user: dict, org: dict) -> AuthResponse:
     access = create_access_token(
-        user_id=user.id,
-        org_id=user.org_id,
-        email=user.email,
-        role=user.role.value,
-        module_permissions=user.module_permissions,
+        user_id=user["_id"],
+        org_id=user["org_id"],
+        email=user["email"],
+        role=user["role"],
+        module_permissions=user.get("module_permissions"),
     )
-    refresh_t = create_refresh_token(user_id=user.id, org_id=user.org_id)
-    
+    refresh_t = create_refresh_token(user_id=user["_id"], org_id=user["org_id"])
+
     # Extract name from email
-    email_name = user.email.split("@")[0].capitalize()
-    
+    email_name = user["email"].split("@")[0].capitalize()
+
     user_public = UserPublic(
-        id=user.id,
-        org_id=user.org_id,
-        email=user.email,
-        role=user.role.value,
-        status=user.status.value,
+        id=user["_id"],
+        org_id=user["org_id"],
+        email=user["email"],
+        role=user["role"],
+        status=user["status"],
         name=email_name,
-        company=org.name,
-        organizationId=org.id,
-        organizationName=org.name,
+        company=org["name"],
+        organizationId=org["_id"],
+        organizationName=org["name"],
         onboardingCompleted=True,
-        module_permissions=user.module_permissions,
+        module_permissions=user.get("module_permissions"),
     )
-    
+
+    org_public = OrgPublic(
+        id=org["_id"],
+        name=org["name"],
+        plan_type=org["plan_type"],
+    )
+
     return AuthResponse(
         tokens=TokenPair(access_token=access, refresh_token=refresh_t),
         user=user_public,
-        org=OrgPublic.model_validate(org),
+        org=org_public,
         token=access,
     )

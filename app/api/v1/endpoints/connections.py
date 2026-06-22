@@ -4,7 +4,7 @@ import uuid
 from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, status
-from sqlalchemy.ext.asyncio import AsyncSession
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.api.v1.dependencies.rate_limit import rate_limit
 from app.api.v1.dependencies.tenancy import bind_tenant_context
@@ -28,7 +28,7 @@ router = APIRouter(prefix="/connections", tags=["connections"])
 @router.get("", response_model=list[ConnectionRead])
 async def list_(
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
     _rl: None = Depends(rate_limit("api")),
 ) -> list[ConnectionRead]:
     return await connection_service.list_connections(db, current)
@@ -38,15 +38,13 @@ async def list_(
 async def create(
     data: ConnectionCreate,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
     _rl: None = Depends(rate_limit("api")),
 ) -> ConnectionRead:
     return await connection_service.create_connection(db, current, data)
 
 
 # ── Static sub-routes MUST come before /{conn_id} dynamic routes ─────────────
-# If /test or /list-databases are placed after /{conn_id}, FastAPI will treat
-# the string literal "test" / "list-databases" as a UUID → 422 Unprocessable.
 
 @router.post("/test", response_model=TestConnectionResponse)
 async def test_raw(
@@ -93,7 +91,7 @@ async def list_gateway_agents(
 async def get(
     conn_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> ConnectionRead:
     conn = await connection_service.get_connection(db, current, conn_id)
     return ConnectionRead.model_validate(conn)
@@ -104,7 +102,7 @@ async def update(
     conn_id: uuid.UUID,
     data: ConnectionUpdate,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> ConnectionRead:
     return await connection_service.update_connection(db, current, conn_id, data)
 
@@ -113,7 +111,7 @@ async def update(
 async def delete(
     conn_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> dict:
     await connection_service.delete_connection(db, current, conn_id)
     return {"ok": True}
@@ -123,7 +121,7 @@ async def delete(
 async def test(
     conn_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
     _rl: None = Depends(rate_limit("api")),
 ) -> TestConnectionResponse:
     return await connection_service.test_connection(db, current, conn_id)
@@ -133,7 +131,7 @@ async def test(
 async def sync_schema(
     conn_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
     _rl: None = Depends(rate_limit("api")),
 ) -> ConnectionRead:
     try:
@@ -147,7 +145,7 @@ async def grant_access(
     conn_id: uuid.UUID,
     data: AccessGrantRequest,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> AccessGrantRead:
     return await connection_service.grant_access(db, current, conn_id, data)
 
@@ -156,7 +154,7 @@ async def grant_access(
 async def revoke_access(
     grant_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> dict:
     await connection_service.revoke_access(db, current, grant_id)
     return {"ok": True}
@@ -166,7 +164,7 @@ async def revoke_access(
 async def get_tables(
     conn_id: uuid.UUID,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> list[dict[str, Any]]:
     conn = await connection_service.get_connection(db, current, conn_id)
     if not conn.schema_info:
@@ -186,15 +184,15 @@ async def get_table_columns(
     conn_id: uuid.UUID,
     table_name: str,
     current: CurrentUser = Depends(bind_tenant_context),
-    db: AsyncSession = Depends(get_db),
+    db: AsyncIOMotorDatabase = Depends(get_db),
 ) -> list[dict[str, str]]:
     conn = await connection_service.get_connection(db, current, conn_id)
     if not conn.schema_info:
         raise HTTPException(status_code=404, detail="Schema not synced yet")
-    
+
     tables = conn.schema_info.get("tables", [])
     for t in tables:
         if t.get("name") == table_name:
             return t.get("columns", [])
-            
+
     raise HTTPException(status_code=404, detail=f"Table '{table_name}' not found")

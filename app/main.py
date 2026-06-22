@@ -10,7 +10,8 @@ from starlette.middleware.base import BaseHTTPMiddleware
 
 from app.api.v1.router import api_router, ws_router
 from app.core.config import get_settings
-from app.core.database.session import dispose_engine, get_db, init_engine
+from app.core.database.session import get_db
+from app.core.database.mongo import init_mongo, ensure_indexes, get_db as get_mongo_db, close_mongo
 from app.core.database.target_pool import (
     close_target_pool_registry,
     init_target_pool_registry,
@@ -52,7 +53,21 @@ async def lifespan(app: FastAPI):
     settings = get_settings()
     log.info("startup", extra={"app_env": settings.APP_ENV})
 
-    init_engine()
+    # Parse database name from connection string
+    db_name = "repnex"
+    cleaned_url = settings.DATABASE_URL
+    if "://" in cleaned_url:
+        cleaned_url = cleaned_url.split("://", 1)[1]
+    if "/" in cleaned_url:
+        parts = cleaned_url.split("/", 1)
+        if len(parts) > 1 and parts[1]:
+            possible_db = parts[1].split("?")[0]
+            if possible_db and "=" not in possible_db and "&" not in possible_db:
+                db_name = possible_db
+
+    init_mongo(settings.DATABASE_URL, db_name=db_name)
+    await ensure_indexes(get_mongo_db())
+
     await init_redis()
     init_template_registry()
     init_target_pool_registry()
@@ -91,7 +106,7 @@ async def lifespan(app: FastAPI):
             log.warning("ws_shutdown_timeout")
         await close_target_pool_registry()
         await close_redis()
-        await dispose_engine()
+        await close_mongo()
         log.info("shutdown_complete")
 
 
