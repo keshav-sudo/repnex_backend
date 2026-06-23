@@ -289,6 +289,36 @@ class MSSQLConnectionPool:
                     f"{retry_err.__class__.__name__}: {retry_err}"
                 ) from retry_err
 
+    def execute_columns(self, sql: str, params: tuple, timeout: int) -> list[str]:
+        """Execute query to get column names without fetching data rows."""
+        conn = self._get_connection()
+        try:
+            with conn.cursor() as cursor:
+                cursor.execute(sql, params)
+                col_names = []
+                if cursor.description:
+                    for i, desc in enumerate(cursor.description):
+                        col_names.append(desc[0] if desc[0] else f"column_{i}")
+                return col_names
+        except Exception as e:
+            log.warning("mssql_columns_failed_reconnecting", extra={"error": str(e)})
+            self._close_thread_connection()
+
+            conn = self._get_connection()
+            try:
+                with conn.cursor() as cursor:
+                    cursor.execute(sql, params)
+                    col_names = []
+                    if cursor.description:
+                        for i, desc in enumerate(cursor.description):
+                            col_names.append(desc[0] if desc[0] else f"column_{i}")
+                    return col_names
+            except Exception as retry_err:
+                self._close_thread_connection()
+                raise TargetDBError(
+                    f"MSSQL columns query failed after reconnection: {retry_err.__class__.__name__}: {retry_err}"
+                ) from retry_err
+
     def close_all(self):
         """Close all thread-local connections and shut down the executor."""
         with self._connections_lock:
@@ -442,6 +472,37 @@ class TargetPool:
 
         for batch in batches:
             yield batch
+
+    async def get_columns(self, sql: str, params: dict[str, Any], timeout: float) -> list[str]:
+        if self._conn_params and self._conn_params.get("gateway"):
+            return []
+
+        if self.db_type in (DBType.postgres, DBType.cloudsql):
+            pg_sql, bound = _to_positional_pg(sql, params)
+            try:
+                async with asyncio.timeout(timeout):
+                    async with self._pool.acquire() as conn:
+                        stmt = await conn.prepare(pg_sql)
+                        return [attr.name for attr in stmt.get_attributes()]
+            except Exception as e:
+                log.warning("failed_to_get_pg_columns", extra={"error": str(e)})
+                return []
+        elif self.db_type == DBType.mssql:
+            mssql_sql, bound = _to_positional_mssql(sql, params)
+            loop = asyncio.get_running_loop()
+            try:
+                return await asyncio.wait_for(
+                    loop.run_in_executor(
+                        self._mssql_pool.executor,
+                        self._mssql_pool.execute_columns,
+                        mssql_sql, tuple(bound), int(timeout),
+                    ),
+                    timeout=timeout + 5,
+                )
+            except Exception as e:
+                log.warning("failed_to_get_mssql_columns", extra={"error": str(e)})
+                return []
+        return []
 
     # ── Scalar helper ──────────────────────────────────────────────────────
 

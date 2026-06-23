@@ -211,7 +211,9 @@ async def run_report(
     cols = [ReportColumnRead.model_validate(c) for c in r.columns]
     if not cols:
         col_names = []
-        if template and template.result_columns:
+        if result.columns:
+            col_names = list(result.columns)
+        elif template and template.result_columns:
             col_names = list(template.result_columns)
         elif result.rows:
             col_names = list(result.rows[0].keys())

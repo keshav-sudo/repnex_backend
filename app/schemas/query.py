@@ -100,6 +100,7 @@ class ChatResponse(BaseModel):
     # Execution results (for executable)
     sql: str | None = None
     rows: list[dict[str, Any]] | None = None
+    columns: list[str] | None = None
     rows_returned: int | None = None
     execution_time_ms: int | None = None
     summary: str | None = None
@@ -116,6 +117,7 @@ class RunQueryResponse(BaseModel):
     history_id: uuid.UUID
     sql: str
     rows: list[dict[str, Any]]
+    columns: list[str] | None = None
     rows_returned: int
     execution_time_ms: int
     intent: IntentResult

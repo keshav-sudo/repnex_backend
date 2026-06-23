@@ -18,6 +18,7 @@ class ExecutionResult:
     rows_returned: int
     execution_time_ms: int
     truncated: bool
+    columns: list[str] | None = None
 
 
 async def execute_collect(conn: DBConnection, bound: BoundQuery) -> ExecutionResult:
@@ -31,11 +32,30 @@ async def execute_collect(conn: DBConnection, bound: BoundQuery) -> ExecutionRes
             truncated = True
             rows = rows[: s.EXECUTOR_MAX_ROWS]
             break
+
+    columns = []
+    if rows:
+        columns = list(rows[0].keys())
+    else:
+        try:
+            pool = await get_target_pool_registry().get_pool(conn)
+            columns = await pool.get_columns(
+                bound.sql,
+                bound.params,
+                timeout=s.EXECUTOR_TIMEOUT_S,
+            )
+        except Exception:
+            from app.core.logging import get_logger
+            log = get_logger(__name__)
+            log.warning("failed_to_retrieve_empty_columns", exc_info=True)
+            columns = []
+
     return ExecutionResult(
         rows=rows,
         rows_returned=len(rows),
         execution_time_ms=int((time.perf_counter() - started) * 1000),
         truncated=truncated,
+        columns=columns,
     )
 
 

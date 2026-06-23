@@ -7,9 +7,9 @@ Usage:
 import sys
 from pinecone import Pinecone
 
-PINECONE_API_KEY = "pcsk_8uNjs_JEnKJ8fThatyMGp8pdLM59ukbadsy3ga5awHrUCfBVbrvKmnaXqasWmUfHTAkuX"
-PINECONE_HOST    = "https://repnex-0kl271f.svc.aped-4627-b74a.pinecone.io"
-PINECONE_INDEX   = "repnex-sql-templates"
+PINECONE_API_KEY = "pcsk_3E3xh5_2FoKK9Wqkp5BWu29pVxFKUHZGi5V55B7my3m3yj4aCyz4baHN7j9VpwjreerJru"
+PINECONE_HOST    = "https://repnex-v4dq0a8.svc.aped-4627-b74a.pinecone.io"
+PINECONE_INDEX   = "repnex"
 NAMESPACE        = "repnex"
 EMBED_MODEL      = "llama-text-embed-v2"
 

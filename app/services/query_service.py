@@ -425,6 +425,12 @@ async def chat(
     ]
 
     msg = summary or f"Query executed successfully. Found {result.rows_returned} rows."
+    col_names = []
+    if result.columns:
+        col_names = list(result.columns)
+    elif template and template.result_columns:
+        col_names = list(template.result_columns)
+
     if session:
         try:
             await session_service.append_turn(
@@ -435,6 +441,7 @@ async def chat(
                 type="executable",
                 sql=bound.sql,
                 rows=result.rows,
+                columns=col_names,
                 rows_returned=result.rows_returned,
                 execution_time_ms=result.execution_time_ms,
                 template_id=template.id,
@@ -466,6 +473,7 @@ async def chat(
         extracted_params=intent.params,
         sql=bound.sql,
         rows=result.rows,
+        columns=col_names,
         rows_returned=result.rows_returned,
         execution_time_ms=result.execution_time_ms,
         summary=summary,
@@ -594,6 +602,12 @@ async def execute_with_params(
         log.warning("execute_suggestions_failed", extra={"err": str(results_parallel[1])})
 
     msg = summary or f"Executed. {result.rows_returned} rows returned."
+    col_names = []
+    if result.columns:
+        col_names = list(result.columns)
+    elif template and template.result_columns:
+        col_names = list(template.result_columns)
+
     if session:
         try:
             intent_obj = IntentResult(
@@ -611,6 +625,7 @@ async def execute_with_params(
                 type="executable",
                 sql=bound.sql,
                 rows=result.rows,
+                columns=col_names,
                 rows_returned=result.rows_returned,
                 execution_time_ms=result.execution_time_ms,
                 template_id=template.id,
@@ -642,6 +657,7 @@ async def execute_with_params(
         extracted_params=data.params,
         sql=bound.sql,
         rows=result.rows,
+        columns=col_names,
         rows_returned=result.rows_returned,
         execution_time_ms=result.execution_time_ms,
         summary=summary,
@@ -697,6 +713,12 @@ async def run_via_rest(
         rows_returned=result.rows_returned,
     )
 
+    col_names = []
+    if result.columns:
+        col_names = list(result.columns)
+    elif template and template.result_columns:
+        col_names = list(template.result_columns)
+
     await session_service.append_turn(db, session, role="user", content=natural_language)
 
     summary: str | None = None
@@ -704,7 +726,7 @@ async def run_via_rest(
         summary = await generate_insight(
             intent=intent.model_dump(), rows=result.rows, user_name=None
         )
-        await session_service.append_turn(db, session, role="assistant", content=summary)
+        await session_service.append_turn(db, session, role="assistant", content=summary, columns=col_names)
     except LLMError as e:
         log.warning("insight_failed", extra={"err": str(e)})
 
@@ -712,6 +734,7 @@ async def run_via_rest(
         history_id=history.id,
         sql=bound.sql,
         rows=result.rows,
+        columns=col_names,
         rows_returned=result.rows_returned,
         execution_time_ms=result.execution_time_ms,
         intent=intent,

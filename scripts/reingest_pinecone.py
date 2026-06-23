@@ -20,11 +20,11 @@ os.environ.setdefault("OPENAI_API_KEY", "dummy")
 # Real Pinecone credentials (env overrides preferred)
 PINECONE_API_KEY = os.getenv(
     "PINECONE_API_KEY",
-    "pcsk_8uNjs_JEnKJ8fThatyMGp8pdLM59ukbadsy3ga5awHrUCfBVbrvKmnaXqasWmUfHTAkuX",
+    "pcsk_3E3xh5_2FoKK9Wqkp5BWu29pVxFKUHZGi5V55B7my3m3yj4aCyz4baHN7j9VpwjreerJru",
 )
 PINECONE_HOST = os.getenv(
     "PINECONE_HOST",
-    "https://repnex-0kl271f.svc.aped-4627-b74a.pinecone.io",
+    "https://repnex-v4dq0a8.svc.aped-4627-b74a.pinecone.io",
 )
 PINECONE_INDEX = os.getenv("PINECONE_INDEX", "repnex")
 NAMESPACE = os.getenv("PINECONE_NAMESPACE", "repnex")
