@@ -826,11 +826,13 @@ async def run_streaming(
 _MODULE_KEYWORDS: dict[str, list[str]] = {
     "ar": [
         "accounts receivable", "receivable", "customer", "debtor", "sales invoice",
-        "ar aging", "ar ageing", "customer invoice", "customer balance", "credit control"
+        "ar aging", "ar ageing", "customer invoice", "customer balance", "credit control",
+        "ar"
     ],
     "ap": [
         "accounts payable", "payable", "supplier", "vendor", "purchase invoice",
-        "ap aging", "ap ageing", "supplier invoice", "creditor", "bill"
+        "ap aging", "ap ageing", "supplier invoice", "creditor", "bill",
+        "ap"
     ],
     "cashbook": [
         "cashbook", "cash book", "bank account", "bank balance", "cash transaction", "petty cash"
@@ -988,12 +990,21 @@ def _check_module_access(module_key: str | None, current: CurrentUser) -> tuple[
 
 
 def _detect_module_from_query(query: str) -> str | None:
+    import re
     q = query.lower()
     best_module = None
     best_hits = 0
 
     for module, keywords in _MODULE_KEYWORDS.items():
-        hits = sum(1 for kw in keywords if kw in q)
+        hits = 0
+        for kw in keywords:
+            if len(kw.strip()) <= 3:
+                pattern = r"\b" + re.escape(kw.strip()) + r"\b"
+                if re.search(pattern, q):
+                    hits += 1
+            else:
+                if kw in q:
+                    hits += 1
         if hits > best_hits:
             best_hits = hits
             best_module = module
