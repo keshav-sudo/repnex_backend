@@ -89,10 +89,10 @@ class PineconeTemplateStore:
                 {
                     "id": match["id"],
                     "score": match.get("score", 0.0),
-                    "description": meta.get("description", ""),
-                    "module": meta.get("module", ""),
-                    "category": meta.get("category", ""),
-                    "sql": meta.get("sql", ""),
+                    "description": meta.get("description") or "",
+                    "module": meta.get("module") or "",
+                    "category": meta.get("category") or "",
+                    "sql": meta.get("sql") or "",
                     "params": params,
                     "result_columns": result_columns,
                     "keywords": keywords_list,
@@ -132,27 +132,29 @@ class PineconeTemplateStore:
             base_score = c.get("score", 0.0)
 
             # Keyword overlap boost
-            keywords = c.get("keywords", [])
+            keywords = c.get("keywords") or []
             if isinstance(keywords, str):
                 try:
                     keywords = json.loads(keywords)
                 except Exception:
                     keywords = []
+            if not isinstance(keywords, list):
+                keywords = []
 
             keyword_hits = sum(
                 1 for kw in keywords
-                if kw.lower() in query_lower or any(w in kw.lower() for w in query_words)
+                if kw and isinstance(kw, str) and (kw.lower() in query_lower or any(w in kw.lower() for w in query_words))
             )
             keyword_boost = min(keyword_hits * 0.03, 0.12)  # max 12% boost
 
             # Description word overlap boost
-            desc_words = set(c.get("description", "").lower().split())
+            desc_words = set((c.get("description") or "").lower().split())
             desc_overlap = len(query_words & desc_words)
             desc_boost = min(desc_overlap * 0.025, 0.10)  # max 10% boost
 
             # Module/category match boost from query keywords
-            module = c.get("module", "").lower()
-            category = c.get("category", "").lower()
+            module = (c.get("module") or "").lower()
+            category = (c.get("category") or "").lower()
             module_boost = 0.06 if module and module in query_lower else 0
             category_boost = 0.04 if category and category in query_lower else 0
 

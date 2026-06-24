@@ -194,7 +194,8 @@ async def chat(
             suggestions=["Show AP ageing report", "List overdue invoices"],
         )
 
-    if not intent.template_id or intent.confidence < s.INTENT_MIN_CONFIDENCE:
+    # Allow execution even with low confidence if a specific template_id was successfully mapped
+    if not intent.template_id:
         return ChatResponse(
             type="error",
             message="I couldn't match your query to a specific report template. Try rephrasing.",
@@ -217,6 +218,7 @@ async def chat(
 
     # ── Step 4: Get template ─────────────────────────────────────────
     template_meta = None
+    template = None
     for c in template_candidates:
         if c["id"] == intent.template_id:
             template_meta = c
@@ -232,10 +234,21 @@ async def chat(
             "description": template.description,
         }
     else:
-        return ChatResponse(
-            type="error",
-            message=f"Template '{intent.template_id}' not found.",
-        )
+        # Fetch directly from Pinecone if not in candidates or registry (e.g. from history/context)
+        if store:
+            try:
+                meta = store.get_template_by_id(intent.template_id)
+                if meta:
+                    template = create_template_from_pinecone(meta)
+                    template_meta = meta
+            except Exception as e:
+                log.warning("pinecone_fetch_template_failed_in_chat", extra={"template_id": intent.template_id, "err": str(e)})
+
+        if not template or not template_meta:
+            return ChatResponse(
+                type="error",
+                message=f"Template '{intent.template_id}' not found.",
+            )
 
     # ── Step 5: Check for missing params ─────────────────────────────
     missing = find_missing_params(template, intent.params)
@@ -1100,7 +1113,8 @@ async def _intent(natural_language: str, ctx: list) -> IntentResult:
                     template_candidates=candidates,
                     context_window=ctx,
                 )
-                if intent.template_id and intent.confidence >= s.INTENT_MIN_CONFIDENCE:
+                # Allow execution even with low confidence if a specific template_id was successfully mapped
+                if intent.template_id:
                     return intent
         except Exception as e:
             log.warning("pinecone_intent_failed", extra={"err": str(e)})
@@ -1108,9 +1122,9 @@ async def _intent(natural_language: str, ctx: list) -> IntentResult:
     registry = get_template_registry()
     catalog = _smart_static_fallback(registry, natural_language)
     intent = await extract_intent(natural_language, template_candidates=catalog, context_window=ctx)
-    if not intent.template_id or intent.confidence < s.INTENT_MIN_CONFIDENCE:
+    if not intent.template_id:
         raise ValidationFailed(
-            "Could not match a query template with sufficient confidence",
+            "Could not match a query template",
             suggestions=[t["id"] for t in catalog],
             confidence=intent.confidence,
         )
