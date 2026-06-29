@@ -203,7 +203,6 @@ def bind(
 
     raw_params = _resolve_natural_dates(raw_params)
 
-    # Allowlist + coerce + defaults
     bound: dict[str, Any] = {}
     for name, spec in template.params.items():
         value = raw_params.get(name, spec.get("default"))
@@ -211,7 +210,8 @@ def bind(
             is_required = spec.get("required", True)
             if is_required:
                 raise ValidationFailed(f"Missing required param: {name}")
-            continue  # Skip optional params without value
+            bound[name] = None
+            continue
         bound[name] = _coerce(name, spec, value)
 
 
