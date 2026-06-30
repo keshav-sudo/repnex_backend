@@ -44,3 +44,14 @@ redis-data/
 # Alembic local
 *.sqlite
 *.sqlite3
+
+# Repnex specific scratch/junk
+*.xlsx
+*.pdf
+schema.txt
+fullschema.txt
+repnex_sql_templates_2988.json
+repnex_schema_and_failure*.xlsx
+scratch/check_users.py
+scratch/clean_schema.py
+query_results/

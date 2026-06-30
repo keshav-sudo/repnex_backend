@@ -196,25 +196,48 @@ async def chat(
 
     # Allow execution even with low confidence if a specific template_id was successfully mapped
     if not intent.template_id:
-        return ChatResponse(
-            type="error",
-            message="I couldn't match your query to a specific report template. Try rephrasing.",
-            suggestions=[
-                "Show AP ageing report",
-                "List overdue supplier invoices",
-                "Top customers by revenue",
-            ],
-            candidates=[
-                TemplateMatch(
-                    id=c["id"],
-                    score=c.get("score", 0),
-                    description=c.get("description", ""),
-                    module=c.get("module", ""),
-                    category=c.get("category", ""),
-                )
-                for c in template_candidates[:5]
-            ],
-        )
+        # ── Auto-promote: if top Pinecone candidate has reasonable score, use it ──
+        top = template_candidates[0] if template_candidates else None
+        if top and top.get("score", 0) >= 0.50:
+            # Promote top candidate — treat as a confident match
+            intent.template_id = top["id"]
+            intent.confidence = top.get("score", 0.5)
+            intent.params = intent.params or {}
+            log.info(
+                "intent_auto_promoted",
+                extra={
+                    "template_id": intent.template_id,
+                    "score": intent.confidence,
+                    "query": nl,
+                },
+            )
+        else:
+            # Truly no match — return helpful suggestions from candidates
+            candidate_suggestions = [
+                c["description"] for c in template_candidates[:5] if c.get("description")
+            ]
+            return ChatResponse(
+                type="error",
+                message=(
+                    "I couldn't find a specific report for that query. "
+                    "Try one of these related reports below, or rephrase your question."
+                ),
+                suggestions=candidate_suggestions or [
+                    "Show AP ageing report",
+                    "List overdue supplier invoices",
+                    "Top customers by revenue",
+                ],
+                candidates=[
+                    TemplateMatch(
+                        id=c["id"],
+                        score=c.get("score", 0),
+                        description=c.get("description", ""),
+                        module=c.get("module", ""),
+                        category=c.get("category", ""),
+                    )
+                    for c in template_candidates[:5]
+                ],
+            )
 
     # ── Step 4: Get template ─────────────────────────────────────────
     template_meta = None
