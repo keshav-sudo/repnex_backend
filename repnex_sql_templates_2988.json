@@ -2722,7 +2722,7 @@
       "disbursements",
       "supplier"
     ],
-    "sql": "SELECT TOP %(limit)s p.Supplier, s.SupplierName,\n       COUNT(*) AS PaymentCount,\n       SUM(p.TrnValue) AS GrossPaid,\n       SUM(p.NetValue) AS NetPaid\nFROM ApInvoicePay p\nLEFT JOIN ApSupplier s ON s.Supplier = p.Supplier\nWHERE p.JournalDate BETWEEN %(start_date)s AND %(end_date)s\nGROUP BY p.Supplier, s.SupplierName\nORDER BY GrossPaid DESC",
+    "sql": "SELECT TOP %(limit)s p.Supplier, s.SupplierName,\n       COUNT(*) AS PaymentCount,\n       SUM(p.TrnValue) AS TotalPaid\nFROM ApInvoicePay p\nLEFT JOIN ApSupplier s ON s.Supplier = p.Supplier\nWHERE p.JournalDate BETWEEN %(start_date)s AND %(end_date)s\nGROUP BY p.Supplier, s.SupplierName\nORDER BY TotalPaid DESC",
     "params": {
       "start_date": {
         "type": "date",
@@ -2744,9 +2744,7 @@
       "Supplier",
       "SupplierName",
       "PaymentCount",
-      "GrossPaid",
-      "WithholdingTax",
-      "NetPaid"
+      "TotalPaid"
     ],
     "embedding_text": "Aggregates supplier payments (ApInvoicePay) supplier over a period showing gross, withholding and net amounts.",
     "example_questions": [
@@ -2764,7 +2762,7 @@
       "disbursements",
       "bank"
     ],
-    "sql": "SELECT TOP %(limit)s p.BankCode AS Bank,\n       COUNT(*) AS PaymentCount,\n       SUM(p.TrnValue) AS GrossPaid,\n       SUM(p.NetValue) AS NetPaid\nFROM ApInvoicePay p\nLEFT JOIN ApSupplier s ON s.Supplier = p.Supplier\nWHERE p.JournalDate BETWEEN %(start_date)s AND %(end_date)s\nGROUP BY p.BankCode\nORDER BY GrossPaid DESC",
+    "sql": "SELECT TOP %(limit)s p.PostCurrency AS PaymentCurrency,\n       COUNT(*) AS PaymentCount,\n       SUM(p.TrnValue) AS TotalPaid\nFROM ApInvoicePay p\nWHERE p.JournalDate BETWEEN %(start_date)s AND %(end_date)s\nGROUP BY p.PostCurrency\nORDER BY TotalPaid DESC",
     "params": {
       "start_date": {
         "type": "date",
@@ -2783,11 +2781,9 @@
       }
     },
     "result_columns": [
-      "Bank",
+      "PaymentCurrency",
       "PaymentCount",
-      "GrossPaid",
-      "WithholdingTax",
-      "NetPaid"
+      "TotalPaid"
     ],
     "embedding_text": "Aggregates supplier payments (ApInvoicePay) bank over a period showing gross, withholding and net amounts.",
     "example_questions": [
@@ -2805,7 +2801,7 @@
       "disbursements",
       "currency"
     ],
-    "sql": "SELECT TOP %(limit)s p.PaymentCurrency AS Currency,\n       COUNT(*) AS PaymentCount,\n       SUM(p.TrnValue) AS GrossPaid,\n       SUM(p.NetValue) AS NetPaid\nFROM ApInvoicePay p\nLEFT JOIN ApSupplier s ON s.Supplier = p.Supplier\nWHERE p.JournalDate BETWEEN %(start_date)s AND %(end_date)s\nGROUP BY p.PaymentCurrency\nORDER BY GrossPaid DESC",
+    "sql": "SELECT TOP %(limit)s p.PostCurrency AS Currency,\n       COUNT(*) AS PaymentCount,\n       SUM(p.TrnValue) AS TotalPaid\nFROM ApInvoicePay p\nWHERE p.JournalDate BETWEEN %(start_date)s AND %(end_date)s\nGROUP BY p.PostCurrency\nORDER BY TotalPaid DESC",
     "params": {
       "start_date": {
         "type": "date",
@@ -2826,9 +2822,7 @@
     "result_columns": [
       "Currency",
       "PaymentCount",
-      "GrossPaid",
-      "WithholdingTax",
-      "NetPaid"
+      "TotalPaid"
     ],
     "embedding_text": "Aggregates supplier payments (ApInvoicePay) currency over a period showing gross, withholding and net amounts.",
     "example_questions": [
@@ -2847,7 +2841,7 @@
       "cheques",
       "remittance"
     ],
-    "sql": "SELECT TOP %(limit)s p.Supplier, s.SupplierName,\n       p.PaymentReference, p.JournalDate, p.PaymentNumber,\n       p.TrnValue AS GrossValue,\n       p.NetValue,\n       p.PaymentCurrency AS Currency,\n       p.BankCode AS Bank\nFROM ApInvoicePay p\nLEFT JOIN ApSupplier s ON s.Supplier = p.Supplier\nWHERE p.JournalDate BETWEEN %(start_date)s AND %(end_date)s\nORDER BY p.JournalDate DESC, p.Supplier",
+    "sql": "SELECT TOP %(limit)s p.Supplier, s.SupplierName,\n       p.PaymentReference, p.JournalDate, p.PaymentNumber,\n       p.TrnValue AS PaymentAmount,\n       p.PostCurrency AS Currency\nFROM ApInvoicePay p\nLEFT JOIN ApSupplier s ON s.Supplier = p.Supplier\nWHERE p.JournalDate BETWEEN %(start_date)s AND %(end_date)s\nORDER BY p.JournalDate DESC, p.Supplier",
     "params": {
       "start_date": {
         "type": "date",
@@ -2868,14 +2862,11 @@
     "result_columns": [
       "Supplier",
       "SupplierName",
-      "Cheque",
-      "ChequeDate",
+      "PaymentReference",
+      "JournalDate",
       "PaymentNumber",
-      "GrossValue",
-      "WithTaxValue",
-      "NetValue",
-      "Currency",
-      "Bank"
+      "PaymentAmount",
+      "Currency"
     ],
     "embedding_text": "Detailed cheque/payment register from ApInvoicePay for a period. Useful for disbursement audit and bank reconciliation.",
     "example_questions": [
@@ -3073,7 +3064,7 @@
       "tds",
       "tax deducted"
     ],
-    "sql": "SELECT TOP %(limit)s w.Supplier, s.SupplierName,\n       COUNT(*) AS Transactions,\n       SUM(w.WithholdingTax) AS TotalWHT\nFROM ApWithholdingTax w\nLEFT JOIN ApSupplier s ON s.Supplier = w.Supplier\nWHERE w.InvoiceDate BETWEEN %(start_date)s AND %(end_date)s\nGROUP BY w.Supplier, s.SupplierName\nORDER BY TotalWHT DESC",
+    "sql": "SELECT TOP %(limit)s w.Supplier, s.SupplierName,\n       COUNT(*) AS Transactions,\n       SUM(w.WithTaxableValue) AS TotalTaxableValue,\n       SUM(w.WithTaxValue) AS TotalWHT\nFROM ApWithholdingTax w\nLEFT JOIN ApSupplier s ON s.Supplier = w.Supplier\nWHERE w.InvoiceDate BETWEEN %(start_date)s AND %(end_date)s\nGROUP BY w.Supplier, s.SupplierName\nORDER BY TotalWHT DESC",
     "params": {
       "start_date": {
         "type": "date",
@@ -3095,6 +3086,7 @@
       "Supplier",
       "SupplierName",
       "Transactions",
+      "TotalTaxableValue",
       "TotalWHT"
     ],
     "embedding_text": "Sums withholding tax deducted per supplier over a period for WHT return preparation and certificates.",
@@ -3114,7 +3106,7 @@
       "withholding",
       "rate"
     ],
-    "sql": "SELECT w.WithTaxCode,\n       COUNT(*) AS Transactions,\n       SUM(w.TaxableAmount) AS TotalTaxableAmount,\n       SUM(w.WithholdingTax) AS TotalWHT\nFROM ApWithholdingTax w\nWHERE w.InvoiceDate BETWEEN %(start_date)s AND %(end_date)s\nGROUP BY w.WithTaxCode\nORDER BY TotalWHT DESC",
+    "sql": "SELECT w.WithTaxCode,\n       COUNT(*) AS Transactions,\n       SUM(w.WithTaxableValue) AS TotalTaxableValue,\n       SUM(w.WithTaxValue) AS TotalWHT\nFROM ApWithholdingTax w\nWHERE w.InvoiceDate BETWEEN %(start_date)s AND %(end_date)s\nGROUP BY w.WithTaxCode\nORDER BY TotalWHT DESC",
     "params": {
       "start_date": {
         "type": "date",
@@ -3128,7 +3120,7 @@
     "result_columns": [
       "WithTaxCode",
       "Transactions",
-      "TaxableAmount",
+      "TotalTaxableValue",
       "TotalWHT"
     ],
     "embedding_text": "Aggregates withholding tax by WHT code, showing taxable base and tax for each rate band.",
@@ -3148,7 +3140,7 @@
       "withholding",
       "detail"
     ],
-    "sql": "SELECT TOP %(limit)s w.Supplier, s.SupplierName,\n       s.WithTaxId, w.Invoice, w.InvoiceDate,\n       w.WithTaxCode, w.TaxableAmount, w.WithholdingTax, w.Currency\nFROM ApWithholdingTax w\nLEFT JOIN ApSupplier s ON s.Supplier = w.Supplier\nWHERE w.InvoiceDate BETWEEN %(start_date)s AND %(end_date)s\nORDER BY w.Supplier, w.InvoiceDate DESC",
+    "sql": "SELECT TOP %(limit)s w.Supplier, s.SupplierName,\n       s.WithTaxId, w.Invoice, w.InvoiceDate,\n       w.WithTaxCode, w.WithTaxRate,\n       w.WithTaxableValue, w.WithTaxValue,\n       w.Bank\nFROM ApWithholdingTax w\nLEFT JOIN ApSupplier s ON s.Supplier = w.Supplier\nWHERE w.InvoiceDate BETWEEN %(start_date)s AND %(end_date)s\nORDER BY w.Supplier, w.InvoiceDate DESC",
     "params": {
       "start_date": {
         "type": "date",
@@ -3171,11 +3163,12 @@
       "SupplierName",
       "WithTaxId",
       "Invoice",
-      "TaxDate",
+      "InvoiceDate",
       "WithTaxCode",
-      "TaxableAmount",
-      "WithholdingTax",
-      "Currency"
+      "WithTaxRate",
+      "WithTaxableValue",
+      "WithTaxValue",
+      "Bank"
     ],
     "embedding_text": "Line-level withholding tax detail per supplier including tax registration id, for issuing WHT certificates.",
     "example_questions": [
@@ -9033,7 +9026,7 @@
       "customer",
       "30 60 90"
     ],
-    "sql": "SELECT TOP %(limit)s b.Customer, c.Name AS CustomerName, c.Currency,\n       b.ValCurrentInv AS Current,\n       b.Val30daysInv AS Days30,\n       b.Val60daysInv AS Days60,\n       b.Val90daysInv AS Days90,\n       b.Val120daysInv AS Days120Plus,\n       (b.ValCurrentInv + b.Val30daysInv + b.Val60daysInv + b.Val90daysInv + b.Val120daysInv) AS TotalBalance\nFROM ArCustomerBal b\nLEFT JOIN ArCustomer c ON c.Customer = b.Customer\nWHERE (b.ValCurrentInv + b.Val30daysInv + b.Val60daysInv + b.Val90daysInv + b.Val120daysInv) <> 0\nORDER BY TotalBalance DESC",
+    "sql": "SELECT TOP %(limit)s b.Customer, c.Name AS CustomerName, c.Currency,\n       b.ValCurrentInv AS CurrentInv,\n       b.Val30daysInv AS Days30,\n       b.Val60daysInv AS Days60,\n       b.Val90daysInv AS Days90,\n       b.Val120daysInv AS Days120Plus,\n       (b.ValCurrentInv + b.Val30daysInv + b.Val60daysInv + b.Val90daysInv + b.Val120daysInv) AS TotalBalance\nFROM ArCustomerBal b\nLEFT JOIN ArCustomer c ON c.Customer = b.Customer\nWHERE (b.ValCurrentInv + b.Val30daysInv + b.Val60daysInv + b.Val90daysInv + b.Val120daysInv) <> 0\nORDER BY TotalBalance DESC",
     "params": {
       "limit": {
         "type": "int",
@@ -9047,7 +9040,7 @@
       "Customer",
       "CustomerName",
       "Currency",
-      "Current",
+      "CurrentInv",
       "Days30",
       "Days60",
       "Days90",
@@ -18157,9 +18150,9 @@
       "gl_year": {
         "type": "int",
         "required": false,
-        "min": 2000,
+        "min": 1900,
         "max": 2100,
-        "default": 1
+        "default": 2025
       },
       "period": {
         "type": "int",
@@ -34309,7 +34302,7 @@
       "cash position projection",
       "liquidity"
     ],
-    "sql": "SELECT 'Current Bank Balance' AS Component, SUM(b.CbTrnBal1) AS Amount FROM CshTransactionsBal b INNER JOIN (SELECT Bank, MAX(CONVERT(bigint, CONVERT(varchar(8), CbTrnDate, 112)) * 1000000 + CbTrnTime) AS LatestKey FROM CshTransactionsBal GROUP BY Bank) latest ON latest.Bank = b.Bank AND latest.LatestKey = CONVERT(bigint, CONVERT(varchar(8), b.CbTrnDate, 112)) * 1000000 + b.CbTrnTime UNION ALL SELECT 'Expected AR Receipts' AS Component, ISNULL(SUM(i.InvoiceBal1), 0) AS Amount FROM ArInvoice i WHERE i.InvoiceBal1 > 0 AND DATEDIFF(day, i.InvoiceDate, GETDATE()) BETWEEN 0 AND %(days_ahead)s UNION ALL SELECT 'Expected AP Payments' AS Component, -ISNULL(SUM(ai.MthInvBal1), 0) AS Amount FROM ApInvoice ai AND ai.MthInvBal1 > 0 AND ai.DueDate BETWEEN GETDATE() AND DATEADD(day, %(days_ahead)s, GETDATE()) UNION ALL SELECT 'NET PROJECTED CASH' AS Component, (SELECT SUM(b.CbTrnBal1) FROM CshTransactionsBal b INNER JOIN (SELECT Bank, MAX(CONVERT(bigint, CONVERT(varchar(8), CbTrnDate, 112)) * 1000000 + CbTrnTime) AS LatestKey FROM CshTransactionsBal GROUP BY Bank) latest ON latest.Bank = b.Bank AND latest.LatestKey = CONVERT(bigint, CONVERT(varchar(8), b.CbTrnDate, 112)) * 1000000 + b.CbTrnTime) + ISNULL((SELECT SUM(i.InvoiceBal1) FROM ArInvoice i WHERE i.InvoiceBal1 > 0 AND DATEDIFF(day, i.InvoiceDate, GETDATE()) BETWEEN 0 AND %(days_ahead)s), 0) - ISNULL((SELECT SUM(ai.MthInvBal1) FROM ApInvoice ai WHERE ai.MthInvBal1 > 0 AND ai.DueDate BETWEEN GETDATE() AND DATEADD(day, %(days_ahead)s, GETDATE())), 0) AS Amount",
+    "sql": "SELECT 'Current Bank Balance' AS Component,\n       SUM(b.CbTrnBal1) AS Amount\nFROM CshTransactionsBal b\nINNER JOIN (\n    SELECT Bank,\n           MAX(CONVERT(bigint, CONVERT(varchar(8), CbTrnDate, 112)) * 1000000 + CbTrnTime) AS LatestKey\n    FROM CshTransactionsBal GROUP BY Bank\n) latest\n  ON latest.Bank = b.Bank\n  AND latest.LatestKey = CONVERT(bigint, CONVERT(varchar(8), b.CbTrnDate, 112)) * 1000000 + b.CbTrnTime\n\nUNION ALL\nSELECT 'Expected AR Receipts' AS Component,\n       ISNULL(SUM(i.InvoiceBal1), 0) AS Amount\nFROM ArInvoice i\nWHERE i.InvoiceBal1 > 0\n  AND DATEDIFF(day, i.InvoiceDate, GETDATE()) BETWEEN 0 AND %(days_ahead)s\n\nUNION ALL\nSELECT 'Expected AP Payments' AS Component,\n       -ISNULL(SUM(ai.MthInvBal1), 0) AS Amount\nFROM ApInvoice ai\nWHERE ai.MthInvBal1 > 0\n  AND ai.DueDate BETWEEN GETDATE() AND DATEADD(day, %(days_ahead)s, GETDATE())\n\nUNION ALL\nSELECT 'NET PROJECTED CASH' AS Component,\n       (\n           (SELECT ISNULL(SUM(b2.CbTrnBal1),0) FROM CshTransactionsBal b2\n            INNER JOIN (\n                SELECT Bank, MAX(CONVERT(bigint, CONVERT(varchar(8), CbTrnDate, 112)) * 1000000 + CbTrnTime) AS LK\n                FROM CshTransactionsBal GROUP BY Bank\n            ) l2 ON l2.Bank = b2.Bank\n              AND l2.LK = CONVERT(bigint, CONVERT(varchar(8), b2.CbTrnDate, 112)) * 1000000 + b2.CbTrnTime)\n           + ISNULL((SELECT SUM(i2.InvoiceBal1) FROM ArInvoice i2\n                     WHERE i2.InvoiceBal1 > 0\n                       AND DATEDIFF(day, i2.InvoiceDate, GETDATE()) BETWEEN 0 AND %(days_ahead)s), 0)\n           - ISNULL((SELECT SUM(ai2.MthInvBal1) FROM ApInvoice ai2\n                     WHERE ai2.MthInvBal1 > 0\n                       AND ai2.DueDate BETWEEN GETDATE() AND DATEADD(day, %(days_ahead)s, GETDATE())), 0)\n       ) AS Amount",
     "params": {
       "days_ahead": {
         "type": "int",
@@ -34647,11 +34640,10 @@
       "balance",
       "treasury"
     ],
-    "sql": "SELECT b.Bank, b.CbTrnBal1 AS Balance\nFROM CshTransactionsBal b\nINNER JOIN (\n    SELECT Bank, MAX(CbTrnDate * 1000000 + CbTrnTime) AS LatestKey\n    FROM CshTransactionsBal GROUP BY Bank\n) latest ON latest.Bank = b.Bank AND latest.LatestKey = b.CbTrnDate * 1000000 + b.CbTrnTime\nORDER BY b.Bank",
+    "sql": "SELECT b.Bank, b.CbTrnBal1 AS Balance\nFROM CshTransactionsBal b\nINNER JOIN (\n    SELECT Bank,\n           MAX(CONVERT(bigint, CONVERT(varchar(8), CbTrnDate, 112)) * 1000000 + CbTrnTime) AS LatestKey\n    FROM CshTransactionsBal\n    GROUP BY Bank\n) latest\n  ON latest.Bank = b.Bank\n  AND latest.LatestKey = CONVERT(bigint, CONVERT(varchar(8), b.CbTrnDate, 112)) * 1000000 + b.CbTrnTime\nORDER BY b.Bank",
     "params": {},
     "result_columns": [
       "Bank",
-      "BankCurrency",
       "Balance"
     ],
     "embedding_text": "Returns the cash-book balance per bank account for treasury and reconciliation.",
@@ -41579,6 +41571,12 @@
         "required": false,
         "max_length": 30,
         "default": null
+      },
+      "budget_type": {
+        "type": "string",
+        "required": false,
+        "default": "1",
+        "description": "Budget type code (default: 1)"
       }
     },
     "result_columns": [
@@ -87175,9 +87173,9 @@
       "gl_year": {
         "type": "int",
         "required": false,
-        "min": 2000,
+        "min": 1900,
         "max": 2100,
-        "default": 1
+        "default": 2025
       },
       "period": {
         "type": "int",
@@ -87225,7 +87223,7 @@
       "revaluation gain",
       "open exposure"
     ],
-    "sql": "SELECT 'AP' AS Module, r.Supplier AS PartyCode, s.SupplierName AS PartyName, r.Invoice, r.JournalDate AS RevalDate, r.TrnYear, r.TrnMonth, r.PostCurrency, r.BalRevalued, r.RevalValue, r.BefValue, r.RevalValue - r.BefValue AS GainLoss FROM ApInvoiceReval r LEFT JOIN ApSupplier s ON s.Supplier = r.Supplier WHERE r.JournalDate BETWEEN %(start_date)s AND %(end_date)s UNION ALL SELECT 'AR' AS Module, r.Customer AS PartyCode, c.Name AS PartyName, r.Invoice, r.JournalDate AS RevalDate, r.TrnYear, r.TrnMonth, r.PostCurrency, r.BalRevalued, r.RevalValue, r.BefValue, r.RevalValue - r.BefValue AS GainLoss FROM ArInvoiceReval r LEFT JOIN ArCustomer c ON c.Customer = r.Customer AND r.JournalDate BETWEEN %(start_date)s AND %(end_date)s ORDER BY ABS(11) DESC",
+    "sql": "SELECT 'AP' AS Module, r.Supplier AS PartyCode, s.SupplierName AS PartyName, r.Invoice, r.JournalDate AS RevalDate, r.TrnYear, r.TrnMonth, r.PostCurrency, r.BalRevalued, r.RevalValue, r.BefValue, r.RevalValue - r.BefValue AS GainLoss FROM ApInvoiceReval r LEFT JOIN ApSupplier s ON s.Supplier = r.Supplier WHERE r.JournalDate BETWEEN %(start_date)s AND %(end_date)s UNION ALL SELECT 'AR' AS Module, r.Customer AS PartyCode, c.Name AS PartyName, r.Invoice, r.JournalDate AS RevalDate, r.TrnYear, r.TrnMonth, r.PostCurrency, r.BalRevalued, r.RevalValue, r.BefValue, r.RevalValue - r.BefValue AS GainLoss FROM ArInvoiceReval r LEFT JOIN ArCustomer c ON c.Customer = r.Customer WHERE r.JournalDate BETWEEN %(start_date)s AND %(end_date)s ORDER BY GainLoss DESC",
     "params": {
       "start_date": {
         "type": "date",
@@ -94507,9 +94505,9 @@
       "gl_year": {
         "type": "int",
         "required": false,
-        "min": 2000,
+        "min": 1900,
         "max": 2100,
-        "default": 1
+        "default": 2025
       },
       "period": {
         "type": "int",
@@ -94668,9 +94666,9 @@
       "vat_year": {
         "type": "int",
         "required": false,
-        "min": 2000,
+        "min": 1900,
         "max": 2100,
-        "default": 1
+        "default": 2025
       },
       "vat_period": {
         "type": "int",
@@ -103810,7 +103808,7 @@
       "gin gout",
       "stock ledger"
     ],
-    "sql": "SELECT TOP %(limit)s mv.StockCode, mv.Warehouse, mv.TransDate, mv.TrnType, mv.TrnQty, mv.TrnValue, mv.Reference FROM InvMovements mv WHERE mv.TransDate BETWEEN %(start_date)s AND %(end_date)s ORDER BY mv.TransDate DESC",
+    "sql": "SELECT TOP %(limit)s mv.StockCode, mv.Warehouse,\n       mv.EntryDate, mv.MovementType,\n       mv.TrnQty, mv.TrnValue, mv.Reference\nFROM InvMovements mv\nWHERE mv.EntryDate BETWEEN %(start_date)s AND %(end_date)s\nORDER BY mv.EntryDate DESC",
     "params": {
       "start_date": {
         "type": "date",
@@ -103831,8 +103829,8 @@
     "result_columns": [
       "StockCode",
       "Warehouse",
-      "TrnDate",
-      "TrnType",
+      "EntryDate",
+      "MovementType",
       "TrnQty",
       "TrnValue",
       "Reference"
