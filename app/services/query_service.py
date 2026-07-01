@@ -198,7 +198,7 @@ async def chat(
     if not intent.template_id:
         # ── Auto-promote: if top Pinecone candidate has reasonable score, use it ──
         top = template_candidates[0] if template_candidates else None
-        if top and top.get("score", 0) >= 0.50:
+        if top and top.get("score", 0) >= 0.40:
             # Promote top candidate — treat as a confident match
             intent.template_id = top["id"]
             intent.confidence = top.get("score", 0.5)
