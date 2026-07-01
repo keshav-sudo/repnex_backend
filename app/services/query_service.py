@@ -186,12 +186,13 @@ async def chat(
 
     # Tier 1: Very high confidence (>= 0.60) — skip LLM entirely, use Pinecone directly
     if top_score >= 0.60:
-        intent_obj = type("Intent", (), {
-            "template_id": top["id"],
-            "confidence": top_score,
-            "params": {},
-            "reasoning": "direct_pinecone_match",
-        })()
+        intent_obj = IntentResult(
+            template_id=top["id"],
+            params={},
+            missing_params=[],
+            confidence=top_score,
+            rationale="direct_pinecone_match",
+        )
         log.info(
             "intent_direct_pinecone_match",
             extra={"template_id": top["id"], "score": top_score, "query": nl},
