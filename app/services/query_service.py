@@ -180,38 +180,48 @@ async def chat(
     if not template_candidates:
         template_candidates = _smart_static_fallback(registry, nl)
 
-    # ── Step 3: Intent extraction ────────────────────────────────────
-    try:
-        intent = await extract_intent(
-            nl,
-            template_candidates=template_candidates,
-            user_name=user_name,
-        )
-    except LLMError as e:
-        return ChatResponse(
-            type="error",
-            message=f"Could not understand your query: {e.message}",
-            suggestions=["Show AP ageing report", "List overdue invoices"],
-        )
+    # ── Step 3: Intent extraction via LLM ────────────────────────────
+    top = template_candidates[0] if template_candidates else None
+    top_score = top.get("score", 0) if top else 0
 
-    # Allow execution even with low confidence if a specific template_id was successfully mapped
-    if not intent.template_id:
-        # ── Auto-promote: if top Pinecone candidate has reasonable score, use it ──
-        top = template_candidates[0] if template_candidates else None
-        if top and top.get("score", 0) >= 0.40:
-            # Promote top candidate — treat as a confident match
+    # Tier 1: Very high confidence (>= 0.60) — skip LLM entirely, use Pinecone directly
+    if top_score >= 0.60:
+        intent_obj = type("Intent", (), {
+            "template_id": top["id"],
+            "confidence": top_score,
+            "params": {},
+            "reasoning": "direct_pinecone_match",
+        })()
+        log.info(
+            "intent_direct_pinecone_match",
+            extra={"template_id": top["id"], "score": top_score, "query": nl},
+        )
+        intent = intent_obj
+    else:
+        # Tier 2: Run LLM for moderate or low scores
+        try:
+            intent = await extract_intent(
+                nl,
+                template_candidates=template_candidates,
+                user_name=user_name,
+            )
+        except LLMError as e:
+            return ChatResponse(
+                type="error",
+                message=f"Could not understand your query: {e.message}",
+                suggestions=["Show AP ageing report", "List overdue invoices"],
+            )
+
+        # If LLM didn't pick a template but Pinecone has moderate confidence, auto-promote
+        if not intent.template_id and top and top_score >= 0.40:
             intent.template_id = top["id"]
-            intent.confidence = top.get("score", 0.5)
+            intent.confidence = top_score
             intent.params = intent.params or {}
             log.info(
                 "intent_auto_promoted",
-                extra={
-                    "template_id": intent.template_id,
-                    "score": intent.confidence,
-                    "query": nl,
-                },
+                extra={"template_id": intent.template_id, "score": top_score, "query": nl},
             )
-        else:
+        elif not intent.template_id:
             # Truly no match — return helpful suggestions from candidates
             candidate_suggestions = [
                 c["description"] for c in template_candidates[:5] if c.get("description")
