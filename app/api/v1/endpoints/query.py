@@ -98,3 +98,51 @@ async def list_templates(
     _: CurrentUser = Depends(bind_tenant_context),
 ) -> list[dict]:
     return get_template_registry().list_for_llm()
+
+
+@router.get("/suggestions")
+async def get_suggestions(
+    _: CurrentUser = Depends(bind_tenant_context),
+) -> list[dict]:
+    import random
+    registry = get_template_registry()
+    templates = registry.all()
+
+    cat_mapping = {
+        "AP & Suppliers": ["ap"],
+        "AR & Customers": ["ar"],
+        "Cashbook & GL": ["gl", "cash", "budget"],
+        "Tax & Auditing": ["tax", "audit", "forex"],
+    }
+
+    grouped = {cat: [] for cat in cat_mapping}
+    for t in templates:
+        for cat, modules in cat_mapping.items():
+            if t.module in modules:
+                grouped[cat].append(t)
+                break
+
+    emojis = ["📊", "📋", "🧾", "📈", "💵", "💳", "📝", "🏦", "🏛️", "🔍", "🔎", "🛍️"]
+
+    res = []
+    for cat, items in grouped.items():
+        prompts = []
+        if items:
+            sampled = random.sample(items, min(len(items), 4))
+            for t in sampled:
+                clean_desc = t.description.split(" • ")[0].split(" \u2022 ")[0].strip()
+                prompts.append({
+                    "text": clean_desc,
+                    "icon": random.choice(emojis),
+                    "id": t.id,
+                })
+        if not prompts:
+            prompts = [
+                {"text": f"Show {cat} report", "icon": "📊", "id": "fallback"}
+            ]
+        res.append({
+            "category": cat,
+            "prompts": prompts
+        })
+
+    return res
