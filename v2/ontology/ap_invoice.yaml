@@ -1,53 +1,304 @@
-# Business Concept: AP Invoice
 concept: ap_invoice
 display_name: AP Invoice
 module: accounts_payable
 description: >
-  An invoice received from a supplier for goods or services.
-
+  A supplier (vendor) invoice recorded in Accounts Payable, representing an 
+  amount the company owes. Tracks invoice value, outstanding balances, due 
+  date, settlement discount, tax and currency-conversion detail.
 synonyms:
   - supplier invoice
   - vendor invoice
-  - AP invoice
+  - payable invoice
+  - creditor invoice
   - purchase invoice
-  - payable
-
+  - bill
 header_attributes:
+  supplier_code:
+    display: Supplier Code
+    type: string
+    required: true
+    description: Code of the supplier the invoice belongs to
   invoice_number:
     display: Invoice Number
     type: string
     required: true
-  supplier_code:
-    display: Supplier
+    description: Unique invoice identifier issued by the supplier
+  branch:
+    display: Branch
     type: string
-    required: true
+    required: false
+  reference:
+    display: Reference
+    type: string
+    required: false
+  bank:
+    display: Bank
+    type: string
+    required: false
+  manual_ch_ref:
+    display: Manual Ch Ref
+    type: string
+    required: false
+  payment_number:
+    display: Payment Number
+    type: string
+    required: false
+  primary_supplier:
+    display: Primary Supplier
+    type: string
+    required: false
+  journal_date:
+    display: Journal Date
+    type: date
+    required: false
   invoice_date:
     display: Invoice Date
     type: date
+    required: true
+    description: Date the invoice was raised
+  discount_date:
+    display: Discount Date
+    type: date
+    required: false
+    description: Last date on which settlement discount applies
   due_date:
     display: Due Date
     type: date
-  invoice_total:
-    display: Invoice Total
+    required: false
+    description: Date the invoice payment falls due
+  manual_chq_date:
+    display: Manual Chq Date
+    type: date
+    required: false
+  notification_date:
+    display: Notification Date
+    type: date
+    required: false
+  next_paym_entry:
+    display: Next Paym Entry
     type: decimal
-  tax_value:
-    display: Tax Value
+    required: false
+  journal:
+    display: Journal
     type: decimal
+    required: false
+  original_value:
+    display: Original Invoice Value
+    type: decimal
+    required: true
+    description: Gross invoice value at the time of capture
+  original_discount_value:
+    display: Original Discount Value
+    type: decimal
+    required: false
+    description: Settlement discount value available at capture
+  outstanding_balance:
+    display: Outstanding Balance
+    type: decimal
+    required: false
+    description: Current unpaid balance of the invoice (local currency)
+  mth_inv_bal2:
+    display: Mth Inv Bal2
+    type: decimal
+    required: false
+  mth_inv_bal3:
+    display: Mth Inv Bal3
+    type: decimal
+    required: false
+  manual_chq_num:
+    display: Manual Chq Num
+    type: decimal
+    required: false
+  payment_gross_value:
+    display: Payment Gross Value
+    type: decimal
+    required: false
+    description: Gross value paid against the invoice
+  payment_discount_value:
+    display: Payment Discount Taken
+    type: decimal
+    required: false
+    description: Discount value actually taken when paying
+  tax_portion_disc:
+    display: Tax Portion Disc
+    type: decimal
+    required: false
+  invoice_year:
+    display: Invoice Year
+    type: decimal
+    required: false
+  invoice_month:
+    display: Invoice Month
+    type: decimal
+    required: false
+  year_inv_bal_zero:
+    display: Year Inv Bal Zero
+    type: decimal
+    required: false
+  month_inv_bal_zero:
+    display: Month Inv Bal Zero
+    type: decimal
+    required: false
+  exchange_rate:
+    display: Exchange Rate
+    type: decimal
+    required: false
+    description: Exchange rate captured on the invoice
+  withholding_tax_value:
+    display: Withholding Tax Value
+    type: decimal
+    required: false
+    description: Withholding tax value on the invoice
+  withholding_tax_rate:
+    display: Withholding Tax Rate
+    type: decimal
+    required: false
+    description: Withholding tax rate on the invoice
+  currency_value:
+    display: Currency Value
+    type: decimal
+    required: false
+  conv_rate:
+    display: Conv Rate
+    type: decimal
+    required: false
+  acc_conv_rate:
+    display: Acc Conv Rate
+    type: decimal
+    required: false
+  triang_rate:
+    display: Triang Rate
+    type: decimal
+    required: false
+  tax2_value:
+    display: Tax2 Value
+    type: decimal
+    required: false
+  entry_number:
+    display: Entry Number
+    type: decimal
+    required: false
+  next_reval_no:
+    display: Next Reval No
+    type: decimal
+    required: false
+  orig_inv_rate:
+    display: Orig Inv Rate
+    type: decimal
+    required: false
+  total_adjustments:
+    display: Total Adjustments
+    type: decimal
+    required: false
+  discount_active_flag:
+    display: Discount Active Flag
+    type: string
+    required: false
+    description: Whether settlement discount is still active
+  invoice_status:
+    display: Invoice Status
+    type: string
+    required: false
+    description: Current processing status of the invoice
   currency:
     display: Currency
     type: string
-  purchase_order:
-    display: Purchase Order
+    required: false
+  tax_code:
+    display: Tax Code
     type: string
-  status:
-    display: Status
-    description: Open, Paid, Partially Paid
+    required: false
+    description: First tax code applied to the invoice
+  post_currency:
+    display: Post Currency
     type: string
-
-relationships:
-  - concept: supplier
-    cardinality: many_to_one
-  - concept: purchase_order
-    cardinality: many_to_one
-  - concept: payment
-    cardinality: one_to_many
+    required: false
+  mul_div:
+    display: Mul Div
+    type: string
+    required: false
+  account_cur:
+    display: Account Cur
+    type: string
+    required: false
+  acc_mul_div:
+    display: Acc Mul Div
+    type: string
+    required: false
+  triang_currency:
+    display: Triang Currency
+    type: string
+    required: false
+  triang_mul_div:
+    display: Triang Mul Div
+    type: string
+    required: false
+  vat_invalid:
+    display: Vat Invalid
+    type: string
+    required: false
+  payment_chk_type:
+    display: Payment Chk Type
+    type: string
+    required: false
+  invoice_take_on:
+    display: Invoice Take On
+    type: string
+    required: false
+  fix_exchange_rate:
+    display: Fix Exchange Rate
+    type: string
+    required: false
+  tax_reverse:
+    display: Tax Reverse
+    type: string
+    required: false
+  tax2_reverse:
+    display: Tax2 Reverse
+    type: string
+    required: false
+  nationality_source:
+    display: Nationality Source
+    type: string
+    required: false
+  nationality_dest:
+    display: Nationality Dest
+    type: string
+    required: false
+  auto_voucher_created:
+    display: Auto Voucher Created
+    type: string
+    required: false
+  auto_voucher_printed:
+    display: Auto Voucher Printed
+    type: string
+    required: false
+  second_tax_code:
+    display: Second Tax Code
+    type: string
+    required: false
+  with_tax_code:
+    display: With Tax Code
+    type: string
+    required: false
+  with_tax_expense_type:
+    display: With Tax Expense Type
+    type: string
+    required: false
+  with_holding_tax_code:
+    display: With Holding Tax Code
+    type: string
+    required: false
+  reverse_charge_flag:
+    display: Reverse Charge Flag
+    type: string
+    required: false
+    description: Whether reverse-charge VAT applies
+  primary_company:
+    display: Primary Company
+    type: string
+    required: false
+  withold_tax_acc_basis:
+    display: Withold Tax Acc Basis
+    type: string
+    required: false

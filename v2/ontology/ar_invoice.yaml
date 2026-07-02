@@ -1,95 +1,257 @@
-# Business Concept: AR Invoice
 concept: ar_invoice
 display_name: AR Invoice
 module: accounts_receivable
 description: >
-  An invoice issued to a customer for goods or services delivered.
-  Consists of a header and detail lines.
-
+  A customer invoice or debit/credit document recorded in Accounts 
+  Receivable, representing an amount owed to the company. Tracks outstanding 
+  balances, tax portions, dunning and delivery detail. Note: this table 
+  carries no due-date or gross-original-value column; use 
+  signed_invoice_value and terms_code.
 synonyms:
-  - invoice
-  - sales invoice
   - customer invoice
-  - AR invoice
-  - bill
-  - debit note
-
+  - sales invoice
+  - receivable invoice
+  - debtor invoice
+  - billing document
 header_attributes:
+  customer_code:
+    display: Customer Code
+    type: string
+    required: true
+    description: Code of the customer the invoice belongs to
   invoice_number:
     display: Invoice Number
     type: string
     required: true
-  customer_code:
-    display: Customer
-    type: string
-    required: true
-  invoice_date:
-    display: Invoice Date
-    type: date
-  due_date:
-    display: Due Date
-    type: date
-  document_type:
-    display: Document Type
-    description: Invoice, Credit Note, Debit Note
-    type: string
-  invoice_balance:
-    display: Invoice Balance
-    description: Outstanding amount
-    type: decimal
-  original_value:
-    display: Original Value
-    description: Original invoice total
-    type: decimal
-  tax_value:
-    display: Tax Value
-    type: decimal
-  currency:
-    display: Currency
-    type: string
+    description: Unique invoice/document identifier
   sales_order:
     display: Sales Order
-    description: Originating sales order
     type: string
+    required: false
+    description: Sales order the invoice originated from
+  customer_po_number:
+    display: Customer PO Number
+    type: string
+    required: false
+    description: Customer purchase order reference
   salesperson:
     display: Salesperson
     type: string
+    required: false
+    description: Salesperson code linked to the invoice
   branch:
     display: Branch
     type: string
+    required: false
+  area:
+    display: Area
+    type: string
+    required: false
+  last_del_note:
+    display: Last Del Note
+    type: string
+    required: false
+  store_number:
+    display: Store Number
+    type: string
+    required: false
+  pod_reference:
+    display: Pod Reference
+    type: string
+    required: false
+  dunning_group:
+    display: Dunning Group
+    type: string
+    required: false
+  invoice_date:
+    display: Invoice Date
+    type: date
+    required: true
+    description: Date the invoice was raised
+  pod_entry_date:
+    display: Pod Entry Date
+    type: date
+    required: false
+  dunning_date:
+    display: Dunning Date
+    type: date
+    required: false
+  next_paym_entry:
+    display: Next Paym Entry
+    type: decimal
+    required: false
+  original_discount_value:
+    display: Original Discount Value
+    type: decimal
+    required: false
+    description: Settlement discount value available at capture
+  outstanding_balance:
+    display: Outstanding Balance
+    type: decimal
+    required: false
+    description: Current unpaid balance of the invoice (local currency)
+  invoice_bal2:
+    display: Invoice Bal2
+    type: decimal
+    required: false
+  invoice_bal3:
+    display: Invoice Bal3
+    type: decimal
+    required: false
+  invoice_year:
+    display: Invoice Year
+    type: decimal
+    required: false
+  invoice_month:
+    display: Invoice Month
+    type: decimal
+    required: false
+  year_inv_bal_zero:
+    display: Year Inv Bal Zero
+    type: decimal
+    required: false
+  month_inv_bal_zero:
+    display: Month Inv Bal Zero
+    type: decimal
+    required: false
+  currency_value:
+    display: Currency Value
+    type: decimal
+    required: false
+  conv_rate:
+    display: Conv Rate
+    type: decimal
+    required: false
+  acc_conv_rate:
+    display: Acc Conv Rate
+    type: decimal
+    required: false
+  triang_rate:
+    display: Triang Rate
+    type: decimal
+    required: false
+  tax_portion:
+    display: Tax Portion
+    type: decimal
+    required: false
+    description: Tax portion of the invoice value
+  next_reval_no:
+    display: Next Reval No
+    type: decimal
+    required: false
+  discount_balance:
+    display: Discount Balance
+    type: decimal
+    required: false
+    description: Remaining settlement discount balance
+  orig_inv_rate:
+    display: Orig Inv Rate
+    type: decimal
+    required: false
+  dunning_status:
+    display: Dunning Status
+    type: decimal
+    required: false
+  taxable_amount:
+    display: Taxable Amount
+    type: decimal
+    required: false
+    description: Original taxable amount of the invoice
+  orig_tax_on_disc:
+    display: Orig Tax On Disc
+    type: decimal
+    required: false
+  signed_invoice_value:
+    display: Signed Invoice Value
+    type: decimal
+    required: false
+    description: Invoice value signed by debit/credit direction
+  signed_discount_value:
+    display: Signed Discount Value
+    type: decimal
+    required: false
+    description: Discount value signed by debit/credit direction
+  signed_tax_portion:
+    display: Signed Tax Portion
+    type: decimal
+    required: false
+    description: Tax portion signed by debit/credit direction
+  orig_taxable_disc:
+    display: Orig Taxable Disc
+    type: decimal
+    required: false
+  dr_cr_tax_disc_portion:
+    display: Dr Cr Tax Disc Portion
+    type: decimal
+    required: false
+  document_type:
+    display: Document Type
+    type: string
+    required: false
+    description: 'Document type (e.g. I=Invoice, C=Credit note, D=Debit note)'
   terms_code:
-    display: Payment Terms
+    display: Terms Code
     type: string
-
-detail_attributes:
-  line_number:
-    display: Line Number
-    type: integer
-  item_code:
-    display: Item Code
+    required: false
+    description: Payment terms code applied to the invoice
+  proof_of_delivery:
+    display: Proof Of Delivery
     type: string
-  quantity:
-    display: Quantity
-    type: decimal
-  net_value:
-    display: Net Value
-    type: decimal
-  cost_value:
-    display: Cost Value
-    type: decimal
-  tax_value:
-    display: Tax Value
-    type: decimal
-  discount:
-    display: Discount
-    type: decimal
-
-relationships:
-  - concept: customer
-    cardinality: many_to_one
-  - concept: sales_order
-    cardinality: many_to_one
-  - concept: payment
-    cardinality: one_to_many
-  - concept: inventory_item
-    cardinality: many_to_many
+    required: false
+  post_currency:
+    display: Post Currency
+    type: string
+    required: false
+  mul_div:
+    display: Mul Div
+    type: string
+    required: false
+  account_cur:
+    display: Account Cur
+    type: string
+    required: false
+  acc_mul_div:
+    display: Acc Mul Div
+    type: string
+    required: false
+  triang_currency:
+    display: Triang Currency
+    type: string
+    required: false
+  triang_mul_div:
+    display: Triang Mul Div
+    type: string
+    required: false
+  retention_inv:
+    display: Retention Inv
+    type: string
+    required: false
+  tax_status:
+    display: Tax Status
+    type: string
+    required: false
+  fix_exchange_rate:
+    display: Fix Exchange Rate
+    type: string
+    required: false
+  tax_code:
+    display: Tax Code
+    type: string
+    required: false
+    description: Tax code applied to the invoice
+  payment_run_flag:
+    display: Payment Run Flag
+    type: string
+    required: false
+  collection_run_flag:
+    display: Collection Run Flag
+    type: string
+    required: false
+  invoice_pdc_flag:
+    display: Invoice Pdc Flag
+    type: string
+    required: false
+  elect_inv_status:
+    display: Elect Inv Status
+    type: string
+    required: false

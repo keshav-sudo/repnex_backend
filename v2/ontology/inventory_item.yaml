@@ -1,129 +1,81 @@
-# Business Concept: Inventory Item / Part
-# A product, material, or SKU tracked in inventory.
-
 concept: inventory_item
 display_name: Inventory Item
 module: inventory
 description: >
-  A physical product, raw material, or finished good tracked in the
-  inventory system. Known as "Stock Code" in SYSPRO, "Part" in Epicor.
-
+  A stock item master record with, via the warehouse balance table, 
+  on-hand/allocated quantities and unit cost per warehouse. SYSPRO mapping 
+  uses the column subset verified in the working template corpus, because 
+  InvMaster/InvWarehouse were not included in the provided schema file.
 synonyms:
-  - part
-  - product
-  - stock code
   - stock item
-  - SKU
-  - material
-  - component
+  - stock code
   - item
-  - finished good
-  - raw material
-
-attributes:
-  code:
-    display: Item Code
-    description: Unique identifier (stock code / part number)
+  - product
+  - sku
+  - material
+header_attributes:
+  stock_code:
+    display: Stock Code
     type: string
     required: true
-
+    description: Unique stock/item identifier
   description:
     display: Description
-    description: Full item description
     type: string
     required: true
-
-  short_description:
-    display: Short Description
-    description: Abbreviated description
-    type: string
-
+    description: Description of the stock item
   product_class:
     display: Product Class
-    description: Classification grouping
     type: string
-
-  unit_of_measure:
-    display: Unit of Measure
-    description: Default UOM (Each, Kg, etc.)
+    required: false
+    description: Product class the item belongs to
+  abc_class:
+    display: ABC Class
     type: string
-
-  item_type:
-    display: Item Type
-    description: Stocked, Non-stocked, Phantom, etc.
+    required: false
+    description: ABC usage classification of the item
+  buyer:
+    display: Buyer
     type: string
-
-  cost:
+    required: false
+    description: Buyer responsible for the item
+  date_last_sale:
+    display: Date of Last Sale
+    type: date
+    required: false
+    description: Date of the most recent sale of the item
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Warehouse code holding the stock
+  quantity_on_hand:
+    display: Quantity On Hand
+    type: decimal
+    required: false
+    description: Physical quantity on hand in the warehouse
+  quantity_allocated:
+    display: Quantity Allocated
+    type: decimal
+    required: false
+    description: Quantity allocated to orders
+  minimum_quantity:
+    display: Minimum Quantity
+    type: decimal
+    required: false
+    description: Minimum/safety stock quantity
+  unit_cost:
     display: Unit Cost
-    description: Standard or average cost
     type: decimal
-
-  selling_price:
-    display: Selling Price
-    description: Default selling price
+    required: false
+    description: Unit cost of the item in the warehouse
+  quantity_available:
+    display: Quantity Available
     type: decimal
-
-  weight:
-    display: Weight
-    description: Unit weight
+    required: false
+    description: On-hand less allocated quantity (calculated)
+  stock_value:
+    display: Stock Value
     type: decimal
-
-  volume:
-    display: Volume
-    description: Unit volume
-    type: decimal
-
-  lead_time:
-    display: Lead Time
-    description: Procurement or manufacturing lead time in days
-    type: integer
-
-  reorder_point:
-    display: Reorder Point
-    description: Minimum stock level before reorder
-    type: decimal
-
-  on_hand_qty:
-    display: On Hand Quantity
-    description: Total quantity in stock
-    type: decimal
-
-  on_order_qty:
-    display: On Order Quantity
-    description: Quantity on purchase orders
-    type: decimal
-
-  allocated_qty:
-    display: Allocated Quantity
-    description: Quantity allocated to sales/jobs
-    type: decimal
-
-  available_qty:
-    display: Available Quantity
-    description: On hand minus allocated
-    type: decimal
-
-relationships:
-  - concept: warehouse
-    cardinality: many_to_many
-    description: Item is stocked across warehouses
-
-  - concept: sales_order
-    cardinality: one_to_many
-    description: Item appears on sales order lines
-
-  - concept: purchase_order
-    cardinality: one_to_many
-    description: Item appears on purchase order lines
-
-  - concept: bom
-    cardinality: one_to_many
-    description: Item has a bill of materials
-
-  - concept: stock_movement
-    cardinality: one_to_many
-    description: Item has stock transaction history
-
-  - concept: supplier
-    cardinality: many_to_many
-    description: Item can be supplied by multiple vendors
+    required: false
+    description: On-hand quantity times unit cost (calculated)

@@ -1,11 +1,42 @@
-# SYSPRO ERP Adapter Meta Information
 erp: syspro
-display_name: SYSPRO ERP
+display_name: SYSPRO
 dialect: mssql
-naming_convention: module_prefix_pascal
-table_prefix: ""
-schema_name: dbo
-multi_company_mode: separate_database
-notes: >
-  SYSPRO database tables are generally prefixed by module abbreviation (e.g. ArCustomer, SorMaster).
-  Each company is typically stored in its own separate database (e.g. SysproEdu2, SysproCompanyA).
+database: SysproEdu2
+schema: dbo
+description: >
+  SYSPRO ERP adapter (SQL Server / T-SQL). Table and column names are
+  case-exact against the customer-provided INFORMATION_SCHEMA extract for
+  database SysproEdu2 (transcribed to v2/schema/syspro_schema.json).
+  InvMaster / InvWarehouse were not present in that extract, so their
+  column subset is verified from the working template corpus instead.
+default_aliases:
+  ap_invoice: i
+  supplier: s
+  ar_invoice: t
+  customer: c
+  gl_transaction: g
+  inventory_item: m
+auxiliary_aliases:
+  ArCustomerBal: b
+  InvWarehouse: w
+conventions:
+  quote_style: none          # SYSPRO tables need no bracket quoting
+  date_function: GETDATE()
+  limit_syntax: "TOP %(limit)s"
+concepts_mapped:
+  - ap_invoice
+  - supplier
+  - ar_invoice
+  - customer
+  - gl_transaction
+  - inventory_item
+notes:
+  ar_invoice: >
+    ArInvoice in SysproEdu2 has no DueDate, OrigInvValue, Currency or
+    MthInvBal1 columns. Outstanding balance maps to InvoiceBal1, invoice
+    value to DrCrInvoiceValue (signed), currency detail to PostCurrency /
+    CurrencyValue, and due dates must be derived from TermsCode.
+  gl_transaction: >
+    Customer/supplier joins use PrimaryCustomer / PrimarySupplier per the
+    integration spec; SubModCustomer / SubModSupplier are alternative keys
+    populated by the originating sub-module posting.

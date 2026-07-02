@@ -1,48 +1,352 @@
-# Business Concept: GL Transaction
 concept: gl_transaction
 display_name: GL Transaction
 module: general_ledger
 description: >
-  A posted financial transaction in the general ledger.
-
+  A posted General Ledger transaction line, carrying the GL account, 
+  financial year/period, journal, value and full sub-module cross-references 
+  (AP/AR invoices, suppliers, customers, banks, assets, jobs, stock).
 synonyms:
+  - general ledger transaction
+  - gl entry
   - journal entry
-  - GL entry
-  - ledger entry
-  - journal posting
-  - GL posting
-
-attributes:
-  journal_number:
-    display: Journal Number
-    type: string
-  gl_code:
-    display: GL Code
+  - ledger posting
+  - gl detail
+header_attributes:
+  gl_account:
+    display: GL Account
     type: string
     required: true
-  year:
-    display: Financial Year
-    type: integer
-  period:
-    display: Financial Period
-    type: integer
-  transaction_date:
-    display: Transaction Date
-    type: date
-  value:
-    display: Value
-    type: decimal
+    description: General Ledger account code
   reference:
     display: Reference
     type: string
-  description:
-    display: Description
+    required: false
+    description: Reference captured with the entry
+  comment:
+    display: Comment
     type: string
+    required: false
+    description: Free-format comment on the entry
+  origin_zoom_key:
+    display: Origin Zoom Key
+    type: string
+    required: false
+  submodule_ar_invoice:
+    display: Sub-module AR Invoice
+    type: string
+    required: false
+    description: AR invoice key from the originating sub-module
+  submodule_ap_invoice:
+    display: Sub-module AP Invoice
+    type: string
+    required: false
+    description: AP invoice key from the originating sub-module
+  submodule_supplier:
+    display: Sub-module Supplier
+    type: string
+    required: false
+    description: Supplier key from the originating sub-module
+  submodule_customer:
+    display: Sub-module Customer
+    type: string
+    required: false
+    description: Customer key from the originating sub-module
+  sub_mod_ref:
+    display: Sub Mod Ref
+    type: string
+    required: false
+  sub_mod_check:
+    display: Sub Mod Check
+    type: string
+    required: false
+  submodule_bank:
+    display: Sub-module Bank
+    type: string
+    required: false
+    description: Bank from the originating sub-module
+  sub_mod_ap_branch:
+    display: Sub Mod Ap Branch
+    type: string
+    required: false
+  sub_mod_ar_branch:
+    display: Sub Mod Ar Branch
+    type: string
+    required: false
+  sub_mod_wh:
+    display: Sub Mod Wh
+    type: string
+    required: false
+  submodule_stock_code:
+    display: Sub-module Stock Code
+    type: string
+    required: false
+    description: Stock code from the originating sub-module
+  sub_mod_jnl_area:
+    display: Sub Mod Jnl Area
+    type: string
+    required: false
+  sub_mod_trans_desc:
+    display: Sub Mod Trans Desc
+    type: string
+    required: false
+  sub_mod_asset:
+    display: Sub Mod Asset
+    type: string
+    required: false
+  sub_mod_grn:
+    display: Sub Mod Grn
+    type: string
+    required: false
+  submodule_job:
+    display: Sub-module Job
+    type: string
+    required: false
+    description: Job from the originating sub-module
+  sub_mod_work_center:
+    display: Sub Mod Work Center
+    type: string
+    required: false
+  sub_mod_employee:
+    display: Sub Mod Employee
+    type: string
+    required: false
+  submodule_sales_order:
+    display: Sub-module Sales Order
+    type: string
+    required: false
+    description: Sales order from the originating sub-module
+  payment_reference:
+    display: Payment Reference
+    type: string
+    required: false
+  sub_mod_wip_branch:
+    display: Sub Mod Wip Branch
+    type: string
+    required: false
+  primary_supplier:
+    display: Primary Supplier
+    type: string
+    required: false
+    description: Supplier cross-reference for group/inter-company postings
+  payment_number_ar:
+    display: Payment Number Ar
+    type: string
+    required: false
+  primary_customer:
+    display: Primary Customer
+    type: string
+    required: false
+    description: Customer cross-reference for group/inter-company postings
+  payment_number_ap:
+    display: Payment Number Ap
+    type: string
+    required: false
+  journal_date:
+    display: Journal Date
+    type: date
+    required: false
+    description: Date of the journal
+  transaction_date:
+    display: Transaction Date
+    type: date
+    required: false
+    description: Effective transaction date
+  document_date:
+    display: Document Date
+    type: date
+    required: false
+    description: Source document date
+  gl_year:
+    display: GL Year
+    type: decimal
+    required: false
+    description: Financial year of the posting
+  gl_period:
+    display: GL Period
+    type: decimal
+    required: false
+    description: Financial period of the posting
+  gl_line:
+    display: GL Line
+    type: decimal
+    required: false
+    description: Transaction line number within the account
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Journal number the entry belongs to
+  transaction_value:
+    display: Transaction Value
+    type: decimal
+    required: true
+    description: Posted value of the entry (local currency; sign indicates debit/credit)
+  entry_group:
+    display: Entry Group
+    type: decimal
+    required: false
+  currency_value:
+    display: Currency Value
+    type: decimal
+    required: false
+  conv_rate:
+    display: Conv Rate
+    type: decimal
+    required: false
+  acc_conv_rate:
+    display: Acc Conv Rate
+    type: decimal
+    required: false
+  triang_rate:
+    display: Triang Rate
+    type: decimal
+    required: false
+  analysis_entry:
+    display: Analysis Entry
+    type: decimal
+    required: false
+  alternate_rate:
+    display: Alternate Rate
+    type: decimal
+    required: false
+  sub_mod_journal:
+    display: Sub Mod Journal
+    type: decimal
+    required: false
+  sub_mod_invoice_reg:
+    display: Sub Mod Invoice Reg
+    type: decimal
+    required: false
+  sub_mod_asset_reg:
+    display: Sub Mod Asset Reg
+    type: decimal
+    required: false
+  sub_mod_operation:
+    display: Sub Mod Operation
+    type: decimal
+    required: false
+  doc_date_rate:
+    display: Doc Date Rate
+    type: decimal
+    required: false
+  pay_entry_value:
+    display: Pay Entry Value
+    type: decimal
+    required: false
+  pay_conv_rate:
+    display: Pay Conv Rate
+    type: decimal
+    required: false
+  grp_pay_value:
+    display: Grp Pay Value
+    type: decimal
+    required: false
+  grp_pay_conv_rate:
+    display: Grp Pay Conv Rate
+    type: decimal
+    required: false
+  xref_ch_register:
+    display: Xref Ch Register
+    type: decimal
+    required: false
+  dimension_entry:
+    display: Dimension Entry
+    type: decimal
+    required: false
+  dimension_line:
+    display: Dimension Line
+    type: decimal
+    required: false
+  company:
+    display: Company
+    type: string
+    required: false
+  line:
+    display: Line
+    type: string
+    required: false
   source:
-    display: Source Module
-    description: AR, AP, CB, INV, etc.
+    display: Source
     type: string
-
-relationships:
-  - concept: gl_account
-    cardinality: many_to_one
+    required: false
+    description: Source module indicator of the posting
+  provisional_flag:
+    display: Provisional Flag
+    type: string
+    required: false
+  maintained_flag:
+    display: Maintained Flag
+    type: string
+    required: false
+  origin:
+    display: Origin
+    type: string
+    required: false
+  post_currency:
+    display: Post Currency
+    type: string
+    required: false
+  mul_div:
+    display: Mul Div
+    type: string
+    required: false
+  account_cur:
+    display: Account Cur
+    type: string
+    required: false
+  acc_mul_div:
+    display: Acc Mul Div
+    type: string
+    required: false
+  triang_currency:
+    display: Triang Currency
+    type: string
+    required: false
+  triang_mul_div:
+    display: Triang Mul Div
+    type: string
+    required: false
+  reconciled:
+    display: Reconciled
+    type: string
+    required: false
+  mult_cur_pay:
+    display: Mult Cur Pay
+    type: string
+    required: false
+  pay_currency:
+    display: Pay Currency
+    type: string
+    required: false
+  pay_post_mul_div:
+    display: Pay Post Mul Div
+    type: string
+    required: false
+  group_payment:
+    display: Group Payment
+    type: string
+    required: false
+  grp_pay_currency:
+    display: Grp Pay Currency
+    type: string
+    required: false
+  grp_pay_post_mul_div:
+    display: Grp Pay Post Mul Div
+    type: string
+    required: false
+  group_inter_company:
+    display: Group Inter Company
+    type: string
+    required: false
+  inter_company_trx:
+    display: Inter Company Trx
+    type: string
+    required: false
+  primary_company:
+    display: Primary Company
+    type: string
+    required: false
+  secondary_company:
+    display: Secondary Company
+    type: string
+    required: false

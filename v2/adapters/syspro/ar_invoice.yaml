@@ -1,29 +1,63 @@
-# SYSPRO Mapping for AR Invoice
 concept: ar_invoice
-header_table: ArInvoice
-detail_table: ArTrnDetail
-primary_key: Invoice
-
-header_fields:
-  invoice_number: Invoice
-  customer_code: Customer
-  invoice_date: InvoiceDate
-  due_date: InvoiceDate # fallback, SYSPRO TermsCode dictates due date
-  document_type: DocumentType
-  invoice_balance: "(InvoiceBal1 + InvoiceBal2 + InvoiceBal3)"
-  original_value: DrCrInvoiceValue
-  tax_value: TaxPortion
-  currency: PostCurrency
-  sales_order: SalesOrder
-  salesperson: Salesperson
-  branch: Branch
-  terms_code: TermsCode
-
-detail_fields:
-  line_number: DetailLine
-  item_code: StockCode
-  quantity: QtyInvoiced
-  net_value: NetSalesValue
-  cost_value: CostValue
-  tax_value: TaxValue
-  discount: DiscValue
+table: ArInvoice
+alias: t
+fields:
+  customer_code: t.Customer
+  invoice_number: t.Invoice
+  sales_order: t.SalesOrder
+  customer_po_number: t.CustomerPoNumber
+  salesperson: t.Salesperson
+  branch: t.Branch
+  area: t.Area
+  last_del_note: t.LastDelNote
+  store_number: t.StoreNumber
+  pod_reference: t.PodReference
+  dunning_group: t.DunningGroup
+  invoice_date: t.InvoiceDate
+  pod_entry_date: t.PodEntryDate
+  dunning_date: t.DunningDate
+  next_paym_entry: t.NextPaymEntry
+  original_discount_value: t.OrigDiscValue
+  outstanding_balance: t.InvoiceBal1
+  invoice_bal2: t.InvoiceBal2
+  invoice_bal3: t.InvoiceBal3
+  invoice_year: t.InvoiceYear
+  invoice_month: t.InvoiceMonth
+  year_inv_bal_zero: t.YearInvBalZero
+  month_inv_bal_zero: t.MonthInvBalZero
+  currency_value: t.CurrencyValue
+  conv_rate: t.ConvRate
+  acc_conv_rate: t.AccConvRate
+  triang_rate: t.TriangRate
+  tax_portion: t.TaxPortion
+  next_reval_no: t.NextRevalNo
+  discount_balance: t.DiscBal
+  orig_inv_rate: t.OrigInvRate
+  dunning_status: t.DunningStatus
+  taxable_amount: t.OrigTaxableAmt
+  orig_tax_on_disc: t.OrigTaxOnDisc
+  signed_invoice_value: t.DrCrInvoiceValue
+  signed_discount_value: t.DrCrDiscValue
+  signed_tax_portion: t.DrCrTaxPortion
+  orig_taxable_disc: t.OrigTaxableDisc
+  dr_cr_tax_disc_portion: t.DrCrTaxDiscPortion
+  document_type: t.DocumentType
+  terms_code: t.TermsCode
+  proof_of_delivery: t.ProofOfDelivery
+  post_currency: t.PostCurrency
+  mul_div: t.MulDiv
+  account_cur: t.AccountCur
+  acc_mul_div: t.AccMulDiv
+  triang_currency: t.TriangCurrency
+  triang_mul_div: t.TriangMulDiv
+  retention_inv: t.RetentionInv
+  tax_status: t.TaxStatus
+  fix_exchange_rate: t.FixExchangeRate
+  tax_code: t.TaxCode
+  payment_run_flag: t.PaymentRunFlag
+  collection_run_flag: t.CollectionRunFlag
+  invoice_pdc_flag: t.InvoicePdcFlag
+  elect_inv_status: t.ElectInvStatus
+default_filters:
+  invoices_only: 't.DocumentType = ''I'''
+  outstanding_only: 't.InvoiceBal1 <> 0'

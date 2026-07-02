@@ -1,177 +1,1052 @@
-# Business Concept: Customer
-# The entity that purchases goods or services from the organization.
-
 concept: customer
 display_name: Customer
 module: accounts_receivable
 description: >
-  A person or organization that buys products or services.
-  Central entity in AR, Sales, and CRM modules.
-
+  A customer (debtor) master record in Accounts Receivable, holding 
+  identification, credit control, contact, address and activity detail, plus 
+  - via the balance table - current balances, ageing buckets and sales 
+  statistics.
 synonyms:
+  - debtor
   - client
   - account
-  - debtor
   - buyer
-  - customer account
-  - sold-to party
-
-attributes:
-  code:
+header_attributes:
+  customer_code:
     display: Customer Code
-    description: Unique identifier for the customer
     type: string
     required: true
-
-  name:
+    description: Unique customer identifier
+  customer_name:
     display: Customer Name
-    description: Full legal or trading name
     type: string
     required: true
-
-  short_name:
-    display: Short Name
-    description: Abbreviated name for reports
+    description: Trading name of the customer
+  customer_short_name:
+    display: Customer Short Name
     type: string
-
-  credit_limit:
-    display: Credit Limit
-    description: Maximum allowed outstanding balance
-    type: decimal
-
-  credit_status:
-    display: Credit Status
-    description: Current credit standing (Active, On Hold, etc.)
+    required: false
+    description: Short/sort name of the customer
+  master_account:
+    display: Master Account
     type: string
-
-  currency:
-    display: Currency
-    description: Default trading currency
+    required: false
+    description: Master (head-office) account this customer rolls up to
+  store_number:
+    display: Store Number
     type: string
-
-  branch:
-    display: Branch
-    description: Assigned branch or division
-    type: string
-
-  area:
-    display: Area / Territory
-    description: Geographic area or sales territory
-    type: string
-
+    required: false
   salesperson:
     display: Salesperson
-    description: Primary assigned salesperson
     type: string
-
+    required: false
+  salesperson1:
+    display: Salesperson1
+    type: string
+    required: false
+  salesperson2:
+    display: Salesperson2
+    type: string
+    required: false
+  salesperson3:
+    display: Salesperson3
+    type: string
+    required: false
+  price_code:
+    display: Price Code
+    type: string
+    required: false
   customer_class:
-    display: Customer Class / Group
-    description: Classification or grouping code
+    display: Customer Class
     type: string
-
-  tax_status:
-    display: Tax Status
-    description: Tax exemption or liability status
+    required: false
+  branch:
+    display: Branch
     type: string
-
-  email:
-    display: Email
-    description: Primary contact email
+    required: false
+  inv_disc_code:
+    display: Inv Disc Code
     type: string
-
+    required: false
+  area:
+    display: Area
+    type: string
+    required: false
+  line_disc_code:
+    display: Line Disc Code
+    type: string
+    required: false
+  tax_exempt_number:
+    display: Tax Exempt Number
+    type: string
+    required: false
+  special_instrs:
+    display: Special Instrs
+    type: string
+    required: false
+  price_category_table:
+    display: Price Category Table
+    type: string
+    required: false
   telephone:
     display: Telephone
-    description: Primary contact number
     type: string
-
-  on_hold:
-    display: On Hold
-    description: Whether the customer account is on hold
-    type: boolean
-
+    required: false
+  contact:
+    display: Contact
+    type: string
+    required: false
+  add_telephone:
+    display: Add Telephone
+    type: string
+    required: false
+  fax:
+    display: Fax
+    type: string
+    required: false
+  telex:
+    display: Telex
+    type: string
+    required: false
+  user_field1:
+    display: User Field1
+    type: string
+    required: false
+  gst_exempt_num:
+    display: Gst Exempt Num
+    type: string
+    required: false
+  buying_group1:
+    display: Buying Group1
+    type: string
+    required: false
+  buying_group2:
+    display: Buying Group2
+    type: string
+    required: false
+  buying_group3:
+    display: Buying Group3
+    type: string
+    required: false
+  buying_group4:
+    display: Buying Group4
+    type: string
+    required: false
+  buying_group5:
+    display: Buying Group5
+    type: string
+    required: false
+  shipping_instrs:
+    display: Shipping Instrs
+    type: string
+    required: false
+  shipping_instrs_cod:
+    display: Shipping Instrs Cod
+    type: string
+    required: false
+  inv_comment_code:
+    display: Inv Comment Code
+    type: string
+    required: false
+  edi_sender_code:
+    display: Edi Sender Code
+    type: string
+    required: false
+  email:
+    display: Email
+    type: string
+    required: false
+  high_inv:
+    display: High Inv
+    type: string
+    required: false
+  doc_fax:
+    display: Doc Fax
+    type: string
+    required: false
+  doc_fax_contact:
+    display: Doc Fax Contact
+    type: string
+    required: false
+  sold_to_addr1:
+    display: Sold To Addr1
+    type: string
+    required: false
+  sold_to_addr2:
+    display: Sold To Addr2
+    type: string
+    required: false
+  sold_to_addr3:
+    display: Sold To Addr3
+    type: string
+    required: false
+  sold_to_addr3_loc:
+    display: Sold To Addr3 Loc
+    type: string
+    required: false
+  sold_to_addr4:
+    display: Sold To Addr4
+    type: string
+    required: false
+  sold_to_addr5:
+    display: Sold To Addr5
+    type: string
+    required: false
+  sold_postal_code:
+    display: Sold Postal Code
+    type: string
+    required: false
+  ship_to_addr1:
+    display: Ship To Addr1
+    type: string
+    required: false
+  ship_to_addr2:
+    display: Ship To Addr2
+    type: string
+    required: false
+  ship_to_addr3:
+    display: Ship To Addr3
+    type: string
+    required: false
+  ship_to_addr3_loc:
+    display: Ship To Addr3 Loc
+    type: string
+    required: false
+  ship_to_addr4:
+    display: Ship To Addr4
+    type: string
+    required: false
+  ship_to_addr5:
+    display: Ship To Addr5
+    type: string
+    required: false
+  ship_postal_code:
+    display: Ship Postal Code
+    type: string
+    required: false
+  company_tax_number:
+    display: Company Tax Number
+    type: string
+    required: false
+  route_code:
+    display: Route Code
+    type: string
+    required: false
+  sales_warehouse:
+    display: Sales Warehouse
+    type: string
+    required: false
+  minimum_order_chg_cod:
+    display: Minimum Order Chg Cod
+    type: string
+    required: false
+  shipping_location:
+    display: Shipping Location
+    type: string
+    required: false
+  dunning_group:
+    display: Dunning Group
+    type: string
+    required: false
+  dunning_fax:
+    display: Dunning Fax
+    type: string
+    required: false
+  dunning_email:
+    display: Dunning Email
+    type: string
+    required: false
+  price_group:
+    display: Price Group
+    type: string
+    required: false
+  date_last_sale:
+    display: Date of Last Sale
+    type: date
+    required: false
+    description: Date of the most recent sale to the customer
+  date_last_payment:
+    display: Date of Last Payment
+    type: date
+    required: false
+    description: Date of the most recent payment from the customer
   date_added:
     display: Date Added
-    description: Date customer was created in the system
     type: date
-
-  last_sale_date:
-    display: Last Sale Date
-    description: Date of most recent sale
-    type: date
-
-  last_payment_date:
-    display: Last Payment Date
-    description: Date of most recent payment received
-    type: date
-
-# Balance / financial sub-attributes
-balance_attributes:
+    required: false
+    description: Date the customer record was created
+  credit_limit:
+    display: Credit Limit
+    type: decimal
+    required: false
+    description: Approved credit limit for the customer
+  invoice_count:
+    display: Invoice Count
+    type: decimal
+    required: false
+  user_field2:
+    display: User Field2
+    type: decimal
+    required: false
+  outstanding_order_value:
+    display: Outstanding Order Value
+    type: decimal
+    required: false
+    description: Value of open sales orders not yet invoiced
+  number_outstanding_orders:
+    display: Number of Outstanding Orders
+    type: decimal
+    required: false
+    description: Count of open sales orders
+  highest_balance:
+    display: Highest Balance
+    type: decimal
+    required: false
+    description: Highest balance ever reached on the account
+  rel_ord_os_value:
+    display: Rel Ord Os Value
+    type: decimal
+    required: false
+  high_inv_days:
+    display: High Inv Days
+    type: decimal
+    required: false
+  sold_to_gps_lat:
+    display: Sold To Gps Lat
+    type: decimal
+    required: false
+  sold_to_gps_long:
+    display: Sold To Gps Long
+    type: decimal
+    required: false
+  ship_to_gps_lat:
+    display: Ship To Gps Lat
+    type: decimal
+    required: false
+  ship_to_gps_long:
+    display: Ship To Gps Long
+    type: decimal
+    required: false
+  transaction_nature:
+    display: Transaction Nature
+    type: decimal
+    required: false
+  transaction_nature_c:
+    display: Transaction Nature C
+    type: decimal
+    required: false
+  route_distance:
+    display: Route Distance
+    type: decimal
+    required: false
+  minimum_order_value:
+    display: Minimum Order Value
+    type: decimal
+    required: false
+  date_format:
+    display: Date Format
+    type: decimal
+    required: false
+  decimal_format:
+    display: Decimal Format
+    type: decimal
+    required: false
+  exempt_fin_chg:
+    display: Exempt Fin Chg
+    type: string
+    required: false
+  maint_history:
+    display: Maint History
+    type: string
+    required: false
+  customer_type:
+    display: Customer Type
+    type: string
+    required: false
+  prt_master_add:
+    display: Prt Master Add
+    type: string
+    required: false
+  credit_status:
+    display: Credit Status
+    type: string
+    required: false
+    description: Credit status/check code for the customer
+  terms_code:
+    display: Terms Code
+    type: string
+    required: false
+  balance_type:
+    display: Balance Type
+    type: string
+    required: false
+  tax_status:
+    display: Tax Status
+    type: string
+    required: false
+  telephone_extn:
+    display: Telephone Extn
+    type: string
+    required: false
+  currency:
+    display: Currency
+    type: string
+    required: false
+  gst_exempt_flag:
+    display: Gst Exempt Flag
+    type: string
+    required: false
+  gst_level:
+    display: Gst Level
+    type: string
+    required: false
+  detail_move_reqd:
+    display: Detail Move Reqd
+    type: string
+    required: false
+  interface_flag:
+    display: Interface Flag
+    type: string
+    required: false
+  contract_prc_reqd:
+    display: Contract Prc Reqd
+    type: string
+    required: false
+  statement_reqd:
+    display: Statement Reqd
+    type: string
+    required: false
+  back_ord_reqd:
+    display: Back Ord Reqd
+    type: string
+    required: false
+  state_code:
+    display: State Code
+    type: string
+    required: false
+  stock_interchange:
+    display: Stock Interchange
+    type: string
+    required: false
+  maint_last_prc_paid:
+    display: Maint Last Prc Paid
+    type: string
+    required: false
+  ibt_customer:
+    display: Ibt Customer
+    type: string
+    required: false
+  so_default_doc:
+    display: So Default Doc
+    type: string
+    required: false
+  counter_sls_only:
+    display: Counter Sls Only
+    type: string
+    required: false
+  payment_status:
+    display: Payment Status
+    type: string
+    required: false
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+  on_hold:
+    display: On Hold
+    type: string
+    required: false
+    description: Whether the customer account is on hold
+  edi_flag:
+    display: Edi Flag
+    type: string
+    required: false
+  so_default_type:
+    display: So Default Type
+    type: string
+    required: false
+  apply_ord_disc:
+    display: Apply Ord Disc
+    type: string
+    required: false
+  apply_line_disc:
+    display: Apply Line Disc
+    type: string
+    required: false
+  fax_invoices:
+    display: Fax Invoices
+    type: string
+    required: false
+  fax_statements:
+    display: Fax Statements
+    type: string
+    required: false
+  state:
+    display: State
+    type: string
+    required: false
+  county_zip:
+    display: County Zip
+    type: string
+    required: false
+  city:
+    display: City
+    type: string
+    required: false
+  state1:
+    display: State1
+    type: string
+    required: false
+  county_zip1:
+    display: County Zip1
+    type: string
+    required: false
+  city1:
+    display: City1
+    type: string
+    required: false
+  default_ord_type:
+    display: Default Ord Type
+    type: string
+    required: false
+  po_number_mandatory:
+    display: Po Number Mandatory
+    type: string
+    required: false
+  credit_check_flag:
+    display: Credit Check Flag
+    type: string
+    required: false
+  delivery_terms:
+    display: Delivery Terms
+    type: string
+    required: false
+  delivery_terms_c:
+    display: Delivery Terms C
+    type: string
+    required: false
+  fax_quotes:
+    display: Fax Quotes
+    type: string
+    required: false
+  tpm_customer_flag:
+    display: Tpm Customer Flag
+    type: string
+    required: false
+  tpm_pricing_flag:
+    display: Tpm Pricing Flag
+    type: string
+    required: false
+  ar_statement_no:
+    display: Ar Statement No
+    type: string
+    required: false
+  tpm_credit_check:
+    display: Tpm Credit Check
+    type: string
+    required: false
+  whole_order_ship_flag:
+    display: Whole Order Ship Flag
+    type: string
+    required: false
+  uk_vat_flag:
+    display: Uk Vat Flag
+    type: string
+    required: false
+  uk_currency:
+    display: Uk Currency
+    type: string
+    required: false
+  language_code:
+    display: Language Code
+    type: string
+    required: false
+  alt_method_flag:
+    display: Alt Method Flag
+    type: string
+    required: false
+  sales_allowed:
+    display: Sales Allowed
+    type: string
+    required: false
+  unapp_pay_allowed:
+    display: Unapp Pay Allowed
+    type: string
+    required: false
+  payments_allowed:
+    display: Payments Allowed
+    type: string
+    required: false
+  quotes_allowed:
+    display: Quotes Allowed
+    type: string
+    required: false
+  cr_notes_allowed:
+    display: Cr Notes Allowed
+    type: string
+    required: false
+  dr_notes_allowed:
+    display: Dr Notes Allowed
+    type: string
+    required: false
+  query_allowed:
+    display: Query Allowed
+    type: string
+    required: false
+  primary_customer:
+    display: Primary Customer
+    type: string
+    required: false
+  third_party_tax_integ:
+    display: Third Party Tax Integ
+    type: string
+    required: false
+  pick_marshalling:
+    display: Pick Marshalling
+    type: string
+    required: false
+  dispatch_whole_so:
+    display: Dispatch Whole So
+    type: string
+    required: false
+  elect_inv_required:
+    display: Elect Inv Required
+    type: string
+    required: false
+  elect_inv_print:
+    display: Elect Inv Print
+    type: string
+    required: false
   current_balance:
     display: Current Balance
-    description: Total outstanding balance
     type: decimal
-
+    required: false
+    description: Current outstanding receivable balance (local currency)
+  current_balance2:
+    display: Current Balance2
+    type: decimal
+    required: false
+  current_balance3:
+    display: Current Balance3
+    type: decimal
+    required: false
+  bal_brought_fwd1:
+    display: Bal Brought Fwd1
+    type: decimal
+    required: false
+  bal_brought_fwd2:
+    display: Bal Brought Fwd2
+    type: decimal
+    required: false
+  bal_brought_fwd3:
+    display: Bal Brought Fwd3
+    type: decimal
+    required: false
+  mtd_sales1:
+    display: Mtd Sales1
+    type: decimal
+    required: false
+  mtd_sales2:
+    display: Mtd Sales2
+    type: decimal
+    required: false
+  mtd_sales3:
+    display: Mtd Sales3
+    type: decimal
+    required: false
+  mtd_profit1:
+    display: Mtd Profit1
+    type: decimal
+    required: false
+  mtd_profit2:
+    display: Mtd Profit2
+    type: decimal
+    required: false
+  mtd_profit3:
+    display: Mtd Profit3
+    type: decimal
+    required: false
+  mtd_num_invoices1:
+    display: Mtd Num Invoices1
+    type: decimal
+    required: false
+  mtd_num_invoices2:
+    display: Mtd Num Invoices2
+    type: decimal
+    required: false
+  mtd_num_invoices3:
+    display: Mtd Num Invoices3
+    type: decimal
+    required: false
+  mtd_invoice_val1:
+    display: Mtd Invoice Val1
+    type: decimal
+    required: false
+  mtd_invoice_val2:
+    display: Mtd Invoice Val2
+    type: decimal
+    required: false
+  mtd_invoice_val3:
+    display: Mtd Invoice Val3
+    type: decimal
+    required: false
+  mtd_num_paym_val1:
+    display: Mtd Num Paym Val1
+    type: decimal
+    required: false
+  mtd_num_paym_val2:
+    display: Mtd Num Paym Val2
+    type: decimal
+    required: false
+  mtd_num_paym_val3:
+    display: Mtd Num Paym Val3
+    type: decimal
+    required: false
+  mtd_paym_val1:
+    display: Mtd Paym Val1
+    type: decimal
+    required: false
+  mtd_paym_val2:
+    display: Mtd Paym Val2
+    type: decimal
+    required: false
+  mtd_paym_val3:
+    display: Mtd Paym Val3
+    type: decimal
+    required: false
+  mtd_num_discount1:
+    display: Mtd Num Discount1
+    type: decimal
+    required: false
+  mtd_num_discount2:
+    display: Mtd Num Discount2
+    type: decimal
+    required: false
+  mtd_num_discount3:
+    display: Mtd Num Discount3
+    type: decimal
+    required: false
+  mtd_discount_val1:
+    display: Mtd Discount Val1
+    type: decimal
+    required: false
+  mtd_discount_val2:
+    display: Mtd Discount Val2
+    type: decimal
+    required: false
+  mtd_discount_val3:
+    display: Mtd Discount Val3
+    type: decimal
+    required: false
+  mtd_num_adjs1:
+    display: Mtd Num Adjs1
+    type: decimal
+    required: false
+  mtd_num_adjs2:
+    display: Mtd Num Adjs2
+    type: decimal
+    required: false
+  mtd_num_adjs3:
+    display: Mtd Num Adjs3
+    type: decimal
+    required: false
+  mtd_adj_val1:
+    display: Mtd Adj Val1
+    type: decimal
+    required: false
+  mtd_adj_val2:
+    display: Mtd Adj Val2
+    type: decimal
+    required: false
+  mtd_adj_val3:
+    display: Mtd Adj Val3
+    type: decimal
+    required: false
+  mtd_num_cr_memos1:
+    display: Mtd Num Cr Memos1
+    type: decimal
+    required: false
+  mtd_num_cr_memos2:
+    display: Mtd Num Cr Memos2
+    type: decimal
+    required: false
+  mtd_num_cr_memos3:
+    display: Mtd Num Cr Memos3
+    type: decimal
+    required: false
+  mtd_cr_memo_val1:
+    display: Mtd Cr Memo Val1
+    type: decimal
+    required: false
+  mtd_cr_memo_val2:
+    display: Mtd Cr Memo Val2
+    type: decimal
+    required: false
+  mtd_cr_memo_val3:
+    display: Mtd Cr Memo Val3
+    type: decimal
+    required: false
+  mtd_num_dr_memos1:
+    display: Mtd Num Dr Memos1
+    type: decimal
+    required: false
+  mtd_num_dr_memos2:
+    display: Mtd Num Dr Memos2
+    type: decimal
+    required: false
+  mtd_num_dr_memos3:
+    display: Mtd Num Dr Memos3
+    type: decimal
+    required: false
+  mtd_dr_memo_val1:
+    display: Mtd Dr Memo Val1
+    type: decimal
+    required: false
+  mtd_dr_memo_val2:
+    display: Mtd Dr Memo Val2
+    type: decimal
+    required: false
+  mtd_dr_memo_val3:
+    display: Mtd Dr Memo Val3
+    type: decimal
+    required: false
+  mtd_fin_charges1:
+    display: Mtd Fin Charges1
+    type: decimal
+    required: false
+  mtd_fin_charges2:
+    display: Mtd Fin Charges2
+    type: decimal
+    required: false
+  mtd_fin_charges3:
+    display: Mtd Fin Charges3
+    type: decimal
+    required: false
+  mtd_num_tax_relief1:
+    display: Mtd Num Tax Relief1
+    type: decimal
+    required: false
+  mtd_num_tax_relief2:
+    display: Mtd Num Tax Relief2
+    type: decimal
+    required: false
+  mtd_num_tax_relief3:
+    display: Mtd Num Tax Relief3
+    type: decimal
+    required: false
+  mtd_tax_relief_val1:
+    display: Mtd Tax Relief Val1
+    type: decimal
+    required: false
+  mtd_tax_relief_val2:
+    display: Mtd Tax Relief Val2
+    type: decimal
+    required: false
+  mtd_tax_relief_val3:
+    display: Mtd Tax Relief Val3
+    type: decimal
+    required: false
   ytd_sales:
     display: YTD Sales
-    description: Year-to-date sales value
     type: decimal
-
-  prev_year_sales:
-    display: Previous Year Sales
-    description: Prior year total sales
+    required: false
+    description: Sales value year to date
+  ytd_profit:
+    display: YTD Profit
     type: decimal
-
-  outstanding_orders:
-    display: Outstanding Orders Value
-    description: Value of unfulfilled orders
+    required: false
+    description: Profit value year to date
+  prior_year_sales:
+    display: Prior Year Sales
     type: decimal
-
-  aging_current:
-    display: Current Aging
-    description: Invoices not yet due
+    required: false
+    description: Sales value in the prior financial year
+  prior_year_profit:
+    display: Prior Year Profit
     type: decimal
-
-  aging_30:
-    display: 30 Days
-    description: Invoices 1-30 days overdue
+    required: false
+    description: Profit value in the prior financial year
+  average_pay_days:
+    display: Average Pay Days
     type: decimal
-
-  aging_60:
-    display: 60 Days
-    description: Invoices 31-60 days overdue
+    required: false
+    description: Average number of days the customer takes to pay
+  ageing_future:
+    display: Ageing - Future
     type: decimal
-
-  aging_90:
-    display: 90 Days
-    description: Invoices 61-90 days overdue
+    required: false
+    description: Invoice value dated in the future
+  num_future_inv:
+    display: Num Future Inv
     type: decimal
-
-  aging_120:
-    display: 120+ Days
-    description: Invoices over 90 days overdue
+    required: false
+  ageing_current:
+    display: Ageing - Current
     type: decimal
-
-relationships:
-  - concept: sales_order
-    cardinality: one_to_many
-    description: Customer places sales orders
-
-  - concept: ar_invoice
-    cardinality: one_to_many
-    description: Customer has AR invoices
-
-  - concept: payment
-    cardinality: one_to_many
-    description: Customer makes payments
-
-  - concept: quote
-    cardinality: one_to_many
-    description: Customer receives quotes
-
-  - concept: shipment
-    cardinality: one_to_many
-    description: Customer receives shipments
-
-  - concept: salesperson
-    cardinality: many_to_one
-    description: Customer is assigned to a salesperson
+    required: false
+    description: Invoice value not yet due (current bucket)
+  num_current_inv:
+    display: Num Current Inv
+    type: decimal
+    required: false
+  ageing_30_days:
+    display: Ageing - 30 Days
+    type: decimal
+    required: false
+    description: Invoice value 1-30 days overdue
+  num30days_inv:
+    display: Num30days Inv
+    type: decimal
+    required: false
+  ageing_60_days:
+    display: Ageing - 60 Days
+    type: decimal
+    required: false
+    description: Invoice value 31-60 days overdue
+  num60days_inv:
+    display: Num60days Inv
+    type: decimal
+    required: false
+  ageing_90_days:
+    display: Ageing - 90 Days
+    type: decimal
+    required: false
+    description: Invoice value 61-90 days overdue
+  num90days_inv:
+    display: Num90days Inv
+    type: decimal
+    required: false
+  ageing_120_days:
+    display: Ageing - 120+ Days
+    type: decimal
+    required: false
+    description: Invoice value more than 90 days overdue
+  num120days_inv:
+    display: Num120days Inv
+    type: decimal
+    required: false
+  ageing_credits:
+    display: Ageing - Credits
+    type: decimal
+    required: false
+    description: Unapplied credit value on the account
+  num_credits_inv:
+    display: Num Credits Inv
+    type: decimal
+    required: false
+  sales_val_mth1:
+    display: Sales Val Mth1
+    type: decimal
+    required: false
+  sales_val_mth2:
+    display: Sales Val Mth2
+    type: decimal
+    required: false
+  sales_val_mth3:
+    display: Sales Val Mth3
+    type: decimal
+    required: false
+  sales_val_mth4:
+    display: Sales Val Mth4
+    type: decimal
+    required: false
+  sales_val_mth5:
+    display: Sales Val Mth5
+    type: decimal
+    required: false
+  sales_val_mth6:
+    display: Sales Val Mth6
+    type: decimal
+    required: false
+  sales_val_mth7:
+    display: Sales Val Mth7
+    type: decimal
+    required: false
+  sales_val_mth8:
+    display: Sales Val Mth8
+    type: decimal
+    required: false
+  sales_val_mth9:
+    display: Sales Val Mth9
+    type: decimal
+    required: false
+  sales_val_mth10:
+    display: Sales Val Mth10
+    type: decimal
+    required: false
+  sales_val_mth11:
+    display: Sales Val Mth11
+    type: decimal
+    required: false
+  sales_val_mth12:
+    display: Sales Val Mth12
+    type: decimal
+    required: false
+  sales_val_mth13:
+    display: Sales Val Mth13
+    type: decimal
+    required: false
+  sales_val_mth14:
+    display: Sales Val Mth14
+    type: decimal
+    required: false
+  sales_val_mth15:
+    display: Sales Val Mth15
+    type: decimal
+    required: false
+  sales_val_mth16:
+    display: Sales Val Mth16
+    type: decimal
+    required: false
+  sales_val_mth17:
+    display: Sales Val Mth17
+    type: decimal
+    required: false
+  sales_val_mth18:
+    display: Sales Val Mth18
+    type: decimal
+    required: false
+  sales_val_mth19:
+    display: Sales Val Mth19
+    type: decimal
+    required: false
+  sales_val_mth20:
+    display: Sales Val Mth20
+    type: decimal
+    required: false
+  sales_val_mth21:
+    display: Sales Val Mth21
+    type: decimal
+    required: false
+  sales_val_mth22:
+    display: Sales Val Mth22
+    type: decimal
+    required: false
+  sales_val_mth23:
+    display: Sales Val Mth23
+    type: decimal
+    required: false
+  sales_val_mth24:
+    display: Sales Val Mth24
+    type: decimal
+    required: false
+  sales_val_mth25:
+    display: Sales Val Mth25
+    type: decimal
+    required: false
+  sales_val_mth26:
+    display: Sales Val Mth26
+    type: decimal
+    required: false
+  num_zero_invoices:
+    display: Num Zero Invoices
+    type: decimal
+    required: false
+  num_zero_days:
+    display: Num Zero Days
+    type: decimal
+    required: false
+  tax_portion:
+    display: Tax Portion
+    type: decimal
+    required: false

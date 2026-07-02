@@ -1,27 +1,27 @@
-# SYSPRO Mapping for Inventory Item
 concept: inventory_item
+  # Column subset verified from the working template corpus -
+  # InvMaster/InvWarehouse were not present in the provided schema file.
 table: InvMaster
-primary_key: StockCode
-
+alias: m
 fields:
-  code: StockCode
-  description: Description
-  short_description: Description
-  product_class: ProductClass
-  unit_of_measure: StockUom
-  item_type: StockOnHold
-  cost: "(MaterialCost + LabourCost)"
-  selling_price: ListPriceCode
-  weight: Mass
-  volume: Volume
-  lead_time: LeadTime
-
+  stock_code: m.StockCode
+  description: m.Description
+  product_class: m.ProductClass
+  abc_class: m.AbcClass
+  buyer: m.Buyer
+  date_last_sale: m.DateLastSale
 balance_mapping:
   table: InvWarehouse
-  join_on: StockCode
+  alias: w
+  join_on: m.StockCode = w.StockCode
   fields:
-    on_hand_qty: "SUM(QtyOnHand)"
-    on_order_qty: "SUM(QtyOnOrder)"
-    allocated_qty: "SUM(QtyAllocated)"
-    available_qty: "SUM(QtyOnHand - QtyAllocated)"
-  group_by: StockCode
+    warehouse: w.Warehouse
+    quantity_on_hand: w.QtyOnHand
+    quantity_allocated: w.QtyAllocated
+    minimum_quantity: w.MinimumQty
+    unit_cost: w.UnitCost
+calculated_fields:
+  quantity_available: >-
+    (w.QtyOnHand - w.QtyAllocated)
+  stock_value: >-
+    (w.QtyOnHand * w.UnitCost)
