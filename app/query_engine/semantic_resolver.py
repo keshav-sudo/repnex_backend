@@ -143,6 +143,9 @@ CRITICAL RULES:
 3. If joining tables, use the exact join conditions defined in 'JOIN RELATIONSHIPS' or 'Additional Joined Table'.
 4. Do NOT output markdown code blocks. Output ONLY raw SQL.
 5. All queries should target MS SQL Server / T-SQL dialect (unless specified otherwise).
+6. For date calculations (like Year-to-Date or current date), always use standard MS SQL Server functions:
+   - Use 'GETDATE()' (exact casing, uppercase) for the current date.
+   - For Year-To-Date (YTD) filtering, use: `[date_column] >= DATEFROMPARTS(YEAR(GETDATE()), 1, 1) AND [date_column] <= GETDATE()`.
 """
 
         log.info(f"Generating V2 semantic query for: {natural_language}")
