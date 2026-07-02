@@ -2,8 +2,9 @@ concept: supplier
 display_name: Supplier
 module: accounts_payable
 description: >
-  A supplier (vendor/creditor) master record in Accounts Payable, holding
-  identification, currency, current balance and purchase history statistics.
+  A supplier (vendor/creditor) master record in Accounts Payable, holding 
+  identification, contact, currency, balances, purchase-history statistics 
+  and purchasing controls.
 synonyms:
   - vendor
   - creditor
@@ -20,51 +21,291 @@ header_attributes:
     type: string
     required: true
     description: Trading name of the supplier
+  supplier_short_name:
+    display: Supplier Short Name
+    type: string
+    required: false
+    description: Short/sort name of the supplier
   supplier_class:
     display: Supplier Class
     type: string
     required: false
     description: Classification/grouping code for the supplier
-  currency:
-    display: Currency
+  bank:
+    display: Bank
     type: string
     required: false
-    description: Default currency the supplier trades in
-  current_balance:
-    display: Current Balance
-    type: decimal
-    required: false
-    description: Current outstanding balance owed to the supplier
-  last_purchase_date:
-    display: Last Purchase Date
-    type: date
-    required: false
-    description: Date of the most recent purchase from this supplier
-  last_payment_date:
-    display: Last Payment Date
-    type: date
-    required: false
-    description: Date of the most recent cheque/payment to this supplier
-  last_payment_value:
-    display: Last Payment Value
-    type: decimal
-    required: false
-    description: Value of the most recent cheque/payment
-  withholding_tax_code:
-    display: Withholding Tax Code
+  branch:
+    display: Branch
     type: string
     required: false
-    description: Withholding tax code applied to this supplier
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+  fax:
+    display: Fax
+    type: string
+    required: false
+  contact:
+    display: Contact
+    type: string
+    required: false
+  area:
+    display: Area
+    type: string
+    required: false
+  email:
+    display: Email
+    type: string
+    required: false
+  fax_contact:
+    display: Fax Contact
+    type: string
+    required: false
+  user_field1:
+    display: User Field1
+    type: string
+    required: false
+  line_disc_code:
+    display: Line Disc Code
+    type: string
+    required: false
+  inv_disc_code:
+    display: Inv Disc Code
+    type: string
+    required: false
+  last_cheque_print:
+    display: Last Cheque Print
+    type: string
+    required: false
+  edi_receiver_code:
+    display: Edi Receiver Code
+    type: string
+    required: false
   withholding_tax_id:
     display: Withholding Tax ID
     type: string
     required: false
     description: Supplier withholding tax registration identifier
-  purchases_month_1:
-    display: Purchases Month 1
+  tax_regn_num:
+    display: Tax Regn Num
+    type: string
+    required: false
+  edi_fax:
+    display: Edi Fax
+    type: string
+    required: false
+  bank_account:
+    display: Bank Account
+    type: string
+    required: false
+  bank_branch:
+    display: Bank Branch
+    type: string
+    required: false
+  fax_remit_num:
+    display: Fax Remit Num
+    type: string
+    required: false
+  paye_ref1099:
+    display: Paye Ref1099
+    type: string
+    required: false
+  merch_gl_code:
+    display: Merch Gl Code
+    type: string
+    required: false
+  freight_gl_code:
+    display: Freight Gl Code
+    type: string
+    required: false
+  last_cheque_bank:
+    display: Last Cheque Bank
+    type: string
+    required: false
+  supplier_ch_name:
+    display: Supplier Ch Name
+    type: string
+    required: false
+  remit_email:
+    display: Remit Email
+    type: string
+    required: false
+  fax_voucher_num:
+    display: Fax Voucher Num
+    type: string
+    required: false
+  voucher_email:
+    display: Voucher Email
+    type: string
+    required: false
+  shipping_location:
+    display: Shipping Location
+    type: string
+    required: false
+  po_email:
+    display: Po Email
+    type: string
+    required: false
+  last_purchase_date:
+    display: Last Purchase Date
+    type: date
+    required: false
+    description: Date of the most recent purchase from this supplier
+  first_purchase_date:
+    display: First Purchase Date
+    type: date
+    required: false
+    description: Date of the first purchase from this supplier
+  last_payment_date:
+    display: Last Payment Date
+    type: date
+    required: false
+    description: Date of the most recent cheque/payment to this supplier
+  date_added:
+    display: Date Added
+    type: date
+    required: false
+    description: Date the supplier record was created
+  current_balance:
+    display: Current Balance
     type: decimal
     required: false
-    description: Purchase value for financial month 1 of the current year
+    description: Current outstanding balance owed to the supplier
+  prior_year_end_balance:
+    display: Prior Year End Balance
+    type: decimal
+    required: false
+    description: Balance at the end of the prior financial year
+  default_cheque_day:
+    display: Default Cheque Day
+    type: decimal
+    required: false
+  ytd_amount1099:
+    display: Ytd Amount1099
+    type: decimal
+    required: false
+  pyr1099_val:
+    display: Pyr1099 Val
+    type: decimal
+    required: false
+  num_mths_befor_del:
+    display: Num Mths Befor Del
+    type: decimal
+    required: false
+  num_months_zero:
+    display: Num Months Zero
+    type: decimal
+    required: false
+  purch_val_mth1:
+    display: Purch Val Mth1
+    type: decimal
+    required: false
+  purch_val_mth2:
+    display: Purch Val Mth2
+    type: decimal
+    required: false
+  purch_val_mth3:
+    display: Purch Val Mth3
+    type: decimal
+    required: false
+  purch_val_mth4:
+    display: Purch Val Mth4
+    type: decimal
+    required: false
+  purch_val_mth5:
+    display: Purch Val Mth5
+    type: decimal
+    required: false
+  purch_val_mth6:
+    display: Purch Val Mth6
+    type: decimal
+    required: false
+  purch_val_mth7:
+    display: Purch Val Mth7
+    type: decimal
+    required: false
+  purch_val_mth8:
+    display: Purch Val Mth8
+    type: decimal
+    required: false
+  purch_val_mth9:
+    display: Purch Val Mth9
+    type: decimal
+    required: false
+  purch_val_mth10:
+    display: Purch Val Mth10
+    type: decimal
+    required: false
+  purch_val_mth11:
+    display: Purch Val Mth11
+    type: decimal
+    required: false
+  purch_val_mth12:
+    display: Purch Val Mth12
+    type: decimal
+    required: false
+  mtd_tax_val:
+    display: Mtd Tax Val
+    type: decimal
+    required: false
+  ytd_tax_val:
+    display: Ytd Tax Val
+    type: decimal
+    required: false
+  min_po_val:
+    display: Min Po Val
+    type: decimal
+    required: false
+  min_po_mass:
+    display: Min Po Mass
+    type: decimal
+    required: false
+  min_po_volume:
+    display: Min Po Volume
+    type: decimal
+    required: false
+  mtd_tax2_val:
+    display: Mtd Tax2 Val
+    type: decimal
+    required: false
+  ytd_tax2_val:
+    display: Ytd Tax2 Val
+    type: decimal
+    required: false
+  mtd_merch_val:
+    display: Mtd Merch Val
+    type: decimal
+    required: false
+  mtd_freight_val:
+    display: Mtd Freight Val
+    type: decimal
+    required: false
+  mtd_other_val:
+    display: Mtd Other Val
+    type: decimal
+    required: false
+  mtd_dsb_val:
+    display: Mtd Dsb Val
+    type: decimal
+    required: false
+  ytd_merch_val:
+    display: Ytd Merch Val
+    type: decimal
+    required: false
+  ytd_freight_val:
+    display: Ytd Freight Val
+    type: decimal
+    required: false
+  ytd_other_val:
+    display: Ytd Other Val
+    type: decimal
+    required: false
+  ytd_dsb_val:
+    display: Ytd Dsb Val
+    type: decimal
+    required: false
   prior_year_merchandise_value:
     display: Prior Year Merchandise Value
     type: decimal
@@ -80,13 +321,189 @@ header_attributes:
     type: decimal
     required: false
     description: Other charges in the prior financial year
+  prior_year_disbursements_value:
+    display: Prior Year Disbursements Value
+    type: decimal
+    required: false
+    description: Disbursements in the prior financial year
+  last_cheque:
+    display: Last Cheque
+    type: decimal
+    required: false
+  last_payment_value:
+    display: Last Payment Value
+    type: decimal
+    required: false
+    description: Value of the most recent cheque/payment
+  default_fmt1099:
+    display: Default Fmt1099
+    type: decimal
+    required: false
+  min_pay1099:
+    display: Min Pay1099
+    type: decimal
+    required: false
+  transaction_nature:
+    display: Transaction Nature
+    type: decimal
+    required: false
+  mtd_tax_relief_val:
+    display: Mtd Tax Relief Val
+    type: decimal
+    required: false
+  ytd_tax_relief_val:
+    display: Ytd Tax Relief Val
+    type: decimal
+    required: false
+  supplier_type:
+    display: Supplier Type
+    type: string
+    required: false
+  user_field2:
+    display: User Field2
+    type: string
+    required: false
+  currency:
+    display: Currency
+    type: string
+    required: false
+  terms_code:
+    display: Terms Code
+    type: string
+    required: false
+  reserved_for_usa:
+    display: Reserved For Usa
+    type: string
+    required: false
+  required1099:
+    display: Required1099
+    type: string
+    required: false
+  grn_match_reqd:
+    display: Grn Match Reqd
+    type: string
+    required: false
+  lct_required:
+    display: Lct Required
+    type: string
+    required: false
+  edi_type_flag:
+    display: Edi Type Flag
+    type: string
+    required: false
+  withholding_tax_code:
+    display: Withholding Tax Code
+    type: string
+    required: false
+    description: Withholding tax code applied to this supplier
+  purch_ord_allowed:
+    display: Purch Ord Allowed
+    type: string
+    required: false
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+  fax_remit_flag:
+    display: Fax Remit Flag
+    type: string
+    required: false
+  ch_language:
+    display: Ch Language
+    type: string
+    required: false
+  po_default_doc:
+    display: Po Default Doc
+    type: string
+    required: false
+  on_hold:
+    display: On Hold
+    type: string
+    required: false
+    description: Whether the supplier account is on hold
+  ask_ytd_value1099:
+    display: Ask Ytd Value1099
+    type: string
+    required: false
+  contracts:
+    display: Contracts
+    type: string
+    required: false
+  pay_by_eft:
+    display: Pay By Eft
+    type: string
+    required: false
+  eft_bank_acc_type:
+    display: Eft Bank Acc Type
+    type: string
+    required: false
+  def_tax_code:
+    display: Def Tax Code
+    type: string
+    required: false
+  delivery_terms:
+    display: Delivery Terms
+    type: string
+    required: false
+  auto_voucher_reqd:
+    display: Auto Voucher Reqd
+    type: string
+    required: false
+  language_code:
+    display: Language Code
+    type: string
+    required: false
+  fax_voucher_flag:
+    display: Fax Voucher Flag
+    type: string
+    required: false
+  out_of_state:
+    display: Out Of State
+    type: string
+    required: false
+  collect_tax:
+    display: Collect Tax
+    type: string
+    required: false
+  state:
+    display: State
+    type: string
+    required: false
+  county_zip:
+    display: County Zip
+    type: string
+    required: false
+  city:
+    display: City
+    type: string
+    required: false
+  with_tax_supplier_ind:
+    display: With Tax Supplier Ind
+    type: string
+    required: false
+  with_tax_expense_type:
+    display: With Tax Expense Type
+    type: string
+    required: false
+  fax_po_flag:
+    display: Fax Po Flag
+    type: string
+    required: false
+  def_rev_chg_tax_code:
+    display: Def Rev Chg Tax Code
+    type: string
+    required: false
+  primary_supplier:
+    display: Primary Supplier
+    type: string
+    required: false
   purchases_year_to_date:
     display: Purchases Year to Date
     type: decimal
     required: false
-    description: Total purchase value across all financial months of the current year (calculated)
+    description: Total purchase value across all 12 financial months of the current year (calculated)
   prior_year_total_value:
     display: Prior Year Total Value
     type: decimal
     required: false
-    description: Total prior-year value (merchandise + freight + other, calculated)
+    description: 'Total prior-year value: merchandise + freight + other + disbursements (calculated)'

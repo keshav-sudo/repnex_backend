@@ -1,0 +1,27 @@
+concept: inventory_item
+  # Column subset verified from the working template corpus -
+  # InvMaster/InvWarehouse were not present in the provided schema file.
+table: InvMaster
+alias: m
+fields:
+  stock_code: m.StockCode
+  description: m.Description
+  product_class: m.ProductClass
+  abc_class: m.AbcClass
+  buyer: m.Buyer
+  date_last_sale: m.DateLastSale
+balance_mapping:
+  table: InvWarehouse
+  alias: w
+  join_on: m.StockCode = w.StockCode
+  fields:
+    warehouse: w.Warehouse
+    quantity_on_hand: w.QtyOnHand
+    quantity_allocated: w.QtyAllocated
+    minimum_quantity: w.MinimumQty
+    unit_cost: w.UnitCost
+calculated_fields:
+  quantity_available: >-
+    (w.QtyOnHand - w.QtyAllocated)
+  stock_value: >-
+    (w.QtyOnHand * w.UnitCost)

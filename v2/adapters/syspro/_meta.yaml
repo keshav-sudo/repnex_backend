@@ -1,16 +1,24 @@
 erp: syspro
 display_name: SYSPRO
 dialect: mssql
+database: SysproEdu2
+schema: dbo
 description: >
   SYSPRO ERP adapter (SQL Server / T-SQL). Table and column names are
-  case-exact and verified against the template corpus in
-  app/query_engine/templates/all_templates_combined.json
-  (see v2/schema/syspro_schema_derived.txt for the derived inventory).
+  case-exact against the customer-provided INFORMATION_SCHEMA extract for
+  database SysproEdu2 (transcribed to v2/schema/syspro_schema.json).
+  InvMaster / InvWarehouse were not present in that extract, so their
+  column subset is verified from the working template corpus instead.
 default_aliases:
   ap_invoice: i
   supplier: s
   ar_invoice: t
   customer: c
+  gl_transaction: g
+  inventory_item: m
+auxiliary_aliases:
+  ArCustomerBal: b
+  InvWarehouse: w
 conventions:
   quote_style: none          # SYSPRO tables need no bracket quoting
   date_function: GETDATE()
@@ -20,9 +28,15 @@ concepts_mapped:
   - supplier
   - ar_invoice
   - customer
-concepts_unmapped:
-  purchase_order: >
-    No purchase order tables (e.g. PorMasterHdr / PorMasterDetail) appear in
-    the verified schema derived from the template corpus. Mapping is
-    intentionally omitted to comply with the no-hallucination rule; add it
-    once a real SYSPRO PO schema is supplied.
+  - gl_transaction
+  - inventory_item
+notes:
+  ar_invoice: >
+    ArInvoice in SysproEdu2 has no DueDate, OrigInvValue, Currency or
+    MthInvBal1 columns. Outstanding balance maps to InvoiceBal1, invoice
+    value to DrCrInvoiceValue (signed), currency detail to PostCurrency /
+    CurrencyValue, and due dates must be derived from TermsCode.
+  gl_transaction: >
+    Customer/supplier joins use PrimaryCustomer / PrimarySupplier per the
+    integration spec; SubModCustomer / SubModSupplier are alternative keys
+    populated by the originating sub-module posting.

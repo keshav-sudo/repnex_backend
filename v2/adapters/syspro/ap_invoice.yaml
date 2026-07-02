@@ -2,24 +2,73 @@ concept: ap_invoice
 table: ApInvoice
 alias: i
 fields:
-  invoice_number: i.Invoice
   supplier_code: i.Supplier
-  invoice_date: i.InvoiceDate
-  due_date: i.DueDate
-  discount_date: i.DiscountDate
-  original_value: i.OrigInvValue
-  outstanding_balance: i.MthInvBal1
-  original_discount_value: i.OrigDiscValue
-  payment_discount_value: i.PaymDiscValue
-  currency: i.Currency
-  exchange_rate: i.CurrencyValue
-  invoice_status: i.InvoiceStatus
-  invoice_year: i.InvoiceYear
-  invoice_month: i.InvoiceMonth
+  invoice_number: i.Invoice
   branch: i.Branch
   reference: i.Reference
-  tax_code: i.FirstTaxCode
+  bank: i.Bank
+  manual_ch_ref: i.ManualChRef
+  payment_number: i.PaymentNumber
+  primary_supplier: i.PrimarySupplier
+  journal_date: i.JournalDate
+  invoice_date: i.InvoiceDate
+  discount_date: i.DiscountDate
+  due_date: i.DueDate
+  manual_chq_date: i.ManualChqDate
+  notification_date: i.NotificationDate
+  next_paym_entry: i.NextPaymEntry
+  journal: i.Journal
+  original_value: i.OrigInvValue
+  original_discount_value: i.OrigDiscValue
+  outstanding_balance: i.MthInvBal1
+  mth_inv_bal2: i.MthInvBal2
+  mth_inv_bal3: i.MthInvBal3
+  manual_chq_num: i.ManualChqNum
+  payment_gross_value: i.PaymGrossValue
+  payment_discount_value: i.PaymDiscValue
+  tax_portion_disc: i.TaxPortionDisc
+  invoice_year: i.InvoiceYear
+  invoice_month: i.InvoiceMonth
+  year_inv_bal_zero: i.YearInvBalZero
+  month_inv_bal_zero: i.MonthInvBalZero
+  exchange_rate: i.ExchangeRate
+  withholding_tax_value: i.WithTaxValue
+  withholding_tax_rate: i.WithTaxRate
+  currency_value: i.CurrencyValue
+  conv_rate: i.ConvRate
+  acc_conv_rate: i.AccConvRate
+  triang_rate: i.TriangRate
+  tax2_value: i.Tax2Value
+  entry_number: i.EntryNumber
+  next_reval_no: i.NextRevalNo
+  orig_inv_rate: i.OrigInvRate
+  total_adjustments: i.TotalAdjustments
   discount_active_flag: i.DiscActiveFlag
+  invoice_status: i.InvoiceStatus
+  currency: i.Currency
+  tax_code: i.FirstTaxCode
+  post_currency: i.PostCurrency
+  mul_div: i.MulDiv
+  account_cur: i.AccountCur
+  acc_mul_div: i.AccMulDiv
+  triang_currency: i.TriangCurrency
+  triang_mul_div: i.TriangMulDiv
+  vat_invalid: i.VatInvalid
+  payment_chk_type: i.PaymentChkType
+  invoice_take_on: i.InvoiceTakeOn
+  fix_exchange_rate: i.FixExchangeRate
+  tax_reverse: i.TaxReverse
+  tax2_reverse: i.Tax2Reverse
+  nationality_source: i.NationalitySource
+  nationality_dest: i.NationalityDest
+  auto_voucher_created: i.AutoVoucherCreated
+  auto_voucher_printed: i.AutoVoucherPrinted
+  second_tax_code: i.SecondTaxCode
+  with_tax_code: i.WithTaxCode
+  with_tax_expense_type: i.WithTaxExpenseType
+  with_holding_tax_code: i.WithHoldingTaxCode
   reverse_charge_flag: i.RevChargeFlag
+  primary_company: i.PrimaryCompany
+  withold_tax_acc_basis: i.WitholdTaxAccBasis
 default_filters:
-  outstanding_only: "i.MthInvBal1 <> 0"
+  outstanding_only: 'i.MthInvBal1 <> 0'

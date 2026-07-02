@@ -1,0 +1,81 @@
+concept: inventory_item
+display_name: Inventory Item
+module: inventory
+description: >
+  A stock item master record with, via the warehouse balance table, 
+  on-hand/allocated quantities and unit cost per warehouse. SYSPRO mapping 
+  uses the column subset verified in the working template corpus, because 
+  InvMaster/InvWarehouse were not included in the provided schema file.
+synonyms:
+  - stock item
+  - stock code
+  - item
+  - product
+  - sku
+  - material
+header_attributes:
+  stock_code:
+    display: Stock Code
+    type: string
+    required: true
+    description: Unique stock/item identifier
+  description:
+    display: Description
+    type: string
+    required: true
+    description: Description of the stock item
+  product_class:
+    display: Product Class
+    type: string
+    required: false
+    description: Product class the item belongs to
+  abc_class:
+    display: ABC Class
+    type: string
+    required: false
+    description: ABC usage classification of the item
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Buyer responsible for the item
+  date_last_sale:
+    display: Date of Last Sale
+    type: date
+    required: false
+    description: Date of the most recent sale of the item
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Warehouse code holding the stock
+  quantity_on_hand:
+    display: Quantity On Hand
+    type: decimal
+    required: false
+    description: Physical quantity on hand in the warehouse
+  quantity_allocated:
+    display: Quantity Allocated
+    type: decimal
+    required: false
+    description: Quantity allocated to orders
+  minimum_quantity:
+    display: Minimum Quantity
+    type: decimal
+    required: false
+    description: Minimum/safety stock quantity
+  unit_cost:
+    display: Unit Cost
+    type: decimal
+    required: false
+    description: Unit cost of the item in the warehouse
+  quantity_available:
+    display: Quantity Available
+    type: decimal
+    required: false
+    description: On-hand less allocated quantity (calculated)
+  stock_value:
+    display: Stock Value
+    type: decimal
+    required: false
+    description: On-hand quantity times unit cost (calculated)

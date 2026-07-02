@@ -4,23 +4,123 @@ alias: s
 fields:
   supplier_code: s.Supplier
   supplier_name: s.SupplierName
+  supplier_short_name: s.SupShortName
   supplier_class: s.SupplierClass
-  currency: s.Currency
-  current_balance: s.CurrentBalance
-  last_purchase_date: s.LastPurchDate
-  last_payment_date: s.LastChequeDate
-  last_payment_value: s.LastChequeVal
-  withholding_tax_code: s.WithTaxCode
+  bank: s.Bank
+  branch: s.Branch
+  telephone: s.Telephone
+  fax: s.Fax
+  contact: s.Contact
+  area: s.Area
+  email: s.Email
+  fax_contact: s.FaxContact
+  user_field1: s.UserField1
+  line_disc_code: s.LineDiscCode
+  inv_disc_code: s.InvDiscCode
+  last_cheque_print: s.LastChequePrint
+  edi_receiver_code: s.EdiReceiverCode
   withholding_tax_id: s.WithTaxId
-  purchases_month_1: s.PurchValMth1
+  tax_regn_num: s.TaxRegnNum
+  edi_fax: s.EdiFax
+  bank_account: s.BankAccount
+  bank_branch: s.BankBranch
+  fax_remit_num: s.FaxRemitNum
+  paye_ref1099: s.PayeRef1099
+  merch_gl_code: s.MerchGlCode
+  freight_gl_code: s.FreightGlCode
+  last_cheque_bank: s.LastChequeBank
+  supplier_ch_name: s.SupplierChName
+  remit_email: s.RemitEmail
+  fax_voucher_num: s.FaxVoucherNum
+  voucher_email: s.VoucherEmail
+  shipping_location: s.ShippingLocation
+  po_email: s.PoEmail
+  last_purchase_date: s.LastPurchDate
+  first_purchase_date: s.FirstPurchDate
+  last_payment_date: s.LastChequeDate
+  date_added: s.DateSuppAdded
+  current_balance: s.CurrentBalance
+  prior_year_end_balance: s.PyrEndBalance
+  default_cheque_day: s.DefaultChequeDay
+  ytd_amount1099: s.YtdAmount1099
+  pyr1099_val: s.Pyr1099Val
+  num_mths_befor_del: s.NumMthsBeforDel
+  num_months_zero: s.NumMonthsZero
+  purch_val_mth1: s.PurchValMth1
+  purch_val_mth2: s.PurchValMth2
+  purch_val_mth3: s.PurchValMth3
+  purch_val_mth4: s.PurchValMth4
+  purch_val_mth5: s.PurchValMth5
+  purch_val_mth6: s.PurchValMth6
+  purch_val_mth7: s.PurchValMth7
+  purch_val_mth8: s.PurchValMth8
+  purch_val_mth9: s.PurchValMth9
+  purch_val_mth10: s.PurchValMth10
+  purch_val_mth11: s.PurchValMth11
+  purch_val_mth12: s.PurchValMth12
+  mtd_tax_val: s.MtdTaxVal
+  ytd_tax_val: s.YtdTaxVal
+  min_po_val: s.MinPoVal
+  min_po_mass: s.MinPoMass
+  min_po_volume: s.MinPoVolume
+  mtd_tax2_val: s.MtdTax2Val
+  ytd_tax2_val: s.YtdTax2Val
+  mtd_merch_val: s.MtdMerchVal
+  mtd_freight_val: s.MtdFreightVal
+  mtd_other_val: s.MtdOtherVal
+  mtd_dsb_val: s.MtdDsbVal
+  ytd_merch_val: s.YtdMerchVal
+  ytd_freight_val: s.YtdFreightVal
+  ytd_other_val: s.YtdOtherVal
+  ytd_dsb_val: s.YtdDsbVal
   prior_year_merchandise_value: s.PyrMerchVal
   prior_year_freight_value: s.PyrFreightVal
   prior_year_other_value: s.PyrOtherVal
+  prior_year_disbursements_value: s.PyrDsbVal
+  last_cheque: s.LastCheque
+  last_payment_value: s.LastChequeVal
+  default_fmt1099: s.DefaultFmt1099
+  min_pay1099: s.MinPay1099
+  transaction_nature: s.TransactionNature
+  mtd_tax_relief_val: s.MtdTaxReliefVal
+  ytd_tax_relief_val: s.YtdTaxReliefVal
+  supplier_type: s.SupplierType
+  user_field2: s.UserField2
+  currency: s.Currency
+  terms_code: s.TermsCode
+  reserved_for_usa: s.ReservedForUsa
+  required1099: s.Required1099
+  grn_match_reqd: s.GrnMatchReqd
+  lct_required: s.LctRequired
+  edi_type_flag: s.EdiTypeFlag
+  withholding_tax_code: s.WithTaxCode
+  purch_ord_allowed: s.PurchOrdAllowed
+  nationality: s.Nationality
+  fax_remit_flag: s.FaxRemitFlag
+  ch_language: s.ChLanguage
+  po_default_doc: s.PoDefaultDoc
+  on_hold: s.OnHold
+  ask_ytd_value1099: s.AskYtdValue1099
+  contracts: s.Contracts
+  pay_by_eft: s.PayByEft
+  eft_bank_acc_type: s.EftBankAccType
+  def_tax_code: s.DefTaxCode
+  delivery_terms: s.DeliveryTerms
+  auto_voucher_reqd: s.AutoVoucherReqd
+  language_code: s.LanguageCode
+  fax_voucher_flag: s.FaxVoucherFlag
+  out_of_state: s.OutOfState
+  collect_tax: s.CollectTax
+  state: s.State
+  county_zip: s.CountyZip
+  city: s.City
+  with_tax_supplier_ind: s.WithTaxSupplierInd
+  with_tax_expense_type: s.WithTaxExpenseType
+  fax_po_flag: s.FaxPoFlag
+  def_rev_chg_tax_code: s.DefRevChgTaxCode
+  primary_supplier: s.PrimarySupplier
 calculated_fields:
-  # T-SQL: purchases across all 12 financial months of the current year
   purchases_year_to_date: >-
-    (s.PurchValMth1 + s.PurchValMth2 + s.PurchValMth3 + s.PurchValMth4
-     + s.PurchValMth5 + s.PurchValMth6 + s.PurchValMth7 + s.PurchValMth8
-     + s.PurchValMth9 + s.PurchValMth10 + s.PurchValMth11 + s.PurchValMth12)
+    (s.PurchValMth1 + s.PurchValMth2 + s.PurchValMth3 + s.PurchValMth4 + s.PurchValMth5 + s.PurchValMth6 + s.PurchValMth7 + s.PurchValMth8 + s.PurchValMth9 + s.PurchValMth10 + s.PurchValMth11 + s.PurchValMth12)
   prior_year_total_value: >-
-    (s.PyrMerchVal + s.PyrFreightVal + s.PyrOtherVal)
+    (s.PyrMerchVal + s.PyrFreightVal + s.PyrOtherVal + s.PyrDsbVal)

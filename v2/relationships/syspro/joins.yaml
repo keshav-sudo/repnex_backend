@@ -1,7 +1,8 @@
 # SYSPRO join graph for the V2 semantic engine.
-# Every condition uses the aliases declared in the adapters
-# (i=ApInvoice, s=ApSupplier, t=ArInvoice, c=ArCustomer, b=ArCustomerBal)
-# and mirrors the join patterns used by the verified template corpus.
+# Aliases: i=ApInvoice, s=ApSupplier, t=ArInvoice, c=ArCustomer,
+#          b=ArCustomerBal, g=GenTransaction, m=InvMaster, w=InvWarehouse.
+# All conditions verified against the SysproEdu2 schema (Inv tables against
+# the working template corpus).
 relationships:
   - from_concept: ap_invoice
     to_concept: supplier
@@ -27,10 +28,55 @@ relationships:
     join_type: LEFT
     condition: c.Customer = t.Customer
 
-  # Customer master to its balance/ageing record (also declared inline
-  # in adapters/syspro/customer.yaml as balance_mapping)
+  # Customer master to its balance/ageing record (also declared inline in
+  # adapters/syspro/customer.yaml as balance_mapping)
   - from_concept: customer
     to_concept: customer_balance
     cardinality: one_to_one
     join_type: LEFT
     condition: c.Customer = b.Customer
+
+  # GL transaction to customer via the group/inter-company cross-reference.
+  # Note: GenTransaction.SubModCustomer is an alternative key populated by
+  # the originating sub-module posting.
+  - from_concept: gl_transaction
+    to_concept: customer
+    cardinality: many_to_one
+    join_type: LEFT
+    condition: g.PrimaryCustomer = c.Customer
+
+  - from_concept: customer
+    to_concept: gl_transaction
+    cardinality: one_to_many
+    join_type: LEFT
+    condition: c.Customer = g.PrimaryCustomer
+
+  # GL transaction to supplier via the group/inter-company cross-reference.
+  # Note: GenTransaction.SubModSupplier is an alternative key populated by
+  # the originating sub-module posting.
+  - from_concept: gl_transaction
+    to_concept: supplier
+    cardinality: many_to_one
+    join_type: LEFT
+    condition: g.PrimarySupplier = s.Supplier
+
+  - from_concept: supplier
+    to_concept: gl_transaction
+    cardinality: one_to_many
+    join_type: LEFT
+    condition: s.Supplier = g.PrimarySupplier
+
+  # GL transaction to inventory item via the sub-module stock reference
+  - from_concept: gl_transaction
+    to_concept: inventory_item
+    cardinality: many_to_one
+    join_type: LEFT
+    condition: g.SubModStock = m.StockCode
+
+  # Inventory item master to its per-warehouse balances (also declared
+  # inline in adapters/syspro/inventory_item.yaml as balance_mapping)
+  - from_concept: inventory_item
+    to_concept: inventory_warehouse
+    cardinality: one_to_many
+    join_type: LEFT
+    condition: m.StockCode = w.StockCode
