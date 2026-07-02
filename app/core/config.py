@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     PORT: int = 8000
     CORS_ORIGINS: str = "*"
     GRACEFUL_SHUTDOWN_SECONDS: int = 30
+    ENGINE_VERSION: str = "v1"
 
     # Metadata DB
     DATABASE_URL: str

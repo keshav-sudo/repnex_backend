@@ -1,0 +1,33 @@
+# Epicor Mapping for AR Invoice
+concept: ar_invoice
+header_table: Erp.InvcHead
+detail_table: Erp.InvcDtl
+primary_key: InvoiceNum
+
+header_fields:
+  invoice_number: InvoiceNum
+  customer_code: CustNum
+  invoice_date: InvoiceDate
+  due_date: DueDate
+  document_type: InvoiceType
+  invoice_balance: InvoiceBal
+  original_value: DocInvoiceAmt
+  tax_value: DocTaxAmt
+  currency: CurrencyCode
+  sales_order: OrderNum
+  salesperson: SalesRepList
+  branch: Company
+  terms_code: TermsCode
+
+detail_fields:
+  line_number: InvoiceLine
+  item_code: PartNum
+  quantity: OurShipQty
+  net_value: DocExtPrice
+  cost_value: DocExtCost
+  tax_value: DocTaxAmt
+  discount: DiscountPercent
+export_fields:
+  - Company
+  - CustNum
+  - InvoiceNum

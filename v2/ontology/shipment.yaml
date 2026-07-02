@@ -1,0 +1,54 @@
+# Business Concept: Shipment
+concept: shipment
+display_name: Shipment
+module: sales
+description: >
+  Dispatches or shipments of goods against sales orders.
+
+synonyms:
+  - dispatch note
+  - packing slip
+  - delivery note
+  - shipment
+  - dispatch
+  - delivery
+
+header_attributes:
+  shipment_number:
+    display: Shipment Number
+    type: string
+    required: true
+  customer_code:
+    display: Customer
+    type: string
+  ship_date:
+    display: Ship Date
+    type: date
+  sales_order:
+    display: Sales Order
+    type: string
+  status:
+    display: Status
+    type: string
+
+detail_attributes:
+  line_number:
+    display: Line Number
+    type: integer
+  item_code:
+    display: Item Code
+    type: string
+  quantity_shipped:
+    display: Quantity Shipped
+    type: decimal
+  unit_price:
+    display: Unit Price
+    type: decimal
+
+relationships:
+  - concept: customer
+    cardinality: many_to_one
+  - concept: sales_order
+    cardinality: many_to_one
+  - concept: inventory_item
+    cardinality: many_to_many

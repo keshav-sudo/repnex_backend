@@ -1,0 +1,51 @@
+# Business Concept: Stock Movement
+concept: stock_movement
+display_name: Stock Movement
+module: inventory
+description: >
+  Historical log of inventory movements (receipts, issues, transfers, adjustments).
+
+synonyms:
+  - stock transaction
+  - inventory transaction
+  - part transaction
+  - stock movement
+  - inventory journal
+  - stock adjustment
+
+attributes:
+  transaction_id:
+    display: Transaction ID
+    type: string
+  item_code:
+    display: Item Code
+    type: string
+    required: true
+  warehouse:
+    display: Warehouse
+    type: string
+  transaction_date:
+    display: Transaction Date
+    type: date
+  quantity:
+    display: Quantity
+    type: decimal
+  unit_cost:
+    display: Unit Cost
+    type: decimal
+  reference:
+    display: Reference
+    type: string
+  transaction_type:
+    display: Transaction Type
+    description: Issue, Receipt, Transfer, Adjustment
+    type: string
+  document_number:
+    display: Document Number
+    type: string
+
+relationships:
+  - concept: inventory_item
+    cardinality: many_to_one
+  - concept: warehouse
+    cardinality: many_to_one

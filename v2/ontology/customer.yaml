@@ -1,0 +1,177 @@
+# Business Concept: Customer
+# The entity that purchases goods or services from the organization.
+
+concept: customer
+display_name: Customer
+module: accounts_receivable
+description: >
+  A person or organization that buys products or services.
+  Central entity in AR, Sales, and CRM modules.
+
+synonyms:
+  - client
+  - account
+  - debtor
+  - buyer
+  - customer account
+  - sold-to party
+
+attributes:
+  code:
+    display: Customer Code
+    description: Unique identifier for the customer
+    type: string
+    required: true
+
+  name:
+    display: Customer Name
+    description: Full legal or trading name
+    type: string
+    required: true
+
+  short_name:
+    display: Short Name
+    description: Abbreviated name for reports
+    type: string
+
+  credit_limit:
+    display: Credit Limit
+    description: Maximum allowed outstanding balance
+    type: decimal
+
+  credit_status:
+    display: Credit Status
+    description: Current credit standing (Active, On Hold, etc.)
+    type: string
+
+  currency:
+    display: Currency
+    description: Default trading currency
+    type: string
+
+  branch:
+    display: Branch
+    description: Assigned branch or division
+    type: string
+
+  area:
+    display: Area / Territory
+    description: Geographic area or sales territory
+    type: string
+
+  salesperson:
+    display: Salesperson
+    description: Primary assigned salesperson
+    type: string
+
+  customer_class:
+    display: Customer Class / Group
+    description: Classification or grouping code
+    type: string
+
+  tax_status:
+    display: Tax Status
+    description: Tax exemption or liability status
+    type: string
+
+  email:
+    display: Email
+    description: Primary contact email
+    type: string
+
+  telephone:
+    display: Telephone
+    description: Primary contact number
+    type: string
+
+  on_hold:
+    display: On Hold
+    description: Whether the customer account is on hold
+    type: boolean
+
+  date_added:
+    display: Date Added
+    description: Date customer was created in the system
+    type: date
+
+  last_sale_date:
+    display: Last Sale Date
+    description: Date of most recent sale
+    type: date
+
+  last_payment_date:
+    display: Last Payment Date
+    description: Date of most recent payment received
+    type: date
+
+# Balance / financial sub-attributes
+balance_attributes:
+  current_balance:
+    display: Current Balance
+    description: Total outstanding balance
+    type: decimal
+
+  ytd_sales:
+    display: YTD Sales
+    description: Year-to-date sales value
+    type: decimal
+
+  prev_year_sales:
+    display: Previous Year Sales
+    description: Prior year total sales
+    type: decimal
+
+  outstanding_orders:
+    display: Outstanding Orders Value
+    description: Value of unfulfilled orders
+    type: decimal
+
+  aging_current:
+    display: Current Aging
+    description: Invoices not yet due
+    type: decimal
+
+  aging_30:
+    display: 30 Days
+    description: Invoices 1-30 days overdue
+    type: decimal
+
+  aging_60:
+    display: 60 Days
+    description: Invoices 31-60 days overdue
+    type: decimal
+
+  aging_90:
+    display: 90 Days
+    description: Invoices 61-90 days overdue
+    type: decimal
+
+  aging_120:
+    display: 120+ Days
+    description: Invoices over 90 days overdue
+    type: decimal
+
+relationships:
+  - concept: sales_order
+    cardinality: one_to_many
+    description: Customer places sales orders
+
+  - concept: ar_invoice
+    cardinality: one_to_many
+    description: Customer has AR invoices
+
+  - concept: payment
+    cardinality: one_to_many
+    description: Customer makes payments
+
+  - concept: quote
+    cardinality: one_to_many
+    description: Customer receives quotes
+
+  - concept: shipment
+    cardinality: one_to_many
+    description: Customer receives shipments
+
+  - concept: salesperson
+    cardinality: many_to_one
+    description: Customer is assigned to a salesperson

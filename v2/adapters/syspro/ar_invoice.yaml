@@ -1,0 +1,29 @@
+# SYSPRO Mapping for AR Invoice
+concept: ar_invoice
+header_table: ArInvoice
+detail_table: ArTrnDetail
+primary_key: Invoice
+
+header_fields:
+  invoice_number: Invoice
+  customer_code: Customer
+  invoice_date: InvoiceDate
+  due_date: InvoiceDate # fallback, SYSPRO TermsCode dictates due date
+  document_type: DocumentType
+  invoice_balance: "(InvoiceBal1 + InvoiceBal2 + InvoiceBal3)"
+  original_value: DrCrInvoiceValue
+  tax_value: TaxPortion
+  currency: PostCurrency
+  sales_order: SalesOrder
+  salesperson: Salesperson
+  branch: Branch
+  terms_code: TermsCode
+
+detail_fields:
+  line_number: DetailLine
+  item_code: StockCode
+  quantity: QtyInvoiced
+  net_value: NetSalesValue
+  cost_value: CostValue
+  tax_value: TaxValue
+  discount: DiscValue

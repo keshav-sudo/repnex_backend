@@ -1,0 +1,10 @@
+# Epicor Mapping for Warehouse
+concept: warehouse
+table: Erp.Warehse
+primary_key: WarehouseCode
+
+fields:
+  code: WarehouseCode
+  name: Description
+  address: Description
+  branch: Company

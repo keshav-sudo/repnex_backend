@@ -1,0 +1,78 @@
+# Business Concept: Purchase Order
+concept: purchase_order
+display_name: Purchase Order
+module: purchasing
+description: >
+  An order issued to a supplier for goods or services.
+  Consists of a header and one or more detail lines.
+
+synonyms:
+  - PO
+  - purchase order
+  - procurement order
+  - buy order
+
+header_attributes:
+  po_number:
+    display: PO Number
+    type: string
+    required: true
+  supplier_code:
+    display: Supplier
+    type: string
+    required: true
+  order_date:
+    display: Order Date
+    type: date
+  due_date:
+    display: Due Date
+    type: date
+  status:
+    display: Status
+    type: string
+  buyer:
+    display: Buyer
+    type: string
+  currency:
+    display: Currency
+    type: string
+  order_total:
+    display: Order Total
+    type: decimal
+  warehouse:
+    display: Warehouse
+    type: string
+
+detail_attributes:
+  line_number:
+    display: Line Number
+    type: integer
+    required: true
+  item_code:
+    display: Item Code
+    type: string
+  description:
+    display: Description
+    type: string
+  quantity_ordered:
+    display: Quantity Ordered
+    type: decimal
+  quantity_received:
+    display: Quantity Received
+    type: decimal
+  unit_price:
+    display: Unit Price
+    type: decimal
+  line_total:
+    display: Line Total
+    type: decimal
+
+relationships:
+  - concept: supplier
+    cardinality: many_to_one
+  - concept: goods_received
+    cardinality: one_to_many
+  - concept: ap_invoice
+    cardinality: one_to_many
+  - concept: inventory_item
+    cardinality: many_to_many

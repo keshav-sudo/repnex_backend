@@ -1,0 +1,65 @@
+# Business Concept: Job / Work Order
+concept: job_work_order
+display_name: Job / Work Order
+module: manufacturing
+description: >
+  A production job or work order for manufacturing items.
+
+synonyms:
+  - job
+  - work order
+  - production order
+  - manufacturing order
+  - WO
+  - shop order
+
+attributes:
+  job_number:
+    display: Job Number
+    type: string
+    required: true
+  item_code:
+    display: Item Code
+    type: string
+  description:
+    display: Description
+    type: string
+  status:
+    display: Status
+    description: Planned, Released, Started, Completed, Closed
+    type: string
+  quantity:
+    display: Quantity
+    type: decimal
+  quantity_completed:
+    display: Quantity Completed
+    type: decimal
+  start_date:
+    display: Start Date
+    type: date
+  due_date:
+    display: Due Date
+    type: date
+  completion_date:
+    display: Completion Date
+    type: date
+  sales_order:
+    display: Sales Order
+    type: string
+  warehouse:
+    display: Warehouse
+    type: string
+  actual_cost:
+    display: Actual Cost
+    type: decimal
+  estimated_cost:
+    display: Estimated Cost
+    type: decimal
+
+relationships:
+  - concept: inventory_item
+    cardinality: many_to_one
+  - concept: sales_order
+    cardinality: many_to_one
+  - concept: bom
+    cardinality: many_to_one

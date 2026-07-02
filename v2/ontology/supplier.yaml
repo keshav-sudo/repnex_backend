@@ -1,0 +1,120 @@
+# Business Concept: Supplier / Vendor
+# The entity that provides goods or services to the organization.
+
+concept: supplier
+display_name: Supplier
+module: accounts_payable
+description: >
+  A company or individual that provides goods or services.
+  Central entity in AP and Purchasing modules.
+
+synonyms:
+  - vendor
+  - creditor
+  - provider
+  - supplier account
+
+attributes:
+  code:
+    display: Supplier Code
+    description: Unique identifier for the supplier
+    type: string
+    required: true
+
+  name:
+    display: Supplier Name
+    description: Full legal or trading name
+    type: string
+    required: true
+
+  short_name:
+    display: Short Name
+    description: Abbreviated name
+    type: string
+
+  currency:
+    display: Currency
+    description: Default trading currency
+    type: string
+
+  current_balance:
+    display: Current Balance
+    description: Total outstanding balance owed
+    type: decimal
+
+  branch:
+    display: Branch
+    description: Assigned branch
+    type: string
+
+  area:
+    display: Area / Territory
+    description: Geographic area
+    type: string
+
+  terms_code:
+    display: Payment Terms
+    description: Default payment terms
+    type: string
+
+  bank:
+    display: Bank
+    description: Default payment bank
+    type: string
+
+  tax_registration:
+    display: Tax Registration Number
+    description: VAT/GST/Tax ID
+    type: string
+
+  email:
+    display: Email
+    description: Primary contact email
+    type: string
+
+  telephone:
+    display: Telephone
+    description: Primary contact number
+    type: string
+
+  on_hold:
+    display: On Hold
+    description: Whether supplier is on hold
+    type: boolean
+
+  date_added:
+    display: Date Added
+    description: Date supplier was created
+    type: date
+
+  last_purchase_date:
+    display: Last Purchase Date
+    description: Date of most recent purchase
+    type: date
+
+  ytd_purchases:
+    display: YTD Purchases
+    description: Year-to-date purchase value
+    type: decimal
+
+  prev_year_purchases:
+    display: Previous Year Purchases
+    description: Prior year total purchases
+    type: decimal
+
+relationships:
+  - concept: purchase_order
+    cardinality: one_to_many
+    description: Supplier receives purchase orders
+
+  - concept: ap_invoice
+    cardinality: one_to_many
+    description: Supplier issues AP invoices
+
+  - concept: goods_received
+    cardinality: one_to_many
+    description: Goods received from supplier
+
+  - concept: payment
+    cardinality: one_to_many
+    description: Payments made to supplier

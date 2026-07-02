@@ -134,234 +134,153 @@ async def chat(
         )
 
     # ── Step 2b: Executable flow ─────────────────────────────────────
-    store = get_pinecone_store_optional()
-    registry = get_template_registry()
-
-    # Detect module hint from natural language for Pinecone filtering
-    module_filter = _detect_module_from_query(nl)
-
-    # ── Backend RBAC: Check module access before any LLM/Pinecone work ──
-    is_allowed, deny_msg = _check_module_access(module_filter, current)
-    if not is_allowed:
-        log.warning(
-            "module_access_denied",
-            extra={
-                "user_id": str(current.user_id),
-                "role": current.role,
-                "detected_module": module_filter,
-            },
-        )
-        return ChatResponse(
-            type="access_denied",
-            message=deny_msg,
-            template_module=module_filter,
-            suggestions=[
-                "Try a Finance or Inventory report instead",
-                "Contact your admin to request module access",
-            ],
-        )
-
-    # Search Pinecone for matching templates (with keyword reranking)
-    template_candidates: list[dict[str, Any]] = []
-    if store:
-        try:
-            template_candidates = store.search_with_rerank(
-                nl, top_k=5, module_filter=module_filter
-            )
-        except Exception as e:
-            log.warning("pinecone_search_failed", extra={"err": str(e)})
-            # Fallback to basic search without module filter
+    if s.ENGINE_VERSION.lower().strip() == "v2":
+        # Determine the ERP type dynamically (syspro or epicor)
+        erp_type = "syspro"
+        if data.connection_id:
             try:
-                template_candidates = store.search_templates(nl, top_k=5)
+                conn = await connection_service.get_connection(db, current, data.connection_id)
+                if conn and conn.name and "epicor" in conn.name.lower():
+                    erp_type = "epicor"
             except Exception:
                 pass
 
-    # Fall back to keyword-matched static registry if no Pinecone results
-    if not template_candidates:
-        template_candidates = _smart_static_fallback(registry, nl)
+        try:
+            org = await db["organizations"].find_one({"_id": str(current.org_id)})
+            if org and org.get("erpSystem"):
+                system_name = org.get("erpSystem", "").lower()
+                if "epicor" in system_name:
+                    erp_type = "epicor"
+                elif "syspro" in system_name:
+                    erp_type = "syspro"
+        except Exception:
+            pass
 
-    # ── Step 3: Intent extraction via LLM ────────────────────────────
-    top = template_candidates[0] if template_candidates else None
-    top_score = top.get("score", 0) if top else 0
+        # Initialize Semantic Resolver for the target ERP
+        from app.query_engine.semantic_resolver import SemanticResolver
+        resolver = SemanticResolver(erp_type=erp_type)
 
-    # Tier 1: Very high confidence (>= 0.60) — skip LLM entirely, use Pinecone directly
-    if top_score >= 0.60:
-        intent_obj = IntentResult(
-            template_id=top["id"],
+        try:
+            generated_sql = await resolver.translate_to_sql(nl)
+        except Exception as e:
+            log.error(f"V2 semantic translation failed: {e}", exc_info=True)
+            return ChatResponse(
+                type="error",
+                message=f"V2 semantic translation failed: {str(e)}",
+                suggestions=["Show AP invoice list", "Top 10 customers"],
+            )
+
+        # Construct the mock/dynamic SQLTemplate & IntentResult to feed the remaining pipeline
+        from app.query_engine.template_loader import SQLTemplate
+
+        template = SQLTemplate(
+            id="v2_semantic_query",
+            description="Dynamic V2 Semantic Query",
+            module="semantic_engine",
+            category="query",
+            supported_dbs=("mssql", "postgres", "mysql", "oracle", "cloudsql"),
+            params={},
+            derived_params=(),
+            sql_by_dialect={erp_type: generated_sql},
+            result_columns=(),
+            keywords=(),
+            embedding_text=""
+        )
+
+        intent = IntentResult(
+            template_id="v2_semantic_query",
             params={},
             missing_params=[],
-            confidence=top_score,
-            rationale="direct_pinecone_match",
+            confidence=1.0,
+            rationale="translated_via_yaml_engine"
         )
-        log.info(
-            "intent_direct_pinecone_match",
-            extra={"template_id": top["id"], "score": top_score, "query": nl},
-        )
-        intent = intent_obj
-    else:
-        # Tier 2: Run LLM for moderate or low scores
-        try:
-            intent = await extract_intent(
-                nl,
-                template_candidates=template_candidates,
-                user_name=user_name,
-            )
-        except LLMError as e:
-            return ChatResponse(
-                type="error",
-                message=f"Could not understand your query: {e.message}",
-                suggestions=["Show AP ageing report", "List overdue invoices"],
-            )
 
-        # If LLM didn't pick a template but Pinecone has moderate confidence, auto-promote
-        if not intent.template_id and top and top_score >= 0.40:
-            intent.template_id = top["id"]
-            intent.confidence = top_score
-            intent.params = intent.params or {}
-            log.info(
-                "intent_auto_promoted",
-                extra={"template_id": intent.template_id, "score": top_score, "query": nl},
+        # ── Execute or Preview ──────────────────────────────────────────
+        if not data.connection_id:
+            sql_preview = generated_sql
+            msg = (
+                f"✅ I translated your query via V2 Semantic Engine ({erp_type.upper()})\n\n"
+                f"To run this report, please **connect a database** from the Connections page. "
+                f"Here's a preview of the SQL that will execute:"
             )
-        elif not intent.template_id:
-            # Truly no match — return helpful suggestions from candidates
-            candidate_suggestions = [
-                c["description"] for c in template_candidates[:5] if c.get("description")
-            ]
-            return ChatResponse(
-                type="error",
-                message=(
-                    "I couldn't find a specific report for that query. "
-                    "Try one of these related reports below, or rephrase your question."
-                ),
-                suggestions=candidate_suggestions or [
-                    "Show AP ageing report",
-                    "List overdue supplier invoices",
-                    "Top customers by revenue",
-                ],
-                candidates=[
-                    TemplateMatch(
-                        id=c["id"],
-                        score=c.get("score", 0),
-                        description=c.get("description", ""),
-                        module=c.get("module", ""),
-                        category=c.get("category", ""),
+            suggestions = ["Show AP invoice list", "Top 10 customers"]
+            if session:
+                try:
+                    await session_service.append_turn(
+                        db,
+                        session,
+                        role="assistant",
+                        content=msg,
+                        type="template_preview",
+                        template_id=template.id,
+                        template_description=template.description,
+                        extracted_params=intent.params,
+                        sql=sql_preview,
+                        suggestions=suggestions,
                     )
-                    for c in template_candidates[:5]
-                ],
+                except Exception as e:
+                    log.warning("session_append_assistant_preview_failed", extra={"err": str(e)})
+
+            return ChatResponse(
+                type="template_preview",
+                message=msg,
+                template_id=template.id,
+                template_description=template.description,
+                template_module=template.module,
+                extracted_params=intent.params,
+                missing_params=[],
+                sql=sql_preview,
+                candidates=[],
+                suggestions=suggestions,
+                intent=intent,
             )
 
-    # ── Step 4: Get template ─────────────────────────────────────────
-    template_meta = None
-    template = None
-    for c in template_candidates:
-        if c["id"] == intent.template_id:
-            template_meta = c
-            break
+        # Execute the generated SQL on the connection
+        conn = await connection_service.get_connection(db, current, data.connection_id)
+        db_type = conn.db_type.value
 
-    if template_meta:
-        template = create_template_from_pinecone(template_meta)
-    elif registry.has(intent.template_id):
-        template = registry.get(intent.template_id)
-        template_meta = {
-            "module": template.module,
-            "category": template.category,
-            "description": template.description,
-        }
-    else:
-        # Fetch directly from Pinecone if not in candidates or registry (e.g. from history/context)
-        if store:
-            try:
-                meta = store.get_template_by_id(intent.template_id)
-                if meta:
-                    template = create_template_from_pinecone(meta)
-                    template_meta = meta
-            except Exception as e:
-                log.warning("pinecone_fetch_template_failed_in_chat", extra={"template_id": intent.template_id, "err": str(e)})
+        from app.query_engine.parameter_binder import BoundQuery
+        bound = BoundQuery(sql=generated_sql, params={}, db_type=db_type)
 
-        if not template or not template_meta:
+        try:
+            result = await execute_collect(conn, bound)
+        except TargetDBError as e:
+            if session:
+                try:
+                    await session_service.append_turn(
+                        db, session, role="assistant", content=f"Database error: {e.message}"
+                    )
+                    await _record_history(
+                        db,
+                        session,
+                        conn,
+                        current,
+                        nl,
+                        intent,
+                        bound.sql,
+                        ExecutionStatus.error,
+                        error_message=e.message,
+                    )
+                except Exception as ex:
+                    log.warning("record_history_failed_error", extra={"err": str(ex)})
             return ChatResponse(
                 type="error",
-                message=f"Template '{intent.template_id}' not found.",
-            )
-
-    # ── Step 5: Check for missing params ─────────────────────────────
-    missing = find_missing_params(template, intent.params)
-
-    if missing:
-        try:
-            suggestions = await generate_suggestions(
+                message=f"Database error: {e.message}",
+                sql=bound.sql,
                 template_id=template.id,
-                module=template.module,
-                category=template.category,
-                description=template.description,
-                user_name=user_name,
             )
-        except Exception:
-            suggestions = []
 
-        top_suggestions = [
-            TemplateMatch(
-                id=c["id"],
-                score=c.get("score", 0),
-                description=c.get("description", ""),
-                module=c.get("module", ""),
-                category=c.get("category", ""),
-            )
-            for c in template_candidates[:5]
-        ]
-
-        return ChatResponse(
-            type="params_needed",
-            message=f"I found the right query: **{template.description}**. Please provide the missing parameters:",
-            template_id=template.id,
-            template_description=template.description,
-            template_module=template.module,
-            extracted_params=intent.params,
-            missing_params=missing,
-            intent=intent,
-            suggestions=suggestions,
-            candidates=top_suggestions,
-        )
-
-    # ── Step 6: Execute query (or preview if no DB) ─────────────────
-    if not data.connection_id:
-        top_suggestions = [
-            TemplateMatch(
-                id=c["id"],
-                score=c.get("score", 0),
-                description=c.get("description", ""),
-                module=c.get("module", ""),
-                category=c.get("category", ""),
-            )
-            for c in template_candidates[:5]
-        ]
-
+        summary: str | None = None
+        suggestions = ["Show AP invoice list", "Top 10 customers"]
         try:
-            suggestions = await generate_suggestions(
-                template_id=template.id,
-                module=template.module,
-                category=template.category,
-                description=template.description,
-                user_name=user_name,
+            summary = await generate_insight(
+                intent=intent.model_dump(), rows=result.rows, user_name=user_name
             )
-        except Exception:
-            suggestions = [
-                "Show AP ageing report",
-                "List overdue supplier invoices",
-                "Top customers by revenue",
-                "Stock on hand summary",
-            ]
+        except Exception as e:
+            log.warning("insight_failed", extra={"err": str(e)})
 
-        sql_preview: str | None = None
-        if template.sql_by_dialect:
-            sql_preview = next(iter(template.sql_by_dialect.values()))
-
-        msg = (
-            f"✅ I matched your query to: **{template.description}**\n\n"
-            f"📂 Module: {template.module} → {template.category}\n\n"
-            f"To run this report, please **connect a database** from the Connections page. "
-            f"Here's a preview of the SQL that will execute:"
-        )
+        msg = summary or f"Query executed successfully. Found {result.rows_returned} rows."
+        col_names = list(result.columns) if result.columns else []
 
         if session:
             try:
@@ -370,50 +289,16 @@ async def chat(
                     session,
                     role="assistant",
                     content=msg,
-                    type="template_preview",
+                    type="executable",
+                    sql=bound.sql,
+                    rows=result.rows,
+                    columns=col_names,
+                    rows_returned=result.rows_returned,
+                    execution_time_ms=result.execution_time_ms,
                     template_id=template.id,
                     template_description=template.description,
                     extracted_params=intent.params,
-                    sql=sql_preview,
                     suggestions=suggestions,
-                )
-            except Exception as e:
-                log.warning("session_append_assistant_preview_failed", extra={"err": str(e)})
-
-        return ChatResponse(
-            type="template_preview",
-            message=msg,
-            template_id=template.id,
-            template_description=template.description,
-            template_module=template.module,
-            extracted_params=intent.params,
-            missing_params=[],
-            sql=sql_preview,
-            candidates=top_suggestions,
-            suggestions=suggestions,
-            intent=intent,
-        )
-
-    conn = await connection_service.get_connection(db, current, data.connection_id)
-    db_type = conn.db_type.value
-
-    try:
-        bound = bind(template, intent.params, db_type=db_type)
-    except ValidationFailed as e:
-        return ChatResponse(
-            type="error",
-            message=f"Parameter validation failed: {e.message}",
-            template_id=template.id,
-            extracted_params=intent.params,
-        )
-
-    try:
-        result = await execute_collect(conn, bound)
-    except TargetDBError as e:
-        if session:
-            try:
-                await session_service.append_turn(
-                    db, session, role="assistant", content=f"Database error: {e.message}"
                 )
                 await _record_history(
                     db,
@@ -423,111 +308,426 @@ async def chat(
                     nl,
                     intent,
                     bound.sql,
-                    ExecutionStatus.error,
-                    error_message=e.message,
+                    ExecutionStatus.success,
+                    execution_time_ms=result.execution_time_ms,
+                    rows_returned=result.rows_returned,
                 )
-            except Exception as ex:
-                log.warning("record_history_failed_error", extra={"err": str(ex)})
+            except Exception as e:
+                log.warning("record_history_success_failed", extra={"err": str(e)})
+
         return ChatResponse(
-            type="error",
-            message=f"Database error: {e.message}",
+            type="executable",
+            message=msg,
+            template_id=template.id,
+            template_description=template.description,
+            template_module=template.module,
+            extracted_params=intent.params,
             sql=bound.sql,
-            template_id=template.id,
+            rows=result.rows,
+            columns=col_names,
+            rows_returned=result.rows_returned,
+            execution_time_ms=result.execution_time_ms,
+            summary=summary,
+            suggestions=suggestions,
+            intent=intent,
+            candidates=[],
         )
+    else:
+        # Legacy V1 template-matching flow
+        store = get_pinecone_store_optional()
+        registry = get_template_registry()
 
-    summary: str | None = None
-    suggestions: list = []
-    try:
-        insight_task = generate_insight(
-            intent=intent.model_dump(), rows=result.rows, user_name=user_name
-        )
-        suggestions_task = generate_suggestions(
-            template_id=template.id,
-            module=template.module,
-            category=template.category,
-            description=template.description,
-            user_name=user_name,
-        )
-        results_parallel = await asyncio.gather(
-            insight_task, suggestions_task, return_exceptions=True
-        )
-        if not isinstance(results_parallel[0], Exception):
-            summary = results_parallel[0]
+        # Detect module hint from natural language for Pinecone filtering
+        module_filter = _detect_module_from_query(nl)
+
+        # ── Backend RBAC: Check module access before any LLM/Pinecone work ──
+        is_allowed, deny_msg = _check_module_access(module_filter, current)
+        if not is_allowed:
+            log.warning(
+                "module_access_denied",
+                extra={
+                    "user_id": str(current.user_id),
+                    "role": current.role,
+                    "detected_module": module_filter,
+                },
+            )
+            return ChatResponse(
+                type="access_denied",
+                message=deny_msg,
+                template_module=module_filter,
+                suggestions=[
+                    "Try a Finance or Inventory report instead",
+                    "Contact your admin to request module access",
+                ],
+            )
+
+        # Search Pinecone for matching templates (with keyword reranking)
+        template_candidates: list[dict[str, Any]] = []
+        if store:
+            try:
+                template_candidates = store.search_with_rerank(
+                    nl, top_k=5, module_filter=module_filter
+                )
+            except Exception as e:
+                log.warning("pinecone_search_failed", extra={"err": str(e)})
+                # Fallback to basic search without module filter
+                try:
+                    template_candidates = store.search_templates(nl, top_k=5)
+                except Exception:
+                    pass
+
+        # Fall back to keyword-matched static registry if no Pinecone results
+        if not template_candidates:
+            template_candidates = _smart_static_fallback(registry, nl)
+
+        # ── Step 3: Intent extraction via LLM ────────────────────────────
+        top = template_candidates[0] if template_candidates else None
+        top_score = top.get("score", 0) if top else 0
+
+        # Tier 1: Very high confidence (>= 0.60) — skip LLM entirely, use Pinecone directly
+        if top_score >= 0.60:
+            intent_obj = IntentResult(
+                template_id=top["id"],
+                params={},
+                missing_params=[],
+                confidence=top_score,
+                rationale="direct_pinecone_match",
+            )
+            log.info(
+                "intent_direct_pinecone_match",
+                extra={"template_id": top["id"], "score": top_score, "query": nl},
+            )
+            intent = intent_obj
         else:
-            log.warning("insight_failed", extra={"err": str(results_parallel[0])})
-        if not isinstance(results_parallel[1], Exception):
-            suggestions = results_parallel[1]
-    except Exception as e:
-        log.warning("parallel_llm_failed", extra={"err": str(e)})
+            # Tier 2: Run LLM for moderate or low scores
+            try:
+                intent = await extract_intent(
+                    nl,
+                    template_candidates=template_candidates,
+                    user_name=user_name,
+                )
+            except LLMError as e:
+                return ChatResponse(
+                    type="error",
+                    message=f"Could not understand your query: {e.message}",
+                    suggestions=["Show AP ageing report", "List overdue invoices"],
+                )
 
-    top_suggestions = [
-        TemplateMatch(
-            id=c["id"],
-            score=c.get("score", 0),
-            description=c.get("description", ""),
-            module=c.get("module", ""),
-            category=c.get("category", ""),
-        )
-        for c in template_candidates[:5]
-    ]
+            # If LLM didn't pick a template but Pinecone has moderate confidence, auto-promote
+            if not intent.template_id and top and top_score >= 0.40:
+                intent.template_id = top["id"]
+                intent.confidence = top_score
+                intent.params = intent.params or {}
+                log.info(
+                    "intent_auto_promoted",
+                    extra={"template_id": intent.template_id, "score": top_score, "query": nl},
+                )
+            elif not intent.template_id:
+                # Truly no match — return helpful suggestions from candidates
+                candidate_suggestions = [
+                    c["description"] for c in template_candidates[:5] if c.get("description")
+                ]
+                return ChatResponse(
+                    type="error",
+                    message=(
+                        "I couldn't find a specific report for that query. "
+                        "Try one of these related reports below, or rephrase your question."
+                    ),
+                    suggestions=candidate_suggestions or [
+                        "Show AP ageing report",
+                        "List overdue supplier invoices",
+                        "Top customers by revenue",
+                    ],
+                    candidates=[
+                        TemplateMatch(
+                            id=c["id"],
+                            score=c.get("score", 0),
+                            description=c.get("description", ""),
+                            module=c.get("module", ""),
+                            category=c.get("category", ""),
+                        )
+                        for c in template_candidates[:5]
+                    ],
+                )
 
-    msg = summary or f"Query executed successfully. Found {result.rows_returned} rows."
-    col_names = []
-    if result.columns:
-        col_names = list(result.columns)
-    elif template and template.result_columns:
-        col_names = list(template.result_columns)
+        # ── Step 4: Get template ─────────────────────────────────────────
+        template_meta = None
+        template = None
+        for c in template_candidates:
+            if c["id"] == intent.template_id:
+                template_meta = c
+                break
 
-    if session:
-        try:
-            await session_service.append_turn(
-                db,
-                session,
-                role="assistant",
-                content=msg,
-                type="executable",
-                sql=bound.sql,
-                rows=result.rows,
-                columns=col_names,
-                rows_returned=result.rows_returned,
-                execution_time_ms=result.execution_time_ms,
+        if template_meta:
+            template = create_template_from_pinecone(template_meta)
+        elif registry.has(intent.template_id):
+            template = registry.get(intent.template_id)
+            template_meta = {
+                "module": template.module,
+                "category": template.category,
+                "description": template.description,
+            }
+        else:
+            # Fetch directly from Pinecone if not in candidates or registry (e.g. from history/context)
+            if store:
+                try:
+                    meta = store.get_template_by_id(intent.template_id)
+                    if meta:
+                        template = create_template_from_pinecone(meta)
+                        template_meta = meta
+                except Exception as e:
+                    log.warning("pinecone_fetch_template_failed_in_chat", extra={"template_id": intent.template_id, "err": str(e)})
+
+            if not template or not template_meta:
+                return ChatResponse(
+                    type="error",
+                    message=f"Template '{intent.template_id}' not found.",
+                )
+
+        # ── Step 5: Check for missing params ─────────────────────────────
+        missing = find_missing_params(template, intent.params)
+
+        if missing:
+            try:
+                suggestions = await generate_suggestions(
+                    template_id=template.id,
+                    module=template.module,
+                    category=template.category,
+                    description=template.description,
+                    user_name=user_name,
+                )
+            except Exception:
+                suggestions = []
+
+            top_suggestions = [
+                TemplateMatch(
+                    id=c["id"],
+                    score=c.get("score", 0),
+                    description=c.get("description", ""),
+                    module=c.get("module", ""),
+                    category=c.get("category", ""),
+                )
+                for c in template_candidates[:5]
+            ]
+
+            return ChatResponse(
+                type="params_needed",
+                message=f"I found the right query: **{template.description}**. Please provide the missing parameters:",
                 template_id=template.id,
                 template_description=template.description,
+                template_module=template.module,
                 extracted_params=intent.params,
+                missing_params=missing,
+                intent=intent,
                 suggestions=suggestions,
+                candidates=top_suggestions,
             )
-            await _record_history(
-                db,
-                session,
-                conn,
-                current,
-                nl,
-                intent,
-                bound.sql,
-                ExecutionStatus.success,
-                execution_time_ms=result.execution_time_ms,
-                rows_returned=result.rows_returned,
-            )
-        except Exception as e:
-            log.warning("record_history_success_failed", extra={"err": str(e)})
 
-    return ChatResponse(
-        type="executable",
-        message=msg,
-        template_id=template.id,
-        template_description=template.description,
-        template_module=template.module,
-        extracted_params=intent.params,
-        sql=bound.sql,
-        rows=result.rows,
-        columns=col_names,
-        rows_returned=result.rows_returned,
-        execution_time_ms=result.execution_time_ms,
-        summary=summary,
-        suggestions=suggestions,
-        intent=intent,
-        candidates=top_suggestions,
-    )
+        # ── Step 6: Execute query (or preview if no DB) ─────────────────
+        if not data.connection_id:
+            top_suggestions = [
+                TemplateMatch(
+                    id=c["id"],
+                    score=c.get("score", 0),
+                    description=c.get("description", ""),
+                    module=c.get("module", ""),
+                    category=c.get("category", ""),
+                )
+                for c in template_candidates[:5]
+            ]
+
+            try:
+                suggestions = await generate_suggestions(
+                    template_id=template.id,
+                    module=template.module,
+                    category=template.category,
+                    description=template.description,
+                    user_name=user_name,
+                )
+            except Exception:
+                suggestions = [
+                    "Show AP ageing report",
+                    "List overdue supplier invoices",
+                    "Top customers by revenue",
+                    "Stock on hand summary",
+                ]
+
+            sql_preview: str | None = None
+            if template.sql_by_dialect:
+                sql_preview = next(iter(template.sql_by_dialect.values()))
+
+            msg = (
+                f"✅ I matched your query to: **{template.description}**\n\n"
+                f"📂 Module: {template.module} → {template.category}\n\n"
+                f"To run this report, please **connect a database** from the Connections page. "
+                f"Here's a preview of the SQL that will execute:"
+            )
+
+            if session:
+                try:
+                    await session_service.append_turn(
+                        db,
+                        session,
+                        role="assistant",
+                        content=msg,
+                        type="template_preview",
+                        template_id=template.id,
+                        template_description=template.description,
+                        extracted_params=intent.params,
+                        sql=sql_preview,
+                        suggestions=suggestions,
+                    )
+                except Exception as e:
+                    log.warning("session_append_assistant_preview_failed", extra={"err": str(e)})
+
+            return ChatResponse(
+                type="template_preview",
+                message=msg,
+                template_id=template.id,
+                template_description=template.description,
+                template_module=template.module,
+                extracted_params=intent.params,
+                missing_params=[],
+                sql=sql_preview,
+                candidates=top_suggestions,
+                suggestions=suggestions,
+                intent=intent,
+            )
+
+        conn = await connection_service.get_connection(db, current, data.connection_id)
+        db_type = conn.db_type.value
+
+        try:
+            bound = bind(template, intent.params, db_type=db_type)
+        except ValidationFailed as e:
+            return ChatResponse(
+                type="error",
+                message=f"Parameter validation failed: {e.message}",
+                template_id=template.id,
+                extracted_params=intent.params,
+            )
+
+        try:
+            result = await execute_collect(conn, bound)
+        except TargetDBError as e:
+            if session:
+                try:
+                    await session_service.append_turn(
+                        db, session, role="assistant", content=f"Database error: {e.message}"
+                    )
+                    await _record_history(
+                        db,
+                        session,
+                        conn,
+                        current,
+                        nl,
+                        intent,
+                        bound.sql,
+                        ExecutionStatus.error,
+                        error_message=e.message,
+                    )
+                except Exception as ex:
+                    log.warning("record_history_failed_error", extra={"err": str(ex)})
+            return ChatResponse(
+                type="error",
+                message=f"Database error: {e.message}",
+                sql=bound.sql,
+                template_id=template.id,
+            )
+
+        summary = None
+        suggestions = []
+        try:
+            insight_task = generate_insight(
+                intent=intent.model_dump(), rows=result.rows, user_name=user_name
+            )
+            suggestions_task = generate_suggestions(
+                template_id=template.id,
+                module=template.module,
+                category=template.category,
+                description=template.description,
+                user_name=user_name,
+            )
+            results_parallel = await asyncio.gather(
+                insight_task, suggestions_task, return_exceptions=True
+            )
+            if not isinstance(results_parallel[0], Exception):
+                summary = results_parallel[0]
+            else:
+                log.warning("insight_failed", extra={"err": str(results_parallel[0])})
+            if not isinstance(results_parallel[1], Exception):
+                suggestions = results_parallel[1]
+        except Exception as e:
+            log.warning("parallel_llm_failed", extra={"err": str(e)})
+
+        top_suggestions = [
+            TemplateMatch(
+                id=c["id"],
+                score=c.get("score", 0),
+                description=c.get("description", ""),
+                module=c.get("module", ""),
+                category=c.get("category", ""),
+            )
+            for c in template_candidates[:5]
+        ]
+
+        msg = summary or f"Query executed successfully. Found {result.rows_returned} rows."
+        col_names = []
+        if result.columns:
+            col_names = list(result.columns)
+        elif template and template.result_columns:
+            col_names = list(template.result_columns)
+
+        if session:
+            try:
+                await session_service.append_turn(
+                    db,
+                    session,
+                    role="assistant",
+                    content=msg,
+                    type="executable",
+                    sql=bound.sql,
+                    rows=result.rows,
+                    columns=col_names,
+                    rows_returned=result.rows_returned,
+                    execution_time_ms=result.execution_time_ms,
+                    template_id=template.id,
+                    template_description=template.description,
+                    extracted_params=intent.params,
+                    suggestions=suggestions,
+                )
+                await _record_history(
+                    db,
+                    session,
+                    conn,
+                    current,
+                    nl,
+                    intent,
+                    bound.sql,
+                    ExecutionStatus.success,
+                    execution_time_ms=result.execution_time_ms,
+                    rows_returned=result.rows_returned,
+                )
+            except Exception as e:
+                log.warning("record_history_success_failed", extra={"err": str(e)})
+
+        return ChatResponse(
+            type="executable",
+            message=msg,
+            template_id=template.id,
+            template_description=template.description,
+            template_module=template.module,
+            extracted_params=intent.params,
+            sql=bound.sql,
+            rows=result.rows,
+            columns=col_names,
+            rows_returned=result.rows_returned,
+            execution_time_ms=result.execution_time_ms,
+            summary=summary,
+            suggestions=suggestions,
+            intent=intent,
+            candidates=top_suggestions,
+        )
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -727,9 +927,57 @@ async def run_via_rest(
     session = await session_service.get(db, current, session_id)
     conn = await connection_service.get_connection(db, current, session.connection_id)
 
-    intent = await _intent(natural_language, session.context_window)
-    template = get_template_registry().get(intent.template_id)
-    bound = bind(template, intent.params, db_type=conn.db_type.value)
+    if s.ENGINE_VERSION.lower().strip() == "v2":
+        # Determine the ERP type dynamically (syspro or epicor)
+        erp_type = "syspro"
+        if conn and conn.name and "epicor" in conn.name.lower():
+            erp_type = "epicor"
+        else:
+            try:
+                org = await db["organizations"].find_one({"_id": str(current.org_id)})
+                if org and org.get("erpSystem"):
+                    system_name = org.get("erpSystem", "").lower()
+                    if "epicor" in system_name:
+                        erp_type = "epicor"
+                    elif "syspro" in system_name:
+                        erp_type = "syspro"
+            except Exception:
+                pass
+
+        from app.query_engine.semantic_resolver import SemanticResolver
+        resolver = SemanticResolver(erp_type=erp_type)
+        generated_sql = await resolver.translate_to_sql(natural_language)
+
+        from app.query_engine.template_loader import SQLTemplate
+
+        template = SQLTemplate(
+            id="v2_semantic_query",
+            description="Dynamic V2 Semantic Query",
+            module="semantic_engine",
+            category="query",
+            supported_dbs=("mssql", "postgres", "mysql", "oracle", "cloudsql"),
+            params={},
+            derived_params=(),
+            sql_by_dialect={erp_type: generated_sql},
+            result_columns=(),
+            keywords=(),
+            embedding_text=""
+        )
+
+        intent = IntentResult(
+            template_id="v2_semantic_query",
+            params={},
+            missing_params=[],
+            confidence=1.0,
+            rationale="translated_via_yaml_engine"
+        )
+
+        from app.query_engine.parameter_binder import BoundQuery
+        bound = BoundQuery(sql=generated_sql, params={}, db_type=conn.db_type.value)
+    else:
+        intent = await _intent(natural_language, session.context_window)
+        template = get_template_registry().get(intent.template_id)
+        bound = bind(template, intent.params, db_type=conn.db_type.value)
 
     try:
         result = await execute_collect(conn, bound)
@@ -804,9 +1052,57 @@ async def run_streaming(
     await on_event({"type": "status", "message": "Connecting to database..."})
     await on_event({"type": "progress", "step": "intent_extraction"})
 
-    intent = await _intent(natural_language, session.context_window)
-    template = get_template_registry().get(intent.template_id)
-    bound = bind(template, intent.params, db_type=conn.db_type.value)
+    if s.ENGINE_VERSION.lower().strip() == "v2":
+        # Determine the ERP type dynamically (syspro or epicor)
+        erp_type = "syspro"
+        if conn and conn.name and "epicor" in conn.name.lower():
+            erp_type = "epicor"
+        else:
+            try:
+                org = await db["organizations"].find_one({"_id": str(current.org_id)})
+                if org and org.get("erpSystem"):
+                    system_name = org.get("erpSystem", "").lower()
+                    if "epicor" in system_name:
+                        erp_type = "epicor"
+                    elif "syspro" in system_name:
+                        erp_type = "syspro"
+            except Exception:
+                pass
+
+        from app.query_engine.semantic_resolver import SemanticResolver
+        resolver = SemanticResolver(erp_type=erp_type)
+        generated_sql = await resolver.translate_to_sql(natural_language)
+
+        from app.query_engine.template_loader import SQLTemplate
+
+        template = SQLTemplate(
+            id="v2_semantic_query",
+            description="Dynamic V2 Semantic Query",
+            module="semantic_engine",
+            category="query",
+            supported_dbs=("mssql", "postgres", "mysql", "oracle", "cloudsql"),
+            params={},
+            derived_params=(),
+            sql_by_dialect={erp_type: generated_sql},
+            result_columns=(),
+            keywords=(),
+            embedding_text=""
+        )
+
+        intent = IntentResult(
+            template_id="v2_semantic_query",
+            params={},
+            missing_params=[],
+            confidence=1.0,
+            rationale="translated_via_yaml_engine"
+        )
+
+        from app.query_engine.parameter_binder import BoundQuery
+        bound = BoundQuery(sql=generated_sql, params={}, db_type=conn.db_type.value)
+    else:
+        intent = await _intent(natural_language, session.context_window)
+        template = get_template_registry().get(intent.template_id)
+        bound = bind(template, intent.params, db_type=conn.db_type.value)
 
     await on_event({"type": "progress", "step": "sql_build"})
     await on_event({"type": "sql", "sql": bound.sql})

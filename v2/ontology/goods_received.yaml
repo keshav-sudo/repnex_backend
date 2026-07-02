@@ -1,0 +1,50 @@
+# Business Concept: Goods Received
+concept: goods_received
+display_name: Goods Received
+module: purchasing
+description: >
+  Goods received against purchase orders. Known as GRN (Goods Received Note) or PO Receipts.
+
+synonyms:
+  - GRN
+  - goods received note
+  - PO receipt
+  - receiving
+  - goods receipt
+
+header_attributes:
+  grn_number:
+    display: GRN / Receipt Number
+    type: string
+    required: true
+  supplier_code:
+    display: Supplier
+    type: string
+  receive_date:
+    display: Receive Date
+    type: date
+  purchase_order:
+    display: Purchase Order
+    type: string
+
+detail_attributes:
+  line_number:
+    display: Line Number
+    type: integer
+  item_code:
+    display: Item Code
+    type: string
+  quantity_received:
+    display: Quantity Received
+    type: decimal
+  unit_cost:
+    display: Unit Cost
+    type: decimal
+
+relationships:
+  - concept: supplier
+    cardinality: many_to_one
+  - concept: purchase_order
+    cardinality: many_to_one
+  - concept: inventory_item
+    cardinality: many_to_many

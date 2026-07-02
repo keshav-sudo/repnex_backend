@@ -1,0 +1,30 @@
+# SYSPRO Mapping for Sales Order
+concept: sales_order
+header_table: SorMaster
+detail_table: SorDetail
+primary_key: SalesOrder
+
+header_fields:
+  order_number: SalesOrder
+  customer_code: Customer
+  order_date: OrderDate
+  required_date: ReqShipDate
+  order_status: OrderStatus
+  order_type: OrderType
+  salesperson: Salesperson
+  branch: Branch
+  currency: Currency
+  customer_po: CustomerPoNumber
+  warehouse: Warehouse
+
+detail_fields:
+  line_number: SalesOrderLine
+  item_code: MStockCode
+  description: MStockDes
+  quantity_ordered: MOrderQty
+  quantity_shipped: MShipQty
+  quantity_outstanding: MBackOrderQty
+  unit_price: MPrice
+  line_total: "(MShipQty * MPrice)"
+  discount: MDiscPct1
+  warehouse: MWarehouse
