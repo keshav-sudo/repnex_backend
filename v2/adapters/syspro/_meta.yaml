@@ -1,0 +1,11 @@
+# SYSPRO ERP Adapter Meta Information
+erp: syspro
+display_name: SYSPRO ERP
+dialect: mssql
+naming_convention: module_prefix_pascal
+table_prefix: ""
+schema_name: dbo
+multi_company_mode: separate_database
+notes: >
+  SYSPRO database tables are generally prefixed by module abbreviation (e.g. ArCustomer, SorMaster).
+  Each company is typically stored in its own separate database (e.g. SysproEdu2, SysproCompanyA).

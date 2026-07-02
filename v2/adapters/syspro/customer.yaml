@@ -1,0 +1,37 @@
+# SYSPRO Mapping for Customer
+concept: customer
+table: ArCustomer
+primary_key: Customer
+
+fields:
+  code: Customer
+  name: Name
+  short_name: ShortName
+  credit_limit: CreditLimit
+  credit_status: CreditStatus
+  currency: Currency
+  branch: Branch
+  area: Area
+  salesperson: Salesperson
+  customer_class: CustomerClass
+  tax_status: TaxStatus
+  email: Email
+  telephone: Telephone
+  on_hold: CustomerOnHold
+  date_added: DateCustAdded
+  last_sale_date: DateLastSale
+  last_payment_date: DateLastPay
+
+balance_mapping:
+  table: ArCustomerBal
+  join_on: Customer
+  fields:
+    current_balance: "(CurrentBalance1 + CurrentBalance2 + CurrentBalance3)"
+    ytd_sales: YtdSales
+    prev_year_sales: PrevYearSales
+    outstanding_orders: OutstOrdVal
+    aging_current: ValCurrentInv
+    aging_30: Val30daysInv
+    aging_60: Val60daysInv
+    aging_90: Val90daysInv
+    aging_120: Val120daysInv

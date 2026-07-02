@@ -1,0 +1,95 @@
+# Business Concept: AR Invoice
+concept: ar_invoice
+display_name: AR Invoice
+module: accounts_receivable
+description: >
+  An invoice issued to a customer for goods or services delivered.
+  Consists of a header and detail lines.
+
+synonyms:
+  - invoice
+  - sales invoice
+  - customer invoice
+  - AR invoice
+  - bill
+  - debit note
+
+header_attributes:
+  invoice_number:
+    display: Invoice Number
+    type: string
+    required: true
+  customer_code:
+    display: Customer
+    type: string
+    required: true
+  invoice_date:
+    display: Invoice Date
+    type: date
+  due_date:
+    display: Due Date
+    type: date
+  document_type:
+    display: Document Type
+    description: Invoice, Credit Note, Debit Note
+    type: string
+  invoice_balance:
+    display: Invoice Balance
+    description: Outstanding amount
+    type: decimal
+  original_value:
+    display: Original Value
+    description: Original invoice total
+    type: decimal
+  tax_value:
+    display: Tax Value
+    type: decimal
+  currency:
+    display: Currency
+    type: string
+  sales_order:
+    display: Sales Order
+    description: Originating sales order
+    type: string
+  salesperson:
+    display: Salesperson
+    type: string
+  branch:
+    display: Branch
+    type: string
+  terms_code:
+    display: Payment Terms
+    type: string
+
+detail_attributes:
+  line_number:
+    display: Line Number
+    type: integer
+  item_code:
+    display: Item Code
+    type: string
+  quantity:
+    display: Quantity
+    type: decimal
+  net_value:
+    display: Net Value
+    type: decimal
+  cost_value:
+    display: Cost Value
+    type: decimal
+  tax_value:
+    display: Tax Value
+    type: decimal
+  discount:
+    display: Discount
+    type: decimal
+
+relationships:
+  - concept: customer
+    cardinality: many_to_one
+  - concept: sales_order
+    cardinality: many_to_one
+  - concept: payment
+    cardinality: one_to_many
+  - concept: inventory_item
+    cardinality: many_to_many

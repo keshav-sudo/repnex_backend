@@ -1,0 +1,9 @@
+# SYSPRO Mapping for Salesperson
+concept: salesperson
+table: SalSalesperson
+primary_key: Salesperson
+
+fields:
+  code: Salesperson
+  name: Name
+  branch: Branch

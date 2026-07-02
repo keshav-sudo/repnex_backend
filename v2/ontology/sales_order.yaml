@@ -1,0 +1,157 @@
+# Business Concept: Sales Order
+# A customer order for goods or services.
+
+concept: sales_order
+display_name: Sales Order
+module: sales
+description: >
+  An order placed by a customer for products or services.
+  Consists of a header and one or more detail lines.
+
+synonyms:
+  - order
+  - SO
+  - customer order
+  - sales order
+  - sale
+
+header_attributes:
+  order_number:
+    display: Order Number
+    description: Unique order identifier
+    type: string
+    required: true
+
+  customer_code:
+    display: Customer
+    description: Customer who placed the order
+    type: string
+    required: true
+
+  order_date:
+    display: Order Date
+    description: Date order was placed
+    type: date
+
+  required_date:
+    display: Required Date
+    description: Requested delivery date
+    type: date
+
+  order_status:
+    display: Status
+    description: Open, Closed, Cancelled, etc.
+    type: string
+
+  order_type:
+    display: Order Type
+    description: Type classification
+    type: string
+
+  salesperson:
+    display: Salesperson
+    description: Assigned salesperson
+    type: string
+
+  branch:
+    display: Branch
+    description: Originating branch
+    type: string
+
+  currency:
+    display: Currency
+    description: Transaction currency
+    type: string
+
+  order_total:
+    display: Order Total
+    description: Total order value
+    type: decimal
+
+  tax_total:
+    display: Tax Total
+    description: Total tax on order
+    type: decimal
+
+  customer_po:
+    display: Customer PO Number
+    description: Customer's purchase order reference
+    type: string
+
+  warehouse:
+    display: Warehouse
+    description: Default fulfillment warehouse
+    type: string
+
+detail_attributes:
+  line_number:
+    display: Line Number
+    description: Order line sequence
+    type: integer
+    required: true
+
+  item_code:
+    display: Item Code
+    description: Stock code / Part number
+    type: string
+
+  description:
+    display: Description
+    description: Line item description
+    type: string
+
+  quantity_ordered:
+    display: Quantity Ordered
+    description: Ordered quantity
+    type: decimal
+
+  quantity_shipped:
+    display: Quantity Shipped
+    description: Shipped/dispatched quantity
+    type: decimal
+
+  quantity_outstanding:
+    display: Quantity Outstanding
+    description: Remaining to ship
+    type: decimal
+
+  unit_price:
+    display: Unit Price
+    description: Selling price per unit
+    type: decimal
+
+  line_total:
+    display: Line Total
+    description: Extended price
+    type: decimal
+
+  discount:
+    display: Discount
+    description: Line discount amount or percentage
+    type: decimal
+
+  warehouse:
+    display: Warehouse
+    description: Fulfillment warehouse for this line
+    type: string
+
+relationships:
+  - concept: customer
+    cardinality: many_to_one
+    description: Order belongs to a customer
+
+  - concept: ar_invoice
+    cardinality: one_to_many
+    description: Order generates invoices
+
+  - concept: shipment
+    cardinality: one_to_many
+    description: Order generates shipments
+
+  - concept: inventory_item
+    cardinality: many_to_many
+    description: Order lines reference items
+
+  - concept: salesperson
+    cardinality: many_to_one
+    description: Order assigned to salesperson

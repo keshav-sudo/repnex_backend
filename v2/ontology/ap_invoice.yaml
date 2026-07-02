@@ -1,0 +1,53 @@
+# Business Concept: AP Invoice
+concept: ap_invoice
+display_name: AP Invoice
+module: accounts_payable
+description: >
+  An invoice received from a supplier for goods or services.
+
+synonyms:
+  - supplier invoice
+  - vendor invoice
+  - AP invoice
+  - purchase invoice
+  - payable
+
+header_attributes:
+  invoice_number:
+    display: Invoice Number
+    type: string
+    required: true
+  supplier_code:
+    display: Supplier
+    type: string
+    required: true
+  invoice_date:
+    display: Invoice Date
+    type: date
+  due_date:
+    display: Due Date
+    type: date
+  invoice_total:
+    display: Invoice Total
+    type: decimal
+  tax_value:
+    display: Tax Value
+    type: decimal
+  currency:
+    display: Currency
+    type: string
+  purchase_order:
+    display: Purchase Order
+    type: string
+  status:
+    display: Status
+    description: Open, Paid, Partially Paid
+    type: string
+
+relationships:
+  - concept: supplier
+    cardinality: many_to_one
+  - concept: purchase_order
+    cardinality: many_to_one
+  - concept: payment
+    cardinality: one_to_many

@@ -1,0 +1,23 @@
+# SYSPRO Mapping for Supplier
+concept: supplier
+table: ApSupplier
+primary_key: Supplier
+
+fields:
+  code: Supplier
+  name: SupplierName
+  short_name: SupShortName
+  currency: Currency
+  current_balance: CurrentBalance
+  branch: Branch
+  area: Area
+  terms_code: TermsCode
+  bank: Bank
+  tax_registration: TaxRegnNum
+  email: Email
+  telephone: Telephone
+  on_hold: OnHold
+  date_added: DateSuppAdded
+  last_purchase_date: LastPurchDate
+  ytd_purchases: YtdMerchVal
+  prev_year_purchases: PyrEndBalance

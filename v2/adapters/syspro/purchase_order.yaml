@@ -1,0 +1,25 @@
+# SYSPRO Mapping for Purchase Order
+concept: purchase_order
+header_table: PorMasterHdr
+detail_table: PorMasterDetail
+primary_key: PurchaseOrder
+
+header_fields:
+  po_number: PurchaseOrder
+  supplier_code: Supplier
+  order_date: OrderEntryDate
+  due_date: OrderDueDate
+  status: OrderStatus
+  buyer: Buyer
+  currency: Currency
+  warehouse: Warehouse
+
+detail_fields:
+  line_number: Line
+  item_code: MStockCode
+  description: MStockDes
+  quantity_ordered: MOrderQty
+  quantity_received: MReceivedQty
+  unit_price: MPrice
+  line_total: "(MReceivedQty * MPrice)"
+  warehouse: MWarehouse

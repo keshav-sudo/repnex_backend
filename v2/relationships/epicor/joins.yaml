@@ -1,0 +1,33 @@
+# Epicor Kinetic Join Relationship Graph
+# Describes the direct join paths between database tables.
+
+relationships:
+  - from_concept: customer
+    to_concept: sales_order
+    join_type: inner
+    condition: "Erp.Customer.CustNum = Erp.OrderHed.CustNum AND Erp.Customer.Company = Erp.OrderHed.Company"
+
+  - from_concept: customer
+    to_concept: ar_invoice
+    join_type: inner
+    condition: "Erp.Customer.CustNum = Erp.InvcHead.CustNum AND Erp.Customer.Company = Erp.InvcHead.Company"
+
+  - from_concept: sales_order
+    to_concept: sales_order_line
+    join_type: inner
+    condition: "Erp.OrderHed.OrderNum = Erp.OrderDtl.OrderNum AND Erp.OrderHed.Company = Erp.OrderDtl.Company"
+
+  - from_concept: ar_invoice
+    to_concept: ar_invoice_line
+    join_type: inner
+    condition: "Erp.InvcHead.InvoiceNum = Erp.InvcDtl.InvoiceNum AND Erp.InvcHead.Company = Erp.InvcDtl.Company"
+
+  - from_concept: supplier
+    to_concept: purchase_order
+    join_type: inner
+    condition: "Erp.Vendor.VendorNum = Erp.POHeader.VendorNum AND Erp.Vendor.Company = Erp.POHeader.Company"
+
+  - from_concept: purchase_order
+    to_concept: purchase_order_line
+    join_type: inner
+    condition: "Erp.POHeader.PONum = Erp.PODetail.PONum AND Erp.POHeader.Company = Erp.PODetail.Company"

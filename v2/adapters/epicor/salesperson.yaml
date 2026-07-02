@@ -1,0 +1,9 @@
+# Epicor Mapping for Salesperson
+concept: salesperson
+table: Erp.SalesRep
+primary_key: SalesRepCode
+
+fields:
+  code: SalesRepCode
+  name: Name
+  branch: Company

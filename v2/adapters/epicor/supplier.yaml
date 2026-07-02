@@ -1,0 +1,23 @@
+# Epicor Mapping for Supplier
+concept: supplier
+table: Erp.Vendor
+primary_key: VendorNum
+
+fields:
+  code: VendorID
+  name: Name
+  short_name: Name
+  currency: CurrencyCode
+  current_balance: CurrencyBalance
+  branch: State
+  area: Country
+  terms_code: TermsCode
+  bank: BankName
+  tax_registration: TaxID
+  email: EMailAddress
+  telephone: PhoneNum
+  on_hold: VendorHeld
+  date_added: EntryDate
+  last_purchase_date: LastPurchDate
+  ytd_purchases: YTDPurchases
+  prev_year_purchases: LYDPurchases

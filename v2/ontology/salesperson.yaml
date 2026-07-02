@@ -1,0 +1,34 @@
+# Business Concept: Salesperson
+concept: salesperson
+display_name: Salesperson
+module: sales
+description: >
+  Assigned sales representative or sales agent.
+
+synonyms:
+  - sales rep
+  - sales agent
+  - commission agent
+  - account manager
+
+attributes:
+  code:
+    display: Salesperson Code
+    type: string
+    required: true
+  name:
+    display: Salesperson Name
+    type: string
+    required: true
+  branch:
+    display: Branch
+    type: string
+  email:
+    display: Email
+    type: string
+
+relationships:
+  - concept: customer
+    cardinality: one_to_many
+  - concept: sales_order
+    cardinality: one_to_many

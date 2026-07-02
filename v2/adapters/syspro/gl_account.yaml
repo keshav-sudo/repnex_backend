@@ -1,0 +1,15 @@
+# SYSPRO Mapping for GL Account
+concept: gl_account
+table: GenMaster
+primary_key: GlCode
+
+fields:
+  gl_code: GlCode
+  description: Description
+  account_type: AccountType
+  group: GlGroup
+  current_balance: CurrentBalance
+  ptd_debit: PtdDrValue
+  ptd_credit: PtdCrValue
+  on_hold: AccOnHldFlag
+  control_account: ControlAccFlag
