@@ -59,6 +59,8 @@ class CompleteMsg(BaseModel):
     history_id: str
     rows_returned: int
     exec_time_ms: int
+    columns: list[str] | None = None
+
 
 
 class ErrorMsg(BaseModel):
