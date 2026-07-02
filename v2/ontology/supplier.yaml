@@ -1,120 +1,92 @@
-# Business Concept: Supplier / Vendor
-# The entity that provides goods or services to the organization.
-
 concept: supplier
 display_name: Supplier
 module: accounts_payable
 description: >
-  A company or individual that provides goods or services.
-  Central entity in AP and Purchasing modules.
-
+  A supplier (vendor/creditor) master record in Accounts Payable, holding
+  identification, currency, current balance and purchase history statistics.
 synonyms:
   - vendor
   - creditor
-  - provider
-  - supplier account
-
-attributes:
-  code:
+  - payee
+  - seller
+header_attributes:
+  supplier_code:
     display: Supplier Code
-    description: Unique identifier for the supplier
     type: string
     required: true
-
-  name:
+    description: Unique supplier identifier
+  supplier_name:
     display: Supplier Name
-    description: Full legal or trading name
     type: string
     required: true
-
-  short_name:
-    display: Short Name
-    description: Abbreviated name
+    description: Trading name of the supplier
+  supplier_class:
+    display: Supplier Class
     type: string
-
+    required: false
+    description: Classification/grouping code for the supplier
   currency:
     display: Currency
-    description: Default trading currency
     type: string
-
+    required: false
+    description: Default currency the supplier trades in
   current_balance:
     display: Current Balance
-    description: Total outstanding balance owed
     type: decimal
-
-  branch:
-    display: Branch
-    description: Assigned branch
-    type: string
-
-  area:
-    display: Area / Territory
-    description: Geographic area
-    type: string
-
-  terms_code:
-    display: Payment Terms
-    description: Default payment terms
-    type: string
-
-  bank:
-    display: Bank
-    description: Default payment bank
-    type: string
-
-  tax_registration:
-    display: Tax Registration Number
-    description: VAT/GST/Tax ID
-    type: string
-
-  email:
-    display: Email
-    description: Primary contact email
-    type: string
-
-  telephone:
-    display: Telephone
-    description: Primary contact number
-    type: string
-
-  on_hold:
-    display: On Hold
-    description: Whether supplier is on hold
-    type: boolean
-
-  date_added:
-    display: Date Added
-    description: Date supplier was created
-    type: date
-
+    required: false
+    description: Current outstanding balance owed to the supplier
   last_purchase_date:
     display: Last Purchase Date
-    description: Date of most recent purchase
     type: date
-
-  ytd_purchases:
-    display: YTD Purchases
-    description: Year-to-date purchase value
+    required: false
+    description: Date of the most recent purchase from this supplier
+  last_payment_date:
+    display: Last Payment Date
+    type: date
+    required: false
+    description: Date of the most recent cheque/payment to this supplier
+  last_payment_value:
+    display: Last Payment Value
     type: decimal
-
-  prev_year_purchases:
-    display: Previous Year Purchases
-    description: Prior year total purchases
+    required: false
+    description: Value of the most recent cheque/payment
+  withholding_tax_code:
+    display: Withholding Tax Code
+    type: string
+    required: false
+    description: Withholding tax code applied to this supplier
+  withholding_tax_id:
+    display: Withholding Tax ID
+    type: string
+    required: false
+    description: Supplier withholding tax registration identifier
+  purchases_month_1:
+    display: Purchases Month 1
     type: decimal
-
-relationships:
-  - concept: purchase_order
-    cardinality: one_to_many
-    description: Supplier receives purchase orders
-
-  - concept: ap_invoice
-    cardinality: one_to_many
-    description: Supplier issues AP invoices
-
-  - concept: goods_received
-    cardinality: one_to_many
-    description: Goods received from supplier
-
-  - concept: payment
-    cardinality: one_to_many
-    description: Payments made to supplier
+    required: false
+    description: Purchase value for financial month 1 of the current year
+  prior_year_merchandise_value:
+    display: Prior Year Merchandise Value
+    type: decimal
+    required: false
+    description: Merchandise purchases in the prior financial year
+  prior_year_freight_value:
+    display: Prior Year Freight Value
+    type: decimal
+    required: false
+    description: Freight charges in the prior financial year
+  prior_year_other_value:
+    display: Prior Year Other Value
+    type: decimal
+    required: false
+    description: Other charges in the prior financial year
+  purchases_year_to_date:
+    display: Purchases Year to Date
+    type: decimal
+    required: false
+    description: Total purchase value across all financial months of the current year (calculated)
+  prior_year_total_value:
+    display: Prior Year Total Value
+    type: decimal
+    required: false
+    description: Total prior-year value (merchandise + freight + other, calculated)

@@ -1,23 +1,26 @@
-# SYSPRO Mapping for Supplier
 concept: supplier
 table: ApSupplier
-primary_key: Supplier
-
+alias: s
 fields:
-  code: Supplier
-  name: SupplierName
-  short_name: SupShortName
-  currency: Currency
-  current_balance: CurrentBalance
-  branch: Branch
-  area: Area
-  terms_code: TermsCode
-  bank: Bank
-  tax_registration: TaxRegnNum
-  email: Email
-  telephone: Telephone
-  on_hold: OnHold
-  date_added: DateSuppAdded
-  last_purchase_date: LastPurchDate
-  ytd_purchases: YtdMerchVal
-  prev_year_purchases: PyrEndBalance
+  supplier_code: s.Supplier
+  supplier_name: s.SupplierName
+  supplier_class: s.SupplierClass
+  currency: s.Currency
+  current_balance: s.CurrentBalance
+  last_purchase_date: s.LastPurchDate
+  last_payment_date: s.LastChequeDate
+  last_payment_value: s.LastChequeVal
+  withholding_tax_code: s.WithTaxCode
+  withholding_tax_id: s.WithTaxId
+  purchases_month_1: s.PurchValMth1
+  prior_year_merchandise_value: s.PyrMerchVal
+  prior_year_freight_value: s.PyrFreightVal
+  prior_year_other_value: s.PyrOtherVal
+calculated_fields:
+  # T-SQL: purchases across all 12 financial months of the current year
+  purchases_year_to_date: >-
+    (s.PurchValMth1 + s.PurchValMth2 + s.PurchValMth3 + s.PurchValMth4
+     + s.PurchValMth5 + s.PurchValMth6 + s.PurchValMth7 + s.PurchValMth8
+     + s.PurchValMth9 + s.PurchValMth10 + s.PurchValMth11 + s.PurchValMth12)
+  prior_year_total_value: >-
+    (s.PyrMerchVal + s.PyrFreightVal + s.PyrOtherVal)

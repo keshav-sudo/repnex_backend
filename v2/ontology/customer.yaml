@@ -1,177 +1,128 @@
-# Business Concept: Customer
-# The entity that purchases goods or services from the organization.
-
 concept: customer
 display_name: Customer
 module: accounts_receivable
 description: >
-  A person or organization that buys products or services.
-  Central entity in AR, Sales, and CRM modules.
-
+  A customer (debtor) master record in Accounts Receivable, holding
+  identification, credit control, activity dates and, via the balance
+  table, current outstanding balances and ageing buckets.
 synonyms:
+  - debtor
   - client
   - account
-  - debtor
   - buyer
-  - customer account
-  - sold-to party
-
-attributes:
-  code:
+header_attributes:
+  customer_code:
     display: Customer Code
-    description: Unique identifier for the customer
     type: string
     required: true
-
-  name:
+    description: Unique customer identifier
+  customer_name:
     display: Customer Name
-    description: Full legal or trading name
     type: string
     required: true
-
-  short_name:
-    display: Short Name
-    description: Abbreviated name for reports
-    type: string
-
-  credit_limit:
-    display: Credit Limit
-    description: Maximum allowed outstanding balance
-    type: decimal
-
-  credit_status:
-    display: Credit Status
-    description: Current credit standing (Active, On Hold, etc.)
-    type: string
-
-  currency:
-    display: Currency
-    description: Default trading currency
-    type: string
-
+    description: Trading name of the customer
   branch:
     display: Branch
-    description: Assigned branch or division
     type: string
-
+    required: false
+    description: Default AR branch for the customer
   area:
-    display: Area / Territory
-    description: Geographic area or sales territory
+    display: Area
     type: string
-
+    required: false
+    description: Geographic/sales area code
+  state:
+    display: State
+    type: string
+    required: false
+    description: State or province code
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Nationality/country code of the customer
   salesperson:
     display: Salesperson
-    description: Primary assigned salesperson
     type: string
-
-  customer_class:
-    display: Customer Class / Group
-    description: Classification or grouping code
+    required: false
+    description: Default salesperson code for the customer
+  currency:
+    display: Currency
     type: string
-
-  tax_status:
-    display: Tax Status
-    description: Tax exemption or liability status
+    required: false
+    description: Default currency the customer trades in
+  credit_limit:
+    display: Credit Limit
+    type: decimal
+    required: false
+    description: Approved credit limit for the customer
+  credit_status:
+    display: Credit Status
     type: string
-
-  email:
-    display: Email
-    description: Primary contact email
-    type: string
-
-  telephone:
-    display: Telephone
-    description: Primary contact number
-    type: string
-
+    required: false
+    description: Credit status/check code for the customer
   on_hold:
     display: On Hold
-    description: Whether the customer account is on hold
-    type: boolean
-
+    type: string
+    required: false
+    description: Indicates whether the customer account is on hold
+  payment_status:
+    display: Payment Status
+    type: string
+    required: false
+    description: Payment behaviour status of the customer
+  master_account:
+    display: Master Account
+    type: string
+    required: false
+    description: Master (head-office) account this customer rolls up to
   date_added:
     display: Date Added
-    description: Date customer was created in the system
     type: date
-
-  last_sale_date:
-    display: Last Sale Date
-    description: Date of most recent sale
+    required: false
+    description: Date the customer record was created
+  date_last_sale:
+    display: Date of Last Sale
     type: date
-
-  last_payment_date:
-    display: Last Payment Date
-    description: Date of most recent payment received
+    required: false
+    description: Date of the most recent sale to the customer
+  date_last_payment:
+    display: Date of Last Payment
     type: date
-
-# Balance / financial sub-attributes
-balance_attributes:
+    required: false
+    description: Date of the most recent payment from the customer
+  outstanding_order_value:
+    display: Outstanding Order Value
+    type: decimal
+    required: false
+    description: Value of open sales orders not yet invoiced
   current_balance:
     display: Current Balance
-    description: Total outstanding balance
     type: decimal
-
-  ytd_sales:
-    display: YTD Sales
-    description: Year-to-date sales value
+    required: false
+    description: Current outstanding receivable balance
+  ageing_current:
+    display: Ageing - Current
     type: decimal
-
-  prev_year_sales:
-    display: Previous Year Sales
-    description: Prior year total sales
+    required: false
+    description: Invoice value not yet due (current bucket)
+  ageing_30_days:
+    display: Ageing - 30 Days
     type: decimal
-
-  outstanding_orders:
-    display: Outstanding Orders Value
-    description: Value of unfulfilled orders
+    required: false
+    description: Invoice value 1-30 days overdue
+  ageing_60_days:
+    display: Ageing - 60 Days
     type: decimal
-
-  aging_current:
-    display: Current Aging
-    description: Invoices not yet due
+    required: false
+    description: Invoice value 31-60 days overdue
+  ageing_90_days:
+    display: Ageing - 90 Days
     type: decimal
-
-  aging_30:
-    display: 30 Days
-    description: Invoices 1-30 days overdue
+    required: false
+    description: Invoice value 61-90 days overdue
+  ageing_120_days:
+    display: Ageing - 120+ Days
     type: decimal
-
-  aging_60:
-    display: 60 Days
-    description: Invoices 31-60 days overdue
-    type: decimal
-
-  aging_90:
-    display: 90 Days
-    description: Invoices 61-90 days overdue
-    type: decimal
-
-  aging_120:
-    display: 120+ Days
-    description: Invoices over 90 days overdue
-    type: decimal
-
-relationships:
-  - concept: sales_order
-    cardinality: one_to_many
-    description: Customer places sales orders
-
-  - concept: ar_invoice
-    cardinality: one_to_many
-    description: Customer has AR invoices
-
-  - concept: payment
-    cardinality: one_to_many
-    description: Customer makes payments
-
-  - concept: quote
-    cardinality: one_to_many
-    description: Customer receives quotes
-
-  - concept: shipment
-    cardinality: one_to_many
-    description: Customer receives shipments
-
-  - concept: salesperson
-    cardinality: many_to_one
-    description: Customer is assigned to a salesperson
+    required: false
+    description: Invoice value more than 90 days overdue

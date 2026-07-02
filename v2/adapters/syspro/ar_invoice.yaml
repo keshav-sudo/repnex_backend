@@ -1,29 +1,26 @@
-# SYSPRO Mapping for AR Invoice
 concept: ar_invoice
-header_table: ArInvoice
-detail_table: ArTrnDetail
-primary_key: Invoice
-
-header_fields:
-  invoice_number: Invoice
-  customer_code: Customer
-  invoice_date: InvoiceDate
-  due_date: InvoiceDate # fallback, SYSPRO TermsCode dictates due date
-  document_type: DocumentType
-  invoice_balance: "(InvoiceBal1 + InvoiceBal2 + InvoiceBal3)"
-  original_value: DrCrInvoiceValue
-  tax_value: TaxPortion
-  currency: PostCurrency
-  sales_order: SalesOrder
-  salesperson: Salesperson
-  branch: Branch
-  terms_code: TermsCode
-
-detail_fields:
-  line_number: DetailLine
-  item_code: StockCode
-  quantity: QtyInvoiced
-  net_value: NetSalesValue
-  cost_value: CostValue
-  tax_value: TaxValue
-  discount: DiscValue
+table: ArInvoice
+alias: t
+fields:
+  invoice_number: t.Invoice
+  customer_code: t.Customer
+  document_type: t.DocumentType
+  invoice_date: t.InvoiceDate
+  due_date: t.DueDate
+  original_value: t.OrigInvValue
+  outstanding_balance: t.MthInvBal1
+  signed_invoice_value: t.DrCrInvoiceValue
+  tax_portion: t.TaxPortion
+  signed_tax_portion: t.DrCrTaxPortion
+  taxable_amount: t.OrigTaxableAmt
+  original_discount_value: t.OrigDiscValue
+  currency: t.Currency
+  exchange_rate: t.CurrencyValue
+  sales_order: t.SalesOrder
+  salesperson: t.Salesperson
+  terms_code: t.TermsCode
+  tax_code: t.TaxCode
+  branch: t.Branch
+default_filters:
+  invoices_only: "t.DocumentType = 'I'"
+  outstanding_only: "t.MthInvBal1 <> 0"

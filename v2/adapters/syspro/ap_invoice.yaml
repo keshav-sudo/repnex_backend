@@ -1,0 +1,25 @@
+concept: ap_invoice
+table: ApInvoice
+alias: i
+fields:
+  invoice_number: i.Invoice
+  supplier_code: i.Supplier
+  invoice_date: i.InvoiceDate
+  due_date: i.DueDate
+  discount_date: i.DiscountDate
+  original_value: i.OrigInvValue
+  outstanding_balance: i.MthInvBal1
+  original_discount_value: i.OrigDiscValue
+  payment_discount_value: i.PaymDiscValue
+  currency: i.Currency
+  exchange_rate: i.CurrencyValue
+  invoice_status: i.InvoiceStatus
+  invoice_year: i.InvoiceYear
+  invoice_month: i.InvoiceMonth
+  branch: i.Branch
+  reference: i.Reference
+  tax_code: i.FirstTaxCode
+  discount_active_flag: i.DiscActiveFlag
+  reverse_charge_flag: i.RevChargeFlag
+default_filters:
+  outstanding_only: "i.MthInvBal1 <> 0"

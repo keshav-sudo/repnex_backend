@@ -1,37 +1,32 @@
-# SYSPRO Mapping for Customer
 concept: customer
 table: ArCustomer
-primary_key: Customer
-
+alias: c
 fields:
-  code: Customer
-  name: Name
-  short_name: ShortName
-  credit_limit: CreditLimit
-  credit_status: CreditStatus
-  currency: Currency
-  branch: Branch
-  area: Area
-  salesperson: Salesperson
-  customer_class: CustomerClass
-  tax_status: TaxStatus
-  email: Email
-  telephone: Telephone
-  on_hold: CustomerOnHold
-  date_added: DateCustAdded
-  last_sale_date: DateLastSale
-  last_payment_date: DateLastPay
-
+  customer_code: c.Customer
+  customer_name: c.Name
+  branch: c.Branch
+  area: c.Area
+  state: c.State
+  nationality: c.Nationality
+  salesperson: c.Salesperson
+  currency: c.Currency
+  credit_limit: c.CreditLimit
+  credit_status: c.CreditStatus
+  on_hold: c.CustomerOnHold
+  payment_status: c.PaymentStatus
+  master_account: c.MasterAccount
+  date_added: c.DateCustAdded
+  date_last_sale: c.DateLastSale
+  date_last_payment: c.DateLastPay
+  outstanding_order_value: c.OutstOrdVal
 balance_mapping:
   table: ArCustomerBal
-  join_on: Customer
+  alias: b
+  join_on: c.Customer = b.Customer
   fields:
-    current_balance: "(CurrentBalance1 + CurrentBalance2 + CurrentBalance3)"
-    ytd_sales: YtdSales
-    prev_year_sales: PrevYearSales
-    outstanding_orders: OutstOrdVal
-    aging_current: ValCurrentInv
-    aging_30: Val30daysInv
-    aging_60: Val60daysInv
-    aging_90: Val90daysInv
-    aging_120: Val120daysInv
+    current_balance: b.CurrentBalance
+    ageing_current: b.ValCurrentInv
+    ageing_30_days: b.Val30daysInv
+    ageing_60_days: b.Val60daysInv
+    ageing_90_days: b.Val90daysInv
+    ageing_120_days: b.Val120daysInv

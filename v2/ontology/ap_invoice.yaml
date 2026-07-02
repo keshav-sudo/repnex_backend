@@ -1,53 +1,110 @@
-# Business Concept: AP Invoice
 concept: ap_invoice
 display_name: AP Invoice
 module: accounts_payable
 description: >
-  An invoice received from a supplier for goods or services.
-
+  A supplier (vendor) invoice recorded in Accounts Payable, representing an
+  amount the company owes. Tracks invoice value, outstanding balance, due
+  date and settlement discount information.
 synonyms:
   - supplier invoice
   - vendor invoice
-  - AP invoice
+  - payable invoice
+  - creditor invoice
   - purchase invoice
-  - payable
-
+  - bill
 header_attributes:
   invoice_number:
     display: Invoice Number
     type: string
     required: true
+    description: Unique invoice identifier issued by the supplier
   supplier_code:
-    display: Supplier
+    display: Supplier Code
     type: string
     required: true
+    description: Code of the supplier the invoice belongs to
   invoice_date:
     display: Invoice Date
     type: date
+    required: true
+    description: Date the invoice was raised
   due_date:
     display: Due Date
     type: date
-  invoice_total:
-    display: Invoice Total
+    required: false
+    description: Date the invoice payment falls due
+  discount_date:
+    display: Discount Date
+    type: date
+    required: false
+    description: Last date on which settlement discount applies
+  original_value:
+    display: Original Invoice Value
     type: decimal
-  tax_value:
-    display: Tax Value
+    required: true
+    description: Gross invoice value at the time of capture
+  outstanding_balance:
+    display: Outstanding Balance
     type: decimal
+    required: false
+    description: Current unpaid balance of the invoice (local currency)
+  original_discount_value:
+    display: Original Discount Value
+    type: decimal
+    required: false
+    description: Settlement discount value available at capture
+  payment_discount_value:
+    display: Payment Discount Taken
+    type: decimal
+    required: false
+    description: Discount value actually taken when paying
   currency:
     display: Currency
     type: string
-  purchase_order:
-    display: Purchase Order
+    required: false
+    description: Currency code of the invoice
+  exchange_rate:
+    display: Exchange Rate
+    type: decimal
+    required: false
+    description: Currency conversion rate applied to the invoice
+  invoice_status:
+    display: Invoice Status
     type: string
-  status:
-    display: Status
-    description: Open, Paid, Partially Paid
+    required: false
+    description: Current processing status of the invoice
+  invoice_year:
+    display: Invoice Year
+    type: integer
+    required: false
+    description: Financial year the invoice was posted to
+  invoice_month:
+    display: Invoice Month
+    type: integer
+    required: false
+    description: Financial month the invoice was posted to
+  branch:
+    display: AP Branch
     type: string
-
-relationships:
-  - concept: supplier
-    cardinality: many_to_one
-  - concept: purchase_order
-    cardinality: many_to_one
-  - concept: payment
-    cardinality: one_to_many
+    required: false
+    description: Accounts payable branch code
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Free-format reference captured with the invoice
+  tax_code:
+    display: Tax Code
+    type: string
+    required: false
+    description: First tax code applied to the invoice
+  discount_active_flag:
+    display: Discount Active Flag
+    type: string
+    required: false
+    description: Indicates whether settlement discount is still active
+  reverse_charge_flag:
+    display: Reverse Charge Flag
+    type: string
+    required: false
+    description: Indicates whether reverse-charge VAT applies
