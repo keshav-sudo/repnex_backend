@@ -146,6 +146,9 @@ CRITICAL RULES:
 6. For date calculations (like Year-to-Date or current date), always use standard MS SQL Server functions:
    - Use 'GETDATE()' (exact casing, uppercase) for the current date.
    - For Year-To-Date (YTD) filtering, use: `[date_column] >= DATEFROMPARTS(YEAR(GETDATE()), 1, 1) AND [date_column] <= GETDATE()`.
+7. For Margin or Profitability queries:
+   - Margin percentage (Gross Margin %) should be calculated as: `(CAST([ytd_profit] AS decimal(18,4)) / NULLIF(CAST([ytd_sales] AS decimal(18,4)), 0))` (or MTD equivalent depending on timeframe) to prevent divide-by-zero crashes.
+   - Profit is mapped to `ytd_profit` (or `mtd_profit1`), and Sales/Revenue is mapped to `ytd_sales` (or `mtd_sales1`).
 """
 
         log.info(f"Generating V2 semantic query for: {natural_language}")
