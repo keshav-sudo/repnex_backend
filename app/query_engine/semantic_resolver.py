@@ -163,3 +163,49 @@ CRITICAL RULES:
         if sql.endswith("```"):
             sql = sql[:-3]
         return sql.strip()
+
+
+def extract_columns_from_sql(sql: str) -> list[str]:
+    """
+    Parses a SQL SELECT statement to extract column aliases or names.
+    E.g. SELECT a.Col1 AS alias1, Col2 AS alias2, col3 FROM ...
+    """
+    import re
+    # Find the SELECT part (everything between SELECT and FROM)
+    # Handle case insensitivity and multi-line SQL
+    match = re.search(r"^\s*select\s+(?:top\s+\S+\s+)?(.*)\s+from\b", sql, re.IGNORECASE | re.DOTALL)
+    if not match:
+        return []
+    
+    select_clause = match.group(1)
+    
+    # Split by commas, taking care of parentheses (like COUNT(*), SUM(x), etc.)
+    parts = []
+    current = []
+    depth = 0
+    for char in select_clause:
+        if char == '(':
+            depth += 1
+        elif char == ')':
+            depth -= 1
+        if char == ',' and depth == 0:
+            parts.append("".join(current).strip())
+            current = []
+        else:
+            current.append(char)
+    if current:
+        parts.append("".join(current).strip())
+        
+    cols = []
+    for part in parts:
+        # Match "expression AS alias" (case insensitive)
+        as_match = re.search(r"\bAS\s+(\w+)\b", part, re.IGNORECASE)
+        if as_match:
+            cols.append(as_match.group(1))
+        else:
+            # Fallback: get the last word (e.g. "a.ColumnName" -> "ColumnName")
+            words = re.findall(r"\b\w+\b", part)
+            if words:
+                cols.append(words[-1])
+    return cols
+

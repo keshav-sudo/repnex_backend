@@ -678,6 +678,10 @@ async def chat(
         elif template and template.result_columns:
             col_names = list(template.result_columns)
 
+        if not col_names and bound and bound.sql:
+            from app.query_engine.semantic_resolver import extract_columns_from_sql
+            col_names = extract_columns_from_sql(bound.sql)
+
         if session:
             try:
                 await session_service.append_turn(
@@ -854,6 +858,10 @@ async def execute_with_params(
         col_names = list(result.columns)
     elif template and template.result_columns:
         col_names = list(template.result_columns)
+
+    if not col_names and bound and bound.sql:
+        from app.query_engine.semantic_resolver import extract_columns_from_sql
+        col_names = extract_columns_from_sql(bound.sql)
 
     if session:
         try:
@@ -1148,10 +1156,20 @@ async def run_streaming(
     )
     await session_service.append_turn(db, session, role="user", content=natural_language)
 
+    col_names = []
+    if sample:
+        col_names = list(sample[0].keys())
+    elif template and template.result_columns:
+        col_names = list(template.result_columns)
+
+    if not col_names and bound and bound.sql:
+        from app.query_engine.semantic_resolver import extract_columns_from_sql
+        col_names = extract_columns_from_sql(bound.sql)
+
     await on_event({"type": "progress", "step": "insight"})
     try:
         summary = await generate_insight(intent=intent.model_dump(), rows=sample)
-        await session_service.append_turn(db, session, role="assistant", content=summary)
+        await session_service.append_turn(db, session, role="assistant", content=summary, columns=col_names)
         await on_event({"type": "insight", "summary": summary})
     except LLMError as e:
         log.warning("insight_failed", extra={"err": str(e)})
@@ -1160,6 +1178,7 @@ async def run_streaming(
         "history_id": str(history.id),
         "rows_returned": rows_returned,
         "exec_time_ms": exec_ms,
+        "columns": col_names,
     }
 
 
