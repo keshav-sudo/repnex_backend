@@ -233,6 +233,11 @@ async def chat(
                 rationale="date_dependency_detected"
             )
 
+            clean_desc = (nl or "Dynamic Query").strip()
+            if len(clean_desc) > 60:
+                clean_desc = clean_desc[:57] + "..."
+            clean_desc = clean_desc.title()
+
             if session:
                 try:
                     await session_service.append_turn(
@@ -242,7 +247,7 @@ async def chat(
                         content=msg,
                         type="params_needed",
                         template_id="v2_semantic_query",
-                        template_description="Dynamic V2 Semantic Query",
+                        template_description=clean_desc,
                         extracted_params={},
                         suggestions=suggestions,
                     )
@@ -253,7 +258,7 @@ async def chat(
                 type="params_needed",
                 message=msg,
                 template_id="v2_semantic_query",
-                template_description="Dynamic V2 Semantic Query",
+                template_description=clean_desc,
                 template_module="semantic_engine",
                 extracted_params={},
                 missing_params=missing_params,
@@ -265,9 +270,14 @@ async def chat(
         # Construct the mock/dynamic SQLTemplate & IntentResult to feed the remaining pipeline
         from app.query_engine.template_loader import SQLTemplate
 
+        clean_desc = (nl or "Dynamic Query").strip()
+        if len(clean_desc) > 60:
+            clean_desc = clean_desc[:57] + "..."
+        clean_desc = clean_desc.title()
+
         template = SQLTemplate(
             id="v2_semantic_query",
-            description="Dynamic V2 Semantic Query",
+            description=clean_desc,
             module="semantic_engine",
             category="query",
             supported_dbs=("mssql", "postgres", "mysql", "oracle", "cloudsql"),
@@ -901,12 +911,16 @@ async def execute_with_params(
                 suggestions=["Show AP invoice list", "Top 10 customers"],
             )
 
-        # Construct the mock/dynamic SQLTemplate & IntentResult to feed the remaining pipeline
         from app.query_engine.template_loader import SQLTemplate
+
+        clean_desc = (nl or "Dynamic Query").strip()
+        if len(clean_desc) > 60:
+            clean_desc = clean_desc[:57] + "..."
+        clean_desc = clean_desc.title()
 
         template = SQLTemplate(
             id="v2_semantic_query",
-            description="Dynamic V2 Semantic Query",
+            description=clean_desc,
             module="semantic_engine",
             category="query",
             supported_dbs=("mssql", "postgres", "mysql", "oracle", "cloudsql"),
@@ -928,7 +942,7 @@ async def execute_with_params(
 
         # Reconstruct parameter summary for user log
         nl_repr = (
-            f"Execute report 'Dynamic V2 Semantic Query' with parameters: {data.params}"
+            f"Execute report '{clean_desc}' with parameters: {data.params}"
         )
         if session:
             try:
@@ -1245,11 +1259,14 @@ async def run_via_rest(
         resolver = SemanticResolver(erp_type=erp_type)
         generated_sql = await resolver.translate_to_sql(natural_language)
 
-        from app.query_engine.template_loader import SQLTemplate
+        clean_desc = (natural_language or "Dynamic Query").strip()
+        if len(clean_desc) > 60:
+            clean_desc = clean_desc[:57] + "..."
+        clean_desc = clean_desc.title()
 
         template = SQLTemplate(
             id="v2_semantic_query",
-            description="Dynamic V2 Semantic Query",
+            description=clean_desc,
             module="semantic_engine",
             category="query",
             supported_dbs=("mssql", "postgres", "mysql", "oracle", "cloudsql"),
@@ -1370,11 +1387,14 @@ async def run_streaming(
         resolver = SemanticResolver(erp_type=erp_type)
         generated_sql = await resolver.translate_to_sql(natural_language)
 
-        from app.query_engine.template_loader import SQLTemplate
+        clean_desc = (natural_language or "Dynamic Query").strip()
+        if len(clean_desc) > 60:
+            clean_desc = clean_desc[:57] + "..."
+        clean_desc = clean_desc.title()
 
         template = SQLTemplate(
             id="v2_semantic_query",
-            description="Dynamic V2 Semantic Query",
+            description=clean_desc,
             module="semantic_engine",
             category="query",
             supported_dbs=("mssql", "postgres", "mysql", "oracle", "cloudsql"),
