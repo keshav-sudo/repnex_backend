@@ -373,13 +373,27 @@ async def chat(
             )
 
         summary: str | None = None
-        suggestions = ["Show AP invoice list", "Top 10 customers"]
         try:
             summary = await generate_insight(
                 intent=intent.model_dump(), rows=result.rows, user_name=user_name
             )
         except Exception as e:
             log.warning("insight_failed", extra={"err": str(e)})
+
+        suggestions = []
+        try:
+            detected_module = _detect_module_from_query(nl) or "ap"
+            suggestions = await generate_suggestions(
+                template_id=template.id,
+                module=detected_module,
+                category="query",
+                description=template.description,
+                user_name=user_name,
+            )
+        except Exception as e:
+            log.warning("generate_suggestions_failed", extra={"err": str(e)})
+        if not suggestions:
+            suggestions = ["Show AP invoice list", "Top 10 customers"]
 
         msg = summary or f"Query executed successfully. Found {result.rows_returned} rows."
         col_names = list(result.columns) if result.columns else []
@@ -991,13 +1005,27 @@ async def execute_with_params(
 
         user_name = current.email.split("@")[0] if "@" in current.email else current.email
         summary: str | None = None
-        suggestions = ["Show AP invoice list", "Top 10 customers"]
         try:
             summary = await generate_insight(
                 intent=intent.model_dump(), rows=result.rows, user_name=user_name
             )
         except Exception as e:
             log.warning("insight_failed", extra={"err": str(e)})
+
+        suggestions = []
+        try:
+            detected_module = _detect_module_from_query(nl) or "ap"
+            suggestions = await generate_suggestions(
+                template_id=template.id,
+                module=detected_module,
+                category="query",
+                description=template.description,
+                user_name=user_name,
+            )
+        except Exception as e:
+            log.warning("generate_suggestions_failed", extra={"err": str(e)})
+        if not suggestions:
+            suggestions = ["Show AP invoice list", "Top 10 customers"]
 
         msg = summary or f"Query executed successfully. Found {result.rows_returned} rows."
         col_names = list(result.columns) if result.columns else []
