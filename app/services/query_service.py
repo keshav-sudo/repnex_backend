@@ -850,12 +850,17 @@ async def execute_with_params(
         if not session or not session.context_window:
             raise ValidationFailed("Could not retrieve original query context from session.")
 
-        # Find the last user message to retrieve original query
-        user_turns = [turn for turn in session.context_window if turn.get("role") == "user"]
-        if not user_turns:
-            raise ValidationFailed("Could not retrieve original query from session history.")
+        # Find the original query by searching backwards for a user turn that isn't a parameter execution log
+        nl = None
+        for turn in reversed(session.context_window):
+            if turn.get("role") == "user":
+                content = turn.get("content", "")
+                if not (content.startswith("Execute report") or content.startswith("Execute template")):
+                    nl = content
+                    break
 
-        nl = user_turns[-1]["content"]
+        if not nl:
+            raise ValidationFailed("Could not retrieve original query from session history.")
 
         # Extract dates
         start_date = data.params.get("start_date")
