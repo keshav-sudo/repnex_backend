@@ -126,7 +126,12 @@ class SemanticResolver:
 
         return "\n".join(context)
 
-    async def translate_to_sql(self, natural_language: str) -> str:
+    async def translate_to_sql(
+        self,
+        natural_language: str,
+        start_date: str | None = None,
+        end_date: str | None = None,
+    ) -> str:
         """
         Translates NL query into valid SQL dialect of the ERP target.
         """
@@ -149,6 +154,14 @@ CRITICAL RULES:
 7. For Margin or Profitability queries:
    - Margin percentage (Gross Margin %) should be calculated as: `(CAST([ytd_profit] AS decimal(18,4)) / NULLIF(CAST([ytd_sales] AS decimal(18,4)), 0))` (or MTD equivalent depending on timeframe) to prevent divide-by-zero crashes.
    - Profit is mapped to `ytd_profit` (or `mtd_profit1`), and Sales/Revenue is mapped to `ytd_sales` (or `mtd_sales1`).
+"""
+
+        if start_date and end_date:
+            system_prompt += f"""
+8. CRITICAL: The user has specified a custom date range: from '{start_date}' to '{end_date}'. 
+   If the query filters by any date fields (such as invoice date, due date, payment date, transaction date, journal date, etc.), 
+   you MUST filter them using: `[date_field] >= '{start_date}' AND [date_field] <= '{end_date}'`. 
+   Do NOT use GETDATE() or DATEADD() or other dynamic date functions in this case. Write the conditions using these exact literal values.
 """
 
         log.info(f"Generating V2 semantic query for: {natural_language}")

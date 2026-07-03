@@ -214,3 +214,117 @@ async def test_chat_direct_pinecone_fetch_fallback(
     assert resp.type == "executable"
     mock_store.get_template_by_id.assert_called_with("ap_ageing_report")
     mock_execute_collect.assert_called_once()
+
+
+@pytest.mark.asyncio
+@patch("app.services.query_service.classify_intent")
+@patch("app.services.query_service.connection_service")
+@patch("app.services.query_service.execute_collect")
+@patch("app.services.query_service.generate_insight")
+@patch("app.query_engine.semantic_resolver.SemanticResolver.translate_to_sql")
+@patch("app.services.query_service.get_settings")
+async def test_chat_v2_date_dependency(
+    mock_get_settings,
+    mock_translate_to_sql,
+    mock_gen_insight,
+    mock_execute_collect,
+    mock_connection_service,
+    mock_classify_intent,
+    mock_db,
+    current_user,
+):
+    # Setup settings to use V2 engine
+    mock_s = MagicMock()
+    mock_s.ENGINE_VERSION = "v2"
+    mock_get_settings.return_value = mock_s
+
+    mock_classify_intent.return_value = IntentClassification(
+        type="executable",
+        confidence=0.9,
+        reasoning="needs execution",
+    )
+
+    # In V2, we query a temporal query
+    mock_translate_to_sql.return_value = "SELECT * FROM ApInvoice WHERE InvoiceDate >= DATEADD(month, -3, GETDATE())"
+
+    request = ChatRequest(
+        natural_language="show ap invoices for the last 3 months",
+        connection_id=uuid.uuid4(),
+        session_id=None,
+    )
+
+    resp = await chat(mock_db, current_user, data=request)
+
+    # Assert that it successfully detected the date dependency and returned params_needed
+    assert resp.type == "params_needed"
+    assert resp.template_id == "v2_semantic_query"
+    assert len(resp.missing_params) == 2
+    assert resp.missing_params[0].name == "start_date"
+    assert resp.missing_params[1].name == "end_date"
+
+
+@pytest.mark.asyncio
+@patch("app.services.query_service.connection_service")
+@patch("app.services.query_service.execute_collect")
+@patch("app.services.query_service.generate_insight")
+@patch("app.query_engine.semantic_resolver.SemanticResolver.translate_to_sql")
+@patch("app.services.query_service.get_settings")
+@patch("app.services.query_service.session_service")
+async def test_execute_with_params_v2(
+    mock_session_service,
+    mock_get_settings,
+    mock_translate_to_sql,
+    mock_gen_insight,
+    mock_execute_collect,
+    mock_connection_service,
+    mock_db,
+    current_user,
+):
+    from app.schemas.query import ExecuteRequest
+    from app.services.query_service import execute_with_params
+
+    # Setup settings to use V2 engine
+    mock_s = MagicMock()
+    mock_s.ENGINE_VERSION = "v2"
+    mock_get_settings.return_value = mock_s
+
+    # Setup mock session
+    mock_session = MagicMock()
+    mock_session.org_id = current_user.org_id
+    mock_session.context_window = [
+        {"role": "user", "content": "show ap invoices for the last 3 months"}
+    ]
+    mock_session_service.get = AsyncMock(return_value=mock_session)
+
+    # Setup mock connection and db_type
+    mock_conn = MagicMock()
+    mock_conn.db_type.value = "postgres"
+    mock_connection_service.get_connection = AsyncMock(return_value=mock_conn)
+
+    # Setup mock query results
+    mock_result = MagicMock()
+    mock_result.rows = []
+    mock_result.columns = ["Invoice", "InvoiceDate"]
+    mock_result.rows_returned = 0
+    mock_execute_collect.return_value = mock_result
+
+    # Mock insight
+    mock_gen_insight.return_value = "Mocked insight"
+
+    # Setup mock translate to sql
+    mock_translate_to_sql.return_value = "SELECT * FROM ApInvoice WHERE InvoiceDate >= '2026-04-03' AND InvoiceDate <= '2026-07-03'"
+
+    request = ExecuteRequest(
+        template_id="v2_semantic_query",
+        params={"start_date": "2026-04-03", "end_date": "2026-07-03"},
+        connection_id=uuid.uuid4(),
+        session_id=uuid.uuid4(),
+    )
+
+    resp = await execute_with_params(mock_db, current_user, data=request)
+
+    assert resp.type == "executable"
+    assert resp.template_id == "v2_semantic_query"
+    # Ensure translate_to_sql was called with the date parameters
+    mock_translate_to_sql.assert_called_with("show ap invoices for the last 3 months", start_date="2026-04-03", end_date="2026-07-03")
+    mock_execute_collect.assert_called_once()

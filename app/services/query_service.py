@@ -52,6 +52,39 @@ from app.services import connection_service, session_service
 log = get_logger(__name__)
 
 
+def _detect_date_dependency(sql: str, nl: str) -> bool:
+    sql_lower = sql.lower()
+    nl_lower = nl.lower()
+
+    # Temporal phrases in natural language query
+    nl_indicators = [
+        "last ", "ytd", "year to date", "this year", "this month", "this quarter",
+        "date range", "between", "month to date", "mtd", "quarter to date", "qtd"
+    ]
+    for ind in nl_indicators:
+        if ind in nl_lower:
+            return True
+
+    # SQL indicators that strongly suggest date range filtering
+    sql_indicators = [
+        "dateadd", "datefromparts"
+    ]
+    for ind in sql_indicators:
+        if ind in sql_lower:
+            return True
+
+    # Explicit comparison operators on date columns in SQL
+    date_cols = ["invoicedate", "duedate", "journaldate", "chequedate", "paymentdate", "lastpurchdate"]
+    for col in date_cols:
+        if col in sql_lower:
+            import re
+            if re.search(rf"\b{col}\s*(>=|<=|>|<|between)\b", sql_lower):
+                return True
+
+    return False
+
+
+
 # ═══════════════════════════════════════════════════════════════════════
 # NEW: Unified chat endpoint
 # ═══════════════════════════════════════════════════════════════════════
@@ -168,6 +201,65 @@ async def chat(
                 type="error",
                 message=f"V2 semantic translation failed: {str(e)}",
                 suggestions=["Show AP invoice list", "Top 10 customers"],
+            )
+
+        # Check if the query requires a date range
+        if _detect_date_dependency(generated_sql, nl):
+            from app.schemas.query import MissingParam
+
+            missing_params = [
+                MissingParam(
+                    name="start_date",
+                    type="date",
+                    description="Start Date",
+                    required=True
+                ),
+                MissingParam(
+                    name="end_date",
+                    type="date",
+                    description="End Date",
+                    required=True
+                )
+            ]
+
+            msg = "I found the right query. Please provide the missing date range parameters to execute it correctly:"
+            suggestions = ["Show AP invoice list", "Top 10 customers"]
+
+            intent = IntentResult(
+                template_id="v2_semantic_query",
+                params={},
+                missing_params=["start_date", "end_date"],
+                confidence=1.0,
+                rationale="date_dependency_detected"
+            )
+
+            if session:
+                try:
+                    await session_service.append_turn(
+                        db,
+                        session,
+                        role="assistant",
+                        content=msg,
+                        type="params_needed",
+                        template_id="v2_semantic_query",
+                        template_description="Dynamic V2 Semantic Query",
+                        extracted_params={},
+                        suggestions=suggestions,
+                    )
+                except Exception as e:
+                    log.warning("session_append_assistant_params_needed_failed", extra={"err": str(e)})
+
+            return ChatResponse(
+                type="params_needed",
+                message=msg,
+                template_id="v2_semantic_query",
+                template_description="Dynamic V2 Semantic Query",
+                template_module="semantic_engine",
+                extracted_params={},
+                missing_params=missing_params,
+                suggestions=suggestions,
+                candidates=[],
+                intent=intent,
             )
 
         # Construct the mock/dynamic SQLTemplate & IntentResult to feed the remaining pipeline
@@ -746,6 +838,198 @@ async def execute_with_params(
     data: ExecuteRequest,
 ) -> ChatResponse:
     """Execute a template with user-provided params (after params_needed)."""
+    s = get_settings()
+    if s.ENGINE_VERSION.lower().strip() == "v2" or data.template_id == "v2_semantic_query":
+        # Load session if provided
+        session = None
+        if data.session_id:
+            session = await session_service.get(db, current, data.session_id)
+            if session.org_id != current.org_id:
+                raise Forbidden("Session does not belong to your organization")
+
+        if not session or not session.context_window:
+            raise ValidationFailed("Could not retrieve original query context from session.")
+
+        # Find the last user message to retrieve original query
+        user_turns = [turn for turn in session.context_window if turn.get("role") == "user"]
+        if not user_turns:
+            raise ValidationFailed("Could not retrieve original query from session history.")
+
+        nl = user_turns[-1]["content"]
+
+        # Extract dates
+        start_date = data.params.get("start_date")
+        end_date = data.params.get("end_date")
+
+        # Determine ERP type
+        erp_type = "syspro"
+        if data.connection_id:
+            try:
+                conn = await connection_service.get_connection(db, current, data.connection_id)
+                if conn and conn.name and "epicor" in conn.name.lower():
+                    erp_type = "epicor"
+            except Exception:
+                pass
+
+        try:
+            org = await db["organizations"].find_one({"_id": str(current.org_id)})
+            if org and org.get("erpSystem"):
+                system_name = org.get("erpSystem", "").lower()
+                if "epicor" in system_name:
+                    erp_type = "epicor"
+                elif "syspro" in system_name:
+                    erp_type = "syspro"
+        except Exception:
+            pass
+
+        # Initialize Semantic Resolver for the target ERP
+        from app.query_engine.semantic_resolver import SemanticResolver
+        resolver = SemanticResolver(erp_type=erp_type)
+
+        try:
+            generated_sql = await resolver.translate_to_sql(nl, start_date=start_date, end_date=end_date)
+        except Exception as e:
+            log.error(f"V2 semantic translation failed: {e}", exc_info=True)
+            return ChatResponse(
+                type="error",
+                message=f"V2 semantic translation failed: {str(e)}",
+                suggestions=["Show AP invoice list", "Top 10 customers"],
+            )
+
+        # Construct the mock/dynamic SQLTemplate & IntentResult to feed the remaining pipeline
+        from app.query_engine.template_loader import SQLTemplate
+
+        template = SQLTemplate(
+            id="v2_semantic_query",
+            description="Dynamic V2 Semantic Query",
+            module="semantic_engine",
+            category="query",
+            supported_dbs=("mssql", "postgres", "mysql", "oracle", "cloudsql"),
+            params={},
+            derived_params=(),
+            sql_by_dialect={erp_type: generated_sql},
+            result_columns=(),
+            keywords=(),
+            embedding_text=""
+        )
+
+        intent = IntentResult(
+            template_id="v2_semantic_query",
+            params=data.params,
+            missing_params=[],
+            confidence=1.0,
+            rationale="translated_via_yaml_engine"
+        )
+
+        # Reconstruct parameter summary for user log
+        nl_repr = (
+            f"Execute report 'Dynamic V2 Semantic Query' with parameters: {data.params}"
+        )
+        if session:
+            try:
+                await session_service.append_turn(db, session, role="user", content=nl_repr)
+            except Exception as e:
+                log.warning("session_append_user_execute_failed", extra={"err": str(e)})
+
+        # Execute the generated SQL on the connection
+        conn = await connection_service.get_connection(db, current, data.connection_id)
+        db_type = conn.db_type.value
+
+        from app.query_engine.parameter_binder import BoundQuery
+        bound = BoundQuery(sql=generated_sql, params={}, db_type=db_type)
+
+        try:
+            result = await execute_collect(conn, bound)
+        except TargetDBError as e:
+            if session:
+                try:
+                    await session_service.append_turn(
+                        db, session, role="assistant", content=f"Database error: {e.message}"
+                    )
+                    await _record_history(
+                        db,
+                        session,
+                        conn,
+                        current,
+                        nl,
+                        intent,
+                        bound.sql,
+                        ExecutionStatus.error,
+                        error_message=e.message,
+                    )
+                except Exception as ex:
+                    log.warning("record_history_failed_error", extra={"err": str(ex)})
+            return ChatResponse(
+                type="error",
+                message=f"Database error: {e.message}",
+                sql=bound.sql,
+                template_id=template.id,
+            )
+
+        user_name = current.email.split("@")[0] if "@" in current.email else current.email
+        summary: str | None = None
+        suggestions = ["Show AP invoice list", "Top 10 customers"]
+        try:
+            summary = await generate_insight(
+                intent=intent.model_dump(), rows=result.rows, user_name=user_name
+            )
+        except Exception as e:
+            log.warning("insight_failed", extra={"err": str(e)})
+
+        msg = summary or f"Query executed successfully. Found {result.rows_returned} rows."
+        col_names = list(result.columns) if result.columns else []
+
+        if session:
+            try:
+                await session_service.append_turn(
+                    db,
+                    session,
+                    role="assistant",
+                    content=msg,
+                    type="executable",
+                    sql=bound.sql,
+                    rows=result.rows,
+                    columns=col_names,
+                    rows_returned=result.rows_returned,
+                    execution_time_ms=result.execution_time_ms,
+                    template_id=template.id,
+                    template_description=template.description,
+                    extracted_params=intent.params,
+                    suggestions=suggestions,
+                )
+                await _record_history(
+                    db,
+                    session,
+                    conn,
+                    current,
+                    nl,
+                    intent,
+                    bound.sql,
+                    ExecutionStatus.success,
+                    execution_time_ms=result.execution_time_ms,
+                    rows_returned=result.rows_returned,
+                )
+            except Exception as e:
+                log.warning("record_history_success_failed", extra={"err": str(e)})
+
+        return ChatResponse(
+            type="executable",
+            message=msg,
+            template_id=template.id,
+            template_description=template.description,
+            template_module=template.module,
+            extracted_params=intent.params,
+            sql=bound.sql,
+            rows=result.rows,
+            columns=col_names,
+            rows_returned=result.rows_returned,
+            execution_time_ms=result.execution_time_ms,
+            summary=summary,
+            suggestions=suggestions,
+            intent=intent,
+            candidates=[],
+        )
+
     registry = get_template_registry()
     store = get_pinecone_store_optional()
 
