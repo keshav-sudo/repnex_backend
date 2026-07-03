@@ -870,7 +870,11 @@ async def execute_with_params(
                     break
 
         if not nl:
-            raise ValidationFailed("Could not retrieve original query from session history.")
+            # Fallback to session title if no user turn is found in the context window
+            if session.title and session.title not in ("New chat", ""):
+                nl = session.title
+            else:
+                raise ValidationFailed("Could not retrieve original query from session history.")
 
         # Extract dates
         start_date = data.params.get("start_date")

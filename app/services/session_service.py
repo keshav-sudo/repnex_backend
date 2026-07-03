@@ -147,6 +147,9 @@ async def append_turn(
 
     token_count = sum(len(m.get("content", "")) // 4 for m in cw)
 
+    session.context_window = cw
+    session.token_count = token_count
+
     await db[GISession.COLLECTION].update_one(
         {"_id": str(session.id)},
         {"$set": {
