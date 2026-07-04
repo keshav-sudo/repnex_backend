@@ -259,6 +259,7 @@ async def test_chat_v2_date_dependency(
     assert resp.type == "params_needed"
     assert resp.template_id == "v2_semantic_query"
     assert len(resp.missing_params) == 2
+    # pyrefly: ignore [unsupported-operation]
     assert resp.missing_params[0].name == "start_date"
     assert resp.missing_params[1].name == "end_date"
 
@@ -328,3 +329,30 @@ async def test_execute_with_params_v2(
     # Ensure translate_to_sql was called with the date parameters
     mock_translate_to_sql.assert_called_with("show ap invoices for the last 3 months", start_date="2026-04-03", end_date="2026-07-03")
     mock_execute_collect.assert_called_once()
+
+
+@pytest.mark.asyncio
+@patch("app.query_engine.semantic_resolver.get_llm")
+async def test_semantic_resolver_sql_extraction(mock_get_llm):
+    from app.query_engine.semantic_resolver import SemanticResolver
+
+    mock_llm_instance = MagicMock()
+    mock_llm_instance.chat_text = AsyncMock(return_value="""Based on the provided schema, here is the query:
+```sql
+SELECT c.Customer, c.Name
+FROM ArCustomer c
+WHERE c.TaxStatus = 'T'
+```
+I hope this helps!""")
+    mock_get_llm.return_value = mock_llm_instance
+
+    resolver = SemanticResolver(erp_type="syspro")
+    resolver.build_prompt_context = MagicMock(return_value="Mock prompt context")
+
+    sql = await resolver.translate_to_sql("give me all tax paid companies")
+
+    expected_sql = """SELECT c.Customer, c.Name
+FROM ArCustomer c
+WHERE c.TaxStatus = 'T'"""
+
+    assert sql == expected_sql

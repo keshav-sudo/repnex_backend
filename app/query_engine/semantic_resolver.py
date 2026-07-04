@@ -173,14 +173,24 @@ CRITICAL RULES:
             max_tokens=1024
         )
         
-        # Clean up any trailing backticks or formatting
-        sql = sql.strip()
-        if sql.startswith("```sql"):
-            sql = sql[6:]
-        if sql.startswith("```"):
-            sql = sql[3:]
-        if sql.endswith("```"):
-            sql = sql[:-3]
+        # Clean up and extract SQL from markdown code blocks if present
+        import re
+        match = re.search(r"```sql\s*(.*?)\s*```", sql, re.IGNORECASE | re.DOTALL)
+        if match:
+            sql = match.group(1).strip()
+        else:
+            match = re.search(r"```\s*(.*?)\s*```", sql, re.DOTALL)
+            if match:
+                sql = match.group(1).strip()
+            else:
+                # Clean up any partial wrapping backticks
+                sql = sql.strip()
+                if sql.startswith("```sql"):
+                    sql = sql[6:]
+                if sql.startswith("```"):
+                    sql = sql[3:]
+                if sql.endswith("```"):
+                    sql = sql[:-3]
         return sql.strip()
 
 
