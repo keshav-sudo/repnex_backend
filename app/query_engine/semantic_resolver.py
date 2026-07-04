@@ -175,23 +175,43 @@ CRITICAL RULES:
         
         # Clean up and extract SQL from markdown code blocks if present
         import re
-        match = re.search(r"```sql\s*(.*?)\s*```", sql, re.IGNORECASE | re.DOTALL)
+        cleaned_sql = sql.strip()
+        
+        # 1. Closed code blocks
+        match = re.search(r"```sql\s*(.*?)\s*```", cleaned_sql, re.IGNORECASE | re.DOTALL)
         if match:
-            sql = match.group(1).strip()
+            cleaned_sql = match.group(1).strip()
         else:
-            match = re.search(r"```\s*(.*?)\s*```", sql, re.DOTALL)
+            match = re.search(r"```\s*(.*?)\s*```", cleaned_sql, re.DOTALL)
             if match:
-                sql = match.group(1).strip()
+                cleaned_sql = match.group(1).strip()
             else:
-                # Clean up any partial wrapping backticks
-                sql = sql.strip()
-                if sql.startswith("```sql"):
-                    sql = sql[6:]
-                if sql.startswith("```"):
-                    sql = sql[3:]
-                if sql.endswith("```"):
-                    sql = sql[:-3]
-        return sql.strip()
+                # 2. Unclosed code blocks (e.g. if truncated by token limit)
+                match = re.search(r"```sql\s*(.*)", cleaned_sql, re.IGNORECASE | re.DOTALL)
+                if match:
+                    cleaned_sql = match.group(1).strip()
+                else:
+                    match = re.search(r"```\s*(.*)", cleaned_sql, re.DOTALL)
+                    if match:
+                        cleaned_sql = match.group(1).strip()
+                    else:
+                        # Clean up any partial wrapping backticks
+                        if cleaned_sql.startswith("```sql"):
+                            cleaned_sql = cleaned_sql[6:]
+                        if cleaned_sql.startswith("```"):
+                            cleaned_sql = cleaned_sql[3:]
+                        if cleaned_sql.endswith("```"):
+                            cleaned_sql = cleaned_sql[:-3]
+                            
+        cleaned_sql = cleaned_sql.strip()
+        
+        # Check if the extracted text contains standard SQL queries (SELECT or WITH)
+        sql_upper = cleaned_sql.upper()
+        if "SELECT" not in sql_upper and "WITH" not in sql_upper:
+            # Conversational/clarification text
+            return f"CONVERSATIONAL:{sql}"
+            
+        return cleaned_sql
 
 
 def extract_columns_from_sql(sql: str) -> list[str]:

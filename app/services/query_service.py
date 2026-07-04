@@ -203,6 +203,26 @@ async def chat(
                 suggestions=["Show AP invoice list", "Top 10 customers"],
             )
 
+        if generated_sql.startswith("CONVERSATIONAL:"):
+            msg = generated_sql[len("CONVERSATIONAL:"):]
+            if session:
+                try:
+                    await session_service.append_turn(
+                        db,
+                        session,
+                        role="assistant",
+                        content=msg,
+                        type="conversational",
+                        suggestions=["Show AP ageing report", "Top customers by revenue"],
+                    )
+                except Exception as e:
+                    log.warning("session_append_assistant_conversational_failed", extra={"err": str(e)})
+            return ChatResponse(
+                type="conversational",
+                message=msg,
+                suggestions=["Show AP ageing report", "Top customers by revenue"],
+            )
+
         # Check if the query requires a date range
         if _detect_date_dependency(generated_sql, nl):
             from app.schemas.query import MissingParam
@@ -929,6 +949,26 @@ async def execute_with_params(
                 suggestions=["Show AP invoice list", "Top 10 customers"],
             )
 
+        if generated_sql.startswith("CONVERSATIONAL:"):
+            msg = generated_sql[len("CONVERSATIONAL:"):]
+            if session:
+                try:
+                    await session_service.append_turn(
+                        db,
+                        session,
+                        role="assistant",
+                        content=msg,
+                        type="conversational",
+                        suggestions=["Show AP ageing report", "Top customers by revenue"],
+                    )
+                except Exception as e:
+                    log.warning("session_append_assistant_conversational_failed", extra={"err": str(e)})
+            return ChatResponse(
+                type="conversational",
+                message=msg,
+                suggestions=["Show AP ageing report", "Top customers by revenue"],
+            )
+
         from app.query_engine.template_loader import SQLTemplate
 
         clean_desc = (nl or "Dynamic Query").strip()
@@ -1290,6 +1330,8 @@ async def run_via_rest(
         from app.query_engine.semantic_resolver import SemanticResolver
         resolver = SemanticResolver(erp_type=erp_type)
         generated_sql = await resolver.translate_to_sql(natural_language)
+        if generated_sql.startswith("CONVERSATIONAL:"):
+            raise ValidationFailed(generated_sql[len("CONVERSATIONAL:"):])
 
         clean_desc = (natural_language or "Dynamic Query").strip()
         if len(clean_desc) > 60:
@@ -1418,6 +1460,8 @@ async def run_streaming(
         from app.query_engine.semantic_resolver import SemanticResolver
         resolver = SemanticResolver(erp_type=erp_type)
         generated_sql = await resolver.translate_to_sql(natural_language)
+        if generated_sql.startswith("CONVERSATIONAL:"):
+            raise ValidationFailed(generated_sql[len("CONVERSATIONAL:"):])
 
         clean_desc = (natural_language or "Dynamic Query").strip()
         if len(clean_desc) > 60:

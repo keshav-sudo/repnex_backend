@@ -356,3 +356,43 @@ FROM ArCustomer c
 WHERE c.TaxStatus = 'T'"""
 
     assert sql == expected_sql
+
+
+@pytest.mark.asyncio
+@patch("app.services.query_service.classify_intent")
+@patch("app.query_engine.semantic_resolver.SemanticResolver.translate_to_sql")
+@patch("app.services.query_service.get_settings")
+async def test_chat_v2_conversational_response(
+    mock_get_settings,
+    mock_translate_to_sql,
+    mock_classify_intent,
+    mock_db,
+    current_user,
+):
+    mock_s = MagicMock()
+    mock_s.ENGINE_VERSION = "v2"
+    mock_get_settings.return_value = mock_s
+
+    mock_classify_intent.return_value = IntentClassification(
+        type="executable",
+        confidence=0.9,
+        reasoning="needs execution",
+    )
+
+    mock_translate_to_sql.return_value = "CONVERSATIONAL:I need to clarify your request. It seems like you're asking for..."
+
+    from app.schemas.query import ChatRequest
+    from app.services.query_service import chat
+    import uuid
+
+    request = ChatRequest(
+        natural_language="give me most pai dcheuq details",
+        connection_id=uuid.uuid4(),
+        session_id=None,
+    )
+
+    resp = await chat(mock_db, current_user, data=request)
+
+    assert resp.type == "conversational"
+    assert resp.message == "I need to clarify your request. It seems like you're asking for..."
+    assert len(resp.suggestions) > 0
