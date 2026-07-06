@@ -1,0 +1,49 @@
+concept: purchase_bill
+table: hx_purchase_bill
+alias: pb
+fields:
+  bill_id: pb.bill_id
+  bill_number: pb.bill_number
+  bill_date: pb.bill_date
+  po_id: pb.po_id
+  supplier_id: pb.supplier_id
+  due_date: pb.due_date
+  subtotal: pb.subtotal
+  tax_amount: pb.tax_amount
+  total_amount: pb.total_amount
+  amount_paid: pb.amount_paid
+  outstanding_payable: "(pb.total_amount - pb.amount_paid)"
+  status: pb.status
+  currency: pb.currency
+filters:
+  unpaid: "pb.status IN ('Unpaid', 'Partial')"
+  paid: "pb.status = 'Paid'"
+  overdue: "pb.due_date < CURRENT_DATE AND pb.status IN ('Unpaid', 'Partial')"
+common_queries:
+  - "Outstanding payables (AP)"
+  - "Overdue supplier bills"
+  - "Bills by supplier"
+  - "Monthly purchase totals"
+  - "Total payables outstanding"
+joins:
+  supplier:
+    table: hx_supplier
+    alias: s
+    on: "pb.supplier_id = s.supplier_id"
+  purchase_order:
+    table: hx_purchase_order
+    alias: po
+    on: "pb.po_id = po.po_id"
+  bill_lines:
+    table: hx_purchase_bill_line
+    alias: pbl
+    on: "pb.bill_id = pbl.bill_id"
+sample_sql: >
+  SELECT s.supplier_name, pb.bill_number, pb.bill_date, pb.due_date,
+         pb.total_amount, pb.amount_paid,
+         (pb.total_amount - pb.amount_paid) AS outstanding,
+         pb.status
+  FROM hx_purchase_bill pb
+  JOIN hx_supplier s ON pb.supplier_id = s.supplier_id
+  WHERE pb.status IN ('Unpaid', 'Partial')
+  ORDER BY pb.due_date ASC

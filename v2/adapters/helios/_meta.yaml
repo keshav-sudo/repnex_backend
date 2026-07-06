@@ -1,0 +1,70 @@
+erp: helios
+display_name: Helios ERP
+dialect: postgres
+database: postgres
+schema: public
+description: >
+  Helios ERP adapter (PostgreSQL / Supabase). All tables use the hx_ prefix.
+  Modules: Inventory | Sales | Purchase | Finance (GL + Cashbook).
+  Currency: KES | Standard VAT: 16% | Table prefix: hx_
+  Confirmed live on Supabase instance: db.jnvszousfaeqxwyzqzzd.supabase.co
+default_aliases:
+  customer: c
+  supplier: s
+  sales_order: so
+  sales_invoice: si
+  purchase_order: po
+  purchase_bill: pb
+  inventory_item: i
+  gl_journal: j
+  gl_journal_line: jl
+  cashbook: cb
+  warehouse: w
+  stock_ledger: sl
+  coa: a
+  cash_account: ca
+  uom: u
+conventions:
+  quote_style: none
+  date_function: CURRENT_DATE
+  limit_syntax: "LIMIT %(limit)s"
+  cast_numeric: "CAST(%(col)s AS NUMERIC)"
+  safe_divide: "NULLIF(%(denominator)s, 0)"
+concepts_mapped:
+  - customer
+  - supplier
+  - sales_order
+  - sales_invoice
+  - purchase_order
+  - purchase_bill
+  - inventory_item
+  - gl_journal
+  - cashbook
+  - warehouse
+  - stock_ledger
+notes:
+  general: >
+    All monetary amounts stored in KES (Kenyan Shillings).
+    VAT is 16% standard rate. tax_amount = subtotal * 0.16.
+    Dates are stored as DATE type (YYYY-MM-DD).
+    is_active field uses SMALLINT (1=active, 0=inactive).
+  sales_invoice: >
+    status values: 'Paid', 'Unpaid', 'Partial'.
+    amount_paid tracks payments received. Outstanding = total_amount - amount_paid.
+  purchase_bill: >
+    status values: 'Paid', 'Unpaid', 'Partial'.
+    mirrors sales_invoice structure for AP.
+  stock_ledger: >
+    movement_type values: 'IN', 'OUT', 'ADJ'.
+    source_doc_type: 'Opening', 'Purchase Bill', 'Sales Invoice'.
+    running_balance_qty and running_balance_value are perpetual running totals.
+  gl_journal: >
+    status is 'Posted'. Double-entry: sum(debit_amount) = sum(credit_amount) per journal.
+    source_module: 'Sales', 'Purchase', 'Cashbook', 'General Ledger'.
+  cashbook: >
+    txn_type: 'Receipt', 'Payment', 'Transfer In', 'Transfer Out'.
+    party_type: 'Customer', 'Supplier', 'Bank', 'Other'.
+    amount_in = money in (debit to cash), amount_out = money paid (credit to cash).
+  coa: >
+    account_type: 'Asset', 'Liability', 'Equity', 'Income', 'Expense'.
+    normal_balance: 'D' (debit) or 'C' (credit).

@@ -84,6 +84,60 @@ def _detect_date_dependency(sql: str, nl: str) -> bool:
     return False
 
 
+def resolve_relative_date_range(nl: str) -> tuple[str | None, str | None]:
+    import re
+    from datetime import date
+    from dateutil.relativedelta import relativedelta
+    
+    # Remove commas to handle inputs like "last 6 m,onth"
+    nl_lower = nl.lower().replace(",", "")
+    today = date.today()
+    
+    # 1. Match "last X months" or "past X months"
+    match = re.search(r"\b(?:last|past|next|over the last|over the past)\s+(\d+)\s+months?\b", nl_lower)
+    if match:
+        months = int(match.group(1))
+        start = today - relativedelta(months=months)
+        return start.strftime("%Y-%m-%d"), today.strftime("%Y-%m-%d")
+        
+    # 2. Match "last month" or "past month"
+    if re.search(r"\b(?:last|past)\s+month\b", nl_lower):
+        start = today - relativedelta(months=1)
+        return start.strftime("%Y-%m-%d"), today.strftime("%Y-%m-%d")
+        
+    # 3. Match "last X days" or "past X days"
+    match = re.search(r"\b(?:last|past|over the last|over the past)\s+(\d+)\s+days?\b", nl_lower)
+    if match:
+        days = int(match.group(1))
+        start = today - relativedelta(days=days)
+        return start.strftime("%Y-%m-%d"), today.strftime("%Y-%m-%d")
+        
+    # 4. Match "last X years" or "past X years"
+    match = re.search(r"\b(?:last|past|over the last|over the past)\s+(\d+)\s+years?\b", nl_lower)
+    if match:
+        years = int(match.group(1))
+        start = today - relativedelta(years=years)
+        return start.strftime("%Y-%m-%d"), today.strftime("%Y-%m-%d")
+
+    # 5. Match "this year" or "ytd" or "year to date"
+    if "this year" in nl_lower or "ytd" in nl_lower or "year to date" in nl_lower:
+        start = date(today.year, 1, 1)
+        return start.strftime("%Y-%m-%d"), today.strftime("%Y-%m-%d")
+
+    # 6. Match "this month" or "mtd" or "month to date"
+    if "this month" in nl_lower or "mtd" in nl_lower or "month to date" in nl_lower:
+        start = date(today.year, today.month, 1)
+        return start.strftime("%Y-%m-%d"), today.strftime("%Y-%m-%d")
+        
+    # 7. Match "this quarter" or "qtd" or "quarter to date"
+    if "this quarter" in nl_lower or "qtd" in nl_lower or "quarter to date" in nl_lower:
+        quarter_month = ((today.month - 1) // 3) * 3 + 1
+        start = date(today.year, quarter_month, 1)
+        return start.strftime("%Y-%m-%d"), today.strftime("%Y-%m-%d")
+
+    return None, None
+
+
 
 # ═══════════════════════════════════════════════════════════════════════
 # NEW: Unified chat endpoint
@@ -189,12 +243,15 @@ async def chat(
         except Exception:
             pass
 
+        # Parse relative dates if present in the NL query
+        start_date, end_date = resolve_relative_date_range(nl)
+
         # Initialize Semantic Resolver for the target ERP
         from app.query_engine.semantic_resolver import SemanticResolver
         resolver = SemanticResolver(erp_type=erp_type)
 
         try:
-            generated_sql = await resolver.translate_to_sql(nl)
+            generated_sql = await resolver.translate_to_sql(nl, start_date=start_date, end_date=end_date)
         except Exception as e:
             log.error(f"V2 semantic translation failed: {e}", exc_info=True)
             return ChatResponse(
@@ -224,7 +281,7 @@ async def chat(
             )
 
         # Check if the query requires a date range
-        if _detect_date_dependency(generated_sql, nl):
+        if not start_date and _detect_date_dependency(generated_sql, nl):
             from app.schemas.query import MissingParam
 
             missing_params = [
@@ -311,7 +368,7 @@ async def chat(
 
         intent = IntentResult(
             template_id="v2_semantic_query",
-            params={},
+            params={"start_date": start_date, "end_date": end_date} if start_date else {},
             missing_params=[],
             confidence=1.0,
             rationale="translated_via_yaml_engine"

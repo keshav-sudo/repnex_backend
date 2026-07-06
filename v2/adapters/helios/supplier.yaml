@@ -1,0 +1,39 @@
+concept: supplier
+table: hx_supplier
+alias: s
+fields:
+  supplier_id: s.supplier_id
+  supplier_code: s.supplier_code
+  supplier_name: s.supplier_name
+  contact_person: s.contact_person
+  email: s.email
+  phone: s.phone
+  city: s.city
+  payment_terms_days: s.payment_terms_days
+  is_active: s.is_active
+filters:
+  active_only: "s.is_active = 1"
+common_queries:
+  - "Supplier list"
+  - "Top suppliers by purchase amount"
+  - "Outstanding payables by supplier"
+  - "Supplier payment terms"
+joins:
+  purchase_orders:
+    table: hx_purchase_order
+    alias: po
+    on: "s.supplier_id = po.supplier_id"
+  purchase_bills:
+    table: hx_purchase_bill
+    alias: pb
+    on: "s.supplier_id = pb.supplier_id"
+sample_sql: >
+  SELECT s.supplier_code, s.supplier_name, s.city,
+         COUNT(pb.bill_id) AS bill_count,
+         COALESCE(SUM(pb.total_amount), 0) AS total_purchases,
+         COALESCE(SUM(pb.total_amount - pb.amount_paid), 0) AS outstanding_payable
+  FROM hx_supplier s
+  LEFT JOIN hx_purchase_bill pb ON s.supplier_id = pb.supplier_id
+  WHERE s.is_active = 1
+  GROUP BY s.supplier_id, s.supplier_code, s.supplier_name, s.city
+  ORDER BY total_purchases DESC

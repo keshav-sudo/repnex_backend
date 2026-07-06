@@ -1,0 +1,54 @@
+concept: inventory_item
+table: hx_item
+alias: i
+fields:
+  item_id: i.item_id
+  item_code: i.item_code
+  item_name: i.item_name
+  category: i.category
+  uom_code: i.uom_code
+  std_cost: i.std_cost
+  list_price: i.list_price
+  reorder_level: i.reorder_level
+  is_active: i.is_active
+  margin_pct: "ROUND(NULLIF(i.list_price - i.std_cost, 0) / NULLIF(i.list_price, 0) * 100, 2)"
+filters:
+  active_only: "i.is_active = 1"
+  below_reorder: "sl.running_balance_qty < i.reorder_level"
+common_queries:
+  - "Item list with prices"
+  - "Low stock items"
+  - "Items below reorder level"
+  - "Items by category"
+  - "Best selling items"
+  - "Slow moving inventory"
+  - "Inventory valuation"
+joins:
+  uom:
+    table: hx_uom
+    alias: u
+    on: "i.uom_code = u.uom_code"
+  stock_ledger:
+    table: hx_stock_ledger
+    alias: sl
+    on: "i.item_id = sl.item_id"
+  warehouse:
+    table: hx_warehouse
+    alias: w
+    on: "sl.warehouse_id = w.warehouse_id"
+  sales_invoice_lines:
+    table: hx_sales_invoice_line
+    alias: sil
+    on: "i.item_id = sil.item_id"
+sample_sql: >
+  SELECT i.item_code, i.item_name, i.category,
+         COALESCE(SUM(sl.quantity_in - sl.quantity_out), 0) AS stock_on_hand,
+         i.reorder_level,
+         i.std_cost,
+         i.list_price
+  FROM hx_item i
+  LEFT JOIN hx_stock_ledger sl ON i.item_id = sl.item_id
+  WHERE i.is_active = 1
+  GROUP BY i.item_id, i.item_code, i.item_name, i.category, i.reorder_level, i.std_cost, i.list_price
+  HAVING COALESCE(SUM(sl.quantity_in - sl.quantity_out), 0) < i.reorder_level
+  ORDER BY stock_on_hand ASC

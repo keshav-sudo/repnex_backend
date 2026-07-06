@@ -1,0 +1,52 @@
+concept: sales_invoice
+table: hx_sales_invoice
+alias: si
+fields:
+  invoice_id: si.invoice_id
+  invoice_number: si.invoice_number
+  invoice_date: si.invoice_date
+  so_id: si.so_id
+  customer_id: si.customer_id
+  due_date: si.due_date
+  subtotal: si.subtotal
+  tax_amount: si.tax_amount
+  total_amount: si.total_amount
+  amount_paid: si.amount_paid
+  outstanding_balance: "(si.total_amount - si.amount_paid)"
+  status: si.status
+  currency: si.currency
+filters:
+  unpaid: "si.status IN ('Unpaid', 'Partial')"
+  paid: "si.status = 'Paid'"
+  overdue: "si.due_date < CURRENT_DATE AND si.status IN ('Unpaid', 'Partial')"
+common_queries:
+  - "Outstanding invoices (AR)"
+  - "Overdue invoices"
+  - "Sales invoices by customer"
+  - "Monthly invoice totals"
+  - "Invoice status breakdown"
+  - "Top 10 unpaid invoices"
+  - "Revenue by month"
+  - "Total revenue this year"
+joins:
+  customer:
+    table: hx_customer
+    alias: c
+    on: "si.customer_id = c.customer_id"
+  sales_order:
+    table: hx_sales_order
+    alias: so
+    on: "si.so_id = so.so_id"
+  invoice_lines:
+    table: hx_sales_invoice_line
+    alias: sil
+    on: "si.invoice_id = sil.invoice_id"
+sample_sql: >
+  SELECT c.customer_name, si.invoice_number, si.invoice_date, si.due_date,
+         si.total_amount, si.amount_paid,
+         (si.total_amount - si.amount_paid) AS outstanding,
+         si.status
+  FROM hx_sales_invoice si
+  JOIN hx_customer c ON si.customer_id = c.customer_id
+  WHERE si.status IN ('Unpaid', 'Partial')
+  ORDER BY si.due_date ASC

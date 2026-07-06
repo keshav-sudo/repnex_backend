@@ -1,0 +1,47 @@
+concept: cashbook
+table: hx_cashbook
+alias: cb
+fields:
+  cashbook_id: cb.cashbook_id
+  txn_date: cb.txn_date
+  cash_account_id: cb.cash_account_id
+  cash_account_code: cb.cash_account_code
+  txn_type: cb.txn_type
+  reference: cb.reference
+  party_type: cb.party_type
+  party_id: cb.party_id
+  description: cb.description
+  amount_in: cb.amount_in
+  amount_out: cb.amount_out
+  running_balance: cb.running_balance
+  journal_id: cb.journal_id
+  source_doc: cb.source_doc
+filters:
+  receipts: "cb.txn_type = 'Receipt'"
+  payments: "cb.txn_type = 'Payment'"
+  customer_receipts: "cb.party_type = 'Customer'"
+  supplier_payments: "cb.party_type = 'Supplier'"
+common_queries:
+  - "Cash receipts and payments"
+  - "Bank balance"
+  - "Cash flow summary"
+  - "Receipts from customers"
+  - "Payments to suppliers"
+  - "Monthly cash flow"
+joins:
+  cash_account:
+    table: hx_cash_account
+    alias: ca
+    on: "cb.cash_account_id = ca.cash_account_id"
+  gl_journal:
+    table: hx_gl_journal
+    alias: j
+    on: "cb.journal_id = j.journal_id"
+sample_sql: >
+  SELECT DATE_TRUNC('month', cb.txn_date) AS month,
+         SUM(cb.amount_in) AS total_receipts,
+         SUM(cb.amount_out) AS total_payments,
+         SUM(cb.amount_in - cb.amount_out) AS net_cash_flow
+  FROM hx_cashbook cb
+  GROUP BY DATE_TRUNC('month', cb.txn_date)
+  ORDER BY month DESC
