@@ -138,6 +138,38 @@ def resolve_relative_date_range(nl: str) -> tuple[str | None, str | None]:
     return None, None
 
 
+def determine_erp_type(conn: Any | None, org: dict | None) -> str:
+    """
+    Dynamically determine ERP type based on connection and organization metadata.
+    Supported types: 'syspro', 'epicor', 'helios'
+    """
+    if conn:
+        db_type_str = str(getattr(conn, "db_type", "")).lower()
+        if "postgres" in db_type_str or "supabase" in db_type_str:
+            return "helios"
+        
+        conn_name = getattr(conn, "name", "").lower()
+        if "helios" in conn_name or "supabase" in conn_name or "postgres" in conn_name:
+            return "helios"
+            
+        if "epicor" in conn_name:
+            return "epicor"
+        if "syspro" in conn_name:
+            return "syspro"
+
+    if org:
+        system_name = org.get("erpSystem", "").lower()
+        if "helios" in system_name or "supabase" in system_name or "postgres" in system_name:
+            return "helios"
+        if "epicor" in system_name:
+            return "epicor"
+        if "syspro" in system_name:
+            return "syspro"
+
+    return "syspro"
+
+
+
 
 # ═══════════════════════════════════════════════════════════════════════
 # NEW: Unified chat endpoint
@@ -222,26 +254,18 @@ async def chat(
 
     # ── Step 2b: Executable flow ─────────────────────────────────────
     if s.ENGINE_VERSION.lower().strip() == "v2":
-        # Determine the ERP type dynamically (syspro or epicor)
-        erp_type = "syspro"
+        # Determine the ERP type dynamically
+        conn = None
         if data.connection_id:
             try:
                 conn = await connection_service.get_connection(db, current, data.connection_id)
-                if conn and conn.name and "epicor" in conn.name.lower():
-                    erp_type = "epicor"
             except Exception:
                 pass
-
         try:
             org = await db["organizations"].find_one({"_id": str(current.org_id)})
-            if org and org.get("erpSystem"):
-                system_name = org.get("erpSystem", "").lower()
-                if "epicor" in system_name:
-                    erp_type = "epicor"
-                elif "syspro" in system_name:
-                    erp_type = "syspro"
         except Exception:
-            pass
+            org = None
+        erp_type = determine_erp_type(conn, org)
 
         # Parse relative dates if present in the NL query
         start_date, end_date = resolve_relative_date_range(nl)
@@ -972,25 +996,17 @@ async def execute_with_params(
         end_date = data.params.get("end_date")
 
         # Determine ERP type
-        erp_type = "syspro"
+        conn = None
         if data.connection_id:
             try:
                 conn = await connection_service.get_connection(db, current, data.connection_id)
-                if conn and conn.name and "epicor" in conn.name.lower():
-                    erp_type = "epicor"
             except Exception:
                 pass
-
         try:
             org = await db["organizations"].find_one({"_id": str(current.org_id)})
-            if org and org.get("erpSystem"):
-                system_name = org.get("erpSystem", "").lower()
-                if "epicor" in system_name:
-                    erp_type = "epicor"
-                elif "syspro" in system_name:
-                    erp_type = "syspro"
         except Exception:
-            pass
+            org = None
+        erp_type = determine_erp_type(conn, org)
 
         # Initialize Semantic Resolver for the target ERP
         from app.query_engine.semantic_resolver import SemanticResolver
@@ -1368,21 +1384,12 @@ async def run_via_rest(
     conn = await connection_service.get_connection(db, current, session.connection_id)
 
     if s.ENGINE_VERSION.lower().strip() == "v2":
-        # Determine the ERP type dynamically (syspro or epicor)
-        erp_type = "syspro"
-        if conn and conn.name and "epicor" in conn.name.lower():
-            erp_type = "epicor"
-        else:
-            try:
-                org = await db["organizations"].find_one({"_id": str(current.org_id)})
-                if org and org.get("erpSystem"):
-                    system_name = org.get("erpSystem", "").lower()
-                    if "epicor" in system_name:
-                        erp_type = "epicor"
-                    elif "syspro" in system_name:
-                        erp_type = "syspro"
-            except Exception:
-                pass
+        # Determine the ERP type dynamically
+        try:
+            org = await db["organizations"].find_one({"_id": str(current.org_id)})
+        except Exception:
+            org = None
+        erp_type = determine_erp_type(conn, org)
 
         from app.query_engine.semantic_resolver import SemanticResolver
         resolver = SemanticResolver(erp_type=erp_type)
@@ -1498,21 +1505,12 @@ async def run_streaming(
     await on_event({"type": "progress", "step": "intent_extraction"})
 
     if s.ENGINE_VERSION.lower().strip() == "v2":
-        # Determine the ERP type dynamically (syspro or epicor)
-        erp_type = "syspro"
-        if conn and conn.name and "epicor" in conn.name.lower():
-            erp_type = "epicor"
-        else:
-            try:
-                org = await db["organizations"].find_one({"_id": str(current.org_id)})
-                if org and org.get("erpSystem"):
-                    system_name = org.get("erpSystem", "").lower()
-                    if "epicor" in system_name:
-                        erp_type = "epicor"
-                    elif "syspro" in system_name:
-                        erp_type = "syspro"
-            except Exception:
-                pass
+        # Determine the ERP type dynamically
+        try:
+            org = await db["organizations"].find_one({"_id": str(current.org_id)})
+        except Exception:
+            org = None
+        erp_type = determine_erp_type(conn, org)
 
         from app.query_engine.semantic_resolver import SemanticResolver
         resolver = SemanticResolver(erp_type=erp_type)
