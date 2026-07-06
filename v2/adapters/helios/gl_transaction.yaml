@@ -1,12 +1,11 @@
-concept: gl_journal
+concept: gl_transaction
 table: hx_gl_journal
 alias: j
 fields:
-  journal_id: j.journal_id
-  journal_number: j.journal_number
+  journal: j.journal_number
   journal_date: j.journal_date
   reference: j.reference
-  source_module: j.source_module
+  source: j.source_module
   description: j.description
   total_debit: j.total_debit
   total_credit: j.total_credit

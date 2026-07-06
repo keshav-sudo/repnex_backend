@@ -1,18 +1,15 @@
-concept: sales_invoice
+concept: ar_invoice
 table: hx_sales_invoice
 alias: si
 fields:
-  invoice_id: si.invoice_id
   invoice_number: si.invoice_number
   invoice_date: si.invoice_date
-  so_id: si.so_id
-  customer_id: si.customer_id
-  due_date: si.due_date
-  subtotal: si.subtotal
-  tax_amount: si.tax_amount
-  total_amount: si.total_amount
-  amount_paid: si.amount_paid
+  customer_code: c.customer_code
   outstanding_balance: "(si.total_amount - si.amount_paid)"
+  signed_invoice_value: si.total_amount
+  tax_portion: si.tax_amount
+  sales_order: so.so_number
+  due_date: si.due_date
   status: si.status
   currency: si.currency
 filters:

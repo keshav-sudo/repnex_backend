@@ -137,6 +137,21 @@ class SemanticResolver:
         """
         prompt_context = self.build_prompt_context()
 
+        # Build dialect-specific instructions
+        if self.erp_type == "helios":
+            dialect_instructions = """5. All queries should target PostgreSQL / Supabase dialect:
+   - Use 'CURRENT_DATE' (exact casing, uppercase) for the current date.
+   - For Year-To-Date (YTD) filtering, use: `[date_column] >= DATE_TRUNC('year', CURRENT_DATE) AND [date_column] <= CURRENT_DATE`.
+   - Limit rows using: `LIMIT N` at the end of the query (do NOT use 'SELECT TOP N').
+   - For Margin or Profitability queries, calculate margin percentage (Gross Margin %) as: `ROUND((CAST([revenue] - [cost] AS numeric) / NULLIF(CAST([revenue] AS numeric), 0)) * 100, 2)` (or similar division)."""
+        else:
+            dialect_instructions = """5. All queries should target MS SQL Server / T-SQL dialect:
+   - Use 'GETDATE()' (exact casing, uppercase) for the current date.
+   - For Year-To-Date (YTD) filtering, use: `[date_column] >= DATEFROMPARTS(YEAR(GETDATE()), 1, 1) AND [date_column] <= GETDATE()`.
+   - Limit rows using: `SELECT TOP N ...` at the start of the query (do NOT use LIMIT).
+   - For Margin or Profitability queries, calculate margin percentage (Gross Margin %) as: `(CAST([ytd_profit] AS decimal(18,4)) / NULLIF(CAST([ytd_sales] AS decimal(18,4)), 0))` (or MTD equivalent depending on timeframe) to prevent divide-by-zero crashes.
+   - Profit is mapped to `ytd_profit` (or `mtd_profit1`), and Sales/Revenue is mapped to `ytd_sales` (or `mtd_sales1`)."""
+
         system_prompt = f"""You are a precise, deterministic NL-to-SQL translator for an ERP database.
 Your job is to translate a user's natural language question into a single valid SQL query.
 
@@ -147,17 +162,19 @@ CRITICAL RULES:
 2. Do NOT guess or hallucinate table names or column names.
 3. If joining tables, use the exact join conditions defined in 'JOIN RELATIONSHIPS' or 'Additional Joined Table'.
 4. Do NOT output markdown code blocks. Output ONLY raw SQL.
-5. All queries should target MS SQL Server / T-SQL dialect (unless specified otherwise).
-6. For date calculations (like Year-to-Date or current date), always use standard MS SQL Server functions:
-   - Use 'GETDATE()' (exact casing, uppercase) for the current date.
-   - For Year-To-Date (YTD) filtering, use: `[date_column] >= DATEFROMPARTS(YEAR(GETDATE()), 1, 1) AND [date_column] <= GETDATE()`.
-7. For Margin or Profitability queries:
-   - Margin percentage (Gross Margin %) should be calculated as: `(CAST([ytd_profit] AS decimal(18,4)) / NULLIF(CAST([ytd_sales] AS decimal(18,4)), 0))` (or MTD equivalent depending on timeframe) to prevent divide-by-zero crashes.
-   - Profit is mapped to `ytd_profit` (or `mtd_profit1`), and Sales/Revenue is mapped to `ytd_sales` (or `mtd_sales1`).
+{dialect_instructions}
 """
 
         if start_date and end_date:
-            system_prompt += f"""
+            if self.erp_type == "helios":
+                system_prompt += f"""
+6. CRITICAL: The user has specified a custom date range: from '{start_date}' to '{end_date}'. 
+   If the query filters by any date fields (such as invoice date, due date, payment date, transaction date, journal date, etc.), 
+   you MUST filter them using: `[date_field] >= '{start_date}' AND [date_field] <= '{end_date}'`. 
+   Do NOT use CURRENT_DATE or DATE_TRUNC() in this case. Write the conditions using these exact literal values.
+"""
+            else:
+                system_prompt += f"""
 8. CRITICAL: The user has specified a custom date range: from '{start_date}' to '{end_date}'. 
    If the query filters by any date fields (such as invoice date, due date, payment date, transaction date, journal date, etc.), 
    you MUST filter them using: `[date_field] >= '{start_date}' AND [date_field] <= '{end_date}'`. 

@@ -1,19 +1,14 @@
-concept: purchase_bill
+concept: ap_invoice
 table: hx_purchase_bill
 alias: pb
 fields:
-  bill_id: pb.bill_id
-  bill_number: pb.bill_number
-  bill_date: pb.bill_date
-  po_id: pb.po_id
-  supplier_id: pb.supplier_id
+  invoice_number: pb.bill_number
+  invoice_date: pb.bill_date
+  supplier_code: s.supplier_code
   due_date: pb.due_date
-  subtotal: pb.subtotal
-  tax_amount: pb.tax_amount
-  total_amount: pb.total_amount
-  amount_paid: pb.amount_paid
-  outstanding_payable: "(pb.total_amount - pb.amount_paid)"
-  status: pb.status
+  original_value: pb.total_amount
+  outstanding_balance: "(pb.total_amount - pb.amount_paid)"
+  invoice_status: pb.status
   currency: pb.currency
 filters:
   unpaid: "pb.status IN ('Unpaid', 'Partial')"

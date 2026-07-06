@@ -1,0 +1,54 @@
+concept: cashbook
+display_name: Cashbook
+module: finance
+description: >
+  A record of cash and bank transactions, tracking deposits, payments, 
+  receipts and running balances.
+synonyms:
+  - bank book
+  - cash book
+  - cash transactions
+  - bank transactions
+header_attributes:
+  cashbook_id:
+    type: integer
+    required: true
+  txn_date:
+    type: date
+    required: true
+  cash_account_id:
+    type: integer
+    required: true
+  cash_account_code:
+    type: string
+    required: true
+  txn_type:
+    type: string
+    required: true
+  reference:
+    type: string
+    required: false
+  party_type:
+    type: string
+    required: false
+  party_id:
+    type: integer
+    required: false
+  description:
+    type: string
+    required: false
+  amount_in:
+    type: decimal
+    required: true
+  amount_out:
+    type: decimal
+    required: true
+  running_balance:
+    type: decimal
+    required: true
+  journal_id:
+    type: integer
+    required: false
+  source_doc:
+    type: string
+    required: false

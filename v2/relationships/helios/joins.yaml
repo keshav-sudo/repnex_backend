@@ -1,0 +1,45 @@
+# HELIOS ERP join graph for the V2 semantic engine.
+# Aliases: c=customer, s=supplier, si=ar_invoice, pb=ap_invoice,
+#          i=inventory_item, j=gl_transaction, cb=cashbook.
+relationships:
+  - from_concept: ar_invoice
+    to_concept: customer
+    cardinality: many_to_one
+    join_type: LEFT
+    condition: si.customer_id = c.customer_id
+
+  - from_concept: customer
+    to_concept: ar_invoice
+    cardinality: one_to_many
+    join_type: LEFT
+    condition: c.customer_id = si.customer_id
+
+  - from_concept: ap_invoice
+    to_concept: supplier
+    cardinality: many_to_one
+    join_type: LEFT
+    condition: pb.supplier_id = s.supplier_id
+
+  - from_concept: supplier
+    to_concept: ap_invoice
+    cardinality: one_to_many
+    join_type: LEFT
+    condition: s.supplier_id = pb.supplier_id
+
+  - from_concept: gl_transaction
+    to_concept: gl_journal_line
+    cardinality: one_to_many
+    join_type: LEFT
+    condition: j.journal_id = jl.journal_id
+
+  - from_concept: cashbook
+    to_concept: gl_transaction
+    cardinality: many_to_one
+    join_type: LEFT
+    condition: cb.journal_id = j.journal_id
+
+  - from_concept: inventory_item
+    to_concept: stock_ledger
+    cardinality: one_to_many
+    join_type: LEFT
+    condition: i.item_id = sl.item_id
