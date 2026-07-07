@@ -11,10 +11,10 @@ fields:
   list_price: i.list_price
   reorder_level: i.reorder_level
   is_active: i.is_active
-  margin_pct: "ROUND(NULLIF(i.list_price - i.std_cost, 0) / NULLIF(i.list_price, 0) * 100, 2)"
+calculated_fields:
+  margin_pct: "ROUND((CAST(i.list_price - i.std_cost AS NUMERIC) / NULLIF(CAST(i.list_price AS NUMERIC), 0)) * 100, 2)"
 filters:
   active_only: "i.is_active = 1"
-  below_reorder: "sl.running_balance_qty < i.reorder_level"
 common_queries:
   - "Item list with prices"
   - "Low stock items"
@@ -23,6 +23,8 @@ common_queries:
   - "Best selling items"
   - "Slow moving inventory"
   - "Inventory valuation"
+  - "Stock on hand by warehouse"
+  - "Item profit margin"
 joins:
   uom:
     table: hx_uom
@@ -40,15 +42,55 @@ joins:
     table: hx_sales_invoice_line
     alias: sil
     on: "i.item_id = sil.item_id"
-sample_sql: >
-  SELECT i.item_code, i.item_name, i.category,
-         COALESCE(SUM(sl.quantity_in - sl.quantity_out), 0) AS stock_on_hand,
-         i.reorder_level,
-         i.std_cost,
-         i.list_price
-  FROM hx_item i
-  LEFT JOIN hx_stock_ledger sl ON i.item_id = sl.item_id
-  WHERE i.is_active = 1
-  GROUP BY i.item_id, i.item_code, i.item_name, i.category, i.reorder_level, i.std_cost, i.list_price
-  HAVING COALESCE(SUM(sl.quantity_in - sl.quantity_out), 0) < i.reorder_level
-  ORDER BY stock_on_hand ASC
+  purchase_bill_lines:
+    table: hx_purchase_bill_line
+    alias: pbl
+    on: "i.item_id = pbl.item_id"
+sample_sql:
+  stock_on_hand: >
+    SELECT i.item_code, i.item_name, i.category, w.warehouse_name,
+           sl.running_balance_qty AS stock_qty,
+           sl.running_balance_value AS stock_value
+    FROM hx_stock_ledger sl
+    JOIN hx_item i ON sl.item_id = i.item_id
+    JOIN hx_warehouse w ON sl.warehouse_id = w.warehouse_id
+    WHERE sl.ledger_id IN (
+      SELECT MAX(ledger_id) FROM hx_stock_ledger
+      GROUP BY item_id, warehouse_id
+    )
+    ORDER BY i.item_code, w.warehouse_code
+  below_reorder: >
+    SELECT i.item_code, i.item_name, i.category, i.reorder_level,
+           COALESCE(sub.qty_on_hand, 0) AS qty_on_hand
+    FROM hx_item i
+    LEFT JOIN (
+      SELECT sl2.item_id, sl2.running_balance_qty AS qty_on_hand
+      FROM hx_stock_ledger sl2
+      WHERE sl2.ledger_id IN (
+        SELECT MAX(ledger_id) FROM hx_stock_ledger GROUP BY item_id, warehouse_id
+      )
+    ) sub ON i.item_id = sub.item_id
+    WHERE i.is_active = 1
+      AND COALESCE(sub.qty_on_hand, 0) < i.reorder_level
+    ORDER BY qty_on_hand ASC
+  inventory_valuation: >
+    SELECT i.item_code, i.item_name,
+           SUM(sl.running_balance_qty) AS total_qty,
+           SUM(sl.running_balance_value) AS total_value
+    FROM hx_stock_ledger sl
+    JOIN hx_item i ON sl.item_id = i.item_id
+    WHERE sl.ledger_id IN (
+      SELECT MAX(ledger_id) FROM hx_stock_ledger
+      GROUP BY item_id, warehouse_id
+    )
+    GROUP BY i.item_code, i.item_name
+    ORDER BY total_value DESC
+  best_selling_items: >
+    SELECT i.item_code, i.item_name, i.category,
+           SUM(sil.quantity) AS total_qty_sold,
+           SUM(sil.line_subtotal) AS total_revenue
+    FROM hx_sales_invoice_line sil
+    JOIN hx_item i ON sil.item_id = i.item_id
+    GROUP BY i.item_code, i.item_name, i.category
+    ORDER BY total_qty_sold DESC
+    LIMIT 10

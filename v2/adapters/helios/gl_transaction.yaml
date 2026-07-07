@@ -2,6 +2,7 @@ concept: gl_transaction
 table: hx_gl_journal
 alias: j
 fields:
+  journal_id: j.journal_id
   journal: j.journal_number
   journal_date: j.journal_date
   reference: j.reference
@@ -10,16 +11,31 @@ fields:
   total_debit: j.total_debit
   total_credit: j.total_credit
   status: j.status
+detail_table: hx_gl_journal_line
+detail_alias: jl
+detail_join: "j.journal_id = jl.journal_id"
+detail_fields:
+  gl_line_id: jl.gl_line_id
+  line_no: jl.line_no
+  account_id: jl.account_id
+  account_code: jl.account_code
+  line_description: jl.description
+  debit_amount: jl.debit_amount
+  credit_amount: jl.credit_amount
 filters:
   posted: "j.status = 'Posted'"
   sales_module: "j.source_module = 'Sales'"
   purchase_module: "j.source_module = 'Purchase'"
+  cashbook_module: "j.source_module = 'Cashbook'"
 common_queries:
   - "GL journal entries"
   - "Trial balance"
   - "Journal entries by account"
   - "Debit/credit summary by module"
   - "Monthly GL totals"
+  - "Income statement"
+  - "Balance sheet"
+  - "Account balances"
 joins:
   journal_lines:
     table: hx_gl_journal_line
@@ -29,14 +45,28 @@ joins:
     table: hx_coa
     alias: a
     on: "jl.account_id = a.account_id"
-sample_sql: >
-  SELECT a.account_code, a.account_name, a.account_type,
-         SUM(jl.debit_amount) AS total_debit,
-         SUM(jl.credit_amount) AS total_credit,
-         SUM(jl.debit_amount - jl.credit_amount) AS net_balance
-  FROM hx_gl_journal_line jl
-  JOIN hx_coa a ON jl.account_id = a.account_id
-  JOIN hx_gl_journal j ON jl.journal_id = j.journal_id
-  WHERE j.status = 'Posted'
-  GROUP BY a.account_id, a.account_code, a.account_name, a.account_type
-  ORDER BY a.account_code
+sample_sql:
+  trial_balance: >
+    SELECT a.account_code, a.account_name, a.account_type,
+           SUM(jl.debit_amount) AS total_debit,
+           SUM(jl.credit_amount) AS total_credit,
+           SUM(jl.debit_amount - jl.credit_amount) AS net_balance
+    FROM hx_gl_journal_line jl
+    JOIN hx_coa a ON jl.account_id = a.account_id
+    JOIN hx_gl_journal j ON jl.journal_id = j.journal_id
+    WHERE j.status = 'Posted'
+    GROUP BY a.account_id, a.account_code, a.account_name, a.account_type
+    ORDER BY a.account_code
+  income_statement: >
+    SELECT a.account_code, a.account_name,
+           CASE a.account_type
+             WHEN 'Income' THEN SUM(jl.credit_amount - jl.debit_amount)
+             WHEN 'Expense' THEN SUM(jl.debit_amount - jl.credit_amount)
+           END AS amount
+    FROM hx_gl_journal_line jl
+    JOIN hx_coa a ON jl.account_id = a.account_id
+    JOIN hx_gl_journal j ON jl.journal_id = j.journal_id
+    WHERE j.status = 'Posted'
+      AND a.account_type IN ('Income', 'Expense')
+    GROUP BY a.account_code, a.account_name, a.account_type
+    ORDER BY a.account_type, a.account_code

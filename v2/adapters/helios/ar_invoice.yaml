@@ -2,29 +2,47 @@ concept: ar_invoice
 table: hx_sales_invoice
 alias: si
 fields:
+  invoice_id: si.invoice_id
   invoice_number: si.invoice_number
   invoice_date: si.invoice_date
-  customer_code: c.customer_code
-  outstanding_balance: "(si.total_amount - si.amount_paid)"
-  signed_invoice_value: si.total_amount
-  tax_portion: si.tax_amount
-  sales_order: so.so_number
+  so_id: si.so_id
+  customer_id: si.customer_id
   due_date: si.due_date
+  subtotal: si.subtotal
+  tax_amount: si.tax_amount
+  total_amount: si.total_amount
+  amount_paid: si.amount_paid
+  outstanding_balance: "(si.total_amount - si.amount_paid)"
   status: si.status
   currency: si.currency
+detail_table: hx_sales_invoice_line
+detail_alias: sil
+detail_join: "si.invoice_id = sil.invoice_id"
+detail_fields:
+  inv_line_id: sil.inv_line_id
+  line_no: sil.line_no
+  item_id: sil.item_id
+  quantity: sil.quantity
+  unit_price: sil.unit_price
+  line_subtotal: sil.line_subtotal
+  tax_rate: sil.tax_rate
+  line_tax_amount: sil.tax_amount
+  line_total: sil.line_total
 filters:
   unpaid: "si.status IN ('Unpaid', 'Partial')"
   paid: "si.status = 'Paid'"
   overdue: "si.due_date < CURRENT_DATE AND si.status IN ('Unpaid', 'Partial')"
 common_queries:
-  - "Outstanding invoices (AR)"
+  - "Outstanding invoices"
   - "Overdue invoices"
   - "Sales invoices by customer"
-  - "Monthly invoice totals"
-  - "Invoice status breakdown"
-  - "Top 10 unpaid invoices"
+  - "Monthly revenue"
+  - "Invoice ageing"
+  - "Top unpaid invoices"
   - "Revenue by month"
   - "Total revenue this year"
+  - "Revenue by item"
+  - "Profit margin by customer"
 joins:
   customer:
     table: hx_customer
@@ -38,12 +56,40 @@ joins:
     table: hx_sales_invoice_line
     alias: sil
     on: "si.invoice_id = sil.invoice_id"
-sample_sql: >
-  SELECT c.customer_name, si.invoice_number, si.invoice_date, si.due_date,
-         si.total_amount, si.amount_paid,
-         (si.total_amount - si.amount_paid) AS outstanding,
-         si.status
-  FROM hx_sales_invoice si
-  JOIN hx_customer c ON si.customer_id = c.customer_id
-  WHERE si.status IN ('Unpaid', 'Partial')
-  ORDER BY si.due_date ASC
+  line_item:
+    table: hx_item
+    alias: i
+    on: "sil.item_id = i.item_id"
+sample_sql:
+  outstanding_ar: >
+    SELECT c.customer_name, si.invoice_number, si.invoice_date, si.due_date,
+           si.total_amount, si.amount_paid,
+           (si.total_amount - si.amount_paid) AS outstanding,
+           si.status
+    FROM hx_sales_invoice si
+    JOIN hx_customer c ON si.customer_id = c.customer_id
+    WHERE si.status IN ('Unpaid', 'Partial')
+    ORDER BY si.due_date ASC
+  profit_margin_by_customer: >
+    SELECT c.customer_code, c.customer_name,
+           SUM(sil.line_subtotal) AS total_revenue_excl_tax,
+           SUM(sil.quantity * i.std_cost) AS total_cost,
+           ROUND(
+             (CAST(SUM(sil.line_subtotal) - SUM(sil.quantity * i.std_cost) AS NUMERIC)
+              / NULLIF(CAST(SUM(sil.line_subtotal) AS NUMERIC), 0)) * 100, 2
+           ) AS margin_pct
+    FROM hx_sales_invoice si
+    JOIN hx_customer c ON si.customer_id = c.customer_id
+    JOIN hx_sales_invoice_line sil ON si.invoice_id = sil.invoice_id
+    JOIN hx_item i ON sil.item_id = i.item_id
+    GROUP BY c.customer_code, c.customer_name
+    ORDER BY margin_pct DESC
+  revenue_by_item: >
+    SELECT i.item_code, i.item_name, i.category,
+           SUM(sil.quantity) AS total_qty_sold,
+           SUM(sil.line_subtotal) AS total_revenue
+    FROM hx_sales_invoice_line sil
+    JOIN hx_item i ON sil.item_id = i.item_id
+    JOIN hx_sales_invoice si ON sil.invoice_id = si.invoice_id
+    GROUP BY i.item_code, i.item_name, i.category
+    ORDER BY total_revenue DESC

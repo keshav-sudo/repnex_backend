@@ -28,6 +28,7 @@ common_queries:
   - "Receipts from customers"
   - "Payments to suppliers"
   - "Monthly cash flow"
+  - "Bank statement"
 joins:
   cash_account:
     table: hx_cash_account
@@ -37,11 +38,22 @@ joins:
     table: hx_gl_journal
     alias: j
     on: "cb.journal_id = j.journal_id"
-sample_sql: >
-  SELECT DATE_TRUNC('month', cb.txn_date) AS month,
-         SUM(cb.amount_in) AS total_receipts,
-         SUM(cb.amount_out) AS total_payments,
-         SUM(cb.amount_in - cb.amount_out) AS net_cash_flow
-  FROM hx_cashbook cb
-  GROUP BY DATE_TRUNC('month', cb.txn_date)
-  ORDER BY month DESC
+sample_sql:
+  monthly_cash_flow: >
+    SELECT DATE_TRUNC('month', cb.txn_date) AS month,
+           SUM(cb.amount_in) AS total_receipts,
+           SUM(cb.amount_out) AS total_payments,
+           SUM(cb.amount_in - cb.amount_out) AS net_cash_flow
+    FROM hx_cashbook cb
+    GROUP BY DATE_TRUNC('month', cb.txn_date)
+    ORDER BY month DESC
+  bank_balance: >
+    SELECT ca.cash_account_code, ca.cash_account_name, ca.account_type,
+           ca.opening_balance,
+           COALESCE(SUM(cb.amount_in), 0) AS total_in,
+           COALESCE(SUM(cb.amount_out), 0) AS total_out,
+           ca.opening_balance + COALESCE(SUM(cb.amount_in), 0) - COALESCE(SUM(cb.amount_out), 0) AS current_balance
+    FROM hx_cash_account ca
+    LEFT JOIN hx_cashbook cb ON ca.cash_account_id = cb.cash_account_id
+    GROUP BY ca.cash_account_id, ca.cash_account_code, ca.cash_account_name, ca.account_type, ca.opening_balance
+    ORDER BY ca.cash_account_code

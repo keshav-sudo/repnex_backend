@@ -71,14 +71,49 @@ class SemanticResolver:
             log.error(f"Error loading relationship file {self.relationship_file}: {e}")
             return {}
 
+    def _load_meta(self) -> dict:
+        """Load _meta.yaml for complete schema inventory."""
+        meta_path = self.adapter_dir / "_meta.yaml"
+        if not meta_path.exists():
+            return {}
+        try:
+            with open(meta_path, "r", encoding="utf-8") as f:
+                return yaml.safe_load(f) or {}
+        except Exception as e:
+            log.error(f"Error loading meta file {meta_path}: {e}")
+            return {}
+
     def build_prompt_context(self) -> str:
         ontology = self.load_ontology()
         adapters = self.load_adapters()
         joins = self.load_joins()
+        meta = self._load_meta()
 
         context = []
         context.append(f"ERP Type: {self.erp_type.upper()}\n")
-        context.append("--- UNIVERSAL BUSINESS CONCEPTS & MAPPING RULES ---")
+
+        # ── Schema inventory from _meta.yaml ─────────────────────────
+        tables_meta = meta.get("tables") or {}
+        if tables_meta:
+            context.append("--- COMPLETE DATABASE SCHEMA (ONLY these tables/columns exist) ---")
+            for tbl_name, tbl_info in tables_meta.items():
+                alias = tbl_info.get("alias", "")
+                cols = ", ".join(tbl_info.get("columns", []))
+                context.append(f"  Table: {tbl_name} (alias: {alias})  Columns: [{cols}]")
+                if tbl_info.get("notes"):
+                    context.append(f"    Notes: {tbl_info['notes']}")
+            context.append("")
+
+        # ── Data rules from _meta.yaml ───────────────────────────────
+        data_rules = meta.get("data_rules") or {}
+        if data_rules:
+            context.append("--- DATA RULES ---")
+            for rule_name, rule_desc in data_rules.items():
+                context.append(f"  {rule_name}: {str(rule_desc).strip()}")
+            context.append("")
+
+        # ── Business concepts & mapping ──────────────────────────────
+        context.append("--- BUSINESS CONCEPTS & FIELD MAPPINGS ---")
 
         for concept_name, ont in ontology.items():
             adapter = adapters.get(concept_name)
@@ -89,40 +124,71 @@ class SemanticResolver:
             context.append(f"  Description: {ont.get('description', '').strip()}")
             context.append(f"  Synonyms: {', '.join(ont.get('synonyms', []))}")
 
-            # Map Table names
+            # Primary table
             header_table = adapter.get("header_table") or adapter.get("table")
+            alias = adapter.get("alias", "")
             detail_table = adapter.get("detail_table")
 
             if header_table:
-                context.append(f"  Primary Database Table: {header_table}")
+                context.append(f"  Primary Table: {header_table} (alias: {alias})")
             if detail_table:
-                context.append(f"  Secondary/Detail Database Table: {detail_table}")
+                detail_alias = adapter.get("detail_alias", "")
+                detail_join = adapter.get("detail_join", "")
+                context.append(f"  Detail Table: {detail_table} (alias: {detail_alias}, join: {detail_join})")
 
-            # Map Fields
-            context.append("  Fields Mapping (Universal Concept Field -> ERP Database Column):")
-            
             # Header fields
+            context.append("  Fields:")
             fields = adapter.get("fields") or adapter.get("header_fields") or {}
             for u_field, db_col in fields.items():
                 context.append(f"    - {u_field}: {db_col}")
 
+            # Calculated fields
+            calc_fields = adapter.get("calculated_fields") or {}
+            for u_field, expr in calc_fields.items():
+                context.append(f"    - {u_field} (calculated): {expr}")
+
             # Detail fields
             detail_fields = adapter.get("detail_fields") or {}
-            for u_field, db_col in detail_fields.items():
-                context.append(f"    - line.{u_field}: {db_col}")
+            if detail_fields:
+                context.append("  Detail Line Fields:")
+                for u_field, db_col in detail_fields.items():
+                    context.append(f"    - {u_field}: {db_col}")
+
+            # Filters
+            filters = adapter.get("filters") or adapter.get("default_filters") or {}
+            if filters:
+                context.append("  Predefined Filters:")
+                for fname, fexpr in filters.items():
+                    context.append(f"    - {fname}: {fexpr}")
+
+            # Adapter-level joins (table-specific)
+            adapter_joins = adapter.get("joins") or {}
+            if adapter_joins:
+                context.append("  Available Joins:")
+                for jname, jinfo in adapter_joins.items():
+                    context.append(f"    - {jname}: {jinfo.get('table')} {jinfo.get('alias', '')} ON {jinfo.get('on', '')}")
 
             # Balance / Additional tables
             bal_map = adapter.get("balance_mapping")
             if bal_map:
-                context.append(f"    - Additional Joined Table: {bal_map.get('table')} (Join on: {bal_map.get('join_on')})")
+                context.append(f"  Balance Table: {bal_map.get('table')} (Join: {bal_map.get('join_on')})")
                 for u_field, db_col in bal_map.get("fields", {}).items():
-                    context.append(f"      - {u_field}: {db_col}")
+                    context.append(f"    - {u_field}: {db_col}")
 
-        # Add Joins context
+            # Sample SQL
+            sample_sql = adapter.get("sample_sql")
+            if sample_sql and isinstance(sample_sql, dict):
+                context.append("  Reference SQL Examples:")
+                for sq_name, sq_val in sample_sql.items():
+                    context.append(f"    [{sq_name}]: {str(sq_val).strip()}")
+            elif sample_sql and isinstance(sample_sql, str):
+                context.append(f"  Reference SQL: {sample_sql.strip()}")
+
+        # ── Global Join Relationships ────────────────────────────────
         context.append("\n--- JOIN RELATIONSHIPS (joins.yaml) ---")
         relationships = joins.get("relationships", [])
         for rel in relationships:
-            context.append(f"  - Join: {rel.get('from_concept')} to {rel.get('to_concept')} using: {rel.get('condition')}")
+            context.append(f"  - {rel.get('join_type', 'LEFT')} JOIN: {rel.get('from_concept')} -> {rel.get('to_concept')} ON {rel.get('condition')}")
 
         return "\n".join(context)
 
@@ -140,17 +206,17 @@ class SemanticResolver:
         # Build dialect-specific instructions
         if self.erp_type == "helios":
             dialect_instructions = """5. All queries should target PostgreSQL / Supabase dialect:
-   - Use 'CURRENT_DATE' (exact casing, uppercase) for the current date.
+   - Use 'CURRENT_DATE' for the current date.
    - For Year-To-Date (YTD) filtering, use: `[date_column] >= DATE_TRUNC('year', CURRENT_DATE) AND [date_column] <= CURRENT_DATE`.
    - Limit rows using: `LIMIT N` at the end of the query (do NOT use 'SELECT TOP N').
-   - For Margin or Profitability queries, calculate margin percentage (Gross Margin %) as: `ROUND((CAST([revenue] - [cost] AS numeric) / NULLIF(CAST([revenue] AS numeric), 0)) * 100, 2)` (or similar division)."""
+   - For Margin/Profitability: compute from hx_sales_invoice_line (unit_price) vs hx_item (std_cost). Do NOT fabricate cost/profit columns on hx_sales_invoice.
+   - Use ROUND(..., 2) and CAST(... AS NUMERIC) for safe division. Always wrap denominators in NULLIF(..., 0)."""
         else:
             dialect_instructions = """5. All queries should target MS SQL Server / T-SQL dialect:
-   - Use 'GETDATE()' (exact casing, uppercase) for the current date.
+   - Use 'GETDATE()' for the current date.
    - For Year-To-Date (YTD) filtering, use: `[date_column] >= DATEFROMPARTS(YEAR(GETDATE()), 1, 1) AND [date_column] <= GETDATE()`.
    - Limit rows using: `SELECT TOP N ...` at the start of the query (do NOT use LIMIT).
-   - For Margin or Profitability queries, calculate margin percentage (Gross Margin %) as: `(CAST([ytd_profit] AS decimal(18,4)) / NULLIF(CAST([ytd_sales] AS decimal(18,4)), 0))` (or MTD equivalent depending on timeframe) to prevent divide-by-zero crashes.
-   - Profit is mapped to `ytd_profit` (or `mtd_profit1`), and Sales/Revenue is mapped to `ytd_sales` (or `mtd_sales1`)."""
+   - For Margin or Profitability queries: `(CAST([ytd_profit] AS decimal(18,4)) / NULLIF(CAST([ytd_sales] AS decimal(18,4)), 0))`."""
 
         system_prompt = f"""You are a precise, deterministic NL-to-SQL translator for an ERP database.
 Your job is to translate a user's natural language question into a single valid SQL query.
@@ -158,11 +224,17 @@ Your job is to translate a user's natural language question into a single valid 
 {prompt_context}
 
 CRITICAL RULES:
-1. Use ONLY the tables, columns, and joins specified above.
-2. Do NOT guess or hallucinate table names or column names.
-3. If joining tables, use the exact join conditions defined in 'JOIN RELATIONSHIPS' or 'Additional Joined Table'.
+1. Use ONLY the tables and columns listed in 'COMPLETE DATABASE SCHEMA' above. NO exceptions.
+2. Do NOT guess, hallucinate, or invent table names, column names, or aliases.
+3. If joining tables, use the exact join conditions defined in 'Available Joins' or 'JOIN RELATIONSHIPS'.
 4. Do NOT output markdown code blocks. Output ONLY raw SQL.
 {dialect_instructions}
+6. OUT-OF-SCHEMA HANDLING: If the user asks for data that CANNOT be answered from the available schema
+   (e.g., columns that don't exist, modules not present like HR/Payroll/CRM, or concepts not mapped),
+   respond with EXACTLY this prefix: CONVERSATIONAL: followed by a helpful explanation of what data
+   IS available and what the user can ask instead. Do NOT generate invalid SQL.
+7. When using Reference SQL Examples from the adapter context, adapt them to the user's specific question
+   but preserve the join logic and column references exactly.
 """
 
         if start_date and end_date:

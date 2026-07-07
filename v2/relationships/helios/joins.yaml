@@ -1,11 +1,12 @@
 # HELIOS ERP join graph for the V2 semantic engine.
-# Aliases: c=customer, s=supplier, si=ar_invoice, pb=ap_invoice,
-#          i=inventory_item, j=gl_transaction, cb=cashbook.
+# Every relationship is defined bidirectionally so the resolver can
+# traverse the graph in either direction.
 relationships:
+  # ── AR Invoice ↔ Customer ──────────────────────────────────────────
   - from_concept: ar_invoice
     to_concept: customer
     cardinality: many_to_one
-    join_type: LEFT
+    join_type: INNER
     condition: si.customer_id = c.customer_id
 
   - from_concept: customer
@@ -14,10 +15,11 @@ relationships:
     join_type: LEFT
     condition: c.customer_id = si.customer_id
 
+  # ── AP Invoice ↔ Supplier ──────────────────────────────────────────
   - from_concept: ap_invoice
     to_concept: supplier
     cardinality: many_to_one
-    join_type: LEFT
+    join_type: INNER
     condition: pb.supplier_id = s.supplier_id
 
   - from_concept: supplier
@@ -26,20 +28,58 @@ relationships:
     join_type: LEFT
     condition: s.supplier_id = pb.supplier_id
 
+  # ── GL Journal ↔ Journal Lines ─────────────────────────────────────
   - from_concept: gl_transaction
     to_concept: gl_journal_line
     cardinality: one_to_many
-    join_type: LEFT
+    join_type: INNER
     condition: j.journal_id = jl.journal_id
 
+  # ── GL Journal Lines ↔ Chart of Accounts ───────────────────────────
+  - from_concept: gl_journal_line
+    to_concept: coa
+    cardinality: many_to_one
+    join_type: INNER
+    condition: jl.account_id = a.account_id
+
+  # ── Cashbook ↔ GL Journal ──────────────────────────────────────────
   - from_concept: cashbook
     to_concept: gl_transaction
     cardinality: many_to_one
     join_type: LEFT
     condition: cb.journal_id = j.journal_id
 
+  # ── Cashbook ↔ Cash Account ────────────────────────────────────────
+  - from_concept: cashbook
+    to_concept: cash_account
+    cardinality: many_to_one
+    join_type: INNER
+    condition: cb.cash_account_id = ca.cash_account_id
+
+  # ── Inventory Item ↔ Stock Ledger ──────────────────────────────────
   - from_concept: inventory_item
     to_concept: stock_ledger
     cardinality: one_to_many
     join_type: LEFT
     condition: i.item_id = sl.item_id
+
+  # ── Stock Ledger ↔ Warehouse ───────────────────────────────────────
+  - from_concept: stock_ledger
+    to_concept: warehouse
+    cardinality: many_to_one
+    join_type: INNER
+    condition: sl.warehouse_id = w.warehouse_id
+
+  # ── Sales Invoice ↔ Sales Order ────────────────────────────────────
+  - from_concept: ar_invoice
+    to_concept: sales_order
+    cardinality: many_to_one
+    join_type: LEFT
+    condition: si.so_id = so.so_id
+
+  # ── Purchase Bill ↔ Purchase Order ─────────────────────────────────
+  - from_concept: ap_invoice
+    to_concept: purchase_order
+    cardinality: many_to_one
+    join_type: LEFT
+    condition: pb.po_id = po.po_id

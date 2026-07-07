@@ -7,64 +7,128 @@ description: >
   Helios ERP adapter (PostgreSQL / Supabase). All tables use the hx_ prefix.
   Modules: Inventory | Sales | Purchase | Finance (GL + Cashbook).
   Currency: KES | Standard VAT: 16% | Table prefix: hx_
-  Confirmed live on Supabase instance: db.jnvszousfaeqxwyzqzzd.supabase.co
-default_aliases:
-  customer: c
-  supplier: s
-  sales_order: so
-  sales_invoice: si
-  purchase_order: po
-  purchase_bill: pb
-  inventory_item: i
-  gl_journal: j
-  gl_journal_line: jl
-  cashbook: cb
-  warehouse: w
-  stock_ledger: sl
-  coa: a
-  cash_account: ca
-  uom: u
+
+# ── COMPLETE SCHEMA INVENTORY ──────────────────────────────────────────
+# The LLM MUST use ONLY these tables and columns.
+# If a user asks for data not present here, respond conversationally.
+tables:
+  hx_uom:
+    alias: u
+    columns: [uom_code, uom_name, uom_category]
+    pk: uom_code
+
+  hx_item:
+    alias: i
+    columns: [item_id, item_code, item_name, category, uom_code, std_cost, list_price, reorder_level, is_active]
+    pk: item_id
+
+  hx_warehouse:
+    alias: w
+    columns: [warehouse_id, warehouse_code, warehouse_name, city, is_active]
+    pk: warehouse_id
+
+  hx_customer:
+    alias: c
+    columns: [customer_id, customer_code, customer_name, contact_person, email, phone, city, credit_limit, payment_terms_days, is_active]
+    pk: customer_id
+
+  hx_supplier:
+    alias: s
+    columns: [supplier_id, supplier_code, supplier_name, contact_person, email, phone, city, payment_terms_days, is_active]
+    pk: supplier_id
+
+  hx_coa:
+    alias: a
+    columns: [account_id, account_code, account_name, account_type, normal_balance, is_active]
+    pk: account_id
+    notes: "account_type IN ('Asset','Liability','Equity','Income','Expense'). normal_balance: 'D' or 'C'."
+
+  hx_cash_account:
+    alias: ca
+    columns: [cash_account_id, cash_account_code, cash_account_name, account_type, gl_account_id, gl_account_code, currency, opening_balance]
+    pk: cash_account_id
+    notes: "account_type IN ('Bank','Cash'). Maps to hx_coa via gl_account_id."
+
+  hx_sales_order:
+    alias: so
+    columns: [so_id, so_number, order_date, customer_id, warehouse_id, status, subtotal, tax_amount, total_amount, currency]
+    pk: so_id
+
+  hx_sales_order_line:
+    alias: sol
+    columns: [so_line_id, so_id, line_no, item_id, quantity, unit_price, line_total]
+    pk: so_line_id
+
+  hx_sales_invoice:
+    alias: si
+    columns: [invoice_id, invoice_number, invoice_date, so_id, customer_id, due_date, subtotal, tax_amount, total_amount, amount_paid, status, currency]
+    pk: invoice_id
+    notes: "status IN ('Paid','Unpaid','Partial'). outstanding = total_amount - amount_paid."
+
+  hx_sales_invoice_line:
+    alias: sil
+    columns: [inv_line_id, invoice_id, line_no, item_id, quantity, unit_price, line_subtotal, tax_rate, tax_amount, line_total]
+    pk: inv_line_id
+
+  hx_purchase_order:
+    alias: po
+    columns: [po_id, po_number, order_date, supplier_id, warehouse_id, status, subtotal, tax_amount, total_amount, currency]
+    pk: po_id
+
+  hx_purchase_order_line:
+    alias: pol
+    columns: [po_line_id, po_id, line_no, item_id, quantity, unit_cost, line_total]
+    pk: po_line_id
+
+  hx_purchase_bill:
+    alias: pb
+    columns: [bill_id, bill_number, bill_date, po_id, supplier_id, due_date, subtotal, tax_amount, total_amount, amount_paid, status, currency]
+    pk: bill_id
+    notes: "status IN ('Paid','Unpaid','Partial'). outstanding = total_amount - amount_paid."
+
+  hx_purchase_bill_line:
+    alias: pbl
+    columns: [bill_line_id, bill_id, line_no, item_id, quantity, unit_cost, line_subtotal, tax_rate, tax_amount, line_total]
+    pk: bill_line_id
+
+  hx_stock_ledger:
+    alias: sl
+    columns: [ledger_id, txn_date, item_id, warehouse_id, movement_type, source_doc_type, source_doc_number, quantity_in, quantity_out, unit_cost, running_balance_qty, running_balance_value]
+    pk: ledger_id
+    notes: "movement_type IN ('IN','OUT','ADJ'). source_doc_type: 'Opening','Purchase Bill','Sales Invoice'."
+
+  hx_gl_journal:
+    alias: j
+    columns: [journal_id, journal_number, journal_date, reference, source_module, description, total_debit, total_credit, status]
+    pk: journal_id
+    notes: "status = 'Posted'. source_module IN ('Sales','Purchase','Cashbook','General Ledger')."
+
+  hx_gl_journal_line:
+    alias: jl
+    columns: [gl_line_id, journal_id, line_no, account_id, account_code, description, debit_amount, credit_amount]
+    pk: gl_line_id
+
+  hx_cashbook:
+    alias: cb
+    columns: [cashbook_id, txn_date, cash_account_id, cash_account_code, txn_type, reference, party_type, party_id, description, amount_in, amount_out, running_balance, journal_id, source_doc]
+    pk: cashbook_id
+    notes: "txn_type IN ('Receipt','Payment','Transfer In','Transfer Out'). party_type IN ('Customer','Supplier','Bank','Other')."
+
 conventions:
   quote_style: none
   date_function: CURRENT_DATE
-  limit_syntax: "LIMIT %(limit)s"
-  cast_numeric: "CAST(%(col)s AS NUMERIC)"
-  safe_divide: "NULLIF(%(denominator)s, 0)"
-concepts_mapped:
-  - customer
-  - supplier
-  - sales_order
-  - sales_invoice
-  - purchase_order
-  - purchase_bill
-  - inventory_item
-  - gl_journal
-  - cashbook
-  - warehouse
-  - stock_ledger
-notes:
-  general: >
-    All monetary amounts stored in KES (Kenyan Shillings).
-    VAT is 16% standard rate. tax_amount = subtotal * 0.16.
-    Dates are stored as DATE type (YYYY-MM-DD).
-    is_active field uses SMALLINT (1=active, 0=inactive).
-  sales_invoice: >
-    status values: 'Paid', 'Unpaid', 'Partial'.
-    amount_paid tracks payments received. Outstanding = total_amount - amount_paid.
-  purchase_bill: >
-    status values: 'Paid', 'Unpaid', 'Partial'.
-    mirrors sales_invoice structure for AP.
-  stock_ledger: >
-    movement_type values: 'IN', 'OUT', 'ADJ'.
-    source_doc_type: 'Opening', 'Purchase Bill', 'Sales Invoice'.
-    running_balance_qty and running_balance_value are perpetual running totals.
-  gl_journal: >
-    status is 'Posted'. Double-entry: sum(debit_amount) = sum(credit_amount) per journal.
-    source_module: 'Sales', 'Purchase', 'Cashbook', 'General Ledger'.
-  cashbook: >
-    txn_type: 'Receipt', 'Payment', 'Transfer In', 'Transfer Out'.
-    party_type: 'Customer', 'Supplier', 'Bank', 'Other'.
-    amount_in = money in (debit to cash), amount_out = money paid (credit to cash).
-  coa: >
-    account_type: 'Asset', 'Liability', 'Equity', 'Income', 'Expense'.
-    normal_balance: 'D' (debit) or 'C' (credit).
+  limit_syntax: "LIMIT N"
+  cast_numeric: "CAST(expr AS NUMERIC)"
+  safe_divide: "NULLIF(denominator, 0)"
+  ytd_filter: "[date_col] >= DATE_TRUNC('year', CURRENT_DATE)"
+
+data_rules:
+  currency: "All monetary values are in KES (Kenyan Shillings)"
+  vat: "Standard VAT rate is 16%. tax_amount = subtotal * 0.16"
+  dates: "All dates are DATE type (YYYY-MM-DD)"
+  active_flag: "is_active uses SMALLINT (1 = active, 0 = inactive)"
+  profit_margin: >
+    Helios does NOT store profit/cost data on invoices. Profit margin
+    must be computed from hx_item (list_price vs std_cost) at the
+    item level, or from hx_sales_invoice_line (unit_price vs hx_item.std_cost)
+    at the line level. Do NOT fabricate margin columns on hx_sales_invoice.

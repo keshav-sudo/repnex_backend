@@ -2,24 +2,44 @@ concept: ap_invoice
 table: hx_purchase_bill
 alias: pb
 fields:
+  bill_id: pb.bill_id
   invoice_number: pb.bill_number
   invoice_date: pb.bill_date
-  supplier_code: s.supplier_code
+  po_id: pb.po_id
+  supplier_id: pb.supplier_id
   due_date: pb.due_date
+  subtotal: pb.subtotal
+  tax_amount: pb.tax_amount
   original_value: pb.total_amount
+  amount_paid: pb.amount_paid
   outstanding_balance: "(pb.total_amount - pb.amount_paid)"
   invoice_status: pb.status
   currency: pb.currency
+detail_table: hx_purchase_bill_line
+detail_alias: pbl
+detail_join: "pb.bill_id = pbl.bill_id"
+detail_fields:
+  bill_line_id: pbl.bill_line_id
+  line_no: pbl.line_no
+  item_id: pbl.item_id
+  quantity: pbl.quantity
+  unit_cost: pbl.unit_cost
+  line_subtotal: pbl.line_subtotal
+  tax_rate: pbl.tax_rate
+  line_tax_amount: pbl.tax_amount
+  line_total: pbl.line_total
 filters:
   unpaid: "pb.status IN ('Unpaid', 'Partial')"
   paid: "pb.status = 'Paid'"
   overdue: "pb.due_date < CURRENT_DATE AND pb.status IN ('Unpaid', 'Partial')"
 common_queries:
-  - "Outstanding payables (AP)"
+  - "Outstanding payables"
   - "Overdue supplier bills"
   - "Bills by supplier"
   - "Monthly purchase totals"
   - "Total payables outstanding"
+  - "AP ageing"
+  - "Purchase cost by item"
 joins:
   supplier:
     table: hx_supplier
@@ -33,12 +53,26 @@ joins:
     table: hx_purchase_bill_line
     alias: pbl
     on: "pb.bill_id = pbl.bill_id"
-sample_sql: >
-  SELECT s.supplier_name, pb.bill_number, pb.bill_date, pb.due_date,
-         pb.total_amount, pb.amount_paid,
-         (pb.total_amount - pb.amount_paid) AS outstanding,
-         pb.status
-  FROM hx_purchase_bill pb
-  JOIN hx_supplier s ON pb.supplier_id = s.supplier_id
-  WHERE pb.status IN ('Unpaid', 'Partial')
-  ORDER BY pb.due_date ASC
+  line_item:
+    table: hx_item
+    alias: i
+    on: "pbl.item_id = i.item_id"
+sample_sql:
+  outstanding_ap: >
+    SELECT s.supplier_name, pb.bill_number, pb.bill_date, pb.due_date,
+           pb.total_amount, pb.amount_paid,
+           (pb.total_amount - pb.amount_paid) AS outstanding,
+           pb.status
+    FROM hx_purchase_bill pb
+    JOIN hx_supplier s ON pb.supplier_id = s.supplier_id
+    WHERE pb.status IN ('Unpaid', 'Partial')
+    ORDER BY pb.due_date ASC
+  purchase_cost_by_item: >
+    SELECT i.item_code, i.item_name,
+           SUM(pbl.quantity) AS total_qty_purchased,
+           SUM(pbl.line_subtotal) AS total_cost
+    FROM hx_purchase_bill_line pbl
+    JOIN hx_item i ON pbl.item_id = i.item_id
+    JOIN hx_purchase_bill pb ON pbl.bill_id = pb.bill_id
+    GROUP BY i.item_code, i.item_name
+    ORDER BY total_cost DESC

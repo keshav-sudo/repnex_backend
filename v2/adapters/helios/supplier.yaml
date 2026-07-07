@@ -18,6 +18,7 @@ common_queries:
   - "Top suppliers by purchase amount"
   - "Outstanding payables by supplier"
   - "Supplier payment terms"
+  - "Supplier contact details"
 joins:
   purchase_orders:
     table: hx_purchase_order
@@ -27,13 +28,14 @@ joins:
     table: hx_purchase_bill
     alias: pb
     on: "s.supplier_id = pb.supplier_id"
-sample_sql: >
-  SELECT s.supplier_code, s.supplier_name, s.city,
-         COUNT(pb.bill_id) AS bill_count,
-         COALESCE(SUM(pb.total_amount), 0) AS total_purchases,
-         COALESCE(SUM(pb.total_amount - pb.amount_paid), 0) AS outstanding_payable
-  FROM hx_supplier s
-  LEFT JOIN hx_purchase_bill pb ON s.supplier_id = pb.supplier_id
-  WHERE s.is_active = 1
-  GROUP BY s.supplier_id, s.supplier_code, s.supplier_name, s.city
-  ORDER BY total_purchases DESC
+sample_sql:
+  supplier_payables: >
+    SELECT s.supplier_code, s.supplier_name, s.city,
+           COUNT(pb.bill_id) AS bill_count,
+           COALESCE(SUM(pb.total_amount), 0) AS total_purchases,
+           COALESCE(SUM(pb.total_amount - pb.amount_paid), 0) AS outstanding_payable
+    FROM hx_supplier s
+    LEFT JOIN hx_purchase_bill pb ON s.supplier_id = pb.supplier_id
+    WHERE s.is_active = 1
+    GROUP BY s.supplier_id, s.supplier_code, s.supplier_name, s.city
+    ORDER BY total_purchases DESC

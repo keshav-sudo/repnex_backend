@@ -19,6 +19,9 @@ common_queries:
   - "Customer list with credit limits"
   - "Customers by city"
   - "Active customers"
+  - "Customer outstanding balances"
+  - "Customers exceeding credit limit"
+  - "Customer payment terms"
 joins:
   sales_orders:
     table: hx_sales_order
@@ -28,12 +31,25 @@ joins:
     table: hx_sales_invoice
     alias: si
     on: "c.customer_id = si.customer_id"
-sample_sql: >
-  SELECT c.customer_code, c.customer_name, c.city, c.credit_limit,
-         COUNT(si.invoice_id) AS invoice_count,
-         COALESCE(SUM(si.total_amount), 0) AS total_revenue
-  FROM hx_customer c
-  LEFT JOIN hx_sales_invoice si ON c.customer_id = si.customer_id
-  WHERE c.is_active = 1
-  GROUP BY c.customer_id, c.customer_code, c.customer_name, c.city, c.credit_limit
-  ORDER BY total_revenue DESC
+sample_sql:
+  top_customers_by_revenue: >
+    SELECT c.customer_code, c.customer_name, c.city,
+           COUNT(si.invoice_id) AS invoice_count,
+           COALESCE(SUM(si.total_amount), 0) AS total_revenue,
+           COALESCE(SUM(si.total_amount - si.amount_paid), 0) AS total_outstanding
+    FROM hx_customer c
+    LEFT JOIN hx_sales_invoice si ON c.customer_id = si.customer_id
+    WHERE c.is_active = 1
+    GROUP BY c.customer_id, c.customer_code, c.customer_name, c.city
+    ORDER BY total_revenue DESC
+    LIMIT 10
+  customers_over_credit_limit: >
+    SELECT c.customer_code, c.customer_name, c.credit_limit,
+           COALESCE(SUM(si.total_amount - si.amount_paid), 0) AS outstanding
+    FROM hx_customer c
+    LEFT JOIN hx_sales_invoice si ON c.customer_id = si.customer_id
+      AND si.status IN ('Unpaid', 'Partial')
+    WHERE c.is_active = 1
+    GROUP BY c.customer_id, c.customer_code, c.customer_name, c.credit_limit
+    HAVING COALESCE(SUM(si.total_amount - si.amount_paid), 0) > c.credit_limit
+    ORDER BY outstanding DESC
