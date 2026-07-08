@@ -289,6 +289,39 @@ async def list_databases(
         except Exception as e:
             raise ValueError(f"Cannot connect to server: {e}")
 
+    if db_type == ModelDBType.mysql:
+        import asyncio
+        from concurrent.futures import ThreadPoolExecutor
+
+        def _fetch_mysql_databases() -> list[str]:
+            import pymysql
+            conn = pymysql.connect(
+                host=data.host,
+                port=data.port,
+                user=data.username,
+                password=data.password,
+                connect_timeout=10,
+            )
+            try:
+                with conn.cursor() as cursor:
+                    cursor.execute("SHOW DATABASES;")
+                    return [row[0] for row in cursor.fetchall() if row[0] not in ('information_schema', 'mysql', 'performance_schema', 'sys')]
+            finally:
+                conn.close()
+
+        loop = asyncio.get_running_loop()
+        with ThreadPoolExecutor(max_workers=4) as ex:
+            try:
+                databases = await asyncio.wait_for(
+                    loop.run_in_executor(ex, _fetch_mysql_databases),
+                    timeout=20.0,
+                )
+            except asyncio.TimeoutError:
+                raise ValueError("Server did not respond in time — check host/port")
+            except Exception as e:
+                raise ValueError(f"Cannot connect to server: {e}")
+        return ListDatabasesResponse(databases=databases)
+
     raise ValueError(f"list_databases not supported for db_type: {data.db_type}")
 
 
