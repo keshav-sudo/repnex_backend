@@ -1,14 +1,13 @@
 erp: syspro
 display_name: SYSPRO
-dialect: mssql
-database: SysproEdu2
-schema: dbo
+dialect: mysql
+database: railway
+schema: railway
 description: >
-  SYSPRO ERP adapter (SQL Server / T-SQL). Table and column names are
-  case-exact against the customer-provided INFORMATION_SCHEMA extract for
-  database SysproEdu2 (transcribed to v2/schema/syspro_schema.json).
-  InvMaster / InvWarehouse were not present in that extract, so their
-  column subset is verified from the working template corpus instead.
+  SYSPRO ERP adapter (MySQL / Railway). Table and column names are
+  case-exact against the migrated Railway MySQL instance.
+  Data migrated from SysproEdu2 MSSQL backup. All queries must use MySQL syntax.
+  InvMaster / InvWarehouse column subset verified from working template corpus.
 default_aliases:
   ap_invoice: i
   supplier: s
@@ -20,9 +19,12 @@ auxiliary_aliases:
   ArCustomerBal: b
   InvWarehouse: w
 conventions:
-  quote_style: none          # SYSPRO tables need no bracket quoting
-  date_function: GETDATE()
-  limit_syntax: "TOP %(limit)s"
+  quote_style: backtick       # MySQL uses backticks for identifiers
+  date_function: NOW()
+  limit_syntax: "LIMIT %(limit)s"
+  ytd_filter: "[date_col] >= DATE_FORMAT(NOW(), '%Y-01-01')"
+  safe_divide: "NULLIF(denominator, 0)"
+  cast_numeric: "CAST(expr AS DECIMAL(18,4))"
 concepts_mapped:
   - ap_invoice
   - supplier

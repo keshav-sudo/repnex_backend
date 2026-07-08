@@ -83,6 +83,13 @@ class SemanticResolver:
             log.error(f"Error loading meta file {meta_path}: {e}")
             return {}
 
+    def _get_dialect(self) -> str:
+        """Returns the SQL dialect for this ERP adapter: 'mysql', 'postgres', or 'mssql'."""
+        meta = self._load_meta()
+        return meta.get("conventions", {}).get("dialect") or meta.get("dialect") or (
+            "postgres" if self.erp_type == "helios" else "mssql"
+        )
+
     def build_prompt_context(self) -> str:
         ontology = self.load_ontology()
         adapters = self.load_adapters()
@@ -204,14 +211,29 @@ class SemanticResolver:
         prompt_context = self.build_prompt_context()
 
         # Build dialect-specific instructions
-        if self.erp_type == "helios":
+        dialect = self._get_dialect()
+
+        if dialect == "postgres":
             dialect_instructions = """5. All queries should target PostgreSQL / Supabase dialect:
    - Use 'CURRENT_DATE' for the current date.
    - For Year-To-Date (YTD) filtering, use: `[date_column] >= DATE_TRUNC('year', CURRENT_DATE) AND [date_column] <= CURRENT_DATE`.
    - Limit rows using: `LIMIT N` at the end of the query (do NOT use 'SELECT TOP N').
    - For Margin/Profitability: compute from hx_sales_invoice_line (unit_price) vs hx_item (std_cost). Do NOT fabricate cost/profit columns on hx_sales_invoice.
    - Use ROUND(..., 2) and CAST(... AS NUMERIC) for safe division. Always wrap denominators in NULLIF(..., 0)."""
+        elif dialect == "mysql":
+            dialect_instructions = """5. All queries MUST use MySQL dialect (target is Railway MySQL):
+   - Use 'NOW()' for the current datetime and 'CURDATE()' for the current date.
+   - For Year-To-Date (YTD) filtering, use: `[date_column] >= DATE_FORMAT(NOW(), '%Y-01-01') AND [date_column] <= NOW()`.
+   - Limit rows using: `SELECT ... FROM ... LIMIT N` at the END of the query.
+     DO NOT use 'SELECT TOP N' — that is T-SQL and will cause a syntax error in MySQL.
+   - For safe division: `CAST([numerator] AS DECIMAL(18,4)) / NULLIF(CAST([denominator] AS DECIMAL(18,4)), 0)`.
+   - String literals use single quotes. Column/table names need NO quoting unless they are reserved words.
+   - Date comparisons: use `[date_col] >= '2024-01-01'` format (ISO-8601).
+   - NEVER use square brackets [ ] around column or table names — that is T-SQL syntax.
+   - NEVER use GETDATE(), DATEADD(), DATEDIFF(), DATEFROMPARTS() — those are T-SQL functions.
+   - Use MySQL equivalents: NOW(), DATE_ADD(), DATEDIFF(), STR_TO_DATE()."""
         else:
+            # Legacy MSSQL fallback (should not be hit for current adapters)
             dialect_instructions = """5. All queries should target MS SQL Server / T-SQL dialect:
    - Use 'GETDATE()' for the current date.
    - For Year-To-Date (YTD) filtering, use: `[date_column] >= DATEFROMPARTS(YEAR(GETDATE()), 1, 1) AND [date_column] <= GETDATE()`.
@@ -238,7 +260,7 @@ CRITICAL RULES:
 """
 
         if start_date and end_date:
-            if self.erp_type == "helios":
+            if dialect == "postgres":
                 system_prompt += f"""
 6. CRITICAL: The user has specified a custom date range: from '{start_date}' to '{end_date}'. 
    If the query filters by any date fields (such as invoice date, due date, payment date, transaction date, journal date, etc.), 
@@ -250,7 +272,7 @@ CRITICAL RULES:
 8. CRITICAL: The user has specified a custom date range: from '{start_date}' to '{end_date}'. 
    If the query filters by any date fields (such as invoice date, due date, payment date, transaction date, journal date, etc.), 
    you MUST filter them using: `[date_field] >= '{start_date}' AND [date_field] <= '{end_date}'`. 
-   Do NOT use GETDATE() or DATEADD() or other dynamic date functions in this case. Write the conditions using these exact literal values.
+   Do NOT use NOW(), CURDATE(), GETDATE() or any dynamic date functions in this case. Write the conditions using these exact literal values.
 """
 
         log.info(f"Generating V2 semantic query for: {natural_language}")
@@ -293,14 +315,84 @@ CRITICAL RULES:
                             cleaned_sql = cleaned_sql[:-3]
                             
         cleaned_sql = cleaned_sql.strip()
-        
+
+        # ── MySQL safety post-processor ───────────────────────────────────────
+        # If the dialect is MySQL, auto-fix any T-SQL that the LLM still produced.
+        if dialect == "mysql":
+            cleaned_sql = _fix_tsql_to_mysql(cleaned_sql)
+
         # Check if the extracted text contains standard SQL queries (SELECT or WITH)
         sql_upper = cleaned_sql.upper()
         if "SELECT" not in sql_upper and "WITH" not in sql_upper:
             # Conversational/clarification text
             return f"CONVERSATIONAL:{sql}"
-            
+
         return cleaned_sql
+
+
+def _fix_tsql_to_mysql(sql: str) -> str:
+    """
+    Safety post-processor: converts T-SQL patterns to MySQL equivalents.
+    This is a defense-in-depth layer — the LLM prompt should already produce
+    correct MySQL, but this catches edge cases.
+    """
+    import re
+
+    # 1. SELECT TOP N ... → SELECT ... LIMIT N
+    #    Matches: SELECT TOP 10, SELECT TOP(10), SELECT DISTINCT TOP 10
+    top_match = re.match(
+        r"^\s*(SELECT\s+(?:DISTINCT\s+)?)(TOP\s*\(?\s*(\d+)\s*\)?)\s+",
+        sql,
+        re.IGNORECASE,
+    )
+    if top_match:
+        limit_n = top_match.group(3)
+        # Remove the TOP clause from the start
+        sql = re.sub(
+            r"^(\s*SELECT\s+(?:DISTINCT\s+)?)TOP\s*\(?\s*\d+\s*\)?\s+",
+            r"\1",
+            sql,
+            count=1,
+            flags=re.IGNORECASE,
+        )
+        # Append LIMIT at the very end (before any trailing whitespace/semicolon)
+        sql = re.sub(r"(;?\s*)$", f" LIMIT {limit_n}\\1", sql.rstrip(), count=1)
+
+    # 2. GETDATE() → NOW()
+    sql = re.sub(r"\bGETDATE\s*\(\s*\)", "NOW()", sql, flags=re.IGNORECASE)
+
+    # 3. DATEFROMPARTS(YEAR(GETDATE()), 1, 1) → DATE_FORMAT(NOW(), '%Y-01-01')
+    sql = re.sub(
+        r"\bDATEFROMPARTS\s*\(\s*YEAR\s*\(\s*(?:NOW|GETDATE)\s*\(\s*\)\s*\)\s*,\s*1\s*,\s*1\s*\)",
+        "DATE_FORMAT(NOW(), '%Y-01-01')",
+        sql,
+        flags=re.IGNORECASE,
+    )
+
+    # 4. DATEADD(interval, n, date) → DATE_ADD(date, INTERVAL n interval)
+    def _dateadd_to_mysql(m: re.Match) -> str:
+        interval = m.group(1).strip().upper()
+        n = m.group(2).strip()
+        date_expr = m.group(3).strip()
+        return f"DATE_ADD({date_expr}, INTERVAL {n} {interval})"
+
+    sql = re.sub(
+        r"\bDATEADD\s*\(\s*(\w+)\s*,\s*(-?\d+)\s*,\s*([^)]+)\)",
+        _dateadd_to_mysql,
+        sql,
+        flags=re.IGNORECASE,
+    )
+
+    # 5. Square bracket identifiers [ColumnName] → ColumnName (no quoting needed)
+    sql = re.sub(r"\[([^\]]+)\]", r"\1", sql)
+
+    # 6. ISNULL(a, b) → IFNULL(a, b)
+    sql = re.sub(r"\bISNULL\s*\(", "IFNULL(", sql, flags=re.IGNORECASE)
+
+    # 7. LEN(x) → CHAR_LENGTH(x)
+    sql = re.sub(r"\bLEN\s*\(", "CHAR_LENGTH(", sql, flags=re.IGNORECASE)
+
+    return sql
 
 
 def extract_columns_from_sql(sql: str) -> list[str]:
