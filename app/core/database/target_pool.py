@@ -349,6 +349,200 @@ class MSSQLConnectionPool:
             }
 
 
+# ── MySQL Thread-Local Connection Pool ────────────────────────────────────────
+
+class MySQLConnectionPool:
+    """
+    Thread-local persistent connection pool for pymysql.
+    """
+
+    def __init__(
+        self,
+        conn_params: dict[str, Any],
+        *,
+        max_workers: int | None = None,
+        max_idle_seconds: int = 300,
+        connect_timeout: int = 15,
+        query_timeout: int = 60,
+        max_retries: int = 2,
+    ) -> None:
+        self._conn_params = conn_params
+        self._max_idle = max_idle_seconds
+        self._connect_timeout = connect_timeout
+        self._query_timeout = query_timeout
+        self._max_retries = max_retries
+
+        self._local = threading.local()
+        self._connections_lock = threading.Lock()
+        self._active_connections: dict[int, Any] = {}
+        self._connection_timestamps: dict[int, float] = {}
+
+        workers = max_workers or 16
+        self._executor = ThreadPoolExecutor(
+            max_workers=workers,
+            thread_name_prefix="mysql_pool",
+        )
+
+    def _get_connection(self):
+        import pymysql
+
+        tid = threading.current_thread().ident
+        conn = getattr(self._local, 'conn', None)
+        last_used = getattr(self._local, 'last_used', 0)
+
+        if conn is not None:
+            idle_time = time.monotonic() - last_used
+            if idle_time > self._max_idle:
+                self._close_thread_connection()
+                conn = None
+
+        if conn is not None:
+            try:
+                with conn.cursor() as cur:
+                    cur.execute("SELECT 1")
+                    cur.fetchone()
+                self._local.last_used = time.monotonic()
+                return conn
+            except Exception:
+                self._close_thread_connection()
+                conn = None
+
+        for attempt in range(1, self._max_retries + 1):
+            try:
+                conn = pymysql.connect(
+                    host=self._conn_params["host"],
+                    port=int(self._conn_params["port"]),
+                    user=self._conn_params["user"],
+                    password=self._conn_params["password"],
+                    database=self._conn_params["database"],
+                    connect_timeout=self._connect_timeout,
+                    read_timeout=self._query_timeout,
+                    write_timeout=self._query_timeout,
+                )
+                self._local.conn = conn
+                self._local.last_used = time.monotonic()
+
+                with self._connections_lock:
+                    self._active_connections[tid] = conn
+                    self._connection_timestamps[tid] = time.monotonic()
+                return conn
+            except Exception as e:
+                if attempt == self._max_retries:
+                    raise TargetDBError(
+                        f"Failed to connect to MySQL after {self._max_retries} attempts: "
+                        f"{e.__class__.__name__}: {e}"
+                    ) from e
+                time.sleep(min(1.0 * attempt, 3.0))
+
+    def _close_thread_connection(self):
+        tid = threading.current_thread().ident
+        conn = getattr(self._local, 'conn', None)
+        if conn is not None:
+            try:
+                conn.close()
+            except Exception:
+                pass
+            self._local.conn = None
+            self._local.last_used = 0
+            with self._connections_lock:
+                self._active_connections.pop(tid, None)
+                self._connection_timestamps.pop(tid, None)
+
+    def execute_streaming(
+        self, sql: str, params: tuple, batch_size: int, timeout: int
+    ) -> list[list[dict]]:
+        conn = self._get_connection()
+        try:
+            with conn.cursor(pymysql.cursors.DictCursor) as cursor:
+                cursor.execute(sql, params)
+                batches = []
+                while True:
+                    rows = cursor.fetchmany(batch_size)
+                    if not rows:
+                        break
+                    batches.append(rows)
+                self._local.last_used = time.monotonic()
+                return batches
+        except Exception as e:
+            self._close_thread_connection()
+            conn = self._get_connection()
+            try:
+                with conn.cursor(pymysql.cursors.DictCursor) as cursor:
+                    cursor.execute(sql, params)
+                    batches = []
+                    while True:
+                        rows = cursor.fetchmany(batch_size)
+                        if not rows:
+                            break
+                        batches.append(rows)
+                    self._local.last_used = time.monotonic()
+                    return batches
+            except Exception as retry_err:
+                self._close_thread_connection()
+                raise TargetDBError(f"MySQL streaming failed: {retry_err}") from retry_err
+
+    def execute_scalar(self, sql: str, params: tuple, timeout: int) -> Any:
+        conn = self._get_connection()
+        try:
+            with conn.cursor() as cursor:
+                cursor.execute(sql, params)
+                res = cursor.fetchone()
+                self._local.last_used = time.monotonic()
+                return res[0] if res else None
+        except Exception as e:
+            self._close_thread_connection()
+            conn = self._get_connection()
+            try:
+                with conn.cursor() as cursor:
+                    cursor.execute(sql, params)
+                    res = cursor.fetchone()
+                    self._local.last_used = time.monotonic()
+                    return res[0] if res else None
+            except Exception as retry_err:
+                self._close_thread_connection()
+                raise TargetDBError(f"MySQL scalar query failed: {retry_err}") from retry_err
+
+    def execute_columns(self, sql: str, params: tuple, timeout: int) -> list[str]:
+        conn = self._get_connection()
+        try:
+            with conn.cursor() as cursor:
+                cursor.execute(sql, params)
+                col_names = []
+                if cursor.description:
+                    for i, desc in enumerate(cursor.description):
+                        col_names.append(desc[0] if desc[0] else f"column_{i}")
+                return col_names
+        except Exception as e:
+            self._close_thread_connection()
+            conn = self._get_connection()
+            try:
+                with conn.cursor() as cursor:
+                    cursor.execute(sql, params)
+                    col_names = []
+                    if cursor.description:
+                        for i, desc in enumerate(cursor.description):
+                            col_names.append(desc[0] if desc[0] else f"column_{i}")
+                    return col_names
+            except Exception as retry_err:
+                self._close_thread_connection()
+                raise TargetDBError(f"MySQL columns query failed: {retry_err}") from retry_err
+
+    def close_all(self):
+        with self._connections_lock:
+            for tid, conn in list(self._active_connections.items()):
+                try:
+                    conn.close()
+                except Exception:
+                    pass
+            self._active_connections.clear()
+            self._connection_timestamps.clear()
+        self._executor.shutdown(wait=False)
+
+    @property
+    def executor(self) -> ThreadPoolExecutor:
+        return self._executor
+
+
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def _to_positional_pg(sql: str, params: dict[str, Any]) -> tuple[str, list[Any]]:
@@ -392,11 +586,13 @@ class TargetPool:
         *,
         conn_params: dict[str, Any] | None = None,
         mssql_pool: MSSQLConnectionPool | None = None,
+        mysql_pool: MySQLConnectionPool | None = None,
     ) -> None:
         self.db_type = db_type
         self._pool = raw_pool             # asyncpg.Pool for PG, None for MSSQL
         self._conn_params = conn_params   # MSSQL only (host, port, user, password, db)
         self._mssql_pool = mssql_pool     # Thread-local connection pool for MSSQL
+        self._mysql_pool = mysql_pool     # Thread-local connection pool for MySQL
 
     # ── Public streaming interface ─────────────────────────────────────────
 
@@ -413,6 +609,9 @@ class TargetPool:
                 yield batch
         elif self.db_type == DBType.mssql:
             async for batch in self._fetch_mssql(sql, params, batch_size, timeout):
+                yield batch
+        elif self.db_type == DBType.mysql:
+            async for batch in self._fetch_mysql(sql, params, batch_size, timeout):
                 yield batch
         else:
             raise TargetDBError(f"Streaming not yet implemented for {self.db_type.value}")
@@ -473,6 +672,33 @@ class TargetPool:
         for batch in batches:
             yield batch
 
+    async def _fetch_mysql(
+        self, sql: str, params: dict[str, Any], batch_size: int, timeout: float
+    ):
+        mysql_sql, bound = _to_positional_mssql(sql, params)
+        log.debug("target_mysql_query", extra={"sql_len": len(mysql_sql), "n_params": len(bound)})
+
+        loop = asyncio.get_running_loop()
+
+        try:
+            batches = await asyncio.wait_for(
+                loop.run_in_executor(
+                    self._mysql_pool.executor,
+                    self._mysql_pool.execute_streaming,
+                    mysql_sql, tuple(bound), batch_size, int(timeout),
+                ),
+                timeout=timeout + 5,
+            )
+        except asyncio.TimeoutError as e:
+            raise TargetDBError("MySQL query timed out") from e
+        except TargetDBError:
+            raise
+        except Exception as e:
+            raise TargetDBError(f"MySQL error: {e.__class__.__name__}: {e}") from e
+
+        for batch in batches:
+            yield batch
+
     async def get_columns(self, sql: str, params: dict[str, Any], timeout: float) -> list[str]:
         if self._conn_params and self._conn_params.get("gateway"):
             return []
@@ -501,6 +727,21 @@ class TargetPool:
                 )
             except Exception as e:
                 log.warning("failed_to_get_mssql_columns", extra={"error": str(e)})
+                return []
+        elif self.db_type == DBType.mysql:
+            mysql_sql, bound = _to_positional_mssql(sql, params)
+            loop = asyncio.get_running_loop()
+            try:
+                return await asyncio.wait_for(
+                    loop.run_in_executor(
+                        self._mysql_pool.executor,
+                        self._mysql_pool.execute_columns,
+                        mysql_sql, tuple(bound), int(timeout),
+                    ),
+                    timeout=timeout + 5,
+                )
+            except Exception as e:
+                log.warning("failed_to_get_mysql_columns", extra={"error": str(e)})
                 return []
         return []
 
@@ -534,6 +775,25 @@ class TargetPool:
                 raise
             except Exception as e:
                 raise TargetDBError(f"MSSQL scalar error: {e.__class__.__name__}: {e}") from e
+        elif self.db_type == DBType.mysql:
+            mysql_sql, bound = _to_positional_mssql(sql, params)
+            loop = asyncio.get_running_loop()
+
+            try:
+                return await asyncio.wait_for(
+                    loop.run_in_executor(
+                        self._mysql_pool.executor,
+                        self._mysql_pool.execute_scalar,
+                        mysql_sql, tuple(bound), int(timeout),
+                    ),
+                    timeout=timeout + 5,
+                )
+            except asyncio.TimeoutError as e:
+                raise TargetDBError("MySQL scalar query timed out") from e
+            except TargetDBError:
+                raise
+            except Exception as e:
+                raise TargetDBError(f"MySQL scalar error: {e.__class__.__name__}: {e}") from e
         raise TargetDBError(f"execute_one not implemented for {self.db_type.value}")
 
     async def _fetch_gateway(
@@ -590,6 +850,8 @@ class TargetPool:
                 await self._pool.close()
             if self._mssql_pool is not None:
                 self._mssql_pool.close_all()
+            if self._mysql_pool is not None:
+                self._mysql_pool.close_all()
         except Exception:
             log.exception("error_closing_target_pool")
 
@@ -692,6 +954,24 @@ class TargetPoolRegistry:
                 max_retries=2,             # Retry connection attempts
             )
             return TargetPool(conn.db_type, None, conn_params=conn_params, mssql_pool=mssql_pool)
+
+        # ── MySQL (thread-local persistent connection pool) ───────────────────
+        if conn.db_type == DBType.mysql:
+            conn_params = {
+                "host": conn.host,
+                "port": conn.port,
+                "user": username,
+                "password": password,
+                "database": conn.db_name,
+            }
+            mysql_pool = MySQLConnectionPool(
+                conn_params,
+                max_idle_seconds=300,
+                connect_timeout=15,
+                query_timeout=60,
+                max_retries=2,
+            )
+            return TargetPool(conn.db_type, None, conn_params=conn_params, mysql_pool=mysql_pool)
 
         raise TargetDBError(f"Unsupported db_type: {conn.db_type.value}")
 
