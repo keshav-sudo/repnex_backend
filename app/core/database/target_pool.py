@@ -18,6 +18,7 @@ from concurrent.futures import ThreadPoolExecutor
 from typing import Any
 
 import asyncpg
+import pymysql
 
 from app.core.config import get_settings
 from app.core.database.models import DBConnection, DBType
