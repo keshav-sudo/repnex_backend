@@ -14,6 +14,8 @@ from decimal import Decimal
 log = get_logger(__name__)
 
 
+from datetime import datetime, date, time
+
 def serialize_decimals(obj: Any) -> Any:
     if isinstance(obj, dict):
         return {k: serialize_decimals(v) for k, v in obj.items()}
@@ -23,6 +25,10 @@ def serialize_decimals(obj: Any) -> Any:
         if obj % 1 == 0:
             return int(obj)
         return float(obj)
+    elif isinstance(obj, (datetime, date, time)):
+        return obj.isoformat()
+    elif isinstance(obj, uuid.UUID):
+        return str(obj)
     return obj
 
 

@@ -1,6 +1,4 @@
-"""history_service — records chat query history to MongoDB."""
-from __future__ import annotations
-
+from datetime import datetime, timezone
 import uuid
 from typing import Any
 
@@ -32,24 +30,27 @@ async def record_history(
     rows_returned: int | None = None,
 ) -> QueryHistory:
     """Persist a query execution record and return the saved document."""
-    history = QueryHistory(
-        id=uuid.uuid4(),
-        org_id=current.org_id,
-        user_id=current.user_id,
-        session_id=session.id,
-        connection_id=conn.id,
-        natural_language=natural_language,
-        template_id=intent.template_id,
-        extracted_params=intent.params,
-        generated_sql=sql,
-        status=status,
-        error_message=error_message,
-        execution_time_ms=execution_time_ms,
-        rows_returned=rows_returned,
-    )
+    doc_id = str(uuid.uuid4())
+    history_doc = {
+        "_id": doc_id,
+        "session_id": str(session.id),
+        "user_id": str(current.user_id),
+        "org_id": str(current.org_id),
+        "connection_id": str(conn.id),
+        "natural_language_input": natural_language,
+        "generated_sql": sql,
+        "intent": intent.model_dump() if hasattr(intent, "model_dump") else intent,
+        "execution_status": status.value if hasattr(status, "value") else str(status),
+        "error_message": error_message,
+        "execution_time_ms": execution_time_ms,
+        "rows_returned": rows_returned,
+        "created_at": datetime.now(timezone.utc),
+    }
+
     try:
         # pyrefly: ignore [missing-attribute]
-        await db[QueryHistory.COLLECTION].insert_one(history.model_dump(mode="json"))
+        await db[QueryHistory.COLLECTION].insert_one(history_doc)
     except Exception as exc:  # noqa: BLE001
         log.warning("history_insert_failed", extra={"err": str(exc)})
-    return history
+
+    return QueryHistory(**history_doc)
