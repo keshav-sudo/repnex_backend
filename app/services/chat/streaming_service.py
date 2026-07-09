@@ -121,7 +121,12 @@ async def run_streaming(
     history = list(session.context_window) if session and session.context_window else None
     generated_sql = await resolver.translate_to_sql(natural_language, history=history)
     if generated_sql.startswith("CONVERSATIONAL:"):
-        raise ValidationFailed(generated_sql[len("CONVERSATIONAL:"):])
+        msg = generated_sql[len("CONVERSATIONAL:"):]
+        await session_service.append_turn(db, session, role="user", content=natural_language)
+        await session_service.append_turn(
+            db, session, role="assistant", content=msg, type="conversational"
+        )
+        raise ValidationFailed(msg)
 
     intent = IntentResult(
         template_id="semantic_query",
