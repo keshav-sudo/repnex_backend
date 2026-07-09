@@ -175,9 +175,9 @@ async def _run(
     except asyncio.CancelledError:
         await send(ErrorMsg(code="cancelled", message="Query cancelled").model_dump())
         raise
-    except Exception:
+    except Exception as e:
         log.exception("ws_run_unhandled")
-        await send(ErrorMsg(code="internal_error", message="Server error").model_dump())
+        await send(ErrorMsg(code="internal_error", message=f"Server error: {type(e).__name__}: {str(e)}").model_dump())
     finally:
         try:
             await anext(db_iter)  # type: ignore[arg-type]
