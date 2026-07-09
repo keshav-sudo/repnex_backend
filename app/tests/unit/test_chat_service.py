@@ -1,14 +1,15 @@
 from __future__ import annotations
 
 import uuid
-import pytest
 from unittest.mock import AsyncMock, MagicMock, patch
 
-from app.schemas.query import ChatRequest, IntentClassification, IntentResult
+import pytest
+
 from app.core.security.auth import CurrentUser
+from app.engine.resolver.semantic_resolver import SemanticResolver
+from app.schemas.query import ChatRequest, IntentClassification
 from app.services.chat.chat_service import chat
 from app.services.chat.execute_service import execute_with_params
-from app.engine.resolver.semantic_resolver import SemanticResolver
 
 
 @pytest.fixture

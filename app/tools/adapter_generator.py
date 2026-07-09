@@ -2,17 +2,19 @@ import argparse
 import asyncio
 import json
 import uuid
-from motor.motor_asyncio import AsyncIOMotorClient
+
 from app.core.config import get_settings
-from app.services.connection_service import get_connection_by_id, sync_schema
+from app.core.security.auth import CurrentUser
 from app.engine.resolver.semantic_resolver import SemanticResolver
 from app.llm.client import get_llm
-from app.core.security.auth import CurrentUser
+from app.services.connection_service import get_connection_by_id, sync_schema
+from motor.motor_asyncio import AsyncIOMotorClient
+
 
 async def generate_adapters(conn_id_str: str, erp_type: str):
     print(f"[*] Initializing connection for ID: {conn_id_str}...")
     settings = get_settings()
-    
+
     # Establish MongoDB connection
     db_name = "repnex"
     cleaned_url = settings.DATABASE_URL
@@ -30,7 +32,7 @@ async def generate_adapters(conn_id_str: str, erp_type: str):
 
     conn_id = uuid.UUID(conn_id_str)
     conn = await get_connection_by_id(db, conn_id)
-    
+
     # Check if schema_info is populated, otherwise sync schema
     if not conn.schema_info or "tables" not in conn.schema_info:
         print("[*] Schema not synced. Syncing schema now (please wait)...")
@@ -45,7 +47,7 @@ async def generate_adapters(conn_id_str: str, erp_type: str):
         # Fetch updated connection
         conn = await get_connection_by_id(db, conn_id)
         print("[+] Schema synced successfully.")
-        
+
     tables_metadata = conn.schema_info.get("tables", [])
     print(f"[+] Found {len(tables_metadata)} tables in the database schema.")
 
@@ -94,13 +96,13 @@ You MUST output ONLY a valid JSON object matching the following structure. Do no
             user=prompt,
             max_tokens=1000
         )
-        
+
         # Clean up response to get raw JSON
         import re
         json_match = re.search(r"({.*})", response_text.strip(), re.DOTALL)
         if json_match:
             response_text = json_match.group(1)
-            
+
         try:
             adapter_json = json.loads(response_text)
             # Add dynamic ID
@@ -144,7 +146,7 @@ You MUST output ONLY a valid JSON object matching the following structure. Do no
         user=joins_prompt,
         max_tokens=1000
     )
-    
+
     json_match = re.search(r"({.*})", joins_resp.strip(), re.DOTALL)
     if json_match:
         joins_resp = json_match.group(1)

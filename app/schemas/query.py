@@ -4,9 +4,8 @@ import uuid
 from datetime import datetime
 from typing import Any, Literal
 
-from pydantic import BaseModel, Field
-
 from app.schemas.common import ORMBase
+from pydantic import BaseModel, Field
 
 ExecStatus = Literal["success", "error", "rate_limited"]
 

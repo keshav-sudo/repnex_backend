@@ -6,9 +6,8 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from typing import Any
 
-from fastapi import WebSocket
-
 from app.core.logging import get_logger
+from fastapi import WebSocket
 
 log = get_logger(__name__)
 

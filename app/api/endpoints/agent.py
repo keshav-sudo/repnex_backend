@@ -1,12 +1,14 @@
+import datetime
 import os
+import uuid
+
 from fastapi import APIRouter, Depends
 from fastapi.responses import FileResponse
-from app.api.dependencies.tenancy import bind_tenant_context
-from app.core.security.auth import CurrentUser
-from app.core.config import get_settings
 from jose import jwt
-import uuid
-import datetime
+
+from app.api.dependencies.tenancy import bind_tenant_context
+from app.core.config import get_settings
+from app.core.security.auth import CurrentUser
 
 router = APIRouter(prefix="/agent", tags=["agent"])
 
@@ -29,7 +31,7 @@ async def generate_agent_token(
 ) -> dict[str, str]:
     """Generate a JWT token that lasts for 10 years, specifically for use by the gateway agent."""
     settings = get_settings()
-    now = datetime.datetime.now(datetime.timezone.utc)
+    now = datetime.datetime.now(datetime.UTC)
     ttl = datetime.timedelta(days=3650)  # 10 years
     body = {
         "sub": str(current.user_id),

@@ -6,9 +6,9 @@ Public surface:
     from app.engine.parameter_binder import BoundQuery
     from app.engine.resolver.sql_cleaner import extract_columns_from_sql
 """
-from app.engine.resolver.semantic_resolver import SemanticResolver
 from app.engine.executor import execute_collect, execute_stream
 from app.engine.parameter_binder import BoundQuery
+from app.engine.resolver.semantic_resolver import SemanticResolver
 from app.engine.resolver.sql_cleaner import extract_columns_from_sql
 
 __all__ = [

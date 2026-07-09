@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TypeVar, Any
+from typing import Any, TypeVar
 
 from app.schemas.common import PageMeta, PaginatedResponse, PaginationParams
 

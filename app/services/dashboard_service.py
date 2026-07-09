@@ -1,10 +1,9 @@
 from __future__ import annotations
 
 import uuid
-from datetime import datetime, timezone
-from motor.motor_asyncio import AsyncIOMotorDatabase
+from datetime import UTC, datetime
 
-from app.core.database.models import Dashboard, DashboardReport, Report
+from app.core.database.models import Dashboard, Report
 from app.core.exceptions import Conflict, Forbidden, NotFound
 from app.core.security.auth import CurrentUser
 from app.schemas.dashboard import (
@@ -14,6 +13,7 @@ from app.schemas.dashboard import (
     DashboardRead,
     DashboardUpdate,
 )
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 
 async def list_dashboards(
@@ -125,7 +125,7 @@ async def add_item(
         "position_y": data.position_y,
         "width": data.width,
         "height": data.height,
-        "added_at": datetime.now(timezone.utc),
+        "added_at": datetime.now(UTC),
     }
 
     await db[Dashboard.COLLECTION].update_one(

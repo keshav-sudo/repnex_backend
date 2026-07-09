@@ -3,10 +3,9 @@ from __future__ import annotations
 
 import uuid
 
+from app.core.logging import request_id_ctx
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
-
-from app.core.logging import request_id_ctx
 
 
 class RequestIdMiddleware(BaseHTTPMiddleware):

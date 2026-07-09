@@ -5,8 +5,8 @@ import uuid
 from typing import Any
 
 from fastapi import APIRouter, Query, WebSocket, WebSocketDisconnect
-from pydantic import TypeAdapter, ValidationError
 from motor.motor_asyncio import AsyncIOMotorDatabase
+from pydantic import TypeAdapter, ValidationError
 
 from app.api.dependencies.rate_limit import consume_ws_msg
 from app.core.database.session import get_db

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Annotated, Any, Literal, Union
+from typing import Annotated, Any, Literal
 
 from pydantic import BaseModel, Field
 
@@ -21,7 +21,7 @@ class PingMsg(BaseModel):
 
 
 WSClientMessage = Annotated[
-    Union[RunQueryMsg, CancelMsg, PingMsg], Field(discriminator="action")
+    RunQueryMsg | CancelMsg | PingMsg, Field(discriminator="action")
 ]
 
 

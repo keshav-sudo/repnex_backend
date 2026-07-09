@@ -53,7 +53,7 @@ class _InMemoryBucket:
         self._windows[key] = window = [t for t in window if t > cutoff]
         if len(window) >= per_minute:
             retry_ms = int((window[0] - cutoff) * 1000)
-            raise RateLimited(f"Rate limit exceeded", retry_after_ms=max(retry_ms, 1000))
+            raise RateLimited("Rate limit exceeded", retry_after_ms=max(retry_ms, 1000))
         window.append(now)
 
 

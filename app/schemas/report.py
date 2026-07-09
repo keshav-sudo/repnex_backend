@@ -4,9 +4,8 @@ import uuid
 from datetime import datetime
 from typing import Annotated, Any, Literal
 
-from pydantic import BaseModel, Field
-
 from app.schemas.common import ORMBase
+from pydantic import BaseModel, Field
 
 
 class ReportColumnIn(BaseModel):

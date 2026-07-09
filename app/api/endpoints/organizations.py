@@ -1,5 +1,9 @@
 from __future__ import annotations
 
+from fastapi import APIRouter, Depends, status
+from motor.motor_asyncio import AsyncIOMotorDatabase
+from pydantic import BaseModel
+
 from app.api.dependencies.tenancy import bind_tenant_context
 from app.core.database.models import Organization
 from app.core.database.session import get_db
@@ -8,9 +12,6 @@ from app.core.security.auth import CurrentUser
 from app.schemas.organization import OrgRead, OrgUpdate
 from app.schemas.user import InviteRequest, InviteResponse
 from app.services import invitation_service
-from fastapi import APIRouter, Depends, status
-from pydantic import BaseModel
-from motor.motor_asyncio import AsyncIOMotorDatabase
 
 router = APIRouter(prefix="/organizations", tags=["organizations"])
 
@@ -42,7 +43,7 @@ async def complete_onboarding(
     # Send welcome email asynchronously (fire-and-forget)
     try:
         from app.core.config import get_settings
-        from app.utils.email import send_email_async, fire_and_forget
+        from app.utils.email import fire_and_forget, send_email_async
 
         s = get_settings()
         dashboard_url = f"{s.APP_BASE_URL.rstrip('/')}/dashboard"

@@ -3,9 +3,8 @@ from __future__ import annotations
 import uuid
 from typing import Annotated
 
-from pydantic import AliasChoices, BaseModel, EmailStr, Field, field_validator
-
 from app.schemas.common import ORMBase
+from pydantic import AliasChoices, BaseModel, EmailStr, Field, field_validator
 
 
 def _validate_password_complexity(password: str) -> str:

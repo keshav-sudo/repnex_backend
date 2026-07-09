@@ -8,7 +8,6 @@ from typing import Any
 from fastapi import APIRouter, Depends
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from app.api.dependencies.rate_limit import rate_limit
 from app.api.dependencies.tenancy import bind_tenant_context
 from app.core.database.models import Organization
 from app.core.database.session import get_db

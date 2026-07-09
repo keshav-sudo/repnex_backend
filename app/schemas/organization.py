@@ -4,9 +4,8 @@ import uuid
 from datetime import datetime
 from typing import Literal
 
-from pydantic import BaseModel
-
 from app.schemas.common import ORMBase
+from pydantic import BaseModel
 
 PlanType = Literal["free", "pro", "enterprise"]
 

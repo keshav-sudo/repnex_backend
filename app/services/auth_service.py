@@ -1,25 +1,25 @@
 from __future__ import annotations
 
-import asyncio
 import random
-import uuid
-from motor.motor_asyncio import AsyncIOMotorDatabase
-from pymongo.errors import DuplicateKeyError
 
 from app.core.config import get_settings
 from app.core.database.models import (
     Organization as OrgModel,
+)
+from app.core.database.models import (
     PlanType,
-    User as UserModel,
     UserRole,
     UserStatus,
+)
+from app.core.database.models import (
+    User as UserModel,
 )
 from app.core.exceptions import Conflict, Unauthorized
 from app.core.redis import get_redis
 from app.core.security.auth import (
     create_access_token,
-    create_reset_token,
     create_refresh_token,
+    create_reset_token,
     decode_token,
 )
 from app.core.security.passwords import hash_password, verify_password
@@ -31,7 +31,9 @@ from app.schemas.auth import (
     TokenPair,
     UserPublic,
 )
-from app.utils.email import send_email_async, fire_and_forget
+from app.utils.email import fire_and_forget, send_email_async
+from motor.motor_asyncio import AsyncIOMotorDatabase
+from pymongo.errors import DuplicateKeyError
 
 _local_otps: dict[str, str] = {}
 

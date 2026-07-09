@@ -2,12 +2,15 @@ from __future__ import annotations
 
 import time
 import uuid
-from datetime import datetime, timezone
-from motor.motor_asyncio import AsyncIOMotorDatabase
+from datetime import UTC, datetime
 
 from app.core.database.models import (
     DBConnection as DBConnectionModel,
+)
+from app.core.database.models import (
     DBConnectionAccess as DBConnectionAccessModel,
+)
+from app.core.database.models import (
     DBType,
 )
 from app.core.database.target_pool import get_target_pool_registry
@@ -24,6 +27,7 @@ from app.schemas.connection import (
     ListDatabasesResponse,
     TestConnectionResponse,
 )
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 
 async def list_connections(
@@ -177,7 +181,7 @@ async def test_connection(
     except Exception as e:
         return TestConnectionResponse(ok=False, error=str(e))
 
-    tested_at = datetime.now(timezone.utc)
+    tested_at = datetime.now(UTC)
     await db[DBConnectionModel.COLLECTION].update_one(
         {"_id": str(conn_id)},
         {"$set": {"last_tested_at": tested_at}}
@@ -258,7 +262,7 @@ async def list_databases(
                     loop.run_in_executor(ex, _fetch_mssql_databases),
                     timeout=20.0,
                 )
-            except asyncio.TimeoutError:
+            except TimeoutError:
                 raise ValueError("Server did not respond in time — check host/port")
             except Exception as e:
                 raise ValueError(f"Cannot connect to server: {e}")
@@ -316,7 +320,7 @@ async def list_databases(
                     loop.run_in_executor(ex, _fetch_mysql_databases),
                     timeout=20.0,
                 )
-            except asyncio.TimeoutError:
+            except TimeoutError:
                 raise ValueError("Server did not respond in time — check host/port")
             except Exception as e:
                 raise ValueError(f"Cannot connect to server: {e}")
@@ -436,7 +440,7 @@ async def sync_schema(
             {"_id": str(conn_id)},
             {"$set": {
                 "schema_info": {"tables": tables_list},
-                "schema_last_synced_at": datetime.now(timezone.utc)
+                "schema_last_synced_at": datetime.now(UTC)
             }}
         )
 

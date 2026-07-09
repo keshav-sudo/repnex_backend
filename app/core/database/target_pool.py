@@ -19,7 +19,6 @@ from typing import Any
 
 import asyncpg
 import pymysql
-
 from app.core.config import get_settings
 from app.core.database.models import DBConnection, DBType
 from app.core.exceptions import PoolExhausted, TargetDBError
@@ -227,7 +226,7 @@ class MSSQLConnectionPool:
                     rows = cursor.fetchmany(min(batch_size, remaining))
                     if not rows:
                         break
-                    batches.append([dict(zip(col_names, row)) for row in rows])
+                    batches.append([dict(zip(col_names, row, strict=False)) for row in rows])
                     remaining -= len(rows)
 
                 self._local.last_used = time.monotonic()
@@ -251,7 +250,7 @@ class MSSQLConnectionPool:
                         rows = cursor.fetchmany(min(batch_size, remaining))
                         if not rows:
                             break
-                        batches.append([dict(zip(col_names, row)) for row in rows])
+                        batches.append([dict(zip(col_names, row, strict=False)) for row in rows])
                         remaining -= len(rows)
                     self._local.last_used = time.monotonic()
                     return batches
@@ -464,7 +463,7 @@ class MySQLConnectionPool:
                     batches.append(rows)
                 self._local.last_used = time.monotonic()
                 return batches
-        except Exception as e:
+        except Exception:
             self._close_thread_connection()
             conn = self._get_connection()
             try:
@@ -490,7 +489,7 @@ class MySQLConnectionPool:
                 res = cursor.fetchone()
                 self._local.last_used = time.monotonic()
                 return res[0] if res else None
-        except Exception as e:
+        except Exception:
             self._close_thread_connection()
             conn = self._get_connection()
             try:
@@ -513,7 +512,7 @@ class MySQLConnectionPool:
                     for i, desc in enumerate(cursor.description):
                         col_names.append(desc[0] if desc[0] else f"column_{i}")
                 return col_names
-        except Exception as e:
+        except Exception:
             self._close_thread_connection()
             conn = self._get_connection()
             try:
@@ -641,7 +640,7 @@ class TargetPool:
                             yield batch
         except asyncpg.PostgresError as e:
             raise TargetDBError(f"Target DB error: {e.__class__.__name__}: {e}") from e
-        except asyncio.TimeoutError as e:
+        except TimeoutError as e:
             raise TargetDBError("Target DB query timed out") from e
 
     # ── MSSQL / SysPro via pymssql (persistent thread-local connections) ──
@@ -663,7 +662,7 @@ class TargetPool:
                 ),
                 timeout=timeout + 5,  # Extra grace for connection establishment
             )
-        except asyncio.TimeoutError as e:
+        except TimeoutError as e:
             raise TargetDBError("MSSQL query timed out") from e
         except TargetDBError:
             raise
@@ -690,7 +689,7 @@ class TargetPool:
                 ),
                 timeout=timeout + 5,
             )
-        except asyncio.TimeoutError as e:
+        except TimeoutError as e:
             raise TargetDBError("MySQL query timed out") from e
         except TargetDBError:
             raise
@@ -770,7 +769,7 @@ class TargetPool:
                     ),
                     timeout=timeout + 5,
                 )
-            except asyncio.TimeoutError as e:
+            except TimeoutError as e:
                 raise TargetDBError("MSSQL scalar query timed out") from e
             except TargetDBError:
                 raise
@@ -789,7 +788,7 @@ class TargetPool:
                     ),
                     timeout=timeout + 5,
                 )
-            except asyncio.TimeoutError as e:
+            except TimeoutError as e:
                 raise TargetDBError("MySQL scalar query timed out") from e
             except TargetDBError:
                 raise
@@ -806,7 +805,7 @@ class TargetPool:
         agent_name = self._conn_params["agent_name"]
         db_name = self._conn_params["database"]
         db_type = self._conn_params["db_type"]
-        
+
         rows = await mgr.execute_query(
             org_id=org_id,
             agent_name=agent_name,
@@ -826,7 +825,7 @@ class TargetPool:
         agent_name = self._conn_params["agent_name"]
         db_name = self._conn_params["database"]
         db_type = self._conn_params["db_type"]
-        
+
         rows = await mgr.execute_query(
             org_id=org_id,
             agent_name=agent_name,
@@ -840,7 +839,7 @@ class TargetPool:
             first = rows[0]
             if isinstance(first, dict):
                 return list(first.values())[0]
-            elif isinstance(first, (list, tuple)):
+            if isinstance(first, (list, tuple)):
                 return first[0]
             return first
         return None

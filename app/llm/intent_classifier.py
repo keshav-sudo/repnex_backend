@@ -5,11 +5,10 @@ import json
 from datetime import date
 from typing import Any
 
-from pydantic import ValidationError
-
 from app.core.exceptions import LLMError
 from app.llm.client import get_llm, load_prompt
 from app.schemas.query import IntentClassification, IntentResult
+from pydantic import ValidationError
 
 
 def _inject_user_name(prompt: str, user_name: str | None) -> str:

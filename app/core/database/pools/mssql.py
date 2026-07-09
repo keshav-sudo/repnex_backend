@@ -208,7 +208,7 @@ class MSSQLConnectionPool:
                     rows = cursor.fetchmany(min(batch_size, remaining))
                     if not rows:
                         break
-                    batches.append([dict(zip(col_names, row)) for row in rows])
+                    batches.append([dict(zip(col_names, row, strict=False)) for row in rows])
                     remaining -= len(rows)
 
                 self._local.last_used = time.monotonic()
@@ -232,7 +232,7 @@ class MSSQLConnectionPool:
                         rows = cursor.fetchmany(min(batch_size, remaining))
                         if not rows:
                             break
-                        batches.append([dict(zip(col_names, row)) for row in rows])
+                        batches.append([dict(zip(col_names, row, strict=False)) for row in rows])
                         remaining -= len(rows)
                     self._local.last_used = time.monotonic()
                     return batches

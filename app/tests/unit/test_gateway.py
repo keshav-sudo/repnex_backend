@@ -2,11 +2,13 @@ from __future__ import annotations
 
 import asyncio
 import uuid
+from unittest.mock import AsyncMock
+
 import pytest
-from unittest.mock import AsyncMock, MagicMock
 from fastapi import WebSocket
 
 from app.services.gateway_manager import GatewayManager
+
 
 @pytest.mark.asyncio
 async def test_gateway_manager_flow():
@@ -20,7 +22,7 @@ async def test_gateway_manager_flow():
 
     # Mock WebSocket
     mock_ws = AsyncMock(spec=WebSocket)
-    
+
     # Register
     await mgr.register(org_id, agent_name, mock_ws)
     assert mgr.is_agent_active(org_id, agent_name)
@@ -50,7 +52,7 @@ async def test_gateway_manager_flow():
     assert sent_payload["params"] == {"id": 10}
     assert sent_payload["db_name"] == "test_db"
     assert sent_payload["db_type"] == "postgres"
-    
+
     query_id = sent_payload["query_id"]
 
     # Simulate response from agent
@@ -60,7 +62,7 @@ async def test_gateway_manager_flow():
         "status": "success",
         "data": [{"id": 10, "username": "alice"}]
     }
-    
+
     mgr.handle_response(response_payload)
 
     # Wait for the execute_query task to finish and get result
@@ -78,7 +80,7 @@ async def test_gateway_query_error_flow():
     org_id = uuid.uuid4()
     agent_name = "test-agent"
     mock_ws = AsyncMock(spec=WebSocket)
-    
+
     # Register
     await mgr.register(org_id, agent_name, mock_ws)
     assert mgr.is_agent_active(org_id, agent_name)
@@ -109,13 +111,13 @@ async def test_gateway_query_error_flow():
         "status": "error",
         "error": "relation \"missing_table\" does not exist"
     }
-    
+
     mgr.handle_response(response_payload)
 
     # Wait for the execute_query task to finish and expect RuntimeError
     with pytest.raises(RuntimeError) as exc_info:
         await query_task
-    
+
     assert "Database error on agent: relation \"missing_table\" does not exist" in str(exc_info.value)
 
     # Agent MUST still be active (not unregistered because of database error!)

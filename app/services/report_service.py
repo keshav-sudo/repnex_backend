@@ -7,11 +7,9 @@ from __future__ import annotations
 
 import time
 import uuid
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
-from motor.motor_asyncio import AsyncIOMotorDatabase
-
-from app.core.database.models import Report, ReportColumn, ReportSnapshot
+from app.core.database.models import Report, ReportSnapshot
 from app.core.exceptions import Forbidden, NotFound
 from app.core.logging import get_logger
 from app.core.security.auth import CurrentUser
@@ -28,6 +26,7 @@ from app.schemas.report import (
     SnapshotRead,
 )
 from app.services import connection_service
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 log = get_logger(__name__)
 
@@ -165,7 +164,7 @@ async def run_report(
         await db[ReportSnapshot.COLLECTION].insert_one(snap_doc)
         await db[Report.COLLECTION].update_one(
             {"_id": str(r.id)},
-            {"$set": {"last_refreshed_at": datetime.now(timezone.utc)}},
+            {"$set": {"last_refreshed_at": datetime.now(UTC)}},
         )
     except Exception as exc:  # noqa: BLE001
         log.warning("snapshot_save_failed", extra={"report_id": str(r.id), "err": str(exc)})
@@ -211,7 +210,7 @@ async def set_schedule(
         "auto_refresh_connection_id": str(data.connection_id) if data.connection_id else None,
     }
     if data.interval_days and data.interval_days > 0 and data.connection_id:
-        update_fields["next_refresh_at"] = datetime.now(timezone.utc) + timedelta(
+        update_fields["next_refresh_at"] = datetime.now(UTC) + timedelta(
             days=data.interval_days
         )
     else:
@@ -249,7 +248,7 @@ async def _execute_and_snapshot(
     )
     await db[ReportSnapshot.COLLECTION].insert_one(snap_doc)
 
-    now = datetime.now(timezone.utc)
+    now = datetime.now(UTC)
     update_fields: dict = {"last_refreshed_at": now}
     if r.refresh_interval_days and r.refresh_interval_days > 0:
         update_fields["next_refresh_at"] = now + timedelta(days=r.refresh_interval_days)
@@ -304,7 +303,7 @@ async def get_snapshot_detail(
 
 async def run_due_reports(db: AsyncIOMotorDatabase) -> None:
     """Called by APScheduler every hour — runs all overdue scheduled reports."""
-    now = datetime.now(timezone.utc)
+    now = datetime.now(UTC)
     cursor = db[Report.COLLECTION].find({
         "next_refresh_at": {"$lte": now},
         "refresh_interval_days": {"$gt": 0},

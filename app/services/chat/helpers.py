@@ -5,10 +5,9 @@ import re
 from datetime import date
 from typing import Any
 
-from dateutil.relativedelta import relativedelta
-
 from app.core.logging import get_logger
 from app.core.security.auth import CurrentUser
+from dateutil.relativedelta import relativedelta
 
 log = get_logger(__name__)
 
@@ -142,3 +141,24 @@ def check_module_access(module: str | None, current: CurrentUser) -> tuple[bool,
             "Contact your administrator to request access."
         )
     return True, ""
+
+
+# Level 1 mapping: sub-module key -> parent module name
+MODULE_KEY_TO_PARENT: dict[str, str] = {
+    # Finance sub-modules
+    "ap":            "finance",
+    "ar":            "finance",
+    "gl":            "finance",
+    # Sales sub-modules
+    "so":            "sales",
+    # Purchase sub-modules
+    "po":            "purchase",
+    # Inventory
+    "inventory":     "inventory",
+    # Manufacturing sub-modules
+    "manufacturing": "manufacturing",
+    "bom":           "manufacturing",
+    "wip":           "manufacturing",
+    "jobcosting":    "manufacturing",
+}
+

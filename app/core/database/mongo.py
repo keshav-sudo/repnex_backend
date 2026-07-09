@@ -10,7 +10,6 @@ from __future__ import annotations
 
 import asyncio
 import logging
-from typing import Optional
 
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
 from pymongo import ASCENDING, DESCENDING, IndexModel
@@ -18,14 +17,14 @@ from pymongo.errors import AutoReconnect, ServerSelectionTimeoutError
 
 log = logging.getLogger(__name__)
 
-_client: Optional[AsyncIOMotorClient] = None
-_db: Optional[AsyncIOMotorDatabase] = None
+_client: AsyncIOMotorClient | None = None
+_db: AsyncIOMotorDatabase | None = None
 
 
 def init_mongo(uri: str, db_name: str, min_pool: int = 5, max_pool: int = 50) -> None:
     """Call once at startup (inside lifespan)."""
     global _client, _db
-    
+
     kwargs = {
         "minPoolSize": min_pool,
         "maxPoolSize": max_pool,
@@ -35,7 +34,7 @@ def init_mongo(uri: str, db_name: str, min_pool: int = 5, max_pool: int = 50) ->
         "retryWrites": True,
         "retryReads": True,
     }
-    
+
     try:
         import certifi
         kwargs["tlsCAFile"] = certifi.where()

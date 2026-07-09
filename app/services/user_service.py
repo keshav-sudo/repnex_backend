@@ -1,13 +1,13 @@
 from __future__ import annotations
 
 import uuid
-from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.core.database.models import User, UserRole
 from app.core.exceptions import Forbidden, NotFound
 from app.core.security.auth import CurrentUser
 from app.core.security.passwords import hash_password, verify_password
-from app.schemas.user import RoleUpdateRequest, UserRead, PermissionsUpdateRequest
+from app.schemas.user import PermissionsUpdateRequest, RoleUpdateRequest, UserRead
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 
 async def get_me(db: AsyncIOMotorDatabase, current: CurrentUser) -> UserRead:

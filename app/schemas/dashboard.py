@@ -4,9 +4,8 @@ import uuid
 from datetime import datetime
 from typing import Annotated, Any
 
-from pydantic import BaseModel, Field
-
 from app.schemas.common import ORMBase
+from pydantic import BaseModel, Field
 
 
 class DashboardCreate(BaseModel):

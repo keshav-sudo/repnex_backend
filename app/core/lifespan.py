@@ -4,14 +4,14 @@ from __future__ import annotations
 import asyncio
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI
-
 from app.core.config import get_settings
 from app.core.database.mongo import (
     close_mongo,
     ensure_indexes,
-    get_db as get_mongo_db,
     init_mongo,
+)
+from app.core.database.mongo import (
+    get_db as get_mongo_db,
 )
 from app.core.database.session import get_db
 from app.core.database.target_pool import close_target_pool_registry, init_target_pool_registry
@@ -20,6 +20,7 @@ from app.core.redis import close_redis, init_redis
 from app.services import report_service
 from app.services.gateway_manager import init_gateway_manager
 from app.services.websocket_manager import init_ws_manager, shutdown_ws_manager
+from fastapi import FastAPI
 
 log = get_logger(__name__)
 
@@ -104,7 +105,7 @@ async def lifespan(app: FastAPI):  # noqa: ARG001
             await asyncio.wait_for(
                 shutdown_ws_manager(), timeout=settings.GRACEFUL_SHUTDOWN_SECONDS
             )
-        except asyncio.TimeoutError:
+        except TimeoutError:
             log.warning("ws_shutdown_timeout")
         await close_target_pool_registry()
         await close_redis()

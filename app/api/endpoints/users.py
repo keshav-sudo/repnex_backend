@@ -2,24 +2,24 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends, status, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.api.dependencies.rate_limit import rate_limit
 from app.api.dependencies.tenancy import bind_tenant_context
+from app.core.database.models import PermissionRequest, PermissionRequestStatus, User
 from app.core.database.session import get_db
 from app.core.security.auth import CurrentUser
-from app.core.database.models import User, PermissionRequest, PermissionRequestStatus
 from app.schemas.user import (
     InviteRequest,
     InviteResponse,
     PasswordChangeRequest,
-    RoleUpdateRequest,
-    UserRead,
-    PermissionsUpdateRequest,
+    PermissionRequestAction,
     PermissionRequestCreate,
     PermissionRequestRead,
-    PermissionRequestAction,
+    PermissionsUpdateRequest,
+    RoleUpdateRequest,
+    UserRead,
 )
 from app.services import invitation_service, user_service
 
@@ -203,9 +203,8 @@ async def act_on_permission_request(
     perms = dict(target_user.get("module_permissions") or {})
     if data.action == "approve":
         perms[req["module_key"]] = True
-        # If this is a sub-module, let's auto-enable the parent too!
-        
-        parent = _MODULE_KEY_TO_PARENT.get(req["module_key"])
+        from app.services.chat.helpers import MODULE_KEY_TO_PARENT
+        parent = MODULE_KEY_TO_PARENT.get(req["module_key"])
         if parent and parent != req["module_key"]:
             perms[parent] = True
     else:

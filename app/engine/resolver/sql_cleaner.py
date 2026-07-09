@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import re
 
-
 # ── Markdown stripper ──────────────────────────────────────────────────────────
 
 def clean_llm_sql(raw: str) -> str:

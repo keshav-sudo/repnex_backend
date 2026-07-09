@@ -10,22 +10,22 @@ from motor.motor_asyncio import AsyncIOMotorDatabase
 from app.api.dependencies.rate_limit import rate_limit
 from app.api.dependencies.tenancy import bind_tenant_context
 from app.core.database.session import get_db
-from app.core.security.auth import CurrentUser
 from app.core.exceptions import Forbidden
+from app.core.security.auth import CurrentUser
 from app.schemas.report import (
+    BulkExportRequest,
+    RefreshRequest,
     ReportCreate,
+    ReportExportRequest,
     ReportRead,
     ReportUpdate,
-    RefreshRequest,
     RunReportRequest,
     RunReportResponse,
     ScheduleRequest,
     SnapshotDetailRead,
     SnapshotRead,
-    ReportExportRequest,
-    BulkExportRequest,
 )
-from app.services import report_service, export_service
+from app.services import export_service, report_service
 
 router = APIRouter(prefix="/reports", tags=["reports"])
 
@@ -59,7 +59,7 @@ async def export_excel(
     return StreamingResponse(
         io.BytesIO(excel_bytes),
         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-        headers={"Content-Disposition": f"attachment; filename=export.xlsx"},
+        headers={"Content-Disposition": "attachment; filename=export.xlsx"},
     )
 
 
@@ -75,7 +75,7 @@ async def export_pdf(
     return StreamingResponse(
         io.BytesIO(pdf_bytes),
         media_type="application/pdf",
-        headers={"Content-Disposition": f"attachment; filename=export.pdf"},
+        headers={"Content-Disposition": "attachment; filename=export.pdf"},
     )
 
 

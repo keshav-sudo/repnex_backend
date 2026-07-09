@@ -6,8 +6,6 @@ import uuid
 from collections.abc import Awaitable, Callable
 from typing import Any
 
-from motor.motor_asyncio import AsyncIOMotorDatabase
-
 from app.core.database.models import ExecutionStatus
 from app.core.exceptions import LLMError, TargetDBError, ValidationFailed
 from app.core.logging import get_logger
@@ -19,6 +17,7 @@ from app.schemas.query import IntentResult, RunQueryResponse
 from app.services import connection_service, session_service
 from app.services.chat.helpers import determine_erp_type
 from app.services.chat.history_service import record_history
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 log = get_logger(__name__)
 

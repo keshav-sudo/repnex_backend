@@ -5,9 +5,8 @@ import sys
 from contextvars import ContextVar
 from typing import Any
 
-from pythonjsonlogger import jsonlogger
-
 from app.core.config import get_settings
+from pythonjsonlogger import jsonlogger
 
 REDACT_KEYS = {
     "password",

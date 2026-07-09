@@ -1,13 +1,11 @@
 from __future__ import annotations
 
-import asyncio
 import uuid
-from motor.motor_asyncio import AsyncIOMotorDatabase
-from pymongo.errors import DuplicateKeyError
 
 from app.core.config import get_settings
 from app.core.database.models import Organization, User, UserRole, UserStatus
 from app.core.exceptions import Conflict, Forbidden, NotFound
+from app.core.logging import get_logger
 from app.core.security.auth import (
     create_access_token,
     create_invite_token,
@@ -24,8 +22,9 @@ from app.schemas.auth import (
     UserPublic,
 )
 from app.schemas.user import InviteRequest, InviteResponse
-from app.utils.email import send_email_async, fire_and_forget
-from app.core.logging import get_logger
+from app.utils.email import fire_and_forget, send_email_async
+from motor.motor_asyncio import AsyncIOMotorDatabase
+from pymongo.errors import DuplicateKeyError
 
 log = get_logger(__name__)
 

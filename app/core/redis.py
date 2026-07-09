@@ -3,7 +3,6 @@ from __future__ import annotations
 import logging
 
 import redis.asyncio as aioredis
-
 from app.core.config import get_settings
 
 log = logging.getLogger(__name__)

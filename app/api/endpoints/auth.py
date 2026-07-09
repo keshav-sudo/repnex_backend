@@ -4,9 +4,9 @@ from fastapi import APIRouter, Depends, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.api.dependencies.tenancy import bind_tenant_context
-from app.core.security.auth import CurrentUser
 from app.core.database.session import get_db
 from app.core.exceptions import NotFound
+from app.core.security.auth import CurrentUser
 from app.schemas.auth import (
     AcceptInviteRequest,
     AuthResponse,
@@ -15,13 +15,12 @@ from app.schemas.auth import (
     LoginRequest,
     RefreshRequest,
     ResetPasswordRequest,
+    SendOtpRequest,
     SignupRequest,
     TokenPair,
     UserPublic,
-    SendOtpRequest,
 )
 from app.services import auth_service, invitation_service
-
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 

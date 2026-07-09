@@ -37,8 +37,8 @@ async def ready() -> dict:
 @router.get("/metrics")
 async def metrics() -> dict:
     """Scalability metrics endpoint for monitoring dashboards."""
-    from app.services.websocket_manager import get_ws_manager
     from app.services.gateway_manager import get_gateway_manager
+    from app.services.websocket_manager import get_ws_manager
 
     ws_mgr = get_ws_manager()
     gw_mgr = get_gateway_manager()

@@ -7,14 +7,13 @@ Pipeline:
 """
 from __future__ import annotations
 
-from motor.motor_asyncio import AsyncIOMotorDatabase
-
-from app.core.database.models import DBConnection, ExecutionStatus
+from app.core.database.models import ExecutionStatus
 from app.core.exceptions import LLMError, TargetDBError
 from app.core.logging import get_logger
 from app.core.security.auth import CurrentUser
 from app.engine import BoundQuery, SemanticResolver, execute_collect, extract_columns_from_sql
 from app.llm.insight_generator import generate_insight
+
 # pyrefly: ignore [missing-import]
 from app.llm.intent_classifier import classify_intent, generate_conversational_response
 from app.llm.suggestion_generator import generate_suggestions
@@ -32,6 +31,7 @@ from app.services.chat.helpers import (
     resolve_relative_date_range,
 )
 from app.services.chat.history_service import record_history
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 log = get_logger(__name__)
 

@@ -7,8 +7,6 @@ from concurrent.futures import ThreadPoolExecutor
 from typing import Any
 
 import pymysql
-
-from app.core.config import get_settings
 from app.core.exceptions import TargetDBError
 from app.core.logging import get_logger
 
@@ -126,7 +124,7 @@ class MySQLConnectionPool:
                     batches.append(rows)
                 self._local.last_used = time.monotonic()
                 return batches
-        except Exception as e:
+        except Exception:
             self._close_thread_connection()
             conn = self._get_connection()
             try:
@@ -152,7 +150,7 @@ class MySQLConnectionPool:
                 res = cursor.fetchone()
                 self._local.last_used = time.monotonic()
                 return res[0] if res else None
-        except Exception as e:
+        except Exception:
             self._close_thread_connection()
             conn = self._get_connection()
             try:
@@ -175,7 +173,7 @@ class MySQLConnectionPool:
                     for i, desc in enumerate(cursor.description):
                         col_names.append(desc[0] if desc[0] else f"column_{i}")
                 return col_names
-        except Exception as e:
+        except Exception:
             self._close_thread_connection()
             conn = self._get_connection()
             try:

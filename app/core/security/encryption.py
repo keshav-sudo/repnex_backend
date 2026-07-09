@@ -1,8 +1,7 @@
 from __future__ import annotations
 
-from cryptography.fernet import Fernet, InvalidToken, MultiFernet
-
 from app.core.config import get_settings
+from cryptography.fernet import Fernet, InvalidToken, MultiFernet
 
 
 def _build_fernet() -> MultiFernet:

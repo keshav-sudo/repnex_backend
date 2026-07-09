@@ -3,9 +3,9 @@ from __future__ import annotations
 import asyncio
 import uuid
 from typing import Any
-from fastapi import WebSocket
 
 from app.core.logging import get_logger
+from fastapi import WebSocket
 
 log = get_logger(__name__)
 
@@ -63,11 +63,11 @@ class GatewayManager:
         timeout: float = 60.0,
     ) -> list[dict[str, Any]]:
         key = f"{org_id}:{agent_name}"
-        
+
         # Try sending the query, with up to 1 retry if connection is lost or stale
         for attempt in range(2):
             ws = self._agents.get(key)
-            
+
             # Check if WebSocket is missing or not connected
             is_valid = True
             if ws is None:
@@ -94,7 +94,7 @@ class GatewayManager:
                             is_valid = True
                             break
                     await asyncio.sleep(0.5)
-                
+
                 if not is_valid or ws is None:
                     active = self.list_active_agents(org_id)
                     if active:
@@ -103,12 +103,11 @@ class GatewayManager:
                             f"(Currently connected agents for your organization: {active}). "
                             f"Please check if the agent script is running with the correct --agent-name parameter."
                         )
-                    else:
-                        raise RuntimeError(
-                            f"Gateway Agent '{agent_name}' is not connected. "
-                            f"No active agents are currently connected for your organization. "
-                            f"Please verify if the agent script is running on the host machine."
-                        )
+                    raise RuntimeError(
+                        f"Gateway Agent '{agent_name}' is not connected. "
+                        f"No active agents are currently connected for your organization. "
+                        f"Please verify if the agent script is running on the host machine."
+                    )
 
             query_id = str(uuid.uuid4())
             fut = asyncio.get_running_loop().create_future()
@@ -135,20 +134,19 @@ class GatewayManager:
                     return result.get("data", [])
                 except DatabaseQueryError as e:
                     raise RuntimeError(f"Database error on agent: {str(e)}") from e
-                except asyncio.TimeoutError:
+                except TimeoutError:
                     raise TimeoutError(f"Gateway Agent '{agent_name}' query timed out after {timeout}s.")
                 except Exception as e:
                     # Connection was lost or closed while sending/waiting
                     async with self._lock:
                         if self._agents.get(key) == ws:
                             self._agents.pop(key, None)
-                    
+
                     if attempt == 0:
                         log.warning("gateway_query_attempt_failed_retrying", extra={"agent_name": agent_name, "error": str(e)})
                         await asyncio.sleep(0.5)
                         continue
-                    else:
-                        raise RuntimeError(f"Failed to communicate with Gateway Agent '{agent_name}': {str(e)}") from e
+                    raise RuntimeError(f"Failed to communicate with Gateway Agent '{agent_name}': {str(e)}") from e
             finally:
                 self._pending_queries.pop(query_id, None)
 

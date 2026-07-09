@@ -5,8 +5,7 @@ plain-text context block that the SemanticResolver injects into its system promp
 """
 from __future__ import annotations
 
-from pathlib import Path
-
+from app.core.logging import get_logger
 from app.engine.loader import (
     get_erp_paths,
     load_adapters,
@@ -14,7 +13,6 @@ from app.engine.loader import (
     load_meta,
     load_ontology,
 )
-from app.core.logging import get_logger
 
 log = get_logger(__name__)
 

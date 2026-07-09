@@ -3,12 +3,11 @@ from __future__ import annotations
 import re
 import uuid
 from datetime import datetime
-from typing import Annotated, Literal, Any
-from urllib.parse import urlparse, unquote
-
-from pydantic import BaseModel, Field, model_validator
+from typing import Annotated, Any, Literal
+from urllib.parse import unquote, urlparse
 
 from app.schemas.common import ORMBase
+from pydantic import BaseModel, Field, model_validator
 
 DBType = Literal["postgres", "mysql", "mssql", "oracle", "cloudsql"]
 
@@ -109,7 +108,7 @@ class ConnectionCreate(BaseModel):
     connection_string: str | None = None                        # optional raw connection string
 
     @model_validator(mode="after")
-    def _resolve_from_connection_string(self) -> "ConnectionCreate":
+    def _resolve_from_connection_string(self) -> ConnectionCreate:
         if self.connection_string:
             parsed = _parse_connection_string(self.connection_string)
             if not self.db_type:
@@ -168,7 +167,7 @@ class ListDatabasesRequest(BaseModel):
     ssl_enabled: bool = False
 
     @model_validator(mode="after")
-    def _resolve_defaults(self) -> "ListDatabasesRequest":
+    def _resolve_defaults(self) -> ListDatabasesRequest:
         if not self.port:
             default_ports = {
                 "postgres": 5432,

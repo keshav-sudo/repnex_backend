@@ -4,8 +4,6 @@ from __future__ import annotations
 import uuid
 from typing import Any
 
-from motor.motor_asyncio import AsyncIOMotorDatabase
-
 from app.core.database.models import (
     DBConnection,
     ExecutionStatus,
@@ -14,6 +12,7 @@ from app.core.database.models import (
 from app.core.logging import get_logger
 from app.core.security.auth import CurrentUser
 from app.schemas.query import IntentResult
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 log = get_logger(__name__)
 

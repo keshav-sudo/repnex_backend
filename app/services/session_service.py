@@ -1,14 +1,14 @@
 from __future__ import annotations
 
 import uuid
-from datetime import datetime, timezone
-from motor.motor_asyncio import AsyncIOMotorDatabase
+from datetime import UTC, datetime
 
 from app.core.database.models import DBConnection, GISession, SessionStatus
 from app.core.exceptions import NotFound
 from app.core.security.auth import CurrentUser
 from app.schemas.session import SessionCreate, SessionDetail, SessionRead, SessionUpdate
 from app.services import connection_service
+from motor.motor_asyncio import AsyncIOMotorDatabase
 
 MAX_CONTEXT_TURNS = 20
 
@@ -57,7 +57,7 @@ async def create(
         # Verifies access when connection_id is explicitly provided
         await connection_service.get_connection(db, current, conn_id)
 
-    title = data.title or f"New chat {datetime.now(timezone.utc):%Y-%m-%d %H:%M}"
+    title = data.title or f"New chat {datetime.now(UTC):%Y-%m-%d %H:%M}"
     s_doc = GISession.new(
         user_id=str(current.user_id),
         org_id=str(current.org_id),
@@ -110,18 +110,17 @@ async def delete(
 
 from typing import Any
 
+
 def make_json_safe(obj: Any) -> Any:
     import decimal
     import uuid
     if isinstance(obj, dict):
         return {k: make_json_safe(v) for k, v in obj.items()}
-    elif isinstance(obj, list):
+    if isinstance(obj, list) or isinstance(obj, (tuple, set)):
         return [make_json_safe(x) for x in obj]
-    elif isinstance(obj, (tuple, set)):
-        return [make_json_safe(x) for x in obj]
-    elif hasattr(obj, "isoformat"):
+    if hasattr(obj, "isoformat"):
         return obj.isoformat()
-    elif isinstance(obj, decimal.Decimal):
+    if isinstance(obj, decimal.Decimal):
         try:
             return float(obj)
         except Exception:

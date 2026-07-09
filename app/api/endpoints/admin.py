@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 import uuid
+
 from fastapi import APIRouter, Depends
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.api.dependencies.auth import require_role
 from app.api.dependencies.tenancy import bind_tenant_context
-from app.core.database.models import QueryHistory, User, Organization
+from app.core.database.models import Organization, QueryHistory, User
 from app.core.database.session import get_db
 from app.core.security.auth import CurrentUser
 from app.schemas.query import QueryHistoryRead

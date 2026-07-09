@@ -4,9 +4,8 @@ import uuid
 from datetime import datetime
 from typing import Annotated, Literal
 
-from pydantic import BaseModel, EmailStr, Field
-
 from app.schemas.common import ORMBase
+from pydantic import BaseModel, EmailStr, Field
 
 Role = Literal["admin", "editor", "viewer"]
 
