@@ -78,7 +78,17 @@ async def run_via_rest(
     try:
         summary = await generate_insight(intent=intent.model_dump(), rows=result.rows, user_name=None)
         await session_service.append_turn(
-            db, session, role="assistant", content=summary, columns=col_names
+            db,
+            session,
+            role="assistant",
+            content=summary,
+            type="executable",
+            sql=bound.sql,
+            rows=result.rows,
+            columns=col_names,
+            rows_returned=result.rows_returned,
+            execution_time_ms=result.execution_time_ms,
+            history_id=str(history.id),
         )
     except LLMError as exc:
         log.warning("insight_failed", extra={"err": str(exc)})
@@ -179,7 +189,17 @@ async def run_streaming(
     try:
         summary = await generate_insight(intent=intent.model_dump(), rows=sample)
         await session_service.append_turn(
-            db, session, role="assistant", content=summary, columns=col_names
+            db,
+            session,
+            role="assistant",
+            content=summary,
+            type="executable",
+            sql=bound.sql,
+            rows=sample,
+            columns=col_names,
+            rows_returned=rows_returned,
+            execution_time_ms=exec_ms,
+            history_id=str(history.id),
         )
         await on_event({"type": "insight", "summary": summary})
     except LLMError as exc:
