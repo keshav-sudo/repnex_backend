@@ -35,7 +35,7 @@ async def record_history(
     history = QueryHistory(
         id=uuid.uuid4(),
         org_id=current.org_id,
-        user_id=current.id,
+        user_id=current.user_id,
         session_id=session.id,
         connection_id=conn.id,
         natural_language=natural_language,
@@ -48,6 +48,7 @@ async def record_history(
         rows_returned=rows_returned,
     )
     try:
+        # pyrefly: ignore [missing-attribute]
         await db[QueryHistory.COLLECTION].insert_one(history.model_dump(mode="json"))
     except Exception as exc:  # noqa: BLE001
         log.warning("history_insert_failed", extra={"err": str(exc)})
