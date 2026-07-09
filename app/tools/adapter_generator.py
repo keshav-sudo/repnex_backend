@@ -5,7 +5,7 @@ import uuid
 from motor.motor_asyncio import AsyncIOMotorClient
 from app.core.config import get_settings
 from app.services.connection_service import get_connection_by_id, sync_schema
-from app.query_engine.semantic_resolver import SemanticResolver
+from app.engine.resolver.semantic_resolver import SemanticResolver
 from app.llm.client import get_llm
 from app.core.security.auth import CurrentUser
 

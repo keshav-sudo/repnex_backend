@@ -4,8 +4,8 @@ import pytest
 from unittest.mock import AsyncMock, MagicMock, patch
 
 from app.core.database.models import DBConnection
-from app.query_engine.executor import execute_collect
-from app.query_engine.parameter_binder import BoundQuery
+from app.engine.executor import execute_collect
+from app.engine.parameter_binder import BoundQuery
 
 
 @pytest.mark.asyncio
@@ -27,8 +27,8 @@ async def test_execute_collect_empty_rows_resolves_columns(settings):
         if False:
             yield []
 
-    with patch("app.query_engine.executor.get_target_pool_registry", return_value=mock_registry), \
-         patch("app.query_engine.executor.execute_stream", mock_execute_stream):
+    with patch("app.engine.executor.get_target_pool_registry", return_value=mock_registry), \
+         patch("app.engine.executor.execute_stream", mock_execute_stream):
 
         result = await execute_collect(conn, bound)
         assert result.rows == []

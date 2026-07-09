@@ -20,7 +20,8 @@ class Settings(BaseSettings):
     PORT: int = 8000
     CORS_ORIGINS: str = "*"
     GRACEFUL_SHUTDOWN_SECONDS: int = 30
-    ENGINE_VERSION: str = "v1"
+    API_PREFIX: str = "/v1"
+    SEMANTIC_ERP_DEFAULT: str = "syspro"
 
     # Metadata DB
     DATABASE_URL: str
@@ -57,11 +58,7 @@ class Settings(BaseSettings):
     DEEPSEEK_MODEL: str = "deepseek-chat"
     DEEPSEEK_BASE_URL: str = "https://api.deepseek.com/v1"
 
-    # Pinecone
-    PINECONE_API_KEY: str = ""
-    PINECONE_HOST: str = ""
-    PINECONE_INDEX_NAME: str = "repnex"
-    PINECONE_NAMESPACE: str = "repnex"
+
 
     # Rate limits (per minute, per user)
     RATE_LIMIT_AUTH_PER_MIN: int = 10
@@ -82,9 +79,9 @@ class Settings(BaseSettings):
     EMAIL_PROVIDER: Literal["console", "smtp"] = "smtp"
     SMTP_HOST: str = "smtp.gmail.com"
     SMTP_PORT: int = 587
-    SMTP_USER: str = "helicalconsulting@gmail.com"
-    SMTP_PASSWORD: str = "cishyizfyoqehjhk"
-    SMTP_FROM: str = "helicalconsulting@gmail.com"
+    SMTP_USER: str = ""
+    SMTP_PASSWORD: str = ""
+    SMTP_FROM: str = ""
     APP_BASE_URL: str = "http://localhost:5173"
 
     @field_validator("CORS_ORIGINS")
