@@ -57,6 +57,7 @@ class SemanticResolver:
         natural_language: str,
         start_date: str | None = None,
         end_date: str | None = None,
+        history: list[dict] | None = None,
     ) -> str:
         """Translate a natural language query into a valid SQL string.
 
@@ -81,9 +82,25 @@ class SemanticResolver:
             extra={"erp": self.erp_type, "dialect": dialect, "nl": natural_language[:120]},
         )
 
+        history_str = ""
+        if history:
+            recent_history = history[-5:]
+            history_str = "\n\nCONVERSATION HISTORY (Use this context to resolve follow-ups, pronouns like 'this', 'that', 'it', 'them', or references to previous results):\n"
+            for turn in recent_history:
+                role = turn.get("role", "user")
+                content = turn.get("content", "")
+                sql_info = ""
+                if "sql" in turn and turn["sql"]:
+                    sql_info = f" [SQL generated: {turn['sql']}]"
+                history_str += f"- {role.upper()}: {content}{sql_info}\n"
+
+        user_prompt = f"Translate this query: {natural_language}"
+        if history_str:
+            user_prompt = f"{history_str}\nNew Query (contextual follow-up): {natural_language}\nTranslate this new query considering the conversation history and previous SQL queries."
+
         raw_sql = await get_llm().chat_text(
             system=system_prompt,
-            user=f"Translate this query: {natural_language}",
+            user=user_prompt,
             max_tokens=1024,
         )
 

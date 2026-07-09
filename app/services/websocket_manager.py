@@ -12,6 +12,12 @@ from fastapi import WebSocket
 log = get_logger(__name__)
 
 
+def _default_event() -> asyncio.Event:
+    ev = asyncio.Event()
+    ev.set()
+    return ev
+
+
 @dataclass(slots=True)
 class _Entry:
     websocket: WebSocket
@@ -19,6 +25,7 @@ class _Entry:
     org_id: uuid.UUID
     session_id: uuid.UUID
     task: asyncio.Task | None = field(default=None)
+    pause_event: asyncio.Event = field(default_factory=_default_event)
 
 
 class WebSocketManager:

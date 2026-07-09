@@ -191,3 +191,66 @@ async def test_chat_v2_conversational_response(
     assert resp.type == "conversational"
     assert resp.message == "I need to clarify your request. It seems like you're asking for..."
     assert len(resp.suggestions) > 0
+
+
+@pytest.mark.asyncio
+@patch("app.engine.resolver.semantic_resolver.get_llm")
+async def test_semantic_resolver_with_history(mock_get_llm):
+    mock_llm_instance = MagicMock()
+    mock_llm_instance.chat_text = AsyncMock(return_value="SELECT * FROM ArCustomer")
+    mock_get_llm.return_value = mock_llm_instance
+
+    resolver = SemanticResolver(erp_type="syspro")
+    resolver._context_builder = MagicMock()
+    resolver._context_builder.load_meta = MagicMock(return_value={"conventions": {"dialect": "mssql"}})
+    resolver._context_builder.build = MagicMock(return_value="Mock prompt context")
+
+    history = [
+        {"role": "user", "content": "show suppliers", "sql": "SELECT * FROM ApSupplier"},
+        {"role": "assistant", "content": "Here is the list of suppliers"}
+    ]
+
+    sql = await resolver.translate_to_sql("show their names", history=history)
+
+    assert sql == "SELECT * FROM ArCustomer"
+    # Ensure history was included in the prompt
+    called_args = mock_llm_instance.chat_text.call_args[1]
+    assert "CONVERSATION HISTORY" in called_args["user"]
+    assert "show suppliers" in called_args["user"]
+    assert "SELECT * FROM ApSupplier" in called_args["user"]
+    assert "show their names" in called_args["user"]
+
+
+@pytest.mark.asyncio
+async def test_edit_turn_service(mock_db, current_user):
+    from app.core.database.models import GISession, SessionStatus
+    from app.services.session_service import edit_turn
+
+    session_id = uuid.uuid4()
+    mock_session_doc = {
+        "_id": str(session_id),
+        "user_id": str(current_user.user_id),
+        "org_id": str(current_user.org_id),
+        "connection_id": str(uuid.uuid4()),
+        "title": "Test Chat",
+        "context_window": [
+            {"role": "user", "content": "Q1"},
+            {"role": "assistant", "content": "A1"},
+            {"role": "user", "content": "Q2"},
+            {"role": "assistant", "content": "A2"},
+        ],
+        "token_count": 10,
+        "status": SessionStatus.active.value,
+        "created_at": "2026-07-09T00:00:00Z"
+    }
+
+    mock_db[GISession.COLLECTION].find_one = AsyncMock(return_value=mock_session_doc)
+    mock_db[GISession.COLLECTION].update_one = AsyncMock()
+
+    updated_session = await edit_turn(mock_db, current_user, session_id, turn_index=2)
+
+    # Truncates from turn_index 2 onwards, i.e., Q2 and A2 are removed.
+    assert len(updated_session.context_window) == 2
+    assert updated_session.context_window[0]["content"] == "Q1"
+    assert updated_session.context_window[1]["content"] == "A1"
+    mock_db[GISession.COLLECTION].update_one.assert_called_once()

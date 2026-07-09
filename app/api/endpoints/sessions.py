@@ -83,3 +83,28 @@ async def delete(
 ) -> dict:
     await session_service.delete(db, current, session_id)
     return {"ok": True}
+
+
+@router.post("/{session_id}/turns/{turn_index}/edit", response_model=SessionDetail)
+async def edit_turn(
+    session_id: uuid.UUID,
+    turn_index: int,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncIOMotorDatabase = Depends(get_db),
+) -> SessionDetail:
+    """Truncates the session context window starting from turn_index.
+    
+    The client can then call chat/websocket streaming with the new edited prompt.
+    """
+    res = await session_service.edit_turn(db, current, session_id, turn_index)
+    from app.api.endpoints.query import is_sql_hidden, redact_sql_blocks
+    if await is_sql_hidden(db, current.org_id):
+        for turn in res.context_window:
+            if "sql" in turn:
+                turn["sql"] = None
+            if "content" in turn and isinstance(turn["content"], str):
+                cleaned = turn["content"]
+                cleaned = cleaned.replace(" Here's a preview of the SQL that will execute:", "")
+                cleaned = cleaned.replace("Here's a preview of the SQL that will execute:", "")
+                turn["content"] = redact_sql_blocks(cleaned)
+    return SessionDetail.model_validate(res)

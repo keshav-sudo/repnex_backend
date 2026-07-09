@@ -27,12 +27,12 @@ router = APIRouter(prefix="/query", tags=["query"])
 # ── SQL redaction (org-level setting) ─────────────────────────────────────────
 
 
-async def _is_sql_hidden(db: AsyncIOMotorDatabase, org_id: uuid.UUID) -> bool:
+async def is_sql_hidden(db: AsyncIOMotorDatabase, org_id: uuid.UUID) -> bool:
     org = await db[Organization.COLLECTION].find_one({"_id": str(org_id)})
     return bool(org.get("hide_sql_queries") if org else False)
 
 
-def _redact_sql_blocks(text: str | None) -> str | None:
+def redact_sql_blocks(text: str | None) -> str | None:
     if not text:
         return text
     return re.sub(
@@ -43,17 +43,17 @@ def _redact_sql_blocks(text: str | None) -> str | None:
     )
 
 
-async def _apply_sql_redaction(db: AsyncIOMotorDatabase, org_id: uuid.UUID, res: Any) -> Any:
-    if await _is_sql_hidden(db, org_id):
+async def apply_sql_redaction(db: AsyncIOMotorDatabase, org_id: uuid.UUID, res: Any) -> Any:
+    if await is_sql_hidden(db, org_id):
         if hasattr(res, "sql"):
             res.sql = None
         if hasattr(res, "message") and res.message:
             cleaned = res.message.replace(
                 " Here's a preview of the SQL that will execute:", ""
             ).replace("Here's a preview of the SQL that will execute:", "")
-            res.message = _redact_sql_blocks(cleaned)
+            res.message = redact_sql_blocks(cleaned)
         if hasattr(res, "summary") and res.summary:
-            res.summary = _redact_sql_blocks(res.summary)
+            res.summary = redact_sql_blocks(res.summary)
     return res
 
 
@@ -69,7 +69,7 @@ async def chat_endpoint(
 ) -> ChatResponse:
     """Classify intent and return conversational or executable response."""
     res = await chat(db, current, data=data)
-    return await _apply_sql_redaction(db, current.org_id, res)
+    return await apply_sql_redaction(db, current.org_id, res)
 
 
 @router.post("/execute", response_model=ChatResponse)
@@ -80,7 +80,7 @@ async def execute_endpoint(
 ) -> ChatResponse:
     """Execute a V2 query with user-supplied date parameters (after params_needed)."""
     res = await execute_with_params(db, current, data=data)
-    return await _apply_sql_redaction(db, current.org_id, res)
+    return await apply_sql_redaction(db, current.org_id, res)
 
 
 @router.post("/run", response_model=RunQueryResponse)
@@ -95,4 +95,4 @@ async def run_endpoint(
         session_id=data.session_id,
         natural_language=data.natural_language,
     )
-    return await _apply_sql_redaction(db, current.org_id, res)
+    return await apply_sql_redaction(db, current.org_id, res)

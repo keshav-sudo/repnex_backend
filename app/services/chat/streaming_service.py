@@ -1,6 +1,7 @@
 """streaming_service — WebSocket streaming and REST fallback execution paths."""
 from __future__ import annotations
 
+import asyncio
 import time
 import uuid
 from collections.abc import Awaitable, Callable
@@ -44,7 +45,6 @@ async def run_via_rest(
     if generated_sql.startswith("CONVERSATIONAL:"):
         raise ValidationFailed(generated_sql[len("CONVERSATIONAL:"):])
 
-    clean_desc = (natural_language or "Dynamic Query").strip()[:60].title()
     intent = IntentResult(
         template_id="semantic_query",
         params={},
@@ -102,6 +102,7 @@ async def run_streaming(
     session_id: uuid.UUID,
     natural_language: str,
     on_event: Callable[[dict[str, Any]], Awaitable[None]],
+    pause_event: asyncio.Event | None = None,
 ) -> dict[str, Any]:
     """WebSocket path — streams result batches via on_event callbacks."""
     session = await session_service.get(db, current, session_id)
@@ -117,7 +118,8 @@ async def run_streaming(
     erp_type = determine_erp_type(conn, org)
 
     resolver = SemanticResolver(erp_type=erp_type)
-    generated_sql = await resolver.translate_to_sql(natural_language)
+    history = list(session.context_window) if session and session.context_window else None
+    generated_sql = await resolver.translate_to_sql(natural_language, history=history)
     if generated_sql.startswith("CONVERSATIONAL:"):
         raise ValidationFailed(generated_sql[len("CONVERSATIONAL:"):])
 
@@ -141,6 +143,8 @@ async def run_streaming(
 
     try:
         async for batch in execute_stream(conn, bound):
+            if pause_event:
+                await pause_event.wait()
             batch_no += 1
             rows_returned += len(batch)
             if len(sample) < 50:

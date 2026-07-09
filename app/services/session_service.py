@@ -156,3 +156,31 @@ async def append_turn(
             "token_count": token_count
         }}
     )
+
+
+async def edit_turn(
+    db: AsyncIOMotorDatabase,
+    current: CurrentUser,
+    session_id: uuid.UUID,
+    turn_index: int,
+) -> GISession:
+    session = await get(db, current, session_id)
+    cw = list(session.context_window or [])
+    if turn_index < 0 or turn_index >= len(cw):
+        raise NotFound("Turn index out of bounds")
+
+    # Truncate starting from turn_index
+    cw = cw[:turn_index]
+
+    token_count = sum(len(m.get("content", "")) // 4 for m in cw)
+    session.context_window = cw
+    session.token_count = token_count
+
+    await db[GISession.COLLECTION].update_one(
+        {"_id": str(session.id)},
+        {"$set": {
+            "context_window": cw,
+            "token_count": token_count
+        }}
+    )
+    return session

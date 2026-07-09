@@ -1,4 +1,4 @@
-from __future__ import annotations
+from app.schemas.websocket import StatusMsg
 
 import asyncio
 import uuid
@@ -117,14 +117,26 @@ async def ws_query(
                     entry.task.cancel()
                 continue
 
+            if msg.action == "pause":
+                entry.pause_event.clear()
+                await send(StatusMsg(message="Query execution paused").model_dump())
+                continue
+
+            if msg.action == "resume":
+                entry.pause_event.set()
+                await send(StatusMsg(message="Query execution resumed").model_dump())
+                continue
+
             if msg.action == "run_query":
                 if entry.task and not entry.task.done():
                     await send(
                         ErrorMsg(code="busy", message="Query already running").model_dump()
                     )
                     continue
+                # Reset pause event when starting a new query
+                entry.pause_event.set()
                 entry.task = asyncio.create_task(
-                    _run(send, current, session_id, msg.natural_language),
+                    _run(send, current, session_id, msg.natural_language, entry.pause_event),
                     name=f"ws-run-{session_id}",
                 )
     except WebSocketDisconnect:
@@ -144,6 +156,7 @@ async def _run(
     current,
     session_id: uuid.UUID,
     natural_language: str,
+    pause_event: asyncio.Event,
 ) -> None:
     db_iter = get_db()
     db: AsyncIOMotorDatabase = await anext(db_iter)  # type: ignore[arg-type]
@@ -154,6 +167,7 @@ async def _run(
             session_id=session_id,
             natural_language=natural_language,
             on_event=send,
+            pause_event=pause_event,
         )
         await send(CompleteMsg(**result).model_dump())
     except AppError as e:

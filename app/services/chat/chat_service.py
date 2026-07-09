@@ -125,7 +125,10 @@ async def chat(
     # ── Translate NL → SQL via SemanticResolver ─────────────────────────────
     resolver = SemanticResolver(erp_type=erp_type)
     try:
-        generated_sql = await resolver.translate_to_sql(nl, start_date=start_date, end_date=end_date)
+        history_window = list(session.context_window[:-1]) if session and len(session.context_window) > 1 else None
+        generated_sql = await resolver.translate_to_sql(
+            nl, start_date=start_date, end_date=end_date, history=history_window
+        )
     except Exception as exc:
         log.error("semantic_translation_failed", extra={"err": str(exc)}, exc_info=True)
         return ChatResponse(

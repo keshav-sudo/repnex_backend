@@ -20,8 +20,16 @@ class PingMsg(BaseModel):
     action: Literal["ping"]
 
 
+class PauseMsg(BaseModel):
+    action: Literal["pause"]
+
+
+class ResumeMsg(BaseModel):
+    action: Literal["resume"]
+
+
 WSClientMessage = Annotated[
-    RunQueryMsg | CancelMsg | PingMsg, Field(discriminator="action")
+    RunQueryMsg | CancelMsg | PingMsg | PauseMsg | ResumeMsg, Field(discriminator="action")
 ]
 
 
