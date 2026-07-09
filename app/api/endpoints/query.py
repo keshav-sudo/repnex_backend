@@ -136,4 +136,21 @@ async def save_feedback(
             }
         }}
     )
+
+    # Also save to a separate, dedicated "query_feedbacks" collection for separate admin view/exports
+    feedback_doc = {
+        "_id": str(uuid.uuid4()),
+        "history_id": str(history_id),
+        "org_id": str(current.org_id),
+        "user_id": str(current.user_id),
+        "is_positive": data.is_positive,
+        "category": data.category,
+        "comment": data.comment,
+        "submitted_at": datetime.now(timezone.utc),
+        # Snapshot key query info for easy admin dashboard viewing
+        "natural_language_input": history_doc.get("natural_language_input"),
+        "generated_sql": history_doc.get("generated_sql"),
+    }
+    await db["query_feedbacks"].insert_one(feedback_doc)
+
     return {"status": "success", "message": "Feedback saved successfully"}
