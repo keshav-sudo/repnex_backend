@@ -75,6 +75,7 @@ class ErrorMsg(BaseModel):
     type: Literal["error"] = "error"
     code: str
     message: str
+    history_id: str | None = None
 
 
 class ReadyMsg(BaseModel):

@@ -171,13 +171,37 @@ async def _run(
         )
         await send(CompleteMsg(**result).model_dump())
     except AppError as e:
-        await send(ErrorMsg(code=e.code, message=e.message).model_dump())
+        history_id = getattr(e, "history_id", None)
+        await send(ErrorMsg(code=e.code, message=e.message, history_id=history_id).model_dump())
     except asyncio.CancelledError:
         await send(ErrorMsg(code="cancelled", message="Query cancelled").model_dump())
         raise
     except Exception as e:
         log.exception("ws_run_unhandled")
-        await send(ErrorMsg(code="internal_error", message=f"Server error: {type(e).__name__}: {str(e)}").model_dump())
+        try:
+            from app.services.chat.history_service import record_history
+            from app.core.database.models import ExecutionStatus
+            from app.schemas.query import IntentResult
+            from app.services.chat.session_service import session_service
+            from app.services.chat.connection_service import connection_service
+
+            session = await session_service.get(db, current, session_id)
+            conn = await connection_service.get_connection(db, current, session.connection_id)
+
+            hist = await record_history(
+                db, session, conn, current, natural_language,
+                IntentResult(template_id="unhandled_error", params={}, missing_params=[], confidence=0.0),
+                "", ExecutionStatus.error, error_message=str(e)
+            )
+            history_id = str(hist.id)
+        except Exception:
+            history_id = None
+
+        await send(ErrorMsg(
+            code="internal_error",
+            message=f"Server error: {type(e).__name__}: {str(e)}",
+            history_id=history_id
+        ).model_dump())
     finally:
         try:
             await anext(db_iter)  # type: ignore[arg-type]

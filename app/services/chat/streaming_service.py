@@ -156,10 +156,11 @@ async def run_streaming(
                 sample.extend(batch[: 50 - len(sample)])
             await on_event({"type": "data", "batch": batch_no, "rows": batch})
     except TargetDBError as exc:
-        await record_history(
+        hist = await record_history(
             db, session, conn, current, natural_language, intent,
             bound.sql, ExecutionStatus.error, error_message=exc.message,
         )
+        setattr(exc, "history_id", str(hist.id))
         raise
 
     exec_ms = int((time.perf_counter() - started) * 1000)

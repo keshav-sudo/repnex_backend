@@ -96,3 +96,44 @@ async def run_endpoint(
         natural_language=data.natural_language,
     )
     return await apply_sql_redaction(db, current.org_id, res)
+
+
+from pydantic import BaseModel
+from datetime import datetime, timezone
+
+class FeedbackRequest(BaseModel):
+    is_positive: bool
+    category: str | None = None
+    comment: str | None = None
+
+@router.post("/history/{history_id}/feedback")
+async def save_feedback(
+    history_id: uuid.UUID,
+    data: FeedbackRequest,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncIOMotorDatabase = Depends(get_db),
+):
+    """Save user feedback (thumbs up / thumbs down with categories/comments) for a query history record."""
+    from app.core.database.models import QueryHistory
+    from fastapi import HTTPException
+
+    history_doc = await db[QueryHistory.COLLECTION].find_one({
+        "_id": str(history_id),
+        "org_id": str(current.org_id)
+    })
+
+    if not history_doc:
+        raise HTTPException(status_code=404, detail="Query history record not found")
+
+    await db[QueryHistory.COLLECTION].update_one(
+        {"_id": str(history_id)},
+        {"$set": {
+            "feedback": {
+                "is_positive": data.is_positive,
+                "category": data.category,
+                "comment": data.comment,
+                "submitted_at": datetime.now(timezone.utc)
+            }
+        }}
+    )
+    return {"status": "success", "message": "Feedback saved successfully"}
