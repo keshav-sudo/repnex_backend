@@ -70,6 +70,13 @@ class PermissionRequestStatus(str, enum.Enum):
 class Organization:
     COLLECTION = "organizations"
 
+    id: uuid.UUID
+    name: str
+    owner_id: uuid.UUID | None
+    plan_type: PlanType
+    hide_sql_queries: bool
+    created_at: datetime
+
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
             if k == "_id":
@@ -102,6 +109,16 @@ class Organization:
 
 class User:
     COLLECTION = "users"
+
+    id: uuid.UUID
+    org_id: uuid.UUID
+    email: str
+    hashed_password: str | None
+    role: UserRole
+    status: UserStatus
+    invited_by: uuid.UUID | None
+    module_permissions: dict[str, bool] | None
+    created_at: datetime
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
@@ -145,6 +162,23 @@ class User:
 
 class DBConnection:
     COLLECTION = "db_connections"
+
+    id: uuid.UUID
+    org_id: uuid.UUID
+    created_by: uuid.UUID
+    name: str
+    db_type: DBType
+    host: str
+    port: int
+    db_name: str
+    encrypted_username: str
+    encrypted_password: str
+    ssl_enabled: bool
+    is_active: bool
+    last_tested_at: datetime | None
+    schema_info: dict | None
+    schema_last_synced_at: datetime | None
+    created_at: datetime
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
@@ -198,6 +232,13 @@ class DBConnection:
 class DBConnectionAccess:
     COLLECTION = "db_connection_access"
 
+    id: uuid.UUID
+    connection_id: uuid.UUID
+    user_id: uuid.UUID | None
+    org_id: uuid.UUID
+    granted_by: uuid.UUID
+    created_at: datetime
+
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
             if k == "_id":
@@ -234,6 +275,16 @@ class DBConnectionAccess:
 
 class GISession:
     COLLECTION = "gi_sessions"
+
+    id: uuid.UUID
+    user_id: uuid.UUID
+    org_id: uuid.UUID
+    connection_id: uuid.UUID
+    title: str
+    context_window: list[dict]
+    token_count: int
+    status: SessionStatus
+    created_at: datetime
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
@@ -277,6 +328,21 @@ class GISession:
 
 class QueryHistory:
     COLLECTION = "query_history"
+
+    id: uuid.UUID
+    session_id: uuid.UUID
+    user_id: uuid.UUID
+    org_id: uuid.UUID
+    connection_id: uuid.UUID
+    natural_language_input: str
+    generated_sql: str | None
+    row_size: bool | None
+    intent: dict
+    execution_status: ExecutionStatus
+    error_message: str | None
+    execution_time_ms: int | None
+    rows_returned: int | None
+    created_at: datetime
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
@@ -333,6 +399,22 @@ class QueryHistory:
 class Report:
     COLLECTION = "reports"
 
+    id: uuid.UUID
+    org_id: uuid.UUID
+    created_by: uuid.UUID
+    auto_refresh_connection_id: uuid.UUID | None
+    columns: list[ReportColumn]
+    name: str
+    description: str | None
+    query_template_id: str
+    parameters: dict
+    is_public: bool
+    is_pinned: bool
+    refresh_interval_days: int | None
+    next_refresh_at: datetime | None
+    last_refreshed_at: datetime | None
+    created_at: datetime
+
     def __init__(self, **kwargs):
         self.columns = []
         for k, v in kwargs.items():
@@ -387,6 +469,15 @@ class Report:
 class ReportColumn:
     COLLECTION = "report_columns"
 
+    id: uuid.UUID
+    report_id: uuid.UUID
+    column_name: str
+    display_name: str
+    position: int
+    is_visible: bool
+    data_type: str
+    format_config: dict
+
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
             if k == "_id":
@@ -422,6 +513,15 @@ class ReportColumn:
 
 class ReportSnapshot:
     COLLECTION = "report_snapshots"
+
+    id: uuid.UUID
+    report_id: uuid.UUID
+    org_id: uuid.UUID
+    triggered_by: str
+    rows_data: list[dict]
+    rows_returned: int
+    execution_time_ms: int | None
+    created_at: datetime
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
@@ -460,6 +560,14 @@ class ReportSnapshot:
 class Dashboard:
     COLLECTION = "dashboards"
 
+    id: uuid.UUID
+    org_id: uuid.UUID
+    created_by: uuid.UUID
+    name: str
+    is_default: bool
+    layout_config: dict
+    created_at: datetime
+
     def __init__(self, **kwargs):
         self.items = []
         for k, v in kwargs.items():
@@ -495,6 +603,15 @@ class Dashboard:
 
 class DashboardReport:
     COLLECTION = "dashboard_reports"
+
+    id: uuid.UUID
+    dashboard_id: uuid.UUID
+    report_id: uuid.UUID
+    position_x: int
+    position_y: int
+    width: int
+    height: int
+    added_at: datetime
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
@@ -538,6 +655,13 @@ class PermissionRequestStatus(str, enum.Enum):
 
 class PermissionRequest:
     COLLECTION = "permission_requests"
+
+    id: uuid.UUID
+    org_id: uuid.UUID
+    user_id: uuid.UUID
+    module_key: str
+    status: PermissionRequestStatus
+    created_at: datetime
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
