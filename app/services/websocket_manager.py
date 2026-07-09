@@ -9,7 +9,21 @@ from typing import Any
 from app.core.logging import get_logger
 from fastapi import WebSocket
 
+from decimal import Decimal
+
 log = get_logger(__name__)
+
+
+def serialize_decimals(obj: Any) -> Any:
+    if isinstance(obj, dict):
+        return {k: serialize_decimals(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [serialize_decimals(x) for x in obj]
+    elif isinstance(obj, Decimal):
+        if obj % 1 == 0:
+            return int(obj)
+        return float(obj)
+    return obj
 
 
 def _default_event() -> asyncio.Event:
@@ -89,6 +103,7 @@ class WebSocketManager:
 
     async def send(self, entry: _Entry, message: dict[str, Any]) -> None:
         try:
+            message = serialize_decimals(message)
             await entry.websocket.send_json(message)
         except Exception:
             log.warning("ws_send_failed", extra={"session_id": str(entry.session_id)})
