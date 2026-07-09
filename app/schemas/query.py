@@ -86,6 +86,7 @@ class ChatResponse(BaseModel):
     type: Literal["conversational", "executable", "params_needed", "template_preview", "error", "access_denied"]
 
     message: str | None = None
+    history_id: str | None = None
 
     # Template info (for executable / params_needed)
     template_id: str | None = None

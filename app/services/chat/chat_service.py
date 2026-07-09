@@ -239,20 +239,23 @@ async def chat(
     try:
         result = await execute_collect(conn, bound)
     except TargetDBError as exc:
+        history_id = None
         if session:
             try:
                 await session_service.append_turn(
                     db, session, role="assistant", content=f"Database error: {exc.message}"
                 )
-                await record_history(
+                hist = await record_history(
                     db, session, conn, current, nl, intent, bound.sql,
                     ExecutionStatus.error, error_message=exc.message,
                 )
+                history_id = str(hist.id)
             except Exception as inner:
                 log.warning("record_history_failed", extra={"err": str(inner)})
         return ChatResponse(
             type="error",
             message=f"Database error: {exc.message}",
+            history_id=history_id,
             sql=bound.sql,
             template_id="semantic_query",
         )
@@ -279,6 +282,7 @@ async def chat(
     msg = summary or f"Query executed successfully. {result.rows_returned} rows returned."
     col_names = list(result.columns) if result.columns else extract_columns_from_sql(bound.sql)
 
+    history_id = None
     if session:
         try:
             await session_service.append_turn(
@@ -289,18 +293,20 @@ async def chat(
                 template_id="semantic_query", template_description=clean_desc,
                 extracted_params=intent.params, suggestions=suggestions,
             )
-            await record_history(
+            hist = await record_history(
                 db, session, conn, current, nl, intent, bound.sql,
                 ExecutionStatus.success,
                 execution_time_ms=result.execution_time_ms,
                 rows_returned=result.rows_returned,
             )
+            history_id = str(hist.id)
         except Exception as exc:
             log.warning("record_history_success_failed", extra={"err": str(exc)})
 
     return ChatResponse(
         type="executable",
         message=msg,
+        history_id=history_id,
         template_id="semantic_query",
         template_description=clean_desc,
         template_module="semantic_engine",
