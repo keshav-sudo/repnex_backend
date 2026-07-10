@@ -33,6 +33,7 @@ def init_mongo(uri: str, db_name: str, min_pool: int = 5, max_pool: int = 50) ->
         "socketTimeoutMS": 60_000,
         "retryWrites": True,
         "retryReads": True,
+        "tz_aware": True,
     }
 
     try:

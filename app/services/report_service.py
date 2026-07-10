@@ -207,12 +207,18 @@ async def set_schedule(
 
     update_fields: dict = {
         "refresh_interval_days": data.interval_days,
+        "refresh_interval_minutes": data.interval_minutes,
         "auto_refresh_connection_id": str(data.connection_id) if data.connection_id else None,
     }
-    if data.interval_days and data.interval_days > 0 and data.connection_id:
-        update_fields["next_refresh_at"] = datetime.now(UTC) + timedelta(
-            days=data.interval_days
-        )
+    if data.connection_id and ((data.interval_days and data.interval_days > 0) or (data.interval_minutes and data.interval_minutes > 0)):
+        if data.interval_days and data.interval_days > 0:
+            update_fields["next_refresh_at"] = datetime.now(UTC) + timedelta(
+                days=data.interval_days
+            )
+        else:
+            update_fields["next_refresh_at"] = datetime.now(UTC) + timedelta(
+                minutes=data.interval_minutes
+            )
     else:
         update_fields["next_refresh_at"] = None
 
@@ -250,8 +256,12 @@ async def _execute_and_snapshot(
 
     now = datetime.now(UTC)
     update_fields: dict = {"last_refreshed_at": now}
-    if r.refresh_interval_days and r.refresh_interval_days > 0:
+    if getattr(r, "refresh_interval_days", None) and r.refresh_interval_days > 0:
         update_fields["next_refresh_at"] = now + timedelta(days=r.refresh_interval_days)
+    elif getattr(r, "refresh_interval_minutes", None) and r.refresh_interval_minutes > 0:
+        update_fields["next_refresh_at"] = now + timedelta(minutes=r.refresh_interval_minutes)
+    else:
+        update_fields["next_refresh_at"] = None
     await db[Report.COLLECTION].update_one({"_id": str(r.id)}, {"$set": update_fields})
 
     return ReportSnapshot(**snap_doc)
@@ -302,11 +312,14 @@ async def get_snapshot_detail(
 # ── APScheduler background job ────────────────────────────────────────────────
 
 async def run_due_reports(db: AsyncIOMotorDatabase) -> None:
-    """Called by APScheduler every hour — runs all overdue scheduled reports."""
+    """Called by APScheduler — runs all overdue scheduled reports."""
     now = datetime.now(UTC)
     cursor = db[Report.COLLECTION].find({
         "next_refresh_at": {"$lte": now},
-        "refresh_interval_days": {"$gt": 0},
+        "$or": [
+            {"refresh_interval_days": {"$gt": 0}},
+            {"refresh_interval_minutes": {"$gt": 0}}
+        ],
         "auto_refresh_connection_id": {"$ne": None},
     })
     due = await cursor.to_list(length=1000)

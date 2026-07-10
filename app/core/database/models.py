@@ -411,6 +411,7 @@ class Report:
     is_public: bool
     is_pinned: bool
     refresh_interval_days: int | None
+    refresh_interval_minutes: int | None
     next_refresh_at: datetime | None
     last_refreshed_at: datetime | None
     created_at: datetime
@@ -443,6 +444,7 @@ class Report:
         is_public: bool = False,
         is_pinned: bool = False,
         refresh_interval_days: int | None = None,
+        refresh_interval_minutes: int | None = None,
         next_refresh_at: datetime | None = None,
         last_refreshed_at: datetime | None = None,
         auto_refresh_connection_id: str | None = None,
@@ -459,6 +461,7 @@ class Report:
             "is_public": is_public,
             "is_pinned": is_pinned,
             "refresh_interval_days": refresh_interval_days,
+            "refresh_interval_minutes": refresh_interval_minutes,
             "next_refresh_at": next_refresh_at,
             "last_refreshed_at": last_refreshed_at,
             "auto_refresh_connection_id": auto_refresh_connection_id,

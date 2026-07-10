@@ -58,6 +58,7 @@ class ReportRead(ORMBase):
     is_pinned: bool
     # ── Scheduled refresh fields ──────────────────────────────────────────
     refresh_interval_days: int | None = None
+    refresh_interval_minutes: int | None = None
     next_refresh_at: datetime | None = None
     last_refreshed_at: datetime | None = None
     auto_refresh_connection_id: uuid.UUID | None = None
@@ -85,6 +86,7 @@ class ScheduleRequest(BaseModel):
     """Request body for PATCH /reports/:id/schedule"""
     # 0 or None = disable schedule, 1/2/3 = days between refreshes
     interval_days: Annotated[int | None, Field(ge=0, le=30)] = None
+    interval_minutes: Annotated[int | None, Field(ge=0, le=1440)] = None
     connection_id: uuid.UUID | None = None
 
 

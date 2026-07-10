@@ -50,13 +50,13 @@ def _start_scheduler() -> None:
     _scheduler.add_job(
         _scheduled_refresh_job,
         trigger="interval",
-        hours=1,
+        minutes=1,
         id="report_auto_refresh",
         replace_existing=True,
         max_instances=1,
     )
     _scheduler.start()
-    log.info("scheduler_started", extra={"job": "report_auto_refresh", "interval": "1h"})
+    log.info("scheduler_started", extra={"job": "report_auto_refresh", "interval": "1m"})
 
 
 def _stop_scheduler() -> None:
