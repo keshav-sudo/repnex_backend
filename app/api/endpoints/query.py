@@ -57,7 +57,118 @@ async def apply_sql_redaction(db: AsyncIOMotorDatabase, org_id: uuid.UUID, res: 
     return res
 
 
-# ── Routes ────────────────────────────────────────────────────────────────────
+import json
+
+DEFAULT_SUGGESTIONS = [
+    {
+        "category": "AP & Suppliers",
+        "prompts": [
+            { "text": "Show AP ageing report with 30-60-90 buckets", "icon": "📊" },
+            { "text": "List overdue supplier invoices as of today", "icon": "⚠️" },
+            { "text": "Top 10 suppliers by outstanding amount", "icon": "🏆" },
+            { "text": "Supplier payment history last 3 months", "icon": "💳" },
+        ],
+    },
+    {
+        "category": "AR & Customers",
+        "prompts": [
+            { "text": "Customer ageing report with overdue buckets", "icon": "📋" },
+            { "text": "Top 10 customers by outstanding receivables", "icon": "📈" },
+            { "text": "Overdue customer invoices older than 60 days", "icon": "⚠️" },
+            { "text": "Customer payment collection trend this quarter", "icon": "💰" },
+        ],
+    },
+    {
+        "category": "Cashbook & GL",
+        "prompts": [
+            { "text": "Cashbook summary for current month", "icon": "💵" },
+            { "text": "GL journal entries posted today", "icon": "📝" },
+            { "text": "Trial balance for current period", "icon": "📑" },
+            { "text": "Bank reconciliation status report", "icon": "🏦" },
+        ],
+    },
+    {
+        "category": "Sales & Revenue",
+        "prompts": [
+            { "text": "Sales orders by customer this month", "icon": "🛒" },
+            { "text": "Top 10 customers by revenue", "icon": "🏆" },
+            { "text": "Monthly revenue trend last 6 months", "icon": "📈" },
+            { "text": "Outstanding sales orders summary", "icon": "📦" },
+        ],
+    },
+]
+
+@router.get("/suggestions")
+async def get_suggestions_endpoint(
+    connection_id: uuid.UUID | None = None,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncIOMotorDatabase = Depends(get_db),
+):
+    """Retrieve dynamic query suggestions based on connected DB schema with AI token caching."""
+    conn = None
+    if connection_id:
+        conn = await db["connections"].find_one({
+            "_id": str(connection_id),
+            "org_id": str(current.org_id)
+        })
+    else:
+        # Fallback to organization's first database connection
+        conn = await db["connections"].find_one({
+            "org_id": str(current.org_id)
+        })
+
+    if conn and "suggested_queries" in conn and conn["suggested_queries"]:
+        return conn["suggested_queries"]
+
+    if not conn or not conn.get("schema_info"):
+        return DEFAULT_SUGGESTIONS
+
+    tables = conn.get("schema_info", {}).get("tables", [])
+    table_names = [t.get("name") for t in tables if t.get("name")]
+    if not table_names:
+        return DEFAULT_SUGGESTIONS
+
+    # Token minimization: use first 20 tables & clean prompt format
+    system_prompt = (
+        "You are an expert ERP reporting assistant. Given a connected database schema's table names, "
+        "suggest natural language query prompts categorized into 3-4 relevant business modules (e.g. Sales, Finance, Inventory). "
+        "Respond ONLY with a JSON array matching the structure: "
+        "[{\"category\": \"Category Name\", \"prompts\": [{\"text\": \"Prompt query text matching the table names\", \"icon\": \"Emoji icon\"}]}]"
+    )
+    user_payload = json.dumps({
+        "tables": table_names[:20],
+        "organization": str(current.org_id)
+    })
+
+    try:
+        from app.llm.client import get_llm
+        raw = await get_llm().chat_json(system=system_prompt, user=user_payload)
+        
+        suggestions = []
+        if isinstance(raw, list):
+            suggestions = raw
+        elif isinstance(raw, dict) and "suggestions" in raw:
+            suggestions = raw["suggestions"]
+        elif isinstance(raw, dict):
+            # Sometimes LLM wraps inside key named after categories or array
+            for key, val in raw.items():
+                if isinstance(val, list):
+                    suggestions = val
+                    break
+
+        if suggestions:
+            # Cache suggestions to minimize AI tokens on future requests
+            await db["connections"].update_one(
+                {"_id": str(conn["_id"])},
+                {"$set": {"suggested_queries": suggestions}}
+            )
+            return suggestions
+
+        return DEFAULT_SUGGESTIONS
+    except Exception as e:
+        import logging
+        logging.getLogger(__name__).warning(f"Failed to generate dynamic suggestions: {e}")
+        return DEFAULT_SUGGESTIONS
 
 
 @router.post("/chat", response_model=ChatResponse)
