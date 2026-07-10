@@ -28,7 +28,22 @@ from app.schemas.report import (
 from app.services import connection_service
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
+from decimal import Decimal
+from typing import Any
+
 log = get_logger(__name__)
+
+
+def _sanitize_decimal(val: Any) -> Any:
+    if isinstance(val, Decimal):
+        if val % 1 == 0:
+            return int(val)
+        return float(val)
+    elif isinstance(val, dict):
+        return {k: _sanitize_decimal(v) for k, v in val.items()}
+    elif isinstance(val, list):
+        return [_sanitize_decimal(x) for x in val]
+    return val
 
 
 # ── List / Get ────────────────────────────────────────────────────────────────
@@ -157,7 +172,7 @@ async def run_report(
             report_id=str(r.id),
             org_id=str(r.org_id),
             triggered_by="manual",
-            rows_data=result.rows,
+            rows_data=_sanitize_decimal(result.rows),
             rows_returned=result.rows_returned,
             execution_time_ms=exec_ms,
         )
@@ -248,7 +263,7 @@ async def _execute_and_snapshot(
         report_id=str(r.id),
         org_id=str(r.org_id),
         triggered_by=triggered_by,
-        rows_data=result.rows,
+        rows_data=_sanitize_decimal(result.rows),
         rows_returned=result.rows_returned,
         execution_time_ms=exec_ms,
     )
