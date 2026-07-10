@@ -181,6 +181,26 @@ async def run_streaming(
         rows_returned=rows_returned,
     )
 
+    user_name = current.email.split("@")[0] if "@" in current.email else current.email
+    clean_desc = (natural_language or "Dynamic Query").strip()
+    if len(clean_desc) > 60:
+        clean_desc = clean_desc[:57] + "..."
+    clean_desc = clean_desc.title()
+
+    suggestions: list[str] = []
+    try:
+        from app.llm.suggestion_generator import generate_suggestions
+        from app.services.chat.helpers import detect_module_from_query
+        module = detect_module_from_query(natural_language) or "ap"
+        suggestions = await generate_suggestions(
+            template_id="semantic_query", module=module, category="query",
+            description=clean_desc, user_name=user_name,
+        )
+    except Exception as exc:
+        log.warning("suggestions_failed", extra={"err": str(exc)})
+    if not suggestions:
+        suggestions = ["Show AP invoice list", "Top 10 customers"]
+
     await session_service.append_turn(db, session, role="user", content=natural_language)
 
     col_names = list(sample[0].keys()) if sample else extract_columns_from_sql(bound.sql)
@@ -200,6 +220,7 @@ async def run_streaming(
             rows_returned=rows_returned,
             execution_time_ms=exec_ms,
             history_id=str(history.id),
+            suggestions=suggestions,
         )
         await on_event({"type": "insight", "summary": summary})
     except LLMError as exc:
@@ -210,4 +231,5 @@ async def run_streaming(
         "rows_returned": rows_returned,
         "exec_time_ms": exec_ms,
         "columns": col_names,
+        "suggestions": suggestions,
     }

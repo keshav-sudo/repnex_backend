@@ -68,6 +68,7 @@ class CompleteMsg(BaseModel):
     rows_returned: int
     exec_time_ms: int
     columns: list[str] | None = None
+    suggestions: list[str] = Field(default_factory=list)
 
 
 
