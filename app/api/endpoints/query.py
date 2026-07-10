@@ -61,41 +61,51 @@ import json
 
 DEFAULT_SUGGESTIONS = [
     {
-        "category": "AP & Suppliers",
-        "prompts": [
-            { "text": "Show AP ageing report with 30-60-90 buckets", "icon": "📊" },
-            { "text": "List overdue supplier invoices as of today", "icon": "⚠️" },
-            { "text": "Top 10 suppliers by outstanding amount", "icon": "🏆" },
-            { "text": "Supplier payment history last 3 months", "icon": "💳" },
-        ],
+        "module": "Finance & Accounting",
+        "submodules": [
+            {
+                "name": "AP & Suppliers",
+                "prompts": [
+                    { "text": "Show AP ageing report with 30-60-90 buckets", "icon": "📊" },
+                    { "text": "List overdue supplier invoices as of today", "icon": "⚠️" },
+                    { "text": "Top 10 suppliers by outstanding amount", "icon": "🏆" },
+                    { "text": "Supplier payment history last 3 months", "icon": "💳" },
+                ],
+            },
+            {
+                "name": "AR & Customers",
+                "prompts": [
+                    { "text": "Customer ageing report with overdue buckets", "icon": "📋" },
+                    { "text": "Top 10 customers by outstanding receivables", "icon": "📈" },
+                    { "text": "Overdue customer invoices older than 60 days", "icon": "⚠️" },
+                    { "text": "Customer payment collection trend this quarter", "icon": "💰" },
+                ],
+            },
+            {
+                "name": "Cashbook & GL",
+                "prompts": [
+                    { "text": "Cashbook summary for current month", "icon": "💵" },
+                    { "text": "GL journal entries posted today", "icon": "📝" },
+                    { "text": "Trial balance for current period", "icon": "📑" },
+                    { "text": "Bank reconciliation status report", "icon": "🏦" },
+                ],
+            }
+        ]
     },
     {
-        "category": "AR & Customers",
-        "prompts": [
-            { "text": "Customer ageing report with overdue buckets", "icon": "📋" },
-            { "text": "Top 10 customers by outstanding receivables", "icon": "📈" },
-            { "text": "Overdue customer invoices older than 60 days", "icon": "⚠️" },
-            { "text": "Customer payment collection trend this quarter", "icon": "💰" },
-        ],
-    },
-    {
-        "category": "Cashbook & GL",
-        "prompts": [
-            { "text": "Cashbook summary for current month", "icon": "💵" },
-            { "text": "GL journal entries posted today", "icon": "📝" },
-            { "text": "Trial balance for current period", "icon": "📑" },
-            { "text": "Bank reconciliation status report", "icon": "🏦" },
-        ],
-    },
-    {
-        "category": "Sales & Revenue",
-        "prompts": [
-            { "text": "Sales orders by customer this month", "icon": "🛒" },
-            { "text": "Top 10 customers by revenue", "icon": "🏆" },
-            { "text": "Monthly revenue trend last 6 months", "icon": "📈" },
-            { "text": "Outstanding sales orders summary", "icon": "📦" },
-        ],
-    },
+        "module": "Sales & Operations",
+        "submodules": [
+            {
+                "name": "Sales & Revenue",
+                "prompts": [
+                    { "text": "Sales orders by customer this month", "icon": "🛒" },
+                    { "text": "Top 10 customers by revenue", "icon": "🏆" },
+                    { "text": "Monthly revenue trend last 6 months", "icon": "📈" },
+                    { "text": "Outstanding sales orders summary", "icon": "📦" },
+                ],
+            }
+        ]
+    }
 ]
 
 @router.get("/suggestions")
@@ -131,9 +141,23 @@ async def get_suggestions_endpoint(
     # Token minimization: use first 20 tables & clean prompt format
     system_prompt = (
         "You are an expert ERP reporting assistant. Given a connected database schema's table names, "
-        "suggest natural language query prompts categorized into 3-4 relevant business modules (e.g. Sales, Finance, Inventory). "
+        "suggest natural language query prompts organized by modules and submodules. "
+        "Analyze which modules (e.g. Finance, Sales, Inventory) and submodules (e.g. Accounts Payable, Accounts Receivable, Cashbook, Sales Orders) "
+        "are relevant to the tables in the database schema. "
         "Respond ONLY with a JSON array matching the structure: "
-        "[{\"category\": \"Category Name\", \"prompts\": [{\"text\": \"Prompt query text matching the table names\", \"icon\": \"Emoji icon\"}]}]"
+        "["
+        "  {"
+        "    \"module\": \"Module Name\","
+        "    \"submodules\": ["
+        "      {"
+        "        \"name\": \"Submodule Name\","
+        "        \"prompts\": ["
+        "          {\"text\": \"Prompt query text matching the tables\", \"icon\": \"Emoji\"}"
+        "        ]"
+        "      }"
+        "    ]"
+        "  }"
+        "]"
     )
     user_payload = json.dumps({
         "tables": table_names[:20],
