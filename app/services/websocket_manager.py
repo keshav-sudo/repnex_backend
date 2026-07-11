@@ -17,9 +17,11 @@ log = get_logger(__name__)
 from datetime import datetime, date, time
 
 def serialize_decimals(obj: Any) -> Any:
-    if isinstance(obj, dict):
+    if isinstance(obj, str):
+        return obj
+    elif isinstance(obj, dict) or hasattr(obj, "items"):
         return {k: serialize_decimals(v) for k, v in obj.items()}
-    elif isinstance(obj, list):
+    elif isinstance(obj, (list, tuple, set)):
         return [serialize_decimals(x) for x in obj]
     elif isinstance(obj, Decimal):
         if obj % 1 == 0:

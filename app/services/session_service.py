@@ -114,7 +114,9 @@ from typing import Any
 def make_json_safe(obj: Any) -> Any:
     import decimal
     import uuid
-    if isinstance(obj, dict):
+    if isinstance(obj, str):
+        return obj
+    if isinstance(obj, dict) or hasattr(obj, "items"):
         return {k: make_json_safe(v) for k, v in obj.items()}
     if isinstance(obj, list) or isinstance(obj, (tuple, set)):
         return [make_json_safe(x) for x in obj]

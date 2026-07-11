@@ -124,6 +124,7 @@ async def execute_with_params(
     try:
         result = await execute_collect(conn, bound)
     except TargetDBError as exc:
+        exc.message = f"{exc.message}\n\nExecuted SQL:\n{bound.sql}"
         if session:
             try:
                 await session_service.append_turn(

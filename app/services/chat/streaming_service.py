@@ -57,6 +57,7 @@ async def run_via_rest(
     try:
         result = await execute_collect(conn, bound)
     except TargetDBError as exc:
+        exc.message = f"{exc.message}\n\nExecuted SQL:\n{bound.sql}"
         await record_history(
             db, session, conn, current, natural_language, intent,
             bound.sql, ExecutionStatus.error, error_message=exc.message,
@@ -166,6 +167,7 @@ async def run_streaming(
                 sample.extend(batch[: 50 - len(sample)])
             await on_event({"type": "data", "batch": batch_no, "rows": batch})
     except TargetDBError as exc:
+        exc.message = f"{exc.message}\n\nExecuted SQL:\n{bound.sql}"
         hist = await record_history(
             db, session, conn, current, natural_language, intent,
             bound.sql, ExecutionStatus.error, error_message=exc.message,
