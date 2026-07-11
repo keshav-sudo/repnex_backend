@@ -126,20 +126,67 @@ def detect_module_from_query(query: str) -> str | None:
     return None
 
 
-_VIEWER_ALLOWED_MODULES = {"ar", "sales", "inv"}
-_ANALYST_BLOCKED_MODULES: set[str] = set()
+# Detected module -> (Parent Module ID, Submodule ID)
+DETECTION_TO_MODULE_IDS: dict[str, tuple[str, str | None]] = {
+    "ap": ("finance", "ap"),
+    "ar": ("finance", "ar"),
+    "gl": ("finance", "gl"),
+    "inv": ("inventory", "invvaluation"),
+    "wip": ("manufacturing", "wip"),
+    "so": ("sales", "sorder"),
+    "sales": ("sales", "sinvoice"),
+}
+
+DEFAULT_MODULE_ROLES: dict[str, list[str]] = {
+    "finance": ["admin", "editor", "viewer"],
+    "sales": ["admin", "editor", "viewer"],
+    "purchase": ["admin", "editor"],
+    "manufacturing": ["admin", "editor"],
+    "inventory": ["admin", "editor", "viewer"],
+}
 
 
 def check_module_access(module: str | None, current: CurrentUser) -> tuple[bool, str]:
-    """RBAC guard — returns (is_allowed, deny_message)."""
+    """RBAC and module-level permission guard."""
     role = getattr(current, "role", "viewer")
+    
+    # Admins have access to everything
     if role == "admin":
         return True, ""
-    if role == "viewer" and module and module not in _VIEWER_ALLOWED_MODULES:
+        
+    # If no module detected, allow by default
+    if not module:
+        return True, ""
+        
+    ids = DETECTION_TO_MODULE_IDS.get(module)
+    if not ids:
+        return True, ""
+        
+    parent_id, sub_id = ids
+    perms = getattr(current, "module_permissions", None) or {}
+    
+    # 1. Determine parent module access
+    if parent_id in perms:
+        parent_allowed = bool(perms[parent_id])
+    else:
+        # Default fallback by role
+        parent_allowed = role in DEFAULT_MODULE_ROLES.get(parent_id, [])
+        
+    # 2. Determine submodule access (inheriting from parent if not overridden)
+    if sub_id and sub_id in perms:
+        allowed = bool(perms[sub_id])
+    else:
+        allowed = parent_allowed
+        
+    if not allowed:
+        module_name = parent_id.upper()
+        if sub_id:
+            module_name += f" ({sub_id.upper()})"
         return False, (
-            f"Your viewer role does not have access to the **{module.upper()}** module. "
+            f"Your role or account permissions do not have access to the **{module_name}** module. "
             "Contact your administrator to request access."
         )
+        
     return True, ""
 
 

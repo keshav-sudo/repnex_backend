@@ -107,6 +107,16 @@ async def chat(
         )
 
     # ── 2b. Executable — resolve ERP + connection ───────────────────────────
+    from app.services.chat.helpers import check_module_access
+    module = detect_module_from_query(nl)
+    is_allowed, deny_msg = check_module_access(module, current)
+    if not is_allowed:
+        return ChatResponse(
+            type="access_denied",
+            message=deny_msg,
+            suggestions=_DEFAULT_SUGGESTIONS,
+        )
+
     conn = None
     if data.connection_id:
         try:

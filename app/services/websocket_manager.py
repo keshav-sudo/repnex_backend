@@ -31,6 +31,11 @@ def serialize_decimals(obj: Any) -> Any:
         return obj.isoformat()
     elif isinstance(obj, uuid.UUID):
         return str(obj)
+    elif isinstance(obj, bytes):
+        try:
+            return obj.decode("utf-8")
+        except UnicodeDecodeError:
+            return f"0x{obj.hex()}"
     return obj
 
 

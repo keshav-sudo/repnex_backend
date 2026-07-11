@@ -34,6 +34,13 @@ async def run_via_rest(
     session = await session_service.get(db, current, session_id)
     conn = await connection_service.get_connection(db, current, session.connection_id)
 
+    from app.services.chat.helpers import detect_module_from_query, check_module_access
+    from app.core.exceptions import Forbidden
+    module = detect_module_from_query(natural_language)
+    is_allowed, deny_msg = check_module_access(module, current)
+    if not is_allowed:
+        raise Forbidden(deny_msg)
+
     try:
         org = await db["organizations"].find_one({"_id": str(current.org_id)})
     except Exception:
@@ -118,6 +125,13 @@ async def run_streaming(
     """WebSocket path — streams result batches via on_event callbacks."""
     session = await session_service.get(db, current, session_id)
     conn = await connection_service.get_connection(db, current, session.connection_id)
+
+    from app.services.chat.helpers import detect_module_from_query, check_module_access
+    from app.core.exceptions import Forbidden
+    module = detect_module_from_query(natural_language)
+    is_allowed, deny_msg = check_module_access(module, current)
+    if not is_allowed:
+        raise Forbidden(deny_msg)
 
     await on_event({"type": "status", "message": "Connecting to database..."})
     await on_event({"type": "progress", "step": "intent_extraction"})

@@ -59,6 +59,19 @@ async def execute_collect(conn: DBConnection, bound: BoundQuery) -> ExecutionRes
     )
 
 
+def clean_row_data(val: Any) -> Any:
+    if isinstance(val, bytes):
+        try:
+            return val.decode("utf-8")
+        except UnicodeDecodeError:
+            return f"0x{val.hex()}"
+    elif isinstance(val, dict):
+        return {k: clean_row_data(v) for k, v in val.items()}
+    elif isinstance(val, list):
+        return [clean_row_data(x) for x in val]
+    return val
+
+
 async def execute_stream(
     conn: DBConnection, bound: BoundQuery
 ) -> AsyncIterator[list[dict[str, Any]]]:
@@ -72,13 +85,17 @@ async def execute_stream(
             batch_size=s.EXECUTOR_BATCH_SIZE,
             timeout=s.EXECUTOR_TIMEOUT_S,
         ):
-            if sent + len(batch) > s.EXECUTOR_MAX_ROWS:
+            cleaned_batch = [
+                {k: clean_row_data(v) for k, v in row.items()}
+                for row in batch
+            ]
+            if sent + len(cleaned_batch) > s.EXECUTOR_MAX_ROWS:
                 allowed = s.EXECUTOR_MAX_ROWS - sent
                 if allowed > 0:
-                    yield batch[:allowed]
+                    yield cleaned_batch[:allowed]
                 return
-            sent += len(batch)
-            yield batch
+            sent += len(cleaned_batch)
+            yield cleaned_batch
     except TargetDBError:
         raise
     except Exception as e:  # pragma: no cover

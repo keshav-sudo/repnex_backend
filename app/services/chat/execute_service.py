@@ -60,6 +60,16 @@ async def execute_with_params(
         else:
             raise ValidationFailed("Could not retrieve original query from session history.")
 
+    from app.services.chat.helpers import check_module_access
+    module = detect_module_from_query(nl)
+    is_allowed, deny_msg = check_module_access(module, current)
+    if not is_allowed:
+        return ChatResponse(
+            type="access_denied",
+            message=deny_msg,
+            suggestions=_DEFAULT_SUGGESTIONS,
+        )
+
     start_date = data.params.get("start_date")
     end_date = data.params.get("end_date")
 
