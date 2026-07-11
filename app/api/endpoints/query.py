@@ -9,7 +9,7 @@ from fastapi import APIRouter, Depends
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from app.api.dependencies.tenancy import bind_tenant_context
-from app.core.database.models import Organization
+from app.core.database.models import DBConnection, Organization
 from app.core.database.session import get_db
 from app.core.security.auth import CurrentUser
 from app.schemas.query import (
@@ -117,13 +117,13 @@ async def get_suggestions_endpoint(
     """Retrieve dynamic query suggestions based on connected DB schema with AI token caching."""
     conn = None
     if connection_id:
-        conn = await db["connections"].find_one({
+        conn = await db[DBConnection.COLLECTION].find_one({
             "_id": str(connection_id),
             "org_id": str(current.org_id)
         })
     else:
         # Fallback to organization's first database connection
-        conn = await db["connections"].find_one({
+        conn = await db[DBConnection.COLLECTION].find_one({
             "org_id": str(current.org_id)
         })
 
@@ -182,7 +182,7 @@ async def get_suggestions_endpoint(
 
         if suggestions:
             # Cache suggestions to minimize AI tokens on future requests
-            await db["connections"].update_one(
+            await db[DBConnection.COLLECTION].update_one(
                 {"_id": str(conn["_id"])},
                 {"$set": {"suggested_queries": suggestions}}
             )
