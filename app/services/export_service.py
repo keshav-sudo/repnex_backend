@@ -78,11 +78,34 @@ def generate_excel(
             row_idx += 1
             
             cleaned_text = clean_markdown(summary)
+            in_table = False
             # Write lines
             for line in cleaned_text.split("\n"):
-                if line.strip():
-                    ws_sum.cell(row=row_idx, column=1, value=line.strip()).font = value_font
+                stripped = line.strip()
+                if not stripped:
+                    in_table = False
+                    continue
+                
+                # Check if it is a markdown table row
+                if stripped.startswith("|") and stripped.endswith("|"):
+                    if all(c in "| -:" for c in stripped):
+                        continue
+                    parts = [p.strip() for p in stripped.split("|")[1:-1]]
+                    is_header = not in_table
+                    in_table = True
+                    for col_num, part in enumerate(parts, start=1):
+                        cell = ws_sum.cell(row=row_idx, column=col_num, value=part)
+                        if is_header:
+                            cell.font = Font(name="Calibri", size=11, bold=True)
+                            cell.fill = PatternFill(start_color="E6EEFA", end_color="E6EEFA", fill_type="solid")
+                        else:
+                            cell.font = value_font
                     row_idx += 1
+                else:
+                    in_table = False
+                    ws_sum.cell(row=row_idx, column=1, value=stripped).font = value_font
+                    row_idx += 1
+
                     
         # Auto-adjust Summary columns
         for col in ws_sum.columns:
@@ -637,28 +660,71 @@ def generate_bulk_excel(reports: list[dict]) -> bytes:
         title = rep.get("title", f"Report {idx+1}")
         headers = rep.get("headers", [])
         rows = rep.get("rows", [])
+        summary = rep.get("summary")
 
-        sheet_title = re.sub(r"[\\*?:/\[\]]", "", title)[:30]
-        if not sheet_title.strip():
-            sheet_title = f"Report {idx+1}"
+        # Create Summary Sheet if summary exists
+        if summary:
+            sum_title = re.sub(r"[\\*?:/\[\]]", "", f"{title} - Summary")[:30].strip() or f"Rep {idx+1} Summary"
+            ws_sum = wb.create_sheet(title=sum_title)
+            ws_sum.views.sheetView[0].showGridLines = True
+            
+            title_font = Font(name="Calibri", size=16, bold=True, color="1B365D")
+            section_font = Font(name="Calibri", size=12, bold=True, color="1B365D")
+            value_font = Font(name="Calibri", size=11)
+            
+            ws_sum.cell(row=1, column=1, value=title).font = title_font
+            ws_sum.row_dimensions[1].height = 30
+            
+            ws_sum.cell(row=3, column=1, value="AI Insights & Summary").font = section_font
+            ws_sum.row_dimensions[3].height = 20
+            
+            row_idx = 4
+            cleaned_text = clean_markdown(summary)
+            in_table = False
+            for line in cleaned_text.split("\n"):
+                stripped = line.strip()
+                if not stripped:
+                    in_table = False
+                    continue
+                if stripped.startswith("|") and stripped.endswith("|"):
+                    if all(c in "| -:" for c in stripped):
+                        continue
+                    parts = [p.strip() for p in stripped.split("|")[1:-1]]
+                    is_header = not in_table
+                    in_table = True
+                    for col_num, part in enumerate(parts, start=1):
+                        cell = ws_sum.cell(row=row_idx, column=col_num, value=part)
+                        if is_header:
+                            cell.font = Font(name="Calibri", size=11, bold=True)
+                            cell.fill = PatternFill(start_color="E6EEFA", end_color="E6EEFA", fill_type="solid")
+                        else:
+                            cell.font = value_font
+                    row_idx += 1
+                else:
+                    in_table = False
+                    ws_sum.cell(row=row_idx, column=1, value=stripped).font = value_font
+                    row_idx += 1
+                    
+            for col in ws_sum.columns:
+                max_len = 0
+                for cell in col:
+                    if cell.value is not None:
+                        max_len = max(max_len, len(str(cell.value)))
+                col_letter = get_column_letter(col[0].column)
+                ws_sum.column_dimensions[col_letter].width = max(max_len + 4, 15)
 
-        base_title = sheet_title
-        counter = 1
-        while sheet_title in wb.sheetnames:
-            suffix = f" {counter}"
-            sheet_title = f"{base_title[:30-len(suffix)]}{suffix}"
-            counter += 1
-
-        ws = wb.create_sheet(title=sheet_title)
+        # Create Data Sheet
+        data_title_suffix = " - Data" if summary else ""
+        data_title = re.sub(r"[\\*?:/\[\]]", "", f"{title}{data_title_suffix}")[:30].strip() or f"Rep {idx+1} Data"
+        
+        ws = wb.create_sheet(title=data_title)
         ws.views.sheetView[0].showGridLines = True
 
         title_font = Font(name="Calibri", size=16, bold=True, color="1B365D")
         header_font = Font(name="Calibri", size=11, bold=True, color="FFFFFF")
         header_fill = PatternFill(start_color="1B365D", end_color="1B365D", fill_type="solid")
-
         data_font = Font(name="Calibri", size=11)
         zebra_fill = PatternFill(start_color="F7F9FC", end_color="F7F9FC", fill_type="solid")
-
         thin_side = Side(border_style="thin", color="E0E0E0")
         cell_border = Border(left=thin_side, right=thin_side, top=thin_side, bottom=thin_side)
 
@@ -719,6 +785,7 @@ def generate_bulk_excel(reports: list[dict]) -> bytes:
     return out.getvalue()
 
 
+
 def generate_bulk_pdf(reports: list[dict]) -> bytes:
     has_large_report = any(len(rep.get("headers", [])) > 6 for rep in reports)
     page_size = landscape(letter) if has_large_report else letter
@@ -773,49 +840,70 @@ def generate_bulk_pdf(reports: list[dict]) -> bytes:
         elements.append(Paragraph(title, title_style))
         elements.append(Spacer(1, 10))
 
-        table_data = []
-        header_row = [Paragraph(h, header_style) for h in headers]
-        table_data.append(header_row)
+        summary = rep.get("summary")
+        if summary:
+            summary_title_style = ParagraphStyle(
+                'SummaryTitle',
+                parent=styles['Heading2'],
+                fontSize=12,
+                leading=15,
+                textColor=colors.HexColor('#1B365D'),
+                spaceAfter=6
+            )
+            elements.append(Paragraph("AI Insights & Executive Summary", summary_title_style))
+            summary_flowables = parse_markdown_to_flowables(summary, doc.width, styles)
+            elements.extend(summary_flowables)
+            elements.append(Spacer(1, 15))
+            
+            # Put the table on a new page if there's a summary and table data is present
+            if rows and headers:
+                elements.append(PageBreak())
 
-        for row in rows:
-            row_cells = []
-            for h in headers:
-                val = row.get(h, "")
-                if val is None:
-                    val_str = ""
-                elif isinstance(val, float):
-                    val_str = f"{val:.2f}"
-                else:
-                    val_str = str(val)
-                row_cells.append(Paragraph(val_str, body_style))
-            table_data.append(row_cells)
+        if rows and headers:
+            table_data = []
+            header_row = [Paragraph(h, header_style) for h in headers]
+            table_data.append(header_row)
 
-        doc_width = doc.width
-        col_width = doc_width / max(len(headers), 1)
-        col_widths = [col_width] * len(headers)
+            for row in rows:
+                row_cells = []
+                for h in headers:
+                    val = row.get(h, "")
+                    if val is None:
+                        val_str = ""
+                    elif isinstance(val, float):
+                        val_str = f"{val:.2f}"
+                    else:
+                        val_str = str(val)
+                    row_cells.append(Paragraph(val_str, body_style))
+                table_data.append(row_cells)
 
-        t = Table(table_data, colWidths=col_widths, repeatRows=1)
+            doc_width = doc.width
+            col_width = doc_width / max(len(headers), 1)
+            col_widths = [col_width] * len(headers)
 
-        t_style = TableStyle([
-            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#1B365D')),
-            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
-            ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
-            ('BOTTOMPADDING', (0, 0), (-1, 0), 6),
-            ('TOPPADDING', (0, 0), (-1, 0), 6),
-            ('BOTTOMPADDING', (0, 1), (-1, -1), 4),
-            ('TOPPADDING', (0, 1), (-1, -1), 4),
-            ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#E0E0E0')),
-        ])
+            t = Table(table_data, colWidths=col_widths, repeatRows=1)
 
-        for i in range(1, len(rows) + 1):
-            if i % 2 == 0:
-                t_style.add('BACKGROUND', (0, i), (-1, i), colors.HexColor('#F7F9FC'))
+            t_style = TableStyle([
+                ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#1B365D')),
+                ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+                ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+                ('BOTTOMPADDING', (0, 0), (-1, 0), 6),
+                ('TOPPADDING', (0, 0), (-1, 0), 6),
+                ('BOTTOMPADDING', (0, 1), (-1, -1), 4),
+                ('TOPPADDING', (0, 1), (-1, -1), 4),
+                ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#E0E0E0')),
+            ])
 
-        t.setStyle(t_style)
-        elements.append(t)
+            for i in range(1, len(rows) + 1):
+                if i % 2 == 0:
+                    t_style.add('BACKGROUND', (0, i), (-1, i), colors.HexColor('#F7F9FC'))
+
+            t.setStyle(t_style)
+            elements.append(t)
 
     doc.build(elements)
     return buffer.getvalue()
+
 
 
 def generate_bulk_zip(reports: list[dict], format_type: str) -> bytes:
@@ -836,10 +924,11 @@ def generate_bulk_zip(reports: list[dict], format_type: str) -> bytes:
                     writer.writerow([row.get(h, "") for h in headers])
                 zip_file.writestr(f"{safe_title}.csv", csv_buffer.getvalue())
             elif format_type == "excel":
-                excel_bytes = generate_excel(title, headers, rows)
+                excel_bytes = generate_excel(title, headers, rows, summary=rep.get("summary"))
                 zip_file.writestr(f"{safe_title}.xlsx", excel_bytes)
             elif format_type == "pdf":
-                pdf_bytes = generate_pdf(title, headers, rows)
+                pdf_bytes = generate_pdf(title, headers, rows, summary=rep.get("summary"))
                 zip_file.writestr(f"{safe_title}.pdf", pdf_bytes)
 
     return zip_buffer.getvalue()
+

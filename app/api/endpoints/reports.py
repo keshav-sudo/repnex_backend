@@ -151,9 +151,11 @@ async def export_bulk(
 
         reports_dict.append({
             "title": report_obj.name or "Report",
-            "headers": headers,
-            "rows": rows
+            "headers": headers if data.include_table else [],
+            "rows": rows if data.include_table else [],
+            "summary": (report_obj.parameters.get("summary", "") if getattr(report_obj, "parameters", None) else "") if data.include_summary else ""
         })
+
 
     if data.format == "excel":
         file_bytes = export_service.generate_bulk_excel(reports_dict)
