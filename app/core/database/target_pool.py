@@ -567,9 +567,15 @@ def _to_positional_mssql(sql: str, params: dict[str, Any]) -> tuple[str, list[An
     def _replace(m: re.Match) -> str:
         key = m.group(1)
         ordered_keys.append(key)
-        return "%s"
+        return "__PARAM_PLACEHOLDER__"
 
-    mssql_sql = re.sub(r"%\((\w+)\)s", _replace, sql)
+    # Replace parameter placeholders with a unique temp token
+    temp_sql = re.sub(r"%\((\w+)\)s", _replace, sql)
+    # Escape all other '%' signs to '%%' for safely passing to drivers using % formatting
+    escaped_sql = temp_sql.replace("%", "%%")
+    # Restore the temp tokens to '%s'
+    mssql_sql = escaped_sql.replace("__PARAM_PLACEHOLDER__", "%s")
+
     bound = [params[k] for k in ordered_keys]
     return mssql_sql, bound
 
