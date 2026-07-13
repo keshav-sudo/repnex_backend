@@ -174,6 +174,245 @@ def generate_excel(
     return out.getvalue()
 
 
+def convert_inline_markdown(text: str) -> str:
+    if not text:
+        return ""
+    # Escape XML entities for ReportLab Paragraph compatibility (except our converted tags)
+    text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    # Convert bold **text** or __text__ to <b>text</b>
+    text = re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", text)
+    text = re.sub(r"__([^_]+)__", r"<b>\1</b>", text)
+    # Convert italic *text* or _text_ to <i>text</i>
+    text = re.sub(r"\*([^*]+)\*", r"<i>\1</i>", text)
+    text = re.sub(r"_([^_]+)_", r"<i>\1</i>", text)
+    # Restore escaped tags that we want to support
+    text = text.replace("&lt;b&gt;", "<b>").replace("&lt;/b&gt;", "</b>")
+    text = text.replace("&lt;i&gt;", "<i>").replace("&lt;/i&gt;", "</i>")
+    return text
+
+
+def is_numeric_str(s: str) -> bool:
+    clean = re.sub(r"[$\s,%\u20b9\xa3\u20ac-]", "", s)
+    if not clean:
+        return False
+    try:
+        float(clean)
+        return True
+    except ValueError:
+        return False
+
+
+def parse_markdown_to_flowables(text: str, doc_width: float, styles) -> list:
+    flowables = []
+    
+    body_style = ParagraphStyle(
+        'MD_Body',
+        parent=styles['Normal'],
+        fontSize=9,
+        leading=13,
+        textColor=colors.HexColor('#333333'),
+        spaceAfter=8
+    )
+    
+    bullet_style = ParagraphStyle(
+        'MD_Bullet',
+        parent=body_style,
+        leftIndent=15,
+        firstLineIndent=-10,
+        spaceAfter=5
+    )
+    
+    h1_style = ParagraphStyle(
+        'MD_H1',
+        parent=styles['Heading2'],
+        fontSize=12,
+        leading=15,
+        textColor=colors.HexColor('#1B365D'),
+        spaceBefore=10,
+        spaceAfter=6
+    )
+
+    h2_style = ParagraphStyle(
+        'MD_H2',
+        parent=styles['Heading3'],
+        fontSize=10,
+        leading=13,
+        textColor=colors.HexColor('#1B365D'),
+        spaceBefore=8,
+        spaceAfter=4
+    )
+    
+    table_header_style = ParagraphStyle(
+        'MD_TableHeader',
+        fontSize=8,
+        leading=10,
+        fontName='Helvetica-Bold',
+        textColor=colors.white
+    )
+    
+    table_body_style = ParagraphStyle(
+        'MD_TableBody',
+        fontSize=8,
+        leading=10,
+        fontName='Helvetica',
+        textColor=colors.HexColor('#333333')
+    )
+
+    table_body_right_style = ParagraphStyle(
+        'MD_TableBodyRight',
+        parent=table_body_style,
+        alignment=2 # Right align
+    )
+
+    lines = text.split("\n")
+    i = 0
+    n = len(lines)
+    
+    while i < n:
+        line = lines[i].strip()
+        if not line:
+            i += 1
+            continue
+            
+        # Detect horizontal rule
+        if re.match(r"^(---|===\*+|\*\*\*+)$", line):
+            d_table = Table([[""]], colWidths=[doc_width])
+            d_table.setStyle(TableStyle([
+                ('LINEABOVE', (0, 0), (-1, -1), 0.5, colors.HexColor('#E2E8F0')),
+                ('BOTTOMPADDING', (0, 0), (-1, -1), 5),
+                ('TOPPADDING', (0, 0), (-1, -1), 5),
+            ]))
+            flowables.append(Spacer(1, 5))
+            flowables.append(d_table)
+            flowables.append(Spacer(1, 5))
+            i += 1
+            continue
+            
+        # Detect headers
+        header_match = re.match(r"^(#+)\s*(.*)$", line)
+        if header_match:
+            level = len(header_match.group(1))
+            header_text = header_match.group(2).strip()
+            clean_text = convert_inline_markdown(header_text)
+            style = h1_style if level <= 2 else h2_style
+            flowables.append(Paragraph(clean_text, style))
+            i += 1
+            continue
+            
+        # Detect bullet list item (handles *, -, +, •, ■)
+        bullet_match = re.match(r"^([*\-+]|•|■)\s+(.*)$", line)
+        if bullet_match:
+            item_text = bullet_match.group(2).strip()
+            clean_text = convert_inline_markdown(item_text)
+            bullet_html = f"&bull; {clean_text}"
+            flowables.append(Paragraph(bullet_html, bullet_style))
+            i += 1
+            continue
+
+        # Detect numbered list item
+        num_match = re.match(r"^(\d+)\.\s+(.*)$", line)
+        if num_match:
+            num_prefix = num_match.group(1)
+            item_text = num_match.group(2).strip()
+            clean_text = convert_inline_markdown(item_text)
+            bullet_html = f"{num_prefix}. {clean_text}"
+            flowables.append(Paragraph(bullet_html, bullet_style))
+            i += 1
+            continue
+            
+        # Detect table row
+        if line.startswith("|") or (line.count("|") >= 2):
+            table_lines = []
+            while i < n and (lines[i].strip().startswith("|") or (lines[i].strip().count("|") >= 2)):
+                table_lines.append(lines[i].strip())
+                i += 1
+                
+            parsed_rows = []
+            for tl in table_lines:
+                cells = [c.strip() for c in tl.split("|")]
+                if cells and not cells[0]:
+                    cells = cells[1:]
+                if cells and not cells[-1]:
+                    cells = cells[:-1]
+                if cells and all(re.match(r"^:?-+:?$", c) for c in cells):
+                    continue
+                parsed_rows.append(cells)
+                
+            if parsed_rows:
+                col_count = max(len(r) for r in parsed_rows) if parsed_rows else 0
+                if col_count > 0:
+                    # Pad rows if they have fewer columns
+                    for r in parsed_rows:
+                        while len(r) < col_count:
+                            r.append("")
+                            
+                    # Determine which columns are numeric
+                    col_is_numeric = [True] * col_count
+                    for r_idx, row in enumerate(parsed_rows):
+                        if r_idx == 0:
+                            continue  # Skip header row for numeric detection
+                        for c_idx, cell in enumerate(row):
+                            if c_idx < len(col_is_numeric):
+                                if not is_numeric_str(cell):
+                                    col_is_numeric[c_idx] = False
+                    
+                    table_data = []
+                    for r_idx, row in enumerate(parsed_rows):
+                        row_cells = []
+                        for c_idx, cell in enumerate(row):
+                            clean_cell = convert_inline_markdown(cell)
+                            if r_idx == 0:
+                                style = table_header_style
+                            else:
+                                style = table_body_right_style if (c_idx < len(col_is_numeric) and col_is_numeric[c_idx]) else table_body_style
+                            row_cells.append(Paragraph(clean_cell, style))
+                        table_data.append(row_cells)
+                    
+                    col_width = doc_width / col_count
+                    t = Table(table_data, colWidths=[col_width] * col_count)
+                    t.setStyle(TableStyle([
+                        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#1B365D')),
+                        ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#CBD5E1')),
+                        ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+                        ('TOPPADDING', (0, 0), (-1, -1), 4),
+                        ('BOTTOMPADDING', (0, 0), (-1, -1), 4),
+                        ('LEFTPADDING', (0, 0), (-1, -1), 6),
+                        ('RIGHTPADDING', (0, 0), (-1, -1), 6),
+                        ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor('#F8FAFC')]),
+                    ]))
+                    flowables.append(Spacer(1, 5))
+                    flowables.append(t)
+                    flowables.append(Spacer(1, 5))
+            continue
+            
+        # Ordinary text paragraph
+        paragraph_lines = []
+        while i < n:
+            curr_line = lines[i].strip()
+            if not curr_line:
+                break
+            if re.match(r"^(#+)\s*(.*)$", curr_line):
+                break
+            if re.match(r"^([*\-+]|•|■)\s+(.*)$", curr_line):
+                break
+            if re.match(r"^(\d+)\.\s+(.*)$", curr_line):
+                break
+            if curr_line.startswith("|") or (curr_line.count("|") >= 2):
+                break
+            if re.match(r"^(---|===\*+|\*\*\*+)$", curr_line):
+                break
+                
+            paragraph_lines.append(curr_line)
+            i += 1
+            
+        if paragraph_lines:
+            paragraph_text = " ".join(paragraph_lines)
+            clean_text = convert_inline_markdown(paragraph_text)
+            flowables.append(Paragraph(clean_text, body_style))
+            
+    return flowables
+
+
 def generate_pdf(
     title: str,
     headers: list[str],
@@ -292,21 +531,12 @@ def generate_pdf(
             textColor=colors.HexColor('#1B365D'),
             spaceAfter=6
         )
-        summary_body_style = ParagraphStyle(
-            'SummaryBody',
-            fontSize=9,
-            leading=13,
-            fontName='Helvetica',
-            textColor=colors.HexColor('#333333'),
-            spaceAfter=15
-        )
         elements.append(Paragraph("AI Insights & Executive Summary", summary_title_style))
         
-        cleaned_text = clean_markdown(summary)
-        for paragraph_text in cleaned_text.split("\n\n"):
-            if paragraph_text.strip():
-                clean_p = paragraph_text.replace("\n", " ").strip()
-                elements.append(Paragraph(clean_p, summary_body_style))
+        # Parse the markdown summary dynamically into a list of styled ReportLab Flowables (including tables, lists, and headers)
+        summary_flowables = parse_markdown_to_flowables(summary, doc.width, styles)
+        elements.extend(summary_flowables)
+        elements.append(Spacer(1, 15))
 
     # Add Data Table if provided and contains rows
     if rows and headers:

@@ -37,7 +37,19 @@ def test_generate_pdf_with_meta():
         {"Name": "Item A", "Value": 100},
         {"Name": "Item B", "Value": 200}
     ]
-    summary = "This is a **mock markdown** summary text.\n- Bullet 1\n- Bullet 2"
+    summary = (
+        "### Executive Summary\n"
+        "This is a **mock markdown** summary text with some *italic* words.\n\n"
+        "--- \n\n"
+        "■ Bullet 1\n"
+        "■ Bullet 2\n\n"
+        "1. Number one\n"
+        "2. Number two\n\n"
+        "| Category | Count | Total Overdue | % of Total |\n"
+        "|---|---|---|---|\n"
+        "| High Risk | 3 | $11,106.27 | 81.7% |\n"
+        "| Mid Risk | 2 | $2,370.64 | 18.3% |\n"
+    )
     kpis = [
         {"label": "Total Value", "value": "$300", "change": "+10%"},
         {"label": "Average", "value": "$150", "change": "Neutral"}
