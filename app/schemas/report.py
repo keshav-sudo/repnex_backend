@@ -115,6 +115,9 @@ class ReportExportRequest(BaseModel):
     title: str
     headers: list[str]
     rows: list[dict[str, Any]]
+    summary: str | None = None
+    chart_image: str | None = None
+    kpis: list[dict[str, Any]] | None = None
 
 
 class BulkExportRequest(BaseModel):

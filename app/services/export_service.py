@@ -9,13 +9,93 @@ from openpyxl.utils import get_column_letter
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import landscape, letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
-from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+import base64
+from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle, Image
 
 
-def generate_excel(title: str, headers: list[str], rows: list[dict]) -> bytes:
+def clean_markdown(text: str) -> str:
+    if not text:
+        return ""
+    # Remove bold/italic markup
+    text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+    text = re.sub(r"\*([^*]+)\*", r"\1", text)
+    text = re.sub(r"__([^_]+)__", r"\1", text)
+    text = re.sub(r"_([^_]+)_", r"\1", text)
+    # Remove headers marker
+    text = re.sub(r"#+\s+", "", text)
+    return text
+
+
+def generate_excel(
+    title: str,
+    headers: list[str],
+    rows: list[dict],
+    summary: str | None = None,
+    kpis: list[dict] | None = None
+) -> bytes:
     wb = Workbook()
-    ws = wb.active
-    ws.title = "Report"
+    
+    # Check if we should add a Summary tab
+    if summary or kpis:
+        ws_sum = wb.active
+        ws_sum.title = "Summary"
+        ws_sum.views.sheetView[0].showGridLines = True
+        
+        # Style definition
+        title_font = Font(name="Calibri", size=16, bold=True, color="1B365D")
+        section_font = Font(name="Calibri", size=12, bold=True, color="1B365D")
+        label_font = Font(name="Calibri", size=11, bold=True)
+        value_font = Font(name="Calibri", size=11)
+        
+        # Title
+        ws_sum.cell(row=1, column=1, value=title).font = title_font
+        ws_sum.row_dimensions[1].height = 30
+        
+        row_idx = 3
+        if kpis:
+            ws_sum.cell(row=row_idx, column=1, value="Key Performance Indicators").font = section_font
+            ws_sum.row_dimensions[row_idx].height = 20
+            row_idx += 1
+            
+            # Header for KPIs
+            ws_sum.cell(row=row_idx, column=1, value="Metric").font = label_font
+            ws_sum.cell(row=row_idx, column=2, value="Value").font = label_font
+            ws_sum.cell(row=row_idx, column=3, value="Status").font = label_font
+            row_idx += 1
+            
+            for kpi in kpis:
+                ws_sum.cell(row=row_idx, column=1, value=kpi.get("label", "")).font = value_font
+                ws_sum.cell(row=row_idx, column=2, value=kpi.get("value", "")).font = value_font
+                ws_sum.cell(row=row_idx, column=3, value=kpi.get("change", "")).font = value_font
+                row_idx += 1
+                
+            row_idx += 1  # Spacer
+            
+        if summary:
+            ws_sum.cell(row=row_idx, column=1, value="AI Insights & Summary").font = section_font
+            ws_sum.row_dimensions[row_idx].height = 20
+            row_idx += 1
+            
+            cleaned_text = clean_markdown(summary)
+            # Write lines
+            for line in cleaned_text.split("\n"):
+                if line.strip():
+                    ws_sum.cell(row=row_idx, column=1, value=line.strip()).font = value_font
+                    row_idx += 1
+                    
+        # Auto-adjust Summary columns
+        for col in ws_sum.columns:
+            max_len = 0
+            for cell in col:
+                if cell.value is not None:
+                    max_len = max(max_len, len(str(cell.value)))
+            col_letter = get_column_letter(col[0].column)
+            ws_sum.column_dimensions[col_letter].width = max(max_len + 4, 15)
+            
+        ws = wb.create_sheet(title="Data")
+    else:
+        ws = wb.active
+        ws.title = "Report"
 
     # Enable grid lines
     ws.views.sheetView[0].showGridLines = True
@@ -92,7 +172,15 @@ def generate_excel(title: str, headers: list[str], rows: list[dict]) -> bytes:
     wb.save(out)
     return out.getvalue()
 
-def generate_pdf(title: str, headers: list[str], rows: list[dict]) -> bytes:
+
+def generate_pdf(
+    title: str,
+    headers: list[str],
+    rows: list[dict],
+    summary: str | None = None,
+    chart_image: str | None = None,
+    kpis: list[dict] | None = None
+) -> bytes:
     # Use landscape letter if there are more than 6 columns, else portrait
     page_size = landscape(letter) if len(headers) > 6 else letter
 
@@ -137,46 +225,134 @@ def generate_pdf(title: str, headers: list[str], rows: list[dict]) -> bytes:
     elements.append(Paragraph(title, title_style))
     elements.append(Spacer(1, 10))
 
-    table_data = []
-    header_row = [Paragraph(h, header_style) for h in headers]
-    table_data.append(header_row)
+    # Add KPIs if provided
+    if kpis:
+        kpi_data = []
+        kpi_row = []
+        for kpi in kpis:
+            label = kpi.get("label", "")
+            val = kpi.get("value", "")
+            change = kpi.get("change", "")
+            cell_content = f"<b>{val}</b><br/><font color='#555555' size='8'>{label}</font>"
+            kpi_style = ParagraphStyle(
+                'KPIStyle',
+                fontSize=12,
+                leading=14,
+                fontName='Helvetica',
+                alignment=1
+            )
+            kpi_row.append(Paragraph(cell_content, kpi_style))
+        kpi_data.append(kpi_row)
+        
+        kpi_col_width = doc.width / len(kpis)
+        kpi_table = Table(kpi_data, colWidths=[kpi_col_width] * len(kpis))
+        kpi_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor('#F0F4FA')),
+            ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+            ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+            ('GRID', (0, 0), (-1, -1), 1, colors.HexColor('#D0DCEF')),
+            ('TOPPADDING', (0, 0), (-1, -1), 8),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 8),
+        ]))
+        elements.append(kpi_table)
+        elements.append(Spacer(1, 15))
 
-    for row in rows:
-        row_cells = []
-        for h in headers:
-            val = row.get(h, "")
-            if val is None:
-                val_str = ""
-            elif isinstance(val, float):
-                val_str = f"{val:.2f}"
-            else:
-                val_str = str(val)
-            row_cells.append(Paragraph(val_str, body_style))
-        table_data.append(row_cells)
+    # Add Chart Image if provided
+    if chart_image:
+        try:
+            base64_str = chart_image
+            if "," in base64_str:
+                base64_str = base64_str.split(",", 1)[1]
+            img_data = base64.b64decode(base64_str)
+            img_buf = io.BytesIO(img_data)
+            
+            chart_w = doc.width * 0.95
+            chart_h = chart_w * 0.5
+            
+            img_flowable = Image(img_buf, width=chart_w, height=chart_h)
+            elements.append(img_flowable)
+            elements.append(Spacer(1, 15))
+        except Exception as e:
+            warning_style = ParagraphStyle(
+                'WarningStyle',
+                fontSize=9,
+                textColor=colors.HexColor('#CC0000')
+            )
+            elements.append(Paragraph(f"Could not render chart: {str(e)}", warning_style))
+            elements.append(Spacer(1, 10))
 
-    doc_width = doc.width
-    col_width = doc_width / len(headers)
-    col_widths = [col_width] * len(headers)
+    # Add Summary if provided
+    if summary:
+        summary_title_style = ParagraphStyle(
+            'SummaryTitle',
+            parent=styles['Heading2'],
+            fontSize=12,
+            leading=15,
+            textColor=colors.HexColor('#1B365D'),
+            spaceAfter=6
+        )
+        summary_body_style = ParagraphStyle(
+            'SummaryBody',
+            fontSize=9,
+            leading=13,
+            fontName='Helvetica',
+            textColor=colors.HexColor('#333333'),
+            spaceAfter=15
+        )
+        elements.append(Paragraph("AI Insights & Executive Summary", summary_title_style))
+        
+        cleaned_text = clean_markdown(summary)
+        for paragraph_text in cleaned_text.split("\n\n"):
+            if paragraph_text.strip():
+                clean_p = paragraph_text.replace("\n", " ").strip()
+                elements.append(Paragraph(clean_p, summary_body_style))
 
-    t = Table(table_data, colWidths=col_widths, repeatRows=1)
+    # Add Data Table if provided and contains rows
+    if rows and headers:
+        # Separate table onto a new page if we already added a summary/chart
+        if summary or chart_image or kpis:
+            elements.append(PageBreak())
 
-    t_style = TableStyle([
-        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#1B365D')),
-        ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
-        ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
-        ('BOTTOMPADDING', (0, 0), (-1, 0), 6),
-        ('TOPPADDING', (0, 0), (-1, 0), 6),
-        ('BOTTOMPADDING', (0, 1), (-1, -1), 4),
-        ('TOPPADDING', (0, 1), (-1, -1), 4),
-        ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#E0E0E0')),
-    ])
+        table_data = []
+        header_row = [Paragraph(h, header_style) for h in headers]
+        table_data.append(header_row)
 
-    for i in range(1, len(rows) + 1):
-        if i % 2 == 0:
-            t_style.add('BACKGROUND', (0, i), (-1, i), colors.HexColor('#F7F9FC'))
+        for row in rows:
+            row_cells = []
+            for h in headers:
+                val = row.get(h, "")
+                if val is None:
+                    val_str = ""
+                elif isinstance(val, float):
+                    val_str = f"{val:.2f}"
+                else:
+                    val_str = str(val)
+                row_cells.append(Paragraph(val_str, body_style))
+            table_data.append(row_cells)
 
-    t.setStyle(t_style)
-    elements.append(t)
+        doc_width = doc.width
+        col_width = doc_width / len(headers)
+        col_widths = [col_width] * len(headers)
+
+        t = Table(table_data, colWidths=col_widths, repeatRows=1)
+
+        t_style = TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#1B365D')),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 6),
+            ('TOPPADDING', (0, 0), (-1, 0), 6),
+            ('BOTTOMPADDING', (0, 1), (-1, -1), 4),
+            ('TOPPADDING', (0, 1), (-1, -1), 4),
+            ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#E0E0E0')),
+        ])
+
+        for i in range(1, len(rows) + 1):
+            if i % 2 == 0:
+                t_style.add('BACKGROUND', (0, i), (-1, i), colors.HexColor('#F7F9FC'))
+
+        t.setStyle(t_style)
+        elements.append(t)
 
     doc.build(elements)
     return buffer.getvalue()

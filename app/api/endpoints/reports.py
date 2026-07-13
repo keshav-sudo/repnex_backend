@@ -55,7 +55,9 @@ async def export_excel(
     """Export report data to Excel (.xlsx)."""
     if current.role == "viewer":
         raise Forbidden("Viewers are not allowed to export report data")
-    excel_bytes = export_service.generate_excel(data.title, data.headers, data.rows)
+    excel_bytes = export_service.generate_excel(
+        data.title, data.headers, data.rows, summary=data.summary, kpis=data.kpis
+    )
     return StreamingResponse(
         io.BytesIO(excel_bytes),
         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -71,7 +73,14 @@ async def export_pdf(
     """Export report data to PDF (.pdf)."""
     if current.role == "viewer":
         raise Forbidden("Viewers are not allowed to export report data")
-    pdf_bytes = export_service.generate_pdf(data.title, data.headers, data.rows)
+    pdf_bytes = export_service.generate_pdf(
+        data.title,
+        data.headers,
+        data.rows,
+        summary=data.summary,
+        chart_image=data.chart_image,
+        kpis=data.kpis,
+    )
     return StreamingResponse(
         io.BytesIO(pdf_bytes),
         media_type="application/pdf",
