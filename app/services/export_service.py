@@ -567,6 +567,23 @@ def generate_pdf(
         if summary or chart_image or kpis:
             elements.append(PageBreak())
 
+        # If too many columns, truncate headers and print a warning to make it look clean in PDF
+        original_headers_count = len(headers)
+        if original_headers_count > 12:
+            headers = headers[:12]
+            warning_style = ParagraphStyle(
+                'ColWarningStyle',
+                fontSize=8.5,
+                leading=11,
+                fontName='Helvetica-Oblique',
+                textColor=colors.HexColor('#666666'),
+                spaceAfter=10
+            )
+            elements.append(Paragraph(
+                f"Note: This table contains {original_headers_count} columns. The first 12 columns are shown below to fit the page. Please export to Excel to view all columns.",
+                warning_style
+            ))
+
         # Define right-aligned numeric body style
         right_body_style = ParagraphStyle(
             'TableBodyRight',
@@ -624,8 +641,15 @@ def generate_pdf(
             
         # Scale proportionally to fit page width
         total_width = sum(col_widths)
-        scale_factor = doc_width / total_width
-        col_widths = [w * scale_factor for w in col_widths]
+        scale_factor = doc_width / total_width if total_width > 0 else 1.0
+        
+        # Determine padding dynamically based on number of columns to prevent negative width
+        num_cols = len(headers)
+        padding_val = max(1.0, min(6.0, 12.0 / num_cols))
+        
+        # Ensure each column width is at least padding_val * 2 + 5.0 to guarantee positive availWidth
+        min_allowed_width = padding_val * 2 + 5.0
+        col_widths = [max(w * scale_factor, min_allowed_width) for w in col_widths]
 
         t = Table(table_data, colWidths=col_widths, repeatRows=1)
 
@@ -637,6 +661,8 @@ def generate_pdf(
             ('TOPPADDING', (0, 0), (-1, 0), 8),
             ('BOTTOMPADDING', (0, 1), (-1, -1), 6),
             ('TOPPADDING', (0, 1), (-1, -1), 6),
+            ('LEFTPADDING', (0, 0), (-1, -1), padding_val),
+            ('RIGHTPADDING', (0, 0), (-1, -1), padding_val),
             ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#E5E7EB')),
         ])
 
