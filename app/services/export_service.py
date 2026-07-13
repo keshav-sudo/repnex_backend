@@ -2,6 +2,7 @@ import csv
 import io
 import re
 import zipfile
+from decimal import Decimal
 
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
@@ -313,6 +314,13 @@ def generate_pdf(
         if summary or chart_image or kpis:
             elements.append(PageBreak())
 
+        # Define right-aligned numeric body style
+        right_body_style = ParagraphStyle(
+            'TableBodyRight',
+            parent=body_style,
+            alignment=2  # Right-aligned
+        )
+
         table_data = []
         header_row = [Paragraph(h, header_style) for h in headers]
         table_data.append(header_row)
@@ -321,18 +329,50 @@ def generate_pdf(
             row_cells = []
             for h in headers:
                 val = row.get(h, "")
+                is_num = isinstance(val, (int, float, Decimal))
                 if val is None:
                     val_str = ""
                 elif isinstance(val, float):
                     val_str = f"{val:.2f}"
+                elif isinstance(val, int):
+                    val_str = f"{val:,}"
+                elif isinstance(val, Decimal):
+                    val_str = f"{float(val):.2f}"
                 else:
                     val_str = str(val)
-                row_cells.append(Paragraph(val_str, body_style))
+                
+                style = right_body_style if is_num else body_style
+                row_cells.append(Paragraph(val_str, style))
             table_data.append(row_cells)
 
         doc_width = doc.width
-        col_width = doc_width / len(headers)
-        col_widths = [col_width] * len(headers)
+        
+        # Calculate dynamic column widths based on content lengths
+        col_widths = []
+        for h in headers:
+            max_len = len(h)
+            for row in rows:
+                val = row.get(h, "")
+                if val is None:
+                    val_str = ""
+                elif isinstance(val, float):
+                    val_str = f"{val:.2f}"
+                elif isinstance(val, int):
+                    val_str = f"{val:,}"
+                elif isinstance(val, Decimal):
+                    val_str = f"{float(val):.2f}"
+                else:
+                    val_str = str(val)
+                max_len = max(max_len, len(val_str))
+            
+            # Convert character count to point width, minimum 50, maximum 250
+            approx_width = min(max(max_len * 6.5, 50.0), 250.0)
+            col_widths.append(approx_width)
+            
+        # Scale proportionally to fit page width
+        total_width = sum(col_widths)
+        scale_factor = doc_width / total_width
+        col_widths = [w * scale_factor for w in col_widths]
 
         t = Table(table_data, colWidths=col_widths, repeatRows=1)
 
@@ -340,11 +380,11 @@ def generate_pdf(
             ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#1B365D')),
             ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
             ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
-            ('BOTTOMPADDING', (0, 0), (-1, 0), 6),
-            ('TOPPADDING', (0, 0), (-1, 0), 6),
-            ('BOTTOMPADDING', (0, 1), (-1, -1), 4),
-            ('TOPPADDING', (0, 1), (-1, -1), 4),
-            ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#E0E0E0')),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
+            ('TOPPADDING', (0, 0), (-1, 0), 8),
+            ('BOTTOMPADDING', (0, 1), (-1, -1), 6),
+            ('TOPPADDING', (0, 1), (-1, -1), 6),
+            ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#E5E7EB')),
         ])
 
         for i in range(1, len(rows) + 1):
