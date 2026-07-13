@@ -80,6 +80,8 @@ class MySQLConnectionPool:
                     read_timeout=self._query_timeout,
                     write_timeout=self._query_timeout,
                 )
+                with conn.cursor() as cursor:
+                    cursor.execute("SET SESSION sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''))")
                 self._local.conn = conn
                 self._local.last_used = time.monotonic()
 
