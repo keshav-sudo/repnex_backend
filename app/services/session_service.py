@@ -172,8 +172,11 @@ async def edit_turn(
 ) -> GISession:
     session = await get(db, current, session_id)
     cw = list(session.context_window or [])
-    if turn_index < 0 or turn_index >= len(cw):
+    if turn_index < 0:
         raise NotFound("Turn index out of bounds")
+
+    if turn_index >= len(cw):
+        return session
 
     # Truncate starting from turn_index
     cw = cw[:turn_index]
