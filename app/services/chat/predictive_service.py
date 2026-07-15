@@ -24,33 +24,58 @@ from app.services import connection_service
 
 log = logging.getLogger(__name__)
 
-# ── Prompts ───────────────────────────────────────────────────────────────────
+# ── Keyword-based predictive intent detection ─────────────────────────────────
+# Covers English, Hinglish, and mixed-language queries.
+# No extra LLM call needed — fast, deterministic, never silently fails.
 
-PREDICTIVE_CLASSIFIER_PROMPT = """\
-You are an ERP intent classifier. Determine if the user's question is asking for a
-PREDICTION or FORECAST about future customer behaviour (e.g. who will buy next,
-which customer is likely to reorder, churn risk, next expected order).
+_PREDICTIVE_PATTERNS = re.compile(
+    r"""
+    (
+        # ── English ──
+        likely\s+to\s+(order|buy|purchase|reorder)          |
+        will\s+(order|buy|purchase)\s+next                  |
+        predict\w*\s+(order|purchase|buy)                   |
+        next\s+(order|purchase)\s+(for|from|by)             |
+        who\s+(will|is\s+going\s+to)\s+(order|buy)         |
+        which\s+customer\s+(will|is\s+likely|might)         |
+        who\s+is\s+likely                                   |
+        customer\s+going\s+to\s+(buy|order)                |
+        churn\s+risk                                         |
+        at\s+risk\s+of\s+(churn|leaving)                   |
+        reorder\s+probability                                |
+        forecast\w*\s+order                                  |
+        customer\w*\s+prediction                             |
+        predict\s+next                                       |
 
-Return STRICT JSON only:
-{
-  "is_predictive": true | false,
-  "target": "customer" | "supplier" | "inventory" | null,
-  "customer_filter": "<specific customer name/code if mentioned, else null>"
-}
+        # ── Hinglish ──
+        kaun\w*\s+(customer|client)\s*(aage|next|ab)?\s*(order|buy|krega|karega|dega)  |
+        kaunsa\s*(customer|client)\s*(order|buy)\s*(karega|dega|krega)                 |
+        next\s+order\s+(dega|karega|krega)                                             |
+        order\s+(prediction|predict)\s+(karo|do|chahiye)                               |
+        customer\s+ki\s+prediction                                                     |
+        agle\s+(order|purchase)\s+(ki|ke)\s+(prediction|forecast)                      |
+        kab\s+(dobara|phir)\s+order\s+(karega|dega|krega)                              |
+        dobara\s+order\s+(kaun|kaunsa)                                                  |
+        prediction\s+(do|dedo|chahiye|karo)                                             |
+        kon\s+sa\s+customer\s+(order|buy)\s*(karega|dega|krega|karta)
+    )
+    """,
+    re.IGNORECASE | re.VERBOSE,
+)
 
-Examples that ARE predictive:
-- "Which customer will order next?"
-- "Who is likely to buy in the next 7 days?"
-- "Which customers are at churn risk?"
-- "Predict next order for customer ABC"
+_CUSTOMER_FILTER_PATTERN = re.compile(
+    r"(?:for|of|customer|client|ke\s+liye)\s+([A-Z0-9]{4,20})\b",
+    re.IGNORECASE,
+)
 
-Examples that are NOT predictive:
-- "Show me all invoices"
-- "What is the total sales this month?"
-- "List all customers"
 
-Output ONLY the JSON. No markdown, no explanation.
-"""
+def _detect_predictive_intent(nl: str) -> tuple[bool, str | None]:
+    """Keyword-based predictive intent detection. Returns (is_predictive, customer_code_or_None)."""
+    is_pred = bool(_PREDICTIVE_PATTERNS.search(nl))
+    customer_match = _CUSTOMER_FILTER_PATTERN.search(nl)
+    customer_filter = customer_match.group(1).upper() if customer_match else None
+    return is_pred, customer_filter
+
 
 PREDICTIVE_EXPLAINER_PROMPT = """\
 You are a precise business intelligence assistant. You have been given calculated
@@ -88,25 +113,12 @@ async def detect_and_run_predictive(
     if not connection_id:
         return None
 
-    # Step 1: Classify if predictive
-    try:
-        clf = await get_llm().chat_json(
-            system=PREDICTIVE_CLASSIFIER_PROMPT,
-            user=f"Question: {natural_language}",
-        )
-        if not clf.get("is_predictive"):
-            return None
-        target = clf.get("target", "customer")
-        customer_filter = clf.get("customer_filter")
-    except Exception as e:
-        log.warning(f"predictive_classify_failed: {e}")
+    # Step 1: Keyword-based detection — fast, no LLM call, works in any language
+    is_predictive, customer_filter = _detect_predictive_intent(natural_language)
+    if not is_predictive:
         return None
 
-    if target != "customer":
-        # Future: handle supplier/inventory predictions
-        return None
-
-    log.info(f"Predictive query detected. target={target}, filter={customer_filter}")
+    log.info(f"Predictive query detected. customer_filter={customer_filter}")
 
     try:
         conn = await connection_service.get_connection(db, current, connection_id)
