@@ -1,0 +1,7 @@
+concept: lynq_me__statistics__setup
+table: Lynq_ME_Statistics_Setup
+alias: lmess
+fields:
+  id: lmess.ID
+  name: lmess.Name
+  value: lmess.Value

@@ -1,0 +1,14 @@
+concept: ar_dunning_invoices
+table: ArDunningInvoices
+alias: adi
+fields:
+  customer: adi.Customer
+  invoice: adi.Invoice
+  document_type: adi.DocumentType
+  dunning_group: adi.DunningGroup
+  dunning_status: adi.DunningStatus
+  dunning_date: adi.DunningDate
+  invoice_bal1: adi.InvoiceBal1
+  invoice_bal2: adi.InvoiceBal2
+  invoice_bal3: adi.InvoiceBal3
+  operator: adi.Operator

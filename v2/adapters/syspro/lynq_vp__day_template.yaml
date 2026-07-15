@@ -1,0 +1,8 @@
+concept: lynq_vp__day_template
+table: Lynq_VP_DayTemplate
+alias: lvpdt
+fields:
+  id: lvpdt.ID
+  day_template_name: lvpdt.DayTemplateName
+  day_template_description: lvpdt.DayTemplateDescription
+  group_name: lvpdt.GroupName

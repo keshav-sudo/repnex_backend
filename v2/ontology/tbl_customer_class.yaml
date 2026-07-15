@@ -1,0 +1,18 @@
+concept: tbl_customer_class
+display_name: TblCustomerClass
+module: other
+description: Auto-generated representation of the physical table TblCustomerClass.
+synonyms:
+- tblcustomerclass
+- tbl customer class
+header_attributes:
+  class:
+    display: Class
+    type: string
+    required: false
+    description: Field Class from TblCustomerClass
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblCustomerClass

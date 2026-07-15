@@ -1,0 +1,19 @@
+concept: csh_flow_values
+table: CshFlowValues
+alias: cfv
+fields:
+  model: cfv.Model
+  collector: cfv.Collector
+  inclusion: cfv.Inclusion
+  value1: cfv.Value1
+  value2: cfv.Value2
+  value3: cfv.Value3
+  value4: cfv.Value4
+  value5: cfv.Value5
+  value6: cfv.Value6
+  value7: cfv.Value7
+  value8: cfv.Value8
+  value9: cfv.Value9
+  value10: cfv.Value10
+  value11: cfv.Value11
+  value12: cfv.Value12

@@ -1,0 +1,20 @@
+concept: tpm_promo_det_trans
+table: TpmPromoDetTrans
+alias: tpdt
+fields:
+  invoice: tpdt.Invoice
+  invoice_line: tpdt.InvoiceLine
+  promotion_code: tpdt.PromotionCode
+  tpm_sequence: tpdt.TpmSequence
+  sales_order: tpdt.SalesOrder
+  sales_order_line: tpdt.SalesOrderLine
+  trn_date: tpdt.TrnDate
+  trn_time: tpdt.TrnTime
+  customer: tpdt.Customer
+  transaction_value: tpdt.TransactionValue
+  promotion_type: tpdt.PromotionType
+  globalflag: tpdt.Globalflag
+  original_price: tpdt.OriginalPrice
+  so_charge_line: tpdt.SoChargeLine
+  stock_code: tpdt.StockCode
+  free_goods_stock: tpdt.FreeGoodsStock

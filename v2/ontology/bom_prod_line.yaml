@@ -1,0 +1,53 @@
+concept: bom_prod_line
+display_name: BomProdLine
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomProdLine.
+synonyms:
+- bomprodline
+- bom prod line
+header_attributes:
+  prod_line:
+    display: Prodline
+    type: string
+    required: false
+    description: Field ProdLine from BomProdLine
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomProdLine
+  site_code:
+    display: Sitecode
+    type: string
+    required: false
+    description: Field SiteCode from BomProdLine
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from BomProdLine
+  shift_code:
+    display: Shiftcode
+    type: string
+    required: false
+    description: Field ShiftCode from BomProdLine
+  machine:
+    display: Machine
+    type: string
+    required: false
+    description: Field Machine from BomProdLine
+  prod_line_contact:
+    display: Prodlinecontact
+    type: string
+    required: false
+    description: Field ProdLineContact from BomProdLine
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from BomProdLine
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from BomProdLine

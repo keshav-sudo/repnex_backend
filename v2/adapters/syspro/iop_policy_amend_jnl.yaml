@@ -1,0 +1,41 @@
+concept: iop_policy_amend_jnl
+table: IopPolicyAmendJnl
+alias: ipaj
+fields:
+  jnl_date: ipaj.JnlDate
+  jnl_time: ipaj.JnlTime
+  id_number: ipaj.IdNumber
+  effective_date: ipaj.EffectiveDate
+  jnl_printed: ipaj.JnlPrinted
+  change_flag: ipaj.ChangeFlag
+  operator: ipaj.Operator
+  o_reference: ipaj.OReference
+  o_policy_source: ipaj.OPolicySource
+  o_select_set: ipaj.OSelectSet
+  o_policy_type: ipaj.OPolicyType
+  o_days_or_quantity: ipaj.ODaysOrQuantity
+  o_safety_days: ipaj.OSafetyDays
+  o_safety_qty: ipaj.OSafetyQty
+  o_safety_cap_days: ipaj.OSafetyCapDays
+  o_safety_cap_qty: ipaj.OSafetyCapQty
+  o_algorithm_used: ipaj.OAlgorithmUsed
+  o_target_service_lvl: ipaj.OTargetServiceLvl
+  o_service_level_msr: ipaj.OServiceLevelMsr
+  o_lead_time_days: ipaj.OLeadTimeDays
+  o_review_freq: ipaj.OReviewFreq
+  o_supply_code: ipaj.OSupplyCode
+  n_reference: ipaj.NReference
+  n_policy_source: ipaj.NPolicySource
+  n_select_set: ipaj.NSelectSet
+  n_policy_type: ipaj.NPolicyType
+  n_days_or_quantity: ipaj.NDaysOrQuantity
+  n_safety_days: ipaj.NSafetyDays
+  n_safety_qty: ipaj.NSafetyQty
+  n_safety_cap_days: ipaj.NSafetyCapDays
+  n_safety_cap_qty: ipaj.NSafetyCapQty
+  n_algorithm_used: ipaj.NAlgorithmUsed
+  n_target_service_lvl: ipaj.NTargetServiceLvl
+  n_service_level_msr: ipaj.NServiceLevelMsr
+  n_lead_time_days: ipaj.NLeadTimeDays
+  n_review_freq: ipaj.NReviewFreq
+  n_supply_code: ipaj.NSupplyCode

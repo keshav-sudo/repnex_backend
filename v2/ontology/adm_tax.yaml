@@ -1,0 +1,173 @@
+concept: adm_tax
+display_name: AdmTax
+module: administration
+description: Auto-generated representation of the physical table AdmTax.
+synonyms:
+- admtax
+- adm tax
+header_attributes:
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from AdmTax
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmTax
+  cur_tax_rate:
+    display: Curtaxrate
+    type: decimal
+    required: false
+    description: Field CurTaxRate from AdmTax
+  prv_tax_rate:
+    display: Prvtaxrate
+    type: decimal
+    required: false
+    description: Field PrvTaxRate from AdmTax
+  tax_eff_date:
+    display: Taxeffdate
+    type: date
+    required: false
+    description: Field TaxEffDate from AdmTax
+  tax_basis:
+    display: Taxbasis
+    type: string
+    required: false
+    description: Field TaxBasis from AdmTax
+  tax_neutral_basis:
+    display: Taxneutralbasis
+    type: string
+    required: false
+    description: Field TaxNeutralBasis from AdmTax
+  tax_price_code:
+    display: Taxpricecode
+    type: string
+    required: false
+    description: Field TaxPriceCode from AdmTax
+  tax_inc_excl:
+    display: Taxincexcl
+    type: string
+    required: false
+    description: Field TaxIncExcl from AdmTax
+  gl_tax_gl_code:
+    display: Gltaxglcode
+    type: string
+    required: false
+    description: Field GlTaxGlCode from AdmTax
+  ap_tax_gl_code:
+    display: Aptaxglcode
+    type: string
+    required: false
+    description: Field ApTaxGlCode from AdmTax
+  ptd_tot_exempt:
+    display: Ptdtotexempt
+    type: decimal
+    required: false
+    description: Field PtdTotExempt from AdmTax
+  ptd_tot_non_exempt:
+    display: Ptdtotnonexempt
+    type: decimal
+    required: false
+    description: Field PtdTotNonExempt from AdmTax
+  ptd_tot_tax_amt:
+    display: Ptdtottaxamt
+    type: decimal
+    required: false
+    description: Field PtdTotTaxAmt from AdmTax
+  mtd_tot_exempt:
+    display: Mtdtotexempt
+    type: decimal
+    required: false
+    description: Field MtdTotExempt from AdmTax
+  mtd_tot_non_exempt:
+    display: Mtdtotnonexempt
+    type: decimal
+    required: false
+    description: Field MtdTotNonExempt from AdmTax
+  mtd_tot_tax_amt:
+    display: Mtdtottaxamt
+    type: decimal
+    required: false
+    description: Field MtdTotTaxAmt from AdmTax
+  ytd_tot_exempt:
+    display: Ytdtotexempt
+    type: decimal
+    required: false
+    description: Field YtdTotExempt from AdmTax
+  ytd_tot_non_exempt:
+    display: Ytdtotnonexempt
+    type: decimal
+    required: false
+    description: Field YtdTotNonExempt from AdmTax
+  ytd_tot_tax_amt:
+    display: Ytdtottaxamt
+    type: decimal
+    required: false
+    description: Field YtdTotTaxAmt from AdmTax
+  tax_rate_decimals:
+    display: Taxratedecimals
+    type: decimal
+    required: false
+    description: Field TaxRateDecimals from AdmTax
+  use_gst_flag:
+    display: Usegstflag
+    type: string
+    required: false
+    description: Field UseGstFlag from AdmTax
+  ptd_gst:
+    display: Ptdgst
+    type: decimal
+    required: false
+    description: Field PtdGst from AdmTax
+  ytd_gst:
+    display: Ytdgst
+    type: decimal
+    required: false
+    description: Field YtdGst from AdmTax
+  cb_dep_tax_gl_code:
+    display: Cbdeptaxglcode
+    type: string
+    required: false
+    description: Field CbDepTaxGlCode from AdmTax
+  cb_wth_tax_gl_code:
+    display: Cbwthtaxglcode
+    type: string
+    required: false
+    description: Field CbWthTaxGlCode from AdmTax
+  rev_charge_flag:
+    display: Revchargeflag
+    type: string
+    required: false
+    description: Field RevChargeFlag from AdmTax
+  gl_rev_chg_gl_code:
+    display: Glrevchgglcode
+    type: string
+    required: false
+    description: Field GlRevChgGlCode from AdmTax
+  ap_rev_chg_gl_code:
+    display: Aprevchgglcode
+    type: string
+    required: false
+    description: Field ApRevChgGlCode from AdmTax
+  rev_chg_cur_tax_rate:
+    display: Revchgcurtaxrate
+    type: decimal
+    required: false
+    description: Field RevChgCurTaxRate from AdmTax
+  rev_chg_prv_tax_rate:
+    display: Revchgprvtaxrate
+    type: decimal
+    required: false
+    description: Field RevChgPrvTaxRate from AdmTax
+  rev_chg_tax_eff_date:
+    display: Revchgtaxeffdate
+    type: date
+    required: false
+    description: Field RevChgTaxEffDate from AdmTax
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from AdmTax

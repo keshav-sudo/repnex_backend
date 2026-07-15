@@ -1,0 +1,24 @@
+concept: lynq_vp_bpl__src__scheduling_info_log
+table: Lynq_VP_BPL_Src_SchedulingInfoLog
+alias: lvpbplssil
+fields:
+  id: lvpbplssil.ID
+  type_id: lvpbplssil.TypeID
+  ord_type: lvpbplssil.OrdType
+  ord_number: lvpbplssil.OrdNumber
+  is_header: lvpbplssil.IsHeader
+  oper_number: lvpbplssil.OperNumber
+  path_number: lvpbplssil.PathNumber
+  par_path_number: lvpbplssil.ParPathNumber
+  oper_sequence_number: lvpbplssil.OperSequenceNumber
+  rec_type: lvpbplssil.RecType
+  oper_type: lvpbplssil.OperType
+  is_scheduled: lvpbplssil.IsScheduled
+  src_start_date: lvpbplssil.SrcStartDate
+  src_end_date: lvpbplssil.SrcEndDate
+  src_wc_code: lvpbplssil.SrcWcCode
+  src_wc_dept_code: lvpbplssil.SrcWcDeptCode
+  start_date: lvpbplssil.StartDate
+  end_date: lvpbplssil.EndDate
+  wc_id: lvpbplssil.WcID
+  created: lvpbplssil.Created

@@ -1,0 +1,63 @@
+concept: csh_tax_code_distr_det
+display_name: CshTaxCodeDistrDet
+module: cashbook
+description: Auto-generated representation of the physical table CshTaxCodeDistrDet.
+synonyms:
+- cshtaxcodedistrdet
+- csh tax code distr det
+header_attributes:
+  input_output:
+    display: Inputoutput
+    type: string
+    required: false
+    description: Field InputOutput from CshTaxCodeDistrDet
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshTaxCodeDistrDet
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshTaxCodeDistrDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from CshTaxCodeDistrDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from CshTaxCodeDistrDet
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from CshTaxCodeDistrDet
+  distributed_amt:
+    display: Distributedamt
+    type: decimal
+    required: false
+    description: Field DistributedAmt from CshTaxCodeDistrDet
+  taxable_amount:
+    display: Taxableamount
+    type: decimal
+    required: false
+    description: Field TaxableAmount from CshTaxCodeDistrDet
+  tax_portion:
+    display: Taxportion
+    type: decimal
+    required: false
+    description: Field TaxPortion from CshTaxCodeDistrDet
+  tax_basis:
+    display: Taxbasis
+    type: string
+    required: false
+    description: Field TaxBasis from CshTaxCodeDistrDet
+  tax_rate:
+    display: Taxrate
+    type: decimal
+    required: false
+    description: Field TaxRate from CshTaxCodeDistrDet

@@ -1,0 +1,27 @@
+concept: iop_delivery_perf
+table: IopDeliveryPerf
+alias: idp
+fields:
+  id_number: idp.IdNumber
+  supply_type: idp.SupplyType
+  supply_source: idp.SupplySource
+  delivery_method: idp.DeliveryMethod
+  run_date: idp.RunDate
+  company: idp.Company
+  warehouse: idp.Warehouse
+  new_orders: idp.NewOrders
+  new_quantity: idp.NewQuantity
+  new_value: idp.NewValue
+  received_orders: idp.ReceivedOrders
+  received_quantity: idp.ReceivedQuantity
+  received_value: idp.ReceivedValue
+  current_orders: idp.CurrentOrders
+  current_quantity: idp.CurrentQuantity
+  current_value: idp.CurrentValue
+  overdue_orders: idp.OverdueOrders
+  overdue_value: idp.OverdueValue
+  over_due_quantity: idp.OverDueQuantity
+  over_due_days: idp.OverDueDays
+  on_time_orders: idp.OnTimeOrders
+  on_time_quantity: idp.OnTimeQuantity
+  on_time_value: idp.OnTimeValue

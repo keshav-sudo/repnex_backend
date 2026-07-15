@@ -1,0 +1,43 @@
+concept: gen_structure
+display_name: GenStructure
+module: general_ledger
+description: Auto-generated representation of the physical table GenStructure.
+synonyms:
+- genstructure
+- gen structure
+header_attributes:
+  section_number:
+    display: Sectionnumber
+    type: decimal
+    required: false
+    description: Field SectionNumber from GenStructure
+  parent_section:
+    display: Parentsection
+    type: string
+    required: false
+    description: Field ParentSection from GenStructure
+  child_section:
+    display: Childsection
+    type: string
+    required: false
+    description: Field ChildSection from GenStructure
+  all_list:
+    display: Alllist
+    type: string
+    required: false
+    description: Field AllList from GenStructure
+  valid_invalid:
+    display: Validinvalid
+    type: string
+    required: false
+    description: Field ValidInvalid from GenStructure
+  date_modified:
+    display: Datemodified
+    type: date
+    required: false
+    description: Field DateModified from GenStructure
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from GenStructure

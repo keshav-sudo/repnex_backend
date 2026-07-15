@@ -1,0 +1,168 @@
+concept: mrp_lot_detail
+display_name: MrpLotDetail
+module: mrp
+description: Auto-generated representation of the physical table MrpLotDetail.
+synonyms:
+- mrplotdetail
+- mrp lot detail
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpLotDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpLotDetail
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from MrpLotDetail
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from MrpLotDetail
+  next_trn_line:
+    display: Nexttrnline
+    type: decimal
+    required: false
+    description: Field NextTrnLine from MrpLotDetail
+  orig_qty_received:
+    display: Origqtyreceived
+    type: decimal
+    required: false
+    description: Field OrigQtyReceived from MrpLotDetail
+  qty_on_hand:
+    display: Qtyonhand
+    type: decimal
+    required: false
+    description: Field QtyOnHand from MrpLotDetail
+  qty_to_ship:
+    display: Qtytoship
+    type: decimal
+    required: false
+    description: Field QtyToShip from MrpLotDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpLotDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpLotDetail
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from MrpLotDetail
+  creation_date:
+    display: Creationdate
+    type: date
+    required: false
+    description: Field CreationDate from MrpLotDetail
+  draw_office_num:
+    display: Drawofficenum
+    type: string
+    required: false
+    description: Field DrawOfficeNum from MrpLotDetail
+  last_trn_date:
+    display: Lasttrndate
+    type: date
+    required: false
+    description: Field LastTrnDate from MrpLotDetail
+  archive_filename:
+    display: Archivefilename
+    type: string
+    required: false
+    description: Field ArchiveFilename from MrpLotDetail
+  qty_in_transit:
+    display: Qtyintransit
+    type: decimal
+    required: false
+    description: Field QtyInTransit from MrpLotDetail
+  lot_hold_flag:
+    display: Lotholdflag
+    type: string
+    required: false
+    description: Field LotHoldFlag from MrpLotDetail
+  note:
+    display: Note
+    type: string
+    required: false
+    description: Field Note from MrpLotDetail
+  ecc_dummy:
+    display: Eccdummy
+    type: string
+    required: false
+    description: Field EccDummy from MrpLotDetail
+  qty_awaiting_credit:
+    display: Qtyawaitingcredit
+    type: decimal
+    required: false
+    description: Field QtyAwaitingCredit from MrpLotDetail
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from MrpLotDetail
+  supplier_lot:
+    display: Supplierlot
+    type: string
+    required: false
+    description: Field SupplierLot from MrpLotDetail
+  product_shelf_life:
+    display: Productshelflife
+    type: decimal
+    required: false
+    description: Field ProductShelfLife from MrpLotDetail
+  internal_shelf_life:
+    display: Internalshelflife
+    type: decimal
+    required: false
+    description: Field InternalShelfLife from MrpLotDetail
+  use_by_date:
+    display: Usebydate
+    type: date
+    required: false
+    description: Field UseByDate from MrpLotDetail
+  sell_by_date:
+    display: Sellbydate
+    type: date
+    required: false
+    description: Field SellByDate from MrpLotDetail
+  internal_expiry_date:
+    display: Internalexpirydate
+    type: date
+    required: false
+    description: Field InternalExpiryDate from MrpLotDetail
+  manufacture_date:
+    display: Manufacturedate
+    type: date
+    required: false
+    description: Field ManufactureDate from MrpLotDetail
+  dispatch_date:
+    display: Dispatchdate
+    type: date
+    required: false
+    description: Field DispatchDate from MrpLotDetail
+  best_before_date:
+    display: Bestbeforedate
+    type: date
+    required: false
+    description: Field BestBeforeDate from MrpLotDetail
+  prd_recall_flag:
+    display: Prdrecallflag
+    type: string
+    required: false
+    description: Field PrdRecallFlag from MrpLotDetail
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from MrpLotDetail

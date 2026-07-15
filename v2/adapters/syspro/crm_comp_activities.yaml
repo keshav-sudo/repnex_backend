@@ -1,0 +1,21 @@
+concept: crm_comp_activities
+table: CrmCompActivities
+alias: cca
+fields:
+  complaint_id: cca.ComplaintId
+  activity_date: cca.ActivityDate
+  activity_time: cca.ActivityTime
+  complaint_user: cca.ComplaintUser
+  activity_type: cca.ActivityType
+  complaint_status: cca.ComplaintStatus
+  routed_flag: cca.RoutedFlag
+  complaint_severity: cca.ComplaintSeverity
+  esclated_flag: cca.EsclatedFlag
+  complaint_date: cca.ComplaintDate
+  elapsed_time: cca.ElapsedTime
+  activity_comment: cca.ActivityComment
+  attachment_file: cca.AttachmentFile
+  attachment_name: cca.AttachmentName
+  attachment_ext: cca.AttachmentExt
+  attachment_size: cca.AttachmentSize
+  attachment_url: cca.AttachmentUrl

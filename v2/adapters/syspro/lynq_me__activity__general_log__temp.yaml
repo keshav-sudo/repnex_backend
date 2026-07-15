@@ -1,0 +1,8 @@
+concept: lynq_me__activity__general_log__temp
+table: Lynq_ME_Activity_GeneralLog_Temp
+alias: lmeaglt
+fields:
+  id: lmeaglt.ID
+  pack_key: lmeaglt.PackKey
+  act_type: lmeaglt.ActType
+  log_id: lmeaglt.LogID

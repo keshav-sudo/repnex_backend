@@ -1,0 +1,12 @@
+concept: prj_retention_detail
+table: PrjRetentionDetail
+alias: prd
+fields:
+  contract: prd.Contract
+  job: prd.Job
+  sales_order: prd.SalesOrder
+  sales_order_line: prd.SalesOrderLine
+  retention_value: prd.RetentionValue
+  comment: prd.Comment
+  invoice: prd.Invoice
+  terms_code: prd.TermsCode

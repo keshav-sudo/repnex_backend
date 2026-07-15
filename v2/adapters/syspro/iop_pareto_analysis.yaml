@@ -1,0 +1,15 @@
+concept: iop_pareto_analysis
+table: IopParetoAnalysis
+alias: ipa
+fields:
+  level_analysis: ipa.LevelAnalysis
+  level_key: ipa.LevelKey
+  stock_code: ipa.StockCode
+  version: ipa.Version
+  release: ipa.Release
+  warehouse: ipa.Warehouse
+  analysis_type: ipa.AnalysisType
+  pareto_class: ipa.ParetoClass
+  analysis_base: ipa.AnalysisBase
+  analysis_set: ipa.AnalysisSet
+  date_analysed: ipa.DateAnalysed

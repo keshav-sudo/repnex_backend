@@ -1,0 +1,7 @@
+concept: iop_col_warehouse
+table: IopColWarehouse
+alias: icw
+fields:
+  collection: icw.Collection
+  instance: icw.Instance
+  warehouse: icw.Warehouse

@@ -1,0 +1,28 @@
+concept: asset_expense
+display_name: AssetExpense
+module: assets
+description: Auto-generated representation of the physical table AssetExpense.
+synonyms:
+- assetexpense
+- asset expense
+header_attributes:
+  expense_code:
+    display: Expensecode
+    type: string
+    required: false
+    description: Field ExpenseCode from AssetExpense
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetExpense
+  mtd_expenses:
+    display: Mtdexpenses
+    type: decimal
+    required: false
+    description: Field MtdExpenses from AssetExpense
+  ytd_expenses:
+    display: Ytdexpenses
+    type: decimal
+    required: false
+    description: Field YtdExpenses from AssetExpense

@@ -1,0 +1,11 @@
+concept: eft_csh_trans
+table: EftCshTrans
+alias: ect
+fields:
+  bank: ect.Bank
+  cb_trn_year: ect.CbTrnYear
+  cb_trn_month: ect.CbTrnMonth
+  cb_trn_date: ect.CbTrnDate
+  cb_trn_time: ect.CbTrnTime
+  eft_status: ect.EftStatus
+  eft_save_status: ect.EftSaveStatus

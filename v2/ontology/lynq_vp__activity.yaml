@@ -1,0 +1,38 @@
+concept: lynq_vp__activity
+display_name: Lynq VP Activity
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_Activity.
+synonyms:
+- lynq_vp_activity
+- lynq vp  activity
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_Activity
+  activity_code:
+    display: Activitycode
+    type: string
+    required: false
+    description: Field ActivityCode from Lynq_VP_Activity
+  activity_desc:
+    display: Activitydesc
+    type: string
+    required: false
+    description: Field ActivityDesc from Lynq_VP_Activity
+  is_working:
+    display: Isworking
+    type: string
+    required: false
+    description: Field IsWorking from Lynq_VP_Activity
+  colour_code:
+    display: Colourcode
+    type: string
+    required: false
+    description: Field ColourCode from Lynq_VP_Activity
+  is_downtime:
+    display: Isdowntime
+    type: string
+    required: false
+    description: Field IsDowntime from Lynq_VP_Activity

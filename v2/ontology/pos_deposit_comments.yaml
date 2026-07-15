@@ -1,0 +1,38 @@
+concept: pos_deposit_comments
+display_name: PosDepositComments
+module: other
+description: Auto-generated representation of the physical table PosDepositComments.
+synonyms:
+- posdepositcomments
+- pos deposit comments
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from PosDepositComments
+  deposit_date:
+    display: Depositdate
+    type: date
+    required: false
+    description: Field DepositDate from PosDepositComments
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from PosDepositComments
+  comment_line:
+    display: Commentline
+    type: decimal
+    required: false
+    description: Field CommentLine from PosDepositComments
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from PosDepositComments
+  comment_date:
+    display: Commentdate
+    type: date
+    required: false
+    description: Field CommentDate from PosDepositComments

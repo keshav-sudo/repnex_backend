@@ -1,0 +1,58 @@
+concept: lct_idx_inv_ves
+display_name: LctIdxInvVes
+module: other
+description: Auto-generated representation of the physical table LctIdxInvVes.
+synonyms:
+- lctidxinvves
+- lct idx inv ves
+header_attributes:
+  vessel:
+    display: Vessel
+    type: string
+    required: false
+    description: Field Vessel from LctIdxInvVes
+  departure_date:
+    display: Departuredate
+    type: date
+    required: false
+    description: Field DepartureDate from LctIdxInvVes
+  shipment_reference:
+    display: Shipmentreference
+    type: string
+    required: false
+    description: Field ShipmentReference from LctIdxInvVes
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from LctIdxInvVes
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from LctIdxInvVes
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from LctIdxInvVes
+  element:
+    display: Element
+    type: string
+    required: false
+    description: Field Element from LctIdxInvVes
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from LctIdxInvVes
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from LctIdxInvVes
+  actual_cost_val:
+    display: Actualcostval
+    type: decimal
+    required: false
+    description: Field ActualCostVal from LctIdxInvVes

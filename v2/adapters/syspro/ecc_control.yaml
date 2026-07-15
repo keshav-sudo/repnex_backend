@@ -1,0 +1,6 @@
+concept: ecc_control
+table: EccControl
+alias: ec
+fields:
+  ctl_flag: ec.CtlFlag
+  next_dummy_so: ec.NextDummySo

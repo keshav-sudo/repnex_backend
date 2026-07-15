@@ -1,0 +1,12 @@
+concept: arc_master
+table: ArcMaster
+alias: am1
+fields:
+  archive_type: am1.ArchiveType
+  archive_number: am1.ArchiveNumber
+  archive_date: am1.ArchiveDate
+  operator: am1.Operator
+  archive_file_name: am1.ArchiveFileName
+  impact_version: am1.ImpactVersion
+  archive_offline: am1.ArchiveOffline
+  comment: am1.Comment

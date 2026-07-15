@@ -1,0 +1,9 @@
+concept: sor_load_so_header
+table: SorLoadSoHeader
+alias: slsh
+fields:
+  sales_order: slsh.SalesOrder
+  route_code: slsh.RouteCode
+  complete_flag: slsh.CompleteFlag
+  status: slsh.Status
+  preactor_priority: slsh.PreactorPriority

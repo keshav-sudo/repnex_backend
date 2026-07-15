@@ -1,0 +1,9 @@
+concept: lynq_me__message_receiver
+table: Lynq_ME_MessageReceiver
+alias: lmemr
+fields:
+  id: lmemr.Id
+  sent_message_id: lmemr.SentMessageId
+  receiver_code: lmemr.ReceiverCode
+  receiver_type_id: lmemr.ReceiverTypeId
+  received_message_id: lmemr.ReceivedMessageId

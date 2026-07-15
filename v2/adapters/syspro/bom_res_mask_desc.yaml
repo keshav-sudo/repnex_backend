@@ -1,0 +1,7 @@
+concept: bom_res_mask_desc
+table: BomResMaskDesc
+alias: brmd
+fields:
+  work_centre: brmd.WorkCentre
+  resource_mask: brmd.ResourceMask
+  description: brmd.Description

@@ -1,0 +1,45 @@
+concept: sor_quote_det
+table: SorQuoteDet
+alias: sqd
+fields:
+  customer: sqd.Customer
+  trn_date: sqd.TrnDate
+  trn_time: sqd.TrnTime
+  line: sqd.Line
+  stock_code: sqd.StockCode
+  warehouse: sqd.Warehouse
+  qty_ordered: sqd.QtyOrdered
+  order_uom: sqd.OrderUom
+  prc_conversion: sqd.PrcConversion
+  prc_factor: sqd.PrcFactor
+  price: sqd.Price
+  price_uom: sqd.PriceUom
+  commission_code: sqd.CommissionCode
+  disc1: sqd.Disc1
+  disc2: sqd.Disc2
+  disc3: sqd.Disc3
+  disc_val_flag: sqd.DiscValFlag
+  disc_value: sqd.DiscValue
+  price_code: sqd.PriceCode
+  order_conversion: sqd.OrderConversion
+  order_factor: sqd.OrderFactor
+  contract: sqd.Contract
+  buying_group: sqd.BuyingGroup
+  unit_cost: sqd.UnitCost
+  description: sqd.Description
+  qty_shipped: sqd.QtyShipped
+  unit_quantity: sqd.UnitQuantity
+  conv_fact_unit_q: sqd.ConvFactUnitQ
+  alt_uom_unit_q: sqd.AltUomUnitQ
+  decimals_unit_q: sqd.DecimalsUnitQ
+  selection_code: sqd.SelectionCode
+  selection_type: sqd.SelectionType
+  product_class: sqd.ProductClass
+  intrastat_exempt: sqd.IntrastatExempt
+  triangulation_role: sqd.TriangulationRole
+  triang_disp_state: sqd.TriangDispState
+  triang_dest_state: sqd.TriangDestState
+  orig_country: sqd.OrigCountry
+  price_group_rule: sqd.PriceGroupRule
+  catalogue: sqd.Catalogue
+  cat_line_number: sqd.CatLineNumber

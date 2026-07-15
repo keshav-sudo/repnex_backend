@@ -1,0 +1,278 @@
+concept: ap_jnl_summary
+display_name: ApJnlSummary
+module: accounts_payable
+description: Auto-generated representation of the physical table ApJnlSummary.
+synonyms:
+- apjnlsummary
+- ap jnl summary
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ApJnlSummary
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ApJnlSummary
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApJnlSummary
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ApJnlSummary
+  entry_status:
+    display: Entrystatus
+    type: string
+    required: false
+    description: Field EntryStatus from ApJnlSummary
+  transaction_code:
+    display: Transactioncode
+    type: string
+    required: false
+    description: Field TransactionCode from ApJnlSummary
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApJnlSummary
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApJnlSummary
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ApJnlSummary
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ApJnlSummary
+  disc_date:
+    display: Discdate
+    type: date
+    required: false
+    description: Field DiscDate from ApJnlSummary
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from ApJnlSummary
+  disc_value:
+    display: Discvalue
+    type: decimal
+    required: false
+    description: Field DiscValue from ApJnlSummary
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ApJnlSummary
+  supplier_gl_code:
+    display: Supplierglcode
+    type: string
+    required: false
+    description: Field SupplierGlCode from ApJnlSummary
+  invoice_type:
+    display: Invoicetype
+    type: string
+    required: false
+    description: Field InvoiceType from ApJnlSummary
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApJnlSummary
+  conv_cur:
+    display: Convcur
+    type: string
+    required: false
+    description: Field ConvCur from ApJnlSummary
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from ApJnlSummary
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from ApJnlSummary
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ApJnlSummary
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from ApJnlSummary
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from ApJnlSummary
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ApJnlSummary
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from ApJnlSummary
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ApJnlSummary
+  supplier_name:
+    display: Suppliername
+    type: string
+    required: false
+    description: Field SupplierName from ApJnlSummary
+  invoice_adj_value:
+    display: Invoiceadjvalue
+    type: decimal
+    required: false
+    description: Field InvoiceAdjValue from ApJnlSummary
+  disc_adj_value:
+    display: Discadjvalue
+    type: decimal
+    required: false
+    description: Field DiscAdjValue from ApJnlSummary
+  new_due_date:
+    display: Newduedate
+    type: date
+    required: false
+    description: Field NewDueDate from ApJnlSummary
+  new_disc_date:
+    display: Newdiscdate
+    type: date
+    required: false
+    description: Field NewDiscDate from ApJnlSummary
+  new_invoice_value:
+    display: Newinvoicevalue
+    type: decimal
+    required: false
+    description: Field NewInvoiceValue from ApJnlSummary
+  new_disc_value:
+    display: Newdiscvalue
+    type: decimal
+    required: false
+    description: Field NewDiscValue from ApJnlSummary
+  new_invoice_date:
+    display: Newinvoicedate
+    type: date
+    required: false
+    description: Field NewInvoiceDate from ApJnlSummary
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from ApJnlSummary
+  analysis_entry:
+    display: Analysisentry
+    type: decimal
+    required: false
+    description: Field AnalysisEntry from ApJnlSummary
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from ApJnlSummary
+  gl_int_printed:
+    display: Glintprinted
+    type: string
+    required: false
+    description: Field GlIntPrinted from ApJnlSummary
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from ApJnlSummary
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from ApJnlSummary
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from ApJnlSummary
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from ApJnlSummary
+  add_reference:
+    display: Addreference
+    type: string
+    required: false
+    description: Field AddReference from ApJnlSummary
+  tax_relief_value:
+    display: Taxreliefvalue
+    type: decimal
+    required: false
+    description: Field TaxReliefValue from ApJnlSummary
+  with_tax_value:
+    display: Withtaxvalue
+    type: decimal
+    required: false
+    description: Field WithTaxValue from ApJnlSummary
+  gl_int_level:
+    display: Glintlevel
+    type: string
+    required: false
+    description: Field GlIntLevel from ApJnlSummary
+  tax_portion_disc:
+    display: Taxportiondisc
+    type: decimal
+    required: false
+    description: Field TaxPortionDisc from ApJnlSummary
+  tax_based_inv:
+    display: Taxbasedinv
+    type: string
+    required: false
+    description: Field TaxBasedInv from ApJnlSummary
+  group_inter_company:
+    display: Groupintercompany
+    type: string
+    required: false
+    description: Field GroupInterCompany from ApJnlSummary
+  xref_ch_register:
+    display: Xrefchregister
+    type: decimal
+    required: false
+    description: Field XrefChRegister from ApJnlSummary
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from ApJnlSummary
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from ApJnlSummary
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from ApJnlSummary
+  effective_entry:
+    display: Effectiveentry
+    type: decimal
+    required: false
+    description: Field EffectiveEntry from ApJnlSummary

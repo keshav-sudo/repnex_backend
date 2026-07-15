@@ -1,0 +1,23 @@
+concept: tpm_control
+display_name: TpmControl
+module: other
+description: Auto-generated representation of the physical table TpmControl.
+synonyms:
+- tpmcontrol
+- tpm control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from TpmControl
+  next_reference_no:
+    display: Nextreferenceno
+    type: decimal
+    required: false
+    description: Field NextReferenceNo from TpmControl
+  next_tpm_jnl:
+    display: Nexttpmjnl
+    type: decimal
+    required: false
+    description: Field NextTpmJnl from TpmControl

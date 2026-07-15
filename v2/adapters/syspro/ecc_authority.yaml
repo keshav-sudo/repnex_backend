@@ -1,0 +1,8 @@
+concept: ecc_authority
+table: EccAuthority
+alias: ea1
+fields:
+  ecc_user: ea1.EccUser
+  authority_type: ea1.AuthorityType
+  authority_code: ea1.AuthorityCode
+  authority: ea1.Authority

@@ -1,0 +1,13 @@
+concept: lynq_vp__file_info
+table: Lynq_VP_FileInfo
+alias: lvpfi
+fields:
+  id: lvpfi.ID
+  ord_type: lvpfi.OrdType
+  ord_number: lvpfi.OrdNumber
+  operation_number: lvpfi.OperationNumber
+  path_number: lvpfi.PathNumber
+  oper_sequence_number: lvpfi.OperSequenceNumber
+  file_name: lvpfi.FileName
+  file_description: lvpfi.FileDescription
+  item_number: lvpfi.ItemNumber

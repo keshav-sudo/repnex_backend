@@ -1,0 +1,23 @@
+concept: adm_tax_zip_range
+display_name: AdmTaxZipRange
+module: administration
+description: Auto-generated representation of the physical table AdmTaxZipRange.
+synonyms:
+- admtaxziprange
+- adm tax zip range
+header_attributes:
+  zip_from:
+    display: Zipfrom
+    type: string
+    required: false
+    description: Field ZipFrom from AdmTaxZipRange
+  zip_to:
+    display: Zipto
+    type: string
+    required: false
+    description: Field ZipTo from AdmTaxZipRange
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmTaxZipRange

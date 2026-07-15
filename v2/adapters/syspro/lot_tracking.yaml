@@ -1,0 +1,19 @@
+concept: lot_tracking
+table: LotTracking
+alias: lt1
+fields:
+  stock_code: lt1.StockCode
+  warehouse: lt1.Warehouse
+  lot: lt1.Lot
+  bin: lt1.Bin
+  line: lt1.Line
+  job: lt1.Job
+  quantity: lt1.Quantity
+  parent_part: lt1.ParentPart
+  parent_warehouse: lt1.ParentWarehouse
+  parent_lot: lt1.ParentLot
+  parent_bin: lt1.ParentBin
+  issue_line: lt1.IssueLine
+  issue_date: lt1.IssueDate
+  m_allocation_line: lt1.MAllocationLine
+  master_job: lt1.MasterJob

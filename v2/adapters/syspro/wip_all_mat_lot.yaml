@@ -1,0 +1,16 @@
+concept: wip_all_mat_lot
+table: WipAllMatLot
+alias: waml
+fields:
+  job: waml.Job
+  stock_code: waml.StockCode
+  warehouse: waml.Warehouse
+  line: waml.Line
+  lot: waml.Lot
+  bin: waml.Bin
+  qty_reserved: waml.QtyReserved
+  qty_issued: waml.QtyIssued
+  lot_completed: waml.LotCompleted
+  version: waml.Version
+  release: waml.Release
+  neg_allocation: waml.NegAllocation

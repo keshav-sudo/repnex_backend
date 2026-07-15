@@ -1,0 +1,33 @@
+concept: sqm_arc_test_data
+table: SqmArcTestData
+alias: satd
+fields:
+  inspect_type: satd.InspectType
+  inspect_number: satd.InspectNumber
+  lot: satd.Lot
+  sample_number: satd.SampleNumber
+  sample_test: satd.SampleTest
+  test_name: satd.TestName
+  test_version: satd.TestVersion
+  field_id: satd.FieldId
+  sqm_level: satd.SqmLevel
+  data_type: satd.DataType
+  calculated_field: satd.CalculatedField
+  numeric_result: satd.NumericResult
+  alpha_result: satd.AlphaResult
+  boolean_result: satd.BooleanResult
+  list_result: satd.ListResult
+  list_cri_result: satd.ListCriResult
+  field_status: satd.FieldStatus
+  date_result: satd.DateResult
+  validation_req: satd.ValidationReq
+  num_target: satd.NumTarget
+  num_upper_target: satd.NumUpperTarget
+  num_lower_target: satd.NumLowerTarget
+  alpha_target: satd.AlphaTarget
+  list_flag: satd.ListFlag
+  expiry_flag: satd.ExpiryFlag
+  expiry_number: satd.ExpiryNumber
+  coc_flag: satd.CocFlag
+  test_date: satd.TestDate
+  test_time: satd.TestTime

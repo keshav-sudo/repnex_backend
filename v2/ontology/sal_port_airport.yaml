@@ -1,0 +1,18 @@
+concept: sal_port_airport
+display_name: SalPortAirport
+module: other
+description: Auto-generated representation of the physical table SalPortAirport.
+synonyms:
+- salportairport
+- sal port airport
+header_attributes:
+  port_airport:
+    display: Portairport
+    type: string
+    required: false
+    description: Field PortAirport from SalPortAirport
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from SalPortAirport

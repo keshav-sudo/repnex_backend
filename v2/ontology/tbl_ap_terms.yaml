@@ -1,0 +1,53 @@
+concept: tbl_ap_terms
+display_name: TblApTerms
+module: other
+description: Auto-generated representation of the physical table TblApTerms.
+synonyms:
+- tblapterms
+- tbl ap terms
+header_attributes:
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from TblApTerms
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblApTerms
+  disc_pct:
+    display: Discpct
+    type: decimal
+    required: false
+    description: Field DiscPct from TblApTerms
+  disc_days:
+    display: Discdays
+    type: decimal
+    required: false
+    description: Field DiscDays from TblApTerms
+  disc_fix:
+    display: Discfix
+    type: string
+    required: false
+    description: Field DiscFix from TblApTerms
+  due_days:
+    display: Duedays
+    type: decimal
+    required: false
+    description: Field DueDays from TblApTerms
+  due_fix:
+    display: Duefix
+    type: string
+    required: false
+    description: Field DueFix from TblApTerms
+  disc_months:
+    display: Discmonths
+    type: decimal
+    required: false
+    description: Field DiscMonths from TblApTerms
+  due_months:
+    display: Duemonths
+    type: decimal
+    required: false
+    description: Field DueMonths from TblApTerms

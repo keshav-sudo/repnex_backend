@@ -1,0 +1,328 @@
+concept: mrp_qot_master
+display_name: MrpQotMaster
+module: mrp
+description: Auto-generated representation of the physical table MrpQotMaster.
+synonyms:
+- mrpqotmaster
+- mrp qot master
+header_attributes:
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from MrpQotMaster
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from MrpQotMaster
+  quote_status:
+    display: Quotestatus
+    type: string
+    required: false
+    description: Field QuoteStatus from MrpQotMaster
+  quote_active:
+    display: Quoteactive
+    type: string
+    required: false
+    description: Field QuoteActive from MrpQotMaster
+  quote_description:
+    display: Quotedescription
+    type: string
+    required: false
+    description: Field QuoteDescription from MrpQotMaster
+  classification:
+    display: Classification
+    type: string
+    required: false
+    description: Field Classification from MrpQotMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MrpQotMaster
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from MrpQotMaster
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from MrpQotMaster
+  profit_basis:
+    display: Profitbasis
+    type: string
+    required: false
+    description: Field ProfitBasis from MrpQotMaster
+  global_profit_pct:
+    display: Globalprofitpct
+    type: decimal
+    required: false
+    description: Field GlobalProfitPct from MrpQotMaster
+  lab_profit_basis:
+    display: Labprofitbasis
+    type: string
+    required: false
+    description: Field LabProfitBasis from MrpQotMaster
+  labour_profit_pct:
+    display: Labourprofitpct
+    type: decimal
+    required: false
+    description: Field LabourProfitPct from MrpQotMaster
+  mat_profit_basis:
+    display: Matprofitbasis
+    type: string
+    required: false
+    description: Field MatProfitBasis from MrpQotMaster
+  mat_profit_pct:
+    display: Matprofitpct
+    type: decimal
+    required: false
+    description: Field MatProfitPct from MrpQotMaster
+  probability_flag:
+    display: Probabilityflag
+    type: decimal
+    required: false
+    description: Field ProbabilityFlag from MrpQotMaster
+  hierarchy_quote:
+    display: Hierarchyquote
+    type: string
+    required: false
+    description: Field HierarchyQuote from MrpQotMaster
+  date_enquiry:
+    display: Dateenquiry
+    type: date
+    required: false
+    description: Field DateEnquiry from MrpQotMaster
+  date_follow_up:
+    display: Datefollowup
+    type: date
+    required: false
+    description: Field DateFollowUp from MrpQotMaster
+  date_tender_req:
+    display: Datetenderreq
+    type: date
+    required: false
+    description: Field DateTenderReq from MrpQotMaster
+  date_printed:
+    display: Dateprinted
+    type: date
+    required: false
+    description: Field DatePrinted from MrpQotMaster
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from MrpQotMaster
+  date_confirm_rej:
+    display: Dateconfirmrej
+    type: date
+    required: false
+    description: Field DateConfirmRej from MrpQotMaster
+  date_delivery_req:
+    display: Datedeliveryreq
+    type: date
+    required: false
+    description: Field DateDeliveryReq from MrpQotMaster
+  dummy_sales_order:
+    display: Dummysalesorder
+    type: string
+    required: false
+    description: Field DummySalesOrder from MrpQotMaster
+  dummy_so_updated:
+    display: Dummysoupdated
+    type: string
+    required: false
+    description: Field DummySoUpdated from MrpQotMaster
+  implosion_ctl_num:
+    display: Implosionctlnum
+    type: decimal
+    required: false
+    description: Field ImplosionCtlNum from MrpQotMaster
+  cont_price_allow:
+    display: Contpriceallow
+    type: string
+    required: false
+    description: Field ContPriceAllow from MrpQotMaster
+  buying_group1:
+    display: Buyinggroup1
+    type: string
+    required: false
+    description: Field BuyingGroup1 from MrpQotMaster
+  buying_group2:
+    display: Buyinggroup2
+    type: string
+    required: false
+    description: Field BuyingGroup2 from MrpQotMaster
+  buying_group3:
+    display: Buyinggroup3
+    type: string
+    required: false
+    description: Field BuyingGroup3 from MrpQotMaster
+  buying_group4:
+    display: Buyinggroup4
+    type: string
+    required: false
+    description: Field BuyingGroup4 from MrpQotMaster
+  buying_group5:
+    display: Buyinggroup5
+    type: string
+    required: false
+    description: Field BuyingGroup5 from MrpQotMaster
+  inv_disc_code:
+    display: Invdisccode
+    type: string
+    required: false
+    description: Field InvDiscCode from MrpQotMaster
+  line_disc_code:
+    display: Linedisccode
+    type: string
+    required: false
+    description: Field LineDiscCode from MrpQotMaster
+  discount_code:
+    display: Discountcode
+    type: string
+    required: false
+    description: Field DiscountCode from MrpQotMaster
+  price_category_table:
+    display: Pricecategorytable
+    type: string
+    required: false
+    description: Field PriceCategoryTable from MrpQotMaster
+  apply_order_disc:
+    display: Applyorderdisc
+    type: string
+    required: false
+    description: Field ApplyOrderDisc from MrpQotMaster
+  apply_line_disc:
+    display: Applylinedisc
+    type: string
+    required: false
+    description: Field ApplyLineDisc from MrpQotMaster
+  next_non_stock_num:
+    display: Nextnonstocknum
+    type: decimal
+    required: false
+    description: Field NextNonStockNum from MrpQotMaster
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from MrpQotMaster
+  reason_desc:
+    display: Reasondesc
+    type: string
+    required: false
+    description: Field ReasonDesc from MrpQotMaster
+  issue_num:
+    display: Issuenum
+    type: decimal
+    required: false
+    description: Field IssueNum from MrpQotMaster
+  previous_status:
+    display: Previousstatus
+    type: string
+    required: false
+    description: Field PreviousStatus from MrpQotMaster
+  offer_desc1:
+    display: Offerdesc1
+    type: string
+    required: false
+    description: Field OfferDesc1 from MrpQotMaster
+  offer_desc2:
+    display: Offerdesc2
+    type: string
+    required: false
+    description: Field OfferDesc2 from MrpQotMaster
+  offer_desc3:
+    display: Offerdesc3
+    type: string
+    required: false
+    description: Field OfferDesc3 from MrpQotMaster
+  offer_desc4:
+    display: Offerdesc4
+    type: string
+    required: false
+    description: Field OfferDesc4 from MrpQotMaster
+  offer_desc5:
+    display: Offerdesc5
+    type: string
+    required: false
+    description: Field OfferDesc5 from MrpQotMaster
+  offer_desc6:
+    display: Offerdesc6
+    type: string
+    required: false
+    description: Field OfferDesc6 from MrpQotMaster
+  offer_prt1:
+    display: Offerprt1
+    type: string
+    required: false
+    description: Field OfferPrt1 from MrpQotMaster
+  offer_prt2:
+    display: Offerprt2
+    type: string
+    required: false
+    description: Field OfferPrt2 from MrpQotMaster
+  offer_prt3:
+    display: Offerprt3
+    type: string
+    required: false
+    description: Field OfferPrt3 from MrpQotMaster
+  offer_prt4:
+    display: Offerprt4
+    type: string
+    required: false
+    description: Field OfferPrt4 from MrpQotMaster
+  offer_prt5:
+    display: Offerprt5
+    type: string
+    required: false
+    description: Field OfferPrt5 from MrpQotMaster
+  offer_prt6:
+    display: Offerprt6
+    type: string
+    required: false
+    description: Field OfferPrt6 from MrpQotMaster
+  contact:
+    display: Contact
+    type: string
+    required: false
+    description: Field Contact from MrpQotMaster
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MrpQotMaster
+  fax:
+    display: Fax
+    type: string
+    required: false
+    description: Field Fax from MrpQotMaster
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from MrpQotMaster
+  non_stock_prefix:
+    display: Nonstockprefix
+    type: string
+    required: false
+    description: Field NonStockPrefix from MrpQotMaster
+  change_date:
+    display: Changedate
+    type: date
+    required: false
+    description: Field ChangeDate from MrpQotMaster
+  change_time:
+    display: Changetime
+    type: decimal
+    required: false
+    description: Field ChangeTime from MrpQotMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MrpQotMaster

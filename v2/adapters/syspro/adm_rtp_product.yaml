@@ -1,0 +1,9 @@
+concept: adm_rtp_product
+table: AdmRtpProduct
+alias: arp
+fields:
+  rtp_product_code: arp.RtpProductCode
+  rtp_product_desc: arp.RtpProductDesc
+  rtp_product_license: arp.RtpProductLicense
+  rtp_product_access: arp.RtpProductAccess
+  run_time_linked_oper: arp.RunTimeLinkedOper

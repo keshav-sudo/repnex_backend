@@ -1,0 +1,48 @@
+concept: ap_ctl_health_fix
+display_name: ApCtlHealthFix
+module: accounts_payable
+description: Auto-generated representation of the physical table ApCtlHealthFix.
+synonyms:
+- apctlhealthfix
+- ap ctl health fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from ApCtlHealthFix
+  trx_type:
+    display: Trxtype
+    type: string
+    required: false
+    description: Field TrxType from ApCtlHealthFix
+  hfix_year:
+    display: Hfixyear
+    type: decimal
+    required: false
+    description: Field HfixYear from ApCtlHealthFix
+  hfix_month:
+    display: Hfixmonth
+    type: decimal
+    required: false
+    description: Field HfixMonth from ApCtlHealthFix
+  trx_amt_vary:
+    display: Trxamtvary
+    type: decimal
+    required: false
+    description: Field TrxAmtVary from ApCtlHealthFix
+  trx_amt_actual:
+    display: Trxamtactual
+    type: decimal
+    required: false
+    description: Field TrxAmtActual from ApCtlHealthFix
+  trx_amt_calc:
+    display: Trxamtcalc
+    type: decimal
+    required: false
+    description: Field TrxAmtCalc from ApCtlHealthFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ApCtlHealthFix

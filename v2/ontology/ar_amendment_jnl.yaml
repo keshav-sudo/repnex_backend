@@ -1,0 +1,58 @@
+concept: ar_amendment_jnl
+display_name: ArAmendmentJnl
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArAmendmentJnl.
+synonyms:
+- aramendmentjnl
+- ar amendment jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from ArAmendmentJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from ArAmendmentJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from ArAmendmentJnl
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArAmendmentJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from ArAmendmentJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from ArAmendmentJnl
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from ArAmendmentJnl
+  before:
+    display: Before
+    type: string
+    required: false
+    description: Field Before from ArAmendmentJnl
+  after:
+    display: After
+    type: string
+    required: false
+    description: Field After from ArAmendmentJnl
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from ArAmendmentJnl

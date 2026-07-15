@@ -1,0 +1,23 @@
+concept: lot_arc_additional
+display_name: LotArcAdditional
+module: other
+description: Auto-generated representation of the physical table LotArcAdditional.
+synonyms:
+- lotarcadditional
+- lot arc additional
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotArcAdditional
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotArcAdditional
+  additional_lot_name:
+    display: Additionallotname
+    type: string
+    required: false
+    description: Field AdditionalLotName from LotArcAdditional

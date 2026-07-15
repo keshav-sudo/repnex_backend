@@ -1,0 +1,78 @@
+concept: sor_detail_qty_bal_fix
+display_name: SorDetailQtyBalFix
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorDetailQtyBalFix.
+synonyms:
+- sordetailqtybalfix
+- sor detail qty bal fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from SorDetailQtyBalFix
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorDetailQtyBalFix
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorDetailQtyBalFix
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SorDetailQtyBalFix
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorDetailQtyBalFix
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SorDetailQtyBalFix
+  old_quantity:
+    display: Oldquantity
+    type: decimal
+    required: false
+    description: Field OldQuantity from SorDetailQtyBalFix
+  new_quantity:
+    display: Newquantity
+    type: decimal
+    required: false
+    description: Field NewQuantity from SorDetailQtyBalFix
+  correction_type:
+    display: Correctiontype
+    type: string
+    required: false
+    description: Field CorrectionType from SorDetailQtyBalFix
+  correction_src:
+    display: Correctionsrc
+    type: string
+    required: false
+    description: Field CorrectionSrc from SorDetailQtyBalFix
+  reserved_flag:
+    display: Reservedflag
+    type: string
+    required: false
+    description: Field ReservedFlag from SorDetailQtyBalFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from SorDetailQtyBalFix
+  message_number:
+    display: Messagenumber
+    type: decimal
+    required: false
+    description: Field MessageNumber from SorDetailQtyBalFix
+  dispatch_flag:
+    display: Dispatchflag
+    type: string
+    required: false
+    description: Field DispatchFlag from SorDetailQtyBalFix

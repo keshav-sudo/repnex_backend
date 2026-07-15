@@ -1,0 +1,9 @@
+concept: inv_class_attrib_val
+table: InvClassAttribVal
+alias: icav
+fields:
+  stock_class: icav.StockClass
+  class_attrib: icav.ClassAttrib
+  item: icav.Item
+  description: icav.Description
+  default_item: icav.DefaultItem

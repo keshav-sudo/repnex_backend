@@ -1,0 +1,88 @@
+concept: inv_por_qty_bal
+display_name: InvPorQtyBal
+module: inventory
+description: Auto-generated representation of the physical table InvPorQtyBal.
+synonyms:
+- invporqtybal
+- inv por qty bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from InvPorQtyBal
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvPorQtyBal
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvPorQtyBal
+  whs_qty_on_order:
+    display: Whsqtyonorder
+    type: decimal
+    required: false
+    description: Field WhsQtyOnOrder from InvPorQtyBal
+  po_qty_on_order:
+    display: Poqtyonorder
+    type: decimal
+    required: false
+    description: Field PoQtyOnOrder from InvPorQtyBal
+  job_qty_on_order:
+    display: Jobqtyonorder
+    type: decimal
+    required: false
+    description: Field JobQtyOnOrder from InvPorQtyBal
+  cop_qty_on_order:
+    display: Copqtyonorder
+    type: decimal
+    required: false
+    description: Field CopQtyOnOrder from InvPorQtyBal
+  sct_qty_on_order:
+    display: Sctqtyonorder
+    type: decimal
+    required: false
+    description: Field SctQtyOnOrder from InvPorQtyBal
+  mdn_qty_on_order:
+    display: Mdnqtyonorder
+    type: decimal
+    required: false
+    description: Field MdnQtyOnOrder from InvPorQtyBal
+  tot_qty_on_order:
+    display: Totqtyonorder
+    type: decimal
+    required: false
+    description: Field TotQtyOnOrder from InvPorQtyBal
+  whs_qty_allocated_wip:
+    display: Whsqtyallocatedwip
+    type: decimal
+    required: false
+    description: Field WhsQtyAllocatedWip from InvPorQtyBal
+  job_qty_allocated_wip:
+    display: Jobqtyallocatedwip
+    type: decimal
+    required: false
+    description: Field JobQtyAllocatedWip from InvPorQtyBal
+  whs_qty_in_inspection:
+    display: Whsqtyininspection
+    type: decimal
+    required: false
+    description: Field WhsQtyInInspection from InvPorQtyBal
+  wip_in_inspection:
+    display: Wipininspection
+    type: decimal
+    required: false
+    description: Field WipInInspection from InvPorQtyBal
+  inv_in_inspection:
+    display: Invininspection
+    type: decimal
+    required: false
+    description: Field InvInInspection from InvPorQtyBal
+  tot_in_inspection:
+    display: Totininspection
+    type: decimal
+    required: false
+    description: Field TotInInspection from InvPorQtyBal

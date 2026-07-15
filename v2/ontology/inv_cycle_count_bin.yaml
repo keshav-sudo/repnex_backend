@@ -1,0 +1,73 @@
+concept: inv_cycle_count_bin
+display_name: InvCycleCountBin
+module: inventory
+description: Auto-generated representation of the physical table InvCycleCountBin.
+synonyms:
+- invcyclecountbin
+- inv cycle count bin
+header_attributes:
+  cycle_count:
+    display: Cyclecount
+    type: string
+    required: false
+    description: Field CycleCount from InvCycleCountBin
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvCycleCountBin
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvCycleCountBin
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvCycleCountBin
+  orig_qty_on_hand:
+    display: Origqtyonhand
+    type: decimal
+    required: false
+    description: Field OrigQtyOnHand from InvCycleCountBin
+  qty_captured:
+    display: Qtycaptured
+    type: decimal
+    required: false
+    description: Field QtyCaptured from InvCycleCountBin
+  capture_date:
+    display: Capturedate
+    type: date
+    required: false
+    description: Field CaptureDate from InvCycleCountBin
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from InvCycleCountBin
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvCycleCountBin
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from InvCycleCountBin
+  created_bin_flag:
+    display: Createdbinflag
+    type: string
+    required: false
+    description: Field CreatedBinFlag from InvCycleCountBin
+  fifo_bucket:
+    display: Fifobucket
+    type: decimal
+    required: false
+    description: Field FifoBucket from InvCycleCountBin
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from InvCycleCountBin

@@ -1,0 +1,48 @@
+concept: wip_nest_map
+display_name: WipNestMap
+module: work_in_progress
+description: Auto-generated representation of the physical table WipNestMap.
+synonyms:
+- wipnestmap
+- wip nest map
+header_attributes:
+  format:
+    display: Format
+    type: string
+    required: false
+    description: Field Format from WipNestMap
+  sequence:
+    display: Sequence
+    type: decimal
+    required: false
+    description: Field Sequence from WipNestMap
+  database_name:
+    display: Databasename
+    type: string
+    required: false
+    description: Field DatabaseName from WipNestMap
+  database_schema:
+    display: Databaseschema
+    type: string
+    required: false
+    description: Field DatabaseSchema from WipNestMap
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from WipNestMap
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from WipNestMap
+  alpha_numeric_date:
+    display: Alphanumericdate
+    type: string
+    required: false
+    description: Field AlphaNumericDate from WipNestMap
+  field_length:
+    display: Fieldlength
+    type: decimal
+    required: false
+    description: Field FieldLength from WipNestMap

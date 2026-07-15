@@ -1,0 +1,168 @@
+concept: rma_master
+display_name: RmaMaster
+module: other
+description: Auto-generated representation of the physical table RmaMaster.
+synonyms:
+- rmamaster
+- rma master
+header_attributes:
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RmaMaster
+  next_line:
+    display: Nextline
+    type: decimal
+    required: false
+    description: Field NextLine from RmaMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from RmaMaster
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from RmaMaster
+  ship_address1:
+    display: Shipaddress1
+    type: string
+    required: false
+    description: Field ShipAddress1 from RmaMaster
+  ship_address2:
+    display: Shipaddress2
+    type: string
+    required: false
+    description: Field ShipAddress2 from RmaMaster
+  ship_address3:
+    display: Shipaddress3
+    type: string
+    required: false
+    description: Field ShipAddress3 from RmaMaster
+  ship_address3_loc:
+    display: Shipaddress3Loc
+    type: string
+    required: false
+    description: Field ShipAddress3Loc from RmaMaster
+  ship_address4:
+    display: Shipaddress4
+    type: string
+    required: false
+    description: Field ShipAddress4 from RmaMaster
+  ship_address5:
+    display: Shipaddress5
+    type: string
+    required: false
+    description: Field ShipAddress5 from RmaMaster
+  ship_postal_code:
+    display: Shippostalcode
+    type: string
+    required: false
+    description: Field ShipPostalCode from RmaMaster
+  ship_to_gps_lat:
+    display: Shiptogpslat
+    type: decimal
+    required: false
+    description: Field ShipToGpsLat from RmaMaster
+  ship_to_gps_long:
+    display: Shiptogpslong
+    type: decimal
+    required: false
+    description: Field ShipToGpsLong from RmaMaster
+  ext_tax_code:
+    display: Exttaxcode
+    type: string
+    required: false
+    description: Field ExtTaxCode from RmaMaster
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from RmaMaster
+  fax:
+    display: Fax
+    type: string
+    required: false
+    description: Field Fax from RmaMaster
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from RmaMaster
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from RmaMaster
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from RmaMaster
+  last_transact_date:
+    display: Lasttransactdate
+    type: date
+    required: false
+    description: Field LastTransactDate from RmaMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from RmaMaster
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from RmaMaster
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from RmaMaster
+  multi_ship_code:
+    display: Multishipcode
+    type: string
+    required: false
+    description: Field MultiShipCode from RmaMaster
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from RmaMaster
+  special_instrs:
+    display: Specialinstrs
+    type: string
+    required: false
+    description: Field SpecialInstrs from RmaMaster
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from RmaMaster
+  alternate_key:
+    display: Alternatekey
+    type: string
+    required: false
+    description: Field AlternateKey from RmaMaster
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from RmaMaster
+  service_ticket:
+    display: Serviceticket
+    type: string
+    required: false
+    description: Field ServiceTicket from RmaMaster
+  contact:
+    display: Contact
+    type: string
+    required: false
+    description: Field Contact from RmaMaster
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from RmaMaster

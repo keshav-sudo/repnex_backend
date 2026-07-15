@@ -1,0 +1,10 @@
+concept: sal_gl_int_payment
+table: SalGlIntPayment
+alias: sgip
+fields:
+  branch: sgip.Branch
+  area: sgip.Area
+  gl_payments: sgip.GlPayments
+  gl_discounts: sgip.GlDiscounts
+  gl_adjustments: sgip.GlAdjustments
+  gl_deposits: sgip.GlDeposits

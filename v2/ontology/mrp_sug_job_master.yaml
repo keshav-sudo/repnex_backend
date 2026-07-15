@@ -1,0 +1,598 @@
+concept: mrp_sug_job_master
+display_name: MrpSugJobMaster
+module: mrp
+description: Auto-generated representation of the physical table MrpSugJobMaster.
+synonyms:
+- mrpsugjobmaster
+- mrp sug job master
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpSugJobMaster
+  job_description:
+    display: Jobdescription
+    type: string
+    required: false
+    description: Field JobDescription from MrpSugJobMaster
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from MrpSugJobMaster
+  job_type:
+    display: Jobtype
+    type: string
+    required: false
+    description: Field JobType from MrpSugJobMaster
+  master_job:
+    display: Masterjob
+    type: string
+    required: false
+    description: Field MasterJob from MrpSugJobMaster
+  priority:
+    display: Priority
+    type: decimal
+    required: false
+    description: Field Priority from MrpSugJobMaster
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpSugJobMaster
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from MrpSugJobMaster
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpSugJobMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MrpSugJobMaster
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from MrpSugJobMaster
+  job_tender_date:
+    display: Jobtenderdate
+    type: date
+    required: false
+    description: Field JobTenderDate from MrpSugJobMaster
+  job_delivery_date:
+    display: Jobdeliverydate
+    type: date
+    required: false
+    description: Field JobDeliveryDate from MrpSugJobMaster
+  job_start_date:
+    display: Jobstartdate
+    type: date
+    required: false
+    description: Field JobStartDate from MrpSugJobMaster
+  act_complete_date:
+    display: Actcompletedate
+    type: date
+    required: false
+    description: Field ActCompleteDate from MrpSugJobMaster
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from MrpSugJobMaster
+  seq_check_req:
+    display: Seqcheckreq
+    type: string
+    required: false
+    description: Field SeqCheckReq from MrpSugJobMaster
+  date_calc_method:
+    display: Datecalcmethod
+    type: string
+    required: false
+    description: Field DateCalcMethod from MrpSugJobMaster
+  exp_labour:
+    display: Explabour
+    type: decimal
+    required: false
+    description: Field ExpLabour from MrpSugJobMaster
+  exp_material:
+    display: Expmaterial
+    type: decimal
+    required: false
+    description: Field ExpMaterial from MrpSugJobMaster
+  qty_to_make:
+    display: Qtytomake
+    type: decimal
+    required: false
+    description: Field QtyToMake from MrpSugJobMaster
+  qty_manufactured:
+    display: Qtymanufactured
+    type: decimal
+    required: false
+    description: Field QtyManufactured from MrpSugJobMaster
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from MrpSugJobMaster
+  est_source_num:
+    display: Estsourcenum
+    type: string
+    required: false
+    description: Field EstSourceNum from MrpSugJobMaster
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from MrpSugJobMaster
+  pct_complete_flag:
+    display: Pctcompleteflag
+    type: decimal
+    required: false
+    description: Field PctCompleteFlag from MrpSugJobMaster
+  prt_fact_doc1:
+    display: Prtfactdoc1
+    type: string
+    required: false
+    description: Field PrtFactDoc1 from MrpSugJobMaster
+  prt_fact_doc2:
+    display: Prtfactdoc2
+    type: string
+    required: false
+    description: Field PrtFactDoc2 from MrpSugJobMaster
+  prt_fact_doc3:
+    display: Prtfactdoc3
+    type: string
+    required: false
+    description: Field PrtFactDoc3 from MrpSugJobMaster
+  prt_fact_doc4:
+    display: Prtfactdoc4
+    type: string
+    required: false
+    description: Field PrtFactDoc4 from MrpSugJobMaster
+  selling_price:
+    display: Sellingprice
+    type: decimal
+    required: false
+    description: Field SellingPrice from MrpSugJobMaster
+  add_lab_pct:
+    display: Addlabpct
+    type: decimal
+    required: false
+    description: Field AddLabPct from MrpSugJobMaster
+  add_mat_pct:
+    display: Addmatpct
+    type: decimal
+    required: false
+    description: Field AddMatPct from MrpSugJobMaster
+  profit_pct:
+    display: Profitpct
+    type: decimal
+    required: false
+    description: Field ProfitPct from MrpSugJobMaster
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MrpSugJobMaster
+  material_billed:
+    display: Materialbilled
+    type: decimal
+    required: false
+    description: Field MaterialBilled from MrpSugJobMaster
+  labour_billed:
+    display: Labourbilled
+    type: decimal
+    required: false
+    description: Field LabourBilled from MrpSugJobMaster
+  next_op_for_all:
+    display: Nextopforall
+    type: decimal
+    required: false
+    description: Field NextOpForAll from MrpSugJobMaster
+  highest_op_posted:
+    display: Highestopposted
+    type: decimal
+    required: false
+    description: Field HighestOpPosted from MrpSugJobMaster
+  total_qty_scrapped:
+    display: Totalqtyscrapped
+    type: decimal
+    required: false
+    description: Field TotalQtyScrapped from MrpSugJobMaster
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from MrpSugJobMaster
+  hold_flag:
+    display: Holdflag
+    type: string
+    required: false
+    description: Field HoldFlag from MrpSugJobMaster
+  job_created_struc:
+    display: Jobcreatedstruc
+    type: string
+    required: false
+    description: Field JobCreatedStruc from MrpSugJobMaster
+  lst_order_created:
+    display: Lstordercreated
+    type: string
+    required: false
+    description: Field LstOrderCreated from MrpSugJobMaster
+  traceable_type:
+    display: Traceabletype
+    type: string
+    required: false
+    description: Field TraceableType from MrpSugJobMaster
+  nxt_line_part_book:
+    display: Nxtlinepartbook
+    type: decimal
+    required: false
+    description: Field NxtLinePartBook from MrpSugJobMaster
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from MrpSugJobMaster
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from MrpSugJobMaster
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from MrpSugJobMaster
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MrpSugJobMaster
+  mat_cost_to_date1:
+    display: Matcosttodate1
+    type: decimal
+    required: false
+    description: Field MatCostToDate1 from MrpSugJobMaster
+  mat_cost_to_date2:
+    display: Matcosttodate2
+    type: decimal
+    required: false
+    description: Field MatCostToDate2 from MrpSugJobMaster
+  mat_cost_to_date3:
+    display: Matcosttodate3
+    type: decimal
+    required: false
+    description: Field MatCostToDate3 from MrpSugJobMaster
+  lab_cost_to_date1:
+    display: Labcosttodate1
+    type: decimal
+    required: false
+    description: Field LabCostToDate1 from MrpSugJobMaster
+  lab_cost_to_date2:
+    display: Labcosttodate2
+    type: decimal
+    required: false
+    description: Field LabCostToDate2 from MrpSugJobMaster
+  lab_cost_to_date3:
+    display: Labcosttodate3
+    type: decimal
+    required: false
+    description: Field LabCostToDate3 from MrpSugJobMaster
+  hrs_book_to_date1:
+    display: Hrsbooktodate1
+    type: decimal
+    required: false
+    description: Field HrsBookToDate1 from MrpSugJobMaster
+  hrs_book_to_date2:
+    display: Hrsbooktodate2
+    type: decimal
+    required: false
+    description: Field HrsBookToDate2 from MrpSugJobMaster
+  hrs_book_to_date3:
+    display: Hrsbooktodate3
+    type: decimal
+    required: false
+    description: Field HrsBookToDate3 from MrpSugJobMaster
+  mat_value_issues1:
+    display: Matvalueissues1
+    type: decimal
+    required: false
+    description: Field MatValueIssues1 from MrpSugJobMaster
+  mat_value_issues2:
+    display: Matvalueissues2
+    type: decimal
+    required: false
+    description: Field MatValueIssues2 from MrpSugJobMaster
+  mat_value_issues3:
+    display: Matvalueissues3
+    type: decimal
+    required: false
+    description: Field MatValueIssues3 from MrpSugJobMaster
+  lab_value_issues1:
+    display: Labvalueissues1
+    type: decimal
+    required: false
+    description: Field LabValueIssues1 from MrpSugJobMaster
+  lab_value_issues2:
+    display: Labvalueissues2
+    type: decimal
+    required: false
+    description: Field LabValueIssues2 from MrpSugJobMaster
+  lab_value_issues3:
+    display: Labvalueissues3
+    type: decimal
+    required: false
+    description: Field LabValueIssues3 from MrpSugJobMaster
+  narration_num:
+    display: Narrationnum
+    type: decimal
+    required: false
+    description: Field NarrationNum from MrpSugJobMaster
+  req_pln_flag:
+    display: Reqplnflag
+    type: string
+    required: false
+    description: Field ReqPlnFlag from MrpSugJobMaster
+  date_job_lst_upd:
+    display: Datejoblstupd
+    type: date
+    required: false
+    description: Field DateJobLstUpd from MrpSugJobMaster
+  time_job_lst_upd:
+    display: Timejoblstupd
+    type: decimal
+    required: false
+    description: Field TimeJobLstUpd from MrpSugJobMaster
+  hierarchy_flag:
+    display: Hierarchyflag
+    type: string
+    required: false
+    description: Field HierarchyFlag from MrpSugJobMaster
+  next_line_hier:
+    display: Nextlinehier
+    type: decimal
+    required: false
+    description: Field NextLineHier from MrpSugJobMaster
+  est_trail_load:
+    display: Esttrailload
+    type: string
+    required: false
+    description: Field EstTrailLoad from MrpSugJobMaster
+  ord_ent_source:
+    display: Ordentsource
+    type: string
+    required: false
+    description: Field OrdEntSource from MrpSugJobMaster
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpSugJobMaster
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpSugJobMaster
+  allocation_line:
+    display: Allocationline
+    type: string
+    required: false
+    description: Field AllocationLine from MrpSugJobMaster
+  purge_job:
+    display: Purgejob
+    type: string
+    required: false
+    description: Field PurgeJob from MrpSugJobMaster
+  hierarchy_job:
+    display: Hierarchyjob
+    type: string
+    required: false
+    description: Field HierarchyJob from MrpSugJobMaster
+  mrp_from_job:
+    display: Mrpfromjob
+    type: string
+    required: false
+    description: Field MrpFromJob from MrpSugJobMaster
+  mrp_to_job:
+    display: Mrptojob
+    type: string
+    required: false
+    description: Field MrpToJob from MrpSugJobMaster
+  orig_due_date:
+    display: Origduedate
+    type: date
+    required: false
+    description: Field OrigDueDate from MrpSugJobMaster
+  gross_flg:
+    display: Grossflg
+    type: string
+    required: false
+    description: Field GrossFlg from MrpSugJobMaster
+  gross_qty:
+    display: Grossqty
+    type: decimal
+    required: false
+    description: Field GrossQty from MrpSugJobMaster
+  exp_lab_current:
+    display: Explabcurrent
+    type: decimal
+    required: false
+    description: Field ExpLabCurrent from MrpSugJobMaster
+  exp_mat_current:
+    display: Expmatcurrent
+    type: decimal
+    required: false
+    description: Field ExpMatCurrent from MrpSugJobMaster
+  reserved_lot_ser_flag:
+    display: Reservedlotserflag
+    type: string
+    required: false
+    description: Field ReservedLotSerFlag from MrpSugJobMaster
+  notional_part:
+    display: Notionalpart
+    type: string
+    required: false
+    description: Field NotionalPart from MrpSugJobMaster
+  co_product_cost_met:
+    display: Coproductcostmet
+    type: string
+    required: false
+    description: Field CoProductCostMet from MrpSugJobMaster
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from MrpSugJobMaster
+  co_product_type:
+    display: Coproducttype
+    type: string
+    required: false
+    description: Field CoProductType from MrpSugJobMaster
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from MrpSugJobMaster
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from MrpSugJobMaster
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from MrpSugJobMaster
+  conv_fact_uom:
+    display: Convfactuom
+    type: decimal
+    required: false
+    description: Field ConvFactUom from MrpSugJobMaster
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from MrpSugJobMaster
+  schedule_flag:
+    display: Scheduleflag
+    type: string
+    required: false
+    description: Field ScheduleFlag from MrpSugJobMaster
+  sch_start_date:
+    display: Schstartdate
+    type: date
+    required: false
+    description: Field SchStartDate from MrpSugJobMaster
+  sch_start_time:
+    display: Schstarttime
+    type: decimal
+    required: false
+    description: Field SchStartTime from MrpSugJobMaster
+  sch_end_date:
+    display: Schenddate
+    type: date
+    required: false
+    description: Field SchEndDate from MrpSugJobMaster
+  sch_end_time:
+    display: Schendtime
+    type: decimal
+    required: false
+    description: Field SchEndTime from MrpSugJobMaster
+  qty_to_make_ent:
+    display: Qtytomakeent
+    type: decimal
+    required: false
+    description: Field QtyToMakeEnt from MrpSugJobMaster
+  qty_manufactured_ent:
+    display: Qtymanufacturedent
+    type: decimal
+    required: false
+    description: Field QtyManufacturedEnt from MrpSugJobMaster
+  tot_qty_scrapped_ent:
+    display: Totqtyscrappedent
+    type: decimal
+    required: false
+    description: Field TotQtyScrappedEnt from MrpSugJobMaster
+  gross_qty_ent:
+    display: Grossqtyent
+    type: decimal
+    required: false
+    description: Field GrossQtyEnt from MrpSugJobMaster
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from MrpSugJobMaster
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from MrpSugJobMaster
+  nest_allocs:
+    display: Nestallocs
+    type: string
+    required: false
+    description: Field NestAllocs from MrpSugJobMaster
+  created_for_nest:
+    display: Createdfornest
+    type: string
+    required: false
+    description: Field CreatedForNest from MrpSugJobMaster
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from MrpSugJobMaster
+  wip_cur_branch:
+    display: Wipcurbranch
+    type: string
+    required: false
+    description: Field WipCurBranch from MrpSugJobMaster
+  wip_ctl_cur_gl_code:
+    display: Wipctlcurglcode
+    type: string
+    required: false
+    description: Field WipCtlCurGlCode from MrpSugJobMaster
+  dif_wip_branch:
+    display: Difwipbranch
+    type: string
+    required: false
+    description: Field DifWipBranch from MrpSugJobMaster
+  maint_job:
+    display: Maintjob
+    type: string
+    required: false
+    description: Field MaintJob from MrpSugJobMaster
+  maint_job_type:
+    display: Maintjobtype
+    type: string
+    required: false
+    description: Field MaintJobType from MrpSugJobMaster
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from MrpSugJobMaster
+  maint_service_type:
+    display: Maintservicetype
+    type: string
+    required: false
+    description: Field MaintServiceType from MrpSugJobMaster
+  equipment_type:
+    display: Equipmenttype
+    type: string
+    required: false
+    description: Field EquipmentType from MrpSugJobMaster
+  type_of_service:
+    display: Typeofservice
+    type: string
+    required: false
+    description: Field TypeOfService from MrpSugJobMaster

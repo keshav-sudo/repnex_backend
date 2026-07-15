@@ -1,0 +1,728 @@
+concept: mdn_detail_rep
+display_name: MdnDetailRep
+module: other
+description: Auto-generated representation of the physical table MdnDetailRep.
+synonyms:
+- mdndetailrep
+- mdn detail rep
+header_attributes:
+  key_invoice:
+    display: Keyinvoice
+    type: string
+    required: false
+    description: Field KeyInvoice from MdnDetailRep
+  key_dispatch_note:
+    display: Keydispatchnote
+    type: string
+    required: false
+    description: Field KeyDispatchNote from MdnDetailRep
+  key_dispatch_line:
+    display: Keydispatchline
+    type: decimal
+    required: false
+    description: Field KeyDispatchLine from MdnDetailRep
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MdnDetailRep
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MdnDetailRep
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from MdnDetailRep
+  dispatch_status:
+    display: Dispatchstatus
+    type: string
+    required: false
+    description: Field DispatchStatus from MdnDetailRep
+  total_value:
+    display: Totalvalue
+    type: decimal
+    required: false
+    description: Field TotalValue from MdnDetailRep
+  over_under_flag:
+    display: Overunderflag
+    type: string
+    required: false
+    description: Field OverUnderFlag from MdnDetailRep
+  stock_depleted:
+    display: Stockdepleted
+    type: string
+    required: false
+    description: Field StockDepleted from MdnDetailRep
+  confirmation_date:
+    display: Confirmationdate
+    type: date
+    required: false
+    description: Field ConfirmationDate from MdnDetailRep
+  confirmation_line:
+    display: Confirmationline
+    type: decimal
+    required: false
+    description: Field ConfirmationLine from MdnDetailRep
+  orig_ship_so_uom:
+    display: Origshipsouom
+    type: decimal
+    required: false
+    description: Field OrigShipSoUom from MdnDetailRep
+  orig_ship_stk_uom:
+    display: Origshipstkuom
+    type: decimal
+    required: false
+    description: Field OrigShipStkUom from MdnDetailRep
+  orig_bo_so_uom:
+    display: Origbosouom
+    type: decimal
+    required: false
+    description: Field OrigBoSoUom from MdnDetailRep
+  m_stock_code:
+    display: Mstockcode
+    type: string
+    required: false
+    description: Field MStockCode from MdnDetailRep
+  m_stock_des:
+    display: Mstockdes
+    type: string
+    required: false
+    description: Field MStockDes from MdnDetailRep
+  m_warehouse:
+    display: Mwarehouse
+    type: string
+    required: false
+    description: Field MWarehouse from MdnDetailRep
+  m_bin:
+    display: Mbin
+    type: string
+    required: false
+    description: Field MBin from MdnDetailRep
+  m_order_qty:
+    display: Morderqty
+    type: decimal
+    required: false
+    description: Field MOrderQty from MdnDetailRep
+  m_qty_to_dispatch:
+    display: Mqtytodispatch
+    type: decimal
+    required: false
+    description: Field MQtyToDispatch from MdnDetailRep
+  m_back_order_qty:
+    display: Mbackorderqty
+    type: decimal
+    required: false
+    description: Field MBackOrderQty from MdnDetailRep
+  m_unit_cost:
+    display: Munitcost
+    type: decimal
+    required: false
+    description: Field MUnitCost from MdnDetailRep
+  m_bom_flag:
+    display: Mbomflag
+    type: string
+    required: false
+    description: Field MBomFlag from MdnDetailRep
+  m_parent_kit_type:
+    display: Mparentkittype
+    type: string
+    required: false
+    description: Field MParentKitType from MdnDetailRep
+  m_qty_per:
+    display: Mqtyper
+    type: decimal
+    required: false
+    description: Field MQtyPer from MdnDetailRep
+  m_scrap_percentage:
+    display: Mscrappercentage
+    type: decimal
+    required: false
+    description: Field MScrapPercentage from MdnDetailRep
+  m_print_component:
+    display: Mprintcomponent
+    type: string
+    required: false
+    description: Field MPrintComponent from MdnDetailRep
+  m_component_seq:
+    display: Mcomponentseq
+    type: string
+    required: false
+    description: Field MComponentSeq from MdnDetailRep
+  m_qty_changes_flag:
+    display: Mqtychangesflag
+    type: string
+    required: false
+    description: Field MQtyChangesFlag from MdnDetailRep
+  m_optional_flag:
+    display: Moptionalflag
+    type: string
+    required: false
+    description: Field MOptionalFlag from MdnDetailRep
+  m_decimals:
+    display: Mdecimals
+    type: decimal
+    required: false
+    description: Field MDecimals from MdnDetailRep
+  m_order_uom:
+    display: Morderuom
+    type: string
+    required: false
+    description: Field MOrderUom from MdnDetailRep
+  m_stock_qty_to_shp:
+    display: Mstockqtytoshp
+    type: decimal
+    required: false
+    description: Field MStockQtyToShp from MdnDetailRep
+  m_stocking_uom:
+    display: Mstockinguom
+    type: string
+    required: false
+    description: Field MStockingUom from MdnDetailRep
+  m_conv_fact_ord_um:
+    display: Mconvfactordum
+    type: decimal
+    required: false
+    description: Field MConvFactOrdUm from MdnDetailRep
+  m_mul_div_prc_fct:
+    display: Mmuldivprcfct
+    type: string
+    required: false
+    description: Field MMulDivPrcFct from MdnDetailRep
+  m_price:
+    display: Mprice
+    type: decimal
+    required: false
+    description: Field MPrice from MdnDetailRep
+  m_price_uom:
+    display: Mpriceuom
+    type: string
+    required: false
+    description: Field MPriceUom from MdnDetailRep
+  m_commission_code:
+    display: Mcommissioncode
+    type: string
+    required: false
+    description: Field MCommissionCode from MdnDetailRep
+  m_disc_pct1:
+    display: Mdiscpct1
+    type: decimal
+    required: false
+    description: Field MDiscPct1 from MdnDetailRep
+  m_disc_pct2:
+    display: Mdiscpct2
+    type: decimal
+    required: false
+    description: Field MDiscPct2 from MdnDetailRep
+  m_disc_pct3:
+    display: Mdiscpct3
+    type: decimal
+    required: false
+    description: Field MDiscPct3 from MdnDetailRep
+  m_disc_val_flag:
+    display: Mdiscvalflag
+    type: string
+    required: false
+    description: Field MDiscValFlag from MdnDetailRep
+  m_disc_value:
+    display: Mdiscvalue
+    type: decimal
+    required: false
+    description: Field MDiscValue from MdnDetailRep
+  m_product_class:
+    display: Mproductclass
+    type: string
+    required: false
+    description: Field MProductClass from MdnDetailRep
+  m_tax_code:
+    display: Mtaxcode
+    type: string
+    required: false
+    description: Field MTaxCode from MdnDetailRep
+  m_line_ship_date:
+    display: Mlineshipdate
+    type: date
+    required: false
+    description: Field MLineShipDate from MdnDetailRep
+  m_alloc_stat_sched:
+    display: Mallocstatsched
+    type: string
+    required: false
+    description: Field MAllocStatSched from MdnDetailRep
+  m_fst_tax_code:
+    display: Mfsttaxcode
+    type: string
+    required: false
+    description: Field MFstTaxCode from MdnDetailRep
+  m_stock_unit_mass:
+    display: Mstockunitmass
+    type: decimal
+    required: false
+    description: Field MStockUnitMass from MdnDetailRep
+  m_stock_unit_vol:
+    display: Mstockunitvol
+    type: decimal
+    required: false
+    description: Field MStockUnitVol from MdnDetailRep
+  m_price_code:
+    display: Mpricecode
+    type: string
+    required: false
+    description: Field MPriceCode from MdnDetailRep
+  m_conv_fact_alloc:
+    display: Mconvfactalloc
+    type: decimal
+    required: false
+    description: Field MConvFactAlloc from MdnDetailRep
+  m_mul_div_qty_fct:
+    display: Mmuldivqtyfct
+    type: string
+    required: false
+    description: Field MMulDivQtyFct from MdnDetailRep
+  m_traceable_type:
+    display: Mtraceabletype
+    type: string
+    required: false
+    description: Field MTraceableType from MdnDetailRep
+  m_mps_flag:
+    display: Mmpsflag
+    type: string
+    required: false
+    description: Field MMpsFlag from MdnDetailRep
+  m_picking_slip:
+    display: Mpickingslip
+    type: string
+    required: false
+    description: Field MPickingSlip from MdnDetailRep
+  m_movement_reqd:
+    display: Mmovementreqd
+    type: string
+    required: false
+    description: Field MMovementReqd from MdnDetailRep
+  m_serial_method:
+    display: Mserialmethod
+    type: string
+    required: false
+    description: Field MSerialMethod from MdnDetailRep
+  m_zero_qty_cr_note:
+    display: Mzeroqtycrnote
+    type: string
+    required: false
+    description: Field MZeroQtyCrNote from MdnDetailRep
+  m_abc_applied:
+    display: Mabcapplied
+    type: string
+    required: false
+    description: Field MAbcApplied from MdnDetailRep
+  m_mps_gross_reqd:
+    display: Mmpsgrossreqd
+    type: string
+    required: false
+    description: Field MMpsGrossReqd from MdnDetailRep
+  m_contract:
+    display: Mcontract
+    type: string
+    required: false
+    description: Field MContract from MdnDetailRep
+  m_buying_group:
+    display: Mbuyinggroup
+    type: string
+    required: false
+    description: Field MBuyingGroup from MdnDetailRep
+  m_cus_sup_stk_code:
+    display: Mcussupstkcode
+    type: string
+    required: false
+    description: Field MCusSupStkCode from MdnDetailRep
+  m_cus_retail_price:
+    display: Mcusretailprice
+    type: decimal
+    required: false
+    description: Field MCusRetailPrice from MdnDetailRep
+  m_tariff_code:
+    display: Mtariffcode
+    type: string
+    required: false
+    description: Field MTariffCode from MdnDetailRep
+  m_line_receipt_dat:
+    display: Mlinereceiptdat
+    type: date
+    required: false
+    description: Field MLineReceiptDat from MdnDetailRep
+  m_lead_time:
+    display: Mleadtime
+    type: decimal
+    required: false
+    description: Field MLeadTime from MdnDetailRep
+  m_trf_cost_mult:
+    display: Mtrfcostmult
+    type: decimal
+    required: false
+    description: Field MTrfCostMult from MdnDetailRep
+  m_supplementary_un:
+    display: Msupplementaryun
+    type: string
+    required: false
+    description: Field MSupplementaryUn from MdnDetailRep
+  m_review_flag:
+    display: Mreviewflag
+    type: string
+    required: false
+    description: Field MReviewFlag from MdnDetailRep
+  m_review_status:
+    display: Mreviewstatus
+    type: string
+    required: false
+    description: Field MReviewStatus from MdnDetailRep
+  m_invoice_printed:
+    display: Minvoiceprinted
+    type: string
+    required: false
+    description: Field MInvoicePrinted from MdnDetailRep
+  m_del_note_printed:
+    display: Mdelnoteprinted
+    type: string
+    required: false
+    description: Field MDelNotePrinted from MdnDetailRep
+  m_ord_ack_printed:
+    display: Mordackprinted
+    type: string
+    required: false
+    description: Field MOrdAckPrinted from MdnDetailRep
+  m_hierarchy_job:
+    display: Mhierarchyjob
+    type: string
+    required: false
+    description: Field MHierarchyJob from MdnDetailRep
+  m_cust_request_dat:
+    display: Mcustrequestdat
+    type: date
+    required: false
+    description: Field MCustRequestDat from MdnDetailRep
+  m_last_del_note:
+    display: Mlastdelnote
+    type: string
+    required: false
+    description: Field MLastDelNote from MdnDetailRep
+  m_user_def:
+    display: Muserdef
+    type: string
+    required: false
+    description: Field MUserDef from MdnDetailRep
+  m_qty_dispatched:
+    display: Mqtydispatched
+    type: decimal
+    required: false
+    description: Field MQtyDispatched from MdnDetailRep
+  m_disc_changed:
+    display: Mdiscchanged
+    type: string
+    required: false
+    description: Field MDiscChanged from MdnDetailRep
+  m_credit_order_no:
+    display: Mcreditorderno
+    type: string
+    required: false
+    description: Field MCreditOrderNo from MdnDetailRep
+  m_credit_order_line:
+    display: Mcreditorderline
+    type: decimal
+    required: false
+    description: Field MCreditOrderLine from MdnDetailRep
+  m_unit_quantity:
+    display: Munitquantity
+    type: string
+    required: false
+    description: Field MUnitQuantity from MdnDetailRep
+  m_conv_fact_unit_q:
+    display: Mconvfactunitq
+    type: decimal
+    required: false
+    description: Field MConvFactUnitQ from MdnDetailRep
+  m_alt_uom_unit_q:
+    display: Maltuomunitq
+    type: string
+    required: false
+    description: Field MAltUomUnitQ from MdnDetailRep
+  m_decimals_unit_q:
+    display: Mdecimalsunitq
+    type: decimal
+    required: false
+    description: Field MDecimalsUnitQ from MdnDetailRep
+  m_ecc_flag:
+    display: Meccflag
+    type: string
+    required: false
+    description: Field MEccFlag from MdnDetailRep
+  m_version:
+    display: Mversion
+    type: string
+    required: false
+    description: Field MVersion from MdnDetailRep
+  m_release:
+    display: Mrelease
+    type: string
+    required: false
+    description: Field MRelease from MdnDetailRep
+  m_commit_date:
+    display: Mcommitdate
+    type: date
+    required: false
+    description: Field MCommitDate from MdnDetailRep
+  n_comment:
+    display: Ncomment
+    type: string
+    required: false
+    description: Field NComment from MdnDetailRep
+  n_comment_from_lin:
+    display: Ncommentfromlin
+    type: decimal
+    required: false
+    description: Field NCommentFromLin from MdnDetailRep
+  n_msc_charge_value:
+    display: Nmscchargevalue
+    type: decimal
+    required: false
+    description: Field NMscChargeValue from MdnDetailRep
+  n_msc_product_cls:
+    display: Nmscproductcls
+    type: string
+    required: false
+    description: Field NMscProductCls from MdnDetailRep
+  n_msc_charge_cost:
+    display: Nmscchargecost
+    type: decimal
+    required: false
+    description: Field NMscChargeCost from MdnDetailRep
+  n_msc_inv_charge:
+    display: Nmscinvcharge
+    type: string
+    required: false
+    description: Field NMscInvCharge from MdnDetailRep
+  n_comment_type:
+    display: Ncommenttype
+    type: string
+    required: false
+    description: Field NCommentType from MdnDetailRep
+  n_msc_tax_code:
+    display: Nmsctaxcode
+    type: string
+    required: false
+    description: Field NMscTaxCode from MdnDetailRep
+  n_msc_fst_code:
+    display: Nmscfstcode
+    type: string
+    required: false
+    description: Field NMscFstCode from MdnDetailRep
+  n_comment_text_typ:
+    display: Ncommenttexttyp
+    type: string
+    required: false
+    description: Field NCommentTextTyp from MdnDetailRep
+  n_msc_charge_qty:
+    display: Nmscchargeqty
+    type: decimal
+    required: false
+    description: Field NMscChargeQty from MdnDetailRep
+  n_srv_inc_total:
+    display: Nsrvinctotal
+    type: string
+    required: false
+    description: Field NSrvIncTotal from MdnDetailRep
+  n_srv_summary:
+    display: Nsrvsummary
+    type: string
+    required: false
+    description: Field NSrvSummary from MdnDetailRep
+  n_srv_charge_type:
+    display: Nsrvchargetype
+    type: string
+    required: false
+    description: Field NSrvChargeType from MdnDetailRep
+  n_srv_parent_line:
+    display: Nsrvparentline
+    type: decimal
+    required: false
+    description: Field NSrvParentLine from MdnDetailRep
+  n_srv_unit_price:
+    display: Nsrvunitprice
+    type: decimal
+    required: false
+    description: Field NSrvUnitPrice from MdnDetailRep
+  n_srv_unit_cost:
+    display: Nsrvunitcost
+    type: decimal
+    required: false
+    description: Field NSrvUnitCost from MdnDetailRep
+  n_srv_qty_factor:
+    display: Nsrvqtyfactor
+    type: decimal
+    required: false
+    description: Field NSrvQtyFactor from MdnDetailRep
+  n_srv_apply_factor:
+    display: Nsrvapplyfactor
+    type: string
+    required: false
+    description: Field NSrvApplyFactor from MdnDetailRep
+  n_srv_decimal_rnd:
+    display: Nsrvdecimalrnd
+    type: decimal
+    required: false
+    description: Field NSrvDecimalRnd from MdnDetailRep
+  n_srv_dec_rnd_flag:
+    display: Nsrvdecrndflag
+    type: string
+    required: false
+    description: Field NSrvDecRndFlag from MdnDetailRep
+  n_srv_min_value:
+    display: Nsrvminvalue
+    type: decimal
+    required: false
+    description: Field NSrvMinValue from MdnDetailRep
+  n_srv_max_value:
+    display: Nsrvmaxvalue
+    type: decimal
+    required: false
+    description: Field NSrvMaxValue from MdnDetailRep
+  n_srv_mul_div:
+    display: Nsrvmuldiv
+    type: string
+    required: false
+    description: Field NSrvMulDiv from MdnDetailRep
+  n_prt_on_inv:
+    display: Nprtoninv
+    type: string
+    required: false
+    description: Field NPrtOnInv from MdnDetailRep
+  n_prt_on_del:
+    display: Nprtondel
+    type: string
+    required: false
+    description: Field NPrtOnDel from MdnDetailRep
+  n_prt_on_ack:
+    display: Nprtonack
+    type: string
+    required: false
+    description: Field NPrtOnAck from MdnDetailRep
+  n_tax_amt_flag:
+    display: Ntaxamtflag
+    type: string
+    required: false
+    description: Field NTaxAmtFlag from MdnDetailRep
+  n_dep_ret_flag_proj:
+    display: Ndepretflagproj
+    type: string
+    required: false
+    description: Field NDepRetFlagProj from MdnDetailRep
+  n_retention_job:
+    display: Nretentionjob
+    type: string
+    required: false
+    description: Field NRetentionJob from MdnDetailRep
+  n_srv_min_quantity:
+    display: Nsrvminquantity
+    type: decimal
+    required: false
+    description: Field NSrvMinQuantity from MdnDetailRep
+  n_charge_code:
+    display: Nchargecode
+    type: string
+    required: false
+    description: Field NChargeCode from MdnDetailRep
+  tpm_usage_flag:
+    display: Tpmusageflag
+    type: string
+    required: false
+    description: Field TpmUsageFlag from MdnDetailRep
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from MdnDetailRep
+  tpm_sequence:
+    display: Tpmsequence
+    type: decimal
+    required: false
+    description: Field TpmSequence from MdnDetailRep
+  sales_order_init_line:
+    display: Salesorderinitline
+    type: decimal
+    required: false
+    description: Field SalesOrderInitLine from MdnDetailRep
+  preactor_priority:
+    display: Preactorpriority
+    type: decimal
+    required: false
+    description: Field PreactorPriority from MdnDetailRep
+  sales_order_det_stat:
+    display: Salesorderdetstat
+    type: string
+    required: false
+    description: Field SalesOrderDetStat from MdnDetailRep
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from MdnDetailRep
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from MdnDetailRep
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from MdnDetailRep
+  journal_line:
+    display: Journalline
+    type: decimal
+    required: false
+    description: Field JournalLine from MdnDetailRep
+  intrastat_exempt:
+    display: Intrastatexempt
+    type: string
+    required: false
+    description: Field IntrastatExempt from MdnDetailRep
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from MdnDetailRep
+  triang_disp_state:
+    display: Triangdispstate
+    type: string
+    required: false
+    description: Field TriangDispState from MdnDetailRep
+  triang_dest_state:
+    display: Triangdeststate
+    type: string
+    required: false
+    description: Field TriangDestState from MdnDetailRep
+  orig_country:
+    display: Origcountry
+    type: string
+    required: false
+    description: Field OrigCountry from MdnDetailRep
+  comment_sales_order:
+    display: Commentsalesorder
+    type: string
+    required: false
+    description: Field CommentSalesOrder from MdnDetailRep
+  price_group_rule:
+    display: Pricegrouprule
+    type: decimal
+    required: false
+    description: Field PriceGroupRule from MdnDetailRep
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from MdnDetailRep
+  cat_line_number:
+    display: Catlinenumber
+    type: decimal
+    required: false
+    description: Field CatLineNumber from MdnDetailRep

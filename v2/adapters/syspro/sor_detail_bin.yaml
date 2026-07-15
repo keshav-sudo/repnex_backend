@@ -1,0 +1,11 @@
+concept: sor_detail_bin
+table: SorDetailBin
+alias: sdb
+fields:
+  sales_order: sdb.SalesOrder
+  sales_order_line: sdb.SalesOrderLine
+  lot: sdb.Lot
+  bin: sdb.Bin
+  stock_qty_to_ship: sdb.StockQtyToShip
+  qty_this_session: sdb.QtyThisSession
+  qty_reserved: sdb.QtyReserved

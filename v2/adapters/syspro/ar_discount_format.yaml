@@ -1,0 +1,6 @@
+concept: ar_discount_format
+table: ArDiscountFormat
+alias: adf1
+fields:
+  discount_format: adf1.DiscountFormat
+  format_info: adf1.FormatInfo

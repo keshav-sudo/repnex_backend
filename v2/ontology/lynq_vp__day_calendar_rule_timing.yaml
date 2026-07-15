@@ -1,0 +1,38 @@
+concept: lynq_vp__day_calendar_rule_timing
+display_name: Lynq VP DayCalendarRuleTiming
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_DayCalendarRuleTiming.
+synonyms:
+- lynq_vp_daycalendarruletiming
+- lynq vp  day calendar rule timing
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_DayCalendarRuleTiming
+  day_calendar_rule_id:
+    display: Daycalendarruleid
+    type: decimal
+    required: false
+    description: Field DayCalendarRuleID from Lynq_VP_DayCalendarRuleTiming
+  start_time:
+    display: Starttime
+    type: date
+    required: false
+    description: Field StartTime from Lynq_VP_DayCalendarRuleTiming
+  end_time:
+    display: Endtime
+    type: date
+    required: false
+    description: Field EndTime from Lynq_VP_DayCalendarRuleTiming
+  activity_code:
+    display: Activitycode
+    type: string
+    required: false
+    description: Field ActivityCode from Lynq_VP_DayCalendarRuleTiming
+  resource_qty:
+    display: Resourceqty
+    type: decimal
+    required: false
+    description: Field ResourceQty from Lynq_VP_DayCalendarRuleTiming

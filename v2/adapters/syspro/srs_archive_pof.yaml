@@ -1,0 +1,12 @@
+concept: srs_archive_pof
+table: SrsArchivePOF
+alias: sapof
+fields:
+  archive_date: sapof.ArchiveDate
+  archive_time: sapof.ArchiveTime
+  operator: sapof.Operator
+  archive_id: sapof.ArchiveId
+  archive_type: sapof.ArchiveType
+  archive_file: sapof.ArchiveFile
+  customer_p_order: sapof.CustomerPOrder
+  purchase_order: sapof.PurchaseOrder

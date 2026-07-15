@@ -1,0 +1,11 @@
+concept: srs_archive_ins
+table: SrsArchiveINS
+alias: sains
+fields:
+  archive_date: sains.ArchiveDate
+  archive_time: sains.ArchiveTime
+  operator: sains.Operator
+  archive_id: sains.ArchiveId
+  archive_type: sains.ArchiveType
+  archive_file: sains.ArchiveFile
+  det_rep_document: sains.DetRepDocument

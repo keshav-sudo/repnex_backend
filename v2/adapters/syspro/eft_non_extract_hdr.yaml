@@ -1,0 +1,19 @@
+concept: eft_non_extract_hdr
+table: EftNonExtractHdr
+alias: eneh
+fields:
+  bank: eneh.Bank
+  trn_source: eneh.TrnSource
+  supplier: eneh.Supplier
+  trn_date: eneh.TrnDate
+  entry_number: eneh.EntryNumber
+  payment_value: eneh.PaymentValue
+  currency_value: eneh.CurrencyValue
+  post_currency: eneh.PostCurrency
+  eft_number: eneh.EftNumber
+  select_indicator: eneh.SelectIndicator
+  cb_bank: eneh.CbBank
+  cb_trn_year: eneh.CbTrnYear
+  cb_trn_month: eneh.CbTrnMonth
+  cb_trn_date: eneh.CbTrnDate
+  cb_trn_time: eneh.CbTrnTime

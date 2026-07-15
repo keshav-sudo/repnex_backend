@@ -1,0 +1,9 @@
+concept: gen_apportion
+table: GenApportion
+alias: ga
+fields:
+  company: ga.Company
+  apportion_code: ga.ApportionCode
+  gl_code: ga.GlCode
+  description: ga.Description
+  percentage: ga.Percentage

@@ -1,0 +1,48 @@
+concept: lynq_vp__scheduler_record_detail
+display_name: Lynq VP SchedulerRecordDetail
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_SchedulerRecordDetail.
+synonyms:
+- lynq_vp_schedulerrecorddetail
+- lynq vp  scheduler record detail
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_SchedulerRecordDetail
+  header_id:
+    display: Headerid
+    type: decimal
+    required: false
+    description: Field HeaderID from Lynq_VP_SchedulerRecordDetail
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from Lynq_VP_SchedulerRecordDetail
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from Lynq_VP_SchedulerRecordDetail
+  number_of_resources:
+    display: Numberofresources
+    type: decimal
+    required: false
+    description: Field NumberOfResources from Lynq_VP_SchedulerRecordDetail
+  detail_type:
+    display: Detailtype
+    type: string
+    required: false
+    description: Field DetailType from Lynq_VP_SchedulerRecordDetail
+  finished_discretes:
+    display: Finisheddiscretes
+    type: decimal
+    required: false
+    description: Field FinishedDiscretes from Lynq_VP_SchedulerRecordDetail
+  in_process_discretes:
+    display: Inprocessdiscretes
+    type: decimal
+    required: false
+    description: Field InProcessDiscretes from Lynq_VP_SchedulerRecordDetail

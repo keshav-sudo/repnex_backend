@@ -1,0 +1,13 @@
+concept: lot_recall_header
+table: LotRecallHeader
+alias: lrh
+fields:
+  product_recall: lrh.ProductRecall
+  description: lrh.Description
+  type: lrh.Type
+  start_date: lrh.StartDate
+  end_date: lrh.EndDate
+  start_time: lrh.StartTime
+  end_time: lrh.EndTime
+  complete: lrh.Complete
+  operator: lrh.Operator

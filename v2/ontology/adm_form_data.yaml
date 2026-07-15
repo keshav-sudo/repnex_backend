@@ -1,0 +1,38 @@
+concept: adm_form_data
+display_name: AdmFormData
+module: administration
+description: Auto-generated representation of the physical table AdmFormData.
+synonyms:
+- admformdata
+- adm form data
+header_attributes:
+  form_type:
+    display: Formtype
+    type: string
+    required: false
+    description: Field FormType from AdmFormData
+  key_field:
+    display: Keyfield
+    type: string
+    required: false
+    description: Field KeyField from AdmFormData
+  field_name:
+    display: Fieldname
+    type: string
+    required: false
+    description: Field FieldName from AdmFormData
+  alpha_value:
+    display: Alphavalue
+    type: string
+    required: false
+    description: Field AlphaValue from AdmFormData
+  numeric_value:
+    display: Numericvalue
+    type: decimal
+    required: false
+    description: Field NumericValue from AdmFormData
+  date_value:
+    display: Datevalue
+    type: date
+    required: false
+    description: Field DateValue from AdmFormData

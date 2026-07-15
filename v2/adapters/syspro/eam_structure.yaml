@@ -1,0 +1,30 @@
+concept: eam_structure
+table: EamStructure
+alias: es1
+fields:
+  equipment_code: es1.EquipmentCode
+  maint_service_type: es1.MaintServiceType
+  route: es1.Route
+  sequence_num: es1.SequenceNum
+  component: es1.Component
+  description: es1.Description
+  com_revision: es1.ComRevision
+  com_release: es1.ComRelease
+  ecc_consumption: es1.EccConsumption
+  op_offset_flag: es1.OpOffsetFlag
+  operation_offset: es1.OperationOffset
+  qty_per: es1.QtyPer
+  qty_per_ent: es1.QtyPerEnt
+  auto_narr_code: es1.AutoNarrCode
+  kit_issue_flag: es1.KitIssueFlag
+  warehouse: es1.Warehouse
+  uom_flag: es1.UomFlag
+  non_stock_com: es1.NonStockCom
+  non_stk_cost: es1.NonStkCost
+  max_decimals: es1.MaxDecimals
+  unit_of_measure: es1.UnitOfMeasure
+  reason_for_change: es1.ReasonForChange
+  scrap_quantity: es1.ScrapQuantity
+  scrap_quantity_ent: es1.ScrapQuantityEnt
+  scrap_percentage: es1.ScrapPercentage
+  incl_scrap_flag: es1.InclScrapFlag

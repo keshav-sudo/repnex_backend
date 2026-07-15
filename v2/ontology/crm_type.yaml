@@ -1,0 +1,18 @@
+concept: crm_type
+display_name: CrmType
+module: crm
+description: Auto-generated representation of the physical table CrmType.
+synonyms:
+- crmtype
+- crm type
+header_attributes:
+  contact_type:
+    display: Contacttype
+    type: string
+    required: false
+    description: Field ContactType from CrmType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmType

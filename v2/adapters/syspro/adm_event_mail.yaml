@@ -1,0 +1,10 @@
+concept: adm_event_mail
+table: AdmEventMail
+alias: aem
+fields:
+  event_module: aem.EventModule
+  event_code: aem.EventCode
+  event_name: aem.EventName
+  event_line: aem.EventLine
+  event_expression: aem.EventExpression
+  mail_users: aem.MailUsers

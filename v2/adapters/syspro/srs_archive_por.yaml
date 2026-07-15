@@ -1,0 +1,11 @@
+concept: srs_archive_por
+table: SrsArchivePOR
+alias: sapor
+fields:
+  archive_date: sapor.ArchiveDate
+  archive_time: sapor.ArchiveTime
+  operator: sapor.Operator
+  archive_id: sapor.ArchiveId
+  archive_type: sapor.ArchiveType
+  archive_file: sapor.ArchiveFile
+  requisition: sapor.Requisition

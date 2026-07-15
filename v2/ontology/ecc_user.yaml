@@ -1,0 +1,23 @@
+concept: ecc_user
+display_name: EccUser
+module: other
+description: Auto-generated representation of the physical table EccUser.
+synonyms:
+- eccuser
+- ecc user
+header_attributes:
+  ecc_user:
+    display: Eccuser
+    type: string
+    required: false
+    description: Field EccUser from EccUser
+  user_name:
+    display: Username
+    type: string
+    required: false
+    description: Field UserName from EccUser
+  administrator:
+    display: Administrator
+    type: string
+    required: false
+    description: Field Administrator from EccUser

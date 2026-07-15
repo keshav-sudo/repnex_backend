@@ -1,0 +1,78 @@
+concept: tbl_ar_terms
+display_name: TblArTerms
+module: other
+description: Auto-generated representation of the physical table TblArTerms.
+synonyms:
+- tblarterms
+- tbl ar terms
+header_attributes:
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from TblArTerms
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblArTerms
+  disc_pct:
+    display: Discpct
+    type: decimal
+    required: false
+    description: Field DiscPct from TblArTerms
+  disc_days:
+    display: Discdays
+    type: decimal
+    required: false
+    description: Field DiscDays from TblArTerms
+  due_days:
+    display: Duedays
+    type: decimal
+    required: false
+    description: Field DueDays from TblArTerms
+  discount_option:
+    display: Discountoption
+    type: string
+    required: false
+    description: Field DiscountOption from TblArTerms
+  invoice_option:
+    display: Invoiceoption
+    type: string
+    required: false
+    description: Field InvoiceOption from TblArTerms
+  disc_day_of_month:
+    display: Discdayofmonth
+    type: decimal
+    required: false
+    description: Field DiscDayOfMonth from TblArTerms
+  disc_months:
+    display: Discmonths
+    type: decimal
+    required: false
+    description: Field DiscMonths from TblArTerms
+  disc_date:
+    display: Discdate
+    type: date
+    required: false
+    description: Field DiscDate from TblArTerms
+  inv_day_of_month:
+    display: Invdayofmonth
+    type: decimal
+    required: false
+    description: Field InvDayOfMonth from TblArTerms
+  inv_months:
+    display: Invmonths
+    type: decimal
+    required: false
+    description: Field InvMonths from TblArTerms
+  inv_date:
+    display: Invdate
+    type: date
+    required: false
+    description: Field InvDate from TblArTerms
+  ageing_code:
+    display: Ageingcode
+    type: string
+    required: false
+    description: Field AgeingCode from TblArTerms

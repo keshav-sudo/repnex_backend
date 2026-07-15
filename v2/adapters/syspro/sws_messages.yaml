@@ -1,0 +1,19 @@
+concept: sws_messages
+table: SwsMessages
+alias: sm3
+fields:
+  operator_code: sm3.OperatorCode
+  date_created: sm3.DateCreated
+  time_created: sm3.TimeCreated
+  expiry_date: sm3.ExpiryDate
+  expiry_time: sm3.ExpiryTime
+  category: sm3.Category
+  status: sm3.Status
+  action_id: sm3.ActionId
+  subject: sm3.Subject
+  message: sm3.Message
+  priority: sm3.Priority
+  actioning_operator: sm3.ActioningOperator
+  operator_created: sm3.OperatorCreated
+  workflow_name: sm3.WorkflowName
+  workflow_key: sm3.WorkflowKey

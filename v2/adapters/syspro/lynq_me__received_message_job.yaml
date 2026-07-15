@@ -1,0 +1,10 @@
+concept: lynq_me__received_message_job
+table: Lynq_ME_ReceivedMessageJob
+alias: lmermj
+fields:
+  id: lmermj.Id
+  received_message_id: lmermj.ReceivedMessageId
+  job_code: lmermj.JobCode
+  task_code: lmermj.TaskCode
+  f_code: lmermj.fCode
+  e_code: lmermj.eCode

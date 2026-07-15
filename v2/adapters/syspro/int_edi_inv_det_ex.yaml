@@ -1,0 +1,15 @@
+concept: int_edi_inv_det_ex
+table: IntEdiInvDetEx
+alias: ieide
+fields:
+  customer: ieide.Customer
+  document_type: ieide.DocumentType
+  invoice: ieide.Invoice
+  line: ieide.Line
+  line_type: ieide.LineType
+  order_qty: ieide.OrderQty
+  retail_price: ieide.RetailPrice
+  extended_val_for: ieide.ExtendedValFor
+  line_tax_val_for: ieide.LineTaxValFor
+  discount_amount_for: ieide.DiscountAmountFor
+  order_price: ieide.OrderPrice

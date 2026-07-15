@@ -1,0 +1,78 @@
+concept: prj_deposit_header
+display_name: PrjDepositHeader
+module: other
+description: Auto-generated representation of the physical table PrjDepositHeader.
+synonyms:
+- prjdepositheader
+- prj deposit header
+header_attributes:
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from PrjDepositHeader
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from PrjDepositHeader
+  deposit_type:
+    display: Deposittype
+    type: string
+    required: false
+    description: Field DepositType from PrjDepositHeader
+  deposit_percent:
+    display: Depositpercent
+    type: decimal
+    required: false
+    description: Field DepositPercent from PrjDepositHeader
+  deposit_value:
+    display: Depositvalue
+    type: decimal
+    required: false
+    description: Field DepositValue from PrjDepositHeader
+  deposit_remaining:
+    display: Depositremaining
+    type: decimal
+    required: false
+    description: Field DepositRemaining from PrjDepositHeader
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from PrjDepositHeader
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from PrjDepositHeader
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from PrjDepositHeader
+  gst_tax_code:
+    display: Gsttaxcode
+    type: string
+    required: false
+    description: Field GstTaxCode from PrjDepositHeader
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from PrjDepositHeader
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from PrjDepositHeader
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from PrjDepositHeader
+  next_line:
+    display: Nextline
+    type: decimal
+    required: false
+    description: Field NextLine from PrjDepositHeader

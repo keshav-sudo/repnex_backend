@@ -1,0 +1,78 @@
+concept: ar_register_ref
+display_name: ArRegisterRef
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArRegisterRef.
+synonyms:
+- arregisterref
+- ar register ref
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArRegisterRef
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArRegisterRef
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from ArRegisterRef
+  allocated_by_program:
+    display: Allocatedbyprogram
+    type: string
+    required: false
+    description: Field AllocatedByProgram from ArRegisterRef
+  allocated_date:
+    display: Allocateddate
+    type: date
+    required: false
+    description: Field AllocatedDate from ArRegisterRef
+  allocated_time:
+    display: Allocatedtime
+    type: decimal
+    required: false
+    description: Field AllocatedTime from ArRegisterRef
+  allocated_by_oper:
+    display: Allocatedbyoper
+    type: string
+    required: false
+    description: Field AllocatedByOper from ArRegisterRef
+  register_source:
+    display: Registersource
+    type: string
+    required: false
+    description: Field RegisterSource from ArRegisterRef
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ArRegisterRef
+  release_day:
+    display: Releaseday
+    type: decimal
+    required: false
+    description: Field ReleaseDay from ArRegisterRef
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArRegisterRef
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from ArRegisterRef
+  closed_date:
+    display: Closeddate
+    type: date
+    required: false
+    description: Field ClosedDate from ArRegisterRef
+  closed_time:
+    display: Closedtime
+    type: decimal
+    required: false
+    description: Field ClosedTime from ArRegisterRef

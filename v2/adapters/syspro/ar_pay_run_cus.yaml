@@ -1,0 +1,20 @@
+concept: ar_pay_run_cus
+table: ArPayRunCus
+alias: aprc
+fields:
+  payment_number: aprc.PaymentNumber
+  customer: aprc.Customer
+  customer_name: aprc.CustomerName
+  cus_balance: aprc.CusBalance
+  pay_amount: aprc.PayAmount
+  total_pay_amount: aprc.TotalPayAmount
+  sum_credit_amount: aprc.SumCreditAmount
+  pdc_amount: aprc.PdcAmount
+  reference: aprc.Reference
+  company: aprc.Company
+  currency: aprc.Currency
+  payment_rate: aprc.PaymentRate
+  payment_mul_div: aprc.PaymentMulDiv
+  gl_exch_var_code: aprc.GlExchVarCode
+  multi_pay_flag: aprc.MultiPayFlag
+  multi_pay_amount: aprc.MultiPayAmount

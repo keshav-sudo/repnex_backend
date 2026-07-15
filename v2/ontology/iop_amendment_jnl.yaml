@@ -1,0 +1,463 @@
+concept: iop_amendment_jnl
+display_name: IopAmendmentJnl
+module: other
+description: Auto-generated representation of the physical table IopAmendmentJnl.
+synonyms:
+- iopamendmentjnl
+- iop amendment jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from IopAmendmentJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from IopAmendmentJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from IopAmendmentJnl
+  parent_collection:
+    display: Parentcollection
+    type: string
+    required: false
+    description: Field ParentCollection from IopAmendmentJnl
+  parent_instance:
+    display: Parentinstance
+    type: decimal
+    required: false
+    description: Field ParentInstance from IopAmendmentJnl
+  jnl_printed:
+    display: Jnlprinted
+    type: string
+    required: false
+    description: Field JnlPrinted from IopAmendmentJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from IopAmendmentJnl
+  operator_name:
+    display: Operatorname
+    type: string
+    required: false
+    description: Field OperatorName from IopAmendmentJnl
+  relationship_type:
+    display: Relationshiptype
+    type: string
+    required: false
+    description: Field RelationshipType from IopAmendmentJnl
+  child_collection:
+    display: Childcollection
+    type: string
+    required: false
+    description: Field ChildCollection from IopAmendmentJnl
+  child_instance:
+    display: Childinstance
+    type: decimal
+    required: false
+    description: Field ChildInstance from IopAmendmentJnl
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopAmendmentJnl
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopAmendmentJnl
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopAmendmentJnl
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopAmendmentJnl
+  old_disaggregate:
+    display: Olddisaggregate
+    type: string
+    required: false
+    description: Field OldDisaggregate from IopAmendmentJnl
+  old_calendar:
+    display: Oldcalendar
+    type: string
+    required: false
+    description: Field OldCalendar from IopAmendmentJnl
+  old_uom:
+    display: Olduom
+    type: string
+    required: false
+    description: Field OldUom from IopAmendmentJnl
+  old_algorithm:
+    display: Oldalgorithm
+    type: string
+    required: false
+    description: Field OldAlgorithm from IopAmendmentJnl
+  old_override_alg:
+    display: Oldoverridealg
+    type: string
+    required: false
+    description: Field OldOverrideAlg from IopAmendmentJnl
+  old_alg_a_months:
+    display: Oldalgamonths
+    type: decimal
+    required: false
+    description: Field OldAlgAMonths from IopAmendmentJnl
+  old_alg_a_basis:
+    display: Oldalgabasis
+    type: string
+    required: false
+    description: Field OldAlgABasis from IopAmendmentJnl
+  old_alg_b_months:
+    display: Oldalgbmonths
+    type: decimal
+    required: false
+    description: Field OldAlgBMonths from IopAmendmentJnl
+  old_alg_c_months:
+    display: Oldalgcmonths
+    type: decimal
+    required: false
+    description: Field OldAlgCMonths from IopAmendmentJnl
+  old_alg_d_months:
+    display: Oldalgdmonths
+    type: decimal
+    required: false
+    description: Field OldAlgDMonths from IopAmendmentJnl
+  old_alg_f_smooth:
+    display: Oldalgfsmooth
+    type: decimal
+    required: false
+    description: Field OldAlgFSmooth from IopAmendmentJnl
+  old_alg_f_trend:
+    display: Oldalgftrend
+    type: decimal
+    required: false
+    description: Field OldAlgFTrend from IopAmendmentJnl
+  old_alg_g_coeff1:
+    display: Oldalggcoeff1
+    type: decimal
+    required: false
+    description: Field OldAlgGCoeff1 from IopAmendmentJnl
+  old_alg_g_coeff2:
+    display: Oldalggcoeff2
+    type: decimal
+    required: false
+    description: Field OldAlgGCoeff2 from IopAmendmentJnl
+  old_alg_g_coeff3:
+    display: Oldalggcoeff3
+    type: decimal
+    required: false
+    description: Field OldAlgGCoeff3 from IopAmendmentJnl
+  old_alg_h_coeff1:
+    display: Oldalghcoeff1
+    type: decimal
+    required: false
+    description: Field OldAlgHCoeff1 from IopAmendmentJnl
+  old_alg_h_coeff2:
+    display: Oldalghcoeff2
+    type: decimal
+    required: false
+    description: Field OldAlgHCoeff2 from IopAmendmentJnl
+  old_alg_h_coeff3:
+    display: Oldalghcoeff3
+    type: decimal
+    required: false
+    description: Field OldAlgHCoeff3 from IopAmendmentJnl
+  old_alg_h_coeff4:
+    display: Oldalghcoeff4
+    type: decimal
+    required: false
+    description: Field OldAlgHCoeff4 from IopAmendmentJnl
+  old_alg_i_coeff1:
+    display: Oldalgicoeff1
+    type: decimal
+    required: false
+    description: Field OldAlgICoeff1 from IopAmendmentJnl
+  old_alg_i_coeff2:
+    display: Oldalgicoeff2
+    type: decimal
+    required: false
+    description: Field OldAlgICoeff2 from IopAmendmentJnl
+  old_alg_i_coeff3:
+    display: Oldalgicoeff3
+    type: decimal
+    required: false
+    description: Field OldAlgICoeff3 from IopAmendmentJnl
+  old_alg_j_coeff1:
+    display: Oldalgjcoeff1
+    type: decimal
+    required: false
+    description: Field OldAlgJCoeff1 from IopAmendmentJnl
+  old_alg_j_coeff2:
+    display: Oldalgjcoeff2
+    type: decimal
+    required: false
+    description: Field OldAlgJCoeff2 from IopAmendmentJnl
+  old_alg_j_coeff3:
+    display: Oldalgjcoeff3
+    type: decimal
+    required: false
+    description: Field OldAlgJCoeff3 from IopAmendmentJnl
+  old_alg_k_coeff1:
+    display: Oldalgkcoeff1
+    type: decimal
+    required: false
+    description: Field OldAlgKCoeff1 from IopAmendmentJnl
+  old_alg_k_coeff2:
+    display: Oldalgkcoeff2
+    type: decimal
+    required: false
+    description: Field OldAlgKCoeff2 from IopAmendmentJnl
+  old_alg_k_coeff3:
+    display: Oldalgkcoeff3
+    type: decimal
+    required: false
+    description: Field OldAlgKCoeff3 from IopAmendmentJnl
+  old_season_sides:
+    display: Oldseasonsides
+    type: decimal
+    required: false
+    description: Field OldSeasonSides from IopAmendmentJnl
+  old_season_periods:
+    display: Oldseasonperiods
+    type: decimal
+    required: false
+    description: Field OldSeasonPeriods from IopAmendmentJnl
+  old_season_coeff:
+    display: Oldseasoncoeff
+    type: decimal
+    required: false
+    description: Field OldSeasonCoeff from IopAmendmentJnl
+  old_outlier_std_dev:
+    display: Oldoutlierstddev
+    type: decimal
+    required: false
+    description: Field OldOutlierStdDev from IopAmendmentJnl
+  old_sku_adjustments:
+    display: Oldskuadjustments
+    type: string
+    required: false
+    description: Field OldSkuAdjustments from IopAmendmentJnl
+  old_aggregation_date:
+    display: Oldaggregationdate
+    type: date
+    required: false
+    description: Field OldAggregationDate from IopAmendmentJnl
+  old_aggregation_time:
+    display: Oldaggregationtime
+    type: decimal
+    required: false
+    description: Field OldAggregationTime from IopAmendmentJnl
+  old_consolidate_wh:
+    display: Oldconsolidatewh
+    type: string
+    required: false
+    description: Field OldConsolidateWh from IopAmendmentJnl
+  old_listed_warehouse:
+    display: Oldlistedwarehouse
+    type: string
+    required: false
+    description: Field OldListedWarehouse from IopAmendmentJnl
+  old_decimals:
+    display: Olddecimals
+    type: decimal
+    required: false
+    description: Field OldDecimals from IopAmendmentJnl
+  new_disaggregate:
+    display: Newdisaggregate
+    type: string
+    required: false
+    description: Field NewDisaggregate from IopAmendmentJnl
+  new_calendar:
+    display: Newcalendar
+    type: string
+    required: false
+    description: Field NewCalendar from IopAmendmentJnl
+  new_uom:
+    display: Newuom
+    type: string
+    required: false
+    description: Field NewUom from IopAmendmentJnl
+  new_algorithm:
+    display: Newalgorithm
+    type: string
+    required: false
+    description: Field NewAlgorithm from IopAmendmentJnl
+  new_override_alg:
+    display: Newoverridealg
+    type: string
+    required: false
+    description: Field NewOverrideAlg from IopAmendmentJnl
+  new_alg_a_months:
+    display: Newalgamonths
+    type: decimal
+    required: false
+    description: Field NewAlgAMonths from IopAmendmentJnl
+  new_alg_a_basis:
+    display: Newalgabasis
+    type: string
+    required: false
+    description: Field NewAlgABasis from IopAmendmentJnl
+  new_alg_b_months:
+    display: Newalgbmonths
+    type: decimal
+    required: false
+    description: Field NewAlgBMonths from IopAmendmentJnl
+  new_alg_c_months:
+    display: Newalgcmonths
+    type: decimal
+    required: false
+    description: Field NewAlgCMonths from IopAmendmentJnl
+  new_alg_d_months:
+    display: Newalgdmonths
+    type: decimal
+    required: false
+    description: Field NewAlgDMonths from IopAmendmentJnl
+  new_alg_f_smooth:
+    display: Newalgfsmooth
+    type: decimal
+    required: false
+    description: Field NewAlgFSmooth from IopAmendmentJnl
+  new_alg_f_trend:
+    display: Newalgftrend
+    type: decimal
+    required: false
+    description: Field NewAlgFTrend from IopAmendmentJnl
+  new_alg_g_coeff1:
+    display: Newalggcoeff1
+    type: decimal
+    required: false
+    description: Field NewAlgGCoeff1 from IopAmendmentJnl
+  new_alg_g_coeff2:
+    display: Newalggcoeff2
+    type: decimal
+    required: false
+    description: Field NewAlgGCoeff2 from IopAmendmentJnl
+  new_alg_g_coeff3:
+    display: Newalggcoeff3
+    type: decimal
+    required: false
+    description: Field NewAlgGCoeff3 from IopAmendmentJnl
+  new_alg_h_coeff1:
+    display: Newalghcoeff1
+    type: decimal
+    required: false
+    description: Field NewAlgHCoeff1 from IopAmendmentJnl
+  new_alg_h_coeff2:
+    display: Newalghcoeff2
+    type: decimal
+    required: false
+    description: Field NewAlgHCoeff2 from IopAmendmentJnl
+  new_alg_h_coeff3:
+    display: Newalghcoeff3
+    type: decimal
+    required: false
+    description: Field NewAlgHCoeff3 from IopAmendmentJnl
+  new_alg_h_coeff4:
+    display: Newalghcoeff4
+    type: decimal
+    required: false
+    description: Field NewAlgHCoeff4 from IopAmendmentJnl
+  new_alg_i_coeff1:
+    display: Newalgicoeff1
+    type: decimal
+    required: false
+    description: Field NewAlgICoeff1 from IopAmendmentJnl
+  new_alg_i_coeff2:
+    display: Newalgicoeff2
+    type: decimal
+    required: false
+    description: Field NewAlgICoeff2 from IopAmendmentJnl
+  new_alg_i_coeff3:
+    display: Newalgicoeff3
+    type: decimal
+    required: false
+    description: Field NewAlgICoeff3 from IopAmendmentJnl
+  new_alg_j_coeff1:
+    display: Newalgjcoeff1
+    type: decimal
+    required: false
+    description: Field NewAlgJCoeff1 from IopAmendmentJnl
+  new_alg_j_coeff2:
+    display: Newalgjcoeff2
+    type: decimal
+    required: false
+    description: Field NewAlgJCoeff2 from IopAmendmentJnl
+  new_alg_j_coeff3:
+    display: Newalgjcoeff3
+    type: decimal
+    required: false
+    description: Field NewAlgJCoeff3 from IopAmendmentJnl
+  new_alg_k_coeff1:
+    display: Newalgkcoeff1
+    type: decimal
+    required: false
+    description: Field NewAlgKCoeff1 from IopAmendmentJnl
+  new_alg_k_coeff2:
+    display: Newalgkcoeff2
+    type: decimal
+    required: false
+    description: Field NewAlgKCoeff2 from IopAmendmentJnl
+  new_alg_k_coeff3:
+    display: Newalgkcoeff3
+    type: decimal
+    required: false
+    description: Field NewAlgKCoeff3 from IopAmendmentJnl
+  new_season_sides:
+    display: Newseasonsides
+    type: decimal
+    required: false
+    description: Field NewSeasonSides from IopAmendmentJnl
+  new_season_periods:
+    display: Newseasonperiods
+    type: decimal
+    required: false
+    description: Field NewSeasonPeriods from IopAmendmentJnl
+  new_season_coeff:
+    display: Newseasoncoeff
+    type: decimal
+    required: false
+    description: Field NewSeasonCoeff from IopAmendmentJnl
+  new_outlier_std_dev:
+    display: Newoutlierstddev
+    type: decimal
+    required: false
+    description: Field NewOutlierStdDev from IopAmendmentJnl
+  new_sku_adjustments:
+    display: Newskuadjustments
+    type: string
+    required: false
+    description: Field NewSkuAdjustments from IopAmendmentJnl
+  new_aggregation_date:
+    display: Newaggregationdate
+    type: date
+    required: false
+    description: Field NewAggregationDate from IopAmendmentJnl
+  new_aggregation_time:
+    display: Newaggregationtime
+    type: decimal
+    required: false
+    description: Field NewAggregationTime from IopAmendmentJnl
+  new_consolidate_wh:
+    display: Newconsolidatewh
+    type: string
+    required: false
+    description: Field NewConsolidateWh from IopAmendmentJnl
+  new_listed_warehouse:
+    display: Newlistedwarehouse
+    type: string
+    required: false
+    description: Field NewListedWarehouse from IopAmendmentJnl
+  new_decimals:
+    display: Newdecimals
+    type: decimal
+    required: false
+    description: Field NewDecimals from IopAmendmentJnl

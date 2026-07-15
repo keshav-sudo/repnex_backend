@@ -1,0 +1,243 @@
+concept: asset_entries_bv
+display_name: AssetEntriesBv
+module: assets
+description: Auto-generated representation of the physical table AssetEntriesBv.
+synonyms:
+- assetentriesbv
+- asset entries bv
+header_attributes:
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetEntriesBv
+  entry_year:
+    display: Entryyear
+    type: decimal
+    required: false
+    description: Field EntryYear from AssetEntriesBv
+  entry_month:
+    display: Entrymonth
+    type: decimal
+    required: false
+    description: Field EntryMonth from AssetEntriesBv
+  system_date:
+    display: Systemdate
+    type: date
+    required: false
+    description: Field SystemDate from AssetEntriesBv
+  system_time:
+    display: Systemtime
+    type: decimal
+    required: false
+    description: Field SystemTime from AssetEntriesBv
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from AssetEntriesBv
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from AssetEntriesBv
+  entry_amount:
+    display: Entryamount
+    type: decimal
+    required: false
+    description: Field EntryAmount from AssetEntriesBv
+  asset_cost:
+    display: Assetcost
+    type: decimal
+    required: false
+    description: Field AssetCost from AssetEntriesBv
+  asset_current_value:
+    display: Assetcurrentvalue
+    type: decimal
+    required: false
+    description: Field AssetCurrentValue from AssetEntriesBv
+  entry_qty:
+    display: Entryqty
+    type: decimal
+    required: false
+    description: Field EntryQty from AssetEntriesBv
+  asset_qty:
+    display: Assetqty
+    type: decimal
+    required: false
+    description: Field AssetQty from AssetEntriesBv
+  depn_ytd:
+    display: Depnytd
+    type: decimal
+    required: false
+    description: Field DepnYtd from AssetEntriesBv
+  depn_prev_year:
+    display: Depnprevyear
+    type: decimal
+    required: false
+    description: Field DepnPrevYear from AssetEntriesBv
+  accum_depn:
+    display: Accumdepn
+    type: decimal
+    required: false
+    description: Field AccumDepn from AssetEntriesBv
+  residual_value:
+    display: Residualvalue
+    type: decimal
+    required: false
+    description: Field ResidualValue from AssetEntriesBv
+  depn_code:
+    display: Depncode
+    type: string
+    required: false
+    description: Field DepnCode from AssetEntriesBv
+  depn_rate:
+    display: Depnrate
+    type: decimal
+    required: false
+    description: Field DepnRate from AssetEntriesBv
+  depn_start_date:
+    display: Depnstartdate
+    type: date
+    required: false
+    description: Field DepnStartDate from AssetEntriesBv
+  thruput_eul:
+    display: Thruputeul
+    type: decimal
+    required: false
+    description: Field ThruputEul from AssetEntriesBv
+  reval_reserve_to_date:
+    display: Revalreservetodate
+    type: decimal
+    required: false
+    description: Field RevalReserveToDate from AssetEntriesBv
+  stat_gl_code:
+    display: Statglcode
+    type: string
+    required: false
+    description: Field StatGlCode from AssetEntriesBv
+  number_of_periods:
+    display: Numberofperiods
+    type: decimal
+    required: false
+    description: Field NumberOfPeriods from AssetEntriesBv
+  number_of_years:
+    display: Numberofyears
+    type: decimal
+    required: false
+    description: Field NumberOfYears from AssetEntriesBv
+  total_periods_td:
+    display: Totalperiodstd
+    type: decimal
+    required: false
+    description: Field TotalPeriodsTd from AssetEntriesBv
+  min_book_value:
+    display: Minbookvalue
+    type: decimal
+    required: false
+    description: Field MinBookValue from AssetEntriesBv
+  suspend:
+    display: Suspend
+    type: string
+    required: false
+    description: Field Suspend from AssetEntriesBv
+  reason:
+    display: Reason
+    type: string
+    required: false
+    description: Field Reason from AssetEntriesBv
+  asset_status:
+    display: Assetstatus
+    type: string
+    required: false
+    description: Field AssetStatus from AssetEntriesBv
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetEntriesBv
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from AssetEntriesBv
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetEntriesBv
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetEntriesBv
+  company_before:
+    display: Companybefore
+    type: string
+    required: false
+    description: Field CompanyBefore from AssetEntriesBv
+  company_after:
+    display: Companyafter
+    type: string
+    required: false
+    description: Field CompanyAfter from AssetEntriesBv
+  branch_after:
+    display: Branchafter
+    type: string
+    required: false
+    description: Field BranchAfter from AssetEntriesBv
+  group_after:
+    display: Groupafter
+    type: string
+    required: false
+    description: Field GroupAfter from AssetEntriesBv
+  cost_center_after:
+    display: Costcenterafter
+    type: string
+    required: false
+    description: Field CostCenterAfter from AssetEntriesBv
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from AssetEntriesBv
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AssetEntriesBv
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from AssetEntriesBv
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from AssetEntriesBv
+  entry_reference:
+    display: Entryreference
+    type: string
+    required: false
+    description: Field EntryReference from AssetEntriesBv
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from AssetEntriesBv
+  asset_dist_reg:
+    display: Assetdistreg
+    type: decimal
+    required: false
+    description: Field AssetDistReg from AssetEntriesBv
+  sold_value:
+    display: Soldvalue
+    type: decimal
+    required: false
+    description: Field SoldValue from AssetEntriesBv
+  disposal_cost:
+    display: Disposalcost
+    type: decimal
+    required: false
+    description: Field DisposalCost from AssetEntriesBv

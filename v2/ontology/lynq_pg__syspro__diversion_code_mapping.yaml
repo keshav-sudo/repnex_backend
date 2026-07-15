@@ -1,0 +1,28 @@
+concept: lynq_pg__syspro__diversion_code_mapping
+display_name: Lynq PG Syspro DiversionCodeMapping
+module: other
+description: Auto-generated representation of the physical table Lynq_PG_Syspro_DiversionCodeMapping.
+synonyms:
+- lynq_pg_syspro_diversioncodemapping
+- lynq pg  syspro  diversion code mapping
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_PG_Syspro_DiversionCodeMapping
+  syspro_setting_id:
+    display: Sysprosettingid
+    type: decimal
+    required: false
+    description: Field SysproSettingId from Lynq_PG_Syspro_DiversionCodeMapping
+  lynq_code:
+    display: Lynqcode
+    type: string
+    required: false
+    description: Field LynqCode from Lynq_PG_Syspro_DiversionCodeMapping
+  erp_code:
+    display: Erpcode
+    type: string
+    required: false
+    description: Field ERPCode from Lynq_PG_Syspro_DiversionCodeMapping

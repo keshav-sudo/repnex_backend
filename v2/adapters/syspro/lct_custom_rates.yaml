@@ -1,0 +1,8 @@
+concept: lct_custom_rates
+table: LctCustomRates
+alias: lcr1
+fields:
+  currency: lcr1.Currency
+  effective_date: lcr1.EffectiveDate
+  exchange_rate: lcr1.ExchangeRate
+  mul_div: lcr1.MulDiv

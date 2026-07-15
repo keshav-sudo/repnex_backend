@@ -1,0 +1,148 @@
+concept: sal_budget_prod_class
+display_name: SalBudgetProdClass
+module: other
+description: Auto-generated representation of the physical table SalBudgetProdClass.
+synonyms:
+- salbudgetprodclass
+- sal budget prod class
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalBudgetProdClass
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SalBudgetProdClass
+  sales1:
+    display: Sales1
+    type: decimal
+    required: false
+    description: Field Sales1 from SalBudgetProdClass
+  sales2:
+    display: Sales2
+    type: decimal
+    required: false
+    description: Field Sales2 from SalBudgetProdClass
+  sales3:
+    display: Sales3
+    type: decimal
+    required: false
+    description: Field Sales3 from SalBudgetProdClass
+  sales4:
+    display: Sales4
+    type: decimal
+    required: false
+    description: Field Sales4 from SalBudgetProdClass
+  sales5:
+    display: Sales5
+    type: decimal
+    required: false
+    description: Field Sales5 from SalBudgetProdClass
+  sales6:
+    display: Sales6
+    type: decimal
+    required: false
+    description: Field Sales6 from SalBudgetProdClass
+  sales7:
+    display: Sales7
+    type: decimal
+    required: false
+    description: Field Sales7 from SalBudgetProdClass
+  sales8:
+    display: Sales8
+    type: decimal
+    required: false
+    description: Field Sales8 from SalBudgetProdClass
+  sales9:
+    display: Sales9
+    type: decimal
+    required: false
+    description: Field Sales9 from SalBudgetProdClass
+  sales10:
+    display: Sales10
+    type: decimal
+    required: false
+    description: Field Sales10 from SalBudgetProdClass
+  sales11:
+    display: Sales11
+    type: decimal
+    required: false
+    description: Field Sales11 from SalBudgetProdClass
+  sales12:
+    display: Sales12
+    type: decimal
+    required: false
+    description: Field Sales12 from SalBudgetProdClass
+  sales13:
+    display: Sales13
+    type: decimal
+    required: false
+    description: Field Sales13 from SalBudgetProdClass
+  profit1:
+    display: Profit1
+    type: decimal
+    required: false
+    description: Field Profit1 from SalBudgetProdClass
+  profit2:
+    display: Profit2
+    type: decimal
+    required: false
+    description: Field Profit2 from SalBudgetProdClass
+  profit3:
+    display: Profit3
+    type: decimal
+    required: false
+    description: Field Profit3 from SalBudgetProdClass
+  profit4:
+    display: Profit4
+    type: decimal
+    required: false
+    description: Field Profit4 from SalBudgetProdClass
+  profit5:
+    display: Profit5
+    type: decimal
+    required: false
+    description: Field Profit5 from SalBudgetProdClass
+  profit6:
+    display: Profit6
+    type: decimal
+    required: false
+    description: Field Profit6 from SalBudgetProdClass
+  profit7:
+    display: Profit7
+    type: decimal
+    required: false
+    description: Field Profit7 from SalBudgetProdClass
+  profit8:
+    display: Profit8
+    type: decimal
+    required: false
+    description: Field Profit8 from SalBudgetProdClass
+  profit9:
+    display: Profit9
+    type: decimal
+    required: false
+    description: Field Profit9 from SalBudgetProdClass
+  profit10:
+    display: Profit10
+    type: decimal
+    required: false
+    description: Field Profit10 from SalBudgetProdClass
+  profit11:
+    display: Profit11
+    type: decimal
+    required: false
+    description: Field Profit11 from SalBudgetProdClass
+  profit12:
+    display: Profit12
+    type: decimal
+    required: false
+    description: Field Profit12 from SalBudgetProdClass
+  profit13:
+    display: Profit13
+    type: decimal
+    required: false
+    description: Field Profit13 from SalBudgetProdClass

@@ -1,0 +1,118 @@
+concept: asset_control_tax
+display_name: AssetControlTax
+module: assets
+description: Auto-generated representation of the physical table AssetControlTax.
+synonyms:
+- assetcontroltax
+- asset control tax
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from AssetControlTax
+  depn_value_ytd:
+    display: Depnvalueytd
+    type: decimal
+    required: false
+    description: Field DepnValueYtd from AssetControlTax
+  depn_reval_ytd:
+    display: Depnrevalytd
+    type: decimal
+    required: false
+    description: Field DepnRevalYtd from AssetControlTax
+  depn_ici_ytd:
+    display: Depniciytd
+    type: decimal
+    required: false
+    description: Field DepnIciYtd from AssetControlTax
+  depn_ico_ytd:
+    display: Depnicoytd
+    type: decimal
+    required: false
+    description: Field DepnIcoYtd from AssetControlTax
+  depn_adds_ytd:
+    display: Depnaddsytd
+    type: decimal
+    required: false
+    description: Field DepnAddsYtd from AssetControlTax
+  depn_disps_ytd:
+    display: Depndispsytd
+    type: decimal
+    required: false
+    description: Field DepnDispsYtd from AssetControlTax
+  depn_count_ytd:
+    display: Depncountytd
+    type: decimal
+    required: false
+    description: Field DepnCountYtd from AssetControlTax
+  depn_split_ytd:
+    display: Depnsplitytd
+    type: decimal
+    required: false
+    description: Field DepnSplitYtd from AssetControlTax
+  reval_ytd:
+    display: Revalytd
+    type: decimal
+    required: false
+    description: Field RevalYtd from AssetControlTax
+  ici_ytd:
+    display: Iciytd
+    type: decimal
+    required: false
+    description: Field IciYtd from AssetControlTax
+  ico_ytd:
+    display: Icoytd
+    type: decimal
+    required: false
+    description: Field IcoYtd from AssetControlTax
+  additions_ytd:
+    display: Additionsytd
+    type: decimal
+    required: false
+    description: Field AdditionsYtd from AssetControlTax
+  disposals_ytd:
+    display: Disposalsytd
+    type: decimal
+    required: false
+    description: Field DisposalsYtd from AssetControlTax
+  disposal_cost:
+    display: Disposalcost
+    type: decimal
+    required: false
+    description: Field DisposalCost from AssetControlTax
+  sold_value:
+    display: Soldvalue
+    type: decimal
+    required: false
+    description: Field SoldValue from AssetControlTax
+  count_ytd:
+    display: Countytd
+    type: decimal
+    required: false
+    description: Field CountYtd from AssetControlTax
+  split_ytd:
+    display: Splitytd
+    type: decimal
+    required: false
+    description: Field SplitYtd from AssetControlTax
+  change_ytd:
+    display: Changeytd
+    type: decimal
+    required: false
+    description: Field ChangeYtd from AssetControlTax
+  open_value:
+    display: Openvalue
+    type: decimal
+    required: false
+    description: Field OpenValue from AssetControlTax
+  open_depn_value:
+    display: Opendepnvalue
+    type: decimal
+    required: false
+    description: Field OpenDepnValue from AssetControlTax
+  open_depn_reval_value:
+    display: Opendepnrevalvalue
+    type: decimal
+    required: false
+    description: Field OpenDepnRevalValue from AssetControlTax

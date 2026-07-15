@@ -1,0 +1,23 @@
+concept: lynq_vp_bpl__src__routing
+table: Lynq_VP_BPL_Src_Routing
+alias: lvpbplsr
+fields:
+  id: lvpbplsr.ID
+  item_number: lvpbplsr.ItemNumber
+  routing: lvpbplsr.Routing
+  routing_description: lvpbplsr.RoutingDescription
+  release: lvpbplsr.Release
+  version: lvpbplsr.Version
+  fld_date_time1: lvpbplsr.FldDateTime1
+  fld_date_time2: lvpbplsr.FldDateTime2
+  fld_date_time3: lvpbplsr.FldDateTime3
+  fld_decimal1: lvpbplsr.FldDecimal1
+  fld_decimal2: lvpbplsr.FldDecimal2
+  fld_decimal3: lvpbplsr.FldDecimal3
+  fld_decimal4: lvpbplsr.FldDecimal4
+  fld_decimal5: lvpbplsr.FldDecimal5
+  fld_string1: lvpbplsr.FldString1
+  fld_string2: lvpbplsr.FldString2
+  fld_string3: lvpbplsr.FldString3
+  fld_string4: lvpbplsr.FldString4
+  fld_string5: lvpbplsr.FldString5

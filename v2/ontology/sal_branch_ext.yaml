@@ -1,0 +1,23 @@
+concept: sal_branch_ext
+display_name: SalBranchExt
+module: other
+description: Auto-generated representation of the physical table SalBranchExt.
+synonyms:
+- salbranchext
+- sal branch ext
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalBranchExt
+  tax_suspense_account:
+    display: Taxsuspenseaccount
+    type: string
+    required: false
+    description: Field TaxSuspenseAccount from SalBranchExt
+  tax_rounding_account:
+    display: Taxroundingaccount
+    type: string
+    required: false
+    description: Field TaxRoundingAccount from SalBranchExt

@@ -1,0 +1,273 @@
+concept: wip_arc_co_products
+display_name: WipArcCoProducts
+module: work_in_progress
+description: Auto-generated representation of the physical table WipArcCoProducts.
+synonyms:
+- wiparccoproducts
+- wip arc co products
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipArcCoProducts
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipArcCoProducts
+  co_product:
+    display: Coproduct
+    type: string
+    required: false
+    description: Field CoProduct from WipArcCoProducts
+  co_product_version:
+    display: Coproductversion
+    type: string
+    required: false
+    description: Field CoProductVersion from WipArcCoProducts
+  co_product_release:
+    display: Coproductrelease
+    type: string
+    required: false
+    description: Field CoProductRelease from WipArcCoProducts
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from WipArcCoProducts
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipArcCoProducts
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from WipArcCoProducts
+  act_complete_date:
+    display: Actcompletedate
+    type: date
+    required: false
+    description: Field ActCompleteDate from WipArcCoProducts
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from WipArcCoProducts
+  exp_labour:
+    display: Explabour
+    type: decimal
+    required: false
+    description: Field ExpLabour from WipArcCoProducts
+  exp_material:
+    display: Expmaterial
+    type: decimal
+    required: false
+    description: Field ExpMaterial from WipArcCoProducts
+  qty_per:
+    display: Qtyper
+    type: decimal
+    required: false
+    description: Field QtyPer from WipArcCoProducts
+  qty_to_make:
+    display: Qtytomake
+    type: decimal
+    required: false
+    description: Field QtyToMake from WipArcCoProducts
+  qty_manufactured:
+    display: Qtymanufactured
+    type: decimal
+    required: false
+    description: Field QtyManufactured from WipArcCoProducts
+  total_qty_scrapped:
+    display: Totalqtyscrapped
+    type: decimal
+    required: false
+    description: Field TotalQtyScrapped from WipArcCoProducts
+  pct_complete_flag:
+    display: Pctcompleteflag
+    type: decimal
+    required: false
+    description: Field PctCompleteFlag from WipArcCoProducts
+  selling_price:
+    display: Sellingprice
+    type: decimal
+    required: false
+    description: Field SellingPrice from WipArcCoProducts
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from WipArcCoProducts
+  traceable_type:
+    display: Traceabletype
+    type: string
+    required: false
+    description: Field TraceableType from WipArcCoProducts
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from WipArcCoProducts
+  mat_cost_to_date1:
+    display: Matcosttodate1
+    type: decimal
+    required: false
+    description: Field MatCostToDate1 from WipArcCoProducts
+  mat_cost_to_date2:
+    display: Matcosttodate2
+    type: decimal
+    required: false
+    description: Field MatCostToDate2 from WipArcCoProducts
+  mat_cost_to_date3:
+    display: Matcosttodate3
+    type: decimal
+    required: false
+    description: Field MatCostToDate3 from WipArcCoProducts
+  lab_cost_to_date1:
+    display: Labcosttodate1
+    type: decimal
+    required: false
+    description: Field LabCostToDate1 from WipArcCoProducts
+  lab_cost_to_date2:
+    display: Labcosttodate2
+    type: decimal
+    required: false
+    description: Field LabCostToDate2 from WipArcCoProducts
+  lab_cost_to_date3:
+    display: Labcosttodate3
+    type: decimal
+    required: false
+    description: Field LabCostToDate3 from WipArcCoProducts
+  hrs_book_to_date1:
+    display: Hrsbooktodate1
+    type: decimal
+    required: false
+    description: Field HrsBookToDate1 from WipArcCoProducts
+  hrs_book_to_date2:
+    display: Hrsbooktodate2
+    type: decimal
+    required: false
+    description: Field HrsBookToDate2 from WipArcCoProducts
+  hrs_book_to_date3:
+    display: Hrsbooktodate3
+    type: decimal
+    required: false
+    description: Field HrsBookToDate3 from WipArcCoProducts
+  mat_value_issues1:
+    display: Matvalueissues1
+    type: decimal
+    required: false
+    description: Field MatValueIssues1 from WipArcCoProducts
+  mat_value_issues2:
+    display: Matvalueissues2
+    type: decimal
+    required: false
+    description: Field MatValueIssues2 from WipArcCoProducts
+  mat_value_issues3:
+    display: Matvalueissues3
+    type: decimal
+    required: false
+    description: Field MatValueIssues3 from WipArcCoProducts
+  lab_value_issues1:
+    display: Labvalueissues1
+    type: decimal
+    required: false
+    description: Field LabValueIssues1 from WipArcCoProducts
+  lab_value_issues2:
+    display: Labvalueissues2
+    type: decimal
+    required: false
+    description: Field LabValueIssues2 from WipArcCoProducts
+  lab_value_issues3:
+    display: Labvalueissues3
+    type: decimal
+    required: false
+    description: Field LabValueIssues3 from WipArcCoProducts
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from WipArcCoProducts
+  orig_due_date:
+    display: Origduedate
+    type: date
+    required: false
+    description: Field OrigDueDate from WipArcCoProducts
+  exp_lab_current:
+    display: Explabcurrent
+    type: decimal
+    required: false
+    description: Field ExpLabCurrent from WipArcCoProducts
+  exp_mat_current:
+    display: Expmatcurrent
+    type: decimal
+    required: false
+    description: Field ExpMatCurrent from WipArcCoProducts
+  pct_material_cost:
+    display: Pctmaterialcost
+    type: decimal
+    required: false
+    description: Field PctMaterialCost from WipArcCoProducts
+  pct_sub_contract_cost:
+    display: Pctsubcontractcost
+    type: decimal
+    required: false
+    description: Field PctSubContractCost from WipArcCoProducts
+  pct_labor_cost:
+    display: Pctlaborcost
+    type: decimal
+    required: false
+    description: Field PctLaborCost from WipArcCoProducts
+  pct_quantity:
+    display: Pctquantity
+    type: decimal
+    required: false
+    description: Field PctQuantity from WipArcCoProducts
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from WipArcCoProducts
+  conv_fact_uom:
+    display: Convfactuom
+    type: decimal
+    required: false
+    description: Field ConvFactUom from WipArcCoProducts
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from WipArcCoProducts
+  qty_per_ent:
+    display: Qtyperent
+    type: decimal
+    required: false
+    description: Field QtyPerEnt from WipArcCoProducts
+  qty_to_make_ent:
+    display: Qtytomakeent
+    type: decimal
+    required: false
+    description: Field QtyToMakeEnt from WipArcCoProducts
+  qty_manufactured_ent:
+    display: Qtymanufacturedent
+    type: decimal
+    required: false
+    description: Field QtyManufacturedEnt from WipArcCoProducts
+  total_qty_scrap_ent:
+    display: Totalqtyscrapent
+    type: decimal
+    required: false
+    description: Field TotalQtyScrapEnt from WipArcCoProducts
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipArcCoProducts
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from WipArcCoProducts

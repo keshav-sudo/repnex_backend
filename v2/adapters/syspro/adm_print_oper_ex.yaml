@@ -1,0 +1,8 @@
+concept: adm_print_oper_ex
+table: AdmPrintOperEx
+alias: apoe
+fields:
+  operator: apoe.Operator
+  syspro_program: apoe.SysproProgram
+  line_number: apoe.LineNumber
+  driver_info: apoe.DriverInfo

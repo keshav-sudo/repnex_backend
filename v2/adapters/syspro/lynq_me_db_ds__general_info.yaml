@@ -1,0 +1,7 @@
+concept: lynq_me_db_ds__general_info
+table: Lynq_ME_DB_DS_GeneralInfo
+alias: lmedbdsgi
+fields:
+  id: lmedbdsgi.ID
+  name: lmedbdsgi.Name
+  value: lmedbdsgi.Value

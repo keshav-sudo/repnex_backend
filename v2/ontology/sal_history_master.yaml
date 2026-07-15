@@ -1,0 +1,93 @@
+concept: sal_history_master
+display_name: SalHistoryMaster
+module: other
+description: Auto-generated representation of the physical table SalHistoryMaster.
+synonyms:
+- salhistorymaster
+- sal history master
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalHistoryMaster
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalHistoryMaster
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalHistoryMaster
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SalHistoryMaster
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from SalHistoryMaster
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SalHistoryMaster
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from SalHistoryMaster
+  customer_class:
+    display: Customerclass
+    type: string
+    required: false
+    description: Field CustomerClass from SalHistoryMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SalHistoryMaster
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SalHistoryMaster
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from SalHistoryMaster
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SalHistoryMaster
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from SalHistoryMaster
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from SalHistoryMaster
+  quantity_sold:
+    display: Quantitysold
+    type: decimal
+    required: false
+    description: Field QuantitySold from SalHistoryMaster
+  mass_sold:
+    display: Masssold
+    type: decimal
+    required: false
+    description: Field MassSold from SalHistoryMaster
+  volume_sold:
+    display: Volumesold
+    type: decimal
+    required: false
+    description: Field VolumeSold from SalHistoryMaster

@@ -1,0 +1,18 @@
+concept: iop_collection
+display_name: IopCollection
+module: other
+description: Auto-generated representation of the physical table IopCollection.
+synonyms:
+- iopcollection
+- iop collection
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopCollection
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from IopCollection

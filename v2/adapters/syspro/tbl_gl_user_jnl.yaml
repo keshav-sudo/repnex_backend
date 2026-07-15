@@ -1,0 +1,6 @@
+concept: tbl_gl_user_jnl
+table: TblGlUserJnl
+alias: tguj
+fields:
+  source: tguj.Source
+  description: tguj.Description

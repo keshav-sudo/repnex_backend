@@ -1,0 +1,26 @@
+concept: ap_withhold_tax
+table: ApWithholdTax
+alias: awt1
+fields:
+  paym_year: awt1.PaymYear
+  supplier: awt1.Supplier
+  payment_period: awt1.PaymentPeriod
+  invoice: awt1.Invoice
+  cheque_register: awt1.ChequeRegister
+  distr_entry: awt1.DistrEntry
+  cheque: awt1.Cheque
+  paym_date: awt1.PaymDate
+  with_tax_code: awt1.WithTaxCode
+  with_tax_rate: awt1.WithTaxRate
+  bank: awt1.Bank
+  with_taxable_value: awt1.WithTaxableValue
+  with_tax_value: awt1.WithTaxValue
+  invoice_value: awt1.InvoiceValue
+  primary_supplier: awt1.PrimarySupplier
+  primary_sup_name: awt1.PrimarySupName
+  group_inter_company: awt1.GroupInterCompany
+  primary_company: awt1.PrimaryCompany
+  bank_description: awt1.BankDescription
+  xref_ch_register: awt1.XrefChRegister
+  primary_pay_number: awt1.PrimaryPayNumber
+  payment_bank: awt1.PaymentBank

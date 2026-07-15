@@ -1,0 +1,93 @@
+concept: ap_tax2_dist_det
+display_name: ApTax2DistDet
+module: accounts_payable
+description: Auto-generated representation of the physical table ApTax2DistDet.
+synonyms:
+- aptax2distdet
+- ap tax2 dist det
+header_attributes:
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from ApTax2DistDet
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from ApTax2DistDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApTax2DistDet
+  entry:
+    display: Entry
+    type: decimal
+    required: false
+    description: Field Entry from ApTax2DistDet
+  status:
+    display: Status
+    type: decimal
+    required: false
+    description: Field Status from ApTax2DistDet
+  transaction_type:
+    display: Transactiontype
+    type: string
+    required: false
+    description: Field TransactionType from ApTax2DistDet
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApTax2DistDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApTax2DistDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ApTax2DistDet
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ApTax2DistDet
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApTax2DistDet
+  invoice_disc:
+    display: Invoicedisc
+    type: decimal
+    required: false
+    description: Field InvoiceDisc from ApTax2DistDet
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from ApTax2DistDet
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ApTax2DistDet
+  ec_acquisition:
+    display: Ecacquisition
+    type: string
+    required: false
+    description: Field EcAcquisition from ApTax2DistDet
+  purchase_type:
+    display: Purchasetype
+    type: string
+    required: false
+    description: Field PurchaseType from ApTax2DistDet
+  exempt_value:
+    display: Exemptvalue
+    type: decimal
+    required: false
+    description: Field ExemptValue from ApTax2DistDet

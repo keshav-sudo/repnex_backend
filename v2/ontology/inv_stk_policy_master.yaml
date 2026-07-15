@@ -1,0 +1,58 @@
+concept: inv_stk_policy_master
+display_name: InvStkPolicyMaster
+module: inventory
+description: Auto-generated representation of the physical table InvStkPolicyMaster.
+synonyms:
+- invstkpolicymaster
+- inv stk policy master
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvStkPolicyMaster
+  sourcing_policy:
+    display: Sourcingpolicy
+    type: string
+    required: false
+    description: Field SourcingPolicy from InvStkPolicyMaster
+  sourcing_policy_desc:
+    display: Sourcingpolicydesc
+    type: string
+    required: false
+    description: Field SourcingPolicyDesc from InvStkPolicyMaster
+  sourcing_policy_type:
+    display: Sourcingpolicytype
+    type: string
+    required: false
+    description: Field SourcingPolicyType from InvStkPolicyMaster
+  policy_start_date:
+    display: Policystartdate
+    type: date
+    required: false
+    description: Field PolicyStartDate from InvStkPolicyMaster
+  policy_expiry_date:
+    display: Policyexpirydate
+    type: date
+    required: false
+    description: Field PolicyExpiryDate from InvStkPolicyMaster
+  include_in_reqs:
+    display: Includeinreqs
+    type: string
+    required: false
+    description: Field IncludeInReqs from InvStkPolicyMaster
+  threshold_criteria:
+    display: Thresholdcriteria
+    type: string
+    required: false
+    description: Field ThresholdCriteria from InvStkPolicyMaster
+  threshold_amount:
+    display: Thresholdamount
+    type: decimal
+    required: false
+    description: Field ThresholdAmount from InvStkPolicyMaster
+  selection_criteria:
+    display: Selectioncriteria
+    type: string
+    required: false
+    description: Field SelectionCriteria from InvStkPolicyMaster

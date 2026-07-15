@@ -1,0 +1,8 @@
+concept: lynq_pg__syspro__setting_act_type
+table: Lynq_PG_Syspro_SettingActType
+alias: lpgssat
+fields:
+  id: lpgssat.Id
+  sett_id: lpgssat.SettId
+  activity_type: lpgssat.ActivityType
+  activity_type_desc: lpgssat.ActivityTypeDesc

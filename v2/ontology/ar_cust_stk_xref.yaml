@@ -1,0 +1,33 @@
+concept: ar_cust_stk_xref
+display_name: ArCustStkXref
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCustStkXref.
+synonyms:
+- arcuststkxref
+- ar cust stk xref
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCustStkXref
+  cust_stock_code:
+    display: Custstockcode
+    type: string
+    required: false
+    description: Field CustStockCode from ArCustStkXref
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ArCustStkXref
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from ArCustStkXref
+  long_desc:
+    display: Longdesc
+    type: string
+    required: false
+    description: Field LongDesc from ArCustStkXref

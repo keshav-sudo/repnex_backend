@@ -1,0 +1,23 @@
+concept: mrp_narration
+display_name: MrpNarration
+module: mrp
+description: Auto-generated representation of the physical table MrpNarration.
+synonyms:
+- mrpnarration
+- mrp narration
+header_attributes:
+  narration_num:
+    display: Narrationnum
+    type: decimal
+    required: false
+    description: Field NarrationNum from MrpNarration
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpNarration
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from MrpNarration

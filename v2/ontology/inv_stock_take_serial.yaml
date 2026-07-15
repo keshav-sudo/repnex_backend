@@ -1,0 +1,63 @@
+concept: inv_stock_take_serial
+display_name: InvStockTakeSerial
+module: inventory
+description: Auto-generated representation of the physical table InvStockTakeSerial.
+synonyms:
+- invstocktakeserial
+- inv stock take serial
+header_attributes:
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvStockTakeSerial
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvStockTakeSerial
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from InvStockTakeSerial
+  saved_on_hand:
+    display: Savedonhand
+    type: decimal
+    required: false
+    description: Field SavedOnHand from InvStockTakeSerial
+  qty_captured:
+    display: Qtycaptured
+    type: decimal
+    required: false
+    description: Field QtyCaptured from InvStockTakeSerial
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvStockTakeSerial
+  create_serial:
+    display: Createserial
+    type: string
+    required: false
+    description: Field CreateSerial from InvStockTakeSerial
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvStockTakeSerial
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvStockTakeSerial
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvStockTakeSerial
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvStockTakeSerial

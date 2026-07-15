@@ -1,0 +1,12 @@
+concept: ar_csh_jnl_det_pos
+table: ArCshJnlDetPos
+alias: acjdp
+fields:
+  trn_year: acjdp.TrnYear
+  trn_month: acjdp.TrnMonth
+  journal: acjdp.Journal
+  entry_number: acjdp.EntryNumber
+  pos_transaction_type: acjdp.PosTransactionType
+  pos_trans_branch: acjdp.PosTransBranch
+  pos_unique_id: acjdp.PosUniqueId
+  pos_payment_line: acjdp.PosPaymentLine

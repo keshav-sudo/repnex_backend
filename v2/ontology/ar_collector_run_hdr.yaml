@@ -1,0 +1,78 @@
+concept: ar_collector_run_hdr
+display_name: ArCollectorRunHdr
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCollectorRunHdr.
+synonyms:
+- arcollectorrunhdr
+- ar collector run hdr
+header_attributes:
+  collector_run_no:
+    display: Collectorrunno
+    type: string
+    required: false
+    description: Field CollectorRunNo from ArCollectorRunHdr
+  collector:
+    display: Collector
+    type: string
+    required: false
+    description: Field Collector from ArCollectorRunHdr
+  date_collected:
+    display: Datecollected
+    type: date
+    required: false
+    description: Field DateCollected from ArCollectorRunHdr
+  receipt_date:
+    display: Receiptdate
+    type: date
+    required: false
+    description: Field ReceiptDate from ArCollectorRunHdr
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from ArCollectorRunHdr
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ArCollectorRunHdr
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ArCollectorRunHdr
+  batch_cash_total:
+    display: Batchcashtotal
+    type: decimal
+    required: false
+    description: Field BatchCashTotal from ArCollectorRunHdr
+  batch_check_total:
+    display: Batchchecktotal
+    type: decimal
+    required: false
+    description: Field BatchCheckTotal from ArCollectorRunHdr
+  batch_other_total:
+    display: Batchothertotal
+    type: decimal
+    required: false
+    description: Field BatchOtherTotal from ArCollectorRunHdr
+  batch_pd_check_total:
+    display: Batchpdchecktotal
+    type: decimal
+    required: false
+    description: Field BatchPdCheckTotal from ArCollectorRunHdr
+  batch_total:
+    display: Batchtotal
+    type: decimal
+    required: false
+    description: Field BatchTotal from ArCollectorRunHdr
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArCollectorRunHdr
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArCollectorRunHdr

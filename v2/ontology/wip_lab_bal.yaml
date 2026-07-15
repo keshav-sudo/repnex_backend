@@ -1,0 +1,93 @@
+concept: wip_lab_bal
+display_name: WipLabBal
+module: work_in_progress
+description: Auto-generated representation of the physical table WipLabBal.
+synonyms:
+- wiplabbal
+- wip lab bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from WipLabBal
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipLabBal
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from WipLabBal
+  cur_startup_hours:
+    display: Curstartuphours
+    type: decimal
+    required: false
+    description: Field CurStartupHours from WipLabBal
+  clc_startup_hours:
+    display: Clcstartuphours
+    type: decimal
+    required: false
+    description: Field ClcStartupHours from WipLabBal
+  cur_set_up_hours:
+    display: Cursetuphours
+    type: decimal
+    required: false
+    description: Field CurSetUpHours from WipLabBal
+  clc_set_up_hours:
+    display: Clcsetuphours
+    type: decimal
+    required: false
+    description: Field ClcSetUpHours from WipLabBal
+  cur_run_time_hours:
+    display: Curruntimehours
+    type: decimal
+    required: false
+    description: Field CurRunTimeHours from WipLabBal
+  clc_run_time_hours:
+    display: Clcruntimehours
+    type: decimal
+    required: false
+    description: Field ClcRunTimeHours from WipLabBal
+  cur_teardown_hours:
+    display: Curteardownhours
+    type: decimal
+    required: false
+    description: Field CurTeardownHours from WipLabBal
+  clc_teardown_hours:
+    display: Clcteardownhours
+    type: decimal
+    required: false
+    description: Field ClcTeardownHours from WipLabBal
+  cur_trn_value:
+    display: Curtrnvalue
+    type: decimal
+    required: false
+    description: Field CurTrnValue from WipLabBal
+  clc_trn_value:
+    display: Clctrnvalue
+    type: decimal
+    required: false
+    description: Field ClcTrnValue from WipLabBal
+  cur_wc_rate_ind:
+    display: Curwcrateind
+    type: decimal
+    required: false
+    description: Field CurWcRateInd from WipLabBal
+  clc_wc_rate_ind:
+    display: Clcwcrateind
+    type: decimal
+    required: false
+    description: Field ClcWcRateInd from WipLabBal
+  cur_capacity_issued:
+    display: Curcapacityissued
+    type: decimal
+    required: false
+    description: Field CurCapacityIssued from WipLabBal
+  clc_capacity_issued:
+    display: Clccapacityissued
+    type: decimal
+    required: false
+    description: Field ClcCapacityIssued from WipLabBal

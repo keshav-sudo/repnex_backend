@@ -1,0 +1,53 @@
+concept: inv_allocated_bal_fix
+display_name: InvAllocatedBalFix
+module: inventory
+description: Auto-generated representation of the physical table InvAllocatedBalFix.
+synonyms:
+- invallocatedbalfix
+- inv allocated bal fix
+header_attributes:
+  run_date:
+    display: Rundate
+    type: date
+    required: false
+    description: Field RunDate from InvAllocatedBalFix
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvAllocatedBalFix
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvAllocatedBalFix
+  old_qty_in_inspection:
+    display: Oldqtyininspection
+    type: decimal
+    required: false
+    description: Field OldQtyInInspection from InvAllocatedBalFix
+  new_qty_in_inspection:
+    display: Newqtyininspection
+    type: decimal
+    required: false
+    description: Field NewQtyInInspection from InvAllocatedBalFix
+  old_qty_on_order:
+    display: Oldqtyonorder
+    type: decimal
+    required: false
+    description: Field OldQtyOnOrder from InvAllocatedBalFix
+  new_qty_on_order:
+    display: Newqtyonorder
+    type: decimal
+    required: false
+    description: Field NewQtyOnOrder from InvAllocatedBalFix
+  old_qty_allocated_wip:
+    display: Oldqtyallocatedwip
+    type: decimal
+    required: false
+    description: Field OldQtyAllocatedWip from InvAllocatedBalFix
+  new_qty_allocated_wip:
+    display: Newqtyallocatedwip
+    type: decimal
+    required: false
+    description: Field NewQtyAllocatedWip from InvAllocatedBalFix

@@ -1,0 +1,20 @@
+concept: inv_inspect_det
+table: InvInspectDet
+alias: iid
+fields:
+  grn: iid.Grn
+  lot: iid.Lot
+  trn_date: iid.TrnDate
+  line: iid.Line
+  trn_type: iid.TrnType
+  trn_qty: iid.TrnQty
+  concession_num: iid.ConcessionNum
+  document_num: iid.DocumentNum
+  reject_scrap_code: iid.RejectScrapCode
+  narration: iid.Narration
+  return_supplier: iid.ReturnSupplier
+  return_sup_flag: iid.ReturnSupFlag
+  scrap_gl_code: iid.ScrapGlCode
+  accept_qty: iid.AcceptQty
+  reject_qty: iid.RejectQty
+  qty_in_quarant: iid.QtyInQuarant

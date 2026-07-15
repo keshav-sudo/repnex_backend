@@ -1,0 +1,63 @@
+concept: crm_comp_users
+display_name: CrmCompUsers
+module: crm
+description: Auto-generated representation of the physical table CrmCompUsers.
+synonyms:
+- crmcompusers
+- crm comp users
+header_attributes:
+  user_code:
+    display: Usercode
+    type: string
+    required: false
+    description: Field UserCode from CrmCompUsers
+  complaint_group:
+    display: Complaintgroup
+    type: string
+    required: false
+    description: Field ComplaintGroup from CrmCompUsers
+  user_name:
+    display: Username
+    type: string
+    required: false
+    description: Field UserName from CrmCompUsers
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from CrmCompUsers
+  user_email:
+    display: Useremail
+    type: string
+    required: false
+    description: Field UserEmail from CrmCompUsers
+  admin_user:
+    display: Adminuser
+    type: string
+    required: false
+    description: Field AdminUser from CrmCompUsers
+  can_add_complaint:
+    display: Canaddcomplaint
+    type: string
+    required: false
+    description: Field CanAddComplaint from CrmCompUsers
+  can_app_complaint:
+    display: Canappcomplaint
+    type: string
+    required: false
+    description: Field CanAppComplaint from CrmCompUsers
+  on_hold_flag:
+    display: Onholdflag
+    type: string
+    required: false
+    description: Field OnHoldFlag from CrmCompUsers
+  can_escalate:
+    display: Canescalate
+    type: string
+    required: false
+    description: Field CanEscalate from CrmCompUsers
+  can_route:
+    display: Canroute
+    type: string
+    required: false
+    description: Field CanRoute from CrmCompUsers

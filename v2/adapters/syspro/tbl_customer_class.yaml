@@ -1,0 +1,6 @@
+concept: tbl_customer_class
+table: TblCustomerClass
+alias: tcc
+fields:
+  class: tcc.Class
+  description: tcc.Description

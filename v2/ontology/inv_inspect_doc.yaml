@@ -1,0 +1,138 @@
+concept: inv_inspect_doc
+display_name: InvInspectDoc
+module: inventory
+description: Auto-generated representation of the physical table InvInspectDoc.
+synonyms:
+- invinspectdoc
+- inv inspect doc
+header_attributes:
+  transaction_type:
+    display: Transactiontype
+    type: string
+    required: false
+    description: Field TransactionType from InvInspectDoc
+  document_num:
+    display: Documentnum
+    type: decimal
+    required: false
+    description: Field DocumentNum from InvInspectDoc
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from InvInspectDoc
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvInspectDoc
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvInspectDoc
+  reprint_flag:
+    display: Reprintflag
+    type: string
+    required: false
+    description: Field ReprintFlag from InvInspectDoc
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvInspectDoc
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvInspectDoc
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvInspectDoc
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from InvInspectDoc
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from InvInspectDoc
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from InvInspectDoc
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from InvInspectDoc
+  reject_code:
+    display: Rejectcode
+    type: string
+    required: false
+    description: Field RejectCode from InvInspectDoc
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from InvInspectDoc
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from InvInspectDoc
+  delivery_note:
+    display: Deliverynote
+    type: string
+    required: false
+    description: Field DeliveryNote from InvInspectDoc
+  delivery_note_date:
+    display: Deliverynotedate
+    type: date
+    required: false
+    description: Field DeliveryNoteDate from InvInspectDoc
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from InvInspectDoc
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from InvInspectDoc
+  orig_due_date:
+    display: Origduedate
+    type: date
+    required: false
+    description: Field OrigDueDate from InvInspectDoc
+  latest_due_date:
+    display: Latestduedate
+    type: date
+    required: false
+    description: Field LatestDueDate from InvInspectDoc
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvInspectDoc
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from InvInspectDoc
+  trn_document:
+    display: Trndocument
+    type: string
+    required: false
+    description: Field TrnDocument from InvInspectDoc
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvInspectDoc

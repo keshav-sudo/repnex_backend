@@ -1,0 +1,20 @@
+concept: wip_all_mat_ser
+table: WipAllMatSer
+alias: wams
+fields:
+  job: wams.Job
+  stock_code: wams.StockCode
+  warehouse: wams.Warehouse
+  line: wams.Line
+  serial: wams.Serial
+  serial_method: wams.SerialMethod
+  expiry_date: wams.ExpiryDate
+  qty_reserved: wams.QtyReserved
+  qty_issued: wams.QtyIssued
+  location: wams.Location
+  lot: wams.Lot
+  version: wams.Version
+  release: wams.Release
+  ser_complete: wams.SerComplete
+  neg_allocation: wams.NegAllocation
+  bin: wams.Bin

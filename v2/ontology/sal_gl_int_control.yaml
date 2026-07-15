@@ -1,0 +1,38 @@
+concept: sal_gl_int_control
+display_name: SalGlIntControl
+module: other
+description: Auto-generated representation of the physical table SalGlIntControl.
+synonyms:
+- salglintcontrol
+- sal gl int control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from SalGlIntControl
+  prod_class_req:
+    display: Prodclassreq
+    type: string
+    required: false
+    description: Field ProdClassReq from SalGlIntControl
+  area_required:
+    display: Arearequired
+    type: string
+    required: false
+    description: Field AreaRequired from SalGlIntControl
+  warehouse_req:
+    display: Warehousereq
+    type: string
+    required: false
+    description: Field WarehouseReq from SalGlIntControl
+  pay_area_required:
+    display: Payarearequired
+    type: string
+    required: false
+    description: Field PayAreaRequired from SalGlIntControl
+  counter_sa_pay_req:
+    display: Countersapayreq
+    type: string
+    required: false
+    description: Field CounterSaPayReq from SalGlIntControl

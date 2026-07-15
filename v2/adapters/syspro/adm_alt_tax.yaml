@@ -1,0 +1,6 @@
+concept: adm_alt_tax
+table: AdmAltTax
+alias: aat
+fields:
+  tax_code: aat.TaxCode
+  alt_tax_code: aat.AltTaxCode

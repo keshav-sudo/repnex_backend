@@ -1,0 +1,37 @@
+concept: wip_job_nest
+table: WipJobNest
+alias: wjn
+fields:
+  job_nest: wjn.JobNest
+  job: wjn.Job
+  stock_code: wjn.StockCode
+  warehouse: wjn.Warehouse
+  line: wjn.Line
+  type: wjn.Type
+  nest_stock_code: wjn.NestStockCode
+  sheet: wjn.Sheet
+  nest_description: wjn.NestDescription
+  version: wjn.Version
+  release: wjn.Release
+  scrap_flag: wjn.ScrapFlag
+  qty_reqd: wjn.QtyReqd
+  qty_issued: wjn.QtyIssued
+  uom: wjn.Uom
+  qty_scrapped: wjn.QtyScrapped
+  pct_utilization: wjn.PctUtilization
+  qty_to_make: wjn.QtyToMake
+  qty_manufactured: wjn.QtyManufactured
+  machine: wjn.Machine
+  run_time: wjn.RunTime
+  set_up_time: wjn.SetUpTime
+  start_up_time: wjn.StartUpTime
+  shutdown_time: wjn.ShutdownTime
+  operation: wjn.Operation
+  work_centre: wjn.WorkCentre
+  nest_status: wjn.NestStatus
+  gl_code: wjn.GlCode
+  jnl_year: wjn.JnlYear
+  jnl_month: wjn.JnlMonth
+  journal: wjn.Journal
+  entry_number: wjn.EntryNumber
+  split_flag: wjn.SplitFlag

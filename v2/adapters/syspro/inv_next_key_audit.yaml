@@ -1,0 +1,15 @@
+concept: inv_next_key_audit
+table: InvNextKeyAudit
+alias: inka
+fields:
+  company: inka.Company
+  key_type: inka.KeyType
+  post_year: inka.PostYear
+  post_period: inka.PostPeriod
+  key_issued: inka.KeyIssued
+  allocated_by_program: inka.AllocatedByProgram
+  called_from_program: inka.CalledFromProgram
+  allocated_date: inka.AllocatedDate
+  allocated_by_oper: inka.AllocatedByOper
+  status: inka.Status
+  closed_date: inka.ClosedDate

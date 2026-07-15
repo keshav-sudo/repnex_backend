@@ -1,0 +1,53 @@
+concept: ecc_held_docs
+display_name: EccHeldDocs
+module: other
+description: Auto-generated representation of the physical table EccHeldDocs.
+synonyms:
+- ecchelddocs
+- ecc held docs
+header_attributes:
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccHeldDocs
+  doc_type:
+    display: Doctype
+    type: string
+    required: false
+    description: Field DocType from EccHeldDocs
+  doc_key:
+    display: Dockey
+    type: string
+    required: false
+    description: Field DocKey from EccHeldDocs
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from EccHeldDocs
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from EccHeldDocs
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from EccHeldDocs
+  date_held:
+    display: Dateheld
+    type: date
+    required: false
+    description: Field DateHeld from EccHeldDocs
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from EccHeldDocs
+  audit_sequence:
+    display: Auditsequence
+    type: decimal
+    required: false
+    description: Field AuditSequence from EccHeldDocs

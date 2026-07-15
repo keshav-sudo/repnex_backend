@@ -1,0 +1,31 @@
+concept: sor_additions
+table: SorAdditions
+alias: sa1
+fields:
+  trn_date: sa1.TrnDate
+  trn_time: sa1.TrnTime
+  sales_order: sa1.SalesOrder
+  sales_order_line: sa1.SalesOrderLine
+  line_type: sa1.LineType
+  line_value: sa1.LineValue
+  cost_value: sa1.CostValue
+  product_class: sa1.ProductClass
+  customer: sa1.Customer
+  branch: sa1.Branch
+  document_type: sa1.DocumentType
+  salesperson: sa1.Salesperson
+  area: sa1.Area
+  tax_code: sa1.TaxCode
+  gst_code: sa1.GstCode
+  user_field1: sa1.UserField1
+  stock_code: sa1.StockCode
+  description: sa1.Description
+  warehouse: sa1.Warehouse
+  order_qty: sa1.OrderQty
+  order_uom: sa1.OrderUom
+  price: sa1.Price
+  price_uom: sa1.PriceUom
+  discount: sa1.Discount
+  ship_qty: sa1.ShipQty
+  credit_reason: sa1.CreditReason
+  operator: sa1.Operator

@@ -1,0 +1,28 @@
+concept: rma_problem_codes
+display_name: RmaProblemCodes
+module: other
+description: Auto-generated representation of the physical table RmaProblemCodes.
+synonyms:
+- rmaproblemcodes
+- rma problem codes
+header_attributes:
+  problem_code:
+    display: Problemcode
+    type: string
+    required: false
+    description: Field ProblemCode from RmaProblemCodes
+  problem_desc:
+    display: Problemdesc
+    type: string
+    required: false
+    description: Field ProblemDesc from RmaProblemCodes
+  re_stock_percent:
+    display: Restockpercent
+    type: decimal
+    required: false
+    description: Field ReStockPercent from RmaProblemCodes
+  use_default_pct:
+    display: Usedefaultpct
+    type: decimal
+    required: false
+    description: Field UseDefaultPct from RmaProblemCodes

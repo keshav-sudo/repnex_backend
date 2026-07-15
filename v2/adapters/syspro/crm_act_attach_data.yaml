@@ -1,0 +1,9 @@
+concept: crm_act_attach_data
+table: CrmActAttachData
+alias: caad
+fields:
+  contact_id: caad.ContactId
+  start_date: caad.StartDate
+  start_time: caad.StartTime
+  attachment_file: caad.AttachmentFile
+  attachment_data: caad.AttachmentData

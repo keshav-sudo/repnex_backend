@@ -1,0 +1,48 @@
+concept: ar_terms_headings
+display_name: ArTermsHeadings
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArTermsHeadings.
+synonyms:
+- artermsheadings
+- ar terms headings
+header_attributes:
+  ageing_code:
+    display: Ageingcode
+    type: string
+    required: false
+    description: Field AgeingCode from ArTermsHeadings
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from ArTermsHeadings
+  ageing_head1:
+    display: Ageinghead1
+    type: string
+    required: false
+    description: Field AgeingHead1 from ArTermsHeadings
+  ageing_head2:
+    display: Ageinghead2
+    type: string
+    required: false
+    description: Field AgeingHead2 from ArTermsHeadings
+  ageing_head3:
+    display: Ageinghead3
+    type: string
+    required: false
+    description: Field AgeingHead3 from ArTermsHeadings
+  ageing_head4:
+    display: Ageinghead4
+    type: string
+    required: false
+    description: Field AgeingHead4 from ArTermsHeadings
+  ageing_head5:
+    display: Ageinghead5
+    type: string
+    required: false
+    description: Field AgeingHead5 from ArTermsHeadings
+  ageing_head6:
+    display: Ageinghead6
+    type: string
+    required: false
+    description: Field AgeingHead6 from ArTermsHeadings

@@ -1,0 +1,58 @@
+concept: req_header
+display_name: ReqHeader
+module: other
+description: Auto-generated representation of the physical table ReqHeader.
+synonyms:
+- reqheader
+- req header
+header_attributes:
+  requisition:
+    display: Requisition
+    type: string
+    required: false
+    description: Field Requisition from ReqHeader
+  reqn_status:
+    display: Reqnstatus
+    type: string
+    required: false
+    description: Field ReqnStatus from ReqHeader
+  reqn_on_hold_flag:
+    display: Reqnonholdflag
+    type: string
+    required: false
+    description: Field ReqnOnHoldFlag from ReqHeader
+  reqn_complete_flag:
+    display: Reqncompleteflag
+    type: string
+    required: false
+    description: Field ReqnCompleteFlag from ReqHeader
+  reqn_next_line:
+    display: Reqnnextline
+    type: decimal
+    required: false
+    description: Field ReqnNextLine from ReqHeader
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from ReqHeader
+  originator:
+    display: Originator
+    type: string
+    required: false
+    description: Field Originator from ReqHeader
+  date_reqn_raised:
+    display: Datereqnraised
+    type: date
+    required: false
+    description: Field DateReqnRaised from ReqHeader
+  reqn_value:
+    display: Reqnvalue
+    type: decimal
+    required: false
+    description: Field ReqnValue from ReqHeader
+  approved_value:
+    display: Approvedvalue
+    type: decimal
+    required: false
+    description: Field ApprovedValue from ReqHeader

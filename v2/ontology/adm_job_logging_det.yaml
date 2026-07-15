@@ -1,0 +1,63 @@
+concept: adm_job_logging_det
+display_name: AdmJobLoggingDet
+module: administration
+description: Auto-generated representation of the physical table AdmJobLoggingDet.
+synonyms:
+- admjobloggingdet
+- adm job logging det
+header_attributes:
+  prog_run_date:
+    display: Progrundate
+    type: date
+    required: false
+    description: Field ProgRunDate from AdmJobLoggingDet
+  prog_run_time:
+    display: Progruntime
+    type: decimal
+    required: false
+    description: Field ProgRunTime from AdmJobLoggingDet
+  prog_cur_date:
+    display: Progcurdate
+    type: date
+    required: false
+    description: Field ProgCurDate from AdmJobLoggingDet
+  prog_cur_time:
+    display: Progcurtime
+    type: decimal
+    required: false
+    description: Field ProgCurTime from AdmJobLoggingDet
+  num3:
+    display: Num3
+    type: decimal
+    required: false
+    description: Field Num3 from AdmJobLoggingDet
+  prog_message:
+    display: Progmessage
+    type: string
+    required: false
+    description: Field ProgMessage from AdmJobLoggingDet
+  database_name:
+    display: Databasename
+    type: string
+    required: false
+    description: Field DatabaseName from AdmJobLoggingDet
+  database_table:
+    display: Databasetable
+    type: string
+    required: false
+    description: Field DatabaseTable from AdmJobLoggingDet
+  sql_status:
+    display: Sqlstatus
+    type: string
+    required: false
+    description: Field SqlStatus from AdmJobLoggingDet
+  sql_message:
+    display: Sqlmessage
+    type: string
+    required: false
+    description: Field SqlMessage from AdmJobLoggingDet
+  sql_command:
+    display: Sqlcommand
+    type: string
+    required: false
+    description: Field SqlCommand from AdmJobLoggingDet

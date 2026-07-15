@@ -1,0 +1,43 @@
+concept: srs_archive_por
+display_name: SrsArchivePOR
+module: other
+description: Auto-generated representation of the physical table SrsArchivePOR.
+synonyms:
+- srsarchivepor
+- srs archive por
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchivePOR
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchivePOR
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchivePOR
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchivePOR
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchivePOR
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchivePOR
+  requisition:
+    display: Requisition
+    type: string
+    required: false
+    description: Field Requisition from SrsArchivePOR

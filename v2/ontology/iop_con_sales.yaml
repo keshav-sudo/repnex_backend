@@ -1,0 +1,58 @@
+concept: iop_con_sales
+display_name: IopConSales
+module: other
+description: Auto-generated representation of the physical table IopConSales.
+synonyms:
+- iopconsales
+- iop con sales
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopConSales
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopConSales
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopConSales
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopConSales
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopConSales
+  movement_date:
+    display: Movementdate
+    type: date
+    required: false
+    description: Field MovementDate from IopConSales
+  trans_count:
+    display: Transcount
+    type: decimal
+    required: false
+    description: Field TransCount from IopConSales
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from IopConSales
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopConSales
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopConSales

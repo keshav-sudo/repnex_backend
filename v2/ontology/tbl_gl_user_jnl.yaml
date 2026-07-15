@@ -1,0 +1,18 @@
+concept: tbl_gl_user_jnl
+display_name: TblGlUserJnl
+module: other
+description: Auto-generated representation of the physical table TblGlUserJnl.
+synonyms:
+- tblgluserjnl
+- tbl gl user jnl
+header_attributes:
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from TblGlUserJnl
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblGlUserJnl

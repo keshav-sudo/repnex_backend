@@ -1,0 +1,88 @@
+concept: wip_all_mat_ser
+display_name: WipAllMatSer
+module: work_in_progress
+description: Auto-generated representation of the physical table WipAllMatSer.
+synonyms:
+- wipallmatser
+- wip all mat ser
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipAllMatSer
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipAllMatSer
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipAllMatSer
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from WipAllMatSer
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from WipAllMatSer
+  serial_method:
+    display: Serialmethod
+    type: string
+    required: false
+    description: Field SerialMethod from WipAllMatSer
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from WipAllMatSer
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from WipAllMatSer
+  qty_issued:
+    display: Qtyissued
+    type: decimal
+    required: false
+    description: Field QtyIssued from WipAllMatSer
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from WipAllMatSer
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipAllMatSer
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipAllMatSer
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipAllMatSer
+  ser_complete:
+    display: Sercomplete
+    type: string
+    required: false
+    description: Field SerComplete from WipAllMatSer
+  neg_allocation:
+    display: Negallocation
+    type: string
+    required: false
+    description: Field NegAllocation from WipAllMatSer
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WipAllMatSer

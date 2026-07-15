@@ -1,0 +1,8 @@
+concept: por_sup_comment
+table: PorSupComment
+alias: psc1
+fields:
+  supplier: psc1.Supplier
+  comment_code: psc1.CommentCode
+  comment1: psc1.Comment1
+  comment2: psc1.Comment2

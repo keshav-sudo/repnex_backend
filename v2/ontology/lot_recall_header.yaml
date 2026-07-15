@@ -1,0 +1,53 @@
+concept: lot_recall_header
+display_name: LotRecallHeader
+module: other
+description: Auto-generated representation of the physical table LotRecallHeader.
+synonyms:
+- lotrecallheader
+- lot recall header
+header_attributes:
+  product_recall:
+    display: Productrecall
+    type: string
+    required: false
+    description: Field ProductRecall from LotRecallHeader
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from LotRecallHeader
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from LotRecallHeader
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from LotRecallHeader
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from LotRecallHeader
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from LotRecallHeader
+  end_time:
+    display: Endtime
+    type: decimal
+    required: false
+    description: Field EndTime from LotRecallHeader
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from LotRecallHeader
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from LotRecallHeader

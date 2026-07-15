@@ -1,0 +1,32 @@
+concept: adm_usa_tax
+table: AdmUsaTax
+alias: aut
+fields:
+  state: aut.State
+  county_zip: aut.CountyZip
+  city: aut.City
+  effective_date: aut.EffectiveDate
+  description: aut.Description
+  gl_code: aut.GlCode
+  freight_taxable: aut.FreightTaxable
+  verazip_county: aut.VerazipCounty
+  limit_flag: aut.LimitFlag
+  first_rate11: aut.FirstRate11
+  first_rate12: aut.FirstRate12
+  first_limit11: aut.FirstLimit11
+  first_limit12: aut.FirstLimit12
+  first_limit_value11: aut.FirstLimitValue11
+  first_limit_value12: aut.FirstLimitValue12
+  first_rate21: aut.FirstRate21
+  first_rate22: aut.FirstRate22
+  first_limit21: aut.FirstLimit21
+  first_limit22: aut.FirstLimit22
+  first_limit_value21: aut.FirstLimitValue21
+  first_limit_value22: aut.FirstLimitValue22
+  first_rate31: aut.FirstRate31
+  first_rate32: aut.FirstRate32
+  first_limit31: aut.FirstLimit31
+  first_limit32: aut.FirstLimit32
+  first_limit_value31: aut.FirstLimitValue31
+  first_limit_value32: aut.FirstLimitValue32
+  usa_or_normal_tax: aut.UsaOrNormalTax

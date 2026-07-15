@@ -1,0 +1,43 @@
+concept: eft_extract_hdr
+display_name: EftExtractHdr
+module: other
+description: Auto-generated representation of the physical table EftExtractHdr.
+synonyms:
+- eftextracthdr
+- eft extract hdr
+header_attributes:
+  eft_batch:
+    display: Eftbatch
+    type: decimal
+    required: false
+    description: Field EftBatch from EftExtractHdr
+  trn_source:
+    display: Trnsource
+    type: string
+    required: false
+    description: Field TrnSource from EftExtractHdr
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from EftExtractHdr
+  payment_value:
+    display: Paymentvalue
+    type: decimal
+    required: false
+    description: Field PaymentValue from EftExtractHdr
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from EftExtractHdr
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from EftExtractHdr
+  select_indicator:
+    display: Selectindicator
+    type: string
+    required: false
+    description: Field SelectIndicator from EftExtractHdr

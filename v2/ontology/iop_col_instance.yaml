@@ -1,0 +1,208 @@
+concept: iop_col_instance
+display_name: IopColInstance
+module: other
+description: Auto-generated representation of the physical table IopColInstance.
+synonyms:
+- iopcolinstance
+- iop col instance
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopColInstance
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopColInstance
+  calendar:
+    display: Calendar
+    type: string
+    required: false
+    description: Field Calendar from IopColInstance
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from IopColInstance
+  algorithm:
+    display: Algorithm
+    type: string
+    required: false
+    description: Field Algorithm from IopColInstance
+  override_alg:
+    display: Overridealg
+    type: string
+    required: false
+    description: Field OverrideAlg from IopColInstance
+  alg_a_months:
+    display: Algamonths
+    type: decimal
+    required: false
+    description: Field AlgAMonths from IopColInstance
+  alg_a_basis:
+    display: Algabasis
+    type: string
+    required: false
+    description: Field AlgABasis from IopColInstance
+  alg_b_months:
+    display: Algbmonths
+    type: decimal
+    required: false
+    description: Field AlgBMonths from IopColInstance
+  alg_c_months:
+    display: Algcmonths
+    type: decimal
+    required: false
+    description: Field AlgCMonths from IopColInstance
+  alg_d_months:
+    display: Algdmonths
+    type: decimal
+    required: false
+    description: Field AlgDMonths from IopColInstance
+  alg_f_smooth:
+    display: Algfsmooth
+    type: decimal
+    required: false
+    description: Field AlgFSmooth from IopColInstance
+  alg_f_trend:
+    display: Algftrend
+    type: decimal
+    required: false
+    description: Field AlgFTrend from IopColInstance
+  alg_g_coeff1:
+    display: Alggcoeff1
+    type: decimal
+    required: false
+    description: Field AlgGCoeff1 from IopColInstance
+  alg_g_coeff2:
+    display: Alggcoeff2
+    type: decimal
+    required: false
+    description: Field AlgGCoeff2 from IopColInstance
+  alg_g_coeff3:
+    display: Alggcoeff3
+    type: decimal
+    required: false
+    description: Field AlgGCoeff3 from IopColInstance
+  alg_h_coeff1:
+    display: Alghcoeff1
+    type: decimal
+    required: false
+    description: Field AlgHCoeff1 from IopColInstance
+  alg_h_coeff2:
+    display: Alghcoeff2
+    type: decimal
+    required: false
+    description: Field AlgHCoeff2 from IopColInstance
+  alg_h_coeff3:
+    display: Alghcoeff3
+    type: decimal
+    required: false
+    description: Field AlgHCoeff3 from IopColInstance
+  alg_h_coeff4:
+    display: Alghcoeff4
+    type: decimal
+    required: false
+    description: Field AlgHCoeff4 from IopColInstance
+  alg_i_coeff1:
+    display: Algicoeff1
+    type: decimal
+    required: false
+    description: Field AlgICoeff1 from IopColInstance
+  alg_i_coeff2:
+    display: Algicoeff2
+    type: decimal
+    required: false
+    description: Field AlgICoeff2 from IopColInstance
+  alg_i_coeff3:
+    display: Algicoeff3
+    type: decimal
+    required: false
+    description: Field AlgICoeff3 from IopColInstance
+  alg_j_coeff1:
+    display: Algjcoeff1
+    type: decimal
+    required: false
+    description: Field AlgJCoeff1 from IopColInstance
+  alg_j_coeff2:
+    display: Algjcoeff2
+    type: decimal
+    required: false
+    description: Field AlgJCoeff2 from IopColInstance
+  alg_j_coeff3:
+    display: Algjcoeff3
+    type: decimal
+    required: false
+    description: Field AlgJCoeff3 from IopColInstance
+  alg_k_coeff1:
+    display: Algkcoeff1
+    type: decimal
+    required: false
+    description: Field AlgKCoeff1 from IopColInstance
+  alg_k_coeff2:
+    display: Algkcoeff2
+    type: decimal
+    required: false
+    description: Field AlgKCoeff2 from IopColInstance
+  alg_k_coeff3:
+    display: Algkcoeff3
+    type: decimal
+    required: false
+    description: Field AlgKCoeff3 from IopColInstance
+  season_sides:
+    display: Seasonsides
+    type: decimal
+    required: false
+    description: Field SeasonSides from IopColInstance
+  season_periods:
+    display: Seasonperiods
+    type: decimal
+    required: false
+    description: Field SeasonPeriods from IopColInstance
+  season_coeff:
+    display: Seasoncoeff
+    type: decimal
+    required: false
+    description: Field SeasonCoeff from IopColInstance
+  outlier_std_dev:
+    display: Outlierstddev
+    type: decimal
+    required: false
+    description: Field OutlierStdDev from IopColInstance
+  sku_adjustments:
+    display: Skuadjustments
+    type: string
+    required: false
+    description: Field SkuAdjustments from IopColInstance
+  aggregation_date:
+    display: Aggregationdate
+    type: date
+    required: false
+    description: Field AggregationDate from IopColInstance
+  aggregation_time:
+    display: Aggregationtime
+    type: decimal
+    required: false
+    description: Field AggregationTime from IopColInstance
+  consolidate_wh:
+    display: Consolidatewh
+    type: string
+    required: false
+    description: Field ConsolidateWh from IopColInstance
+  listed_warehouse:
+    display: Listedwarehouse
+    type: string
+    required: false
+    description: Field ListedWarehouse from IopColInstance
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from IopColInstance
+  disaggregate:
+    display: Disaggregate
+    type: string
+    required: false
+    description: Field Disaggregate from IopColInstance

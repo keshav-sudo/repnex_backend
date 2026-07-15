@@ -1,0 +1,28 @@
+concept: wip_lab_jnl_ctl
+display_name: WipLabJnlCtl
+module: work_in_progress
+description: Auto-generated representation of the physical table WipLabJnlCtl.
+synonyms:
+- wiplabjnlctl
+- wip lab jnl ctl
+header_attributes:
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipLabJnlCtl
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from WipLabJnlCtl
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from WipLabJnlCtl
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from WipLabJnlCtl

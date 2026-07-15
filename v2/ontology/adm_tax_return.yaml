@@ -1,0 +1,188 @@
+concept: adm_tax_return
+display_name: AdmTaxReturn
+module: administration
+description: Auto-generated representation of the physical table AdmTaxReturn.
+synonyms:
+- admtaxreturn
+- adm tax return
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from AdmTaxReturn
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from AdmTaxReturn
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from AdmTaxReturn
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from AdmTaxReturn
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from AdmTaxReturn
+  entry:
+    display: Entry
+    type: decimal
+    required: false
+    description: Field Entry from AdmTaxReturn
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from AdmTaxReturn
+  input_out_put:
+    display: Inputoutput
+    type: string
+    required: false
+    description: Field InputOutPut from AdmTaxReturn
+  vendor:
+    display: Vendor
+    type: string
+    required: false
+    description: Field Vendor from AdmTaxReturn
+  status:
+    display: Status
+    type: decimal
+    required: false
+    description: Field Status from AdmTaxReturn
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from AdmTaxReturn
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from AdmTaxReturn
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from AdmTaxReturn
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from AdmTaxReturn
+  invoice_disc:
+    display: Invoicedisc
+    type: decimal
+    required: false
+    description: Field InvoiceDisc from AdmTaxReturn
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from AdmTaxReturn
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from AdmTaxReturn
+  ec_acquisition:
+    display: Ecacquisition
+    type: string
+    required: false
+    description: Field EcAcquisition from AdmTaxReturn
+  purchase_type:
+    display: Purchasetype
+    type: string
+    required: false
+    description: Field PurchaseType from AdmTaxReturn
+  exempt_value:
+    display: Exemptvalue
+    type: decimal
+    required: false
+    description: Field ExemptValue from AdmTaxReturn
+  tax_ret_submitted:
+    display: Taxretsubmitted
+    type: string
+    required: false
+    description: Field TaxRetSubmitted from AdmTaxReturn
+  submitted_date:
+    display: Submitteddate
+    type: date
+    required: false
+    description: Field SubmittedDate from AdmTaxReturn
+  year_ret_submitted:
+    display: Yearretsubmitted
+    type: decimal
+    required: false
+    description: Field YearRetSubmitted from AdmTaxReturn
+  mth_ret_submitted:
+    display: Mthretsubmitted
+    type: decimal
+    required: false
+    description: Field MthRetSubmitted from AdmTaxReturn
+  vat_period:
+    display: Vatperiod
+    type: decimal
+    required: false
+    description: Field VatPeriod from AdmTaxReturn
+  vat_year:
+    display: Vatyear
+    type: decimal
+    required: false
+    description: Field VatYear from AdmTaxReturn
+  transaction_code:
+    display: Transactioncode
+    type: string
+    required: false
+    description: Field TransactionCode from AdmTaxReturn
+  dtt_status:
+    display: Dttstatus
+    type: decimal
+    required: false
+    description: Field DttStatus from AdmTaxReturn
+  dtt_submitted:
+    display: Dttsubmitted
+    type: string
+    required: false
+    description: Field DttSubmitted from AdmTaxReturn
+  dtt_submitted_date:
+    display: Dttsubmitteddate
+    type: date
+    required: false
+    description: Field DttSubmittedDate from AdmTaxReturn
+  dtt_year_submitted:
+    display: Dttyearsubmitted
+    type: decimal
+    required: false
+    description: Field DttYearSubmitted from AdmTaxReturn
+  dtt_mth_submitted:
+    display: Dttmthsubmitted
+    type: decimal
+    required: false
+    description: Field DttMthSubmitted from AdmTaxReturn
+  rev_charge_flag:
+    display: Revchargeflag
+    type: string
+    required: false
+    description: Field RevChargeFlag from AdmTaxReturn
+  rev_charge_tax_rate:
+    display: Revchargetaxrate
+    type: decimal
+    required: false
+    description: Field RevChargeTaxRate from AdmTaxReturn
+  rev_charge_tax_value:
+    display: Revchargetaxvalue
+    type: decimal
+    required: false
+    description: Field RevChargeTaxValue from AdmTaxReturn
+  tax_based_inv:
+    display: Taxbasedinv
+    type: string
+    required: false
+    description: Field TaxBasedInv from AdmTaxReturn

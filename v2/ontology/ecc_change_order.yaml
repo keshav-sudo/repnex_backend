@@ -1,0 +1,88 @@
+concept: ecc_change_order
+display_name: EccChangeOrder
+module: other
+description: Auto-generated representation of the physical table EccChangeOrder.
+synonyms:
+- eccchangeorder
+- ecc change order
+header_attributes:
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccChangeOrder
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EccChangeOrder
+  originator:
+    display: Originator
+    type: string
+    required: false
+    description: Field Originator from EccChangeOrder
+  ecc_user:
+    display: Eccuser
+    type: string
+    required: false
+    description: Field EccUser from EccChangeOrder
+  status_code:
+    display: Statuscode
+    type: string
+    required: false
+    description: Field StatusCode from EccChangeOrder
+  eccstatus:
+    display: Eccstatus
+    type: string
+    required: false
+    description: Field Eccstatus from EccChangeOrder
+  priority:
+    display: Priority
+    type: decimal
+    required: false
+    description: Field Priority from EccChangeOrder
+  date_raised:
+    display: Dateraised
+    type: date
+    required: false
+    description: Field DateRaised from EccChangeOrder
+  date_status:
+    display: Datestatus
+    type: date
+    required: false
+    description: Field DateStatus from EccChangeOrder
+  date_review:
+    display: Datereview
+    type: date
+    required: false
+    description: Field DateReview from EccChangeOrder
+  date_available:
+    display: Dateavailable
+    type: date
+    required: false
+    description: Field DateAvailable from EccChangeOrder
+  date_completed:
+    display: Datecompleted
+    type: date
+    required: false
+    description: Field DateCompleted from EccChangeOrder
+  bom_maint_allow:
+    display: Bommaintallow
+    type: string
+    required: false
+    description: Field BomMaintAllow from EccChangeOrder
+  audit_sequence:
+    display: Auditsequence
+    type: decimal
+    required: false
+    description: Field AuditSequence from EccChangeOrder
+  full_description:
+    display: Fulldescription
+    type: string
+    required: false
+    description: Field FullDescription from EccChangeOrder
+  reason:
+    display: Reason
+    type: string
+    required: false
+    description: Field Reason from EccChangeOrder

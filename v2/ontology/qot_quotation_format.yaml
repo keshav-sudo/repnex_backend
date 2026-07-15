@@ -1,0 +1,23 @@
+concept: qot_quotation_format
+display_name: QotQuotationFormat
+module: other
+description: Auto-generated representation of the physical table QotQuotationFormat.
+synonyms:
+- qotquotationformat
+- qot quotation format
+header_attributes:
+  qot_document_type:
+    display: Qotdocumenttype
+    type: string
+    required: false
+    description: Field QotDocumentType from QotQuotationFormat
+  document_record_type:
+    display: Documentrecordtype
+    type: string
+    required: false
+    description: Field DocumentRecordType from QotQuotationFormat
+  document_info:
+    display: Documentinfo
+    type: string
+    required: false
+    description: Field DocumentInfo from QotQuotationFormat

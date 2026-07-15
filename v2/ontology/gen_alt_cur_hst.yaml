@@ -1,0 +1,108 @@
+concept: gen_alt_cur_hst
+display_name: GenAltCurHst
+module: general_ledger
+description: Auto-generated representation of the physical table GenAltCurHst.
+synonyms:
+- genaltcurhst
+- gen alt cur hst
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from GenAltCurHst
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenAltCurHst
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenAltCurHst
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenAltCurHst
+  beg_year_bal:
+    display: Begyearbal
+    type: decimal
+    required: false
+    description: Field BegYearBal from GenAltCurHst
+  closing_bal1:
+    display: Closingbal1
+    type: decimal
+    required: false
+    description: Field ClosingBal1 from GenAltCurHst
+  closing_bal2:
+    display: Closingbal2
+    type: decimal
+    required: false
+    description: Field ClosingBal2 from GenAltCurHst
+  closing_bal3:
+    display: Closingbal3
+    type: decimal
+    required: false
+    description: Field ClosingBal3 from GenAltCurHst
+  closing_bal4:
+    display: Closingbal4
+    type: decimal
+    required: false
+    description: Field ClosingBal4 from GenAltCurHst
+  closing_bal5:
+    display: Closingbal5
+    type: decimal
+    required: false
+    description: Field ClosingBal5 from GenAltCurHst
+  closing_bal6:
+    display: Closingbal6
+    type: decimal
+    required: false
+    description: Field ClosingBal6 from GenAltCurHst
+  closing_bal7:
+    display: Closingbal7
+    type: decimal
+    required: false
+    description: Field ClosingBal7 from GenAltCurHst
+  closing_bal8:
+    display: Closingbal8
+    type: decimal
+    required: false
+    description: Field ClosingBal8 from GenAltCurHst
+  closing_bal9:
+    display: Closingbal9
+    type: decimal
+    required: false
+    description: Field ClosingBal9 from GenAltCurHst
+  closing_bal10:
+    display: Closingbal10
+    type: decimal
+    required: false
+    description: Field ClosingBal10 from GenAltCurHst
+  closing_bal11:
+    display: Closingbal11
+    type: decimal
+    required: false
+    description: Field ClosingBal11 from GenAltCurHst
+  closing_bal12:
+    display: Closingbal12
+    type: decimal
+    required: false
+    description: Field ClosingBal12 from GenAltCurHst
+  closing_bal13:
+    display: Closingbal13
+    type: decimal
+    required: false
+    description: Field ClosingBal13 from GenAltCurHst
+  closing_bal14:
+    display: Closingbal14
+    type: decimal
+    required: false
+    description: Field ClosingBal14 from GenAltCurHst
+  closing_bal15:
+    display: Closingbal15
+    type: decimal
+    required: false
+    description: Field ClosingBal15 from GenAltCurHst

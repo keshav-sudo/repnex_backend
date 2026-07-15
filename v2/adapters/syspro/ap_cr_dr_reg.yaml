@@ -1,0 +1,42 @@
+concept: ap_cr_dr_reg
+table: ApCrDrReg
+alias: acdr
+fields:
+  trn_type: acdr.TrnType
+  supplier: acdr.Supplier
+  invoice: acdr.Invoice
+  entry_number: acdr.EntryNumber
+  branch: acdr.Branch
+  entry_date: acdr.EntryDate
+  invoice_date: acdr.InvoiceDate
+  discount_date: acdr.DiscountDate
+  due_date: acdr.DueDate
+  reference: acdr.Reference
+  invoice_value: acdr.InvoiceValue
+  discount_value: acdr.DiscountValue
+  disc_active_flag: acdr.DiscActiveFlag
+  currency: acdr.Currency
+  exch_rate_at_entry: acdr.ExchRateAtEntry
+  mul_div: acdr.MulDiv
+  authorising_person: acdr.AuthorisingPerson
+  buyer: acdr.Buyer
+  date_invoice_sent: acdr.DateInvoiceSent
+  date_appr_or_purg: acdr.DateApprOrPurg
+  follow_up_date: acdr.FollowUpDate
+  department: acdr.Department
+  inv_regn_status: acdr.InvRegnStatus
+  invoice_modified: acdr.InvoiceModified
+  date_last_modified: acdr.DateLastModified
+  operator: acdr.Operator
+  reason_for_change: acdr.ReasonForChange
+  inv_applied_to_lct: acdr.InvAppliedToLct
+  currency_value: acdr.CurrencyValue
+  post_currency: acdr.PostCurrency
+  conv_rate: acdr.ConvRate
+  conv_mul_div: acdr.ConvMulDiv
+  account_cur: acdr.AccountCur
+  account_conv_rate: acdr.AccountConvRate
+  account_mul_div: acdr.AccountMulDiv
+  triang_currency: acdr.TriangCurrency
+  triang_rate: acdr.TriangRate
+  triang_mul_div: acdr.TriangMulDiv

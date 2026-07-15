@@ -1,0 +1,153 @@
+concept: ar_cst_stk_prc
+display_name: ArCstStkPrc
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCstStkPrc.
+synonyms:
+- arcststkprc
+- ar cst stk prc
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCstStkPrc
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ArCstStkPrc
+  last_price_paid1:
+    display: Lastpricepaid1
+    type: decimal
+    required: false
+    description: Field LastPricePaid1 from ArCstStkPrc
+  price_uom1:
+    display: Priceuom1
+    type: string
+    required: false
+    description: Field PriceUom1 from ArCstStkPrc
+  qty_purch1:
+    display: Qtypurch1
+    type: decimal
+    required: false
+    description: Field QtyPurch1 from ArCstStkPrc
+  first_disc_pct1:
+    display: Firstdiscpct1
+    type: decimal
+    required: false
+    description: Field FirstDiscPct1 from ArCstStkPrc
+  second_disc1:
+    display: Seconddisc1
+    type: decimal
+    required: false
+    description: Field SecondDisc1 from ArCstStkPrc
+  third_disc1:
+    display: Thirddisc1
+    type: decimal
+    required: false
+    description: Field ThirdDisc1 from ArCstStkPrc
+  commission_code1:
+    display: Commissioncode1
+    type: string
+    required: false
+    description: Field CommissionCode1 from ArCstStkPrc
+  invoice1:
+    display: Invoice1
+    type: string
+    required: false
+    description: Field Invoice1 from ArCstStkPrc
+  invoice_date1:
+    display: Invoicedate1
+    type: date
+    required: false
+    description: Field InvoiceDate1 from ArCstStkPrc
+  last_price_paid2:
+    display: Lastpricepaid2
+    type: decimal
+    required: false
+    description: Field LastPricePaid2 from ArCstStkPrc
+  price_uom2:
+    display: Priceuom2
+    type: string
+    required: false
+    description: Field PriceUom2 from ArCstStkPrc
+  qty_purch2:
+    display: Qtypurch2
+    type: decimal
+    required: false
+    description: Field QtyPurch2 from ArCstStkPrc
+  first_disc_pct2:
+    display: Firstdiscpct2
+    type: decimal
+    required: false
+    description: Field FirstDiscPct2 from ArCstStkPrc
+  second_disc_pct2:
+    display: Seconddiscpct2
+    type: decimal
+    required: false
+    description: Field SecondDiscPct2 from ArCstStkPrc
+  third_disc_pct2:
+    display: Thirddiscpct2
+    type: decimal
+    required: false
+    description: Field ThirdDiscPct2 from ArCstStkPrc
+  commission_code2:
+    display: Commissioncode2
+    type: string
+    required: false
+    description: Field CommissionCode2 from ArCstStkPrc
+  invoice2:
+    display: Invoice2
+    type: string
+    required: false
+    description: Field Invoice2 from ArCstStkPrc
+  invoice_date2:
+    display: Invoicedate2
+    type: date
+    required: false
+    description: Field InvoiceDate2 from ArCstStkPrc
+  gross_profit_pct:
+    display: Grossprofitpct
+    type: decimal
+    required: false
+    description: Field GrossProfitPct from ArCstStkPrc
+  cust_retail_price:
+    display: Custretailprice
+    type: decimal
+    required: false
+    description: Field CustRetailPrice from ArCstStkPrc
+  dangerous_flag:
+    display: Dangerousflag
+    type: string
+    required: false
+    description: Field DangerousFlag from ArCstStkPrc
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from ArCstStkPrc
+  date_issued:
+    display: Dateissued
+    type: date
+    required: false
+    description: Field DateIssued from ArCstStkPrc
+  unit_disc_flag1:
+    display: Unitdiscflag1
+    type: string
+    required: false
+    description: Field UnitDiscFlag1 from ArCstStkPrc
+  unit_disc_value1:
+    display: Unitdiscvalue1
+    type: decimal
+    required: false
+    description: Field UnitDiscValue1 from ArCstStkPrc
+  unit_disc_flag2:
+    display: Unitdiscflag2
+    type: string
+    required: false
+    description: Field UnitDiscFlag2 from ArCstStkPrc
+  unit_disc_value2:
+    display: Unitdiscvalue2
+    type: decimal
+    required: false
+    description: Field UnitDiscValue2 from ArCstStkPrc

@@ -1,0 +1,73 @@
+concept: gen_dimension_split
+display_name: GenDimensionSplit
+module: general_ledger
+description: Auto-generated representation of the physical table GenDimensionSplit.
+synonyms:
+- gendimensionsplit
+- gen dimension split
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenDimensionSplit
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenDimensionSplit
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenDimensionSplit
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from GenDimensionSplit
+  gl_line:
+    display: Glline
+    type: decimal
+    required: false
+    description: Field GlLine from GenDimensionSplit
+  dimension_category:
+    display: Dimensioncategory
+    type: string
+    required: false
+    description: Field DimensionCategory from GenDimensionSplit
+  dimension_template:
+    display: Dimensiontemplate
+    type: string
+    required: false
+    description: Field DimensionTemplate from GenDimensionSplit
+  dimension_code:
+    display: Dimensioncode
+    type: string
+    required: false
+    description: Field DimensionCode from GenDimensionSplit
+  amount:
+    display: Amount
+    type: decimal
+    required: false
+    description: Field Amount from GenDimensionSplit
+  document_date:
+    display: Documentdate
+    type: date
+    required: false
+    description: Field DocumentDate from GenDimensionSplit
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from GenDimensionSplit
+  last_changed_by:
+    display: Lastchangedby
+    type: string
+    required: false
+    description: Field LastChangedBy from GenDimensionSplit
+  document_upd_date:
+    display: Documentupddate
+    type: date
+    required: false
+    description: Field DocumentUpdDate from GenDimensionSplit

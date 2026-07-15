@@ -1,0 +1,12 @@
+concept: lynq_vp__stock_info_by_date
+table: Lynq_VP_StockInfoByDate
+alias: lvpsibd
+fields:
+  id: lvpsibd.ID
+  item_number: lvpsibd.ItemNumber
+  location_code: lvpsibd.LocationCode
+  date: lvpsibd.Date
+  qty_on_start: lvpsibd.QtyOnStart
+  qty_in: lvpsibd.QtyIn
+  qty_out: lvpsibd.QtyOut
+  qty_on_end: lvpsibd.QtyOnEnd

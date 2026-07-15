@@ -1,0 +1,9 @@
+concept: diag_objects
+table: DiagObjects
+alias: do
+fields:
+  table_name: do.TableName
+  object_type: do.ObjectType
+  object_name: do.ObjectName
+  key_position: do.KeyPosition
+  new_column: do.NewColumn

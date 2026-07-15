@@ -1,0 +1,23 @@
+concept: adm_sql_health_bal
+table: AdmSqlHealthBal
+alias: ashb
+fields:
+  run_date_time: ashb.RunDateTime
+  test_type: ashb.TestType
+  table_name: ashb.TableName
+  object_name: ashb.ObjectName
+  column_name: ashb.ColumnName
+  test_status: ashb.TestStatus
+  index_name: ashb.IndexName
+  foreign_key_name: ashb.ForeignKeyName
+  message: ashb.Message
+  exp_data_type: ashb.ExpDataType
+  act_data_type: ashb.ActDataType
+  exp_collation: ashb.ExpCollation
+  act_collation: ashb.ActCollation
+  exp_nullable: ashb.ExpNullable
+  act_nullable: ashb.ActNullable
+  exp_default_name: ashb.ExpDefaultName
+  act_default_name: ashb.ActDefaultName
+  exp_default_value: ashb.ExpDefaultValue
+  act_default_value: ashb.ActDefaultValue

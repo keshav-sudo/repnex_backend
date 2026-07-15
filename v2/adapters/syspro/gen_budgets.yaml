@@ -1,0 +1,25 @@
+concept: gen_budgets
+table: GenBudgets
+alias: gb
+fields:
+  company: gb.Company
+  gl_code: gb.GlCode
+  budget_type: gb.BudgetType
+  budget_number: gb.BudgetNumber
+  revision_level: gb.RevisionLevel
+  date_last_modified: gb.DateLastModified
+  budget1: gb.Budget1
+  budget2: gb.Budget2
+  budget3: gb.Budget3
+  budget4: gb.Budget4
+  budget5: gb.Budget5
+  budget6: gb.Budget6
+  budget7: gb.Budget7
+  budget8: gb.Budget8
+  budget9: gb.Budget9
+  budget10: gb.Budget10
+  budget11: gb.Budget11
+  budget12: gb.Budget12
+  budget13: gb.Budget13
+  budget14: gb.Budget14
+  budget15: gb.Budget15

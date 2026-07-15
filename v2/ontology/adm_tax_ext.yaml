@@ -1,0 +1,23 @@
+concept: adm_tax_ext
+display_name: AdmTaxExt
+module: administration
+description: Auto-generated representation of the physical table AdmTaxExt.
+synonyms:
+- admtaxext
+- adm tax ext
+header_attributes:
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from AdmTaxExt
+  tax_suspense_account:
+    display: Taxsuspenseaccount
+    type: string
+    required: false
+    description: Field TaxSuspenseAccount from AdmTaxExt
+  tax_rounding_account:
+    display: Taxroundingaccount
+    type: string
+    required: false
+    description: Field TaxRoundingAccount from AdmTaxExt

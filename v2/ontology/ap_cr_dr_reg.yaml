@@ -1,0 +1,198 @@
+concept: ap_cr_dr_reg
+display_name: ApCrDrReg
+module: accounts_payable
+description: Auto-generated representation of the physical table ApCrDrReg.
+synonyms:
+- apcrdrreg
+- ap cr dr reg
+header_attributes:
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from ApCrDrReg
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApCrDrReg
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApCrDrReg
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ApCrDrReg
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ApCrDrReg
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from ApCrDrReg
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ApCrDrReg
+  discount_date:
+    display: Discountdate
+    type: date
+    required: false
+    description: Field DiscountDate from ApCrDrReg
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from ApCrDrReg
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ApCrDrReg
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApCrDrReg
+  discount_value:
+    display: Discountvalue
+    type: decimal
+    required: false
+    description: Field DiscountValue from ApCrDrReg
+  disc_active_flag:
+    display: Discactiveflag
+    type: string
+    required: false
+    description: Field DiscActiveFlag from ApCrDrReg
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApCrDrReg
+  exch_rate_at_entry:
+    display: Exchrateatentry
+    type: decimal
+    required: false
+    description: Field ExchRateAtEntry from ApCrDrReg
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from ApCrDrReg
+  authorising_person:
+    display: Authorisingperson
+    type: string
+    required: false
+    description: Field AuthorisingPerson from ApCrDrReg
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from ApCrDrReg
+  date_invoice_sent:
+    display: Dateinvoicesent
+    type: date
+    required: false
+    description: Field DateInvoiceSent from ApCrDrReg
+  date_appr_or_purg:
+    display: Dateapprorpurg
+    type: date
+    required: false
+    description: Field DateApprOrPurg from ApCrDrReg
+  follow_up_date:
+    display: Followupdate
+    type: date
+    required: false
+    description: Field FollowUpDate from ApCrDrReg
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from ApCrDrReg
+  inv_regn_status:
+    display: Invregnstatus
+    type: string
+    required: false
+    description: Field InvRegnStatus from ApCrDrReg
+  invoice_modified:
+    display: Invoicemodified
+    type: string
+    required: false
+    description: Field InvoiceModified from ApCrDrReg
+  date_last_modified:
+    display: Datelastmodified
+    type: date
+    required: false
+    description: Field DateLastModified from ApCrDrReg
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ApCrDrReg
+  reason_for_change:
+    display: Reasonforchange
+    type: string
+    required: false
+    description: Field ReasonForChange from ApCrDrReg
+  inv_applied_to_lct:
+    display: Invappliedtolct
+    type: string
+    required: false
+    description: Field InvAppliedToLct from ApCrDrReg
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from ApCrDrReg
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ApCrDrReg
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from ApCrDrReg
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from ApCrDrReg
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ApCrDrReg
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from ApCrDrReg
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from ApCrDrReg
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ApCrDrReg
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from ApCrDrReg
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ApCrDrReg

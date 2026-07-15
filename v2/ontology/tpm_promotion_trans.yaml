@@ -1,0 +1,458 @@
+concept: tpm_promotion_trans
+display_name: TpmPromotionTrans
+module: other
+description: Auto-generated representation of the physical table TpmPromotionTrans.
+synonyms:
+- tpmpromotiontrans
+- tpm promotion trans
+header_attributes:
+  invoice_no:
+    display: Invoiceno
+    type: string
+    required: false
+    description: Field InvoiceNo from TpmPromotionTrans
+  invoice_line:
+    display: Invoiceline
+    type: decimal
+    required: false
+    description: Field InvoiceLine from TpmPromotionTrans
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from TpmPromotionTrans
+  tpm_sequence:
+    display: Tpmsequence
+    type: decimal
+    required: false
+    description: Field TpmSequence from TpmPromotionTrans
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from TpmPromotionTrans
+  master_account:
+    display: Masteraccount
+    type: string
+    required: false
+    description: Field MasterAccount from TpmPromotionTrans
+  deduction_code:
+    display: Deductioncode
+    type: string
+    required: false
+    description: Field DeductionCode from TpmPromotionTrans
+  begin_balance:
+    display: Beginbalance
+    type: decimal
+    required: false
+    description: Field BeginBalance from TpmPromotionTrans
+  current_amount:
+    display: Currentamount
+    type: decimal
+    required: false
+    description: Field CurrentAmount from TpmPromotionTrans
+  last_amount:
+    display: Lastamount
+    type: decimal
+    required: false
+    description: Field LastAmount from TpmPromotionTrans
+  promotion_type:
+    display: Promotiontype
+    type: string
+    required: false
+    description: Field PromotionType from TpmPromotionTrans
+  accrual_ldg:
+    display: Accrualldg
+    type: string
+    required: false
+    description: Field AccrualLdg from TpmPromotionTrans
+  expense_ldg:
+    display: Expenseldg
+    type: string
+    required: false
+    description: Field ExpenseLdg from TpmPromotionTrans
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from TpmPromotionTrans
+  so_trn_date:
+    display: Sotrndate
+    type: date
+    required: false
+    description: Field SoTrnDate from TpmPromotionTrans
+  so_trn_operator:
+    display: Sotrnoperator
+    type: string
+    required: false
+    description: Field SoTrnOperator from TpmPromotionTrans
+  deduct_posted_flag:
+    display: Deductpostedflag
+    type: string
+    required: false
+    description: Field DeductPostedFlag from TpmPromotionTrans
+  deduct_trn_date:
+    display: Deducttrndate
+    type: date
+    required: false
+    description: Field DeductTrnDate from TpmPromotionTrans
+  deduct_trn_operator:
+    display: Deducttrnoperator
+    type: string
+    required: false
+    description: Field DeductTrnOperator from TpmPromotionTrans
+  original_price:
+    display: Originalprice
+    type: decimal
+    required: false
+    description: Field OriginalPrice from TpmPromotionTrans
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from TpmPromotionTrans
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from TpmPromotionTrans
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from TpmPromotionTrans
+  selected_flag:
+    display: Selectedflag
+    type: string
+    required: false
+    description: Field SelectedFlag from TpmPromotionTrans
+  exception_flag:
+    display: Exceptionflag
+    type: string
+    required: false
+    description: Field ExceptionFlag from TpmPromotionTrans
+  so_charge_line:
+    display: Sochargeline
+    type: decimal
+    required: false
+    description: Field SoChargeLine from TpmPromotionTrans
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from TpmPromotionTrans
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from TpmPromotionTrans
+  m_order_qty:
+    display: Morderqty
+    type: decimal
+    required: false
+    description: Field MOrderQty from TpmPromotionTrans
+  m_ship_qty:
+    display: Mshipqty
+    type: decimal
+    required: false
+    description: Field MShipQty from TpmPromotionTrans
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from TpmPromotionTrans
+  m_stock_qty_to_ship:
+    display: Mstockqtytoship
+    type: decimal
+    required: false
+    description: Field MStockQtyToShip from TpmPromotionTrans
+  m_stocking_uom:
+    display: Mstockinguom
+    type: string
+    required: false
+    description: Field MStockingUom from TpmPromotionTrans
+  adjust_reference:
+    display: Adjustreference
+    type: string
+    required: false
+    description: Field AdjustReference from TpmPromotionTrans
+  acr_analysis_entry:
+    display: Acranalysisentry
+    type: decimal
+    required: false
+    description: Field AcrAnalysisEntry from TpmPromotionTrans
+  exp_analysis_entry:
+    display: Expanalysisentry
+    type: decimal
+    required: false
+    description: Field ExpAnalysisEntry from TpmPromotionTrans
+  s_promotion:
+    display: Spromotion
+    type: string
+    required: false
+    description: Field SPromotion from TpmPromotionTrans
+  s_description:
+    display: Sdescription
+    type: string
+    required: false
+    description: Field SDescription from TpmPromotionTrans
+  s_expiry_date:
+    display: Sexpirydate
+    type: date
+    required: false
+    description: Field SExpiryDate from TpmPromotionTrans
+  s_start_date:
+    display: Sstartdate
+    type: date
+    required: false
+    description: Field SStartDate from TpmPromotionTrans
+  s_stock_category:
+    display: Sstockcategory
+    type: string
+    required: false
+    description: Field SStockCategory from TpmPromotionTrans
+  s_stock_cat_code:
+    display: Sstockcatcode
+    type: string
+    required: false
+    description: Field SStockCatCode from TpmPromotionTrans
+  s_customer_category:
+    display: Scustomercategory
+    type: string
+    required: false
+    description: Field SCustomerCategory from TpmPromotionTrans
+  s_cust_cat_code:
+    display: Scustcatcode
+    type: string
+    required: false
+    description: Field SCustCatCode from TpmPromotionTrans
+  s_amount_type:
+    display: Samounttype
+    type: string
+    required: false
+    description: Field SAmountType from TpmPromotionTrans
+  s_basis:
+    display: Sbasis
+    type: string
+    required: false
+    description: Field SBasis from TpmPromotionTrans
+  s_threshold:
+    display: Sthreshold
+    type: decimal
+    required: false
+    description: Field SThreshold from TpmPromotionTrans
+  s_promotion_value:
+    display: Spromotionvalue
+    type: decimal
+    required: false
+    description: Field SPromotionValue from TpmPromotionTrans
+  s_gross_net:
+    display: Sgrossnet
+    type: string
+    required: false
+    description: Field SGrossNet from TpmPromotionTrans
+  s_promotion_type:
+    display: Spromotiontype
+    type: string
+    required: false
+    description: Field SPromotionType from TpmPromotionTrans
+  s_off_invoice_type:
+    display: Soffinvoicetype
+    type: string
+    required: false
+    description: Field SOffInvoiceType from TpmPromotionTrans
+  s_accrual_ldg:
+    display: Saccrualldg
+    type: string
+    required: false
+    description: Field SAccrualLdg from TpmPromotionTrans
+  s_expense_ldg:
+    display: Sexpenseldg
+    type: string
+    required: false
+    description: Field SExpenseLdg from TpmPromotionTrans
+  s_deduction:
+    display: Sdeduction
+    type: string
+    required: false
+    description: Field SDeduction from TpmPromotionTrans
+  s_product_class:
+    display: Sproductclass
+    type: string
+    required: false
+    description: Field SProductClass from TpmPromotionTrans
+  s_date_type:
+    display: Sdatetype
+    type: string
+    required: false
+    description: Field SDateType from TpmPromotionTrans
+  s_accrual_type:
+    display: Saccrualtype
+    type: string
+    required: false
+    description: Field SAccrualType from TpmPromotionTrans
+  s_apply_sub:
+    display: Sapplysub
+    type: string
+    required: false
+    description: Field SApplySub from TpmPromotionTrans
+  s_free_good_type:
+    display: Sfreegoodtype
+    type: string
+    required: false
+    description: Field SFreeGoodType from TpmPromotionTrans
+  s_free_good_stock_code:
+    display: Sfreegoodstockcode
+    type: string
+    required: false
+    description: Field SFreeGoodStockCode from TpmPromotionTrans
+  s_max_threshold:
+    display: Smaxthreshold
+    type: decimal
+    required: false
+    description: Field SMaxThreshold from TpmPromotionTrans
+  s_global_flag:
+    display: Sglobalflag
+    type: string
+    required: false
+    description: Field SGlobalFlag from TpmPromotionTrans
+  s_free_good_apply_flag:
+    display: Sfreegoodapplyflag
+    type: string
+    required: false
+    description: Field SFreeGoodApplyFlag from TpmPromotionTrans
+  s_invoice_price:
+    display: Sinvoiceprice
+    type: decimal
+    required: false
+    description: Field SInvoicePrice from TpmPromotionTrans
+  s_customer_price:
+    display: Scustomerprice
+    type: decimal
+    required: false
+    description: Field SCustomerPrice from TpmPromotionTrans
+  s_currency:
+    display: Scurrency
+    type: string
+    required: false
+    description: Field SCurrency from TpmPromotionTrans
+  s_tiered_prom_flag:
+    display: Stieredpromflag
+    type: string
+    required: false
+    description: Field STieredPromFlag from TpmPromotionTrans
+  s_multiple_of_flag:
+    display: Smultipleofflag
+    type: string
+    required: false
+    description: Field SMultipleOfFlag from TpmPromotionTrans
+  s_free_good_rounding:
+    display: Sfreegoodrounding
+    type: string
+    required: false
+    description: Field SFreeGoodRounding from TpmPromotionTrans
+  s_sequence:
+    display: Ssequence
+    type: decimal
+    required: false
+    description: Field SSequence from TpmPromotionTrans
+  s_price_code:
+    display: Spricecode
+    type: string
+    required: false
+    description: Field SPriceCode from TpmPromotionTrans
+  s_price_code_cus_prc:
+    display: Spricecodecusprc
+    type: string
+    required: false
+    description: Field SPriceCodeCusPrc from TpmPromotionTrans
+  stock_cat_type:
+    display: Stockcattype
+    type: string
+    required: false
+    description: Field StockCatType from TpmPromotionTrans
+  stock_category2:
+    display: Stockcategory2
+    type: string
+    required: false
+    description: Field StockCategory2 from TpmPromotionTrans
+  stock_cat_code2:
+    display: Stockcatcode2
+    type: string
+    required: false
+    description: Field StockCatCode2 from TpmPromotionTrans
+  customer_cat_type:
+    display: Customercattype
+    type: string
+    required: false
+    description: Field CustomerCatType from TpmPromotionTrans
+  customer_category2:
+    display: Customercategory2
+    type: string
+    required: false
+    description: Field CustomerCategory2 from TpmPromotionTrans
+  cust_cat_code2:
+    display: Custcatcode2
+    type: string
+    required: false
+    description: Field CustCatCode2 from TpmPromotionTrans
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from TpmPromotionTrans
+  limit_used:
+    display: Limitused
+    type: string
+    required: false
+    description: Field LimitUsed from TpmPromotionTrans
+  limit_type:
+    display: Limittype
+    type: string
+    required: false
+    description: Field LimitType from TpmPromotionTrans
+  assoc_stock_cat:
+    display: Assocstockcat
+    type: string
+    required: false
+    description: Field AssocStockCat from TpmPromotionTrans
+  assoc_stock_code:
+    display: Assocstockcode
+    type: string
+    required: false
+    description: Field AssocStockCode from TpmPromotionTrans
+  tax_code_accrual:
+    display: Taxcodeaccrual
+    type: string
+    required: false
+    description: Field TaxCodeAccrual from TpmPromotionTrans
+  fst_code_accrual:
+    display: Fstcodeaccrual
+    type: string
+    required: false
+    description: Field FstCodeAccrual from TpmPromotionTrans
+  promo_sel_flag:
+    display: Promoselflag
+    type: string
+    required: false
+    description: Field PromoSelFlag from TpmPromotionTrans
+  promo_group_flag:
+    display: Promogroupflag
+    type: string
+    required: false
+    description: Field PromoGroupFlag from TpmPromotionTrans
+  promo_group_max:
+    display: Promogroupmax
+    type: decimal
+    required: false
+    description: Field PromoGroupMax from TpmPromotionTrans
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from TpmPromotionTrans
+  price_list_cus_prc:
+    display: Pricelistcusprc
+    type: string
+    required: false
+    description: Field PriceListCusPrc from TpmPromotionTrans

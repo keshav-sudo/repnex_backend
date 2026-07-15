@@ -1,0 +1,113 @@
+concept: lct_costing_reg
+display_name: LctCostingReg
+module: other
+description: Auto-generated representation of the physical table LctCostingReg.
+synonyms:
+- lctcostingreg
+- lct costing reg
+header_attributes:
+  vessel:
+    display: Vessel
+    type: string
+    required: false
+    description: Field Vessel from LctCostingReg
+  departure_date:
+    display: Departuredate
+    type: date
+    required: false
+    description: Field DepartureDate from LctCostingReg
+  shipment_reference:
+    display: Shipmentreference
+    type: string
+    required: false
+    description: Field ShipmentReference from LctCostingReg
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from LctCostingReg
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from LctCostingReg
+  shipped_qty:
+    display: Shippedqty
+    type: decimal
+    required: false
+    description: Field ShippedQty from LctCostingReg
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from LctCostingReg
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LctCostingReg
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from LctCostingReg
+  receipt_flag:
+    display: Receiptflag
+    type: string
+    required: false
+    description: Field ReceiptFlag from LctCostingReg
+  total_merch_cost:
+    display: Totalmerchcost
+    type: decimal
+    required: false
+    description: Field TotalMerchCost from LctCostingReg
+  unit_cost_merch:
+    display: Unitcostmerch
+    type: decimal
+    required: false
+    description: Field UnitCostMerch from LctCostingReg
+  receipt_arch_date:
+    display: Receiptarchdate
+    type: date
+    required: false
+    description: Field ReceiptArchDate from LctCostingReg
+  sundry_item_mass:
+    display: Sundryitemmass
+    type: decimal
+    required: false
+    description: Field SundryItemMass from LctCostingReg
+  sundry_item_volume:
+    display: Sundryitemvolume
+    type: decimal
+    required: false
+    description: Field SundryItemVolume from LctCostingReg
+  traceable_inspect:
+    display: Traceableinspect
+    type: string
+    required: false
+    description: Field TraceableInspect from LctCostingReg
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from LctCostingReg
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from LctCostingReg
+  receipt_sundry:
+    display: Receiptsundry
+    type: decimal
+    required: false
+    description: Field ReceiptSundry from LctCostingReg
+  sup_catalogue:
+    display: Supcatalogue
+    type: string
+    required: false
+    description: Field SupCatalogue from LctCostingReg
+  shipped_qty_stk_um:
+    display: Shippedqtystkum
+    type: decimal
+    required: false
+    description: Field ShippedQtyStkUm from LctCostingReg

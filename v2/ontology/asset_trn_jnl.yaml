@@ -1,0 +1,68 @@
+concept: asset_trn_jnl
+display_name: AssetTrnJnl
+module: assets
+description: Auto-generated representation of the physical table AssetTrnJnl.
+synonyms:
+- assettrnjnl
+- asset trn jnl
+header_attributes:
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from AssetTrnJnl
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from AssetTrnJnl
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetTrnJnl
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from AssetTrnJnl
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from AssetTrnJnl
+  entry_value:
+    display: Entryvalue
+    type: decimal
+    required: false
+    description: Field EntryValue from AssetTrnJnl
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from AssetTrnJnl
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetTrnJnl
+  expense:
+    display: Expense
+    type: string
+    required: false
+    description: Field Expense from AssetTrnJnl
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from AssetTrnJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from AssetTrnJnl
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from AssetTrnJnl

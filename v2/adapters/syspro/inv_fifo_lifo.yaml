@@ -1,0 +1,20 @@
+concept: inv_fifo_lifo
+table: InvFifoLifo
+alias: ifl
+fields:
+  stock_code: ifl.StockCode
+  warehouse: ifl.Warehouse
+  bucket: ifl.Bucket
+  qty_on_hand1: ifl.QtyOnHand1
+  qty_on_hand2: ifl.QtyOnHand2
+  qty_on_hand3: ifl.QtyOnHand3
+  unit_cost1: ifl.UnitCost1
+  unit_cost2: ifl.UnitCost2
+  unit_cost3: ifl.UnitCost3
+  last_receipt_date: ifl.LastReceiptDate
+  last_issue_date: ifl.LastIssueDate
+  qty_dispatched: ifl.QtyDispatched
+  receipt_qty: ifl.ReceiptQty
+  lot_serial: ifl.LotSerial
+  version: ifl.Version
+  release: ifl.Release

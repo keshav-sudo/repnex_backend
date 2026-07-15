@@ -1,0 +1,133 @@
+concept: adm_event
+display_name: AdmEvent
+module: administration
+description: Auto-generated representation of the physical table AdmEvent.
+synonyms:
+- admevent
+- adm event
+header_attributes:
+  event_module:
+    display: Eventmodule
+    type: string
+    required: false
+    description: Field EventModule from AdmEvent
+  event_code:
+    display: Eventcode
+    type: decimal
+    required: false
+    description: Field EventCode from AdmEvent
+  event_name:
+    display: Eventname
+    type: string
+    required: false
+    description: Field EventName from AdmEvent
+  log_reqd:
+    display: Logreqd
+    type: string
+    required: false
+    description: Field LogReqd from AdmEvent
+  event_active:
+    display: Eventactive
+    type: string
+    required: false
+    description: Field EventActive from AdmEvent
+  active_from_date:
+    display: Activefromdate
+    type: date
+    required: false
+    description: Field ActiveFromDate from AdmEvent
+  active_to_date:
+    display: Activetodate
+    type: date
+    required: false
+    description: Field ActiveToDate from AdmEvent
+  event_type:
+    display: Eventtype
+    type: string
+    required: false
+    description: Field EventType from AdmEvent
+  event_parameter:
+    display: Eventparameter
+    type: decimal
+    required: false
+    description: Field EventParameter from AdmEvent
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmEvent
+  program:
+    display: Program
+    type: string
+    required: false
+    description: Field Program from AdmEvent
+  start_in:
+    display: Startin
+    type: string
+    required: false
+    description: Field StartIn from AdmEvent
+  prog_desc:
+    display: Progdesc
+    type: string
+    required: false
+    description: Field ProgDesc from AdmEvent
+  mail_users:
+    display: Mailusers
+    type: string
+    required: false
+    description: Field MailUsers from AdmEvent
+  mail_subject:
+    display: Mailsubject
+    type: string
+    required: false
+    description: Field MailSubject from AdmEvent
+  mail_message:
+    display: Mailmessage
+    type: string
+    required: false
+    description: Field MailMessage from AdmEvent
+  special_notify:
+    display: Specialnotify
+    type: decimal
+    required: false
+    description: Field SpecialNotify from AdmEvent
+  mail_list:
+    display: Maillist
+    type: decimal
+    required: false
+    description: Field MailList from AdmEvent
+  no_default_email:
+    display: Nodefaultemail
+    type: decimal
+    required: false
+    description: Field NoDefaultEmail from AdmEvent
+  com_event_flag:
+    display: Comeventflag
+    type: string
+    required: false
+    description: Field ComEventFlag from AdmEvent
+  message_text:
+    display: Messagetext
+    type: string
+    required: false
+    description: Field MessageText from AdmEvent
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmEvent
+  program_to_run:
+    display: Programtorun
+    type: string
+    required: false
+    description: Field ProgramToRun from AdmEvent
+  use_date:
+    display: Usedate
+    type: decimal
+    required: false
+    description: Field UseDate from AdmEvent
+  prevent_duplicate:
+    display: Preventduplicate
+    type: decimal
+    required: false
+    description: Field PreventDuplicate from AdmEvent

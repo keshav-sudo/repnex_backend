@@ -1,0 +1,15 @@
+concept: ap_inv_health_bal
+table: ApInvHealthBal
+alias: aihb
+fields:
+  run_date_time: aihb.RunDateTime
+  supplier: aihb.Supplier
+  invoice: aihb.Invoice
+  trx_type: aihb.TrxType
+  hcheck_year: aihb.HcheckYear
+  hcheck_month: aihb.HcheckMonth
+  currency: aihb.Currency
+  trx_amt_vary: aihb.TrxAmtVary
+  trx_amt_actual: aihb.TrxAmtActual
+  trx_amount_calc: aihb.TrxAmountCalc
+  message: aihb.Message

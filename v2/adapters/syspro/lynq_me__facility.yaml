@@ -1,0 +1,57 @@
+concept: lynq_me__facility
+table: Lynq_ME_Facility
+alias: lmef
+fields:
+  id: lmef.ID
+  f_code: lmef.fCode
+  f_group1: lmef.fGroup1
+  f_group2: lmef.fGroup2
+  f_group3: lmef.fGroup3
+  f_group4: lmef.fGroup4
+  f_group5: lmef.fGroup5
+  f_name: lmef.fName
+  f_name1: lmef.fName1
+  f_name2: lmef.fName2
+  f_description1: lmef.fDescription1
+  f_description2: lmef.fDescription2
+  f_alternative: lmef.fAlternative
+  f_req1: lmef.fReq1
+  f_req2: lmef.fReq2
+  f_req3: lmef.fReq3
+  f_req4: lmef.fReq4
+  f_req5: lmef.fReq5
+  f_param1: lmef.fParam1
+  f_param2: lmef.fParam2
+  f_param3: lmef.fParam3
+  f_param4: lmef.fParam4
+  f_param5: lmef.fParam5
+  f_text1: lmef.fText1
+  f_text2: lmef.fText2
+  f_text3: lmef.fText3
+  f_text4: lmef.fText4
+  f_text5: lmef.fText5
+  f_int1: lmef.fInt1
+  f_int2: lmef.fInt2
+  f_int3: lmef.fInt3
+  f_int4: lmef.fInt4
+  f_int5: lmef.fInt5
+  f_decimal1: lmef.fDecimal1
+  f_decimal2: lmef.fDecimal2
+  f_decimal3: lmef.fDecimal3
+  f_decimal4: lmef.fDecimal4
+  f_decimal5: lmef.fDecimal5
+  f_date1: lmef.fDate1
+  f_date2: lmef.fDate2
+  f_date3: lmef.fDate3
+  f_date4: lmef.fDate4
+  f_date5: lmef.fDate5
+  f_masterflag: lmef.fMasterflag
+  f_manager: lmef.fManager
+  f_labr_hrs_coef: lmef.fLabrHrsCoef
+  f_mach_hrs_coef: lmef.fMachHrsCoef
+  f_erp_facility_code: lmef.fErpFacilityCode
+  f_time_uom_conversion: lmef.fTimeUOMConversion
+  f_erp_specific: lmef.fErpSpecific
+  f_resource_qty: lmef.fResourceQty
+  f_type: lmef.fType
+  f_time_uom_converted: lmef.fTimeUOMConverted

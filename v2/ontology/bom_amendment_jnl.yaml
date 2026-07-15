@@ -1,0 +1,458 @@
+concept: bom_amendment_jnl
+display_name: BomAmendmentJnl
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomAmendmentJnl.
+synonyms:
+- bomamendmentjnl
+- bom amendment jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from BomAmendmentJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from BomAmendmentJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from BomAmendmentJnl
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from BomAmendmentJnl
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BomAmendmentJnl
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BomAmendmentJnl
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomAmendmentJnl
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from BomAmendmentJnl
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from BomAmendmentJnl
+  operator_name:
+    display: Operatorname
+    type: string
+    required: false
+    description: Field OperatorName from BomAmendmentJnl
+  jnl_printed:
+    display: Jnlprinted
+    type: string
+    required: false
+    description: Field JnlPrinted from BomAmendmentJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from BomAmendmentJnl
+  old_com_version:
+    display: Oldcomversion
+    type: string
+    required: false
+    description: Field OldComVersion from BomAmendmentJnl
+  old_com_release:
+    display: Oldcomrelease
+    type: string
+    required: false
+    description: Field OldComRelease from BomAmendmentJnl
+  old_ecc_consumption:
+    display: Oldeccconsumption
+    type: string
+    required: false
+    description: Field OldEccConsumption from BomAmendmentJnl
+  old_struct_on_date:
+    display: Oldstructondate
+    type: date
+    required: false
+    description: Field OldStructOnDate from BomAmendmentJnl
+  old_struct_off_date:
+    display: Oldstructoffdate
+    type: date
+    required: false
+    description: Field OldStructOffDate from BomAmendmentJnl
+  old_op_offset_flag:
+    display: Oldopoffsetflag
+    type: string
+    required: false
+    description: Field OldOpOffsetFlag from BomAmendmentJnl
+  old_operation_offset:
+    display: Oldoperationoffset
+    type: decimal
+    required: false
+    description: Field OldOperationOffset from BomAmendmentJnl
+  old_qty_per:
+    display: Oldqtyper
+    type: decimal
+    required: false
+    description: Field OldQtyPer from BomAmendmentJnl
+  old_scrap_pct:
+    display: Oldscrappct
+    type: decimal
+    required: false
+    description: Field OldScrapPct from BomAmendmentJnl
+  old_scrap_qty:
+    display: Oldscrapqty
+    type: decimal
+    required: false
+    description: Field OldScrapQty from BomAmendmentJnl
+  old_so_option_flag:
+    display: Oldsooptionflag
+    type: string
+    required: false
+    description: Field OldSoOptionFlag from BomAmendmentJnl
+  old_so_print_flag:
+    display: Oldsoprintflag
+    type: string
+    required: false
+    description: Field OldSoPrintFlag from BomAmendmentJnl
+  old_inc_scrap_flag:
+    display: Oldincscrapflag
+    type: string
+    required: false
+    description: Field OldIncScrapFlag from BomAmendmentJnl
+  old_reason_for_chg:
+    display: Oldreasonforchg
+    type: string
+    required: false
+    description: Field OldReasonForChg from BomAmendmentJnl
+  old_ref_designator:
+    display: Oldrefdesignator
+    type: string
+    required: false
+    description: Field OldRefDesignator from BomAmendmentJnl
+  old_assembly_place:
+    display: Oldassemblyplace
+    type: string
+    required: false
+    description: Field OldAssemblyPlace from BomAmendmentJnl
+  old_item_number:
+    display: Olditemnumber
+    type: string
+    required: false
+    description: Field OldItemNumber from BomAmendmentJnl
+  old_auto_narr_code:
+    display: Oldautonarrcode
+    type: decimal
+    required: false
+    description: Field OldAutoNarrCode from BomAmendmentJnl
+  old_component_type:
+    display: Oldcomponenttype
+    type: string
+    required: false
+    description: Field OldComponentType from BomAmendmentJnl
+  old_incl_kit_issues:
+    display: Oldinclkitissues
+    type: string
+    required: false
+    description: Field OldInclKitIssues from BomAmendmentJnl
+  old_create_sub_job:
+    display: Oldcreatesubjob
+    type: string
+    required: false
+    description: Field OldCreateSubJob from BomAmendmentJnl
+  old_wet_weight_perc:
+    display: Oldwetweightperc
+    type: decimal
+    required: false
+    description: Field OldWetWeightPerc from BomAmendmentJnl
+  old_include_batch:
+    display: Oldincludebatch
+    type: string
+    required: false
+    description: Field OldIncludeBatch from BomAmendmentJnl
+  old_include_from_job:
+    display: Oldincludefromjob
+    type: string
+    required: false
+    description: Field OldIncludeFromJob from BomAmendmentJnl
+  old_include_to_job:
+    display: Oldincludetojob
+    type: string
+    required: false
+    description: Field OldIncludeToJob from BomAmendmentJnl
+  old_fixed_qty_per_flag:
+    display: Oldfixedqtyperflag
+    type: string
+    required: false
+    description: Field OldFixedQtyPerFlag from BomAmendmentJnl
+  old_fixed_qty_per:
+    display: Oldfixedqtyper
+    type: decimal
+    required: false
+    description: Field OldFixedQtyPer from BomAmendmentJnl
+  old_roll_up_cost_flag:
+    display: Oldrollupcostflag
+    type: string
+    required: false
+    description: Field OldRollUpCostFlag from BomAmendmentJnl
+  old_warehouse:
+    display: Oldwarehouse
+    type: string
+    required: false
+    description: Field OldWarehouse from BomAmendmentJnl
+  old_ignore_floor_flag:
+    display: Oldignorefloorflag
+    type: string
+    required: false
+    description: Field OldIgnoreFloorFlag from BomAmendmentJnl
+  old_uom_flag:
+    display: Olduomflag
+    type: string
+    required: false
+    description: Field OldUomFlag from BomAmendmentJnl
+  old_qty_per_ent:
+    display: Oldqtyperent
+    type: decimal
+    required: false
+    description: Field OldQtyPerEnt from BomAmendmentJnl
+  old_scrap_qty_ent:
+    display: Oldscrapqtyent
+    type: decimal
+    required: false
+    description: Field OldScrapQtyEnt from BomAmendmentJnl
+  old_fixed_qty_per_ent:
+    display: Oldfixedqtyperent
+    type: decimal
+    required: false
+    description: Field OldFixedQtyPerEnt from BomAmendmentJnl
+  new_com_version:
+    display: Newcomversion
+    type: string
+    required: false
+    description: Field NewComVersion from BomAmendmentJnl
+  new_com_release:
+    display: Newcomrelease
+    type: string
+    required: false
+    description: Field NewComRelease from BomAmendmentJnl
+  new_ecc_consumption:
+    display: Neweccconsumption
+    type: string
+    required: false
+    description: Field NewEccConsumption from BomAmendmentJnl
+  new_struct_on_date:
+    display: Newstructondate
+    type: date
+    required: false
+    description: Field NewStructOnDate from BomAmendmentJnl
+  new_struct_off_date:
+    display: Newstructoffdate
+    type: date
+    required: false
+    description: Field NewStructOffDate from BomAmendmentJnl
+  new_op_offset_flag:
+    display: Newopoffsetflag
+    type: string
+    required: false
+    description: Field NewOpOffsetFlag from BomAmendmentJnl
+  new_operation_offset:
+    display: Newoperationoffset
+    type: decimal
+    required: false
+    description: Field NewOperationOffset from BomAmendmentJnl
+  new_qty_per:
+    display: Newqtyper
+    type: decimal
+    required: false
+    description: Field NewQtyPer from BomAmendmentJnl
+  new_scrap_pct:
+    display: Newscrappct
+    type: decimal
+    required: false
+    description: Field NewScrapPct from BomAmendmentJnl
+  new_scrap_qty:
+    display: Newscrapqty
+    type: decimal
+    required: false
+    description: Field NewScrapQty from BomAmendmentJnl
+  new_so_option_flag:
+    display: Newsooptionflag
+    type: string
+    required: false
+    description: Field NewSoOptionFlag from BomAmendmentJnl
+  new_so_print_flag:
+    display: Newsoprintflag
+    type: string
+    required: false
+    description: Field NewSoPrintFlag from BomAmendmentJnl
+  new_inc_scrap_flag:
+    display: Newincscrapflag
+    type: string
+    required: false
+    description: Field NewIncScrapFlag from BomAmendmentJnl
+  new_reason_for_chg:
+    display: Newreasonforchg
+    type: string
+    required: false
+    description: Field NewReasonForChg from BomAmendmentJnl
+  new_ref_designator:
+    display: Newrefdesignator
+    type: string
+    required: false
+    description: Field NewRefDesignator from BomAmendmentJnl
+  new_assembly_place:
+    display: Newassemblyplace
+    type: string
+    required: false
+    description: Field NewAssemblyPlace from BomAmendmentJnl
+  new_item_number:
+    display: Newitemnumber
+    type: string
+    required: false
+    description: Field NewItemNumber from BomAmendmentJnl
+  new_auto_narr_code:
+    display: Newautonarrcode
+    type: decimal
+    required: false
+    description: Field NewAutoNarrCode from BomAmendmentJnl
+  new_component_type:
+    display: Newcomponenttype
+    type: string
+    required: false
+    description: Field NewComponentType from BomAmendmentJnl
+  new_incl_kit_issues:
+    display: Newinclkitissues
+    type: string
+    required: false
+    description: Field NewInclKitIssues from BomAmendmentJnl
+  new_create_sub_job:
+    display: Newcreatesubjob
+    type: string
+    required: false
+    description: Field NewCreateSubJob from BomAmendmentJnl
+  new_wet_weight_perc:
+    display: Newwetweightperc
+    type: decimal
+    required: false
+    description: Field NewWetWeightPerc from BomAmendmentJnl
+  new_include_batch:
+    display: Newincludebatch
+    type: string
+    required: false
+    description: Field NewIncludeBatch from BomAmendmentJnl
+  new_include_from_job:
+    display: Newincludefromjob
+    type: string
+    required: false
+    description: Field NewIncludeFromJob from BomAmendmentJnl
+  new_include_to_job:
+    display: Newincludetojob
+    type: string
+    required: false
+    description: Field NewIncludeToJob from BomAmendmentJnl
+  new_fixed_qty_per_flag:
+    display: Newfixedqtyperflag
+    type: string
+    required: false
+    description: Field NewFixedQtyPerFlag from BomAmendmentJnl
+  new_fixed_qty_per:
+    display: Newfixedqtyper
+    type: decimal
+    required: false
+    description: Field NewFixedQtyPer from BomAmendmentJnl
+  new_roll_up_cost_flag:
+    display: Newrollupcostflag
+    type: string
+    required: false
+    description: Field NewRollUpCostFlag from BomAmendmentJnl
+  new_warehouse:
+    display: Newwarehouse
+    type: string
+    required: false
+    description: Field NewWarehouse from BomAmendmentJnl
+  new_ignore_floor_flag:
+    display: Newignorefloorflag
+    type: string
+    required: false
+    description: Field NewIgnoreFloorFlag from BomAmendmentJnl
+  new_uom_flag:
+    display: Newuomflag
+    type: string
+    required: false
+    description: Field NewUomFlag from BomAmendmentJnl
+  new_qty_per_ent:
+    display: Newqtyperent
+    type: decimal
+    required: false
+    description: Field NewQtyPerEnt from BomAmendmentJnl
+  new_scrap_qty_ent:
+    display: Newscrapqtyent
+    type: decimal
+    required: false
+    description: Field NewScrapQtyEnt from BomAmendmentJnl
+  new_fixed_qty_per_ent:
+    display: Newfixedqtyperent
+    type: decimal
+    required: false
+    description: Field NewFixedQtyPerEnt from BomAmendmentJnl
+  old_product_code:
+    display: Oldproductcode
+    type: string
+    required: false
+    description: Field OldProductCode from BomAmendmentJnl
+  old_library_code:
+    display: Oldlibrarycode
+    type: string
+    required: false
+    description: Field OldLibraryCode from BomAmendmentJnl
+  old_first_seq:
+    display: Oldfirstseq
+    type: decimal
+    required: false
+    description: Field OldFirstSeq from BomAmendmentJnl
+  old_second_seq:
+    display: Oldsecondseq
+    type: decimal
+    required: false
+    description: Field OldSecondSeq from BomAmendmentJnl
+  old_ovr_ecc_spec_iss:
+    display: Oldovreccspeciss
+    type: string
+    required: false
+    description: Field OldOvrEccSpecIss from BomAmendmentJnl
+  new_product_code:
+    display: Newproductcode
+    type: string
+    required: false
+    description: Field NewProductCode from BomAmendmentJnl
+  new_library_code:
+    display: Newlibrarycode
+    type: string
+    required: false
+    description: Field NewLibraryCode from BomAmendmentJnl
+  new_first_seq:
+    display: Newfirstseq
+    type: decimal
+    required: false
+    description: Field NewFirstSeq from BomAmendmentJnl
+  new_second_seq:
+    display: Newsecondseq
+    type: decimal
+    required: false
+    description: Field NewSecondSeq from BomAmendmentJnl
+  new_ovr_ecc_spec_iss:
+    display: Newovreccspeciss
+    type: string
+    required: false
+    description: Field NewOvrEccSpecIss from BomAmendmentJnl

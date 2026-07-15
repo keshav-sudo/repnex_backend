@@ -1,0 +1,128 @@
+concept: mrp_forecast_jnl
+display_name: MrpForecastJnl
+module: mrp
+description: Auto-generated representation of the physical table MrpForecastJnl.
+synonyms:
+- mrpforecastjnl
+- mrp forecast jnl
+header_attributes:
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from MrpForecastJnl
+  jnl_entry_number:
+    display: Jnlentrynumber
+    type: decimal
+    required: false
+    description: Field JnlEntryNumber from MrpForecastJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from MrpForecastJnl
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from MrpForecastJnl
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpForecastJnl
+  forecast_wh:
+    display: Forecastwh
+    type: string
+    required: false
+    description: Field ForecastWh from MrpForecastJnl
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from MrpForecastJnl
+  qty_required:
+    display: Qtyrequired
+    type: decimal
+    required: false
+    description: Field QtyRequired from MrpForecastJnl
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from MrpForecastJnl
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from MrpForecastJnl
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MrpForecastJnl
+  resource_parent:
+    display: Resourceparent
+    type: string
+    required: false
+    description: Field ResourceParent from MrpForecastJnl
+  inactive_flag:
+    display: Inactiveflag
+    type: string
+    required: false
+    description: Field InactiveFlag from MrpForecastJnl
+  forecast_type:
+    display: Forecasttype
+    type: string
+    required: false
+    description: Field ForecastType from MrpForecastJnl
+  maint_function:
+    display: Maintfunction
+    type: string
+    required: false
+    description: Field MaintFunction from MrpForecastJnl
+  old_forecast_date:
+    display: Oldforecastdate
+    type: date
+    required: false
+    description: Field OldForecastDate from MrpForecastJnl
+  old_qty_reqd:
+    display: Oldqtyreqd
+    type: decimal
+    required: false
+    description: Field OldQtyReqd from MrpForecastJnl
+  old_customer:
+    display: Oldcustomer
+    type: string
+    required: false
+    description: Field OldCustomer from MrpForecastJnl
+  old_inactive_flag:
+    display: Oldinactiveflag
+    type: string
+    required: false
+    description: Field OldInactiveFlag from MrpForecastJnl
+  old_forecast_type:
+    display: Oldforecasttype
+    type: string
+    required: false
+    description: Field OldForecastType from MrpForecastJnl
+  old_resource_parnt:
+    display: Oldresourceparnt
+    type: string
+    required: false
+    description: Field OldResourceParnt from MrpForecastJnl
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpForecastJnl
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpForecastJnl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MrpForecastJnl

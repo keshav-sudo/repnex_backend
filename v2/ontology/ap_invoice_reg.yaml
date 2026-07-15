@@ -1,0 +1,188 @@
+concept: ap_invoice_reg
+display_name: ApInvoiceReg
+module: accounts_payable
+description: Auto-generated representation of the physical table ApInvoiceReg.
+synonyms:
+- apinvoicereg
+- ap invoice reg
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApInvoiceReg
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApInvoiceReg
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ApInvoiceReg
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from ApInvoiceReg
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ApInvoiceReg
+  discount_date:
+    display: Discountdate
+    type: date
+    required: false
+    description: Field DiscountDate from ApInvoiceReg
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from ApInvoiceReg
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ApInvoiceReg
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApInvoiceReg
+  discount_value:
+    display: Discountvalue
+    type: decimal
+    required: false
+    description: Field DiscountValue from ApInvoiceReg
+  disc_active_flag:
+    display: Discactiveflag
+    type: string
+    required: false
+    description: Field DiscActiveFlag from ApInvoiceReg
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApInvoiceReg
+  exch_rate_at_entry:
+    display: Exchrateatentry
+    type: decimal
+    required: false
+    description: Field ExchRateAtEntry from ApInvoiceReg
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from ApInvoiceReg
+  authorising_person:
+    display: Authorisingperson
+    type: string
+    required: false
+    description: Field AuthorisingPerson from ApInvoiceReg
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from ApInvoiceReg
+  date_invoice_sent:
+    display: Dateinvoicesent
+    type: date
+    required: false
+    description: Field DateInvoiceSent from ApInvoiceReg
+  date_appr_or_purg:
+    display: Dateapprorpurg
+    type: date
+    required: false
+    description: Field DateApprOrPurg from ApInvoiceReg
+  follow_up_date:
+    display: Followupdate
+    type: date
+    required: false
+    description: Field FollowUpDate from ApInvoiceReg
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from ApInvoiceReg
+  inv_regn_status:
+    display: Invregnstatus
+    type: string
+    required: false
+    description: Field InvRegnStatus from ApInvoiceReg
+  invoice_modified:
+    display: Invoicemodified
+    type: string
+    required: false
+    description: Field InvoiceModified from ApInvoiceReg
+  date_last_modified:
+    display: Datelastmodified
+    type: date
+    required: false
+    description: Field DateLastModified from ApInvoiceReg
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ApInvoiceReg
+  reason_for_change:
+    display: Reasonforchange
+    type: string
+    required: false
+    description: Field ReasonForChange from ApInvoiceReg
+  inv_applied_to_lct:
+    display: Invappliedtolct
+    type: string
+    required: false
+    description: Field InvAppliedToLct from ApInvoiceReg
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from ApInvoiceReg
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ApInvoiceReg
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from ApInvoiceReg
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from ApInvoiceReg
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ApInvoiceReg
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from ApInvoiceReg
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from ApInvoiceReg
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ApInvoiceReg
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from ApInvoiceReg
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ApInvoiceReg

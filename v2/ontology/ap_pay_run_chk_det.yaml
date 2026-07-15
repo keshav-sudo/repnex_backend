@@ -1,0 +1,43 @@
+concept: ap_pay_run_chk_det
+display_name: ApPayRunChkDet
+module: accounts_payable
+description: Auto-generated representation of the physical table ApPayRunChkDet.
+synonyms:
+- appayrunchkdet
+- ap pay run chk det
+header_attributes:
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ApPayRunChkDet
+  ch_register:
+    display: Chregister
+    type: decimal
+    required: false
+    description: Field ChRegister from ApPayRunChkDet
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApPayRunChkDet
+  cheque:
+    display: Cheque
+    type: string
+    required: false
+    description: Field Cheque from ApPayRunChkDet
+  cheque_date:
+    display: Chequedate
+    type: date
+    required: false
+    description: Field ChequeDate from ApPayRunChkDet
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApPayRunChkDet
+  last_cheque_val:
+    display: Lastchequeval
+    type: decimal
+    required: false
+    description: Field LastChequeVal from ApPayRunChkDet

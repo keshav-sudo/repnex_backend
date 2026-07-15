@@ -1,0 +1,58 @@
+concept: ar_trn_tax_uk_vat
+display_name: ArTrnTaxUkVat
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArTrnTaxUkVat.
+synonyms:
+- artrntaxukvat
+- ar trn tax uk vat
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArTrnTaxUkVat
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArTrnTaxUkVat
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from ArTrnTaxUkVat
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArTrnTaxUkVat
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from ArTrnTaxUkVat
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from ArTrnTaxUkVat
+  blank_taxable_val:
+    display: Blanktaxableval
+    type: decimal
+    required: false
+    description: Field BlankTaxableVal from ArTrnTaxUkVat
+  uk_currency:
+    display: Ukcurrency
+    type: string
+    required: false
+    description: Field UkCurrency from ArTrnTaxUkVat
+  uk_rate:
+    display: Ukrate
+    type: decimal
+    required: false
+    description: Field UkRate from ArTrnTaxUkVat
+  uk_mul_div:
+    display: Ukmuldiv
+    type: string
+    required: false
+    description: Field UkMulDiv from ArTrnTaxUkVat

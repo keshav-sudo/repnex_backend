@@ -1,0 +1,16 @@
+concept: ar_cust_health_fix
+table: ArCustHealthFix
+alias: achf2
+fields:
+  run_date_time: achf2.RunDateTime
+  trx_source: achf2.TrxSource
+  customer: achf2.Customer
+  balance_year: achf2.BalanceYear
+  balance_month: achf2.BalanceMonth
+  trx_amount_value: achf2.TrxAmountValue
+  trx_amount_before: achf2.TrxAmountBefore
+  trx_amount_after: achf2.TrxAmountAfter
+  inv_count_value: achf2.InvCountValue
+  inv_count_before: achf2.InvCountBefore
+  inv_count_after: achf2.InvCountAfter
+  message: achf2.Message

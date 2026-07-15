@@ -1,0 +1,9 @@
+concept: req_group_authority
+table: ReqGroupAuthority
+alias: rga
+fields:
+  requisition_group: rga.RequisitionGroup
+  product_class: rga.ProductClass
+  next_user: rga.NextUser
+  max_approve_value: rga.MaxApproveValue
+  user_for_porder: rga.UserForPorder

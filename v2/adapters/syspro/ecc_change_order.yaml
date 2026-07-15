@@ -1,0 +1,20 @@
+concept: ecc_change_order
+table: EccChangeOrder
+alias: eco
+fields:
+  change_order: eco.ChangeOrder
+  description: eco.Description
+  originator: eco.Originator
+  ecc_user: eco.EccUser
+  status_code: eco.StatusCode
+  eccstatus: eco.Eccstatus
+  priority: eco.Priority
+  date_raised: eco.DateRaised
+  date_status: eco.DateStatus
+  date_review: eco.DateReview
+  date_available: eco.DateAvailable
+  date_completed: eco.DateCompleted
+  bom_maint_allow: eco.BomMaintAllow
+  audit_sequence: eco.AuditSequence
+  full_description: eco.FullDescription
+  reason: eco.Reason

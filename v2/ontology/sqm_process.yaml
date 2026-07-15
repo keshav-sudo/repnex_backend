@@ -1,0 +1,18 @@
+concept: sqm_process
+display_name: SqmProcess
+module: other
+description: Auto-generated representation of the physical table SqmProcess.
+synonyms:
+- sqmprocess
+- sqm process
+header_attributes:
+  nc_process:
+    display: Ncprocess
+    type: string
+    required: false
+    description: Field NcProcess from SqmProcess
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SqmProcess

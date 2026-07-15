@@ -1,0 +1,63 @@
+concept: rma_restock_comp
+display_name: RmaRestockComp
+module: other
+description: Auto-generated representation of the physical table RmaRestockComp.
+synonyms:
+- rmarestockcomp
+- rma restock comp
+header_attributes:
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RmaRestockComp
+  rma_line_number:
+    display: Rmalinenumber
+    type: decimal
+    required: false
+    description: Field RmaLineNumber from RmaRestockComp
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from RmaRestockComp
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from RmaRestockComp
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from RmaRestockComp
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from RmaRestockComp
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from RmaRestockComp
+  qty_restock:
+    display: Qtyrestock
+    type: decimal
+    required: false
+    description: Field QtyRestock from RmaRestockComp
+  qty_scrap:
+    display: Qtyscrap
+    type: decimal
+    required: false
+    description: Field QtyScrap from RmaRestockComp
+  scrap_action:
+    display: Scrapaction
+    type: string
+    required: false
+    description: Field ScrapAction from RmaRestockComp
+  part_category:
+    display: Partcategory
+    type: string
+    required: false
+    description: Field PartCategory from RmaRestockComp

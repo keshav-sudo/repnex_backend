@@ -1,0 +1,21 @@
+concept: cfg_option_comp
+table: CfgOptionComp
+alias: coc
+fields:
+  product_code: coc.ProductCode
+  option_num: coc.OptionNum
+  option_type: coc.OptionType
+  option_description: coc.OptionDescription
+  min_num_components: coc.MinNumComponents
+  max_num_components: coc.MaxNumComponents
+  min_tot_comp_qty: coc.MinTotCompQty
+  max_tot_comp_qty: coc.MaxTotCompQty
+  qty_per_desc: coc.QtyPerDesc
+  min_num_operations: coc.MinNumOperations
+  max_num_operations: coc.MaxNumOperations
+  min_time: coc.MinTime
+  max_time: coc.MaxTime
+  ranges_maint_flag: coc.RangesMaintFlag
+  offset_type: coc.OffsetType
+  offset_days_op: coc.OffsetDaysOp
+  op_oper: coc.OpOper

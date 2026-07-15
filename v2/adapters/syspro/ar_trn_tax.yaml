@@ -1,0 +1,22 @@
+concept: ar_trn_tax
+table: ArTrnTax
+alias: att
+fields:
+  trn_year: att.TrnYear
+  trn_month: att.TrnMonth
+  register: att.Register
+  invoice: att.Invoice
+  summary_line: att.SummaryLine
+  interface_flag: att.InterfaceFlag
+  blank_taxable_val: att.BlankTaxableVal
+  sales_distr_upd: att.SalesDistrUpd
+  branch: att.Branch
+  invoice_date: att.InvoiceDate
+  state: att.State
+  county_zip: att.CountyZip
+  city: att.City
+  user_field1: att.UserField1
+  user_field2: att.UserField2
+  eec_invoice_flag: att.EecInvoiceFlag
+  nationality: att.Nationality
+  uk_vat_flag: att.UkVatFlag

@@ -1,0 +1,113 @@
+concept: gtr_transactions
+display_name: GtrTransactions
+module: other
+description: Auto-generated representation of the physical table GtrTransactions.
+synonyms:
+- gtrtransactions
+- gtr transactions
+header_attributes:
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from GtrTransactions
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from GtrTransactions
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from GtrTransactions
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from GtrTransactions
+  entry:
+    display: Entry
+    type: decimal
+    required: false
+    description: Field Entry from GtrTransactions
+  transaction_typ:
+    display: Transactiontyp
+    type: string
+    required: false
+    description: Field TransactionTyp from GtrTransactions
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from GtrTransactions
+  src_unit_cost:
+    display: Srcunitcost
+    type: decimal
+    required: false
+    description: Field SrcUnitCost from GtrTransactions
+  src_value:
+    display: Srcvalue
+    type: decimal
+    required: false
+    description: Field SrcValue from GtrTransactions
+  tgt_unit_cost:
+    display: Tgtunitcost
+    type: decimal
+    required: false
+    description: Field TgtUnitCost from GtrTransactions
+  tgt_value:
+    display: Tgtvalue
+    type: decimal
+    required: false
+    description: Field TgtValue from GtrTransactions
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from GtrTransactions
+  posting_period:
+    display: Postingperiod
+    type: decimal
+    required: false
+    description: Field PostingPeriod from GtrTransactions
+  posting_year:
+    display: Postingyear
+    type: decimal
+    required: false
+    description: Field PostingYear from GtrTransactions
+  inv_journal:
+    display: Invjournal
+    type: decimal
+    required: false
+    description: Field InvJournal from GtrTransactions
+  inv_jnl_entry:
+    display: Invjnlentry
+    type: decimal
+    required: false
+    description: Field InvJnlEntry from GtrTransactions
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from GtrTransactions
+  transaction_hh:
+    display: Transactionhh
+    type: decimal
+    required: false
+    description: Field TransactionHh from GtrTransactions
+  transaction_mm:
+    display: Transactionmm
+    type: decimal
+    required: false
+    description: Field TransactionMm from GtrTransactions
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from GtrTransactions
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from GtrTransactions

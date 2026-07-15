@@ -1,0 +1,16 @@
+concept: mrp_all_mat_lot
+table: MrpAllMatLot
+alias: maml
+fields:
+  job: maml.Job
+  stock_code: maml.StockCode
+  warehouse: maml.Warehouse
+  line: maml.Line
+  lot: maml.Lot
+  bin: maml.Bin
+  qty_reserved: maml.QtyReserved
+  qty_issued: maml.QtyIssued
+  lot_completed: maml.LotCompleted
+  version: maml.Version
+  release: maml.Release
+  neg_allocation: maml.NegAllocation

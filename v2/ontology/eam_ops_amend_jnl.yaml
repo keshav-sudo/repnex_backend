@@ -1,0 +1,448 @@
+concept: eam_ops_amend_jnl
+display_name: EamOpsAmendJnl
+module: other
+description: Auto-generated representation of the physical table EamOpsAmendJnl.
+synonyms:
+- eamopsamendjnl
+- eam ops amend jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from EamOpsAmendJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from EamOpsAmendJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from EamOpsAmendJnl
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from EamOpsAmendJnl
+  maint_service_type:
+    display: Maintservicetype
+    type: string
+    required: false
+    description: Field MaintServiceType from EamOpsAmendJnl
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from EamOpsAmendJnl
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from EamOpsAmendJnl
+  operator_name:
+    display: Operatorname
+    type: string
+    required: false
+    description: Field OperatorName from EamOpsAmendJnl
+  jnl_printed:
+    display: Jnlprinted
+    type: string
+    required: false
+    description: Field JnlPrinted from EamOpsAmendJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from EamOpsAmendJnl
+  old_work_centre:
+    display: Oldworkcentre
+    type: string
+    required: false
+    description: Field OldWorkCentre from EamOpsAmendJnl
+  old_work_rate_ind:
+    display: Oldworkrateind
+    type: decimal
+    required: false
+    description: Field OldWorkRateInd from EamOpsAmendJnl
+  old_subcontract:
+    display: Oldsubcontract
+    type: string
+    required: false
+    description: Field OldSubcontract from EamOpsAmendJnl
+  oldi_setup_time:
+    display: Oldisetuptime
+    type: decimal
+    required: false
+    description: Field OldiSetupTime from EamOpsAmendJnl
+  oldi_run_time:
+    display: Oldiruntime
+    type: decimal
+    required: false
+    description: Field OldiRunTime from EamOpsAmendJnl
+  oldi_startup_time:
+    display: Oldistartuptime
+    type: decimal
+    required: false
+    description: Field OldiStartupTime from EamOpsAmendJnl
+  oldi_teardown_time:
+    display: Olditeardowntime
+    type: decimal
+    required: false
+    description: Field OldiTeardownTime from EamOpsAmendJnl
+  oldi_wait_time:
+    display: Oldiwaittime
+    type: decimal
+    required: false
+    description: Field OldiWaitTime from EamOpsAmendJnl
+  oldi_startup_qty:
+    display: Oldistartupqty
+    type: decimal
+    required: false
+    description: Field OldiStartupQty from EamOpsAmendJnl
+  oldi_machine:
+    display: Oldimachine
+    type: string
+    required: false
+    description: Field OldiMachine from EamOpsAmendJnl
+  oldi_unit_cap_req:
+    display: Oldiunitcapreq
+    type: decimal
+    required: false
+    description: Field OldiUnitCapReq from EamOpsAmendJnl
+  oldi_max_operators:
+    display: Oldimaxoperators
+    type: decimal
+    required: false
+    description: Field OldiMaxOperators from EamOpsAmendJnl
+  oldi_max_prod_units:
+    display: Oldimaxprodunits
+    type: decimal
+    required: false
+    description: Field OldiMaxProdUnits from EamOpsAmendJnl
+  oldi_time_taken:
+    display: Olditimetaken
+    type: decimal
+    required: false
+    description: Field OldiTimeTaken from EamOpsAmendJnl
+  oldi_block_qty:
+    display: Oldiblockqty
+    type: decimal
+    required: false
+    description: Field OldiBlockQty from EamOpsAmendJnl
+  old_sub_supplier:
+    display: Oldsubsupplier
+    type: string
+    required: false
+    description: Field OldSubSupplier from EamOpsAmendJnl
+  old_sub_po_stock_code:
+    display: Oldsubpostockcode
+    type: string
+    required: false
+    description: Field OldSubPoStockCode from EamOpsAmendJnl
+  old_sub_qty_per:
+    display: Oldsubqtyper
+    type: decimal
+    required: false
+    description: Field OldSubQtyPer from EamOpsAmendJnl
+  old_sub_order_uom:
+    display: Oldsuborderuom
+    type: string
+    required: false
+    description: Field OldSubOrderUom from EamOpsAmendJnl
+  old_sub_op_unit_value:
+    display: Oldsubopunitvalue
+    type: decimal
+    required: false
+    description: Field OldSubOpUnitValue from EamOpsAmendJnl
+  old_sub_planner:
+    display: Oldsubplanner
+    type: string
+    required: false
+    description: Field OldSubPlanner from EamOpsAmendJnl
+  old_sub_buyer:
+    display: Oldsubbuyer
+    type: string
+    required: false
+    description: Field OldSubBuyer from EamOpsAmendJnl
+  old_sub_lead_time:
+    display: Oldsubleadtime
+    type: decimal
+    required: false
+    description: Field OldSubLeadTime from EamOpsAmendJnl
+  old_sub_dock_to_stock:
+    display: Oldsubdocktostock
+    type: decimal
+    required: false
+    description: Field OldSubDockToStock from EamOpsAmendJnl
+  old_sub_offsite_days:
+    display: Oldsuboffsitedays
+    type: decimal
+    required: false
+    description: Field OldSubOffsiteDays from EamOpsAmendJnl
+  old_milestone:
+    display: Oldmilestone
+    type: string
+    required: false
+    description: Field OldMilestone from EamOpsAmendJnl
+  old_elapsed_time:
+    display: Oldelapsedtime
+    type: decimal
+    required: false
+    description: Field OldElapsedTime from EamOpsAmendJnl
+  old_movement_time:
+    display: Oldmovementtime
+    type: decimal
+    required: false
+    description: Field OldMovementTime from EamOpsAmendJnl
+  old_narration_code:
+    display: Oldnarrationcode
+    type: string
+    required: false
+    description: Field OldNarrationCode from EamOpsAmendJnl
+  old_auto_narr_code:
+    display: Oldautonarrcode
+    type: decimal
+    required: false
+    description: Field OldAutoNarrCode from EamOpsAmendJnl
+  old_pieces:
+    display: Oldpieces
+    type: decimal
+    required: false
+    description: Field OldPieces from EamOpsAmendJnl
+  old_inspection_flag:
+    display: Oldinspectionflag
+    type: string
+    required: false
+    description: Field OldInspectionFlag from EamOpsAmendJnl
+  old_minor_setup:
+    display: Oldminorsetup
+    type: decimal
+    required: false
+    description: Field OldMinorSetup from EamOpsAmendJnl
+  old_minor_setup_code:
+    display: Oldminorsetupcode
+    type: string
+    required: false
+    description: Field OldMinorSetupCode from EamOpsAmendJnl
+  old_tool_set:
+    display: Oldtoolset
+    type: string
+    required: false
+    description: Field OldToolSet from EamOpsAmendJnl
+  old_tool_set_qty:
+    display: Oldtoolsetqty
+    type: decimal
+    required: false
+    description: Field OldToolSetQty from EamOpsAmendJnl
+  old_tool_consumption:
+    display: Oldtoolconsumption
+    type: decimal
+    required: false
+    description: Field OldToolConsumption from EamOpsAmendJnl
+  old_elapsed_time_cal:
+    display: Oldelapsedtimecal
+    type: string
+    required: false
+    description: Field OldElapsedTimeCal from EamOpsAmendJnl
+  old_reason_for_change:
+    display: Oldreasonforchange
+    type: string
+    required: false
+    description: Field OldReasonForChange from EamOpsAmendJnl
+  new_work_centre:
+    display: Newworkcentre
+    type: string
+    required: false
+    description: Field NewWorkCentre from EamOpsAmendJnl
+  new_work_rate_ind:
+    display: Newworkrateind
+    type: decimal
+    required: false
+    description: Field NewWorkRateInd from EamOpsAmendJnl
+  new_subcontract_flag:
+    display: Newsubcontractflag
+    type: string
+    required: false
+    description: Field NewSubcontractFlag from EamOpsAmendJnl
+  newi_setup_time:
+    display: Newisetuptime
+    type: decimal
+    required: false
+    description: Field NewiSetupTime from EamOpsAmendJnl
+  newi_run_time:
+    display: Newiruntime
+    type: decimal
+    required: false
+    description: Field NewiRunTime from EamOpsAmendJnl
+  newi_startup_time:
+    display: Newistartuptime
+    type: decimal
+    required: false
+    description: Field NewiStartupTime from EamOpsAmendJnl
+  newi_teardown_time:
+    display: Newiteardowntime
+    type: decimal
+    required: false
+    description: Field NewiTeardownTime from EamOpsAmendJnl
+  newi_wait_time:
+    display: Newiwaittime
+    type: decimal
+    required: false
+    description: Field NewiWaitTime from EamOpsAmendJnl
+  newi_startup_qty:
+    display: Newistartupqty
+    type: decimal
+    required: false
+    description: Field NewiStartupQty from EamOpsAmendJnl
+  newi_machine:
+    display: Newimachine
+    type: string
+    required: false
+    description: Field NewiMachine from EamOpsAmendJnl
+  newi_unit_cap_req:
+    display: Newiunitcapreq
+    type: decimal
+    required: false
+    description: Field NewiUnitCapReq from EamOpsAmendJnl
+  newi_max_operators:
+    display: Newimaxoperators
+    type: decimal
+    required: false
+    description: Field NewiMaxOperators from EamOpsAmendJnl
+  newi_max_prod_units:
+    display: Newimaxprodunits
+    type: decimal
+    required: false
+    description: Field NewiMaxProdUnits from EamOpsAmendJnl
+  newi_time_taken:
+    display: Newitimetaken
+    type: decimal
+    required: false
+    description: Field NewiTimeTaken from EamOpsAmendJnl
+  newi_block_qty:
+    display: Newiblockqty
+    type: decimal
+    required: false
+    description: Field NewiBlockQty from EamOpsAmendJnl
+  new_sub_supplier:
+    display: Newsubsupplier
+    type: string
+    required: false
+    description: Field NewSubSupplier from EamOpsAmendJnl
+  new_sub_po_stock_code:
+    display: Newsubpostockcode
+    type: string
+    required: false
+    description: Field NewSubPoStockCode from EamOpsAmendJnl
+  new_sub_qty_per:
+    display: Newsubqtyper
+    type: decimal
+    required: false
+    description: Field NewSubQtyPer from EamOpsAmendJnl
+  new_sub_order_uom:
+    display: Newsuborderuom
+    type: string
+    required: false
+    description: Field NewSubOrderUom from EamOpsAmendJnl
+  new_sub_op_unit_value:
+    display: Newsubopunitvalue
+    type: decimal
+    required: false
+    description: Field NewSubOpUnitValue from EamOpsAmendJnl
+  new_sub_planner:
+    display: Newsubplanner
+    type: string
+    required: false
+    description: Field NewSubPlanner from EamOpsAmendJnl
+  new_sub_buyer:
+    display: Newsubbuyer
+    type: string
+    required: false
+    description: Field NewSubBuyer from EamOpsAmendJnl
+  new_sub_lead_time:
+    display: Newsubleadtime
+    type: decimal
+    required: false
+    description: Field NewSubLeadTime from EamOpsAmendJnl
+  new_sub_dock_to_stock:
+    display: Newsubdocktostock
+    type: decimal
+    required: false
+    description: Field NewSubDockToStock from EamOpsAmendJnl
+  new_sub_offsite_days:
+    display: Newsuboffsitedays
+    type: decimal
+    required: false
+    description: Field NewSubOffsiteDays from EamOpsAmendJnl
+  new_milestone:
+    display: Newmilestone
+    type: string
+    required: false
+    description: Field NewMilestone from EamOpsAmendJnl
+  new_elapsed_time:
+    display: Newelapsedtime
+    type: decimal
+    required: false
+    description: Field NewElapsedTime from EamOpsAmendJnl
+  new_movement_time:
+    display: Newmovementtime
+    type: decimal
+    required: false
+    description: Field NewMovementTime from EamOpsAmendJnl
+  new_narration_code:
+    display: Newnarrationcode
+    type: string
+    required: false
+    description: Field NewNarrationCode from EamOpsAmendJnl
+  new_auto_narr_code:
+    display: Newautonarrcode
+    type: decimal
+    required: false
+    description: Field NewAutoNarrCode from EamOpsAmendJnl
+  new_pieces:
+    display: Newpieces
+    type: decimal
+    required: false
+    description: Field NewPieces from EamOpsAmendJnl
+  new_inspection_flag:
+    display: Newinspectionflag
+    type: string
+    required: false
+    description: Field NewInspectionFlag from EamOpsAmendJnl
+  new_minor_setup:
+    display: Newminorsetup
+    type: decimal
+    required: false
+    description: Field NewMinorSetup from EamOpsAmendJnl
+  new_minor_setup_code:
+    display: Newminorsetupcode
+    type: string
+    required: false
+    description: Field NewMinorSetupCode from EamOpsAmendJnl
+  new_tool_set:
+    display: Newtoolset
+    type: string
+    required: false
+    description: Field NewToolSet from EamOpsAmendJnl
+  new_tool_set_qty:
+    display: Newtoolsetqty
+    type: decimal
+    required: false
+    description: Field NewToolSetQty from EamOpsAmendJnl
+  new_tool_consumption:
+    display: Newtoolconsumption
+    type: decimal
+    required: false
+    description: Field NewToolConsumption from EamOpsAmendJnl
+  new_elapsed_time_cal:
+    display: Newelapsedtimecal
+    type: string
+    required: false
+    description: Field NewElapsedTimeCal from EamOpsAmendJnl
+  new_reason_for_change:
+    display: Newreasonforchange
+    type: string
+    required: false
+    description: Field NewReasonForChange from EamOpsAmendJnl

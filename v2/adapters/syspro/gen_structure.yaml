@@ -1,0 +1,11 @@
+concept: gen_structure
+table: GenStructure
+alias: gs2
+fields:
+  section_number: gs2.SectionNumber
+  parent_section: gs2.ParentSection
+  child_section: gs2.ChildSection
+  all_list: gs2.AllList
+  valid_invalid: gs2.ValidInvalid
+  date_modified: gs2.DateModified
+  operator: gs2.Operator

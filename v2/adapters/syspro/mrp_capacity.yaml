@@ -1,0 +1,41 @@
+concept: mrp_capacity
+table: MrpCapacity
+alias: mc
+fields:
+  capacity_flag: mc.CapacityFlag
+  work_centre: mc.WorkCentre
+  capacity_century: mc.CapacityCentury
+  capacity_year: mc.CapacityYear
+  capacity_month: mc.CapacityMonth
+  capacity_avail1: mc.CapacityAvail1
+  capacity_avail2: mc.CapacityAvail2
+  capacity_avail3: mc.CapacityAvail3
+  capacity_avail4: mc.CapacityAvail4
+  capacity_avail5: mc.CapacityAvail5
+  capacity_avail6: mc.CapacityAvail6
+  capacity_avail7: mc.CapacityAvail7
+  capacity_avail8: mc.CapacityAvail8
+  capacity_avail9: mc.CapacityAvail9
+  capacity_avail10: mc.CapacityAvail10
+  capacity_avail11: mc.CapacityAvail11
+  capacity_avail12: mc.CapacityAvail12
+  capacity_avail13: mc.CapacityAvail13
+  capacity_avail14: mc.CapacityAvail14
+  capacity_avail15: mc.CapacityAvail15
+  capacity_avail16: mc.CapacityAvail16
+  capacity_avail17: mc.CapacityAvail17
+  capacity_avail18: mc.CapacityAvail18
+  capacity_avail19: mc.CapacityAvail19
+  capacity_avail20: mc.CapacityAvail20
+  capacity_avail21: mc.CapacityAvail21
+  capacity_avail22: mc.CapacityAvail22
+  capacity_avail23: mc.CapacityAvail23
+  capacity_avail24: mc.CapacityAvail24
+  capacity_avail25: mc.CapacityAvail25
+  capacity_avail26: mc.CapacityAvail26
+  capacity_avail27: mc.CapacityAvail27
+  capacity_avail28: mc.CapacityAvail28
+  capacity_avail29: mc.CapacityAvail29
+  capacity_avail30: mc.CapacityAvail30
+  capacity_avail31: mc.CapacityAvail31
+  leap_year_flag: mc.LeapYearFlag

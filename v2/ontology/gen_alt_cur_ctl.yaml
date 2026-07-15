@@ -1,0 +1,78 @@
+concept: gen_alt_cur_ctl
+display_name: GenAltCurCtl
+module: general_ledger
+description: Auto-generated representation of the physical table GenAltCurCtl.
+synonyms:
+- genaltcurctl
+- gen alt cur ctl
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from GenAltCurCtl
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenAltCurCtl
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenAltCurCtl
+  next_gl_line_cur:
+    display: Nextgllinecur
+    type: decimal
+    required: false
+    description: Field NextGlLineCur from GenAltCurCtl
+  next_gl_line_pyr:
+    display: Nextgllinepyr
+    type: decimal
+    required: false
+    description: Field NextGlLinePyr from GenAltCurCtl
+  next_line_cur:
+    display: Nextlinecur
+    type: string
+    required: false
+    description: Field NextLineCur from GenAltCurCtl
+  next_line_pyr:
+    display: Nextlinepyr
+    type: string
+    required: false
+    description: Field NextLinePyr from GenAltCurCtl
+  ptd_debit_val:
+    display: Ptddebitval
+    type: decimal
+    required: false
+    description: Field PtdDebitVal from GenAltCurCtl
+  ptd_credit_val:
+    display: Ptdcreditval
+    type: decimal
+    required: false
+    description: Field PtdCreditVal from GenAltCurCtl
+  current_balance:
+    display: Currentbalance
+    type: decimal
+    required: false
+    description: Field CurrentBalance from GenAltCurCtl
+  prv_prd_end_bal:
+    display: Prvprdendbal
+    type: decimal
+    required: false
+    description: Field PrvPrdEndBal from GenAltCurCtl
+  details_cur_year:
+    display: Detailscuryear
+    type: decimal
+    required: false
+    description: Field DetailsCurYear from GenAltCurCtl
+  details_prv_year:
+    display: Detailsprvyear
+    type: decimal
+    required: false
+    description: Field DetailsPrvYear from GenAltCurCtl
+  historical_val:
+    display: Historicalval
+    type: decimal
+    required: false
+    description: Field HistoricalVal from GenAltCurCtl

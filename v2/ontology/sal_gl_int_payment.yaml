@@ -1,0 +1,38 @@
+concept: sal_gl_int_payment
+display_name: SalGlIntPayment
+module: other
+description: Auto-generated representation of the physical table SalGlIntPayment.
+synonyms:
+- salglintpayment
+- sal gl int payment
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalGlIntPayment
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SalGlIntPayment
+  gl_payments:
+    display: Glpayments
+    type: string
+    required: false
+    description: Field GlPayments from SalGlIntPayment
+  gl_discounts:
+    display: Gldiscounts
+    type: string
+    required: false
+    description: Field GlDiscounts from SalGlIntPayment
+  gl_adjustments:
+    display: Gladjustments
+    type: string
+    required: false
+    description: Field GlAdjustments from SalGlIntPayment
+  gl_deposits:
+    display: Gldeposits
+    type: string
+    required: false
+    description: Field GlDeposits from SalGlIntPayment

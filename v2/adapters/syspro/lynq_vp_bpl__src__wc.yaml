@@ -1,0 +1,26 @@
+concept: lynq_vp_bpl__src__wc
+table: Lynq_VP_BPL_Src_Wc
+alias: lvpbplsw
+fields:
+  id: lvpbplsw.ID
+  dept_code: lvpbplsw.DeptCode
+  wc_code: lvpbplsw.WcCode
+  calendar_number: lvpbplsw.CalendarNumber
+  wc_description: lvpbplsw.WcDescription
+  load_code: lvpbplsw.LoadCode
+  machine_number: lvpbplsw.MachineNumber
+  machine_count: lvpbplsw.MachineCount
+  workers_count: lvpbplsw.WorkersCount
+  fld_date_time1: lvpbplsw.FldDateTime1
+  fld_date_time2: lvpbplsw.FldDateTime2
+  fld_date_time3: lvpbplsw.FldDateTime3
+  fld_decimal1: lvpbplsw.FldDecimal1
+  fld_decimal2: lvpbplsw.FldDecimal2
+  fld_decimal3: lvpbplsw.FldDecimal3
+  fld_decimal4: lvpbplsw.FldDecimal4
+  fld_decimal5: lvpbplsw.FldDecimal5
+  fld_string1: lvpbplsw.FldString1
+  fld_string2: lvpbplsw.FldString2
+  fld_string3: lvpbplsw.FldString3
+  fld_string4: lvpbplsw.FldString4
+  fld_string5: lvpbplsw.FldString5

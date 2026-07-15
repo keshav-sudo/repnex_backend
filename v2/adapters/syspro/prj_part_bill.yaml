@@ -1,0 +1,27 @@
+concept: prj_part_bill
+table: PrjPartBill
+alias: ppb
+fields:
+  job: ppb.Job
+  line: ppb.Line
+  entry_number: ppb.EntryNumber
+  hier_head: ppb.HierHead
+  section1: ppb.Section1
+  section2: ppb.Section2
+  section3: ppb.Section3
+  section4: ppb.Section4
+  cost_of_sales_val: ppb.CostOfSalesVal
+  billing_value: ppb.BillingValue
+  sales_order: ppb.SalesOrder
+  sales_order_line: ppb.SalesOrderLine
+  quantity: ppb.Quantity
+  price: ppb.Price
+  order_line_type: ppb.OrderLineType
+  decimals: ppb.Decimals
+  order_uom: ppb.OrderUom
+  part_billing_jnl: ppb.PartBillingJnl
+  trn_date: ppb.TrnDate
+  trn_source: ppb.TrnSource
+  qty_released: ppb.QtyReleased
+  part_bill_entry_no: ppb.PartBillEntryNo
+  post_job: ppb.PostJob

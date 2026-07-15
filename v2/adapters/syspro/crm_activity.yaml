@@ -1,0 +1,38 @@
+concept: crm_activity
+table: CrmActivity
+alias: ca2
+fields:
+  contact_id: ca2.ContactId
+  start_date: ca2.StartDate
+  start_time: ca2.StartTime
+  end_date: ca2.EndDate
+  end_time: ca2.EndTime
+  follow_up_reqd: ca2.FollowUpReqd
+  follow_up_oper: ca2.FollowUpOper
+  follow_up_date: ca2.FollowUpDate
+  follow_up_time: ca2.FollowUpTime
+  created_by: ca2.CreatedBy
+  owner_oper: ca2.OwnerOper
+  owner_privacy: ca2.OwnerPrivacy
+  activity_type: ca2.ActivityType
+  follow_up_flag: ca2.FollowUpFlag
+  priority: ca2.Priority
+  subject: ca2.Subject
+  location: ca2.Location
+  body_text: ca2.BodyText
+  body_text_file: ca2.BodyTextFile
+  regarding: ca2.Regarding
+  result: ca2.Result
+  activity_source: ca2.ActivitySource
+  attachment_count: ca2.AttachmentCount
+  activity_label: ca2.ActivityLabel
+  all_day_event: ca2.AllDayEvent
+  show_time_as: ca2.ShowTimeAs
+  reminder_popup_flag: ca2.ReminderPopupFlag
+  task_status: ca2.TaskStatus
+  task_pct_complete: ca2.TaskPctComplete
+  task_due_date: ca2.TaskDueDate
+  user_field1: ca2.UserField1
+  user_field2: ca2.UserField2
+  user_field3: ca2.UserField3
+  files_in_sql: ca2.FilesInSql

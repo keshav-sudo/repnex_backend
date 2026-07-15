@@ -1,0 +1,7 @@
+concept: tbl_so_ship_inst
+table: TblSoShipInst
+alias: tssi
+fields:
+  shipping_instrs: tssi.ShippingInstrs
+  instruction_text: tssi.InstructionText
+  tpm_pickup_flag: tssi.TpmPickupFlag

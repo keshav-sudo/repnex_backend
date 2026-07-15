@@ -1,0 +1,9 @@
+concept: inv_narration_hdr
+table: InvNarrationHdr
+alias: inh
+fields:
+  stock_code: inh.StockCode
+  text_type: inh.TextType
+  language_code: inh.LanguageCode
+  date_last_modified: inh.DateLastModified
+  optional_note: inh.OptionalNote

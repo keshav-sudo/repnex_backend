@@ -1,0 +1,16 @@
+concept: srs_archive_sta
+table: SrsArchiveSTA
+alias: sasta
+fields:
+  archive_date: sasta.ArchiveDate
+  archive_time: sasta.ArchiveTime
+  operator: sasta.Operator
+  archive_id: sasta.ArchiveId
+  archive_type: sasta.ArchiveType
+  archive_file: sasta.ArchiveFile
+  branch_name: sasta.BranchName
+  currency: sasta.Currency
+  customer_accnt_number: sasta.CustomerAccntNumber
+  customer_name: sasta.CustomerName
+  sales_person_number: sasta.SalesPersonNumber
+  statement_date_cymd: sasta.StatementDateCymd

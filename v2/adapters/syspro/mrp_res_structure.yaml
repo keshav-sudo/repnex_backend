@@ -1,0 +1,9 @@
+concept: mrp_res_structure
+table: MrpResStructure
+alias: mrs
+fields:
+  resource_parent: mrs.ResourceParent
+  resource_component: mrs.ResourceComponent
+  uom: mrs.Uom
+  quantity_per: mrs.QuantityPer
+  offset_days: mrs.OffsetDays

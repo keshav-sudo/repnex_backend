@@ -1,0 +1,83 @@
+concept: ar_collector_run_det
+display_name: ArCollectorRunDet
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCollectorRunDet.
+synonyms:
+- arcollectorrundet
+- ar collector run det
+header_attributes:
+  collector_run_no:
+    display: Collectorrunno
+    type: string
+    required: false
+    description: Field CollectorRunNo from ArCollectorRunDet
+  line_number:
+    display: Linenumber
+    type: decimal
+    required: false
+    description: Field LineNumber from ArCollectorRunDet
+  collector:
+    display: Collector
+    type: string
+    required: false
+    description: Field Collector from ArCollectorRunDet
+  collection_date:
+    display: Collectiondate
+    type: date
+    required: false
+    description: Field CollectionDate from ArCollectorRunDet
+  receipt_date:
+    display: Receiptdate
+    type: date
+    required: false
+    description: Field ReceiptDate from ArCollectorRunDet
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCollectorRunDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArCollectorRunDet
+  invoice_amount:
+    display: Invoiceamount
+    type: decimal
+    required: false
+    description: Field InvoiceAmount from ArCollectorRunDet
+  cash_total:
+    display: Cashtotal
+    type: decimal
+    required: false
+    description: Field CashTotal from ArCollectorRunDet
+  check_total:
+    display: Checktotal
+    type: decimal
+    required: false
+    description: Field CheckTotal from ArCollectorRunDet
+  other_total:
+    display: Othertotal
+    type: decimal
+    required: false
+    description: Field OtherTotal from ArCollectorRunDet
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArCollectorRunDet
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArCollectorRunDet
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArCollectorRunDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ArCollectorRunDet

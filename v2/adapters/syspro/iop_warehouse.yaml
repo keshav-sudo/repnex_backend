@@ -1,0 +1,54 @@
+concept: iop_warehouse
+table: IopWarehouse
+alias: iw1
+fields:
+  stock_code: iw1.StockCode
+  version: iw1.Version
+  release: iw1.Release
+  warehouse: iw1.Warehouse
+  calendar: iw1.Calendar
+  algorithm: iw1.Algorithm
+  override_alg: iw1.OverrideAlg
+  alg_a_months: iw1.AlgAMonths
+  alg_a_basis: iw1.AlgABasis
+  alg_b_months: iw1.AlgBMonths
+  alg_c_months: iw1.AlgCMonths
+  alg_d_months: iw1.AlgDMonths
+  alg_f_smooth: iw1.AlgFSmooth
+  alg_f_trend: iw1.AlgFTrend
+  alg_g_coeff1: iw1.AlgGCoeff1
+  alg_g_coeff2: iw1.AlgGCoeff2
+  alg_g_coeff3: iw1.AlgGCoeff3
+  alg_h_coeff1: iw1.AlgHCoeff1
+  alg_h_coeff2: iw1.AlgHCoeff2
+  alg_h_coeff3: iw1.AlgHCoeff3
+  alg_h_coeff4: iw1.AlgHCoeff4
+  alg_i_coeff1: iw1.AlgICoeff1
+  alg_i_coeff2: iw1.AlgICoeff2
+  alg_i_coeff3: iw1.AlgICoeff3
+  alg_j_coeff1: iw1.AlgJCoeff1
+  alg_j_coeff2: iw1.AlgJCoeff2
+  alg_j_coeff3: iw1.AlgJCoeff3
+  alg_k_coeff1: iw1.AlgKCoeff1
+  alg_k_coeff2: iw1.AlgKCoeff2
+  alg_k_coeff3: iw1.AlgKCoeff3
+  season_sides: iw1.SeasonSides
+  season_periods: iw1.SeasonPeriods
+  season_coeff: iw1.SeasonCoeff
+  replenish_item: iw1.ReplenishItem
+  manual_forecast: iw1.ManualForecast
+  outlier_std_dev: iw1.OutlierStdDev
+  forecast_format: iw1.ForecastFormat
+  abc_class: iw1.AbcClass
+  aggregate_cost: iw1.AggregateCost
+  aggregate_price: iw1.AggregatePrice
+  id_number: iw1.IdNumber
+  user_field1: iw1.UserField1
+  user_field2: iw1.UserField2
+  user_field3: iw1.UserField3
+  user_field4: iw1.UserField4
+  user_field5: iw1.UserField5
+  user_field6: iw1.UserField6
+  fore_accuracy_days: iw1.ForeAccuracyDays
+  int_demand_days: iw1.IntDemandDays
+  int_demand_pct: iw1.IntDemandPct

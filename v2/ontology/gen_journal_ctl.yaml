@@ -1,0 +1,128 @@
+concept: gen_journal_ctl
+display_name: GenJournalCtl
+module: general_ledger
+description: Auto-generated representation of the physical table GenJournalCtl.
+synonyms:
+- genjournalctl
+- gen journal ctl
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenJournalCtl
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenJournalCtl
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from GenJournalCtl
+  jnl_print_flag:
+    display: Jnlprintflag
+    type: string
+    required: false
+    description: Field JnlPrintFlag from GenJournalCtl
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from GenJournalCtl
+  num_of_entries:
+    display: Numofentries
+    type: decimal
+    required: false
+    description: Field NumOfEntries from GenJournalCtl
+  debit_amount:
+    display: Debitamount
+    type: decimal
+    required: false
+    description: Field DebitAmount from GenJournalCtl
+  credit_amount:
+    display: Creditamount
+    type: decimal
+    required: false
+    description: Field CreditAmount from GenJournalCtl
+  jnl_posting_type:
+    display: Jnlpostingtype
+    type: string
+    required: false
+    description: Field JnlPostingType from GenJournalCtl
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from GenJournalCtl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from GenJournalCtl
+  jnl_status:
+    display: Jnlstatus
+    type: string
+    required: false
+    description: Field JnlStatus from GenJournalCtl
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from GenJournalCtl
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from GenJournalCtl
+  user_def_source:
+    display: Userdefsource
+    type: string
+    required: false
+    description: Field UserDefSource from GenJournalCtl
+  jnl_date_flag:
+    display: Jnldateflag
+    type: string
+    required: false
+    description: Field JnlDateFlag from GenJournalCtl
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from GenJournalCtl
+  authorised_by:
+    display: Authorisedby
+    type: string
+    required: false
+    description: Field AuthorisedBy from GenJournalCtl
+  posted_by:
+    display: Postedby
+    type: string
+    required: false
+    description: Field PostedBy from GenJournalCtl
+  authorised:
+    display: Authorised
+    type: string
+    required: false
+    description: Field Authorised from GenJournalCtl
+  journal_source:
+    display: Journalsource
+    type: string
+    required: false
+    description: Field JournalSource from GenJournalCtl
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from GenJournalCtl
+  post_date:
+    display: Postdate
+    type: date
+    required: false
+    description: Field PostDate from GenJournalCtl
+  source_journal:
+    display: Sourcejournal
+    type: decimal
+    required: false
+    description: Field SourceJournal from GenJournalCtl

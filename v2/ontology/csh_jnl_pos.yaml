@@ -1,0 +1,73 @@
+concept: csh_jnl_pos
+display_name: CshJnlPos
+module: cashbook
+description: Auto-generated representation of the physical table CshJnlPos.
+synonyms:
+- cshjnlpos
+- csh jnl pos
+header_attributes:
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshJnlPos
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshJnlPos
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from CshJnlPos
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from CshJnlPos
+  pos_tran_type:
+    display: Postrantype
+    type: string
+    required: false
+    description: Field PosTranType from CshJnlPos
+  pos_transact_branch:
+    display: Postransactbranch
+    type: string
+    required: false
+    description: Field PosTransactBranch from CshJnlPos
+  pos_unique_id:
+    display: Posuniqueid
+    type: string
+    required: false
+    description: Field PosUniqueId from CshJnlPos
+  pos_payment_line:
+    display: Pospaymentline
+    type: decimal
+    required: false
+    description: Field PosPaymentLine from CshJnlPos
+  pos_eod_branch:
+    display: Poseodbranch
+    type: string
+    required: false
+    description: Field PosEodBranch from CshJnlPos
+  pos_eod_create_date:
+    display: Poseodcreatedate
+    type: date
+    required: false
+    description: Field PosEodCreateDate from CshJnlPos
+  pos_eod_payment_code:
+    display: Poseodpaymentcode
+    type: string
+    required: false
+    description: Field PosEodPaymentCode from CshJnlPos
+  pos_eod_terminal:
+    display: Poseodterminal
+    type: string
+    required: false
+    description: Field PosEodTerminal from CshJnlPos
+  pos_eod_batch:
+    display: Poseodbatch
+    type: string
+    required: false
+    description: Field PosEodBatch from CshJnlPos

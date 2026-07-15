@@ -1,0 +1,19 @@
+concept: iop_con_sales_adjust
+table: IopConSalesAdjust
+alias: icsa
+fields:
+  collection: icsa.Collection
+  instance: icsa.Instance
+  stock_code: icsa.StockCode
+  version: icsa.Version
+  release: icsa.Release
+  movement_date: icsa.MovementDate
+  entry_number: icsa.EntryNumber
+  adjust_type: icsa.AdjustType
+  quantity: icsa.Quantity
+  cost_value: icsa.CostValue
+  sales_value: icsa.SalesValue
+  comment: icsa.Comment
+  orig_warehouse: icsa.OrigWarehouse
+  lost_sale_trn_date: icsa.LostSaleTrnDate
+  lost_sale_trn_time: icsa.LostSaleTrnTime

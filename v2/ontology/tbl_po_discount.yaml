@@ -1,0 +1,33 @@
+concept: tbl_po_discount
+display_name: TblPoDiscount
+module: other
+description: Auto-generated representation of the physical table TblPoDiscount.
+synonyms:
+- tblpodiscount
+- tbl po discount
+header_attributes:
+  discount_code:
+    display: Discountcode
+    type: string
+    required: false
+    description: Field DiscountCode from TblPoDiscount
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblPoDiscount
+  discount_pct1:
+    display: Discountpct1
+    type: decimal
+    required: false
+    description: Field DiscountPct1 from TblPoDiscount
+  discount_pct2:
+    display: Discountpct2
+    type: decimal
+    required: false
+    description: Field DiscountPct2 from TblPoDiscount
+  discount_pct3:
+    display: Discountpct3
+    type: decimal
+    required: false
+    description: Field DiscountPct3 from TblPoDiscount

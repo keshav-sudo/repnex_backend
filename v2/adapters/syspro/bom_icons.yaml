@@ -1,0 +1,10 @@
+concept: bom_icons
+table: BomIcons
+alias: bi
+fields:
+  icon_type: bi.IconType
+  work_centre: bi.WorkCentre
+  icon_dll: bi.IconDll
+  base_icon: bi.BaseIcon
+  closed_icon: bi.ClosedIcon
+  open_icon: bi.OpenIcon

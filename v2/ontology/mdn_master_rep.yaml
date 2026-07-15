@@ -1,0 +1,613 @@
+concept: mdn_master_rep
+display_name: MdnMasterRep
+module: other
+description: Auto-generated representation of the physical table MdnMasterRep.
+synonyms:
+- mdnmasterrep
+- mdn master rep
+header_attributes:
+  key_invoice:
+    display: Keyinvoice
+    type: string
+    required: false
+    description: Field KeyInvoice from MdnMasterRep
+  key_dispatch_note:
+    display: Keydispatchnote
+    type: string
+    required: false
+    description: Field KeyDispatchNote from MdnMasterRep
+  invoice_status:
+    display: Invoicestatus
+    type: string
+    required: false
+    description: Field InvoiceStatus from MdnMasterRep
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from MdnMasterRep
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MdnMasterRep
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MdnMasterRep
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from MdnMasterRep
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from MdnMasterRep
+  shipping_instrs_cod:
+    display: Shippinginstrscod
+    type: string
+    required: false
+    description: Field ShippingInstrsCod from MdnMasterRep
+  special_instrs:
+    display: Specialinstrs
+    type: string
+    required: false
+    description: Field SpecialInstrs from MdnMasterRep
+  dispatch_comments1:
+    display: Dispatchcomments1
+    type: string
+    required: false
+    description: Field DispatchComments1 from MdnMasterRep
+  dispatch_comments2:
+    display: Dispatchcomments2
+    type: string
+    required: false
+    description: Field DispatchComments2 from MdnMasterRep
+  dispatch_comments3:
+    display: Dispatchcomments3
+    type: string
+    required: false
+    description: Field DispatchComments3 from MdnMasterRep
+  dispatch_comments4:
+    display: Dispatchcomments4
+    type: string
+    required: false
+    description: Field DispatchComments4 from MdnMasterRep
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from MdnMasterRep
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from MdnMasterRep
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from MdnMasterRep
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from MdnMasterRep
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from MdnMasterRep
+  fix_exchange_rate:
+    display: Fixexchangerate
+    type: string
+    required: false
+    description: Field FixExchangeRate from MdnMasterRep
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from MdnMasterRep
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from MdnMasterRep
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from MdnMasterRep
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from MdnMasterRep
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from MdnMasterRep
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from MdnMasterRep
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from MdnMasterRep
+  inv_terms_override:
+    display: Invtermsoverride
+    type: string
+    required: false
+    description: Field InvTermsOverride from MdnMasterRep
+  reprint_format:
+    display: Reprintformat
+    type: string
+    required: false
+    description: Field ReprintFormat from MdnMasterRep
+  tax_exempt_flag:
+    display: Taxexemptflag
+    type: string
+    required: false
+    description: Field TaxExemptFlag from MdnMasterRep
+  tax_exempt_override:
+    display: Taxexemptoverride
+    type: string
+    required: false
+    description: Field TaxExemptOverride from MdnMasterRep
+  ibt_flag:
+    display: Ibtflag
+    type: string
+    required: false
+    description: Field IbtFlag from MdnMasterRep
+  dispatch_name:
+    display: Dispatchname
+    type: string
+    required: false
+    description: Field DispatchName from MdnMasterRep
+  planned_deliver_date:
+    display: Planneddeliverdate
+    type: date
+    required: false
+    description: Field PlannedDeliverDate from MdnMasterRep
+  actual_delivery_date:
+    display: Actualdeliverydate
+    type: date
+    required: false
+    description: Field ActualDeliveryDate from MdnMasterRep
+  ship_address_flag:
+    display: Shipaddressflag
+    type: string
+    required: false
+    description: Field ShipAddressFlag from MdnMasterRep
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from MdnMasterRep
+  company_tax_no:
+    display: Companytaxno
+    type: string
+    required: false
+    description: Field CompanyTaxNo from MdnMasterRep
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from MdnMasterRep
+  invoice_created_date:
+    display: Invoicecreateddate
+    type: date
+    required: false
+    description: Field InvoiceCreatedDate from MdnMasterRep
+  consolidate_inv_flag:
+    display: Consolidateinvflag
+    type: string
+    required: false
+    description: Field ConsolidateInvFlag from MdnMasterRep
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from MdnMasterRep
+  dispatch_note_status:
+    display: Dispatchnotestatus
+    type: string
+    required: false
+    description: Field DispatchNoteStatus from MdnMasterRep
+  prev_status:
+    display: Prevstatus
+    type: string
+    required: false
+    description: Field PrevStatus from MdnMasterRep
+  active_flag:
+    display: Activeflag
+    type: string
+    required: false
+    description: Field ActiveFlag from MdnMasterRep
+  reason:
+    display: Reason
+    type: string
+    required: false
+    description: Field Reason from MdnMasterRep
+  status_when_held:
+    display: Statuswhenheld
+    type: string
+    required: false
+    description: Field StatusWhenHeld from MdnMasterRep
+  date_last_inv_prt:
+    display: Datelastinvprt
+    type: date
+    required: false
+    description: Field DateLastInvPrt from MdnMasterRep
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from MdnMasterRep
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from MdnMasterRep
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from MdnMasterRep
+  transport_mode:
+    display: Transportmode
+    type: decimal
+    required: false
+    description: Field TransportMode from MdnMasterRep
+  process_flag:
+    display: Processflag
+    type: decimal
+    required: false
+    description: Field ProcessFlag from MdnMasterRep
+  dispatch_cust_name:
+    display: Dispatchcustname
+    type: string
+    required: false
+    description: Field DispatchCustName from MdnMasterRep
+  dispatch_address1:
+    display: Dispatchaddress1
+    type: string
+    required: false
+    description: Field DispatchAddress1 from MdnMasterRep
+  dispatch_address2:
+    display: Dispatchaddress2
+    type: string
+    required: false
+    description: Field DispatchAddress2 from MdnMasterRep
+  dispatch_address3:
+    display: Dispatchaddress3
+    type: string
+    required: false
+    description: Field DispatchAddress3 from MdnMasterRep
+  dispatch_addr_loc:
+    display: Dispatchaddrloc
+    type: string
+    required: false
+    description: Field DispatchAddrLoc from MdnMasterRep
+  dispatch_address4:
+    display: Dispatchaddress4
+    type: string
+    required: false
+    description: Field DispatchAddress4 from MdnMasterRep
+  dispatch_address5:
+    display: Dispatchaddress5
+    type: string
+    required: false
+    description: Field DispatchAddress5 from MdnMasterRep
+  dispatch_postal_code:
+    display: Dispatchpostalcode
+    type: string
+    required: false
+    description: Field DispatchPostalCode from MdnMasterRep
+  dispatch_gps_lat:
+    display: Dispatchgpslat
+    type: decimal
+    required: false
+    description: Field DispatchGpsLat from MdnMasterRep
+  dispatch_gps_long:
+    display: Dispatchgpslong
+    type: decimal
+    required: false
+    description: Field DispatchGpsLong from MdnMasterRep
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from MdnMasterRep
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from MdnMasterRep
+  extended_tax_code:
+    display: Extendedtaxcode
+    type: string
+    required: false
+    description: Field ExtendedTaxCode from MdnMasterRep
+  multi_ship_code:
+    display: Multishipcode
+    type: string
+    required: false
+    description: Field MultiShipCode from MdnMasterRep
+  web_created:
+    display: Webcreated
+    type: string
+    required: false
+    description: Field WebCreated from MdnMasterRep
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from MdnMasterRep
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from MdnMasterRep
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from MdnMasterRep
+  last_operator:
+    display: Lastoperator
+    type: string
+    required: false
+    description: Field LastOperator from MdnMasterRep
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from MdnMasterRep
+  tpm_pickup_flag:
+    display: Tpmpickupflag
+    type: string
+    required: false
+    description: Field TpmPickupFlag from MdnMasterRep
+  tpm_evaluated_flag:
+    display: Tpmevaluatedflag
+    type: string
+    required: false
+    description: Field TpmEvaluatedFlag from MdnMasterRep
+  standard_comment:
+    display: Standardcomment
+    type: string
+    required: false
+    description: Field StandardComment from MdnMasterRep
+  detail_status:
+    display: Detailstatus
+    type: string
+    required: false
+    description: Field DetailStatus from MdnMasterRep
+  sales_order_source:
+    display: Salesordersource
+    type: string
+    required: false
+    description: Field SalesOrderSource from MdnMasterRep
+  sales_order_src_desc:
+    display: Salesordersrcdesc
+    type: string
+    required: false
+    description: Field SalesOrderSrcDesc from MdnMasterRep
+  state_tax:
+    display: Statetax
+    type: string
+    required: false
+    description: Field StateTax from MdnMasterRep
+  county_zip_tax:
+    display: Countyziptax
+    type: string
+    required: false
+    description: Field CountyZipTax from MdnMasterRep
+  city_tax:
+    display: Citytax
+    type: string
+    required: false
+    description: Field CityTax from MdnMasterRep
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from MdnMasterRep
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from MdnMasterRep
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from MdnMasterRep
+  freight_taxable:
+    display: Freighttaxable
+    type: string
+    required: false
+    description: Field FreightTaxable from MdnMasterRep
+  verazip_county:
+    display: Verazipcounty
+    type: string
+    required: false
+    description: Field VerazipCounty from MdnMasterRep
+  limit_flag:
+    display: Limitflag
+    type: string
+    required: false
+    description: Field LimitFlag from MdnMasterRep
+  first_rate11:
+    display: Firstrate11
+    type: decimal
+    required: false
+    description: Field FirstRate11 from MdnMasterRep
+  first_rate12:
+    display: Firstrate12
+    type: decimal
+    required: false
+    description: Field FirstRate12 from MdnMasterRep
+  first_limit11:
+    display: Firstlimit11
+    type: decimal
+    required: false
+    description: Field FirstLimit11 from MdnMasterRep
+  first_limit12:
+    display: Firstlimit12
+    type: decimal
+    required: false
+    description: Field FirstLimit12 from MdnMasterRep
+  first_limit_value11:
+    display: Firstlimitvalue11
+    type: decimal
+    required: false
+    description: Field FirstLimitValue11 from MdnMasterRep
+  first_limit_value12:
+    display: Firstlimitvalue12
+    type: decimal
+    required: false
+    description: Field FirstLimitValue12 from MdnMasterRep
+  first_rate21:
+    display: Firstrate21
+    type: decimal
+    required: false
+    description: Field FirstRate21 from MdnMasterRep
+  first_rate22:
+    display: Firstrate22
+    type: decimal
+    required: false
+    description: Field FirstRate22 from MdnMasterRep
+  first_limit21:
+    display: Firstlimit21
+    type: decimal
+    required: false
+    description: Field FirstLimit21 from MdnMasterRep
+  first_limit22:
+    display: Firstlimit22
+    type: decimal
+    required: false
+    description: Field FirstLimit22 from MdnMasterRep
+  first_limit_value21:
+    display: Firstlimitvalue21
+    type: decimal
+    required: false
+    description: Field FirstLimitValue21 from MdnMasterRep
+  first_limit_value22:
+    display: Firstlimitvalue22
+    type: decimal
+    required: false
+    description: Field FirstLimitValue22 from MdnMasterRep
+  first_rate31:
+    display: Firstrate31
+    type: decimal
+    required: false
+    description: Field FirstRate31 from MdnMasterRep
+  first_rate32:
+    display: Firstrate32
+    type: decimal
+    required: false
+    description: Field FirstRate32 from MdnMasterRep
+  first_limit31:
+    display: Firstlimit31
+    type: decimal
+    required: false
+    description: Field FirstLimit31 from MdnMasterRep
+  first_limit32:
+    display: Firstlimit32
+    type: decimal
+    required: false
+    description: Field FirstLimit32 from MdnMasterRep
+  first_limit_value31:
+    display: Firstlimitvalue31
+    type: decimal
+    required: false
+    description: Field FirstLimitValue31 from MdnMasterRep
+  first_limit_value32:
+    display: Firstlimitvalue32
+    type: decimal
+    required: false
+    description: Field FirstLimitValue32 from MdnMasterRep
+  usa_or_normal_tax:
+    display: Usaornormaltax
+    type: string
+    required: false
+    description: Field UsaOrNormalTax from MdnMasterRep
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from MdnMasterRep
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from MdnMasterRep
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from MdnMasterRep
+  port_dispatch:
+    display: Portdispatch
+    type: string
+    required: false
+    description: Field PortDispatch from MdnMasterRep
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from MdnMasterRep
+  price_group_level:
+    display: Pricegrouplevel
+    type: string
+    required: false
+    description: Field PriceGroupLevel from MdnMasterRep
+  last_op_inv_prt:
+    display: Lastopinvprt
+    type: string
+    required: false
+    description: Field LastOpInvPrt from MdnMasterRep
+  dispatch_whole_so:
+    display: Dispatchwholeso
+    type: string
+    required: false
+    description: Field DispatchWholeSo from MdnMasterRep
+  elect_inv_status:
+    display: Electinvstatus
+    type: string
+    required: false
+    description: Field ElectInvStatus from MdnMasterRep
+  elect_inv_printed:
+    display: Electinvprinted
+    type: string
+    required: false
+    description: Field ElectInvPrinted from MdnMasterRep
+  gst_exempt_flag:
+    display: Gstexemptflag
+    type: string
+    required: false
+    description: Field GstExemptFlag from MdnMasterRep
+  gst_exempt_num:
+    display: Gstexemptnum
+    type: string
+    required: false
+    description: Field GstExemptNum from MdnMasterRep
+  gst_exempt_o_ride:
+    display: Gstexemptoride
+    type: string
+    required: false
+    description: Field GstExemptORide from MdnMasterRep
+  entity_dimensions:
+    display: Entitydimensions
+    type: string
+    required: false
+    description: Field EntityDimensions from MdnMasterRep

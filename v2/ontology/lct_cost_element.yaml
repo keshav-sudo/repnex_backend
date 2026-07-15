@@ -1,0 +1,73 @@
+concept: lct_cost_element
+display_name: LctCostElement
+module: other
+description: Auto-generated representation of the physical table LctCostElement.
+synonyms:
+- lctcostelement
+- lct cost element
+header_attributes:
+  element:
+    display: Element
+    type: string
+    required: false
+    description: Field Element from LctCostElement
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from LctCostElement
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from LctCostElement
+  expected_rate:
+    display: Expectedrate
+    type: decimal
+    required: false
+    description: Field ExpectedRate from LctCostElement
+  expected_cur:
+    display: Expectedcur
+    type: string
+    required: false
+    description: Field ExpectedCur from LctCostElement
+  apportion_meth:
+    display: Apportionmeth
+    type: string
+    required: false
+    description: Field ApportionMeth from LctCostElement
+  app_meth_calc_code:
+    display: Appmethcalccode
+    type: string
+    required: false
+    description: Field AppMethCalcCode from LctCostElement
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from LctCostElement
+  expected_desc:
+    display: Expecteddesc
+    type: string
+    required: false
+    description: Field ExpectedDesc from LctCostElement
+  show_sequence:
+    display: Showsequence
+    type: decimal
+    required: false
+    description: Field ShowSequence from LctCostElement
+  used_fixed_cost:
+    display: Usedfixedcost
+    type: decimal
+    required: false
+    description: Field UsedFixedCost from LctCostElement
+  fixed_cost:
+    display: Fixedcost
+    type: decimal
+    required: false
+    description: Field FixedCost from LctCostElement
+  minimum_value:
+    display: Minimumvalue
+    type: decimal
+    required: false
+    description: Field MinimumValue from LctCostElement

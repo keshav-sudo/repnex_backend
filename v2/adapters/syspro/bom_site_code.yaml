@@ -1,0 +1,21 @@
+concept: bom_site_code
+table: BomSiteCode
+alias: bsc
+fields:
+  site_code: bsc.SiteCode
+  description: bsc.Description
+  shift_code: bsc.ShiftCode
+  site_planner: bsc.SitePlanner
+  site_contact: bsc.SiteContact
+  telephone: bsc.Telephone
+  area: bsc.Area
+  site_addr_build: bsc.SiteAddrBuild
+  site_addr1: bsc.SiteAddr1
+  site_addr2: bsc.SiteAddr2
+  site_addr3: bsc.SiteAddr3
+  site_addr_loc: bsc.SiteAddrLoc
+  site_addr_country: bsc.SiteAddrCountry
+  site_postal_code: bsc.SitePostalCode
+  site_gps_lat: bsc.SiteGpsLat
+  site_gps_long: bsc.SiteGpsLong
+  wip_branch: bsc.WipBranch

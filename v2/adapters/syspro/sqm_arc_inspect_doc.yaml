@@ -1,0 +1,10 @@
+concept: sqm_arc_inspect_doc
+table: SqmArcInspectDoc
+alias: said
+fields:
+  inspect_type: said.InspectType
+  inspect_number: said.InspectNumber
+  lot: said.Lot
+  sqm_doc: said.SqmDoc
+  sqm_file: said.SqmFile
+  file_contents: said.FileContents

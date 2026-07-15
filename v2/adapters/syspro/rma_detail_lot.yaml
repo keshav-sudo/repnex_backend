@@ -1,0 +1,13 @@
+concept: rma_detail_lot
+table: RmaDetailLot
+alias: rdl
+fields:
+  rma_number: rdl.RmaNumber
+  rma_line_number: rdl.RmaLineNumber
+  lot: rdl.Lot
+  stock_qty_to_receive: rdl.StockQtyToReceive
+  qty_this_session: rdl.QtyThisSession
+  version: rdl.Version
+  release: rdl.Release
+  certificate: rdl.Certificate
+  lot_expiry_date: rdl.LotExpiryDate

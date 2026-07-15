@@ -1,0 +1,83 @@
+concept: inv_on_hand_bal_fix
+display_name: InvOnHandBalFix
+module: inventory
+description: Auto-generated representation of the physical table InvOnHandBalFix.
+synonyms:
+- invonhandbalfix
+- inv on hand bal fix
+header_attributes:
+  run_date:
+    display: Rundate
+    type: date
+    required: false
+    description: Field RunDate from InvOnHandBalFix
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvOnHandBalFix
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvOnHandBalFix
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from InvOnHandBalFix
+  old_quantity:
+    display: Oldquantity
+    type: decimal
+    required: false
+    description: Field OldQuantity from InvOnHandBalFix
+  new_quantity:
+    display: Newquantity
+    type: decimal
+    required: false
+    description: Field NewQuantity from InvOnHandBalFix
+  old_cost:
+    display: Oldcost
+    type: decimal
+    required: false
+    description: Field OldCost from InvOnHandBalFix
+  new_cost:
+    display: Newcost
+    type: decimal
+    required: false
+    description: Field NewCost from InvOnHandBalFix
+  correction_type:
+    display: Correctiontype
+    type: string
+    required: false
+    description: Field CorrectionType from InvOnHandBalFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from InvOnHandBalFix
+  message_number:
+    display: Messagenumber
+    type: decimal
+    required: false
+    description: Field MessageNumber from InvOnHandBalFix
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from InvOnHandBalFix
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from InvOnHandBalFix
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from InvOnHandBalFix
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from InvOnHandBalFix

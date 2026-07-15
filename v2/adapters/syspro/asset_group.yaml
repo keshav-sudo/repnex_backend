@@ -1,0 +1,20 @@
+concept: asset_group
+table: AssetGroup
+alias: ag
+fields:
+  asset_group_code: ag.AssetGroupCode
+  description: ag.Description
+  wear_dep_code: ag.WearDepCode
+  def_dep_code: ag.DefDepCode
+  min_book_value: ag.MinBookValue
+  min_tax: ag.MinTax
+  min_alt1: ag.MinAlt1
+  min_alt2: ag.MinAlt2
+  min_alt3: ag.MinAlt3
+  min_alt4: ag.MinAlt4
+  min_alt5: ag.MinAlt5
+  min_alt6: ag.MinAlt6
+  min_alt7: ag.MinAlt7
+  min_alt8: ag.MinAlt8
+  min_alt9: ag.MinAlt9
+  min_alt10: ag.MinAlt10

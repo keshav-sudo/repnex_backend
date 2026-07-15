@@ -1,0 +1,18 @@
+concept: mrp_gtr_master
+table: MrpGtrMaster
+alias: mgm
+fields:
+  gtr_reference: mgm.GtrReference
+  source_warehouse: mgm.SourceWarehouse
+  target_warehouse: mgm.TargetWarehouse
+  entry_type: mgm.EntryType
+  next_line: mgm.NextLine
+  control_account: mgm.ControlAccount
+  initial_value: mgm.InitialValue
+  val_rec_to_date: mgm.ValRecToDate
+  date_created: mgm.DateCreated
+  time_created_hh: mgm.TimeCreatedHh
+  time_created_mm: mgm.TimeCreatedMm
+  operator: mgm.Operator
+  complete: mgm.Complete
+  interface_flag: mgm.InterfaceFlag

@@ -1,0 +1,11 @@
+concept: wip_res_lot_bal
+table: WipResLotBal
+alias: wrlb
+fields:
+  run_date_time: wrlb.RunDateTime
+  lot: wrlb.Lot
+  stock_code: wrlb.StockCode
+  warehouse: wrlb.Warehouse
+  bin: wrlb.Bin
+  cur_lot_qty_reserved: wrlb.CurLotQtyReserved
+  clc_lot_qty_reserved: wrlb.ClcLotQtyReserved

@@ -1,0 +1,28 @@
+concept: wip_lab_jnl_stat
+display_name: WipLabJnlStat
+module: work_in_progress
+description: Auto-generated representation of the physical table WipLabJnlStat.
+synonyms:
+- wiplabjnlstat
+- wip lab jnl stat
+header_attributes:
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipLabJnlStat
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from WipLabJnlStat
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from WipLabJnlStat
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WipLabJnlStat

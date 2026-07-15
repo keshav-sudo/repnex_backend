@@ -1,0 +1,13 @@
+concept: iop_archive_stock_lvl
+table: IopArchiveStockLvl
+alias: iasl
+fields:
+  id_number: iasl.IdNumber
+  archive_date: iasl.ArchiveDate
+  archive_number: iasl.ArchiveNumber
+  start_date: iasl.StartDate
+  minimum_qty: iasl.MinimumQty
+  maximum_qty: iasl.MaximumQty
+  effective_date: iasl.EffectiveDate
+  reference: iasl.Reference
+  freeze: iasl.Freeze

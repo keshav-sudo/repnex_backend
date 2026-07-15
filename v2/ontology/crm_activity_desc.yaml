@@ -1,0 +1,18 @@
+concept: crm_activity_desc
+display_name: CrmActivityDesc
+module: crm
+description: Auto-generated representation of the physical table CrmActivityDesc.
+synonyms:
+- crmactivitydesc
+- crm activity desc
+header_attributes:
+  description_type:
+    display: Descriptiontype
+    type: string
+    required: false
+    description: Field DescriptionType from CrmActivityDesc
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmActivityDesc

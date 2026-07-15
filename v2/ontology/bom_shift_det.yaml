@@ -1,0 +1,53 @@
+concept: bom_shift_det
+display_name: BomShiftDet
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomShiftDet.
+synonyms:
+- bomshiftdet
+- bom shift det
+header_attributes:
+  shift_code:
+    display: Shiftcode
+    type: string
+    required: false
+    description: Field ShiftCode from BomShiftDet
+  week_day:
+    display: Weekday
+    type: decimal
+    required: false
+    description: Field WeekDay from BomShiftDet
+  shift_det_code:
+    display: Shiftdetcode
+    type: string
+    required: false
+    description: Field ShiftDetCode from BomShiftDet
+  wc_machine:
+    display: Wcmachine
+    type: string
+    required: false
+    description: Field WcMachine from BomShiftDet
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomShiftDet
+  maint_in_process:
+    display: Maintinprocess
+    type: string
+    required: false
+    description: Field MaintInProcess from BomShiftDet
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from BomShiftDet
+  end_time:
+    display: Endtime
+    type: decimal
+    required: false
+    description: Field EndTime from BomShiftDet
+  duration:
+    display: Duration
+    type: decimal
+    required: false
+    description: Field Duration from BomShiftDet

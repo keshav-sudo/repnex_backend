@@ -1,0 +1,68 @@
+concept: grn_master
+display_name: GrnMaster
+module: other
+description: Auto-generated representation of the physical table GrnMaster.
+synonyms:
+- grnmaster
+- grn master
+header_attributes:
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from GrnMaster
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from GrnMaster
+  grn_source:
+    display: Grnsource
+    type: string
+    required: false
+    description: Field GrnSource from GrnMaster
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from GrnMaster
+  journal_entry:
+    display: Journalentry
+    type: decimal
+    required: false
+    description: Field JournalEntry from GrnMaster
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from GrnMaster
+  ship_reference:
+    display: Shipreference
+    type: string
+    required: false
+    description: Field ShipReference from GrnMaster
+  orig_date:
+    display: Origdate
+    type: date
+    required: false
+    description: Field OrigDate from GrnMaster
+  orig_time:
+    display: Origtime
+    type: decimal
+    required: false
+    description: Field OrigTime from GrnMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from GrnMaster
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from GrnMaster
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from GrnMaster

@@ -1,0 +1,11 @@
+concept: ecc_draw_register
+table: EccDrawRegister
+alias: edr
+fields:
+  draw_office_num: edr.DrawOfficeNum
+  description: edr.Description
+  drawing_size: edr.DrawingSize
+  ecc_user: edr.EccUser
+  drawing_ver: edr.DrawingVer
+  drawing_rel: edr.DrawingRel
+  drawing_status: edr.DrawingStatus

@@ -1,0 +1,158 @@
+concept: sor_changes
+display_name: SorChanges
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorChanges.
+synonyms:
+- sorchanges
+- sor changes
+header_attributes:
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SorChanges
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from SorChanges
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorChanges
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorChanges
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from SorChanges
+  change_value:
+    display: Changevalue
+    type: decimal
+    required: false
+    description: Field ChangeValue from SorChanges
+  change_cost:
+    display: Changecost
+    type: decimal
+    required: false
+    description: Field ChangeCost from SorChanges
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SorChanges
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorChanges
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SorChanges
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from SorChanges
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from SorChanges
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SorChanges
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from SorChanges
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorChanges
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SorChanges
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SorChanges
+  new_warehouse:
+    display: Newwarehouse
+    type: string
+    required: false
+    description: Field NewWarehouse from SorChanges
+  order_qty:
+    display: Orderqty
+    type: decimal
+    required: false
+    description: Field OrderQty from SorChanges
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from SorChanges
+  new_order_qty:
+    display: Neworderqty
+    type: decimal
+    required: false
+    description: Field NewOrderQty from SorChanges
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from SorChanges
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from SorChanges
+  new_price:
+    display: Newprice
+    type: decimal
+    required: false
+    description: Field NewPrice from SorChanges
+  new_price_uom:
+    display: Newpriceuom
+    type: string
+    required: false
+    description: Field NewPriceUom from SorChanges
+  discount:
+    display: Discount
+    type: decimal
+    required: false
+    description: Field Discount from SorChanges
+  new_discount:
+    display: Newdiscount
+    type: decimal
+    required: false
+    description: Field NewDiscount from SorChanges
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SorChanges
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from SorChanges
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from SorChanges

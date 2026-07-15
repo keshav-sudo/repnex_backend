@@ -1,0 +1,18 @@
+concept: gl_account
+table: GenMaster
+alias: ga
+fields:
+  gl_code: ga.GlCode
+  description: ga.Description
+  account_type: ga.AccountType
+  current_balance: ga.CurrentBalance
+  ptd_dr_value: ga.PtdDrValue
+  ptd_cr_value: ga.PtdCrValue
+  gl_group: ga.GlGroup
+  on_hold: ga.AccOnHldFlag
+  tax_code: ga.TaxCode
+  prev_period_bal: ga.PrevPerEndBal
+calculated_fields:
+  net_movement: (ga.PtdDrValue - ga.PtdCrValue)
+default_filters:
+  active_only: ga.AccOnHldFlag = 'N'

@@ -1,0 +1,14 @@
+concept: wip_next_key_audit
+table: WipNextKeyAudit
+alias: wnka
+fields:
+  key_type: wnka.KeyType
+  post_year: wnka.PostYear
+  post_period: wnka.PostPeriod
+  key_issued: wnka.KeyIssued
+  allocated_by_program: wnka.AllocatedByProgram
+  called_from_program: wnka.CalledFromProgram
+  allocated_date: wnka.AllocatedDate
+  allocated_by_oper: wnka.AllocatedByOper
+  status: wnka.Status
+  closed_date: wnka.ClosedDate

@@ -1,0 +1,20 @@
+concept: inv_trans_fifo_lifo
+table: InvTransFifoLifo
+alias: itfl
+fields:
+  stock_code: itfl.StockCode
+  recevie_wh: itfl.RecevieWh
+  date_created: itfl.DateCreated
+  time_created: itfl.TimeCreated
+  qty_outstanding: itfl.QtyOutstanding
+  fifo_lifo_cost: itfl.FifoLifoCost
+  reference: itfl.Reference
+  add_reference: itfl.AddReference
+  from_warehouse: itfl.FromWarehouse
+  lot_serial: itfl.LotSerial
+  version: itfl.Version
+  release: itfl.Release
+  transaction_type: itfl.TransactionType
+  dispatch_note: itfl.DispatchNote
+  dispatch_note_line: itfl.DispatchNoteLine
+  gtr_date: itfl.GtrDate

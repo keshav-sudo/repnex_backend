@@ -1,0 +1,25 @@
+concept: lct_cost_reg_arc
+table: LctCostRegArc
+alias: lcra
+fields:
+  vessel: lcra.Vessel
+  departure_date: lcra.DepartureDate
+  shipment_reference: lcra.ShipmentReference
+  purchase_order: lcra.PurchaseOrder
+  purchase_order_lin: lcra.PurchaseOrderLin
+  qty_shipped: lcra.QtyShipped
+  supplier: lcra.Supplier
+  stock_code: lcra.StockCode
+  warehouse: lcra.Warehouse
+  receipt_flag: lcra.ReceiptFlag
+  tot_cost_merch: lcra.TotCostMerch
+  unit_cost_merch: lcra.UnitCostMerch
+  date_archived: lcra.DateArchived
+  sundry_item_mass: lcra.SundryItemMass
+  sundry_item_volume: lcra.SundryItemVolume
+  traceability_flag: lcra.TraceabilityFlag
+  temp_exch_rate: lcra.TempExchRate
+  temp_exch_mul_div: lcra.TempExchMulDiv
+  receipt_sundry: lcra.ReceiptSundry
+  sup_catalogue: lcra.SupCatalogue
+  shipped_qty_stk_um: lcra.ShippedQtyStkUm

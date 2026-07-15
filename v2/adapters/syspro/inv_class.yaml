@@ -1,0 +1,7 @@
+concept: inv_class
+table: InvClass
+alias: ic
+fields:
+  stock_class: ic.StockClass
+  class_description: ic.ClassDescription
+  class_type: ic.ClassType

@@ -1,0 +1,28 @@
+concept: lynq_vp__access_entity_deny
+display_name: Lynq VP AccessEntityDeny
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_AccessEntityDeny.
+synonyms:
+- lynq_vp_accessentitydeny
+- lynq vp  access entity deny
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_AccessEntityDeny
+  category_id:
+    display: Categoryid
+    type: string
+    required: false
+    description: Field CategoryID from Lynq_VP_AccessEntityDeny
+  usr_id:
+    display: Usrid
+    type: decimal
+    required: false
+    description: Field UsrID from Lynq_VP_AccessEntityDeny
+  entity_id:
+    display: Entityid
+    type: decimal
+    required: false
+    description: Field EntityID from Lynq_VP_AccessEntityDeny

@@ -1,0 +1,88 @@
+concept: lynq_vp_bpl__src__inventory_location
+display_name: Lynq VP BPL Src InventoryLocation
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_BPL_Src_InventoryLocation.
+synonyms:
+- lynq_vp_bpl_src_inventorylocation
+- lynq vp bpl  src  inventory location
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_BPL_Src_InventoryLocation
+  location_code:
+    display: Locationcode
+    type: string
+    required: false
+    description: Field LocationCode from Lynq_VP_BPL_Src_InventoryLocation
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from Lynq_VP_BPL_Src_InventoryLocation
+  fld_date_time1:
+    display: Flddatetime1
+    type: date
+    required: false
+    description: Field FldDateTime1 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_date_time2:
+    display: Flddatetime2
+    type: date
+    required: false
+    description: Field FldDateTime2 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_date_time3:
+    display: Flddatetime3
+    type: date
+    required: false
+    description: Field FldDateTime3 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_decimal1:
+    display: Flddecimal1
+    type: decimal
+    required: false
+    description: Field FldDecimal1 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_decimal2:
+    display: Flddecimal2
+    type: decimal
+    required: false
+    description: Field FldDecimal2 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_decimal3:
+    display: Flddecimal3
+    type: decimal
+    required: false
+    description: Field FldDecimal3 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_decimal4:
+    display: Flddecimal4
+    type: decimal
+    required: false
+    description: Field FldDecimal4 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_decimal5:
+    display: Flddecimal5
+    type: decimal
+    required: false
+    description: Field FldDecimal5 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_string1:
+    display: Fldstring1
+    type: string
+    required: false
+    description: Field FldString1 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_string2:
+    display: Fldstring2
+    type: string
+    required: false
+    description: Field FldString2 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_string3:
+    display: Fldstring3
+    type: string
+    required: false
+    description: Field FldString3 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_string4:
+    display: Fldstring4
+    type: string
+    required: false
+    description: Field FldString4 from Lynq_VP_BPL_Src_InventoryLocation
+  fld_string5:
+    display: Fldstring5
+    type: string
+    required: false
+    description: Field FldString5 from Lynq_VP_BPL_Src_InventoryLocation

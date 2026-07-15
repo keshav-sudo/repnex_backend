@@ -1,0 +1,283 @@
+concept: prj_arc_job_hier_det
+display_name: PrjArcJobHierDet
+module: other
+description: Auto-generated representation of the physical table PrjArcJobHierDet.
+synonyms:
+- prjarcjobhierdet
+- prj arc job hier det
+header_attributes:
+  hierarchy_type:
+    display: Hierarchytype
+    type: string
+    required: false
+    description: Field HierarchyType from PrjArcJobHierDet
+  job_estimate:
+    display: Jobestimate
+    type: string
+    required: false
+    description: Field JobEstimate from PrjArcJobHierDet
+  hier_head:
+    display: Hierhead
+    type: string
+    required: false
+    description: Field HierHead from PrjArcJobHierDet
+  section1:
+    display: Section1
+    type: string
+    required: false
+    description: Field Section1 from PrjArcJobHierDet
+  section2:
+    display: Section2
+    type: string
+    required: false
+    description: Field Section2 from PrjArcJobHierDet
+  section3:
+    display: Section3
+    type: string
+    required: false
+    description: Field Section3 from PrjArcJobHierDet
+  section4:
+    display: Section4
+    type: string
+    required: false
+    description: Field Section4 from PrjArcJobHierDet
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from PrjArcJobHierDet
+  orig_sales_value:
+    display: Origsalesvalue
+    type: decimal
+    required: false
+    description: Field OrigSalesValue from PrjArcJobHierDet
+  sales_adj_ptd:
+    display: Salesadjptd
+    type: decimal
+    required: false
+    description: Field SalesAdjPtd from PrjArcJobHierDet
+  sales_adj_ytd:
+    display: Salesadjytd
+    type: decimal
+    required: false
+    description: Field SalesAdjYtd from PrjArcJobHierDet
+  sales_adj_prev_yr:
+    display: Salesadjprevyr
+    type: decimal
+    required: false
+    description: Field SalesAdjPrevYr from PrjArcJobHierDet
+  billings_ptd:
+    display: Billingsptd
+    type: decimal
+    required: false
+    description: Field BillingsPtd from PrjArcJobHierDet
+  billings_ytd:
+    display: Billingsytd
+    type: decimal
+    required: false
+    description: Field BillingsYtd from PrjArcJobHierDet
+  billings_prev_yr:
+    display: Billingsprevyr
+    type: decimal
+    required: false
+    description: Field BillingsPrevYr from PrjArcJobHierDet
+  cos_ptd:
+    display: Cosptd
+    type: decimal
+    required: false
+    description: Field CosPtd from PrjArcJobHierDet
+  cos_ytd:
+    display: Cosytd
+    type: decimal
+    required: false
+    description: Field CosYtd from PrjArcJobHierDet
+  cos_prev_yr:
+    display: Cosprevyr
+    type: decimal
+    required: false
+    description: Field CosPrevYr from PrjArcJobHierDet
+  orig_exp_mat:
+    display: Origexpmat
+    type: decimal
+    required: false
+    description: Field OrigExpMat from PrjArcJobHierDet
+  orig_exp_lab:
+    display: Origexplab
+    type: decimal
+    required: false
+    description: Field OrigExpLab from PrjArcJobHierDet
+  orig_exp_subct:
+    display: Origexpsubct
+    type: decimal
+    required: false
+    description: Field OrigExpSubct from PrjArcJobHierDet
+  last_exp_mat_ptd1:
+    display: Lastexpmatptd1
+    type: decimal
+    required: false
+    description: Field LastExpMatPtd1 from PrjArcJobHierDet
+  last_exp_mat_ptd2:
+    display: Lastexpmatptd2
+    type: decimal
+    required: false
+    description: Field LastExpMatPtd2 from PrjArcJobHierDet
+  last_exp_mat_ptd3:
+    display: Lastexpmatptd3
+    type: decimal
+    required: false
+    description: Field LastExpMatPtd3 from PrjArcJobHierDet
+  last_exp_lab_ptd1:
+    display: Lastexplabptd1
+    type: decimal
+    required: false
+    description: Field LastExpLabPtd1 from PrjArcJobHierDet
+  last_exp_lab_ptd2:
+    display: Lastexplabptd2
+    type: decimal
+    required: false
+    description: Field LastExpLabPtd2 from PrjArcJobHierDet
+  last_exp_lab_ptd3:
+    display: Lastexplabptd3
+    type: decimal
+    required: false
+    description: Field LastExpLabPtd3 from PrjArcJobHierDet
+  last_exp_sub_ptd1:
+    display: Lastexpsubptd1
+    type: decimal
+    required: false
+    description: Field LastExpSubPtd1 from PrjArcJobHierDet
+  last_exp_sub_ptd2:
+    display: Lastexpsubptd2
+    type: decimal
+    required: false
+    description: Field LastExpSubPtd2 from PrjArcJobHierDet
+  last_exp_sub_ptd3:
+    display: Lastexpsubptd3
+    type: decimal
+    required: false
+    description: Field LastExpSubPtd3 from PrjArcJobHierDet
+  last_exp_mat_ytd1:
+    display: Lastexpmatytd1
+    type: decimal
+    required: false
+    description: Field LastExpMatYtd1 from PrjArcJobHierDet
+  last_exp_mat_ytd2:
+    display: Lastexpmatytd2
+    type: decimal
+    required: false
+    description: Field LastExpMatYtd2 from PrjArcJobHierDet
+  last_exp_mat_ytd3:
+    display: Lastexpmatytd3
+    type: decimal
+    required: false
+    description: Field LastExpMatYtd3 from PrjArcJobHierDet
+  last_exp_lab_ytd1:
+    display: Lastexplabytd1
+    type: decimal
+    required: false
+    description: Field LastExpLabYtd1 from PrjArcJobHierDet
+  last_exp_lab_ytd2:
+    display: Lastexplabytd2
+    type: decimal
+    required: false
+    description: Field LastExpLabYtd2 from PrjArcJobHierDet
+  last_exp_lab_ytd3:
+    display: Lastexplabytd3
+    type: decimal
+    required: false
+    description: Field LastExpLabYtd3 from PrjArcJobHierDet
+  last_exp_sub_ytd1:
+    display: Lastexpsubytd1
+    type: decimal
+    required: false
+    description: Field LastExpSubYtd1 from PrjArcJobHierDet
+  last_exp_sub_ytd2:
+    display: Lastexpsubytd2
+    type: decimal
+    required: false
+    description: Field LastExpSubYtd2 from PrjArcJobHierDet
+  last_exp_sub_ytd3:
+    display: Lastexpsubytd3
+    type: decimal
+    required: false
+    description: Field LastExpSubYtd3 from PrjArcJobHierDet
+  anticipated_val1:
+    display: Anticipatedval1
+    type: decimal
+    required: false
+    description: Field AnticipatedVal1 from PrjArcJobHierDet
+  anticipated_val2:
+    display: Anticipatedval2
+    type: decimal
+    required: false
+    description: Field AnticipatedVal2 from PrjArcJobHierDet
+  anticipated_val3:
+    display: Anticipatedval3
+    type: decimal
+    required: false
+    description: Field AnticipatedVal3 from PrjArcJobHierDet
+  current_exp_mat:
+    display: Currentexpmat
+    type: decimal
+    required: false
+    description: Field CurrentExpMat from PrjArcJobHierDet
+  current_exp_lab:
+    display: Currentexplab
+    type: decimal
+    required: false
+    description: Field CurrentExpLab from PrjArcJobHierDet
+  current_exp_subct:
+    display: Currentexpsubct
+    type: decimal
+    required: false
+    description: Field CurrentExpSubct from PrjArcJobHierDet
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from PrjArcJobHierDet
+  track_costs_only:
+    display: Trackcostsonly
+    type: string
+    required: false
+    description: Field TrackCostsOnly from PrjArcJobHierDet
+  wip_cost_trk_gl_code:
+    display: Wipcosttrkglcode
+    type: string
+    required: false
+    description: Field WipCostTrkGlCode from PrjArcJobHierDet
+  allow_stk_tran:
+    display: Allowstktran
+    type: string
+    required: false
+    description: Field AllowStkTran from PrjArcJobHierDet
+  allow_non_tran:
+    display: Allownontran
+    type: string
+    required: false
+    description: Field AllowNonTran from PrjArcJobHierDet
+  allow_lab_tran:
+    display: Allowlabtran
+    type: string
+    required: false
+    description: Field AllowLabTran from PrjArcJobHierDet
+  allow_sub_tran:
+    display: Allowsubtran
+    type: string
+    required: false
+    description: Field AllowSubTran from PrjArcJobHierDet
+  allow_sls_tran:
+    display: Allowslstran
+    type: string
+    required: false
+    description: Field AllowSlsTran from PrjArcJobHierDet
+  allow_por_tran:
+    display: Allowportran
+    type: string
+    required: false
+    description: Field AllowPorTran from PrjArcJobHierDet
+  pct_limit:
+    display: Pctlimit
+    type: decimal
+    required: false
+    description: Field PctLimit from PrjArcJobHierDet

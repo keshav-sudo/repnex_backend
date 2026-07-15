@@ -1,0 +1,438 @@
+concept: req_detail
+display_name: ReqDetail
+module: other
+description: Auto-generated representation of the physical table ReqDetail.
+synonyms:
+- reqdetail
+- req detail
+header_attributes:
+  originator:
+    display: Originator
+    type: string
+    required: false
+    description: Field Originator from ReqDetail
+  requisition:
+    display: Requisition
+    type: string
+    required: false
+    description: Field Requisition from ReqDetail
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from ReqDetail
+  reqn_status:
+    display: Reqnstatus
+    type: string
+    required: false
+    description: Field ReqnStatus from ReqDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ReqDetail
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from ReqDetail
+  order_qty:
+    display: Orderqty
+    type: decimal
+    required: false
+    description: Field OrderQty from ReqDetail
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from ReqDetail
+  date_reqn_raised:
+    display: Datereqnraised
+    type: date
+    required: false
+    description: Field DateReqnRaised from ReqDetail
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from ReqDetail
+  reason_for_reqn:
+    display: Reasonforreqn
+    type: string
+    required: false
+    description: Field ReasonForReqn from ReqDetail
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ReqDetail
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from ReqDetail
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from ReqDetail
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from ReqDetail
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from ReqDetail
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from ReqDetail
+  discount_code:
+    display: Discountcode
+    type: string
+    required: false
+    description: Field DiscountCode from ReqDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from ReqDetail
+  sup_catalogue_num:
+    display: Supcataloguenum
+    type: string
+    required: false
+    description: Field SupCatalogueNum from ReqDetail
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from ReqDetail
+  job_line:
+    display: Jobline
+    type: string
+    required: false
+    description: Field JobLine from ReqDetail
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from ReqDetail
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from ReqDetail
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ReqDetail
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ReqDetail
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from ReqDetail
+  capex_num:
+    display: Capexnum
+    type: string
+    required: false
+    description: Field CapexNum from ReqDetail
+  reqn_on_hold_flag:
+    display: Reqnonholdflag
+    type: string
+    required: false
+    description: Field ReqnOnHoldFlag from ReqDetail
+  reason_for_hold:
+    display: Reasonforhold
+    type: string
+    required: false
+    description: Field ReasonForHold from ReqDetail
+  hold_user:
+    display: Holduser
+    type: string
+    required: false
+    description: Field HoldUser from ReqDetail
+  confirmed_po_num:
+    display: Confirmedponum
+    type: string
+    required: false
+    description: Field ConfirmedPoNum from ReqDetail
+  confirmed_po_line:
+    display: Confirmedpoline
+    type: decimal
+    required: false
+    description: Field ConfirmedPoLine from ReqDetail
+  date_po_confirmed:
+    display: Datepoconfirmed
+    type: date
+    required: false
+    description: Field DatePoConfirmed from ReqDetail
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from ReqDetail
+  current_holder:
+    display: Currentholder
+    type: string
+    required: false
+    description: Field CurrentHolder from ReqDetail
+  holders_route_num:
+    display: Holdersroutenum
+    type: decimal
+    required: false
+    description: Field HoldersRouteNum from ReqDetail
+  date_actioned:
+    display: Dateactioned
+    type: date
+    required: false
+    description: Field DateActioned from ReqDetail
+  receipt_flag:
+    display: Receiptflag
+    type: string
+    required: false
+    description: Field ReceiptFlag from ReqDetail
+  date_last_receipt:
+    display: Datelastreceipt
+    type: date
+    required: false
+    description: Field DateLastReceipt from ReqDetail
+  ack_receipt_flag:
+    display: Ackreceiptflag
+    type: string
+    required: false
+    description: Field AckReceiptFlag from ReqDetail
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from ReqDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from ReqDetail
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from ReqDetail
+  order_date:
+    display: Orderdate
+    type: date
+    required: false
+    description: Field OrderDate from ReqDetail
+  hier_head:
+    display: Hierhead
+    type: string
+    required: false
+    description: Field HierHead from ReqDetail
+  section1:
+    display: Section1
+    type: string
+    required: false
+    description: Field Section1 from ReqDetail
+  section2:
+    display: Section2
+    type: string
+    required: false
+    description: Field Section2 from ReqDetail
+  section3:
+    display: Section3
+    type: string
+    required: false
+    description: Field Section3 from ReqDetail
+  section4:
+    display: Section4
+    type: string
+    required: false
+    description: Field Section4 from ReqDetail
+  sub_operation_num:
+    display: Suboperationnum
+    type: decimal
+    required: false
+    description: Field SubOperationNum from ReqDetail
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from ReqDetail
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from ReqDetail
+  quote_line_num:
+    display: Quotelinenum
+    type: decimal
+    required: false
+    description: Field QuoteLineNum from ReqDetail
+  inspect_non_stk_rec:
+    display: Inspectnonstkrec
+    type: string
+    required: false
+    description: Field InspectNonStkRec from ReqDetail
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from ReqDetail
+  ecc_hold:
+    display: Ecchold
+    type: string
+    required: false
+    description: Field EccHold from ReqDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from ReqDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from ReqDetail
+  user_code:
+    display: Usercode
+    type: string
+    required: false
+    description: Field UserCode from ReqDetail
+  bpo_approved:
+    display: Bpoapproved
+    type: string
+    required: false
+    description: Field BpoApproved from ReqDetail
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ReqDetail
+  current_operator:
+    display: Currentoperator
+    type: string
+    required: false
+    description: Field CurrentOperator from ReqDetail
+  asset_flag:
+    display: Assetflag
+    type: string
+    required: false
+    description: Field AssetFlag from ReqDetail
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from ReqDetail
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from ReqDetail
+  requisition_type:
+    display: Requisitiontype
+    type: string
+    required: false
+    description: Field RequisitionType from ReqDetail
+  issue_warehouse:
+    display: Issuewarehouse
+    type: string
+    required: false
+    description: Field IssueWarehouse from ReqDetail
+  approved_date:
+    display: Approveddate
+    type: date
+    required: false
+    description: Field ApprovedDate from ReqDetail
+  selection_code:
+    display: Selectioncode
+    type: string
+    required: false
+    description: Field SelectionCode from ReqDetail
+  selection_type:
+    display: Selectiontype
+    type: string
+    required: false
+    description: Field SelectionType from ReqDetail
+  auto_voucher_reqd:
+    display: Autovoucherreqd
+    type: string
+    required: false
+    description: Field AutoVoucherReqd from ReqDetail
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from ReqDetail
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from ReqDetail
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from ReqDetail
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from ReqDetail
+  sourcing_policy:
+    display: Sourcingpolicy
+    type: string
+    required: false
+    description: Field SourcingPolicy from ReqDetail
+  sourcing_policy_type:
+    display: Sourcingpolicytype
+    type: string
+    required: false
+    description: Field SourcingPolicyType from ReqDetail
+  policy_available:
+    display: Policyavailable
+    type: string
+    required: false
+    description: Field PolicyAvailable from ReqDetail
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from ReqDetail
+  rfq_line:
+    display: Rfqline
+    type: decimal
+    required: false
+    description: Field RfqLine from ReqDetail
+  intrastat_exempt:
+    display: Intrastatexempt
+    type: string
+    required: false
+    description: Field IntrastatExempt from ReqDetail
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from ReqDetail
+  triang_disp_state:
+    display: Triangdispstate
+    type: string
+    required: false
+    description: Field TriangDispState from ReqDetail
+  triang_dest_state:
+    display: Triangdeststate
+    type: string
+    required: false
+    description: Field TriangDestState from ReqDetail
+  orig_country:
+    display: Origcountry
+    type: string
+    required: false
+    description: Field OrigCountry from ReqDetail

@@ -1,0 +1,93 @@
+concept: crm_comp_activities
+display_name: CrmCompActivities
+module: crm
+description: Auto-generated representation of the physical table CrmCompActivities.
+synonyms:
+- crmcompactivities
+- crm comp activities
+header_attributes:
+  complaint_id:
+    display: Complaintid
+    type: string
+    required: false
+    description: Field ComplaintId from CrmCompActivities
+  activity_date:
+    display: Activitydate
+    type: date
+    required: false
+    description: Field ActivityDate from CrmCompActivities
+  activity_time:
+    display: Activitytime
+    type: decimal
+    required: false
+    description: Field ActivityTime from CrmCompActivities
+  complaint_user:
+    display: Complaintuser
+    type: string
+    required: false
+    description: Field ComplaintUser from CrmCompActivities
+  activity_type:
+    display: Activitytype
+    type: string
+    required: false
+    description: Field ActivityType from CrmCompActivities
+  complaint_status:
+    display: Complaintstatus
+    type: string
+    required: false
+    description: Field ComplaintStatus from CrmCompActivities
+  routed_flag:
+    display: Routedflag
+    type: string
+    required: false
+    description: Field RoutedFlag from CrmCompActivities
+  complaint_severity:
+    display: Complaintseverity
+    type: string
+    required: false
+    description: Field ComplaintSeverity from CrmCompActivities
+  esclated_flag:
+    display: Esclatedflag
+    type: string
+    required: false
+    description: Field EsclatedFlag from CrmCompActivities
+  complaint_date:
+    display: Complaintdate
+    type: date
+    required: false
+    description: Field ComplaintDate from CrmCompActivities
+  elapsed_time:
+    display: Elapsedtime
+    type: decimal
+    required: false
+    description: Field ElapsedTime from CrmCompActivities
+  activity_comment:
+    display: Activitycomment
+    type: string
+    required: false
+    description: Field ActivityComment from CrmCompActivities
+  attachment_file:
+    display: Attachmentfile
+    type: string
+    required: false
+    description: Field AttachmentFile from CrmCompActivities
+  attachment_name:
+    display: Attachmentname
+    type: string
+    required: false
+    description: Field AttachmentName from CrmCompActivities
+  attachment_ext:
+    display: Attachmentext
+    type: string
+    required: false
+    description: Field AttachmentExt from CrmCompActivities
+  attachment_size:
+    display: Attachmentsize
+    type: decimal
+    required: false
+    description: Field AttachmentSize from CrmCompActivities
+  attachment_url:
+    display: Attachmenturl
+    type: string
+    required: false
+    description: Field AttachmentUrl from CrmCompActivities

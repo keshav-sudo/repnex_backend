@@ -1,0 +1,83 @@
+concept: eft_non_extract_hdr
+display_name: EftNonExtractHdr
+module: other
+description: Auto-generated representation of the physical table EftNonExtractHdr.
+synonyms:
+- eftnonextracthdr
+- eft non extract hdr
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from EftNonExtractHdr
+  trn_source:
+    display: Trnsource
+    type: string
+    required: false
+    description: Field TrnSource from EftNonExtractHdr
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from EftNonExtractHdr
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from EftNonExtractHdr
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from EftNonExtractHdr
+  payment_value:
+    display: Paymentvalue
+    type: decimal
+    required: false
+    description: Field PaymentValue from EftNonExtractHdr
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from EftNonExtractHdr
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from EftNonExtractHdr
+  eft_number:
+    display: Eftnumber
+    type: string
+    required: false
+    description: Field EftNumber from EftNonExtractHdr
+  select_indicator:
+    display: Selectindicator
+    type: string
+    required: false
+    description: Field SelectIndicator from EftNonExtractHdr
+  cb_bank:
+    display: Cbbank
+    type: string
+    required: false
+    description: Field CbBank from EftNonExtractHdr
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from EftNonExtractHdr
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from EftNonExtractHdr
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from EftNonExtractHdr
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from EftNonExtractHdr

@@ -1,0 +1,168 @@
+concept: ar_pay_run_hdr
+display_name: ArPayRunHdr
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArPayRunHdr.
+synonyms:
+- arpayrunhdr
+- ar pay run hdr
+header_attributes:
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ArPayRunHdr
+  collector:
+    display: Collector
+    type: string
+    required: false
+    description: Field Collector from ArPayRunHdr
+  collector_number_ar:
+    display: Collectornumberar
+    type: string
+    required: false
+    description: Field CollectorNumberAr from ArPayRunHdr
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ArPayRunHdr
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ArPayRunHdr
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from ArPayRunHdr
+  payment_run_status:
+    display: Paymentrunstatus
+    type: string
+    required: false
+    description: Field PaymentRunStatus from ArPayRunHdr
+  created_date:
+    display: Createddate
+    type: date
+    required: false
+    description: Field CreatedDate from ArPayRunHdr
+  payment_date:
+    display: Paymentdate
+    type: date
+    required: false
+    description: Field PaymentDate from ArPayRunHdr
+  authorized_date:
+    display: Authorizeddate
+    type: date
+    required: false
+    description: Field AuthorizedDate from ArPayRunHdr
+  posted_date:
+    display: Posteddate
+    type: date
+    required: false
+    description: Field PostedDate from ArPayRunHdr
+  hash_value:
+    display: Hashvalue
+    type: decimal
+    required: false
+    description: Field HashValue from ArPayRunHdr
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ArPayRunHdr
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from ArPayRunHdr
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from ArPayRunHdr
+  pay_rate_method:
+    display: Payratemethod
+    type: string
+    required: false
+    description: Field PayRateMethod from ArPayRunHdr
+  payment_rate:
+    display: Paymentrate
+    type: decimal
+    required: false
+    description: Field PaymentRate from ArPayRunHdr
+  gl_exch_var_code:
+    display: Glexchvarcode
+    type: string
+    required: false
+    description: Field GlExchVarCode from ArPayRunHdr
+  pay_cr_flag:
+    display: Paycrflag
+    type: string
+    required: false
+    description: Field PayCrFlag from ArPayRunHdr
+  pay_settle_note:
+    display: Paysettlenote
+    type: string
+    required: false
+    description: Field PaySettleNote from ArPayRunHdr
+  reset_cr_flag:
+    display: Resetcrflag
+    type: string
+    required: false
+    description: Field ResetCrFlag from ArPayRunHdr
+  drawers_name:
+    display: Drawersname
+    type: string
+    required: false
+    description: Field DrawersName from ArPayRunHdr
+  bank_payment_type:
+    display: Bankpaymenttype
+    type: string
+    required: false
+    description: Field BankPaymentType from ArPayRunHdr
+  drawers_bank:
+    display: Drawersbank
+    type: string
+    required: false
+    description: Field DrawersBank from ArPayRunHdr
+  drawers_bank_brnch:
+    display: Drawersbankbrnch
+    type: string
+    required: false
+    description: Field DrawersBankBrnch from ArPayRunHdr
+  bank_charge:
+    display: Bankcharge
+    type: decimal
+    required: false
+    description: Field BankCharge from ArPayRunHdr
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ArPayRunHdr
+  group_code:
+    display: Groupcode
+    type: string
+    required: false
+    description: Field GroupCode from ArPayRunHdr
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArPayRunHdr
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArPayRunHdr
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArPayRunHdr
+  payment_mul_div:
+    display: Paymentmuldiv
+    type: string
+    required: false
+    description: Field PaymentMulDiv from ArPayRunHdr

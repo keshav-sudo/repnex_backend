@@ -1,0 +1,28 @@
+concept: inv_stk_ticket_format
+display_name: InvStkTicketFormat
+module: inventory
+description: Auto-generated representation of the physical table InvStkTicketFormat.
+synonyms:
+- invstkticketformat
+- inv stk ticket format
+header_attributes:
+  label_form_type:
+    display: Labelformtype
+    type: string
+    required: false
+    description: Field LabelFormType from InvStkTicketFormat
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from InvStkTicketFormat
+  document_record_type:
+    display: Documentrecordtype
+    type: string
+    required: false
+    description: Field DocumentRecordType from InvStkTicketFormat
+  format_info:
+    display: Formatinfo
+    type: string
+    required: false
+    description: Field FormatInfo from InvStkTicketFormat

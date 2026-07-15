@@ -1,0 +1,68 @@
+concept: asset_depreciation
+display_name: AssetDepreciation
+module: assets
+description: Auto-generated representation of the physical table AssetDepreciation.
+synonyms:
+- assetdepreciation
+- asset depreciation
+header_attributes:
+  depreciation_code:
+    display: Depreciationcode
+    type: string
+    required: false
+    description: Field DepreciationCode from AssetDepreciation
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetDepreciation
+  depn_type:
+    display: Depntype
+    type: string
+    required: false
+    description: Field DepnType from AssetDepreciation
+  varying_depn_flag:
+    display: Varyingdepnflag
+    type: string
+    required: false
+    description: Field VaryingDepnFlag from AssetDepreciation
+  annual_depn_pct:
+    display: Annualdepnpct
+    type: decimal
+    required: false
+    description: Field AnnualDepnPct from AssetDepreciation
+  number_of_periods:
+    display: Numberofperiods
+    type: decimal
+    required: false
+    description: Field NumberOfPeriods from AssetDepreciation
+  half_rule:
+    display: Halfrule
+    type: string
+    required: false
+    description: Field HalfRule from AssetDepreciation
+  date_convention:
+    display: Dateconvention
+    type: string
+    required: false
+    description: Field DateConvention from AssetDepreciation
+  stat_gl_code:
+    display: Statglcode
+    type: string
+    required: false
+    description: Field StatGlCode from AssetDepreciation
+  number_of_years:
+    display: Numberofyears
+    type: decimal
+    required: false
+    description: Field NumberOfYears from AssetDepreciation
+  thruput_eul:
+    display: Thruputeul
+    type: decimal
+    required: false
+    description: Field ThruputEul from AssetDepreciation
+  varying_anniversary:
+    display: Varyinganniversary
+    type: string
+    required: false
+    description: Field VaryingAnniversary from AssetDepreciation

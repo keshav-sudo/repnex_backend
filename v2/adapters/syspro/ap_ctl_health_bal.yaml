@@ -1,0 +1,12 @@
+concept: ap_ctl_health_bal
+table: ApCtlHealthBal
+alias: achb
+fields:
+  run_date_time: achb.RunDateTime
+  trx_type: achb.TrxType
+  hcheck_year: achb.HcheckYear
+  hcheck_month: achb.HcheckMonth
+  trx_amt_vary: achb.TrxAmtVary
+  trx_amt_actual: achb.TrxAmtActual
+  trx_amt_calc: achb.TrxAmtCalc
+  message: achb.Message

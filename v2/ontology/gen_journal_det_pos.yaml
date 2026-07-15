@@ -1,0 +1,63 @@
+concept: gen_journal_det_pos
+display_name: GenJournalDetPos
+module: general_ledger
+description: Auto-generated representation of the physical table GenJournalDetPos.
+synonyms:
+- genjournaldetpos
+- gen journal det pos
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenJournalDetPos
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenJournalDetPos
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from GenJournalDetPos
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from GenJournalDetPos
+  pos_tran_type:
+    display: Postrantype
+    type: string
+    required: false
+    description: Field PosTranType from GenJournalDetPos
+  pos_transact_branch:
+    display: Postransactbranch
+    type: string
+    required: false
+    description: Field PosTransactBranch from GenJournalDetPos
+  pos_unique_id:
+    display: Posuniqueid
+    type: string
+    required: false
+    description: Field PosUniqueId from GenJournalDetPos
+  pos_payment_line:
+    display: Pospaymentline
+    type: decimal
+    required: false
+    description: Field PosPaymentLine from GenJournalDetPos
+  pos_eod_branch:
+    display: Poseodbranch
+    type: string
+    required: false
+    description: Field PosEodBranch from GenJournalDetPos
+  pos_eod_create_date:
+    display: Poseodcreatedate
+    type: date
+    required: false
+    description: Field PosEodCreateDate from GenJournalDetPos
+  pos_eod_payment_code:
+    display: Poseodpaymentcode
+    type: string
+    required: false
+    description: Field PosEodPaymentCode from GenJournalDetPos

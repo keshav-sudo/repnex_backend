@@ -1,0 +1,53 @@
+concept: req_routed_to_user
+display_name: ReqRoutedToUser
+module: other
+description: Auto-generated representation of the physical table ReqRoutedToUser.
+synonyms:
+- reqroutedtouser
+- req routed to user
+header_attributes:
+  user_code:
+    display: Usercode
+    type: string
+    required: false
+    description: Field UserCode from ReqRoutedToUser
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from ReqRoutedToUser
+  requisition:
+    display: Requisition
+    type: string
+    required: false
+    description: Field Requisition from ReqRoutedToUser
+  requisition_line:
+    display: Requisitionline
+    type: decimal
+    required: false
+    description: Field RequisitionLine from ReqRoutedToUser
+  originator:
+    display: Originator
+    type: string
+    required: false
+    description: Field Originator from ReqRoutedToUser
+  routing_num:
+    display: Routingnum
+    type: decimal
+    required: false
+    description: Field RoutingNum from ReqRoutedToUser
+  from_user:
+    display: Fromuser
+    type: string
+    required: false
+    description: Field FromUser from ReqRoutedToUser
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from ReqRoutedToUser
+  requisition_type:
+    display: Requisitiontype
+    type: string
+    required: false
+    description: Field RequisitionType from ReqRoutedToUser

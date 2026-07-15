@@ -1,0 +1,63 @@
+concept: asset_integ_det
+display_name: AssetIntegDet
+module: assets
+description: Auto-generated representation of the physical table AssetIntegDet.
+synonyms:
+- assetintegdet
+- asset integ det
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetIntegDet
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetIntegDet
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetIntegDet
+  asset_clear_gl_code:
+    display: Assetclearglcode
+    type: string
+    required: false
+    description: Field AssetClearGlCode from AssetIntegDet
+  profit_loss_gl_code:
+    display: Profitlossglcode
+    type: string
+    required: false
+    description: Field ProfitLossGlCode from AssetIntegDet
+  pl_inter_comp_gl_code:
+    display: Plintercompglcode
+    type: string
+    required: false
+    description: Field PlInterCompGlCode from AssetIntegDet
+  capex_gl_code:
+    display: Capexglcode
+    type: string
+    required: false
+    description: Field CapexGlCode from AssetIntegDet
+  reval_res_gl_code:
+    display: Revalresglcode
+    type: string
+    required: false
+    description: Field RevalResGlCode from AssetIntegDet
+  asset_ctl_gl_code:
+    display: Assetctlglcode
+    type: string
+    required: false
+    description: Field AssetCtlGlCode from AssetIntegDet
+  depn_gl_code:
+    display: Depnglcode
+    type: string
+    required: false
+    description: Field DepnGlCode from AssetIntegDet
+  accum_depn_gl_code:
+    display: Accumdepnglcode
+    type: string
+    required: false
+    description: Field AccumDepnGlCode from AssetIntegDet

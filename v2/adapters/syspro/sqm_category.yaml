@@ -1,0 +1,6 @@
+concept: sqm_category
+table: SqmCategory
+alias: sc5
+fields:
+  cause_cat: sc5.CauseCat
+  description: sc5.Description

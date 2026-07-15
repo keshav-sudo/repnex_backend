@@ -1,0 +1,38 @@
+concept: sqm_inspect_doc
+display_name: SqmInspectDoc
+module: other
+description: Auto-generated representation of the physical table SqmInspectDoc.
+synonyms:
+- sqminspectdoc
+- sqm inspect doc
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmInspectDoc
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmInspectDoc
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmInspectDoc
+  sqm_doc:
+    display: Sqmdoc
+    type: string
+    required: false
+    description: Field SqmDoc from SqmInspectDoc
+  sqm_file:
+    display: Sqmfile
+    type: string
+    required: false
+    description: Field SqmFile from SqmInspectDoc
+  file_contents:
+    display: Filecontents
+    type: string
+    required: false
+    description: Field FileContents from SqmInspectDoc

@@ -1,0 +1,24 @@
+concept: abc_analysis
+table: AbcAnalysis
+alias: aa
+fields:
+  element: aa.Element
+  incident: aa.Incident
+  trn_date: aa.TrnDate
+  inv_reg_journal: aa.InvRegJournal
+  entry_number: aa.EntryNumber
+  stock_code: aa.StockCode
+  gl_period: aa.GlPeriod
+  route: aa.Route
+  calculation_method: aa.CalculationMethod
+  group_code: aa.GroupCode
+  reference: aa.Reference
+  add_reference: aa.AddReference
+  document_num: aa.DocumentNum
+  trn_qty: aa.TrnQty
+  customer_supplier: aa.CustomerSupplier
+  cust_sup_mult: aa.CustSupMult
+  abc_qty: aa.AbcQty
+  abc_rate: aa.AbcRate
+  abc_value: aa.AbcValue
+  print_status: aa.PrintStatus

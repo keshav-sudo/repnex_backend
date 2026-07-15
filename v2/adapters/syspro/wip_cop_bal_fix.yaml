@@ -1,0 +1,16 @@
+concept: wip_cop_bal_fix
+table: WipCopBalFix
+alias: wcbf
+fields:
+  run_date_time: wcbf.RunDateTime
+  job: wcbf.Job
+  co_product: wcbf.CoProduct
+  co_product_line: wcbf.CoProductLine
+  old_material_value: wcbf.OldMaterialValue
+  new_material_value: wcbf.NewMaterialValue
+  old_labour_value: wcbf.OldLabourValue
+  new_labour_value: wcbf.NewLabourValue
+  old_qty_manufactured: wcbf.OldQtyManufactured
+  new_qty_manufactured: wcbf.NewQtyManufactured
+  old_qty_manu_ent: wcbf.OldQtyManuEnt
+  new_qty_manu_ent: wcbf.NewQtyManuEnt

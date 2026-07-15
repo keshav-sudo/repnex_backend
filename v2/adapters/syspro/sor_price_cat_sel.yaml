@@ -1,0 +1,13 @@
+concept: sor_price_cat_sel
+table: SorPriceCatSel
+alias: spcs1
+fields:
+  catalogue: spcs1.Catalogue
+  customer_selection: spcs1.CustomerSelection
+  cust_list: spcs1.CustList
+  branch_selection: spcs1.BranchSelection
+  branch_list: spcs1.BranchList
+  geo_selection: spcs1.GeoSelection
+  geo_list: spcs1.GeoList
+  cust_class_selection: spcs1.CustClassSelection
+  cust_class_list: spcs1.CustClassList

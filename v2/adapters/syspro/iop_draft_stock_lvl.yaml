@@ -1,0 +1,12 @@
+concept: iop_draft_stock_lvl
+table: IopDraftStockLvl
+alias: idsl
+fields:
+  id_number: idsl.IdNumber
+  start_date: idsl.StartDate
+  minimum_qty: idsl.MinimumQty
+  maximum_qty: idsl.MaximumQty
+  reference: idsl.Reference
+  freeze: idsl.Freeze
+  effective_date: idsl.EffectiveDate
+  operator: idsl.Operator

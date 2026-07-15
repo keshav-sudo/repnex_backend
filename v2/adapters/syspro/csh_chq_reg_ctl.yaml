@@ -1,0 +1,11 @@
+concept: csh_chq_reg_ctl
+table: CshChqRegCtl
+alias: ccrc
+fields:
+  cb_trn_year: ccrc.CbTrnYear
+  cb_trn_month: ccrc.CbTrnMonth
+  register: ccrc.Register
+  bank: ccrc.Bank
+  register_date: ccrc.RegisterDate
+  print_flag: ccrc.PrintFlag
+  cb_trn_time: ccrc.CbTrnTime

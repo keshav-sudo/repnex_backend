@@ -1,0 +1,53 @@
+concept: csh_health_bal
+display_name: CshHealthBal
+module: cashbook
+description: Auto-generated representation of the physical table CshHealthBal.
+synonyms:
+- cshhealthbal
+- csh health bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from CshHealthBal
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshHealthBal
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from CshHealthBal
+  hcheck_year:
+    display: Hcheckyear
+    type: decimal
+    required: false
+    description: Field HcheckYear from CshHealthBal
+  hcheck_month:
+    display: Hcheckmonth
+    type: decimal
+    required: false
+    description: Field HcheckMonth from CshHealthBal
+  bank_value:
+    display: Bankvalue
+    type: decimal
+    required: false
+    description: Field BankValue from CshHealthBal
+  calc_value:
+    display: Calcvalue
+    type: decimal
+    required: false
+    description: Field CalcValue from CshHealthBal
+  diff_value:
+    display: Diffvalue
+    type: decimal
+    required: false
+    description: Field DiffValue from CshHealthBal
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from CshHealthBal

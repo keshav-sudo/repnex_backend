@@ -1,0 +1,28 @@
+concept: gen_journal_ctl
+table: GenJournalCtl
+alias: gjc
+fields:
+  gl_year: gjc.GlYear
+  gl_period: gjc.GlPeriod
+  gl_journal: gjc.GlJournal
+  jnl_print_flag: gjc.JnlPrintFlag
+  journal_date: gjc.JournalDate
+  num_of_entries: gjc.NumOfEntries
+  debit_amount: gjc.DebitAmount
+  credit_amount: gjc.CreditAmount
+  jnl_posting_type: gjc.JnlPostingType
+  source: gjc.Source
+  operator: gjc.Operator
+  jnl_status: gjc.JnlStatus
+  reference: gjc.Reference
+  notation: gjc.Notation
+  user_def_source: gjc.UserDefSource
+  jnl_date_flag: gjc.JnlDateFlag
+  currency: gjc.Currency
+  authorised_by: gjc.AuthorisedBy
+  posted_by: gjc.PostedBy
+  authorised: gjc.Authorised
+  journal_source: gjc.JournalSource
+  type: gjc.Type
+  post_date: gjc.PostDate
+  source_journal: gjc.SourceJournal

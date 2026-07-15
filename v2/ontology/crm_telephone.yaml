@@ -1,0 +1,48 @@
+concept: crm_telephone
+display_name: CrmTelephone
+module: crm
+description: Auto-generated representation of the physical table CrmTelephone.
+synonyms:
+- crmtelephone
+- crm telephone
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmTelephone
+  telephone_type:
+    display: Telephonetype
+    type: decimal
+    required: false
+    description: Field TelephoneType from CrmTelephone
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmTelephone
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from CrmTelephone
+  telephone_extn:
+    display: Telephoneextn
+    type: string
+    required: false
+    description: Field TelephoneExtn from CrmTelephone
+  work_home_flag:
+    display: Workhomeflag
+    type: string
+    required: false
+    description: Field WorkHomeFlag from CrmTelephone
+  preferred:
+    display: Preferred
+    type: string
+    required: false
+    description: Field Preferred from CrmTelephone
+  private:
+    display: Private
+    type: string
+    required: false
+    description: Field Private from CrmTelephone

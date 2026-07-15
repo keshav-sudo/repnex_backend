@@ -1,0 +1,33 @@
+concept: mrp_res_structure
+display_name: MrpResStructure
+module: mrp
+description: Auto-generated representation of the physical table MrpResStructure.
+synonyms:
+- mrpresstructure
+- mrp res structure
+header_attributes:
+  resource_parent:
+    display: Resourceparent
+    type: string
+    required: false
+    description: Field ResourceParent from MrpResStructure
+  resource_component:
+    display: Resourcecomponent
+    type: string
+    required: false
+    description: Field ResourceComponent from MrpResStructure
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from MrpResStructure
+  quantity_per:
+    display: Quantityper
+    type: decimal
+    required: false
+    description: Field QuantityPer from MrpResStructure
+  offset_days:
+    display: Offsetdays
+    type: decimal
+    required: false
+    description: Field OffsetDays from MrpResStructure

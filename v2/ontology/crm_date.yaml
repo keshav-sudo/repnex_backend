@@ -1,0 +1,43 @@
+concept: crm_date
+display_name: CrmDate
+module: crm
+description: Auto-generated representation of the physical table CrmDate.
+synonyms:
+- crmdate
+- crm date
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmDate
+  date_type:
+    display: Datetype
+    type: decimal
+    required: false
+    description: Field DateType from CrmDate
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmDate
+  contact_date:
+    display: Contactdate
+    type: date
+    required: false
+    description: Field ContactDate from CrmDate
+  reminder:
+    display: Reminder
+    type: string
+    required: false
+    description: Field Reminder from CrmDate
+  reminder_days:
+    display: Reminderdays
+    type: decimal
+    required: false
+    description: Field ReminderDays from CrmDate
+  private:
+    display: Private
+    type: string
+    required: false
+    description: Field Private from CrmDate

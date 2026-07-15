@@ -1,0 +1,63 @@
+concept: lynq_me__statistics_storage_discrete__temp_ins
+display_name: Lynq ME StatisticsStorageDiscrete TempIns
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_StatisticsStorageDiscrete_TempIns.
+synonyms:
+- lynq_me_statisticsstoragediscrete_tempins
+- lynq me  statistics storage discrete  temp ins
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_StatisticsStorageDiscrete_TempIns
+  pack_key:
+    display: Packkey
+    type: string
+    required: false
+    description: Field PackKey from Lynq_ME_StatisticsStorageDiscrete_TempIns
+  pack_id:
+    display: Packid
+    type: decimal
+    required: false
+    description: Field PackID from Lynq_ME_StatisticsStorageDiscrete_TempIns
+  ins_id:
+    display: Insid
+    type: decimal
+    required: false
+    description: Field InsID from Lynq_ME_StatisticsStorageDiscrete_TempIns
+  is_to_delete:
+    display: Istodelete
+    type: string
+    required: false
+    description: Field IsToDelete from Lynq_ME_StatisticsStorageDiscrete_TempIns
+  key_id:
+    display: Keyid
+    type: decimal
+    required: false
+    description: Field KeyID from Lynq_ME_StatisticsStorageDiscrete_TempIns
+  aid:
+    display: Aid
+    type: string
+    required: false
+    description: Field AID from Lynq_ME_StatisticsStorageDiscrete_TempIns
+  group_code:
+    display: Groupcode
+    type: string
+    required: false
+    description: Field GroupCode from Lynq_ME_StatisticsStorageDiscrete_TempIns
+  moment:
+    display: Moment
+    type: date
+    required: false
+    description: Field Moment from Lynq_ME_StatisticsStorageDiscrete_TempIns
+  s00:
+    display: S00
+    type: string
+    required: false
+    description: Field S00 from Lynq_ME_StatisticsStorageDiscrete_TempIns
+  nd0:
+    display: Nd0
+    type: decimal
+    required: false
+    description: Field ND0 from Lynq_ME_StatisticsStorageDiscrete_TempIns

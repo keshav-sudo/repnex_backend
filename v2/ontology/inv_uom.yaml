@@ -1,0 +1,23 @@
+concept: inv_uom
+display_name: InvUom
+module: inventory
+description: Auto-generated representation of the physical table InvUom.
+synonyms:
+- invuom
+- inv uom
+header_attributes:
+  uom_code:
+    display: Uomcode
+    type: string
+    required: false
+    description: Field UomCode from InvUom
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvUom
+  uom_rank:
+    display: Uomrank
+    type: decimal
+    required: false
+    description: Field UomRank from InvUom

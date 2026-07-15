@@ -1,0 +1,35 @@
+concept: sqm_arc_mul_test
+table: SqmArcMulTest
+alias: samt
+fields:
+  inspect_type: samt.InspectType
+  inspect_number: samt.InspectNumber
+  lot: samt.Lot
+  sample_number: samt.SampleNumber
+  plan_type: samt.PlanType
+  inspect_level: samt.InspectLevel
+  sample_completed: samt.SampleCompleted
+  start_date: samt.StartDate
+  end_date: samt.EndDate
+  start_time: samt.StartTime
+  end_time: samt.EndTime
+  uom: samt.Uom
+  qty_sample: samt.QtySample
+  critical_req: samt.CriticalReq
+  critical_all_acc: samt.CriticalAllAcc
+  critical_accept_num: samt.CriticalAcceptNum
+  critical_reject_num: samt.CriticalRejectNum
+  qty_critical_fail: samt.QtyCriticalFail
+  qty_critical_pass: samt.QtyCriticalPass
+  major_req: samt.MajorReq
+  major_all_acc: samt.MajorAllAcc
+  major_accept_num: samt.MajorAcceptNum
+  major_reject_num: samt.MajorRejectNum
+  qty_major_fail: samt.QtyMajorFail
+  qty_major_pass: samt.QtyMajorPass
+  minor_req: samt.MinorReq
+  minor_all_acc: samt.MinorAllAcc
+  minor_accept_num: samt.MinorAcceptNum
+  minor_reject_num: samt.MinorRejectNum
+  qty_minor_fail: samt.QtyMinorFail
+  qty_minor_pass: samt.QtyMinorPass

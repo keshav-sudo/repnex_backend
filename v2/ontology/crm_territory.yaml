@@ -1,0 +1,18 @@
+concept: crm_territory
+display_name: CrmTerritory
+module: crm
+description: Auto-generated representation of the physical table CrmTerritory.
+synonyms:
+- crmterritory
+- crm territory
+header_attributes:
+  contact_territory:
+    display: Contactterritory
+    type: string
+    required: false
+    description: Field ContactTerritory from CrmTerritory
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmTerritory

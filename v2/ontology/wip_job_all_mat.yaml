@@ -1,0 +1,408 @@
+concept: wip_job_all_mat
+display_name: WipJobAllMat
+module: work_in_progress
+description: Auto-generated representation of the physical table WipJobAllMat.
+synonyms:
+- wipjoballmat
+- wip job all mat
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipJobAllMat
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipJobAllMat
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipJobAllMat
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from WipJobAllMat
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from WipJobAllMat
+  unit_qty_reqd:
+    display: Unitqtyreqd
+    type: decimal
+    required: false
+    description: Field UnitQtyReqd from WipJobAllMat
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from WipJobAllMat
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from WipJobAllMat
+  op_offset_flag:
+    display: Opoffsetflag
+    type: string
+    required: false
+    description: Field OpOffsetFlag from WipJobAllMat
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from WipJobAllMat
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WipJobAllMat
+  qty_issued:
+    display: Qtyissued
+    type: decimal
+    required: false
+    description: Field QtyIssued from WipJobAllMat
+  value_issued:
+    display: Valueissued
+    type: decimal
+    required: false
+    description: Field ValueIssued from WipJobAllMat
+  qty_billed:
+    display: Qtybilled
+    type: decimal
+    required: false
+    description: Field QtyBilled from WipJobAllMat
+  value_billed:
+    display: Valuebilled
+    type: decimal
+    required: false
+    description: Field ValueBilled from WipJobAllMat
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from WipJobAllMat
+  alloc_completed:
+    display: Alloccompleted
+    type: string
+    required: false
+    description: Field AllocCompleted from WipJobAllMat
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from WipJobAllMat
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from WipJobAllMat
+  phantom_parent:
+    display: Phantomparent
+    type: string
+    required: false
+    description: Field PhantomParent from WipJobAllMat
+  non_conform_flag:
+    display: Nonconformflag
+    type: string
+    required: false
+    description: Field NonConformFlag from WipJobAllMat
+  apply_cost_uom:
+    display: Applycostuom
+    type: string
+    required: false
+    description: Field ApplyCostUom from WipJobAllMat
+  cost_uom:
+    display: Costuom
+    type: string
+    required: false
+    description: Field CostUom from WipJobAllMat
+  bulk_issue_item:
+    display: Bulkissueitem
+    type: string
+    required: false
+    description: Field BulkIssueItem from WipJobAllMat
+  scrap_percentage:
+    display: Scrappercentage
+    type: decimal
+    required: false
+    description: Field ScrapPercentage from WipJobAllMat
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from WipJobAllMat
+  incl_scrap_on_doc:
+    display: Inclscrapondoc
+    type: string
+    required: false
+    description: Field InclScrapOnDoc from WipJobAllMat
+  dock_to_stock:
+    display: Docktostock
+    type: decimal
+    required: false
+    description: Field DockToStock from WipJobAllMat
+  hierarchy_job1:
+    display: Hierarchyjob1
+    type: string
+    required: false
+    description: Field HierarchyJob1 from WipJobAllMat
+  hierarchy_job2:
+    display: Hierarchyjob2
+    type: string
+    required: false
+    description: Field HierarchyJob2 from WipJobAllMat
+  hierarchy_job3:
+    display: Hierarchyjob3
+    type: string
+    required: false
+    description: Field HierarchyJob3 from WipJobAllMat
+  hierarchy_job4:
+    display: Hierarchyjob4
+    type: string
+    required: false
+    description: Field HierarchyJob4 from WipJobAllMat
+  hierarchy_job5:
+    display: Hierarchyjob5
+    type: string
+    required: false
+    description: Field HierarchyJob5 from WipJobAllMat
+  kit_issue_item:
+    display: Kitissueitem
+    type: string
+    required: false
+    description: Field KitIssueItem from WipJobAllMat
+  completed_job_flag:
+    display: Completedjobflag
+    type: string
+    required: false
+    description: Field CompletedJobFlag from WipJobAllMat
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipJobAllMat
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipJobAllMat
+  ecc_consumption:
+    display: Eccconsumption
+    type: string
+    required: false
+    description: Field EccConsumption from WipJobAllMat
+  sub_job:
+    display: Subjob
+    type: string
+    required: false
+    description: Field SubJob from WipJobAllMat
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from WipJobAllMat
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from WipJobAllMat
+  net_unit_qty_reqd:
+    display: Netunitqtyreqd
+    type: decimal
+    required: false
+    description: Field NetUnitQtyReqd from WipJobAllMat
+  reserved_lot_ser_flag:
+    display: Reservedlotserflag
+    type: string
+    required: false
+    description: Field ReservedLotSerFlag from WipJobAllMat
+  roll_up_cost_flag:
+    display: Rollupcostflag
+    type: string
+    required: false
+    description: Field RollUpCostFlag from WipJobAllMat
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from WipJobAllMat
+  reserved_lot_qty:
+    display: Reservedlotqty
+    type: decimal
+    required: false
+    description: Field ReservedLotQty from WipJobAllMat
+  reserved_ser_qty:
+    display: Reservedserqty
+    type: decimal
+    required: false
+    description: Field ReservedSerQty from WipJobAllMat
+  conv_fact_uom:
+    display: Convfactuom
+    type: decimal
+    required: false
+    description: Field ConvFactUom from WipJobAllMat
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from WipJobAllMat
+  unit_qty_reqd_ent:
+    display: Unitqtyreqdent
+    type: decimal
+    required: false
+    description: Field UnitQtyReqdEnt from WipJobAllMat
+  qty_issued_ent:
+    display: Qtyissuedent
+    type: decimal
+    required: false
+    description: Field QtyIssuedEnt from WipJobAllMat
+  qty_billed_ent:
+    display: Qtybilledent
+    type: decimal
+    required: false
+    description: Field QtyBilledEnt from WipJobAllMat
+  scrap_quantity_ent:
+    display: Scrapquantityent
+    type: decimal
+    required: false
+    description: Field ScrapQuantityEnt from WipJobAllMat
+  net_unit_qty_reqd_ent:
+    display: Netunitqtyreqdent
+    type: decimal
+    required: false
+    description: Field NetUnitQtyReqdEnt from WipJobAllMat
+  fixed_qty_per_ent:
+    display: Fixedqtyperent
+    type: decimal
+    required: false
+    description: Field FixedQtyPerEnt from WipJobAllMat
+  ref_designator:
+    display: Refdesignator
+    type: string
+    required: false
+    description: Field RefDesignator from WipJobAllMat
+  assembly_place:
+    display: Assemblyplace
+    type: string
+    required: false
+    description: Field AssemblyPlace from WipJobAllMat
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from WipJobAllMat
+  component_type:
+    display: Componenttype
+    type: string
+    required: false
+    description: Field ComponentType from WipJobAllMat
+  qty_tot_required:
+    display: Qtytotrequired
+    type: decimal
+    required: false
+    description: Field QtyTotRequired from WipJobAllMat
+  qty_tot_required_ent:
+    display: Qtytotrequiredent
+    type: decimal
+    required: false
+    description: Field QtyTotRequiredEnt from WipJobAllMat
+  qty_outstanding:
+    display: Qtyoutstanding
+    type: decimal
+    required: false
+    description: Field QtyOutstanding from WipJobAllMat
+  qty_outstanding_ent:
+    display: Qtyoutstandingent
+    type: decimal
+    required: false
+    description: Field QtyOutstandingEnt from WipJobAllMat
+  qty_to_issue:
+    display: Qtytoissue
+    type: decimal
+    required: false
+    description: Field QtyToIssue from WipJobAllMat
+  qty_to_issue_ent:
+    display: Qtytoissueent
+    type: decimal
+    required: false
+    description: Field QtyToIssueEnt from WipJobAllMat
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from WipJobAllMat
+  qty_reserved_ent:
+    display: Qtyreservedent
+    type: decimal
+    required: false
+    description: Field QtyReservedEnt from WipJobAllMat
+  line_status:
+    display: Linestatus
+    type: string
+    required: false
+    description: Field LineStatus from WipJobAllMat
+  sales_order_init_line:
+    display: Salesorderinitline
+    type: decimal
+    required: false
+    description: Field SalesOrderInitLine from WipJobAllMat
+  created_by:
+    display: Createdby
+    type: string
+    required: false
+    description: Field CreatedBy from WipJobAllMat
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from WipJobAllMat
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from WipJobAllMat
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from WipJobAllMat
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from WipJobAllMat
+  ovr_ecc_spec_iss:
+    display: Ovreccspeciss
+    type: string
+    required: false
+    description: Field OvrEccSpecIss from WipJobAllMat
+  job_nest:
+    display: Jobnest
+    type: string
+    required: false
+    description: Field JobNest from WipJobAllMat
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipJobAllMat
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from WipJobAllMat
+  pick_quantity:
+    display: Pickquantity
+    type: decimal
+    required: false
+    description: Field PickQuantity from WipJobAllMat
+  reserved_bin_qty:
+    display: Reservedbinqty
+    type: decimal
+    required: false
+    description: Field ReservedBinQty from WipJobAllMat

@@ -1,0 +1,33 @@
+concept: lynq_me__office_time
+display_name: Lynq ME OfficeTime
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_OfficeTime.
+synonyms:
+- lynq_me_officetime
+- lynq me  office time
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_OfficeTime
+  o_date:
+    display: Odate
+    type: date
+    required: false
+    description: Field oDate from Lynq_ME_OfficeTime
+  o_employee_code:
+    display: Oemployeecode
+    type: string
+    required: false
+    description: Field oEmployeeCode from Lynq_ME_OfficeTime
+  o_start:
+    display: Ostart
+    type: date
+    required: false
+    description: Field oStart from Lynq_ME_OfficeTime
+  o_end:
+    display: Oend
+    type: date
+    required: false
+    description: Field oEnd from Lynq_ME_OfficeTime

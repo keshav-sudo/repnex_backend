@@ -1,0 +1,243 @@
+concept: grn_details
+display_name: GrnDetails
+module: other
+description: Auto-generated representation of the physical table GrnDetails.
+synonyms:
+- grndetails
+- grn details
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from GrnDetails
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from GrnDetails
+  grn_source:
+    display: Grnsource
+    type: string
+    required: false
+    description: Field GrnSource from GrnDetails
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from GrnDetails
+  journal_entry:
+    display: Journalentry
+    type: decimal
+    required: false
+    description: Field JournalEntry from GrnDetails
+  orig_receipt_date:
+    display: Origreceiptdate
+    type: date
+    required: false
+    description: Field OrigReceiptDate from GrnDetails
+  debit_rec_gl_code:
+    display: Debitrecglcode
+    type: string
+    required: false
+    description: Field DebitRecGlCode from GrnDetails
+  grn_year:
+    display: Grnyear
+    type: decimal
+    required: false
+    description: Field GrnYear from GrnDetails
+  grn_month:
+    display: Grnmonth
+    type: decimal
+    required: false
+    description: Field GrnMonth from GrnDetails
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from GrnDetails
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from GrnDetails
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from GrnDetails
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from GrnDetails
+  sup_catalogue_num:
+    display: Supcataloguenum
+    type: string
+    required: false
+    description: Field SupCatalogueNum from GrnDetails
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from GrnDetails
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from GrnDetails
+  qty_uom:
+    display: Qtyuom
+    type: string
+    required: false
+    description: Field QtyUom from GrnDetails
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from GrnDetails
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from GrnDetails
+  subcontract_op:
+    display: Subcontractop
+    type: decimal
+    required: false
+    description: Field SubcontractOp from GrnDetails
+  delivery_note:
+    display: Deliverynote
+    type: string
+    required: false
+    description: Field DeliveryNote from GrnDetails
+  source_code:
+    display: Sourcecode
+    type: string
+    required: false
+    description: Field SourceCode from GrnDetails
+  orig_grn_value:
+    display: Origgrnvalue
+    type: decimal
+    required: false
+    description: Field OrigGrnValue from GrnDetails
+  cur_grn_value:
+    display: Curgrnvalue
+    type: decimal
+    required: false
+    description: Field CurGrnValue from GrnDetails
+  matched_value:
+    display: Matchedvalue
+    type: decimal
+    required: false
+    description: Field MatchedValue from GrnDetails
+  std_grn_value:
+    display: Stdgrnvalue
+    type: decimal
+    required: false
+    description: Field StdGrnValue from GrnDetails
+  price_var_printed:
+    display: Pricevarprinted
+    type: string
+    required: false
+    description: Field PriceVarPrinted from GrnDetails
+  audit_trail_printd:
+    display: Audittrailprintd
+    type: string
+    required: false
+    description: Field AuditTrailPrintd from GrnDetails
+  grn_matched_flag:
+    display: Grnmatchedflag
+    type: string
+    required: false
+    description: Field GrnMatchedFlag from GrnDetails
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from GrnDetails
+  grn_matched_year:
+    display: Grnmatchedyear
+    type: decimal
+    required: false
+    description: Field GrnMatchedYear from GrnDetails
+  grn_matched_month:
+    display: Grnmatchedmonth
+    type: decimal
+    required: false
+    description: Field GrnMatchedMonth from GrnDetails
+  orig_purch_value:
+    display: Origpurchvalue
+    type: decimal
+    required: false
+    description: Field OrigPurchValue from GrnDetails
+  cost_mult_flag:
+    display: Costmultflag
+    type: string
+    required: false
+    description: Field CostMultFlag from GrnDetails
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from GrnDetails
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from GrnDetails
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from GrnDetails
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from GrnDetails
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from GrnDetails
+  acc_conv_rate:
+    display: Accconvrate
+    type: decimal
+    required: false
+    description: Field AccConvRate from GrnDetails
+  acc_mul_div:
+    display: Accmuldiv
+    type: string
+    required: false
+    description: Field AccMulDiv from GrnDetails
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from GrnDetails
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from GrnDetails
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from GrnDetails
+  m_tax_code:
+    display: Mtaxcode
+    type: string
+    required: false
+    description: Field MTaxCode from GrnDetails
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from GrnDetails
+  tariff_code:
+    display: Tariffcode
+    type: string
+    required: false
+    description: Field TariffCode from GrnDetails

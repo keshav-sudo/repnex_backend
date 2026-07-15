@@ -1,0 +1,28 @@
+concept: wip_scrap_code
+display_name: WipScrapCode
+module: work_in_progress
+description: Auto-generated representation of the physical table WipScrapCode.
+synonyms:
+- wipscrapcode
+- wip scrap code
+header_attributes:
+  record_flag:
+    display: Recordflag
+    type: string
+    required: false
+    description: Field RecordFlag from WipScrapCode
+  non_prod_scrap:
+    display: Nonprodscrap
+    type: string
+    required: false
+    description: Field NonProdScrap from WipScrapCode
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WipScrapCode
+  expense_gl_code:
+    display: Expenseglcode
+    type: string
+    required: false
+    description: Field ExpenseGlCode from WipScrapCode

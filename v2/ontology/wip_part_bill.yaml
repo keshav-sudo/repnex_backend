@@ -1,0 +1,78 @@
+concept: wip_part_bill
+display_name: WipPartBill
+module: work_in_progress
+description: Auto-generated representation of the physical table WipPartBill.
+synonyms:
+- wippartbill
+- wip part bill
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from WipPartBill
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from WipPartBill
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipPartBill
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from WipPartBill
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipPartBill
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from WipPartBill
+  qty_supplied:
+    display: Qtysupplied
+    type: decimal
+    required: false
+    description: Field QtySupplied from WipPartBill
+  labour_value:
+    display: Labourvalue
+    type: decimal
+    required: false
+    description: Field LabourValue from WipPartBill
+  material_value:
+    display: Materialvalue
+    type: decimal
+    required: false
+    description: Field MaterialValue from WipPartBill
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from WipPartBill
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WipPartBill
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from WipPartBill
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from WipPartBill
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from WipPartBill

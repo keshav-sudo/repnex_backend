@@ -1,0 +1,28 @@
+concept: iop_structure
+display_name: IopStructure
+module: other
+description: Auto-generated representation of the physical table IopStructure.
+synonyms:
+- iopstructure
+- iop structure
+header_attributes:
+  parent_collection:
+    display: Parentcollection
+    type: string
+    required: false
+    description: Field ParentCollection from IopStructure
+  parent_instance:
+    display: Parentinstance
+    type: decimal
+    required: false
+    description: Field ParentInstance from IopStructure
+  child_collection:
+    display: Childcollection
+    type: string
+    required: false
+    description: Field ChildCollection from IopStructure
+  child_instance:
+    display: Childinstance
+    type: decimal
+    required: false
+    description: Field ChildInstance from IopStructure

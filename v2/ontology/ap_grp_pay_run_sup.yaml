@@ -1,0 +1,218 @@
+concept: ap_grp_pay_run_sup
+display_name: ApGrpPayRunSup
+module: accounts_payable
+description: Auto-generated representation of the physical table ApGrpPayRunSup.
+synonyms:
+- apgrppayrunsup
+- ap grp pay run sup
+header_attributes:
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ApGrpPayRunSup
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from ApGrpPayRunSup
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApGrpPayRunSup
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApGrpPayRunSup
+  gross_value_sup:
+    display: Grossvaluesup
+    type: decimal
+    required: false
+    description: Field GrossValueSup from ApGrpPayRunSup
+  gross_value_pay:
+    display: Grossvaluepay
+    type: decimal
+    required: false
+    description: Field GrossValuePay from ApGrpPayRunSup
+  disc_value_sup:
+    display: Discvaluesup
+    type: decimal
+    required: false
+    description: Field DiscValueSup from ApGrpPayRunSup
+  disc_value_pay:
+    display: Discvaluepay
+    type: decimal
+    required: false
+    description: Field DiscValuePay from ApGrpPayRunSup
+  wtax_sup:
+    display: Wtaxsup
+    type: decimal
+    required: false
+    description: Field WtaxSup from ApGrpPayRunSup
+  wtax_pay:
+    display: Wtaxpay
+    type: decimal
+    required: false
+    description: Field WtaxPay from ApGrpPayRunSup
+  net_value_sup:
+    display: Netvaluesup
+    type: decimal
+    required: false
+    description: Field NetValueSup from ApGrpPayRunSup
+  net_value_pay:
+    display: Netvaluepay
+    type: decimal
+    required: false
+    description: Field NetValuePay from ApGrpPayRunSup
+  tax_disc_sup:
+    display: Taxdiscsup
+    type: decimal
+    required: false
+    description: Field TaxDiscSup from ApGrpPayRunSup
+  tax_disc_pay:
+    display: Taxdiscpay
+    type: decimal
+    required: false
+    description: Field TaxDiscPay from ApGrpPayRunSup
+  qst_disc_sup:
+    display: Qstdiscsup
+    type: decimal
+    required: false
+    description: Field QstDiscSup from ApGrpPayRunSup
+  qst_disc_pay:
+    display: Qstdiscpay
+    type: decimal
+    required: false
+    description: Field QstDiscPay from ApGrpPayRunSup
+  with_taxable_sup:
+    display: Withtaxablesup
+    type: decimal
+    required: false
+    description: Field WithTaxableSup from ApGrpPayRunSup
+  with_taxable_pay:
+    display: Withtaxablepay
+    type: decimal
+    required: false
+    description: Field WithTaxablePay from ApGrpPayRunSup
+  pay_run_status:
+    display: Payrunstatus
+    type: string
+    required: false
+    description: Field PayRunStatus from ApGrpPayRunSup
+  negative_flag:
+    display: Negativeflag
+    type: string
+    required: false
+    description: Field NegativeFlag from ApGrpPayRunSup
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from ApGrpPayRunSup
+  chk_voided:
+    display: Chkvoided
+    type: string
+    required: false
+    description: Field ChkVoided from ApGrpPayRunSup
+  xref_payment_number:
+    display: Xrefpaymentnumber
+    type: string
+    required: false
+    description: Field XrefPaymentNumber from ApGrpPayRunSup
+  xref_payment_type:
+    display: Xrefpaymenttype
+    type: string
+    required: false
+    description: Field XrefPaymentType from ApGrpPayRunSup
+  total_adjustments:
+    display: Totaladjustments
+    type: decimal
+    required: false
+    description: Field TotalAdjustments from ApGrpPayRunSup
+  gross_value_primary:
+    display: Grossvalueprimary
+    type: decimal
+    required: false
+    description: Field GrossValuePrimary from ApGrpPayRunSup
+  net_value_primary:
+    display: Netvalueprimary
+    type: decimal
+    required: false
+    description: Field NetValuePrimary from ApGrpPayRunSup
+  wtax_primary:
+    display: Wtaxprimary
+    type: decimal
+    required: false
+    description: Field WtaxPrimary from ApGrpPayRunSup
+  disc_value_primary:
+    display: Discvalueprimary
+    type: decimal
+    required: false
+    description: Field DiscValuePrimary from ApGrpPayRunSup
+  tax_disc_primary:
+    display: Taxdiscprimary
+    type: decimal
+    required: false
+    description: Field TaxDiscPrimary from ApGrpPayRunSup
+  qst_disc_primary:
+    display: Qstdiscprimary
+    type: decimal
+    required: false
+    description: Field QstDiscPrimary from ApGrpPayRunSup
+  with_taxable_primary:
+    display: Withtaxableprimary
+    type: decimal
+    required: false
+    description: Field WithTaxablePrimary from ApGrpPayRunSup
+  currency_primary:
+    display: Currencyprimary
+    type: string
+    required: false
+    description: Field CurrencyPrimary from ApGrpPayRunSup
+  gross_value_second:
+    display: Grossvaluesecond
+    type: decimal
+    required: false
+    description: Field GrossValueSecond from ApGrpPayRunSup
+  net_value_second:
+    display: Netvaluesecond
+    type: decimal
+    required: false
+    description: Field NetValueSecond from ApGrpPayRunSup
+  wtax_second:
+    display: Wtaxsecond
+    type: decimal
+    required: false
+    description: Field WtaxSecond from ApGrpPayRunSup
+  disc_value_second:
+    display: Discvaluesecond
+    type: decimal
+    required: false
+    description: Field DiscValueSecond from ApGrpPayRunSup
+  tax_disc_second:
+    display: Taxdiscsecond
+    type: decimal
+    required: false
+    description: Field TaxDiscSecond from ApGrpPayRunSup
+  qst_disc_second:
+    display: Qstdiscsecond
+    type: decimal
+    required: false
+    description: Field QstDiscSecond from ApGrpPayRunSup
+  with_taxable_second:
+    display: Withtaxablesecond
+    type: decimal
+    required: false
+    description: Field WithTaxableSecond from ApGrpPayRunSup
+  currency_second:
+    display: Currencysecond
+    type: string
+    required: false
+    description: Field CurrencySecond from ApGrpPayRunSup
+  xref_sup_currency:
+    display: Xrefsupcurrency
+    type: string
+    required: false
+    description: Field XrefSupCurrency from ApGrpPayRunSup

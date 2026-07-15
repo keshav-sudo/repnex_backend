@@ -1,0 +1,33 @@
+concept: gtr_detail
+table: GtrDetail
+alias: gd1
+fields:
+  gtr_reference: gd1.GtrReference
+  source_warehouse: gd1.SourceWarehouse
+  target_warehouse: gd1.TargetWarehouse
+  line: gd1.Line
+  stock_code: gd1.StockCode
+  transf_comp_period: gd1.TransfCompPeriod
+  transf_comp_year: gd1.TransfCompYear
+  gtr_quantity: gd1.GtrQuantity
+  qty_received: gd1.QtyReceived
+  initial_value: gd1.InitialValue
+  value_received_src: gd1.ValueReceivedSrc
+  unit_cost: gd1.UnitCost
+  cost_uom: gd1.CostUom
+  value_received_tgt: gd1.ValueReceivedTgt
+  product_class: gd1.ProductClass
+  branch: gd1.Branch
+  area: gd1.Area
+  sales_order: gd1.SalesOrder
+  sales_order_line: gd1.SalesOrderLine
+  delivery_note: gd1.DeliveryNote
+  invoice: gd1.Invoice
+  transf_doc_num: gd1.TransfDocNum
+  transaction_date: gd1.TransactionDate
+  expected_due_date: gd1.ExpectedDueDate
+  transfer_complete: gd1.TransferComplete
+  lock_flag: gd1.LockFlag
+  next_entry: gd1.NextEntry
+  version: gd1.Version
+  release: gd1.Release

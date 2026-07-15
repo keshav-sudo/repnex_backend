@@ -1,0 +1,33 @@
+concept: wip_inspect_doc_ser
+display_name: WipInspectDocSer
+module: work_in_progress
+description: Auto-generated representation of the physical table WipInspectDocSer.
+synonyms:
+- wipinspectdocser
+- wip inspect doc ser
+header_attributes:
+  trans_type:
+    display: Transtype
+    type: string
+    required: false
+    description: Field TransType from WipInspectDocSer
+  document_num:
+    display: Documentnum
+    type: decimal
+    required: false
+    description: Field DocumentNum from WipInspectDocSer
+  insp_reference:
+    display: Inspreference
+    type: string
+    required: false
+    description: Field InspReference from WipInspectDocSer
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from WipInspectDocSer
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from WipInspectDocSer

@@ -1,0 +1,15 @@
+concept: sal_control
+table: SalControl
+alias: sc1
+fields:
+  control_flag: sc1.ControlFlag
+  ptd_sales: sc1.PtdSales
+  ptd_cost: sc1.PtdCost
+  ptd_units: sc1.PtdUnits
+  mtd_sales: sc1.MtdSales
+  mtd_cost: sc1.MtdCost
+  mtd_units: sc1.MtdUnits
+  ytd_sales: sc1.YtdSales
+  ytd_cost: sc1.YtdCost
+  ytd_units: sc1.YtdUnits
+  date_last_update: sc1.DateLastUpdate

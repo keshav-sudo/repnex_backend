@@ -1,0 +1,38 @@
+concept: lot_arc_transact
+table: LotArcTransact
+alias: lat1
+fields:
+  stock_code: lat1.StockCode
+  warehouse: lat1.Warehouse
+  lot: lat1.Lot
+  bin: lat1.Bin
+  trn_date: lat1.TrnDate
+  line: lat1.Line
+  trn_type: lat1.TrnType
+  trn_quantity: lat1.TrnQuantity
+  trn_value: lat1.TrnValue
+  reference: lat1.Reference
+  customer: lat1.Customer
+  doc_type: lat1.DocType
+  invoice: lat1.Invoice
+  old_expiry_date: lat1.OldExpiryDate
+  sales_order: lat1.SalesOrder
+  new_expiry_date: lat1.NewExpiryDate
+  sales_order_line: lat1.SalesOrderLine
+  job: lat1.Job
+  new_warehouse: lat1.NewWarehouse
+  concession_num: lat1.ConcessionNum
+  source: lat1.Source
+  job_purch_order: lat1.JobPurchOrder
+  purchase_order_lin: lat1.PurchaseOrderLin
+  supplier: lat1.Supplier
+  narration: lat1.Narration
+  certificate: lat1.Certificate
+  dispatch_note: lat1.DispatchNote
+  unit_cost: lat1.UnitCost
+  bucket: lat1.Bucket
+  jnl_year: lat1.JnlYear
+  jnl_month: lat1.JnlMonth
+  journal: lat1.Journal
+  journal_line: lat1.JournalLine
+  rma_number: lat1.RmaNumber

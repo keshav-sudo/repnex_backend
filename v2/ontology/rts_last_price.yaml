@@ -1,0 +1,28 @@
+concept: rts_last_price
+display_name: RtsLastPrice
+module: other
+description: Auto-generated representation of the physical table RtsLastPrice.
+synonyms:
+- rtslastprice
+- rts last price
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from RtsLastPrice
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from RtsLastPrice
+  last_purch_date:
+    display: Lastpurchdate
+    type: date
+    required: false
+    description: Field LastPurchDate from RtsLastPrice
+  last_cost:
+    display: Lastcost
+    type: decimal
+    required: false
+    description: Field LastCost from RtsLastPrice

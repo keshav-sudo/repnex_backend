@@ -1,0 +1,11 @@
+concept: srs_archive_rec
+table: SrsArchiveREC
+alias: sarec
+fields:
+  archive_date: sarec.ArchiveDate
+  archive_time: sarec.ArchiveTime
+  operator: sarec.Operator
+  archive_id: sarec.ArchiveId
+  archive_type: sarec.ArchiveType
+  archive_file: sarec.ArchiveFile
+  purchase_order: sarec.PurchaseOrder

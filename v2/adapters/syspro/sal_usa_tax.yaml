@@ -1,0 +1,38 @@
+concept: sal_usa_tax
+table: SalUsaTax
+alias: sut
+fields:
+  state: sut.State
+  county_zip: sut.CountyZip
+  city: sut.City
+  trn_year: sut.TrnYear
+  trn_month: sut.TrnMonth
+  invoice_register: sut.InvoiceRegister
+  invoice_reg_line: sut.InvoiceRegLine
+  customer: sut.Customer
+  invoice: sut.Invoice
+  comp_exempt_flag: sut.CompExemptFlag
+  total_invoice: sut.TotalInvoice
+  total_taxable: sut.TotalTaxable
+  total_use_taxable: sut.TotalUseTaxable
+  total_exempt: sut.TotalExempt
+  total_sales_tax: sut.TotalSalesTax
+  total_use_tax: sut.TotalUseTax
+  tax_rate1: sut.TaxRate1
+  tax_rate2: sut.TaxRate2
+  tax_rate3: sut.TaxRate3
+  tax_use_rate1: sut.TaxUseRate1
+  tax_use_rate2: sut.TaxUseRate2
+  tax_use_rate3: sut.TaxUseRate3
+  sales_order: sut.SalesOrder
+  branch: sut.Branch
+  invoice_date: sut.InvoiceDate
+  county_code: sut.CountyCode
+  line_printed: sut.LinePrinted
+  tax_exempt_number: sut.TaxExemptNumber
+  tax_exempt_flag: sut.TaxExemptFlag
+  doc_type: sut.DocType
+  cash_credit: sut.CashCredit
+  order_memo: sut.OrderMemo
+  freight_charges: sut.FreightCharges
+  usa_or_normal_tax: sut.UsaOrNormalTax

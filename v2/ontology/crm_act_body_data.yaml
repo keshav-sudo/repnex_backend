@@ -1,0 +1,28 @@
+concept: crm_act_body_data
+display_name: CrmActBodyData
+module: crm
+description: Auto-generated representation of the physical table CrmActBodyData.
+synonyms:
+- crmactbodydata
+- crm act body data
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmActBodyData
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from CrmActBodyData
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from CrmActBodyData
+  body_data:
+    display: Bodydata
+    type: string
+    required: false
+    description: Field BodyData from CrmActBodyData

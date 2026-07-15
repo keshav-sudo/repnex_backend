@@ -1,0 +1,8 @@
+concept: ap1099_format
+table: Ap1099Format
+alias: af
+fields:
+  ap1099_label_format: af.Ap1099LabelFormat
+  label_description: af.LabelDescription
+  min_ytd_payment: af.MinYtdPayment
+  document_info: af.DocumentInfo

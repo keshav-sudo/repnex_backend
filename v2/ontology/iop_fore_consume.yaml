@@ -1,0 +1,43 @@
+concept: iop_fore_consume
+display_name: IopForeConsume
+module: other
+description: Auto-generated representation of the physical table IopForeConsume.
+synonyms:
+- iopforeconsume
+- iop fore consume
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopForeConsume
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopForeConsume
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopForeConsume
+  forecast_wh:
+    display: Forecastwh
+    type: string
+    required: false
+    description: Field ForecastWh from IopForeConsume
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from IopForeConsume
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from IopForeConsume
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopForeConsume

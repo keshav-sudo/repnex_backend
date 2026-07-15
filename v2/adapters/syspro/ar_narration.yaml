@@ -1,0 +1,10 @@
+concept: ar_narration
+table: ArNarration
+alias: an
+fields:
+  customer: an.Customer
+  invoice: an.Invoice
+  invoice_type: an.InvoiceType
+  note_type: an.NoteType
+  line: an.Line
+  notation: an.Notation

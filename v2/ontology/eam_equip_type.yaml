@@ -1,0 +1,28 @@
+concept: eam_equip_type
+display_name: EamEquipType
+module: other
+description: Auto-generated representation of the physical table EamEquipType.
+synonyms:
+- eamequiptype
+- eam equip type
+header_attributes:
+  equipment_type:
+    display: Equipmenttype
+    type: string
+    required: false
+    description: Field EquipmentType from EamEquipType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EamEquipType
+  use_equip_structure:
+    display: Useequipstructure
+    type: string
+    required: false
+    description: Field UseEquipStructure from EamEquipType
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from EamEquipType

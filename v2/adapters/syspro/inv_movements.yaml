@@ -1,0 +1,48 @@
+concept: inv_movements
+table: InvMovements
+alias: im2
+fields:
+  stock_code: im2.StockCode
+  warehouse: im2.Warehouse
+  trn_year: im2.TrnYear
+  trn_month: im2.TrnMonth
+  entry_date: im2.EntryDate
+  trn_time: im2.TrnTime
+  movement_type: im2.MovementType
+  trn_qty: im2.TrnQty
+  trn_value: im2.TrnValue
+  source: im2.Source
+  job: im2.Job
+  journal: im2.Journal
+  journal_entry: im2.JournalEntry
+  entered_cost: im2.EnteredCost
+  trn_type: im2.TrnType
+  reference: im2.Reference
+  add_reference: im2.AddReference
+  unit_cost: im2.UnitCost
+  new_warehouse: im2.NewWarehouse
+  bin: im2.Bin
+  supplier: im2.Supplier
+  gl_code: im2.GlCode
+  document: im2.Document
+  sales_order: im2.SalesOrder
+  invoice_register: im2.InvoiceRegister
+  summary_line: im2.SummaryLine
+  invoice: im2.Invoice
+  doc_type: im2.DocType
+  customer: im2.Customer
+  cost_value: im2.CostValue
+  branch: im2.Branch
+  salesperson: im2.Salesperson
+  sales_bin: im2.SalesBin
+  customer_po_number: im2.CustomerPoNumber
+  order_type: im2.OrderType
+  area: im2.Area
+  product_class: im2.ProductClass
+  dispatch_note: im2.DispatchNote
+  detail_line: im2.DetailLine
+  version: im2.Version
+  release: im2.Release
+  lot_serial: im2.LotSerial
+  io_processed_flag: im2.IoProcessedFlag
+  wip_branch: im2.WipBranch

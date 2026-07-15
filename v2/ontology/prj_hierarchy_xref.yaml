@@ -1,0 +1,93 @@
+concept: prj_hierarchy_xref
+display_name: PrjHierarchyXref
+module: other
+description: Auto-generated representation of the physical table PrjHierarchyXref.
+synonyms:
+- prjhierarchyxref
+- prj hierarchy xref
+header_attributes:
+  hierarchy_type:
+    display: Hierarchytype
+    type: string
+    required: false
+    description: Field HierarchyType from PrjHierarchyXref
+  job_estimate:
+    display: Jobestimate
+    type: string
+    required: false
+    description: Field JobEstimate from PrjHierarchyXref
+  hier_head:
+    display: Hierhead
+    type: string
+    required: false
+    description: Field HierHead from PrjHierarchyXref
+  section1:
+    display: Section1
+    type: string
+    required: false
+    description: Field Section1 from PrjHierarchyXref
+  section2:
+    display: Section2
+    type: string
+    required: false
+    description: Field Section2 from PrjHierarchyXref
+  section3:
+    display: Section3
+    type: string
+    required: false
+    description: Field Section3 from PrjHierarchyXref
+  section4:
+    display: Section4
+    type: string
+    required: false
+    description: Field Section4 from PrjHierarchyXref
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from PrjHierarchyXref
+  source_key:
+    display: Sourcekey
+    type: string
+    required: false
+    description: Field SourceKey from PrjHierarchyXref
+  index_job:
+    display: Indexjob
+    type: string
+    required: false
+    description: Field IndexJob from PrjHierarchyXref
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from PrjHierarchyXref
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from PrjHierarchyXref
+  mat_alloc_line:
+    display: Matallocline
+    type: string
+    required: false
+    description: Field MatAllocLine from PrjHierarchyXref
+  post_line:
+    display: Postline
+    type: decimal
+    required: false
+    description: Field PostLine from PrjHierarchyXref
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from PrjHierarchyXref
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from PrjHierarchyXref
+  post_job:
+    display: Postjob
+    type: string
+    required: false
+    description: Field PostJob from PrjHierarchyXref

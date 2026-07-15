@@ -1,0 +1,15 @@
+concept: gen_journal_det_pos
+table: GenJournalDetPos
+alias: gjdp
+fields:
+  gl_year: gjdp.GlYear
+  gl_period: gjdp.GlPeriod
+  journal: gjdp.Journal
+  entry_number: gjdp.EntryNumber
+  pos_tran_type: gjdp.PosTranType
+  pos_transact_branch: gjdp.PosTransactBranch
+  pos_unique_id: gjdp.PosUniqueId
+  pos_payment_line: gjdp.PosPaymentLine
+  pos_eod_branch: gjdp.PosEodBranch
+  pos_eod_create_date: gjdp.PosEodCreateDate
+  pos_eod_payment_code: gjdp.PosEodPaymentCode

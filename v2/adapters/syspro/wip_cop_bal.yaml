@@ -1,0 +1,16 @@
+concept: wip_cop_bal
+table: WipCopBal
+alias: wcb
+fields:
+  run_date_time: wcb.RunDateTime
+  job: wcb.Job
+  co_product: wcb.CoProduct
+  co_product_line: wcb.CoProductLine
+  cur_material_value: wcb.CurMaterialValue
+  clc_material_value: wcb.ClcMaterialValue
+  cur_labour_value: wcb.CurLabourValue
+  clc_labour_value: wcb.ClcLabourValue
+  cur_qty_manufactured: wcb.CurQtyManufactured
+  clc_qty_manufactured: wcb.ClcQtyManufactured
+  cur_qty_manu_ent: wcb.CurQtyManuEnt
+  clc_qty_manu_ent: wcb.ClcQtyManuEnt

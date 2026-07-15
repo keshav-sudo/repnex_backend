@@ -1,0 +1,16 @@
+concept: grn_price_variance
+table: GrnPriceVariance
+alias: gpv
+fields:
+  supplier: gpv.Supplier
+  invoice: gpv.Invoice
+  post_year: gpv.PostYear
+  post_month: gpv.PostMonth
+  ap_journal: gpv.ApJournal
+  ap_journal_entry: gpv.ApJournalEntry
+  var_date: gpv.VarDate
+  grn_value: gpv.GrnValue
+  invoice_value: gpv.InvoiceValue
+  price_var_printed: gpv.PriceVarPrinted
+  operator: gpv.Operator
+  report_type: gpv.ReportType

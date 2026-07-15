@@ -1,0 +1,128 @@
+concept: csh_gl_entries
+display_name: CshGlEntries
+module: cashbook
+description: Auto-generated representation of the physical table CshGlEntries.
+synonyms:
+- cshglentries
+- csh gl entries
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshGlEntries
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshGlEntries
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshGlEntries
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from CshGlEntries
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from CshGlEntries
+  detail_count:
+    display: Detailcount
+    type: decimal
+    required: false
+    description: Field DetailCount from CshGlEntries
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from CshGlEntries
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from CshGlEntries
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from CshGlEntries
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from CshGlEntries
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from CshGlEntries
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from CshGlEntries
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from CshGlEntries
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from CshGlEntries
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from CshGlEntries
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from CshGlEntries
+  acc_conv_rate:
+    display: Accconvrate
+    type: decimal
+    required: false
+    description: Field AccConvRate from CshGlEntries
+  acc_mul_div:
+    display: Accmuldiv
+    type: string
+    required: false
+    description: Field AccMulDiv from CshGlEntries
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from CshGlEntries
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from CshGlEntries
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from CshGlEntries
+  cb_adj_year:
+    display: Cbadjyear
+    type: decimal
+    required: false
+    description: Field CbAdjYear from CshGlEntries
+  cb_adj_month:
+    display: Cbadjmonth
+    type: decimal
+    required: false
+    description: Field CbAdjMonth from CshGlEntries
+  tax_entry:
+    display: Taxentry
+    type: string
+    required: false
+    description: Field TaxEntry from CshGlEntries

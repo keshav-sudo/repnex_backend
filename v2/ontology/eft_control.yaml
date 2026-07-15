@@ -1,0 +1,63 @@
+concept: eft_control
+display_name: EftControl
+module: other
+description: Auto-generated representation of the physical table EftControl.
+synonyms:
+- eftcontrol
+- eft control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from EftControl
+  last_eft_batch_number:
+    display: Lasteftbatchnumber
+    type: decimal
+    required: false
+    description: Field LastEftBatchNumber from EftControl
+  cb_amendment_jnl:
+    display: Cbamendmentjnl
+    type: string
+    required: false
+    description: Field CbAmendmentJnl from EftControl
+  ap_user1:
+    display: Apuser1
+    type: string
+    required: false
+    description: Field ApUser1 from EftControl
+  ap_user2:
+    display: Apuser2
+    type: string
+    required: false
+    description: Field ApUser2 from EftControl
+  cb_user1:
+    display: Cbuser1
+    type: string
+    required: false
+    description: Field CbUser1 from EftControl
+  cb_user2:
+    display: Cbuser2
+    type: string
+    required: false
+    description: Field CbUser2 from EftControl
+  eft_sup_days:
+    display: Eftsupdays
+    type: decimal
+    required: false
+    description: Field EftSupDays from EftControl
+  eft_batch_days:
+    display: Eftbatchdays
+    type: decimal
+    required: false
+    description: Field EftBatchDays from EftControl
+  eft_audit_batch_days:
+    display: Eftauditbatchdays
+    type: decimal
+    required: false
+    description: Field EftAuditBatchDays from EftControl
+  eft_audit_void_days:
+    display: Eftauditvoiddays
+    type: decimal
+    required: false
+    description: Field EftAuditVoidDays from EftControl

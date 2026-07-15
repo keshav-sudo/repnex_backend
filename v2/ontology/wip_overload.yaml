@@ -1,0 +1,28 @@
+concept: wip_overload
+display_name: WipOverload
+module: work_in_progress
+description: Auto-generated representation of the physical table WipOverload.
+synonyms:
+- wipoverload
+- wip overload
+header_attributes:
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WipOverload
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from WipOverload
+  overload_date:
+    display: Overloaddate
+    type: date
+    required: false
+    description: Field OverloadDate from WipOverload
+  overload_actioned:
+    display: Overloadactioned
+    type: string
+    required: false
+    description: Field OverloadActioned from WipOverload

@@ -1,0 +1,13 @@
+concept: ar_post_dated_ch_sta
+table: ArPostDatedChSta
+alias: apdcs
+fields:
+  customer: apdcs.Customer
+  available_date: apdcs.AvailableDate
+  cheque: apdcs.Cheque
+  status: apdcs.Status
+  date_received: apdcs.DateReceived
+  deposit_bank: apdcs.DepositBank
+  bank: apdcs.Bank
+  branch: apdcs.Branch
+  collector_number_ar: apdcs.CollectorNumberAr

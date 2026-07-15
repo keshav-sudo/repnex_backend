@@ -1,0 +1,7 @@
+concept: lynq_vp__wc_group
+table: Lynq_VP_WcGroup
+alias: lvpwg
+fields:
+  id: lvpwg.ID
+  group_name: lvpwg.GroupName
+  group_description: lvpwg.GroupDescription

@@ -1,0 +1,98 @@
+concept: inv_serial_track
+display_name: InvSerialTrack
+module: inventory
+description: Auto-generated representation of the physical table InvSerialTrack.
+synonyms:
+- invserialtrack
+- inv serial track
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvSerialTrack
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvSerialTrack
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from InvSerialTrack
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from InvSerialTrack
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from InvSerialTrack
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from InvSerialTrack
+  parent_serial:
+    display: Parentserial
+    type: string
+    required: false
+    description: Field ParentSerial from InvSerialTrack
+  parent_warehouse:
+    display: Parentwarehouse
+    type: string
+    required: false
+    description: Field ParentWarehouse from InvSerialTrack
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from InvSerialTrack
+  issue_line:
+    display: Issueline
+    type: decimal
+    required: false
+    description: Field IssueLine from InvSerialTrack
+  issue_date:
+    display: Issuedate
+    type: date
+    required: false
+    description: Field IssueDate from InvSerialTrack
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvSerialTrack
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvSerialTrack
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvSerialTrack
+  m_allocation_line:
+    display: Mallocationline
+    type: string
+    required: false
+    description: Field MAllocationLine from InvSerialTrack
+  master_job:
+    display: Masterjob
+    type: string
+    required: false
+    description: Field MasterJob from InvSerialTrack
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvSerialTrack
+  parent_bin:
+    display: Parentbin
+    type: string
+    required: false
+    description: Field ParentBin from InvSerialTrack

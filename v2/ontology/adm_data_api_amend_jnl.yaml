@@ -1,0 +1,48 @@
+concept: adm_data_api_amend_jnl
+display_name: AdmDataApiAmendJnl
+module: administration
+description: Auto-generated representation of the physical table AdmDataApiAmendJnl.
+synonyms:
+- admdataapiamendjnl
+- adm data api amend jnl
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from AdmDataApiAmendJnl
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from AdmDataApiAmendJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from AdmDataApiAmendJnl
+  before_values:
+    display: Beforevalues
+    type: string
+    required: false
+    description: Field BeforeValues from AdmDataApiAmendJnl
+  after_values:
+    display: Aftervalues
+    type: string
+    required: false
+    description: Field AfterValues from AdmDataApiAmendJnl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmDataApiAmendJnl
+  syspro_source:
+    display: Sysprosource
+    type: string
+    required: false
+    description: Field SysproSource from AdmDataApiAmendJnl
+  application_name:
+    display: Applicationname
+    type: string
+    required: false
+    description: Field ApplicationName from AdmDataApiAmendJnl

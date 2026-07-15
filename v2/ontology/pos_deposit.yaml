@@ -1,0 +1,33 @@
+concept: pos_deposit
+display_name: PosDeposit
+module: other
+description: Auto-generated representation of the physical table PosDeposit.
+synonyms:
+- posdeposit
+- pos deposit
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from PosDeposit
+  deposit_value:
+    display: Depositvalue
+    type: decimal
+    required: false
+    description: Field DepositValue from PosDeposit
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from PosDeposit
+  deposit_date:
+    display: Depositdate
+    type: date
+    required: false
+    description: Field DepositDate from PosDeposit
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from PosDeposit

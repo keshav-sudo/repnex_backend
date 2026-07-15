@@ -1,0 +1,33 @@
+concept: lynq_me__message_receiver
+display_name: Lynq ME MessageReceiver
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_MessageReceiver.
+synonyms:
+- lynq_me_messagereceiver
+- lynq me  message receiver
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_ME_MessageReceiver
+  sent_message_id:
+    display: Sentmessageid
+    type: decimal
+    required: false
+    description: Field SentMessageId from Lynq_ME_MessageReceiver
+  receiver_code:
+    display: Receivercode
+    type: string
+    required: false
+    description: Field ReceiverCode from Lynq_ME_MessageReceiver
+  receiver_type_id:
+    display: Receivertypeid
+    type: decimal
+    required: false
+    description: Field ReceiverTypeId from Lynq_ME_MessageReceiver
+  received_message_id:
+    display: Receivedmessageid
+    type: decimal
+    required: false
+    description: Field ReceivedMessageId from Lynq_ME_MessageReceiver

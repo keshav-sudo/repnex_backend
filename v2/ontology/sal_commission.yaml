@@ -1,0 +1,78 @@
+concept: sal_commission
+display_name: SalCommission
+module: other
+description: Auto-generated representation of the physical table SalCommission.
+synonyms:
+- salcommission
+- sal commission
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalCommission
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalCommission
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalCommission
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from SalCommission
+  inv_date:
+    display: Invdate
+    type: date
+    required: false
+    description: Field InvDate from SalCommission
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SalCommission
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SalCommission
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SalCommission
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from SalCommission
+  merchandise_value:
+    display: Merchandisevalue
+    type: decimal
+    required: false
+    description: Field MerchandiseValue from SalCommission
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from SalCommission
+  commission_value:
+    display: Commissionvalue
+    type: decimal
+    required: false
+    description: Field CommissionValue from SalCommission
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from SalCommission
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from SalCommission

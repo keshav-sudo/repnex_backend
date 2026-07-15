@@ -1,0 +1,68 @@
+concept: adm_trigger
+display_name: AdmTrigger
+module: administration
+description: Auto-generated representation of the physical table AdmTrigger.
+synonyms:
+- admtrigger
+- adm trigger
+header_attributes:
+  trigger_program:
+    display: Triggerprogram
+    type: string
+    required: false
+    description: Field TriggerProgram from AdmTrigger
+  trigger_number:
+    display: Triggernumber
+    type: decimal
+    required: false
+    description: Field TriggerNumber from AdmTrigger
+  trigger_sequence:
+    display: Triggersequence
+    type: decimal
+    required: false
+    description: Field TriggerSequence from AdmTrigger
+  trigger_type:
+    display: Triggertype
+    type: string
+    required: false
+    description: Field TriggerType from AdmTrigger
+  program:
+    display: Program
+    type: string
+    required: false
+    description: Field Program from AdmTrigger
+  start_folder:
+    display: Startfolder
+    type: string
+    required: false
+    description: Field StartFolder from AdmTrigger
+  trigger_code:
+    display: Triggercode
+    type: string
+    required: false
+    description: Field TriggerCode from AdmTrigger
+  message_text:
+    display: Messagetext
+    type: string
+    required: false
+    description: Field MessageText from AdmTrigger
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmTrigger
+  program_to_run:
+    display: Programtorun
+    type: string
+    required: false
+    description: Field ProgramToRun from AdmTrigger
+  use_date:
+    display: Usedate
+    type: decimal
+    required: false
+    description: Field UseDate from AdmTrigger
+  prevent_duplicate:
+    display: Preventduplicate
+    type: decimal
+    required: false
+    description: Field PreventDuplicate from AdmTrigger

@@ -1,0 +1,63 @@
+concept: asset_health_bal
+display_name: AssetHealthBal
+module: assets
+description: Auto-generated representation of the physical table AssetHealthBal.
+synonyms:
+- assethealthbal
+- asset health bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from AssetHealthBal
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetHealthBal
+  origin:
+    display: Origin
+    type: string
+    required: false
+    description: Field Origin from AssetHealthBal
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from AssetHealthBal
+  hcheck_year:
+    display: Hcheckyear
+    type: decimal
+    required: false
+    description: Field HcheckYear from AssetHealthBal
+  hcheck_month:
+    display: Hcheckmonth
+    type: decimal
+    required: false
+    description: Field HcheckMonth from AssetHealthBal
+  actual_value:
+    display: Actualvalue
+    type: decimal
+    required: false
+    description: Field ActualValue from AssetHealthBal
+  calc_value:
+    display: Calcvalue
+    type: decimal
+    required: false
+    description: Field CalcValue from AssetHealthBal
+  diff_value:
+    display: Diffvalue
+    type: decimal
+    required: false
+    description: Field DiffValue from AssetHealthBal
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from AssetHealthBal
+  self_healing_flag:
+    display: Selfhealingflag
+    type: string
+    required: false
+    description: Field SelfHealingFlag from AssetHealthBal

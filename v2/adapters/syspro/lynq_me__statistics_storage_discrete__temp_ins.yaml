@@ -1,0 +1,15 @@
+concept: lynq_me__statistics_storage_discrete__temp_ins
+table: Lynq_ME_StatisticsStorageDiscrete_TempIns
+alias: lmessdti
+fields:
+  id: lmessdti.ID
+  pack_key: lmessdti.PackKey
+  pack_id: lmessdti.PackID
+  ins_id: lmessdti.InsID
+  is_to_delete: lmessdti.IsToDelete
+  key_id: lmessdti.KeyID
+  aid: lmessdti.AID
+  group_code: lmessdti.GroupCode
+  moment: lmessdti.Moment
+  s00: lmessdti.S00
+  nd0: lmessdti.ND0

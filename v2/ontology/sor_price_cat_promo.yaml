@@ -1,0 +1,23 @@
+concept: sor_price_cat_promo
+display_name: SorPriceCatPromo
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPriceCatPromo.
+synonyms:
+- sorpricecatpromo
+- sor price cat promo
+header_attributes:
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from SorPriceCatPromo
+  line_number:
+    display: Linenumber
+    type: decimal
+    required: false
+    description: Field LineNumber from SorPriceCatPromo
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from SorPriceCatPromo

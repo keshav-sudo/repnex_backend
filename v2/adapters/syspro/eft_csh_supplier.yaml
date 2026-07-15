@@ -1,0 +1,36 @@
+concept: eft_csh_supplier
+table: EftCshSupplier
+alias: ecs
+fields:
+  supplier: ecs.Supplier
+  supplier_name: ecs.SupplierName
+  bank: ecs.Bank
+  currency: ecs.Currency
+  bank_account: ecs.BankAccount
+  bank_branch: ecs.BankBranch
+  eft_bank_acc_type: ecs.EftBankAccType
+  eft_statement_ref: ecs.EftStatementRef
+  sup_addr0_building: ecs.SupAddr0Building
+  sup_addr1: ecs.SupAddr1
+  sup_addr2: ecs.SupAddr2
+  sup_addr2_loc: ecs.SupAddr2Loc
+  sup_addr3: ecs.SupAddr3
+  sup_addr3_country: ecs.SupAddr3Country
+  sup_postal_code: ecs.SupPostalCode
+  sup_add_gps_lat: ecs.SupAddGpsLat
+  sup_add_gps_long: ecs.SupAddGpsLong
+  contact: ecs.Contact
+  telephone: ecs.Telephone
+  fax: ecs.Fax
+  tax_regn_num: ecs.TaxRegnNum
+  eft_user_field1: ecs.EftUserField1
+  eft_user_field2: ecs.EftUserField2
+  eft_remit_method: ecs.EftRemitMethod
+  eft_email: ecs.EftEmail
+  fax_contact: ecs.FaxContact
+  fax_remit_num: ecs.FaxRemitNum
+  eft_default_doc: ecs.EftDefaultDoc
+  date_supp_added: ecs.DateSuppAdded
+  last_eft_date: ecs.LastEftDate
+  eft_trn_code: ecs.EftTrnCode
+  eft_routing_no: ecs.EftRoutingNo

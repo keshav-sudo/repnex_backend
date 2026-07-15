@@ -1,0 +1,53 @@
+concept: prj_qot_op_xref
+display_name: PrjQotOpXref
+module: other
+description: Auto-generated representation of the physical table PrjQotOpXref.
+synonyms:
+- prjqotopxref
+- prj qot op xref
+header_attributes:
+  estimate:
+    display: Estimate
+    type: string
+    required: false
+    description: Field Estimate from PrjQotOpXref
+  non_stock_code:
+    display: Nonstockcode
+    type: string
+    required: false
+    description: Field NonStockCode from PrjQotOpXref
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from PrjQotOpXref
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from PrjQotOpXref
+  hierarchy_qot1:
+    display: Hierarchyqot1
+    type: string
+    required: false
+    description: Field HierarchyQot1 from PrjQotOpXref
+  hierarchy_qot2:
+    display: Hierarchyqot2
+    type: string
+    required: false
+    description: Field HierarchyQot2 from PrjQotOpXref
+  hierarchy_qot3:
+    display: Hierarchyqot3
+    type: string
+    required: false
+    description: Field HierarchyQot3 from PrjQotOpXref
+  hierarchy_qot4:
+    display: Hierarchyqot4
+    type: string
+    required: false
+    description: Field HierarchyQot4 from PrjQotOpXref
+  hierarchy_qot5:
+    display: Hierarchyqot5
+    type: string
+    required: false
+    description: Field HierarchyQot5 from PrjQotOpXref

@@ -1,0 +1,658 @@
+concept: qot_so_master_hdr
+display_name: QotSoMasterHdr
+module: other
+description: Auto-generated representation of the physical table QotSoMasterHdr.
+synonyms:
+- qotsomasterhdr
+- qot so master hdr
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from QotSoMasterHdr
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from QotSoMasterHdr
+  order_status:
+    display: Orderstatus
+    type: string
+    required: false
+    description: Field OrderStatus from QotSoMasterHdr
+  active_flag:
+    display: Activeflag
+    type: string
+    required: false
+    description: Field ActiveFlag from QotSoMasterHdr
+  cancelled_flag:
+    display: Cancelledflag
+    type: string
+    required: false
+    description: Field CancelledFlag from QotSoMasterHdr
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from QotSoMasterHdr
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from QotSoMasterHdr
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from QotSoMasterHdr
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from QotSoMasterHdr
+  order_date:
+    display: Orderdate
+    type: date
+    required: false
+    description: Field OrderDate from QotSoMasterHdr
+  entry_system_date:
+    display: Entrysystemdate
+    type: date
+    required: false
+    description: Field EntrySystemDate from QotSoMasterHdr
+  req_ship_date:
+    display: Reqshipdate
+    type: date
+    required: false
+    description: Field ReqShipDate from QotSoMasterHdr
+  date_last_doc_prt:
+    display: Datelastdocprt
+    type: date
+    required: false
+    description: Field DateLastDocPrt from QotSoMasterHdr
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from QotSoMasterHdr
+  shipping_instrs_cod:
+    display: Shippinginstrscod
+    type: string
+    required: false
+    description: Field ShippingInstrsCod from QotSoMasterHdr
+  alt_ship_addr_flag:
+    display: Altshipaddrflag
+    type: string
+    required: false
+    description: Field AltShipAddrFlag from QotSoMasterHdr
+  invoice_count:
+    display: Invoicecount
+    type: decimal
+    required: false
+    description: Field InvoiceCount from QotSoMasterHdr
+  inv_terms_override:
+    display: Invtermsoverride
+    type: string
+    required: false
+    description: Field InvTermsOverride from QotSoMasterHdr
+  credit_authority:
+    display: Creditauthority
+    type: string
+    required: false
+    description: Field CreditAuthority from QotSoMasterHdr
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from QotSoMasterHdr
+  special_instrs:
+    display: Specialinstrs
+    type: string
+    required: false
+    description: Field SpecialInstrs from QotSoMasterHdr
+  ent_invoice:
+    display: Entinvoice
+    type: string
+    required: false
+    description: Field EntInvoice from QotSoMasterHdr
+  ent_invoice_date:
+    display: Entinvoicedate
+    type: date
+    required: false
+    description: Field EntInvoiceDate from QotSoMasterHdr
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from QotSoMasterHdr
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from QotSoMasterHdr
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from QotSoMasterHdr
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from QotSoMasterHdr
+  tax_exempt_flag:
+    display: Taxexemptflag
+    type: string
+    required: false
+    description: Field TaxExemptFlag from QotSoMasterHdr
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from QotSoMasterHdr
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from QotSoMasterHdr
+  tax_exempt_override:
+    display: Taxexemptoverride
+    type: string
+    required: false
+    description: Field TaxExemptOverride from QotSoMasterHdr
+  cash_credit:
+    display: Cashcredit
+    type: string
+    required: false
+    description: Field CashCredit from QotSoMasterHdr
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from QotSoMasterHdr
+  last_invoice:
+    display: Lastinvoice
+    type: string
+    required: false
+    description: Field LastInvoice from QotSoMasterHdr
+  scheduled_ord_flag:
+    display: Scheduledordflag
+    type: string
+    required: false
+    description: Field ScheduledOrdFlag from QotSoMasterHdr
+  gst_exempt_flag:
+    display: Gstexemptflag
+    type: string
+    required: false
+    description: Field GstExemptFlag from QotSoMasterHdr
+  gst_exempt_num:
+    display: Gstexemptnum
+    type: string
+    required: false
+    description: Field GstExemptNum from QotSoMasterHdr
+  gst_exempt_o_ride:
+    display: Gstexemptoride
+    type: string
+    required: false
+    description: Field GstExemptORide from QotSoMasterHdr
+  ibt_flag:
+    display: Ibtflag
+    type: string
+    required: false
+    description: Field IbtFlag from QotSoMasterHdr
+  ord_acknw_printed:
+    display: Ordacknwprinted
+    type: string
+    required: false
+    description: Field OrdAcknwPrinted from QotSoMasterHdr
+  det_cust_mvmt_reqd:
+    display: Detcustmvmtreqd
+    type: string
+    required: false
+    description: Field DetCustMvmtReqd from QotSoMasterHdr
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from QotSoMasterHdr
+  fix_exchange_rate:
+    display: Fixexchangerate
+    type: string
+    required: false
+    description: Field FixExchangeRate from QotSoMasterHdr
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from QotSoMasterHdr
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from QotSoMasterHdr
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from QotSoMasterHdr
+  gst_deduction:
+    display: Gstdeduction
+    type: string
+    required: false
+    description: Field GstDeduction from QotSoMasterHdr
+  order_status_fail:
+    display: Orderstatusfail
+    type: string
+    required: false
+    description: Field OrderStatusFail from QotSoMasterHdr
+  consolidated_order:
+    display: Consolidatedorder
+    type: string
+    required: false
+    description: Field ConsolidatedOrder from QotSoMasterHdr
+  credited_inv_date:
+    display: Creditedinvdate
+    type: date
+    required: false
+    description: Field CreditedInvDate from QotSoMasterHdr
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from QotSoMasterHdr
+  serialised_flag:
+    display: Serialisedflag
+    type: string
+    required: false
+    description: Field SerialisedFlag from QotSoMasterHdr
+  counter_sales_flag:
+    display: Countersalesflag
+    type: string
+    required: false
+    description: Field CounterSalesFlag from QotSoMasterHdr
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from QotSoMasterHdr
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from QotSoMasterHdr
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from QotSoMasterHdr
+  transport_mode:
+    display: Transportmode
+    type: decimal
+    required: false
+    description: Field TransportMode from QotSoMasterHdr
+  process_flag:
+    display: Processflag
+    type: decimal
+    required: false
+    description: Field ProcessFlag from QotSoMasterHdr
+  jobs_exist_flag:
+    display: Jobsexistflag
+    type: string
+    required: false
+    description: Field JobsExistFlag from QotSoMasterHdr
+  alternate_key:
+    display: Alternatekey
+    type: string
+    required: false
+    description: Field AlternateKey from QotSoMasterHdr
+  last_operator:
+    display: Lastoperator
+    type: string
+    required: false
+    description: Field LastOperator from QotSoMasterHdr
+  hierarchy_flag:
+    display: Hierarchyflag
+    type: string
+    required: false
+    description: Field HierarchyFlag from QotSoMasterHdr
+  deposit_flag:
+    display: Depositflag
+    type: string
+    required: false
+    description: Field DepositFlag from QotSoMasterHdr
+  edi_source:
+    display: Edisource
+    type: string
+    required: false
+    description: Field EdiSource from QotSoMasterHdr
+  delivery_note:
+    display: Deliverynote
+    type: string
+    required: false
+    description: Field DeliveryNote from QotSoMasterHdr
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from QotSoMasterHdr
+  line_comp:
+    display: Linecomp
+    type: string
+    required: false
+    description: Field LineComp from QotSoMasterHdr
+  capture_hh:
+    display: Capturehh
+    type: decimal
+    required: false
+    description: Field CaptureHh from QotSoMasterHdr
+  capture_mm:
+    display: Capturemm
+    type: decimal
+    required: false
+    description: Field CaptureMm from QotSoMasterHdr
+  last_del_note:
+    display: Lastdelnote
+    type: date
+    required: false
+    description: Field LastDelNote from QotSoMasterHdr
+  time_del_prted_hh:
+    display: Timedelprtedhh
+    type: decimal
+    required: false
+    description: Field TimeDelPrtedHh from QotSoMasterHdr
+  time_del_prted_mm:
+    display: Timedelprtedmm
+    type: decimal
+    required: false
+    description: Field TimeDelPrtedMm from QotSoMasterHdr
+  time_inv_prted_hh:
+    display: Timeinvprtedhh
+    type: decimal
+    required: false
+    description: Field TimeInvPrtedHh from QotSoMasterHdr
+  time_inv_prted_mm:
+    display: Timeinvprtedmm
+    type: decimal
+    required: false
+    description: Field TimeInvPrtedMm from QotSoMasterHdr
+  date_last_inv_prt:
+    display: Datelastinvprt
+    type: date
+    required: false
+    description: Field DateLastInvPrt from QotSoMasterHdr
+  salesperson2:
+    display: Salesperson2
+    type: string
+    required: false
+    description: Field Salesperson2 from QotSoMasterHdr
+  salesperson3:
+    display: Salesperson3
+    type: string
+    required: false
+    description: Field Salesperson3 from QotSoMasterHdr
+  salesperson4:
+    display: Salesperson4
+    type: string
+    required: false
+    description: Field Salesperson4 from QotSoMasterHdr
+  commission_sales1:
+    display: Commissionsales1
+    type: decimal
+    required: false
+    description: Field CommissionSales1 from QotSoMasterHdr
+  commission_sales2:
+    display: Commissionsales2
+    type: decimal
+    required: false
+    description: Field CommissionSales2 from QotSoMasterHdr
+  commission_sales3:
+    display: Commissionsales3
+    type: decimal
+    required: false
+    description: Field CommissionSales3 from QotSoMasterHdr
+  commission_sales4:
+    display: Commissionsales4
+    type: decimal
+    required: false
+    description: Field CommissionSales4 from QotSoMasterHdr
+  time_taken_to_add:
+    display: Timetakentoadd
+    type: decimal
+    required: false
+    description: Field TimeTakenToAdd from QotSoMasterHdr
+  time_taken_to_chg:
+    display: Timetakentochg
+    type: decimal
+    required: false
+    description: Field TimeTakenToChg from QotSoMasterHdr
+  fax_inv_in_batch:
+    display: Faxinvinbatch
+    type: string
+    required: false
+    description: Field FaxInvInBatch from QotSoMasterHdr
+  inter_wh_sale:
+    display: Interwhsale
+    type: string
+    required: false
+    description: Field InterWhSale from QotSoMasterHdr
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from QotSoMasterHdr
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from QotSoMasterHdr
+  dispatches_made:
+    display: Dispatchesmade
+    type: string
+    required: false
+    description: Field DispatchesMade from QotSoMasterHdr
+  live_disp_exist:
+    display: Livedispexist
+    type: string
+    required: false
+    description: Field LiveDispExist from QotSoMasterHdr
+  num_dispatches:
+    display: Numdispatches
+    type: decimal
+    required: false
+    description: Field NumDispatches from QotSoMasterHdr
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from QotSoMasterHdr
+  ship_address1:
+    display: Shipaddress1
+    type: string
+    required: false
+    description: Field ShipAddress1 from QotSoMasterHdr
+  ship_address2:
+    display: Shipaddress2
+    type: string
+    required: false
+    description: Field ShipAddress2 from QotSoMasterHdr
+  ship_address3:
+    display: Shipaddress3
+    type: string
+    required: false
+    description: Field ShipAddress3 from QotSoMasterHdr
+  ship_address3_loc:
+    display: Shipaddress3Loc
+    type: string
+    required: false
+    description: Field ShipAddress3Loc from QotSoMasterHdr
+  ship_address4:
+    display: Shipaddress4
+    type: string
+    required: false
+    description: Field ShipAddress4 from QotSoMasterHdr
+  ship_address5:
+    display: Shipaddress5
+    type: string
+    required: false
+    description: Field ShipAddress5 from QotSoMasterHdr
+  ship_postal_code:
+    display: Shippostalcode
+    type: string
+    required: false
+    description: Field ShipPostalCode from QotSoMasterHdr
+  ship_to_gps_lat:
+    display: Shiptogpslat
+    type: decimal
+    required: false
+    description: Field ShipToGpsLat from QotSoMasterHdr
+  ship_to_gps_long:
+    display: Shiptogpslong
+    type: decimal
+    required: false
+    description: Field ShipToGpsLong from QotSoMasterHdr
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from QotSoMasterHdr
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from QotSoMasterHdr
+  extended_tax_code:
+    display: Extendedtaxcode
+    type: string
+    required: false
+    description: Field ExtendedTaxCode from QotSoMasterHdr
+  multi_ship_code:
+    display: Multishipcode
+    type: string
+    required: false
+    description: Field MultiShipCode from QotSoMasterHdr
+  web_created:
+    display: Webcreated
+    type: string
+    required: false
+    description: Field WebCreated from QotSoMasterHdr
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from QotSoMasterHdr
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from QotSoMasterHdr
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from QotSoMasterHdr
+  non_merch_flag:
+    display: Nonmerchflag
+    type: string
+    required: false
+    description: Field NonMerchFlag from QotSoMasterHdr
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from QotSoMasterHdr
+  user1:
+    display: User1
+    type: string
+    required: false
+    description: Field User1 from QotSoMasterHdr
+  company_tax_no:
+    display: Companytaxno
+    type: string
+    required: false
+    description: Field CompanyTaxNo from QotSoMasterHdr
+  tpm_pickup_flag:
+    display: Tpmpickupflag
+    type: string
+    required: false
+    description: Field TpmPickupFlag from QotSoMasterHdr
+  tpm_evaluated_flag:
+    display: Tpmevaluatedflag
+    type: string
+    required: false
+    description: Field TpmEvaluatedFlag from QotSoMasterHdr
+  standard_comment:
+    display: Standardcomment
+    type: string
+    required: false
+    description: Field StandardComment from QotSoMasterHdr
+  detail_status:
+    display: Detailstatus
+    type: string
+    required: false
+    description: Field DetailStatus from QotSoMasterHdr
+  sales_order_source:
+    display: Salesordersource
+    type: string
+    required: false
+    description: Field SalesOrderSource from QotSoMasterHdr
+  sales_order_src_desc:
+    display: Salesordersrcdesc
+    type: string
+    required: false
+    description: Field SalesOrderSrcDesc from QotSoMasterHdr
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from QotSoMasterHdr
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from QotSoMasterHdr
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from QotSoMasterHdr
+  quick_quote:
+    display: Quickquote
+    type: string
+    required: false
+    description: Field QuickQuote from QotSoMasterHdr
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from QotSoMasterHdr
+  port_dispatch:
+    display: Portdispatch
+    type: string
+    required: false
+    description: Field PortDispatch from QotSoMasterHdr
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from QotSoMasterHdr
+  price_group_level:
+    display: Pricegrouplevel
+    type: string
+    required: false
+    description: Field PriceGroupLevel from QotSoMasterHdr
+  last_op_inv_prt:
+    display: Lastopinvprt
+    type: string
+    required: false
+    description: Field LastOpInvPrt from QotSoMasterHdr
+  dispatch_whole_so:
+    display: Dispatchwholeso
+    type: string
+    required: false
+    description: Field DispatchWholeSo from QotSoMasterHdr
+  entity_dimensions:
+    display: Entitydimensions
+    type: string
+    required: false
+    description: Field EntityDimensions from QotSoMasterHdr

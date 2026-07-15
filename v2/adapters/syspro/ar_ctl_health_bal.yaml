@@ -1,0 +1,12 @@
+concept: ar_ctl_health_bal
+table: ArCtlHealthBal
+alias: achb1
+fields:
+  run_date_time: achb1.RunDateTime
+  trx_type: achb1.TrxType
+  balance_year: achb1.BalanceYear
+  balance_month: achb1.BalanceMonth
+  trx_amount: achb1.TrxAmount
+  trx_amount_before: achb1.TrxAmountBefore
+  trx_amount_after: achb1.TrxAmountAfter
+  message: achb1.Message

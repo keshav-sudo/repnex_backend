@@ -1,0 +1,12 @@
+concept: sal_gst_can_sum
+table: SalGstCanSum
+alias: sgcs
+fields:
+  gl_year: sgcs.GlYear
+  gl_month: sgcs.GlMonth
+  register: sgcs.Register
+  collect_exempt: sgcs.CollectExempt
+  ptd_exe_bef_reg: sgcs.PtdExeBefReg
+  ptd_tot_inv_bef_rg: sgcs.PtdTotInvBefRg
+  tot_inv_this_reg: sgcs.TotInvThisReg
+  source: sgcs.Source

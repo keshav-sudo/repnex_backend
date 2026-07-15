@@ -1,0 +1,47 @@
+concept: lynq_me__statistics_storage_key__temp_ins
+table: Lynq_ME_StatisticsStorageKey_TempIns
+alias: lmesskti
+fields:
+  id: lmesskti.ID
+  pack_key: lmesskti.PackKey
+  pack_id: lmesskti.PackID
+  ins_id: lmesskti.InsID
+  ad: lmesskti.AD
+  d0: lmesskti.D0
+  d1: lmesskti.D1
+  d2: lmesskti.D2
+  d3: lmesskti.D3
+  s00: lmesskti.S00
+  s01: lmesskti.S01
+  s02: lmesskti.S02
+  s03: lmesskti.S03
+  s04: lmesskti.S04
+  s05: lmesskti.S05
+  s06: lmesskti.S06
+  s07: lmesskti.S07
+  s08: lmesskti.S08
+  s09: lmesskti.S09
+  s10: lmesskti.S10
+  s11: lmesskti.S11
+  s12: lmesskti.S12
+  s13: lmesskti.S13
+  s14: lmesskti.S14
+  s15: lmesskti.S15
+  s16: lmesskti.S16
+  s17: lmesskti.S17
+  s18: lmesskti.S18
+  s19: lmesskti.S19
+  s20: lmesskti.S20
+  s21: lmesskti.S21
+  s22: lmesskti.S22
+  s23: lmesskti.S23
+  nd0: lmesskti.ND0
+  nd1: lmesskti.ND1
+  nd2: lmesskti.ND2
+  nd3: lmesskti.ND3
+  nl0: lmesskti.NL0
+  nl1: lmesskti.NL1
+  nl2: lmesskti.NL2
+  nl3: lmesskti.NL3
+  nl4: lmesskti.NL4
+  nl5: lmesskti.NL5

@@ -1,0 +1,143 @@
+concept: csh_flow_inclusion
+display_name: CshFlowInclusion
+module: cashbook
+description: Auto-generated representation of the physical table CshFlowInclusion.
+synonyms:
+- cshflowinclusion
+- csh flow inclusion
+header_attributes:
+  model:
+    display: Model
+    type: string
+    required: false
+    description: Field Model from CshFlowInclusion
+  collector:
+    display: Collector
+    type: decimal
+    required: false
+    description: Field Collector from CshFlowInclusion
+  inclusion:
+    display: Inclusion
+    type: decimal
+    required: false
+    description: Field Inclusion from CshFlowInclusion
+  inclusion_type:
+    display: Inclusiontype
+    type: string
+    required: false
+    description: Field InclusionType from CshFlowInclusion
+  prompt:
+    display: Prompt
+    type: string
+    required: false
+    description: Field Prompt from CshFlowInclusion
+  currency_all_sgl:
+    display: Currencyallsgl
+    type: string
+    required: false
+    description: Field CurrencyAllSgl from CshFlowInclusion
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from CshFlowInclusion
+  bank_all_sgl:
+    display: Bankallsgl
+    type: string
+    required: false
+    description: Field BankAllSgl from CshFlowInclusion
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshFlowInclusion
+  gl_code_all_sgl:
+    display: Glcodeallsgl
+    type: string
+    required: false
+    description: Field GlCodeAllSgl from CshFlowInclusion
+  from_gl_code:
+    display: Fromglcode
+    type: string
+    required: false
+    description: Field FromGlCode from CshFlowInclusion
+  to_gl_code:
+    display: Toglcode
+    type: string
+    required: false
+    description: Field ToGlCode from CshFlowInclusion
+  gl_group_all_sgl:
+    display: Glgroupallsgl
+    type: string
+    required: false
+    description: Field GlGroupAllSgl from CshFlowInclusion
+  gl_group:
+    display: Glgroup
+    type: string
+    required: false
+    description: Field GlGroup from CshFlowInclusion
+  gl_asset:
+    display: Glasset
+    type: string
+    required: false
+    description: Field GlAsset from CshFlowInclusion
+  gl_liability:
+    display: Glliability
+    type: string
+    required: false
+    description: Field GlLiability from CshFlowInclusion
+  gl_revenue:
+    display: Glrevenue
+    type: string
+    required: false
+    description: Field GlRevenue from CshFlowInclusion
+  gl_expense:
+    display: Glexpense
+    type: string
+    required: false
+    description: Field GlExpense from CshFlowInclusion
+  gl_capital:
+    display: Glcapital
+    type: string
+    required: false
+    description: Field GlCapital from CshFlowInclusion
+  branch_all_sgl:
+    display: Branchallsgl
+    type: string
+    required: false
+    description: Field BranchAllSgl from CshFlowInclusion
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from CshFlowInclusion
+  area_all_sgl:
+    display: Areaallsgl
+    type: string
+    required: false
+    description: Field AreaAllSgl from CshFlowInclusion
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from CshFlowInclusion
+  ap_discount:
+    display: Apdiscount
+    type: string
+    required: false
+    description: Field ApDiscount from CshFlowInclusion
+  from_period:
+    display: Fromperiod
+    type: decimal
+    required: false
+    description: Field FromPeriod from CshFlowInclusion
+  to_period:
+    display: Toperiod
+    type: decimal
+    required: false
+    description: Field ToPeriod from CshFlowInclusion
+  offset_days:
+    display: Offsetdays
+    type: decimal
+    required: false
+    description: Field OffsetDays from CshFlowInclusion

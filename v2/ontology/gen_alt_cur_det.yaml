@@ -1,0 +1,148 @@
+concept: gen_alt_cur_det
+display_name: GenAltCurDet
+module: general_ledger
+description: Auto-generated representation of the physical table GenAltCurDet.
+synonyms:
+- genaltcurdet
+- gen alt cur det
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from GenAltCurDet
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenAltCurDet
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenAltCurDet
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenAltCurDet
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenAltCurDet
+  gl_line:
+    display: Glline
+    type: decimal
+    required: false
+    description: Field GlLine from GenAltCurDet
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from GenAltCurDet
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from GenAltCurDet
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from GenAltCurDet
+  gl_jnl_date:
+    display: Gljnldate
+    type: date
+    required: false
+    description: Field GlJnlDate from GenAltCurDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from GenAltCurDet
+  entry_value:
+    display: Entryvalue
+    type: decimal
+    required: false
+    description: Field EntryValue from GenAltCurDet
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from GenAltCurDet
+  provision:
+    display: Provision
+    type: string
+    required: false
+    description: Field Provision from GenAltCurDet
+  amended:
+    display: Amended
+    type: string
+    required: false
+    description: Field Amended from GenAltCurDet
+  origin:
+    display: Origin
+    type: string
+    required: false
+    description: Field Origin from GenAltCurDet
+  origin_zoom_key:
+    display: Originzoomkey
+    type: string
+    required: false
+    description: Field OriginZoomKey from GenAltCurDet
+  entries_group:
+    display: Entriesgroup
+    type: decimal
+    required: false
+    description: Field EntriesGroup from GenAltCurDet
+  base_cur_value:
+    display: Basecurvalue
+    type: decimal
+    required: false
+    description: Field BaseCurValue from GenAltCurDet
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from GenAltCurDet
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from GenAltCurDet
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from GenAltCurDet
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from GenAltCurDet
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from GenAltCurDet
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from GenAltCurDet
+  post_value:
+    display: Postvalue
+    type: decimal
+    required: false
+    description: Field PostValue from GenAltCurDet
+  prior_rate:
+    display: Priorrate
+    type: decimal
+    required: false
+    description: Field PriorRate from GenAltCurDet
+  prior_value:
+    display: Priorvalue
+    type: decimal
+    required: false
+    description: Field PriorValue from GenAltCurDet

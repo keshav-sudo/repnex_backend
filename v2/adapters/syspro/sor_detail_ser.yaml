@@ -1,0 +1,14 @@
+concept: sor_detail_ser
+table: SorDetailSer
+alias: sds
+fields:
+  sales_order: sds.SalesOrder
+  sales_order_line: sds.SalesOrderLine
+  lot: sds.Lot
+  serial: sds.Serial
+  stock_qty_to_ship: sds.StockQtyToShip
+  qty_this_session: sds.QtyThisSession
+  new_expiry_date: sds.NewExpiryDate
+  new_scrap_date: sds.NewScrapDate
+  qty_reserved: sds.QtyReserved
+  bin: sds.Bin

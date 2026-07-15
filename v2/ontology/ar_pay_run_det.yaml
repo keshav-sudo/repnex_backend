@@ -1,0 +1,238 @@
+concept: ar_pay_run_det
+display_name: ArPayRunDet
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArPayRunDet.
+synonyms:
+- arpayrundet
+- ar pay run det
+header_attributes:
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ArPayRunDet
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArPayRunDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArPayRunDet
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArPayRunDet
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from ArPayRunDet
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArPayRunDet
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArPayRunDet
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArPayRunDet
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ArPayRunDet
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from ArPayRunDet
+  no_of_age_days:
+    display: Noofagedays
+    type: decimal
+    required: false
+    description: Field NoOfAgeDays from ArPayRunDet
+  allow_discount:
+    display: Allowdiscount
+    type: string
+    required: false
+    description: Field AllowDiscount from ArPayRunDet
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ArPayRunDet
+  tax_status:
+    display: Taxstatus
+    type: string
+    required: false
+    description: Field TaxStatus from ArPayRunDet
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ArPayRunDet
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from ArPayRunDet
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from ArPayRunDet
+  original_inv_value:
+    display: Originalinvvalue
+    type: decimal
+    required: false
+    description: Field OriginalInvValue from ArPayRunDet
+  invoice_bal:
+    display: Invoicebal
+    type: decimal
+    required: false
+    description: Field InvoiceBal from ArPayRunDet
+  invoice_out:
+    display: Invoiceout
+    type: decimal
+    required: false
+    description: Field InvoiceOut from ArPayRunDet
+  orig_disc_value:
+    display: Origdiscvalue
+    type: decimal
+    required: false
+    description: Field OrigDiscValue from ArPayRunDet
+  invoice_selected:
+    display: Invoiceselected
+    type: string
+    required: false
+    description: Field InvoiceSelected from ArPayRunDet
+  gross_pay_value:
+    display: Grosspayvalue
+    type: decimal
+    required: false
+    description: Field GrossPayValue from ArPayRunDet
+  disc_pay_value:
+    display: Discpayvalue
+    type: decimal
+    required: false
+    description: Field DiscPayValue from ArPayRunDet
+  settlement_tax_value:
+    display: Settlementtaxvalue
+    type: decimal
+    required: false
+    description: Field SettlementTaxValue from ArPayRunDet
+  with_tax_value:
+    display: Withtaxvalue
+    type: decimal
+    required: false
+    description: Field WithTaxValue from ArPayRunDet
+  net_pay_value:
+    display: Netpayvalue
+    type: decimal
+    required: false
+    description: Field NetPayValue from ArPayRunDet
+  tpm_value:
+    display: Tpmvalue
+    type: decimal
+    required: false
+    description: Field TpmValue from ArPayRunDet
+  pay_conv_rate:
+    display: Payconvrate
+    type: decimal
+    required: false
+    description: Field PayConvRate from ArPayRunDet
+  reference_po_number:
+    display: Referenceponumber
+    type: string
+    required: false
+    description: Field ReferencePoNumber from ArPayRunDet
+  invoice_notation:
+    display: Invoicenotation
+    type: string
+    required: false
+    description: Field InvoiceNotation from ArPayRunDet
+  retention_inv:
+    display: Retentioninv
+    type: string
+    required: false
+    description: Field RetentionInv from ArPayRunDet
+  reestab_type:
+    display: Reestabtype
+    type: string
+    required: false
+    description: Field ReestabType from ArPayRunDet
+  bank_payment_type:
+    display: Bankpaymenttype
+    type: string
+    required: false
+    description: Field BankPaymentType from ArPayRunDet
+  proj_gross_value:
+    display: Projgrossvalue
+    type: decimal
+    required: false
+    description: Field ProjGrossValue from ArPayRunDet
+  proj_disc_value:
+    display: Projdiscvalue
+    type: decimal
+    required: false
+    description: Field ProjDiscValue from ArPayRunDet
+  proj_tax_value:
+    display: Projtaxvalue
+    type: decimal
+    required: false
+    description: Field ProjTaxValue from ArPayRunDet
+  orig_tax_on_disc:
+    display: Origtaxondisc
+    type: decimal
+    required: false
+    description: Field OrigTaxOnDisc from ArPayRunDet
+  orig_taxable_amt:
+    display: Origtaxableamt
+    type: decimal
+    required: false
+    description: Field OrigTaxableAmt from ArPayRunDet
+  dr_cr_invoice_value:
+    display: Drcrinvoicevalue
+    type: decimal
+    required: false
+    description: Field DrCrInvoiceValue from ArPayRunDet
+  dr_cr_disc_value:
+    display: Drcrdiscvalue
+    type: decimal
+    required: false
+    description: Field DrCrDiscValue from ArPayRunDet
+  dr_cr_tax_portion:
+    display: Drcrtaxportion
+    type: decimal
+    required: false
+    description: Field DrCrTaxPortion from ArPayRunDet
+  orig_taxable_disc:
+    display: Origtaxabledisc
+    type: decimal
+    required: false
+    description: Field OrigTaxableDisc from ArPayRunDet
+  dr_cr_tax_disc_portion:
+    display: Drcrtaxdiscportion
+    type: decimal
+    required: false
+    description: Field DrCrTaxDiscPortion from ArPayRunDet
+  orig_tax_portion:
+    display: Origtaxportion
+    type: decimal
+    required: false
+    description: Field OrigTaxPortion from ArPayRunDet
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from ArPayRunDet

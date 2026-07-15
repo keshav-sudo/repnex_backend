@@ -1,0 +1,7 @@
+concept: inv_uom
+table: InvUom
+alias: iu
+fields:
+  uom_code: iu.UomCode
+  description: iu.Description
+  uom_rank: iu.UomRank

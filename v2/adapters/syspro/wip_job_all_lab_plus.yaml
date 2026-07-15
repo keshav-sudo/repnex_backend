@@ -1,0 +1,9 @@
+concept: wip_job_all_lab_plus
+table: WipJobAllLab+
+alias: wjal1
+fields:
+  job: wjal1.Job
+  operation: wjal1.Operation
+  color: wjal1.Color
+  max_operation_span: wjal1.MaxOperationSpan
+  operation_slack: wjal1.OperationSlack

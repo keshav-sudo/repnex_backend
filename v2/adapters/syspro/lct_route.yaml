@@ -1,0 +1,9 @@
+concept: lct_route
+table: LctRoute
+alias: lr
+fields:
+  route: lr.Route
+  description: lr.Description
+  days_before_eta: lr.DaysBeforeEta
+  demurrage_days: lr.DemurrageDays
+  days_after_eta: lr.DaysAfterEta

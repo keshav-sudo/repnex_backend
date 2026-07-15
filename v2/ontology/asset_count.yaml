@@ -1,0 +1,68 @@
+concept: asset_count
+display_name: AssetCount
+module: assets
+description: Auto-generated representation of the physical table AssetCount.
+synonyms:
+- assetcount
+- asset count
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetCount
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from AssetCount
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetCount
+  asset_id:
+    display: Assetid
+    type: string
+    required: false
+    description: Field AssetId from AssetCount
+  saved_qty:
+    display: Savedqty
+    type: decimal
+    required: false
+    description: Field SavedQty from AssetCount
+  saved_branch:
+    display: Savedbranch
+    type: string
+    required: false
+    description: Field SavedBranch from AssetCount
+  saved_location:
+    display: Savedlocation
+    type: string
+    required: false
+    description: Field SavedLocation from AssetCount
+  saved_asset_id:
+    display: Savedassetid
+    type: string
+    required: false
+    description: Field SavedAssetId from AssetCount
+  qty_captured:
+    display: Qtycaptured
+    type: decimal
+    required: false
+    description: Field QtyCaptured from AssetCount
+  qty_verified:
+    display: Qtyverified
+    type: decimal
+    required: false
+    description: Field QtyVerified from AssetCount
+  saved_date:
+    display: Saveddate
+    type: date
+    required: false
+    description: Field SavedDate from AssetCount
+  conclusion:
+    display: Conclusion
+    type: string
+    required: false
+    description: Field Conclusion from AssetCount

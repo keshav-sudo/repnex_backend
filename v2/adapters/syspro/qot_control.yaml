@@ -1,0 +1,14 @@
+concept: qot_control
+table: QotControl
+alias: qc
+fields:
+  ctl_flag: qc.CtlFlag
+  next_quote: qc.NextQuote
+  next_dummy_so: qc.NextDummySo
+  offer_desc1: qc.OfferDesc1
+  offer_desc2: qc.OfferDesc2
+  offer_desc3: qc.OfferDesc3
+  offer_desc4: qc.OfferDesc4
+  offer_desc5: qc.OfferDesc5
+  offer_desc6: qc.OfferDesc6
+  next_estimate: qc.NextEstimate

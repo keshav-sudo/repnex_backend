@@ -1,0 +1,15 @@
+concept: prj_retention_header
+table: PrjRetentionHeader
+alias: prh
+fields:
+  contract: prh.Contract
+  job: prh.Job
+  retention_type: prh.RetentionType
+  retention_percent: prh.RetentionPercent
+  retention_value: prh.RetentionValue
+  retention_remaining: prh.RetentionRemaining
+  product_class: prh.ProductClass
+  retention_customer: prh.RetentionCustomer
+  customer: prh.Customer
+  tax_code: prh.TaxCode
+  gst_tax_code: prh.GstTaxCode

@@ -1,0 +1,23 @@
+concept: adm_status_applied
+display_name: AdmStatusApplied
+module: administration
+description: Auto-generated representation of the physical table AdmStatusApplied.
+synonyms:
+- admstatusapplied
+- adm status applied
+header_attributes:
+  status_entity:
+    display: Statusentity
+    type: string
+    required: false
+    description: Field StatusEntity from AdmStatusApplied
+  adm_key_field:
+    display: Admkeyfield
+    type: string
+    required: false
+    description: Field AdmKeyField from AdmStatusApplied
+  status_code:
+    display: Statuscode
+    type: string
+    required: false
+    description: Field StatusCode from AdmStatusApplied

@@ -1,0 +1,7 @@
+concept: ap_invoice_reg_po
+table: ApInvoiceRegPo
+alias: airp
+fields:
+  supplier: airp.Supplier
+  invoice: airp.Invoice
+  purchase_order: airp.PurchaseOrder

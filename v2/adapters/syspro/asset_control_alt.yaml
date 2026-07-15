@@ -1,0 +1,27 @@
+concept: asset_control_alt
+table: AssetControlAlt
+alias: aca
+fields:
+  ctl_flag: aca.CtlFlag
+  alt_code: aca.AltCode
+  depn_value_ytd: aca.DepnValueYtd
+  depn_reval_ytd: aca.DepnRevalYtd
+  depn_ici_ytd: aca.DepnIciYtd
+  depn_ico_ytd: aca.DepnIcoYtd
+  depn_adds_ytd: aca.DepnAddsYtd
+  depn_disps_ytd: aca.DepnDispsYtd
+  depn_count_ytd: aca.DepnCountYtd
+  depn_split_ytd: aca.DepnSplitYtd
+  reval_ytd: aca.RevalYtd
+  ici_ytd: aca.IciYtd
+  ico_ytd: aca.IcoYtd
+  additions_ytd: aca.AdditionsYtd
+  disposals_ytd: aca.DisposalsYtd
+  disposal_cost: aca.DisposalCost
+  sold_value: aca.SoldValue
+  count_ytd: aca.CountYtd
+  split_ytd: aca.SplitYtd
+  change_ytd: aca.ChangeYtd
+  open_value: aca.OpenValue
+  open_depn_value: aca.OpenDepnValue
+  open_depn_reval_value: aca.OpenDepnRevalValue

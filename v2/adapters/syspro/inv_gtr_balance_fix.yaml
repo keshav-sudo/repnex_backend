@@ -1,0 +1,12 @@
+concept: inv_gtr_balance_fix
+table: InvGtrBalanceFix
+alias: igbf
+fields:
+  run_date_time: igbf.RunDateTime
+  stock_code: igbf.StockCode
+  warehouse: igbf.Warehouse
+  active_gtr: igbf.ActiveGtr
+  old_transit_val: igbf.OldTransitVal
+  new_transit_val: igbf.NewTransitVal
+  old_transit_qty: igbf.OldTransitQty
+  new_transit_qty: igbf.NewTransitQty

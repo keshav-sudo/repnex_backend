@@ -1,0 +1,10 @@
+concept: ap_inter_co_chk_reg
+table: ApInterCoChkReg
+alias: aiccr
+fields:
+  secondary_company: aiccr.SecondaryCompany
+  ch_register: aiccr.ChRegister
+  primary_company: aiccr.PrimaryCompany
+  primary_ch_register: aiccr.PrimaryChRegister
+  primary_pay_number: aiccr.PrimaryPayNumber
+  check_no: aiccr.CheckNo

@@ -1,0 +1,11 @@
+concept: whm_outer_header
+table: WhmOuterHeader
+alias: woh
+fields:
+  outer_number: woh.OuterNumber
+  outer_status: woh.OuterStatus
+  created_date: woh.CreatedDate
+  dispatch_date: woh.DispatchDate
+  created_by: woh.CreatedBy
+  dispatched_by: woh.DispatchedBy
+  customer: woh.Customer

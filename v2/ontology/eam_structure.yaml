@@ -1,0 +1,138 @@
+concept: eam_structure
+display_name: EamStructure
+module: other
+description: Auto-generated representation of the physical table EamStructure.
+synonyms:
+- eamstructure
+- eam structure
+header_attributes:
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from EamStructure
+  maint_service_type:
+    display: Maintservicetype
+    type: string
+    required: false
+    description: Field MaintServiceType from EamStructure
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from EamStructure
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from EamStructure
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from EamStructure
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EamStructure
+  com_revision:
+    display: Comrevision
+    type: string
+    required: false
+    description: Field ComRevision from EamStructure
+  com_release:
+    display: Comrelease
+    type: string
+    required: false
+    description: Field ComRelease from EamStructure
+  ecc_consumption:
+    display: Eccconsumption
+    type: string
+    required: false
+    description: Field EccConsumption from EamStructure
+  op_offset_flag:
+    display: Opoffsetflag
+    type: string
+    required: false
+    description: Field OpOffsetFlag from EamStructure
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from EamStructure
+  qty_per:
+    display: Qtyper
+    type: decimal
+    required: false
+    description: Field QtyPer from EamStructure
+  qty_per_ent:
+    display: Qtyperent
+    type: decimal
+    required: false
+    description: Field QtyPerEnt from EamStructure
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from EamStructure
+  kit_issue_flag:
+    display: Kitissueflag
+    type: string
+    required: false
+    description: Field KitIssueFlag from EamStructure
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from EamStructure
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from EamStructure
+  non_stock_com:
+    display: Nonstockcom
+    type: string
+    required: false
+    description: Field NonStockCom from EamStructure
+  non_stk_cost:
+    display: Nonstkcost
+    type: decimal
+    required: false
+    description: Field NonStkCost from EamStructure
+  max_decimals:
+    display: Maxdecimals
+    type: decimal
+    required: false
+    description: Field MaxDecimals from EamStructure
+  unit_of_measure:
+    display: Unitofmeasure
+    type: string
+    required: false
+    description: Field UnitOfMeasure from EamStructure
+  reason_for_change:
+    display: Reasonforchange
+    type: string
+    required: false
+    description: Field ReasonForChange from EamStructure
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from EamStructure
+  scrap_quantity_ent:
+    display: Scrapquantityent
+    type: decimal
+    required: false
+    description: Field ScrapQuantityEnt from EamStructure
+  scrap_percentage:
+    display: Scrappercentage
+    type: decimal
+    required: false
+    description: Field ScrapPercentage from EamStructure
+  incl_scrap_flag:
+    display: Inclscrapflag
+    type: string
+    required: false
+    description: Field InclScrapFlag from EamStructure

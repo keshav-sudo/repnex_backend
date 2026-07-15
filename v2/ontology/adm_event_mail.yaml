@@ -1,0 +1,38 @@
+concept: adm_event_mail
+display_name: AdmEventMail
+module: administration
+description: Auto-generated representation of the physical table AdmEventMail.
+synonyms:
+- admeventmail
+- adm event mail
+header_attributes:
+  event_module:
+    display: Eventmodule
+    type: string
+    required: false
+    description: Field EventModule from AdmEventMail
+  event_code:
+    display: Eventcode
+    type: decimal
+    required: false
+    description: Field EventCode from AdmEventMail
+  event_name:
+    display: Eventname
+    type: string
+    required: false
+    description: Field EventName from AdmEventMail
+  event_line:
+    display: Eventline
+    type: decimal
+    required: false
+    description: Field EventLine from AdmEventMail
+  event_expression:
+    display: Eventexpression
+    type: string
+    required: false
+    description: Field EventExpression from AdmEventMail
+  mail_users:
+    display: Mailusers
+    type: string
+    required: false
+    description: Field MailUsers from AdmEventMail

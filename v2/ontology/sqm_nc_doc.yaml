@@ -1,0 +1,33 @@
+concept: sqm_nc_doc
+display_name: SqmNcDoc
+module: other
+description: Auto-generated representation of the physical table SqmNcDoc.
+synonyms:
+- sqmncdoc
+- sqm nc doc
+header_attributes:
+  conform_number:
+    display: Conformnumber
+    type: string
+    required: false
+    description: Field ConformNumber from SqmNcDoc
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from SqmNcDoc
+  nc_document:
+    display: Ncdocument
+    type: string
+    required: false
+    description: Field NcDocument from SqmNcDoc
+  nc_file:
+    display: Ncfile
+    type: string
+    required: false
+    description: Field NcFile from SqmNcDoc
+  file_contents:
+    display: Filecontents
+    type: string
+    required: false
+    description: Field FileContents from SqmNcDoc

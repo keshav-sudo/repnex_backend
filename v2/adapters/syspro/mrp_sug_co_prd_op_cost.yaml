@@ -1,0 +1,8 @@
+concept: mrp_sug_co_prd_op_cost
+table: MrpSugCoPrdOpCost
+alias: mscpoc
+fields:
+  job: mscpoc.Job
+  co_product_line: mscpoc.CoProductLine
+  operation: mscpoc.Operation
+  pct_labor_cost: mscpoc.PctLaborCost

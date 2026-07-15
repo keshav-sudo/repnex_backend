@@ -1,0 +1,43 @@
+concept: srs_archive_ack
+display_name: SrsArchiveACK
+module: other
+description: Auto-generated representation of the physical table SrsArchiveACK.
+synonyms:
+- srsarchiveack
+- srs archive ack
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveACK
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveACK
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveACK
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveACK
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveACK
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveACK
+  internal_sales_order:
+    display: Internalsalesorder
+    type: string
+    required: false
+    description: Field InternalSalesOrder from SrsArchiveACK

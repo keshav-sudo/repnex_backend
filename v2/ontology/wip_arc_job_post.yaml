@@ -1,0 +1,353 @@
+concept: wip_arc_job_post
+display_name: WipArcJobPost
+module: work_in_progress
+description: Auto-generated representation of the physical table WipArcJobPost.
+synonyms:
+- wiparcjobpost
+- wip arc job post
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipArcJobPost
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from WipArcJobPost
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from WipArcJobPost
+  m_stock_code:
+    display: Mstockcode
+    type: string
+    required: false
+    description: Field MStockCode from WipArcJobPost
+  m_description:
+    display: Mdescription
+    type: string
+    required: false
+    description: Field MDescription from WipArcJobPost
+  m_qty_issued:
+    display: Mqtyissued
+    type: decimal
+    required: false
+    description: Field MQtyIssued from WipArcJobPost
+  m_uom:
+    display: Muom
+    type: string
+    required: false
+    description: Field MUom from WipArcJobPost
+  m_warehouse:
+    display: Mwarehouse
+    type: string
+    required: false
+    description: Field MWarehouse from WipArcJobPost
+  m_product_class:
+    display: Mproductclass
+    type: string
+    required: false
+    description: Field MProductClass from WipArcJobPost
+  m_unit_cost:
+    display: Munitcost
+    type: decimal
+    required: false
+    description: Field MUnitCost from WipArcJobPost
+  m_reference:
+    display: Mreference
+    type: string
+    required: false
+    description: Field MReference from WipArcJobPost
+  m_add_reference:
+    display: Maddreference
+    type: string
+    required: false
+    description: Field MAddReference from WipArcJobPost
+  m_lot:
+    display: Mlot
+    type: string
+    required: false
+    description: Field MLot from WipArcJobPost
+  m_concession_num:
+    display: Mconcessionnum
+    type: string
+    required: false
+    description: Field MConcessionNum from WipArcJobPost
+  m_version_num:
+    display: Mversionnum
+    type: string
+    required: false
+    description: Field MVersionNum from WipArcJobPost
+  m_release_level:
+    display: Mreleaselevel
+    type: string
+    required: false
+    description: Field MReleaseLevel from WipArcJobPost
+  m_apply_cost_uom:
+    display: Mapplycostuom
+    type: string
+    required: false
+    description: Field MApplyCostUom from WipArcJobPost
+  m_cost_uom:
+    display: Mcostuom
+    type: string
+    required: false
+    description: Field MCostUom from WipArcJobPost
+  m_purchase_order:
+    display: Mpurchaseorder
+    type: string
+    required: false
+    description: Field MPurchaseOrder from WipArcJobPost
+  m_bulk_issue_item:
+    display: Mbulkissueitem
+    type: string
+    required: false
+    description: Field MBulkIssueItem from WipArcJobPost
+  m_purchase_ord_lin:
+    display: Mpurchaseordlin
+    type: decimal
+    required: false
+    description: Field MPurchaseOrdLin from WipArcJobPost
+  m_allocation_line:
+    display: Mallocationline
+    type: string
+    required: false
+    description: Field MAllocationLine from WipArcJobPost
+  m_decimals:
+    display: Mdecimals
+    type: decimal
+    required: false
+    description: Field MDecimals from WipArcJobPost
+  m_sub_job:
+    display: Msubjob
+    type: string
+    required: false
+    description: Field MSubJob from WipArcJobPost
+  m_qty_issued_ent:
+    display: Mqtyissuedent
+    type: decimal
+    required: false
+    description: Field MQtyIssuedEnt from WipArcJobPost
+  m_serial:
+    display: Mserial
+    type: string
+    required: false
+    description: Field MSerial from WipArcJobPost
+  m_unit_cost_actual:
+    display: Munitcostactual
+    type: decimal
+    required: false
+    description: Field MUnitCostActual from WipArcJobPost
+  l_work_centre:
+    display: Lworkcentre
+    type: string
+    required: false
+    description: Field LWorkCentre from WipArcJobPost
+  l_work_centre_desc:
+    display: Lworkcentredesc
+    type: string
+    required: false
+    description: Field LWorkCentreDesc from WipArcJobPost
+  l_run_time_hours:
+    display: Lruntimehours
+    type: decimal
+    required: false
+    description: Field LRunTimeHours from WipArcJobPost
+  l_set_up_hours:
+    display: Lsetuphours
+    type: decimal
+    required: false
+    description: Field LSetUpHours from WipArcJobPost
+  l_startup_hours:
+    display: Lstartuphours
+    type: decimal
+    required: false
+    description: Field LStartupHours from WipArcJobPost
+  l_teardown_hours:
+    display: Lteardownhours
+    type: decimal
+    required: false
+    description: Field LTeardownHours from WipArcJobPost
+  l_operation:
+    display: Loperation
+    type: decimal
+    required: false
+    description: Field LOperation from WipArcJobPost
+  l_machine:
+    display: Lmachine
+    type: string
+    required: false
+    description: Field LMachine from WipArcJobPost
+  l_run_time_rate:
+    display: Lruntimerate
+    type: decimal
+    required: false
+    description: Field LRunTimeRate from WipArcJobPost
+  l_set_up_time_rate:
+    display: Lsetuptimerate
+    type: decimal
+    required: false
+    description: Field LSetUpTimeRate from WipArcJobPost
+  l_fixed_time_rate:
+    display: Lfixedtimerate
+    type: decimal
+    required: false
+    description: Field LFixedTimeRate from WipArcJobPost
+  l_var_time_rate:
+    display: Lvartimerate
+    type: decimal
+    required: false
+    description: Field LVarTimeRate from WipArcJobPost
+  l_start_time_rate:
+    display: Lstarttimerate
+    type: decimal
+    required: false
+    description: Field LStartTimeRate from WipArcJobPost
+  l_teardown_rate:
+    display: Lteardownrate
+    type: decimal
+    required: false
+    description: Field LTeardownRate from WipArcJobPost
+  l_subcontract_flag:
+    display: Lsubcontractflag
+    type: string
+    required: false
+    description: Field LSubcontractFlag from WipArcJobPost
+  l_employee:
+    display: Lemployee
+    type: string
+    required: false
+    description: Field LEmployee from WipArcJobPost
+  l_qty_scrapped:
+    display: Lqtyscrapped
+    type: decimal
+    required: false
+    description: Field LQtyScrapped from WipArcJobPost
+  l_qty_complete:
+    display: Lqtycomplete
+    type: decimal
+    required: false
+    description: Field LQtyComplete from WipArcJobPost
+  l_wc_rate_ind:
+    display: Lwcrateind
+    type: string
+    required: false
+    description: Field LWcRateInd from WipArcJobPost
+  l_employee_rat_ind:
+    display: Lemployeeratind
+    type: string
+    required: false
+    description: Field LEmployeeRatInd from WipArcJobPost
+  l_scrap_code:
+    display: Lscrapcode
+    type: string
+    required: false
+    description: Field LScrapCode from WipArcJobPost
+  l_non_prod_code:
+    display: Lnonprodcode
+    type: string
+    required: false
+    description: Field LNonProdCode from WipArcJobPost
+  l_reference:
+    display: Lreference
+    type: string
+    required: false
+    description: Field LReference from WipArcJobPost
+  l_add_reference:
+    display: Laddreference
+    type: string
+    required: false
+    description: Field LAddReference from WipArcJobPost
+  l_trn_time:
+    display: Ltrntime
+    type: decimal
+    required: false
+    description: Field LTrnTime from WipArcJobPost
+  l_trn_split:
+    display: Ltrnsplit
+    type: decimal
+    required: false
+    description: Field LTrnSplit from WipArcJobPost
+  l_qty_scrapped_ent:
+    display: Lqtyscrappedent
+    type: decimal
+    required: false
+    description: Field LQtyScrappedEnt from WipArcJobPost
+  l_qty_complete_ent:
+    display: Lqtycompleteent
+    type: decimal
+    required: false
+    description: Field LQtyCompleteEnt from WipArcJobPost
+  l_run_time_hours_ent:
+    display: Lruntimehoursent
+    type: decimal
+    required: false
+    description: Field LRunTimeHoursEnt from WipArcJobPost
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from WipArcJobPost
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from WipArcJobPost
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipArcJobPost
+  hierarchy1:
+    display: Hierarchy1
+    type: string
+    required: false
+    description: Field Hierarchy1 from WipArcJobPost
+  hierarchy2:
+    display: Hierarchy2
+    type: string
+    required: false
+    description: Field Hierarchy2 from WipArcJobPost
+  hierarchy3:
+    display: Hierarchy3
+    type: string
+    required: false
+    description: Field Hierarchy3 from WipArcJobPost
+  hierarchy4:
+    display: Hierarchy4
+    type: string
+    required: false
+    description: Field Hierarchy4 from WipArcJobPost
+  hierarchy5:
+    display: Hierarchy5
+    type: string
+    required: false
+    description: Field Hierarchy5 from WipArcJobPost
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from WipArcJobPost
+  post_month:
+    display: Postmonth
+    type: decimal
+    required: false
+    description: Field PostMonth from WipArcJobPost
+  source_module:
+    display: Sourcemodule
+    type: string
+    required: false
+    description: Field SourceModule from WipArcJobPost
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipArcJobPost
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from WipArcJobPost

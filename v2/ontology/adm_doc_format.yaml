@@ -1,0 +1,38 @@
+concept: adm_doc_format
+display_name: AdmDocFormat
+module: administration
+description: Auto-generated representation of the physical table AdmDocFormat.
+synonyms:
+- admdocformat
+- adm doc format
+header_attributes:
+  document_name:
+    display: Documentname
+    type: string
+    required: false
+    description: Field DocumentName from AdmDocFormat
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from AdmDocFormat
+  document_record_type:
+    display: Documentrecordtype
+    type: string
+    required: false
+    description: Field DocumentRecordType from AdmDocFormat
+  table_number:
+    display: Tablenumber
+    type: decimal
+    required: false
+    description: Field TableNumber from AdmDocFormat
+  table_row:
+    display: Tablerow
+    type: decimal
+    required: false
+    description: Field TableRow from AdmDocFormat
+  document_info:
+    display: Documentinfo
+    type: string
+    required: false
+    description: Field DocumentInfo from AdmDocFormat

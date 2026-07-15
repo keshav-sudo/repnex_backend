@@ -1,0 +1,58 @@
+concept: sqm_basis
+display_name: SqmBasis
+module: other
+description: Auto-generated representation of the physical table SqmBasis.
+synonyms:
+- sqmbasis
+- sqm basis
+header_attributes:
+  plan_type:
+    display: Plantype
+    type: string
+    required: false
+    description: Field PlanType from SqmBasis
+  inspect_level:
+    display: Inspectlevel
+    type: string
+    required: false
+    description: Field InspectLevel from SqmBasis
+  source_type:
+    display: Sourcetype
+    type: string
+    required: false
+    description: Field SourceType from SqmBasis
+  source_key:
+    display: Sourcekey
+    type: string
+    required: false
+    description: Field SourceKey from SqmBasis
+  critical_apply:
+    display: Criticalapply
+    type: string
+    required: false
+    description: Field CriticalApply from SqmBasis
+  critical_aql:
+    display: Criticalaql
+    type: decimal
+    required: false
+    description: Field CriticalAql from SqmBasis
+  major_apply:
+    display: Majorapply
+    type: string
+    required: false
+    description: Field MajorApply from SqmBasis
+  major_aql:
+    display: Majoraql
+    type: decimal
+    required: false
+    description: Field MajorAql from SqmBasis
+  minor_apply:
+    display: Minorapply
+    type: string
+    required: false
+    description: Field MinorApply from SqmBasis
+  minor_aql:
+    display: Minoraql
+    type: decimal
+    required: false
+    description: Field MinorAql from SqmBasis

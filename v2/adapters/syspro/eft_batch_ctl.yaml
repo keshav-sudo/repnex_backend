@@ -1,0 +1,20 @@
+concept: eft_batch_ctl
+table: EftBatchCtl
+alias: ebc1
+fields:
+  eft_batch: ebc1.EftBatch
+  operator: ebc1.Operator
+  action_date: ebc1.ActionDate
+  original_run_date: ebc1.OriginalRunDate
+  re_run_date: ebc1.ReRunDate
+  bank: ebc1.Bank
+  payment_value: ebc1.PaymentValue
+  currency_value: ebc1.CurrencyValue
+  post_currency: ebc1.PostCurrency
+  bank_currency: ebc1.BankCurrency
+  last_sequence: ebc1.LastSequence
+  eft_xml_location: ebc1.EftXmlLocation
+  eft_xml_file: ebc1.EftXmlFile
+  eft_pay_location: ebc1.EftPayLocation
+  eft_pay_file: ebc1.EftPayFile
+  eft_file_id: ebc1.EftFileId

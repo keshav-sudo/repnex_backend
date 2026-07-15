@@ -1,0 +1,6 @@
+concept: asset_capex_class
+table: AssetCapexClass
+alias: acc1
+fields:
+  capex_class: acc1.CapexClass
+  description: acc1.Description

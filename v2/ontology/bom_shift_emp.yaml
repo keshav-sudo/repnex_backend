@@ -1,0 +1,133 @@
+concept: bom_shift_emp
+display_name: BomShiftEmp
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomShiftEmp.
+synonyms:
+- bomshiftemp
+- bom shift emp
+header_attributes:
+  employee:
+    display: Employee
+    type: string
+    required: false
+    description: Field Employee from BomShiftEmp
+  shift_code:
+    display: Shiftcode
+    type: string
+    required: false
+    description: Field ShiftCode from BomShiftEmp
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from BomShiftEmp
+  shift_team:
+    display: Shiftteam
+    type: string
+    required: false
+    description: Field ShiftTeam from BomShiftEmp
+  complete_shift:
+    display: Completeshift
+    type: string
+    required: false
+    description: Field CompleteShift from BomShiftEmp
+  shift_det_code1:
+    display: Shiftdetcode1
+    type: string
+    required: false
+    description: Field ShiftDetCode1 from BomShiftEmp
+  shift_det_code2:
+    display: Shiftdetcode2
+    type: string
+    required: false
+    description: Field ShiftDetCode2 from BomShiftEmp
+  shift_det_code3:
+    display: Shiftdetcode3
+    type: string
+    required: false
+    description: Field ShiftDetCode3 from BomShiftEmp
+  shift_det_code4:
+    display: Shiftdetcode4
+    type: string
+    required: false
+    description: Field ShiftDetCode4 from BomShiftEmp
+  shift_det_code5:
+    display: Shiftdetcode5
+    type: string
+    required: false
+    description: Field ShiftDetCode5 from BomShiftEmp
+  shift_det_code6:
+    display: Shiftdetcode6
+    type: string
+    required: false
+    description: Field ShiftDetCode6 from BomShiftEmp
+  shift_det_code7:
+    display: Shiftdetcode7
+    type: string
+    required: false
+    description: Field ShiftDetCode7 from BomShiftEmp
+  shift_det_code8:
+    display: Shiftdetcode8
+    type: string
+    required: false
+    description: Field ShiftDetCode8 from BomShiftEmp
+  shift_det_code9:
+    display: Shiftdetcode9
+    type: string
+    required: false
+    description: Field ShiftDetCode9 from BomShiftEmp
+  shift_det_code10:
+    display: Shiftdetcode10
+    type: string
+    required: false
+    description: Field ShiftDetCode10 from BomShiftEmp
+  shift_det_code11:
+    display: Shiftdetcode11
+    type: string
+    required: false
+    description: Field ShiftDetCode11 from BomShiftEmp
+  shift_det_code12:
+    display: Shiftdetcode12
+    type: string
+    required: false
+    description: Field ShiftDetCode12 from BomShiftEmp
+  shift_det_code13:
+    display: Shiftdetcode13
+    type: string
+    required: false
+    description: Field ShiftDetCode13 from BomShiftEmp
+  shift_det_code14:
+    display: Shiftdetcode14
+    type: string
+    required: false
+    description: Field ShiftDetCode14 from BomShiftEmp
+  shift_det_code15:
+    display: Shiftdetcode15
+    type: string
+    required: false
+    description: Field ShiftDetCode15 from BomShiftEmp
+  shift_det_code16:
+    display: Shiftdetcode16
+    type: string
+    required: false
+    description: Field ShiftDetCode16 from BomShiftEmp
+  shift_det_code17:
+    display: Shiftdetcode17
+    type: string
+    required: false
+    description: Field ShiftDetCode17 from BomShiftEmp
+  shift_det_code18:
+    display: Shiftdetcode18
+    type: string
+    required: false
+    description: Field ShiftDetCode18 from BomShiftEmp
+  shift_det_code19:
+    display: Shiftdetcode19
+    type: string
+    required: false
+    description: Field ShiftDetCode19 from BomShiftEmp
+  shift_det_code20:
+    display: Shiftdetcode20
+    type: string
+    required: false
+    description: Field ShiftDetCode20 from BomShiftEmp

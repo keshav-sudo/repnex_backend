@@ -1,0 +1,33 @@
+concept: bom_route
+display_name: BomRoute
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomRoute.
+synonyms:
+- bomroute
+- bom route
+header_attributes:
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomRoute
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomRoute
+  ecc_controlled:
+    display: Ecccontrolled
+    type: string
+    required: false
+    description: Field EccControlled from BomRoute
+  jobs_allowed:
+    display: Jobsallowed
+    type: string
+    required: false
+    description: Field JobsAllowed from BomRoute
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from BomRoute

@@ -1,0 +1,438 @@
+concept: mrp_req_detail
+display_name: MrpReqDetail
+module: mrp
+description: Auto-generated representation of the physical table MrpReqDetail.
+synonyms:
+- mrpreqdetail
+- mrp req detail
+header_attributes:
+  originator:
+    display: Originator
+    type: string
+    required: false
+    description: Field Originator from MrpReqDetail
+  requisition:
+    display: Requisition
+    type: string
+    required: false
+    description: Field Requisition from MrpReqDetail
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpReqDetail
+  reqn_status:
+    display: Reqnstatus
+    type: string
+    required: false
+    description: Field ReqnStatus from MrpReqDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpReqDetail
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from MrpReqDetail
+  order_qty:
+    display: Orderqty
+    type: decimal
+    required: false
+    description: Field OrderQty from MrpReqDetail
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from MrpReqDetail
+  date_reqn_raised:
+    display: Datereqnraised
+    type: date
+    required: false
+    description: Field DateReqnRaised from MrpReqDetail
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from MrpReqDetail
+  reason_for_reqn:
+    display: Reasonforreqn
+    type: string
+    required: false
+    description: Field ReasonForReqn from MrpReqDetail
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from MrpReqDetail
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from MrpReqDetail
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from MrpReqDetail
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from MrpReqDetail
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from MrpReqDetail
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from MrpReqDetail
+  discount_code:
+    display: Discountcode
+    type: string
+    required: false
+    description: Field DiscountCode from MrpReqDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpReqDetail
+  sup_catalogue_num:
+    display: Supcataloguenum
+    type: string
+    required: false
+    description: Field SupCatalogueNum from MrpReqDetail
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpReqDetail
+  job_line:
+    display: Jobline
+    type: string
+    required: false
+    description: Field JobLine from MrpReqDetail
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from MrpReqDetail
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from MrpReqDetail
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from MrpReqDetail
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MrpReqDetail
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from MrpReqDetail
+  capex_num:
+    display: Capexnum
+    type: string
+    required: false
+    description: Field CapexNum from MrpReqDetail
+  reqn_on_hold_flag:
+    display: Reqnonholdflag
+    type: string
+    required: false
+    description: Field ReqnOnHoldFlag from MrpReqDetail
+  reason_for_hold:
+    display: Reasonforhold
+    type: string
+    required: false
+    description: Field ReasonForHold from MrpReqDetail
+  hold_user:
+    display: Holduser
+    type: string
+    required: false
+    description: Field HoldUser from MrpReqDetail
+  confirmed_po_num:
+    display: Confirmedponum
+    type: string
+    required: false
+    description: Field ConfirmedPoNum from MrpReqDetail
+  confirmed_po_line:
+    display: Confirmedpoline
+    type: decimal
+    required: false
+    description: Field ConfirmedPoLine from MrpReqDetail
+  date_po_confirmed:
+    display: Datepoconfirmed
+    type: date
+    required: false
+    description: Field DatePoConfirmed from MrpReqDetail
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from MrpReqDetail
+  current_holder:
+    display: Currentholder
+    type: string
+    required: false
+    description: Field CurrentHolder from MrpReqDetail
+  holders_route_num:
+    display: Holdersroutenum
+    type: decimal
+    required: false
+    description: Field HoldersRouteNum from MrpReqDetail
+  date_actioned:
+    display: Dateactioned
+    type: date
+    required: false
+    description: Field DateActioned from MrpReqDetail
+  receipt_flag:
+    display: Receiptflag
+    type: string
+    required: false
+    description: Field ReceiptFlag from MrpReqDetail
+  date_last_receipt:
+    display: Datelastreceipt
+    type: date
+    required: false
+    description: Field DateLastReceipt from MrpReqDetail
+  ack_receipt_flag:
+    display: Ackreceiptflag
+    type: string
+    required: false
+    description: Field AckReceiptFlag from MrpReqDetail
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MrpReqDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MrpReqDetail
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from MrpReqDetail
+  order_date:
+    display: Orderdate
+    type: date
+    required: false
+    description: Field OrderDate from MrpReqDetail
+  hier_head:
+    display: Hierhead
+    type: string
+    required: false
+    description: Field HierHead from MrpReqDetail
+  section1:
+    display: Section1
+    type: string
+    required: false
+    description: Field Section1 from MrpReqDetail
+  section2:
+    display: Section2
+    type: string
+    required: false
+    description: Field Section2 from MrpReqDetail
+  section3:
+    display: Section3
+    type: string
+    required: false
+    description: Field Section3 from MrpReqDetail
+  section4:
+    display: Section4
+    type: string
+    required: false
+    description: Field Section4 from MrpReqDetail
+  sub_operation_num:
+    display: Suboperationnum
+    type: decimal
+    required: false
+    description: Field SubOperationNum from MrpReqDetail
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from MrpReqDetail
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from MrpReqDetail
+  quote_line_num:
+    display: Quotelinenum
+    type: decimal
+    required: false
+    description: Field QuoteLineNum from MrpReqDetail
+  inspect_non_stk_rec:
+    display: Inspectnonstkrec
+    type: string
+    required: false
+    description: Field InspectNonStkRec from MrpReqDetail
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from MrpReqDetail
+  ecc_hold:
+    display: Ecchold
+    type: string
+    required: false
+    description: Field EccHold from MrpReqDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpReqDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpReqDetail
+  user_code:
+    display: Usercode
+    type: string
+    required: false
+    description: Field UserCode from MrpReqDetail
+  bpo_approved:
+    display: Bpoapproved
+    type: string
+    required: false
+    description: Field BpoApproved from MrpReqDetail
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MrpReqDetail
+  current_operator:
+    display: Currentoperator
+    type: string
+    required: false
+    description: Field CurrentOperator from MrpReqDetail
+  asset_flag:
+    display: Assetflag
+    type: string
+    required: false
+    description: Field AssetFlag from MrpReqDetail
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from MrpReqDetail
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from MrpReqDetail
+  requisition_type:
+    display: Requisitiontype
+    type: string
+    required: false
+    description: Field RequisitionType from MrpReqDetail
+  issue_warehouse:
+    display: Issuewarehouse
+    type: string
+    required: false
+    description: Field IssueWarehouse from MrpReqDetail
+  approved_date:
+    display: Approveddate
+    type: date
+    required: false
+    description: Field ApprovedDate from MrpReqDetail
+  selection_code:
+    display: Selectioncode
+    type: string
+    required: false
+    description: Field SelectionCode from MrpReqDetail
+  selection_type:
+    display: Selectiontype
+    type: string
+    required: false
+    description: Field SelectionType from MrpReqDetail
+  auto_voucher_reqd:
+    display: Autovoucherreqd
+    type: string
+    required: false
+    description: Field AutoVoucherReqd from MrpReqDetail
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from MrpReqDetail
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from MrpReqDetail
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from MrpReqDetail
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from MrpReqDetail
+  sourcing_policy:
+    display: Sourcingpolicy
+    type: string
+    required: false
+    description: Field SourcingPolicy from MrpReqDetail
+  sourcing_policy_type:
+    display: Sourcingpolicytype
+    type: string
+    required: false
+    description: Field SourcingPolicyType from MrpReqDetail
+  policy_available:
+    display: Policyavailable
+    type: string
+    required: false
+    description: Field PolicyAvailable from MrpReqDetail
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from MrpReqDetail
+  rfq_line:
+    display: Rfqline
+    type: decimal
+    required: false
+    description: Field RfqLine from MrpReqDetail
+  intrastat_exempt:
+    display: Intrastatexempt
+    type: string
+    required: false
+    description: Field IntrastatExempt from MrpReqDetail
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from MrpReqDetail
+  triang_disp_state:
+    display: Triangdispstate
+    type: string
+    required: false
+    description: Field TriangDispState from MrpReqDetail
+  triang_dest_state:
+    display: Triangdeststate
+    type: string
+    required: false
+    description: Field TriangDestState from MrpReqDetail
+  orig_country:
+    display: Origcountry
+    type: string
+    required: false
+    description: Field OrigCountry from MrpReqDetail

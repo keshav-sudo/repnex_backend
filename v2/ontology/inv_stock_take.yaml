@@ -1,0 +1,83 @@
+concept: inv_stock_take
+display_name: InvStockTake
+module: inventory
+description: Auto-generated representation of the physical table InvStockTake.
+synonyms:
+- invstocktake
+- inv stock take
+header_attributes:
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvStockTake
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvStockTake
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvStockTake
+  orig_qty_on_hand:
+    display: Origqtyonhand
+    type: decimal
+    required: false
+    description: Field OrigQtyOnHand from InvStockTake
+  qty_captured:
+    display: Qtycaptured
+    type: decimal
+    required: false
+    description: Field QtyCaptured from InvStockTake
+  save_date:
+    display: Savedate
+    type: date
+    required: false
+    description: Field SaveDate from InvStockTake
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from InvStockTake
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from InvStockTake
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvStockTake
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from InvStockTake
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from InvStockTake
+  num_times_captured:
+    display: Numtimescaptured
+    type: decimal
+    required: false
+    description: Field NumTimesCaptured from InvStockTake
+  created_bin_flag:
+    display: Createdbinflag
+    type: string
+    required: false
+    description: Field CreatedBinFlag from InvStockTake
+  selection_cost:
+    display: Selectioncost
+    type: decimal
+    required: false
+    description: Field SelectionCost from InvStockTake
+  default_bin:
+    display: Defaultbin
+    type: string
+    required: false
+    description: Field DefaultBin from InvStockTake

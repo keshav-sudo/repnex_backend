@@ -1,0 +1,8 @@
+concept: inv_document_format
+table: InvDocumentFormat
+alias: idf
+fields:
+  tran_type: idf.TranType
+  format_code: idf.FormatCode
+  record_type: idf.RecordType
+  format_info: idf.FormatInfo

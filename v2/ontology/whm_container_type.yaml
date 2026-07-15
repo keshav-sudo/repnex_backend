@@ -1,0 +1,63 @@
+concept: whm_container_type
+display_name: WhmContainerType
+module: other
+description: Auto-generated representation of the physical table WhmContainerType.
+synonyms:
+- whmcontainertype
+- whm container type
+header_attributes:
+  container:
+    display: Container
+    type: string
+    required: false
+    description: Field Container from WhmContainerType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WhmContainerType
+  default_flag:
+    display: Defaultflag
+    type: string
+    required: false
+    description: Field DefaultFlag from WhmContainerType
+  width:
+    display: Width
+    type: decimal
+    required: false
+    description: Field Width from WhmContainerType
+  depth:
+    display: Depth
+    type: decimal
+    required: false
+    description: Field Depth from WhmContainerType
+  height:
+    display: Height
+    type: decimal
+    required: false
+    description: Field Height from WhmContainerType
+  max_weight:
+    display: Maxweight
+    type: decimal
+    required: false
+    description: Field MaxWeight from WhmContainerType
+  max_volume:
+    display: Maxvolume
+    type: decimal
+    required: false
+    description: Field MaxVolume from WhmContainerType
+  flex_volume_flag:
+    display: Flexvolumeflag
+    type: string
+    required: false
+    description: Field FlexVolumeFlag from WhmContainerType
+  stacking_allowed:
+    display: Stackingallowed
+    type: string
+    required: false
+    description: Field StackingAllowed from WhmContainerType
+  label_format:
+    display: Labelformat
+    type: string
+    required: false
+    description: Field LabelFormat from WhmContainerType

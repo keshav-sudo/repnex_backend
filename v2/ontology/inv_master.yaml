@@ -1,0 +1,723 @@
+concept: inv_master
+display_name: InvMaster
+module: inventory
+description: Auto-generated representation of the physical table InvMaster.
+synonyms:
+- invmaster
+- inv master
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvMaster
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvMaster
+  long_desc:
+    display: Longdesc
+    type: string
+    required: false
+    description: Field LongDesc from InvMaster
+  alternate_key1:
+    display: Alternatekey1
+    type: string
+    required: false
+    description: Field AlternateKey1 from InvMaster
+  alternate_key2:
+    display: Alternatekey2
+    type: string
+    required: false
+    description: Field AlternateKey2 from InvMaster
+  ecc_user:
+    display: Eccuser
+    type: string
+    required: false
+    description: Field EccUser from InvMaster
+  stock_uom:
+    display: Stockuom
+    type: string
+    required: false
+    description: Field StockUom from InvMaster
+  alternate_uom:
+    display: Alternateuom
+    type: string
+    required: false
+    description: Field AlternateUom from InvMaster
+  other_uom:
+    display: Otheruom
+    type: string
+    required: false
+    description: Field OtherUom from InvMaster
+  conv_fact_alt_uom:
+    display: Convfactaltuom
+    type: decimal
+    required: false
+    description: Field ConvFactAltUom from InvMaster
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from InvMaster
+  conv_fact_oth_uom:
+    display: Convfactothuom
+    type: decimal
+    required: false
+    description: Field ConvFactOthUom from InvMaster
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from InvMaster
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from InvMaster
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from InvMaster
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from InvMaster
+  price_category:
+    display: Pricecategory
+    type: string
+    required: false
+    description: Field PriceCategory from InvMaster
+  price_method:
+    display: Pricemethod
+    type: string
+    required: false
+    description: Field PriceMethod from InvMaster
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from InvMaster
+  cycle_count:
+    display: Cyclecount
+    type: decimal
+    required: false
+    description: Field CycleCount from InvMaster
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from InvMaster
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from InvMaster
+  other_tax_code:
+    display: Othertaxcode
+    type: string
+    required: false
+    description: Field OtherTaxCode from InvMaster
+  list_price_code:
+    display: Listpricecode
+    type: string
+    required: false
+    description: Field ListPriceCode from InvMaster
+  serial_method:
+    display: Serialmethod
+    type: string
+    required: false
+    description: Field SerialMethod from InvMaster
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from InvMaster
+  kit_type:
+    display: Kittype
+    type: string
+    required: false
+    description: Field KitType from InvMaster
+  low_level_code:
+    display: Lowlevelcode
+    type: decimal
+    required: false
+    description: Field LowLevelCode from InvMaster
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from InvMaster
+  planner:
+    display: Planner
+    type: string
+    required: false
+    description: Field Planner from InvMaster
+  traceable_type:
+    display: Traceabletype
+    type: string
+    required: false
+    description: Field TraceableType from InvMaster
+  mps_flag:
+    display: Mpsflag
+    type: string
+    required: false
+    description: Field MpsFlag from InvMaster
+  bulk_issue_flag:
+    display: Bulkissueflag
+    type: string
+    required: false
+    description: Field BulkIssueFlag from InvMaster
+  abc_class:
+    display: Abcclass
+    type: string
+    required: false
+    description: Field AbcClass from InvMaster
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from InvMaster
+  stock_movement_req:
+    display: Stockmovementreq
+    type: string
+    required: false
+    description: Field StockMovementReq from InvMaster
+  clearing_flag:
+    display: Clearingflag
+    type: string
+    required: false
+    description: Field ClearingFlag from InvMaster
+  supercession_date:
+    display: Supercessiondate
+    type: date
+    required: false
+    description: Field SupercessionDate from InvMaster
+  abc_analysis_req:
+    display: Abcanalysisreq
+    type: string
+    required: false
+    description: Field AbcAnalysisReq from InvMaster
+  abc_costing_req:
+    display: Abccostingreq
+    type: string
+    required: false
+    description: Field AbcCostingReq from InvMaster
+  cost_uom:
+    display: Costuom
+    type: string
+    required: false
+    description: Field CostUom from InvMaster
+  min_price_pct:
+    display: Minpricepct
+    type: decimal
+    required: false
+    description: Field MinPricePct from InvMaster
+  labour_cost:
+    display: Labourcost
+    type: decimal
+    required: false
+    description: Field LabourCost from InvMaster
+  material_cost:
+    display: Materialcost
+    type: decimal
+    required: false
+    description: Field MaterialCost from InvMaster
+  fix_overhead:
+    display: Fixoverhead
+    type: decimal
+    required: false
+    description: Field FixOverhead from InvMaster
+  variable_overhead:
+    display: Variableoverhead
+    type: decimal
+    required: false
+    description: Field VariableOverhead from InvMaster
+  part_category:
+    display: Partcategory
+    type: string
+    required: false
+    description: Field PartCategory from InvMaster
+  draw_office_num:
+    display: Drawofficenum
+    type: string
+    required: false
+    description: Field DrawOfficeNum from InvMaster
+  warehouse_to_use:
+    display: Warehousetouse
+    type: string
+    required: false
+    description: Field WarehouseToUse from InvMaster
+  buying_rule:
+    display: Buyingrule
+    type: string
+    required: false
+    description: Field BuyingRule from InvMaster
+  specific_gravity:
+    display: Specificgravity
+    type: decimal
+    required: false
+    description: Field SpecificGravity from InvMaster
+  implosion_num:
+    display: Implosionnum
+    type: decimal
+    required: false
+    description: Field ImplosionNum from InvMaster
+  ebq:
+    display: Ebq
+    type: decimal
+    required: false
+    description: Field Ebq from InvMaster
+  component_count:
+    display: Componentcount
+    type: decimal
+    required: false
+    description: Field ComponentCount from InvMaster
+  fix_time_period:
+    display: Fixtimeperiod
+    type: decimal
+    required: false
+    description: Field FixTimePeriod from InvMaster
+  pan_size:
+    display: Pansize
+    type: decimal
+    required: false
+    description: Field PanSize from InvMaster
+  dock_to_stock:
+    display: Docktostock
+    type: decimal
+    required: false
+    description: Field DockToStock from InvMaster
+  output_mass_flag:
+    display: Outputmassflag
+    type: string
+    required: false
+    description: Field OutputMassFlag from InvMaster
+  shelf_life:
+    display: Shelflife
+    type: decimal
+    required: false
+    description: Field ShelfLife from InvMaster
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvMaster
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvMaster
+  demand_time_fence:
+    display: Demandtimefence
+    type: decimal
+    required: false
+    description: Field DemandTimeFence from InvMaster
+  make_to_order_flag:
+    display: Maketoorderflag
+    type: string
+    required: false
+    description: Field MakeToOrderFlag from InvMaster
+  manuf_lead_time:
+    display: Manufleadtime
+    type: decimal
+    required: false
+    description: Field ManufLeadTime from InvMaster
+  gross_req_rule:
+    display: Grossreqrule
+    type: string
+    required: false
+    description: Field GrossReqRule from InvMaster
+  percentage_yield:
+    display: Percentageyield
+    type: decimal
+    required: false
+    description: Field PercentageYield from InvMaster
+  abc_pre_prod:
+    display: Abcpreprod
+    type: decimal
+    required: false
+    description: Field AbcPreProd from InvMaster
+  abc_manufacturing:
+    display: Abcmanufacturing
+    type: decimal
+    required: false
+    description: Field AbcManufacturing from InvMaster
+  abc_sales:
+    display: Abcsales
+    type: decimal
+    required: false
+    description: Field AbcSales from InvMaster
+  abc_cum_pre_prod:
+    display: Abccumpreprod
+    type: decimal
+    required: false
+    description: Field AbcCumPreProd from InvMaster
+  abc_cum_manuf:
+    display: Abccummanuf
+    type: decimal
+    required: false
+    description: Field AbcCumManuf from InvMaster
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from InvMaster
+  resource_code:
+    display: Resourcecode
+    type: string
+    required: false
+    description: Field ResourceCode from InvMaster
+  gst_tax_code:
+    display: Gsttaxcode
+    type: string
+    required: false
+    description: Field GstTaxCode from InvMaster
+  prc_incl_gst:
+    display: Prcinclgst
+    type: string
+    required: false
+    description: Field PrcInclGst from InvMaster
+  ser_entry_at_sale:
+    display: Serentryatsale
+    type: string
+    required: false
+    description: Field SerEntryAtSale from InvMaster
+  stp_selection:
+    display: Stpselection
+    type: string
+    required: false
+    description: Field StpSelection from InvMaster
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from InvMaster
+  user_field2:
+    display: Userfield2
+    type: decimal
+    required: false
+    description: Field UserField2 from InvMaster
+  user_field3:
+    display: Userfield3
+    type: string
+    required: false
+    description: Field UserField3 from InvMaster
+  user_field4:
+    display: Userfield4
+    type: string
+    required: false
+    description: Field UserField4 from InvMaster
+  user_field5:
+    display: Userfield5
+    type: string
+    required: false
+    description: Field UserField5 from InvMaster
+  tariff_code:
+    display: Tariffcode
+    type: string
+    required: false
+    description: Field TariffCode from InvMaster
+  supplementary_unit:
+    display: Supplementaryunit
+    type: string
+    required: false
+    description: Field SupplementaryUnit from InvMaster
+  ebq_pan:
+    display: Ebqpan
+    type: string
+    required: false
+    description: Field EbqPan from InvMaster
+  std_landed_cost:
+    display: Stdlandedcost
+    type: decimal
+    required: false
+    description: Field StdLandedCost from InvMaster
+  lct_required:
+    display: Lctrequired
+    type: string
+    required: false
+    description: Field LctRequired from InvMaster
+  std_lct_route:
+    display: Stdlctroute
+    type: string
+    required: false
+    description: Field StdLctRoute from InvMaster
+  iss_mult_lots_flag:
+    display: Issmultlotsflag
+    type: string
+    required: false
+    description: Field IssMultLotsFlag from InvMaster
+  incl_in_str_valid:
+    display: Inclinstrvalid
+    type: string
+    required: false
+    description: Field InclInStrValid from InvMaster
+  std_lab_costs_bill:
+    display: Stdlabcostsbill
+    type: decimal
+    required: false
+    description: Field StdLabCostsBill from InvMaster
+  phantom_if_comp:
+    display: Phantomifcomp
+    type: string
+    required: false
+    description: Field PhantomIfComp from InvMaster
+  country_of_origin:
+    display: Countryoforigin
+    type: string
+    required: false
+    description: Field CountryOfOrigin from InvMaster
+  stock_on_hold:
+    display: Stockonhold
+    type: string
+    required: false
+    description: Field StockOnHold from InvMaster
+  stock_on_hold_reason:
+    display: Stockonholdreason
+    type: string
+    required: false
+    description: Field StockOnHoldReason from InvMaster
+  ecc_flag:
+    display: Eccflag
+    type: string
+    required: false
+    description: Field EccFlag from InvMaster
+  stock_and_alt_um:
+    display: Stockandaltum
+    type: string
+    required: false
+    description: Field StockAndAltUm from InvMaster
+  alt_unit_char:
+    display: Altunitchar
+    type: decimal
+    required: false
+    description: Field AltUnitChar from InvMaster
+  jobs_on_hold:
+    display: Jobsonhold
+    type: string
+    required: false
+    description: Field JobsOnHold from InvMaster
+  job_hold_allocs:
+    display: Jobholdallocs
+    type: string
+    required: false
+    description: Field JobHoldAllocs from InvMaster
+  purch_on_hold:
+    display: Purchonhold
+    type: string
+    required: false
+    description: Field PurchOnHold from InvMaster
+  sales_on_hold:
+    display: Salesonhold
+    type: string
+    required: false
+    description: Field SalesOnHold from InvMaster
+  maint_on_hold:
+    display: Maintonhold
+    type: string
+    required: false
+    description: Field MaintOnHold from InvMaster
+  batch_bill:
+    display: Batchbill
+    type: string
+    required: false
+    description: Field BatchBill from InvMaster
+  blanket_po_exists:
+    display: Blanketpoexists
+    type: string
+    required: false
+    description: Field BlanketPoExists from InvMaster
+  call_off_bpo_exists:
+    display: Calloffbpoexists
+    type: string
+    required: false
+    description: Field CallOffBpoExists from InvMaster
+  dist_warehouse_to_use:
+    display: Distwarehousetouse
+    type: string
+    required: false
+    description: Field DistWarehouseToUse from InvMaster
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from InvMaster
+  sub_contract_cost:
+    display: Subcontractcost
+    type: decimal
+    required: false
+    description: Field SubContractCost from InvMaster
+  date_stk_added:
+    display: Datestkadded
+    type: date
+    required: false
+    description: Field DateStkAdded from InvMaster
+  inspection_flag:
+    display: Inspectionflag
+    type: string
+    required: false
+    description: Field InspectionFlag from InvMaster
+  serial_prefix:
+    display: Serialprefix
+    type: string
+    required: false
+    description: Field SerialPrefix from InvMaster
+  serial_suffix:
+    display: Serialsuffix
+    type: string
+    required: false
+    description: Field SerialSuffix from InvMaster
+  returnable_item:
+    display: Returnableitem
+    type: string
+    required: false
+    description: Field ReturnableItem from InvMaster
+  product_group:
+    display: Productgroup
+    type: string
+    required: false
+    description: Field ProductGroup from InvMaster
+  price_type:
+    display: Pricetype
+    type: string
+    required: false
+    description: Field PriceType from InvMaster
+  basis:
+    display: Basis
+    type: string
+    required: false
+    description: Field Basis from InvMaster
+  manual_cost_flag:
+    display: Manualcostflag
+    type: string
+    required: false
+    description: Field ManualCostFlag from InvMaster
+  manufacture_uom:
+    display: Manufactureuom
+    type: string
+    required: false
+    description: Field ManufactureUom from InvMaster
+  conv_fact_mu_m:
+    display: Convfactmum
+    type: decimal
+    required: false
+    description: Field ConvFactMuM from InvMaster
+  man_mul_div:
+    display: Manmuldiv
+    type: string
+    required: false
+    description: Field ManMulDiv from InvMaster
+  look_ahead_win:
+    display: Lookaheadwin
+    type: decimal
+    required: false
+    description: Field LookAheadWin from InvMaster
+  loading_factor:
+    display: Loadingfactor
+    type: decimal
+    required: false
+    description: Field LoadingFactor from InvMaster
+  suppl_unit_code:
+    display: Supplunitcode
+    type: string
+    required: false
+    description: Field SupplUnitCode from InvMaster
+  storage_security:
+    display: Storagesecurity
+    type: string
+    required: false
+    description: Field StorageSecurity from InvMaster
+  storage_hazard:
+    display: Storagehazard
+    type: string
+    required: false
+    description: Field StorageHazard from InvMaster
+  storage_condition:
+    display: Storagecondition
+    type: string
+    required: false
+    description: Field StorageCondition from InvMaster
+  product_shelf_life:
+    display: Productshelflife
+    type: decimal
+    required: false
+    description: Field ProductShelfLife from InvMaster
+  internal_shelf_life:
+    display: Internalshelflife
+    type: decimal
+    required: false
+    description: Field InternalShelfLife from InvMaster
+  alt_method_flag:
+    display: Altmethodflag
+    type: string
+    required: false
+    description: Field AltMethodFlag from InvMaster
+  alt_siso_flag:
+    display: Altsisoflag
+    type: string
+    required: false
+    description: Field AltSisoFlag from InvMaster
+  alt_reduction_flag:
+    display: Altreductionflag
+    type: string
+    required: false
+    description: Field AltReductionFlag from InvMaster
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from InvMaster
+  uses_pref_supplier:
+    display: Usesprefsupplier
+    type: string
+    required: false
+    description: Field UsesPrefSupplier from InvMaster
+  prd_recall_flag:
+    display: Prdrecallflag
+    type: string
+    required: false
+    description: Field PrdRecallFlag from InvMaster
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from InvMaster
+  specific_gravity6:
+    display: Specificgravity6
+    type: decimal
+    required: false
+    description: Field SpecificGravity6 from InvMaster
+  supp_unit_factor:
+    display: Suppunitfactor
+    type: decimal
+    required: false
+    description: Field SuppUnitFactor from InvMaster
+  supp_units_mul_div:
+    display: Suppunitsmuldiv
+    type: string
+    required: false
+    description: Field SuppUnitsMulDiv from InvMaster
+  qm_inspection_req:
+    display: Qminspectionreq
+    type: string
+    required: false
+    description: Field QmInspectionReq from InvMaster
+  lot_expiry_option:
+    display: Lotexpiryoption
+    type: string
+    required: false
+    description: Field LotExpiryOption from InvMaster
+  ser_expiry_option:
+    display: Serexpiryoption
+    type: string
+    required: false
+    description: Field SerExpiryOption from InvMaster
+  default_container:
+    display: Defaultcontainer
+    type: string
+    required: false
+    description: Field DefaultContainer from InvMaster

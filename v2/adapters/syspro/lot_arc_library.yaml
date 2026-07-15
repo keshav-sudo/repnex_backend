@@ -1,0 +1,15 @@
+concept: lot_arc_library
+table: LotArcLibrary
+alias: lal
+fields:
+  archive: lal.Archive
+  archive_date: lal.ArchiveDate
+  archive_release: lal.ArchiveRelease
+  imp_vers_arch: lal.ImpVersArch
+  archive_count: lal.ArchiveCount
+  archive_text1: lal.ArchiveText1
+  archive_text2: lal.ArchiveText2
+  archive_text3: lal.ArchiveText3
+  archive_text4: lal.ArchiveText4
+  archive_text5: lal.ArchiveText5
+  archive_text6: lal.ArchiveText6

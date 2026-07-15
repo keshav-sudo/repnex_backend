@@ -1,0 +1,29 @@
+concept: rts_journal
+table: RtsJournal
+alias: rj
+fields:
+  jnl_year: rj.JnlYear
+  jnl_month: rj.JnlMonth
+  journal: rj.Journal
+  journal_entry: rj.JournalEntry
+  gl_code: rj.GlCode
+  rts_number: rj.RtsNumber
+  supplier: rj.Supplier
+  stock_code: rj.StockCode
+  description: rj.Description
+  warehouse: rj.Warehouse
+  rts_org_qty: rj.RtsOrgQty
+  rts_org_cst: rj.RtsOrgCst
+  rts_apr_qty: rj.RtsAprQty
+  rts_apr_cst: rj.RtsAprCst
+  variance_amt: rj.VarianceAmt
+  trn_date: rj.TrnDate
+  operator: rj.Operator
+  rts_printed: rj.RtsPrinted
+  entry_group: rj.EntryGroup
+  rma_number: rj.RmaNumber
+  gl_int_updated: rj.GlIntUpdated
+  gl_int_year: rj.GlIntYear
+  gl_int_period: rj.GlIntPeriod
+  gl_journal: rj.GlJournal
+  dimension_entry: rj.DimensionEntry

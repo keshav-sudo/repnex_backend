@@ -1,0 +1,333 @@
+concept: por_master_hdr
+display_name: PorMasterHdr
+module: procurement
+description: Auto-generated representation of the physical table PorMasterHdr.
+synonyms:
+- pormasterhdr
+- por master hdr
+header_attributes:
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from PorMasterHdr
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from PorMasterHdr
+  order_status:
+    display: Orderstatus
+    type: string
+    required: false
+    description: Field OrderStatus from PorMasterHdr
+  active_flag:
+    display: Activeflag
+    type: string
+    required: false
+    description: Field ActiveFlag from PorMasterHdr
+  cancelled_flag:
+    display: Cancelledflag
+    type: string
+    required: false
+    description: Field CancelledFlag from PorMasterHdr
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from PorMasterHdr
+  order_entry_date:
+    display: Orderentrydate
+    type: date
+    required: false
+    description: Field OrderEntryDate from PorMasterHdr
+  order_due_date:
+    display: Orderduedate
+    type: date
+    required: false
+    description: Field OrderDueDate from PorMasterHdr
+  date_last_doc_prt:
+    display: Datelastdocprt
+    type: date
+    required: false
+    description: Field DateLastDocPrt from PorMasterHdr
+  memo_date:
+    display: Memodate
+    type: date
+    required: false
+    description: Field MemoDate from PorMasterHdr
+  memo_code:
+    display: Memocode
+    type: string
+    required: false
+    description: Field MemoCode from PorMasterHdr
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from PorMasterHdr
+  supplier_class:
+    display: Supplierclass
+    type: string
+    required: false
+    description: Field SupplierClass from PorMasterHdr
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from PorMasterHdr
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from PorMasterHdr
+  payment_terms:
+    display: Paymentterms
+    type: string
+    required: false
+    description: Field PaymentTerms from PorMasterHdr
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from PorMasterHdr
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from PorMasterHdr
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from PorMasterHdr
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from PorMasterHdr
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from PorMasterHdr
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from PorMasterHdr
+  tax_status:
+    display: Taxstatus
+    type: string
+    required: false
+    description: Field TaxStatus from PorMasterHdr
+  print_count:
+    display: Printcount
+    type: decimal
+    required: false
+    description: Field PrintCount from PorMasterHdr
+  amended_count:
+    display: Amendedcount
+    type: decimal
+    required: false
+    description: Field AmendedCount from PorMasterHdr
+  date_po_completed:
+    display: Datepocompleted
+    type: date
+    required: false
+    description: Field DatePoCompleted from PorMasterHdr
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from PorMasterHdr
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from PorMasterHdr
+  exch_rate_fixed:
+    display: Exchratefixed
+    type: string
+    required: false
+    description: Field ExchRateFixed from PorMasterHdr
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from PorMasterHdr
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from PorMasterHdr
+  user_confirmation:
+    display: Userconfirmation
+    type: string
+    required: false
+    description: Field UserConfirmation from PorMasterHdr
+  edi_po_flag:
+    display: Edipoflag
+    type: string
+    required: false
+    description: Field EdiPoFlag from PorMasterHdr
+  edi_extract_flag:
+    display: Ediextractflag
+    type: string
+    required: false
+    description: Field EdiExtractFlag from PorMasterHdr
+  edi_action_flag:
+    display: Ediactionflag
+    type: string
+    required: false
+    description: Field EdiActionFlag from PorMasterHdr
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from PorMasterHdr
+  edi_confirmation:
+    display: Ediconfirmation
+    type: string
+    required: false
+    description: Field EdiConfirmation from PorMasterHdr
+  fax_document:
+    display: Faxdocument
+    type: string
+    required: false
+    description: Field FaxDocument from PorMasterHdr
+  delivery_name:
+    display: Deliveryname
+    type: string
+    required: false
+    description: Field DeliveryName from PorMasterHdr
+  delivery_addr1:
+    display: Deliveryaddr1
+    type: string
+    required: false
+    description: Field DeliveryAddr1 from PorMasterHdr
+  delivery_addr2:
+    display: Deliveryaddr2
+    type: string
+    required: false
+    description: Field DeliveryAddr2 from PorMasterHdr
+  delivery_addr3:
+    display: Deliveryaddr3
+    type: string
+    required: false
+    description: Field DeliveryAddr3 from PorMasterHdr
+  delivery_addr3_loc:
+    display: Deliveryaddr3Loc
+    type: string
+    required: false
+    description: Field DeliveryAddr3Loc from PorMasterHdr
+  delivery_addr4:
+    display: Deliveryaddr4
+    type: string
+    required: false
+    description: Field DeliveryAddr4 from PorMasterHdr
+  delivery_addr5:
+    display: Deliveryaddr5
+    type: string
+    required: false
+    description: Field DeliveryAddr5 from PorMasterHdr
+  postal_code:
+    display: Postalcode
+    type: string
+    required: false
+    description: Field PostalCode from PorMasterHdr
+  delivery_gps_lat:
+    display: Deliverygpslat
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLat from PorMasterHdr
+  delivery_gps_long:
+    display: Deliverygpslong
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLong from PorMasterHdr
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from PorMasterHdr
+  contract_number:
+    display: Contractnumber
+    type: string
+    required: false
+    description: Field ContractNumber from PorMasterHdr
+  user1:
+    display: User1
+    type: string
+    required: false
+    description: Field User1 from PorMasterHdr
+  delivery_method:
+    display: Deliverymethod
+    type: string
+    required: false
+    description: Field DeliveryMethod from PorMasterHdr
+  auto_voucher_reqd:
+    display: Autovoucherreqd
+    type: string
+    required: false
+    description: Field AutoVoucherReqd from PorMasterHdr
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from PorMasterHdr
+  auto_update_po:
+    display: Autoupdatepo
+    type: string
+    required: false
+    description: Field AutoUpdatePo from PorMasterHdr
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from PorMasterHdr
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from PorMasterHdr
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from PorMasterHdr
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from PorMasterHdr
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from PorMasterHdr
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from PorMasterHdr
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from PorMasterHdr
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from PorMasterHdr
+  port_arrival:
+    display: Portarrival
+    type: string
+    required: false
+    description: Field PortArrival from PorMasterHdr
+  entity_dimensions:
+    display: Entitydimensions
+    type: string
+    required: false
+    description: Field EntityDimensions from PorMasterHdr

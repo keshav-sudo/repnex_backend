@@ -1,0 +1,63 @@
+concept: inv_app_manf_supplier
+display_name: InvAppManfSupplier
+module: inventory
+description: Auto-generated representation of the physical table InvAppManfSupplier.
+synonyms:
+- invappmanfsupplier
+- inv app manf supplier
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvAppManfSupplier
+  app_manufacturer:
+    display: Appmanufacturer
+    type: string
+    required: false
+    description: Field AppManufacturer from InvAppManfSupplier
+  man_part_number:
+    display: Manpartnumber
+    type: string
+    required: false
+    description: Field ManPartNumber from InvAppManfSupplier
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from InvAppManfSupplier
+  supplier_info1:
+    display: Supplierinfo1
+    type: string
+    required: false
+    description: Field SupplierInfo1 from InvAppManfSupplier
+  supplier_info2:
+    display: Supplierinfo2
+    type: string
+    required: false
+    description: Field SupplierInfo2 from InvAppManfSupplier
+  supplier_info3:
+    display: Supplierinfo3
+    type: string
+    required: false
+    description: Field SupplierInfo3 from InvAppManfSupplier
+  supplier_info4:
+    display: Supplierinfo4
+    type: string
+    required: false
+    description: Field SupplierInfo4 from InvAppManfSupplier
+  supplier_info5:
+    display: Supplierinfo5
+    type: string
+    required: false
+    description: Field SupplierInfo5 from InvAppManfSupplier
+  supplier_info6:
+    display: Supplierinfo6
+    type: string
+    required: false
+    description: Field SupplierInfo6 from InvAppManfSupplier
+  preferred_flag:
+    display: Preferredflag
+    type: string
+    required: false
+    description: Field PreferredFlag from InvAppManfSupplier

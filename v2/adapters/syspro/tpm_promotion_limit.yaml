@@ -1,0 +1,11 @@
+concept: tpm_promotion_limit
+table: TpmPromotionLimit
+alias: tpl
+fields:
+  promotion_code: tpl.PromotionCode
+  promotion_limit: tpl.PromotionLimit
+  promotion_value: tpl.PromotionValue
+  promotion_amount: tpl.PromotionAmount
+  promotion_quantity: tpl.PromotionQuantity
+  promotion_mass: tpl.PromotionMass
+  promotion_volume: tpl.PromotionVolume

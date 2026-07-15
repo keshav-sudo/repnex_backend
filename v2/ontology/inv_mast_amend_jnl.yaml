@@ -1,0 +1,58 @@
+concept: inv_mast_amend_jnl
+display_name: InvMastAmendJnl
+module: inventory
+description: Auto-generated representation of the physical table InvMastAmendJnl.
+synonyms:
+- invmastamendjnl
+- inv mast amend jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from InvMastAmendJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from InvMastAmendJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from InvMastAmendJnl
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvMastAmendJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from InvMastAmendJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from InvMastAmendJnl
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from InvMastAmendJnl
+  before:
+    display: Before
+    type: string
+    required: false
+    description: Field Before from InvMastAmendJnl
+  after:
+    display: After
+    type: string
+    required: false
+    description: Field After from InvMastAmendJnl
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from InvMastAmendJnl

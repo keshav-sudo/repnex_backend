@@ -1,0 +1,7 @@
+concept: mrp_resource
+table: MrpResource
+alias: mr1
+fields:
+  resource_component: mr1.ResourceComponent
+  resource_desc: mr1.ResourceDesc
+  resource_uom: mr1.ResourceUom

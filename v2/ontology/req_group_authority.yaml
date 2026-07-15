@@ -1,0 +1,33 @@
+concept: req_group_authority
+display_name: ReqGroupAuthority
+module: other
+description: Auto-generated representation of the physical table ReqGroupAuthority.
+synonyms:
+- reqgroupauthority
+- req group authority
+header_attributes:
+  requisition_group:
+    display: Requisitiongroup
+    type: string
+    required: false
+    description: Field RequisitionGroup from ReqGroupAuthority
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from ReqGroupAuthority
+  next_user:
+    display: Nextuser
+    type: string
+    required: false
+    description: Field NextUser from ReqGroupAuthority
+  max_approve_value:
+    display: Maxapprovevalue
+    type: decimal
+    required: false
+    description: Field MaxApproveValue from ReqGroupAuthority
+  user_for_porder:
+    display: Userforporder
+    type: string
+    required: false
+    description: Field UserForPorder from ReqGroupAuthority

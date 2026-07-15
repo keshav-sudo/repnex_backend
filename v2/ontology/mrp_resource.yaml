@@ -1,0 +1,23 @@
+concept: mrp_resource
+display_name: MrpResource
+module: mrp
+description: Auto-generated representation of the physical table MrpResource.
+synonyms:
+- mrpresource
+- mrp resource
+header_attributes:
+  resource_component:
+    display: Resourcecomponent
+    type: string
+    required: false
+    description: Field ResourceComponent from MrpResource
+  resource_desc:
+    display: Resourcedesc
+    type: string
+    required: false
+    description: Field ResourceDesc from MrpResource
+  resource_uom:
+    display: Resourceuom
+    type: string
+    required: false
+    description: Field ResourceUom from MrpResource

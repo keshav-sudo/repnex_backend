@@ -1,0 +1,63 @@
+concept: asset_health_fix
+display_name: AssetHealthFix
+module: assets
+description: Auto-generated representation of the physical table AssetHealthFix.
+synonyms:
+- assethealthfix
+- asset health fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from AssetHealthFix
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetHealthFix
+  origin:
+    display: Origin
+    type: string
+    required: false
+    description: Field Origin from AssetHealthFix
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from AssetHealthFix
+  hfix_year:
+    display: Hfixyear
+    type: decimal
+    required: false
+    description: Field HfixYear from AssetHealthFix
+  hfix_month:
+    display: Hfixmonth
+    type: decimal
+    required: false
+    description: Field HfixMonth from AssetHealthFix
+  actual_value:
+    display: Actualvalue
+    type: decimal
+    required: false
+    description: Field ActualValue from AssetHealthFix
+  calc_value:
+    display: Calcvalue
+    type: decimal
+    required: false
+    description: Field CalcValue from AssetHealthFix
+  diff_value:
+    display: Diffvalue
+    type: decimal
+    required: false
+    description: Field DiffValue from AssetHealthFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from AssetHealthFix
+  self_healing_flag:
+    display: Selfhealingflag
+    type: string
+    required: false
+    description: Field SelfHealingFlag from AssetHealthFix

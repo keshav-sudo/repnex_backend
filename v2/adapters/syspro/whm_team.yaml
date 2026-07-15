@@ -1,0 +1,6 @@
+concept: whm_team
+table: WhmTeam
+alias: wt
+fields:
+  team: wt.Team
+  team_name: wt.TeamName

@@ -1,0 +1,568 @@
+concept: wip_job_all_lab
+display_name: WipJobAllLab
+module: work_in_progress
+description: Auto-generated representation of the physical table WipJobAllLab.
+synonyms:
+- wipjoballlab
+- wip job all lab
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipJobAllLab
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from WipJobAllLab
+  subcontract_op:
+    display: Subcontractop
+    type: string
+    required: false
+    description: Field SubcontractOp from WipJobAllLab
+  i_machine:
+    display: Imachine
+    type: string
+    required: false
+    description: Field IMachine from WipJobAllLab
+  i_exp_unit_run_tim:
+    display: Iexpunitruntim
+    type: decimal
+    required: false
+    description: Field IExpUnitRunTim from WipJobAllLab
+  i_exp_set_up_time:
+    display: Iexpsetuptime
+    type: decimal
+    required: false
+    description: Field IExpSetUpTime from WipJobAllLab
+  i_exp_startup_time:
+    display: Iexpstartuptime
+    type: decimal
+    required: false
+    description: Field IExpStartupTime from WipJobAllLab
+  i_exp_shutdown_tim:
+    display: Iexpshutdowntim
+    type: decimal
+    required: false
+    description: Field IExpShutdownTim from WipJobAllLab
+  i_wait_time:
+    display: Iwaittime
+    type: decimal
+    required: false
+    description: Field IWaitTime from WipJobAllLab
+  i_wc_rate_ind:
+    display: Iwcrateind
+    type: decimal
+    required: false
+    description: Field IWcRateInd from WipJobAllLab
+  i_startup_qty:
+    display: Istartupqty
+    type: decimal
+    required: false
+    description: Field IStartupQty from WipJobAllLab
+  i_capacity_reqd:
+    display: Icapacityreqd
+    type: decimal
+    required: false
+    description: Field ICapacityReqd from WipJobAllLab
+  i_max_work_opertrs:
+    display: Imaxworkopertrs
+    type: decimal
+    required: false
+    description: Field IMaxWorkOpertrs from WipJobAllLab
+  i_max_prod_units:
+    display: Imaxprodunits
+    type: decimal
+    required: false
+    description: Field IMaxProdUnits from WipJobAllLab
+  i_time_taken:
+    display: Itimetaken
+    type: decimal
+    required: false
+    description: Field ITimeTaken from WipJobAllLab
+  i_quantity:
+    display: Iquantity
+    type: decimal
+    required: false
+    description: Field IQuantity from WipJobAllLab
+  max_op_span:
+    display: Maxopspan
+    type: decimal
+    required: false
+    description: Field MaxOpSpan from WipJobAllLab
+  op_slack:
+    display: Opslack
+    type: decimal
+    required: false
+    description: Field OpSlack from WipJobAllLab
+  i_startup_qty_ent:
+    display: Istartupqtyent
+    type: decimal
+    required: false
+    description: Field IStartupQtyEnt from WipJobAllLab
+  i_quantity_ent:
+    display: Iquantityent
+    type: decimal
+    required: false
+    description: Field IQuantityEnt from WipJobAllLab
+  i_exp_unit_run_tim_ent:
+    display: Iexpunitruntiment
+    type: decimal
+    required: false
+    description: Field IExpUnitRunTimEnt from WipJobAllLab
+  i_time_taken_ent:
+    display: Itimetakenent
+    type: decimal
+    required: false
+    description: Field ITimeTakenEnt from WipJobAllLab
+  sub_supplier:
+    display: Subsupplier
+    type: string
+    required: false
+    description: Field SubSupplier from WipJobAllLab
+  sup_po_stk_code:
+    display: Suppostkcode
+    type: string
+    required: false
+    description: Field SupPoStkCode from WipJobAllLab
+  sub_qty_per:
+    display: Subqtyper
+    type: decimal
+    required: false
+    description: Field SubQtyPer from WipJobAllLab
+  sub_order_uom:
+    display: Suborderuom
+    type: string
+    required: false
+    description: Field SubOrderUom from WipJobAllLab
+  sub_unit_value:
+    display: Subunitvalue
+    type: decimal
+    required: false
+    description: Field SubUnitValue from WipJobAllLab
+  sub_what_if_value:
+    display: Subwhatifvalue
+    type: decimal
+    required: false
+    description: Field SubWhatIfValue from WipJobAllLab
+  sub_planner:
+    display: Subplanner
+    type: string
+    required: false
+    description: Field SubPlanner from WipJobAllLab
+  sub_buyer:
+    display: Subbuyer
+    type: string
+    required: false
+    description: Field SubBuyer from WipJobAllLab
+  sub_lead_time:
+    display: Subleadtime
+    type: decimal
+    required: false
+    description: Field SubLeadTime from WipJobAllLab
+  sub_dock_to_stock:
+    display: Subdocktostock
+    type: decimal
+    required: false
+    description: Field SubDockToStock from WipJobAllLab
+  sub_offsite_days:
+    display: Suboffsitedays
+    type: decimal
+    required: false
+    description: Field SubOffsiteDays from WipJobAllLab
+  sch_start_date:
+    display: Schstartdate
+    type: date
+    required: false
+    description: Field SchStartDate from WipJobAllLab
+  sch_start_time:
+    display: Schstarttime
+    type: decimal
+    required: false
+    description: Field SchStartTime from WipJobAllLab
+  sch_end_date:
+    display: Schenddate
+    type: date
+    required: false
+    description: Field SchEndDate from WipJobAllLab
+  sch_end_time:
+    display: Schendtime
+    type: decimal
+    required: false
+    description: Field SchEndTime from WipJobAllLab
+  operation_status:
+    display: Operationstatus
+    type: string
+    required: false
+    description: Field OperationStatus from WipJobAllLab
+  op_split_flag:
+    display: Opsplitflag
+    type: string
+    required: false
+    description: Field OpSplitFlag from WipJobAllLab
+  max_op_delay:
+    display: Maxopdelay
+    type: decimal
+    required: false
+    description: Field MaxOpDelay from WipJobAllLab
+  unit_value_reqd:
+    display: Unitvaluereqd
+    type: decimal
+    required: false
+    description: Field UnitValueReqd from WipJobAllLab
+  run_time_issued:
+    display: Runtimeissued
+    type: decimal
+    required: false
+    description: Field RunTimeIssued from WipJobAllLab
+  set_up_issued:
+    display: Setupissued
+    type: decimal
+    required: false
+    description: Field SetUpIssued from WipJobAllLab
+  start_up_issued:
+    display: Startupissued
+    type: decimal
+    required: false
+    description: Field StartUpIssued from WipJobAllLab
+  shutdown_issued:
+    display: Shutdownissued
+    type: decimal
+    required: false
+    description: Field ShutdownIssued from WipJobAllLab
+  value_issued:
+    display: Valueissued
+    type: decimal
+    required: false
+    description: Field ValueIssued from WipJobAllLab
+  pieces_completed:
+    display: Piecescompleted
+    type: decimal
+    required: false
+    description: Field PiecesCompleted from WipJobAllLab
+  value_billed:
+    display: Valuebilled
+    type: decimal
+    required: false
+    description: Field ValueBilled from WipJobAllLab
+  oper_completed:
+    display: Opercompleted
+    type: string
+    required: false
+    description: Field OperCompleted from WipJobAllLab
+  qty_completed:
+    display: Qtycompleted
+    type: decimal
+    required: false
+    description: Field QtyCompleted from WipJobAllLab
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from WipJobAllLab
+  last_scrap_reason:
+    display: Lastscrapreason
+    type: string
+    required: false
+    description: Field LastScrapReason from WipJobAllLab
+  planned_queue_date:
+    display: Plannedqueuedate
+    type: date
+    required: false
+    description: Field PlannedQueueDate from WipJobAllLab
+  planned_start_date:
+    display: Plannedstartdate
+    type: date
+    required: false
+    description: Field PlannedStartDate from WipJobAllLab
+  planned_end_date:
+    display: Plannedenddate
+    type: date
+    required: false
+    description: Field PlannedEndDate from WipJobAllLab
+  actual_queue_date:
+    display: Actualqueuedate
+    type: date
+    required: false
+    description: Field ActualQueueDate from WipJobAllLab
+  actual_start_date:
+    display: Actualstartdate
+    type: date
+    required: false
+    description: Field ActualStartDate from WipJobAllLab
+  actual_finish_date:
+    display: Actualfinishdate
+    type: date
+    required: false
+    description: Field ActualFinishDate from WipJobAllLab
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from WipJobAllLab
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from WipJobAllLab
+  non_conform_flag:
+    display: Nonconformflag
+    type: string
+    required: false
+    description: Field NonConformFlag from WipJobAllLab
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from WipJobAllLab
+  work_centre_desc:
+    display: Workcentredesc
+    type: string
+    required: false
+    description: Field WorkCentreDesc from WipJobAllLab
+  elapsed_time:
+    display: Elapsedtime
+    type: decimal
+    required: false
+    description: Field ElapsedTime from WipJobAllLab
+  movement_time:
+    display: Movementtime
+    type: decimal
+    required: false
+    description: Field MovementTime from WipJobAllLab
+  unit_num_of_pieces:
+    display: Unitnumofpieces
+    type: decimal
+    required: false
+    description: Field UnitNumOfPieces from WipJobAllLab
+  inspection_flag:
+    display: Inspectionflag
+    type: string
+    required: false
+    description: Field InspectionFlag from WipJobAllLab
+  milestone:
+    display: Milestone
+    type: string
+    required: false
+    description: Field Milestone from WipJobAllLab
+  minor_set_up:
+    display: Minorsetup
+    type: decimal
+    required: false
+    description: Field MinorSetUp from WipJobAllLab
+  minor_set_up_code:
+    display: Minorsetupcode
+    type: string
+    required: false
+    description: Field MinorSetUpCode from WipJobAllLab
+  tool_set:
+    display: Toolset
+    type: string
+    required: false
+    description: Field ToolSet from WipJobAllLab
+  tool_set_qty:
+    display: Toolsetqty
+    type: decimal
+    required: false
+    description: Field ToolSetQty from WipJobAllLab
+  tool_consumption:
+    display: Toolconsumption
+    type: decimal
+    required: false
+    description: Field ToolConsumption from WipJobAllLab
+  queue_time:
+    display: Queuetime
+    type: decimal
+    required: false
+    description: Field QueueTime from WipJobAllLab
+  milestone_comp:
+    display: Milestonecomp
+    type: string
+    required: false
+    description: Field MilestoneComp from WipJobAllLab
+  calc_elapsed_time:
+    display: Calcelapsedtime
+    type: string
+    required: false
+    description: Field CalcElapsedTime from WipJobAllLab
+  hier_head1:
+    display: Hierhead1
+    type: string
+    required: false
+    description: Field HierHead1 from WipJobAllLab
+  hier_head2:
+    display: Hierhead2
+    type: string
+    required: false
+    description: Field HierHead2 from WipJobAllLab
+  hier_head3:
+    display: Hierhead3
+    type: string
+    required: false
+    description: Field HierHead3 from WipJobAllLab
+  hier_head4:
+    display: Hierhead4
+    type: string
+    required: false
+    description: Field HierHead4 from WipJobAllLab
+  hier_head5:
+    display: Hierhead5
+    type: string
+    required: false
+    description: Field HierHead5 from WipJobAllLab
+  capacity_issued:
+    display: Capacityissued
+    type: decimal
+    required: false
+    description: Field CapacityIssued from WipJobAllLab
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from WipJobAllLab
+  op_comp_via_job:
+    display: Opcompviajob
+    type: string
+    required: false
+    description: Field OpCompViaJob from WipJobAllLab
+  transfer_qty_or_pct:
+    display: Transferqtyorpct
+    type: string
+    required: false
+    description: Field TransferQtyOrPct from WipJobAllLab
+  transfer_qty_pct:
+    display: Transferqtypct
+    type: decimal
+    required: false
+    description: Field TransferQtyPct from WipJobAllLab
+  parent_qty_planned:
+    display: Parentqtyplanned
+    type: decimal
+    required: false
+    description: Field ParentQtyPlanned from WipJobAllLab
+  oper_yield_pct:
+    display: Operyieldpct
+    type: decimal
+    required: false
+    description: Field OperYieldPct from WipJobAllLab
+  oper_yield_qty:
+    display: Operyieldqty
+    type: decimal
+    required: false
+    description: Field OperYieldQty from WipJobAllLab
+  par_iss_qty:
+    display: Parissqty
+    type: decimal
+    required: false
+    description: Field ParIssQty from WipJobAllLab
+  hours_billed:
+    display: Hoursbilled
+    type: decimal
+    required: false
+    description: Field HoursBilled from WipJobAllLab
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from WipJobAllLab
+  qty_scrapped_ent:
+    display: Qtyscrappedent
+    type: decimal
+    required: false
+    description: Field QtyScrappedEnt from WipJobAllLab
+  transfer_qty_pct_ent:
+    display: Transferqtypctent
+    type: decimal
+    required: false
+    description: Field TransferQtyPctEnt from WipJobAllLab
+  parent_qty_plan_ent:
+    display: Parentqtyplanent
+    type: decimal
+    required: false
+    description: Field ParentQtyPlanEnt from WipJobAllLab
+  oper_yield_qty_ent:
+    display: Operyieldqtyent
+    type: decimal
+    required: false
+    description: Field OperYieldQtyEnt from WipJobAllLab
+  par_iss_qty_ent:
+    display: Parissqtyent
+    type: decimal
+    required: false
+    description: Field ParIssQtyEnt from WipJobAllLab
+  qty_completed_ent:
+    display: Qtycompletedent
+    type: decimal
+    required: false
+    description: Field QtyCompletedEnt from WipJobAllLab
+  resource_mask:
+    display: Resourcemask
+    type: string
+    required: false
+    description: Field ResourceMask from WipJobAllLab
+  sch_start_run_date:
+    display: Schstartrundate
+    type: date
+    required: false
+    description: Field SchStartRunDate from WipJobAllLab
+  sch_start_run_time:
+    display: Schstartruntime
+    type: decimal
+    required: false
+    description: Field SchStartRunTime from WipJobAllLab
+  scheduled_machine:
+    display: Scheduledmachine
+    type: string
+    required: false
+    description: Field ScheduledMachine from WipJobAllLab
+  allow_op_split:
+    display: Allowopsplit
+    type: string
+    required: false
+    description: Field AllowOpSplit from WipJobAllLab
+  created_by:
+    display: Createdby
+    type: string
+    required: false
+    description: Field CreatedBy from WipJobAllLab
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from WipJobAllLab
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from WipJobAllLab
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from WipJobAllLab
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from WipJobAllLab
+  job_nest:
+    display: Jobnest
+    type: string
+    required: false
+    description: Field JobNest from WipJobAllLab
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipJobAllLab
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from WipJobAllLab
+  production_bin:
+    display: Productionbin
+    type: string
+    required: false
+    description: Field ProductionBin from WipJobAllLab

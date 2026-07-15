@@ -1,0 +1,33 @@
+concept: sor_detail_lpn
+display_name: SorDetailLpn
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorDetailLpn.
+synonyms:
+- sordetaillpn
+- sor detail lpn
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorDetailLpn
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorDetailLpn
+  license_plate_number:
+    display: Licenseplatenumber
+    type: string
+    required: false
+    description: Field LicensePlateNumber from SorDetailLpn
+  lpn_ship_qty:
+    display: Lpnshipqty
+    type: decimal
+    required: false
+    description: Field LpnShipQty from SorDetailLpn
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from SorDetailLpn

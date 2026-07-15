@@ -1,0 +1,5 @@
+concept: adm_tax_fltr_pcls
+table: AdmTaxFltrPcls
+alias: atfp
+fields:
+  product_class: atfp.ProductClass

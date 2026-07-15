@@ -1,0 +1,8 @@
+concept: lot_control
+table: LotControl
+alias: lc1
+fields:
+  ctl_flag: lc1.CtlFlag
+  next_lot: lc1.NextLot
+  next_archive_num: lc1.NextArchiveNum
+  next_product_recall: lc1.NextProductRecall

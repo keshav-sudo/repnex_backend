@@ -1,0 +1,16 @@
+concept: sor_route_detail
+table: SorRouteDetail
+alias: srd
+fields:
+  route_code: srd.RouteCode
+  delivery_date: srd.DeliveryDate
+  delivery_seq: srd.DeliverySeq
+  volume: srd.Volume
+  volume_used: srd.VolumeUsed
+  mass: srd.Mass
+  mass_used: srd.MassUsed
+  load_complete_flag: srd.LoadCompleteFlag
+  load_status: srd.LoadStatus
+  load_number: srd.LoadNumber
+  transport: srd.Transport
+  employee: srd.Employee

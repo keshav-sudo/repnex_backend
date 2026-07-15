@@ -1,0 +1,113 @@
+concept: asset_capex_def_det
+display_name: AssetCapexDefDet
+module: assets
+description: Auto-generated representation of the physical table AssetCapexDefDet.
+synonyms:
+- assetcapexdefdet
+- asset capex def det
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetCapexDefDet
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetCapexDefDet
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetCapexDefDet
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from AssetCapexDefDet
+  asset_type:
+    display: Assettype
+    type: string
+    required: false
+    description: Field AssetType from AssetCapexDefDet
+  def_cost_center:
+    display: Defcostcenter
+    type: string
+    required: false
+    description: Field DefCostCenter from AssetCapexDefDet
+  def_group_code:
+    display: Defgroupcode
+    type: string
+    required: false
+    description: Field DefGroupCode from AssetCapexDefDet
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from AssetCapexDefDet
+  asset_status:
+    display: Assetstatus
+    type: string
+    required: false
+    description: Field AssetStatus from AssetCapexDefDet
+  cycle_count:
+    display: Cyclecount
+    type: string
+    required: false
+    description: Field CycleCount from AssetCapexDefDet
+  resp_user:
+    display: Respuser
+    type: string
+    required: false
+    description: Field RespUser from AssetCapexDefDet
+  asset_owner:
+    display: Assetowner
+    type: string
+    required: false
+    description: Field AssetOwner from AssetCapexDefDet
+  book_val_dep:
+    display: Bookvaldep
+    type: string
+    required: false
+    description: Field BookValDep from AssetCapexDefDet
+  book_val_residual:
+    display: Bookvalresidual
+    type: decimal
+    required: false
+    description: Field BookValResidual from AssetCapexDefDet
+  thruput_eul:
+    display: Thruputeul
+    type: decimal
+    required: false
+    description: Field ThruputEul from AssetCapexDefDet
+  stat_gl_code:
+    display: Statglcode
+    type: string
+    required: false
+    description: Field StatGlCode from AssetCapexDefDet
+  total_periods:
+    display: Totalperiods
+    type: decimal
+    required: false
+    description: Field TotalPeriods from AssetCapexDefDet
+  wear_tear_dep:
+    display: Wearteardep
+    type: string
+    required: false
+    description: Field WearTearDep from AssetCapexDefDet
+  wear_tear_residual:
+    display: Weartearresidual
+    type: decimal
+    required: false
+    description: Field WearTearResidual from AssetCapexDefDet
+  suspend:
+    display: Suspend
+    type: string
+    required: false
+    description: Field Suspend from AssetCapexDefDet
+  book_val_dep_flag:
+    display: Bookvaldepflag
+    type: string
+    required: false
+    description: Field BookValDepFlag from AssetCapexDefDet

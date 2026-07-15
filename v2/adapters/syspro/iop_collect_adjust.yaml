@@ -1,0 +1,15 @@
+concept: iop_collect_adjust
+table: IopCollectAdjust
+alias: ica1
+fields:
+  collection: ica1.Collection
+  instance: ica1.Instance
+  movement_date: ica1.MovementDate
+  entry_number: ica1.EntryNumber
+  adjust_type: ica1.AdjustType
+  quantity: ica1.Quantity
+  cost_value: ica1.CostValue
+  sales_value: ica1.SalesValue
+  comment: ica1.Comment
+  lost_sale_trn_date: ica1.LostSaleTrnDate
+  lost_sale_trn_time: ica1.LostSaleTrnTime

@@ -1,0 +1,7 @@
+concept: gen_dimension_pri
+table: GenDimensionPri
+alias: gdp
+fields:
+  source: gdp.Source
+  column_name: gdp.ColumnName
+  priority: gdp.Priority

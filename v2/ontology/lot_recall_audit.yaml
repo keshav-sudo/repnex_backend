@@ -1,0 +1,113 @@
+concept: lot_recall_audit
+display_name: LotRecallAudit
+module: other
+description: Auto-generated representation of the physical table LotRecallAudit.
+synonyms:
+- lotrecallaudit
+- lot recall audit
+header_attributes:
+  product_recall:
+    display: Productrecall
+    type: string
+    required: false
+    description: Field ProductRecall from LotRecallAudit
+  audit_sequence:
+    display: Auditsequence
+    type: decimal
+    required: false
+    description: Field AuditSequence from LotRecallAudit
+  audit_date:
+    display: Auditdate
+    type: date
+    required: false
+    description: Field AuditDate from LotRecallAudit
+  audit_time:
+    display: Audittime
+    type: decimal
+    required: false
+    description: Field AuditTime from LotRecallAudit
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from LotRecallAudit
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from LotRecallAudit
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from LotRecallAudit
+  scrap_reason_code:
+    display: Scrapreasoncode
+    type: string
+    required: false
+    description: Field ScrapReasonCode from LotRecallAudit
+  release_reason:
+    display: Releasereason
+    type: string
+    required: false
+    description: Field ReleaseReason from LotRecallAudit
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from LotRecallAudit
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotRecallAudit
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from LotRecallAudit
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from LotRecallAudit
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotRecallAudit
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from LotRecallAudit
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from LotRecallAudit
+  journal_line:
+    display: Journalline
+    type: decimal
+    required: false
+    description: Field JournalLine from LotRecallAudit
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from LotRecallAudit
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from LotRecallAudit
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from LotRecallAudit
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from LotRecallAudit

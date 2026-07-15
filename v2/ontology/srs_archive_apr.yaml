@@ -1,0 +1,78 @@
+concept: srs_archive_apr
+display_name: SrsArchiveAPR
+module: other
+description: Auto-generated representation of the physical table SrsArchiveAPR.
+synonyms:
+- srsarchiveapr
+- srs archive apr
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveAPR
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveAPR
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveAPR
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveAPR
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveAPR
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveAPR
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from SrsArchiveAPR
+  check_currency:
+    display: Checkcurrency
+    type: string
+    required: false
+    description: Field CheckCurrency from SrsArchiveAPR
+  check_date_cymd:
+    display: Checkdatecymd
+    type: date
+    required: false
+    description: Field CheckDateCymd from SrsArchiveAPR
+  cheque_number:
+    display: Chequenumber
+    type: decimal
+    required: false
+    description: Field ChequeNumber from SrsArchiveAPR
+  payment_date_cymd:
+    display: Paymentdatecymd
+    type: date
+    required: false
+    description: Field PaymentDateCymd from SrsArchiveAPR
+  remittance_name:
+    display: Remittancename
+    type: string
+    required: false
+    description: Field RemittanceName from SrsArchiveAPR
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from SrsArchiveAPR
+  supplier_name:
+    display: Suppliername
+    type: string
+    required: false
+    description: Field SupplierName from SrsArchiveAPR

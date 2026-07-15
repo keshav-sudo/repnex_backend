@@ -1,0 +1,78 @@
+concept: gtr_balances_fix
+display_name: GtrBalancesFix
+module: other
+description: Auto-generated representation of the physical table GtrBalancesFix.
+synonyms:
+- gtrbalancesfix
+- gtr balances fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from GtrBalancesFix
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from GtrBalancesFix
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from GtrBalancesFix
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from GtrBalancesFix
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from GtrBalancesFix
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from GtrBalancesFix
+  old_out_value:
+    display: Oldoutvalue
+    type: decimal
+    required: false
+    description: Field OldOutValue from GtrBalancesFix
+  new_out_value:
+    display: Newoutvalue
+    type: decimal
+    required: false
+    description: Field NewOutValue from GtrBalancesFix
+  old_in_value:
+    display: Oldinvalue
+    type: decimal
+    required: false
+    description: Field OldInValue from GtrBalancesFix
+  new_in_value:
+    display: Newinvalue
+    type: decimal
+    required: false
+    description: Field NewInValue from GtrBalancesFix
+  old_out_quantity:
+    display: Oldoutquantity
+    type: decimal
+    required: false
+    description: Field OldOutQuantity from GtrBalancesFix
+  new_out_quantity:
+    display: Newoutquantity
+    type: decimal
+    required: false
+    description: Field NewOutQuantity from GtrBalancesFix
+  old_in_quantity:
+    display: Oldinquantity
+    type: decimal
+    required: false
+    description: Field OldInQuantity from GtrBalancesFix
+  new_in_quantity:
+    display: Newinquantity
+    type: decimal
+    required: false
+    description: Field NewInQuantity from GtrBalancesFix

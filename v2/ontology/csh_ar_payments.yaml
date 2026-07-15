@@ -1,0 +1,213 @@
+concept: csh_ar_payments
+display_name: CshArPayments
+module: cashbook
+description: Auto-generated representation of the physical table CshArPayments.
+synonyms:
+- csharpayments
+- csh ar payments
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshArPayments
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshArPayments
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from CshArPayments
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from CshArPayments
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from CshArPayments
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from CshArPayments
+  gross_payment:
+    display: Grosspayment
+    type: decimal
+    required: false
+    description: Field GrossPayment from CshArPayments
+  gross_payment_for:
+    display: Grosspaymentfor
+    type: decimal
+    required: false
+    description: Field GrossPaymentFor from CshArPayments
+  discount_allowed:
+    display: Discountallowed
+    type: decimal
+    required: false
+    description: Field DiscountAllowed from CshArPayments
+  discount_allowed_for:
+    display: Discountallowedfor
+    type: decimal
+    required: false
+    description: Field DiscountAllowedFor from CshArPayments
+  net_payment:
+    display: Netpayment
+    type: decimal
+    required: false
+    description: Field NetPayment from CshArPayments
+  net_payment_for:
+    display: Netpaymentfor
+    type: decimal
+    required: false
+    description: Field NetPaymentFor from CshArPayments
+  pay_tax_amt_disc:
+    display: Paytaxamtdisc
+    type: decimal
+    required: false
+    description: Field PayTaxAmtDisc from CshArPayments
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from CshArPayments
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from CshArPayments
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from CshArPayments
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from CshArPayments
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from CshArPayments
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from CshArPayments
+  post_conv_rate:
+    display: Postconvrate
+    type: decimal
+    required: false
+    description: Field PostConvRate from CshArPayments
+  post_mul_div:
+    display: Postmuldiv
+    type: string
+    required: false
+    description: Field PostMulDiv from CshArPayments
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from CshArPayments
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from CshArPayments
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from CshArPayments
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from CshArPayments
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from CshArPayments
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from CshArPayments
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from CshArPayments
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from CshArPayments
+  mult_cur_pay_rec:
+    display: Multcurpayrec
+    type: string
+    required: false
+    description: Field MultCurPayRec from CshArPayments
+  pay_rec_currency:
+    display: Payreccurrency
+    type: string
+    required: false
+    description: Field PayRecCurrency from CshArPayments
+  pay_rec_grs_value:
+    display: Payrecgrsvalue
+    type: decimal
+    required: false
+    description: Field PayRecGrsValue from CshArPayments
+  pay_rec_dsc_value:
+    display: Payrecdscvalue
+    type: decimal
+    required: false
+    description: Field PayRecDscValue from CshArPayments
+  pay_rec_net_value:
+    display: Payrecnetvalue
+    type: decimal
+    required: false
+    description: Field PayRecNetValue from CshArPayments
+  pay_rec_conv_rate:
+    display: Payrecconvrate
+    type: decimal
+    required: false
+    description: Field PayRecConvRate from CshArPayments
+  pay_rec_mul_div:
+    display: Payrecmuldiv
+    type: string
+    required: false
+    description: Field PayRecMulDiv from CshArPayments
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from CshArPayments
+  group_pay:
+    display: Grouppay
+    type: string
+    required: false
+    description: Field GroupPay from CshArPayments
+  inter_company_trx:
+    display: Intercompanytrx
+    type: string
+    required: false
+    description: Field InterCompanyTrx from CshArPayments
+  primary_company:
+    display: Primarycompany
+    type: string
+    required: false
+    description: Field PrimaryCompany from CshArPayments
+  secondary_company:
+    display: Secondarycompany
+    type: string
+    required: false
+    description: Field SecondaryCompany from CshArPayments

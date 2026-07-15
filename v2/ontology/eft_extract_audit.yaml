@@ -1,0 +1,78 @@
+concept: eft_extract_audit
+display_name: EftExtractAudit
+module: other
+description: Auto-generated representation of the physical table EftExtractAudit.
+synonyms:
+- eftextractaudit
+- eft extract audit
+header_attributes:
+  eft_batch:
+    display: Eftbatch
+    type: decimal
+    required: false
+    description: Field EftBatch from EftExtractAudit
+  eft_run_date:
+    display: Eftrundate
+    type: date
+    required: false
+    description: Field EftRunDate from EftExtractAudit
+  eft_run_time:
+    display: Eftruntime
+    type: decimal
+    required: false
+    description: Field EftRunTime from EftExtractAudit
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from EftExtractAudit
+  action_date:
+    display: Actiondate
+    type: date
+    required: false
+    description: Field ActionDate from EftExtractAudit
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from EftExtractAudit
+  payment_value:
+    display: Paymentvalue
+    type: decimal
+    required: false
+    description: Field PaymentValue from EftExtractAudit
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from EftExtractAudit
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from EftExtractAudit
+  bank_currency:
+    display: Bankcurrency
+    type: string
+    required: false
+    description: Field BankCurrency from EftExtractAudit
+  last_sequence:
+    display: Lastsequence
+    type: decimal
+    required: false
+    description: Field LastSequence from EftExtractAudit
+  xml_location:
+    display: Xmllocation
+    type: string
+    required: false
+    description: Field XmlLocation from EftExtractAudit
+  xml_file:
+    display: Xmlfile
+    type: string
+    required: false
+    description: Field XmlFile from EftExtractAudit
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from EftExtractAudit

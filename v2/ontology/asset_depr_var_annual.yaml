@@ -1,0 +1,23 @@
+concept: asset_depr_var_annual
+display_name: AssetDeprVarAnnual
+module: assets
+description: Auto-generated representation of the physical table AssetDeprVarAnnual.
+synonyms:
+- assetdeprvarannual
+- asset depr var annual
+header_attributes:
+  depreciation_code:
+    display: Depreciationcode
+    type: string
+    required: false
+    description: Field DepreciationCode from AssetDeprVarAnnual
+  depreciation_year:
+    display: Depreciationyear
+    type: decimal
+    required: false
+    description: Field DepreciationYear from AssetDeprVarAnnual
+  depn_pct:
+    display: Depnpct
+    type: decimal
+    required: false
+    description: Field DepnPct from AssetDeprVarAnnual

@@ -1,0 +1,143 @@
+concept: csh_jnl
+display_name: CshJnl
+module: cashbook
+description: Auto-generated representation of the physical table CshJnl.
+synonyms:
+- cshjnl
+- csh jnl
+header_attributes:
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshJnl
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshJnl
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from CshJnl
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from CshJnl
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from CshJnl
+  adjustment_type:
+    display: Adjustmenttype
+    type: string
+    required: false
+    description: Field AdjustmentType from CshJnl
+  cheque:
+    display: Cheque
+    type: decimal
+    required: false
+    description: Field Cheque from CshJnl
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from CshJnl
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from CshJnl
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from CshJnl
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshJnl
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from CshJnl
+  post_value:
+    display: Postvalue
+    type: decimal
+    required: false
+    description: Field PostValue from CshJnl
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from CshJnl
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from CshJnl
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from CshJnl
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from CshJnl
+  acc_conv_rate:
+    display: Accconvrate
+    type: decimal
+    required: false
+    description: Field AccConvRate from CshJnl
+  acc_mul_div:
+    display: Accmuldiv
+    type: string
+    required: false
+    description: Field AccMulDiv from CshJnl
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from CshJnl
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from CshJnl
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from CshJnl
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from CshJnl
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from CshJnl
+  payment_reference:
+    display: Paymentreference
+    type: string
+    required: false
+    description: Field PaymentReference from CshJnl
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from CshJnl
+  effective_entry:
+    display: Effectiveentry
+    type: decimal
+    required: false
+    description: Field EffectiveEntry from CshJnl

@@ -1,0 +1,7 @@
+concept: ecc_user
+table: EccUser
+alias: eu
+fields:
+  ecc_user: eu.EccUser
+  user_name: eu.UserName
+  administrator: eu.Administrator

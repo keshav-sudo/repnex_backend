@@ -1,0 +1,10 @@
+concept: ar_pay_run_pdc
+table: ArPayRunPdc
+alias: aprp
+fields:
+  payment_number: aprp.PaymentNumber
+  customer: aprp.Customer
+  available_date: aprp.AvailableDate
+  cheque: aprp.Cheque
+  amount: aprp.Amount
+  narration: aprp.Narration

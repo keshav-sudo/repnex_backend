@@ -1,0 +1,28 @@
+concept: iop_fore_snapshot
+display_name: IopForeSnapshot
+module: other
+description: Auto-generated representation of the physical table IopForeSnapshot.
+synonyms:
+- iopforesnapshot
+- iop fore snapshot
+header_attributes:
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopForeSnapshot
+  date_prepared:
+    display: Dateprepared
+    type: date
+    required: false
+    description: Field DatePrepared from IopForeSnapshot
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from IopForeSnapshot
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from IopForeSnapshot

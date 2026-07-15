@@ -1,0 +1,13 @@
+concept: srq_supplier_trans
+table: SrqSupplierTrans
+alias: sst1
+fields:
+  rfq_reference: sst1.RfqReference
+  rfq_line: sst1.RfqLine
+  supplier: sst1.Supplier
+  entry_number: sst1.EntryNumber
+  price: sst1.Price
+  lead_time: sst1.LeadTime
+  last_chg_date: sst1.LastChgDate
+  time_last_chg: sst1.TimeLastChg
+  operator: sst1.Operator

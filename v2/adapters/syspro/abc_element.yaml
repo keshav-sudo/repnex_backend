@@ -1,0 +1,21 @@
+concept: abc_element
+table: AbcElement
+alias: ae
+fields:
+  element: ae.Element
+  calculation_method: ae.CalculationMethod
+  description: ae.Description
+  gl_code: ae.GlCode
+  rate: ae.Rate
+  group_code: ae.GroupCode
+  element_nar1: ae.ElementNar1
+  element_nar2: ae.ElementNar2
+  element_nar3: ae.ElementNar3
+  element_nar4: ae.ElementNar4
+  element_nar5: ae.ElementNar5
+  element_nar6: ae.ElementNar6
+  element_nar7: ae.ElementNar7
+  element_nar8: ae.ElementNar8
+  user_def1: ae.UserDef1
+  user_def2: ae.UserDef2
+  user_def3: ae.UserDef3

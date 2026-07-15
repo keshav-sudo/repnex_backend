@@ -1,0 +1,28 @@
+concept: tbl_in_cost_uom
+display_name: TblInCostUom
+module: other
+description: Auto-generated representation of the physical table TblInCostUom.
+synonyms:
+- tblincostuom
+- tbl in cost uom
+header_attributes:
+  stocking_uom:
+    display: Stockinguom
+    type: string
+    required: false
+    description: Field StockingUom from TblInCostUom
+  cost_uom:
+    display: Costuom
+    type: string
+    required: false
+    description: Field CostUom from TblInCostUom
+  conv_factor:
+    display: Convfactor
+    type: decimal
+    required: false
+    description: Field ConvFactor from TblInCostUom
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from TblInCostUom

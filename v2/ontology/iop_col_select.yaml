@@ -1,0 +1,173 @@
+concept: iop_col_select
+display_name: IopColSelect
+module: other
+description: Auto-generated representation of the physical table IopColSelect.
+synonyms:
+- iopcolselect
+- iop col select
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopColSelect
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopColSelect
+  auto_number:
+    display: Autonumber
+    type: date
+    required: false
+    description: Field AutoNumber from IopColSelect
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from IopColSelect
+  stock_code_ars:
+    display: Stockcodears
+    type: string
+    required: false
+    description: Field StockCodeArs from IopColSelect
+  stock_code_from:
+    display: Stockcodefrom
+    type: string
+    required: false
+    description: Field StockCodeFrom from IopColSelect
+  stock_code_to:
+    display: Stockcodeto
+    type: string
+    required: false
+    description: Field StockCodeTo from IopColSelect
+  warehouse_ars:
+    display: Warehousears
+    type: string
+    required: false
+    description: Field WarehouseArs from IopColSelect
+  warehouse_from:
+    display: Warehousefrom
+    type: string
+    required: false
+    description: Field WarehouseFrom from IopColSelect
+  warehouse_to:
+    display: Warehouseto
+    type: string
+    required: false
+    description: Field WarehouseTo from IopColSelect
+  product_class_ars:
+    display: Productclassars
+    type: string
+    required: false
+    description: Field ProductClassArs from IopColSelect
+  product_class_from:
+    display: Productclassfrom
+    type: string
+    required: false
+    description: Field ProductClassFrom from IopColSelect
+  product_class_to:
+    display: Productclassto
+    type: string
+    required: false
+    description: Field ProductClassTo from IopColSelect
+  supplier_ars:
+    display: Supplierars
+    type: string
+    required: false
+    description: Field SupplierArs from IopColSelect
+  supplier_from:
+    display: Supplierfrom
+    type: string
+    required: false
+    description: Field SupplierFrom from IopColSelect
+  supplier_to:
+    display: Supplierto
+    type: string
+    required: false
+    description: Field SupplierTo from IopColSelect
+  planner_ars:
+    display: Plannerars
+    type: string
+    required: false
+    description: Field PlannerArs from IopColSelect
+  planner_from:
+    display: Plannerfrom
+    type: string
+    required: false
+    description: Field PlannerFrom from IopColSelect
+  planner_to:
+    display: Plannerto
+    type: string
+    required: false
+    description: Field PlannerTo from IopColSelect
+  buyer_ars:
+    display: Buyerars
+    type: string
+    required: false
+    description: Field BuyerArs from IopColSelect
+  buyer_from:
+    display: Buyerfrom
+    type: string
+    required: false
+    description: Field BuyerFrom from IopColSelect
+  buyer_to:
+    display: Buyerto
+    type: string
+    required: false
+    description: Field BuyerTo from IopColSelect
+  abc_type:
+    display: Abctype
+    type: string
+    required: false
+    description: Field AbcType from IopColSelect
+  abc_level:
+    display: Abclevel
+    type: string
+    required: false
+    description: Field AbcLevel from IopColSelect
+  abc_include_a:
+    display: Abcincludea
+    type: string
+    required: false
+    description: Field AbcIncludeA from IopColSelect
+  abc_include_b:
+    display: Abcincludeb
+    type: string
+    required: false
+    description: Field AbcIncludeB from IopColSelect
+  abc_include_c:
+    display: Abcincludec
+    type: string
+    required: false
+    description: Field AbcIncludeC from IopColSelect
+  abc_include_d:
+    display: Abcincluded
+    type: string
+    required: false
+    description: Field AbcIncludeD from IopColSelect
+  abc_include_e:
+    display: Abcincludee
+    type: string
+    required: false
+    description: Field AbcIncludeE from IopColSelect
+  abc_include_no_class:
+    display: Abcincludenoclass
+    type: string
+    required: false
+    description: Field AbcIncludeNoClass from IopColSelect
+  date_saved:
+    display: Datesaved
+    type: date
+    required: false
+    description: Field DateSaved from IopColSelect
+  time_saved:
+    display: Timesaved
+    type: decimal
+    required: false
+    description: Field TimeSaved from IopColSelect
+  selection_set:
+    display: Selectionset
+    type: string
+    required: false
+    description: Field SelectionSet from IopColSelect

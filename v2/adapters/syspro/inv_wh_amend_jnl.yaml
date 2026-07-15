@@ -1,0 +1,15 @@
+concept: inv_wh_amend_jnl
+table: InvWhAmendJnl
+alias: iwaj
+fields:
+  jnl_date: iwaj.JnlDate
+  jnl_time: iwaj.JnlTime
+  jnl_line: iwaj.JnlLine
+  stock_code: iwaj.StockCode
+  warehouse: iwaj.Warehouse
+  journal_printed: iwaj.JournalPrinted
+  change_flag: iwaj.ChangeFlag
+  column_name: iwaj.ColumnName
+  before: iwaj.Before
+  after: iwaj.After
+  operator_code: iwaj.OperatorCode

@@ -1,0 +1,13 @@
+concept: bom_shift_det
+table: BomShiftDet
+alias: bsd
+fields:
+  shift_code: bsd.ShiftCode
+  week_day: bsd.WeekDay
+  shift_det_code: bsd.ShiftDetCode
+  wc_machine: bsd.WcMachine
+  description: bsd.Description
+  maint_in_process: bsd.MaintInProcess
+  start_time: bsd.StartTime
+  end_time: bsd.EndTime
+  duration: bsd.Duration

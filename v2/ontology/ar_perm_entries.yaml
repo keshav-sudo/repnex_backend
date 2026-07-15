@@ -1,0 +1,93 @@
+concept: ar_perm_entries
+display_name: ArPermEntries
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArPermEntries.
+synonyms:
+- arpermentries
+- ar perm entries
+header_attributes:
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ArPermEntries
+  release_day:
+    display: Releaseday
+    type: decimal
+    required: false
+    description: Field ReleaseDay from ArPermEntries
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArPermEntries
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from ArPermEntries
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ArPermEntries
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from ArPermEntries
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ArPermEntries
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from ArPermEntries
+  next_post_period:
+    display: Nextpostperiod
+    type: decimal
+    required: false
+    description: Field NextPostPeriod from ArPermEntries
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from ArPermEntries
+  transfer_freq:
+    display: Transferfreq
+    type: decimal
+    required: false
+    description: Field TransferFreq from ArPermEntries
+  posted_flag:
+    display: Postedflag
+    type: string
+    required: false
+    description: Field PostedFlag from ArPermEntries
+  gst_code:
+    display: Gstcode
+    type: string
+    required: false
+    description: Field GstCode from ArPermEntries
+  entry_description:
+    display: Entrydescription
+    type: string
+    required: false
+    description: Field EntryDescription from ArPermEntries
+  extra_desc:
+    display: Extradesc
+    type: string
+    required: false
+    description: Field ExtraDesc from ArPermEntries
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ArPermEntries
+  tax_regn_num:
+    display: Taxregnnum
+    type: string
+    required: false
+    description: Field TaxRegnNum from ArPermEntries

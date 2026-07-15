@@ -1,0 +1,28 @@
+concept: adm_status_header
+display_name: AdmStatusHeader
+module: administration
+description: Auto-generated representation of the physical table AdmStatusHeader.
+synonyms:
+- admstatusheader
+- adm status header
+header_attributes:
+  status_entity:
+    display: Statusentity
+    type: string
+    required: false
+    description: Field StatusEntity from AdmStatusHeader
+  status_code:
+    display: Statuscode
+    type: string
+    required: false
+    description: Field StatusCode from AdmStatusHeader
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmStatusHeader
+  blocked_flag:
+    display: Blockedflag
+    type: string
+    required: false
+    description: Field BlockedFlag from AdmStatusHeader

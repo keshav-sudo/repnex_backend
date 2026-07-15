@@ -1,0 +1,38 @@
+concept: pos_summary_pay
+display_name: PosSummaryPay
+module: other
+description: Auto-generated representation of the physical table PosSummaryPay.
+synonyms:
+- possummarypay
+- pos summary pay
+header_attributes:
+  cash_drawer:
+    display: Cashdrawer
+    type: string
+    required: false
+    description: Field CashDrawer from PosSummaryPay
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from PosSummaryPay
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from PosSummaryPay
+  total_paym_val_for:
+    display: Totalpaymvalfor
+    type: decimal
+    required: false
+    description: Field TotalPaymValFor from PosSummaryPay
+  total_paym_val_loc:
+    display: Totalpaymvalloc
+    type: decimal
+    required: false
+    description: Field TotalPaymValLoc from PosSummaryPay
+  num_of_payments:
+    display: Numofpayments
+    type: decimal
+    required: false
+    description: Field NumOfPayments from PosSummaryPay

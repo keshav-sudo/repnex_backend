@@ -1,0 +1,28 @@
+concept: tbl_bom_time_uom
+display_name: TblBomTimeUom
+module: other
+description: Auto-generated representation of the physical table TblBomTimeUom.
+synonyms:
+- tblbomtimeuom
+- tbl bom time uom
+header_attributes:
+  emp_rate_time_uom:
+    display: Empratetimeuom
+    type: string
+    required: false
+    description: Field EmpRateTimeUom from TblBomTimeUom
+  work_time_uom:
+    display: Worktimeuom
+    type: string
+    required: false
+    description: Field WorkTimeUom from TblBomTimeUom
+  conv_factor:
+    display: Convfactor
+    type: decimal
+    required: false
+    description: Field ConvFactor from TblBomTimeUom
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from TblBomTimeUom

@@ -1,0 +1,7 @@
+concept: tbl_sa_suppl_units
+table: TblSaSupplUnits
+alias: tssu
+fields:
+  suppl_unit_code: tssu.SupplUnitCode
+  description: tssu.Description
+  extended_code: tssu.ExtendedCode

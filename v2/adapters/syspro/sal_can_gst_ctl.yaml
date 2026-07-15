@@ -1,0 +1,12 @@
+concept: sal_can_gst_ctl
+table: SalCanGstCtl
+alias: scgc
+fields:
+  ctl_flag: scgc.CtlFlag
+  ptd_taxable_val: scgc.PtdTaxableVal
+  ptd_exempt_val: scgc.PtdExemptVal
+  ptd_invoice_val: scgc.PtdInvoiceVal
+  ytd_taxable_val: scgc.YtdTaxableVal
+  ytd_exempt_val: scgc.YtdExemptVal
+  ytd_invoice_val: scgc.YtdInvoiceVal
+  last_prd_end_date: scgc.LastPrdEndDate

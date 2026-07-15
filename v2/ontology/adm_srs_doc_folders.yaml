@@ -1,0 +1,38 @@
+concept: adm_srs_doc_folders
+display_name: AdmSrsDocFolders
+module: administration
+description: Auto-generated representation of the physical table AdmSrsDocFolders.
+synonyms:
+- admsrsdocfolders
+- adm srs doc folders
+header_attributes:
+  info_type:
+    display: Infotype
+    type: string
+    required: false
+    description: Field InfoType from AdmSrsDocFolders
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmSrsDocFolders
+  print_date:
+    display: Printdate
+    type: date
+    required: false
+    description: Field PrintDate from AdmSrsDocFolders
+  print_time:
+    display: Printtime
+    type: decimal
+    required: false
+    description: Field PrintTime from AdmSrsDocFolders
+  computer_name:
+    display: Computername
+    type: string
+    required: false
+    description: Field ComputerName from AdmSrsDocFolders
+  folder:
+    display: Folder
+    type: string
+    required: false
+    description: Field Folder from AdmSrsDocFolders

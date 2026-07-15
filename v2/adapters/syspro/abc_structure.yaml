@@ -1,0 +1,10 @@
+concept: abc_structure
+table: AbcStructure
+alias: as
+fields:
+  stock_code: as.StockCode
+  incident: as.Incident
+  element: as.Element
+  route: as.Route
+  driver_qty: as.DriverQty
+  multiplier_flg: as.MultiplierFlg

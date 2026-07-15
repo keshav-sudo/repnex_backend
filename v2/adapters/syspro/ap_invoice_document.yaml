@@ -1,0 +1,10 @@
+concept: ap_invoice_document
+table: ApInvoiceDocument
+alias: aid1
+fields:
+  supplier: aid1.Supplier
+  invoice: aid1.Invoice
+  document: aid1.Document
+  recog_doc: aid1.RecogDoc
+  tags: aid1.Tags
+  transaction_guid: aid1.TransactionGuid

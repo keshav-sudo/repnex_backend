@@ -1,0 +1,53 @@
+concept: sqm_nc_department
+display_name: SqmNcDepartment
+module: other
+description: Auto-generated representation of the physical table SqmNcDepartment.
+synonyms:
+- sqmncdepartment
+- sqm nc department
+header_attributes:
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from SqmNcDepartment
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SqmNcDepartment
+  owner:
+    display: Owner
+    type: string
+    required: false
+    description: Field Owner from SqmNcDepartment
+  manager:
+    display: Manager
+    type: string
+    required: false
+    description: Field Manager from SqmNcDepartment
+  investigator:
+    display: Investigator
+    type: string
+    required: false
+    description: Field Investigator from SqmNcDepartment
+  close_out_actions:
+    display: Closeoutactions
+    type: string
+    required: false
+    description: Field CloseOutActions from SqmNcDepartment
+  ca_actions:
+    display: Caactions
+    type: string
+    required: false
+    description: Field CaActions from SqmNcDepartment
+  pa_actions:
+    display: Paactions
+    type: string
+    required: false
+    description: Field PaActions from SqmNcDepartment
+  auditor:
+    display: Auditor
+    type: string
+    required: false
+    description: Field Auditor from SqmNcDepartment

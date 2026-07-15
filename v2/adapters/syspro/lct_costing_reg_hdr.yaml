@@ -1,0 +1,7 @@
+concept: lct_costing_reg_hdr
+table: LctCostingRegHdr
+alias: lcrh
+fields:
+  shipment_reference: lcrh.ShipmentReference
+  vessel: lcrh.Vessel
+  departure_date: lcrh.DepartureDate

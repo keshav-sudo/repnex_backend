@@ -1,0 +1,43 @@
+concept: wip_prompt_ctl
+display_name: WipPromptCtl
+module: work_in_progress
+description: Auto-generated representation of the physical table WipPromptCtl.
+synonyms:
+- wippromptctl
+- wip prompt ctl
+header_attributes:
+  format_code:
+    display: Formatcode
+    type: string
+    required: false
+    description: Field FormatCode from WipPromptCtl
+  prompt_req_mode:
+    display: Promptreqmode
+    type: string
+    required: false
+    description: Field PromptReqMode from WipPromptCtl
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WipPromptCtl
+  suppress_time:
+    display: Suppresstime
+    type: string
+    required: false
+    description: Field SuppressTime from WipPromptCtl
+  update_qty_scrap:
+    display: Updateqtyscrap
+    type: string
+    required: false
+    description: Field UpdateQtyScrap from WipPromptCtl
+  auto_receipt:
+    display: Autoreceipt
+    type: string
+    required: false
+    description: Field AutoReceipt from WipPromptCtl
+  auto_part_bill:
+    display: Autopartbill
+    type: string
+    required: false
+    description: Field AutoPartBill from WipPromptCtl

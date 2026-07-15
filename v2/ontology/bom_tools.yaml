@@ -1,0 +1,23 @@
+concept: bom_tools
+display_name: BomTools
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomTools.
+synonyms:
+- bomtools
+- bom tools
+header_attributes:
+  tool:
+    display: Tool
+    type: string
+    required: false
+    description: Field Tool from BomTools
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomTools
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from BomTools

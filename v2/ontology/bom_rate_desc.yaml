@@ -1,0 +1,23 @@
+concept: bom_rate_desc
+display_name: BomRateDesc
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomRateDesc.
+synonyms:
+- bomratedesc
+- bom rate desc
+header_attributes:
+  rate:
+    display: Rate
+    type: string
+    required: false
+    description: Field Rate from BomRateDesc
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomRateDesc
+  time_uom:
+    display: Timeuom
+    type: string
+    required: false
+    description: Field TimeUom from BomRateDesc

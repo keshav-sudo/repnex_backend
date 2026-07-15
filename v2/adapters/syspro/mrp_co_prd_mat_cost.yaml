@@ -1,0 +1,10 @@
+concept: mrp_co_prd_mat_cost
+table: MrpCoPrdMatCost
+alias: mcpmc
+fields:
+  job: mcpmc.Job
+  co_product_line: mcpmc.CoProductLine
+  stock_code: mcpmc.StockCode
+  warehouse: mcpmc.Warehouse
+  line: mcpmc.Line
+  pct_material_cost: mcpmc.PctMaterialCost

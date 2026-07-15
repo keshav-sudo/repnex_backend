@@ -1,0 +1,35 @@
+concept: sal_salesperson
+table: SalSalesperson
+alias: ss
+fields:
+  branch: ss.Branch
+  salesperson: ss.Salesperson
+  name: ss.Name
+  sales_budget1: ss.SalesBudget1
+  sales_budget2: ss.SalesBudget2
+  sales_budget3: ss.SalesBudget3
+  sales_budget4: ss.SalesBudget4
+  sales_budget5: ss.SalesBudget5
+  sales_budget6: ss.SalesBudget6
+  sales_budget7: ss.SalesBudget7
+  sales_budget8: ss.SalesBudget8
+  sales_budget9: ss.SalesBudget9
+  sales_budget10: ss.SalesBudget10
+  sales_budget11: ss.SalesBudget11
+  sales_budget12: ss.SalesBudget12
+  sales_budget13: ss.SalesBudget13
+  sales_actual1: ss.SalesActual1
+  sales_actual2: ss.SalesActual2
+  sales_actual3: ss.SalesActual3
+  sales_actual4: ss.SalesActual4
+  sales_actual5: ss.SalesActual5
+  sales_actual6: ss.SalesActual6
+  sales_actual7: ss.SalesActual7
+  sales_actual8: ss.SalesActual8
+  sales_actual9: ss.SalesActual9
+  sales_actual10: ss.SalesActual10
+  sales_actual11: ss.SalesActual11
+  sales_actual12: ss.SalesActual12
+  sales_actual13: ss.SalesActual13
+  commission_pct: ss.CommissionPct
+  salesperson_coll: ss.SalespersonColl

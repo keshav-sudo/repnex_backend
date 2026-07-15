@@ -1,0 +1,23 @@
+concept: asset_mechanic
+display_name: AssetMechanic
+module: assets
+description: Auto-generated representation of the physical table AssetMechanic.
+synonyms:
+- assetmechanic
+- asset mechanic
+header_attributes:
+  mechanic:
+    display: Mechanic
+    type: string
+    required: false
+    description: Field Mechanic from AssetMechanic
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetMechanic
+  mechanic_rate:
+    display: Mechanicrate
+    type: decimal
+    required: false
+    description: Field MechanicRate from AssetMechanic

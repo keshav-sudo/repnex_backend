@@ -1,0 +1,138 @@
+concept: asset_dist_reg
+display_name: AssetDistReg
+module: assets
+description: Auto-generated representation of the physical table AssetDistReg.
+synonyms:
+- assetdistreg
+- asset dist reg
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from AssetDistReg
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from AssetDistReg
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from AssetDistReg
+  dist_reg_num:
+    display: Distregnum
+    type: decimal
+    required: false
+    description: Field DistRegNum from AssetDistReg
+  entry:
+    display: Entry
+    type: decimal
+    required: false
+    description: Field Entry from AssetDistReg
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetDistReg
+  asset_description:
+    display: Assetdescription
+    type: string
+    required: false
+    description: Field AssetDescription from AssetDistReg
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from AssetDistReg
+  month_end_date:
+    display: Monthenddate
+    type: date
+    required: false
+    description: Field MonthEndDate from AssetDistReg
+  dist_value:
+    display: Distvalue
+    type: decimal
+    required: false
+    description: Field DistValue from AssetDistReg
+  dist_type:
+    display: Disttype
+    type: string
+    required: false
+    description: Field DistType from AssetDistReg
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from AssetDistReg
+  entries_group:
+    display: Entriesgroup
+    type: decimal
+    required: false
+    description: Field EntriesGroup from AssetDistReg
+  asset_key:
+    display: Assetkey
+    type: string
+    required: false
+    description: Field AssetKey from AssetDistReg
+  entry_year:
+    display: Entryyear
+    type: decimal
+    required: false
+    description: Field EntryYear from AssetDistReg
+  entry_month:
+    display: Entrymonth
+    type: decimal
+    required: false
+    description: Field EntryMonth from AssetDistReg
+  system_date:
+    display: Systemdate
+    type: date
+    required: false
+    description: Field SystemDate from AssetDistReg
+  system_time:
+    display: Systemtime
+    type: decimal
+    required: false
+    description: Field SystemTime from AssetDistReg
+  analysis_entry:
+    display: Analysisentry
+    type: decimal
+    required: false
+    description: Field AnalysisEntry from AssetDistReg
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from AssetDistReg
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from AssetDistReg
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from AssetDistReg
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from AssetDistReg
+  gl_int_level:
+    display: Glintlevel
+    type: string
+    required: false
+    description: Field GlIntLevel from AssetDistReg
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from AssetDistReg
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from AssetDistReg

@@ -1,0 +1,178 @@
+concept: asset_capex_suspense
+display_name: AssetCapexSuspense
+module: assets
+description: Auto-generated representation of the physical table AssetCapexSuspense.
+synonyms:
+- assetcapexsuspense
+- asset capex suspense
+header_attributes:
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from AssetCapexSuspense
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from AssetCapexSuspense
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetCapexSuspense
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetCapexSuspense
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetCapexSuspense
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetCapexSuspense
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from AssetCapexSuspense
+  asset_type:
+    display: Assettype
+    type: string
+    required: false
+    description: Field AssetType from AssetCapexSuspense
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from AssetCapexSuspense
+  asset_status:
+    display: Assetstatus
+    type: string
+    required: false
+    description: Field AssetStatus from AssetCapexSuspense
+  cycle_count:
+    display: Cyclecount
+    type: string
+    required: false
+    description: Field CycleCount from AssetCapexSuspense
+  resp_user:
+    display: Respuser
+    type: string
+    required: false
+    description: Field RespUser from AssetCapexSuspense
+  asset_owner:
+    display: Assetowner
+    type: string
+    required: false
+    description: Field AssetOwner from AssetCapexSuspense
+  book_val_dep:
+    display: Bookvaldep
+    type: string
+    required: false
+    description: Field BookValDep from AssetCapexSuspense
+  book_val_residual:
+    display: Bookvalresidual
+    type: decimal
+    required: false
+    description: Field BookValResidual from AssetCapexSuspense
+  thruput_eul:
+    display: Thruputeul
+    type: decimal
+    required: false
+    description: Field ThruputEul from AssetCapexSuspense
+  stat_gl_code:
+    display: Statglcode
+    type: string
+    required: false
+    description: Field StatGlCode from AssetCapexSuspense
+  total_periods:
+    display: Totalperiods
+    type: decimal
+    required: false
+    description: Field TotalPeriods from AssetCapexSuspense
+  wear_tear_dep:
+    display: Wearteardep
+    type: string
+    required: false
+    description: Field WearTearDep from AssetCapexSuspense
+  wear_tear_residual:
+    display: Weartearresidual
+    type: decimal
+    required: false
+    description: Field WearTearResidual from AssetCapexSuspense
+  suspend:
+    display: Suspend
+    type: string
+    required: false
+    description: Field Suspend from AssetCapexSuspense
+  book_val_dep_flag:
+    display: Bookvaldepflag
+    type: string
+    required: false
+    description: Field BookValDepFlag from AssetCapexSuspense
+  asset_cost:
+    display: Assetcost
+    type: decimal
+    required: false
+    description: Field AssetCost from AssetCapexSuspense
+  asset_tax:
+    display: Assettax
+    type: decimal
+    required: false
+    description: Field AssetTax from AssetCapexSuspense
+  asset_qty:
+    display: Assetqty
+    type: decimal
+    required: false
+    description: Field AssetQty from AssetCapexSuspense
+  created_from_flag:
+    display: Createdfromflag
+    type: string
+    required: false
+    description: Field CreatedFromFlag from AssetCapexSuspense
+  created_from_key:
+    display: Createdfromkey
+    type: string
+    required: false
+    description: Field CreatedFromKey from AssetCapexSuspense
+  purchase_date:
+    display: Purchasedate
+    type: date
+    required: false
+    description: Field PurchaseDate from AssetCapexSuspense
+  start_dep:
+    display: Startdep
+    type: date
+    required: false
+    description: Field StartDep from AssetCapexSuspense
+  wear_dep_start_date:
+    display: Weardepstartdate
+    type: date
+    required: false
+    description: Field WearDepStartDate from AssetCapexSuspense
+  suspense_year:
+    display: Suspenseyear
+    type: decimal
+    required: false
+    description: Field SuspenseYear from AssetCapexSuspense
+  suspense_period:
+    display: Suspenseperiod
+    type: decimal
+    required: false
+    description: Field SuspensePeriod from AssetCapexSuspense
+  hold_flag:
+    display: Holdflag
+    type: string
+    required: false
+    description: Field HoldFlag from AssetCapexSuspense
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetCapexSuspense

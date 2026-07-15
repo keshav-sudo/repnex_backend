@@ -1,0 +1,338 @@
+concept: bom_operations
+display_name: BomOperations
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomOperations.
+synonyms:
+- bomoperations
+- bom operations
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from BomOperations
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BomOperations
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BomOperations
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomOperations
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from BomOperations
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from BomOperations
+  wc_rate_ind:
+    display: Wcrateind
+    type: decimal
+    required: false
+    description: Field WcRateInd from BomOperations
+  what_if_wc_ind:
+    display: Whatifwcind
+    type: decimal
+    required: false
+    description: Field WhatIfWcInd from BomOperations
+  subcontract_flag:
+    display: Subcontractflag
+    type: string
+    required: false
+    description: Field SubcontractFlag from BomOperations
+  i_set_up_time:
+    display: Isetuptime
+    type: decimal
+    required: false
+    description: Field ISetUpTime from BomOperations
+  i_run_time:
+    display: Iruntime
+    type: decimal
+    required: false
+    description: Field IRunTime from BomOperations
+  i_startup_time:
+    display: Istartuptime
+    type: decimal
+    required: false
+    description: Field IStartupTime from BomOperations
+  i_teardown_time:
+    display: Iteardowntime
+    type: decimal
+    required: false
+    description: Field ITeardownTime from BomOperations
+  i_wait_time:
+    display: Iwaittime
+    type: decimal
+    required: false
+    description: Field IWaitTime from BomOperations
+  i_startup_qty:
+    display: Istartupqty
+    type: decimal
+    required: false
+    description: Field IStartupQty from BomOperations
+  i_machine:
+    display: Imachine
+    type: string
+    required: false
+    description: Field IMachine from BomOperations
+  i_unit_capacity:
+    display: Iunitcapacity
+    type: decimal
+    required: false
+    description: Field IUnitCapacity from BomOperations
+  i_max_work_opertrs:
+    display: Imaxworkopertrs
+    type: decimal
+    required: false
+    description: Field IMaxWorkOpertrs from BomOperations
+  i_max_prod_units:
+    display: Imaxprodunits
+    type: decimal
+    required: false
+    description: Field IMaxProdUnits from BomOperations
+  i_time_taken:
+    display: Itimetaken
+    type: decimal
+    required: false
+    description: Field ITimeTaken from BomOperations
+  i_quantity:
+    display: Iquantity
+    type: decimal
+    required: false
+    description: Field IQuantity from BomOperations
+  i_run_time_ent:
+    display: Iruntimeent
+    type: decimal
+    required: false
+    description: Field IRunTimeEnt from BomOperations
+  i_time_taken_ent:
+    display: Itimetakenent
+    type: decimal
+    required: false
+    description: Field ITimeTakenEnt from BomOperations
+  i_startup_qty_ent:
+    display: Istartupqtyent
+    type: decimal
+    required: false
+    description: Field IStartupQtyEnt from BomOperations
+  i_quantity_ent:
+    display: Iquantityent
+    type: decimal
+    required: false
+    description: Field IQuantityEnt from BomOperations
+  sub_supplier:
+    display: Subsupplier
+    type: string
+    required: false
+    description: Field SubSupplier from BomOperations
+  sub_po_stock_code:
+    display: Subpostockcode
+    type: string
+    required: false
+    description: Field SubPoStockCode from BomOperations
+  sub_qty_per:
+    display: Subqtyper
+    type: decimal
+    required: false
+    description: Field SubQtyPer from BomOperations
+  sub_order_uom:
+    display: Suborderuom
+    type: string
+    required: false
+    description: Field SubOrderUom from BomOperations
+  sub_op_unit_value:
+    display: Subopunitvalue
+    type: decimal
+    required: false
+    description: Field SubOpUnitValue from BomOperations
+  sub_what_if_value:
+    display: Subwhatifvalue
+    type: decimal
+    required: false
+    description: Field SubWhatIfValue from BomOperations
+  sub_planner:
+    display: Subplanner
+    type: string
+    required: false
+    description: Field SubPlanner from BomOperations
+  sub_buyer:
+    display: Subbuyer
+    type: string
+    required: false
+    description: Field SubBuyer from BomOperations
+  sub_lead_time:
+    display: Subleadtime
+    type: decimal
+    required: false
+    description: Field SubLeadTime from BomOperations
+  sub_dock_to_stock:
+    display: Subdocktostock
+    type: decimal
+    required: false
+    description: Field SubDockToStock from BomOperations
+  sub_offsite_days:
+    display: Suboffsitedays
+    type: decimal
+    required: false
+    description: Field SubOffsiteDays from BomOperations
+  milestone:
+    display: Milestone
+    type: string
+    required: false
+    description: Field Milestone from BomOperations
+  elapsed_time:
+    display: Elapsedtime
+    type: decimal
+    required: false
+    description: Field ElapsedTime from BomOperations
+  movement_time:
+    display: Movementtime
+    type: decimal
+    required: false
+    description: Field MovementTime from BomOperations
+  narration_code:
+    display: Narrationcode
+    type: string
+    required: false
+    description: Field NarrationCode from BomOperations
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from BomOperations
+  num_of_pieces:
+    display: Numofpieces
+    type: decimal
+    required: false
+    description: Field NumOfPieces from BomOperations
+  inspection_flag:
+    display: Inspectionflag
+    type: string
+    required: false
+    description: Field InspectionFlag from BomOperations
+  oper_yield_pct:
+    display: Operyieldpct
+    type: decimal
+    required: false
+    description: Field OperYieldPct from BomOperations
+  oper_yield_qty:
+    display: Operyieldqty
+    type: decimal
+    required: false
+    description: Field OperYieldQty from BomOperations
+  minor_setup:
+    display: Minorsetup
+    type: decimal
+    required: false
+    description: Field MinorSetup from BomOperations
+  minor_setup_code:
+    display: Minorsetupcode
+    type: string
+    required: false
+    description: Field MinorSetupCode from BomOperations
+  tool_set:
+    display: Toolset
+    type: string
+    required: false
+    description: Field ToolSet from BomOperations
+  tool_set_qty:
+    display: Toolsetqty
+    type: decimal
+    required: false
+    description: Field ToolSetQty from BomOperations
+  tool_consumption:
+    display: Toolconsumption
+    type: decimal
+    required: false
+    description: Field ToolConsumption from BomOperations
+  time_calc_flag:
+    display: Timecalcflag
+    type: string
+    required: false
+    description: Field TimeCalcFlag from BomOperations
+  transfer_qty_or_pct:
+    display: Transferqtyorpct
+    type: string
+    required: false
+    description: Field TransferQtyOrPct from BomOperations
+  transfer_qty_pct:
+    display: Transferqtypct
+    type: decimal
+    required: false
+    description: Field TransferQtyPct from BomOperations
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from BomOperations
+  resource_mask:
+    display: Resourcemask
+    type: string
+    required: false
+    description: Field ResourceMask from BomOperations
+  max_op_delay:
+    display: Maxopdelay
+    type: decimal
+    required: false
+    description: Field MaxOpDelay from BomOperations
+  oper_yield_qty_ent:
+    display: Operyieldqtyent
+    type: decimal
+    required: false
+    description: Field OperYieldQtyEnt from BomOperations
+  transfer_qty_pct_ent:
+    display: Transferqtypctent
+    type: decimal
+    required: false
+    description: Field TransferQtyPctEnt from BomOperations
+  max_op_span:
+    display: Maxopspan
+    type: decimal
+    required: false
+    description: Field MaxOpSpan from BomOperations
+  op_slack:
+    display: Opslack
+    type: decimal
+    required: false
+    description: Field OpSlack from BomOperations
+  allow_op_split:
+    display: Allowopsplit
+    type: string
+    required: false
+    description: Field AllowOpSplit from BomOperations
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from BomOperations
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from BomOperations
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from BomOperations
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from BomOperations
+  production_bin:
+    display: Productionbin
+    type: string
+    required: false
+    description: Field ProductionBin from BomOperations

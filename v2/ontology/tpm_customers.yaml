@@ -1,0 +1,28 @@
+concept: tpm_customers
+display_name: TpmCustomers
+module: other
+description: Auto-generated representation of the physical table TpmCustomers.
+synonyms:
+- tpmcustomers
+- tpm customers
+header_attributes:
+  tpm_customer:
+    display: Tpmcustomer
+    type: string
+    required: false
+    description: Field TpmCustomer from TpmCustomers
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from TpmCustomers
+  credit_limit:
+    display: Creditlimit
+    type: decimal
+    required: false
+    description: Field CreditLimit from TpmCustomers
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from TpmCustomers

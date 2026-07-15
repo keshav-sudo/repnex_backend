@@ -1,0 +1,11 @@
+concept: srs_archive_blc
+table: SrsArchiveBLC
+alias: sablc
+fields:
+  archive_date: sablc.ArchiveDate
+  archive_time: sablc.ArchiveTime
+  operator: sablc.Operator
+  archive_id: sablc.ArchiveId
+  archive_type: sablc.ArchiveType
+  archive_file: sablc.ArchiveFile
+  contract: sablc.Contract

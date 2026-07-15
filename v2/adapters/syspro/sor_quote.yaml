@@ -1,0 +1,16 @@
+concept: sor_quote
+table: SorQuote
+alias: sq
+fields:
+  customer: sq.Customer
+  trn_date: sq.TrnDate
+  trn_time: sq.TrnTime
+  description: sq.Description
+  operator: sq.Operator
+  follow_up_date: sq.FollowUpDate
+  reminder: sq.Reminder
+  quote_print_flag: sq.QuotePrintFlag
+  quote_format: sq.QuoteFormat
+  quick_quote: sq.QuickQuote
+  price_group: sq.PriceGroup
+  price_group_level: sq.PriceGroupLevel

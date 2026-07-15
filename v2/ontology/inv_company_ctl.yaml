@@ -1,0 +1,103 @@
+concept: inv_company_ctl
+display_name: InvCompanyCtl
+module: inventory
+description: Auto-generated representation of the physical table InvCompanyCtl.
+synonyms:
+- invcompanyctl
+- inv company ctl
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from InvCompanyCtl
+  next_inv_jnl:
+    display: Nextinvjnl
+    type: decimal
+    required: false
+    description: Field NextInvJnl from InvCompanyCtl
+  next_inv_jnl_pyr:
+    display: Nextinvjnlpyr
+    type: decimal
+    required: false
+    description: Field NextInvJnlPyr from InvCompanyCtl
+  next_for_jnl:
+    display: Nextforjnl
+    type: decimal
+    required: false
+    description: Field NextForJnl from InvCompanyCtl
+  next_build_jnl:
+    display: Nextbuildjnl
+    type: decimal
+    required: false
+    description: Field NextBuildJnl from InvCompanyCtl
+  unp_jnl_year:
+    display: Unpjnlyear
+    type: decimal
+    required: false
+    description: Field UnpJnlYear from InvCompanyCtl
+  unp_jnl_month:
+    display: Unpjnlmonth
+    type: decimal
+    required: false
+    description: Field UnpJnlMonth from InvCompanyCtl
+  unp_journal:
+    display: Unpjournal
+    type: decimal
+    required: false
+    description: Field UnpJournal from InvCompanyCtl
+  unp_inv_year:
+    display: Unpinvyear
+    type: decimal
+    required: false
+    description: Field UnpInvYear from InvCompanyCtl
+  unp_inv_period:
+    display: Unpinvperiod
+    type: decimal
+    required: false
+    description: Field UnpInvPeriod from InvCompanyCtl
+  unp_grn_year:
+    display: Unpgrnyear
+    type: decimal
+    required: false
+    description: Field UnpGrnYear from InvCompanyCtl
+  unp_grn_period:
+    display: Unpgrnperiod
+    type: decimal
+    required: false
+    description: Field UnpGrnPeriod from InvCompanyCtl
+  unp_inv_jnl_upd_year:
+    display: Unpinvjnlupdyear
+    type: decimal
+    required: false
+    description: Field UnpInvJnlUpdYear from InvCompanyCtl
+  unp_inv_jnl_upd_month:
+    display: Unpinvjnlupdmonth
+    type: decimal
+    required: false
+    description: Field UnpInvJnlUpdMonth from InvCompanyCtl
+  unp_inv_jnl_upd:
+    display: Unpinvjnlupd
+    type: decimal
+    required: false
+    description: Field UnpInvJnlUpd from InvCompanyCtl
+  unp_inv_dis_upd_year:
+    display: Unpinvdisupdyear
+    type: decimal
+    required: false
+    description: Field UnpInvDisUpdYear from InvCompanyCtl
+  unp_inv_dis_upd_period:
+    display: Unpinvdisupdperiod
+    type: decimal
+    required: false
+    description: Field UnpInvDisUpdPeriod from InvCompanyCtl
+  unp_grn_dis_upd_year:
+    display: Unpgrndisupdyear
+    type: decimal
+    required: false
+    description: Field UnpGrnDisUpdYear from InvCompanyCtl
+  unp_grn_dis_upd_period:
+    display: Unpgrndisupdperiod
+    type: decimal
+    required: false
+    description: Field UnpGrnDisUpdPeriod from InvCompanyCtl

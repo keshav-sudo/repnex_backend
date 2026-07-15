@@ -1,0 +1,12 @@
+concept: lynq_me__activity_extension
+table: Lynq_ME_ActivityExtension
+alias: lmeae
+fields:
+  id: lmeae.Id
+  activity_id: lmeae.ActivityId
+  assigned_to: lmeae.AssignedTo
+  is_resolved: lmeae.IsResolved
+  created_date: lmeae.CreatedDate
+  last_modified: lmeae.LastModified
+  resolved_by: lmeae.ResolvedBy
+  a_force_stat_sync: lmeae.aForceStatSync

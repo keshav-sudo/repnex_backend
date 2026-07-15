@@ -1,0 +1,7 @@
+concept: ar_customer_bal#
+table: ArCustomerBal#
+alias: acb1
+fields:
+  customer: acb1.Customer
+  post_date_time: acb1.PostDateTime
+  current_balance1: acb1.CurrentBalance1

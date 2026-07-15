@@ -1,0 +1,39 @@
+concept: whm_bin
+table: WhmBin
+alias: wb
+fields:
+  warehouse: wb.Warehouse
+  bin: wb.Bin
+  bin_seq: wb.BinSeq
+  wh_area: wb.WhArea
+  bin_type: wb.BinType
+  bin_barcode: wb.BinBarcode
+  bin_rfid: wb.BinRfid
+  bin_on_hold: wb.BinOnHold
+  on_hold_reason: wb.OnHoldReason
+  allow_mult_cont: wb.AllowMultCont
+  allow_mult_skus: wb.AllowMultSkus
+  dimensions_unit: wb.DimensionsUnit
+  physical_length: wb.PhysicalLength
+  physical_width: wb.PhysicalWidth
+  physical_height: wb.PhysicalHeight
+  physical_ground_hgt: wb.PhysicalGroundHgt
+  mass_unit: wb.MassUnit
+  mass_max: wb.MassMax
+  volume_unit: wb.VolumeUnit
+  volume_max: wb.VolumeMax
+  confirm_as_source: wb.ConfirmAsSource
+  confirm_as_target: wb.ConfirmAsTarget
+  kanban_bin: wb.KanbanBin
+  wip_bin: wb.WipBin
+  pick_bin: wb.PickBin
+  put_bin: wb.PutBin
+  postman_walk_number: wb.PostmanWalkNumber
+  z_pick_seq: wb.ZPickSeq
+  velocity_pareto: wb.VelocityPareto
+  container_rules: wb.ContainerRules
+  dispatch_bin: wb.DispatchBin
+  receiving_bin: wb.ReceivingBin
+  cycle_count_variance: wb.CycleCountVariance
+  in_cycle_count: wb.InCycleCount
+  in_stock_take: wb.InStockTake

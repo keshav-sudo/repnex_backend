@@ -1,0 +1,21 @@
+concept: inv_cycle_count_capt
+table: InvCycleCountCapt
+alias: iccc1
+fields:
+  cycle_count: iccc1.CycleCount
+  capture_date: iccc1.CaptureDate
+  capture_time: iccc1.CaptureTime
+  warehouse: iccc1.Warehouse
+  stock_code: iccc1.StockCode
+  bin: iccc1.Bin
+  lot: iccc1.Lot
+  serial: iccc1.Serial
+  original_quantity: iccc1.OriginalQuantity
+  captured_quantity: iccc1.CapturedQuantity
+  reference: iccc1.Reference
+  create_lot_flag: iccc1.CreateLotFlag
+  version: iccc1.Version
+  release: iccc1.Release
+  operator: iccc1.Operator
+  verdict: iccc1.Verdict
+  confirm_date: iccc1.ConfirmDate

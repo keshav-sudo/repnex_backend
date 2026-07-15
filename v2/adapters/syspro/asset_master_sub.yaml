@@ -1,0 +1,6 @@
+concept: asset_master_sub
+table: AssetMasterSub
+alias: ams1
+fields:
+  master_asset: ams1.MasterAsset
+  asset: ams1.Asset

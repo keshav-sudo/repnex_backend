@@ -1,0 +1,17 @@
+concept: iop_sales
+table: IopSales
+alias: is1
+fields:
+  stock_code: is1.StockCode
+  version: is1.Version
+  release: is1.Release
+  warehouse: is1.Warehouse
+  movement_date: is1.MovementDate
+  ytd_trans_count: is1.YtdTransCount
+  ytd_quantity: is1.YtdQuantity
+  ytd_cost_value: is1.YtdCostValue
+  ytd_sales_value: is1.YtdSalesValue
+  trans_count: is1.TransCount
+  quantity: is1.Quantity
+  cost_value: is1.CostValue
+  sales_value: is1.SalesValue

@@ -1,0 +1,57 @@
+concept: wip_arc_co_products
+table: WipArcCoProducts
+alias: wacp
+fields:
+  job: wacp.Job
+  co_product_line: wacp.CoProductLine
+  co_product: wacp.CoProduct
+  co_product_version: wacp.CoProductVersion
+  co_product_release: wacp.CoProductRelease
+  stock_description: wacp.StockDescription
+  warehouse: wacp.Warehouse
+  operation_offset: wacp.OperationOffset
+  act_complete_date: wacp.ActCompleteDate
+  complete: wacp.Complete
+  exp_labour: wacp.ExpLabour
+  exp_material: wacp.ExpMaterial
+  qty_per: wacp.QtyPer
+  qty_to_make: wacp.QtyToMake
+  qty_manufactured: wacp.QtyManufactured
+  total_qty_scrapped: wacp.TotalQtyScrapped
+  pct_complete_flag: wacp.PctCompleteFlag
+  selling_price: wacp.SellingPrice
+  confirmed_flag: wacp.ConfirmedFlag
+  traceable_type: wacp.TraceableType
+  decimals: wacp.Decimals
+  mat_cost_to_date1: wacp.MatCostToDate1
+  mat_cost_to_date2: wacp.MatCostToDate2
+  mat_cost_to_date3: wacp.MatCostToDate3
+  lab_cost_to_date1: wacp.LabCostToDate1
+  lab_cost_to_date2: wacp.LabCostToDate2
+  lab_cost_to_date3: wacp.LabCostToDate3
+  hrs_book_to_date1: wacp.HrsBookToDate1
+  hrs_book_to_date2: wacp.HrsBookToDate2
+  hrs_book_to_date3: wacp.HrsBookToDate3
+  mat_value_issues1: wacp.MatValueIssues1
+  mat_value_issues2: wacp.MatValueIssues2
+  mat_value_issues3: wacp.MatValueIssues3
+  lab_value_issues1: wacp.LabValueIssues1
+  lab_value_issues2: wacp.LabValueIssues2
+  lab_value_issues3: wacp.LabValueIssues3
+  due_date: wacp.DueDate
+  orig_due_date: wacp.OrigDueDate
+  exp_lab_current: wacp.ExpLabCurrent
+  exp_mat_current: wacp.ExpMatCurrent
+  pct_material_cost: wacp.PctMaterialCost
+  pct_sub_contract_cost: wacp.PctSubContractCost
+  pct_labor_cost: wacp.PctLaborCost
+  pct_quantity: wacp.PctQuantity
+  uom: wacp.Uom
+  conv_fact_uom: wacp.ConvFactUom
+  conv_mul_div: wacp.ConvMulDiv
+  qty_per_ent: wacp.QtyPerEnt
+  qty_to_make_ent: wacp.QtyToMakeEnt
+  qty_manufactured_ent: wacp.QtyManufacturedEnt
+  total_qty_scrap_ent: wacp.TotalQtyScrapEnt
+  wip_branch: wacp.WipBranch
+  wip_ctl_gl_code: wacp.WipCtlGlCode

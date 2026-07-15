@@ -1,0 +1,37 @@
+concept: tpm_journal
+table: TpmJournal
+alias: tj
+fields:
+  trn_year: tj.TrnYear
+  trn_month: tj.TrnMonth
+  journal: tj.Journal
+  debit_gl_code: tj.DebitGlCode
+  credit_gl_code: tj.CreditGlCode
+  deduction_code: tj.DeductionCode
+  customer: tj.Customer
+  sales_order: tj.SalesOrder
+  reference: tj.Reference
+  narration: tj.Narration
+  amount: tj.Amount
+  journal_date: tj.JournalDate
+  operator: tj.Operator
+  status: tj.Status
+  entries_group: tj.EntriesGroup
+  currency_value: tj.CurrencyValue
+  post_currency: tj.PostCurrency
+  conv_rate: tj.ConvRate
+  mul_div: tj.MulDiv
+  account_cur: tj.AccountCur
+  acc_conv_rate: tj.AccConvRate
+  acc_mul_div: tj.AccMulDiv
+  triang_currency: tj.TriangCurrency
+  triang_rate: tj.TriangRate
+  triang_mul_div: tj.TriangMulDiv
+  dr_analysis_entry: tj.DrAnalysisEntry
+  cr_analysis_entry: tj.CrAnalysisEntry
+  gl_int_updated: tj.GlIntUpdated
+  gl_int_printed: tj.GlIntPrinted
+  gl_int_year: tj.GlIntYear
+  gl_int_period: tj.GlIntPeriod
+  gl_journal: tj.GlJournal
+  dimension_entry: tj.DimensionEntry

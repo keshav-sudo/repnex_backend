@@ -1,0 +1,463 @@
+concept: ecc_amendment_jnl
+display_name: EccAmendmentJnl
+module: other
+description: Auto-generated representation of the physical table EccAmendmentJnl.
+synonyms:
+- eccamendmentjnl
+- ecc amendment jnl
+header_attributes:
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccAmendmentJnl
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from EccAmendmentJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from EccAmendmentJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from EccAmendmentJnl
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from EccAmendmentJnl
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from EccAmendmentJnl
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from EccAmendmentJnl
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from EccAmendmentJnl
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from EccAmendmentJnl
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from EccAmendmentJnl
+  operator_name:
+    display: Operatorname
+    type: string
+    required: false
+    description: Field OperatorName from EccAmendmentJnl
+  jnl_printed:
+    display: Jnlprinted
+    type: string
+    required: false
+    description: Field JnlPrinted from EccAmendmentJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from EccAmendmentJnl
+  old_com_version:
+    display: Oldcomversion
+    type: string
+    required: false
+    description: Field OldComVersion from EccAmendmentJnl
+  old_com_release:
+    display: Oldcomrelease
+    type: string
+    required: false
+    description: Field OldComRelease from EccAmendmentJnl
+  old_ecc_consumption:
+    display: Oldeccconsumption
+    type: string
+    required: false
+    description: Field OldEccConsumption from EccAmendmentJnl
+  old_struct_on_date:
+    display: Oldstructondate
+    type: date
+    required: false
+    description: Field OldStructOnDate from EccAmendmentJnl
+  old_struct_off_date:
+    display: Oldstructoffdate
+    type: date
+    required: false
+    description: Field OldStructOffDate from EccAmendmentJnl
+  old_op_offset_flag:
+    display: Oldopoffsetflag
+    type: string
+    required: false
+    description: Field OldOpOffsetFlag from EccAmendmentJnl
+  old_operation_offset:
+    display: Oldoperationoffset
+    type: decimal
+    required: false
+    description: Field OldOperationOffset from EccAmendmentJnl
+  old_qty_per:
+    display: Oldqtyper
+    type: decimal
+    required: false
+    description: Field OldQtyPer from EccAmendmentJnl
+  old_scrap_pct:
+    display: Oldscrappct
+    type: decimal
+    required: false
+    description: Field OldScrapPct from EccAmendmentJnl
+  old_scrap_qty:
+    display: Oldscrapqty
+    type: decimal
+    required: false
+    description: Field OldScrapQty from EccAmendmentJnl
+  old_so_option_flag:
+    display: Oldsooptionflag
+    type: string
+    required: false
+    description: Field OldSoOptionFlag from EccAmendmentJnl
+  old_so_print_flag:
+    display: Oldsoprintflag
+    type: string
+    required: false
+    description: Field OldSoPrintFlag from EccAmendmentJnl
+  old_inc_scrap_flag:
+    display: Oldincscrapflag
+    type: string
+    required: false
+    description: Field OldIncScrapFlag from EccAmendmentJnl
+  old_reason_for_chg:
+    display: Oldreasonforchg
+    type: string
+    required: false
+    description: Field OldReasonForChg from EccAmendmentJnl
+  old_ref_designator:
+    display: Oldrefdesignator
+    type: string
+    required: false
+    description: Field OldRefDesignator from EccAmendmentJnl
+  old_assembly_place:
+    display: Oldassemblyplace
+    type: string
+    required: false
+    description: Field OldAssemblyPlace from EccAmendmentJnl
+  old_item_number:
+    display: Olditemnumber
+    type: string
+    required: false
+    description: Field OldItemNumber from EccAmendmentJnl
+  old_auto_narr_code:
+    display: Oldautonarrcode
+    type: decimal
+    required: false
+    description: Field OldAutoNarrCode from EccAmendmentJnl
+  old_component_type:
+    display: Oldcomponenttype
+    type: string
+    required: false
+    description: Field OldComponentType from EccAmendmentJnl
+  old_incl_kit_issues:
+    display: Oldinclkitissues
+    type: string
+    required: false
+    description: Field OldInclKitIssues from EccAmendmentJnl
+  old_create_sub_job:
+    display: Oldcreatesubjob
+    type: string
+    required: false
+    description: Field OldCreateSubJob from EccAmendmentJnl
+  old_wet_weight_perc:
+    display: Oldwetweightperc
+    type: decimal
+    required: false
+    description: Field OldWetWeightPerc from EccAmendmentJnl
+  old_include_batch:
+    display: Oldincludebatch
+    type: string
+    required: false
+    description: Field OldIncludeBatch from EccAmendmentJnl
+  old_include_from_job:
+    display: Oldincludefromjob
+    type: string
+    required: false
+    description: Field OldIncludeFromJob from EccAmendmentJnl
+  old_include_to_job:
+    display: Oldincludetojob
+    type: string
+    required: false
+    description: Field OldIncludeToJob from EccAmendmentJnl
+  old_fixed_qty_per_flag:
+    display: Oldfixedqtyperflag
+    type: string
+    required: false
+    description: Field OldFixedQtyPerFlag from EccAmendmentJnl
+  old_fixed_qty_per:
+    display: Oldfixedqtyper
+    type: decimal
+    required: false
+    description: Field OldFixedQtyPer from EccAmendmentJnl
+  old_roll_up_cost_flag:
+    display: Oldrollupcostflag
+    type: string
+    required: false
+    description: Field OldRollUpCostFlag from EccAmendmentJnl
+  old_warehouse:
+    display: Oldwarehouse
+    type: string
+    required: false
+    description: Field OldWarehouse from EccAmendmentJnl
+  old_ignore_floor_flag:
+    display: Oldignorefloorflag
+    type: string
+    required: false
+    description: Field OldIgnoreFloorFlag from EccAmendmentJnl
+  old_uom_flag:
+    display: Olduomflag
+    type: string
+    required: false
+    description: Field OldUomFlag from EccAmendmentJnl
+  old_qty_per_ent:
+    display: Oldqtyperent
+    type: decimal
+    required: false
+    description: Field OldQtyPerEnt from EccAmendmentJnl
+  old_scrap_qty_ent:
+    display: Oldscrapqtyent
+    type: decimal
+    required: false
+    description: Field OldScrapQtyEnt from EccAmendmentJnl
+  old_fixed_qty_per_ent:
+    display: Oldfixedqtyperent
+    type: decimal
+    required: false
+    description: Field OldFixedQtyPerEnt from EccAmendmentJnl
+  new_com_version:
+    display: Newcomversion
+    type: string
+    required: false
+    description: Field NewComVersion from EccAmendmentJnl
+  new_com_release:
+    display: Newcomrelease
+    type: string
+    required: false
+    description: Field NewComRelease from EccAmendmentJnl
+  new_ecc_consumption:
+    display: Neweccconsumption
+    type: string
+    required: false
+    description: Field NewEccConsumption from EccAmendmentJnl
+  new_struct_on_date:
+    display: Newstructondate
+    type: date
+    required: false
+    description: Field NewStructOnDate from EccAmendmentJnl
+  new_struct_off_date:
+    display: Newstructoffdate
+    type: date
+    required: false
+    description: Field NewStructOffDate from EccAmendmentJnl
+  new_op_offset_flag:
+    display: Newopoffsetflag
+    type: string
+    required: false
+    description: Field NewOpOffsetFlag from EccAmendmentJnl
+  new_operation_offset:
+    display: Newoperationoffset
+    type: decimal
+    required: false
+    description: Field NewOperationOffset from EccAmendmentJnl
+  new_qty_per:
+    display: Newqtyper
+    type: decimal
+    required: false
+    description: Field NewQtyPer from EccAmendmentJnl
+  new_scrap_pct:
+    display: Newscrappct
+    type: decimal
+    required: false
+    description: Field NewScrapPct from EccAmendmentJnl
+  new_scrap_qty:
+    display: Newscrapqty
+    type: decimal
+    required: false
+    description: Field NewScrapQty from EccAmendmentJnl
+  new_so_option_flag:
+    display: Newsooptionflag
+    type: string
+    required: false
+    description: Field NewSoOptionFlag from EccAmendmentJnl
+  new_so_print_flag:
+    display: Newsoprintflag
+    type: string
+    required: false
+    description: Field NewSoPrintFlag from EccAmendmentJnl
+  new_inc_scrap_flag:
+    display: Newincscrapflag
+    type: string
+    required: false
+    description: Field NewIncScrapFlag from EccAmendmentJnl
+  new_reason_for_chg:
+    display: Newreasonforchg
+    type: string
+    required: false
+    description: Field NewReasonForChg from EccAmendmentJnl
+  new_ref_designator:
+    display: Newrefdesignator
+    type: string
+    required: false
+    description: Field NewRefDesignator from EccAmendmentJnl
+  new_assembly_place:
+    display: Newassemblyplace
+    type: string
+    required: false
+    description: Field NewAssemblyPlace from EccAmendmentJnl
+  new_item_number:
+    display: Newitemnumber
+    type: string
+    required: false
+    description: Field NewItemNumber from EccAmendmentJnl
+  new_auto_narr_code:
+    display: Newautonarrcode
+    type: decimal
+    required: false
+    description: Field NewAutoNarrCode from EccAmendmentJnl
+  new_component_type:
+    display: Newcomponenttype
+    type: string
+    required: false
+    description: Field NewComponentType from EccAmendmentJnl
+  new_incl_kit_issues:
+    display: Newinclkitissues
+    type: string
+    required: false
+    description: Field NewInclKitIssues from EccAmendmentJnl
+  new_create_sub_job:
+    display: Newcreatesubjob
+    type: string
+    required: false
+    description: Field NewCreateSubJob from EccAmendmentJnl
+  new_wet_weight_perc:
+    display: Newwetweightperc
+    type: decimal
+    required: false
+    description: Field NewWetWeightPerc from EccAmendmentJnl
+  new_include_batch:
+    display: Newincludebatch
+    type: string
+    required: false
+    description: Field NewIncludeBatch from EccAmendmentJnl
+  new_include_from_job:
+    display: Newincludefromjob
+    type: string
+    required: false
+    description: Field NewIncludeFromJob from EccAmendmentJnl
+  new_include_to_job:
+    display: Newincludetojob
+    type: string
+    required: false
+    description: Field NewIncludeToJob from EccAmendmentJnl
+  new_fixed_qty_per_flag:
+    display: Newfixedqtyperflag
+    type: string
+    required: false
+    description: Field NewFixedQtyPerFlag from EccAmendmentJnl
+  new_fixed_qty_per:
+    display: Newfixedqtyper
+    type: decimal
+    required: false
+    description: Field NewFixedQtyPer from EccAmendmentJnl
+  new_roll_up_cost_flag:
+    display: Newrollupcostflag
+    type: string
+    required: false
+    description: Field NewRollUpCostFlag from EccAmendmentJnl
+  new_warehouse:
+    display: Newwarehouse
+    type: string
+    required: false
+    description: Field NewWarehouse from EccAmendmentJnl
+  new_ignore_floor_flag:
+    display: Newignorefloorflag
+    type: string
+    required: false
+    description: Field NewIgnoreFloorFlag from EccAmendmentJnl
+  new_uom_flag:
+    display: Newuomflag
+    type: string
+    required: false
+    description: Field NewUomFlag from EccAmendmentJnl
+  new_qty_per_ent:
+    display: Newqtyperent
+    type: decimal
+    required: false
+    description: Field NewQtyPerEnt from EccAmendmentJnl
+  new_scrap_qty_ent:
+    display: Newscrapqtyent
+    type: decimal
+    required: false
+    description: Field NewScrapQtyEnt from EccAmendmentJnl
+  new_fixed_qty_per_ent:
+    display: Newfixedqtyperent
+    type: decimal
+    required: false
+    description: Field NewFixedQtyPerEnt from EccAmendmentJnl
+  old_product_code:
+    display: Oldproductcode
+    type: string
+    required: false
+    description: Field OldProductCode from EccAmendmentJnl
+  old_library_code:
+    display: Oldlibrarycode
+    type: string
+    required: false
+    description: Field OldLibraryCode from EccAmendmentJnl
+  old_first_seq:
+    display: Oldfirstseq
+    type: decimal
+    required: false
+    description: Field OldFirstSeq from EccAmendmentJnl
+  old_second_seq:
+    display: Oldsecondseq
+    type: decimal
+    required: false
+    description: Field OldSecondSeq from EccAmendmentJnl
+  old_ovr_ecc_spec_iss:
+    display: Oldovreccspeciss
+    type: string
+    required: false
+    description: Field OldOvrEccSpecIss from EccAmendmentJnl
+  new_product_code:
+    display: Newproductcode
+    type: string
+    required: false
+    description: Field NewProductCode from EccAmendmentJnl
+  new_library_code:
+    display: Newlibrarycode
+    type: string
+    required: false
+    description: Field NewLibraryCode from EccAmendmentJnl
+  new_first_seq:
+    display: Newfirstseq
+    type: decimal
+    required: false
+    description: Field NewFirstSeq from EccAmendmentJnl
+  new_second_seq:
+    display: Newsecondseq
+    type: decimal
+    required: false
+    description: Field NewSecondSeq from EccAmendmentJnl
+  new_ovr_ecc_spec_iss:
+    display: Newovreccspeciss
+    type: string
+    required: false
+    description: Field NewOvrEccSpecIss from EccAmendmentJnl

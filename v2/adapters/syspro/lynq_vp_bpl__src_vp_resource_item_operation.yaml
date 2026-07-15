@@ -1,0 +1,31 @@
+concept: lynq_vp_bpl__src_vp_resource_item_operation
+table: Lynq_VP_BPL_Src_VPResourceItemOperation
+alias: lvpbplsvprio
+fields:
+  id: lvpbplsvprio.ID
+  res_id: lvpbplsvprio.ResID
+  item_number: lvpbplsvprio.ItemNumber
+  oper_code: lvpbplsvprio.OperCode
+  setup_quantity_ordered: lvpbplsvprio.SetupQuantityOrdered
+  setup_batch_size: lvpbplsvprio.SetupBatchSize
+  setup_cycles_per_batch: lvpbplsvprio.SetupCyclesPerBatch
+  setup_people_hrs_per_cycle: lvpbplsvprio.SetupPeopleHrsPerCycle
+  setup_people_per_cycle: lvpbplsvprio.SetupPeoplePerCycle
+  setup_machine_hrs_per_cycle: lvpbplsvprio.SetupMachineHrsPerCycle
+  setup_machines_per_cycle: lvpbplsvprio.SetupMachinesPerCycle
+  setup_labour_time_fixed: lvpbplsvprio.SetupLabourTimeFixed
+  setup_machine_time_fixed: lvpbplsvprio.SetupMachineTimeFixed
+  batch_size: lvpbplsvprio.BatchSize
+  cycles_per_batch: lvpbplsvprio.CyclesPerBatch
+  people_hrs_per_cycle: lvpbplsvprio.PeopleHrsPerCycle
+  people_per_cycle: lvpbplsvprio.PeoplePerCycle
+  machine_hrs_per_cycle: lvpbplsvprio.MachineHrsPerCycle
+  machines_per_cycle: lvpbplsvprio.MachinesPerCycle
+  run_labour_time_fixed: lvpbplsvprio.RunLabourTimeFixed
+  run_machine_time_fixed: lvpbplsvprio.RunMachineTimeFixed
+  overlap_fg: lvpbplsvprio.OverlapFg
+  overlap_pt: lvpbplsvprio.OverlapPt
+  move_time: lvpbplsvprio.MoveTime
+  queue_time: lvpbplsvprio.QueueTime
+  wc_stop_time: lvpbplsvprio.WcStopTime
+  processing_time: lvpbplsvprio.ProcessingTime

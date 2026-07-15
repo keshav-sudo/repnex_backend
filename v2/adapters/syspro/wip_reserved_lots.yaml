@@ -1,0 +1,26 @@
+concept: wip_reserved_lots
+table: WipReservedLots
+alias: wrl
+fields:
+  job: wrl.Job
+  stock_code: wrl.StockCode
+  co_product_line: wrl.CoProductLine
+  lot: wrl.Lot
+  warehouse: wrl.Warehouse
+  qty_reserved: wrl.QtyReserved
+  qty_receipted: wrl.QtyReceipted
+  inspection_qty: wrl.InspectionQty
+  qty_scrapped: wrl.QtyScrapped
+  qty_reworked: wrl.QtyReworked
+  lot_exists: wrl.LotExists
+  lot_completed: wrl.LotCompleted
+  version: wrl.Version
+  release: wrl.Release
+  expiry_date: wrl.ExpiryDate
+  concession_num: wrl.ConcessionNum
+  use_by_date: wrl.UseByDate
+  sell_by_date: wrl.SellByDate
+  internal_expiry_date: wrl.InternalExpiryDate
+  manufacture_date: wrl.ManufactureDate
+  dispatch_date: wrl.DispatchDate
+  best_before_date: wrl.BestBeforeDate

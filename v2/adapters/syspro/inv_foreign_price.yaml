@@ -1,0 +1,7 @@
+concept: inv_foreign_price
+table: InvForeignPrice
+alias: ifp
+fields:
+  stock_code: ifp.StockCode
+  currency: ifp.Currency
+  foreign_price: ifp.ForeignPrice

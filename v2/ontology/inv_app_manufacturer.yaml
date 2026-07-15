@@ -1,0 +1,48 @@
+concept: inv_app_manufacturer
+display_name: InvAppManufacturer
+module: inventory
+description: Auto-generated representation of the physical table InvAppManufacturer.
+synonyms:
+- invappmanufacturer
+- inv app manufacturer
+header_attributes:
+  app_manufacturer:
+    display: Appmanufacturer
+    type: string
+    required: false
+    description: Field AppManufacturer from InvAppManufacturer
+  manufacturer_name:
+    display: Manufacturername
+    type: string
+    required: false
+    description: Field ManufacturerName from InvAppManufacturer
+  manufacturer_info1:
+    display: Manufacturerinfo1
+    type: string
+    required: false
+    description: Field ManufacturerInfo1 from InvAppManufacturer
+  manufacturer_info2:
+    display: Manufacturerinfo2
+    type: string
+    required: false
+    description: Field ManufacturerInfo2 from InvAppManufacturer
+  manufacturer_info3:
+    display: Manufacturerinfo3
+    type: string
+    required: false
+    description: Field ManufacturerInfo3 from InvAppManufacturer
+  manufacturer_info4:
+    display: Manufacturerinfo4
+    type: string
+    required: false
+    description: Field ManufacturerInfo4 from InvAppManufacturer
+  manufacturer_info5:
+    display: Manufacturerinfo5
+    type: string
+    required: false
+    description: Field ManufacturerInfo5 from InvAppManufacturer
+  manufacturer_info6:
+    display: Manufacturerinfo6
+    type: string
+    required: false
+    description: Field ManufacturerInfo6 from InvAppManufacturer

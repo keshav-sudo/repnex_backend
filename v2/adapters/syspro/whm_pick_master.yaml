@@ -1,0 +1,17 @@
+concept: whm_pick_master
+table: WhmPickMaster
+alias: wpm
+fields:
+  pick_number: wpm.PickNumber
+  pick_status: wpm.PickStatus
+  start_date: wpm.StartDate
+  start_time: wpm.StartTime
+  comp_date: wpm.CompDate
+  comp_time: wpm.CompTime
+  due_date: wpm.DueDate
+  due_time: wpm.DueTime
+  operator: wpm.Operator
+  pick_sequence: wpm.PickSequence
+  confirmed_date: wpm.ConfirmedDate
+  confirmed_time: wpm.ConfirmedTime
+  picked_for_wip: wpm.PickedForWip

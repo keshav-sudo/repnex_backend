@@ -1,0 +1,13 @@
+concept: gen_analysis_ctl
+table: GenAnalysisCtl
+alias: gac3
+fields:
+  company: gac3.Company
+  gl_year: gac3.GlYear
+  gl_period: gac3.GlPeriod
+  analysis_entry: gac3.AnalysisEntry
+  gl_code: gac3.GlCode
+  total_amount: gac3.TotalAmount
+  gl_line: gac3.GlLine
+  line: gac3.Line
+  gl_updated: gac3.GlUpdated

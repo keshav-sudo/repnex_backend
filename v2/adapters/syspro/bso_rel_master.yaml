@@ -1,0 +1,31 @@
+concept: bso_rel_master
+table: BsoRelMaster
+alias: brm1
+fields:
+  customer: brm1.Customer
+  customer_po_number: brm1.CustomerPoNumber
+  cust_stock_code: brm1.CustStockCode
+  next_rel_num: brm1.NextRelNum
+  stock_code: brm1.StockCode
+  supply_wh: brm1.SupplyWh
+  shipment_days: brm1.ShipmentDays
+  num_day_drops: brm1.NumDayDrops
+  num_week_drops: brm1.NumWeekDrops
+  day_in_week: brm1.DayInWeek
+  num_month_drops: brm1.NumMonthDrops
+  day_in_month: brm1.DayInMonth
+  release_manager: brm1.ReleaseManager
+  release_status: brm1.ReleaseStatus
+  purchase_order: brm1.PurchaseOrder
+  price_contract_num: brm1.PriceContractNum
+  contract_qty: brm1.ContractQty
+  total_delivered: brm1.TotalDelivered
+  stock_uom: brm1.StockUom
+  total_received: brm1.TotalReceived
+  last_invoice: brm1.LastInvoice
+  date_last_inv: brm1.DateLastInv
+  base_date: brm1.BaseDate
+  expiry_date: brm1.ExpiryDate
+  opening_cume: brm1.OpeningCume
+  buying_group: brm1.BuyingGroup
+  last_dispatch_note: brm1.LastDispatchNote

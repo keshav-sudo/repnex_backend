@@ -1,0 +1,37 @@
+concept: sales_order
+table: SorMaster
+alias: so
+fields:
+  sales_order: so.SalesOrder
+  customer_code: so.Customer
+  salesperson: so.Salesperson
+  customer_po: so.CustomerPoNumber
+  order_date: so.OrderDate
+  required_ship_date: so.ReqShipDate
+  order_status: so.OrderStatus
+  branch: so.Branch
+  warehouse: so.Warehouse
+  currency: so.Currency
+  exchange_rate: so.ExchangeRate
+  cancelled_flag: so.CancelledFlag
+calculated_fields:
+  line_value: (sl.MOrderQty * sl.MPrice)
+balance_mapping:
+  table: SorDetail
+  alias: sl
+  join_on: so.SalesOrder = sl.SalesOrder
+  fields:
+    line_number: sl.SalesOrderLine
+    stock_code: sl.MStockCode
+    description: sl.MStockDes
+    order_qty: sl.MOrderQty
+    shipped_qty: sl.MShipQty
+    back_order_qty: sl.MBackOrderQty
+    unit_price: sl.MPrice
+    unit_cost: sl.MUnitCost
+    discount_pct: sl.MDiscPct1
+    tax_code: sl.MTaxCode
+    warehouse: sl.MWarehouse
+    product_class: sl.MProductClass
+default_filters:
+  active_only: so.CancelledFlag = 'N'

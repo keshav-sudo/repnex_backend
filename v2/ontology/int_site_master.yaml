@@ -1,0 +1,278 @@
+concept: int_site_master
+display_name: IntSiteMaster
+module: other
+description: Auto-generated representation of the physical table IntSiteMaster.
+synonyms:
+- intsitemaster
+- int site master
+header_attributes:
+  site_code:
+    display: Sitecode
+    type: string
+    required: false
+    description: Field SiteCode from IntSiteMaster
+  site_desc:
+    display: Sitedesc
+    type: string
+    required: false
+    description: Field SiteDesc from IntSiteMaster
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from IntSiteMaster
+  branch_code_flag:
+    display: Branchcodeflag
+    type: string
+    required: false
+    description: Field BranchCodeFlag from IntSiteMaster
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from IntSiteMaster
+  all_warehouses:
+    display: Allwarehouses
+    type: string
+    required: false
+    description: Field AllWarehouses from IntSiteMaster
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IntSiteMaster
+  export_grp_num:
+    display: Exportgrpnum
+    type: decimal
+    required: false
+    description: Field ExportGrpNum from IntSiteMaster
+  import_group_num:
+    display: Importgroupnum
+    type: decimal
+    required: false
+    description: Field ImportGroupNum from IntSiteMaster
+  inv_master:
+    display: Invmaster
+    type: string
+    required: false
+    description: Field InvMaster from IntSiteMaster
+  inv_warehouse:
+    display: Invwarehouse
+    type: string
+    required: false
+    description: Field InvWarehouse from IntSiteMaster
+  inv_journals:
+    display: Invjournals
+    type: string
+    required: false
+    description: Field InvJournals from IntSiteMaster
+  customer_master:
+    display: Customermaster
+    type: string
+    required: false
+    description: Field CustomerMaster from IntSiteMaster
+  cash_journals:
+    display: Cashjournals
+    type: string
+    required: false
+    description: Field CashJournals from IntSiteMaster
+  sales_trns:
+    display: Salestrns
+    type: string
+    required: false
+    description: Field SalesTrns from IntSiteMaster
+  goods_in_transit:
+    display: Goodsintransit
+    type: string
+    required: false
+    description: Field GoodsInTransit from IntSiteMaster
+  branch1:
+    display: Branch1
+    type: string
+    required: false
+    description: Field Branch1 from IntSiteMaster
+  branch2:
+    display: Branch2
+    type: string
+    required: false
+    description: Field Branch2 from IntSiteMaster
+  branch3:
+    display: Branch3
+    type: string
+    required: false
+    description: Field Branch3 from IntSiteMaster
+  branch4:
+    display: Branch4
+    type: string
+    required: false
+    description: Field Branch4 from IntSiteMaster
+  branch5:
+    display: Branch5
+    type: string
+    required: false
+    description: Field Branch5 from IntSiteMaster
+  branch6:
+    display: Branch6
+    type: string
+    required: false
+    description: Field Branch6 from IntSiteMaster
+  branch7:
+    display: Branch7
+    type: string
+    required: false
+    description: Field Branch7 from IntSiteMaster
+  branch8:
+    display: Branch8
+    type: string
+    required: false
+    description: Field Branch8 from IntSiteMaster
+  branch9:
+    display: Branch9
+    type: string
+    required: false
+    description: Field Branch9 from IntSiteMaster
+  branch10:
+    display: Branch10
+    type: string
+    required: false
+    description: Field Branch10 from IntSiteMaster
+  branch11:
+    display: Branch11
+    type: string
+    required: false
+    description: Field Branch11 from IntSiteMaster
+  branch12:
+    display: Branch12
+    type: string
+    required: false
+    description: Field Branch12 from IntSiteMaster
+  branch13:
+    display: Branch13
+    type: string
+    required: false
+    description: Field Branch13 from IntSiteMaster
+  branch14:
+    display: Branch14
+    type: string
+    required: false
+    description: Field Branch14 from IntSiteMaster
+  branch15:
+    display: Branch15
+    type: string
+    required: false
+    description: Field Branch15 from IntSiteMaster
+  branch16:
+    display: Branch16
+    type: string
+    required: false
+    description: Field Branch16 from IntSiteMaster
+  branch17:
+    display: Branch17
+    type: string
+    required: false
+    description: Field Branch17 from IntSiteMaster
+  branch18:
+    display: Branch18
+    type: string
+    required: false
+    description: Field Branch18 from IntSiteMaster
+  branch19:
+    display: Branch19
+    type: string
+    required: false
+    description: Field Branch19 from IntSiteMaster
+  warehouses1:
+    display: Warehouses1
+    type: string
+    required: false
+    description: Field Warehouses1 from IntSiteMaster
+  warehouses2:
+    display: Warehouses2
+    type: string
+    required: false
+    description: Field Warehouses2 from IntSiteMaster
+  warehouses3:
+    display: Warehouses3
+    type: string
+    required: false
+    description: Field Warehouses3 from IntSiteMaster
+  warehouses4:
+    display: Warehouses4
+    type: string
+    required: false
+    description: Field Warehouses4 from IntSiteMaster
+  warehouses5:
+    display: Warehouses5
+    type: string
+    required: false
+    description: Field Warehouses5 from IntSiteMaster
+  warehouses6:
+    display: Warehouses6
+    type: string
+    required: false
+    description: Field Warehouses6 from IntSiteMaster
+  warehouses7:
+    display: Warehouses7
+    type: string
+    required: false
+    description: Field Warehouses7 from IntSiteMaster
+  warehouses8:
+    display: Warehouses8
+    type: string
+    required: false
+    description: Field Warehouses8 from IntSiteMaster
+  warehouses9:
+    display: Warehouses9
+    type: string
+    required: false
+    description: Field Warehouses9 from IntSiteMaster
+  warehouses10:
+    display: Warehouses10
+    type: string
+    required: false
+    description: Field Warehouses10 from IntSiteMaster
+  warehouses11:
+    display: Warehouses11
+    type: string
+    required: false
+    description: Field Warehouses11 from IntSiteMaster
+  warehouses12:
+    display: Warehouses12
+    type: string
+    required: false
+    description: Field Warehouses12 from IntSiteMaster
+  warehouses13:
+    display: Warehouses13
+    type: string
+    required: false
+    description: Field Warehouses13 from IntSiteMaster
+  warehouses14:
+    display: Warehouses14
+    type: string
+    required: false
+    description: Field Warehouses14 from IntSiteMaster
+  warehouses15:
+    display: Warehouses15
+    type: string
+    required: false
+    description: Field Warehouses15 from IntSiteMaster
+  warehouses16:
+    display: Warehouses16
+    type: string
+    required: false
+    description: Field Warehouses16 from IntSiteMaster
+  warehouses17:
+    display: Warehouses17
+    type: string
+    required: false
+    description: Field Warehouses17 from IntSiteMaster
+  warehouses18:
+    display: Warehouses18
+    type: string
+    required: false
+    description: Field Warehouses18 from IntSiteMaster
+  warehouses19:
+    display: Warehouses19
+    type: string
+    required: false
+    description: Field Warehouses19 from IntSiteMaster

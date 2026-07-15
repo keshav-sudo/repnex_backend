@@ -1,0 +1,93 @@
+concept: mdn_detail_ser_rep_con
+display_name: MdnDetailSerRepCon
+module: other
+description: Auto-generated representation of the physical table MdnDetailSerRepCon.
+synonyms:
+- mdndetailserrepcon
+- mdn detail ser rep con
+header_attributes:
+  key_invoice:
+    display: Keyinvoice
+    type: string
+    required: false
+    description: Field KeyInvoice from MdnDetailSerRepCon
+  key_sales_order:
+    display: Keysalesorder
+    type: string
+    required: false
+    description: Field KeySalesOrder from MdnDetailSerRepCon
+  key_sales_order_line:
+    display: Keysalesorderline
+    type: decimal
+    required: false
+    description: Field KeySalesOrderLine from MdnDetailSerRepCon
+  key_dispatch_note:
+    display: Keydispatchnote
+    type: string
+    required: false
+    description: Field KeyDispatchNote from MdnDetailSerRepCon
+  key_dispatch_line:
+    display: Keydispatchline
+    type: decimal
+    required: false
+    description: Field KeyDispatchLine from MdnDetailSerRepCon
+  key_record_count:
+    display: Keyrecordcount
+    type: decimal
+    required: false
+    description: Field KeyRecordCount from MdnDetailSerRepCon
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from MdnDetailSerRepCon
+  dispatch_note_line:
+    display: Dispatchnoteline
+    type: decimal
+    required: false
+    description: Field DispatchNoteLine from MdnDetailSerRepCon
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MdnDetailSerRepCon
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MdnDetailSerRepCon
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from MdnDetailSerRepCon
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from MdnDetailSerRepCon
+  stock_qty_to_ship:
+    display: Stockqtytoship
+    type: decimal
+    required: false
+    description: Field StockQtyToShip from MdnDetailSerRepCon
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from MdnDetailSerRepCon
+  new_expiry_date:
+    display: Newexpirydate
+    type: date
+    required: false
+    description: Field NewExpiryDate from MdnDetailSerRepCon
+  new_scrap_date:
+    display: Newscrapdate
+    type: date
+    required: false
+    description: Field NewScrapDate from MdnDetailSerRepCon
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from MdnDetailSerRepCon

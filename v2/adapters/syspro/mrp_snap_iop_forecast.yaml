@@ -1,0 +1,11 @@
+concept: mrp_snap_iop_forecast
+table: MrpSnapIopForecast
+alias: msif
+fields:
+  stock_code: msif.StockCode
+  version: msif.Version
+  release: msif.Release
+  forecast_wh: msif.ForecastWh
+  forecast_date: msif.ForecastDate
+  forecast_qty: msif.ForecastQty
+  reference: msif.Reference

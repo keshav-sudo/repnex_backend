@@ -1,0 +1,38 @@
+concept: bom_control
+display_name: BomControl
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomControl.
+synonyms:
+- bomcontrol
+- bom control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from BomControl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from BomControl
+  last_period_date:
+    display: Lastperioddate
+    type: date
+    required: false
+    description: Field LastPeriodDate from BomControl
+  last_month_date:
+    display: Lastmonthdate
+    type: date
+    required: false
+    description: Field LastMonthDate from BomControl
+  last_year_date:
+    display: Lastyeardate
+    type: date
+    required: false
+    description: Field LastYearDate from BomControl
+  next_nar_code:
+    display: Nextnarcode
+    type: decimal
+    required: false
+    description: Field NextNarCode from BomControl

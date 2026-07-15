@@ -1,0 +1,30 @@
+concept: sor_service_charge
+table: SorServiceCharge
+alias: ssc
+fields:
+  charge_type: ssc.ChargeType
+  stock_code: ssc.StockCode
+  charge_code: ssc.ChargeCode
+  product_class: ssc.ProductClass
+  charge_description: ssc.ChargeDescription
+  calculation_type: ssc.CalculationType
+  minimum_value: ssc.MinimumValue
+  maximum_value: ssc.MaximumValue
+  tax_code: ssc.TaxCode
+  fst_tax_code: ssc.FstTaxCode
+  summary_flag: ssc.SummaryFlag
+  incl_value_flag: ssc.InclValueFlag
+  review_flag: ssc.ReviewFlag
+  fixed_value: ssc.FixedValue
+  fixed_cost: ssc.FixedCost
+  user_prompt: ssc.UserPrompt
+  unit_price: ssc.UnitPrice
+  unit_cost: ssc.UnitCost
+  apply_qty_factor: ssc.ApplyQtyFactor
+  qty_factor: ssc.QtyFactor
+  mul_div: ssc.MulDiv
+  qty_rounded_method: ssc.QtyRoundedMethod
+  round_qty_up_down: ssc.RoundQtyUpDown
+  currency: ssc.Currency
+  stock_code_return: ssc.StockCodeReturn
+  minimum_quantity: ssc.MinimumQuantity

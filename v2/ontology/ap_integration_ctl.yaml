@@ -1,0 +1,33 @@
+concept: ap_integration_ctl
+display_name: ApIntegrationCtl
+module: accounts_payable
+description: Auto-generated representation of the physical table ApIntegrationCtl.
+synonyms:
+- apintegrationctl
+- ap integration ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from ApIntegrationCtl
+  branch_reqd:
+    display: Branchreqd
+    type: string
+    required: false
+    description: Field BranchReqd from ApIntegrationCtl
+  currency_reqd:
+    display: Currencyreqd
+    type: string
+    required: false
+    description: Field CurrencyReqd from ApIntegrationCtl
+  bank_reqd:
+    display: Bankreqd
+    type: string
+    required: false
+    description: Field BankReqd from ApIntegrationCtl
+  gl_exch_separate:
+    display: Glexchseparate
+    type: string
+    required: false
+    description: Field GlExchSeparate from ApIntegrationCtl

@@ -1,0 +1,18 @@
+concept: wms_storage_hazard
+display_name: WmsStorageHazard
+module: other
+description: Auto-generated representation of the physical table WmsStorageHazard.
+synonyms:
+- wmsstoragehazard
+- wms storage hazard
+header_attributes:
+  storage_hazard:
+    display: Storagehazard
+    type: string
+    required: false
+    description: Field StorageHazard from WmsStorageHazard
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WmsStorageHazard

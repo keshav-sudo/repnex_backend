@@ -1,0 +1,23 @@
+concept: gen_dimension_pri
+display_name: GenDimensionPri
+module: general_ledger
+description: Auto-generated representation of the physical table GenDimensionPri.
+synonyms:
+- gendimensionpri
+- gen dimension pri
+header_attributes:
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from GenDimensionPri
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from GenDimensionPri
+  priority:
+    display: Priority
+    type: decimal
+    required: false
+    description: Field Priority from GenDimensionPri

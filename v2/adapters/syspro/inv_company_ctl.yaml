@@ -1,0 +1,23 @@
+concept: inv_company_ctl
+table: InvCompanyCtl
+alias: icc
+fields:
+  company: icc.Company
+  next_inv_jnl: icc.NextInvJnl
+  next_inv_jnl_pyr: icc.NextInvJnlPyr
+  next_for_jnl: icc.NextForJnl
+  next_build_jnl: icc.NextBuildJnl
+  unp_jnl_year: icc.UnpJnlYear
+  unp_jnl_month: icc.UnpJnlMonth
+  unp_journal: icc.UnpJournal
+  unp_inv_year: icc.UnpInvYear
+  unp_inv_period: icc.UnpInvPeriod
+  unp_grn_year: icc.UnpGrnYear
+  unp_grn_period: icc.UnpGrnPeriod
+  unp_inv_jnl_upd_year: icc.UnpInvJnlUpdYear
+  unp_inv_jnl_upd_month: icc.UnpInvJnlUpdMonth
+  unp_inv_jnl_upd: icc.UnpInvJnlUpd
+  unp_inv_dis_upd_year: icc.UnpInvDisUpdYear
+  unp_inv_dis_upd_period: icc.UnpInvDisUpdPeriod
+  unp_grn_dis_upd_year: icc.UnpGrnDisUpdYear
+  unp_grn_dis_upd_period: icc.UnpGrnDisUpdPeriod

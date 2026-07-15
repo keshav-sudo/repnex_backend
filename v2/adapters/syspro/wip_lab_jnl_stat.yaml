@@ -1,0 +1,8 @@
+concept: wip_lab_jnl_stat
+table: WipLabJnlStat
+alias: wljs
+fields:
+  journal: wljs.Journal
+  status: wljs.Status
+  journal_date: wljs.JournalDate
+  operator: wljs.Operator

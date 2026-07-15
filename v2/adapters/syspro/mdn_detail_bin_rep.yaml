@@ -1,0 +1,16 @@
+concept: mdn_detail_bin_rep
+table: MdnDetailBinRep
+alias: mdbr
+fields:
+  key_invoice: mdbr.KeyInvoice
+  key_dispatch_note: mdbr.KeyDispatchNote
+  key_dispatch_line: mdbr.KeyDispatchLine
+  key_record_count: mdbr.KeyRecordCount
+  dispatch_note: mdbr.DispatchNote
+  dispatch_note_line: mdbr.DispatchNoteLine
+  sales_order: mdbr.SalesOrder
+  sales_order_line: mdbr.SalesOrderLine
+  lot: mdbr.Lot
+  bin: mdbr.Bin
+  stock_qty_to_ship: mdbr.StockQtyToShip
+  qty_this_session: mdbr.QtyThisSession

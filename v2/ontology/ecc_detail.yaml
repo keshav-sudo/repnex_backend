@@ -1,0 +1,38 @@
+concept: ecc_detail
+display_name: EccDetail
+module: other
+description: Auto-generated representation of the physical table EccDetail.
+synonyms:
+- eccdetail
+- ecc detail
+header_attributes:
+  change_note:
+    display: Changenote
+    type: string
+    required: false
+    description: Field ChangeNote from EccDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from EccDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from EccDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from EccDetail
+  new_version:
+    display: Newversion
+    type: string
+    required: false
+    description: Field NewVersion from EccDetail
+  new_release:
+    display: Newrelease
+    type: string
+    required: false
+    description: Field NewRelease from EccDetail

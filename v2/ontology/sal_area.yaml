@@ -1,0 +1,33 @@
+concept: sal_area
+display_name: SalArea
+module: other
+description: Auto-generated representation of the physical table SalArea.
+synonyms:
+- salarea
+- sal area
+header_attributes:
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SalArea
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SalArea
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from SalArea
+  prov_tax_flag:
+    display: Provtaxflag
+    type: string
+    required: false
+    description: Field ProvTaxFlag from SalArea
+  area_gst_code:
+    display: Areagstcode
+    type: string
+    required: false
+    description: Field AreaGstCode from SalArea

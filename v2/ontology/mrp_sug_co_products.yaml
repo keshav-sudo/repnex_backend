@@ -1,0 +1,273 @@
+concept: mrp_sug_co_products
+display_name: MrpSugCoProducts
+module: mrp
+description: Auto-generated representation of the physical table MrpSugCoProducts.
+synonyms:
+- mrpsugcoproducts
+- mrp sug co products
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpSugCoProducts
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from MrpSugCoProducts
+  co_product:
+    display: Coproduct
+    type: string
+    required: false
+    description: Field CoProduct from MrpSugCoProducts
+  co_product_version:
+    display: Coproductversion
+    type: string
+    required: false
+    description: Field CoProductVersion from MrpSugCoProducts
+  co_product_release:
+    display: Coproductrelease
+    type: string
+    required: false
+    description: Field CoProductRelease from MrpSugCoProducts
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from MrpSugCoProducts
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpSugCoProducts
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from MrpSugCoProducts
+  act_complete_date:
+    display: Actcompletedate
+    type: date
+    required: false
+    description: Field ActCompleteDate from MrpSugCoProducts
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from MrpSugCoProducts
+  exp_labour:
+    display: Explabour
+    type: decimal
+    required: false
+    description: Field ExpLabour from MrpSugCoProducts
+  exp_material:
+    display: Expmaterial
+    type: decimal
+    required: false
+    description: Field ExpMaterial from MrpSugCoProducts
+  qty_per:
+    display: Qtyper
+    type: decimal
+    required: false
+    description: Field QtyPer from MrpSugCoProducts
+  qty_to_make:
+    display: Qtytomake
+    type: decimal
+    required: false
+    description: Field QtyToMake from MrpSugCoProducts
+  qty_manufactured:
+    display: Qtymanufactured
+    type: decimal
+    required: false
+    description: Field QtyManufactured from MrpSugCoProducts
+  total_qty_scrapped:
+    display: Totalqtyscrapped
+    type: decimal
+    required: false
+    description: Field TotalQtyScrapped from MrpSugCoProducts
+  pct_complete_flag:
+    display: Pctcompleteflag
+    type: decimal
+    required: false
+    description: Field PctCompleteFlag from MrpSugCoProducts
+  selling_price:
+    display: Sellingprice
+    type: decimal
+    required: false
+    description: Field SellingPrice from MrpSugCoProducts
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from MrpSugCoProducts
+  traceable_type:
+    display: Traceabletype
+    type: string
+    required: false
+    description: Field TraceableType from MrpSugCoProducts
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from MrpSugCoProducts
+  mat_cost_to_date1:
+    display: Matcosttodate1
+    type: decimal
+    required: false
+    description: Field MatCostToDate1 from MrpSugCoProducts
+  mat_cost_to_date2:
+    display: Matcosttodate2
+    type: decimal
+    required: false
+    description: Field MatCostToDate2 from MrpSugCoProducts
+  mat_cost_to_date3:
+    display: Matcosttodate3
+    type: decimal
+    required: false
+    description: Field MatCostToDate3 from MrpSugCoProducts
+  lab_cost_to_date1:
+    display: Labcosttodate1
+    type: decimal
+    required: false
+    description: Field LabCostToDate1 from MrpSugCoProducts
+  lab_cost_to_date2:
+    display: Labcosttodate2
+    type: decimal
+    required: false
+    description: Field LabCostToDate2 from MrpSugCoProducts
+  lab_cost_to_date3:
+    display: Labcosttodate3
+    type: decimal
+    required: false
+    description: Field LabCostToDate3 from MrpSugCoProducts
+  hrs_book_to_date1:
+    display: Hrsbooktodate1
+    type: decimal
+    required: false
+    description: Field HrsBookToDate1 from MrpSugCoProducts
+  hrs_book_to_date2:
+    display: Hrsbooktodate2
+    type: decimal
+    required: false
+    description: Field HrsBookToDate2 from MrpSugCoProducts
+  hrs_book_to_date3:
+    display: Hrsbooktodate3
+    type: decimal
+    required: false
+    description: Field HrsBookToDate3 from MrpSugCoProducts
+  mat_value_issues1:
+    display: Matvalueissues1
+    type: decimal
+    required: false
+    description: Field MatValueIssues1 from MrpSugCoProducts
+  mat_value_issues2:
+    display: Matvalueissues2
+    type: decimal
+    required: false
+    description: Field MatValueIssues2 from MrpSugCoProducts
+  mat_value_issues3:
+    display: Matvalueissues3
+    type: decimal
+    required: false
+    description: Field MatValueIssues3 from MrpSugCoProducts
+  lab_value_issues1:
+    display: Labvalueissues1
+    type: decimal
+    required: false
+    description: Field LabValueIssues1 from MrpSugCoProducts
+  lab_value_issues2:
+    display: Labvalueissues2
+    type: decimal
+    required: false
+    description: Field LabValueIssues2 from MrpSugCoProducts
+  lab_value_issues3:
+    display: Labvalueissues3
+    type: decimal
+    required: false
+    description: Field LabValueIssues3 from MrpSugCoProducts
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from MrpSugCoProducts
+  orig_due_date:
+    display: Origduedate
+    type: date
+    required: false
+    description: Field OrigDueDate from MrpSugCoProducts
+  exp_lab_current:
+    display: Explabcurrent
+    type: decimal
+    required: false
+    description: Field ExpLabCurrent from MrpSugCoProducts
+  exp_mat_current:
+    display: Expmatcurrent
+    type: decimal
+    required: false
+    description: Field ExpMatCurrent from MrpSugCoProducts
+  pct_material_cost:
+    display: Pctmaterialcost
+    type: decimal
+    required: false
+    description: Field PctMaterialCost from MrpSugCoProducts
+  pct_sub_contract_cost:
+    display: Pctsubcontractcost
+    type: decimal
+    required: false
+    description: Field PctSubContractCost from MrpSugCoProducts
+  pct_labor_cost:
+    display: Pctlaborcost
+    type: decimal
+    required: false
+    description: Field PctLaborCost from MrpSugCoProducts
+  pct_quantity:
+    display: Pctquantity
+    type: decimal
+    required: false
+    description: Field PctQuantity from MrpSugCoProducts
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from MrpSugCoProducts
+  conv_fact_uom:
+    display: Convfactuom
+    type: decimal
+    required: false
+    description: Field ConvFactUom from MrpSugCoProducts
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from MrpSugCoProducts
+  qty_per_ent:
+    display: Qtyperent
+    type: decimal
+    required: false
+    description: Field QtyPerEnt from MrpSugCoProducts
+  qty_to_make_ent:
+    display: Qtytomakeent
+    type: decimal
+    required: false
+    description: Field QtyToMakeEnt from MrpSugCoProducts
+  qty_manufactured_ent:
+    display: Qtymanufacturedent
+    type: decimal
+    required: false
+    description: Field QtyManufacturedEnt from MrpSugCoProducts
+  total_qty_scrap_ent:
+    display: Totalqtyscrapent
+    type: decimal
+    required: false
+    description: Field TotalQtyScrapEnt from MrpSugCoProducts
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from MrpSugCoProducts
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from MrpSugCoProducts

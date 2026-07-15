@@ -1,0 +1,15 @@
+concept: ap_payment
+table: ApInvoicePay
+alias: ap
+fields:
+  supplier_code: ap.Supplier
+  invoice_number: ap.Invoice
+  journal_date: ap.JournalDate
+  payment_reference: ap.PaymentReference
+  transaction_value: ap.TrnValue
+  journal: ap.Journal
+  trn_year: ap.TrnYear
+  trn_month: ap.TrnMonth
+  trn_type: ap.TrnType
+  currency: ap.PostCurrency
+  payment_number: ap.PaymentNumber

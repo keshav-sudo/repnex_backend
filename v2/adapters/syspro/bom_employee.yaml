@@ -1,0 +1,23 @@
+concept: bom_employee
+table: BomEmployee
+alias: be
+fields:
+  employee: be.Employee
+  name: be.Name
+  mtd_std_hrs_earned: be.MtdStdHrsEarned
+  mtd_non_prod_hours: be.MtdNonProdHours
+  mtd_act_prod_hours: be.MtdActProdHours
+  std_hrs_per_month: be.StdHrsPerMonth
+  work_centre: be.WorkCentre
+  employee_act_cost: be.EmployeeActCost
+  rates1: be.Rates1
+  rates2: be.Rates2
+  rates3: be.Rates3
+  rates4: be.Rates4
+  rates5: be.Rates5
+  rates6: be.Rates6
+  rates7: be.Rates7
+  rates8: be.Rates8
+  rates9: be.Rates9
+  shift_id: be.ShiftId
+  wip_branch: be.WipBranch

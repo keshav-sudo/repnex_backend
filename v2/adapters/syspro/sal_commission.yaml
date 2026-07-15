@@ -1,0 +1,18 @@
+concept: sal_commission
+table: SalCommission
+alias: sc
+fields:
+  trn_year: sc.TrnYear
+  trn_month: sc.TrnMonth
+  branch: sc.Branch
+  salesperson: sc.Salesperson
+  inv_date: sc.InvDate
+  customer: sc.Customer
+  invoice: sc.Invoice
+  line: sc.Line
+  customer_po_number: sc.CustomerPoNumber
+  merchandise_value: sc.MerchandiseValue
+  invoice_value: sc.InvoiceValue
+  commission_value: sc.CommissionValue
+  order_type: sc.OrderType
+  printed_flag: sc.PrintedFlag

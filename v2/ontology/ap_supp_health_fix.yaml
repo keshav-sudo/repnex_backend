@@ -1,0 +1,58 @@
+concept: ap_supp_health_fix
+display_name: ApSuppHealthFix
+module: accounts_payable
+description: Auto-generated representation of the physical table ApSuppHealthFix.
+synonyms:
+- apsupphealthfix
+- ap supp health fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from ApSuppHealthFix
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApSuppHealthFix
+  trx_type:
+    display: Trxtype
+    type: string
+    required: false
+    description: Field TrxType from ApSuppHealthFix
+  hfix_year:
+    display: Hfixyear
+    type: decimal
+    required: false
+    description: Field HfixYear from ApSuppHealthFix
+  hfix_month:
+    display: Hfixmonth
+    type: decimal
+    required: false
+    description: Field HfixMonth from ApSuppHealthFix
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApSuppHealthFix
+  trx_amt_vary:
+    display: Trxamtvary
+    type: decimal
+    required: false
+    description: Field TrxAmtVary from ApSuppHealthFix
+  trx_amt_actual:
+    display: Trxamtactual
+    type: decimal
+    required: false
+    description: Field TrxAmtActual from ApSuppHealthFix
+  trx_amt_calc:
+    display: Trxamtcalc
+    type: decimal
+    required: false
+    description: Field TrxAmtCalc from ApSuppHealthFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ApSuppHealthFix

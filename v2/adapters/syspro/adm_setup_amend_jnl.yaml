@@ -1,0 +1,14 @@
+concept: adm_setup_amend_jnl
+table: AdmSetupAmendJnl
+alias: asaj
+fields:
+  jnl_date: asaj.JnlDate
+  jnl_time: asaj.JnlTime
+  jnl_program: asaj.JnlProgram
+  jnl_line: asaj.JnlLine
+  journal_printed: asaj.JournalPrinted
+  field_description: asaj.FieldDescription
+  before: asaj.Before
+  after: asaj.After
+  operator_code: asaj.OperatorCode
+  tab_page: asaj.TabPage

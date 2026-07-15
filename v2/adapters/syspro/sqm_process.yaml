@@ -1,0 +1,6 @@
+concept: sqm_process
+table: SqmProcess
+alias: sp1
+fields:
+  nc_process: sp1.NcProcess
+  description: sp1.Description

@@ -1,0 +1,8 @@
+concept: sor_quote_list_detail
+table: SorQuoteListDetail
+alias: sqld
+fields:
+  quote_list_source: sqld.QuoteListSource
+  quote_list_type: sqld.QuoteListType
+  stock_code: sqld.StockCode
+  quantity: sqld.Quantity

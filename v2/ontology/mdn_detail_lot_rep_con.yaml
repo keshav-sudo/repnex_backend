@@ -1,0 +1,93 @@
+concept: mdn_detail_lot_rep_con
+display_name: MdnDetailLotRepCon
+module: other
+description: Auto-generated representation of the physical table MdnDetailLotRepCon.
+synonyms:
+- mdndetaillotrepcon
+- mdn detail lot rep con
+header_attributes:
+  key_invoice:
+    display: Keyinvoice
+    type: string
+    required: false
+    description: Field KeyInvoice from MdnDetailLotRepCon
+  key_sales_order:
+    display: Keysalesorder
+    type: string
+    required: false
+    description: Field KeySalesOrder from MdnDetailLotRepCon
+  key_sales_order_line:
+    display: Keysalesorderline
+    type: decimal
+    required: false
+    description: Field KeySalesOrderLine from MdnDetailLotRepCon
+  key_dispatch_note:
+    display: Keydispatchnote
+    type: string
+    required: false
+    description: Field KeyDispatchNote from MdnDetailLotRepCon
+  key_dispatch_line:
+    display: Keydispatchline
+    type: decimal
+    required: false
+    description: Field KeyDispatchLine from MdnDetailLotRepCon
+  key_record_count:
+    display: Keyrecordcount
+    type: decimal
+    required: false
+    description: Field KeyRecordCount from MdnDetailLotRepCon
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from MdnDetailLotRepCon
+  dispatch_note_line:
+    display: Dispatchnoteline
+    type: decimal
+    required: false
+    description: Field DispatchNoteLine from MdnDetailLotRepCon
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MdnDetailLotRepCon
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MdnDetailLotRepCon
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from MdnDetailLotRepCon
+  stock_qty_to_ship:
+    display: Stockqtytoship
+    type: decimal
+    required: false
+    description: Field StockQtyToShip from MdnDetailLotRepCon
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from MdnDetailLotRepCon
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MdnDetailLotRepCon
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MdnDetailLotRepCon
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from MdnDetailLotRepCon
+  lot_expiry_date:
+    display: Lotexpirydate
+    type: date
+    required: false
+    description: Field LotExpiryDate from MdnDetailLotRepCon

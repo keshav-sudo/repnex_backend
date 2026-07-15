@@ -1,0 +1,93 @@
+concept: sqm_arc_test_design
+display_name: SqmArcTestDesign
+module: other
+description: Auto-generated representation of the physical table SqmArcTestDesign.
+synonyms:
+- sqmarctestdesign
+- sqm arc test design
+header_attributes:
+  test_name:
+    display: Testname
+    type: string
+    required: false
+    description: Field TestName from SqmArcTestDesign
+  test_version:
+    display: Testversion
+    type: decimal
+    required: false
+    description: Field TestVersion from SqmArcTestDesign
+  field_id:
+    display: Fieldid
+    type: decimal
+    required: false
+    description: Field FieldId from SqmArcTestDesign
+  caption:
+    display: Caption
+    type: string
+    required: false
+    description: Field Caption from SqmArcTestDesign
+  sqm_level:
+    display: Sqmlevel
+    type: string
+    required: false
+    description: Field SqmLevel from SqmArcTestDesign
+  data_type:
+    display: Datatype
+    type: string
+    required: false
+    description: Field DataType from SqmArcTestDesign
+  validation_req:
+    display: Validationreq
+    type: string
+    required: false
+    description: Field ValidationReq from SqmArcTestDesign
+  calculated_field:
+    display: Calculatedfield
+    type: string
+    required: false
+    description: Field CalculatedField from SqmArcTestDesign
+  hide_calc_field:
+    display: Hidecalcfield
+    type: string
+    required: false
+    description: Field HideCalcField from SqmArcTestDesign
+  num_target:
+    display: Numtarget
+    type: decimal
+    required: false
+    description: Field NumTarget from SqmArcTestDesign
+  num_upper_target:
+    display: Numuppertarget
+    type: decimal
+    required: false
+    description: Field NumUpperTarget from SqmArcTestDesign
+  num_lower_target:
+    display: Numlowertarget
+    type: decimal
+    required: false
+    description: Field NumLowerTarget from SqmArcTestDesign
+  alpha_target:
+    display: Alphatarget
+    type: string
+    required: false
+    description: Field AlphaTarget from SqmArcTestDesign
+  list_flag:
+    display: Listflag
+    type: string
+    required: false
+    description: Field ListFlag from SqmArcTestDesign
+  expiry_flag:
+    display: Expiryflag
+    type: string
+    required: false
+    description: Field ExpiryFlag from SqmArcTestDesign
+  expiry_number:
+    display: Expirynumber
+    type: decimal
+    required: false
+    description: Field ExpiryNumber from SqmArcTestDesign
+  coc_flag:
+    display: Cocflag
+    type: string
+    required: false
+    description: Field CocFlag from SqmArcTestDesign

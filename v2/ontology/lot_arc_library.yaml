@@ -1,0 +1,63 @@
+concept: lot_arc_library
+display_name: LotArcLibrary
+module: other
+description: Auto-generated representation of the physical table LotArcLibrary.
+synonyms:
+- lotarclibrary
+- lot arc library
+header_attributes:
+  archive:
+    display: Archive
+    type: decimal
+    required: false
+    description: Field Archive from LotArcLibrary
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from LotArcLibrary
+  archive_release:
+    display: Archiverelease
+    type: decimal
+    required: false
+    description: Field ArchiveRelease from LotArcLibrary
+  imp_vers_arch:
+    display: Impversarch
+    type: string
+    required: false
+    description: Field ImpVersArch from LotArcLibrary
+  archive_count:
+    display: Archivecount
+    type: decimal
+    required: false
+    description: Field ArchiveCount from LotArcLibrary
+  archive_text1:
+    display: Archivetext1
+    type: string
+    required: false
+    description: Field ArchiveText1 from LotArcLibrary
+  archive_text2:
+    display: Archivetext2
+    type: string
+    required: false
+    description: Field ArchiveText2 from LotArcLibrary
+  archive_text3:
+    display: Archivetext3
+    type: string
+    required: false
+    description: Field ArchiveText3 from LotArcLibrary
+  archive_text4:
+    display: Archivetext4
+    type: string
+    required: false
+    description: Field ArchiveText4 from LotArcLibrary
+  archive_text5:
+    display: Archivetext5
+    type: string
+    required: false
+    description: Field ArchiveText5 from LotArcLibrary
+  archive_text6:
+    display: Archivetext6
+    type: string
+    required: false
+    description: Field ArchiveText6 from LotArcLibrary

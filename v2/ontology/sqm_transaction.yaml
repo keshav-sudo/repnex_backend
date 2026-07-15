@@ -1,0 +1,78 @@
+concept: sqm_transaction
+display_name: SqmTransaction
+module: other
+description: Auto-generated representation of the physical table SqmTransaction.
+synonyms:
+- sqmtransaction
+- sqm transaction
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmTransaction
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmTransaction
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmTransaction
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SqmTransaction
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SqmTransaction
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from SqmTransaction
+  trn_qty:
+    display: Trnqty
+    type: decimal
+    required: false
+    description: Field TrnQty from SqmTransaction
+  accept_qty:
+    display: Acceptqty
+    type: decimal
+    required: false
+    description: Field AcceptQty from SqmTransaction
+  reject_qty:
+    display: Rejectqty
+    type: decimal
+    required: false
+    description: Field RejectQty from SqmTransaction
+  inspector_code:
+    display: Inspectorcode
+    type: string
+    required: false
+    description: Field InspectorCode from SqmTransaction
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from SqmTransaction
+  sample_number:
+    display: Samplenumber
+    type: decimal
+    required: false
+    description: Field SampleNumber from SqmTransaction
+  sample_test:
+    display: Sampletest
+    type: decimal
+    required: false
+    description: Field SampleTest from SqmTransaction
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from SqmTransaction

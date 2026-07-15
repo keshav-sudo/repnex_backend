@@ -1,0 +1,11 @@
+concept: srs_archive_rej
+table: SrsArchiveREJ
+alias: sarej
+fields:
+  archive_date: sarej.ArchiveDate
+  archive_time: sarej.ArchiveTime
+  operator: sarej.Operator
+  archive_id: sarej.ArchiveId
+  archive_type: sarej.ArchiveType
+  archive_file: sarej.ArchiveFile
+  det_document: sarej.DetDocument

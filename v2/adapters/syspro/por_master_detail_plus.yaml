@@ -1,0 +1,7 @@
+concept: por_master_detail_plus
+table: PorMasterDetail+
+alias: pmd1
+fields:
+  purchase_order: pmd1.PurchaseOrder
+  line: pmd1.Line
+  vehicle: pmd1.Vehicle

@@ -1,0 +1,17 @@
+concept: sal_sales_tax_uk_vat
+table: SalSalesTaxUkVat
+alias: sstuv
+fields:
+  trn_year: sstuv.TrnYear
+  trn_month: sstuv.TrnMonth
+  trn_date: sstuv.TrnDate
+  invoice_register: sstuv.InvoiceRegister
+  invoice: sstuv.Invoice
+  line: sstuv.Line
+  exempt_value: sstuv.ExemptValue
+  non_exempt_value: sstuv.NonExemptValue
+  invoice_value: sstuv.InvoiceValue
+  taxable_value: sstuv.TaxableValue
+  uk_currency: sstuv.UkCurrency
+  uk_rate: sstuv.UkRate
+  uk_mul_div: sstuv.UkMulDiv

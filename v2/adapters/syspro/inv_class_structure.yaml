@@ -1,0 +1,6 @@
+concept: inv_class_structure
+table: InvClassStructure
+alias: ics
+fields:
+  parent_class: ics.ParentClass
+  child_class: ics.ChildClass

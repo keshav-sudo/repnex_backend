@@ -1,0 +1,25 @@
+concept: iop_sales_adjust
+table: IopSalesAdjust
+alias: isa
+fields:
+  stock_code: isa.StockCode
+  version: isa.Version
+  release: isa.Release
+  warehouse: isa.Warehouse
+  movement_date: isa.MovementDate
+  entry_number: isa.EntryNumber
+  adjust_type: isa.AdjustType
+  quantity: isa.Quantity
+  cost_value: isa.CostValue
+  sales_value: isa.SalesValue
+  comment: isa.Comment
+  movement_trn_year: isa.MovementTrnYear
+  movement_trn_month: isa.MovementTrnMonth
+  movement_trn_time: isa.MovementTrnTime
+  lost_trn_date: isa.LostTrnDate
+  lost_trn_time: isa.LostTrnTime
+  operator: isa.Operator
+  from_stock: isa.FromStock
+  from_version: isa.FromVersion
+  from_release: isa.FromRelease
+  from_warehouse: isa.FromWarehouse

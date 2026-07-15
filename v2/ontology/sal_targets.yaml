@@ -1,0 +1,63 @@
+concept: sal_targets
+display_name: SalTargets
+module: other
+description: Auto-generated representation of the physical table SalTargets.
+synonyms:
+- saltargets
+- sal targets
+header_attributes:
+  sequence_type:
+    display: Sequencetype
+    type: string
+    required: false
+    description: Field SequenceType from SalTargets
+  sequence1:
+    display: Sequence1
+    type: string
+    required: false
+    description: Field Sequence1 from SalTargets
+  sequence2:
+    display: Sequence2
+    type: string
+    required: false
+    description: Field Sequence2 from SalTargets
+  sequence3:
+    display: Sequence3
+    type: string
+    required: false
+    description: Field Sequence3 from SalTargets
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalTargets
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalTargets
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from SalTargets
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from SalTargets
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from SalTargets
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from SalTargets
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from SalTargets

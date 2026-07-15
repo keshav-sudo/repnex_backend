@@ -1,0 +1,63 @@
+concept: srq_detail
+display_name: SrqDetail
+module: other
+description: Auto-generated representation of the physical table SrqDetail.
+synonyms:
+- srqdetail
+- srq detail
+header_attributes:
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from SrqDetail
+  rfq_line:
+    display: Rfqline
+    type: decimal
+    required: false
+    description: Field RfqLine from SrqDetail
+  rfq_status:
+    display: Rfqstatus
+    type: string
+    required: false
+    description: Field RfqStatus from SrqDetail
+  requisition:
+    display: Requisition
+    type: string
+    required: false
+    description: Field Requisition from SrqDetail
+  req_line:
+    display: Reqline
+    type: decimal
+    required: false
+    description: Field ReqLine from SrqDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SrqDetail
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from SrqDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SrqDetail
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from SrqDetail
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from SrqDetail
+  draw_office_num:
+    display: Drawofficenum
+    type: string
+    required: false
+    description: Field DrawOfficeNum from SrqDetail

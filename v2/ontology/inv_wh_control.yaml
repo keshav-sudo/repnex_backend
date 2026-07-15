@@ -1,0 +1,588 @@
+concept: inv_wh_control
+display_name: InvWhControl
+module: inventory
+description: Auto-generated representation of the physical table InvWhControl.
+synonyms:
+- invwhcontrol
+- inv wh control
+header_attributes:
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvWhControl
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvWhControl
+  mtd_trns_var:
+    display: Mtdtrnsvar
+    type: decimal
+    required: false
+    description: Field MtdTrnsVar from InvWhControl
+  next_ticket_no:
+    display: Nextticketno
+    type: decimal
+    required: false
+    description: Field NextTicketNo from InvWhControl
+  stock_take_flag:
+    display: Stocktakeflag
+    type: string
+    required: false
+    description: Field StockTakeFlag from InvWhControl
+  wh_ldg_ctl_acc:
+    display: Whldgctlacc
+    type: string
+    required: false
+    description: Field WhLdgCtlAcc from InvWhControl
+  wh_var_ldg:
+    display: Whvarldg
+    type: string
+    required: false
+    description: Field WhVarLdg from InvWhControl
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from InvWhControl
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from InvWhControl
+  grn_ldg_acc:
+    display: Grnldgacc
+    type: string
+    required: false
+    description: Field GrnLdgAcc from InvWhControl
+  delivery_addr1:
+    display: Deliveryaddr1
+    type: string
+    required: false
+    description: Field DeliveryAddr1 from InvWhControl
+  delivery_addr2:
+    display: Deliveryaddr2
+    type: string
+    required: false
+    description: Field DeliveryAddr2 from InvWhControl
+  delivery_addr3:
+    display: Deliveryaddr3
+    type: string
+    required: false
+    description: Field DeliveryAddr3 from InvWhControl
+  delivery_addr3_loc:
+    display: Deliveryaddr3Loc
+    type: string
+    required: false
+    description: Field DeliveryAddr3Loc from InvWhControl
+  delivery_addr4:
+    display: Deliveryaddr4
+    type: string
+    required: false
+    description: Field DeliveryAddr4 from InvWhControl
+  delivery_addr5:
+    display: Deliveryaddr5
+    type: string
+    required: false
+    description: Field DeliveryAddr5 from InvWhControl
+  postal_code:
+    display: Postalcode
+    type: string
+    required: false
+    description: Field PostalCode from InvWhControl
+  delivery_gps_lat:
+    display: Deliverygpslat
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLat from InvWhControl
+  delivery_gps_long:
+    display: Deliverygpslong
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLong from InvWhControl
+  neg_stock_allow:
+    display: Negstockallow
+    type: string
+    required: false
+    description: Field NegStockAllow from InvWhControl
+  gtr_ctl_accl:
+    display: Gtrctlaccl
+    type: string
+    required: false
+    description: Field GtrCtlAccl from InvWhControl
+  gtr_prefix:
+    display: Gtrprefix
+    type: string
+    required: false
+    description: Field GtrPrefix from InvWhControl
+  gtr_next_no:
+    display: Gtrnextno
+    type: decimal
+    required: false
+    description: Field GtrNextNo from InvWhControl
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from InvWhControl
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from InvWhControl
+  fax_contact:
+    display: Faxcontact
+    type: string
+    required: false
+    description: Field FaxContact from InvWhControl
+  fax:
+    display: Fax
+    type: string
+    required: false
+    description: Field Fax from InvWhControl
+  fax_doc_iws_flag:
+    display: Faxdociwsflag
+    type: string
+    required: false
+    description: Field FaxDocIwsFlag from InvWhControl
+  git_adj_acc:
+    display: Gitadjacc
+    type: string
+    required: false
+    description: Field GitAdjAcc from InvWhControl
+  wh_for_comp:
+    display: Whforcomp
+    type: string
+    required: false
+    description: Field WhForComp from InvWhControl
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from InvWhControl
+  incl_planning:
+    display: Inclplanning
+    type: string
+    required: false
+    description: Field InclPlanning from InvWhControl
+  use_multiple_bins:
+    display: Usemultiplebins
+    type: string
+    required: false
+    description: Field UseMultipleBins from InvWhControl
+  costing_method:
+    display: Costingmethod
+    type: string
+    required: false
+    description: Field CostingMethod from InvWhControl
+  use_fifo_buckets:
+    display: Usefifobuckets
+    type: string
+    required: false
+    description: Field UseFifoBuckets from InvWhControl
+  po_prefix:
+    display: Poprefix
+    type: string
+    required: false
+    description: Field PoPrefix from InvWhControl
+  po_next_number:
+    display: Ponextnumber
+    type: decimal
+    required: false
+    description: Field PoNextNumber from InvWhControl
+  grn_prefix:
+    display: Grnprefix
+    type: string
+    required: false
+    description: Field GrnPrefix from InvWhControl
+  grn_next_number:
+    display: Grnnextnumber
+    type: decimal
+    required: false
+    description: Field GrnNextNumber from InvWhControl
+  wip_inspect_gl_code:
+    display: Wipinspectglcode
+    type: string
+    required: false
+    description: Field WipInspectGlCode from InvWhControl
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from InvWhControl
+  so_default_doc:
+    display: Sodefaultdoc
+    type: string
+    required: false
+    description: Field SoDefaultDoc from InvWhControl
+  route_code:
+    display: Routecode
+    type: string
+    required: false
+    description: Field RouteCode from InvWhControl
+  route_distance:
+    display: Routedistance
+    type: decimal
+    required: false
+    description: Field RouteDistance from InvWhControl
+  wip_control_gl_code:
+    display: Wipcontrolglcode
+    type: string
+    required: false
+    description: Field WipControlGlCode from InvWhControl
+  wip_var_ctl_gl_code:
+    display: Wipvarctlglcode
+    type: string
+    required: false
+    description: Field WipVarCtlGlCode from InvWhControl
+  wip_auto_var_gl_code:
+    display: Wipautovarglcode
+    type: string
+    required: false
+    description: Field WipAutoVarGlCode from InvWhControl
+  site_id:
+    display: Siteid
+    type: string
+    required: false
+    description: Field SiteId from InvWhControl
+  roll_parent_gl:
+    display: Rollparentgl
+    type: string
+    required: false
+    description: Field RollParentGl from InvWhControl
+  wms_active:
+    display: Wmsactive
+    type: string
+    required: false
+    description: Field WmsActive from InvWhControl
+  pick_lead_hours:
+    display: Pickleadhours
+    type: decimal
+    required: false
+    description: Field PickLeadHours from InvWhControl
+  stock_take_update:
+    display: Stocktakeupdate
+    type: string
+    required: false
+    description: Field StockTakeUpdate from InvWhControl
+  non_stocked_gl:
+    display: Nonstockedgl
+    type: string
+    required: false
+    description: Field NonStockedGl from InvWhControl
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from InvWhControl
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from InvWhControl
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from InvWhControl
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from InvWhControl
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from InvWhControl
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from InvWhControl
+  use_fixed_bins:
+    display: Usefixedbins
+    type: string
+    required: false
+    description: Field UseFixedBins from InvWhControl
+  use_picking:
+    display: Usepicking
+    type: string
+    required: false
+    description: Field UsePicking from InvWhControl
+  shortages_method:
+    display: Shortagesmethod
+    type: string
+    required: false
+    description: Field ShortagesMethod from InvWhControl
+  lost_found_warehouse:
+    display: Lostfoundwarehouse
+    type: string
+    required: false
+    description: Field LostFoundWarehouse from InvWhControl
+  site_code:
+    display: Sitecode
+    type: string
+    required: false
+    description: Field SiteCode from InvWhControl
+  shift_code:
+    display: Shiftcode
+    type: string
+    required: false
+    description: Field ShiftCode from InvWhControl
+  pick_allocation_ovr:
+    display: Pickallocationovr
+    type: string
+    required: false
+    description: Field PickAllocationOvr from InvWhControl
+  kanban_replenish:
+    display: Kanbanreplenish
+    type: string
+    required: false
+    description: Field KanbanReplenish from InvWhControl
+  kanban_use_rec_bin:
+    display: Kanbanuserecbin
+    type: string
+    required: false
+    description: Field KanbanUseRecBin from InvWhControl
+  kanban_use_disp_bin:
+    display: Kanbanusedispbin
+    type: string
+    required: false
+    description: Field KanbanUseDispBin from InvWhControl
+  kanban_receiving_bin:
+    display: Kanbanreceivingbin
+    type: string
+    required: false
+    description: Field KanbanReceivingBin from InvWhControl
+  kanban_disp_bin:
+    display: Kanbandispbin
+    type: string
+    required: false
+    description: Field KanbanDispBin from InvWhControl
+  kanban_wh_sequence1:
+    display: Kanbanwhsequence1
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence1 from InvWhControl
+  kanban_wh_sequence2:
+    display: Kanbanwhsequence2
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence2 from InvWhControl
+  kanban_wh_sequence3:
+    display: Kanbanwhsequence3
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence3 from InvWhControl
+  kanban_wh_sequence4:
+    display: Kanbanwhsequence4
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence4 from InvWhControl
+  kanban_wh_sequence5:
+    display: Kanbanwhsequence5
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence5 from InvWhControl
+  kanban_wh_sequence6:
+    display: Kanbanwhsequence6
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence6 from InvWhControl
+  kanban_wh_sequence7:
+    display: Kanbanwhsequence7
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence7 from InvWhControl
+  kanban_wh_sequence8:
+    display: Kanbanwhsequence8
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence8 from InvWhControl
+  kanban_wh_sequence9:
+    display: Kanbanwhsequence9
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence9 from InvWhControl
+  kanban_wh_sequence10:
+    display: Kanbanwhsequence10
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence10 from InvWhControl
+  kanban_wh_sequence11:
+    display: Kanbanwhsequence11
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence11 from InvWhControl
+  kanban_wh_sequence12:
+    display: Kanbanwhsequence12
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence12 from InvWhControl
+  kanban_wh_sequence13:
+    display: Kanbanwhsequence13
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence13 from InvWhControl
+  kanban_wh_sequence14:
+    display: Kanbanwhsequence14
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence14 from InvWhControl
+  kanban_wh_sequence15:
+    display: Kanbanwhsequence15
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence15 from InvWhControl
+  kanban_wh_sequence16:
+    display: Kanbanwhsequence16
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence16 from InvWhControl
+  kanban_wh_sequence17:
+    display: Kanbanwhsequence17
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence17 from InvWhControl
+  kanban_wh_sequence18:
+    display: Kanbanwhsequence18
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence18 from InvWhControl
+  kanban_wh_sequence19:
+    display: Kanbanwhsequence19
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence19 from InvWhControl
+  kanban_wh_sequence20:
+    display: Kanbanwhsequence20
+    type: decimal
+    required: false
+    description: Field KanbanWhSequence20 from InvWhControl
+  kanban_warehouse1:
+    display: Kanbanwarehouse1
+    type: string
+    required: false
+    description: Field KanbanWarehouse1 from InvWhControl
+  kanban_warehouse2:
+    display: Kanbanwarehouse2
+    type: string
+    required: false
+    description: Field KanbanWarehouse2 from InvWhControl
+  kanban_warehouse3:
+    display: Kanbanwarehouse3
+    type: string
+    required: false
+    description: Field KanbanWarehouse3 from InvWhControl
+  kanban_warehouse4:
+    display: Kanbanwarehouse4
+    type: string
+    required: false
+    description: Field KanbanWarehouse4 from InvWhControl
+  kanban_warehouse5:
+    display: Kanbanwarehouse5
+    type: string
+    required: false
+    description: Field KanbanWarehouse5 from InvWhControl
+  kanban_warehouse6:
+    display: Kanbanwarehouse6
+    type: string
+    required: false
+    description: Field KanbanWarehouse6 from InvWhControl
+  kanban_warehouse7:
+    display: Kanbanwarehouse7
+    type: string
+    required: false
+    description: Field KanbanWarehouse7 from InvWhControl
+  kanban_warehouse8:
+    display: Kanbanwarehouse8
+    type: string
+    required: false
+    description: Field KanbanWarehouse8 from InvWhControl
+  kanban_warehouse9:
+    display: Kanbanwarehouse9
+    type: string
+    required: false
+    description: Field KanbanWarehouse9 from InvWhControl
+  kanban_warehouse10:
+    display: Kanbanwarehouse10
+    type: string
+    required: false
+    description: Field KanbanWarehouse10 from InvWhControl
+  kanban_warehouse11:
+    display: Kanbanwarehouse11
+    type: string
+    required: false
+    description: Field KanbanWarehouse11 from InvWhControl
+  kanban_warehouse12:
+    display: Kanbanwarehouse12
+    type: string
+    required: false
+    description: Field KanbanWarehouse12 from InvWhControl
+  kanban_warehouse13:
+    display: Kanbanwarehouse13
+    type: string
+    required: false
+    description: Field KanbanWarehouse13 from InvWhControl
+  kanban_warehouse14:
+    display: Kanbanwarehouse14
+    type: string
+    required: false
+    description: Field KanbanWarehouse14 from InvWhControl
+  kanban_warehouse15:
+    display: Kanbanwarehouse15
+    type: string
+    required: false
+    description: Field KanbanWarehouse15 from InvWhControl
+  kanban_warehouse16:
+    display: Kanbanwarehouse16
+    type: string
+    required: false
+    description: Field KanbanWarehouse16 from InvWhControl
+  kanban_warehouse17:
+    display: Kanbanwarehouse17
+    type: string
+    required: false
+    description: Field KanbanWarehouse17 from InvWhControl
+  kanban_warehouse18:
+    display: Kanbanwarehouse18
+    type: string
+    required: false
+    description: Field KanbanWarehouse18 from InvWhControl
+  kanban_warehouse19:
+    display: Kanbanwarehouse19
+    type: string
+    required: false
+    description: Field KanbanWarehouse19 from InvWhControl
+  kanban_warehouse20:
+    display: Kanbanwarehouse20
+    type: string
+    required: false
+    description: Field KanbanWarehouse20 from InvWhControl
+  use_wip_picking:
+    display: Usewippicking
+    type: string
+    required: false
+    description: Field UseWipPicking from InvWhControl
+  auto_issue_pick:
+    display: Autoissuepick
+    type: string
+    required: false
+    description: Field AutoIssuePick from InvWhControl
+  maint_warehouse:
+    display: Maintwarehouse
+    type: string
+    required: false
+    description: Field MaintWarehouse from InvWhControl
+  pick_confirmation:
+    display: Pickconfirmation
+    type: string
+    required: false
+    description: Field PickConfirmation from InvWhControl
+  pick_marshalling:
+    display: Pickmarshalling
+    type: string
+    required: false
+    description: Field PickMarshalling from InvWhControl

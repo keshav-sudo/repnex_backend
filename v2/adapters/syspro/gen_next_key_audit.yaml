@@ -1,0 +1,15 @@
+concept: gen_next_key_audit
+table: GenNextKeyAudit
+alias: gnka
+fields:
+  company: gnka.Company
+  key_type: gnka.KeyType
+  post_year: gnka.PostYear
+  post_period: gnka.PostPeriod
+  key_issued: gnka.KeyIssued
+  allocated_by_program: gnka.AllocatedByProgram
+  called_from_program: gnka.CalledFromProgram
+  allocated_date: gnka.AllocatedDate
+  allocated_by_oper: gnka.AllocatedByOper
+  status: gnka.Status
+  closed_date: gnka.ClosedDate

@@ -1,0 +1,53 @@
+concept: srs_archive_fac
+display_name: SrsArchiveFAC
+module: other
+description: Auto-generated representation of the physical table SrsArchiveFAC.
+synonyms:
+- srsarchivefac
+- srs archive fac
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveFAC
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveFAC
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveFAC
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveFAC
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveFAC
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveFAC
+  finished_stock_code:
+    display: Finishedstockcode
+    type: string
+    required: false
+    description: Field FinishedStockCode from SrsArchiveFAC
+  finished_warehouse:
+    display: Finishedwarehouse
+    type: string
+    required: false
+    description: Field FinishedWarehouse from SrsArchiveFAC
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from SrsArchiveFAC

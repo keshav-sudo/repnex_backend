@@ -1,0 +1,9 @@
+concept: ap_supplier_nar_hdr
+table: ApSupplierNarHdr
+alias: asnh
+fields:
+  supplier: asnh.Supplier
+  invoice: asnh.Invoice
+  note_type: asnh.NoteType
+  date_last_modified: asnh.DateLastModified
+  follow_up_date: asnh.FollowUpDate

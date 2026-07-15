@@ -1,0 +1,108 @@
+concept: ap_withholding_tax
+display_name: ApWithholdingTax
+module: accounts_payable
+description: Auto-generated representation of the physical table ApWithholdingTax.
+synonyms:
+- apwithholdingtax
+- ap withholding tax
+header_attributes:
+  wht_year:
+    display: Whtyear
+    type: decimal
+    required: false
+    description: Field WhtYear from ApWithholdingTax
+  period:
+    display: Period
+    type: decimal
+    required: false
+    description: Field Period from ApWithholdingTax
+  cheque_register:
+    display: Chequeregister
+    type: decimal
+    required: false
+    description: Field ChequeRegister from ApWithholdingTax
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApWithholdingTax
+  distr_entry:
+    display: Distrentry
+    type: decimal
+    required: false
+    description: Field DistrEntry from ApWithholdingTax
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApWithholdingTax
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApWithholdingTax
+  with_tax_acc_basis:
+    display: Withtaxaccbasis
+    type: string
+    required: false
+    description: Field WithTaxAccBasis from ApWithholdingTax
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from ApWithholdingTax
+  tax_indicator:
+    display: Taxindicator
+    type: string
+    required: false
+    description: Field TaxIndicator from ApWithholdingTax
+  transaction_code:
+    display: Transactioncode
+    type: string
+    required: false
+    description: Field TransactionCode from ApWithholdingTax
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ApWithholdingTax
+  with_tax_code:
+    display: Withtaxcode
+    type: string
+    required: false
+    description: Field WithTaxCode from ApWithholdingTax
+  with_tax_rate:
+    display: Withtaxrate
+    type: decimal
+    required: false
+    description: Field WithTaxRate from ApWithholdingTax
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApWithholdingTax
+  with_taxable_value:
+    display: Withtaxablevalue
+    type: decimal
+    required: false
+    description: Field WithTaxableValue from ApWithholdingTax
+  with_tax_value:
+    display: Withtaxvalue
+    type: decimal
+    required: false
+    description: Field WithTaxValue from ApWithholdingTax
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApWithholdingTax
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from ApWithholdingTax
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from ApWithholdingTax

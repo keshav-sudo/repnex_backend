@@ -1,0 +1,13 @@
+concept: asset_capex_alt_cur
+table: AssetCapexAltCur
+alias: acac
+fields:
+  capex_code: acac.CapexCode
+  currency: acac.Currency
+  value_budgeted: acac.ValueBudgeted
+  value_uncommitted: acac.ValueUncommitted
+  value_committed: acac.ValueCommitted
+  value_spent: acac.ValueSpent
+  exchange_rate: acac.ExchangeRate
+  mul_div: acac.MulDiv
+  revaluation_date: acac.RevaluationDate

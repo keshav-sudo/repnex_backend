@@ -1,0 +1,13 @@
+concept: crm_org_list_defn
+table: CrmOrgListDefn
+alias: cold
+fields:
+  list_file: cold.ListFile
+  list_type: cold.ListType
+  operator_role: cold.OperatorRole
+  description: cold.Description
+  update_oper: cold.UpdateOper
+  update_date: cold.UpdateDate
+  update_time: cold.UpdateTime
+  temp_list: cold.TempList
+  list_data: cold.ListData

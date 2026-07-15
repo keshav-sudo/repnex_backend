@@ -1,0 +1,113 @@
+concept: lot_arc_recall_audit
+display_name: LotArcRecallAudit
+module: other
+description: Auto-generated representation of the physical table LotArcRecallAudit.
+synonyms:
+- lotarcrecallaudit
+- lot arc recall audit
+header_attributes:
+  product_recall:
+    display: Productrecall
+    type: string
+    required: false
+    description: Field ProductRecall from LotArcRecallAudit
+  audit_sequence:
+    display: Auditsequence
+    type: decimal
+    required: false
+    description: Field AuditSequence from LotArcRecallAudit
+  audit_date:
+    display: Auditdate
+    type: date
+    required: false
+    description: Field AuditDate from LotArcRecallAudit
+  audit_time:
+    display: Audittime
+    type: decimal
+    required: false
+    description: Field AuditTime from LotArcRecallAudit
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from LotArcRecallAudit
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from LotArcRecallAudit
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from LotArcRecallAudit
+  scrap_reason_code:
+    display: Scrapreasoncode
+    type: string
+    required: false
+    description: Field ScrapReasonCode from LotArcRecallAudit
+  release_reason:
+    display: Releasereason
+    type: string
+    required: false
+    description: Field ReleaseReason from LotArcRecallAudit
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from LotArcRecallAudit
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotArcRecallAudit
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from LotArcRecallAudit
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from LotArcRecallAudit
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotArcRecallAudit
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from LotArcRecallAudit
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from LotArcRecallAudit
+  journal_line:
+    display: Journalline
+    type: decimal
+    required: false
+    description: Field JournalLine from LotArcRecallAudit
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from LotArcRecallAudit
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from LotArcRecallAudit
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from LotArcRecallAudit
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from LotArcRecallAudit

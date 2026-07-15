@@ -1,0 +1,48 @@
+concept: inv_on_hand_bal
+display_name: InvOnHandBal
+module: inventory
+description: Auto-generated representation of the physical table InvOnHandBal.
+synonyms:
+- invonhandbal
+- inv on hand bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from InvOnHandBal
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvOnHandBal
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvOnHandBal
+  whs_on_hand:
+    display: Whsonhand
+    type: decimal
+    required: false
+    description: Field WhsOnHand from InvOnHandBal
+  bin_on_hand:
+    display: Binonhand
+    type: decimal
+    required: false
+    description: Field BinOnHand from InvOnHandBal
+  lot_on_hand:
+    display: Lotonhand
+    type: decimal
+    required: false
+    description: Field LotOnHand from InvOnHandBal
+  fifo_on_hand:
+    display: Fifoonhand
+    type: decimal
+    required: false
+    description: Field FifoOnHand from InvOnHandBal
+  ser_on_hand:
+    display: Seronhand
+    type: decimal
+    required: false
+    description: Field SerOnHand from InvOnHandBal

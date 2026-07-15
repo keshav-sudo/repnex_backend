@@ -1,0 +1,18 @@
+concept: whm_lpn_header
+table: WhmLpnHeader
+alias: wlh
+fields:
+  license_plate_number: wlh.LicensePlateNumber
+  container: wlh.Container
+  warehouse: wlh.Warehouse
+  bin: wlh.Bin
+  created_date: wlh.CreatedDate
+  operator: wlh.Operator
+  on_hold: wlh.OnHold
+  hold_reason: wlh.HoldReason
+  archived: wlh.Archived
+  awaiting_putaway: wlh.AwaitingPutaway
+  in_transit: wlh.InTransit
+  in_stock_take: wlh.InStockTake
+  full_status: wlh.FullStatus
+  parent_lpn: wlh.ParentLpn

@@ -1,0 +1,14 @@
+concept: ap_supp_health_fix
+table: ApSuppHealthFix
+alias: ashf
+fields:
+  run_date_time: ashf.RunDateTime
+  supplier: ashf.Supplier
+  trx_type: ashf.TrxType
+  hfix_year: ashf.HfixYear
+  hfix_month: ashf.HfixMonth
+  currency: ashf.Currency
+  trx_amt_vary: ashf.TrxAmtVary
+  trx_amt_actual: ashf.TrxAmtActual
+  trx_amt_calc: ashf.TrxAmtCalc
+  message: ashf.Message

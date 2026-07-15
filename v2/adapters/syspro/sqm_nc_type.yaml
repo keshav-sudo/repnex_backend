@@ -1,0 +1,6 @@
+concept: sqm_nc_type
+table: SqmNcType
+alias: snt1
+fields:
+  conform_type: snt1.ConformType
+  description: snt1.Description

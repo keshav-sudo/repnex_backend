@@ -1,0 +1,15 @@
+concept: adm_signature_log_det
+table: AdmSignatureLogDet
+alias: asld
+fields:
+  transaction_id: asld.TransactionId
+  signature_date: asld.SignatureDate
+  signature_time: asld.SignatureTime
+  signature_line: asld.SignatureLine
+  operator: asld.Operator
+  variable: asld.Variable
+  variable_desc: asld.VariableDesc
+  variable_type: asld.VariableType
+  var_alpha_value: asld.VarAlphaValue
+  var_numeric_value: asld.VarNumericValue
+  var_date_value: asld.VarDateValue

@@ -1,0 +1,19 @@
+concept: iop_sales_perf
+table: IopSalesPerf
+alias: isp
+fields:
+  stock_code: isp.StockCode
+  version: isp.Version
+  release: isp.Release
+  warehouse: isp.Warehouse
+  sales_order: isp.SalesOrder
+  sales_order_init_line: isp.SalesOrderInitLine
+  entry_system_date: isp.EntrySystemDate
+  entry_number: isp.EntryNumber
+  order_qty: isp.OrderQty
+  ship_qty: isp.ShipQty
+  line_ship_date: isp.LineShipDate
+  cust_request_date: isp.CustRequestDate
+  delivery_cnt: isp.DeliveryCnt
+  line: isp.Line
+  company: isp.Company

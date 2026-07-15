@@ -1,0 +1,15 @@
+concept: sor_detail_ser_rep
+table: SorDetailSerRep
+alias: sdsr
+fields:
+  invoice: sdsr.Invoice
+  sales_order: sdsr.SalesOrder
+  sales_order_line: sdsr.SalesOrderLine
+  lot: sdsr.Lot
+  serial: sdsr.Serial
+  stock_qty_to_ship: sdsr.StockQtyToShip
+  qty_this_session: sdsr.QtyThisSession
+  new_expiry_date: sdsr.NewExpiryDate
+  new_scrap_date: sdsr.NewScrapDate
+  qty_reserved: sdsr.QtyReserved
+  bin: sdsr.Bin

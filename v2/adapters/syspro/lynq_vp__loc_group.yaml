@@ -1,0 +1,7 @@
+concept: lynq_vp__loc_group
+table: Lynq_VP_LocGroup
+alias: lvplg
+fields:
+  id: lvplg.ID
+  location_code: lvplg.LocationCode
+  group_name: lvplg.GroupName

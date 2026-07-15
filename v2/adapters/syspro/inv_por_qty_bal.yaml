@@ -1,0 +1,20 @@
+concept: inv_por_qty_bal
+table: InvPorQtyBal
+alias: ipqb
+fields:
+  run_date_time: ipqb.RunDateTime
+  stock_code: ipqb.StockCode
+  warehouse: ipqb.Warehouse
+  whs_qty_on_order: ipqb.WhsQtyOnOrder
+  po_qty_on_order: ipqb.PoQtyOnOrder
+  job_qty_on_order: ipqb.JobQtyOnOrder
+  cop_qty_on_order: ipqb.CopQtyOnOrder
+  sct_qty_on_order: ipqb.SctQtyOnOrder
+  mdn_qty_on_order: ipqb.MdnQtyOnOrder
+  tot_qty_on_order: ipqb.TotQtyOnOrder
+  whs_qty_allocated_wip: ipqb.WhsQtyAllocatedWip
+  job_qty_allocated_wip: ipqb.JobQtyAllocatedWip
+  whs_qty_in_inspection: ipqb.WhsQtyInInspection
+  wip_in_inspection: ipqb.WipInInspection
+  inv_in_inspection: ipqb.InvInInspection
+  tot_in_inspection: ipqb.TotInInspection

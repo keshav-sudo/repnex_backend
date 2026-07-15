@@ -1,0 +1,23 @@
+concept: lynq_vp__wc_group
+display_name: Lynq VP WcGroup
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_WcGroup.
+synonyms:
+- lynq_vp_wcgroup
+- lynq vp  wc group
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_WcGroup
+  group_name:
+    display: Groupname
+    type: string
+    required: false
+    description: Field GroupName from Lynq_VP_WcGroup
+  group_description:
+    display: Groupdescription
+    type: string
+    required: false
+    description: Field GroupDescription from Lynq_VP_WcGroup

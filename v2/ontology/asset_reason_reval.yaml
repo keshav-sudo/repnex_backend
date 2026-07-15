@@ -1,0 +1,18 @@
+concept: asset_reason_reval
+display_name: AssetReasonReval
+module: assets
+description: Auto-generated representation of the physical table AssetReasonReval.
+synonyms:
+- assetreasonreval
+- asset reason reval
+header_attributes:
+  reval_reason:
+    display: Revalreason
+    type: string
+    required: false
+    description: Field RevalReason from AssetReasonReval
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetReasonReval

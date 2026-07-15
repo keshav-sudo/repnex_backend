@@ -1,0 +1,28 @@
+concept: sal_gl_int_ctr
+display_name: SalGlIntCtr
+module: other
+description: Auto-generated representation of the physical table SalGlIntCtr.
+synonyms:
+- salglintctr
+- sal gl int ctr
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalGlIntCtr
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SalGlIntCtr
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from SalGlIntCtr
+  payment_gl_code:
+    display: Paymentglcode
+    type: string
+    required: false
+    description: Field PaymentGlCode from SalGlIntCtr

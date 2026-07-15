@@ -1,0 +1,22 @@
+concept: gen_groups
+table: GenGroups
+alias: gg
+fields:
+  company: gg.Company
+  gl_group: gg.GlGroup
+  description: gg.Description
+  pct_spread1: gg.PctSpread1
+  pct_spread2: gg.PctSpread2
+  pct_spread3: gg.PctSpread3
+  pct_spread4: gg.PctSpread4
+  pct_spread5: gg.PctSpread5
+  pct_spread6: gg.PctSpread6
+  pct_spread7: gg.PctSpread7
+  pct_spread8: gg.PctSpread8
+  pct_spread9: gg.PctSpread9
+  pct_spread10: gg.PctSpread10
+  pct_spread11: gg.PctSpread11
+  pct_spread12: gg.PctSpread12
+  pct_spread13: gg.PctSpread13
+  pct_spread14: gg.PctSpread14
+  pct_spread15: gg.PctSpread15

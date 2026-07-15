@@ -1,0 +1,13 @@
+concept: srs_archive_wis
+table: SrsArchiveWIS
+alias: sawis
+fields:
+  archive_date: sawis.ArchiveDate
+  archive_time: sawis.ArchiveTime
+  operator: sawis.Operator
+  archive_id: sawis.ArchiveId
+  archive_type: sawis.ArchiveType
+  archive_file: sawis.ArchiveFile
+  det_job: sawis.DetJob
+  det_lot: sawis.DetLot
+  det_reference: sawis.DetReference

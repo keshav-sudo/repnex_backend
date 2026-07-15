@@ -1,0 +1,17 @@
+concept: cashbook
+table: CshChqReg
+alias: cr
+fields:
+  register: cr.Register
+  cheque_number: cr.Cheque
+  cheque_date: cr.ChequeDate
+  reference: cr.Reference
+  notation: cr.Notation
+  cheque_value: cr.ChequeValue
+  currency: cr.Currency
+  void_flag: cr.VoidFlag
+  trn_year: cr.CbTrnYear
+  trn_month: cr.CbTrnMonth
+  last_chq_print: cr.LastChequePrted
+default_filters:
+  exclude_void: cr.VoidFlag = 'N'

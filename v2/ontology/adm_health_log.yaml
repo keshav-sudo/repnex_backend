@@ -1,0 +1,83 @@
+concept: adm_health_log
+display_name: AdmHealthLog
+module: administration
+description: Auto-generated representation of the physical table AdmHealthLog.
+synonyms:
+- admhealthlog
+- adm health log
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from AdmHealthLog
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmHealthLog
+  health_function:
+    display: Healthfunction
+    type: string
+    required: false
+    description: Field HealthFunction from AdmHealthLog
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmHealthLog
+  status_flag:
+    display: Statusflag
+    type: string
+    required: false
+    description: Field StatusFlag from AdmHealthLog
+  end_date_time:
+    display: Enddatetime
+    type: date
+    required: false
+    description: Field EndDateTime from AdmHealthLog
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from AdmHealthLog
+  message_number:
+    display: Messagenumber
+    type: string
+    required: false
+    description: Field MessageNumber from AdmHealthLog
+  syspro_mnu_ver:
+    display: Syspromnuver
+    type: string
+    required: false
+    description: Field SysproMnuVer from AdmHealthLog
+  syspro_abt_ver:
+    display: Sysproabtver
+    type: string
+    required: false
+    description: Field SysproAbtVer from AdmHealthLog
+  licensed_users:
+    display: Licensedusers
+    type: decimal
+    required: false
+    description: Field LicensedUsers from AdmHealthLog
+  logged_on_users:
+    display: Loggedonusers
+    type: decimal
+    required: false
+    description: Field LoggedOnUsers from AdmHealthLog
+  server_os:
+    display: Serveros
+    type: decimal
+    required: false
+    description: Field ServerOs from AdmHealthLog
+  sql_version:
+    display: Sqlversion
+    type: string
+    required: false
+    description: Field SqlVersion from AdmHealthLog
+  rows_affected:
+    display: Rowsaffected
+    type: decimal
+    required: false
+    description: Field RowsAffected from AdmHealthLog

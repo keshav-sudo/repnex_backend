@@ -1,0 +1,7 @@
+concept: inv_planner
+table: InvPlanner
+alias: ip
+fields:
+  planner: ip.Planner
+  name: ip.Name
+  email: ip.Email

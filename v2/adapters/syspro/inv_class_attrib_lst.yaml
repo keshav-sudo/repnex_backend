@@ -1,0 +1,7 @@
+concept: inv_class_attrib_lst
+table: InvClassAttribLst
+alias: ical
+fields:
+  stock_class: ical.StockClass
+  class_attrib: ical.ClassAttrib
+  field_list: ical.FieldList

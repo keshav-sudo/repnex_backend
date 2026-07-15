@@ -1,0 +1,63 @@
+concept: lynq_vp_bpl__src_vp_resource_linear_mapping
+display_name: Lynq VP BPL Src VPResourceLinearMapping
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_BPL_Src_VPResourceLinearMapping.
+synonyms:
+- lynq_vp_bpl_src_vpresourcelinearmapping
+- lynq vp bpl  src vp resource linear mapping
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_BPL_Src_VPResourceLinearMapping
+  res_id:
+    display: Resid
+    type: decimal
+    required: false
+    description: Field ResID from Lynq_VP_BPL_Src_VPResourceLinearMapping
+  sys_res_code:
+    display: Sysrescode
+    type: string
+    required: false
+    description: Field SysResCode from Lynq_VP_BPL_Src_VPResourceLinearMapping
+  stp_res_qty:
+    display: Stpresqty
+    type: decimal
+    required: false
+    description: Field STPResQty from Lynq_VP_BPL_Src_VPResourceLinearMapping
+  stp_res_hrs:
+    display: Stpreshrs
+    type: decimal
+    required: false
+    description: Field STPResHrs from Lynq_VP_BPL_Src_VPResourceLinearMapping
+  prd_res_qty:
+    display: Prdresqty
+    type: decimal
+    required: false
+    description: Field PRDResQty from Lynq_VP_BPL_Src_VPResourceLinearMapping
+  prd_res_hrs:
+    display: Prdreshrs
+    type: decimal
+    required: false
+    description: Field PRDResHrs from Lynq_VP_BPL_Src_VPResourceLinearMapping
+  pc1_res_qty:
+    display: Pc1Resqty
+    type: decimal
+    required: false
+    description: Field PC1ResQty from Lynq_VP_BPL_Src_VPResourceLinearMapping
+  pc1_res_hrs:
+    display: Pc1Reshrs
+    type: decimal
+    required: false
+    description: Field PC1ResHrs from Lynq_VP_BPL_Src_VPResourceLinearMapping
+  pc2_res_qty:
+    display: Pc2Resqty
+    type: decimal
+    required: false
+    description: Field PC2ResQty from Lynq_VP_BPL_Src_VPResourceLinearMapping
+  pc2_res_hrs:
+    display: Pc2Reshrs
+    type: decimal
+    required: false
+    description: Field PC2ResHrs from Lynq_VP_BPL_Src_VPResourceLinearMapping

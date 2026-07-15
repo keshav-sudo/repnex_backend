@@ -1,0 +1,8 @@
+concept: lct_shipment_note
+table: LctShipmentNote
+alias: lsn
+fields:
+  vessel: lsn.Vessel
+  departure_date: lsn.DepartureDate
+  line: lsn.Line
+  narration: lsn.Narration

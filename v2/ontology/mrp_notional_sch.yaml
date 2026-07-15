@@ -1,0 +1,48 @@
+concept: mrp_notional_sch
+display_name: MrpNotionalSch
+module: mrp
+description: Auto-generated representation of the physical table MrpNotionalSch.
+synonyms:
+- mrpnotionalsch
+- mrp notional sch
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpNotionalSch
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpNotionalSch
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpNotionalSch
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpNotionalSch
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from MrpNotionalSch
+  date_required:
+    display: Daterequired
+    type: date
+    required: false
+    description: Field DateRequired from MrpNotionalSch
+  quantity_to_make:
+    display: Quantitytomake
+    type: decimal
+    required: false
+    description: Field QuantityToMake from MrpNotionalSch
+  fixed_date_flag:
+    display: Fixeddateflag
+    type: string
+    required: false
+    description: Field FixedDateFlag from MrpNotionalSch

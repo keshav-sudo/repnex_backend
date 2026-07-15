@@ -1,0 +1,7 @@
+concept: lynq_me__integration__sync__db_lock__setup
+table: Lynq_ME_Integration_Sync_DbLock_Setup
+alias: lmeisdls
+fields:
+  id: lmeisdls.ID
+  name: lmeisdls.Name
+  value: lmeisdls.Value

@@ -1,0 +1,23 @@
+concept: whm_team_employees
+display_name: WhmTeamEmployees
+module: other
+description: Auto-generated representation of the physical table WhmTeamEmployees.
+synonyms:
+- whmteamemployees
+- whm team employees
+header_attributes:
+  team:
+    display: Team
+    type: string
+    required: false
+    description: Field Team from WhmTeamEmployees
+  employee:
+    display: Employee
+    type: string
+    required: false
+    description: Field Employee from WhmTeamEmployees
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WhmTeamEmployees

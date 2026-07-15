@@ -1,0 +1,14 @@
+concept: sal_tax_uk_vat_det
+table: SalTaxUkVatDet
+alias: stuvd
+fields:
+  trn_year: stuvd.TrnYear
+  trn_month: stuvd.TrnMonth
+  trn_date: stuvd.TrnDate
+  invoice_register: stuvd.InvoiceRegister
+  invoice: stuvd.Invoice
+  line: stuvd.Line
+  tax_code: stuvd.TaxCode
+  tax_value: stuvd.TaxValue
+  taxable_value: stuvd.TaxableValue
+  non_tax_value: stuvd.NonTaxValue

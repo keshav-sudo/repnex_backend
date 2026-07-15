@@ -1,0 +1,8 @@
+concept: adm_status_header
+table: AdmStatusHeader
+alias: ash
+fields:
+  status_entity: ash.StatusEntity
+  status_code: ash.StatusCode
+  description: ash.Description
+  blocked_flag: ash.BlockedFlag

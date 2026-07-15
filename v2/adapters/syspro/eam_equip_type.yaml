@@ -1,0 +1,8 @@
+concept: eam_equip_type
+table: EamEquipType
+alias: eet
+fields:
+  equipment_type: eet.EquipmentType
+  description: eet.Description
+  use_equip_structure: eet.UseEquipStructure
+  equipment_code: eet.EquipmentCode

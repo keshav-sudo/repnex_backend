@@ -1,0 +1,8 @@
+concept: tbl_so_price_uom
+table: TblSoPriceUom
+alias: tspu
+fields:
+  order_uom: tspu.OrderUom
+  price_uom: tspu.PriceUom
+  conv_factor: tspu.ConvFactor
+  mul_div: tspu.MulDiv

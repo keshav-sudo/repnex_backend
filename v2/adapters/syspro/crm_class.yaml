@@ -1,0 +1,6 @@
+concept: crm_class
+table: CrmClass
+alias: cc3
+fields:
+  contact_class: cc3.ContactClass
+  description: cc3.Description

@@ -1,0 +1,93 @@
+concept: asset_lab_jnl
+display_name: AssetLabJnl
+module: assets
+description: Auto-generated representation of the physical table AssetLabJnl.
+synonyms:
+- assetlabjnl
+- asset lab jnl
+header_attributes:
+  batch:
+    display: Batch
+    type: decimal
+    required: false
+    description: Field Batch from AssetLabJnl
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from AssetLabJnl
+  expense:
+    display: Expense
+    type: string
+    required: false
+    description: Field Expense from AssetLabJnl
+  employee:
+    display: Employee
+    type: string
+    required: false
+    description: Field Employee from AssetLabJnl
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetLabJnl
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from AssetLabJnl
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from AssetLabJnl
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetLabJnl
+  total_time:
+    display: Totaltime
+    type: decimal
+    required: false
+    description: Field TotalTime from AssetLabJnl
+  total_value:
+    display: Totalvalue
+    type: decimal
+    required: false
+    description: Field TotalValue from AssetLabJnl
+  lab_analysis_upd:
+    display: Labanalysisupd
+    type: string
+    required: false
+    description: Field LabAnalysisUpd from AssetLabJnl
+  print_status:
+    display: Printstatus
+    type: string
+    required: false
+    description: Field PrintStatus from AssetLabJnl
+  week:
+    display: Week
+    type: decimal
+    required: false
+    description: Field Week from AssetLabJnl
+  asset_type:
+    display: Assettype
+    type: string
+    required: false
+    description: Field AssetType from AssetLabJnl
+  location_char:
+    display: Locationchar
+    type: string
+    required: false
+    description: Field LocationChar from AssetLabJnl
+  branch_char:
+    display: Branchchar
+    type: string
+    required: false
+    description: Field BranchChar from AssetLabJnl
+  payroll_rate:
+    display: Payrollrate
+    type: string
+    required: false
+    description: Field PayrollRate from AssetLabJnl

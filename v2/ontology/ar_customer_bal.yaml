@@ -1,0 +1,538 @@
+concept: ar_customer_bal
+display_name: ArCustomerBal
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCustomerBal.
+synonyms:
+- arcustomerbal
+- ar customer bal
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCustomerBal
+  current_balance1:
+    display: Currentbalance1
+    type: decimal
+    required: false
+    description: Field CurrentBalance1 from ArCustomerBal
+  current_balance2:
+    display: Currentbalance2
+    type: decimal
+    required: false
+    description: Field CurrentBalance2 from ArCustomerBal
+  current_balance3:
+    display: Currentbalance3
+    type: decimal
+    required: false
+    description: Field CurrentBalance3 from ArCustomerBal
+  bal_brought_fwd1:
+    display: Balbroughtfwd1
+    type: decimal
+    required: false
+    description: Field BalBroughtFwd1 from ArCustomerBal
+  bal_brought_fwd2:
+    display: Balbroughtfwd2
+    type: decimal
+    required: false
+    description: Field BalBroughtFwd2 from ArCustomerBal
+  bal_brought_fwd3:
+    display: Balbroughtfwd3
+    type: decimal
+    required: false
+    description: Field BalBroughtFwd3 from ArCustomerBal
+  mtd_sales1:
+    display: Mtdsales1
+    type: decimal
+    required: false
+    description: Field MtdSales1 from ArCustomerBal
+  mtd_sales2:
+    display: Mtdsales2
+    type: decimal
+    required: false
+    description: Field MtdSales2 from ArCustomerBal
+  mtd_sales3:
+    display: Mtdsales3
+    type: decimal
+    required: false
+    description: Field MtdSales3 from ArCustomerBal
+  mtd_profit1:
+    display: Mtdprofit1
+    type: decimal
+    required: false
+    description: Field MtdProfit1 from ArCustomerBal
+  mtd_profit2:
+    display: Mtdprofit2
+    type: decimal
+    required: false
+    description: Field MtdProfit2 from ArCustomerBal
+  mtd_profit3:
+    display: Mtdprofit3
+    type: decimal
+    required: false
+    description: Field MtdProfit3 from ArCustomerBal
+  mtd_num_invoices1:
+    display: Mtdnuminvoices1
+    type: decimal
+    required: false
+    description: Field MtdNumInvoices1 from ArCustomerBal
+  mtd_num_invoices2:
+    display: Mtdnuminvoices2
+    type: decimal
+    required: false
+    description: Field MtdNumInvoices2 from ArCustomerBal
+  mtd_num_invoices3:
+    display: Mtdnuminvoices3
+    type: decimal
+    required: false
+    description: Field MtdNumInvoices3 from ArCustomerBal
+  mtd_invoice_val1:
+    display: Mtdinvoiceval1
+    type: decimal
+    required: false
+    description: Field MtdInvoiceVal1 from ArCustomerBal
+  mtd_invoice_val2:
+    display: Mtdinvoiceval2
+    type: decimal
+    required: false
+    description: Field MtdInvoiceVal2 from ArCustomerBal
+  mtd_invoice_val3:
+    display: Mtdinvoiceval3
+    type: decimal
+    required: false
+    description: Field MtdInvoiceVal3 from ArCustomerBal
+  mtd_num_paym_val1:
+    display: Mtdnumpaymval1
+    type: decimal
+    required: false
+    description: Field MtdNumPaymVal1 from ArCustomerBal
+  mtd_num_paym_val2:
+    display: Mtdnumpaymval2
+    type: decimal
+    required: false
+    description: Field MtdNumPaymVal2 from ArCustomerBal
+  mtd_num_paym_val3:
+    display: Mtdnumpaymval3
+    type: decimal
+    required: false
+    description: Field MtdNumPaymVal3 from ArCustomerBal
+  mtd_paym_val1:
+    display: Mtdpaymval1
+    type: decimal
+    required: false
+    description: Field MtdPaymVal1 from ArCustomerBal
+  mtd_paym_val2:
+    display: Mtdpaymval2
+    type: decimal
+    required: false
+    description: Field MtdPaymVal2 from ArCustomerBal
+  mtd_paym_val3:
+    display: Mtdpaymval3
+    type: decimal
+    required: false
+    description: Field MtdPaymVal3 from ArCustomerBal
+  mtd_num_discount1:
+    display: Mtdnumdiscount1
+    type: decimal
+    required: false
+    description: Field MtdNumDiscount1 from ArCustomerBal
+  mtd_num_discount2:
+    display: Mtdnumdiscount2
+    type: decimal
+    required: false
+    description: Field MtdNumDiscount2 from ArCustomerBal
+  mtd_num_discount3:
+    display: Mtdnumdiscount3
+    type: decimal
+    required: false
+    description: Field MtdNumDiscount3 from ArCustomerBal
+  mtd_discount_val1:
+    display: Mtddiscountval1
+    type: decimal
+    required: false
+    description: Field MtdDiscountVal1 from ArCustomerBal
+  mtd_discount_val2:
+    display: Mtddiscountval2
+    type: decimal
+    required: false
+    description: Field MtdDiscountVal2 from ArCustomerBal
+  mtd_discount_val3:
+    display: Mtddiscountval3
+    type: decimal
+    required: false
+    description: Field MtdDiscountVal3 from ArCustomerBal
+  mtd_num_adjs1:
+    display: Mtdnumadjs1
+    type: decimal
+    required: false
+    description: Field MtdNumAdjs1 from ArCustomerBal
+  mtd_num_adjs2:
+    display: Mtdnumadjs2
+    type: decimal
+    required: false
+    description: Field MtdNumAdjs2 from ArCustomerBal
+  mtd_num_adjs3:
+    display: Mtdnumadjs3
+    type: decimal
+    required: false
+    description: Field MtdNumAdjs3 from ArCustomerBal
+  mtd_adj_val1:
+    display: Mtdadjval1
+    type: decimal
+    required: false
+    description: Field MtdAdjVal1 from ArCustomerBal
+  mtd_adj_val2:
+    display: Mtdadjval2
+    type: decimal
+    required: false
+    description: Field MtdAdjVal2 from ArCustomerBal
+  mtd_adj_val3:
+    display: Mtdadjval3
+    type: decimal
+    required: false
+    description: Field MtdAdjVal3 from ArCustomerBal
+  mtd_num_cr_memos1:
+    display: Mtdnumcrmemos1
+    type: decimal
+    required: false
+    description: Field MtdNumCrMemos1 from ArCustomerBal
+  mtd_num_cr_memos2:
+    display: Mtdnumcrmemos2
+    type: decimal
+    required: false
+    description: Field MtdNumCrMemos2 from ArCustomerBal
+  mtd_num_cr_memos3:
+    display: Mtdnumcrmemos3
+    type: decimal
+    required: false
+    description: Field MtdNumCrMemos3 from ArCustomerBal
+  mtd_cr_memo_val1:
+    display: Mtdcrmemoval1
+    type: decimal
+    required: false
+    description: Field MtdCrMemoVal1 from ArCustomerBal
+  mtd_cr_memo_val2:
+    display: Mtdcrmemoval2
+    type: decimal
+    required: false
+    description: Field MtdCrMemoVal2 from ArCustomerBal
+  mtd_cr_memo_val3:
+    display: Mtdcrmemoval3
+    type: decimal
+    required: false
+    description: Field MtdCrMemoVal3 from ArCustomerBal
+  mtd_num_dr_memos1:
+    display: Mtdnumdrmemos1
+    type: decimal
+    required: false
+    description: Field MtdNumDrMemos1 from ArCustomerBal
+  mtd_num_dr_memos2:
+    display: Mtdnumdrmemos2
+    type: decimal
+    required: false
+    description: Field MtdNumDrMemos2 from ArCustomerBal
+  mtd_num_dr_memos3:
+    display: Mtdnumdrmemos3
+    type: decimal
+    required: false
+    description: Field MtdNumDrMemos3 from ArCustomerBal
+  mtd_dr_memo_val1:
+    display: Mtddrmemoval1
+    type: decimal
+    required: false
+    description: Field MtdDrMemoVal1 from ArCustomerBal
+  mtd_dr_memo_val2:
+    display: Mtddrmemoval2
+    type: decimal
+    required: false
+    description: Field MtdDrMemoVal2 from ArCustomerBal
+  mtd_dr_memo_val3:
+    display: Mtddrmemoval3
+    type: decimal
+    required: false
+    description: Field MtdDrMemoVal3 from ArCustomerBal
+  mtd_fin_charges1:
+    display: Mtdfincharges1
+    type: decimal
+    required: false
+    description: Field MtdFinCharges1 from ArCustomerBal
+  mtd_fin_charges2:
+    display: Mtdfincharges2
+    type: decimal
+    required: false
+    description: Field MtdFinCharges2 from ArCustomerBal
+  mtd_fin_charges3:
+    display: Mtdfincharges3
+    type: decimal
+    required: false
+    description: Field MtdFinCharges3 from ArCustomerBal
+  ytd_sales:
+    display: Ytdsales
+    type: decimal
+    required: false
+    description: Field YtdSales from ArCustomerBal
+  ytd_profit:
+    display: Ytdprofit
+    type: decimal
+    required: false
+    description: Field YtdProfit from ArCustomerBal
+  prev_year_sales:
+    display: Prevyearsales
+    type: decimal
+    required: false
+    description: Field PrevYearSales from ArCustomerBal
+  prev_year_profit:
+    display: Prevyearprofit
+    type: decimal
+    required: false
+    description: Field PrevYearProfit from ArCustomerBal
+  average_pay_days:
+    display: Averagepaydays
+    type: decimal
+    required: false
+    description: Field AveragePayDays from ArCustomerBal
+  val_future_inv:
+    display: Valfutureinv
+    type: decimal
+    required: false
+    description: Field ValFutureInv from ArCustomerBal
+  num_future_inv:
+    display: Numfutureinv
+    type: decimal
+    required: false
+    description: Field NumFutureInv from ArCustomerBal
+  val_current_inv:
+    display: Valcurrentinv
+    type: decimal
+    required: false
+    description: Field ValCurrentInv from ArCustomerBal
+  num_current_inv:
+    display: Numcurrentinv
+    type: decimal
+    required: false
+    description: Field NumCurrentInv from ArCustomerBal
+  val30days_inv:
+    display: Val30Daysinv
+    type: decimal
+    required: false
+    description: Field Val30daysInv from ArCustomerBal
+  num30days_inv:
+    display: Num30Daysinv
+    type: decimal
+    required: false
+    description: Field Num30daysInv from ArCustomerBal
+  val60days_inv:
+    display: Val60Daysinv
+    type: decimal
+    required: false
+    description: Field Val60daysInv from ArCustomerBal
+  num60days_inv:
+    display: Num60Daysinv
+    type: decimal
+    required: false
+    description: Field Num60daysInv from ArCustomerBal
+  val90days_inv:
+    display: Val90Daysinv
+    type: decimal
+    required: false
+    description: Field Val90daysInv from ArCustomerBal
+  num90days_inv:
+    display: Num90Daysinv
+    type: decimal
+    required: false
+    description: Field Num90daysInv from ArCustomerBal
+  val120days_inv:
+    display: Val120Daysinv
+    type: decimal
+    required: false
+    description: Field Val120daysInv from ArCustomerBal
+  num120days_inv:
+    display: Num120Daysinv
+    type: decimal
+    required: false
+    description: Field Num120daysInv from ArCustomerBal
+  val_credits_inv:
+    display: Valcreditsinv
+    type: decimal
+    required: false
+    description: Field ValCreditsInv from ArCustomerBal
+  num_credits_inv:
+    display: Numcreditsinv
+    type: decimal
+    required: false
+    description: Field NumCreditsInv from ArCustomerBal
+  sales_val_mth1:
+    display: Salesvalmth1
+    type: decimal
+    required: false
+    description: Field SalesValMth1 from ArCustomerBal
+  sales_val_mth2:
+    display: Salesvalmth2
+    type: decimal
+    required: false
+    description: Field SalesValMth2 from ArCustomerBal
+  sales_val_mth3:
+    display: Salesvalmth3
+    type: decimal
+    required: false
+    description: Field SalesValMth3 from ArCustomerBal
+  sales_val_mth4:
+    display: Salesvalmth4
+    type: decimal
+    required: false
+    description: Field SalesValMth4 from ArCustomerBal
+  sales_val_mth5:
+    display: Salesvalmth5
+    type: decimal
+    required: false
+    description: Field SalesValMth5 from ArCustomerBal
+  sales_val_mth6:
+    display: Salesvalmth6
+    type: decimal
+    required: false
+    description: Field SalesValMth6 from ArCustomerBal
+  sales_val_mth7:
+    display: Salesvalmth7
+    type: decimal
+    required: false
+    description: Field SalesValMth7 from ArCustomerBal
+  sales_val_mth8:
+    display: Salesvalmth8
+    type: decimal
+    required: false
+    description: Field SalesValMth8 from ArCustomerBal
+  sales_val_mth9:
+    display: Salesvalmth9
+    type: decimal
+    required: false
+    description: Field SalesValMth9 from ArCustomerBal
+  sales_val_mth10:
+    display: Salesvalmth10
+    type: decimal
+    required: false
+    description: Field SalesValMth10 from ArCustomerBal
+  sales_val_mth11:
+    display: Salesvalmth11
+    type: decimal
+    required: false
+    description: Field SalesValMth11 from ArCustomerBal
+  sales_val_mth12:
+    display: Salesvalmth12
+    type: decimal
+    required: false
+    description: Field SalesValMth12 from ArCustomerBal
+  sales_val_mth13:
+    display: Salesvalmth13
+    type: decimal
+    required: false
+    description: Field SalesValMth13 from ArCustomerBal
+  sales_val_mth14:
+    display: Salesvalmth14
+    type: decimal
+    required: false
+    description: Field SalesValMth14 from ArCustomerBal
+  sales_val_mth15:
+    display: Salesvalmth15
+    type: decimal
+    required: false
+    description: Field SalesValMth15 from ArCustomerBal
+  sales_val_mth16:
+    display: Salesvalmth16
+    type: decimal
+    required: false
+    description: Field SalesValMth16 from ArCustomerBal
+  sales_val_mth17:
+    display: Salesvalmth17
+    type: decimal
+    required: false
+    description: Field SalesValMth17 from ArCustomerBal
+  sales_val_mth18:
+    display: Salesvalmth18
+    type: decimal
+    required: false
+    description: Field SalesValMth18 from ArCustomerBal
+  sales_val_mth19:
+    display: Salesvalmth19
+    type: decimal
+    required: false
+    description: Field SalesValMth19 from ArCustomerBal
+  sales_val_mth20:
+    display: Salesvalmth20
+    type: decimal
+    required: false
+    description: Field SalesValMth20 from ArCustomerBal
+  sales_val_mth21:
+    display: Salesvalmth21
+    type: decimal
+    required: false
+    description: Field SalesValMth21 from ArCustomerBal
+  sales_val_mth22:
+    display: Salesvalmth22
+    type: decimal
+    required: false
+    description: Field SalesValMth22 from ArCustomerBal
+  sales_val_mth23:
+    display: Salesvalmth23
+    type: decimal
+    required: false
+    description: Field SalesValMth23 from ArCustomerBal
+  sales_val_mth24:
+    display: Salesvalmth24
+    type: decimal
+    required: false
+    description: Field SalesValMth24 from ArCustomerBal
+  sales_val_mth25:
+    display: Salesvalmth25
+    type: decimal
+    required: false
+    description: Field SalesValMth25 from ArCustomerBal
+  sales_val_mth26:
+    display: Salesvalmth26
+    type: decimal
+    required: false
+    description: Field SalesValMth26 from ArCustomerBal
+  num_zero_invoices:
+    display: Numzeroinvoices
+    type: decimal
+    required: false
+    description: Field NumZeroInvoices from ArCustomerBal
+  num_zero_days:
+    display: Numzerodays
+    type: decimal
+    required: false
+    description: Field NumZeroDays from ArCustomerBal
+  tax_portion:
+    display: Taxportion
+    type: decimal
+    required: false
+    description: Field TaxPortion from ArCustomerBal
+  mtd_num_tax_relief1:
+    display: Mtdnumtaxrelief1
+    type: decimal
+    required: false
+    description: Field MtdNumTaxRelief1 from ArCustomerBal
+  mtd_num_tax_relief2:
+    display: Mtdnumtaxrelief2
+    type: decimal
+    required: false
+    description: Field MtdNumTaxRelief2 from ArCustomerBal
+  mtd_num_tax_relief3:
+    display: Mtdnumtaxrelief3
+    type: decimal
+    required: false
+    description: Field MtdNumTaxRelief3 from ArCustomerBal
+  mtd_tax_relief_val1:
+    display: Mtdtaxreliefval1
+    type: decimal
+    required: false
+    description: Field MtdTaxReliefVal1 from ArCustomerBal
+  mtd_tax_relief_val2:
+    display: Mtdtaxreliefval2
+    type: decimal
+    required: false
+    description: Field MtdTaxReliefVal2 from ArCustomerBal
+  mtd_tax_relief_val3:
+    display: Mtdtaxreliefval3
+    type: decimal
+    required: false
+    description: Field MtdTaxReliefVal3 from ArCustomerBal

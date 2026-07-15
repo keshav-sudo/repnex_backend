@@ -1,0 +1,73 @@
+concept: iop_sales
+display_name: IopSales
+module: other
+description: Auto-generated representation of the physical table IopSales.
+synonyms:
+- iopsales
+- iop sales
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopSales
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopSales
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopSales
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopSales
+  movement_date:
+    display: Movementdate
+    type: date
+    required: false
+    description: Field MovementDate from IopSales
+  ytd_trans_count:
+    display: Ytdtranscount
+    type: decimal
+    required: false
+    description: Field YtdTransCount from IopSales
+  ytd_quantity:
+    display: Ytdquantity
+    type: decimal
+    required: false
+    description: Field YtdQuantity from IopSales
+  ytd_cost_value:
+    display: Ytdcostvalue
+    type: decimal
+    required: false
+    description: Field YtdCostValue from IopSales
+  ytd_sales_value:
+    display: Ytdsalesvalue
+    type: decimal
+    required: false
+    description: Field YtdSalesValue from IopSales
+  trans_count:
+    display: Transcount
+    type: decimal
+    required: false
+    description: Field TransCount from IopSales
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from IopSales
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopSales
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopSales

@@ -1,0 +1,63 @@
+concept: sor_pick_amend_jnl
+display_name: SorPickAmendJnl
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPickAmendJnl.
+synonyms:
+- sorpickamendjnl
+- sor pick amend jnl
+header_attributes:
+  jnl_date_time:
+    display: Jnldatetime
+    type: date
+    required: false
+    description: Field JnlDateTime from SorPickAmendJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from SorPickAmendJnl
+  pick_number:
+    display: Picknumber
+    type: string
+    required: false
+    description: Field PickNumber from SorPickAmendJnl
+  pick_line:
+    display: Pickline
+    type: decimal
+    required: false
+    description: Field PickLine from SorPickAmendJnl
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorPickAmendJnl
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorPickAmendJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from SorPickAmendJnl
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from SorPickAmendJnl
+  before:
+    display: Before
+    type: string
+    required: false
+    description: Field Before from SorPickAmendJnl
+  after:
+    display: After
+    type: string
+    required: false
+    description: Field After from SorPickAmendJnl
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from SorPickAmendJnl

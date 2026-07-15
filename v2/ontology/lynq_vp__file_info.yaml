@@ -1,0 +1,53 @@
+concept: lynq_vp__file_info
+display_name: Lynq VP FileInfo
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_FileInfo.
+synonyms:
+- lynq_vp_fileinfo
+- lynq vp  file info
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_FileInfo
+  ord_type:
+    display: Ordtype
+    type: string
+    required: false
+    description: Field OrdType from Lynq_VP_FileInfo
+  ord_number:
+    display: Ordnumber
+    type: string
+    required: false
+    description: Field OrdNumber from Lynq_VP_FileInfo
+  operation_number:
+    display: Operationnumber
+    type: decimal
+    required: false
+    description: Field OperationNumber from Lynq_VP_FileInfo
+  path_number:
+    display: Pathnumber
+    type: decimal
+    required: false
+    description: Field PathNumber from Lynq_VP_FileInfo
+  oper_sequence_number:
+    display: Opersequencenumber
+    type: decimal
+    required: false
+    description: Field OperSequenceNumber from Lynq_VP_FileInfo
+  file_name:
+    display: Filename
+    type: string
+    required: false
+    description: Field FileName from Lynq_VP_FileInfo
+  file_description:
+    display: Filedescription
+    type: string
+    required: false
+    description: Field FileDescription from Lynq_VP_FileInfo
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from Lynq_VP_FileInfo

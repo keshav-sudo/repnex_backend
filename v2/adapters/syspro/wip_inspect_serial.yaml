@@ -1,0 +1,29 @@
+concept: wip_inspect_serial
+table: WipInspectSerial
+alias: wis
+fields:
+  insp_reference: wis.InspReference
+  lot: wis.Lot
+  serial: wis.Serial
+  status: wis.Status
+  qty_inspected: wis.QtyInspected
+  quantity: wis.Quantity
+  qty_accepted: wis.QtyAccepted
+  qty_scrapped: wis.QtyScrapped
+  qty_reworked: wis.QtyReworked
+  transaction_date: wis.TransactionDate
+  line: wis.Line
+  document_num: wis.DocumentNum
+  transf_to_new_wh: wis.TransfToNewWh
+  stock_code: wis.StockCode
+  version: wis.Version
+  release: wis.Release
+  rework_job: wis.ReworkJob
+  expiry_date: wis.ExpiryDate
+  location: wis.Location
+  co_product_line: wis.CoProductLine
+  qty_inspected_ent: wis.QtyInspectedEnt
+  quantity_ent: wis.QuantityEnt
+  qty_accepted_ent: wis.QtyAcceptedEnt
+  qty_scrapped_ent: wis.QtyScrappedEnt
+  qty_reworked_ent: wis.QtyReworkedEnt

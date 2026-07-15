@@ -1,0 +1,168 @@
+concept: sal_product_class
+display_name: SalProductClass
+module: other
+description: Auto-generated representation of the physical table SalProductClass.
+synonyms:
+- salproductclass
+- sal product class
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalProductClass
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SalProductClass
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SalProductClass
+  sales_budget1:
+    display: Salesbudget1
+    type: decimal
+    required: false
+    description: Field SalesBudget1 from SalProductClass
+  sales_budget2:
+    display: Salesbudget2
+    type: decimal
+    required: false
+    description: Field SalesBudget2 from SalProductClass
+  sales_budget3:
+    display: Salesbudget3
+    type: decimal
+    required: false
+    description: Field SalesBudget3 from SalProductClass
+  sales_budget4:
+    display: Salesbudget4
+    type: decimal
+    required: false
+    description: Field SalesBudget4 from SalProductClass
+  sales_budget5:
+    display: Salesbudget5
+    type: decimal
+    required: false
+    description: Field SalesBudget5 from SalProductClass
+  sales_budget6:
+    display: Salesbudget6
+    type: decimal
+    required: false
+    description: Field SalesBudget6 from SalProductClass
+  sales_budget7:
+    display: Salesbudget7
+    type: decimal
+    required: false
+    description: Field SalesBudget7 from SalProductClass
+  sales_budget8:
+    display: Salesbudget8
+    type: decimal
+    required: false
+    description: Field SalesBudget8 from SalProductClass
+  sales_budget9:
+    display: Salesbudget9
+    type: decimal
+    required: false
+    description: Field SalesBudget9 from SalProductClass
+  sales_budget10:
+    display: Salesbudget10
+    type: decimal
+    required: false
+    description: Field SalesBudget10 from SalProductClass
+  sales_budget11:
+    display: Salesbudget11
+    type: decimal
+    required: false
+    description: Field SalesBudget11 from SalProductClass
+  sales_budget12:
+    display: Salesbudget12
+    type: decimal
+    required: false
+    description: Field SalesBudget12 from SalProductClass
+  sales_budget13:
+    display: Salesbudget13
+    type: decimal
+    required: false
+    description: Field SalesBudget13 from SalProductClass
+  sales_actual1:
+    display: Salesactual1
+    type: decimal
+    required: false
+    description: Field SalesActual1 from SalProductClass
+  sales_actual2:
+    display: Salesactual2
+    type: decimal
+    required: false
+    description: Field SalesActual2 from SalProductClass
+  sales_actual3:
+    display: Salesactual3
+    type: decimal
+    required: false
+    description: Field SalesActual3 from SalProductClass
+  sales_actual4:
+    display: Salesactual4
+    type: decimal
+    required: false
+    description: Field SalesActual4 from SalProductClass
+  sales_actual5:
+    display: Salesactual5
+    type: decimal
+    required: false
+    description: Field SalesActual5 from SalProductClass
+  sales_actual6:
+    display: Salesactual6
+    type: decimal
+    required: false
+    description: Field SalesActual6 from SalProductClass
+  sales_actual7:
+    display: Salesactual7
+    type: decimal
+    required: false
+    description: Field SalesActual7 from SalProductClass
+  sales_actual8:
+    display: Salesactual8
+    type: decimal
+    required: false
+    description: Field SalesActual8 from SalProductClass
+  sales_actual9:
+    display: Salesactual9
+    type: decimal
+    required: false
+    description: Field SalesActual9 from SalProductClass
+  sales_actual10:
+    display: Salesactual10
+    type: decimal
+    required: false
+    description: Field SalesActual10 from SalProductClass
+  sales_actual11:
+    display: Salesactual11
+    type: decimal
+    required: false
+    description: Field SalesActual11 from SalProductClass
+  sales_actual12:
+    display: Salesactual12
+    type: decimal
+    required: false
+    description: Field SalesActual12 from SalProductClass
+  sales_actual13:
+    display: Salesactual13
+    type: decimal
+    required: false
+    description: Field SalesActual13 from SalProductClass
+  low_profit_pct:
+    display: Lowprofitpct
+    type: decimal
+    required: false
+    description: Field LowProfitPct from SalProductClass
+  high_profit_pct:
+    display: Highprofitpct
+    type: decimal
+    required: false
+    description: Field HighProfitPct from SalProductClass
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from SalProductClass

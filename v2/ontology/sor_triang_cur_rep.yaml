@@ -1,0 +1,68 @@
+concept: sor_triang_cur_rep
+display_name: SorTriangCurRep
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorTriangCurRep.
+synonyms:
+- sortriangcurrep
+- sor triang cur rep
+header_attributes:
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SorTriangCurRep
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorTriangCurRep
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from SorTriangCurRep
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from SorTriangCurRep
+  post_conv_rate:
+    display: Postconvrate
+    type: decimal
+    required: false
+    description: Field PostConvRate from SorTriangCurRep
+  post_mul_div:
+    display: Postmuldiv
+    type: string
+    required: false
+    description: Field PostMulDiv from SorTriangCurRep
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from SorTriangCurRep
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from SorTriangCurRep
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from SorTriangCurRep
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from SorTriangCurRep
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from SorTriangCurRep
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from SorTriangCurRep

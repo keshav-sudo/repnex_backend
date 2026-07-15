@@ -1,0 +1,48 @@
+concept: eft_pay_format
+display_name: EftPayFormat
+module: other
+description: Auto-generated representation of the physical table EftPayFormat.
+synonyms:
+- eftpayformat
+- eft pay format
+header_attributes:
+  format_code:
+    display: Formatcode
+    type: string
+    required: false
+    description: Field FormatCode from EftPayFormat
+  format_name:
+    display: Formatname
+    type: string
+    required: false
+    description: Field FormatName from EftPayFormat
+  format_type:
+    display: Formattype
+    type: string
+    required: false
+    description: Field FormatType from EftPayFormat
+  format_class:
+    display: Formatclass
+    type: string
+    required: false
+    description: Field FormatClass from EftPayFormat
+  record_length:
+    display: Recordlength
+    type: decimal
+    required: false
+    description: Field RecordLength from EftPayFormat
+  balanced:
+    display: Balanced
+    type: string
+    required: false
+    description: Field Balanced from EftPayFormat
+  file_ctl:
+    display: Filectl
+    type: string
+    required: false
+    description: Field FileCtl from EftPayFormat
+  comp_ctl:
+    display: Compctl
+    type: string
+    required: false
+    description: Field CompCtl from EftPayFormat

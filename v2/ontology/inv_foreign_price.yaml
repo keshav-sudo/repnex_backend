@@ -1,0 +1,23 @@
+concept: inv_foreign_price
+display_name: InvForeignPrice
+module: inventory
+description: Auto-generated representation of the physical table InvForeignPrice.
+synonyms:
+- invforeignprice
+- inv foreign price
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvForeignPrice
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from InvForeignPrice
+  foreign_price:
+    display: Foreignprice
+    type: decimal
+    required: false
+    description: Field ForeignPrice from InvForeignPrice

@@ -1,0 +1,28 @@
+concept: bom_resource_mask
+display_name: BomResourceMask
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomResourceMask.
+synonyms:
+- bomresourcemask
+- bom resource mask
+header_attributes:
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from BomResourceMask
+  resource_mask:
+    display: Resourcemask
+    type: string
+    required: false
+    description: Field ResourceMask from BomResourceMask
+  machine:
+    display: Machine
+    type: string
+    required: false
+    description: Field Machine from BomResourceMask
+  factor:
+    display: Factor
+    type: decimal
+    required: false
+    description: Field Factor from BomResourceMask

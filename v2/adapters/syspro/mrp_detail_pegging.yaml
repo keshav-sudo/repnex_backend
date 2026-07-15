@@ -1,0 +1,23 @@
+concept: mrp_detail_pegging
+table: MrpDetailPegging
+alias: mdp
+fields:
+  stock_code: mdp.StockCode
+  version: mdp.Version
+  release: mdp.Release
+  warehouse: mdp.Warehouse
+  supply_demand_date: mdp.SupplyDemandDate
+  source_type: mdp.SourceType
+  orig_source_key: mdp.OrigSourceKey
+  quantity: mdp.Quantity
+  parent_stock_code: mdp.ParentStockCode
+  parent_line: mdp.ParentLine
+  order_number: mdp.OrderNumber
+  quote_version: mdp.QuoteVersion
+  line_number: mdp.LineNumber
+  job_line: mdp.JobLine
+  user_code: mdp.UserCode
+  source_warehouse: mdp.SourceWarehouse
+  target_warehouse: mdp.TargetWarehouse
+  forecast_date: mdp.ForecastDate
+  live_date: mdp.LiveDate

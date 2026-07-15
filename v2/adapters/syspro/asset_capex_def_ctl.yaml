@@ -1,0 +1,8 @@
+concept: asset_capex_def_ctl
+table: AssetCapexDefCtl
+alias: acdc
+fields:
+  ctl_flag: acdc.CtlFlag
+  branch_reqd: acdc.BranchReqd
+  cost_center_reqd: acdc.CostCenterReqd
+  group_code_reqd: acdc.GroupCodeReqd

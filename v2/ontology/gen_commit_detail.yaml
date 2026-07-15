@@ -1,0 +1,68 @@
+concept: gen_commit_detail
+display_name: GenCommitDetail
+module: general_ledger
+description: Auto-generated representation of the physical table GenCommitDetail.
+synonyms:
+- gencommitdetail
+- gen commit detail
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenCommitDetail
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenCommitDetail
+  commitment_det_type:
+    display: Commitmentdettype
+    type: string
+    required: false
+    description: Field CommitmentDetType from GenCommitDetail
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from GenCommitDetail
+  ref_line:
+    display: Refline
+    type: decimal
+    required: false
+    description: Field RefLine from GenCommitDetail
+  detail_line:
+    display: Detailline
+    type: decimal
+    required: false
+    description: Field DetailLine from GenCommitDetail
+  commitment_date:
+    display: Commitmentdate
+    type: date
+    required: false
+    description: Field CommitmentDate from GenCommitDetail
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenCommitDetail
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenCommitDetail
+  detail_value:
+    display: Detailvalue
+    type: decimal
+    required: false
+    description: Field DetailValue from GenCommitDetail
+  source_journal:
+    display: Sourcejournal
+    type: string
+    required: false
+    description: Field SourceJournal from GenCommitDetail
+  complete_flag:
+    display: Completeflag
+    type: string
+    required: false
+    description: Field CompleteFlag from GenCommitDetail

@@ -1,0 +1,163 @@
+concept: ar_sales_move
+display_name: ArSalesMove
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArSalesMove.
+synonyms:
+- arsalesmove
+- ar sales move
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArSalesMove
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from ArSalesMove
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from ArSalesMove
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from ArSalesMove
+  detail_line:
+    display: Detailline
+    type: decimal
+    required: false
+    description: Field DetailLine from ArSalesMove
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArSalesMove
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ArSalesMove
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from ArSalesMove
+  invoice_qty:
+    display: Invoiceqty
+    type: decimal
+    required: false
+    description: Field InvoiceQty from ArSalesMove
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ArSalesMove
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from ArSalesMove
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArSalesMove
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArSalesMove
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArSalesMove
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from ArSalesMove
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from ArSalesMove
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArSalesMove
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from ArSalesMove
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ArSalesMove
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from ArSalesMove
+  disc_value:
+    display: Discvalue
+    type: decimal
+    required: false
+    description: Field DiscValue from ArSalesMove
+  tax_code_fst:
+    display: Taxcodefst
+    type: string
+    required: false
+    description: Field TaxCodeFst from ArSalesMove
+  tax_value_fst:
+    display: Taxvaluefst
+    type: decimal
+    required: false
+    description: Field TaxValueFst from ArSalesMove
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from ArSalesMove
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from ArSalesMove
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArSalesMove
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArSalesMove
+  for_invoice_value:
+    display: Forinvoicevalue
+    type: decimal
+    required: false
+    description: Field ForInvoiceValue from ArSalesMove
+  invoice_currency:
+    display: Invoicecurrency
+    type: string
+    required: false
+    description: Field InvoiceCurrency from ArSalesMove
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from ArSalesMove
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from ArSalesMove

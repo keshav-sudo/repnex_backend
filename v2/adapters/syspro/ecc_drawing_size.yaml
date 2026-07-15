@@ -1,0 +1,6 @@
+concept: ecc_drawing_size
+table: EccDrawingSize
+alias: eds1
+fields:
+  drawing_size: eds1.DrawingSize
+  description: eds1.Description

@@ -1,0 +1,18 @@
+concept: mdn_detail_bin_cons
+table: MdnDetailBinCons
+alias: mdbc
+fields:
+  key_invoice: mdbc.KeyInvoice
+  key_sales_order: mdbc.KeySalesOrder
+  key_sales_order_line: mdbc.KeySalesOrderLine
+  key_dispatch_note: mdbc.KeyDispatchNote
+  key_dispatch_line: mdbc.KeyDispatchLine
+  key_record_count: mdbc.KeyRecordCount
+  dispatch_note: mdbc.DispatchNote
+  dispatch_note_line: mdbc.DispatchNoteLine
+  sales_order: mdbc.SalesOrder
+  sales_order_line: mdbc.SalesOrderLine
+  lot: mdbc.Lot
+  bin: mdbc.Bin
+  stock_qty_to_ship: mdbc.StockQtyToShip
+  qty_this_session: mdbc.QtyThisSession

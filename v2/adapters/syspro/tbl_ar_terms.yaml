@@ -1,0 +1,18 @@
+concept: tbl_ar_terms
+table: TblArTerms
+alias: tat1
+fields:
+  terms_code: tat1.TermsCode
+  description: tat1.Description
+  disc_pct: tat1.DiscPct
+  disc_days: tat1.DiscDays
+  due_days: tat1.DueDays
+  discount_option: tat1.DiscountOption
+  invoice_option: tat1.InvoiceOption
+  disc_day_of_month: tat1.DiscDayOfMonth
+  disc_months: tat1.DiscMonths
+  disc_date: tat1.DiscDate
+  inv_day_of_month: tat1.InvDayOfMonth
+  inv_months: tat1.InvMonths
+  inv_date: tat1.InvDate
+  ageing_code: tat1.AgeingCode

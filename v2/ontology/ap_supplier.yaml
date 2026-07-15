@@ -1,0 +1,593 @@
+concept: ap_supplier
+display_name: ApSupplier
+module: accounts_payable
+description: Auto-generated representation of the physical table ApSupplier.
+synonyms:
+- apsupplier
+- ap supplier
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApSupplier
+  supplier_name:
+    display: Suppliername
+    type: string
+    required: false
+    description: Field SupplierName from ApSupplier
+  sup_short_name:
+    display: Supshortname
+    type: string
+    required: false
+    description: Field SupShortName from ApSupplier
+  supplier_type:
+    display: Suppliertype
+    type: string
+    required: false
+    description: Field SupplierType from ApSupplier
+  supplier_class:
+    display: Supplierclass
+    type: string
+    required: false
+    description: Field SupplierClass from ApSupplier
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApSupplier
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ApSupplier
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from ApSupplier
+  fax:
+    display: Fax
+    type: string
+    required: false
+    description: Field Fax from ApSupplier
+  contact:
+    display: Contact
+    type: string
+    required: false
+    description: Field Contact from ApSupplier
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ApSupplier
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from ApSupplier
+  fax_contact:
+    display: Faxcontact
+    type: string
+    required: false
+    description: Field FaxContact from ApSupplier
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from ApSupplier
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from ApSupplier
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApSupplier
+  current_balance:
+    display: Currentbalance
+    type: decimal
+    required: false
+    description: Field CurrentBalance from ApSupplier
+  pyr_end_balance:
+    display: Pyrendbalance
+    type: decimal
+    required: false
+    description: Field PyrEndBalance from ApSupplier
+  last_purch_date:
+    display: Lastpurchdate
+    type: date
+    required: false
+    description: Field LastPurchDate from ApSupplier
+  first_purch_date:
+    display: Firstpurchdate
+    type: date
+    required: false
+    description: Field FirstPurchDate from ApSupplier
+  line_disc_code:
+    display: Linedisccode
+    type: string
+    required: false
+    description: Field LineDiscCode from ApSupplier
+  inv_disc_code:
+    display: Invdisccode
+    type: string
+    required: false
+    description: Field InvDiscCode from ApSupplier
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from ApSupplier
+  last_cheque_print:
+    display: Lastchequeprint
+    type: string
+    required: false
+    description: Field LastChequePrint from ApSupplier
+  reserved_for_usa:
+    display: Reservedforusa
+    type: string
+    required: false
+    description: Field ReservedForUsa from ApSupplier
+  default_cheque_day:
+    display: Defaultchequeday
+    type: decimal
+    required: false
+    description: Field DefaultChequeDay from ApSupplier
+  ytd_amount1099:
+    display: Ytdamount1099
+    type: decimal
+    required: false
+    description: Field YtdAmount1099 from ApSupplier
+  required1099:
+    display: Required1099
+    type: string
+    required: false
+    description: Field Required1099 from ApSupplier
+  grn_match_reqd:
+    display: Grnmatchreqd
+    type: string
+    required: false
+    description: Field GrnMatchReqd from ApSupplier
+  lct_required:
+    display: Lctrequired
+    type: string
+    required: false
+    description: Field LctRequired from ApSupplier
+  edi_type_flag:
+    display: Editypeflag
+    type: string
+    required: false
+    description: Field EdiTypeFlag from ApSupplier
+  edi_receiver_code:
+    display: Edireceivercode
+    type: string
+    required: false
+    description: Field EdiReceiverCode from ApSupplier
+  with_tax_id:
+    display: Withtaxid
+    type: string
+    required: false
+    description: Field WithTaxId from ApSupplier
+  with_tax_code:
+    display: Withtaxcode
+    type: string
+    required: false
+    description: Field WithTaxCode from ApSupplier
+  pyr1099_val:
+    display: Pyr1099Val
+    type: decimal
+    required: false
+    description: Field Pyr1099Val from ApSupplier
+  merch_gl_code:
+    display: Merchglcode
+    type: string
+    required: false
+    description: Field MerchGlCode from ApSupplier
+  freight_gl_code:
+    display: Freightglcode
+    type: string
+    required: false
+    description: Field FreightGlCode from ApSupplier
+  num_mths_befor_del:
+    display: Nummthsbefordel
+    type: decimal
+    required: false
+    description: Field NumMthsBeforDel from ApSupplier
+  num_months_zero:
+    display: Nummonthszero
+    type: decimal
+    required: false
+    description: Field NumMonthsZero from ApSupplier
+  purch_val_mth1:
+    display: Purchvalmth1
+    type: decimal
+    required: false
+    description: Field PurchValMth1 from ApSupplier
+  purch_val_mth2:
+    display: Purchvalmth2
+    type: decimal
+    required: false
+    description: Field PurchValMth2 from ApSupplier
+  purch_val_mth3:
+    display: Purchvalmth3
+    type: decimal
+    required: false
+    description: Field PurchValMth3 from ApSupplier
+  purch_val_mth4:
+    display: Purchvalmth4
+    type: decimal
+    required: false
+    description: Field PurchValMth4 from ApSupplier
+  purch_val_mth5:
+    display: Purchvalmth5
+    type: decimal
+    required: false
+    description: Field PurchValMth5 from ApSupplier
+  purch_val_mth6:
+    display: Purchvalmth6
+    type: decimal
+    required: false
+    description: Field PurchValMth6 from ApSupplier
+  purch_val_mth7:
+    display: Purchvalmth7
+    type: decimal
+    required: false
+    description: Field PurchValMth7 from ApSupplier
+  purch_val_mth8:
+    display: Purchvalmth8
+    type: decimal
+    required: false
+    description: Field PurchValMth8 from ApSupplier
+  purch_val_mth9:
+    display: Purchvalmth9
+    type: decimal
+    required: false
+    description: Field PurchValMth9 from ApSupplier
+  purch_val_mth10:
+    display: Purchvalmth10
+    type: decimal
+    required: false
+    description: Field PurchValMth10 from ApSupplier
+  purch_val_mth11:
+    display: Purchvalmth11
+    type: decimal
+    required: false
+    description: Field PurchValMth11 from ApSupplier
+  purch_val_mth12:
+    display: Purchvalmth12
+    type: decimal
+    required: false
+    description: Field PurchValMth12 from ApSupplier
+  mtd_tax_val:
+    display: Mtdtaxval
+    type: decimal
+    required: false
+    description: Field MtdTaxVal from ApSupplier
+  ytd_tax_val:
+    display: Ytdtaxval
+    type: decimal
+    required: false
+    description: Field YtdTaxVal from ApSupplier
+  purch_ord_allowed:
+    display: Purchordallowed
+    type: string
+    required: false
+    description: Field PurchOrdAllowed from ApSupplier
+  min_po_val:
+    display: Minpoval
+    type: decimal
+    required: false
+    description: Field MinPoVal from ApSupplier
+  min_po_mass:
+    display: Minpomass
+    type: decimal
+    required: false
+    description: Field MinPoMass from ApSupplier
+  min_po_volume:
+    display: Minpovolume
+    type: decimal
+    required: false
+    description: Field MinPoVolume from ApSupplier
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ApSupplier
+  tax_regn_num:
+    display: Taxregnnum
+    type: string
+    required: false
+    description: Field TaxRegnNum from ApSupplier
+  edi_fax:
+    display: Edifax
+    type: string
+    required: false
+    description: Field EdiFax from ApSupplier
+  bank_account:
+    display: Bankaccount
+    type: string
+    required: false
+    description: Field BankAccount from ApSupplier
+  bank_branch:
+    display: Bankbranch
+    type: string
+    required: false
+    description: Field BankBranch from ApSupplier
+  fax_remit_flag:
+    display: Faxremitflag
+    type: string
+    required: false
+    description: Field FaxRemitFlag from ApSupplier
+  fax_remit_num:
+    display: Faxremitnum
+    type: string
+    required: false
+    description: Field FaxRemitNum from ApSupplier
+  paye_ref1099:
+    display: Payeref1099
+    type: string
+    required: false
+    description: Field PayeRef1099 from ApSupplier
+  mtd_tax2_val:
+    display: Mtdtax2Val
+    type: decimal
+    required: false
+    description: Field MtdTax2Val from ApSupplier
+  ytd_tax2_val:
+    display: Ytdtax2Val
+    type: decimal
+    required: false
+    description: Field YtdTax2Val from ApSupplier
+  mtd_merch_val:
+    display: Mtdmerchval
+    type: decimal
+    required: false
+    description: Field MtdMerchVal from ApSupplier
+  mtd_freight_val:
+    display: Mtdfreightval
+    type: decimal
+    required: false
+    description: Field MtdFreightVal from ApSupplier
+  mtd_other_val:
+    display: Mtdotherval
+    type: decimal
+    required: false
+    description: Field MtdOtherVal from ApSupplier
+  mtd_dsb_val:
+    display: Mtddsbval
+    type: decimal
+    required: false
+    description: Field MtdDsbVal from ApSupplier
+  ytd_merch_val:
+    display: Ytdmerchval
+    type: decimal
+    required: false
+    description: Field YtdMerchVal from ApSupplier
+  ytd_freight_val:
+    display: Ytdfreightval
+    type: decimal
+    required: false
+    description: Field YtdFreightVal from ApSupplier
+  ytd_other_val:
+    display: Ytdotherval
+    type: decimal
+    required: false
+    description: Field YtdOtherVal from ApSupplier
+  ytd_dsb_val:
+    display: Ytddsbval
+    type: decimal
+    required: false
+    description: Field YtdDsbVal from ApSupplier
+  pyr_merch_val:
+    display: Pyrmerchval
+    type: decimal
+    required: false
+    description: Field PyrMerchVal from ApSupplier
+  pyr_freight_val:
+    display: Pyrfreightval
+    type: decimal
+    required: false
+    description: Field PyrFreightVal from ApSupplier
+  pyr_other_val:
+    display: Pyrotherval
+    type: decimal
+    required: false
+    description: Field PyrOtherVal from ApSupplier
+  pyr_dsb_val:
+    display: Pyrdsbval
+    type: decimal
+    required: false
+    description: Field PyrDsbVal from ApSupplier
+  last_cheque_date:
+    display: Lastchequedate
+    type: date
+    required: false
+    description: Field LastChequeDate from ApSupplier
+  last_cheque_bank:
+    display: Lastchequebank
+    type: string
+    required: false
+    description: Field LastChequeBank from ApSupplier
+  last_cheque:
+    display: Lastcheque
+    type: decimal
+    required: false
+    description: Field LastCheque from ApSupplier
+  last_cheque_val:
+    display: Lastchequeval
+    type: decimal
+    required: false
+    description: Field LastChequeVal from ApSupplier
+  ch_language:
+    display: Chlanguage
+    type: string
+    required: false
+    description: Field ChLanguage from ApSupplier
+  supplier_ch_name:
+    display: Supplierchname
+    type: string
+    required: false
+    description: Field SupplierChName from ApSupplier
+  date_supp_added:
+    display: Datesuppadded
+    type: date
+    required: false
+    description: Field DateSuppAdded from ApSupplier
+  default_fmt1099:
+    display: Defaultfmt1099
+    type: decimal
+    required: false
+    description: Field DefaultFmt1099 from ApSupplier
+  min_pay1099:
+    display: Minpay1099
+    type: decimal
+    required: false
+    description: Field MinPay1099 from ApSupplier
+  po_default_doc:
+    display: Podefaultdoc
+    type: string
+    required: false
+    description: Field PoDefaultDoc from ApSupplier
+  on_hold:
+    display: Onhold
+    type: string
+    required: false
+    description: Field OnHold from ApSupplier
+  ask_ytd_value1099:
+    display: Askytdvalue1099
+    type: string
+    required: false
+    description: Field AskYtdValue1099 from ApSupplier
+  contracts:
+    display: Contracts
+    type: string
+    required: false
+    description: Field Contracts from ApSupplier
+  pay_by_eft:
+    display: Paybyeft
+    type: string
+    required: false
+    description: Field PayByEft from ApSupplier
+  eft_bank_acc_type:
+    display: Eftbankacctype
+    type: string
+    required: false
+    description: Field EftBankAccType from ApSupplier
+  def_tax_code:
+    display: Deftaxcode
+    type: string
+    required: false
+    description: Field DefTaxCode from ApSupplier
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from ApSupplier
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from ApSupplier
+  remit_email:
+    display: Remitemail
+    type: string
+    required: false
+    description: Field RemitEmail from ApSupplier
+  auto_voucher_reqd:
+    display: Autovoucherreqd
+    type: string
+    required: false
+    description: Field AutoVoucherReqd from ApSupplier
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from ApSupplier
+  fax_voucher_flag:
+    display: Faxvoucherflag
+    type: string
+    required: false
+    description: Field FaxVoucherFlag from ApSupplier
+  fax_voucher_num:
+    display: Faxvouchernum
+    type: string
+    required: false
+    description: Field FaxVoucherNum from ApSupplier
+  voucher_email:
+    display: Voucheremail
+    type: string
+    required: false
+    description: Field VoucherEmail from ApSupplier
+  out_of_state:
+    display: Outofstate
+    type: string
+    required: false
+    description: Field OutOfState from ApSupplier
+  collect_tax:
+    display: Collecttax
+    type: string
+    required: false
+    description: Field CollectTax from ApSupplier
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from ApSupplier
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from ApSupplier
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from ApSupplier
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from ApSupplier
+  mtd_tax_relief_val:
+    display: Mtdtaxreliefval
+    type: decimal
+    required: false
+    description: Field MtdTaxReliefVal from ApSupplier
+  ytd_tax_relief_val:
+    display: Ytdtaxreliefval
+    type: decimal
+    required: false
+    description: Field YtdTaxReliefVal from ApSupplier
+  with_tax_supplier_ind:
+    display: Withtaxsupplierind
+    type: string
+    required: false
+    description: Field WithTaxSupplierInd from ApSupplier
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from ApSupplier
+  fax_po_flag:
+    display: Faxpoflag
+    type: string
+    required: false
+    description: Field FaxPoFlag from ApSupplier
+  po_email:
+    display: Poemail
+    type: string
+    required: false
+    description: Field PoEmail from ApSupplier
+  def_rev_chg_tax_code:
+    display: Defrevchgtaxcode
+    type: string
+    required: false
+    description: Field DefRevChgTaxCode from ApSupplier
+  primary_supplier:
+    display: Primarysupplier
+    type: string
+    required: false
+    description: Field PrimarySupplier from ApSupplier

@@ -1,0 +1,68 @@
+concept: inv_document_serial
+display_name: InvDocumentSerial
+module: inventory
+description: Auto-generated representation of the physical table InvDocumentSerial.
+synonyms:
+- invdocumentserial
+- inv document serial
+header_attributes:
+  transaction_type:
+    display: Transactiontype
+    type: string
+    required: false
+    description: Field TransactionType from InvDocumentSerial
+  key_warehouse:
+    display: Keywarehouse
+    type: string
+    required: false
+    description: Field KeyWarehouse from InvDocumentSerial
+  key_bin:
+    display: Keybin
+    type: string
+    required: false
+    description: Field KeyBin from InvDocumentSerial
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvDocumentSerial
+  key_purchase_order:
+    display: Keypurchaseorder
+    type: string
+    required: false
+    description: Field KeyPurchaseOrder from InvDocumentSerial
+  key_purchase_ord_line:
+    display: Keypurchaseordline
+    type: decimal
+    required: false
+    description: Field KeyPurchaseOrdLine from InvDocumentSerial
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from InvDocumentSerial
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from InvDocumentSerial
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from InvDocumentSerial
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from InvDocumentSerial
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from InvDocumentSerial
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from InvDocumentSerial

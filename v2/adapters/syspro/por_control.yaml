@@ -1,0 +1,13 @@
+concept: por_control
+table: PorControl
+alias: pc
+fields:
+  ctl_flag: pc.CtlFlag
+  next_po_num: pc.NextPoNum
+  next_grn_num: pc.NextGrnNum
+  next_req_num: pc.NextReqNum
+  post_year: pc.PostYear
+  post_month: pc.PostMonth
+  cur_yr_nxt_jnl: pc.CurYrNxtJnl
+  prv_yr_nxt_jnl: pc.PrvYrNxtJnl
+  next_rfq_num: pc.NextRfqNum

@@ -1,0 +1,19 @@
+concept: bom_parent_info
+table: BomParentInfo
+alias: bpi
+fields:
+  parent_part: bpi.ParentPart
+  version: bpi.Version
+  release: bpi.Release
+  route: bpi.Route
+  co_product_cost_met: bpi.CoProductCostMet
+  co_product_cost_val: bpi.CoProductCostVal
+  co_product_type: bpi.CoProductType
+  co_product_next: bpi.CoProductNext
+  co_product_plan_prd: bpi.CoProductPlanPrd
+  any_operations: bpi.AnyOperations
+  any_materials: bpi.AnyMaterials
+  uom_flag: bpi.UomFlag
+  narrations: bpi.Narrations
+  product_code: bpi.ProductCode
+  library_code: bpi.LibraryCode

@@ -1,0 +1,38 @@
+concept: ar_pay_run_pdc
+display_name: ArPayRunPdc
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArPayRunPdc.
+synonyms:
+- arpayrunpdc
+- ar pay run pdc
+header_attributes:
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ArPayRunPdc
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArPayRunPdc
+  available_date:
+    display: Availabledate
+    type: date
+    required: false
+    description: Field AvailableDate from ArPayRunPdc
+  cheque:
+    display: Cheque
+    type: string
+    required: false
+    description: Field Cheque from ArPayRunPdc
+  amount:
+    display: Amount
+    type: decimal
+    required: false
+    description: Field Amount from ArPayRunPdc
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from ArPayRunPdc

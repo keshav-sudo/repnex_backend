@@ -1,0 +1,18 @@
+concept: adm_alternate_cur
+display_name: AdmAlternateCur
+module: administration
+description: Auto-generated representation of the physical table AdmAlternateCur.
+synonyms:
+- admalternatecur
+- adm alternate cur
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from AdmAlternateCur
+  rounding_gl:
+    display: Roundinggl
+    type: string
+    required: false
+    description: Field RoundingGl from AdmAlternateCur

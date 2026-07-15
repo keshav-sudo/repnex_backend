@@ -1,0 +1,18 @@
+concept: crm_class
+display_name: CrmClass
+module: crm
+description: Auto-generated representation of the physical table CrmClass.
+synonyms:
+- crmclass
+- crm class
+header_attributes:
+  contact_class:
+    display: Contactclass
+    type: string
+    required: false
+    description: Field ContactClass from CrmClass
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmClass

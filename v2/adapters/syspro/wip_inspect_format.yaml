@@ -1,0 +1,7 @@
+concept: wip_inspect_format
+table: WipInspectFormat
+alias: wif
+fields:
+  document_format: wif.DocumentFormat
+  document_record_type: wif.DocumentRecordType
+  format_info: wif.FormatInfo

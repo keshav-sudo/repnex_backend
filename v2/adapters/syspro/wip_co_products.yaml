@@ -1,0 +1,57 @@
+concept: wip_co_products
+table: WipCoProducts
+alias: wcp
+fields:
+  job: wcp.Job
+  co_product_line: wcp.CoProductLine
+  co_product: wcp.CoProduct
+  co_product_version: wcp.CoProductVersion
+  co_product_release: wcp.CoProductRelease
+  stock_description: wcp.StockDescription
+  warehouse: wcp.Warehouse
+  operation_offset: wcp.OperationOffset
+  act_complete_date: wcp.ActCompleteDate
+  complete: wcp.Complete
+  exp_labour: wcp.ExpLabour
+  exp_material: wcp.ExpMaterial
+  qty_per: wcp.QtyPer
+  qty_to_make: wcp.QtyToMake
+  qty_manufactured: wcp.QtyManufactured
+  total_qty_scrapped: wcp.TotalQtyScrapped
+  pct_complete_flag: wcp.PctCompleteFlag
+  selling_price: wcp.SellingPrice
+  confirmed_flag: wcp.ConfirmedFlag
+  traceable_type: wcp.TraceableType
+  decimals: wcp.Decimals
+  mat_cost_to_date1: wcp.MatCostToDate1
+  mat_cost_to_date2: wcp.MatCostToDate2
+  mat_cost_to_date3: wcp.MatCostToDate3
+  lab_cost_to_date1: wcp.LabCostToDate1
+  lab_cost_to_date2: wcp.LabCostToDate2
+  lab_cost_to_date3: wcp.LabCostToDate3
+  hrs_book_to_date1: wcp.HrsBookToDate1
+  hrs_book_to_date2: wcp.HrsBookToDate2
+  hrs_book_to_date3: wcp.HrsBookToDate3
+  mat_value_issues1: wcp.MatValueIssues1
+  mat_value_issues2: wcp.MatValueIssues2
+  mat_value_issues3: wcp.MatValueIssues3
+  lab_value_issues1: wcp.LabValueIssues1
+  lab_value_issues2: wcp.LabValueIssues2
+  lab_value_issues3: wcp.LabValueIssues3
+  due_date: wcp.DueDate
+  orig_due_date: wcp.OrigDueDate
+  exp_lab_current: wcp.ExpLabCurrent
+  exp_mat_current: wcp.ExpMatCurrent
+  pct_material_cost: wcp.PctMaterialCost
+  pct_sub_contract_cost: wcp.PctSubContractCost
+  pct_labor_cost: wcp.PctLaborCost
+  pct_quantity: wcp.PctQuantity
+  uom: wcp.Uom
+  conv_fact_uom: wcp.ConvFactUom
+  conv_mul_div: wcp.ConvMulDiv
+  qty_per_ent: wcp.QtyPerEnt
+  qty_to_make_ent: wcp.QtyToMakeEnt
+  qty_manufactured_ent: wcp.QtyManufacturedEnt
+  total_qty_scrap_ent: wcp.TotalQtyScrapEnt
+  wip_branch: wcp.WipBranch
+  wip_ctl_gl_code: wcp.WipCtlGlCode

@@ -1,0 +1,58 @@
+concept: ap_amendment_jnl
+display_name: ApAmendmentJnl
+module: accounts_payable
+description: Auto-generated representation of the physical table ApAmendmentJnl.
+synonyms:
+- apamendmentjnl
+- ap amendment jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from ApAmendmentJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from ApAmendmentJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from ApAmendmentJnl
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApAmendmentJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from ApAmendmentJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from ApAmendmentJnl
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from ApAmendmentJnl
+  before:
+    display: Before
+    type: string
+    required: false
+    description: Field Before from ApAmendmentJnl
+  after:
+    display: After
+    type: string
+    required: false
+    description: Field After from ApAmendmentJnl
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from ApAmendmentJnl

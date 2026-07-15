@@ -1,0 +1,9 @@
+concept: ar_integration_det
+table: ArIntegrationDet
+alias: aid2
+fields:
+  branch: aid2.Branch
+  currency: aid2.Currency
+  gl_exch_var_code: aid2.GlExchVarCode
+  gl_exch_loss_code: aid2.GlExchLossCode
+  un_realized_forex: aid2.UnRealizedForex

@@ -1,0 +1,18 @@
+concept: diag_user_objects
+table: DiagUserObjects
+alias: duo
+fields:
+  table_name: duo.TableName
+  object_type: duo.ObjectType
+  object_name: duo.ObjectName
+  column_name: duo.ColumnName
+  schema_name: duo.SchemaName
+  trigger_enabled: duo.TriggerEnabled
+  view_seq: duo.ViewSeq
+  start_date: duo.StartDate
+  end_date: duo.EndDate
+  conv_status: duo.ConvStatus
+  conv_message: duo.ConvMessage
+  create_def: duo.CreateDef
+  drop_def: duo.DropDef
+  conv_message_pre: duo.ConvMessagePre

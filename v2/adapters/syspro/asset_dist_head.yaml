@@ -1,0 +1,8 @@
+concept: asset_dist_head
+table: AssetDistHead
+alias: adh
+fields:
+  gl_year: adh.GlYear
+  gl_period: adh.GlPeriod
+  dist_reg_num: adh.DistRegNum
+  dist_status: adh.DistStatus

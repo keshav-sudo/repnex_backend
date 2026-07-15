@@ -1,0 +1,63 @@
+concept: eft_ap_supplier
+display_name: EftApSupplier
+module: other
+description: Auto-generated representation of the physical table EftApSupplier.
+synonyms:
+- eftapsupplier
+- eft ap supplier
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from EftApSupplier
+  eft_statement_ref:
+    display: Eftstatementref
+    type: string
+    required: false
+    description: Field EftStatementRef from EftApSupplier
+  eft_user_field1:
+    display: Eftuserfield1
+    type: string
+    required: false
+    description: Field EftUserField1 from EftApSupplier
+  eft_user_field2:
+    display: Eftuserfield2
+    type: decimal
+    required: false
+    description: Field EftUserField2 from EftApSupplier
+  eft_remit_method:
+    display: Eftremitmethod
+    type: string
+    required: false
+    description: Field EftRemitMethod from EftApSupplier
+  eft_email:
+    display: Eftemail
+    type: string
+    required: false
+    description: Field EftEmail from EftApSupplier
+  eft_default_doc:
+    display: Eftdefaultdoc
+    type: string
+    required: false
+    description: Field EftDefaultDoc from EftApSupplier
+  eft_trn_code:
+    display: Efttrncode
+    type: string
+    required: false
+    description: Field EftTrnCode from EftApSupplier
+  eft_routing_no:
+    display: Eftroutingno
+    type: string
+    required: false
+    description: Field EftRoutingNo from EftApSupplier
+  eft_alternate_id:
+    display: Eftalternateid
+    type: string
+    required: false
+    description: Field EftAlternateId from EftApSupplier
+  eft_supplier_bank_no:
+    display: Eftsupplierbankno
+    type: string
+    required: false
+    description: Field EftSupplierBankNo from EftApSupplier

@@ -1,0 +1,83 @@
+concept: iop_proxies
+display_name: IopProxies
+module: other
+description: Auto-generated representation of the physical table IopProxies.
+synonyms:
+- iopproxies
+- iop proxies
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopProxies
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopProxies
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopProxies
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopProxies
+  proxy_stock_code:
+    display: Proxystockcode
+    type: string
+    required: false
+    description: Field ProxyStockCode from IopProxies
+  proxy_version:
+    display: Proxyversion
+    type: string
+    required: false
+    description: Field ProxyVersion from IopProxies
+  proxy_release:
+    display: Proxyrelease
+    type: string
+    required: false
+    description: Field ProxyRelease from IopProxies
+  proxy_end_date:
+    display: Proxyenddate
+    type: date
+    required: false
+    description: Field ProxyEndDate from IopProxies
+  use_percent:
+    display: Usepercent
+    type: decimal
+    required: false
+    description: Field UsePercent from IopProxies
+  reduce_proxy:
+    display: Reduceproxy
+    type: string
+    required: false
+    description: Field ReduceProxy from IopProxies
+  proxy_start_date:
+    display: Proxystartdate
+    type: date
+    required: false
+    description: Field ProxyStartDate from IopProxies
+  reduce_percent:
+    display: Reducepercent
+    type: decimal
+    required: false
+    description: Field ReducePercent from IopProxies
+  proxy_warehouse:
+    display: Proxywarehouse
+    type: string
+    required: false
+    description: Field ProxyWarehouse from IopProxies
+  use_warehouse_flag:
+    display: Usewarehouseflag
+    type: string
+    required: false
+    description: Field UseWarehouseFlag from IopProxies
+  use_proxy_wh_flag:
+    display: Useproxywhflag
+    type: string
+    required: false
+    description: Field UseProxyWhFlag from IopProxies

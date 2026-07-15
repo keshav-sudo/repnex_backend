@@ -1,0 +1,103 @@
+concept: inv_sales_qty_bal
+display_name: InvSalesQtyBal
+module: inventory
+description: Auto-generated representation of the physical table InvSalesQtyBal.
+synonyms:
+- invsalesqtybal
+- inv sales qty bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from InvSalesQtyBal
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvSalesQtyBal
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvSalesQtyBal
+  active_lines:
+    display: Activelines
+    type: decimal
+    required: false
+    description: Field ActiveLines from InvSalesQtyBal
+  in_process_lines:
+    display: Inprocesslines
+    type: decimal
+    required: false
+    description: Field InProcessLines from InvSalesQtyBal
+  whs_alloc_qty:
+    display: Whsallocqty
+    type: decimal
+    required: false
+    description: Field WhsAllocQty from InvSalesQtyBal
+  sor_alloc_qty:
+    display: Sorallocqty
+    type: decimal
+    required: false
+    description: Field SorAllocQty from InvSalesQtyBal
+  whs_back_qty:
+    display: Whsbackqty
+    type: decimal
+    required: false
+    description: Field WhsBackQty from InvSalesQtyBal
+  sor_back_qty:
+    display: Sorbackqty
+    type: decimal
+    required: false
+    description: Field SorBackQty from InvSalesQtyBal
+  whs_bin_ship_qty:
+    display: Whsbinshipqty
+    type: decimal
+    required: false
+    description: Field WhsBinShipQty from InvSalesQtyBal
+  sor_bin_ship_qty:
+    display: Sorbinshipqty
+    type: decimal
+    required: false
+    description: Field SorBinShipQty from InvSalesQtyBal
+  whs_lot_ship_qty:
+    display: Whslotshipqty
+    type: decimal
+    required: false
+    description: Field WhsLotShipQty from InvSalesQtyBal
+  sor_lot_ship_qty:
+    display: Sorlotshipqty
+    type: decimal
+    required: false
+    description: Field SorLotShipQty from InvSalesQtyBal
+  whs_ser_ship_qty:
+    display: Whssershipqty
+    type: decimal
+    required: false
+    description: Field WhsSerShipQty from InvSalesQtyBal
+  sor_ser_ship_qty:
+    display: Sorsershipqty
+    type: decimal
+    required: false
+    description: Field SorSerShipQty from InvSalesQtyBal
+  active_dispatches:
+    display: Activedispatches
+    type: decimal
+    required: false
+    description: Field ActiveDispatches from InvSalesQtyBal
+  in_process_dsp:
+    display: Inprocessdsp
+    type: decimal
+    required: false
+    description: Field InProcessDsp from InvSalesQtyBal
+  whs_disp_qty:
+    display: Whsdispqty
+    type: decimal
+    required: false
+    description: Field WhsDispQty from InvSalesQtyBal
+  sor_disp_ship_qty:
+    display: Sordispshipqty
+    type: decimal
+    required: false
+    description: Field SorDispShipQty from InvSalesQtyBal

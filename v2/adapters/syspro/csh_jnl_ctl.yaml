@@ -1,0 +1,21 @@
+concept: csh_jnl_ctl
+table: CshJnlCtl
+alias: cjc
+fields:
+  cb_trn_year: cjc.CbTrnYear
+  cb_trn_month: cjc.CbTrnMonth
+  journal: cjc.Journal
+  printed_flag: cjc.PrintedFlag
+  jnl_date: cjc.JnlDate
+  bank: cjc.Bank
+  operator: cjc.Operator
+  source: cjc.Source
+  gl_period: cjc.GlPeriod
+  gl_year: cjc.GlYear
+  gl_int_updated: cjc.GlIntUpdated
+  gl_int_printed: cjc.GlIntPrinted
+  gl_int_year: cjc.GlIntYear
+  gl_int_period: cjc.GlIntPeriod
+  gl_journal: cjc.GlJournal
+  cash_gl_code: cjc.CashGlCode
+  gl_int_level: cjc.GlIntLevel

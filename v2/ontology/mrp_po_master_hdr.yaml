@@ -1,0 +1,333 @@
+concept: mrp_po_master_hdr
+display_name: MrpPoMasterHdr
+module: mrp
+description: Auto-generated representation of the physical table MrpPoMasterHdr.
+synonyms:
+- mrppomasterhdr
+- mrp po master hdr
+header_attributes:
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from MrpPoMasterHdr
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from MrpPoMasterHdr
+  order_status:
+    display: Orderstatus
+    type: string
+    required: false
+    description: Field OrderStatus from MrpPoMasterHdr
+  active_flag:
+    display: Activeflag
+    type: string
+    required: false
+    description: Field ActiveFlag from MrpPoMasterHdr
+  cancelled_flag:
+    display: Cancelledflag
+    type: string
+    required: false
+    description: Field CancelledFlag from MrpPoMasterHdr
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from MrpPoMasterHdr
+  order_entry_date:
+    display: Orderentrydate
+    type: date
+    required: false
+    description: Field OrderEntryDate from MrpPoMasterHdr
+  order_due_date:
+    display: Orderduedate
+    type: date
+    required: false
+    description: Field OrderDueDate from MrpPoMasterHdr
+  date_last_doc_prt:
+    display: Datelastdocprt
+    type: date
+    required: false
+    description: Field DateLastDocPrt from MrpPoMasterHdr
+  memo_date:
+    display: Memodate
+    type: date
+    required: false
+    description: Field MemoDate from MrpPoMasterHdr
+  memo_code:
+    display: Memocode
+    type: string
+    required: false
+    description: Field MemoCode from MrpPoMasterHdr
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from MrpPoMasterHdr
+  supplier_class:
+    display: Supplierclass
+    type: string
+    required: false
+    description: Field SupplierClass from MrpPoMasterHdr
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MrpPoMasterHdr
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from MrpPoMasterHdr
+  payment_terms:
+    display: Paymentterms
+    type: string
+    required: false
+    description: Field PaymentTerms from MrpPoMasterHdr
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from MrpPoMasterHdr
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpPoMasterHdr
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from MrpPoMasterHdr
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from MrpPoMasterHdr
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from MrpPoMasterHdr
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from MrpPoMasterHdr
+  tax_status:
+    display: Taxstatus
+    type: string
+    required: false
+    description: Field TaxStatus from MrpPoMasterHdr
+  print_count:
+    display: Printcount
+    type: decimal
+    required: false
+    description: Field PrintCount from MrpPoMasterHdr
+  amended_count:
+    display: Amendedcount
+    type: decimal
+    required: false
+    description: Field AmendedCount from MrpPoMasterHdr
+  date_po_completed:
+    display: Datepocompleted
+    type: date
+    required: false
+    description: Field DatePoCompleted from MrpPoMasterHdr
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from MrpPoMasterHdr
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from MrpPoMasterHdr
+  exch_rate_fixed:
+    display: Exchratefixed
+    type: string
+    required: false
+    description: Field ExchRateFixed from MrpPoMasterHdr
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from MrpPoMasterHdr
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from MrpPoMasterHdr
+  user_confirmation:
+    display: Userconfirmation
+    type: string
+    required: false
+    description: Field UserConfirmation from MrpPoMasterHdr
+  edi_po_flag:
+    display: Edipoflag
+    type: string
+    required: false
+    description: Field EdiPoFlag from MrpPoMasterHdr
+  edi_extract_flag:
+    display: Ediextractflag
+    type: string
+    required: false
+    description: Field EdiExtractFlag from MrpPoMasterHdr
+  edi_action_flag:
+    display: Ediactionflag
+    type: string
+    required: false
+    description: Field EdiActionFlag from MrpPoMasterHdr
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from MrpPoMasterHdr
+  edi_confirmation:
+    display: Ediconfirmation
+    type: string
+    required: false
+    description: Field EdiConfirmation from MrpPoMasterHdr
+  fax_document:
+    display: Faxdocument
+    type: string
+    required: false
+    description: Field FaxDocument from MrpPoMasterHdr
+  delivery_name:
+    display: Deliveryname
+    type: string
+    required: false
+    description: Field DeliveryName from MrpPoMasterHdr
+  delivery_addr1:
+    display: Deliveryaddr1
+    type: string
+    required: false
+    description: Field DeliveryAddr1 from MrpPoMasterHdr
+  delivery_addr2:
+    display: Deliveryaddr2
+    type: string
+    required: false
+    description: Field DeliveryAddr2 from MrpPoMasterHdr
+  delivery_addr3:
+    display: Deliveryaddr3
+    type: string
+    required: false
+    description: Field DeliveryAddr3 from MrpPoMasterHdr
+  delivery_addr3_loc:
+    display: Deliveryaddr3Loc
+    type: string
+    required: false
+    description: Field DeliveryAddr3Loc from MrpPoMasterHdr
+  delivery_addr4:
+    display: Deliveryaddr4
+    type: string
+    required: false
+    description: Field DeliveryAddr4 from MrpPoMasterHdr
+  delivery_addr5:
+    display: Deliveryaddr5
+    type: string
+    required: false
+    description: Field DeliveryAddr5 from MrpPoMasterHdr
+  postal_code:
+    display: Postalcode
+    type: string
+    required: false
+    description: Field PostalCode from MrpPoMasterHdr
+  delivery_gps_lat:
+    display: Deliverygpslat
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLat from MrpPoMasterHdr
+  delivery_gps_long:
+    display: Deliverygpslong
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLong from MrpPoMasterHdr
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from MrpPoMasterHdr
+  contract_number:
+    display: Contractnumber
+    type: string
+    required: false
+    description: Field ContractNumber from MrpPoMasterHdr
+  user1:
+    display: User1
+    type: string
+    required: false
+    description: Field User1 from MrpPoMasterHdr
+  delivery_method:
+    display: Deliverymethod
+    type: string
+    required: false
+    description: Field DeliveryMethod from MrpPoMasterHdr
+  auto_voucher_reqd:
+    display: Autovoucherreqd
+    type: string
+    required: false
+    description: Field AutoVoucherReqd from MrpPoMasterHdr
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from MrpPoMasterHdr
+  auto_update_po:
+    display: Autoupdatepo
+    type: string
+    required: false
+    description: Field AutoUpdatePo from MrpPoMasterHdr
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from MrpPoMasterHdr
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from MrpPoMasterHdr
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from MrpPoMasterHdr
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from MrpPoMasterHdr
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from MrpPoMasterHdr
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from MrpPoMasterHdr
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from MrpPoMasterHdr
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from MrpPoMasterHdr
+  port_arrival:
+    display: Portarrival
+    type: string
+    required: false
+    description: Field PortArrival from MrpPoMasterHdr
+  entity_dimensions:
+    display: Entitydimensions
+    type: string
+    required: false
+    description: Field EntityDimensions from MrpPoMasterHdr

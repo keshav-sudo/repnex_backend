@@ -1,0 +1,56 @@
+concept: ar_csh_jnl_pay
+table: ArCshJnlPay
+alias: acjp
+fields:
+  trn_year: acjp.TrnYear
+  trn_month: acjp.TrnMonth
+  journal: acjp.Journal
+  entry_number: acjp.EntryNumber
+  sub_entry: acjp.SubEntry
+  entry_flag: acjp.EntryFlag
+  pay_inv_bal_prior: acjp.PayInvBalPrior
+  pay_inv_bal_pr_for: acjp.PayInvBalPrFor
+  pay_gross_payment: acjp.PayGrossPayment
+  pay_gross_pay_for: acjp.PayGrossPayFor
+  pay_disc_allowed: acjp.PayDiscAllowed
+  pay_disc_allow_for: acjp.PayDiscAllowFor
+  pay_tax_amt_disc: acjp.PayTaxAmtDisc
+  pay_branch: acjp.PayBranch
+  pay_invoice: acjp.PayInvoice
+  pay_document_type: acjp.PayDocumentType
+  pay_invoice_date: acjp.PayInvoiceDate
+  payment_gl_code: acjp.PaymentGlCode
+  currency_value: acjp.CurrencyValue
+  post_currency: acjp.PostCurrency
+  conv_rate: acjp.ConvRate
+  mul_div: acjp.MulDiv
+  account_cur: acjp.AccountCur
+  acc_conv_rate: acjp.AccConvRate
+  acc_mul_div: acjp.AccMulDiv
+  triang_currency: acjp.TriangCurrency
+  triang_rate: acjp.TriangRate
+  triang_mul_div: acjp.TriangMulDiv
+  res_cust_po_number: acjp.ResCustPoNumber
+  res_invoice: acjp.ResInvoice
+  res_invoice_date: acjp.ResInvoiceDate
+  res_terms_code: acjp.ResTermsCode
+  res_disc_amt: acjp.ResDiscAmt
+  res_disc_amt_for: acjp.ResDiscAmtFor
+  res_orig_inv_value: acjp.ResOrigInvValue
+  res_orig_inv_v_for: acjp.ResOrigInvVFor
+  pay_tax_amt_with: acjp.PayTaxAmtWith
+  payment_number: acjp.PaymentNumber
+  collector: acjp.Collector
+  salesperson: acjp.Salesperson
+  area: acjp.Area
+  collector_number_ar: acjp.CollectorNumberAr
+  mult_cur_pay_rec: acjp.MultCurPayRec
+  pay_rec_currency: acjp.PayRecCurrency
+  pay_rec_grs_value: acjp.PayRecGrsValue
+  pay_rec_dsc_value: acjp.PayRecDscValue
+  pay_rec_net_value: acjp.PayRecNetValue
+  pay_rec_conv_rte: acjp.PayRecConvRte
+  pay_rec_mul_div: acjp.PayRecMulDiv
+  inter_company_trx: acjp.InterCompanyTrx
+  primary_company: acjp.PrimaryCompany
+  secondary_company: acjp.SecondaryCompany

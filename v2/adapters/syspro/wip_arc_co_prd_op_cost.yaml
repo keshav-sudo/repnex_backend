@@ -1,0 +1,8 @@
+concept: wip_arc_co_prd_op_cost
+table: WipArcCoPrdOpCost
+alias: wacpoc
+fields:
+  job: wacpoc.Job
+  co_product_line: wacpoc.CoProductLine
+  operation: wacpoc.Operation
+  pct_labor_cost: wacpoc.PctLaborCost

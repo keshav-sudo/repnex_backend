@@ -1,0 +1,6 @@
+concept: crm_account_plus
+table: CrmAccount+
+alias: ca1
+fields:
+  account: ca1.Account
+  classification: ca1.Classification

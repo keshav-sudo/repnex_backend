@@ -1,0 +1,13 @@
+concept: srs_archive_fac
+table: SrsArchiveFAC
+alias: safac
+fields:
+  archive_date: safac.ArchiveDate
+  archive_time: safac.ArchiveTime
+  operator: safac.Operator
+  archive_id: safac.ArchiveId
+  archive_type: safac.ArchiveType
+  archive_file: safac.ArchiveFile
+  finished_stock_code: safac.FinishedStockCode
+  finished_warehouse: safac.FinishedWarehouse
+  job: safac.Job

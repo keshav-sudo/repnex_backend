@@ -1,0 +1,413 @@
+concept: mrp_qot_operation
+display_name: MrpQotOperation
+module: mrp
+description: Auto-generated representation of the physical table MrpQotOperation.
+synonyms:
+- mrpqotoperation
+- mrp qot operation
+header_attributes:
+  non_stock_code:
+    display: Nonstockcode
+    type: string
+    required: false
+    description: Field NonStockCode from MrpQotOperation
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from MrpQotOperation
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from MrpQotOperation
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from MrpQotOperation
+  work_rate_ind:
+    display: Workrateind
+    type: decimal
+    required: false
+    description: Field WorkRateInd from MrpQotOperation
+  what_if_wrk_ind:
+    display: Whatifwrkind
+    type: decimal
+    required: false
+    description: Field WhatIfWrkInd from MrpQotOperation
+  subcontract_flag:
+    display: Subcontractflag
+    type: string
+    required: false
+    description: Field SubcontractFlag from MrpQotOperation
+  i_setup_time:
+    display: Isetuptime
+    type: decimal
+    required: false
+    description: Field ISetupTime from MrpQotOperation
+  i_run_time:
+    display: Iruntime
+    type: decimal
+    required: false
+    description: Field IRunTime from MrpQotOperation
+  i_startup_time:
+    display: Istartuptime
+    type: decimal
+    required: false
+    description: Field IStartupTime from MrpQotOperation
+  i_teardown_time:
+    display: Iteardowntime
+    type: decimal
+    required: false
+    description: Field ITeardownTime from MrpQotOperation
+  i_wait_time:
+    display: Iwaittime
+    type: decimal
+    required: false
+    description: Field IWaitTime from MrpQotOperation
+  i_startup_qty:
+    display: Istartupqty
+    type: decimal
+    required: false
+    description: Field IStartupQty from MrpQotOperation
+  i_machine:
+    display: Imachine
+    type: string
+    required: false
+    description: Field IMachine from MrpQotOperation
+  i_unit_cap_req:
+    display: Iunitcapreq
+    type: decimal
+    required: false
+    description: Field IUnitCapReq from MrpQotOperation
+  i_max_operators:
+    display: Imaxoperators
+    type: decimal
+    required: false
+    description: Field IMaxOperators from MrpQotOperation
+  i_max_prod_units:
+    display: Imaxprodunits
+    type: decimal
+    required: false
+    description: Field IMaxProdUnits from MrpQotOperation
+  i_time_taken:
+    display: Itimetaken
+    type: decimal
+    required: false
+    description: Field ITimeTaken from MrpQotOperation
+  i_block_qty:
+    display: Iblockqty
+    type: decimal
+    required: false
+    description: Field IBlockQty from MrpQotOperation
+  i_run_time_ent:
+    display: Iruntimeent
+    type: decimal
+    required: false
+    description: Field IRunTimeEnt from MrpQotOperation
+  i_time_taken_ent:
+    display: Itimetakenent
+    type: decimal
+    required: false
+    description: Field ITimeTakenEnt from MrpQotOperation
+  i_startup_qty_ent:
+    display: Istartupqtyent
+    type: decimal
+    required: false
+    description: Field IStartupQtyEnt from MrpQotOperation
+  i_block_qty_ent:
+    display: Iblockqtyent
+    type: decimal
+    required: false
+    description: Field IBlockQtyEnt from MrpQotOperation
+  sub_supplier:
+    display: Subsupplier
+    type: string
+    required: false
+    description: Field SubSupplier from MrpQotOperation
+  sub_po_stock_code:
+    display: Subpostockcode
+    type: string
+    required: false
+    description: Field SubPoStockCode from MrpQotOperation
+  sub_qty_per:
+    display: Subqtyper
+    type: decimal
+    required: false
+    description: Field SubQtyPer from MrpQotOperation
+  sub_order_uom:
+    display: Suborderuom
+    type: string
+    required: false
+    description: Field SubOrderUom from MrpQotOperation
+  sub_op_unit_value:
+    display: Subopunitvalue
+    type: decimal
+    required: false
+    description: Field SubOpUnitValue from MrpQotOperation
+  sub_what_if_value:
+    display: Subwhatifvalue
+    type: decimal
+    required: false
+    description: Field SubWhatIfValue from MrpQotOperation
+  sub_planner:
+    display: Subplanner
+    type: string
+    required: false
+    description: Field SubPlanner from MrpQotOperation
+  sub_buyer:
+    display: Subbuyer
+    type: string
+    required: false
+    description: Field SubBuyer from MrpQotOperation
+  sub_lead_time:
+    display: Subleadtime
+    type: decimal
+    required: false
+    description: Field SubLeadTime from MrpQotOperation
+  sub_dock_to_stock:
+    display: Subdocktostock
+    type: decimal
+    required: false
+    description: Field SubDockToStock from MrpQotOperation
+  sub_offsite_days:
+    display: Suboffsitedays
+    type: decimal
+    required: false
+    description: Field SubOffsiteDays from MrpQotOperation
+  milestone:
+    display: Milestone
+    type: string
+    required: false
+    description: Field Milestone from MrpQotOperation
+  elapsed_time:
+    display: Elapsedtime
+    type: decimal
+    required: false
+    description: Field ElapsedTime from MrpQotOperation
+  movement_time:
+    display: Movementtime
+    type: decimal
+    required: false
+    description: Field MovementTime from MrpQotOperation
+  narration_code:
+    display: Narrationcode
+    type: string
+    required: false
+    description: Field NarrationCode from MrpQotOperation
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from MrpQotOperation
+  pieces:
+    display: Pieces
+    type: decimal
+    required: false
+    description: Field Pieces from MrpQotOperation
+  inspection_flag:
+    display: Inspectionflag
+    type: string
+    required: false
+    description: Field InspectionFlag from MrpQotOperation
+  oper_yield_pct:
+    display: Operyieldpct
+    type: decimal
+    required: false
+    description: Field OperYieldPct from MrpQotOperation
+  oper_yield_qty:
+    display: Operyieldqty
+    type: decimal
+    required: false
+    description: Field OperYieldQty from MrpQotOperation
+  minor_setup:
+    display: Minorsetup
+    type: decimal
+    required: false
+    description: Field MinorSetup from MrpQotOperation
+  minor_setup_code:
+    display: Minorsetupcode
+    type: string
+    required: false
+    description: Field MinorSetupCode from MrpQotOperation
+  tool_set:
+    display: Toolset
+    type: string
+    required: false
+    description: Field ToolSet from MrpQotOperation
+  tool_set_qty:
+    display: Toolsetqty
+    type: decimal
+    required: false
+    description: Field ToolSetQty from MrpQotOperation
+  tool_consumption:
+    display: Toolconsumption
+    type: decimal
+    required: false
+    description: Field ToolConsumption from MrpQotOperation
+  elapsed_time_cal:
+    display: Elapsedtimecal
+    type: string
+    required: false
+    description: Field ElapsedTimeCal from MrpQotOperation
+  manuf_time_req1:
+    display: Manuftimereq1
+    type: decimal
+    required: false
+    description: Field ManufTimeReq1 from MrpQotOperation
+  manuf_time_req2:
+    display: Manuftimereq2
+    type: decimal
+    required: false
+    description: Field ManufTimeReq2 from MrpQotOperation
+  manuf_time_req3:
+    display: Manuftimereq3
+    type: decimal
+    required: false
+    description: Field ManufTimeReq3 from MrpQotOperation
+  manuf_time_req4:
+    display: Manuftimereq4
+    type: decimal
+    required: false
+    description: Field ManufTimeReq4 from MrpQotOperation
+  manuf_time_req5:
+    display: Manuftimereq5
+    type: decimal
+    required: false
+    description: Field ManufTimeReq5 from MrpQotOperation
+  elapsed_time1:
+    display: Elapsedtime1
+    type: decimal
+    required: false
+    description: Field ElapsedTime1 from MrpQotOperation
+  elapsed_time2:
+    display: Elapsedtime2
+    type: decimal
+    required: false
+    description: Field ElapsedTime2 from MrpQotOperation
+  elapsed_time3:
+    display: Elapsedtime3
+    type: decimal
+    required: false
+    description: Field ElapsedTime3 from MrpQotOperation
+  elapsed_time4:
+    display: Elapsedtime4
+    type: decimal
+    required: false
+    description: Field ElapsedTime4 from MrpQotOperation
+  elapsed_time5:
+    display: Elapsedtime5
+    type: decimal
+    required: false
+    description: Field ElapsedTime5 from MrpQotOperation
+  movement_time1:
+    display: Movementtime1
+    type: decimal
+    required: false
+    description: Field MovementTime1 from MrpQotOperation
+  movement_time2:
+    display: Movementtime2
+    type: decimal
+    required: false
+    description: Field MovementTime2 from MrpQotOperation
+  movement_time3:
+    display: Movementtime3
+    type: decimal
+    required: false
+    description: Field MovementTime3 from MrpQotOperation
+  movement_time4:
+    display: Movementtime4
+    type: decimal
+    required: false
+    description: Field MovementTime4 from MrpQotOperation
+  movement_time5:
+    display: Movementtime5
+    type: decimal
+    required: false
+    description: Field MovementTime5 from MrpQotOperation
+  sell_basis:
+    display: Sellbasis
+    type: string
+    required: false
+    description: Field SellBasis from MrpQotOperation
+  sell_rate_ind:
+    display: Sellrateind
+    type: decimal
+    required: false
+    description: Field SellRateInd from MrpQotOperation
+  markup_margin_pct:
+    display: Markupmarginpct
+    type: decimal
+    required: false
+    description: Field MarkupMarginPct from MrpQotOperation
+  work_centre_desc:
+    display: Workcentredesc
+    type: string
+    required: false
+    description: Field WorkCentreDesc from MrpQotOperation
+  transfer_qty_or_pct:
+    display: Transferqtyorpct
+    type: string
+    required: false
+    description: Field TransferQtyOrPct from MrpQotOperation
+  transfer_qty_pct:
+    display: Transferqtypct
+    type: decimal
+    required: false
+    description: Field TransferQtyPct from MrpQotOperation
+  resource_mask:
+    display: Resourcemask
+    type: string
+    required: false
+    description: Field ResourceMask from MrpQotOperation
+  oper_yield_qty_ent:
+    display: Operyieldqtyent
+    type: decimal
+    required: false
+    description: Field OperYieldQtyEnt from MrpQotOperation
+  transfer_qty_pct_ent:
+    display: Transferqtypctent
+    type: decimal
+    required: false
+    description: Field TransferQtyPctEnt from MrpQotOperation
+  max_op_span:
+    display: Maxopspan
+    type: decimal
+    required: false
+    description: Field MaxOpSpan from MrpQotOperation
+  op_slack:
+    display: Opslack
+    type: decimal
+    required: false
+    description: Field OpSlack from MrpQotOperation
+  max_op_delay:
+    display: Maxopdelay
+    type: decimal
+    required: false
+    description: Field MaxOpDelay from MrpQotOperation
+  allow_op_split:
+    display: Allowopsplit
+    type: string
+    required: false
+    description: Field AllowOpSplit from MrpQotOperation
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from MrpQotOperation
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from MrpQotOperation
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from MrpQotOperation
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from MrpQotOperation

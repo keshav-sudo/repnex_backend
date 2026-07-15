@@ -1,0 +1,11 @@
+concept: gen_std_jnl_det
+table: GenStdJnlDet
+alias: gsjd
+fields:
+  journal_code: gsjd.JournalCode
+  entry_number: gsjd.EntryNumber
+  debit_credit: gsjd.DebitCredit
+  gl_code: gsjd.GlCode
+  reference: gsjd.Reference
+  comment: gsjd.Comment
+  entry_amount: gsjd.EntryAmount

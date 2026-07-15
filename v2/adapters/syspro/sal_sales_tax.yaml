@@ -1,0 +1,28 @@
+concept: sal_sales_tax
+table: SalSalesTax
+alias: sst
+fields:
+  trn_year: sst.TrnYear
+  trn_month: sst.TrnMonth
+  trn_date: sst.TrnDate
+  invoice_register: sst.InvoiceRegister
+  invoice: sst.Invoice
+  line: sst.Line
+  tax_exempt_number: sst.TaxExemptNumber
+  tax_exempt_o_ride: sst.TaxExemptORide
+  exempt_value: sst.ExemptValue
+  non_exempt_value: sst.NonExemptValue
+  invoice_value: sst.InvoiceValue
+  document_type: sst.DocumentType
+  cash_credit: sst.CashCredit
+  customer: sst.Customer
+  printed_flag: sst.PrintedFlag
+  branch: sst.Branch
+  area: sst.Area
+  taxable_value: sst.TaxableValue
+  eec_invoice_flag: sst.EecInvoiceFlag
+  nationality: sst.Nationality
+  tax_ret_submitted: sst.TaxRetSubmitted
+  year_ret_submitted: sst.YearRetSubmitted
+  mth_ret_submitted: sst.MthRetSubmitted
+  uk_vat_flag: sst.UkVatFlag

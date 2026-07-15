@@ -1,0 +1,43 @@
+concept: adm_b2_b_control
+display_name: AdmB2BControl
+module: administration
+description: Auto-generated representation of the physical table AdmB2BControl.
+synonyms:
+- admb2bcontrol
+- adm b2 b control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from AdmB2BControl
+  next_b2_b_file:
+    display: Nextb2Bfile
+    type: decimal
+    required: false
+    description: Field NextB2BFile from AdmB2BControl
+  num_days_history:
+    display: Numdayshistory
+    type: decimal
+    required: false
+    description: Field NumDaysHistory from AdmB2BControl
+  history_path:
+    display: Historypath
+    type: string
+    required: false
+    description: Field HistoryPath from AdmB2BControl
+  history_incoming:
+    display: Historyincoming
+    type: decimal
+    required: false
+    description: Field HistoryIncoming from AdmB2BControl
+  history_outgoing:
+    display: Historyoutgoing
+    type: decimal
+    required: false
+    description: Field HistoryOutgoing from AdmB2BControl
+  history_copy:
+    display: Historycopy
+    type: decimal
+    required: false
+    description: Field HistoryCopy from AdmB2BControl

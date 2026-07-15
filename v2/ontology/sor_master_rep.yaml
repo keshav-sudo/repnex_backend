@@ -1,0 +1,693 @@
+concept: sor_master_rep
+display_name: SorMasterRep
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorMasterRep.
+synonyms:
+- sormasterrep
+- sor master rep
+header_attributes:
+  invoice_number:
+    display: Invoicenumber
+    type: string
+    required: false
+    description: Field InvoiceNumber from SorMasterRep
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorMasterRep
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SorMasterRep
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SorMasterRep
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from SorMasterRep
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from SorMasterRep
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from SorMasterRep
+  order_status:
+    display: Orderstatus
+    type: string
+    required: false
+    description: Field OrderStatus from SorMasterRep
+  active_flag:
+    display: Activeflag
+    type: string
+    required: false
+    description: Field ActiveFlag from SorMasterRep
+  cancelled_flag:
+    display: Cancelledflag
+    type: string
+    required: false
+    description: Field CancelledFlag from SorMasterRep
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from SorMasterRep
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorMasterRep
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from SorMasterRep
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from SorMasterRep
+  order_date:
+    display: Orderdate
+    type: date
+    required: false
+    description: Field OrderDate from SorMasterRep
+  entry_system_date:
+    display: Entrysystemdate
+    type: date
+    required: false
+    description: Field EntrySystemDate from SorMasterRep
+  req_ship_date:
+    display: Reqshipdate
+    type: date
+    required: false
+    description: Field ReqShipDate from SorMasterRep
+  date_last_doc_prt:
+    display: Datelastdocprt
+    type: date
+    required: false
+    description: Field DateLastDocPrt from SorMasterRep
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from SorMasterRep
+  shipping_instrs_cod:
+    display: Shippinginstrscod
+    type: string
+    required: false
+    description: Field ShippingInstrsCod from SorMasterRep
+  alt_ship_addr_flag:
+    display: Altshipaddrflag
+    type: string
+    required: false
+    description: Field AltShipAddrFlag from SorMasterRep
+  invoice_count:
+    display: Invoicecount
+    type: decimal
+    required: false
+    description: Field InvoiceCount from SorMasterRep
+  inv_terms_override:
+    display: Invtermsoverride
+    type: string
+    required: false
+    description: Field InvTermsOverride from SorMasterRep
+  credit_authority:
+    display: Creditauthority
+    type: string
+    required: false
+    description: Field CreditAuthority from SorMasterRep
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SorMasterRep
+  special_instrs:
+    display: Specialinstrs
+    type: string
+    required: false
+    description: Field SpecialInstrs from SorMasterRep
+  ent_invoice:
+    display: Entinvoice
+    type: string
+    required: false
+    description: Field EntInvoice from SorMasterRep
+  ent_invoice_date:
+    display: Entinvoicedate
+    type: date
+    required: false
+    description: Field EntInvoiceDate from SorMasterRep
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from SorMasterRep
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from SorMasterRep
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from SorMasterRep
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from SorMasterRep
+  tax_exempt_flag:
+    display: Taxexemptflag
+    type: string
+    required: false
+    description: Field TaxExemptFlag from SorMasterRep
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SorMasterRep
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from SorMasterRep
+  tax_exempt_override:
+    display: Taxexemptoverride
+    type: string
+    required: false
+    description: Field TaxExemptOverride from SorMasterRep
+  cash_credit:
+    display: Cashcredit
+    type: string
+    required: false
+    description: Field CashCredit from SorMasterRep
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SorMasterRep
+  last_invoice:
+    display: Lastinvoice
+    type: string
+    required: false
+    description: Field LastInvoice from SorMasterRep
+  scheduled_ord_flag:
+    display: Scheduledordflag
+    type: string
+    required: false
+    description: Field ScheduledOrdFlag from SorMasterRep
+  gst_exempt_flag:
+    display: Gstexemptflag
+    type: string
+    required: false
+    description: Field GstExemptFlag from SorMasterRep
+  gst_exempt_num:
+    display: Gstexemptnum
+    type: string
+    required: false
+    description: Field GstExemptNum from SorMasterRep
+  gst_exempt_o_ride:
+    display: Gstexemptoride
+    type: string
+    required: false
+    description: Field GstExemptORide from SorMasterRep
+  ibt_flag:
+    display: Ibtflag
+    type: string
+    required: false
+    description: Field IbtFlag from SorMasterRep
+  ord_acknw_printed:
+    display: Ordacknwprinted
+    type: string
+    required: false
+    description: Field OrdAcknwPrinted from SorMasterRep
+  det_cust_mvmt_reqd:
+    display: Detcustmvmtreqd
+    type: string
+    required: false
+    description: Field DetCustMvmtReqd from SorMasterRep
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from SorMasterRep
+  fix_exchange_rate:
+    display: Fixexchangerate
+    type: string
+    required: false
+    description: Field FixExchangeRate from SorMasterRep
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from SorMasterRep
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from SorMasterRep
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from SorMasterRep
+  gst_deduction:
+    display: Gstdeduction
+    type: string
+    required: false
+    description: Field GstDeduction from SorMasterRep
+  order_status_fail:
+    display: Orderstatusfail
+    type: string
+    required: false
+    description: Field OrderStatusFail from SorMasterRep
+  consolidated_order:
+    display: Consolidatedorder
+    type: string
+    required: false
+    description: Field ConsolidatedOrder from SorMasterRep
+  credited_inv_date:
+    display: Creditedinvdate
+    type: date
+    required: false
+    description: Field CreditedInvDate from SorMasterRep
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from SorMasterRep
+  serialised_flag:
+    display: Serialisedflag
+    type: string
+    required: false
+    description: Field SerialisedFlag from SorMasterRep
+  counter_sales_flag:
+    display: Countersalesflag
+    type: string
+    required: false
+    description: Field CounterSalesFlag from SorMasterRep
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from SorMasterRep
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from SorMasterRep
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from SorMasterRep
+  transport_mode:
+    display: Transportmode
+    type: decimal
+    required: false
+    description: Field TransportMode from SorMasterRep
+  process_flag:
+    display: Processflag
+    type: decimal
+    required: false
+    description: Field ProcessFlag from SorMasterRep
+  jobs_exist_flag:
+    display: Jobsexistflag
+    type: string
+    required: false
+    description: Field JobsExistFlag from SorMasterRep
+  alternate_key:
+    display: Alternatekey
+    type: string
+    required: false
+    description: Field AlternateKey from SorMasterRep
+  last_operator:
+    display: Lastoperator
+    type: string
+    required: false
+    description: Field LastOperator from SorMasterRep
+  hierarchy_flag:
+    display: Hierarchyflag
+    type: string
+    required: false
+    description: Field HierarchyFlag from SorMasterRep
+  deposit_flag:
+    display: Depositflag
+    type: string
+    required: false
+    description: Field DepositFlag from SorMasterRep
+  edi_source:
+    display: Edisource
+    type: string
+    required: false
+    description: Field EdiSource from SorMasterRep
+  delivery_note:
+    display: Deliverynote
+    type: string
+    required: false
+    description: Field DeliveryNote from SorMasterRep
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SorMasterRep
+  line_comp:
+    display: Linecomp
+    type: string
+    required: false
+    description: Field LineComp from SorMasterRep
+  capture_hh:
+    display: Capturehh
+    type: decimal
+    required: false
+    description: Field CaptureHh from SorMasterRep
+  capture_mm:
+    display: Capturemm
+    type: decimal
+    required: false
+    description: Field CaptureMm from SorMasterRep
+  last_del_note:
+    display: Lastdelnote
+    type: date
+    required: false
+    description: Field LastDelNote from SorMasterRep
+  time_del_prted_hh:
+    display: Timedelprtedhh
+    type: decimal
+    required: false
+    description: Field TimeDelPrtedHh from SorMasterRep
+  time_del_prted_mm:
+    display: Timedelprtedmm
+    type: decimal
+    required: false
+    description: Field TimeDelPrtedMm from SorMasterRep
+  time_inv_prted_hh:
+    display: Timeinvprtedhh
+    type: decimal
+    required: false
+    description: Field TimeInvPrtedHh from SorMasterRep
+  time_inv_prted_mm:
+    display: Timeinvprtedmm
+    type: decimal
+    required: false
+    description: Field TimeInvPrtedMm from SorMasterRep
+  date_last_inv_prt:
+    display: Datelastinvprt
+    type: date
+    required: false
+    description: Field DateLastInvPrt from SorMasterRep
+  salesperson2:
+    display: Salesperson2
+    type: string
+    required: false
+    description: Field Salesperson2 from SorMasterRep
+  salesperson3:
+    display: Salesperson3
+    type: string
+    required: false
+    description: Field Salesperson3 from SorMasterRep
+  salesperson4:
+    display: Salesperson4
+    type: string
+    required: false
+    description: Field Salesperson4 from SorMasterRep
+  commission_sales1:
+    display: Commissionsales1
+    type: decimal
+    required: false
+    description: Field CommissionSales1 from SorMasterRep
+  commission_sales2:
+    display: Commissionsales2
+    type: decimal
+    required: false
+    description: Field CommissionSales2 from SorMasterRep
+  commission_sales3:
+    display: Commissionsales3
+    type: decimal
+    required: false
+    description: Field CommissionSales3 from SorMasterRep
+  commission_sales4:
+    display: Commissionsales4
+    type: decimal
+    required: false
+    description: Field CommissionSales4 from SorMasterRep
+  time_taken_to_add:
+    display: Timetakentoadd
+    type: decimal
+    required: false
+    description: Field TimeTakenToAdd from SorMasterRep
+  time_taken_to_chg:
+    display: Timetakentochg
+    type: decimal
+    required: false
+    description: Field TimeTakenToChg from SorMasterRep
+  fax_inv_in_batch:
+    display: Faxinvinbatch
+    type: string
+    required: false
+    description: Field FaxInvInBatch from SorMasterRep
+  inter_wh_sale:
+    display: Interwhsale
+    type: string
+    required: false
+    description: Field InterWhSale from SorMasterRep
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from SorMasterRep
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from SorMasterRep
+  dispatches_made:
+    display: Dispatchesmade
+    type: string
+    required: false
+    description: Field DispatchesMade from SorMasterRep
+  live_disp_exist:
+    display: Livedispexist
+    type: string
+    required: false
+    description: Field LiveDispExist from SorMasterRep
+  num_dispatches:
+    display: Numdispatches
+    type: decimal
+    required: false
+    description: Field NumDispatches from SorMasterRep
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from SorMasterRep
+  ship_addr1:
+    display: Shipaddr1
+    type: string
+    required: false
+    description: Field ShipAddr1 from SorMasterRep
+  ship_addr2:
+    display: Shipaddr2
+    type: string
+    required: false
+    description: Field ShipAddr2 from SorMasterRep
+  ship_addr3:
+    display: Shipaddr3
+    type: string
+    required: false
+    description: Field ShipAddr3 from SorMasterRep
+  ship_addr3_loc:
+    display: Shipaddr3Loc
+    type: string
+    required: false
+    description: Field ShipAddr3Loc from SorMasterRep
+  ship_addr4:
+    display: Shipaddr4
+    type: string
+    required: false
+    description: Field ShipAddr4 from SorMasterRep
+  ship_addr5:
+    display: Shipaddr5
+    type: string
+    required: false
+    description: Field ShipAddr5 from SorMasterRep
+  postal_code:
+    display: Postalcode
+    type: string
+    required: false
+    description: Field PostalCode from SorMasterRep
+  ship_to_gps_lat:
+    display: Shiptogpslat
+    type: decimal
+    required: false
+    description: Field ShipToGpsLat from SorMasterRep
+  ship_to_gps_long:
+    display: Shiptogpslong
+    type: decimal
+    required: false
+    description: Field ShipToGpsLong from SorMasterRep
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from SorMasterRep
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from SorMasterRep
+  extended_tax_code:
+    display: Extendedtaxcode
+    type: string
+    required: false
+    description: Field ExtendedTaxCode from SorMasterRep
+  multi_ship_code:
+    display: Multishipcode
+    type: string
+    required: false
+    description: Field MultiShipCode from SorMasterRep
+  web_created:
+    display: Webcreated
+    type: string
+    required: false
+    description: Field WebCreated from SorMasterRep
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from SorMasterRep
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from SorMasterRep
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from SorMasterRep
+  non_merch_flag:
+    display: Nonmerchflag
+    type: string
+    required: false
+    description: Field NonMerchFlag from SorMasterRep
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from SorMasterRep
+  company_tax_no:
+    display: Companytaxno
+    type: string
+    required: false
+    description: Field CompanyTaxNo from SorMasterRep
+  tpm_pickup_flag:
+    display: Tpmpickupflag
+    type: string
+    required: false
+    description: Field TpmPickupFlag from SorMasterRep
+  tpm_evaluated_flag:
+    display: Tpmevaluatedflag
+    type: string
+    required: false
+    description: Field TpmEvaluatedFlag from SorMasterRep
+  standard_comment:
+    display: Standardcomment
+    type: string
+    required: false
+    description: Field StandardComment from SorMasterRep
+  detail_status:
+    display: Detailstatus
+    type: string
+    required: false
+    description: Field DetailStatus from SorMasterRep
+  sales_order_source:
+    display: Salesordersource
+    type: string
+    required: false
+    description: Field SalesOrderSource from SorMasterRep
+  sales_order_src_desc:
+    display: Salesordersrcdesc
+    type: string
+    required: false
+    description: Field SalesOrderSrcDesc from SorMasterRep
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from SorMasterRep
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from SorMasterRep
+  quick_quote:
+    display: Quickquote
+    type: string
+    required: false
+    description: Field QuickQuote from SorMasterRep
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from SorMasterRep
+  port_dispatch:
+    display: Portdispatch
+    type: string
+    required: false
+    description: Field PortDispatch from SorMasterRep
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from SorMasterRep
+  price_group_level:
+    display: Pricegrouplevel
+    type: string
+    required: false
+    description: Field PriceGroupLevel from SorMasterRep
+  last_op_inv_prt:
+    display: Lastopinvprt
+    type: string
+    required: false
+    description: Field LastOpInvPrt from SorMasterRep
+  dispatch_whole_so:
+    display: Dispatchwholeso
+    type: string
+    required: false
+    description: Field DispatchWholeSo from SorMasterRep
+  user1:
+    display: User1
+    type: string
+    required: false
+    description: Field User1 from SorMasterRep
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from SorMasterRep
+  elect_inv_status:
+    display: Electinvstatus
+    type: string
+    required: false
+    description: Field ElectInvStatus from SorMasterRep
+  elect_inv_printed:
+    display: Electinvprinted
+    type: string
+    required: false
+    description: Field ElectInvPrinted from SorMasterRep
+  entity_dimensions:
+    display: Entitydimensions
+    type: string
+    required: false
+    description: Field EntityDimensions from SorMasterRep

@@ -1,0 +1,98 @@
+concept: lynq_me__received_message
+display_name: Lynq ME ReceivedMessage
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_ReceivedMessage.
+synonyms:
+- lynq_me_receivedmessage
+- lynq me  received message
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_ME_ReceivedMessage
+  receiver_code:
+    display: Receivercode
+    type: string
+    required: false
+    description: Field ReceiverCode from Lynq_ME_ReceivedMessage
+  receiver_type_id:
+    display: Receivertypeid
+    type: decimal
+    required: false
+    description: Field ReceiverTypeId from Lynq_ME_ReceivedMessage
+  sender_code:
+    display: Sendercode
+    type: string
+    required: false
+    description: Field SenderCode from Lynq_ME_ReceivedMessage
+  sender_type_id:
+    display: Sendertypeid
+    type: decimal
+    required: false
+    description: Field SenderTypeId from Lynq_ME_ReceivedMessage
+  received_date:
+    display: Receiveddate
+    type: date
+    required: false
+    description: Field ReceivedDate from Lynq_ME_ReceivedMessage
+  header:
+    display: Header
+    type: string
+    required: false
+    description: Field Header from Lynq_ME_ReceivedMessage
+  body:
+    display: Body
+    type: string
+    required: false
+    description: Field Body from Lynq_ME_ReceivedMessage
+  state_id:
+    display: Stateid
+    type: decimal
+    required: false
+    description: Field StateId from Lynq_ME_ReceivedMessage
+  type_name:
+    display: Typename
+    type: string
+    required: false
+    description: Field TypeName from Lynq_ME_ReceivedMessage
+  measurement_code:
+    display: Measurementcode
+    type: string
+    required: false
+    description: Field MeasurementCode from Lynq_ME_ReceivedMessage
+  measurement_object_code:
+    display: Measurementobjectcode
+    type: decimal
+    required: false
+    description: Field MeasurementObjectCode from Lynq_ME_ReceivedMessage
+  object_members:
+    display: Objectmembers
+    type: string
+    required: false
+    description: Field ObjectMembers from Lynq_ME_ReceivedMessage
+  terminal_id:
+    display: Terminalid
+    type: string
+    required: false
+    description: Field TerminalId from Lynq_ME_ReceivedMessage
+  work_center_code:
+    display: Workcentercode
+    type: string
+    required: false
+    description: Field WorkCenterCode from Lynq_ME_ReceivedMessage
+  task_codes:
+    display: Taskcodes
+    type: string
+    required: false
+    description: Field TaskCodes from Lynq_ME_ReceivedMessage
+  triggered_value:
+    display: Triggeredvalue
+    type: string
+    required: false
+    description: Field TriggeredValue from Lynq_ME_ReceivedMessage
+  membership:
+    display: Membership
+    type: string
+    required: false
+    description: Field Membership from Lynq_ME_ReceivedMessage

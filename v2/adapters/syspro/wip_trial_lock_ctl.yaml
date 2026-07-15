@@ -1,0 +1,6 @@
+concept: wip_trial_lock_ctl
+table: WipTrialLockCtl
+alias: wtlc
+fields:
+  ctl_flag: wtlc.CtlFlag
+  operator: wtlc.Operator

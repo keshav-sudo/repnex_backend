@@ -1,0 +1,318 @@
+concept: lynq_me__event_mark
+display_name: Lynq ME EventMark
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_EventMark.
+synonyms:
+- lynq_me_eventmark
+- lynq me  event mark
+header_attributes:
+  id:
+    display: Id
+    type: string
+    required: false
+    description: Field ID from Lynq_ME_EventMark
+  e_time:
+    display: Etime
+    type: date
+    required: false
+    description: Field eTime from Lynq_ME_EventMark
+  e_transaction_id:
+    display: Etransactionid
+    type: decimal
+    required: false
+    description: Field eTransactionId from Lynq_ME_EventMark
+  e_is_event_deleted:
+    display: Eiseventdeleted
+    type: string
+    required: false
+    description: Field eIsEventDeleted from Lynq_ME_EventMark
+  e_event_type:
+    display: Eeventtype
+    type: decimal
+    required: false
+    description: Field eEventType from Lynq_ME_EventMark
+  e_reporter_code:
+    display: Ereportercode
+    type: string
+    required: false
+    description: Field eReporterCode from Lynq_ME_EventMark
+  e_membership_code:
+    display: Emembershipcode
+    type: string
+    required: false
+    description: Field eMembershipCode from Lynq_ME_EventMark
+  e_terminal_code:
+    display: Eterminalcode
+    type: string
+    required: false
+    description: Field eTerminalCode from Lynq_ME_EventMark
+  e_state_id:
+    display: Estateid
+    type: decimal
+    required: false
+    description: Field eStateID from Lynq_ME_EventMark
+  e_is_office_time:
+    display: Eisofficetime
+    type: string
+    required: false
+    description: Field eIsOfficeTime from Lynq_ME_EventMark
+  e_is_labour_time:
+    display: Eislabourtime
+    type: string
+    required: false
+    description: Field eIsLabourTime from Lynq_ME_EventMark
+  e_is_account_mark:
+    display: Eisaccountmark
+    type: string
+    required: false
+    description: Field eIsAccountMark from Lynq_ME_EventMark
+  e_not_labour_task_code:
+    display: Enotlabourtaskcode
+    type: string
+    required: false
+    description: Field eNotLabourTaskCode from Lynq_ME_EventMark
+  e_task_code:
+    display: Etaskcode
+    type: string
+    required: false
+    description: Field eTaskCode from Lynq_ME_EventMark
+  e_status_code:
+    display: Estatuscode
+    type: string
+    required: false
+    description: Field eStatusCode from Lynq_ME_EventMark
+  e_quantity:
+    display: Equantity
+    type: decimal
+    required: false
+    description: Field eQuantity from Lynq_ME_EventMark
+  e_event_modifier:
+    display: Eeventmodifier
+    type: decimal
+    required: false
+    description: Field eEventModifier from Lynq_ME_EventMark
+  e_processing_types:
+    display: Eprocessingtypes
+    type: decimal
+    required: false
+    description: Field eProcessingTypes from Lynq_ME_EventMark
+  e_schema_code:
+    display: Eschemacode
+    type: decimal
+    required: false
+    description: Field eSchemaCode from Lynq_ME_EventMark
+  e_comment:
+    display: Ecomment
+    type: string
+    required: false
+    description: Field eComment from Lynq_ME_EventMark
+  e_scrap:
+    display: Escrap
+    type: decimal
+    required: false
+    description: Field eScrap from Lynq_ME_EventMark
+  e_parent_event_id:
+    display: Eparenteventid
+    type: string
+    required: false
+    description: Field eParentEventID from Lynq_ME_EventMark
+  e_info1:
+    display: Einfo1
+    type: string
+    required: false
+    description: Field eInfo1 from Lynq_ME_EventMark
+  e_info2:
+    display: Einfo2
+    type: string
+    required: false
+    description: Field eInfo2 from Lynq_ME_EventMark
+  e_cbom_code:
+    display: Ecbomcode
+    type: string
+    required: false
+    description: Field eCBOMCode from Lynq_ME_EventMark
+  e_cbom_quantity:
+    display: Ecbomquantity
+    type: decimal
+    required: false
+    description: Field eCBOMQuantity from Lynq_ME_EventMark
+  e_start_day:
+    display: Estartday
+    type: string
+    required: false
+    description: Field eStartDay from Lynq_ME_EventMark
+  e_end_day:
+    display: Eendday
+    type: string
+    required: false
+    description: Field eEndDay from Lynq_ME_EventMark
+  e_info3:
+    display: Einfo3
+    type: string
+    required: false
+    description: Field eInfo3 from Lynq_ME_EventMark
+  e_info4:
+    display: Einfo4
+    type: string
+    required: false
+    description: Field eInfo4 from Lynq_ME_EventMark
+  e_info5:
+    display: Einfo5
+    type: string
+    required: false
+    description: Field eInfo5 from Lynq_ME_EventMark
+  e_idx:
+    display: Eidx
+    type: decimal
+    required: false
+    description: Field eIdx from Lynq_ME_EventMark
+  e_aggregation_isolation_key:
+    display: Eaggregationisolationkey
+    type: string
+    required: false
+    description: Field eAggregationIsolationKey from Lynq_ME_EventMark
+  e_type1:
+    display: Etype1
+    type: string
+    required: false
+    description: Field eType1 from Lynq_ME_EventMark
+  e_type2:
+    display: Etype2
+    type: string
+    required: false
+    description: Field eType2 from Lynq_ME_EventMark
+  e_qty1:
+    display: Eqty1
+    type: decimal
+    required: false
+    description: Field eQty1 from Lynq_ME_EventMark
+  e_qty2:
+    display: Eqty2
+    type: decimal
+    required: false
+    description: Field eQty2 from Lynq_ME_EventMark
+  e_qty3:
+    display: Eqty3
+    type: decimal
+    required: false
+    description: Field eQty3 from Lynq_ME_EventMark
+  e_duration1:
+    display: Eduration1
+    type: decimal
+    required: false
+    description: Field eDuration1 from Lynq_ME_EventMark
+  e_duration2:
+    display: Eduration2
+    type: decimal
+    required: false
+    description: Field eDuration2 from Lynq_ME_EventMark
+  e_duration3:
+    display: Eduration3
+    type: decimal
+    required: false
+    description: Field eDuration3 from Lynq_ME_EventMark
+  e_dt1:
+    display: Edt1
+    type: date
+    required: false
+    description: Field eDt1 from Lynq_ME_EventMark
+  e_dt2:
+    display: Edt2
+    type: date
+    required: false
+    description: Field eDt2 from Lynq_ME_EventMark
+  e_str1:
+    display: Estr1
+    type: string
+    required: false
+    description: Field eStr1 from Lynq_ME_EventMark
+  e_str2:
+    display: Estr2
+    type: string
+    required: false
+    description: Field eStr2 from Lynq_ME_EventMark
+  e_str3:
+    display: Estr3
+    type: string
+    required: false
+    description: Field eStr3 from Lynq_ME_EventMark
+  e_classification_code:
+    display: Eclassificationcode
+    type: string
+    required: false
+    description: Field eClassificationCode from Lynq_ME_EventMark
+  e_labour_split_type:
+    display: Elaboursplittype
+    type: string
+    required: false
+    description: Field eLabourSplitType from Lynq_ME_EventMark
+  e_labour_split_d_param1:
+    display: Elaboursplitdparam1
+    type: decimal
+    required: false
+    description: Field eLabourSplitDParam1 from Lynq_ME_EventMark
+  e_interaction_id:
+    display: Einteractionid
+    type: decimal
+    required: false
+    description: Field eInteractionID from Lynq_ME_EventMark
+  e_originated_id:
+    display: Eoriginatedid
+    type: decimal
+    required: false
+    description: Field eOriginatedID from Lynq_ME_EventMark
+  e_apply_on_state_task:
+    display: Eapplyonstatetask
+    type: string
+    required: false
+    description: Field eApplyOnStateTask from Lynq_ME_EventMark
+  e_employee_code:
+    display: Eemployeecode
+    type: string
+    required: false
+    description: Field eEmployeeCode from Lynq_ME_EventMark
+  e_facility_code:
+    display: Efacilitycode
+    type: string
+    required: false
+    description: Field eFacilityCode from Lynq_ME_EventMark
+  e_resource_count:
+    display: Eresourcecount
+    type: decimal
+    required: false
+    description: Field eResourceCount from Lynq_ME_EventMark
+  e_serial_lot_number_info:
+    display: Eseriallotnumberinfo
+    type: string
+    required: false
+    description: Field eSerialLotNumberInfo from Lynq_ME_EventMark
+  e_bin_info:
+    display: Ebininfo
+    type: string
+    required: false
+    description: Field eBinInfo from Lynq_ME_EventMark
+  e_traceability_code_info:
+    display: Etraceabilitycodeinfo
+    type: string
+    required: false
+    description: Field eTraceabilityCodeInfo from Lynq_ME_EventMark
+  e_scrap_reason_info:
+    display: Escrapreasoninfo
+    type: string
+    required: false
+    description: Field eScrapReasonInfo from Lynq_ME_EventMark
+  e_reject_reason_info:
+    display: Erejectreasoninfo
+    type: string
+    required: false
+    description: Field eRejectReasonInfo from Lynq_ME_EventMark
+  e_location_info:
+    display: Elocationinfo
+    type: string
+    required: false
+    description: Field eLocationInfo from Lynq_ME_EventMark
+  e_warehouse_info:
+    display: Ewarehouseinfo
+    type: string
+    required: false
+    description: Field eWarehouseInfo from Lynq_ME_EventMark

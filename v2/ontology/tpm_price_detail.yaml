@@ -1,0 +1,63 @@
+concept: tpm_price_detail
+display_name: TpmPriceDetail
+module: other
+description: Auto-generated representation of the physical table TpmPriceDetail.
+synonyms:
+- tpmpricedetail
+- tpm price detail
+header_attributes:
+  price_type:
+    display: Pricetype
+    type: string
+    required: false
+    description: Field PriceType from TpmPriceDetail
+  key_area:
+    display: Keyarea
+    type: string
+    required: false
+    description: Field KeyArea from TpmPriceDetail
+  pickup_delivery:
+    display: Pickupdelivery
+    type: string
+    required: false
+    description: Field PickupDelivery from TpmPriceDetail
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from TpmPriceDetail
+  selection_type:
+    display: Selectiontype
+    type: string
+    required: false
+    description: Field SelectionType from TpmPriceDetail
+  selection_area:
+    display: Selectionarea
+    type: string
+    required: false
+    description: Field SelectionArea from TpmPriceDetail
+  price_break:
+    display: Pricebreak
+    type: decimal
+    required: false
+    description: Field PriceBreak from TpmPriceDetail
+  basis:
+    display: Basis
+    type: string
+    required: false
+    description: Field Basis from TpmPriceDetail
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from TpmPriceDetail
+  price_discount_flag:
+    display: Pricediscountflag
+    type: string
+    required: false
+    description: Field PriceDiscountFlag from TpmPriceDetail
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from TpmPriceDetail

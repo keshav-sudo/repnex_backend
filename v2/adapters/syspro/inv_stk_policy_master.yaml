@@ -1,0 +1,14 @@
+concept: inv_stk_policy_master
+table: InvStkPolicyMaster
+alias: ispm
+fields:
+  stock_code: ispm.StockCode
+  sourcing_policy: ispm.SourcingPolicy
+  sourcing_policy_desc: ispm.SourcingPolicyDesc
+  sourcing_policy_type: ispm.SourcingPolicyType
+  policy_start_date: ispm.PolicyStartDate
+  policy_expiry_date: ispm.PolicyExpiryDate
+  include_in_reqs: ispm.IncludeInReqs
+  threshold_criteria: ispm.ThresholdCriteria
+  threshold_amount: ispm.ThresholdAmount
+  selection_criteria: ispm.SelectionCriteria

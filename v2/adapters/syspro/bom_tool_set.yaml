@@ -1,0 +1,7 @@
+concept: bom_tool_set
+table: BomToolSet
+alias: bts
+fields:
+  tool_set: bts.ToolSet
+  description: bts.Description
+  num_available: bts.NumAvailable

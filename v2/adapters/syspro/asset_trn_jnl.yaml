@@ -1,0 +1,16 @@
+concept: asset_trn_jnl
+table: AssetTrnJnl
+alias: atj
+fields:
+  journal: atj.Journal
+  entry_number: atj.EntryNumber
+  asset: atj.Asset
+  entry_date: atj.EntryDate
+  invoice: atj.Invoice
+  entry_value: atj.EntryValue
+  reference: atj.Reference
+  branch: atj.Branch
+  expense: atj.Expense
+  supplier: atj.Supplier
+  journal_printed: atj.JournalPrinted
+  entry_type: atj.EntryType

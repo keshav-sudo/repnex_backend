@@ -1,0 +1,6 @@
+concept: sqm_stan_process
+table: SqmStanProcess
+alias: ssp
+fields:
+  conform_standard: ssp.ConformStandard
+  nc_process: ssp.NcProcess

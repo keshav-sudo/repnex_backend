@@ -1,0 +1,43 @@
+concept: wip_res_lot_bal
+display_name: WipResLotBal
+module: work_in_progress
+description: Auto-generated representation of the physical table WipResLotBal.
+synonyms:
+- wipreslotbal
+- wip res lot bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from WipResLotBal
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipResLotBal
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipResLotBal
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipResLotBal
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WipResLotBal
+  cur_lot_qty_reserved:
+    display: Curlotqtyreserved
+    type: decimal
+    required: false
+    description: Field CurLotQtyReserved from WipResLotBal
+  clc_lot_qty_reserved:
+    display: Clclotqtyreserved
+    type: decimal
+    required: false
+    description: Field ClcLotQtyReserved from WipResLotBal

@@ -1,0 +1,18 @@
+concept: sqm_stan_process
+display_name: SqmStanProcess
+module: other
+description: Auto-generated representation of the physical table SqmStanProcess.
+synonyms:
+- sqmstanprocess
+- sqm stan process
+header_attributes:
+  conform_standard:
+    display: Conformstandard
+    type: string
+    required: false
+    description: Field ConformStandard from SqmStanProcess
+  nc_process:
+    display: Ncprocess
+    type: string
+    required: false
+    description: Field NcProcess from SqmStanProcess

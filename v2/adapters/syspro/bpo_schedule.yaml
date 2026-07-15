@@ -1,0 +1,15 @@
+concept: bpo_schedule
+table: BpoSchedule
+alias: bs1
+fields:
+  contract: bs1.Contract
+  schedule_date: bs1.ScheduleDate
+  supplier: bs1.Supplier
+  deliveries_per_day: bs1.DeliveriesPerDay
+  purchase_order1: bs1.PurchaseOrder1
+  purchase_order2: bs1.PurchaseOrder2
+  purchase_order3: bs1.PurchaseOrder3
+  time_of_day1: bs1.TimeOfDay1
+  time_of_day2: bs1.TimeOfDay2
+  time_of_day3: bs1.TimeOfDay3
+  release_date: bs1.ReleaseDate

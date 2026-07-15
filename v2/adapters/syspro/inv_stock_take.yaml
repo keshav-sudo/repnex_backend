@@ -1,0 +1,19 @@
+concept: inv_stock_take
+table: InvStockTake
+alias: ist3
+fields:
+  warehouse: ist3.Warehouse
+  stock_code: ist3.StockCode
+  bin: ist3.Bin
+  orig_qty_on_hand: ist3.OrigQtyOnHand
+  qty_captured: ist3.QtyCaptured
+  save_date: ist3.SaveDate
+  product_class: ist3.ProductClass
+  uom: ist3.Uom
+  reference: ist3.Reference
+  printed_flag: ist3.PrintedFlag
+  decimals: ist3.Decimals
+  num_times_captured: ist3.NumTimesCaptured
+  created_bin_flag: ist3.CreatedBinFlag
+  selection_cost: ist3.SelectionCost
+  default_bin: ist3.DefaultBin

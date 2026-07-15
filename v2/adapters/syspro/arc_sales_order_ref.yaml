@@ -1,0 +1,13 @@
+concept: arc_sales_order_ref
+table: ArcSalesOrderRef
+alias: asor
+fields:
+  sales_order: asor.SalesOrder
+  archive_number: asor.ArchiveNumber
+  customer_po_number: asor.CustomerPoNumber
+  customer: asor.Customer
+  customer_name: asor.CustomerName
+  sales_order_date: asor.SalesOrderDate
+  alternate_key: asor.AlternateKey
+  branch: asor.Branch
+  salesperson: asor.Salesperson

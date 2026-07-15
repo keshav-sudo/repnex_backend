@@ -1,0 +1,63 @@
+concept: prj_retention_header
+display_name: PrjRetentionHeader
+module: other
+description: Auto-generated representation of the physical table PrjRetentionHeader.
+synonyms:
+- prjretentionheader
+- prj retention header
+header_attributes:
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from PrjRetentionHeader
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from PrjRetentionHeader
+  retention_type:
+    display: Retentiontype
+    type: string
+    required: false
+    description: Field RetentionType from PrjRetentionHeader
+  retention_percent:
+    display: Retentionpercent
+    type: decimal
+    required: false
+    description: Field RetentionPercent from PrjRetentionHeader
+  retention_value:
+    display: Retentionvalue
+    type: decimal
+    required: false
+    description: Field RetentionValue from PrjRetentionHeader
+  retention_remaining:
+    display: Retentionremaining
+    type: decimal
+    required: false
+    description: Field RetentionRemaining from PrjRetentionHeader
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from PrjRetentionHeader
+  retention_customer:
+    display: Retentioncustomer
+    type: string
+    required: false
+    description: Field RetentionCustomer from PrjRetentionHeader
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from PrjRetentionHeader
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from PrjRetentionHeader
+  gst_tax_code:
+    display: Gsttaxcode
+    type: string
+    required: false
+    description: Field GstTaxCode from PrjRetentionHeader

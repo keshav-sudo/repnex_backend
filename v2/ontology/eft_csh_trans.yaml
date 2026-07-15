@@ -1,0 +1,43 @@
+concept: eft_csh_trans
+display_name: EftCshTrans
+module: other
+description: Auto-generated representation of the physical table EftCshTrans.
+synonyms:
+- eftcshtrans
+- eft csh trans
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from EftCshTrans
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from EftCshTrans
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from EftCshTrans
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from EftCshTrans
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from EftCshTrans
+  eft_status:
+    display: Eftstatus
+    type: string
+    required: false
+    description: Field EftStatus from EftCshTrans
+  eft_save_status:
+    display: Eftsavestatus
+    type: string
+    required: false
+    description: Field EftSaveStatus from EftCshTrans

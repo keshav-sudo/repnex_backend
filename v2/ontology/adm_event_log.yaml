@@ -1,0 +1,73 @@
+concept: adm_event_log
+display_name: AdmEventLog
+module: administration
+description: Auto-generated representation of the physical table AdmEventLog.
+synonyms:
+- admeventlog
+- adm event log
+header_attributes:
+  event_date:
+    display: Eventdate
+    type: date
+    required: false
+    description: Field EventDate from AdmEventLog
+  event_time:
+    display: Eventtime
+    type: decimal
+    required: false
+    description: Field EventTime from AdmEventLog
+  event_module:
+    display: Eventmodule
+    type: string
+    required: false
+    description: Field EventModule from AdmEventLog
+  event_code:
+    display: Eventcode
+    type: decimal
+    required: false
+    description: Field EventCode from AdmEventLog
+  event_desc:
+    display: Eventdesc
+    type: string
+    required: false
+    description: Field EventDesc from AdmEventLog
+  event_name:
+    display: Eventname
+    type: string
+    required: false
+    description: Field EventName from AdmEventLog
+  event_type:
+    display: Eventtype
+    type: string
+    required: false
+    description: Field EventType from AdmEventLog
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmEventLog
+  key1:
+    display: Key1
+    type: string
+    required: false
+    description: Field Key1 from AdmEventLog
+  key2:
+    display: Key2
+    type: string
+    required: false
+    description: Field Key2 from AdmEventLog
+  log_printed:
+    display: Logprinted
+    type: string
+    required: false
+    description: Field LogPrinted from AdmEventLog
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmEventLog
+  prog_gen_event:
+    display: Proggenevent
+    type: string
+    required: false
+    description: Field ProgGenEvent from AdmEventLog

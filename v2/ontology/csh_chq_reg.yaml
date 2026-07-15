@@ -1,0 +1,88 @@
+concept: csh_chq_reg
+display_name: CshChqReg
+module: cashbook
+description: Auto-generated representation of the physical table CshChqReg.
+synonyms:
+- cshchqreg
+- csh chq reg
+header_attributes:
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshChqReg
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshChqReg
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from CshChqReg
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from CshChqReg
+  cheque:
+    display: Cheque
+    type: decimal
+    required: false
+    description: Field Cheque from CshChqReg
+  cheque_date:
+    display: Chequedate
+    type: date
+    required: false
+    description: Field ChequeDate from CshChqReg
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from CshChqReg
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from CshChqReg
+  cheque_value:
+    display: Chequevalue
+    type: decimal
+    required: false
+    description: Field ChequeValue from CshChqReg
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from CshChqReg
+  cheque_reprint:
+    display: Chequereprint
+    type: string
+    required: false
+    description: Field ChequeReprint from CshChqReg
+  last_cheque_prted:
+    display: Lastchequeprted
+    type: decimal
+    required: false
+    description: Field LastChequePrted from CshChqReg
+  void_flag:
+    display: Voidflag
+    type: string
+    required: false
+    description: Field VoidFlag from CshChqReg
+  void_from:
+    display: Voidfrom
+    type: decimal
+    required: false
+    description: Field VoidFrom from CshChqReg
+  void_to:
+    display: Voidto
+    type: decimal
+    required: false
+    description: Field VoidTo from CshChqReg
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from CshChqReg

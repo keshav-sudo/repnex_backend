@@ -1,0 +1,49 @@
+concept: gen_master
+table: GenMaster
+alias: gm
+fields:
+  company: gm.Company
+  gl_code: gm.GlCode
+  description: gm.Description
+  next_gl_line: gm.NextGlLine
+  next_gl_line_pyr: gm.NextGlLinePyr
+  next_line: gm.NextLine
+  next_line_pyr: gm.NextLinePyr
+  report_index1: gm.ReportIndex1
+  report_index2: gm.ReportIndex2
+  account_type: gm.AccountType
+  expense_type: gm.ExpenseType
+  ptd_dr_value: gm.PtdDrValue
+  ptd_cr_value: gm.PtdCrValue
+  current_balance: gm.CurrentBalance
+  prev_per_end_bal: gm.PrevPerEndBal
+  gl_group: gm.GlGroup
+  budget_method: gm.BudgetMethod
+  control_acc_flag: gm.ControlAccFlag
+  acc_on_hld_flag: gm.AccOnHldFlag
+  tax_code: gm.TaxCode
+  num_detail_cur_yr: gm.NumDetailCurYr
+  num_detail_prv_yr: gm.NumDetailPrvYr
+  integration_method: gm.IntegrationMethod
+  alt_description: gm.AltDescription
+  historical: gm.Historical
+  tax2_code: gm.Tax2Code
+  reval_category: gm.RevalCategory
+  alt_cur_indicator: gm.AltCurIndicator
+  gl_unit_of_measure: gm.GlUnitOfMeasure
+  business_process1: gm.BusinessProcess1
+  business_process2: gm.BusinessProcess2
+  business_process3: gm.BusinessProcess3
+  business_process4: gm.BusinessProcess4
+  business_process5: gm.BusinessProcess5
+  business_process6: gm.BusinessProcess6
+  business_process7: gm.BusinessProcess7
+  business_process8: gm.BusinessProcess8
+  business_process9: gm.BusinessProcess9
+  business_process10: gm.BusinessProcess10
+  analysis_required: gm.AnalysisRequired
+  analysis_category: gm.AnalysisCategory
+  current_ind: gm.CurrentInd
+  ret_earns_account: gm.RetEarnsAccount
+  tax_account: gm.TaxAccount
+  interest_account: gm.InterestAccount

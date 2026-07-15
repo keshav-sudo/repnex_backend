@@ -1,0 +1,17 @@
+concept: inv_inspect_serial
+table: InvInspectSerial
+alias: iis
+fields:
+  grn: iis.Grn
+  lot: iis.Lot
+  serial: iis.Serial
+  status: iis.Status
+  quantity: iis.Quantity
+  transaction_date: iis.TransactionDate
+  line: iis.Line
+  document_num: iis.DocumentNum
+  transf_to_new_wh: iis.TransfToNewWh
+  stock_code: iis.StockCode
+  version: iis.Version
+  release: iis.Release
+  expiry_date: iis.ExpiryDate

@@ -1,0 +1,10 @@
+concept: tpm_deduction_codes
+table: TpmDeductionCodes
+alias: tdc
+fields:
+  deduction_code: tdc.DeductionCode
+  description: tdc.Description
+  deduction_ldg: tdc.DeductionLdg
+  resolution_ldg: tdc.ResolutionLdg
+  write_off_ldg: tdc.WriteOffLdg
+  credit_flag: tdc.CreditFlag

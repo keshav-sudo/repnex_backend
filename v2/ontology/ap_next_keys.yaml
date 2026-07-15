@@ -1,0 +1,18 @@
+concept: ap_next_keys
+display_name: ApNextKeys
+module: accounts_payable
+description: Auto-generated representation of the physical table ApNextKeys.
+synonyms:
+- apnextkeys
+- ap next keys
+header_attributes:
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from ApNextKeys
+  key_next:
+    display: Keynext
+    type: decimal
+    required: false
+    description: Field KeyNext from ApNextKeys

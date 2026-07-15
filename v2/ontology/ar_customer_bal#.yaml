@@ -1,0 +1,23 @@
+concept: ar_customer_bal#
+display_name: ArCustomerBal#
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCustomerBal#.
+synonyms:
+- arcustomerbal#
+- ar customer bal#
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCustomerBal#
+  post_date_time:
+    display: Postdatetime
+    type: date
+    required: false
+    description: Field PostDateTime from ArCustomerBal#
+  current_balance1:
+    display: Currentbalance1
+    type: decimal
+    required: false
+    description: Field CurrentBalance1 from ArCustomerBal#

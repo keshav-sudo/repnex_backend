@@ -1,0 +1,93 @@
+concept: mrp_forecast
+display_name: MrpForecast
+module: mrp
+description: Auto-generated representation of the physical table MrpForecast.
+synonyms:
+- mrpforecast
+- mrp forecast
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpForecast
+  forecast_wh:
+    display: Forecastwh
+    type: string
+    required: false
+    description: Field ForecastWh from MrpForecast
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from MrpForecast
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpForecast
+  forecast_qty_outst:
+    display: Forecastqtyoutst
+    type: decimal
+    required: false
+    description: Field ForecastQtyOutst from MrpForecast
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from MrpForecast
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from MrpForecast
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MrpForecast
+  resource_parent:
+    display: Resourceparent
+    type: string
+    required: false
+    description: Field ResourceParent from MrpForecast
+  inactive_flag:
+    display: Inactiveflag
+    type: string
+    required: false
+    description: Field InactiveFlag from MrpForecast
+  forecast_type:
+    display: Forecasttype
+    type: string
+    required: false
+    description: Field ForecastType from MrpForecast
+  qty_invoiced:
+    display: Qtyinvoiced
+    type: decimal
+    required: false
+    description: Field QtyInvoiced from MrpForecast
+  orig_forecast_date:
+    display: Origforecastdate
+    type: date
+    required: false
+    description: Field OrigForecastDate from MrpForecast
+  original_line:
+    display: Originalline
+    type: decimal
+    required: false
+    description: Field OriginalLine from MrpForecast
+  orig_qty_outst:
+    display: Origqtyoutst
+    type: decimal
+    required: false
+    description: Field OrigQtyOutst from MrpForecast
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpForecast
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpForecast

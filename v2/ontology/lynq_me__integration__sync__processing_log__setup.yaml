@@ -1,0 +1,23 @@
+concept: lynq_me__integration__sync__processing_log__setup
+display_name: Lynq ME Integration Sync ProcessingLog Setup
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Integration_Sync_ProcessingLog_Setup.
+synonyms:
+- lynq_me_integration_sync_processinglog_setup
+- lynq me  integration  sync  processing log  setup
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_Integration_Sync_ProcessingLog_Setup
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from Lynq_ME_Integration_Sync_ProcessingLog_Setup
+  value:
+    display: Value
+    type: string
+    required: false
+    description: Field Value from Lynq_ME_Integration_Sync_ProcessingLog_Setup

@@ -1,0 +1,17 @@
+concept: iop_sales_returns
+table: IopSalesReturns
+alias: isr
+fields:
+  stock_code: isr.StockCode
+  version: isr.Version
+  release: isr.Release
+  warehouse: isr.Warehouse
+  movement_date: isr.MovementDate
+  ytd_trans_count: isr.YtdTransCount
+  ytd_quantity: isr.YtdQuantity
+  ytd_cost_value: isr.YtdCostValue
+  ytd_sales_value: isr.YtdSalesValue
+  trans_count: isr.TransCount
+  quantity: isr.Quantity
+  cost_value: isr.CostValue
+  sales_value: isr.SalesValue

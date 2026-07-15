@@ -1,0 +1,15 @@
+concept: pos_summary_sal
+table: PosSummarySal
+alias: pss
+fields:
+  cash_drawer: pss.CashDrawer
+  currency: pss.Currency
+  no_of_invoices: pss.NoOfInvoices
+  no_of_credits: pss.NoOfCredits
+  no_of_debits: pss.NoOfDebits
+  no_of_operators: pss.NoOfOperators
+  drawer_closed: pss.DrawerClosed
+  drawer_printed: pss.DrawerPrinted
+  cash_float: pss.CashFloat
+  total_deposits: pss.TotalDeposits
+  total_cash_in_out: pss.TotalCashInOut

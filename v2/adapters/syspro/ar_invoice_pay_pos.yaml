@@ -1,0 +1,12 @@
+concept: ar_invoice_pay_pos
+table: ArInvoicePayPos
+alias: aipp
+fields:
+  customer: aipp.Customer
+  invoice: aipp.Invoice
+  document_type: aipp.DocumentType
+  entry_number: aipp.EntryNumber
+  pos_transaction_type: aipp.PosTransactionType
+  pos_trans_branch: aipp.PosTransBranch
+  pos_unique_id: aipp.PosUniqueId
+  pos_payment_line: aipp.PosPaymentLine

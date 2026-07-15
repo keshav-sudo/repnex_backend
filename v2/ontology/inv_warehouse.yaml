@@ -1,0 +1,628 @@
+concept: inv_warehouse
+display_name: InvWarehouse
+module: inventory
+description: Auto-generated representation of the physical table InvWarehouse.
+synonyms:
+- invwarehouse
+- inv warehouse
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvWarehouse
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvWarehouse
+  qty_on_hand:
+    display: Qtyonhand
+    type: decimal
+    required: false
+    description: Field QtyOnHand from InvWarehouse
+  mtd_qty_received:
+    display: Mtdqtyreceived
+    type: decimal
+    required: false
+    description: Field MtdQtyReceived from InvWarehouse
+  mtd_qty_adjusted:
+    display: Mtdqtyadjusted
+    type: decimal
+    required: false
+    description: Field MtdQtyAdjusted from InvWarehouse
+  mtd_qty_trf:
+    display: Mtdqtytrf
+    type: decimal
+    required: false
+    description: Field MtdQtyTrf from InvWarehouse
+  mtd_qty_issued:
+    display: Mtdqtyissued
+    type: decimal
+    required: false
+    description: Field MtdQtyIssued from InvWarehouse
+  mtd_qty_sold:
+    display: Mtdqtysold
+    type: decimal
+    required: false
+    description: Field MtdQtySold from InvWarehouse
+  qty_allocated:
+    display: Qtyallocated
+    type: decimal
+    required: false
+    description: Field QtyAllocated from InvWarehouse
+  qty_on_order:
+    display: Qtyonorder
+    type: decimal
+    required: false
+    description: Field QtyOnOrder from InvWarehouse
+  qty_on_back_order:
+    display: Qtyonbackorder
+    type: decimal
+    required: false
+    description: Field QtyOnBackOrder from InvWarehouse
+  minimum_qty:
+    display: Minimumqty
+    type: decimal
+    required: false
+    description: Field MinimumQty from InvWarehouse
+  maximum_qty:
+    display: Maximumqty
+    type: decimal
+    required: false
+    description: Field MaximumQty from InvWarehouse
+  ytd_qty_sold:
+    display: Ytdqtysold
+    type: decimal
+    required: false
+    description: Field YtdQtySold from InvWarehouse
+  prev_year_qty_sold:
+    display: Prevyearqtysold
+    type: decimal
+    required: false
+    description: Field PrevYearQtySold from InvWarehouse
+  opening_balance:
+    display: Openingbalance
+    type: decimal
+    required: false
+    description: Field OpeningBalance from InvWarehouse
+  ytd_usage_value:
+    display: Ytdusagevalue
+    type: decimal
+    required: false
+    description: Field YtdUsageValue from InvWarehouse
+  abc_class:
+    display: Abcclass
+    type: string
+    required: false
+    description: Field AbcClass from InvWarehouse
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from InvWarehouse
+  default_bin:
+    display: Defaultbin
+    type: string
+    required: false
+    description: Field DefaultBin from InvWarehouse
+  date_last_sale:
+    display: Datelastsale
+    type: date
+    required: false
+    description: Field DateLastSale from InvWarehouse
+  date_last_stock_move:
+    display: Datelaststockmove
+    type: date
+    required: false
+    description: Field DateLastStockMove from InvWarehouse
+  date_last_cost_change:
+    display: Datelastcostchange
+    type: date
+    required: false
+    description: Field DateLastCostChange from InvWarehouse
+  date_last_stock_cnt:
+    display: Datelaststockcnt
+    type: date
+    required: false
+    description: Field DateLastStockCnt from InvWarehouse
+  date_last_purchase:
+    display: Datelastpurchase
+    type: date
+    required: false
+    description: Field DateLastPurchase from InvWarehouse
+  qty_in_transit:
+    display: Qtyintransit
+    type: decimal
+    required: false
+    description: Field QtyInTransit from InvWarehouse
+  transfer_value:
+    display: Transfervalue
+    type: decimal
+    required: false
+    description: Field TransferValue from InvWarehouse
+  safety_stock_qty:
+    display: Safetystockqty
+    type: decimal
+    required: false
+    description: Field SafetyStockQty from InvWarehouse
+  re_order_qty:
+    display: Reorderqty
+    type: decimal
+    required: false
+    description: Field ReOrderQty from InvWarehouse
+  qty_allocated_wip:
+    display: Qtyallocatedwip
+    type: decimal
+    required: false
+    description: Field QtyAllocatedWip from InvWarehouse
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from InvWarehouse
+  cost_multiplier:
+    display: Costmultiplier
+    type: decimal
+    required: false
+    description: Field CostMultiplier from InvWarehouse
+  last_cost_entered:
+    display: Lastcostentered
+    type: decimal
+    required: false
+    description: Field LastCostEntered from InvWarehouse
+  mtd_sales_value:
+    display: Mtdsalesvalue
+    type: decimal
+    required: false
+    description: Field MtdSalesValue from InvWarehouse
+  ytd_sales_value:
+    display: Ytdsalesvalue
+    type: decimal
+    required: false
+    description: Field YtdSalesValue from InvWarehouse
+  prev_ytd_sales_val:
+    display: Prevytdsalesval
+    type: decimal
+    required: false
+    description: Field PrevYtdSalesVal from InvWarehouse
+  qty_in_inspection:
+    display: Qtyininspection
+    type: decimal
+    required: false
+    description: Field QtyInInspection from InvWarehouse
+  pallet_qty:
+    display: Palletqty
+    type: decimal
+    required: false
+    description: Field PalletQty from InvWarehouse
+  num_months_history:
+    display: Nummonthshistory
+    type: decimal
+    required: false
+    description: Field NumMonthsHistory from InvWarehouse
+  ytd_qty_issued:
+    display: Ytdqtyissued
+    type: decimal
+    required: false
+    description: Field YtdQtyIssued from InvWarehouse
+  requisition_flag:
+    display: Requisitionflag
+    type: string
+    required: false
+    description: Field RequisitionFlag from InvWarehouse
+  sales_qty1:
+    display: Salesqty1
+    type: decimal
+    required: false
+    description: Field SalesQty1 from InvWarehouse
+  sales_qty2:
+    display: Salesqty2
+    type: decimal
+    required: false
+    description: Field SalesQty2 from InvWarehouse
+  sales_qty3:
+    display: Salesqty3
+    type: decimal
+    required: false
+    description: Field SalesQty3 from InvWarehouse
+  sales_qty4:
+    display: Salesqty4
+    type: decimal
+    required: false
+    description: Field SalesQty4 from InvWarehouse
+  sales_qty5:
+    display: Salesqty5
+    type: decimal
+    required: false
+    description: Field SalesQty5 from InvWarehouse
+  sales_qty6:
+    display: Salesqty6
+    type: decimal
+    required: false
+    description: Field SalesQty6 from InvWarehouse
+  sales_qty7:
+    display: Salesqty7
+    type: decimal
+    required: false
+    description: Field SalesQty7 from InvWarehouse
+  sales_qty8:
+    display: Salesqty8
+    type: decimal
+    required: false
+    description: Field SalesQty8 from InvWarehouse
+  sales_qty9:
+    display: Salesqty9
+    type: decimal
+    required: false
+    description: Field SalesQty9 from InvWarehouse
+  sales_qty10:
+    display: Salesqty10
+    type: decimal
+    required: false
+    description: Field SalesQty10 from InvWarehouse
+  sales_qty11:
+    display: Salesqty11
+    type: decimal
+    required: false
+    description: Field SalesQty11 from InvWarehouse
+  sales_qty12:
+    display: Salesqty12
+    type: decimal
+    required: false
+    description: Field SalesQty12 from InvWarehouse
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from InvWarehouse
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from InvWarehouse
+  user_field3:
+    display: Userfield3
+    type: string
+    required: false
+    description: Field UserField3 from InvWarehouse
+  trf_supplied_item:
+    display: Trfsupplieditem
+    type: string
+    required: false
+    description: Field TrfSuppliedItem from InvWarehouse
+  default_source_wh:
+    display: Defaultsourcewh
+    type: string
+    required: false
+    description: Field DefaultSourceWh from InvWarehouse
+  trf_lead_time:
+    display: Trfleadtime
+    type: decimal
+    required: false
+    description: Field TrfLeadTime from InvWarehouse
+  trf_cost_gl_code:
+    display: Trfcostglcode
+    type: string
+    required: false
+    description: Field TrfCostGlCode from InvWarehouse
+  trf_cost_multiply:
+    display: Trfcostmultiply
+    type: decimal
+    required: false
+    description: Field TrfCostMultiply from InvWarehouse
+  qty_dispatched:
+    display: Qtydispatched
+    type: decimal
+    required: false
+    description: Field QtyDispatched from InvWarehouse
+  open_bal_qty1:
+    display: Openbalqty1
+    type: decimal
+    required: false
+    description: Field OpenBalQty1 from InvWarehouse
+  open_bal_qty2:
+    display: Openbalqty2
+    type: decimal
+    required: false
+    description: Field OpenBalQty2 from InvWarehouse
+  open_bal_qty3:
+    display: Openbalqty3
+    type: decimal
+    required: false
+    description: Field OpenBalQty3 from InvWarehouse
+  open_bal_qty4:
+    display: Openbalqty4
+    type: decimal
+    required: false
+    description: Field OpenBalQty4 from InvWarehouse
+  open_bal_qty5:
+    display: Openbalqty5
+    type: decimal
+    required: false
+    description: Field OpenBalQty5 from InvWarehouse
+  open_bal_qty6:
+    display: Openbalqty6
+    type: decimal
+    required: false
+    description: Field OpenBalQty6 from InvWarehouse
+  open_bal_qty7:
+    display: Openbalqty7
+    type: decimal
+    required: false
+    description: Field OpenBalQty7 from InvWarehouse
+  open_bal_qty8:
+    display: Openbalqty8
+    type: decimal
+    required: false
+    description: Field OpenBalQty8 from InvWarehouse
+  open_bal_qty9:
+    display: Openbalqty9
+    type: decimal
+    required: false
+    description: Field OpenBalQty9 from InvWarehouse
+  open_bal_qty10:
+    display: Openbalqty10
+    type: decimal
+    required: false
+    description: Field OpenBalQty10 from InvWarehouse
+  open_bal_qty11:
+    display: Openbalqty11
+    type: decimal
+    required: false
+    description: Field OpenBalQty11 from InvWarehouse
+  open_bal_qty12:
+    display: Openbalqty12
+    type: decimal
+    required: false
+    description: Field OpenBalQty12 from InvWarehouse
+  open_bal_cost1:
+    display: Openbalcost1
+    type: decimal
+    required: false
+    description: Field OpenBalCost1 from InvWarehouse
+  open_bal_cost2:
+    display: Openbalcost2
+    type: decimal
+    required: false
+    description: Field OpenBalCost2 from InvWarehouse
+  open_bal_cost3:
+    display: Openbalcost3
+    type: decimal
+    required: false
+    description: Field OpenBalCost3 from InvWarehouse
+  open_bal_cost4:
+    display: Openbalcost4
+    type: decimal
+    required: false
+    description: Field OpenBalCost4 from InvWarehouse
+  open_bal_cost5:
+    display: Openbalcost5
+    type: decimal
+    required: false
+    description: Field OpenBalCost5 from InvWarehouse
+  open_bal_cost6:
+    display: Openbalcost6
+    type: decimal
+    required: false
+    description: Field OpenBalCost6 from InvWarehouse
+  open_bal_cost7:
+    display: Openbalcost7
+    type: decimal
+    required: false
+    description: Field OpenBalCost7 from InvWarehouse
+  open_bal_cost8:
+    display: Openbalcost8
+    type: decimal
+    required: false
+    description: Field OpenBalCost8 from InvWarehouse
+  open_bal_cost9:
+    display: Openbalcost9
+    type: decimal
+    required: false
+    description: Field OpenBalCost9 from InvWarehouse
+  open_bal_cost10:
+    display: Openbalcost10
+    type: decimal
+    required: false
+    description: Field OpenBalCost10 from InvWarehouse
+  open_bal_cost11:
+    display: Openbalcost11
+    type: decimal
+    required: false
+    description: Field OpenBalCost11 from InvWarehouse
+  open_bal_cost12:
+    display: Openbalcost12
+    type: decimal
+    required: false
+    description: Field OpenBalCost12 from InvWarehouse
+  aged_qty1:
+    display: Agedqty1
+    type: decimal
+    required: false
+    description: Field AgedQty1 from InvWarehouse
+  aged_qty2:
+    display: Agedqty2
+    type: decimal
+    required: false
+    description: Field AgedQty2 from InvWarehouse
+  aged_qty3:
+    display: Agedqty3
+    type: decimal
+    required: false
+    description: Field AgedQty3 from InvWarehouse
+  aged_qty4:
+    display: Agedqty4
+    type: decimal
+    required: false
+    description: Field AgedQty4 from InvWarehouse
+  aged_qty5:
+    display: Agedqty5
+    type: decimal
+    required: false
+    description: Field AgedQty5 from InvWarehouse
+  aged_qty6:
+    display: Agedqty6
+    type: decimal
+    required: false
+    description: Field AgedQty6 from InvWarehouse
+  trf_replenish_wh:
+    display: Trfreplenishwh
+    type: decimal
+    required: false
+    description: Field TrfReplenishWh from InvWarehouse
+  trf_buying_rule:
+    display: Trfbuyingrule
+    type: string
+    required: false
+    description: Field TrfBuyingRule from InvWarehouse
+  trf_dock_to_stock:
+    display: Trfdocktostock
+    type: decimal
+    required: false
+    description: Field TrfDockToStock from InvWarehouse
+  trf_fix_time_period:
+    display: Trffixtimeperiod
+    type: decimal
+    required: false
+    description: Field TrfFixTimePeriod from InvWarehouse
+  labour_cost:
+    display: Labourcost
+    type: decimal
+    required: false
+    description: Field LabourCost from InvWarehouse
+  material_cost:
+    display: Materialcost
+    type: decimal
+    required: false
+    description: Field MaterialCost from InvWarehouse
+  fixed_overhead:
+    display: Fixedoverhead
+    type: decimal
+    required: false
+    description: Field FixedOverhead from InvWarehouse
+  variable_overhead:
+    display: Variableoverhead
+    type: decimal
+    required: false
+    description: Field VariableOverhead from InvWarehouse
+  std_lab_costs_bill:
+    display: Stdlabcostsbill
+    type: decimal
+    required: false
+    description: Field StdLabCostsBill from InvWarehouse
+  sub_contract_cost:
+    display: Subcontractcost
+    type: decimal
+    required: false
+    description: Field SubContractCost from InvWarehouse
+  date_wh_added:
+    display: Datewhadded
+    type: date
+    required: false
+    description: Field DateWhAdded from InvWarehouse
+  rma_qty_issued:
+    display: Rmaqtyissued
+    type: decimal
+    required: false
+    description: Field RmaQtyIssued from InvWarehouse
+  last_extended_cost:
+    display: Lastextendedcost
+    type: decimal
+    required: false
+    description: Field LastExtendedCost from InvWarehouse
+  order_policy:
+    display: Orderpolicy
+    type: string
+    required: false
+    description: Field OrderPolicy from InvWarehouse
+  major_order_mult:
+    display: Majorordermult
+    type: decimal
+    required: false
+    description: Field MajorOrderMult from InvWarehouse
+  minor_order_mult:
+    display: Minorordermult
+    type: decimal
+    required: false
+    description: Field MinorOrderMult from InvWarehouse
+  order_minimum:
+    display: Orderminimum
+    type: decimal
+    required: false
+    description: Field OrderMinimum from InvWarehouse
+  order_maximum:
+    display: Ordermaximum
+    type: decimal
+    required: false
+    description: Field OrderMaximum from InvWarehouse
+  order_fix_period:
+    display: Orderfixperiod
+    type: decimal
+    required: false
+    description: Field OrderFixPeriod from InvWarehouse
+  manual_cost_flag:
+    display: Manualcostflag
+    type: string
+    required: false
+    description: Field ManualCostFlag from InvWarehouse
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from InvWarehouse
+  manuf_lead_time:
+    display: Manufleadtime
+    type: decimal
+    required: false
+    description: Field ManufLeadTime from InvWarehouse
+  transfer_cost:
+    display: Transfercost
+    type: decimal
+    required: false
+    description: Field TransferCost from InvWarehouse
+  implosion_num:
+    display: Implosionnum
+    type: decimal
+    required: false
+    description: Field ImplosionNum from InvWarehouse
+  exclude_from_sched:
+    display: Excludefromsched
+    type: string
+    required: false
+    description: Field ExcludeFromSched from InvWarehouse
+  qty_wip_reserved:
+    display: Qtywipreserved
+    type: decimal
+    required: false
+    description: Field QtyWipReserved from InvWarehouse
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from InvWarehouse
+  bought_out_whs_lvl:
+    display: Boughtoutwhslvl
+    type: string
+    required: false
+    description: Field BoughtOutWhsLvl from InvWarehouse
+  dock_to_stock:
+    display: Docktostock
+    type: decimal
+    required: false
+    description: Field DockToStock from InvWarehouse
+  uses_pref_supplier:
+    display: Usesprefsupplier
+    type: string
+    required: false
+    description: Field UsesPrefSupplier from InvWarehouse
+  qty_allocated_to_pick:
+    display: Qtyallocatedtopick
+    type: decimal
+    required: false
+    description: Field QtyAllocatedToPick from InvWarehouse
+  production_bin:
+    display: Productionbin
+    type: string
+    required: false
+    description: Field ProductionBin from InvWarehouse

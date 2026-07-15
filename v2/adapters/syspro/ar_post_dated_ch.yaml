@@ -1,0 +1,11 @@
+concept: ar_post_dated_ch
+table: ArPostDatedCh
+alias: apdc
+fields:
+  customer: apdc.Customer
+  available_date: apdc.AvailableDate
+  cheque: apdc.Cheque
+  amount: apdc.Amount
+  narration: apdc.Narration
+  payment_run_flag: apdc.PaymentRunFlag
+  collector_number_ar: apdc.CollectorNumberAr

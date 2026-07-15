@@ -1,0 +1,24 @@
+concept: sqm_arc_test_status
+table: SqmArcTestStatus
+alias: sats
+fields:
+  inspect_type: sats.InspectType
+  inspect_number: sats.InspectNumber
+  lot: sats.Lot
+  sample_number: sats.SampleNumber
+  sample_test: sats.SampleTest
+  number_tests: sats.NumberTests
+  completed_tests: sats.CompletedTests
+  serial: sats.Serial
+  critical_status: sats.CriticalStatus
+  major_status: sats.MajorStatus
+  minor_status: sats.MinorStatus
+  test_complete: sats.TestComplete
+  inspector_code: sats.InspectorCode
+  test_status: sats.TestStatus
+  start_date: sats.StartDate
+  exp_end_date: sats.ExpEndDate
+  end_date: sats.EndDate
+  start_time: sats.StartTime
+  end_time: sats.EndTime
+  insp_narration: sats.InspNarration

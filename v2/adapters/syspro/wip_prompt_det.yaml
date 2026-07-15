@@ -1,0 +1,10 @@
+concept: wip_prompt_det
+table: WipPromptDet
+alias: wpd1
+fields:
+  format_code: wpd1.FormatCode
+  prompt_num: wpd1.PromptNum
+  prompt_req_mode: wpd1.PromptReqMode
+  alpha_default: wpd1.AlphaDefault
+  numeric_default: wpd1.NumericDefault
+  default_flag: wpd1.DefaultFlag

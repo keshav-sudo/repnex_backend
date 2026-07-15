@@ -1,0 +1,318 @@
+concept: wip_lab_jnl
+display_name: WipLabJnl
+module: work_in_progress
+description: Auto-generated representation of the physical table WipLabJnl.
+synonyms:
+- wiplabjnl
+- wip lab jnl
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from WipLabJnl
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from WipLabJnl
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipLabJnl
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from WipLabJnl
+  machine:
+    display: Machine
+    type: string
+    required: false
+    description: Field Machine from WipLabJnl
+  employee:
+    display: Employee
+    type: string
+    required: false
+    description: Field Employee from WipLabJnl
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from WipLabJnl
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from WipLabJnl
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipLabJnl
+  run_time:
+    display: Runtime
+    type: decimal
+    required: false
+    description: Field RunTime from WipLabJnl
+  set_up_time:
+    display: Setuptime
+    type: decimal
+    required: false
+    description: Field SetUpTime from WipLabJnl
+  start_up_time:
+    display: Startuptime
+    type: decimal
+    required: false
+    description: Field StartUpTime from WipLabJnl
+  teardown_time:
+    display: Teardowntime
+    type: decimal
+    required: false
+    description: Field TeardownTime from WipLabJnl
+  labour_value:
+    display: Labourvalue
+    type: decimal
+    required: false
+    description: Field LabourValue from WipLabJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from WipLabJnl
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from WipLabJnl
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from WipLabJnl
+  non_prod_code:
+    display: Nonprodcode
+    type: string
+    required: false
+    description: Field NonProdCode from WipLabJnl
+  qty_transferred:
+    display: Qtytransferred
+    type: decimal
+    required: false
+    description: Field QtyTransferred from WipLabJnl
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from WipLabJnl
+  distribution_upd:
+    display: Distributionupd
+    type: string
+    required: false
+    description: Field DistributionUpd from WipLabJnl
+  rate_ind:
+    display: Rateind
+    type: string
+    required: false
+    description: Field RateInd from WipLabJnl
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from WipLabJnl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WipLabJnl
+  set_up_rate:
+    display: Setuprate
+    type: decimal
+    required: false
+    description: Field SetUpRate from WipLabJnl
+  run_time_rate:
+    display: Runtimerate
+    type: decimal
+    required: false
+    description: Field RunTimeRate from WipLabJnl
+  fixed_oh_rate:
+    display: Fixedohrate
+    type: decimal
+    required: false
+    description: Field FixedOhRate from WipLabJnl
+  variable_oh_rate:
+    display: Variableohrate
+    type: decimal
+    required: false
+    description: Field VariableOhRate from WipLabJnl
+  start_up_rate:
+    display: Startuprate
+    type: decimal
+    required: false
+    description: Field StartUpRate from WipLabJnl
+  teardown_rate:
+    display: Teardownrate
+    type: decimal
+    required: false
+    description: Field TeardownRate from WipLabJnl
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from WipLabJnl
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from WipLabJnl
+  subcontract_op:
+    display: Subcontractop
+    type: string
+    required: false
+    description: Field SubcontractOp from WipLabJnl
+  payroll_extract:
+    display: Payrollextract
+    type: string
+    required: false
+    description: Field PayrollExtract from WipLabJnl
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from WipLabJnl
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipLabJnl
+  employee_rate_ind:
+    display: Employeerateind
+    type: string
+    required: false
+    description: Field EmployeeRateInd from WipLabJnl
+  pay_extract_flag:
+    display: Payextractflag
+    type: string
+    required: false
+    description: Field PayExtractFlag from WipLabJnl
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from WipLabJnl
+  add_reference:
+    display: Addreference
+    type: string
+    required: false
+    description: Field AddReference from WipLabJnl
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipLabJnl
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from WipLabJnl
+  gl_int_printed:
+    display: Glintprinted
+    type: string
+    required: false
+    description: Field GlIntPrinted from WipLabJnl
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from WipLabJnl
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from WipLabJnl
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from WipLabJnl
+  run_tim_gl_code:
+    display: Runtimglcode
+    type: string
+    required: false
+    description: Field RunTimGlCode from WipLabJnl
+  set_tim_gl_code:
+    display: Settimglcode
+    type: string
+    required: false
+    description: Field SetTimGlCode from WipLabJnl
+  start_up_tim_gl_code:
+    display: Startuptimglcode
+    type: string
+    required: false
+    description: Field StartUpTimGlCode from WipLabJnl
+  tear_down_tim_gl_code:
+    display: Teardowntimglcode
+    type: string
+    required: false
+    description: Field TearDownTimGlCode from WipLabJnl
+  run_tim_ana_entry:
+    display: Runtimanaentry
+    type: decimal
+    required: false
+    description: Field RunTimAnaEntry from WipLabJnl
+  set_tim_ana_entry:
+    display: Settimanaentry
+    type: decimal
+    required: false
+    description: Field SetTimAnaEntry from WipLabJnl
+  start_up_ana_entry:
+    display: Startupanaentry
+    type: decimal
+    required: false
+    description: Field StartUpAnaEntry from WipLabJnl
+  tear_down_ana_entry:
+    display: Teardownanaentry
+    type: decimal
+    required: false
+    description: Field TearDownAnaEntry from WipLabJnl
+  fix_overhead_gl_code:
+    display: Fixoverheadglcode
+    type: string
+    required: false
+    description: Field FixOverheadGlCode from WipLabJnl
+  var_overhead_gl_code:
+    display: Varoverheadglcode
+    type: string
+    required: false
+    description: Field VarOverheadGlCode from WipLabJnl
+  fix_over_ana_entry:
+    display: Fixoveranaentry
+    type: decimal
+    required: false
+    description: Field FixOverAnaEntry from WipLabJnl
+  var_over_ana_entry:
+    display: Varoveranaentry
+    type: decimal
+    required: false
+    description: Field VarOverAnaEntry from WipLabJnl
+  gl_int_level:
+    display: Glintlevel
+    type: string
+    required: false
+    description: Field GlIntLevel from WipLabJnl
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipLabJnl
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from WipLabJnl
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from WipLabJnl

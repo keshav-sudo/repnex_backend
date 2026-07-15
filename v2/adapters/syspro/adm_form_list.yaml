@@ -1,0 +1,7 @@
+concept: adm_form_list
+table: AdmFormList
+alias: afl
+fields:
+  form_type: afl.FormType
+  field_name: afl.FieldName
+  field_list: afl.FieldList

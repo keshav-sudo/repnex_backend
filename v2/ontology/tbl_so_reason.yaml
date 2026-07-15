@@ -1,0 +1,23 @@
+concept: tbl_so_reason
+display_name: TblSoReason
+module: other
+description: Auto-generated representation of the physical table TblSoReason.
+synonyms:
+- tblsoreason
+- tbl so reason
+header_attributes:
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from TblSoReason
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblSoReason
+  io_lost_sale_flag:
+    display: Iolostsaleflag
+    type: string
+    required: false
+    description: Field IoLostSaleFlag from TblSoReason

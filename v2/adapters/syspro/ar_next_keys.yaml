@@ -1,0 +1,6 @@
+concept: ar_next_keys
+table: ArNextKeys
+alias: ank1
+fields:
+  key_type: ank1.KeyType
+  key_next: ank1.KeyNext

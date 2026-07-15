@@ -1,0 +1,23 @@
+concept: adm_tax_fltr_country
+display_name: AdmTaxFltrCountry
+module: administration
+description: Auto-generated representation of the physical table AdmTaxFltrCountry.
+synonyms:
+- admtaxfltrcountry
+- adm tax fltr country
+header_attributes:
+  country_code:
+    display: Countrycode
+    type: string
+    required: false
+    description: Field CountryCode from AdmTaxFltrCountry
+  country_name:
+    display: Countryname
+    type: string
+    required: false
+    description: Field CountryName from AdmTaxFltrCountry
+  exclude_flag:
+    display: Excludeflag
+    type: string
+    required: false
+    description: Field ExcludeFlag from AdmTaxFltrCountry

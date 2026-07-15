@@ -1,0 +1,11 @@
+concept: inv_physical_unit
+table: InvPhysicalUnit
+alias: ipu
+fields:
+  physical_unit: ipu.PhysicalUnit
+  description: ipu.Description
+  unit_group: ipu.UnitGroup
+  unit_type: ipu.UnitType
+  base_code: ipu.BaseCode
+  base_conv_fact: ipu.BaseConvFact
+  base_mul_div: ipu.BaseMulDiv

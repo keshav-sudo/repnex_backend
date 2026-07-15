@@ -1,0 +1,40 @@
+concept: ap_invoice_reg
+table: ApInvoiceReg
+alias: air
+fields:
+  supplier: air.Supplier
+  invoice: air.Invoice
+  branch: air.Branch
+  entry_date: air.EntryDate
+  invoice_date: air.InvoiceDate
+  discount_date: air.DiscountDate
+  due_date: air.DueDate
+  reference: air.Reference
+  invoice_value: air.InvoiceValue
+  discount_value: air.DiscountValue
+  disc_active_flag: air.DiscActiveFlag
+  currency: air.Currency
+  exch_rate_at_entry: air.ExchRateAtEntry
+  mul_div: air.MulDiv
+  authorising_person: air.AuthorisingPerson
+  buyer: air.Buyer
+  date_invoice_sent: air.DateInvoiceSent
+  date_appr_or_purg: air.DateApprOrPurg
+  follow_up_date: air.FollowUpDate
+  department: air.Department
+  inv_regn_status: air.InvRegnStatus
+  invoice_modified: air.InvoiceModified
+  date_last_modified: air.DateLastModified
+  operator: air.Operator
+  reason_for_change: air.ReasonForChange
+  inv_applied_to_lct: air.InvAppliedToLct
+  currency_value: air.CurrencyValue
+  post_currency: air.PostCurrency
+  conv_rate: air.ConvRate
+  conv_mul_div: air.ConvMulDiv
+  account_cur: air.AccountCur
+  account_conv_rate: air.AccountConvRate
+  account_mul_div: air.AccountMulDiv
+  triang_currency: air.TriangCurrency
+  triang_rate: air.TriangRate
+  triang_mul_div: air.TriangMulDiv

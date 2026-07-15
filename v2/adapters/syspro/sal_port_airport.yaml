@@ -1,0 +1,6 @@
+concept: sal_port_airport
+table: SalPortAirport
+alias: spa
+fields:
+  port_airport: spa.PortAirport
+  name: spa.Name

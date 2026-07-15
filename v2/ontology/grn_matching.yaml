@@ -1,0 +1,78 @@
+concept: grn_matching
+display_name: GrnMatching
+module: other
+description: Auto-generated representation of the physical table GrnMatching.
+synonyms:
+- grnmatching
+- grn matching
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from GrnMatching
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from GrnMatching
+  transaction_type:
+    display: Transactiontype
+    type: string
+    required: false
+    description: Field TransactionType from GrnMatching
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from GrnMatching
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from GrnMatching
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from GrnMatching
+  ap_journal:
+    display: Apjournal
+    type: decimal
+    required: false
+    description: Field ApJournal from GrnMatching
+  sub_entry_number:
+    display: Subentrynumber
+    type: decimal
+    required: false
+    description: Field SubEntryNumber from GrnMatching
+  matched_date:
+    display: Matcheddate
+    type: date
+    required: false
+    description: Field MatchedDate from GrnMatching
+  matched_value:
+    display: Matchedvalue
+    type: decimal
+    required: false
+    description: Field MatchedValue from GrnMatching
+  matched_year:
+    display: Matchedyear
+    type: decimal
+    required: false
+    description: Field MatchedYear from GrnMatching
+  matched_month:
+    display: Matchedmonth
+    type: decimal
+    required: false
+    description: Field MatchedMonth from GrnMatching
+  matched_qty:
+    display: Matchedqty
+    type: decimal
+    required: false
+    description: Field MatchedQty from GrnMatching
+  transaction_code:
+    display: Transactioncode
+    type: string
+    required: false
+    description: Field TransactionCode from GrnMatching

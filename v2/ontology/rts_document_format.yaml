@@ -1,0 +1,33 @@
+concept: rts_document_format
+display_name: RtsDocumentFormat
+module: other
+description: Auto-generated representation of the physical table RtsDocumentFormat.
+synonyms:
+- rtsdocumentformat
+- rts document format
+header_attributes:
+  rts_document_type:
+    display: Rtsdocumenttype
+    type: string
+    required: false
+    description: Field RtsDocumentType from RtsDocumentFormat
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from RtsDocumentFormat
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from RtsDocumentFormat
+  format_info1:
+    display: Formatinfo1
+    type: string
+    required: false
+    description: Field FormatInfo1 from RtsDocumentFormat
+  format_info2:
+    display: Formatinfo2
+    type: string
+    required: false
+    description: Field FormatInfo2 from RtsDocumentFormat

@@ -1,0 +1,10 @@
+concept: cfg_sel_depend
+table: CfgSelDepend
+alias: csd
+fields:
+  product_code: csd.ProductCode
+  depend_value_flag: csd.DependValueFlag
+  option_num: csd.OptionNum
+  line: csd.Line
+  req_selection: csd.ReqSelection
+  req_criteria: csd.ReqCriteria

@@ -1,0 +1,8 @@
+concept: wip_overload_ctl
+table: WipOverloadCtl
+alias: woc
+fields:
+  operator: woc.Operator
+  start_date: woc.StartDate
+  incl_suggested_job: woc.InclSuggestedJob
+  end_date: woc.EndDate

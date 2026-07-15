@@ -1,0 +1,83 @@
+concept: wip_branch_transfer
+display_name: WipBranchTransfer
+module: work_in_progress
+description: Auto-generated representation of the physical table WipBranchTransfer.
+synonyms:
+- wipbranchtransfer
+- wip branch transfer
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipBranchTransfer
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from WipBranchTransfer
+  old_branch:
+    display: Oldbranch
+    type: string
+    required: false
+    description: Field OldBranch from WipBranchTransfer
+  old_wip_ctl_gl_code:
+    display: Oldwipctlglcode
+    type: string
+    required: false
+    description: Field OldWipCtlGlCode from WipBranchTransfer
+  new_branch:
+    display: Newbranch
+    type: string
+    required: false
+    description: Field NewBranch from WipBranchTransfer
+  new_wip_ctl_gl_code:
+    display: Newwipctlglcode
+    type: string
+    required: false
+    description: Field NewWipCtlGlCode from WipBranchTransfer
+  mat_cost:
+    display: Matcost
+    type: decimal
+    required: false
+    description: Field MatCost from WipBranchTransfer
+  lab_cost:
+    display: Labcost
+    type: decimal
+    required: false
+    description: Field LabCost from WipBranchTransfer
+  hrs_book:
+    display: Hrsbook
+    type: decimal
+    required: false
+    description: Field HrsBook from WipBranchTransfer
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from WipBranchTransfer
+  mat_journal:
+    display: Matjournal
+    type: decimal
+    required: false
+    description: Field MatJournal from WipBranchTransfer
+  lab_journal:
+    display: Labjournal
+    type: decimal
+    required: false
+    description: Field LabJournal from WipBranchTransfer
+  hrs_journal:
+    display: Hrsjournal
+    type: decimal
+    required: false
+    description: Field HrsJournal from WipBranchTransfer
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from WipBranchTransfer
+  post_month:
+    display: Postmonth
+    type: decimal
+    required: false
+    description: Field PostMonth from WipBranchTransfer

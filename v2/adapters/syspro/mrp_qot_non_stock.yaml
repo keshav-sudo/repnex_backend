@@ -1,0 +1,49 @@
+concept: mrp_qot_non_stock
+table: MrpQotNonStock
+alias: mqns
+fields:
+  non_stock_code: mqns.NonStockCode
+  description: mqns.Description
+  structure_setup: mqns.StructureSetup
+  purch_price_setup: mqns.PurchPriceSetup
+  uom: mqns.Uom
+  mass: mqns.Mass
+  volume: mqns.Volume
+  max_decimals: mqns.MaxDecimals
+  supplier: mqns.Supplier
+  product_class: mqns.ProductClass
+  tax_code: mqns.TaxCode
+  other_tax_code: mqns.OtherTaxCode
+  traceable_type: mqns.TraceableType
+  buyer: mqns.Buyer
+  planner: mqns.Planner
+  lead_time: mqns.LeadTime
+  part_category: mqns.PartCategory
+  specific_gravity: mqns.SpecificGravity
+  dock_to_stock: mqns.DockToStock
+  wip_ctl_gl_code: mqns.WipCtlGlCode
+  resource_code: mqns.ResourceCode
+  gst_tax_code: mqns.GstTaxCode
+  gst_included: mqns.GstIncluded
+  tariff_code: mqns.TariffCode
+  supplementary_unit: mqns.SupplementaryUnit
+  unit_cost: mqns.UnitCost
+  route_reqd1: mqns.RouteReqd1
+  route_reqd2: mqns.RouteReqd2
+  route_reqd3: mqns.RouteReqd3
+  route_reqd4: mqns.RouteReqd4
+  route_reqd5: mqns.RouteReqd5
+  route_reqd6: mqns.RouteReqd6
+  route_desc1: mqns.RouteDesc1
+  route_desc2: mqns.RouteDesc2
+  route_desc3: mqns.RouteDesc3
+  route_desc4: mqns.RouteDesc4
+  route_desc5: mqns.RouteDesc5
+  route_desc6: mqns.RouteDesc6
+  auto_code_flag: mqns.AutoCodeFlag
+  sales_order: mqns.SalesOrder
+  sales_order_line: mqns.SalesOrderLine
+  costing_method: mqns.CostingMethod
+  job_classification: mqns.JobClassification
+  with_tax_expense_type: mqns.WithTaxExpenseType
+  specific_gravity6: mqns.SpecificGravity6

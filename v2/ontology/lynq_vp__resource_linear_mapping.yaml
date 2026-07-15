@@ -1,0 +1,38 @@
+concept: lynq_vp__resource_linear_mapping
+display_name: Lynq VP ResourceLinearMapping
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_ResourceLinearMapping.
+synonyms:
+- lynq_vp_resourcelinearmapping
+- lynq vp  resource linear mapping
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_ResourceLinearMapping
+  vp_resource_id:
+    display: Vpresourceid
+    type: decimal
+    required: false
+    description: Field VPResourceID from Lynq_VP_ResourceLinearMapping
+  sys_resource_code:
+    display: Sysresourcecode
+    type: string
+    required: false
+    description: Field SysResourceCode from Lynq_VP_ResourceLinearMapping
+  schema_id:
+    display: Schemaid
+    type: decimal
+    required: false
+    description: Field SchemaID from Lynq_VP_ResourceLinearMapping
+  equiv_sys_res_qty:
+    display: Equivsysresqty
+    type: decimal
+    required: false
+    description: Field EquivSysResQty from Lynq_VP_ResourceLinearMapping
+  equiv_sys_res_hrs:
+    display: Equivsysreshrs
+    type: decimal
+    required: false
+    description: Field EquivSysResHrs from Lynq_VP_ResourceLinearMapping

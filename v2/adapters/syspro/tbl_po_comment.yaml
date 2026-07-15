@@ -1,0 +1,7 @@
+concept: tbl_po_comment
+table: TblPoComment
+alias: tpc
+fields:
+  comment_code: tpc.CommentCode
+  line: tpc.Line
+  comment: tpc.Comment

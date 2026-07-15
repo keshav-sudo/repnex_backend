@@ -1,0 +1,11 @@
+concept: sor_con_qty_disc_brk
+table: SorConQtyDiscBrk
+alias: scqdb
+fields:
+  contract_type: scqdb.ContractType
+  customer_buy_grp: scqdb.CustomerBuyGrp
+  stock_code: scqdb.StockCode
+  contract: scqdb.Contract
+  qty_break: scqdb.QtyBreak
+  qty_price: scqdb.QtyPrice
+  price_list: scqdb.PriceList

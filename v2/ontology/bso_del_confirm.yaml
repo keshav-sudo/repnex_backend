@@ -1,0 +1,88 @@
+concept: bso_del_confirm
+display_name: BsoDelConfirm
+module: other
+description: Auto-generated representation of the physical table BsoDelConfirm.
+synonyms:
+- bsodelconfirm
+- bso del confirm
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from BsoDelConfirm
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from BsoDelConfirm
+  cust_stock_code:
+    display: Custstockcode
+    type: string
+    required: false
+    description: Field CustStockCode from BsoDelConfirm
+  delivery_date:
+    display: Deliverydate
+    type: date
+    required: false
+    description: Field DeliveryDate from BsoDelConfirm
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from BsoDelConfirm
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from BsoDelConfirm
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from BsoDelConfirm
+  quantity_del:
+    display: Quantitydel
+    type: decimal
+    required: false
+    description: Field QuantityDel from BsoDelConfirm
+  quantity_rec:
+    display: Quantityrec
+    type: decimal
+    required: false
+    description: Field QuantityRec from BsoDelConfirm
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from BsoDelConfirm
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from BsoDelConfirm
+  posted_rel_mast:
+    display: Postedrelmast
+    type: string
+    required: false
+    description: Field PostedRelMast from BsoDelConfirm
+  cume_delivered:
+    display: Cumedelivered
+    type: decimal
+    required: false
+    description: Field CumeDelivered from BsoDelConfirm
+  cume_received:
+    display: Cumereceived
+    type: decimal
+    required: false
+    description: Field CumeReceived from BsoDelConfirm
+  del_note_num:
+    display: Delnotenum
+    type: string
+    required: false
+    description: Field DelNoteNum from BsoDelConfirm
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from BsoDelConfirm

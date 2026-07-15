@@ -1,0 +1,9 @@
+concept: sqm_nc_narration
+table: SqmNcNarration
+alias: snn
+fields:
+  conform_number: snn.ConformNumber
+  text_type: snn.TextType
+  language_code: snn.LanguageCode
+  line: snn.Line
+  text: snn.Text

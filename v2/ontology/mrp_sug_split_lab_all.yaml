@@ -1,0 +1,378 @@
+concept: mrp_sug_split_lab_all
+display_name: MrpSugSplitLabAll
+module: mrp
+description: Auto-generated representation of the physical table MrpSugSplitLabAll.
+synonyms:
+- mrpsugsplitlaball
+- mrp sug split lab all
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpSugSplitLabAll
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from MrpSugSplitLabAll
+  operation_split:
+    display: Operationsplit
+    type: decimal
+    required: false
+    description: Field OperationSplit from MrpSugSplitLabAll
+  subcontract_op:
+    display: Subcontractop
+    type: string
+    required: false
+    description: Field SubcontractOp from MrpSugSplitLabAll
+  i_machine:
+    display: Imachine
+    type: string
+    required: false
+    description: Field IMachine from MrpSugSplitLabAll
+  i_exp_unit_run_tim:
+    display: Iexpunitruntim
+    type: decimal
+    required: false
+    description: Field IExpUnitRunTim from MrpSugSplitLabAll
+  i_exp_set_up_time:
+    display: Iexpsetuptime
+    type: decimal
+    required: false
+    description: Field IExpSetUpTime from MrpSugSplitLabAll
+  i_exp_startup_time:
+    display: Iexpstartuptime
+    type: decimal
+    required: false
+    description: Field IExpStartupTime from MrpSugSplitLabAll
+  i_exp_shutdown_tim:
+    display: Iexpshutdowntim
+    type: decimal
+    required: false
+    description: Field IExpShutdownTim from MrpSugSplitLabAll
+  i_wait_time:
+    display: Iwaittime
+    type: decimal
+    required: false
+    description: Field IWaitTime from MrpSugSplitLabAll
+  i_wc_rate_ind:
+    display: Iwcrateind
+    type: decimal
+    required: false
+    description: Field IWcRateInd from MrpSugSplitLabAll
+  i_startup_qty:
+    display: Istartupqty
+    type: decimal
+    required: false
+    description: Field IStartupQty from MrpSugSplitLabAll
+  i_capacity_reqd:
+    display: Icapacityreqd
+    type: decimal
+    required: false
+    description: Field ICapacityReqd from MrpSugSplitLabAll
+  i_max_work_operators:
+    display: Imaxworkoperators
+    type: decimal
+    required: false
+    description: Field IMaxWorkOperators from MrpSugSplitLabAll
+  i_max_prod_units:
+    display: Imaxprodunits
+    type: decimal
+    required: false
+    description: Field IMaxProdUnits from MrpSugSplitLabAll
+  sub_lead_time:
+    display: Subleadtime
+    type: decimal
+    required: false
+    description: Field SubLeadTime from MrpSugSplitLabAll
+  sub_dock_to_stock:
+    display: Subdocktostock
+    type: decimal
+    required: false
+    description: Field SubDockToStock from MrpSugSplitLabAll
+  sub_offsite_days:
+    display: Suboffsitedays
+    type: decimal
+    required: false
+    description: Field SubOffsiteDays from MrpSugSplitLabAll
+  operation_status:
+    display: Operationstatus
+    type: string
+    required: false
+    description: Field OperationStatus from MrpSugSplitLabAll
+  unit_value_reqd:
+    display: Unitvaluereqd
+    type: decimal
+    required: false
+    description: Field UnitValueReqd from MrpSugSplitLabAll
+  run_time_issued:
+    display: Runtimeissued
+    type: decimal
+    required: false
+    description: Field RunTimeIssued from MrpSugSplitLabAll
+  set_up_issued:
+    display: Setupissued
+    type: decimal
+    required: false
+    description: Field SetUpIssued from MrpSugSplitLabAll
+  start_up_issued:
+    display: Startupissued
+    type: decimal
+    required: false
+    description: Field StartUpIssued from MrpSugSplitLabAll
+  shutdown_issued:
+    display: Shutdownissued
+    type: decimal
+    required: false
+    description: Field ShutdownIssued from MrpSugSplitLabAll
+  value_issued:
+    display: Valueissued
+    type: decimal
+    required: false
+    description: Field ValueIssued from MrpSugSplitLabAll
+  pieces_completed:
+    display: Piecescompleted
+    type: decimal
+    required: false
+    description: Field PiecesCompleted from MrpSugSplitLabAll
+  oper_completed:
+    display: Opercompleted
+    type: string
+    required: false
+    description: Field OperCompleted from MrpSugSplitLabAll
+  qty_completed:
+    display: Qtycompleted
+    type: decimal
+    required: false
+    description: Field QtyCompleted from MrpSugSplitLabAll
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from MrpSugSplitLabAll
+  last_scrap_reason:
+    display: Lastscrapreason
+    type: string
+    required: false
+    description: Field LastScrapReason from MrpSugSplitLabAll
+  planned_start_date:
+    display: Plannedstartdate
+    type: date
+    required: false
+    description: Field PlannedStartDate from MrpSugSplitLabAll
+  planned_end_date:
+    display: Plannedenddate
+    type: date
+    required: false
+    description: Field PlannedEndDate from MrpSugSplitLabAll
+  scheduled_start_date:
+    display: Scheduledstartdate
+    type: date
+    required: false
+    description: Field ScheduledStartDate from MrpSugSplitLabAll
+  scheduled_start_time:
+    display: Scheduledstarttime
+    type: decimal
+    required: false
+    description: Field ScheduledStartTime from MrpSugSplitLabAll
+  scheduled_end_date:
+    display: Scheduledenddate
+    type: date
+    required: false
+    description: Field ScheduledEndDate from MrpSugSplitLabAll
+  scheduled_end_time:
+    display: Scheduledendtime
+    type: decimal
+    required: false
+    description: Field ScheduledEndTime from MrpSugSplitLabAll
+  actual_start_date:
+    display: Actualstartdate
+    type: date
+    required: false
+    description: Field ActualStartDate from MrpSugSplitLabAll
+  actual_finish_date:
+    display: Actualfinishdate
+    type: date
+    required: false
+    description: Field ActualFinishDate from MrpSugSplitLabAll
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from MrpSugSplitLabAll
+  work_centre_desc:
+    display: Workcentredesc
+    type: string
+    required: false
+    description: Field WorkCentreDesc from MrpSugSplitLabAll
+  elapsed_time:
+    display: Elapsedtime
+    type: decimal
+    required: false
+    description: Field ElapsedTime from MrpSugSplitLabAll
+  movement_time:
+    display: Movementtime
+    type: decimal
+    required: false
+    description: Field MovementTime from MrpSugSplitLabAll
+  unit_num_of_pieces:
+    display: Unitnumofpieces
+    type: decimal
+    required: false
+    description: Field UnitNumOfPieces from MrpSugSplitLabAll
+  tool_set:
+    display: Toolset
+    type: string
+    required: false
+    description: Field ToolSet from MrpSugSplitLabAll
+  tool_set_qty:
+    display: Toolsetqty
+    type: decimal
+    required: false
+    description: Field ToolSetQty from MrpSugSplitLabAll
+  tool_consumption:
+    display: Toolconsumption
+    type: decimal
+    required: false
+    description: Field ToolConsumption from MrpSugSplitLabAll
+  capacity_issued:
+    display: Capacityissued
+    type: decimal
+    required: false
+    description: Field CapacityIssued from MrpSugSplitLabAll
+  op_comp_via_job:
+    display: Opcompviajob
+    type: string
+    required: false
+    description: Field OpCompViaJob from MrpSugSplitLabAll
+  transfer_qty_or_pct:
+    display: Transferqtyorpct
+    type: string
+    required: false
+    description: Field TransferQtyOrPct from MrpSugSplitLabAll
+  transfer_qty_pct:
+    display: Transferqtypct
+    type: decimal
+    required: false
+    description: Field TransferQtyPct from MrpSugSplitLabAll
+  parent_qty_planned:
+    display: Parentqtyplanned
+    type: decimal
+    required: false
+    description: Field ParentQtyPlanned from MrpSugSplitLabAll
+  oper_yield_pct:
+    display: Operyieldpct
+    type: decimal
+    required: false
+    description: Field OperYieldPct from MrpSugSplitLabAll
+  oper_yield_qty:
+    display: Operyieldqty
+    type: decimal
+    required: false
+    description: Field OperYieldQty from MrpSugSplitLabAll
+  parent_iss_qty:
+    display: Parentissqty
+    type: decimal
+    required: false
+    description: Field ParentIssQty from MrpSugSplitLabAll
+  i_time_taken:
+    display: Itimetaken
+    type: decimal
+    required: false
+    description: Field ITimeTaken from MrpSugSplitLabAll
+  i_quantity:
+    display: Iquantity
+    type: decimal
+    required: false
+    description: Field IQuantity from MrpSugSplitLabAll
+  max_op_span:
+    display: Maxopspan
+    type: decimal
+    required: false
+    description: Field MaxOpSpan from MrpSugSplitLabAll
+  op_slack:
+    display: Opslack
+    type: decimal
+    required: false
+    description: Field OpSlack from MrpSugSplitLabAll
+  i_startup_qty_ent:
+    display: Istartupqtyent
+    type: decimal
+    required: false
+    description: Field IStartupQtyEnt from MrpSugSplitLabAll
+  i_quantity_ent:
+    display: Iquantityent
+    type: decimal
+    required: false
+    description: Field IQuantityEnt from MrpSugSplitLabAll
+  i_exp_unit_run_tim_ent:
+    display: Iexpunitruntiment
+    type: decimal
+    required: false
+    description: Field IExpUnitRunTimEnt from MrpSugSplitLabAll
+  i_time_taken_ent:
+    display: Itimetakenent
+    type: decimal
+    required: false
+    description: Field ITimeTakenEnt from MrpSugSplitLabAll
+  qty_scrapped_ent:
+    display: Qtyscrappedent
+    type: decimal
+    required: false
+    description: Field QtyScrappedEnt from MrpSugSplitLabAll
+  transfer_qty_pct_ent:
+    display: Transferqtypctent
+    type: decimal
+    required: false
+    description: Field TransferQtyPctEnt from MrpSugSplitLabAll
+  parent_qty_plan_ent:
+    display: Parentqtyplanent
+    type: decimal
+    required: false
+    description: Field ParentQtyPlanEnt from MrpSugSplitLabAll
+  oper_yield_qty_ent:
+    display: Operyieldqtyent
+    type: decimal
+    required: false
+    description: Field OperYieldQtyEnt from MrpSugSplitLabAll
+  par_iss_qty_ent:
+    display: Parissqtyent
+    type: decimal
+    required: false
+    description: Field ParIssQtyEnt from MrpSugSplitLabAll
+  resource_mask:
+    display: Resourcemask
+    type: string
+    required: false
+    description: Field ResourceMask from MrpSugSplitLabAll
+  sch_start_run_date:
+    display: Schstartrundate
+    type: date
+    required: false
+    description: Field SchStartRunDate from MrpSugSplitLabAll
+  sch_start_run_time:
+    display: Schstartruntime
+    type: decimal
+    required: false
+    description: Field SchStartRunTime from MrpSugSplitLabAll
+  scheduled_machine:
+    display: Scheduledmachine
+    type: string
+    required: false
+    description: Field ScheduledMachine from MrpSugSplitLabAll
+  schedule_status:
+    display: Schedulestatus
+    type: string
+    required: false
+    description: Field ScheduleStatus from MrpSugSplitLabAll
+  op_split_flag:
+    display: Opsplitflag
+    type: string
+    required: false
+    description: Field OpSplitFlag from MrpSugSplitLabAll
+  max_op_delay:
+    display: Maxopdelay
+    type: decimal
+    required: false
+    description: Field MaxOpDelay from MrpSugSplitLabAll

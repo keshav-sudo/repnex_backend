@@ -1,0 +1,13 @@
+concept: srq_line_media
+table: SrqLineMedia
+alias: slm
+fields:
+  rfq_reference: slm.RfqReference
+  rfq_line: slm.RfqLine
+  entry_number: slm.EntryNumber
+  date_media_added: slm.DateMediaAdded
+  time_media_added: slm.TimeMediaAdded
+  media: slm.Media
+  media_file_name: slm.MediaFileName
+  media_file_extension: slm.MediaFileExtension
+  media_file_size: slm.MediaFileSize

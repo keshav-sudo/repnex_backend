@@ -1,0 +1,12 @@
+concept: srq_master_media
+table: SrqMasterMedia
+alias: smm
+fields:
+  rfq_reference: smm.RfqReference
+  entry_number: smm.EntryNumber
+  date_media_added: smm.DateMediaAdded
+  time_media_added: smm.TimeMediaAdded
+  media: smm.Media
+  media_file_name: smm.MediaFileName
+  media_file_extension: smm.MediaFileExtension
+  media_file_size: smm.MediaFileSize

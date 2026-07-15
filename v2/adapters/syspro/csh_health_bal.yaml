@@ -1,0 +1,13 @@
+concept: csh_health_bal
+table: CshHealthBal
+alias: chb
+fields:
+  run_date_time: chb.RunDateTime
+  bank: chb.Bank
+  type: chb.Type
+  hcheck_year: chb.HcheckYear
+  hcheck_month: chb.HcheckMonth
+  bank_value: chb.BankValue
+  calc_value: chb.CalcValue
+  diff_value: chb.DiffValue
+  message: chb.Message

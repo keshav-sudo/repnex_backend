@@ -1,0 +1,10 @@
+concept: diag_user_columns
+table: DiagUserColumns
+alias: duc
+fields:
+  table_name: duc.TableName
+  column_name: duc.ColumnName
+  data_type: duc.DataType
+  can_be_null: duc.CanBeNull
+  collation: duc.Collation
+  create_def: duc.CreateDef

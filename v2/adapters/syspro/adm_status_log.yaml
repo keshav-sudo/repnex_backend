@@ -1,0 +1,17 @@
+concept: adm_status_log
+table: AdmStatusLog
+alias: asl1
+fields:
+  status_cur_date: asl1.StatusCurDate
+  status_cur_time: asl1.StatusCurTime
+  status_cur_line: asl1.StatusCurLine
+  status_entity: asl1.StatusEntity
+  status_code: asl1.StatusCode
+  status_activity_flag: asl1.StatusActivityFlag
+  status_act_type_flag: asl1.StatusActTypeFlag
+  operator: asl1.Operator
+  adm_key_field: asl1.AdmKeyField
+  blocked_flag: asl1.BlockedFlag
+  status_business_proc: asl1.StatusBusinessProc
+  status_process_flag: asl1.StatusProcessFlag
+  status_comment: asl1.StatusComment

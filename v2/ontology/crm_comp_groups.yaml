@@ -1,0 +1,33 @@
+concept: crm_comp_groups
+display_name: CrmCompGroups
+module: crm
+description: Auto-generated representation of the physical table CrmCompGroups.
+synonyms:
+- crmcompgroups
+- crm comp groups
+header_attributes:
+  complaint_group:
+    display: Complaintgroup
+    type: string
+    required: false
+    description: Field ComplaintGroup from CrmCompGroups
+  group_name:
+    display: Groupname
+    type: string
+    required: false
+    description: Field GroupName from CrmCompGroups
+  group_desc:
+    display: Groupdesc
+    type: string
+    required: false
+    description: Field GroupDesc from CrmCompGroups
+  group_owner:
+    display: Groupowner
+    type: string
+    required: false
+    description: Field GroupOwner from CrmCompGroups
+  owner_branch:
+    display: Ownerbranch
+    type: string
+    required: false
+    description: Field OwnerBranch from CrmCompGroups

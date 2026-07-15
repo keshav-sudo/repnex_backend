@@ -1,0 +1,15 @@
+concept: sal_history_summary
+table: SalHistorySummary
+alias: shs1
+fields:
+  sequencetype: shs1.Sequencetype
+  sequence1: shs1.Sequence1
+  sequence2: shs1.Sequence2
+  sequence3: shs1.Sequence3
+  trn_year: shs1.TrnYear
+  trn_month: shs1.TrnMonth
+  sales_value: shs1.SalesValue
+  cost_value: shs1.CostValue
+  quantity: shs1.Quantity
+  mass: shs1.Mass
+  volume: shs1.Volume

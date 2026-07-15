@@ -1,0 +1,7 @@
+concept: crm_comp_routing
+table: CrmCompRouting
+alias: ccr
+fields:
+  routing_id: ccr.RoutingId
+  route_reason: ccr.RouteReason
+  esclated_flag: ccr.EsclatedFlag

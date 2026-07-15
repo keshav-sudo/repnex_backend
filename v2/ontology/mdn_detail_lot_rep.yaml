@@ -1,0 +1,83 @@
+concept: mdn_detail_lot_rep
+display_name: MdnDetailLotRep
+module: other
+description: Auto-generated representation of the physical table MdnDetailLotRep.
+synonyms:
+- mdndetaillotrep
+- mdn detail lot rep
+header_attributes:
+  key_invoice:
+    display: Keyinvoice
+    type: string
+    required: false
+    description: Field KeyInvoice from MdnDetailLotRep
+  key_dispatch_note:
+    display: Keydispatchnote
+    type: string
+    required: false
+    description: Field KeyDispatchNote from MdnDetailLotRep
+  key_dispatch_line:
+    display: Keydispatchline
+    type: decimal
+    required: false
+    description: Field KeyDispatchLine from MdnDetailLotRep
+  key_record_count:
+    display: Keyrecordcount
+    type: decimal
+    required: false
+    description: Field KeyRecordCount from MdnDetailLotRep
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from MdnDetailLotRep
+  dispatch_note_line:
+    display: Dispatchnoteline
+    type: decimal
+    required: false
+    description: Field DispatchNoteLine from MdnDetailLotRep
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MdnDetailLotRep
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MdnDetailLotRep
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from MdnDetailLotRep
+  stock_qty_to_ship:
+    display: Stockqtytoship
+    type: decimal
+    required: false
+    description: Field StockQtyToShip from MdnDetailLotRep
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from MdnDetailLotRep
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MdnDetailLotRep
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MdnDetailLotRep
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from MdnDetailLotRep
+  lot_expiry_date:
+    display: Lotexpirydate
+    type: date
+    required: false
+    description: Field LotExpiryDate from MdnDetailLotRep

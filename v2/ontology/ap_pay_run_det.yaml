@@ -1,0 +1,333 @@
+concept: ap_pay_run_det
+display_name: ApPayRunDet
+module: accounts_payable
+description: Auto-generated representation of the physical table ApPayRunDet.
+synonyms:
+- appayrundet
+- ap pay run det
+header_attributes:
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ApPayRunDet
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApPayRunDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApPayRunDet
+  gross_pay_value:
+    display: Grosspayvalue
+    type: decimal
+    required: false
+    description: Field GrossPayValue from ApPayRunDet
+  disc_pay_value:
+    display: Discpayvalue
+    type: decimal
+    required: false
+    description: Field DiscPayValue from ApPayRunDet
+  with_tax_value:
+    display: Withtaxvalue
+    type: decimal
+    required: false
+    description: Field WithTaxValue from ApPayRunDet
+  net_pay_value:
+    display: Netpayvalue
+    type: decimal
+    required: false
+    description: Field NetPayValue from ApPayRunDet
+  cheque:
+    display: Cheque
+    type: string
+    required: false
+    description: Field Cheque from ApPayRunDet
+  cheque_date:
+    display: Chequedate
+    type: date
+    required: false
+    description: Field ChequeDate from ApPayRunDet
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ApPayRunDet
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from ApPayRunDet
+  discount_date:
+    display: Discountdate
+    type: date
+    required: false
+    description: Field DiscountDate from ApPayRunDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ApPayRunDet
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ApPayRunDet
+  invoice_type:
+    display: Invoicetype
+    type: string
+    required: false
+    description: Field InvoiceType from ApPayRunDet
+  cb_jnl_updated:
+    display: Cbjnlupdated
+    type: string
+    required: false
+    description: Field CbJnlUpdated from ApPayRunDet
+  post_value:
+    display: Postvalue
+    type: decimal
+    required: false
+    description: Field PostValue from ApPayRunDet
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ApPayRunDet
+  post_conv_rate:
+    display: Postconvrate
+    type: decimal
+    required: false
+    description: Field PostConvRate from ApPayRunDet
+  post_mul_div:
+    display: Postmuldiv
+    type: string
+    required: false
+    description: Field PostMulDiv from ApPayRunDet
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ApPayRunDet
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from ApPayRunDet
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from ApPayRunDet
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ApPayRunDet
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from ApPayRunDet
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ApPayRunDet
+  pay_conv_rate:
+    display: Payconvrate
+    type: decimal
+    required: false
+    description: Field PayConvRate from ApPayRunDet
+  pay_run_status:
+    display: Payrunstatus
+    type: string
+    required: false
+    description: Field PayRunStatus from ApPayRunDet
+  negative_flag:
+    display: Negativeflag
+    type: string
+    required: false
+    description: Field NegativeFlag from ApPayRunDet
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from ApPayRunDet
+  ch_register:
+    display: Chregister
+    type: decimal
+    required: false
+    description: Field ChRegister from ApPayRunDet
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApPayRunDet
+  chk_voided:
+    display: Chkvoided
+    type: string
+    required: false
+    description: Field ChkVoided from ApPayRunDet
+  tax_portion_disc:
+    display: Taxportiondisc
+    type: decimal
+    required: false
+    description: Field TaxPortionDisc from ApPayRunDet
+  qst_portion_disc:
+    display: Qstportiondisc
+    type: decimal
+    required: false
+    description: Field QstPortionDisc from ApPayRunDet
+  pay_year:
+    display: Payyear
+    type: decimal
+    required: false
+    description: Field PayYear from ApPayRunDet
+  pay_month:
+    display: Paymonth
+    type: decimal
+    required: false
+    description: Field PayMonth from ApPayRunDet
+  first_tax_code:
+    display: Firsttaxcode
+    type: string
+    required: false
+    description: Field FirstTaxCode from ApPayRunDet
+  xref_payment_number:
+    display: Xrefpaymentnumber
+    type: string
+    required: false
+    description: Field XrefPaymentNumber from ApPayRunDet
+  xref_payment_type:
+    display: Xrefpaymenttype
+    type: string
+    required: false
+    description: Field XrefPaymentType from ApPayRunDet
+  with_tax_rate:
+    display: Withtaxrate
+    type: decimal
+    required: false
+    description: Field WithTaxRate from ApPayRunDet
+  with_tax_code:
+    display: Withtaxcode
+    type: string
+    required: false
+    description: Field WithTaxCode from ApPayRunDet
+  with_taxable_value:
+    display: Withtaxablevalue
+    type: decimal
+    required: false
+    description: Field WithTaxableValue from ApPayRunDet
+  supplier_name:
+    display: Suppliername
+    type: string
+    required: false
+    description: Field SupplierName from ApPayRunDet
+  discount_tax_code:
+    display: Discounttaxcode
+    type: string
+    required: false
+    description: Field DiscountTaxCode from ApPayRunDet
+  discount_qst_code:
+    display: Discountqstcode
+    type: string
+    required: false
+    description: Field DiscountQstCode from ApPayRunDet
+  payment_reference:
+    display: Paymentreference
+    type: string
+    required: false
+    description: Field PaymentReference from ApPayRunDet
+  total_adjustments:
+    display: Totaladjustments
+    type: decimal
+    required: false
+    description: Field TotalAdjustments from ApPayRunDet
+  mult_cur_pay:
+    display: Multcurpay
+    type: string
+    required: false
+    description: Field MultCurPay from ApPayRunDet
+  pay_grs_value:
+    display: Paygrsvalue
+    type: decimal
+    required: false
+    description: Field PayGrsValue from ApPayRunDet
+  pay_net_value:
+    display: Paynetvalue
+    type: decimal
+    required: false
+    description: Field PayNetValue from ApPayRunDet
+  pay_with_value:
+    display: Paywithvalue
+    type: decimal
+    required: false
+    description: Field PayWithValue from ApPayRunDet
+  pay_dsc_value:
+    display: Paydscvalue
+    type: decimal
+    required: false
+    description: Field PayDscValue from ApPayRunDet
+  pay_tax_value:
+    display: Paytaxvalue
+    type: decimal
+    required: false
+    description: Field PayTaxValue from ApPayRunDet
+  pay_tax_value2:
+    display: Paytaxvalue2
+    type: decimal
+    required: false
+    description: Field PayTaxValue2 from ApPayRunDet
+  pay_currency:
+    display: Paycurrency
+    type: string
+    required: false
+    description: Field PayCurrency from ApPayRunDet
+  pay_conv_rte:
+    display: Payconvrte
+    type: decimal
+    required: false
+    description: Field PayConvRte from ApPayRunDet
+  pay_post_mul_div:
+    display: Paypostmuldiv
+    type: string
+    required: false
+    description: Field PayPostMulDiv from ApPayRunDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApPayRunDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ApPayRunDet
+  sub_entry:
+    display: Subentry
+    type: decimal
+    required: false
+    description: Field SubEntry from ApPayRunDet
+  tax_based_inv:
+    display: Taxbasedinv
+    type: string
+    required: false
+    description: Field TaxBasedInv from ApPayRunDet
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ApPayRunDet
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ApPayRunDet
+  inv_pay_mul_div:
+    display: Invpaymuldiv
+    type: string
+    required: false
+    description: Field InvPayMulDiv from ApPayRunDet

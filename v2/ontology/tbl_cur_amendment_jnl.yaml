@@ -1,0 +1,73 @@
+concept: tbl_cur_amendment_jnl
+display_name: TblCurAmendmentJnl
+module: other
+description: Auto-generated representation of the physical table TblCurAmendmentJnl.
+synonyms:
+- tblcuramendmentjnl
+- tbl cur amendment jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from TblCurAmendmentJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from TblCurAmendmentJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from TblCurAmendmentJnl
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from TblCurAmendmentJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from TblCurAmendmentJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from TblCurAmendmentJnl
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from TblCurAmendmentJnl
+  before:
+    display: Before
+    type: string
+    required: false
+    description: Field Before from TblCurAmendmentJnl
+  after:
+    display: After
+    type: string
+    required: false
+    description: Field After from TblCurAmendmentJnl
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from TblCurAmendmentJnl
+  currency_rate_type:
+    display: Currencyratetype
+    type: string
+    required: false
+    description: Field CurrencyRateType from TblCurAmendmentJnl
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from TblCurAmendmentJnl
+  effective_entry:
+    display: Effectiveentry
+    type: decimal
+    required: false
+    description: Field EffectiveEntry from TblCurAmendmentJnl

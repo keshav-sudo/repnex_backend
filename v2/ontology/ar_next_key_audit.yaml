@@ -1,0 +1,58 @@
+concept: ar_next_key_audit
+display_name: ArNextKeyAudit
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArNextKeyAudit.
+synonyms:
+- arnextkeyaudit
+- ar next key audit
+header_attributes:
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from ArNextKeyAudit
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from ArNextKeyAudit
+  post_period:
+    display: Postperiod
+    type: decimal
+    required: false
+    description: Field PostPeriod from ArNextKeyAudit
+  key_issued:
+    display: Keyissued
+    type: decimal
+    required: false
+    description: Field KeyIssued from ArNextKeyAudit
+  allocated_by_program:
+    display: Allocatedbyprogram
+    type: string
+    required: false
+    description: Field AllocatedByProgram from ArNextKeyAudit
+  called_from_program:
+    display: Calledfromprogram
+    type: string
+    required: false
+    description: Field CalledFromProgram from ArNextKeyAudit
+  allocated_date:
+    display: Allocateddate
+    type: date
+    required: false
+    description: Field AllocatedDate from ArNextKeyAudit
+  allocated_by_oper:
+    display: Allocatedbyoper
+    type: string
+    required: false
+    description: Field AllocatedByOper from ArNextKeyAudit
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from ArNextKeyAudit
+  closed_date:
+    display: Closeddate
+    type: date
+    required: false
+    description: Field ClosedDate from ArNextKeyAudit

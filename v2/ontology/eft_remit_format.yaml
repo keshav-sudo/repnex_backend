@@ -1,0 +1,23 @@
+concept: eft_remit_format
+display_name: EftRemitFormat
+module: other
+description: Auto-generated representation of the physical table EftRemitFormat.
+synonyms:
+- eftremitformat
+- eft remit format
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from EftRemitFormat
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from EftRemitFormat
+  format_info:
+    display: Formatinfo
+    type: string
+    required: false
+    description: Field FormatInfo from EftRemitFormat

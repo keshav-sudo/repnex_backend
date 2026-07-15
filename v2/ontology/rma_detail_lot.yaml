@@ -1,0 +1,53 @@
+concept: rma_detail_lot
+display_name: RmaDetailLot
+module: other
+description: Auto-generated representation of the physical table RmaDetailLot.
+synonyms:
+- rmadetaillot
+- rma detail lot
+header_attributes:
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RmaDetailLot
+  rma_line_number:
+    display: Rmalinenumber
+    type: decimal
+    required: false
+    description: Field RmaLineNumber from RmaDetailLot
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from RmaDetailLot
+  stock_qty_to_receive:
+    display: Stockqtytoreceive
+    type: decimal
+    required: false
+    description: Field StockQtyToReceive from RmaDetailLot
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from RmaDetailLot
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from RmaDetailLot
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from RmaDetailLot
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from RmaDetailLot
+  lot_expiry_date:
+    display: Lotexpirydate
+    type: date
+    required: false
+    description: Field LotExpiryDate from RmaDetailLot

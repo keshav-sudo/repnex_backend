@@ -1,0 +1,10 @@
+concept: bom_shift_team
+table: BomShiftTeam
+alias: bst
+fields:
+  shift_team: bst.ShiftTeam
+  description: bst.Description
+  site_code: bst.SiteCode
+  wip_branch: bst.WipBranch
+  shift_team_contact: bst.ShiftTeamContact
+  telephone: bst.Telephone

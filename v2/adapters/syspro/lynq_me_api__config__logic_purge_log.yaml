@@ -1,0 +1,9 @@
+concept: lynq_me_api__config__logic_purge_log
+table: Lynq_ME_API_Config_LogicPurgeLog
+alias: lmeapiclpl
+fields:
+  id: lmeapiclpl.Id
+  log_type_id: lmeapiclpl.LogTypeId
+  created_date_utc: lmeapiclpl.CreatedDateUTC
+  message: lmeapiclpl.Message
+  stack_trace: lmeapiclpl.StackTrace

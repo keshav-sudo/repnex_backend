@@ -1,0 +1,103 @@
+concept: wip_part_book
+display_name: WipPartBook
+module: work_in_progress
+description: Auto-generated representation of the physical table WipPartBook.
+synonyms:
+- wippartbook
+- wip part book
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipPartBook
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from WipPartBook
+  qty_supplied:
+    display: Qtysupplied
+    type: decimal
+    required: false
+    description: Field QtySupplied from WipPartBook
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from WipPartBook
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipPartBook
+  labour_value:
+    display: Labourvalue
+    type: decimal
+    required: false
+    description: Field LabourValue from WipPartBook
+  material_value:
+    display: Materialvalue
+    type: decimal
+    required: false
+    description: Field MaterialValue from WipPartBook
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from WipPartBook
+  add_reference:
+    display: Addreference
+    type: string
+    required: false
+    description: Field AddReference from WipPartBook
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from WipPartBook
+  master_job:
+    display: Masterjob
+    type: string
+    required: false
+    description: Field MasterJob from WipPartBook
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipPartBook
+  co_product:
+    display: Coproduct
+    type: string
+    required: false
+    description: Field CoProduct from WipPartBook
+  qty_supplied_ent:
+    display: Qtysuppliedent
+    type: decimal
+    required: false
+    description: Field QtySuppliedEnt from WipPartBook
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from WipPartBook
+  gl_int_printed:
+    display: Glintprinted
+    type: string
+    required: false
+    description: Field GlIntPrinted from WipPartBook
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from WipPartBook
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from WipPartBook
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from WipPartBook

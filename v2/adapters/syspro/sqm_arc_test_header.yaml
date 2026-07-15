@@ -1,0 +1,11 @@
+concept: sqm_arc_test_header
+table: SqmArcTestHeader
+alias: sath
+fields:
+  test_name: sath.TestName
+  test_version: sath.TestVersion
+  critical_req: sath.CriticalReq
+  major_req: sath.MajorReq
+  minor_req: sath.MinorReq
+  file_contents: sath.FileContents
+  script_contents: sath.ScriptContents

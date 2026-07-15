@@ -1,0 +1,14 @@
+concept: iop_col_archive
+table: IopColArchive
+alias: ica
+fields:
+  collection: ica.Collection
+  instance: ica.Instance
+  date_prepared: ica.DatePrepared
+  forecast_date: ica.ForecastDate
+  forecast_qty: ica.ForecastQty
+  cost_value: ica.CostValue
+  sales_value: ica.SalesValue
+  reference: ica.Reference
+  forecast_batch: ica.ForecastBatch
+  operator_code: ica.OperatorCode

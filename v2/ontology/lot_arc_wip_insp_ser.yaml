@@ -1,0 +1,133 @@
+concept: lot_arc_wip_insp_ser
+display_name: LotArcWipInspSer
+module: other
+description: Auto-generated representation of the physical table LotArcWipInspSer.
+synonyms:
+- lotarcwipinspser
+- lot arc wip insp ser
+header_attributes:
+  insp_reference:
+    display: Inspreference
+    type: string
+    required: false
+    description: Field InspReference from LotArcWipInspSer
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotArcWipInspSer
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from LotArcWipInspSer
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from LotArcWipInspSer
+  qty_inspected:
+    display: Qtyinspected
+    type: decimal
+    required: false
+    description: Field QtyInspected from LotArcWipInspSer
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from LotArcWipInspSer
+  qty_accepted:
+    display: Qtyaccepted
+    type: decimal
+    required: false
+    description: Field QtyAccepted from LotArcWipInspSer
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from LotArcWipInspSer
+  qty_reworked:
+    display: Qtyreworked
+    type: decimal
+    required: false
+    description: Field QtyReworked from LotArcWipInspSer
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from LotArcWipInspSer
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from LotArcWipInspSer
+  document_num:
+    display: Documentnum
+    type: string
+    required: false
+    description: Field DocumentNum from LotArcWipInspSer
+  transf_to_new_wh:
+    display: Transftonewwh
+    type: string
+    required: false
+    description: Field TransfToNewWh from LotArcWipInspSer
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotArcWipInspSer
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from LotArcWipInspSer
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from LotArcWipInspSer
+  rework_job:
+    display: Reworkjob
+    type: string
+    required: false
+    description: Field ReworkJob from LotArcWipInspSer
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from LotArcWipInspSer
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from LotArcWipInspSer
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from LotArcWipInspSer
+  qty_inspected_ent:
+    display: Qtyinspectedent
+    type: decimal
+    required: false
+    description: Field QtyInspectedEnt from LotArcWipInspSer
+  quantity_ent:
+    display: Quantityent
+    type: decimal
+    required: false
+    description: Field QuantityEnt from LotArcWipInspSer
+  qty_accepted_ent:
+    display: Qtyacceptedent
+    type: decimal
+    required: false
+    description: Field QtyAcceptedEnt from LotArcWipInspSer
+  qty_scrapped_ent:
+    display: Qtyscrappedent
+    type: decimal
+    required: false
+    description: Field QtyScrappedEnt from LotArcWipInspSer
+  qty_reworked_ent:
+    display: Qtyreworkedent
+    type: decimal
+    required: false
+    description: Field QtyReworkedEnt from LotArcWipInspSer

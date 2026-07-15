@@ -1,0 +1,28 @@
+concept: sqm_pros_doc
+display_name: SqmProsDoc
+module: other
+description: Auto-generated representation of the physical table SqmProsDoc.
+synonyms:
+- sqmprosdoc
+- sqm pros doc
+header_attributes:
+  nc_process:
+    display: Ncprocess
+    type: string
+    required: false
+    description: Field NcProcess from SqmProsDoc
+  stand_doc:
+    display: Standdoc
+    type: string
+    required: false
+    description: Field StandDoc from SqmProsDoc
+  stand_file:
+    display: Standfile
+    type: string
+    required: false
+    description: Field StandFile from SqmProsDoc
+  file_contents:
+    display: Filecontents
+    type: string
+    required: false
+    description: Field FileContents from SqmProsDoc

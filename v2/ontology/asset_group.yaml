@@ -1,0 +1,88 @@
+concept: asset_group
+display_name: AssetGroup
+module: assets
+description: Auto-generated representation of the physical table AssetGroup.
+synonyms:
+- assetgroup
+- asset group
+header_attributes:
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetGroup
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetGroup
+  wear_dep_code:
+    display: Weardepcode
+    type: string
+    required: false
+    description: Field WearDepCode from AssetGroup
+  def_dep_code:
+    display: Defdepcode
+    type: string
+    required: false
+    description: Field DefDepCode from AssetGroup
+  min_book_value:
+    display: Minbookvalue
+    type: decimal
+    required: false
+    description: Field MinBookValue from AssetGroup
+  min_tax:
+    display: Mintax
+    type: decimal
+    required: false
+    description: Field MinTax from AssetGroup
+  min_alt1:
+    display: Minalt1
+    type: decimal
+    required: false
+    description: Field MinAlt1 from AssetGroup
+  min_alt2:
+    display: Minalt2
+    type: decimal
+    required: false
+    description: Field MinAlt2 from AssetGroup
+  min_alt3:
+    display: Minalt3
+    type: decimal
+    required: false
+    description: Field MinAlt3 from AssetGroup
+  min_alt4:
+    display: Minalt4
+    type: decimal
+    required: false
+    description: Field MinAlt4 from AssetGroup
+  min_alt5:
+    display: Minalt5
+    type: decimal
+    required: false
+    description: Field MinAlt5 from AssetGroup
+  min_alt6:
+    display: Minalt6
+    type: decimal
+    required: false
+    description: Field MinAlt6 from AssetGroup
+  min_alt7:
+    display: Minalt7
+    type: decimal
+    required: false
+    description: Field MinAlt7 from AssetGroup
+  min_alt8:
+    display: Minalt8
+    type: decimal
+    required: false
+    description: Field MinAlt8 from AssetGroup
+  min_alt9:
+    display: Minalt9
+    type: decimal
+    required: false
+    description: Field MinAlt9 from AssetGroup
+  min_alt10:
+    display: Minalt10
+    type: decimal
+    required: false
+    description: Field MinAlt10 from AssetGroup

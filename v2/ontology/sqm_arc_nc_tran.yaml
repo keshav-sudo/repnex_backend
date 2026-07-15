@@ -1,0 +1,63 @@
+concept: sqm_arc_nc_tran
+display_name: SqmArcNcTran
+module: other
+description: Auto-generated representation of the physical table SqmArcNcTran.
+synonyms:
+- sqmarcnctran
+- sqm arc nc tran
+header_attributes:
+  conform_number:
+    display: Conformnumber
+    type: string
+    required: false
+    description: Field ConformNumber from SqmArcNcTran
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SqmArcNcTran
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SqmArcNcTran
+  conform_area:
+    display: Conformarea
+    type: string
+    required: false
+    description: Field ConformArea from SqmArcNcTran
+  action_number:
+    display: Actionnumber
+    type: decimal
+    required: false
+    description: Field ActionNumber from SqmArcNcTran
+  stake_holder:
+    display: Stakeholder
+    type: string
+    required: false
+    description: Field StakeHolder from SqmArcNcTran
+  action_type:
+    display: Actiontype
+    type: string
+    required: false
+    description: Field ActionType from SqmArcNcTran
+  field_updated:
+    display: Fieldupdated
+    type: string
+    required: false
+    description: Field FieldUpdated from SqmArcNcTran
+  old_field:
+    display: Oldfield
+    type: string
+    required: false
+    description: Field OldField from SqmArcNcTran
+  new_field:
+    display: Newfield
+    type: string
+    required: false
+    description: Field NewField from SqmArcNcTran
+  tran_note:
+    display: Trannote
+    type: string
+    required: false
+    description: Field TranNote from SqmArcNcTran

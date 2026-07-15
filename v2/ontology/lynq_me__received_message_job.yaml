@@ -1,0 +1,38 @@
+concept: lynq_me__received_message_job
+display_name: Lynq ME ReceivedMessageJob
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_ReceivedMessageJob.
+synonyms:
+- lynq_me_receivedmessagejob
+- lynq me  received message job
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_ME_ReceivedMessageJob
+  received_message_id:
+    display: Receivedmessageid
+    type: decimal
+    required: false
+    description: Field ReceivedMessageId from Lynq_ME_ReceivedMessageJob
+  job_code:
+    display: Jobcode
+    type: string
+    required: false
+    description: Field JobCode from Lynq_ME_ReceivedMessageJob
+  task_code:
+    display: Taskcode
+    type: string
+    required: false
+    description: Field TaskCode from Lynq_ME_ReceivedMessageJob
+  f_code:
+    display: Fcode
+    type: string
+    required: false
+    description: Field fCode from Lynq_ME_ReceivedMessageJob
+  e_code:
+    display: Ecode
+    type: string
+    required: false
+    description: Field eCode from Lynq_ME_ReceivedMessageJob

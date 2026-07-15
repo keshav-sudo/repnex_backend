@@ -1,0 +1,28 @@
+concept: por_stock_comment
+display_name: PorStockComment
+module: procurement
+description: Auto-generated representation of the physical table PorStockComment.
+synonyms:
+- porstockcomment
+- por stock comment
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from PorStockComment
+  comment_code:
+    display: Commentcode
+    type: string
+    required: false
+    description: Field CommentCode from PorStockComment
+  comment1:
+    display: Comment1
+    type: string
+    required: false
+    description: Field Comment1 from PorStockComment
+  comment2:
+    display: Comment2
+    type: string
+    required: false
+    description: Field Comment2 from PorStockComment

@@ -1,0 +1,8 @@
+concept: por_master_hdr_plus
+table: PorMasterHdr+
+alias: pmh1
+fields:
+  purchase_order: pmh1.PurchaseOrder
+  ship: pmh1.Ship
+  delivery: pmh1.Delivery
+  category: pmh1.Category

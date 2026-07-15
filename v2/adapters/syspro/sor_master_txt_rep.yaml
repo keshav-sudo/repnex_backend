@@ -1,0 +1,8 @@
+concept: sor_master_txt_rep
+table: SorMasterTxtRep
+alias: smtr
+fields:
+  invoice: smtr.Invoice
+  sales_order: smtr.SalesOrder
+  line: smtr.Line
+  text: smtr.Text

@@ -1,0 +1,63 @@
+concept: inv_stk_policy_detail
+display_name: InvStkPolicyDetail
+module: inventory
+description: Auto-generated representation of the physical table InvStkPolicyDetail.
+synonyms:
+- invstkpolicydetail
+- inv stk policy detail
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvStkPolicyDetail
+  sourcing_policy:
+    display: Sourcingpolicy
+    type: string
+    required: false
+    description: Field SourcingPolicy from InvStkPolicyDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvStkPolicyDetail
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from InvStkPolicyDetail
+  selection_order:
+    display: Selectionorder
+    type: decimal
+    required: false
+    description: Field SelectionOrder from InvStkPolicyDetail
+  sequence_number:
+    display: Sequencenumber
+    type: decimal
+    required: false
+    description: Field SequenceNumber from InvStkPolicyDetail
+  threshold_perc:
+    display: Thresholdperc
+    type: decimal
+    required: false
+    description: Field ThresholdPerc from InvStkPolicyDetail
+  threshold_amount:
+    display: Thresholdamount
+    type: decimal
+    required: false
+    description: Field ThresholdAmount from InvStkPolicyDetail
+  threshold_amt_used:
+    display: Thresholdamtused
+    type: decimal
+    required: false
+    description: Field ThresholdAmtUsed from InvStkPolicyDetail
+  suggested_count:
+    display: Suggestedcount
+    type: decimal
+    required: false
+    description: Field SuggestedCount from InvStkPolicyDetail
+  used_count:
+    display: Usedcount
+    type: decimal
+    required: false
+    description: Field UsedCount from InvStkPolicyDetail

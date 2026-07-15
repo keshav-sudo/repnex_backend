@@ -1,0 +1,6 @@
+concept: crm_category
+table: CrmCategory
+alias: cc2
+fields:
+  contact_category: cc2.ContactCategory
+  description: cc2.Description

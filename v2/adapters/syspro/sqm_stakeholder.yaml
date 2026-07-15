@@ -1,0 +1,14 @@
+concept: sqm_stakeholder
+table: SqmStakeholder
+alias: ss3
+fields:
+  department: ss3.Department
+  stake_holder: ss3.StakeHolder
+  owner: ss3.Owner
+  manager: ss3.Manager
+  invest_report: ss3.InvestReport
+  close_out_actions: ss3.CloseOutActions
+  ca_actions: ss3.CaActions
+  pa_actions: ss3.PaActions
+  ncr_audit: ss3.NcrAudit
+  req_email: ss3.ReqEmail

@@ -1,0 +1,53 @@
+concept: ar_dunning_status
+display_name: ArDunningStatus
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArDunningStatus.
+synonyms:
+- ardunningstatus
+- ar dunning status
+header_attributes:
+  dunning_group:
+    display: Dunninggroup
+    type: string
+    required: false
+    description: Field DunningGroup from ArDunningStatus
+  dunning_status:
+    display: Dunningstatus
+    type: decimal
+    required: false
+    description: Field DunningStatus from ArDunningStatus
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from ArDunningStatus
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ArDunningStatus
+  inv_selection:
+    display: Invselection
+    type: string
+    required: false
+    description: Field InvSelection from ArDunningStatus
+  no_days:
+    display: Nodays
+    type: decimal
+    required: false
+    description: Field NoDays from ArDunningStatus
+  min_bal:
+    display: Minbal
+    type: decimal
+    required: false
+    description: Field MinBal from ArDunningStatus
+  doc_format:
+    display: Docformat
+    type: string
+    required: false
+    description: Field DocFormat from ArDunningStatus
+  doc_method:
+    display: Docmethod
+    type: string
+    required: false
+    description: Field DocMethod from ArDunningStatus

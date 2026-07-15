@@ -1,0 +1,208 @@
+concept: lynq_me__statistics_storage_key
+display_name: Lynq ME StatisticsStorageKey
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_StatisticsStorageKey.
+synonyms:
+- lynq_me_statisticsstoragekey
+- lynq me  statistics storage key
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_StatisticsStorageKey
+  ad:
+    display: Ad
+    type: date
+    required: false
+    description: Field AD from Lynq_ME_StatisticsStorageKey
+  d0:
+    display: D0
+    type: date
+    required: false
+    description: Field D0 from Lynq_ME_StatisticsStorageKey
+  d1:
+    display: D1
+    type: date
+    required: false
+    description: Field D1 from Lynq_ME_StatisticsStorageKey
+  d2:
+    display: D2
+    type: date
+    required: false
+    description: Field D2 from Lynq_ME_StatisticsStorageKey
+  d3:
+    display: D3
+    type: date
+    required: false
+    description: Field D3 from Lynq_ME_StatisticsStorageKey
+  s00:
+    display: S00
+    type: string
+    required: false
+    description: Field S00 from Lynq_ME_StatisticsStorageKey
+  s01:
+    display: S01
+    type: string
+    required: false
+    description: Field S01 from Lynq_ME_StatisticsStorageKey
+  s02:
+    display: S02
+    type: string
+    required: false
+    description: Field S02 from Lynq_ME_StatisticsStorageKey
+  s03:
+    display: S03
+    type: string
+    required: false
+    description: Field S03 from Lynq_ME_StatisticsStorageKey
+  s04:
+    display: S04
+    type: string
+    required: false
+    description: Field S04 from Lynq_ME_StatisticsStorageKey
+  s05:
+    display: S05
+    type: string
+    required: false
+    description: Field S05 from Lynq_ME_StatisticsStorageKey
+  s06:
+    display: S06
+    type: string
+    required: false
+    description: Field S06 from Lynq_ME_StatisticsStorageKey
+  s07:
+    display: S07
+    type: string
+    required: false
+    description: Field S07 from Lynq_ME_StatisticsStorageKey
+  s08:
+    display: S08
+    type: string
+    required: false
+    description: Field S08 from Lynq_ME_StatisticsStorageKey
+  s09:
+    display: S09
+    type: string
+    required: false
+    description: Field S09 from Lynq_ME_StatisticsStorageKey
+  s10:
+    display: S10
+    type: string
+    required: false
+    description: Field S10 from Lynq_ME_StatisticsStorageKey
+  s11:
+    display: S11
+    type: string
+    required: false
+    description: Field S11 from Lynq_ME_StatisticsStorageKey
+  s12:
+    display: S12
+    type: string
+    required: false
+    description: Field S12 from Lynq_ME_StatisticsStorageKey
+  s13:
+    display: S13
+    type: string
+    required: false
+    description: Field S13 from Lynq_ME_StatisticsStorageKey
+  s14:
+    display: S14
+    type: string
+    required: false
+    description: Field S14 from Lynq_ME_StatisticsStorageKey
+  s15:
+    display: S15
+    type: string
+    required: false
+    description: Field S15 from Lynq_ME_StatisticsStorageKey
+  s16:
+    display: S16
+    type: string
+    required: false
+    description: Field S16 from Lynq_ME_StatisticsStorageKey
+  s17:
+    display: S17
+    type: string
+    required: false
+    description: Field S17 from Lynq_ME_StatisticsStorageKey
+  s18:
+    display: S18
+    type: string
+    required: false
+    description: Field S18 from Lynq_ME_StatisticsStorageKey
+  s19:
+    display: S19
+    type: string
+    required: false
+    description: Field S19 from Lynq_ME_StatisticsStorageKey
+  s20:
+    display: S20
+    type: string
+    required: false
+    description: Field S20 from Lynq_ME_StatisticsStorageKey
+  s21:
+    display: S21
+    type: string
+    required: false
+    description: Field S21 from Lynq_ME_StatisticsStorageKey
+  s22:
+    display: S22
+    type: string
+    required: false
+    description: Field S22 from Lynq_ME_StatisticsStorageKey
+  s23:
+    display: S23
+    type: string
+    required: false
+    description: Field S23 from Lynq_ME_StatisticsStorageKey
+  nd0:
+    display: Nd0
+    type: decimal
+    required: false
+    description: Field ND0 from Lynq_ME_StatisticsStorageKey
+  nd1:
+    display: Nd1
+    type: decimal
+    required: false
+    description: Field ND1 from Lynq_ME_StatisticsStorageKey
+  nd2:
+    display: Nd2
+    type: decimal
+    required: false
+    description: Field ND2 from Lynq_ME_StatisticsStorageKey
+  nd3:
+    display: Nd3
+    type: decimal
+    required: false
+    description: Field ND3 from Lynq_ME_StatisticsStorageKey
+  nl0:
+    display: Nl0
+    type: decimal
+    required: false
+    description: Field NL0 from Lynq_ME_StatisticsStorageKey
+  nl1:
+    display: Nl1
+    type: decimal
+    required: false
+    description: Field NL1 from Lynq_ME_StatisticsStorageKey
+  nl2:
+    display: Nl2
+    type: decimal
+    required: false
+    description: Field NL2 from Lynq_ME_StatisticsStorageKey
+  nl3:
+    display: Nl3
+    type: decimal
+    required: false
+    description: Field NL3 from Lynq_ME_StatisticsStorageKey
+  nl4:
+    display: Nl4
+    type: decimal
+    required: false
+    description: Field NL4 from Lynq_ME_StatisticsStorageKey
+  nl5:
+    display: Nl5
+    type: decimal
+    required: false
+    description: Field NL5 from Lynq_ME_StatisticsStorageKey

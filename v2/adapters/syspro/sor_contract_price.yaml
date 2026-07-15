@@ -1,0 +1,20 @@
+concept: sor_contract_price
+table: SorContractPrice
+alias: scp
+fields:
+  contract_type: scp.ContractType
+  customer_buy_grp: scp.CustomerBuyGrp
+  stock_code: scp.StockCode
+  contract: scp.Contract
+  start_date: scp.StartDate
+  expiry_date: scp.ExpiryDate
+  price_method: scp.PriceMethod
+  fixed_uom: scp.FixedUom
+  fixed_price_code: scp.FixedPriceCode
+  fixed_price: scp.FixedPrice
+  discount1: scp.Discount1
+  discount2: scp.Discount2
+  discount3: scp.Discount3
+  cust_list_price: scp.CustListPrice
+  discount_pct: scp.DiscountPct
+  price_list: scp.PriceList

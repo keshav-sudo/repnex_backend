@@ -1,0 +1,14 @@
+concept: srq_supplier_media
+table: SrqSupplierMedia
+alias: ssm
+fields:
+  rfq_reference: ssm.RfqReference
+  rfq_line: ssm.RfqLine
+  supplier: ssm.Supplier
+  entry_number: ssm.EntryNumber
+  date_media_added: ssm.DateMediaAdded
+  time_media_added: ssm.TimeMediaAdded
+  media: ssm.Media
+  media_file_name: ssm.MediaFileName
+  media_file_extension: ssm.MediaFileExtension
+  media_file_size: ssm.MediaFileSize

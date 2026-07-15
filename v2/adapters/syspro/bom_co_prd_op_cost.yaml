@@ -1,0 +1,11 @@
+concept: bom_co_prd_op_cost
+table: BomCoPrdOpCost
+alias: bcpoc
+fields:
+  parent_part: bcpoc.ParentPart
+  version: bcpoc.Version
+  release: bcpoc.Release
+  route: bcpoc.Route
+  co_product_line: bcpoc.CoProductLine
+  operation: bcpoc.Operation
+  pct_labor_cost: bcpoc.PctLaborCost

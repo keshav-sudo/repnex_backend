@@ -1,0 +1,43 @@
+concept: bom_shift_all
+display_name: BomShiftAll
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomShiftAll.
+synonyms:
+- bomshiftall
+- bom shift all
+header_attributes:
+  shift_all_type:
+    display: Shiftalltype
+    type: string
+    required: false
+    description: Field ShiftAllType from BomShiftAll
+  shift_code:
+    display: Shiftcode
+    type: string
+    required: false
+    description: Field ShiftCode from BomShiftAll
+  shift_alloc:
+    display: Shiftalloc
+    type: string
+    required: false
+    description: Field ShiftAlloc from BomShiftAll
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomShiftAll
+  active_dates:
+    display: Activedates
+    type: string
+    required: false
+    description: Field ActiveDates from BomShiftAll
+  on_date:
+    display: Ondate
+    type: date
+    required: false
+    description: Field OnDate from BomShiftAll
+  off_date:
+    display: Offdate
+    type: date
+    required: false
+    description: Field OffDate from BomShiftAll

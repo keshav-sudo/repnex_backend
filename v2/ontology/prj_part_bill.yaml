@@ -1,0 +1,123 @@
+concept: prj_part_bill
+display_name: PrjPartBill
+module: other
+description: Auto-generated representation of the physical table PrjPartBill.
+synonyms:
+- prjpartbill
+- prj part bill
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from PrjPartBill
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from PrjPartBill
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from PrjPartBill
+  hier_head:
+    display: Hierhead
+    type: string
+    required: false
+    description: Field HierHead from PrjPartBill
+  section1:
+    display: Section1
+    type: string
+    required: false
+    description: Field Section1 from PrjPartBill
+  section2:
+    display: Section2
+    type: string
+    required: false
+    description: Field Section2 from PrjPartBill
+  section3:
+    display: Section3
+    type: string
+    required: false
+    description: Field Section3 from PrjPartBill
+  section4:
+    display: Section4
+    type: string
+    required: false
+    description: Field Section4 from PrjPartBill
+  cost_of_sales_val:
+    display: Costofsalesval
+    type: decimal
+    required: false
+    description: Field CostOfSalesVal from PrjPartBill
+  billing_value:
+    display: Billingvalue
+    type: decimal
+    required: false
+    description: Field BillingValue from PrjPartBill
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from PrjPartBill
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from PrjPartBill
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from PrjPartBill
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from PrjPartBill
+  order_line_type:
+    display: Orderlinetype
+    type: string
+    required: false
+    description: Field OrderLineType from PrjPartBill
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from PrjPartBill
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from PrjPartBill
+  part_billing_jnl:
+    display: Partbillingjnl
+    type: decimal
+    required: false
+    description: Field PartBillingJnl from PrjPartBill
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from PrjPartBill
+  trn_source:
+    display: Trnsource
+    type: string
+    required: false
+    description: Field TrnSource from PrjPartBill
+  qty_released:
+    display: Qtyreleased
+    type: decimal
+    required: false
+    description: Field QtyReleased from PrjPartBill
+  part_bill_entry_no:
+    display: Partbillentryno
+    type: decimal
+    required: false
+    description: Field PartBillEntryNo from PrjPartBill
+  post_job:
+    display: Postjob
+    type: string
+    required: false
+    description: Field PostJob from PrjPartBill

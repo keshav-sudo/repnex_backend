@@ -1,0 +1,41 @@
+concept: bom_capacity
+table: BomCapacity
+alias: bc
+fields:
+  capacity_flag: bc.CapacityFlag
+  work_centre: bc.WorkCentre
+  capacity_century: bc.CapacityCentury
+  capacity_year: bc.CapacityYear
+  capacity_month: bc.CapacityMonth
+  capacity_avail1: bc.CapacityAvail1
+  capacity_avail2: bc.CapacityAvail2
+  capacity_avail3: bc.CapacityAvail3
+  capacity_avail4: bc.CapacityAvail4
+  capacity_avail5: bc.CapacityAvail5
+  capacity_avail6: bc.CapacityAvail6
+  capacity_avail7: bc.CapacityAvail7
+  capacity_avail8: bc.CapacityAvail8
+  capacity_avail9: bc.CapacityAvail9
+  capacity_avail10: bc.CapacityAvail10
+  capacity_avail11: bc.CapacityAvail11
+  capacity_avail12: bc.CapacityAvail12
+  capacity_avail13: bc.CapacityAvail13
+  capacity_avail14: bc.CapacityAvail14
+  capacity_avail15: bc.CapacityAvail15
+  capacity_avail16: bc.CapacityAvail16
+  capacity_avail17: bc.CapacityAvail17
+  capacity_avail18: bc.CapacityAvail18
+  capacity_avail19: bc.CapacityAvail19
+  capacity_avail20: bc.CapacityAvail20
+  capacity_avail21: bc.CapacityAvail21
+  capacity_avail22: bc.CapacityAvail22
+  capacity_avail23: bc.CapacityAvail23
+  capacity_avail24: bc.CapacityAvail24
+  capacity_avail25: bc.CapacityAvail25
+  capacity_avail26: bc.CapacityAvail26
+  capacity_avail27: bc.CapacityAvail27
+  capacity_avail28: bc.CapacityAvail28
+  capacity_avail29: bc.CapacityAvail29
+  capacity_avail30: bc.CapacityAvail30
+  capacity_avail31: bc.CapacityAvail31
+  leap_year_flag: bc.LeapYearFlag

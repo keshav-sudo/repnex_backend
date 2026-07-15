@@ -1,0 +1,23 @@
+concept: iop_col_warehouse
+display_name: IopColWarehouse
+module: other
+description: Auto-generated representation of the physical table IopColWarehouse.
+synonyms:
+- iopcolwarehouse
+- iop col warehouse
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopColWarehouse
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopColWarehouse
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopColWarehouse

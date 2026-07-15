@@ -1,0 +1,12 @@
+concept: lct_shipment_hdr
+table: LctShipmentHdr
+alias: lsh
+fields:
+  vessel: lsh.Vessel
+  departure_date: lsh.DepartureDate
+  vessel_name: lsh.VesselName
+  est_arrival_date: lsh.EstArrivalDate
+  act_arrival_date: lsh.ActArrivalDate
+  route: lsh.Route
+  place_of_shipment: lsh.PlaceOfShipment
+  place_of_destination: lsh.PlaceOfDestination

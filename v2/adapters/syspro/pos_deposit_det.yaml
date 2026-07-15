@@ -1,0 +1,12 @@
+concept: pos_deposit_det
+table: PosDepositDet
+alias: pdd
+fields:
+  sales_order: pdd.SalesOrder
+  deposit_date: pdd.DepositDate
+  invoice: pdd.Invoice
+  deposit_value: pdd.DepositValue
+  payment_type: pdd.PaymentType
+  allocated_value: pdd.AllocatedValue
+  last_move_date: pdd.LastMoveDate
+  comment: pdd.Comment

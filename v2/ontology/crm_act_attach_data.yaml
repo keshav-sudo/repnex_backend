@@ -1,0 +1,33 @@
+concept: crm_act_attach_data
+display_name: CrmActAttachData
+module: crm
+description: Auto-generated representation of the physical table CrmActAttachData.
+synonyms:
+- crmactattachdata
+- crm act attach data
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmActAttachData
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from CrmActAttachData
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from CrmActAttachData
+  attachment_file:
+    display: Attachmentfile
+    type: string
+    required: false
+    description: Field AttachmentFile from CrmActAttachData
+  attachment_data:
+    display: Attachmentdata
+    type: string
+    required: false
+    description: Field AttachmentData from CrmActAttachData

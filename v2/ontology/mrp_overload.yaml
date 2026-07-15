@@ -1,0 +1,28 @@
+concept: mrp_overload
+display_name: MrpOverload
+module: mrp
+description: Auto-generated representation of the physical table MrpOverload.
+synonyms:
+- mrpoverload
+- mrp overload
+header_attributes:
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MrpOverload
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from MrpOverload
+  overload_date:
+    display: Overloaddate
+    type: date
+    required: false
+    description: Field OverloadDate from MrpOverload
+  overload_actioned:
+    display: Overloadactioned
+    type: string
+    required: false
+    description: Field OverloadActioned from MrpOverload

@@ -1,0 +1,23 @@
+concept: ap_invoice_reg_po
+display_name: ApInvoiceRegPo
+module: accounts_payable
+description: Auto-generated representation of the physical table ApInvoiceRegPo.
+synonyms:
+- apinvoiceregpo
+- ap invoice reg po
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApInvoiceRegPo
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApInvoiceRegPo
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from ApInvoiceRegPo

@@ -1,0 +1,48 @@
+concept: sws_action_detail
+display_name: SwsActionDetail
+module: other
+description: Auto-generated representation of the physical table SwsActionDetail.
+synonyms:
+- swsactiondetail
+- sws action detail
+header_attributes:
+  action_id:
+    display: Actionid
+    type: decimal
+    required: false
+    description: Field ActionId from SwsActionDetail
+  action_number:
+    display: Actionnumber
+    type: decimal
+    required: false
+    description: Field ActionNumber from SwsActionDetail
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SwsActionDetail
+  action_type:
+    display: Actiontype
+    type: decimal
+    required: false
+    description: Field ActionType from SwsActionDetail
+  user_action_type:
+    display: Useractiontype
+    type: decimal
+    required: false
+    description: Field UserActionType from SwsActionDetail
+  tool_tip:
+    display: Tooltip
+    type: string
+    required: false
+    description: Field ToolTip from SwsActionDetail
+  program_to_call:
+    display: Programtocall
+    type: string
+    required: false
+    description: Field ProgramToCall from SwsActionDetail
+  program_parameter:
+    display: Programparameter
+    type: string
+    required: false
+    description: Field ProgramParameter from SwsActionDetail

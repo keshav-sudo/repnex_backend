@@ -1,0 +1,658 @@
+concept: mrp_qot_so_master_hdr
+display_name: MrpQotSoMasterHdr
+module: mrp
+description: Auto-generated representation of the physical table MrpQotSoMasterHdr.
+synonyms:
+- mrpqotsomasterhdr
+- mrp qot so master hdr
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MrpQotSoMasterHdr
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from MrpQotSoMasterHdr
+  order_status:
+    display: Orderstatus
+    type: string
+    required: false
+    description: Field OrderStatus from MrpQotSoMasterHdr
+  active_flag:
+    display: Activeflag
+    type: string
+    required: false
+    description: Field ActiveFlag from MrpQotSoMasterHdr
+  cancelled_flag:
+    display: Cancelledflag
+    type: string
+    required: false
+    description: Field CancelledFlag from MrpQotSoMasterHdr
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from MrpQotSoMasterHdr
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MrpQotSoMasterHdr
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from MrpQotSoMasterHdr
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from MrpQotSoMasterHdr
+  order_date:
+    display: Orderdate
+    type: date
+    required: false
+    description: Field OrderDate from MrpQotSoMasterHdr
+  entry_system_date:
+    display: Entrysystemdate
+    type: date
+    required: false
+    description: Field EntrySystemDate from MrpQotSoMasterHdr
+  req_ship_date:
+    display: Reqshipdate
+    type: date
+    required: false
+    description: Field ReqShipDate from MrpQotSoMasterHdr
+  date_last_doc_prt:
+    display: Datelastdocprt
+    type: date
+    required: false
+    description: Field DateLastDocPrt from MrpQotSoMasterHdr
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from MrpQotSoMasterHdr
+  shipping_instrs_cod:
+    display: Shippinginstrscod
+    type: string
+    required: false
+    description: Field ShippingInstrsCod from MrpQotSoMasterHdr
+  alt_ship_addr_flag:
+    display: Altshipaddrflag
+    type: string
+    required: false
+    description: Field AltShipAddrFlag from MrpQotSoMasterHdr
+  invoice_count:
+    display: Invoicecount
+    type: decimal
+    required: false
+    description: Field InvoiceCount from MrpQotSoMasterHdr
+  inv_terms_override:
+    display: Invtermsoverride
+    type: string
+    required: false
+    description: Field InvTermsOverride from MrpQotSoMasterHdr
+  credit_authority:
+    display: Creditauthority
+    type: string
+    required: false
+    description: Field CreditAuthority from MrpQotSoMasterHdr
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from MrpQotSoMasterHdr
+  special_instrs:
+    display: Specialinstrs
+    type: string
+    required: false
+    description: Field SpecialInstrs from MrpQotSoMasterHdr
+  ent_invoice:
+    display: Entinvoice
+    type: string
+    required: false
+    description: Field EntInvoice from MrpQotSoMasterHdr
+  ent_invoice_date:
+    display: Entinvoicedate
+    type: date
+    required: false
+    description: Field EntInvoiceDate from MrpQotSoMasterHdr
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from MrpQotSoMasterHdr
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from MrpQotSoMasterHdr
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from MrpQotSoMasterHdr
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from MrpQotSoMasterHdr
+  tax_exempt_flag:
+    display: Taxexemptflag
+    type: string
+    required: false
+    description: Field TaxExemptFlag from MrpQotSoMasterHdr
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from MrpQotSoMasterHdr
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from MrpQotSoMasterHdr
+  tax_exempt_override:
+    display: Taxexemptoverride
+    type: string
+    required: false
+    description: Field TaxExemptOverride from MrpQotSoMasterHdr
+  cash_credit:
+    display: Cashcredit
+    type: string
+    required: false
+    description: Field CashCredit from MrpQotSoMasterHdr
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpQotSoMasterHdr
+  last_invoice:
+    display: Lastinvoice
+    type: string
+    required: false
+    description: Field LastInvoice from MrpQotSoMasterHdr
+  scheduled_ord_flag:
+    display: Scheduledordflag
+    type: string
+    required: false
+    description: Field ScheduledOrdFlag from MrpQotSoMasterHdr
+  gst_exempt_flag:
+    display: Gstexemptflag
+    type: string
+    required: false
+    description: Field GstExemptFlag from MrpQotSoMasterHdr
+  gst_exempt_num:
+    display: Gstexemptnum
+    type: string
+    required: false
+    description: Field GstExemptNum from MrpQotSoMasterHdr
+  gst_exempt_o_ride:
+    display: Gstexemptoride
+    type: string
+    required: false
+    description: Field GstExemptORide from MrpQotSoMasterHdr
+  ibt_flag:
+    display: Ibtflag
+    type: string
+    required: false
+    description: Field IbtFlag from MrpQotSoMasterHdr
+  ord_acknw_printed:
+    display: Ordacknwprinted
+    type: string
+    required: false
+    description: Field OrdAcknwPrinted from MrpQotSoMasterHdr
+  det_cust_mvmt_reqd:
+    display: Detcustmvmtreqd
+    type: string
+    required: false
+    description: Field DetCustMvmtReqd from MrpQotSoMasterHdr
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from MrpQotSoMasterHdr
+  fix_exchange_rate:
+    display: Fixexchangerate
+    type: string
+    required: false
+    description: Field FixExchangeRate from MrpQotSoMasterHdr
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from MrpQotSoMasterHdr
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from MrpQotSoMasterHdr
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from MrpQotSoMasterHdr
+  gst_deduction:
+    display: Gstdeduction
+    type: string
+    required: false
+    description: Field GstDeduction from MrpQotSoMasterHdr
+  order_status_fail:
+    display: Orderstatusfail
+    type: string
+    required: false
+    description: Field OrderStatusFail from MrpQotSoMasterHdr
+  consolidated_order:
+    display: Consolidatedorder
+    type: string
+    required: false
+    description: Field ConsolidatedOrder from MrpQotSoMasterHdr
+  credited_inv_date:
+    display: Creditedinvdate
+    type: date
+    required: false
+    description: Field CreditedInvDate from MrpQotSoMasterHdr
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpQotSoMasterHdr
+  serialised_flag:
+    display: Serialisedflag
+    type: string
+    required: false
+    description: Field SerialisedFlag from MrpQotSoMasterHdr
+  counter_sales_flag:
+    display: Countersalesflag
+    type: string
+    required: false
+    description: Field CounterSalesFlag from MrpQotSoMasterHdr
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from MrpQotSoMasterHdr
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from MrpQotSoMasterHdr
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from MrpQotSoMasterHdr
+  transport_mode:
+    display: Transportmode
+    type: decimal
+    required: false
+    description: Field TransportMode from MrpQotSoMasterHdr
+  process_flag:
+    display: Processflag
+    type: decimal
+    required: false
+    description: Field ProcessFlag from MrpQotSoMasterHdr
+  jobs_exist_flag:
+    display: Jobsexistflag
+    type: string
+    required: false
+    description: Field JobsExistFlag from MrpQotSoMasterHdr
+  alternate_key:
+    display: Alternatekey
+    type: string
+    required: false
+    description: Field AlternateKey from MrpQotSoMasterHdr
+  last_operator:
+    display: Lastoperator
+    type: string
+    required: false
+    description: Field LastOperator from MrpQotSoMasterHdr
+  hierarchy_flag:
+    display: Hierarchyflag
+    type: string
+    required: false
+    description: Field HierarchyFlag from MrpQotSoMasterHdr
+  deposit_flag:
+    display: Depositflag
+    type: string
+    required: false
+    description: Field DepositFlag from MrpQotSoMasterHdr
+  edi_source:
+    display: Edisource
+    type: string
+    required: false
+    description: Field EdiSource from MrpQotSoMasterHdr
+  delivery_note:
+    display: Deliverynote
+    type: string
+    required: false
+    description: Field DeliveryNote from MrpQotSoMasterHdr
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MrpQotSoMasterHdr
+  line_comp:
+    display: Linecomp
+    type: string
+    required: false
+    description: Field LineComp from MrpQotSoMasterHdr
+  capture_hh:
+    display: Capturehh
+    type: decimal
+    required: false
+    description: Field CaptureHh from MrpQotSoMasterHdr
+  capture_mm:
+    display: Capturemm
+    type: decimal
+    required: false
+    description: Field CaptureMm from MrpQotSoMasterHdr
+  last_del_note:
+    display: Lastdelnote
+    type: date
+    required: false
+    description: Field LastDelNote from MrpQotSoMasterHdr
+  time_del_prted_hh:
+    display: Timedelprtedhh
+    type: decimal
+    required: false
+    description: Field TimeDelPrtedHh from MrpQotSoMasterHdr
+  time_del_prted_mm:
+    display: Timedelprtedmm
+    type: decimal
+    required: false
+    description: Field TimeDelPrtedMm from MrpQotSoMasterHdr
+  time_inv_prted_hh:
+    display: Timeinvprtedhh
+    type: decimal
+    required: false
+    description: Field TimeInvPrtedHh from MrpQotSoMasterHdr
+  time_inv_prted_mm:
+    display: Timeinvprtedmm
+    type: decimal
+    required: false
+    description: Field TimeInvPrtedMm from MrpQotSoMasterHdr
+  date_last_inv_prt:
+    display: Datelastinvprt
+    type: date
+    required: false
+    description: Field DateLastInvPrt from MrpQotSoMasterHdr
+  salesperson2:
+    display: Salesperson2
+    type: string
+    required: false
+    description: Field Salesperson2 from MrpQotSoMasterHdr
+  salesperson3:
+    display: Salesperson3
+    type: string
+    required: false
+    description: Field Salesperson3 from MrpQotSoMasterHdr
+  salesperson4:
+    display: Salesperson4
+    type: string
+    required: false
+    description: Field Salesperson4 from MrpQotSoMasterHdr
+  commission_sales1:
+    display: Commissionsales1
+    type: decimal
+    required: false
+    description: Field CommissionSales1 from MrpQotSoMasterHdr
+  commission_sales2:
+    display: Commissionsales2
+    type: decimal
+    required: false
+    description: Field CommissionSales2 from MrpQotSoMasterHdr
+  commission_sales3:
+    display: Commissionsales3
+    type: decimal
+    required: false
+    description: Field CommissionSales3 from MrpQotSoMasterHdr
+  commission_sales4:
+    display: Commissionsales4
+    type: decimal
+    required: false
+    description: Field CommissionSales4 from MrpQotSoMasterHdr
+  time_taken_to_add:
+    display: Timetakentoadd
+    type: decimal
+    required: false
+    description: Field TimeTakenToAdd from MrpQotSoMasterHdr
+  time_taken_to_chg:
+    display: Timetakentochg
+    type: decimal
+    required: false
+    description: Field TimeTakenToChg from MrpQotSoMasterHdr
+  fax_inv_in_batch:
+    display: Faxinvinbatch
+    type: string
+    required: false
+    description: Field FaxInvInBatch from MrpQotSoMasterHdr
+  inter_wh_sale:
+    display: Interwhsale
+    type: string
+    required: false
+    description: Field InterWhSale from MrpQotSoMasterHdr
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from MrpQotSoMasterHdr
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from MrpQotSoMasterHdr
+  dispatches_made:
+    display: Dispatchesmade
+    type: string
+    required: false
+    description: Field DispatchesMade from MrpQotSoMasterHdr
+  live_disp_exist:
+    display: Livedispexist
+    type: string
+    required: false
+    description: Field LiveDispExist from MrpQotSoMasterHdr
+  num_dispatches:
+    display: Numdispatches
+    type: decimal
+    required: false
+    description: Field NumDispatches from MrpQotSoMasterHdr
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from MrpQotSoMasterHdr
+  ship_address1:
+    display: Shipaddress1
+    type: string
+    required: false
+    description: Field ShipAddress1 from MrpQotSoMasterHdr
+  ship_address2:
+    display: Shipaddress2
+    type: string
+    required: false
+    description: Field ShipAddress2 from MrpQotSoMasterHdr
+  ship_address3:
+    display: Shipaddress3
+    type: string
+    required: false
+    description: Field ShipAddress3 from MrpQotSoMasterHdr
+  ship_address3_loc:
+    display: Shipaddress3Loc
+    type: string
+    required: false
+    description: Field ShipAddress3Loc from MrpQotSoMasterHdr
+  ship_address4:
+    display: Shipaddress4
+    type: string
+    required: false
+    description: Field ShipAddress4 from MrpQotSoMasterHdr
+  ship_address5:
+    display: Shipaddress5
+    type: string
+    required: false
+    description: Field ShipAddress5 from MrpQotSoMasterHdr
+  ship_postal_code:
+    display: Shippostalcode
+    type: string
+    required: false
+    description: Field ShipPostalCode from MrpQotSoMasterHdr
+  ship_to_gps_lat:
+    display: Shiptogpslat
+    type: decimal
+    required: false
+    description: Field ShipToGpsLat from MrpQotSoMasterHdr
+  ship_to_gps_long:
+    display: Shiptogpslong
+    type: decimal
+    required: false
+    description: Field ShipToGpsLong from MrpQotSoMasterHdr
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from MrpQotSoMasterHdr
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from MrpQotSoMasterHdr
+  extended_tax_code:
+    display: Extendedtaxcode
+    type: string
+    required: false
+    description: Field ExtendedTaxCode from MrpQotSoMasterHdr
+  multi_ship_code:
+    display: Multishipcode
+    type: string
+    required: false
+    description: Field MultiShipCode from MrpQotSoMasterHdr
+  web_created:
+    display: Webcreated
+    type: string
+    required: false
+    description: Field WebCreated from MrpQotSoMasterHdr
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from MrpQotSoMasterHdr
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from MrpQotSoMasterHdr
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from MrpQotSoMasterHdr
+  non_merch_flag:
+    display: Nonmerchflag
+    type: string
+    required: false
+    description: Field NonMerchFlag from MrpQotSoMasterHdr
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from MrpQotSoMasterHdr
+  user1:
+    display: User1
+    type: string
+    required: false
+    description: Field User1 from MrpQotSoMasterHdr
+  company_tax_no:
+    display: Companytaxno
+    type: string
+    required: false
+    description: Field CompanyTaxNo from MrpQotSoMasterHdr
+  tpm_pickup_flag:
+    display: Tpmpickupflag
+    type: string
+    required: false
+    description: Field TpmPickupFlag from MrpQotSoMasterHdr
+  tpm_evaluated_flag:
+    display: Tpmevaluatedflag
+    type: string
+    required: false
+    description: Field TpmEvaluatedFlag from MrpQotSoMasterHdr
+  standard_comment:
+    display: Standardcomment
+    type: string
+    required: false
+    description: Field StandardComment from MrpQotSoMasterHdr
+  detail_status:
+    display: Detailstatus
+    type: string
+    required: false
+    description: Field DetailStatus from MrpQotSoMasterHdr
+  sales_order_source:
+    display: Salesordersource
+    type: string
+    required: false
+    description: Field SalesOrderSource from MrpQotSoMasterHdr
+  sales_order_src_desc:
+    display: Salesordersrcdesc
+    type: string
+    required: false
+    description: Field SalesOrderSrcDesc from MrpQotSoMasterHdr
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from MrpQotSoMasterHdr
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from MrpQotSoMasterHdr
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from MrpQotSoMasterHdr
+  quick_quote:
+    display: Quickquote
+    type: string
+    required: false
+    description: Field QuickQuote from MrpQotSoMasterHdr
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from MrpQotSoMasterHdr
+  port_dispatch:
+    display: Portdispatch
+    type: string
+    required: false
+    description: Field PortDispatch from MrpQotSoMasterHdr
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from MrpQotSoMasterHdr
+  price_group_level:
+    display: Pricegrouplevel
+    type: string
+    required: false
+    description: Field PriceGroupLevel from MrpQotSoMasterHdr
+  last_op_inv_prt:
+    display: Lastopinvprt
+    type: string
+    required: false
+    description: Field LastOpInvPrt from MrpQotSoMasterHdr
+  dispatch_whole_so:
+    display: Dispatchwholeso
+    type: string
+    required: false
+    description: Field DispatchWholeSo from MrpQotSoMasterHdr
+  entity_dimensions:
+    display: Entitydimensions
+    type: string
+    required: false
+    description: Field EntityDimensions from MrpQotSoMasterHdr

@@ -1,0 +1,23 @@
+concept: lynq_me_api__config__auto_call_exec
+display_name: Lynq ME API Config AutoCallExec
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_API_Config_AutoCallExec.
+synonyms:
+- lynq_me_api_config_autocallexec
+- lynq me api  config  auto call exec
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_ME_API_Config_AutoCallExec
+  auto_call_key:
+    display: Autocallkey
+    type: string
+    required: false
+    description: Field AutoCallKey from Lynq_ME_API_Config_AutoCallExec
+  last_exec_date:
+    display: Lastexecdate
+    type: date
+    required: false
+    description: Field LastExecDate from Lynq_ME_API_Config_AutoCallExec

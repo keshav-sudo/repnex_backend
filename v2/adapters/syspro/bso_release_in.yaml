@@ -1,0 +1,31 @@
+concept: bso_release_in
+table: BsoReleaseIn
+alias: bri
+fields:
+  customer: bri.Customer
+  customer_po_number: bri.CustomerPoNumber
+  cust_stock_code: bri.CustStockCode
+  record_type: bri.RecordType
+  release_ref: bri.ReleaseRef
+  line: bri.Line
+  date_required: bri.DateRequired
+  cumulative_qty: bri.CumulativeQty
+  release_qty: bri.ReleaseQty
+  invoice: bri.Invoice
+  delivery_qty: bri.DeliveryQty
+  open_cum_qty: bri.OpenCumQty
+  release_date: bri.ReleaseDate
+  frequency_code: bri.FrequencyCode
+  release_naration: bri.ReleaseNaration
+  warn_code1: bri.WarnCode1
+  warn_code2: bri.WarnCode2
+  warn_code3: bri.WarnCode3
+  warn_code4: bri.WarnCode4
+  warn_code5: bri.WarnCode5
+  warn_code6: bri.WarnCode6
+  warn_code7: bri.WarnCode7
+  warn_code8: bri.WarnCode8
+  warn_code9: bri.WarnCode9
+  orig_req_cume: bri.OrigReqCume
+  confirmed_flag: bri.ConfirmedFlag
+  dispatch_note: bri.DispatchNote

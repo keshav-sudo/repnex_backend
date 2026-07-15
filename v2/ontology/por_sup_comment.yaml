@@ -1,0 +1,28 @@
+concept: por_sup_comment
+display_name: PorSupComment
+module: procurement
+description: Auto-generated representation of the physical table PorSupComment.
+synonyms:
+- porsupcomment
+- por sup comment
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from PorSupComment
+  comment_code:
+    display: Commentcode
+    type: string
+    required: false
+    description: Field CommentCode from PorSupComment
+  comment1:
+    display: Comment1
+    type: string
+    required: false
+    description: Field Comment1 from PorSupComment
+  comment2:
+    display: Comment2
+    type: string
+    required: false
+    description: Field Comment2 from PorSupComment

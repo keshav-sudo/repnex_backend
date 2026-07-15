@@ -1,0 +1,16 @@
+concept: gtr_lot_detail
+table: GtrLotDetail
+alias: gld
+fields:
+  gtr_reference: gld.GtrReference
+  source_warehouse: gld.SourceWarehouse
+  target_warehouse: gld.TargetWarehouse
+  line: gld.Line
+  entry: gld.Entry
+  lot: gld.Lot
+  source_bin: gld.SourceBin
+  qty_received: gld.QtyReceived
+  version: gld.Version
+  release: gld.Release
+  certificate: gld.Certificate
+  expiry_date: gld.ExpiryDate

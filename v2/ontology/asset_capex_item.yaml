@@ -1,0 +1,113 @@
+concept: asset_capex_item
+display_name: AssetCapexItem
+module: assets
+description: Auto-generated representation of the physical table AssetCapexItem.
+synonyms:
+- assetcapexitem
+- asset capex item
+header_attributes:
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from AssetCapexItem
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetCapexItem
+  capex_ref:
+    display: Capexref
+    type: string
+    required: false
+    description: Field CapexRef from AssetCapexItem
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetCapexItem
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetCapexItem
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetCapexItem
+  capex_class:
+    display: Capexclass
+    type: string
+    required: false
+    description: Field CapexClass from AssetCapexItem
+  approval_status:
+    display: Approvalstatus
+    type: string
+    required: false
+    description: Field ApprovalStatus from AssetCapexItem
+  value_budgeted:
+    display: Valuebudgeted
+    type: decimal
+    required: false
+    description: Field ValueBudgeted from AssetCapexItem
+  value_uncommitted:
+    display: Valueuncommitted
+    type: decimal
+    required: false
+    description: Field ValueUncommitted from AssetCapexItem
+  value_committed:
+    display: Valuecommitted
+    type: decimal
+    required: false
+    description: Field ValueCommitted from AssetCapexItem
+  value_spent:
+    display: Valuespent
+    type: decimal
+    required: false
+    description: Field ValueSpent from AssetCapexItem
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AssetCapexItem
+  system_date:
+    display: Systemdate
+    type: date
+    required: false
+    description: Field SystemDate from AssetCapexItem
+  operator_approved:
+    display: Operatorapproved
+    type: string
+    required: false
+    description: Field OperatorApproved from AssetCapexItem
+  date_approved:
+    display: Dateapproved
+    type: date
+    required: false
+    description: Field DateApproved from AssetCapexItem
+  start_year:
+    display: Startyear
+    type: decimal
+    required: false
+    description: Field StartYear from AssetCapexItem
+  start_period:
+    display: Startperiod
+    type: decimal
+    required: false
+    description: Field StartPeriod from AssetCapexItem
+  end_year:
+    display: Endyear
+    type: decimal
+    required: false
+    description: Field EndYear from AssetCapexItem
+  end_period:
+    display: Endperiod
+    type: decimal
+    required: false
+    description: Field EndPeriod from AssetCapexItem
+  capex_next_line:
+    display: Capexnextline
+    type: decimal
+    required: false
+    description: Field CapexNextLine from AssetCapexItem

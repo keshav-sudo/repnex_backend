@@ -1,0 +1,43 @@
+concept: sor_detail_bin
+display_name: SorDetailBin
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorDetailBin.
+synonyms:
+- sordetailbin
+- sor detail bin
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorDetailBin
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorDetailBin
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SorDetailBin
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from SorDetailBin
+  stock_qty_to_ship:
+    display: Stockqtytoship
+    type: decimal
+    required: false
+    description: Field StockQtyToShip from SorDetailBin
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from SorDetailBin
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from SorDetailBin

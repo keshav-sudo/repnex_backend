@@ -1,0 +1,11 @@
+concept: mrp_snap_iop_consume
+table: MrpSnapIopConsume
+alias: msic
+fields:
+  stock_code: msic.StockCode
+  version: msic.Version
+  release: msic.Release
+  forecast_wh: msic.ForecastWh
+  forecast_date: msic.ForecastDate
+  forecast_qty: msic.ForecastQty
+  reference: msic.Reference

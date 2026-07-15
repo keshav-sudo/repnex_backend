@@ -1,0 +1,73 @@
+concept: lot_arc_inv_insp_ser
+display_name: LotArcInvInspSer
+module: other
+description: Auto-generated representation of the physical table LotArcInvInspSer.
+synonyms:
+- lotarcinvinspser
+- lot arc inv insp ser
+header_attributes:
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from LotArcInvInspSer
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotArcInvInspSer
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from LotArcInvInspSer
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from LotArcInvInspSer
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from LotArcInvInspSer
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from LotArcInvInspSer
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from LotArcInvInspSer
+  document_num:
+    display: Documentnum
+    type: string
+    required: false
+    description: Field DocumentNum from LotArcInvInspSer
+  transf_to_new_wh:
+    display: Transftonewwh
+    type: string
+    required: false
+    description: Field TransfToNewWh from LotArcInvInspSer
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotArcInvInspSer
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from LotArcInvInspSer
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from LotArcInvInspSer
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from LotArcInvInspSer

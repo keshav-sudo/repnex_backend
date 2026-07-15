@@ -1,0 +1,8 @@
+concept: arc_recall_ref
+table: ArcRecallRef
+alias: arr1
+fields:
+  product_recall: arr1.ProductRecall
+  archive_number: arr1.ArchiveNumber
+  description: arr1.Description
+  type: arr1.Type

@@ -1,0 +1,103 @@
+concept: crm_comp_master
+display_name: CrmCompMaster
+module: crm
+description: Auto-generated representation of the physical table CrmCompMaster.
+synonyms:
+- crmcompmaster
+- crm comp master
+header_attributes:
+  complaint_id:
+    display: Complaintid
+    type: string
+    required: false
+    description: Field ComplaintId from CrmCompMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from CrmCompMaster
+  com_method:
+    display: Commethod
+    type: string
+    required: false
+    description: Field ComMethod from CrmCompMaster
+  date_reported:
+    display: Datereported
+    type: date
+    required: false
+    description: Field DateReported from CrmCompMaster
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from CrmCompMaster
+  complaint_subject:
+    display: Complaintsubject
+    type: string
+    required: false
+    description: Field ComplaintSubject from CrmCompMaster
+  complaint_severity:
+    display: Complaintseverity
+    type: string
+    required: false
+    description: Field ComplaintSeverity from CrmCompMaster
+  complaint_status:
+    display: Complaintstatus
+    type: string
+    required: false
+    description: Field ComplaintStatus from CrmCompMaster
+  assigned_to_owner:
+    display: Assignedtoowner
+    type: string
+    required: false
+    description: Field AssignedToOwner from CrmCompMaster
+  assigned_to_group:
+    display: Assignedtogroup
+    type: string
+    required: false
+    description: Field AssignedToGroup from CrmCompMaster
+  assigned_to_user:
+    display: Assignedtouser
+    type: string
+    required: false
+    description: Field AssignedToUser from CrmCompMaster
+  date_assigned:
+    display: Dateassigned
+    type: date
+    required: false
+    description: Field DateAssigned from CrmCompMaster
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from CrmCompMaster
+  customer_document:
+    display: Customerdocument
+    type: string
+    required: false
+    description: Field CustomerDocument from CrmCompMaster
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from CrmCompMaster
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from CrmCompMaster
+  complaint_comment:
+    display: Complaintcomment
+    type: string
+    required: false
+    description: Field ComplaintComment from CrmCompMaster
+  routed_flag:
+    display: Routedflag
+    type: string
+    required: false
+    description: Field RoutedFlag from CrmCompMaster
+  escalated_flag:
+    display: Escalatedflag
+    type: string
+    required: false
+    description: Field EscalatedFlag from CrmCompMaster

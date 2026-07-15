@@ -1,0 +1,353 @@
+concept: gen_dimension_det
+display_name: GenDimensionDet
+module: general_ledger
+description: Auto-generated representation of the physical table GenDimensionDet.
+synonyms:
+- gendimensiondet
+- gen dimension det
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenDimensionDet
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenDimensionDet
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenDimensionDet
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from GenDimensionDet
+  gl_line:
+    display: Glline
+    type: decimal
+    required: false
+    description: Field GlLine from GenDimensionDet
+  source_key:
+    display: Sourcekey
+    type: string
+    required: false
+    description: Field SourceKey from GenDimensionDet
+  dimension_cat1:
+    display: Dimensioncat1
+    type: string
+    required: false
+    description: Field DimensionCat1 from GenDimensionDet
+  dimension_cat2:
+    display: Dimensioncat2
+    type: string
+    required: false
+    description: Field DimensionCat2 from GenDimensionDet
+  dimension_cat3:
+    display: Dimensioncat3
+    type: string
+    required: false
+    description: Field DimensionCat3 from GenDimensionDet
+  dimension_cat4:
+    display: Dimensioncat4
+    type: string
+    required: false
+    description: Field DimensionCat4 from GenDimensionDet
+  dimension_cat5:
+    display: Dimensioncat5
+    type: string
+    required: false
+    description: Field DimensionCat5 from GenDimensionDet
+  dimension_cat6:
+    display: Dimensioncat6
+    type: string
+    required: false
+    description: Field DimensionCat6 from GenDimensionDet
+  dimension_cat7:
+    display: Dimensioncat7
+    type: string
+    required: false
+    description: Field DimensionCat7 from GenDimensionDet
+  dimension_cat8:
+    display: Dimensioncat8
+    type: string
+    required: false
+    description: Field DimensionCat8 from GenDimensionDet
+  dimension_cat9:
+    display: Dimensioncat9
+    type: string
+    required: false
+    description: Field DimensionCat9 from GenDimensionDet
+  dimension_cat10:
+    display: Dimensioncat10
+    type: string
+    required: false
+    description: Field DimensionCat10 from GenDimensionDet
+  dimension_code1:
+    display: Dimensioncode1
+    type: string
+    required: false
+    description: Field DimensionCode1 from GenDimensionDet
+  dimension_code2:
+    display: Dimensioncode2
+    type: string
+    required: false
+    description: Field DimensionCode2 from GenDimensionDet
+  dimension_code3:
+    display: Dimensioncode3
+    type: string
+    required: false
+    description: Field DimensionCode3 from GenDimensionDet
+  dimension_code4:
+    display: Dimensioncode4
+    type: string
+    required: false
+    description: Field DimensionCode4 from GenDimensionDet
+  dimension_code5:
+    display: Dimensioncode5
+    type: string
+    required: false
+    description: Field DimensionCode5 from GenDimensionDet
+  dimension_code6:
+    display: Dimensioncode6
+    type: string
+    required: false
+    description: Field DimensionCode6 from GenDimensionDet
+  dimension_code7:
+    display: Dimensioncode7
+    type: string
+    required: false
+    description: Field DimensionCode7 from GenDimensionDet
+  dimension_code8:
+    display: Dimensioncode8
+    type: string
+    required: false
+    description: Field DimensionCode8 from GenDimensionDet
+  dimension_code9:
+    display: Dimensioncode9
+    type: string
+    required: false
+    description: Field DimensionCode9 from GenDimensionDet
+  dimension_code10:
+    display: Dimensioncode10
+    type: string
+    required: false
+    description: Field DimensionCode10 from GenDimensionDet
+  total_amount:
+    display: Totalamount
+    type: decimal
+    required: false
+    description: Field TotalAmount from GenDimensionDet
+  document_date:
+    display: Documentdate
+    type: date
+    required: false
+    description: Field DocumentDate from GenDimensionDet
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from GenDimensionDet
+  last_changed_by:
+    display: Lastchangedby
+    type: string
+    required: false
+    description: Field LastChangedBy from GenDimensionDet
+  document_upd_date:
+    display: Documentupddate
+    type: date
+    required: false
+    description: Field DocumentUpdDate from GenDimensionDet
+  sub_module_key:
+    display: Submodulekey
+    type: string
+    required: false
+    description: Field SubModuleKey from GenDimensionDet
+  entity_number:
+    display: Entitynumber
+    type: string
+    required: false
+    description: Field EntityNumber from GenDimensionDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from GenDimensionDet
+  document_num:
+    display: Documentnum
+    type: string
+    required: false
+    description: Field DocumentNum from GenDimensionDet
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenDimensionDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from GenDimensionDet
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from GenDimensionDet
+  control_acc_flag:
+    display: Controlaccflag
+    type: string
+    required: false
+    description: Field ControlAccFlag from GenDimensionDet
+  entity_type1:
+    display: Entitytype1
+    type: string
+    required: false
+    description: Field EntityType1 from GenDimensionDet
+  entity_type2:
+    display: Entitytype2
+    type: string
+    required: false
+    description: Field EntityType2 from GenDimensionDet
+  entity_type3:
+    display: Entitytype3
+    type: string
+    required: false
+    description: Field EntityType3 from GenDimensionDet
+  entity_type4:
+    display: Entitytype4
+    type: string
+    required: false
+    description: Field EntityType4 from GenDimensionDet
+  entity_type5:
+    display: Entitytype5
+    type: string
+    required: false
+    description: Field EntityType5 from GenDimensionDet
+  entity_type6:
+    display: Entitytype6
+    type: string
+    required: false
+    description: Field EntityType6 from GenDimensionDet
+  entity_type7:
+    display: Entitytype7
+    type: string
+    required: false
+    description: Field EntityType7 from GenDimensionDet
+  entity_type8:
+    display: Entitytype8
+    type: string
+    required: false
+    description: Field EntityType8 from GenDimensionDet
+  entity_type9:
+    display: Entitytype9
+    type: string
+    required: false
+    description: Field EntityType9 from GenDimensionDet
+  entity_type10:
+    display: Entitytype10
+    type: string
+    required: false
+    description: Field EntityType10 from GenDimensionDet
+  entity_code1:
+    display: Entitycode1
+    type: string
+    required: false
+    description: Field EntityCode1 from GenDimensionDet
+  entity_code2:
+    display: Entitycode2
+    type: string
+    required: false
+    description: Field EntityCode2 from GenDimensionDet
+  entity_code3:
+    display: Entitycode3
+    type: string
+    required: false
+    description: Field EntityCode3 from GenDimensionDet
+  entity_code4:
+    display: Entitycode4
+    type: string
+    required: false
+    description: Field EntityCode4 from GenDimensionDet
+  entity_code5:
+    display: Entitycode5
+    type: string
+    required: false
+    description: Field EntityCode5 from GenDimensionDet
+  entity_code6:
+    display: Entitycode6
+    type: string
+    required: false
+    description: Field EntityCode6 from GenDimensionDet
+  entity_code7:
+    display: Entitycode7
+    type: string
+    required: false
+    description: Field EntityCode7 from GenDimensionDet
+  entity_code8:
+    display: Entitycode8
+    type: string
+    required: false
+    description: Field EntityCode8 from GenDimensionDet
+  entity_code9:
+    display: Entitycode9
+    type: string
+    required: false
+    description: Field EntityCode9 from GenDimensionDet
+  entity_code10:
+    display: Entitycode10
+    type: string
+    required: false
+    description: Field EntityCode10 from GenDimensionDet
+  extract_operator:
+    display: Extractoperator
+    type: string
+    required: false
+    description: Field ExtractOperator from GenDimensionDet
+  extract_date_time:
+    display: Extractdatetime
+    type: date
+    required: false
+    description: Field ExtractDateTime from GenDimensionDet
+  extract_status:
+    display: Extractstatus
+    type: string
+    required: false
+    description: Field ExtractStatus from GenDimensionDet
+  entity_for:
+    display: Entityfor
+    type: string
+    required: false
+    description: Field EntityFor from GenDimensionDet
+  order_number:
+    display: Ordernumber
+    type: string
+    required: false
+    description: Field OrderNumber from GenDimensionDet
+  order_line:
+    display: Orderline
+    type: decimal
+    required: false
+    description: Field OrderLine from GenDimensionDet
+  order_qty:
+    display: Orderqty
+    type: decimal
+    required: false
+    description: Field OrderQty from GenDimensionDet
+  ship_qty:
+    display: Shipqty
+    type: decimal
+    required: false
+    description: Field ShipQty from GenDimensionDet
+  received_qty:
+    display: Receivedqty
+    type: decimal
+    required: false
+    description: Field ReceivedQty from GenDimensionDet
+  dispatched_qty:
+    display: Dispatchedqty
+    type: decimal
+    required: false
+    description: Field DispatchedQty from GenDimensionDet

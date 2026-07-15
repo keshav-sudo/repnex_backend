@@ -1,0 +1,268 @@
+concept: tpm_deduction_master
+display_name: TpmDeductionMaster
+module: other
+description: Auto-generated representation of the physical table TpmDeductionMaster.
+synonyms:
+- tpmdeductionmaster
+- tpm deduction master
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from TpmDeductionMaster
+  deduct_customer:
+    display: Deductcustomer
+    type: string
+    required: false
+    description: Field DeductCustomer from TpmDeductionMaster
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from TpmDeductionMaster
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from TpmDeductionMaster
+  copy_customer:
+    display: Copycustomer
+    type: string
+    required: false
+    description: Field CopyCustomer from TpmDeductionMaster
+  copy_deduct_customer:
+    display: Copydeductcustomer
+    type: string
+    required: false
+    description: Field CopyDeductCustomer from TpmDeductionMaster
+  copy_trn_date:
+    display: Copytrndate
+    type: date
+    required: false
+    description: Field CopyTrnDate from TpmDeductionMaster
+  copy_trn_time:
+    display: Copytrntime
+    type: decimal
+    required: false
+    description: Field CopyTrnTime from TpmDeductionMaster
+  payment_cust:
+    display: Paymentcust
+    type: string
+    required: false
+    description: Field PaymentCust from TpmDeductionMaster
+  pay_value:
+    display: Payvalue
+    type: decimal
+    required: false
+    description: Field PayValue from TpmDeductionMaster
+  deduct_total:
+    display: Deducttotal
+    type: decimal
+    required: false
+    description: Field DeductTotal from TpmDeductionMaster
+  cheque_reference:
+    display: Chequereference
+    type: string
+    required: false
+    description: Field ChequeReference from TpmDeductionMaster
+  pay_date:
+    display: Paydate
+    type: date
+    required: false
+    description: Field PayDate from TpmDeductionMaster
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from TpmDeductionMaster
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from TpmDeductionMaster
+  deduction_code:
+    display: Deductioncode
+    type: string
+    required: false
+    description: Field DeductionCode from TpmDeductionMaster
+  begin_balance:
+    display: Beginbalance
+    type: decimal
+    required: false
+    description: Field BeginBalance from TpmDeductionMaster
+  current_balance:
+    display: Currentbalance
+    type: decimal
+    required: false
+    description: Field CurrentBalance from TpmDeductionMaster
+  deduct_amount:
+    display: Deductamount
+    type: decimal
+    required: false
+    description: Field DeductAmount from TpmDeductionMaster
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from TpmDeductionMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from TpmDeductionMaster
+  change_operator:
+    display: Changeoperator
+    type: string
+    required: false
+    description: Field ChangeOperator from TpmDeductionMaster
+  change_date:
+    display: Changedate
+    type: date
+    required: false
+    description: Field ChangeDate from TpmDeductionMaster
+  follow_up_date:
+    display: Followupdate
+    type: date
+    required: false
+    description: Field FollowUpDate from TpmDeductionMaster
+  resolution_code:
+    display: Resolutioncode
+    type: string
+    required: false
+    description: Field ResolutionCode from TpmDeductionMaster
+  resolution_date:
+    display: Resolutiondate
+    type: date
+    required: false
+    description: Field ResolutionDate from TpmDeductionMaster
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from TpmDeductionMaster
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from TpmDeductionMaster
+  adjust_ldg:
+    display: Adjustldg
+    type: string
+    required: false
+    description: Field AdjustLdg from TpmDeductionMaster
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from TpmDeductionMaster
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from TpmDeductionMaster
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from TpmDeductionMaster
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from TpmDeductionMaster
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from TpmDeductionMaster
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from TpmDeductionMaster
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from TpmDeductionMaster
+  orig_disc_value:
+    display: Origdiscvalue
+    type: decimal
+    required: false
+    description: Field OrigDiscValue from TpmDeductionMaster
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from TpmDeductionMaster
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from TpmDeductionMaster
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from TpmDeductionMaster
+  jnl_entry_number:
+    display: Jnlentrynumber
+    type: decimal
+    required: false
+    description: Field JnlEntryNumber from TpmDeductionMaster
+  adjust_date:
+    display: Adjustdate
+    type: date
+    required: false
+    description: Field AdjustDate from TpmDeductionMaster
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from TpmDeductionMaster
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from TpmDeductionMaster
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from TpmDeductionMaster
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from TpmDeductionMaster
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from TpmDeductionMaster
+  acc_conv_rate:
+    display: Accconvrate
+    type: decimal
+    required: false
+    description: Field AccConvRate from TpmDeductionMaster
+  acc_mul_div:
+    display: Accmuldiv
+    type: string
+    required: false
+    description: Field AccMulDiv from TpmDeductionMaster
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from TpmDeductionMaster
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from TpmDeductionMaster
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from TpmDeductionMaster

@@ -1,0 +1,58 @@
+concept: iop_col_live
+display_name: IopColLive
+module: other
+description: Auto-generated representation of the physical table IopColLive.
+synonyms:
+- iopcollive
+- iop col live
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopColLive
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopColLive
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from IopColLive
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from IopColLive
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopColLive
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopColLive
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopColLive
+  forecast_batch:
+    display: Forecastbatch
+    type: string
+    required: false
+    description: Field ForecastBatch from IopColLive
+  date_prepared:
+    display: Dateprepared
+    type: date
+    required: false
+    description: Field DatePrepared from IopColLive
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from IopColLive

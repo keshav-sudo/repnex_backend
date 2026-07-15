@@ -1,0 +1,6 @@
+concept: asset_owner
+table: AssetOwner
+alias: ao
+fields:
+  asset_owner: ao.AssetOwner
+  description: ao.Description

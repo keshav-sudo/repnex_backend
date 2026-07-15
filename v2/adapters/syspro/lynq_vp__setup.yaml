@@ -1,0 +1,7 @@
+concept: lynq_vp__setup
+table: Lynq_VP_Setup
+alias: lvps
+fields:
+  id: lvps.ID
+  name: lvps.Name
+  value: lvps.Value

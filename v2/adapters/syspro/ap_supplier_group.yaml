@@ -1,0 +1,8 @@
+concept: ap_supplier_group
+table: ApSupplierGroup
+alias: asg
+fields:
+  group_supplier: asg.GroupSupplier
+  company: asg.Company
+  supplier: asg.Supplier
+  currency: asg.Currency

@@ -1,0 +1,13 @@
+concept: sor_price_list_header
+table: SorPriceListHeader
+alias: splh
+fields:
+  price_list: splh.PriceList
+  description: splh.Description
+  price_basis: splh.PriceBasis
+  currency: splh.Currency
+  price_method: splh.PriceMethod
+  start_date: splh.StartDate
+  closing_date: splh.ClosingDate
+  stock_selection: splh.StockSelection
+  price_list_status: splh.PriceListStatus

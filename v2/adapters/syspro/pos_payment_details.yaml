@@ -1,0 +1,11 @@
+concept: pos_payment_details
+table: PosPaymentDetails
+alias: ppd1
+fields:
+  invoice: ppd1.Invoice
+  sales_order: ppd1.SalesOrder
+  payment_type: ppd1.PaymentType
+  dep_invoice: ppd1.DepInvoice
+  payment_value: ppd1.PaymentValue
+  payment_date: ppd1.PaymentDate
+  comment: ppd1.Comment

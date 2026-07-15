@@ -1,0 +1,11 @@
+concept: wip_job_post_ser
+table: WipJobPostSer
+alias: wjps
+fields:
+  job: wjps.Job
+  line: wjps.Line
+  lot: wjps.Lot
+  serial: wjps.Serial
+  stock_qty_issued: wjps.StockQtyIssued
+  serial_expiry_date: wjps.SerialExpiryDate
+  bin: wjps.Bin

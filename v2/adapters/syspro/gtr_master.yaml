@@ -1,0 +1,18 @@
+concept: gtr_master
+table: GtrMaster
+alias: gm3
+fields:
+  gtr_reference: gm3.GtrReference
+  source_warehouse: gm3.SourceWarehouse
+  target_warehouse: gm3.TargetWarehouse
+  entry_type: gm3.EntryType
+  next_line: gm3.NextLine
+  control_account: gm3.ControlAccount
+  initial_value: gm3.InitialValue
+  val_rec_to_date: gm3.ValRecToDate
+  date_created: gm3.DateCreated
+  time_created_hh: gm3.TimeCreatedHh
+  time_created_mm: gm3.TimeCreatedMm
+  operator: gm3.Operator
+  complete: gm3.Complete
+  interface_flag: gm3.InterfaceFlag

@@ -1,0 +1,7 @@
+concept: adm_tax_fltr_us_state
+table: AdmTaxFltrUsState
+alias: atfus
+fields:
+  state: atfus.State
+  state_name: atfus.StateName
+  exclude_flag: atfus.ExcludeFlag

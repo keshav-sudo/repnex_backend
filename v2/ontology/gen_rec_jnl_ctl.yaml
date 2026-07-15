@@ -1,0 +1,93 @@
+concept: gen_rec_jnl_ctl
+display_name: GenRecJnlCtl
+module: general_ledger
+description: Auto-generated representation of the physical table GenRecJnlCtl.
+synonyms:
+- genrecjnlctl
+- gen rec jnl ctl
+header_attributes:
+  journal_code:
+    display: Journalcode
+    type: string
+    required: false
+    description: Field JournalCode from GenRecJnlCtl
+  num_of_entries:
+    display: Numofentries
+    type: decimal
+    required: false
+    description: Field NumOfEntries from GenRecJnlCtl
+  debit_amount:
+    display: Debitamount
+    type: decimal
+    required: false
+    description: Field DebitAmount from GenRecJnlCtl
+  credit_amount:
+    display: Creditamount
+    type: decimal
+    required: false
+    description: Field CreditAmount from GenRecJnlCtl
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from GenRecJnlCtl
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from GenRecJnlCtl
+  next_post_year:
+    display: Nextpostyear
+    type: decimal
+    required: false
+    description: Field NextPostYear from GenRecJnlCtl
+  genrjc_nper:
+    display: Genrjcnper
+    type: decimal
+    required: false
+    description: Field GenrjcNper from GenRecJnlCtl
+  genrjc_eyear:
+    display: Genrjceyear
+    type: decimal
+    required: false
+    description: Field GenrjcEyear from GenRecJnlCtl
+  next_post_period:
+    display: Nextpostperiod
+    type: decimal
+    required: false
+    description: Field NextPostPeriod from GenRecJnlCtl
+  post_frequency:
+    display: Postfrequency
+    type: decimal
+    required: false
+    description: Field PostFrequency from GenRecJnlCtl
+  last_year_posted:
+    display: Lastyearposted
+    type: decimal
+    required: false
+    description: Field LastYearPosted from GenRecJnlCtl
+  last_period_posted:
+    display: Lastperiodposted
+    type: decimal
+    required: false
+    description: Field LastPeriodPosted from GenRecJnlCtl
+  last_jnl_posted_to:
+    display: Lastjnlpostedto
+    type: decimal
+    required: false
+    description: Field LastJnlPostedTo from GenRecJnlCtl
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from GenRecJnlCtl
+  authorised_by:
+    display: Authorisedby
+    type: string
+    required: false
+    description: Field AuthorisedBy from GenRecJnlCtl
+  authorised:
+    display: Authorised
+    type: string
+    required: false
+    description: Field Authorised from GenRecJnlCtl

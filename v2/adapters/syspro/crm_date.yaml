@@ -1,0 +1,11 @@
+concept: crm_date
+table: CrmDate
+alias: cd
+fields:
+  contact_id: cd.ContactId
+  date_type: cd.DateType
+  description: cd.Description
+  contact_date: cd.ContactDate
+  reminder: cd.Reminder
+  reminder_days: cd.ReminderDays
+  private: cd.Private

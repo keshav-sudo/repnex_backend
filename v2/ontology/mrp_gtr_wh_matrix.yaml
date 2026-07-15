@@ -1,0 +1,33 @@
+concept: mrp_gtr_wh_matrix
+display_name: MrpGtrWhMatrix
+module: mrp
+description: Auto-generated representation of the physical table MrpGtrWhMatrix.
+synonyms:
+- mrpgtrwhmatrix
+- mrp gtr wh matrix
+header_attributes:
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from MrpGtrWhMatrix
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from MrpGtrWhMatrix
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from MrpGtrWhMatrix
+  transf_cost_gl:
+    display: Transfcostgl
+    type: string
+    required: false
+    description: Field TransfCostGl from MrpGtrWhMatrix
+  multiplier:
+    display: Multiplier
+    type: decimal
+    required: false
+    description: Field Multiplier from MrpGtrWhMatrix

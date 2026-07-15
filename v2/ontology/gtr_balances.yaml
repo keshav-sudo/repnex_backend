@@ -1,0 +1,78 @@
+concept: gtr_balances
+display_name: GtrBalances
+module: other
+description: Auto-generated representation of the physical table GtrBalances.
+synonyms:
+- gtrbalances
+- gtr balances
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from GtrBalances
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from GtrBalances
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from GtrBalances
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from GtrBalances
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from GtrBalances
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from GtrBalances
+  cur_out_value:
+    display: Curoutvalue
+    type: decimal
+    required: false
+    description: Field CurOutValue from GtrBalances
+  clc_out_value:
+    display: Clcoutvalue
+    type: decimal
+    required: false
+    description: Field ClcOutValue from GtrBalances
+  cur_in_value:
+    display: Curinvalue
+    type: decimal
+    required: false
+    description: Field CurInValue from GtrBalances
+  clc_in_value:
+    display: Clcinvalue
+    type: decimal
+    required: false
+    description: Field ClcInValue from GtrBalances
+  cur_out_quantity:
+    display: Curoutquantity
+    type: decimal
+    required: false
+    description: Field CurOutQuantity from GtrBalances
+  clc_out_quantity:
+    display: Clcoutquantity
+    type: decimal
+    required: false
+    description: Field ClcOutQuantity from GtrBalances
+  cur_in_quantity:
+    display: Curinquantity
+    type: decimal
+    required: false
+    description: Field CurInQuantity from GtrBalances
+  clc_in_quantity:
+    display: Clcinquantity
+    type: decimal
+    required: false
+    description: Field ClcInQuantity from GtrBalances

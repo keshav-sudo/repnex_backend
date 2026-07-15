@@ -1,0 +1,15 @@
+concept: sor_detail_lot_rep
+table: SorDetailLotRep
+alias: sdlr
+fields:
+  invoice: sdlr.Invoice
+  sales_order: sdlr.SalesOrder
+  sales_order_line: sdlr.SalesOrderLine
+  lot: sdlr.Lot
+  stock_qty_to_ship: sdlr.StockQtyToShip
+  qty_this_session: sdlr.QtyThisSession
+  version: sdlr.Version
+  release: sdlr.Release
+  certificate: sdlr.Certificate
+  lot_expiry_date: sdlr.LotExpiryDate
+  qty_reserved: sdlr.QtyReserved

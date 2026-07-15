@@ -1,0 +1,57 @@
+concept: mrp_sug_co_products
+table: MrpSugCoProducts
+alias: mscp
+fields:
+  job: mscp.Job
+  co_product_line: mscp.CoProductLine
+  co_product: mscp.CoProduct
+  co_product_version: mscp.CoProductVersion
+  co_product_release: mscp.CoProductRelease
+  stock_description: mscp.StockDescription
+  warehouse: mscp.Warehouse
+  operation_offset: mscp.OperationOffset
+  act_complete_date: mscp.ActCompleteDate
+  complete: mscp.Complete
+  exp_labour: mscp.ExpLabour
+  exp_material: mscp.ExpMaterial
+  qty_per: mscp.QtyPer
+  qty_to_make: mscp.QtyToMake
+  qty_manufactured: mscp.QtyManufactured
+  total_qty_scrapped: mscp.TotalQtyScrapped
+  pct_complete_flag: mscp.PctCompleteFlag
+  selling_price: mscp.SellingPrice
+  confirmed_flag: mscp.ConfirmedFlag
+  traceable_type: mscp.TraceableType
+  decimals: mscp.Decimals
+  mat_cost_to_date1: mscp.MatCostToDate1
+  mat_cost_to_date2: mscp.MatCostToDate2
+  mat_cost_to_date3: mscp.MatCostToDate3
+  lab_cost_to_date1: mscp.LabCostToDate1
+  lab_cost_to_date2: mscp.LabCostToDate2
+  lab_cost_to_date3: mscp.LabCostToDate3
+  hrs_book_to_date1: mscp.HrsBookToDate1
+  hrs_book_to_date2: mscp.HrsBookToDate2
+  hrs_book_to_date3: mscp.HrsBookToDate3
+  mat_value_issues1: mscp.MatValueIssues1
+  mat_value_issues2: mscp.MatValueIssues2
+  mat_value_issues3: mscp.MatValueIssues3
+  lab_value_issues1: mscp.LabValueIssues1
+  lab_value_issues2: mscp.LabValueIssues2
+  lab_value_issues3: mscp.LabValueIssues3
+  due_date: mscp.DueDate
+  orig_due_date: mscp.OrigDueDate
+  exp_lab_current: mscp.ExpLabCurrent
+  exp_mat_current: mscp.ExpMatCurrent
+  pct_material_cost: mscp.PctMaterialCost
+  pct_sub_contract_cost: mscp.PctSubContractCost
+  pct_labor_cost: mscp.PctLaborCost
+  pct_quantity: mscp.PctQuantity
+  uom: mscp.Uom
+  conv_fact_uom: mscp.ConvFactUom
+  conv_mul_div: mscp.ConvMulDiv
+  qty_per_ent: mscp.QtyPerEnt
+  qty_to_make_ent: mscp.QtyToMakeEnt
+  qty_manufactured_ent: mscp.QtyManufacturedEnt
+  total_qty_scrap_ent: mscp.TotalQtyScrapEnt
+  wip_branch: mscp.WipBranch
+  wip_ctl_gl_code: mscp.WipCtlGlCode

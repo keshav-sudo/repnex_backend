@@ -1,0 +1,18 @@
+concept: ar_collector
+display_name: ArCollector
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCollector.
+synonyms:
+- arcollector
+- ar collector
+header_attributes:
+  collector:
+    display: Collector
+    type: string
+    required: false
+    description: Field Collector from ArCollector
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from ArCollector

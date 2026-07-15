@@ -1,0 +1,25 @@
+concept: asset_capex_def_det
+table: AssetCapexDefDet
+alias: acdd
+fields:
+  branch: acdd.Branch
+  asset_cost_center: acdd.AssetCostCenter
+  asset_group_code: acdd.AssetGroupCode
+  location: acdd.Location
+  asset_type: acdd.AssetType
+  def_cost_center: acdd.DefCostCenter
+  def_group_code: acdd.DefGroupCode
+  gl_code: acdd.GlCode
+  asset_status: acdd.AssetStatus
+  cycle_count: acdd.CycleCount
+  resp_user: acdd.RespUser
+  asset_owner: acdd.AssetOwner
+  book_val_dep: acdd.BookValDep
+  book_val_residual: acdd.BookValResidual
+  thruput_eul: acdd.ThruputEul
+  stat_gl_code: acdd.StatGlCode
+  total_periods: acdd.TotalPeriods
+  wear_tear_dep: acdd.WearTearDep
+  wear_tear_residual: acdd.WearTearResidual
+  suspend: acdd.Suspend
+  book_val_dep_flag: acdd.BookValDepFlag

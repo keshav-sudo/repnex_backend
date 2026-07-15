@@ -1,0 +1,88 @@
+concept: ecc_actions
+display_name: EccActions
+module: other
+description: Auto-generated representation of the physical table EccActions.
+synonyms:
+- eccactions
+- ecc actions
+header_attributes:
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccActions
+  audit_sequence:
+    display: Auditsequence
+    type: decimal
+    required: false
+    description: Field AuditSequence from EccActions
+  action_sequence:
+    display: Actionsequence
+    type: decimal
+    required: false
+    description: Field ActionSequence from EccActions
+  status_code:
+    display: Statuscode
+    type: string
+    required: false
+    description: Field StatusCode from EccActions
+  action_type:
+    display: Actiontype
+    type: string
+    required: false
+    description: Field ActionType from EccActions
+  action_status:
+    display: Actionstatus
+    type: string
+    required: false
+    description: Field ActionStatus from EccActions
+  status_change:
+    display: Statuschange
+    type: string
+    required: false
+    description: Field StatusChange from EccActions
+  required_date:
+    display: Requireddate
+    type: date
+    required: false
+    description: Field RequiredDate from EccActions
+  completion_date:
+    display: Completiondate
+    type: date
+    required: false
+    description: Field CompletionDate from EccActions
+  reminder_date:
+    display: Reminderdate
+    type: date
+    required: false
+    description: Field ReminderDate from EccActions
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EccActions
+  user_flag:
+    display: Userflag
+    type: string
+    required: false
+    description: Field UserFlag from EccActions
+  resp_person:
+    display: Respperson
+    type: string
+    required: false
+    description: Field RespPerson from EccActions
+  pos_next_status:
+    display: Posnextstatus
+    type: string
+    required: false
+    description: Field PosNextStatus from EccActions
+  neg_next_status:
+    display: Negnextstatus
+    type: string
+    required: false
+    description: Field NegNextStatus from EccActions
+  mixed_next_status:
+    display: Mixednextstatus
+    type: string
+    required: false
+    description: Field MixedNextStatus from EccActions

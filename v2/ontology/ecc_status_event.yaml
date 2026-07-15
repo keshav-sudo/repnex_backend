@@ -1,0 +1,128 @@
+concept: ecc_status_event
+display_name: EccStatusEvent
+module: other
+description: Auto-generated representation of the physical table EccStatusEvent.
+synonyms:
+- eccstatusevent
+- ecc status event
+header_attributes:
+  status_code:
+    display: Statuscode
+    type: string
+    required: false
+    description: Field StatusCode from EccStatusEvent
+  event_number:
+    display: Eventnumber
+    type: decimal
+    required: false
+    description: Field EventNumber from EccStatusEvent
+  description_fixed:
+    display: Descriptionfixed
+    type: string
+    required: false
+    description: Field DescriptionFixed from EccStatusEvent
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EccStatusEvent
+  event_type:
+    display: Eventtype
+    type: string
+    required: false
+    description: Field EventType from EccStatusEvent
+  action_user_fixed:
+    display: Actionuserfixed
+    type: string
+    required: false
+    description: Field ActionUserFixed from EccStatusEvent
+  ecc_user:
+    display: Eccuser
+    type: string
+    required: false
+    description: Field EccUser from EccStatusEvent
+  action_days_fixed:
+    display: Actiondaysfixed
+    type: string
+    required: false
+    description: Field ActionDaysFixed from EccStatusEvent
+  action_days:
+    display: Actiondays
+    type: decimal
+    required: false
+    description: Field ActionDays from EccStatusEvent
+  review_action:
+    display: Reviewaction
+    type: string
+    required: false
+    description: Field ReviewAction from EccStatusEvent
+  reminder_days_fixed:
+    display: Reminderdaysfixed
+    type: string
+    required: false
+    description: Field ReminderDaysFixed from EccStatusEvent
+  reminder_days:
+    display: Reminderdays
+    type: decimal
+    required: false
+    description: Field ReminderDays from EccStatusEvent
+  status_change:
+    display: Statuschange
+    type: string
+    required: false
+    description: Field StatusChange from EccStatusEvent
+  mail_users:
+    display: Mailusers
+    type: string
+    required: false
+    description: Field MailUsers from EccStatusEvent
+  email_fixed:
+    display: Emailfixed
+    type: string
+    required: false
+    description: Field EmailFixed from EccStatusEvent
+  mail_subject:
+    display: Mailsubject
+    type: string
+    required: false
+    description: Field MailSubject from EccStatusEvent
+  mail_message:
+    display: Mailmessage
+    type: string
+    required: false
+    description: Field MailMessage from EccStatusEvent
+  pos_response:
+    display: Posresponse
+    type: string
+    required: false
+    description: Field PosResponse from EccStatusEvent
+  neg_response:
+    display: Negresponse
+    type: string
+    required: false
+    description: Field NegResponse from EccStatusEvent
+  pos_next_status:
+    display: Posnextstatus
+    type: string
+    required: false
+    description: Field PosNextStatus from EccStatusEvent
+  neg_next_status:
+    display: Negnextstatus
+    type: string
+    required: false
+    description: Field NegNextStatus from EccStatusEvent
+  mixed_next_status:
+    display: Mixednextstatus
+    type: string
+    required: false
+    description: Field MixedNextStatus from EccStatusEvent
+  oper_action:
+    display: Operaction
+    type: string
+    required: false
+    description: Field OperAction from EccStatusEvent
+  action_type:
+    display: Actiontype
+    type: string
+    required: false
+    description: Field ActionType from EccStatusEvent

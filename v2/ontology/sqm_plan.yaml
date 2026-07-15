@@ -1,0 +1,58 @@
+concept: sqm_plan
+display_name: SqmPlan
+module: other
+description: Auto-generated representation of the physical table SqmPlan.
+synonyms:
+- sqmplan
+- sqm plan
+header_attributes:
+  plan_type:
+    display: Plantype
+    type: string
+    required: false
+    description: Field PlanType from SqmPlan
+  sample_plan:
+    display: Sampleplan
+    type: string
+    required: false
+    description: Field SamplePlan from SqmPlan
+  inspect_control:
+    display: Inspectcontrol
+    type: string
+    required: false
+    description: Field InspectControl from SqmPlan
+  sample_code:
+    display: Samplecode
+    type: string
+    required: false
+    description: Field SampleCode from SqmPlan
+  acceptance_limit:
+    display: Acceptancelimit
+    type: decimal
+    required: false
+    description: Field AcceptanceLimit from SqmPlan
+  sample_number:
+    display: Samplenumber
+    type: decimal
+    required: false
+    description: Field SampleNumber from SqmPlan
+  sample_size:
+    display: Samplesize
+    type: decimal
+    required: false
+    description: Field SampleSize from SqmPlan
+  acceptance_num:
+    display: Acceptancenum
+    type: decimal
+    required: false
+    description: Field AcceptanceNum from SqmPlan
+  rejection_num:
+    display: Rejectionnum
+    type: decimal
+    required: false
+    description: Field RejectionNum from SqmPlan
+  accept_allowed:
+    display: Acceptallowed
+    type: string
+    required: false
+    description: Field AcceptAllowed from SqmPlan

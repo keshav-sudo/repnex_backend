@@ -1,0 +1,163 @@
+concept: ar_invoice_reval
+display_name: ArInvoiceReval
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArInvoiceReval.
+synonyms:
+- arinvoicereval
+- ar invoice reval
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArInvoiceReval
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArInvoiceReval
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ArInvoiceReval
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from ArInvoiceReval
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ArInvoiceReval
+  bal_revalued:
+    display: Balrevalued
+    type: decimal
+    required: false
+    description: Field BalRevalued from ArInvoiceReval
+  reval_value:
+    display: Revalvalue
+    type: decimal
+    required: false
+    description: Field RevalValue from ArInvoiceReval
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArInvoiceReval
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArInvoiceReval
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ArInvoiceReval
+  post_conv_rate:
+    display: Postconvrate
+    type: decimal
+    required: false
+    description: Field PostConvRate from ArInvoiceReval
+  post_mul_div:
+    display: Postmuldiv
+    type: string
+    required: false
+    description: Field PostMulDiv from ArInvoiceReval
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ArInvoiceReval
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from ArInvoiceReval
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from ArInvoiceReval
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ArInvoiceReval
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from ArInvoiceReval
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ArInvoiceReval
+  bef_value:
+    display: Befvalue
+    type: decimal
+    required: false
+    description: Field BefValue from ArInvoiceReval
+  bef_post_currency:
+    display: Befpostcurrency
+    type: string
+    required: false
+    description: Field BefPostCurrency from ArInvoiceReval
+  bef_post_conv_rate:
+    display: Befpostconvrate
+    type: decimal
+    required: false
+    description: Field BefPostConvRate from ArInvoiceReval
+  bef_post_mul_div:
+    display: Befpostmuldiv
+    type: string
+    required: false
+    description: Field BefPostMulDiv from ArInvoiceReval
+  bef_account_cur:
+    display: Befaccountcur
+    type: string
+    required: false
+    description: Field BefAccountCur from ArInvoiceReval
+  bef_account_conv_rate:
+    display: Befaccountconvrate
+    type: decimal
+    required: false
+    description: Field BefAccountConvRate from ArInvoiceReval
+  bef_account_mul_div:
+    display: Befaccountmuldiv
+    type: string
+    required: false
+    description: Field BefAccountMulDiv from ArInvoiceReval
+  bef_triang_currency:
+    display: Beftriangcurrency
+    type: string
+    required: false
+    description: Field BefTriangCurrency from ArInvoiceReval
+  bef_triang_conv_rate:
+    display: Beftriangconvrate
+    type: decimal
+    required: false
+    description: Field BefTriangConvRate from ArInvoiceReval
+  bef_triang_mul_div:
+    display: Beftriangmuldiv
+    type: string
+    required: false
+    description: Field BefTriangMulDiv from ArInvoiceReval
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArInvoiceReval
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from ArInvoiceReval
+  effective_entry:
+    display: Effectiveentry
+    type: decimal
+    required: false
+    description: Field EffectiveEntry from ArInvoiceReval

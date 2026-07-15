@@ -1,0 +1,28 @@
+concept: ar_integration_ctl
+display_name: ArIntegrationCtl
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArIntegrationCtl.
+synonyms:
+- arintegrationctl
+- ar integration ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from ArIntegrationCtl
+  branch_reqd:
+    display: Branchreqd
+    type: string
+    required: false
+    description: Field BranchReqd from ArIntegrationCtl
+  currency_reqd:
+    display: Currencyreqd
+    type: string
+    required: false
+    description: Field CurrencyReqd from ArIntegrationCtl
+  gl_exch_separate:
+    display: Glexchseparate
+    type: string
+    required: false
+    description: Field GlExchSeparate from ArIntegrationCtl

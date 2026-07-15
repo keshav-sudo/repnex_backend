@@ -1,0 +1,103 @@
+concept: wip_branch
+display_name: WipBranch
+module: work_in_progress
+description: Auto-generated representation of the physical table WipBranch.
+synonyms:
+- wipbranch
+- wip branch
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from WipBranch
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WipBranch
+  wip_brn_gl_code:
+    display: Wipbrnglcode
+    type: string
+    required: false
+    description: Field WipBrnGlCode from WipBranch
+  wip_var_brn_gl_code:
+    display: Wipvarbrnglcode
+    type: string
+    required: false
+    description: Field WipVarBrnGlCode from WipBranch
+  wip_auto_brn_gl_code:
+    display: Wipautobrnglcode
+    type: string
+    required: false
+    description: Field WipAutoBrnGlCode from WipBranch
+  wip_insp_brn_gl_code:
+    display: Wipinspbrnglcode
+    type: string
+    required: false
+    description: Field WipInspBrnGlCode from WipBranch
+  branch_job_prefix:
+    display: Branchjobprefix
+    type: string
+    required: false
+    description: Field BranchJobPrefix from WipBranch
+  branch_job_suffix:
+    display: Branchjobsuffix
+    type: decimal
+    required: false
+    description: Field BranchJobSuffix from WipBranch
+  wip_inspect_prefix:
+    display: Wipinspectprefix
+    type: string
+    required: false
+    description: Field WipInspectPrefix from WipBranch
+  next_insp_reference:
+    display: Nextinspreference
+    type: decimal
+    required: false
+    description: Field NextInspReference from WipBranch
+  branch_addr_build:
+    display: Branchaddrbuild
+    type: string
+    required: false
+    description: Field BranchAddrBuild from WipBranch
+  branch_addr1:
+    display: Branchaddr1
+    type: string
+    required: false
+    description: Field BranchAddr1 from WipBranch
+  branch_addr2:
+    display: Branchaddr2
+    type: string
+    required: false
+    description: Field BranchAddr2 from WipBranch
+  branch_addr_loc:
+    display: Branchaddrloc
+    type: string
+    required: false
+    description: Field BranchAddrLoc from WipBranch
+  branch_addr3:
+    display: Branchaddr3
+    type: string
+    required: false
+    description: Field BranchAddr3 from WipBranch
+  branch_addr_country:
+    display: Branchaddrcountry
+    type: string
+    required: false
+    description: Field BranchAddrCountry from WipBranch
+  branch_postal_code:
+    display: Branchpostalcode
+    type: string
+    required: false
+    description: Field BranchPostalCode from WipBranch
+  branch_gps_lat:
+    display: Branchgpslat
+    type: decimal
+    required: false
+    description: Field BranchGpsLat from WipBranch
+  branch_gps_long:
+    display: Branchgpslong
+    type: decimal
+    required: false
+    description: Field BranchGpsLong from WipBranch

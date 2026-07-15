@@ -1,0 +1,12 @@
+concept: inv_cycle_count
+table: InvCycleCount
+alias: icc1
+fields:
+  cycle_count: icc1.CycleCount
+  description: icc1.Description
+  created_date: icc1.CreatedDate
+  xmlin: icc1.Xmlin
+  parameter_xml: icc1.ParameterXml
+  last_changed: icc1.LastChanged
+  operator: icc1.Operator
+  schedule_id: icc1.ScheduleId

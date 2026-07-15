@@ -1,0 +1,35 @@
+concept: sqm_mul_test
+table: SqmMulTest
+alias: smt1
+fields:
+  inspect_type: smt1.InspectType
+  inspect_number: smt1.InspectNumber
+  lot: smt1.Lot
+  sample_number: smt1.SampleNumber
+  plan_type: smt1.PlanType
+  inspect_level: smt1.InspectLevel
+  sample_completed: smt1.SampleCompleted
+  start_date: smt1.StartDate
+  end_date: smt1.EndDate
+  start_time: smt1.StartTime
+  end_time: smt1.EndTime
+  uom: smt1.Uom
+  qty_sample: smt1.QtySample
+  critical_req: smt1.CriticalReq
+  critical_all_acc: smt1.CriticalAllAcc
+  critical_accept_num: smt1.CriticalAcceptNum
+  critical_reject_num: smt1.CriticalRejectNum
+  qty_critical_fail: smt1.QtyCriticalFail
+  qty_critical_pass: smt1.QtyCriticalPass
+  major_req: smt1.MajorReq
+  major_all_acc: smt1.MajorAllAcc
+  major_accept_num: smt1.MajorAcceptNum
+  major_reject_num: smt1.MajorRejectNum
+  qty_major_fail: smt1.QtyMajorFail
+  qty_major_pass: smt1.QtyMajorPass
+  minor_req: smt1.MinorReq
+  minor_all_acc: smt1.MinorAllAcc
+  minor_accept_num: smt1.MinorAcceptNum
+  minor_reject_num: smt1.MinorRejectNum
+  qty_minor_fail: smt1.QtyMinorFail
+  qty_minor_pass: smt1.QtyMinorPass

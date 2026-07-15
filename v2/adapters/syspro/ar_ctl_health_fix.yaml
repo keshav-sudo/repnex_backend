@@ -1,0 +1,12 @@
+concept: ar_ctl_health_fix
+table: ArCtlHealthFix
+alias: achf1
+fields:
+  run_date_time: achf1.RunDateTime
+  trx_type: achf1.TrxType
+  balance_year: achf1.BalanceYear
+  balance_month: achf1.BalanceMonth
+  trx_amount: achf1.TrxAmount
+  trx_amount_before: achf1.TrxAmountBefore
+  trx_amount_after: achf1.TrxAmountAfter
+  message: achf1.Message

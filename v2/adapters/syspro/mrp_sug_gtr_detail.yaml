@@ -1,0 +1,33 @@
+concept: mrp_sug_gtr_detail
+table: MrpSugGtrDetail
+alias: msgd
+fields:
+  gtr_reference: msgd.GtrReference
+  source_warehouse: msgd.SourceWarehouse
+  target_warehouse: msgd.TargetWarehouse
+  line: msgd.Line
+  stock_code: msgd.StockCode
+  transf_comp_period: msgd.TransfCompPeriod
+  transf_comp_year: msgd.TransfCompYear
+  gtr_quantity: msgd.GtrQuantity
+  qty_received: msgd.QtyReceived
+  initial_value: msgd.InitialValue
+  value_received_src: msgd.ValueReceivedSrc
+  unit_cost: msgd.UnitCost
+  cost_uom: msgd.CostUom
+  value_received_tgt: msgd.ValueReceivedTgt
+  product_class: msgd.ProductClass
+  branch: msgd.Branch
+  area: msgd.Area
+  sales_order: msgd.SalesOrder
+  sales_order_line: msgd.SalesOrderLine
+  delivery_note: msgd.DeliveryNote
+  invoice: msgd.Invoice
+  transf_doc_num: msgd.TransfDocNum
+  transaction_date: msgd.TransactionDate
+  expected_due_date: msgd.ExpectedDueDate
+  transfer_complete: msgd.TransferComplete
+  lock_flag: msgd.LockFlag
+  next_entry: msgd.NextEntry
+  version: msgd.Version
+  release: msgd.Release

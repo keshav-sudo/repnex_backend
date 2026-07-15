@@ -1,0 +1,8 @@
+concept: tbl_bom_time_uom
+table: TblBomTimeUom
+alias: tbtu
+fields:
+  emp_rate_time_uom: tbtu.EmpRateTimeUom
+  work_time_uom: tbtu.WorkTimeUom
+  conv_factor: tbtu.ConvFactor
+  mul_div: tbtu.MulDiv

@@ -1,0 +1,18 @@
+concept: bom_component_type
+display_name: BomComponentType
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomComponentType.
+synonyms:
+- bomcomponenttype
+- bom component type
+header_attributes:
+  component_type:
+    display: Componenttype
+    type: string
+    required: false
+    description: Field ComponentType from BomComponentType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomComponentType

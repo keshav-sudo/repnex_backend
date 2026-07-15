@@ -1,0 +1,8 @@
+concept: wip_document_format
+table: WipDocumentFormat
+alias: wdf
+fields:
+  document_number: wdf.DocumentNumber
+  wip_document_format: wdf.WipDocumentFormat
+  document_record_type: wdf.DocumentRecordType
+  format_info: wdf.FormatInfo

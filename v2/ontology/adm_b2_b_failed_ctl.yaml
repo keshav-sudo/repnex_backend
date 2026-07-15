@@ -1,0 +1,33 @@
+concept: adm_b2_b_failed_ctl
+display_name: AdmB2BFailedCtl
+module: administration
+description: Auto-generated representation of the physical table AdmB2BFailedCtl.
+synonyms:
+- admb2bfailedctl
+- adm b2 b failed ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from AdmB2BFailedCtl
+  next_b2_f_file:
+    display: Nextb2Ffile
+    type: decimal
+    required: false
+    description: Field NextB2FFile from AdmB2BFailedCtl
+  num_days_fail:
+    display: Numdaysfail
+    type: decimal
+    required: false
+    description: Field NumDaysFail from AdmB2BFailedCtl
+  num_days_actioned:
+    display: Numdaysactioned
+    type: decimal
+    required: false
+    description: Field NumDaysActioned from AdmB2BFailedCtl
+  failed_doc_path:
+    display: Faileddocpath
+    type: string
+    required: false
+    description: Field FailedDocPath from AdmB2BFailedCtl

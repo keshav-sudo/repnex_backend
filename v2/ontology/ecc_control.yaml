@@ -1,0 +1,18 @@
+concept: ecc_control
+display_name: EccControl
+module: other
+description: Auto-generated representation of the physical table EccControl.
+synonyms:
+- ecccontrol
+- ecc control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from EccControl
+  next_dummy_so:
+    display: Nextdummyso
+    type: decimal
+    required: false
+    description: Field NextDummySo from EccControl

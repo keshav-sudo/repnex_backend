@@ -1,0 +1,23 @@
+concept: bom_wc_matrix
+display_name: BomWcMatrix
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomWcMatrix.
+synonyms:
+- bomwcmatrix
+- bom wc matrix
+header_attributes:
+  this_work_centre:
+    display: Thisworkcentre
+    type: string
+    required: false
+    description: Field ThisWorkCentre from BomWcMatrix
+  next_work_centre:
+    display: Nextworkcentre
+    type: string
+    required: false
+    description: Field NextWorkCentre from BomWcMatrix
+  movement_time:
+    display: Movementtime
+    type: decimal
+    required: false
+    description: Field MovementTime from BomWcMatrix

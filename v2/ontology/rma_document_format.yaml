@@ -1,0 +1,28 @@
+concept: rma_document_format
+display_name: RmaDocumentFormat
+module: other
+description: Auto-generated representation of the physical table RmaDocumentFormat.
+synonyms:
+- rmadocumentformat
+- rma document format
+header_attributes:
+  rma_document_type:
+    display: Rmadocumenttype
+    type: string
+    required: false
+    description: Field RmaDocumentType from RmaDocumentFormat
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from RmaDocumentFormat
+  document_record_type:
+    display: Documentrecordtype
+    type: string
+    required: false
+    description: Field DocumentRecordType from RmaDocumentFormat
+  document_info:
+    display: Documentinfo
+    type: string
+    required: false
+    description: Field DocumentInfo from RmaDocumentFormat

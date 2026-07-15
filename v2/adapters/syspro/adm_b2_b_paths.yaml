@@ -1,0 +1,7 @@
+concept: adm_b2_b_paths
+table: AdmB2BPaths
+alias: abbp
+fields:
+  key_type: abbp.KeyType
+  key_field: abbp.KeyField
+  path: abbp.Path

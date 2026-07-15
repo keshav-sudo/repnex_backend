@@ -1,0 +1,38 @@
+concept: lynq_vp__week_template_timing
+display_name: Lynq VP WeekTemplateTiming
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_WeekTemplateTiming.
+synonyms:
+- lynq_vp_weektemplatetiming
+- lynq vp  week template timing
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_WeekTemplateTiming
+  week_template_id:
+    display: Weektemplateid
+    type: decimal
+    required: false
+    description: Field WeekTemplateID from Lynq_VP_WeekTemplateTiming
+  day_of_week:
+    display: Dayofweek
+    type: decimal
+    required: false
+    description: Field DayOfWeek from Lynq_VP_WeekTemplateTiming
+  activity_code:
+    display: Activitycode
+    type: string
+    required: false
+    description: Field ActivityCode from Lynq_VP_WeekTemplateTiming
+  start_time:
+    display: Starttime
+    type: date
+    required: false
+    description: Field StartTime from Lynq_VP_WeekTemplateTiming
+  end_time:
+    display: Endtime
+    type: date
+    required: false
+    description: Field EndTime from Lynq_VP_WeekTemplateTiming

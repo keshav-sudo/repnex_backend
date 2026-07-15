@@ -1,0 +1,16 @@
+concept: gen_commit_detail
+table: GenCommitDetail
+alias: gcd
+fields:
+  company: gcd.Company
+  gl_code: gcd.GlCode
+  commitment_det_type: gcd.CommitmentDetType
+  reference: gcd.Reference
+  ref_line: gcd.RefLine
+  detail_line: gcd.DetailLine
+  commitment_date: gcd.CommitmentDate
+  gl_year: gcd.GlYear
+  gl_period: gcd.GlPeriod
+  detail_value: gcd.DetailValue
+  source_journal: gcd.SourceJournal
+  complete_flag: gcd.CompleteFlag

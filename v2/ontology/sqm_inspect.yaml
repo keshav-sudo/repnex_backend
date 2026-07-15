@@ -1,0 +1,318 @@
+concept: sqm_inspect
+display_name: SqmInspect
+module: other
+description: Auto-generated representation of the physical table SqmInspect.
+synonyms:
+- sqminspect
+- sqm inspect
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmInspect
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmInspect
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmInspect
+  plan_type:
+    display: Plantype
+    type: string
+    required: false
+    description: Field PlanType from SqmInspect
+  inspect_level:
+    display: Inspectlevel
+    type: string
+    required: false
+    description: Field InspectLevel from SqmInspect
+  sample_basis:
+    display: Samplebasis
+    type: string
+    required: false
+    description: Field SampleBasis from SqmInspect
+  sample_plan:
+    display: Sampleplan
+    type: string
+    required: false
+    description: Field SamplePlan from SqmInspect
+  sample_code:
+    display: Samplecode
+    type: string
+    required: false
+    description: Field SampleCode from SqmInspect
+  num_of_samples:
+    display: Numofsamples
+    type: decimal
+    required: false
+    description: Field NumOfSamples from SqmInspect
+  current_sample:
+    display: Currentsample
+    type: decimal
+    required: false
+    description: Field CurrentSample from SqmInspect
+  next_line:
+    display: Nextline
+    type: decimal
+    required: false
+    description: Field NextLine from SqmInspect
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from SqmInspect
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from SqmInspect
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from SqmInspect
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SqmInspect
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SqmInspect
+  source_type:
+    display: Sourcetype
+    type: string
+    required: false
+    description: Field SourceType from SqmInspect
+  source_key:
+    display: Sourcekey
+    type: string
+    required: false
+    description: Field SourceKey from SqmInspect
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from SqmInspect
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from SqmInspect
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from SqmInspect
+  traceable_type:
+    display: Traceabletype
+    type: string
+    required: false
+    description: Field TraceableType from SqmInspect
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from SqmInspect
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SqmInspect
+  inspect_hold:
+    display: Inspecthold
+    type: string
+    required: false
+    description: Field InspectHold from SqmInspect
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from SqmInspect
+  inspect_completed:
+    display: Inspectcompleted
+    type: string
+    required: false
+    description: Field InspectCompleted from SqmInspect
+  full_test_required:
+    display: Fulltestrequired
+    type: string
+    required: false
+    description: Field FullTestRequired from SqmInspect
+  inspection_approve:
+    display: Inspectionapprove
+    type: string
+    required: false
+    description: Field InspectionApprove from SqmInspect
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from SqmInspect
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from SqmInspect
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from SqmInspect
+  end_time:
+    display: Endtime
+    type: decimal
+    required: false
+    description: Field EndTime from SqmInspect
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from SqmInspect
+  document_printed:
+    display: Documentprinted
+    type: string
+    required: false
+    description: Field DocumentPrinted from SqmInspect
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from SqmInspect
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from SqmInspect
+  qty_counted:
+    display: Qtycounted
+    type: decimal
+    required: false
+    description: Field QtyCounted from SqmInspect
+  qty_sample:
+    display: Qtysample
+    type: decimal
+    required: false
+    description: Field QtySample from SqmInspect
+  qty_inspected:
+    display: Qtyinspected
+    type: decimal
+    required: false
+    description: Field QtyInspected from SqmInspect
+  qty_pass_inspect:
+    display: Qtypassinspect
+    type: decimal
+    required: false
+    description: Field QtyPassInspect from SqmInspect
+  qty_fail_inspect:
+    display: Qtyfailinspect
+    type: decimal
+    required: false
+    description: Field QtyFailInspect from SqmInspect
+  qty_to_accept:
+    display: Qtytoaccept
+    type: decimal
+    required: false
+    description: Field QtyToAccept from SqmInspect
+  qty_to_reject:
+    display: Qtytoreject
+    type: decimal
+    required: false
+    description: Field QtyToReject from SqmInspect
+  critical_req:
+    display: Criticalreq
+    type: string
+    required: false
+    description: Field CriticalReq from SqmInspect
+  critical_all_acc:
+    display: Criticalallacc
+    type: string
+    required: false
+    description: Field CriticalAllAcc from SqmInspect
+  critical_accept_num:
+    display: Criticalacceptnum
+    type: decimal
+    required: false
+    description: Field CriticalAcceptNum from SqmInspect
+  critical_reject_num:
+    display: Criticalrejectnum
+    type: decimal
+    required: false
+    description: Field CriticalRejectNum from SqmInspect
+  qty_critical_fail:
+    display: Qtycriticalfail
+    type: decimal
+    required: false
+    description: Field QtyCriticalFail from SqmInspect
+  qty_critical_pass:
+    display: Qtycriticalpass
+    type: decimal
+    required: false
+    description: Field QtyCriticalPass from SqmInspect
+  major_req:
+    display: Majorreq
+    type: string
+    required: false
+    description: Field MajorReq from SqmInspect
+  major_all_acc:
+    display: Majorallacc
+    type: string
+    required: false
+    description: Field MajorAllAcc from SqmInspect
+  major_accept_num:
+    display: Majoracceptnum
+    type: decimal
+    required: false
+    description: Field MajorAcceptNum from SqmInspect
+  major_reject_num:
+    display: Majorrejectnum
+    type: decimal
+    required: false
+    description: Field MajorRejectNum from SqmInspect
+  qty_major_fail:
+    display: Qtymajorfail
+    type: decimal
+    required: false
+    description: Field QtyMajorFail from SqmInspect
+  qty_major_pass:
+    display: Qtymajorpass
+    type: decimal
+    required: false
+    description: Field QtyMajorPass from SqmInspect
+  minor_req:
+    display: Minorreq
+    type: string
+    required: false
+    description: Field MinorReq from SqmInspect
+  minor_all_acc:
+    display: Minorallacc
+    type: string
+    required: false
+    description: Field MinorAllAcc from SqmInspect
+  minor_accept_num:
+    display: Minoracceptnum
+    type: decimal
+    required: false
+    description: Field MinorAcceptNum from SqmInspect
+  minor_reject_num:
+    display: Minorrejectnum
+    type: decimal
+    required: false
+    description: Field MinorRejectNum from SqmInspect
+  qty_minor_fail:
+    display: Qtyminorfail
+    type: decimal
+    required: false
+    description: Field QtyMinorFail from SqmInspect
+  qty_minor_pass:
+    display: Qtyminorpass
+    type: decimal
+    required: false
+    description: Field QtyMinorPass from SqmInspect

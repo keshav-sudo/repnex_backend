@@ -1,0 +1,63 @@
+concept: lot_cross_ref
+display_name: LotCrossRef
+module: other
+description: Auto-generated representation of the physical table LotCrossRef.
+synonyms:
+- lotcrossref
+- lot cross ref
+header_attributes:
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotCrossRef
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotCrossRef
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from LotCrossRef
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from LotCrossRef
+  in_stock:
+    display: Instock
+    type: string
+    required: false
+    description: Field InStock from LotCrossRef
+  in_inspect:
+    display: Ininspect
+    type: string
+    required: false
+    description: Field InInspect from LotCrossRef
+  in_wip_inspect:
+    display: Inwipinspect
+    type: string
+    required: false
+    description: Field InWIPInspect from LotCrossRef
+  in_stock_take:
+    display: Instocktake
+    type: string
+    required: false
+    description: Field InStockTake from LotCrossRef
+  reserved:
+    display: Reserved
+    type: string
+    required: false
+    description: Field Reserved from LotCrossRef
+  reserve_type:
+    display: Reservetype
+    type: string
+    required: false
+    description: Field ReserveType from LotCrossRef
+  archived:
+    display: Archived
+    type: string
+    required: false
+    description: Field Archived from LotCrossRef

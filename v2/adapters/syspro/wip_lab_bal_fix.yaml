@@ -1,0 +1,21 @@
+concept: wip_lab_bal_fix
+table: WipLabBalFix
+alias: wlbf
+fields:
+  run_date_time: wlbf.RunDateTime
+  job: wlbf.Job
+  operation: wlbf.Operation
+  old_startup_hours: wlbf.OldStartupHours
+  new_startup_hours: wlbf.NewStartupHours
+  old_set_up_hours: wlbf.OldSetUpHours
+  new_set_up_hours: wlbf.NewSetUpHours
+  old_run_time_hours: wlbf.OldRunTimeHours
+  new_run_time_hours: wlbf.NewRunTimeHours
+  old_teardown_hours: wlbf.OldTeardownHours
+  new_teardown_hours: wlbf.NewTeardownHours
+  old_trn_value: wlbf.OldTrnValue
+  new_trn_value: wlbf.NewTrnValue
+  old_wc_rate_ind: wlbf.OldWcRateInd
+  new_wc_rate_ind: wlbf.NewWcRateInd
+  old_capacity_issued: wlbf.OldCapacityIssued
+  new_capacity_issued: wlbf.NewCapacityIssued

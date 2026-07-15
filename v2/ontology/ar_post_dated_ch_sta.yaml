@@ -1,0 +1,53 @@
+concept: ar_post_dated_ch_sta
+display_name: ArPostDatedChSta
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArPostDatedChSta.
+synonyms:
+- arpostdatedchsta
+- ar post dated ch sta
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArPostDatedChSta
+  available_date:
+    display: Availabledate
+    type: date
+    required: false
+    description: Field AvailableDate from ArPostDatedChSta
+  cheque:
+    display: Cheque
+    type: string
+    required: false
+    description: Field Cheque from ArPostDatedChSta
+  status:
+    display: Status
+    type: decimal
+    required: false
+    description: Field Status from ArPostDatedChSta
+  date_received:
+    display: Datereceived
+    type: date
+    required: false
+    description: Field DateReceived from ArPostDatedChSta
+  deposit_bank:
+    display: Depositbank
+    type: string
+    required: false
+    description: Field DepositBank from ArPostDatedChSta
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ArPostDatedChSta
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArPostDatedChSta
+  collector_number_ar:
+    display: Collectornumberar
+    type: string
+    required: false
+    description: Field CollectorNumberAr from ArPostDatedChSta

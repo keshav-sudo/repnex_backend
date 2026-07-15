@@ -1,0 +1,63 @@
+concept: gen_next_key_audit
+display_name: GenNextKeyAudit
+module: general_ledger
+description: Auto-generated representation of the physical table GenNextKeyAudit.
+synonyms:
+- gennextkeyaudit
+- gen next key audit
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenNextKeyAudit
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from GenNextKeyAudit
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from GenNextKeyAudit
+  post_period:
+    display: Postperiod
+    type: decimal
+    required: false
+    description: Field PostPeriod from GenNextKeyAudit
+  key_issued:
+    display: Keyissued
+    type: decimal
+    required: false
+    description: Field KeyIssued from GenNextKeyAudit
+  allocated_by_program:
+    display: Allocatedbyprogram
+    type: string
+    required: false
+    description: Field AllocatedByProgram from GenNextKeyAudit
+  called_from_program:
+    display: Calledfromprogram
+    type: string
+    required: false
+    description: Field CalledFromProgram from GenNextKeyAudit
+  allocated_date:
+    display: Allocateddate
+    type: date
+    required: false
+    description: Field AllocatedDate from GenNextKeyAudit
+  allocated_by_oper:
+    display: Allocatedbyoper
+    type: string
+    required: false
+    description: Field AllocatedByOper from GenNextKeyAudit
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from GenNextKeyAudit
+  closed_date:
+    display: Closeddate
+    type: date
+    required: false
+    description: Field ClosedDate from GenNextKeyAudit

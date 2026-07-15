@@ -1,0 +1,23 @@
+concept: inv_site_type
+display_name: InvSiteType
+module: inventory
+description: Auto-generated representation of the physical table InvSiteType.
+synonyms:
+- invsitetype
+- inv site type
+header_attributes:
+  site_type:
+    display: Sitetype
+    type: string
+    required: false
+    description: Field SiteType from InvSiteType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvSiteType
+  site_type_parent:
+    display: Sitetypeparent
+    type: string
+    required: false
+    description: Field SiteTypeParent from InvSiteType

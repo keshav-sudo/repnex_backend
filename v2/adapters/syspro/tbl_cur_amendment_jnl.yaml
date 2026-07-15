@@ -1,0 +1,17 @@
+concept: tbl_cur_amendment_jnl
+table: TblCurAmendmentJnl
+alias: tcaj
+fields:
+  jnl_date: tcaj.JnlDate
+  jnl_time: tcaj.JnlTime
+  jnl_line: tcaj.JnlLine
+  currency: tcaj.Currency
+  journal_printed: tcaj.JournalPrinted
+  change_flag: tcaj.ChangeFlag
+  column_name: tcaj.ColumnName
+  before: tcaj.Before
+  after: tcaj.After
+  operator_code: tcaj.OperatorCode
+  currency_rate_type: tcaj.CurrencyRateType
+  effective_date: tcaj.EffectiveDate
+  effective_entry: tcaj.EffectiveEntry

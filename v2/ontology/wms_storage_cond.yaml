@@ -1,0 +1,18 @@
+concept: wms_storage_cond
+display_name: WmsStorageCond
+module: other
+description: Auto-generated representation of the physical table WmsStorageCond.
+synonyms:
+- wmsstoragecond
+- wms storage cond
+header_attributes:
+  storage_condition:
+    display: Storagecondition
+    type: string
+    required: false
+    description: Field StorageCondition from WmsStorageCond
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WmsStorageCond

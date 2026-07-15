@@ -1,0 +1,9 @@
+concept: ap_supplier_nar
+table: ApSupplierNar
+alias: asn
+fields:
+  supplier: asn.Supplier
+  invoice: asn.Invoice
+  note_type: asn.NoteType
+  line: asn.Line
+  text: asn.Text

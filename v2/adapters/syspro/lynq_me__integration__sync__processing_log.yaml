@@ -1,0 +1,13 @@
+concept: lynq_me__integration__sync__processing_log
+table: Lynq_ME_Integration_Sync_ProcessingLog
+alias: lmeispl
+fields:
+  id: lmeispl.ID
+  phase_key: lmeispl.PhaseKey
+  process_name: lmeispl.ProcessName
+  source: lmeispl.Source
+  item_id: lmeispl.ItemID
+  item_description: lmeispl.ItemDescription
+  result_code: lmeispl.ResultCode
+  result_message: lmeispl.ResultMessage
+  log_time: lmeispl.LogTime

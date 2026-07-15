@@ -1,0 +1,153 @@
+concept: csh_perm_entries
+display_name: CshPermEntries
+module: cashbook
+description: Auto-generated representation of the physical table CshPermEntries.
+synonyms:
+- cshpermentries
+- csh perm entries
+header_attributes:
+  release_day:
+    display: Releaseday
+    type: decimal
+    required: false
+    description: Field ReleaseDay from CshPermEntries
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from CshPermEntries
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from CshPermEntries
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from CshPermEntries
+  entry_value:
+    display: Entryvalue
+    type: decimal
+    required: false
+    description: Field EntryValue from CshPermEntries
+  deposit_withdrawal:
+    display: Depositwithdrawal
+    type: string
+    required: false
+    description: Field DepositWithdrawal from CshPermEntries
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshPermEntries
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from CshPermEntries
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from CshPermEntries
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from CshPermEntries
+  posted_flag:
+    display: Postedflag
+    type: string
+    required: false
+    description: Field PostedFlag from CshPermEntries
+  next_post_prd_mmyy:
+    display: Nextpostprdmmyy
+    type: decimal
+    required: false
+    description: Field NextPostPrdMmyy from CshPermEntries
+  transfer_freq:
+    display: Transferfreq
+    type: decimal
+    required: false
+    description: Field TransferFreq from CshPermEntries
+  cumulative_value:
+    display: Cumulativevalue
+    type: decimal
+    required: false
+    description: Field CumulativeValue from CshPermEntries
+  num_entries_posted:
+    display: Numentriesposted
+    type: decimal
+    required: false
+    description: Field NumEntriesPosted from CshPermEntries
+  description1:
+    display: Description1
+    type: string
+    required: false
+    description: Field Description1 from CshPermEntries
+  description2:
+    display: Description2
+    type: string
+    required: false
+    description: Field Description2 from CshPermEntries
+  description3:
+    display: Description3
+    type: string
+    required: false
+    description: Field Description3 from CshPermEntries
+  cum_value_local:
+    display: Cumvaluelocal
+    type: decimal
+    required: false
+    description: Field CumValueLocal from CshPermEntries
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from CshPermEntries
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from CshPermEntries
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from CshPermEntries
+  tax2_value:
+    display: Tax2Value
+    type: decimal
+    required: false
+    description: Field Tax2Value from CshPermEntries
+  tax_inclusive_flag:
+    display: Taxinclusiveflag
+    type: string
+    required: false
+    description: Field TaxInclusiveFlag from CshPermEntries
+  analysis_entry:
+    display: Analysisentry
+    type: decimal
+    required: false
+    description: Field AnalysisEntry from CshPermEntries
+  posted_flag_prev1:
+    display: Postedflagprev1
+    type: string
+    required: false
+    description: Field PostedFlagPrev1 from CshPermEntries
+  posted_flag_prev2:
+    display: Postedflagprev2
+    type: string
+    required: false
+    description: Field PostedFlagPrev2 from CshPermEntries
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from CshPermEntries
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from CshPermEntries

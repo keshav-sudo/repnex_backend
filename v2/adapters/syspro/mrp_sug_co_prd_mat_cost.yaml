@@ -1,0 +1,10 @@
+concept: mrp_sug_co_prd_mat_cost
+table: MrpSugCoPrdMatCost
+alias: mscpmc
+fields:
+  job: mscpmc.Job
+  co_product_line: mscpmc.CoProductLine
+  stock_code: mscpmc.StockCode
+  warehouse: mscpmc.Warehouse
+  line: mscpmc.Line
+  pct_material_cost: mscpmc.PctMaterialCost

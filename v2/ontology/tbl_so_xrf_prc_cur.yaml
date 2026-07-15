@@ -1,0 +1,18 @@
+concept: tbl_so_xrf_prc_cur
+display_name: TblSoXrfPrcCur
+module: other
+description: Auto-generated representation of the physical table TblSoXrfPrcCur.
+synonyms:
+- tblsoxrfprccur
+- tbl so xrf prc cur
+header_attributes:
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from TblSoXrfPrcCur
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from TblSoXrfPrcCur

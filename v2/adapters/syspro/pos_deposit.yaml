@@ -1,0 +1,9 @@
+concept: pos_deposit
+table: PosDeposit
+alias: pd
+fields:
+  sales_order: pd.SalesOrder
+  deposit_value: pd.DepositValue
+  comment: pd.Comment
+  deposit_date: pd.DepositDate
+  customer: pd.Customer

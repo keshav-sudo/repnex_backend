@@ -1,0 +1,143 @@
+concept: bso_release_in
+display_name: BsoReleaseIn
+module: other
+description: Auto-generated representation of the physical table BsoReleaseIn.
+synonyms:
+- bsoreleasein
+- bso release in
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from BsoReleaseIn
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from BsoReleaseIn
+  cust_stock_code:
+    display: Custstockcode
+    type: string
+    required: false
+    description: Field CustStockCode from BsoReleaseIn
+  record_type:
+    display: Recordtype
+    type: string
+    required: false
+    description: Field RecordType from BsoReleaseIn
+  release_ref:
+    display: Releaseref
+    type: string
+    required: false
+    description: Field ReleaseRef from BsoReleaseIn
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from BsoReleaseIn
+  date_required:
+    display: Daterequired
+    type: date
+    required: false
+    description: Field DateRequired from BsoReleaseIn
+  cumulative_qty:
+    display: Cumulativeqty
+    type: decimal
+    required: false
+    description: Field CumulativeQty from BsoReleaseIn
+  release_qty:
+    display: Releaseqty
+    type: decimal
+    required: false
+    description: Field ReleaseQty from BsoReleaseIn
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from BsoReleaseIn
+  delivery_qty:
+    display: Deliveryqty
+    type: decimal
+    required: false
+    description: Field DeliveryQty from BsoReleaseIn
+  open_cum_qty:
+    display: Opencumqty
+    type: decimal
+    required: false
+    description: Field OpenCumQty from BsoReleaseIn
+  release_date:
+    display: Releasedate
+    type: date
+    required: false
+    description: Field ReleaseDate from BsoReleaseIn
+  frequency_code:
+    display: Frequencycode
+    type: string
+    required: false
+    description: Field FrequencyCode from BsoReleaseIn
+  release_naration:
+    display: Releasenaration
+    type: string
+    required: false
+    description: Field ReleaseNaration from BsoReleaseIn
+  warn_code1:
+    display: Warncode1
+    type: decimal
+    required: false
+    description: Field WarnCode1 from BsoReleaseIn
+  warn_code2:
+    display: Warncode2
+    type: decimal
+    required: false
+    description: Field WarnCode2 from BsoReleaseIn
+  warn_code3:
+    display: Warncode3
+    type: decimal
+    required: false
+    description: Field WarnCode3 from BsoReleaseIn
+  warn_code4:
+    display: Warncode4
+    type: decimal
+    required: false
+    description: Field WarnCode4 from BsoReleaseIn
+  warn_code5:
+    display: Warncode5
+    type: decimal
+    required: false
+    description: Field WarnCode5 from BsoReleaseIn
+  warn_code6:
+    display: Warncode6
+    type: decimal
+    required: false
+    description: Field WarnCode6 from BsoReleaseIn
+  warn_code7:
+    display: Warncode7
+    type: decimal
+    required: false
+    description: Field WarnCode7 from BsoReleaseIn
+  warn_code8:
+    display: Warncode8
+    type: decimal
+    required: false
+    description: Field WarnCode8 from BsoReleaseIn
+  warn_code9:
+    display: Warncode9
+    type: decimal
+    required: false
+    description: Field WarnCode9 from BsoReleaseIn
+  orig_req_cume:
+    display: Origreqcume
+    type: decimal
+    required: false
+    description: Field OrigReqCume from BsoReleaseIn
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from BsoReleaseIn
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from BsoReleaseIn

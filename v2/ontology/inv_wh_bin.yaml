@@ -1,0 +1,68 @@
+concept: inv_wh_bin
+display_name: InvWhBin
+module: inventory
+description: Auto-generated representation of the physical table InvWhBin.
+synonyms:
+- invwhbin
+- inv wh bin
+header_attributes:
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvWhBin
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvWhBin
+  bin_seq:
+    display: Binseq
+    type: decimal
+    required: false
+    description: Field BinSeq from InvWhBin
+  wh_area:
+    display: Wharea
+    type: string
+    required: false
+    description: Field WhArea from InvWhBin
+  bin_type:
+    display: Bintype
+    type: string
+    required: false
+    description: Field BinType from InvWhBin
+  bin_barcode:
+    display: Binbarcode
+    type: string
+    required: false
+    description: Field BinBarcode from InvWhBin
+  bin_rfid:
+    display: Binrfid
+    type: string
+    required: false
+    description: Field BinRfid from InvWhBin
+  reserved_stock_code:
+    display: Reservedstockcode
+    type: string
+    required: false
+    description: Field ReservedStockCode from InvWhBin
+  bin_on_hold:
+    display: Binonhold
+    type: string
+    required: false
+    description: Field BinOnHold from InvWhBin
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from InvWhBin
+  active_cycle_count:
+    display: Activecyclecount
+    type: string
+    required: false
+    description: Field ActiveCycleCount from InvWhBin
+  allow_replenish:
+    display: Allowreplenish
+    type: string
+    required: false
+    description: Field AllowReplenish from InvWhBin

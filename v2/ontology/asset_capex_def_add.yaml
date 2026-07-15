@@ -1,0 +1,638 @@
+concept: asset_capex_def_add
+display_name: AssetCapexDefAdd
+module: assets
+description: Auto-generated representation of the physical table AssetCapexDefAdd.
+synonyms:
+- assetcapexdefadd
+- asset capex def add
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetCapexDefAdd
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetCapexDefAdd
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetCapexDefAdd
+  number_of_years:
+    display: Numberofyears
+    type: decimal
+    required: false
+    description: Field NumberOfYears from AssetCapexDefAdd
+  remaining_periods:
+    display: Remainingperiods
+    type: decimal
+    required: false
+    description: Field RemainingPeriods from AssetCapexDefAdd
+  total_periods_td:
+    display: Totalperiodstd
+    type: decimal
+    required: false
+    description: Field TotalPeriodsTd from AssetCapexDefAdd
+  varying_anniversary:
+    display: Varyinganniversary
+    type: string
+    required: false
+    description: Field VaryingAnniversary from AssetCapexDefAdd
+  tax_thruput_eul:
+    display: Taxthruputeul
+    type: decimal
+    required: false
+    description: Field TaxThruputEul from AssetCapexDefAdd
+  tax_stat_gl_code:
+    display: Taxstatglcode
+    type: string
+    required: false
+    description: Field TaxStatGlCode from AssetCapexDefAdd
+  tax_total_periods:
+    display: Taxtotalperiods
+    type: decimal
+    required: false
+    description: Field TaxTotalPeriods from AssetCapexDefAdd
+  tax_number_of_years:
+    display: Taxnumberofyears
+    type: decimal
+    required: false
+    description: Field TaxNumberOfYears from AssetCapexDefAdd
+  tax_rem_periods:
+    display: Taxremperiods
+    type: decimal
+    required: false
+    description: Field TaxRemPeriods from AssetCapexDefAdd
+  tax_total_periods_td:
+    display: Taxtotalperiodstd
+    type: decimal
+    required: false
+    description: Field TaxTotalPeriodsTd from AssetCapexDefAdd
+  tax_var_anniversary:
+    display: Taxvaranniversary
+    type: string
+    required: false
+    description: Field TaxVarAnniversary from AssetCapexDefAdd
+  tax_suspend:
+    display: Taxsuspend
+    type: string
+    required: false
+    description: Field TaxSuspend from AssetCapexDefAdd
+  capital_gains_tax_val:
+    display: Capitalgainstaxval
+    type: decimal
+    required: false
+    description: Field CapitalGainsTaxVal from AssetCapexDefAdd
+  alt_flag1:
+    display: Altflag1
+    type: string
+    required: false
+    description: Field AltFlag1 from AssetCapexDefAdd
+  alt_flag2:
+    display: Altflag2
+    type: string
+    required: false
+    description: Field AltFlag2 from AssetCapexDefAdd
+  alt_flag3:
+    display: Altflag3
+    type: string
+    required: false
+    description: Field AltFlag3 from AssetCapexDefAdd
+  alt_flag4:
+    display: Altflag4
+    type: string
+    required: false
+    description: Field AltFlag4 from AssetCapexDefAdd
+  alt_flag5:
+    display: Altflag5
+    type: string
+    required: false
+    description: Field AltFlag5 from AssetCapexDefAdd
+  alt_flag6:
+    display: Altflag6
+    type: string
+    required: false
+    description: Field AltFlag6 from AssetCapexDefAdd
+  alt_flag7:
+    display: Altflag7
+    type: string
+    required: false
+    description: Field AltFlag7 from AssetCapexDefAdd
+  alt_flag8:
+    display: Altflag8
+    type: string
+    required: false
+    description: Field AltFlag8 from AssetCapexDefAdd
+  alt_flag9:
+    display: Altflag9
+    type: string
+    required: false
+    description: Field AltFlag9 from AssetCapexDefAdd
+  alt_flag10:
+    display: Altflag10
+    type: string
+    required: false
+    description: Field AltFlag10 from AssetCapexDefAdd
+  alt_val_dep1:
+    display: Altvaldep1
+    type: string
+    required: false
+    description: Field AltValDep1 from AssetCapexDefAdd
+  alt_val_dep2:
+    display: Altvaldep2
+    type: string
+    required: false
+    description: Field AltValDep2 from AssetCapexDefAdd
+  alt_val_dep3:
+    display: Altvaldep3
+    type: string
+    required: false
+    description: Field AltValDep3 from AssetCapexDefAdd
+  alt_val_dep4:
+    display: Altvaldep4
+    type: string
+    required: false
+    description: Field AltValDep4 from AssetCapexDefAdd
+  alt_val_dep5:
+    display: Altvaldep5
+    type: string
+    required: false
+    description: Field AltValDep5 from AssetCapexDefAdd
+  alt_val_dep6:
+    display: Altvaldep6
+    type: string
+    required: false
+    description: Field AltValDep6 from AssetCapexDefAdd
+  alt_val_dep7:
+    display: Altvaldep7
+    type: string
+    required: false
+    description: Field AltValDep7 from AssetCapexDefAdd
+  alt_val_dep8:
+    display: Altvaldep8
+    type: string
+    required: false
+    description: Field AltValDep8 from AssetCapexDefAdd
+  alt_val_dep9:
+    display: Altvaldep9
+    type: string
+    required: false
+    description: Field AltValDep9 from AssetCapexDefAdd
+  alt_val_dep10:
+    display: Altvaldep10
+    type: string
+    required: false
+    description: Field AltValDep10 from AssetCapexDefAdd
+  alt_val_residual1:
+    display: Altvalresidual1
+    type: decimal
+    required: false
+    description: Field AltValResidual1 from AssetCapexDefAdd
+  alt_val_residual2:
+    display: Altvalresidual2
+    type: decimal
+    required: false
+    description: Field AltValResidual2 from AssetCapexDefAdd
+  alt_val_residual3:
+    display: Altvalresidual3
+    type: decimal
+    required: false
+    description: Field AltValResidual3 from AssetCapexDefAdd
+  alt_val_residual4:
+    display: Altvalresidual4
+    type: decimal
+    required: false
+    description: Field AltValResidual4 from AssetCapexDefAdd
+  alt_val_residual5:
+    display: Altvalresidual5
+    type: decimal
+    required: false
+    description: Field AltValResidual5 from AssetCapexDefAdd
+  alt_val_residual6:
+    display: Altvalresidual6
+    type: decimal
+    required: false
+    description: Field AltValResidual6 from AssetCapexDefAdd
+  alt_val_residual7:
+    display: Altvalresidual7
+    type: decimal
+    required: false
+    description: Field AltValResidual7 from AssetCapexDefAdd
+  alt_val_residual8:
+    display: Altvalresidual8
+    type: decimal
+    required: false
+    description: Field AltValResidual8 from AssetCapexDefAdd
+  alt_val_residual9:
+    display: Altvalresidual9
+    type: decimal
+    required: false
+    description: Field AltValResidual9 from AssetCapexDefAdd
+  alt_val_residual10:
+    display: Altvalresidual10
+    type: decimal
+    required: false
+    description: Field AltValResidual10 from AssetCapexDefAdd
+  alt_thruput_eul1:
+    display: Altthruputeul1
+    type: decimal
+    required: false
+    description: Field AltThruputEul1 from AssetCapexDefAdd
+  alt_thruput_eul2:
+    display: Altthruputeul2
+    type: decimal
+    required: false
+    description: Field AltThruputEul2 from AssetCapexDefAdd
+  alt_thruput_eul3:
+    display: Altthruputeul3
+    type: decimal
+    required: false
+    description: Field AltThruputEul3 from AssetCapexDefAdd
+  alt_thruput_eul4:
+    display: Altthruputeul4
+    type: decimal
+    required: false
+    description: Field AltThruputEul4 from AssetCapexDefAdd
+  alt_thruput_eul5:
+    display: Altthruputeul5
+    type: decimal
+    required: false
+    description: Field AltThruputEul5 from AssetCapexDefAdd
+  alt_thruput_eul6:
+    display: Altthruputeul6
+    type: decimal
+    required: false
+    description: Field AltThruputEul6 from AssetCapexDefAdd
+  alt_thruput_eul7:
+    display: Altthruputeul7
+    type: decimal
+    required: false
+    description: Field AltThruputEul7 from AssetCapexDefAdd
+  alt_thruput_eul8:
+    display: Altthruputeul8
+    type: decimal
+    required: false
+    description: Field AltThruputEul8 from AssetCapexDefAdd
+  alt_thruput_eul9:
+    display: Altthruputeul9
+    type: decimal
+    required: false
+    description: Field AltThruputEul9 from AssetCapexDefAdd
+  alt_thruput_eul10:
+    display: Altthruputeul10
+    type: decimal
+    required: false
+    description: Field AltThruputEul10 from AssetCapexDefAdd
+  alt_stat_gl_code1:
+    display: Altstatglcode1
+    type: string
+    required: false
+    description: Field AltStatGlCode1 from AssetCapexDefAdd
+  alt_stat_gl_code2:
+    display: Altstatglcode2
+    type: string
+    required: false
+    description: Field AltStatGlCode2 from AssetCapexDefAdd
+  alt_stat_gl_code3:
+    display: Altstatglcode3
+    type: string
+    required: false
+    description: Field AltStatGlCode3 from AssetCapexDefAdd
+  alt_stat_gl_code4:
+    display: Altstatglcode4
+    type: string
+    required: false
+    description: Field AltStatGlCode4 from AssetCapexDefAdd
+  alt_stat_gl_code5:
+    display: Altstatglcode5
+    type: string
+    required: false
+    description: Field AltStatGlCode5 from AssetCapexDefAdd
+  alt_stat_gl_code6:
+    display: Altstatglcode6
+    type: string
+    required: false
+    description: Field AltStatGlCode6 from AssetCapexDefAdd
+  alt_stat_gl_code7:
+    display: Altstatglcode7
+    type: string
+    required: false
+    description: Field AltStatGlCode7 from AssetCapexDefAdd
+  alt_stat_gl_code8:
+    display: Altstatglcode8
+    type: string
+    required: false
+    description: Field AltStatGlCode8 from AssetCapexDefAdd
+  alt_stat_gl_code9:
+    display: Altstatglcode9
+    type: string
+    required: false
+    description: Field AltStatGlCode9 from AssetCapexDefAdd
+  alt_stat_gl_code10:
+    display: Altstatglcode10
+    type: string
+    required: false
+    description: Field AltStatGlCode10 from AssetCapexDefAdd
+  alt_tot_periods1:
+    display: Alttotperiods1
+    type: decimal
+    required: false
+    description: Field AltTotPeriods1 from AssetCapexDefAdd
+  alt_tot_periods2:
+    display: Alttotperiods2
+    type: decimal
+    required: false
+    description: Field AltTotPeriods2 from AssetCapexDefAdd
+  alt_tot_periods3:
+    display: Alttotperiods3
+    type: decimal
+    required: false
+    description: Field AltTotPeriods3 from AssetCapexDefAdd
+  alt_tot_periods4:
+    display: Alttotperiods4
+    type: decimal
+    required: false
+    description: Field AltTotPeriods4 from AssetCapexDefAdd
+  alt_tot_periods5:
+    display: Alttotperiods5
+    type: decimal
+    required: false
+    description: Field AltTotPeriods5 from AssetCapexDefAdd
+  alt_tot_periods6:
+    display: Alttotperiods6
+    type: decimal
+    required: false
+    description: Field AltTotPeriods6 from AssetCapexDefAdd
+  alt_tot_periods7:
+    display: Alttotperiods7
+    type: decimal
+    required: false
+    description: Field AltTotPeriods7 from AssetCapexDefAdd
+  alt_tot_periods8:
+    display: Alttotperiods8
+    type: decimal
+    required: false
+    description: Field AltTotPeriods8 from AssetCapexDefAdd
+  alt_tot_periods9:
+    display: Alttotperiods9
+    type: decimal
+    required: false
+    description: Field AltTotPeriods9 from AssetCapexDefAdd
+  alt_tot_periods10:
+    display: Alttotperiods10
+    type: decimal
+    required: false
+    description: Field AltTotPeriods10 from AssetCapexDefAdd
+  alt_number_of_years1:
+    display: Altnumberofyears1
+    type: decimal
+    required: false
+    description: Field AltNumberOfYears1 from AssetCapexDefAdd
+  alt_number_of_years2:
+    display: Altnumberofyears2
+    type: decimal
+    required: false
+    description: Field AltNumberOfYears2 from AssetCapexDefAdd
+  alt_number_of_years3:
+    display: Altnumberofyears3
+    type: decimal
+    required: false
+    description: Field AltNumberOfYears3 from AssetCapexDefAdd
+  alt_number_of_years4:
+    display: Altnumberofyears4
+    type: decimal
+    required: false
+    description: Field AltNumberOfYears4 from AssetCapexDefAdd
+  alt_number_of_years5:
+    display: Altnumberofyears5
+    type: decimal
+    required: false
+    description: Field AltNumberOfYears5 from AssetCapexDefAdd
+  alt_number_of_years6:
+    display: Altnumberofyears6
+    type: decimal
+    required: false
+    description: Field AltNumberOfYears6 from AssetCapexDefAdd
+  alt_number_of_years7:
+    display: Altnumberofyears7
+    type: decimal
+    required: false
+    description: Field AltNumberOfYears7 from AssetCapexDefAdd
+  alt_number_of_years8:
+    display: Altnumberofyears8
+    type: decimal
+    required: false
+    description: Field AltNumberOfYears8 from AssetCapexDefAdd
+  alt_number_of_years9:
+    display: Altnumberofyears9
+    type: decimal
+    required: false
+    description: Field AltNumberOfYears9 from AssetCapexDefAdd
+  alt_number_of_years10:
+    display: Altnumberofyears10
+    type: decimal
+    required: false
+    description: Field AltNumberOfYears10 from AssetCapexDefAdd
+  alt_rem_periods1:
+    display: Altremperiods1
+    type: decimal
+    required: false
+    description: Field AltRemPeriods1 from AssetCapexDefAdd
+  alt_rem_periods2:
+    display: Altremperiods2
+    type: decimal
+    required: false
+    description: Field AltRemPeriods2 from AssetCapexDefAdd
+  alt_rem_periods3:
+    display: Altremperiods3
+    type: decimal
+    required: false
+    description: Field AltRemPeriods3 from AssetCapexDefAdd
+  alt_rem_periods4:
+    display: Altremperiods4
+    type: decimal
+    required: false
+    description: Field AltRemPeriods4 from AssetCapexDefAdd
+  alt_rem_periods5:
+    display: Altremperiods5
+    type: decimal
+    required: false
+    description: Field AltRemPeriods5 from AssetCapexDefAdd
+  alt_rem_periods6:
+    display: Altremperiods6
+    type: decimal
+    required: false
+    description: Field AltRemPeriods6 from AssetCapexDefAdd
+  alt_rem_periods7:
+    display: Altremperiods7
+    type: decimal
+    required: false
+    description: Field AltRemPeriods7 from AssetCapexDefAdd
+  alt_rem_periods8:
+    display: Altremperiods8
+    type: decimal
+    required: false
+    description: Field AltRemPeriods8 from AssetCapexDefAdd
+  alt_rem_periods9:
+    display: Altremperiods9
+    type: decimal
+    required: false
+    description: Field AltRemPeriods9 from AssetCapexDefAdd
+  alt_rem_periods10:
+    display: Altremperiods10
+    type: decimal
+    required: false
+    description: Field AltRemPeriods10 from AssetCapexDefAdd
+  alt_tot_periods_td1:
+    display: Alttotperiodstd1
+    type: decimal
+    required: false
+    description: Field AltTotPeriodsTd1 from AssetCapexDefAdd
+  alt_tot_periods_td2:
+    display: Alttotperiodstd2
+    type: decimal
+    required: false
+    description: Field AltTotPeriodsTd2 from AssetCapexDefAdd
+  alt_tot_periods_td3:
+    display: Alttotperiodstd3
+    type: decimal
+    required: false
+    description: Field AltTotPeriodsTd3 from AssetCapexDefAdd
+  alt_tot_periods_td4:
+    display: Alttotperiodstd4
+    type: decimal
+    required: false
+    description: Field AltTotPeriodsTd4 from AssetCapexDefAdd
+  alt_tot_periods_td5:
+    display: Alttotperiodstd5
+    type: decimal
+    required: false
+    description: Field AltTotPeriodsTd5 from AssetCapexDefAdd
+  alt_tot_periods_td6:
+    display: Alttotperiodstd6
+    type: decimal
+    required: false
+    description: Field AltTotPeriodsTd6 from AssetCapexDefAdd
+  alt_tot_periods_td7:
+    display: Alttotperiodstd7
+    type: decimal
+    required: false
+    description: Field AltTotPeriodsTd7 from AssetCapexDefAdd
+  alt_tot_periods_td8:
+    display: Alttotperiodstd8
+    type: decimal
+    required: false
+    description: Field AltTotPeriodsTd8 from AssetCapexDefAdd
+  alt_tot_periods_td9:
+    display: Alttotperiodstd9
+    type: decimal
+    required: false
+    description: Field AltTotPeriodsTd9 from AssetCapexDefAdd
+  alt_tot_periods_td10:
+    display: Alttotperiodstd10
+    type: decimal
+    required: false
+    description: Field AltTotPeriodsTd10 from AssetCapexDefAdd
+  alt_var_anniver1:
+    display: Altvaranniver1
+    type: string
+    required: false
+    description: Field AltVarAnniver1 from AssetCapexDefAdd
+  alt_var_anniver2:
+    display: Altvaranniver2
+    type: string
+    required: false
+    description: Field AltVarAnniver2 from AssetCapexDefAdd
+  alt_var_anniver3:
+    display: Altvaranniver3
+    type: string
+    required: false
+    description: Field AltVarAnniver3 from AssetCapexDefAdd
+  alt_var_anniver4:
+    display: Altvaranniver4
+    type: string
+    required: false
+    description: Field AltVarAnniver4 from AssetCapexDefAdd
+  alt_var_anniver5:
+    display: Altvaranniver5
+    type: string
+    required: false
+    description: Field AltVarAnniver5 from AssetCapexDefAdd
+  alt_var_anniver6:
+    display: Altvaranniver6
+    type: string
+    required: false
+    description: Field AltVarAnniver6 from AssetCapexDefAdd
+  alt_var_anniver7:
+    display: Altvaranniver7
+    type: string
+    required: false
+    description: Field AltVarAnniver7 from AssetCapexDefAdd
+  alt_var_anniver8:
+    display: Altvaranniver8
+    type: string
+    required: false
+    description: Field AltVarAnniver8 from AssetCapexDefAdd
+  alt_var_anniver9:
+    display: Altvaranniver9
+    type: string
+    required: false
+    description: Field AltVarAnniver9 from AssetCapexDefAdd
+  alt_var_anniver10:
+    display: Altvaranniver10
+    type: string
+    required: false
+    description: Field AltVarAnniver10 from AssetCapexDefAdd
+  alt_suspend1:
+    display: Altsuspend1
+    type: string
+    required: false
+    description: Field AltSuspend1 from AssetCapexDefAdd
+  alt_suspend2:
+    display: Altsuspend2
+    type: string
+    required: false
+    description: Field AltSuspend2 from AssetCapexDefAdd
+  alt_suspend3:
+    display: Altsuspend3
+    type: string
+    required: false
+    description: Field AltSuspend3 from AssetCapexDefAdd
+  alt_suspend4:
+    display: Altsuspend4
+    type: string
+    required: false
+    description: Field AltSuspend4 from AssetCapexDefAdd
+  alt_suspend5:
+    display: Altsuspend5
+    type: string
+    required: false
+    description: Field AltSuspend5 from AssetCapexDefAdd
+  alt_suspend6:
+    display: Altsuspend6
+    type: string
+    required: false
+    description: Field AltSuspend6 from AssetCapexDefAdd
+  alt_suspend7:
+    display: Altsuspend7
+    type: string
+    required: false
+    description: Field AltSuspend7 from AssetCapexDefAdd
+  alt_suspend8:
+    display: Altsuspend8
+    type: string
+    required: false
+    description: Field AltSuspend8 from AssetCapexDefAdd
+  alt_suspend9:
+    display: Altsuspend9
+    type: string
+    required: false
+    description: Field AltSuspend9 from AssetCapexDefAdd
+  alt_suspend10:
+    display: Altsuspend10
+    type: string
+    required: false
+    description: Field AltSuspend10 from AssetCapexDefAdd

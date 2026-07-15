@@ -1,0 +1,20 @@
+concept: iop_lvl_amend_jnl
+table: IopLvlAmendJnl
+alias: ilaj
+fields:
+  jnl_date: ilaj.JnlDate
+  jnl_time: ilaj.JnlTime
+  id_number: ilaj.IdNumber
+  jnl_printed: ilaj.JnlPrinted
+  change_flag: ilaj.ChangeFlag
+  operator: ilaj.Operator
+  old_start_date: ilaj.OldStartDate
+  old_minimum_qty: ilaj.OldMinimumQty
+  old_maximum_qty: ilaj.OldMaximumQty
+  old_reference: ilaj.OldReference
+  old_freeze: ilaj.OldFreeze
+  new_start_date: ilaj.NewStartDate
+  new_minimum_qty: ilaj.NewMinimumQty
+  new_maximum_qty: ilaj.NewMaximumQty
+  new_reference: ilaj.NewReference
+  new_freeze: ilaj.NewFreeze

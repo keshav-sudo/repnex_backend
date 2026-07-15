@@ -1,0 +1,48 @@
+concept: mrp_stock_level
+display_name: MrpStockLevel
+module: mrp
+description: Auto-generated representation of the physical table MrpStockLevel.
+synonyms:
+- mrpstocklevel
+- mrp stock level
+header_attributes:
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from MrpStockLevel
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from MrpStockLevel
+  minimum_qty:
+    display: Minimumqty
+    type: decimal
+    required: false
+    description: Field MinimumQty from MrpStockLevel
+  maximum_qty:
+    display: Maximumqty
+    type: decimal
+    required: false
+    description: Field MaximumQty from MrpStockLevel
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from MrpStockLevel
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MrpStockLevel
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from MrpStockLevel
+  freeze:
+    display: Freeze
+    type: string
+    required: false
+    description: Field Freeze from MrpStockLevel

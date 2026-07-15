@@ -1,0 +1,15 @@
+concept: inv_stock_take_serial
+table: InvStockTakeSerial
+alias: ists
+fields:
+  warehouse: ists.Warehouse
+  stock_code: ists.StockCode
+  serial: ists.Serial
+  saved_on_hand: ists.SavedOnHand
+  qty_captured: ists.QtyCaptured
+  reference: ists.Reference
+  create_serial: ists.CreateSerial
+  lot: ists.Lot
+  version: ists.Version
+  release: ists.Release
+  bin: ists.Bin

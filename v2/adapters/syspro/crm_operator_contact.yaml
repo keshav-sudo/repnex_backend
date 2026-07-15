@@ -1,0 +1,6 @@
+concept: crm_operator_contact
+table: CrmOperatorContact
+alias: coc1
+fields:
+  operator_code: coc1.OperatorCode
+  contact_id: coc1.ContactId

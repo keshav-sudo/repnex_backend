@@ -1,0 +1,23 @@
+concept: crm_comp_master
+table: CrmCompMaster
+alias: ccm
+fields:
+  complaint_id: ccm.ComplaintId
+  customer: ccm.Customer
+  com_method: ccm.ComMethod
+  date_reported: ccm.DateReported
+  due_date: ccm.DueDate
+  complaint_subject: ccm.ComplaintSubject
+  complaint_severity: ccm.ComplaintSeverity
+  complaint_status: ccm.ComplaintStatus
+  assigned_to_owner: ccm.AssignedToOwner
+  assigned_to_group: ccm.AssignedToGroup
+  assigned_to_user: ccm.AssignedToUser
+  date_assigned: ccm.DateAssigned
+  branch: ccm.Branch
+  customer_document: ccm.CustomerDocument
+  invoice: ccm.Invoice
+  sales_order: ccm.SalesOrder
+  complaint_comment: ccm.ComplaintComment
+  routed_flag: ccm.RoutedFlag
+  escalated_flag: ccm.EscalatedFlag

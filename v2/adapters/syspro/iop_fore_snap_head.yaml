@@ -1,0 +1,8 @@
+concept: iop_fore_snap_head
+table: IopForeSnapHead
+alias: ifsh
+fields:
+  id_number: ifsh.IdNumber
+  date_created: ifsh.DateCreated
+  operator: ifsh.Operator
+  reference: ifsh.Reference

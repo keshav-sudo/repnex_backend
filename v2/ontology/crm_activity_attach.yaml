@@ -1,0 +1,48 @@
+concept: crm_activity_attach
+display_name: CrmActivityAttach
+module: crm
+description: Auto-generated representation of the physical table CrmActivityAttach.
+synonyms:
+- crmactivityattach
+- crm activity attach
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmActivityAttach
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from CrmActivityAttach
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from CrmActivityAttach
+  attachment_file:
+    display: Attachmentfile
+    type: string
+    required: false
+    description: Field AttachmentFile from CrmActivityAttach
+  attachment_name:
+    display: Attachmentname
+    type: string
+    required: false
+    description: Field AttachmentName from CrmActivityAttach
+  attachment_ext:
+    display: Attachmentext
+    type: string
+    required: false
+    description: Field AttachmentExt from CrmActivityAttach
+  attachment_size:
+    display: Attachmentsize
+    type: decimal
+    required: false
+    description: Field AttachmentSize from CrmActivityAttach
+  attachment_url:
+    display: Attachmenturl
+    type: string
+    required: false
+    description: Field AttachmentUrl from CrmActivityAttach

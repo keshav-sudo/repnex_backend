@@ -1,0 +1,15 @@
+concept: adm_task_group_comp
+table: AdmTaskGroupComp
+alias: atgc
+fields:
+  operator: atgc.Operator
+  task_group: atgc.TaskGroup
+  auto_run: atgc.AutoRun
+  auto_check: atgc.AutoCheck
+  auto_mark_complete: atgc.AutoMarkComplete
+  prompt_bet_tasks: atgc.PromptBetTasks
+  suppress_errors: atgc.SuppressErrors
+  stop_if_error: atgc.StopIfError
+  auto_lockout: atgc.AutoLockout
+  kill_all: atgc.KillAll
+  email_log_file: atgc.EmailLogFile

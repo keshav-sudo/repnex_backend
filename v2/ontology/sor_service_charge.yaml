@@ -1,0 +1,138 @@
+concept: sor_service_charge
+display_name: SorServiceCharge
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorServiceCharge.
+synonyms:
+- sorservicecharge
+- sor service charge
+header_attributes:
+  charge_type:
+    display: Chargetype
+    type: string
+    required: false
+    description: Field ChargeType from SorServiceCharge
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorServiceCharge
+  charge_code:
+    display: Chargecode
+    type: string
+    required: false
+    description: Field ChargeCode from SorServiceCharge
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SorServiceCharge
+  charge_description:
+    display: Chargedescription
+    type: string
+    required: false
+    description: Field ChargeDescription from SorServiceCharge
+  calculation_type:
+    display: Calculationtype
+    type: string
+    required: false
+    description: Field CalculationType from SorServiceCharge
+  minimum_value:
+    display: Minimumvalue
+    type: decimal
+    required: false
+    description: Field MinimumValue from SorServiceCharge
+  maximum_value:
+    display: Maximumvalue
+    type: decimal
+    required: false
+    description: Field MaximumValue from SorServiceCharge
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from SorServiceCharge
+  fst_tax_code:
+    display: Fsttaxcode
+    type: string
+    required: false
+    description: Field FstTaxCode from SorServiceCharge
+  summary_flag:
+    display: Summaryflag
+    type: string
+    required: false
+    description: Field SummaryFlag from SorServiceCharge
+  incl_value_flag:
+    display: Inclvalueflag
+    type: string
+    required: false
+    description: Field InclValueFlag from SorServiceCharge
+  review_flag:
+    display: Reviewflag
+    type: string
+    required: false
+    description: Field ReviewFlag from SorServiceCharge
+  fixed_value:
+    display: Fixedvalue
+    type: decimal
+    required: false
+    description: Field FixedValue from SorServiceCharge
+  fixed_cost:
+    display: Fixedcost
+    type: decimal
+    required: false
+    description: Field FixedCost from SorServiceCharge
+  user_prompt:
+    display: Userprompt
+    type: string
+    required: false
+    description: Field UserPrompt from SorServiceCharge
+  unit_price:
+    display: Unitprice
+    type: decimal
+    required: false
+    description: Field UnitPrice from SorServiceCharge
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from SorServiceCharge
+  apply_qty_factor:
+    display: Applyqtyfactor
+    type: string
+    required: false
+    description: Field ApplyQtyFactor from SorServiceCharge
+  qty_factor:
+    display: Qtyfactor
+    type: decimal
+    required: false
+    description: Field QtyFactor from SorServiceCharge
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from SorServiceCharge
+  qty_rounded_method:
+    display: Qtyroundedmethod
+    type: decimal
+    required: false
+    description: Field QtyRoundedMethod from SorServiceCharge
+  round_qty_up_down:
+    display: Roundqtyupdown
+    type: string
+    required: false
+    description: Field RoundQtyUpDown from SorServiceCharge
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from SorServiceCharge
+  stock_code_return:
+    display: Stockcodereturn
+    type: string
+    required: false
+    description: Field StockCodeReturn from SorServiceCharge
+  minimum_quantity:
+    display: Minimumquantity
+    type: decimal
+    required: false
+    description: Field MinimumQuantity from SorServiceCharge

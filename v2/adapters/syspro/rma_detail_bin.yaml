@@ -1,0 +1,10 @@
+concept: rma_detail_bin
+table: RmaDetailBin
+alias: rdb
+fields:
+  rma_number: rdb.RmaNumber
+  rma_line_number: rdb.RmaLineNumber
+  lot: rdb.Lot
+  bin: rdb.Bin
+  stock_qty_to_receive: rdb.StockQtyToReceive
+  qty_this_session: rdb.QtyThisSession

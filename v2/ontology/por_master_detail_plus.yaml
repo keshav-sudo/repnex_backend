@@ -1,0 +1,23 @@
+concept: por_master_detail_plus
+display_name: PorMasterDetail+
+module: procurement
+description: Auto-generated representation of the physical table PorMasterDetail+.
+synonyms:
+- pormasterdetail+
+- por master detail plus
+header_attributes:
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from PorMasterDetail+
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from PorMasterDetail+
+  vehicle:
+    display: Vehicle
+    type: string
+    required: false
+    description: Field Vehicle from PorMasterDetail+

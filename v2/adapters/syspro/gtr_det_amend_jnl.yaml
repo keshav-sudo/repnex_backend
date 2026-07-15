@@ -1,0 +1,17 @@
+concept: gtr_det_amend_jnl
+table: GtrDetAmendJnl
+alias: gdaj
+fields:
+  jnl_date: gdaj.JnlDate
+  jnl_time: gdaj.JnlTime
+  jnl_line: gdaj.JnlLine
+  gtr_reference: gdaj.GtrReference
+  source_warehouse: gdaj.SourceWarehouse
+  target_warehouse: gdaj.TargetWarehouse
+  line: gdaj.Line
+  journal_printed: gdaj.JournalPrinted
+  change_flag: gdaj.ChangeFlag
+  column_name: gdaj.ColumnName
+  before: gdaj.Before
+  after: gdaj.After
+  operator_code: gdaj.OperatorCode

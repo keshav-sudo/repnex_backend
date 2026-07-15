@@ -1,0 +1,23 @@
+concept: xp_object_type
+display_name: XPObjectType
+module: other
+description: Auto-generated representation of the physical table XPObjectType.
+synonyms:
+- xpobjecttype
+- xp object type
+header_attributes:
+  oid:
+    display: Oid
+    type: decimal
+    required: false
+    description: Field OID from XPObjectType
+  type_name:
+    display: Typename
+    type: string
+    required: false
+    description: Field TypeName from XPObjectType
+  assembly_name:
+    display: Assemblyname
+    type: string
+    required: false
+    description: Field AssemblyName from XPObjectType

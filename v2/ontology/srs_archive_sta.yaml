@@ -1,0 +1,68 @@
+concept: srs_archive_sta
+display_name: SrsArchiveSTA
+module: other
+description: Auto-generated representation of the physical table SrsArchiveSTA.
+synonyms:
+- srsarchivesta
+- srs archive sta
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveSTA
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveSTA
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveSTA
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveSTA
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveSTA
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveSTA
+  branch_name:
+    display: Branchname
+    type: string
+    required: false
+    description: Field BranchName from SrsArchiveSTA
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from SrsArchiveSTA
+  customer_accnt_number:
+    display: Customeraccntnumber
+    type: string
+    required: false
+    description: Field CustomerAccntNumber from SrsArchiveSTA
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from SrsArchiveSTA
+  sales_person_number:
+    display: Salespersonnumber
+    type: string
+    required: false
+    description: Field SalesPersonNumber from SrsArchiveSTA
+  statement_date_cymd:
+    display: Statementdatecymd
+    type: date
+    required: false
+    description: Field StatementDateCymd from SrsArchiveSTA

@@ -1,0 +1,123 @@
+concept: iop_delivery_perf
+display_name: IopDeliveryPerf
+module: other
+description: Auto-generated representation of the physical table IopDeliveryPerf.
+synonyms:
+- iopdeliveryperf
+- iop delivery perf
+header_attributes:
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopDeliveryPerf
+  supply_type:
+    display: Supplytype
+    type: string
+    required: false
+    description: Field SupplyType from IopDeliveryPerf
+  supply_source:
+    display: Supplysource
+    type: string
+    required: false
+    description: Field SupplySource from IopDeliveryPerf
+  delivery_method:
+    display: Deliverymethod
+    type: string
+    required: false
+    description: Field DeliveryMethod from IopDeliveryPerf
+  run_date:
+    display: Rundate
+    type: date
+    required: false
+    description: Field RunDate from IopDeliveryPerf
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from IopDeliveryPerf
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopDeliveryPerf
+  new_orders:
+    display: Neworders
+    type: decimal
+    required: false
+    description: Field NewOrders from IopDeliveryPerf
+  new_quantity:
+    display: Newquantity
+    type: decimal
+    required: false
+    description: Field NewQuantity from IopDeliveryPerf
+  new_value:
+    display: Newvalue
+    type: decimal
+    required: false
+    description: Field NewValue from IopDeliveryPerf
+  received_orders:
+    display: Receivedorders
+    type: decimal
+    required: false
+    description: Field ReceivedOrders from IopDeliveryPerf
+  received_quantity:
+    display: Receivedquantity
+    type: decimal
+    required: false
+    description: Field ReceivedQuantity from IopDeliveryPerf
+  received_value:
+    display: Receivedvalue
+    type: decimal
+    required: false
+    description: Field ReceivedValue from IopDeliveryPerf
+  current_orders:
+    display: Currentorders
+    type: decimal
+    required: false
+    description: Field CurrentOrders from IopDeliveryPerf
+  current_quantity:
+    display: Currentquantity
+    type: decimal
+    required: false
+    description: Field CurrentQuantity from IopDeliveryPerf
+  current_value:
+    display: Currentvalue
+    type: decimal
+    required: false
+    description: Field CurrentValue from IopDeliveryPerf
+  overdue_orders:
+    display: Overdueorders
+    type: decimal
+    required: false
+    description: Field OverdueOrders from IopDeliveryPerf
+  overdue_value:
+    display: Overduevalue
+    type: decimal
+    required: false
+    description: Field OverdueValue from IopDeliveryPerf
+  over_due_quantity:
+    display: Overduequantity
+    type: decimal
+    required: false
+    description: Field OverDueQuantity from IopDeliveryPerf
+  over_due_days:
+    display: Overduedays
+    type: decimal
+    required: false
+    description: Field OverDueDays from IopDeliveryPerf
+  on_time_orders:
+    display: Ontimeorders
+    type: decimal
+    required: false
+    description: Field OnTimeOrders from IopDeliveryPerf
+  on_time_quantity:
+    display: Ontimequantity
+    type: decimal
+    required: false
+    description: Field OnTimeQuantity from IopDeliveryPerf
+  on_time_value:
+    display: Ontimevalue
+    type: decimal
+    required: false
+    description: Field OnTimeValue from IopDeliveryPerf

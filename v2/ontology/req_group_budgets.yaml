@@ -1,0 +1,103 @@
+concept: req_group_budgets
+display_name: ReqGroupBudgets
+module: other
+description: Auto-generated representation of the physical table ReqGroupBudgets.
+synonyms:
+- reqgroupbudgets
+- req group budgets
+header_attributes:
+  requisition_group:
+    display: Requisitiongroup
+    type: string
+    required: false
+    description: Field RequisitionGroup from ReqGroupBudgets
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from ReqGroupBudgets
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ReqGroupBudgets
+  budget_year:
+    display: Budgetyear
+    type: decimal
+    required: false
+    description: Field BudgetYear from ReqGroupBudgets
+  group_budget1:
+    display: Groupbudget1
+    type: decimal
+    required: false
+    description: Field GroupBudget1 from ReqGroupBudgets
+  group_budget2:
+    display: Groupbudget2
+    type: decimal
+    required: false
+    description: Field GroupBudget2 from ReqGroupBudgets
+  group_budget3:
+    display: Groupbudget3
+    type: decimal
+    required: false
+    description: Field GroupBudget3 from ReqGroupBudgets
+  group_budget4:
+    display: Groupbudget4
+    type: decimal
+    required: false
+    description: Field GroupBudget4 from ReqGroupBudgets
+  group_budget5:
+    display: Groupbudget5
+    type: decimal
+    required: false
+    description: Field GroupBudget5 from ReqGroupBudgets
+  group_budget6:
+    display: Groupbudget6
+    type: decimal
+    required: false
+    description: Field GroupBudget6 from ReqGroupBudgets
+  group_budget7:
+    display: Groupbudget7
+    type: decimal
+    required: false
+    description: Field GroupBudget7 from ReqGroupBudgets
+  group_budget8:
+    display: Groupbudget8
+    type: decimal
+    required: false
+    description: Field GroupBudget8 from ReqGroupBudgets
+  group_budget9:
+    display: Groupbudget9
+    type: decimal
+    required: false
+    description: Field GroupBudget9 from ReqGroupBudgets
+  group_budget10:
+    display: Groupbudget10
+    type: decimal
+    required: false
+    description: Field GroupBudget10 from ReqGroupBudgets
+  group_budget11:
+    display: Groupbudget11
+    type: decimal
+    required: false
+    description: Field GroupBudget11 from ReqGroupBudgets
+  group_budget12:
+    display: Groupbudget12
+    type: decimal
+    required: false
+    description: Field GroupBudget12 from ReqGroupBudgets
+  group_budget13:
+    display: Groupbudget13
+    type: decimal
+    required: false
+    description: Field GroupBudget13 from ReqGroupBudgets
+  date_last_updated:
+    display: Datelastupdated
+    type: date
+    required: false
+    description: Field DateLastUpdated from ReqGroupBudgets
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ReqGroupBudgets

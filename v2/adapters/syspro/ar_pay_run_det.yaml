@@ -1,0 +1,50 @@
+concept: ar_pay_run_det
+table: ArPayRunDet
+alias: aprd1
+fields:
+  payment_number: aprd1.PaymentNumber
+  customer: aprd1.Customer
+  invoice: aprd1.Invoice
+  document_type: aprd1.DocumentType
+  sales_order: aprd1.SalesOrder
+  salesperson: aprd1.Salesperson
+  branch: aprd1.Branch
+  area: aprd1.Area
+  invoice_date: aprd1.InvoiceDate
+  terms_code: aprd1.TermsCode
+  no_of_age_days: aprd1.NoOfAgeDays
+  allow_discount: aprd1.AllowDiscount
+  tax_code: aprd1.TaxCode
+  tax_status: aprd1.TaxStatus
+  post_currency: aprd1.PostCurrency
+  conv_rate: aprd1.ConvRate
+  mul_div: aprd1.MulDiv
+  original_inv_value: aprd1.OriginalInvValue
+  invoice_bal: aprd1.InvoiceBal
+  invoice_out: aprd1.InvoiceOut
+  orig_disc_value: aprd1.OrigDiscValue
+  invoice_selected: aprd1.InvoiceSelected
+  gross_pay_value: aprd1.GrossPayValue
+  disc_pay_value: aprd1.DiscPayValue
+  settlement_tax_value: aprd1.SettlementTaxValue
+  with_tax_value: aprd1.WithTaxValue
+  net_pay_value: aprd1.NetPayValue
+  tpm_value: aprd1.TpmValue
+  pay_conv_rate: aprd1.PayConvRate
+  reference_po_number: aprd1.ReferencePoNumber
+  invoice_notation: aprd1.InvoiceNotation
+  retention_inv: aprd1.RetentionInv
+  reestab_type: aprd1.ReestabType
+  bank_payment_type: aprd1.BankPaymentType
+  proj_gross_value: aprd1.ProjGrossValue
+  proj_disc_value: aprd1.ProjDiscValue
+  proj_tax_value: aprd1.ProjTaxValue
+  orig_tax_on_disc: aprd1.OrigTaxOnDisc
+  orig_taxable_amt: aprd1.OrigTaxableAmt
+  dr_cr_invoice_value: aprd1.DrCrInvoiceValue
+  dr_cr_disc_value: aprd1.DrCrDiscValue
+  dr_cr_tax_portion: aprd1.DrCrTaxPortion
+  orig_taxable_disc: aprd1.OrigTaxableDisc
+  dr_cr_tax_disc_portion: aprd1.DrCrTaxDiscPortion
+  orig_tax_portion: aprd1.OrigTaxPortion
+  company: aprd1.Company

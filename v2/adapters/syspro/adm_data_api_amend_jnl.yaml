@@ -1,0 +1,12 @@
+concept: adm_data_api_amend_jnl
+table: AdmDataApiAmendJnl
+alias: adaaj
+fields:
+  run_date_time: adaaj.RunDateTime
+  table_name: adaaj.TableName
+  change_flag: adaaj.ChangeFlag
+  before_values: adaaj.BeforeValues
+  after_values: adaaj.AfterValues
+  operator: adaaj.Operator
+  syspro_source: adaaj.SysproSource
+  application_name: adaaj.ApplicationName

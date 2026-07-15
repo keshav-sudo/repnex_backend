@@ -1,0 +1,63 @@
+concept: iop_collect_adjust
+display_name: IopCollectAdjust
+module: other
+description: Auto-generated representation of the physical table IopCollectAdjust.
+synonyms:
+- iopcollectadjust
+- iop collect adjust
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopCollectAdjust
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopCollectAdjust
+  movement_date:
+    display: Movementdate
+    type: date
+    required: false
+    description: Field MovementDate from IopCollectAdjust
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from IopCollectAdjust
+  adjust_type:
+    display: Adjusttype
+    type: string
+    required: false
+    description: Field AdjustType from IopCollectAdjust
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from IopCollectAdjust
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopCollectAdjust
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopCollectAdjust
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from IopCollectAdjust
+  lost_sale_trn_date:
+    display: Lostsaletrndate
+    type: date
+    required: false
+    description: Field LostSaleTrnDate from IopCollectAdjust
+  lost_sale_trn_time:
+    display: Lostsaletrntime
+    type: decimal
+    required: false
+    description: Field LostSaleTrnTime from IopCollectAdjust

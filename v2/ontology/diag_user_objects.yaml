@@ -1,0 +1,78 @@
+concept: diag_user_objects
+display_name: DiagUserObjects
+module: other
+description: Auto-generated representation of the physical table DiagUserObjects.
+synonyms:
+- diaguserobjects
+- diag user objects
+header_attributes:
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from DiagUserObjects
+  object_type:
+    display: Objecttype
+    type: string
+    required: false
+    description: Field ObjectType from DiagUserObjects
+  object_name:
+    display: Objectname
+    type: string
+    required: false
+    description: Field ObjectName from DiagUserObjects
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from DiagUserObjects
+  schema_name:
+    display: Schemaname
+    type: string
+    required: false
+    description: Field SchemaName from DiagUserObjects
+  trigger_enabled:
+    display: Triggerenabled
+    type: string
+    required: false
+    description: Field TriggerEnabled from DiagUserObjects
+  view_seq:
+    display: Viewseq
+    type: decimal
+    required: false
+    description: Field ViewSeq from DiagUserObjects
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from DiagUserObjects
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from DiagUserObjects
+  conv_status:
+    display: Convstatus
+    type: decimal
+    required: false
+    description: Field ConvStatus from DiagUserObjects
+  conv_message:
+    display: Convmessage
+    type: string
+    required: false
+    description: Field ConvMessage from DiagUserObjects
+  create_def:
+    display: Createdef
+    type: string
+    required: false
+    description: Field CreateDef from DiagUserObjects
+  drop_def:
+    display: Dropdef
+    type: string
+    required: false
+    description: Field DropDef from DiagUserObjects
+  conv_message_pre:
+    display: Convmessagepre
+    type: string
+    required: false
+    description: Field ConvMessagePre from DiagUserObjects

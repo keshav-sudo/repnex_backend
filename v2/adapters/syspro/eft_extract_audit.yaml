@@ -1,0 +1,18 @@
+concept: eft_extract_audit
+table: EftExtractAudit
+alias: eea
+fields:
+  eft_batch: eea.EftBatch
+  eft_run_date: eea.EftRunDate
+  eft_run_time: eea.EftRunTime
+  operator: eea.Operator
+  action_date: eea.ActionDate
+  bank: eea.Bank
+  payment_value: eea.PaymentValue
+  currency_value: eea.CurrencyValue
+  post_currency: eea.PostCurrency
+  bank_currency: eea.BankCurrency
+  last_sequence: eea.LastSequence
+  xml_location: eea.XmlLocation
+  xml_file: eea.XmlFile
+  journal_printed: eea.JournalPrinted

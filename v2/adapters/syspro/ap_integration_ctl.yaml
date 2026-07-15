@@ -1,0 +1,9 @@
+concept: ap_integration_ctl
+table: ApIntegrationCtl
+alias: aic
+fields:
+  ctl_flag: aic.CtlFlag
+  branch_reqd: aic.BranchReqd
+  currency_reqd: aic.CurrencyReqd
+  bank_reqd: aic.BankReqd
+  gl_exch_separate: aic.GlExchSeparate

@@ -1,0 +1,18 @@
+concept: inv_cycle_count_lot
+table: InvCycleCountLot
+alias: iccl
+fields:
+  cycle_count: iccl.CycleCount
+  warehouse: iccl.Warehouse
+  stock_code: iccl.StockCode
+  lot: iccl.Lot
+  bin: iccl.Bin
+  original_quantity: iccl.OriginalQuantity
+  captured_quantity: iccl.CapturedQuantity
+  reference: iccl.Reference
+  create_lot_flag: iccl.CreateLotFlag
+  create_expiry_flag: iccl.CreateExpiryFlag
+  lot_expiry_date: iccl.LotExpiryDate
+  version: iccl.Version
+  release: iccl.Release
+  confirmed_flag: iccl.ConfirmedFlag

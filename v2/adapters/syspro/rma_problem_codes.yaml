@@ -1,0 +1,8 @@
+concept: rma_problem_codes
+table: RmaProblemCodes
+alias: rpc
+fields:
+  problem_code: rpc.ProblemCode
+  problem_desc: rpc.ProblemDesc
+  re_stock_percent: rpc.ReStockPercent
+  use_default_pct: rpc.UseDefaultPct

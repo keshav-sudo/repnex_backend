@@ -1,0 +1,45 @@
+concept: csh_ar_payments
+table: CshArPayments
+alias: cap1
+fields:
+  bank: cap1.Bank
+  cb_trn_year: cap1.CbTrnYear
+  trn_month: cap1.TrnMonth
+  cb_trn_date: cap1.CbTrnDate
+  cb_trn_time: cap1.CbTrnTime
+  entry_number: cap1.EntryNumber
+  gross_payment: cap1.GrossPayment
+  gross_payment_for: cap1.GrossPaymentFor
+  discount_allowed: cap1.DiscountAllowed
+  discount_allowed_for: cap1.DiscountAllowedFor
+  net_payment: cap1.NetPayment
+  net_payment_for: cap1.NetPaymentFor
+  pay_tax_amt_disc: cap1.PayTaxAmtDisc
+  branch: cap1.Branch
+  invoice: cap1.Invoice
+  document_type: cap1.DocumentType
+  invoice_date: cap1.InvoiceDate
+  currency_value: cap1.CurrencyValue
+  post_currency: cap1.PostCurrency
+  post_conv_rate: cap1.PostConvRate
+  post_mul_div: cap1.PostMulDiv
+  account_cur: cap1.AccountCur
+  account_conv_rate: cap1.AccountConvRate
+  account_mul_div: cap1.AccountMulDiv
+  triang_currency: cap1.TriangCurrency
+  triang_conv_rate: cap1.TriangConvRate
+  triang_mul_div: cap1.TriangMulDiv
+  customer: cap1.Customer
+  journal: cap1.Journal
+  mult_cur_pay_rec: cap1.MultCurPayRec
+  pay_rec_currency: cap1.PayRecCurrency
+  pay_rec_grs_value: cap1.PayRecGrsValue
+  pay_rec_dsc_value: cap1.PayRecDscValue
+  pay_rec_net_value: cap1.PayRecNetValue
+  pay_rec_conv_rate: cap1.PayRecConvRate
+  pay_rec_mul_div: cap1.PayRecMulDiv
+  payment_number: cap1.PaymentNumber
+  group_pay: cap1.GroupPay
+  inter_company_trx: cap1.InterCompanyTrx
+  primary_company: cap1.PrimaryCompany
+  secondary_company: cap1.SecondaryCompany

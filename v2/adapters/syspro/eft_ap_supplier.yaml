@@ -1,0 +1,15 @@
+concept: eft_ap_supplier
+table: EftApSupplier
+alias: eas
+fields:
+  supplier: eas.Supplier
+  eft_statement_ref: eas.EftStatementRef
+  eft_user_field1: eas.EftUserField1
+  eft_user_field2: eas.EftUserField2
+  eft_remit_method: eas.EftRemitMethod
+  eft_email: eas.EftEmail
+  eft_default_doc: eas.EftDefaultDoc
+  eft_trn_code: eas.EftTrnCode
+  eft_routing_no: eas.EftRoutingNo
+  eft_alternate_id: eas.EftAlternateId
+  eft_supplier_bank_no: eas.EftSupplierBankNo

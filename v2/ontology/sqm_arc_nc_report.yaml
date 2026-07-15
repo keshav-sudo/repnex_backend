@@ -1,0 +1,363 @@
+concept: sqm_arc_nc_report
+display_name: SqmArcNcReport
+module: other
+description: Auto-generated representation of the physical table SqmArcNcReport.
+synonyms:
+- sqmarcncreport
+- sqm arc nc report
+header_attributes:
+  conform_number:
+    display: Conformnumber
+    type: string
+    required: false
+    description: Field ConformNumber from SqmArcNcReport
+  conform_desc:
+    display: Conformdesc
+    type: string
+    required: false
+    description: Field ConformDesc from SqmArcNcReport
+  conform_standard:
+    display: Conformstandard
+    type: string
+    required: false
+    description: Field ConformStandard from SqmArcNcReport
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from SqmArcNcReport
+  nc_process:
+    display: Ncprocess
+    type: string
+    required: false
+    description: Field NcProcess from SqmArcNcReport
+  nc_priority:
+    display: Ncpriority
+    type: decimal
+    required: false
+    description: Field NcPriority from SqmArcNcReport
+  initiator:
+    display: Initiator
+    type: string
+    required: false
+    description: Field Initiator from SqmArcNcReport
+  owner:
+    display: Owner
+    type: string
+    required: false
+    description: Field Owner from SqmArcNcReport
+  manager:
+    display: Manager
+    type: string
+    required: false
+    description: Field Manager from SqmArcNcReport
+  severity_level:
+    display: Severitylevel
+    type: string
+    required: false
+    description: Field SeverityLevel from SqmArcNcReport
+  conform_status:
+    display: Conformstatus
+    type: string
+    required: false
+    description: Field ConformStatus from SqmArcNcReport
+  next_line:
+    display: Nextline
+    type: decimal
+    required: false
+    description: Field NextLine from SqmArcNcReport
+  completed:
+    display: Completed
+    type: string
+    required: false
+    description: Field Completed from SqmArcNcReport
+  invest_started:
+    display: Investstarted
+    type: string
+    required: false
+    description: Field InvestStarted from SqmArcNcReport
+  inv_start_date:
+    display: Invstartdate
+    type: date
+    required: false
+    description: Field InvStartDate from SqmArcNcReport
+  invest_status:
+    display: Investstatus
+    type: string
+    required: false
+    description: Field InvestStatus from SqmArcNcReport
+  inv_end_date:
+    display: Invenddate
+    type: date
+    required: false
+    description: Field InvEndDate from SqmArcNcReport
+  invest_completed:
+    display: Investcompleted
+    type: string
+    required: false
+    description: Field InvestCompleted from SqmArcNcReport
+  req_close_out:
+    display: Reqcloseout
+    type: string
+    required: false
+    description: Field ReqCloseOut from SqmArcNcReport
+  close_out_started:
+    display: Closeoutstarted
+    type: string
+    required: false
+    description: Field CloseOutStarted from SqmArcNcReport
+  close_out_start_date:
+    display: Closeoutstartdate
+    type: date
+    required: false
+    description: Field CloseOutStartDate from SqmArcNcReport
+  close_out_status:
+    display: Closeoutstatus
+    type: string
+    required: false
+    description: Field CloseOutStatus from SqmArcNcReport
+  close_out_end_date:
+    display: Closeoutenddate
+    type: date
+    required: false
+    description: Field CloseOutEndDate from SqmArcNcReport
+  close_out_completed:
+    display: Closeoutcompleted
+    type: string
+    required: false
+    description: Field CloseOutCompleted from SqmArcNcReport
+  require_ca:
+    display: Requireca
+    type: string
+    required: false
+    description: Field RequireCa from SqmArcNcReport
+  ca_started:
+    display: Castarted
+    type: string
+    required: false
+    description: Field CaStarted from SqmArcNcReport
+  ca_start_date:
+    display: Castartdate
+    type: date
+    required: false
+    description: Field CaStartDate from SqmArcNcReport
+  ca_status:
+    display: Castatus
+    type: string
+    required: false
+    description: Field CaStatus from SqmArcNcReport
+  ca_end_date:
+    display: Caenddate
+    type: date
+    required: false
+    description: Field CaEndDate from SqmArcNcReport
+  ca_completed:
+    display: Cacompleted
+    type: string
+    required: false
+    description: Field CaCompleted from SqmArcNcReport
+  require_pa:
+    display: Requirepa
+    type: string
+    required: false
+    description: Field RequirePa from SqmArcNcReport
+  pa_started:
+    display: Pastarted
+    type: string
+    required: false
+    description: Field PaStarted from SqmArcNcReport
+  pa_start_date:
+    display: Pastartdate
+    type: date
+    required: false
+    description: Field PaStartDate from SqmArcNcReport
+  pa_status:
+    display: Pastatus
+    type: string
+    required: false
+    description: Field PaStatus from SqmArcNcReport
+  pa_end_date:
+    display: Paenddate
+    type: date
+    required: false
+    description: Field PaEndDate from SqmArcNcReport
+  pa_completed:
+    display: Pacompleted
+    type: string
+    required: false
+    description: Field PaCompleted from SqmArcNcReport
+  require_audit:
+    display: Requireaudit
+    type: string
+    required: false
+    description: Field RequireAudit from SqmArcNcReport
+  audit_started:
+    display: Auditstarted
+    type: string
+    required: false
+    description: Field AuditStarted from SqmArcNcReport
+  audit_start_date:
+    display: Auditstartdate
+    type: date
+    required: false
+    description: Field AuditStartDate from SqmArcNcReport
+  audit_status:
+    display: Auditstatus
+    type: string
+    required: false
+    description: Field AuditStatus from SqmArcNcReport
+  audit_end_date:
+    display: Auditenddate
+    type: date
+    required: false
+    description: Field AuditEndDate from SqmArcNcReport
+  audit_complete:
+    display: Auditcomplete
+    type: string
+    required: false
+    description: Field AuditComplete from SqmArcNcReport
+  created_date:
+    display: Createddate
+    type: date
+    required: false
+    description: Field CreatedDate from SqmArcNcReport
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from SqmArcNcReport
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from SqmArcNcReport
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from SqmArcNcReport
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from SqmArcNcReport
+  poten_cause:
+    display: Potencause
+    type: string
+    required: false
+    description: Field PotenCause from SqmArcNcReport
+  impact:
+    display: Impact
+    type: string
+    required: false
+    description: Field Impact from SqmArcNcReport
+  invest_note:
+    display: Investnote
+    type: string
+    required: false
+    description: Field InvestNote from SqmArcNcReport
+  root_cause:
+    display: Rootcause
+    type: string
+    required: false
+    description: Field RootCause from SqmArcNcReport
+  cause_cat:
+    display: Causecat
+    type: string
+    required: false
+    description: Field CauseCat from SqmArcNcReport
+  close_note:
+    display: Closenote
+    type: string
+    required: false
+    description: Field CloseNote from SqmArcNcReport
+  origin_type:
+    display: Origintype
+    type: string
+    required: false
+    description: Field OriginType from SqmArcNcReport
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SqmArcNcReport
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from SqmArcNcReport
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from SqmArcNcReport
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SqmArcNcReport
+  origin_order:
+    display: Originorder
+    type: string
+    required: false
+    description: Field OriginOrder from SqmArcNcReport
+  origin_line:
+    display: Originline
+    type: decimal
+    required: false
+    description: Field OriginLine from SqmArcNcReport
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from SqmArcNcReport
+  allocation_line:
+    display: Allocationline
+    type: string
+    required: false
+    description: Field AllocationLine from SqmArcNcReport
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from SqmArcNcReport
+  insp_reference:
+    display: Inspreference
+    type: string
+    required: false
+    description: Field InspReference from SqmArcNcReport
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmArcNcReport
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from SqmArcNcReport
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SqmArcNcReport
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from SqmArcNcReport
+  machine:
+    display: Machine
+    type: string
+    required: false
+    description: Field Machine from SqmArcNcReport
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from SqmArcNcReport
+  fix_priority:
+    display: Fixpriority
+    type: string
+    required: false
+    description: Field FixPriority from SqmArcNcReport

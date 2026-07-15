@@ -1,0 +1,18 @@
+concept: whm_team
+display_name: WhmTeam
+module: other
+description: Auto-generated representation of the physical table WhmTeam.
+synonyms:
+- whmteam
+- whm team
+header_attributes:
+  team:
+    display: Team
+    type: string
+    required: false
+    description: Field Team from WhmTeam
+  team_name:
+    display: Teamname
+    type: string
+    required: false
+    description: Field TeamName from WhmTeam

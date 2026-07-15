@@ -1,0 +1,28 @@
+concept: whm_mission_tasks
+table: WhmMissionTasks
+alias: wmt
+fields:
+  mission: wmt.Mission
+  mission_line: wmt.MissionLine
+  source: wmt.Source
+  status: wmt.Status
+  pick_number: wmt.PickNumber
+  pick_line: wmt.PickLine
+  cycle_count: wmt.CycleCount
+  warehouse: wmt.Warehouse
+  stock_code: wmt.StockCode
+  bin: wmt.Bin
+  created_date: wmt.CreatedDate
+  created_time: wmt.CreatedTime
+  employee: wmt.Employee
+  whm_team: wmt.WhmTeam
+  priority: wmt.Priority
+  completed_date: wmt.CompletedDate
+  completed_time: wmt.CompletedTime
+  to_warehouse: wmt.ToWarehouse
+  to_bin: wmt.ToBin
+  put_away_qty: wmt.PutAwayQty
+  qty_unit_of_measure: wmt.QtyUnitOfMeasure
+  xmlin: wmt.Xmlin
+  lot: wmt.Lot
+  serial: wmt.Serial

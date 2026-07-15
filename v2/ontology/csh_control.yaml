@@ -1,0 +1,358 @@
+concept: csh_control
+display_name: CshControl
+module: cashbook
+description: Auto-generated representation of the physical table CshControl.
+synonyms:
+- cshcontrol
+- csh control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from CshControl
+  next_journal:
+    display: Nextjournal
+    type: decimal
+    required: false
+    description: Field NextJournal from CshControl
+  current_fin_month:
+    display: Currentfinmonth
+    type: decimal
+    required: false
+    description: Field CurrentFinMonth from CshControl
+  current_fin_year:
+    display: Currentfinyear
+    type: decimal
+    required: false
+    description: Field CurrentFinYear from CshControl
+  next_chq_reg_num:
+    display: Nextchqregnum
+    type: decimal
+    required: false
+    description: Field NextChqRegNum from CshControl
+  csh_year:
+    display: Cshyear
+    type: decimal
+    required: false
+    description: Field CshYear from CshControl
+  csh_month:
+    display: Cshmonth
+    type: decimal
+    required: false
+    description: Field CshMonth from CshControl
+  csh_journal:
+    display: Cshjournal
+    type: decimal
+    required: false
+    description: Field CshJournal from CshControl
+  cur_yr_mth_stat1:
+    display: Curyrmthstat1
+    type: string
+    required: false
+    description: Field CurYrMthStat1 from CshControl
+  cur_yr_mth_stat2:
+    display: Curyrmthstat2
+    type: string
+    required: false
+    description: Field CurYrMthStat2 from CshControl
+  cur_yr_mth_stat3:
+    display: Curyrmthstat3
+    type: string
+    required: false
+    description: Field CurYrMthStat3 from CshControl
+  cur_yr_mth_stat4:
+    display: Curyrmthstat4
+    type: string
+    required: false
+    description: Field CurYrMthStat4 from CshControl
+  cur_yr_mth_stat5:
+    display: Curyrmthstat5
+    type: string
+    required: false
+    description: Field CurYrMthStat5 from CshControl
+  cur_yr_mth_stat6:
+    display: Curyrmthstat6
+    type: string
+    required: false
+    description: Field CurYrMthStat6 from CshControl
+  cur_yr_mth_stat7:
+    display: Curyrmthstat7
+    type: string
+    required: false
+    description: Field CurYrMthStat7 from CshControl
+  cur_yr_mth_stat8:
+    display: Curyrmthstat8
+    type: string
+    required: false
+    description: Field CurYrMthStat8 from CshControl
+  cur_yr_mth_stat9:
+    display: Curyrmthstat9
+    type: string
+    required: false
+    description: Field CurYrMthStat9 from CshControl
+  cur_yr_mth_stat10:
+    display: Curyrmthstat10
+    type: string
+    required: false
+    description: Field CurYrMthStat10 from CshControl
+  cur_yr_mth_stat11:
+    display: Curyrmthstat11
+    type: string
+    required: false
+    description: Field CurYrMthStat11 from CshControl
+  cur_yr_mth_stat12:
+    display: Curyrmthstat12
+    type: string
+    required: false
+    description: Field CurYrMthStat12 from CshControl
+  cur_yr_mth_stat13:
+    display: Curyrmthstat13
+    type: string
+    required: false
+    description: Field CurYrMthStat13 from CshControl
+  cur_yr_mth_end1:
+    display: Curyrmthend1
+    type: date
+    required: false
+    description: Field CurYrMthEnd1 from CshControl
+  cur_yr_mth_end2:
+    display: Curyrmthend2
+    type: date
+    required: false
+    description: Field CurYrMthEnd2 from CshControl
+  cur_yr_mth_end3:
+    display: Curyrmthend3
+    type: date
+    required: false
+    description: Field CurYrMthEnd3 from CshControl
+  cur_yr_mth_end4:
+    display: Curyrmthend4
+    type: date
+    required: false
+    description: Field CurYrMthEnd4 from CshControl
+  cur_yr_mth_end5:
+    display: Curyrmthend5
+    type: date
+    required: false
+    description: Field CurYrMthEnd5 from CshControl
+  cur_yr_mth_end6:
+    display: Curyrmthend6
+    type: date
+    required: false
+    description: Field CurYrMthEnd6 from CshControl
+  cur_yr_mth_end7:
+    display: Curyrmthend7
+    type: date
+    required: false
+    description: Field CurYrMthEnd7 from CshControl
+  cur_yr_mth_end8:
+    display: Curyrmthend8
+    type: date
+    required: false
+    description: Field CurYrMthEnd8 from CshControl
+  cur_yr_mth_end9:
+    display: Curyrmthend9
+    type: date
+    required: false
+    description: Field CurYrMthEnd9 from CshControl
+  cur_yr_mth_end10:
+    display: Curyrmthend10
+    type: date
+    required: false
+    description: Field CurYrMthEnd10 from CshControl
+  cur_yr_mth_end11:
+    display: Curyrmthend11
+    type: date
+    required: false
+    description: Field CurYrMthEnd11 from CshControl
+  cur_yr_mth_end12:
+    display: Curyrmthend12
+    type: date
+    required: false
+    description: Field CurYrMthEnd12 from CshControl
+  cur_yr_mth_end13:
+    display: Curyrmthend13
+    type: date
+    required: false
+    description: Field CurYrMthEnd13 from CshControl
+  prv_yr_mth_stat1:
+    display: Prvyrmthstat1
+    type: string
+    required: false
+    description: Field PrvYrMthStat1 from CshControl
+  prv_yr_mth_stat2:
+    display: Prvyrmthstat2
+    type: string
+    required: false
+    description: Field PrvYrMthStat2 from CshControl
+  prv_yr_mth_stat3:
+    display: Prvyrmthstat3
+    type: string
+    required: false
+    description: Field PrvYrMthStat3 from CshControl
+  prv_yr_mth_stat4:
+    display: Prvyrmthstat4
+    type: string
+    required: false
+    description: Field PrvYrMthStat4 from CshControl
+  prv_yr_mth_stat5:
+    display: Prvyrmthstat5
+    type: string
+    required: false
+    description: Field PrvYrMthStat5 from CshControl
+  prv_yr_mth_stat6:
+    display: Prvyrmthstat6
+    type: string
+    required: false
+    description: Field PrvYrMthStat6 from CshControl
+  prv_yr_mth_stat7:
+    display: Prvyrmthstat7
+    type: string
+    required: false
+    description: Field PrvYrMthStat7 from CshControl
+  prv_yr_mth_stat8:
+    display: Prvyrmthstat8
+    type: string
+    required: false
+    description: Field PrvYrMthStat8 from CshControl
+  prv_yr_mth_stat9:
+    display: Prvyrmthstat9
+    type: string
+    required: false
+    description: Field PrvYrMthStat9 from CshControl
+  prv_yr_mth_stat10:
+    display: Prvyrmthstat10
+    type: string
+    required: false
+    description: Field PrvYrMthStat10 from CshControl
+  prv_yr_mth_stat11:
+    display: Prvyrmthstat11
+    type: string
+    required: false
+    description: Field PrvYrMthStat11 from CshControl
+  prv_yr_mth_stat12:
+    display: Prvyrmthstat12
+    type: string
+    required: false
+    description: Field PrvYrMthStat12 from CshControl
+  prv_yr_mth_stat13:
+    display: Prvyrmthstat13
+    type: string
+    required: false
+    description: Field PrvYrMthStat13 from CshControl
+  prv_yr_mth_end1:
+    display: Prvyrmthend1
+    type: date
+    required: false
+    description: Field PrvYrMthEnd1 from CshControl
+  prv_yr_mth_end2:
+    display: Prvyrmthend2
+    type: date
+    required: false
+    description: Field PrvYrMthEnd2 from CshControl
+  prv_yr_mth_end3:
+    display: Prvyrmthend3
+    type: date
+    required: false
+    description: Field PrvYrMthEnd3 from CshControl
+  prv_yr_mth_end4:
+    display: Prvyrmthend4
+    type: date
+    required: false
+    description: Field PrvYrMthEnd4 from CshControl
+  prv_yr_mth_end5:
+    display: Prvyrmthend5
+    type: date
+    required: false
+    description: Field PrvYrMthEnd5 from CshControl
+  prv_yr_mth_end6:
+    display: Prvyrmthend6
+    type: date
+    required: false
+    description: Field PrvYrMthEnd6 from CshControl
+  prv_yr_mth_end7:
+    display: Prvyrmthend7
+    type: date
+    required: false
+    description: Field PrvYrMthEnd7 from CshControl
+  prv_yr_mth_end8:
+    display: Prvyrmthend8
+    type: date
+    required: false
+    description: Field PrvYrMthEnd8 from CshControl
+  prv_yr_mth_end9:
+    display: Prvyrmthend9
+    type: date
+    required: false
+    description: Field PrvYrMthEnd9 from CshControl
+  prv_yr_mth_end10:
+    display: Prvyrmthend10
+    type: date
+    required: false
+    description: Field PrvYrMthEnd10 from CshControl
+  prv_yr_mth_end11:
+    display: Prvyrmthend11
+    type: date
+    required: false
+    description: Field PrvYrMthEnd11 from CshControl
+  prv_yr_mth_end12:
+    display: Prvyrmthend12
+    type: date
+    required: false
+    description: Field PrvYrMthEnd12 from CshControl
+  prv_yr_mth_end13:
+    display: Prvyrmthend13
+    type: date
+    required: false
+    description: Field PrvYrMthEnd13 from CshControl
+  pr_next_journal:
+    display: Prnextjournal
+    type: decimal
+    required: false
+    description: Field PrNextJournal from CshControl
+  ft_next_journal:
+    display: Ftnextjournal
+    type: decimal
+    required: false
+    description: Field FtNextJournal from CshControl
+  pr_next_chq_reg_num:
+    display: Prnextchqregnum
+    type: decimal
+    required: false
+    description: Field PrNextChqRegNum from CshControl
+  next_chq_reg_num_fut:
+    display: Nextchqregnumfut
+    type: decimal
+    required: false
+    description: Field NextChqRegNumFut from CshControl
+  unp_dist_year:
+    display: Unpdistyear
+    type: decimal
+    required: false
+    description: Field UnpDistYear from CshControl
+  unp_dist_month:
+    display: Unpdistmonth
+    type: decimal
+    required: false
+    description: Field UnpDistMonth from CshControl
+  unp_dist_jnl:
+    display: Unpdistjnl
+    type: decimal
+    required: false
+    description: Field UnpDistJnl from CshControl
+  unp_gl_int_print_year:
+    display: Unpglintprintyear
+    type: decimal
+    required: false
+    description: Field UnpGlIntPrintYear from CshControl
+  unp_gl_int_print_month:
+    display: Unpglintprintmonth
+    type: decimal
+    required: false
+    description: Field UnpGlIntPrintMonth from CshControl
+  unp_gl_int_print_jnl:
+    display: Unpglintprintjnl
+    type: decimal
+    required: false
+    description: Field UnpGlIntPrintJnl from CshControl

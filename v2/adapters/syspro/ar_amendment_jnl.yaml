@@ -1,0 +1,14 @@
+concept: ar_amendment_jnl
+table: ArAmendmentJnl
+alias: aaj1
+fields:
+  jnl_date: aaj1.JnlDate
+  jnl_time: aaj1.JnlTime
+  jnl_line: aaj1.JnlLine
+  customer: aaj1.Customer
+  journal_printed: aaj1.JournalPrinted
+  change_flag: aaj1.ChangeFlag
+  column_name: aaj1.ColumnName
+  before: aaj1.Before
+  after: aaj1.After
+  operator_code: aaj1.OperatorCode

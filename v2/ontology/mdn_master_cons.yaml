@@ -1,0 +1,803 @@
+concept: mdn_master_cons
+display_name: MdnMasterCons
+module: other
+description: Auto-generated representation of the physical table MdnMasterCons.
+synonyms:
+- mdnmastercons
+- mdn master cons
+header_attributes:
+  key_invoice:
+    display: Keyinvoice
+    type: string
+    required: false
+    description: Field KeyInvoice from MdnMasterCons
+  key_sales_order:
+    display: Keysalesorder
+    type: string
+    required: false
+    description: Field KeySalesOrder from MdnMasterCons
+  invoice_status:
+    display: Invoicestatus
+    type: string
+    required: false
+    description: Field InvoiceStatus from MdnMasterCons
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MdnMasterCons
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from MdnMasterCons
+  order_status:
+    display: Orderstatus
+    type: string
+    required: false
+    description: Field OrderStatus from MdnMasterCons
+  active_flag:
+    display: Activeflag
+    type: string
+    required: false
+    description: Field ActiveFlag from MdnMasterCons
+  cancelled_flag:
+    display: Cancelledflag
+    type: string
+    required: false
+    description: Field CancelledFlag from MdnMasterCons
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from MdnMasterCons
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MdnMasterCons
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from MdnMasterCons
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from MdnMasterCons
+  order_date:
+    display: Orderdate
+    type: date
+    required: false
+    description: Field OrderDate from MdnMasterCons
+  entry_system_date:
+    display: Entrysystemdate
+    type: date
+    required: false
+    description: Field EntrySystemDate from MdnMasterCons
+  req_ship_date:
+    display: Reqshipdate
+    type: date
+    required: false
+    description: Field ReqShipDate from MdnMasterCons
+  date_last_doc_prt:
+    display: Datelastdocprt
+    type: date
+    required: false
+    description: Field DateLastDocPrt from MdnMasterCons
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from MdnMasterCons
+  shipping_instrs_cod:
+    display: Shippinginstrscod
+    type: string
+    required: false
+    description: Field ShippingInstrsCod from MdnMasterCons
+  alt_ship_addr_flag:
+    display: Altshipaddrflag
+    type: string
+    required: false
+    description: Field AltShipAddrFlag from MdnMasterCons
+  invoice_count:
+    display: Invoicecount
+    type: decimal
+    required: false
+    description: Field InvoiceCount from MdnMasterCons
+  inv_terms_override:
+    display: Invtermsoverride
+    type: string
+    required: false
+    description: Field InvTermsOverride from MdnMasterCons
+  credit_authority:
+    display: Creditauthority
+    type: string
+    required: false
+    description: Field CreditAuthority from MdnMasterCons
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from MdnMasterCons
+  special_instrs:
+    display: Specialinstrs
+    type: string
+    required: false
+    description: Field SpecialInstrs from MdnMasterCons
+  ent_invoice:
+    display: Entinvoice
+    type: string
+    required: false
+    description: Field EntInvoice from MdnMasterCons
+  ent_invoice_date:
+    display: Entinvoicedate
+    type: date
+    required: false
+    description: Field EntInvoiceDate from MdnMasterCons
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from MdnMasterCons
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from MdnMasterCons
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from MdnMasterCons
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from MdnMasterCons
+  tax_exempt_flag:
+    display: Taxexemptflag
+    type: string
+    required: false
+    description: Field TaxExemptFlag from MdnMasterCons
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from MdnMasterCons
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from MdnMasterCons
+  tax_exempt_override:
+    display: Taxexemptoverride
+    type: string
+    required: false
+    description: Field TaxExemptOverride from MdnMasterCons
+  cash_credit:
+    display: Cashcredit
+    type: string
+    required: false
+    description: Field CashCredit from MdnMasterCons
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MdnMasterCons
+  last_invoice:
+    display: Lastinvoice
+    type: string
+    required: false
+    description: Field LastInvoice from MdnMasterCons
+  scheduled_ord_flag:
+    display: Scheduledordflag
+    type: string
+    required: false
+    description: Field ScheduledOrdFlag from MdnMasterCons
+  gst_exempt_flag:
+    display: Gstexemptflag
+    type: string
+    required: false
+    description: Field GstExemptFlag from MdnMasterCons
+  gst_exempt_num:
+    display: Gstexemptnum
+    type: string
+    required: false
+    description: Field GstExemptNum from MdnMasterCons
+  gst_exempt_o_ride:
+    display: Gstexemptoride
+    type: string
+    required: false
+    description: Field GstExemptORide from MdnMasterCons
+  ibt_flag:
+    display: Ibtflag
+    type: string
+    required: false
+    description: Field IbtFlag from MdnMasterCons
+  ord_acknw_printed:
+    display: Ordacknwprinted
+    type: string
+    required: false
+    description: Field OrdAcknwPrinted from MdnMasterCons
+  det_cust_mvmt_reqd:
+    display: Detcustmvmtreqd
+    type: string
+    required: false
+    description: Field DetCustMvmtReqd from MdnMasterCons
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from MdnMasterCons
+  fix_exchange_rate:
+    display: Fixexchangerate
+    type: string
+    required: false
+    description: Field FixExchangeRate from MdnMasterCons
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from MdnMasterCons
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from MdnMasterCons
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from MdnMasterCons
+  gst_deduction:
+    display: Gstdeduction
+    type: string
+    required: false
+    description: Field GstDeduction from MdnMasterCons
+  order_status_fail:
+    display: Orderstatusfail
+    type: string
+    required: false
+    description: Field OrderStatusFail from MdnMasterCons
+  consolidated_order:
+    display: Consolidatedorder
+    type: string
+    required: false
+    description: Field ConsolidatedOrder from MdnMasterCons
+  credited_inv_date:
+    display: Creditedinvdate
+    type: date
+    required: false
+    description: Field CreditedInvDate from MdnMasterCons
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MdnMasterCons
+  serialised_flag:
+    display: Serialisedflag
+    type: string
+    required: false
+    description: Field SerialisedFlag from MdnMasterCons
+  counter_sales_flag:
+    display: Countersalesflag
+    type: string
+    required: false
+    description: Field CounterSalesFlag from MdnMasterCons
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from MdnMasterCons
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from MdnMasterCons
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from MdnMasterCons
+  transport_mode:
+    display: Transportmode
+    type: decimal
+    required: false
+    description: Field TransportMode from MdnMasterCons
+  process_flag:
+    display: Processflag
+    type: decimal
+    required: false
+    description: Field ProcessFlag from MdnMasterCons
+  jobs_exist_flag:
+    display: Jobsexistflag
+    type: string
+    required: false
+    description: Field JobsExistFlag from MdnMasterCons
+  alternate_key:
+    display: Alternatekey
+    type: string
+    required: false
+    description: Field AlternateKey from MdnMasterCons
+  last_operator:
+    display: Lastoperator
+    type: string
+    required: false
+    description: Field LastOperator from MdnMasterCons
+  hierarchy_flag:
+    display: Hierarchyflag
+    type: string
+    required: false
+    description: Field HierarchyFlag from MdnMasterCons
+  deposit_flag:
+    display: Depositflag
+    type: string
+    required: false
+    description: Field DepositFlag from MdnMasterCons
+  edi_source:
+    display: Edisource
+    type: string
+    required: false
+    description: Field EdiSource from MdnMasterCons
+  delivery_note:
+    display: Deliverynote
+    type: string
+    required: false
+    description: Field DeliveryNote from MdnMasterCons
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MdnMasterCons
+  line_comp:
+    display: Linecomp
+    type: string
+    required: false
+    description: Field LineComp from MdnMasterCons
+  capture_hh:
+    display: Capturehh
+    type: decimal
+    required: false
+    description: Field CaptureHh from MdnMasterCons
+  capture_mm:
+    display: Capturemm
+    type: decimal
+    required: false
+    description: Field CaptureMm from MdnMasterCons
+  last_del_note:
+    display: Lastdelnote
+    type: date
+    required: false
+    description: Field LastDelNote from MdnMasterCons
+  time_del_prted_hh:
+    display: Timedelprtedhh
+    type: decimal
+    required: false
+    description: Field TimeDelPrtedHh from MdnMasterCons
+  time_del_prted_mm:
+    display: Timedelprtedmm
+    type: decimal
+    required: false
+    description: Field TimeDelPrtedMm from MdnMasterCons
+  time_inv_prted_hh:
+    display: Timeinvprtedhh
+    type: decimal
+    required: false
+    description: Field TimeInvPrtedHh from MdnMasterCons
+  time_inv_prted_mm:
+    display: Timeinvprtedmm
+    type: decimal
+    required: false
+    description: Field TimeInvPrtedMm from MdnMasterCons
+  date_last_inv_prt:
+    display: Datelastinvprt
+    type: date
+    required: false
+    description: Field DateLastInvPrt from MdnMasterCons
+  salesperson2:
+    display: Salesperson2
+    type: string
+    required: false
+    description: Field Salesperson2 from MdnMasterCons
+  salesperson3:
+    display: Salesperson3
+    type: string
+    required: false
+    description: Field Salesperson3 from MdnMasterCons
+  salesperson4:
+    display: Salesperson4
+    type: string
+    required: false
+    description: Field Salesperson4 from MdnMasterCons
+  commission_sales1:
+    display: Commissionsales1
+    type: decimal
+    required: false
+    description: Field CommissionSales1 from MdnMasterCons
+  commission_sales2:
+    display: Commissionsales2
+    type: decimal
+    required: false
+    description: Field CommissionSales2 from MdnMasterCons
+  commission_sales3:
+    display: Commissionsales3
+    type: decimal
+    required: false
+    description: Field CommissionSales3 from MdnMasterCons
+  commission_sales4:
+    display: Commissionsales4
+    type: decimal
+    required: false
+    description: Field CommissionSales4 from MdnMasterCons
+  time_taken_to_add:
+    display: Timetakentoadd
+    type: decimal
+    required: false
+    description: Field TimeTakenToAdd from MdnMasterCons
+  time_taken_to_chg:
+    display: Timetakentochg
+    type: decimal
+    required: false
+    description: Field TimeTakenToChg from MdnMasterCons
+  fax_inv_in_batch:
+    display: Faxinvinbatch
+    type: string
+    required: false
+    description: Field FaxInvInBatch from MdnMasterCons
+  inter_wh_sale:
+    display: Interwhsale
+    type: string
+    required: false
+    description: Field InterWhSale from MdnMasterCons
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from MdnMasterCons
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from MdnMasterCons
+  dispatches_made:
+    display: Dispatchesmade
+    type: string
+    required: false
+    description: Field DispatchesMade from MdnMasterCons
+  live_disp_exist:
+    display: Livedispexist
+    type: string
+    required: false
+    description: Field LiveDispExist from MdnMasterCons
+  num_dispatches:
+    display: Numdispatches
+    type: decimal
+    required: false
+    description: Field NumDispatches from MdnMasterCons
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from MdnMasterCons
+  ship_address1:
+    display: Shipaddress1
+    type: string
+    required: false
+    description: Field ShipAddress1 from MdnMasterCons
+  ship_address2:
+    display: Shipaddress2
+    type: string
+    required: false
+    description: Field ShipAddress2 from MdnMasterCons
+  ship_address3:
+    display: Shipaddress3
+    type: string
+    required: false
+    description: Field ShipAddress3 from MdnMasterCons
+  ship_address3_loc:
+    display: Shipaddress3Loc
+    type: string
+    required: false
+    description: Field ShipAddress3Loc from MdnMasterCons
+  ship_address4:
+    display: Shipaddress4
+    type: string
+    required: false
+    description: Field ShipAddress4 from MdnMasterCons
+  ship_address5:
+    display: Shipaddress5
+    type: string
+    required: false
+    description: Field ShipAddress5 from MdnMasterCons
+  ship_postal_code:
+    display: Shippostalcode
+    type: string
+    required: false
+    description: Field ShipPostalCode from MdnMasterCons
+  ship_to_gps_lat:
+    display: Shiptogpslat
+    type: decimal
+    required: false
+    description: Field ShipToGpsLat from MdnMasterCons
+  ship_to_gps_long:
+    display: Shiptogpslong
+    type: decimal
+    required: false
+    description: Field ShipToGpsLong from MdnMasterCons
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from MdnMasterCons
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from MdnMasterCons
+  extended_tax_code:
+    display: Extendedtaxcode
+    type: string
+    required: false
+    description: Field ExtendedTaxCode from MdnMasterCons
+  multi_ship_code:
+    display: Multishipcode
+    type: string
+    required: false
+    description: Field MultiShipCode from MdnMasterCons
+  web_created:
+    display: Webcreated
+    type: string
+    required: false
+    description: Field WebCreated from MdnMasterCons
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from MdnMasterCons
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from MdnMasterCons
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from MdnMasterCons
+  non_merch_flag:
+    display: Nonmerchflag
+    type: string
+    required: false
+    description: Field NonMerchFlag from MdnMasterCons
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from MdnMasterCons
+  company_tax_no:
+    display: Companytaxno
+    type: string
+    required: false
+    description: Field CompanyTaxNo from MdnMasterCons
+  tpm_pickup_flag:
+    display: Tpmpickupflag
+    type: string
+    required: false
+    description: Field TpmPickupFlag from MdnMasterCons
+  tpm_evaluated_flag:
+    display: Tpmevaluatedflag
+    type: string
+    required: false
+    description: Field TpmEvaluatedFlag from MdnMasterCons
+  standard_comment:
+    display: Standardcomment
+    type: string
+    required: false
+    description: Field StandardComment from MdnMasterCons
+  sales_order_source:
+    display: Salesordersource
+    type: string
+    required: false
+    description: Field SalesOrderSource from MdnMasterCons
+  sales_order_src_desc:
+    display: Salesordersrcdesc
+    type: string
+    required: false
+    description: Field SalesOrderSrcDesc from MdnMasterCons
+  state_tax:
+    display: Statetax
+    type: string
+    required: false
+    description: Field StateTax from MdnMasterCons
+  county_zip_tax:
+    display: Countyziptax
+    type: string
+    required: false
+    description: Field CountyZipTax from MdnMasterCons
+  city_tax:
+    display: Citytax
+    type: string
+    required: false
+    description: Field CityTax from MdnMasterCons
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from MdnMasterCons
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from MdnMasterCons
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from MdnMasterCons
+  freight_taxable:
+    display: Freighttaxable
+    type: string
+    required: false
+    description: Field FreightTaxable from MdnMasterCons
+  verazip_county:
+    display: Verazipcounty
+    type: string
+    required: false
+    description: Field VerazipCounty from MdnMasterCons
+  limit_flag:
+    display: Limitflag
+    type: string
+    required: false
+    description: Field LimitFlag from MdnMasterCons
+  first_rate11:
+    display: Firstrate11
+    type: decimal
+    required: false
+    description: Field FirstRate11 from MdnMasterCons
+  first_rate12:
+    display: Firstrate12
+    type: decimal
+    required: false
+    description: Field FirstRate12 from MdnMasterCons
+  first_limit11:
+    display: Firstlimit11
+    type: decimal
+    required: false
+    description: Field FirstLimit11 from MdnMasterCons
+  first_limit12:
+    display: Firstlimit12
+    type: decimal
+    required: false
+    description: Field FirstLimit12 from MdnMasterCons
+  first_limit_value11:
+    display: Firstlimitvalue11
+    type: decimal
+    required: false
+    description: Field FirstLimitValue11 from MdnMasterCons
+  first_limit_value12:
+    display: Firstlimitvalue12
+    type: decimal
+    required: false
+    description: Field FirstLimitValue12 from MdnMasterCons
+  first_rate21:
+    display: Firstrate21
+    type: decimal
+    required: false
+    description: Field FirstRate21 from MdnMasterCons
+  first_rate22:
+    display: Firstrate22
+    type: decimal
+    required: false
+    description: Field FirstRate22 from MdnMasterCons
+  first_limit21:
+    display: Firstlimit21
+    type: decimal
+    required: false
+    description: Field FirstLimit21 from MdnMasterCons
+  first_limit22:
+    display: Firstlimit22
+    type: decimal
+    required: false
+    description: Field FirstLimit22 from MdnMasterCons
+  first_limit_value21:
+    display: Firstlimitvalue21
+    type: decimal
+    required: false
+    description: Field FirstLimitValue21 from MdnMasterCons
+  first_limit_value22:
+    display: Firstlimitvalue22
+    type: decimal
+    required: false
+    description: Field FirstLimitValue22 from MdnMasterCons
+  first_rate31:
+    display: Firstrate31
+    type: decimal
+    required: false
+    description: Field FirstRate31 from MdnMasterCons
+  first_rate32:
+    display: Firstrate32
+    type: decimal
+    required: false
+    description: Field FirstRate32 from MdnMasterCons
+  first_limit31:
+    display: Firstlimit31
+    type: decimal
+    required: false
+    description: Field FirstLimit31 from MdnMasterCons
+  first_limit32:
+    display: Firstlimit32
+    type: decimal
+    required: false
+    description: Field FirstLimit32 from MdnMasterCons
+  first_limit_value31:
+    display: Firstlimitvalue31
+    type: decimal
+    required: false
+    description: Field FirstLimitValue31 from MdnMasterCons
+  first_limit_value32:
+    display: Firstlimitvalue32
+    type: decimal
+    required: false
+    description: Field FirstLimitValue32 from MdnMasterCons
+  usa_or_normal_tax:
+    display: Usaornormaltax
+    type: string
+    required: false
+    description: Field UsaOrNormalTax from MdnMasterCons
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from MdnMasterCons
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from MdnMasterCons
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from MdnMasterCons
+  port_dispatch:
+    display: Portdispatch
+    type: string
+    required: false
+    description: Field PortDispatch from MdnMasterCons
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from MdnMasterCons
+  price_group_level:
+    display: Pricegrouplevel
+    type: string
+    required: false
+    description: Field PriceGroupLevel from MdnMasterCons
+  last_op_inv_prt:
+    display: Lastopinvprt
+    type: string
+    required: false
+    description: Field LastOpInvPrt from MdnMasterCons
+  dispatch_whole_so:
+    display: Dispatchwholeso
+    type: string
+    required: false
+    description: Field DispatchWholeSo from MdnMasterCons
+  elect_inv_status:
+    display: Electinvstatus
+    type: string
+    required: false
+    description: Field ElectInvStatus from MdnMasterCons
+  elect_inv_printed:
+    display: Electinvprinted
+    type: string
+    required: false
+    description: Field ElectInvPrinted from MdnMasterCons
+  entity_dimensions:
+    display: Entitydimensions
+    type: string
+    required: false
+    description: Field EntityDimensions from MdnMasterCons

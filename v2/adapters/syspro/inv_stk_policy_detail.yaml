@@ -1,0 +1,15 @@
+concept: inv_stk_policy_detail
+table: InvStkPolicyDetail
+alias: ispd
+fields:
+  stock_code: ispd.StockCode
+  sourcing_policy: ispd.SourcingPolicy
+  warehouse: ispd.Warehouse
+  supplier: ispd.Supplier
+  selection_order: ispd.SelectionOrder
+  sequence_number: ispd.SequenceNumber
+  threshold_perc: ispd.ThresholdPerc
+  threshold_amount: ispd.ThresholdAmount
+  threshold_amt_used: ispd.ThresholdAmtUsed
+  suggested_count: ispd.SuggestedCount
+  used_count: ispd.UsedCount

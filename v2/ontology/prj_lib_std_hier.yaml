@@ -1,0 +1,98 @@
+concept: prj_lib_std_hier
+display_name: PrjLibStdHier
+module: other
+description: Auto-generated representation of the physical table PrjLibStdHier.
+synonyms:
+- prjlibstdhier
+- prj lib std hier
+header_attributes:
+  hierarchy_type:
+    display: Hierarchytype
+    type: string
+    required: false
+    description: Field HierarchyType from PrjLibStdHier
+  hierarchy_code:
+    display: Hierarchycode
+    type: string
+    required: false
+    description: Field HierarchyCode from PrjLibStdHier
+  hier_head:
+    display: Hierhead
+    type: string
+    required: false
+    description: Field HierHead from PrjLibStdHier
+  section1:
+    display: Section1
+    type: string
+    required: false
+    description: Field Section1 from PrjLibStdHier
+  section2:
+    display: Section2
+    type: string
+    required: false
+    description: Field Section2 from PrjLibStdHier
+  section3:
+    display: Section3
+    type: string
+    required: false
+    description: Field Section3 from PrjLibStdHier
+  section4:
+    display: Section4
+    type: string
+    required: false
+    description: Field Section4 from PrjLibStdHier
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from PrjLibStdHier
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from PrjLibStdHier
+  track_costs_only:
+    display: Trackcostsonly
+    type: string
+    required: false
+    description: Field TrackCostsOnly from PrjLibStdHier
+  wip_cost_trk_gl_code:
+    display: Wipcosttrkglcode
+    type: string
+    required: false
+    description: Field WipCostTrkGlCode from PrjLibStdHier
+  allow_stk_tran:
+    display: Allowstktran
+    type: string
+    required: false
+    description: Field AllowStkTran from PrjLibStdHier
+  allow_non_tran:
+    display: Allownontran
+    type: string
+    required: false
+    description: Field AllowNonTran from PrjLibStdHier
+  allow_lab_tran:
+    display: Allowlabtran
+    type: string
+    required: false
+    description: Field AllowLabTran from PrjLibStdHier
+  allow_sub_tran:
+    display: Allowsubtran
+    type: string
+    required: false
+    description: Field AllowSubTran from PrjLibStdHier
+  allow_sls_tran:
+    display: Allowslstran
+    type: string
+    required: false
+    description: Field AllowSlsTran from PrjLibStdHier
+  allow_por_tran:
+    display: Allowportran
+    type: string
+    required: false
+    description: Field AllowPorTran from PrjLibStdHier
+  pct_limit:
+    display: Pctlimit
+    type: decimal
+    required: false
+    description: Field PctLimit from PrjLibStdHier

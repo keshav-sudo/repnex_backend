@@ -1,0 +1,148 @@
+concept: adm_usa_tax
+display_name: AdmUsaTax
+module: administration
+description: Auto-generated representation of the physical table AdmUsaTax.
+synonyms:
+- admusatax
+- adm usa tax
+header_attributes:
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from AdmUsaTax
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from AdmUsaTax
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from AdmUsaTax
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from AdmUsaTax
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmUsaTax
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from AdmUsaTax
+  freight_taxable:
+    display: Freighttaxable
+    type: string
+    required: false
+    description: Field FreightTaxable from AdmUsaTax
+  verazip_county:
+    display: Verazipcounty
+    type: string
+    required: false
+    description: Field VerazipCounty from AdmUsaTax
+  limit_flag:
+    display: Limitflag
+    type: string
+    required: false
+    description: Field LimitFlag from AdmUsaTax
+  first_rate11:
+    display: Firstrate11
+    type: decimal
+    required: false
+    description: Field FirstRate11 from AdmUsaTax
+  first_rate12:
+    display: Firstrate12
+    type: decimal
+    required: false
+    description: Field FirstRate12 from AdmUsaTax
+  first_limit11:
+    display: Firstlimit11
+    type: decimal
+    required: false
+    description: Field FirstLimit11 from AdmUsaTax
+  first_limit12:
+    display: Firstlimit12
+    type: decimal
+    required: false
+    description: Field FirstLimit12 from AdmUsaTax
+  first_limit_value11:
+    display: Firstlimitvalue11
+    type: decimal
+    required: false
+    description: Field FirstLimitValue11 from AdmUsaTax
+  first_limit_value12:
+    display: Firstlimitvalue12
+    type: decimal
+    required: false
+    description: Field FirstLimitValue12 from AdmUsaTax
+  first_rate21:
+    display: Firstrate21
+    type: decimal
+    required: false
+    description: Field FirstRate21 from AdmUsaTax
+  first_rate22:
+    display: Firstrate22
+    type: decimal
+    required: false
+    description: Field FirstRate22 from AdmUsaTax
+  first_limit21:
+    display: Firstlimit21
+    type: decimal
+    required: false
+    description: Field FirstLimit21 from AdmUsaTax
+  first_limit22:
+    display: Firstlimit22
+    type: decimal
+    required: false
+    description: Field FirstLimit22 from AdmUsaTax
+  first_limit_value21:
+    display: Firstlimitvalue21
+    type: decimal
+    required: false
+    description: Field FirstLimitValue21 from AdmUsaTax
+  first_limit_value22:
+    display: Firstlimitvalue22
+    type: decimal
+    required: false
+    description: Field FirstLimitValue22 from AdmUsaTax
+  first_rate31:
+    display: Firstrate31
+    type: decimal
+    required: false
+    description: Field FirstRate31 from AdmUsaTax
+  first_rate32:
+    display: Firstrate32
+    type: decimal
+    required: false
+    description: Field FirstRate32 from AdmUsaTax
+  first_limit31:
+    display: Firstlimit31
+    type: decimal
+    required: false
+    description: Field FirstLimit31 from AdmUsaTax
+  first_limit32:
+    display: Firstlimit32
+    type: decimal
+    required: false
+    description: Field FirstLimit32 from AdmUsaTax
+  first_limit_value31:
+    display: Firstlimitvalue31
+    type: decimal
+    required: false
+    description: Field FirstLimitValue31 from AdmUsaTax
+  first_limit_value32:
+    display: Firstlimitvalue32
+    type: decimal
+    required: false
+    description: Field FirstLimitValue32 from AdmUsaTax
+  usa_or_normal_tax:
+    display: Usaornormaltax
+    type: string
+    required: false
+    description: Field UsaOrNormalTax from AdmUsaTax

@@ -1,0 +1,63 @@
+concept: pos_summary_inv
+display_name: PosSummaryInv
+module: other
+description: Auto-generated representation of the physical table PosSummaryInv.
+synonyms:
+- possummaryinv
+- pos summary inv
+header_attributes:
+  cash_drawer:
+    display: Cashdrawer
+    type: string
+    required: false
+    description: Field CashDrawer from PosSummaryInv
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from PosSummaryInv
+  invoice_type:
+    display: Invoicetype
+    type: string
+    required: false
+    description: Field InvoiceType from PosSummaryInv
+  invoice_value_for:
+    display: Invoicevaluefor
+    type: decimal
+    required: false
+    description: Field InvoiceValueFor from PosSummaryInv
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from PosSummaryInv
+  payment_value_for:
+    display: Paymentvaluefor
+    type: decimal
+    required: false
+    description: Field PaymentValueFor from PosSummaryInv
+  on_account_val_for:
+    display: Onaccountvalfor
+    type: decimal
+    required: false
+    description: Field OnAccountValFor from PosSummaryInv
+  discount_value_for:
+    display: Discountvaluefor
+    type: decimal
+    required: false
+    description: Field DiscountValueFor from PosSummaryInv
+  adjustment_val_for:
+    display: Adjustmentvalfor
+    type: decimal
+    required: false
+    description: Field AdjustmentValFor from PosSummaryInv
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from PosSummaryInv
+  payments_made_flag:
+    display: Paymentsmadeflag
+    type: string
+    required: false
+    description: Field PaymentsMadeFlag from PosSummaryInv

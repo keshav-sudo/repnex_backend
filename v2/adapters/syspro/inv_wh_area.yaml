@@ -1,0 +1,13 @@
+concept: inv_wh_area
+table: InvWhArea
+alias: iwa
+fields:
+  warehouse: iwa.Warehouse
+  wh_area: iwa.WhArea
+  description: iwa.Description
+  bin_format: iwa.BinFormat
+  width_tag: iwa.WidthTag
+  length_tag: iwa.LengthTag
+  bin_count: iwa.BinCount
+  group_ops: iwa.GroupOps
+  bin_pick_strategy: iwa.BinPickStrategy

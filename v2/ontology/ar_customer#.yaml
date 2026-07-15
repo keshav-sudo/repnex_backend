@@ -1,0 +1,23 @@
+concept: ar_customer#
+display_name: ArCustomer#
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCustomer#.
+synonyms:
+- arcustomer#
+- ar customer#
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCustomer#
+  post_date_time:
+    display: Postdatetime
+    type: date
+    required: false
+    description: Field PostDateTime from ArCustomer#
+  outst_ord_val:
+    display: Outstordval
+    type: decimal
+    required: false
+    description: Field OutstOrdVal from ArCustomer#

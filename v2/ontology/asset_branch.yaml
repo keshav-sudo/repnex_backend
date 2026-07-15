@@ -1,0 +1,48 @@
+concept: asset_branch
+display_name: AssetBranch
+module: assets
+description: Auto-generated representation of the physical table AssetBranch.
+synonyms:
+- assetbranch
+- asset branch
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetBranch
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetBranch
+  mtd_labour:
+    display: Mtdlabour
+    type: decimal
+    required: false
+    description: Field MtdLabour from AssetBranch
+  mtd_revenue:
+    display: Mtdrevenue
+    type: decimal
+    required: false
+    description: Field MtdRevenue from AssetBranch
+  mtd_purchases:
+    display: Mtdpurchases
+    type: decimal
+    required: false
+    description: Field MtdPurchases from AssetBranch
+  ytd_labour:
+    display: Ytdlabour
+    type: decimal
+    required: false
+    description: Field YtdLabour from AssetBranch
+  ytd_revenue:
+    display: Ytdrevenue
+    type: decimal
+    required: false
+    description: Field YtdRevenue from AssetBranch
+  ytd_purchases:
+    display: Ytdpurchases
+    type: decimal
+    required: false
+    description: Field YtdPurchases from AssetBranch

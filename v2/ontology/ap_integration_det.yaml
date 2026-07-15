@@ -1,0 +1,38 @@
+concept: ap_integration_det
+display_name: ApIntegrationDet
+module: accounts_payable
+description: Auto-generated representation of the physical table ApIntegrationDet.
+synonyms:
+- apintegrationdet
+- ap integration det
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ApIntegrationDet
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApIntegrationDet
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApIntegrationDet
+  gl_exch_var_code:
+    display: Glexchvarcode
+    type: string
+    required: false
+    description: Field GlExchVarCode from ApIntegrationDet
+  gl_exch_loss_code:
+    display: Glexchlosscode
+    type: string
+    required: false
+    description: Field GlExchLossCode from ApIntegrationDet
+  un_realized_forex:
+    display: Unrealizedforex
+    type: string
+    required: false
+    description: Field UnRealizedForex from ApIntegrationDet

@@ -1,0 +1,13 @@
+concept: iop_con_draft
+table: IopConDraft
+alias: icd1
+fields:
+  collection: icd1.Collection
+  instance: icd1.Instance
+  stock_code: icd1.StockCode
+  version: icd1.Version
+  release: icd1.Release
+  forecast_date: icd1.ForecastDate
+  forecast_qty: icd1.ForecastQty
+  reference: icd1.Reference
+  freeze: icd1.Freeze

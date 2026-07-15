@@ -1,0 +1,7 @@
+concept: adm_defaults
+table: AdmDefaults
+alias: ad
+fields:
+  default_type: ad.DefaultType
+  default_key: ad.DefaultKey
+  default_record: ad.DefaultRecord

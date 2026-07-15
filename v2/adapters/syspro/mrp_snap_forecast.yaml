@@ -1,0 +1,21 @@
+concept: mrp_snap_forecast
+table: MrpSnapForecast
+alias: msf
+fields:
+  stock_code: msf.StockCode
+  forecast_wh: msf.ForecastWh
+  forecast_date: msf.ForecastDate
+  line: msf.Line
+  forecast_qty_outst: msf.ForecastQtyOutst
+  description: msf.Description
+  reference: msf.Reference
+  customer: msf.Customer
+  resource_parent: msf.ResourceParent
+  inactive_flag: msf.InactiveFlag
+  forecast_type: msf.ForecastType
+  qty_invoiced: msf.QtyInvoiced
+  orig_forecast_date: msf.OrigForecastDate
+  original_line: msf.OriginalLine
+  orig_qty_outst: msf.OrigQtyOutst
+  version: msf.Version
+  release: msf.Release

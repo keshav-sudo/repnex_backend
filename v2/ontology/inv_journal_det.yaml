@@ -1,0 +1,338 @@
+concept: inv_journal_det
+display_name: InvJournalDet
+module: inventory
+description: Auto-generated representation of the physical table InvJournalDet.
+synonyms:
+- invjournaldet
+- inv journal det
+header_attributes:
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from InvJournalDet
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from InvJournalDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from InvJournalDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from InvJournalDet
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from InvJournalDet
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvJournalDet
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvJournalDet
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from InvJournalDet
+  trn_qty:
+    display: Trnqty
+    type: decimal
+    required: false
+    description: Field TrnQty from InvJournalDet
+  entered_cost:
+    display: Enteredcost
+    type: decimal
+    required: false
+    description: Field EnteredCost from InvJournalDet
+  entered_basis:
+    display: Enteredbasis
+    type: string
+    required: false
+    description: Field EnteredBasis from InvJournalDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvJournalDet
+  add_reference:
+    display: Addreference
+    type: string
+    required: false
+    description: Field AddReference from InvJournalDet
+  trn_unit_cost:
+    display: Trnunitcost
+    type: decimal
+    required: false
+    description: Field TrnUnitCost from InvJournalDet
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from InvJournalDet
+  prev_unit_cost:
+    display: Prevunitcost
+    type: decimal
+    required: false
+    description: Field PrevUnitCost from InvJournalDet
+  new_unit_cost:
+    display: Newunitcost
+    type: decimal
+    required: false
+    description: Field NewUnitCost from InvJournalDet
+  transfer_to_wh:
+    display: Transfertowh
+    type: string
+    required: false
+    description: Field TransferToWh from InvJournalDet
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from InvJournalDet
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvJournalDet
+  stocked_flag:
+    display: Stockedflag
+    type: string
+    required: false
+    description: Field StockedFlag from InvJournalDet
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from InvJournalDet
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from InvJournalDet
+  bin_xfer_in:
+    display: Binxferin
+    type: string
+    required: false
+    description: Field BinXferIn from InvJournalDet
+  prev_qty_on_hand:
+    display: Prevqtyonhand
+    type: decimal
+    required: false
+    description: Field PrevQtyOnHand from InvJournalDet
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from InvJournalDet
+  transfer_flag:
+    display: Transferflag
+    type: string
+    required: false
+    description: Field TransferFlag from InvJournalDet
+  grn_source:
+    display: Grnsource
+    type: string
+    required: false
+    description: Field GrnSource from InvJournalDet
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from InvJournalDet
+  back_ord_flag:
+    display: Backordflag
+    type: string
+    required: false
+    description: Field BackOrdFlag from InvJournalDet
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from InvJournalDet
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from InvJournalDet
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from InvJournalDet
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from InvJournalDet
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from InvJournalDet
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from InvJournalDet
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from InvJournalDet
+  reject_code:
+    display: Rejectcode
+    type: string
+    required: false
+    description: Field RejectCode from InvJournalDet
+  subcontract_flag:
+    display: Subcontractflag
+    type: string
+    required: false
+    description: Field SubcontractFlag from InvJournalDet
+  gl_updated:
+    display: Glupdated
+    type: string
+    required: false
+    description: Field GlUpdated from InvJournalDet
+  abc_elements:
+    display: Abcelements
+    type: decimal
+    required: false
+    description: Field AbcElements from InvJournalDet
+  receipt_value:
+    display: Receiptvalue
+    type: decimal
+    required: false
+    description: Field ReceiptValue from InvJournalDet
+  price_var_upd_gl:
+    display: Pricevarupdgl
+    type: string
+    required: false
+    description: Field PriceVarUpdGl from InvJournalDet
+  git_exp_issue:
+    display: Gitexpissue
+    type: string
+    required: false
+    description: Field GitExpIssue from InvJournalDet
+  orig_po_qty:
+    display: Origpoqty
+    type: decimal
+    required: false
+    description: Field OrigPoQty from InvJournalDet
+  outst_po_qty:
+    display: Outstpoqty
+    type: decimal
+    required: false
+    description: Field OutstPoQty from InvJournalDet
+  po_due_date:
+    display: Poduedate
+    type: date
+    required: false
+    description: Field PoDueDate from InvJournalDet
+  line_due_date:
+    display: Lineduedate
+    type: date
+    required: false
+    description: Field LineDueDate from InvJournalDet
+  po_debit_gl_code:
+    display: Podebitglcode
+    type: string
+    required: false
+    description: Field PoDebitGlCode from InvJournalDet
+  cost_variance:
+    display: Costvariance
+    type: decimal
+    required: false
+    description: Field CostVariance from InvJournalDet
+  fifo_bucket:
+    display: Fifobucket
+    type: decimal
+    required: false
+    description: Field FifoBucket from InvJournalDet
+  grn_var_gl_code:
+    display: Grnvarglcode
+    type: string
+    required: false
+    description: Field GrnVarGlCode from InvJournalDet
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from InvJournalDet
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvJournalDet
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvJournalDet
+  commitment_flag:
+    display: Commitmentflag
+    type: string
+    required: false
+    description: Field CommitmentFlag from InvJournalDet
+  analysis_entry:
+    display: Analysisentry
+    type: decimal
+    required: false
+    description: Field AnalysisEntry from InvJournalDet
+  dr_analysis_entry:
+    display: Dranalysisentry
+    type: decimal
+    required: false
+    description: Field DrAnalysisEntry from InvJournalDet
+  price_analysis_ent:
+    display: Priceanalysisent
+    type: decimal
+    required: false
+    description: Field PriceAnalysisEnt from InvJournalDet
+  lot_serial:
+    display: Lotserial
+    type: string
+    required: false
+    description: Field LotSerial from InvJournalDet
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from InvJournalDet
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from InvJournalDet
+  insp_reference:
+    display: Inspreference
+    type: string
+    required: false
+    description: Field InspReference from InvJournalDet
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from InvJournalDet
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from InvJournalDet
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from InvJournalDet

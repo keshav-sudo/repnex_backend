@@ -1,0 +1,13 @@
+concept: tbl_so_discount
+table: TblSoDiscount
+alias: tsd
+fields:
+  discount_code: tsd.DiscountCode
+  description: tsd.Description
+  discount_pct1: tsd.DiscountPct1
+  discount_pct2: tsd.DiscountPct2
+  discount_pct3: tsd.DiscountPct3
+  disc_basis: tsd.DiscBasis
+  price_code: tsd.PriceCode
+  price_flag: tsd.PriceFlag
+  price_list: tsd.PriceList

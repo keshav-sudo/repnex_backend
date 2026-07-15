@@ -1,0 +1,143 @@
+concept: crm_control
+display_name: CrmControl
+module: crm
+description: Auto-generated representation of the physical table CrmControl.
+synonyms:
+- crmcontrol
+- crm control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from CrmControl
+  next_attachment:
+    display: Nextattachment
+    type: decimal
+    required: false
+    description: Field NextAttachment from CrmControl
+  next_body:
+    display: Nextbody
+    type: decimal
+    required: false
+    description: Field NextBody from CrmControl
+  contact_prop_desc1:
+    display: Contactpropdesc1
+    type: string
+    required: false
+    description: Field ContactPropDesc1 from CrmControl
+  contact_prop_desc2:
+    display: Contactpropdesc2
+    type: string
+    required: false
+    description: Field ContactPropDesc2 from CrmControl
+  contact_prop_desc3:
+    display: Contactpropdesc3
+    type: string
+    required: false
+    description: Field ContactPropDesc3 from CrmControl
+  contact_prop_desc4:
+    display: Contactpropdesc4
+    type: string
+    required: false
+    description: Field ContactPropDesc4 from CrmControl
+  contact_prop_desc5:
+    display: Contactpropdesc5
+    type: string
+    required: false
+    description: Field ContactPropDesc5 from CrmControl
+  contact_prop_desc6:
+    display: Contactpropdesc6
+    type: string
+    required: false
+    description: Field ContactPropDesc6 from CrmControl
+  contact_prop_desc7:
+    display: Contactpropdesc7
+    type: string
+    required: false
+    description: Field ContactPropDesc7 from CrmControl
+  contact_prop_desc8:
+    display: Contactpropdesc8
+    type: string
+    required: false
+    description: Field ContactPropDesc8 from CrmControl
+  contact_prop_desc9:
+    display: Contactpropdesc9
+    type: string
+    required: false
+    description: Field ContactPropDesc9 from CrmControl
+  contact_prop_desc10:
+    display: Contactpropdesc10
+    type: string
+    required: false
+    description: Field ContactPropDesc10 from CrmControl
+  activity_flag_desc1:
+    display: Activityflagdesc1
+    type: string
+    required: false
+    description: Field ActivityFlagDesc1 from CrmControl
+  activity_flag_desc2:
+    display: Activityflagdesc2
+    type: string
+    required: false
+    description: Field ActivityFlagDesc2 from CrmControl
+  activity_flag_desc3:
+    display: Activityflagdesc3
+    type: string
+    required: false
+    description: Field ActivityFlagDesc3 from CrmControl
+  activity_flag_desc4:
+    display: Activityflagdesc4
+    type: string
+    required: false
+    description: Field ActivityFlagDesc4 from CrmControl
+  activity_flag_desc5:
+    display: Activityflagdesc5
+    type: string
+    required: false
+    description: Field ActivityFlagDesc5 from CrmControl
+  activity_flag_desc6:
+    display: Activityflagdesc6
+    type: string
+    required: false
+    description: Field ActivityFlagDesc6 from CrmControl
+  activity_flag_desc7:
+    display: Activityflagdesc7
+    type: string
+    required: false
+    description: Field ActivityFlagDesc7 from CrmControl
+  activity_flag_desc8:
+    display: Activityflagdesc8
+    type: string
+    required: false
+    description: Field ActivityFlagDesc8 from CrmControl
+  activity_flag_desc9:
+    display: Activityflagdesc9
+    type: string
+    required: false
+    description: Field ActivityFlagDesc9 from CrmControl
+  activity_flag_desc10:
+    display: Activityflagdesc10
+    type: string
+    required: false
+    description: Field ActivityFlagDesc10 from CrmControl
+  def_map_url:
+    display: Defmapurl
+    type: string
+    required: false
+    description: Field DefMapUrl from CrmControl
+  def_weather_url:
+    display: Defweatherurl
+    type: string
+    required: false
+    description: Field DefWeatherUrl from CrmControl
+  def_org_seq:
+    display: Deforgseq
+    type: string
+    required: false
+    description: Field DefOrgSeq from CrmControl
+  next_complaint:
+    display: Nextcomplaint
+    type: decimal
+    required: false
+    description: Field NextComplaint from CrmControl

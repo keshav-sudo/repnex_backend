@@ -1,0 +1,28 @@
+concept: mrp_overload_ctl
+display_name: MrpOverloadCtl
+module: mrp
+description: Auto-generated representation of the physical table MrpOverloadCtl.
+synonyms:
+- mrpoverloadctl
+- mrp overload ctl
+header_attributes:
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MrpOverloadCtl
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from MrpOverloadCtl
+  incl_suggested_job:
+    display: Inclsuggestedjob
+    type: string
+    required: false
+    description: Field InclSuggestedJob from MrpOverloadCtl
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from MrpOverloadCtl

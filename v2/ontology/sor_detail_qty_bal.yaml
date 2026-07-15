@@ -1,0 +1,98 @@
+concept: sor_detail_qty_bal
+display_name: SorDetailQtyBal
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorDetailQtyBal.
+synonyms:
+- sordetailqtybal
+- sor detail qty bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from SorDetailQtyBal
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorDetailQtyBal
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorDetailQtyBal
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorDetailQtyBal
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SorDetailQtyBal
+  sales_order_init_line:
+    display: Salesorderinitline
+    type: decimal
+    required: false
+    description: Field SalesOrderInitLine from SorDetailQtyBal
+  order_in_process:
+    display: Orderinprocess
+    type: string
+    required: false
+    description: Field OrderInProcess from SorDetailQtyBal
+  ord_ship_qty:
+    display: Ordshipqty
+    type: decimal
+    required: false
+    description: Field OrdShipQty from SorDetailQtyBal
+  ord_resv_qty:
+    display: Ordresvqty
+    type: decimal
+    required: false
+    description: Field OrdResvQty from SorDetailQtyBal
+  bin_ship_qty:
+    display: Binshipqty
+    type: decimal
+    required: false
+    description: Field BinShipQty from SorDetailQtyBal
+  bin_resv_qty:
+    display: Binresvqty
+    type: decimal
+    required: false
+    description: Field BinResvQty from SorDetailQtyBal
+  lot_ship_qty:
+    display: Lotshipqty
+    type: decimal
+    required: false
+    description: Field LotShipQty from SorDetailQtyBal
+  lot_resv_qty:
+    display: Lotresvqty
+    type: decimal
+    required: false
+    description: Field LotResvQty from SorDetailQtyBal
+  ser_ship_qty:
+    display: Sershipqty
+    type: decimal
+    required: false
+    description: Field SerShipQty from SorDetailQtyBal
+  ser_resv_qty:
+    display: Serresvqty
+    type: decimal
+    required: false
+    description: Field SerResvQty from SorDetailQtyBal
+  disp_in_process:
+    display: Dispinprocess
+    type: string
+    required: false
+    description: Field DispInProcess from SorDetailQtyBal
+  ord_disp_qty:
+    display: Orddispqty
+    type: decimal
+    required: false
+    description: Field OrdDispQty from SorDetailQtyBal
+  dsp_disp_qty:
+    display: Dspdispqty
+    type: decimal
+    required: false
+    description: Field DspDispQty from SorDetailQtyBal

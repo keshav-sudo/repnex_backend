@@ -1,0 +1,14 @@
+concept: mrp_req_ctl
+table: MrpReqCtl
+alias: mrc
+fields:
+  ctl_flag: mrc.CtlFlag
+  supply_demand_date: mrc.SupplyDemandDate
+  snapshot_date: mrc.SnapshotDate
+  snapshot_time: mrc.SnapshotTime
+  use_build_sched: mrc.UseBuildSched
+  use_rule_a: mrc.UseRuleA
+  create_peg_info: mrc.CreatePegInfo
+  any_live_files_upd: mrc.AnyLiveFilesUpd
+  any_snap_files_upd: mrc.AnySnapFilesUpd
+  next_sug_job: mrc.NextSugJob

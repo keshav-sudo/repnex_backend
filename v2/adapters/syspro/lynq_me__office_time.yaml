@@ -1,0 +1,9 @@
+concept: lynq_me__office_time
+table: Lynq_ME_OfficeTime
+alias: lmeot
+fields:
+  id: lmeot.ID
+  o_date: lmeot.oDate
+  o_employee_code: lmeot.oEmployeeCode
+  o_start: lmeot.oStart
+  o_end: lmeot.oEnd

@@ -1,0 +1,173 @@
+concept: ar_trn_gst
+display_name: ArTrnGst
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArTrnGst.
+synonyms:
+- artrngst
+- ar trn gst
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArTrnGst
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArTrnGst
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from ArTrnGst
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArTrnGst
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from ArTrnGst
+  detail_line:
+    display: Detailline
+    type: decimal
+    required: false
+    description: Field DetailLine from ArTrnGst
+  gst_exempt_flag:
+    display: Gstexemptflag
+    type: string
+    required: false
+    description: Field GstExemptFlag from ArTrnGst
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ArTrnGst
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArTrnGst
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArTrnGst
+  gst_exempt_num:
+    display: Gstexemptnum
+    type: string
+    required: false
+    description: Field GstExemptNum from ArTrnGst
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from ArTrnGst
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArTrnGst
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from ArTrnGst
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ArTrnGst
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from ArTrnGst
+  qty_invoiced:
+    display: Qtyinvoiced
+    type: decimal
+    required: false
+    description: Field QtyInvoiced from ArTrnGst
+  gst_taxable_value:
+    display: Gsttaxablevalue
+    type: decimal
+    required: false
+    description: Field GstTaxableValue from ArTrnGst
+  gst_basis:
+    display: Gstbasis
+    type: string
+    required: false
+    description: Field GstBasis from ArTrnGst
+  gst_tax_code:
+    display: Gsttaxcode
+    type: string
+    required: false
+    description: Field GstTaxCode from ArTrnGst
+  gst_rate:
+    display: Gstrate
+    type: decimal
+    required: false
+    description: Field GstRate from ArTrnGst
+  gst_value:
+    display: Gstvalue
+    type: decimal
+    required: false
+    description: Field GstValue from ArTrnGst
+  gst_upd:
+    display: Gstupd
+    type: string
+    required: false
+    description: Field GstUpd from ArTrnGst
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from ArTrnGst
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ArTrnGst
+  last_fst_record:
+    display: Lastfstrecord
+    type: string
+    required: false
+    description: Field LastFstRecord from ArTrnGst
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from ArTrnGst
+  exempt_forced_flag:
+    display: Exemptforcedflag
+    type: string
+    required: false
+    description: Field ExemptForcedFlag from ArTrnGst
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArTrnGst
+  cash_credit:
+    display: Cashcredit
+    type: string
+    required: false
+    description: Field CashCredit from ArTrnGst
+  global_tax_upd:
+    display: Globaltaxupd
+    type: string
+    required: false
+    description: Field GlobalTaxUpd from ArTrnGst
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from ArTrnGst
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from ArTrnGst

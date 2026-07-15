@@ -1,0 +1,10 @@
+concept: lynq_me__activity__gen_log_state
+table: Lynq_ME_Activity_GenLogState
+alias: lmeagls
+fields:
+  id: lmeagls.ID
+  data_type: lmeagls.DataType
+  guid_id: lmeagls.GuidID
+  int_id: lmeagls.IntID
+  time_stamp: lmeagls.TimeStamp
+  gen_log_id: lmeagls.GenLogID

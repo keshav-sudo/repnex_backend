@@ -1,0 +1,148 @@
+concept: adm_task_item_comp
+display_name: AdmTaskItemComp
+module: administration
+description: Auto-generated representation of the physical table AdmTaskItemComp.
+synonyms:
+- admtaskitemcomp
+- adm task item comp
+header_attributes:
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmTaskItemComp
+  task_group:
+    display: Taskgroup
+    type: string
+    required: false
+    description: Field TaskGroup from AdmTaskItemComp
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from AdmTaskItemComp
+  sequence_number:
+    display: Sequencenumber
+    type: decimal
+    required: false
+    description: Field SequenceNumber from AdmTaskItemComp
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmTaskItemComp
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from AdmTaskItemComp
+  task_type:
+    display: Tasktype
+    type: string
+    required: false
+    description: Field TaskType from AdmTaskItemComp
+  icon_number:
+    display: Iconnumber
+    type: decimal
+    required: false
+    description: Field IconNumber from AdmTaskItemComp
+  program:
+    display: Program
+    type: string
+    required: false
+    description: Field Program from AdmTaskItemComp
+  start_folder:
+    display: Startfolder
+    type: string
+    required: false
+    description: Field StartFolder from AdmTaskItemComp
+  flex_gen_method:
+    display: Flexgenmethod
+    type: string
+    required: false
+    description: Field FlexGenMethod from AdmTaskItemComp
+  task_completed:
+    display: Taskcompleted
+    type: decimal
+    required: false
+    description: Field TaskCompleted from AdmTaskItemComp
+  remind_if_due:
+    display: Remindifdue
+    type: decimal
+    required: false
+    description: Field RemindIfDue from AdmTaskItemComp
+  insert_in_outlook:
+    display: Insertinoutlook
+    type: decimal
+    required: false
+    description: Field InsertInOutlook from AdmTaskItemComp
+  occurrance:
+    display: Occurrance
+    type: string
+    required: false
+    description: Field Occurrance from AdmTaskItemComp
+  number_of_days:
+    display: Numberofdays
+    type: decimal
+    required: false
+    description: Field NumberOfDays from AdmTaskItemComp
+  number_of_weeks:
+    display: Numberofweeks
+    type: decimal
+    required: false
+    description: Field NumberOfWeeks from AdmTaskItemComp
+  day_of_week_flag:
+    display: Dayofweekflag
+    type: decimal
+    required: false
+    description: Field DayOfWeekFlag from AdmTaskItemComp
+  every_sunday:
+    display: Everysunday
+    type: decimal
+    required: false
+    description: Field EverySunday from AdmTaskItemComp
+  every_monday:
+    display: Everymonday
+    type: decimal
+    required: false
+    description: Field EveryMonday from AdmTaskItemComp
+  every_tuesday:
+    display: Everytuesday
+    type: decimal
+    required: false
+    description: Field EveryTuesday from AdmTaskItemComp
+  every_wednesday:
+    display: Everywednesday
+    type: decimal
+    required: false
+    description: Field EveryWednesday from AdmTaskItemComp
+  every_thursday:
+    display: Everythursday
+    type: decimal
+    required: false
+    description: Field EveryThursday from AdmTaskItemComp
+  every_friday:
+    display: Everyfriday
+    type: decimal
+    required: false
+    description: Field EveryFriday from AdmTaskItemComp
+  monthly_flag:
+    display: Monthlyflag
+    type: string
+    required: false
+    description: Field MonthlyFlag from AdmTaskItemComp
+  fixed_days:
+    display: Fixeddays
+    type: decimal
+    required: false
+    description: Field FixedDays from AdmTaskItemComp
+  day_within_month:
+    display: Daywithinmonth
+    type: string
+    required: false
+    description: Field DayWithinMonth from AdmTaskItemComp
+  day_flag:
+    display: Dayflag
+    type: string
+    required: false
+    description: Field DayFlag from AdmTaskItemComp

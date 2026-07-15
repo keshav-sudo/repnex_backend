@@ -1,0 +1,18 @@
+concept: ecc_drawing_size
+display_name: EccDrawingSize
+module: other
+description: Auto-generated representation of the physical table EccDrawingSize.
+synonyms:
+- eccdrawingsize
+- ecc drawing size
+header_attributes:
+  drawing_size:
+    display: Drawingsize
+    type: string
+    required: false
+    description: Field DrawingSize from EccDrawingSize
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EccDrawingSize

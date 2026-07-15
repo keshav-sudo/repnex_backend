@@ -1,0 +1,25 @@
+concept: sor_cancelled
+table: SorCancelled
+alias: sc2
+fields:
+  trn_date: sc2.TrnDate
+  trn_time: sc2.TrnTime
+  sales_order: sc2.SalesOrder
+  sales_order_line: sc2.SalesOrderLine
+  line_type: sc2.LineType
+  cancelled_value: sc2.CancelledValue
+  reason: sc2.Reason
+  customer: sc2.Customer
+  salesperson: sc2.Salesperson
+  branch: sc2.Branch
+  operator: sc2.Operator
+  document_type: sc2.DocumentType
+  area: sc2.Area
+  user_field1: sc2.UserField1
+  stock_code: sc2.StockCode
+  description: sc2.Description
+  warehouse: sc2.Warehouse
+  order_qty: sc2.OrderQty
+  order_uom: sc2.OrderUom
+  product_class: sc2.ProductClass
+  tax_code: sc2.TaxCode

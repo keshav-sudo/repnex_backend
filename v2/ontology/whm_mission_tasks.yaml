@@ -1,0 +1,128 @@
+concept: whm_mission_tasks
+display_name: WhmMissionTasks
+module: other
+description: Auto-generated representation of the physical table WhmMissionTasks.
+synonyms:
+- whmmissiontasks
+- whm mission tasks
+header_attributes:
+  mission:
+    display: Mission
+    type: string
+    required: false
+    description: Field Mission from WhmMissionTasks
+  mission_line:
+    display: Missionline
+    type: decimal
+    required: false
+    description: Field MissionLine from WhmMissionTasks
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from WhmMissionTasks
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from WhmMissionTasks
+  pick_number:
+    display: Picknumber
+    type: string
+    required: false
+    description: Field PickNumber from WhmMissionTasks
+  pick_line:
+    display: Pickline
+    type: decimal
+    required: false
+    description: Field PickLine from WhmMissionTasks
+  cycle_count:
+    display: Cyclecount
+    type: string
+    required: false
+    description: Field CycleCount from WhmMissionTasks
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WhmMissionTasks
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WhmMissionTasks
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WhmMissionTasks
+  created_date:
+    display: Createddate
+    type: date
+    required: false
+    description: Field CreatedDate from WhmMissionTasks
+  created_time:
+    display: Createdtime
+    type: decimal
+    required: false
+    description: Field CreatedTime from WhmMissionTasks
+  employee:
+    display: Employee
+    type: string
+    required: false
+    description: Field Employee from WhmMissionTasks
+  whm_team:
+    display: Whmteam
+    type: string
+    required: false
+    description: Field WhmTeam from WhmMissionTasks
+  priority:
+    display: Priority
+    type: string
+    required: false
+    description: Field Priority from WhmMissionTasks
+  completed_date:
+    display: Completeddate
+    type: date
+    required: false
+    description: Field CompletedDate from WhmMissionTasks
+  completed_time:
+    display: Completedtime
+    type: decimal
+    required: false
+    description: Field CompletedTime from WhmMissionTasks
+  to_warehouse:
+    display: Towarehouse
+    type: string
+    required: false
+    description: Field ToWarehouse from WhmMissionTasks
+  to_bin:
+    display: Tobin
+    type: string
+    required: false
+    description: Field ToBin from WhmMissionTasks
+  put_away_qty:
+    display: Putawayqty
+    type: decimal
+    required: false
+    description: Field PutAwayQty from WhmMissionTasks
+  qty_unit_of_measure:
+    display: Qtyunitofmeasure
+    type: string
+    required: false
+    description: Field QtyUnitOfMeasure from WhmMissionTasks
+  xmlin:
+    display: Xmlin
+    type: string
+    required: false
+    description: Field Xmlin from WhmMissionTasks
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WhmMissionTasks
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from WhmMissionTasks

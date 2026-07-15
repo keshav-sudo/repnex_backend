@@ -1,0 +1,51 @@
+concept: asset_entries_alt
+table: AssetEntriesAlt
+alias: aea
+fields:
+  asset: aea.Asset
+  alt_code: aea.AltCode
+  entry_year: aea.EntryYear
+  entry_month: aea.EntryMonth
+  system_date: aea.SystemDate
+  system_time: aea.SystemTime
+  entry_type: aea.EntryType
+  entry_date: aea.EntryDate
+  entry_amount: aea.EntryAmount
+  asset_cost: aea.AssetCost
+  asset_current_value: aea.AssetCurrentValue
+  entry_qty: aea.EntryQty
+  asset_qty: aea.AssetQty
+  depn_ytd: aea.DepnYtd
+  depn_prev_year: aea.DepnPrevYear
+  accum_depn: aea.AccumDepn
+  residual_value: aea.ResidualValue
+  depn_code: aea.DepnCode
+  depn_rate: aea.DepnRate
+  depn_start_date: aea.DepnStartDate
+  thruput_eul: aea.ThruputEul
+  reval_reserve_to_date: aea.RevalReserveToDate
+  stat_gl_code: aea.StatGlCode
+  number_of_periods: aea.NumberOfPeriods
+  number_of_years: aea.NumberOfYears
+  total_periods_td: aea.TotalPeriodsTd
+  min_book_value: aea.MinBookValue
+  suspend: aea.Suspend
+  reason: aea.Reason
+  asset_status: aea.AssetStatus
+  branch: aea.Branch
+  location: aea.Location
+  asset_group_code: aea.AssetGroupCode
+  asset_cost_center: aea.AssetCostCenter
+  company_before: aea.CompanyBefore
+  company_after: aea.CompanyAfter
+  branch_after: aea.BranchAfter
+  group_after: aea.GroupAfter
+  cost_center_after: aea.CostCenterAfter
+  gl_code: aea.GlCode
+  operator: aea.Operator
+  capex_code: aea.CapexCode
+  capex_line: aea.CapexLine
+  entry_reference: aea.EntryReference
+  narration: aea.Narration
+  sold_value: aea.SoldValue
+  disposal_cost: aea.DisposalCost

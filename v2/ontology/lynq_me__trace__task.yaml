@@ -1,0 +1,428 @@
+concept: lynq_me__trace__task
+display_name: Lynq ME Trace Task
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Trace_Task.
+synonyms:
+- lynq_me_trace_task
+- lynq me  trace  task
+header_attributes:
+  t_id:
+    display: Tid
+    type: decimal
+    required: false
+    description: Field tId from Lynq_ME_Trace_Task
+  t_code:
+    display: Tcode
+    type: string
+    required: false
+    description: Field tCode from Lynq_ME_Trace_Task
+  t_facility_code:
+    display: Tfacilitycode
+    type: string
+    required: false
+    description: Field tFacilityCode from Lynq_ME_Trace_Task
+  t_order:
+    display: Torder
+    type: string
+    required: false
+    description: Field tOrder from Lynq_ME_Trace_Task
+  t_item_description:
+    display: Titemdescription
+    type: string
+    required: false
+    description: Field tItemDescription from Lynq_ME_Trace_Task
+  t_qty_ordered:
+    display: Tqtyordered
+    type: decimal
+    required: false
+    description: Field tQtyOrdered from Lynq_ME_Trace_Task
+  t_qty_reported:
+    display: Tqtyreported
+    type: decimal
+    required: false
+    description: Field tQtyReported from Lynq_ME_Trace_Task
+  t_schedule_status:
+    display: Tschedulestatus
+    type: string
+    required: false
+    description: Field tScheduleStatus from Lynq_ME_Trace_Task
+  t_status:
+    display: Tstatus
+    type: string
+    required: false
+    description: Field tStatus from Lynq_ME_Trace_Task
+  t_operation:
+    display: Toperation
+    type: string
+    required: false
+    description: Field tOperation from Lynq_ME_Trace_Task
+  t_ord_qty_ordered:
+    display: Tordqtyordered
+    type: decimal
+    required: false
+    description: Field tOrdQtyOrdered from Lynq_ME_Trace_Task
+  t_ord_qty_reported:
+    display: Tordqtyreported
+    type: decimal
+    required: false
+    description: Field tOrdQtyReported from Lynq_ME_Trace_Task
+  t_description:
+    display: Tdescription
+    type: string
+    required: false
+    description: Field tDescription from Lynq_ME_Trace_Task
+  t_start_date:
+    display: Tstartdate
+    type: date
+    required: false
+    description: Field tStartDate from Lynq_ME_Trace_Task
+  t_end_date:
+    display: Tenddate
+    type: date
+    required: false
+    description: Field tEndDate from Lynq_ME_Trace_Task
+  t_req1:
+    display: Treq1
+    type: decimal
+    required: false
+    description: Field tReq1 from Lynq_ME_Trace_Task
+  t_req2:
+    display: Treq2
+    type: decimal
+    required: false
+    description: Field tReq2 from Lynq_ME_Trace_Task
+  t_req3:
+    display: Treq3
+    type: decimal
+    required: false
+    description: Field tReq3 from Lynq_ME_Trace_Task
+  t_req4:
+    display: Treq4
+    type: decimal
+    required: false
+    description: Field tReq4 from Lynq_ME_Trace_Task
+  t_req5:
+    display: Treq5
+    type: decimal
+    required: false
+    description: Field tReq5 from Lynq_ME_Trace_Task
+  t_req6:
+    display: Treq6
+    type: decimal
+    required: false
+    description: Field tReq6 from Lynq_ME_Trace_Task
+  t_req7:
+    display: Treq7
+    type: decimal
+    required: false
+    description: Field tReq7 from Lynq_ME_Trace_Task
+  t_req8:
+    display: Treq8
+    type: decimal
+    required: false
+    description: Field tReq8 from Lynq_ME_Trace_Task
+  t_req9:
+    display: Treq9
+    type: decimal
+    required: false
+    description: Field tReq9 from Lynq_ME_Trace_Task
+  t_req10:
+    display: Treq10
+    type: decimal
+    required: false
+    description: Field tReq10 from Lynq_ME_Trace_Task
+  t_units_per_hour:
+    display: Tunitsperhour
+    type: decimal
+    required: false
+    description: Field tUnitsPerHour from Lynq_ME_Trace_Task
+  t_param1:
+    display: Tparam1
+    type: string
+    required: false
+    description: Field tParam1 from Lynq_ME_Trace_Task
+  t_param2:
+    display: Tparam2
+    type: string
+    required: false
+    description: Field tParam2 from Lynq_ME_Trace_Task
+  t_param3:
+    display: Tparam3
+    type: string
+    required: false
+    description: Field tParam3 from Lynq_ME_Trace_Task
+  t_param4:
+    display: Tparam4
+    type: string
+    required: false
+    description: Field tParam4 from Lynq_ME_Trace_Task
+  t_param5:
+    display: Tparam5
+    type: string
+    required: false
+    description: Field tParam5 from Lynq_ME_Trace_Task
+  t_param6:
+    display: Tparam6
+    type: string
+    required: false
+    description: Field tParam6 from Lynq_ME_Trace_Task
+  t_param7:
+    display: Tparam7
+    type: string
+    required: false
+    description: Field tParam7 from Lynq_ME_Trace_Task
+  t_param8:
+    display: Tparam8
+    type: string
+    required: false
+    description: Field tParam8 from Lynq_ME_Trace_Task
+  t_param9:
+    display: Tparam9
+    type: string
+    required: false
+    description: Field tParam9 from Lynq_ME_Trace_Task
+  t_param10:
+    display: Tparam10
+    type: string
+    required: false
+    description: Field tParam10 from Lynq_ME_Trace_Task
+  t_param11:
+    display: Tparam11
+    type: string
+    required: false
+    description: Field tParam11 from Lynq_ME_Trace_Task
+  t_param12:
+    display: Tparam12
+    type: string
+    required: false
+    description: Field tParam12 from Lynq_ME_Trace_Task
+  t_param13:
+    display: Tparam13
+    type: string
+    required: false
+    description: Field tParam13 from Lynq_ME_Trace_Task
+  t_param14:
+    display: Tparam14
+    type: string
+    required: false
+    description: Field tParam14 from Lynq_ME_Trace_Task
+  t_param15:
+    display: Tparam15
+    type: string
+    required: false
+    description: Field tParam15 from Lynq_ME_Trace_Task
+  t_text1:
+    display: Ttext1
+    type: string
+    required: false
+    description: Field tText1 from Lynq_ME_Trace_Task
+  t_text2:
+    display: Ttext2
+    type: string
+    required: false
+    description: Field tText2 from Lynq_ME_Trace_Task
+  t_text3:
+    display: Ttext3
+    type: string
+    required: false
+    description: Field tText3 from Lynq_ME_Trace_Task
+  t_text4:
+    display: Ttext4
+    type: string
+    required: false
+    description: Field tText4 from Lynq_ME_Trace_Task
+  t_text5:
+    display: Ttext5
+    type: string
+    required: false
+    description: Field tText5 from Lynq_ME_Trace_Task
+  t_text6:
+    display: Ttext6
+    type: string
+    required: false
+    description: Field tText6 from Lynq_ME_Trace_Task
+  t_text7:
+    display: Ttext7
+    type: string
+    required: false
+    description: Field tText7 from Lynq_ME_Trace_Task
+  t_text8:
+    display: Ttext8
+    type: string
+    required: false
+    description: Field tText8 from Lynq_ME_Trace_Task
+  t_text9:
+    display: Ttext9
+    type: string
+    required: false
+    description: Field tText9 from Lynq_ME_Trace_Task
+  t_text10:
+    display: Ttext10
+    type: string
+    required: false
+    description: Field tText10 from Lynq_ME_Trace_Task
+  t_int1:
+    display: Tint1
+    type: decimal
+    required: false
+    description: Field tInt1 from Lynq_ME_Trace_Task
+  t_int2:
+    display: Tint2
+    type: decimal
+    required: false
+    description: Field tInt2 from Lynq_ME_Trace_Task
+  t_int3:
+    display: Tint3
+    type: decimal
+    required: false
+    description: Field tInt3 from Lynq_ME_Trace_Task
+  t_int4:
+    display: Tint4
+    type: decimal
+    required: false
+    description: Field tInt4 from Lynq_ME_Trace_Task
+  t_int5:
+    display: Tint5
+    type: decimal
+    required: false
+    description: Field tInt5 from Lynq_ME_Trace_Task
+  t_decimal1:
+    display: Tdecimal1
+    type: decimal
+    required: false
+    description: Field tDecimal1 from Lynq_ME_Trace_Task
+  t_decimal2:
+    display: Tdecimal2
+    type: decimal
+    required: false
+    description: Field tDecimal2 from Lynq_ME_Trace_Task
+  t_decimal3:
+    display: Tdecimal3
+    type: decimal
+    required: false
+    description: Field tDecimal3 from Lynq_ME_Trace_Task
+  t_decimal4:
+    display: Tdecimal4
+    type: decimal
+    required: false
+    description: Field tDecimal4 from Lynq_ME_Trace_Task
+  t_decimal5:
+    display: Tdecimal5
+    type: decimal
+    required: false
+    description: Field tDecimal5 from Lynq_ME_Trace_Task
+  t_date1:
+    display: Tdate1
+    type: date
+    required: false
+    description: Field tDate1 from Lynq_ME_Trace_Task
+  t_date2:
+    display: Tdate2
+    type: date
+    required: false
+    description: Field tDate2 from Lynq_ME_Trace_Task
+  t_date3:
+    display: Tdate3
+    type: date
+    required: false
+    description: Field tDate3 from Lynq_ME_Trace_Task
+  t_date4:
+    display: Tdate4
+    type: date
+    required: false
+    description: Field tDate4 from Lynq_ME_Trace_Task
+  t_date5:
+    display: Tdate5
+    type: date
+    required: false
+    description: Field tDate5 from Lynq_ME_Trace_Task
+  t_planed_labour:
+    display: Tplanedlabour
+    type: decimal
+    required: false
+    description: Field tPlanedLabour from Lynq_ME_Trace_Task
+  t_actual_labour:
+    display: Tactuallabour
+    type: decimal
+    required: false
+    description: Field tActualLabour from Lynq_ME_Trace_Task
+  t_trace_date:
+    display: Ttracedate
+    type: date
+    required: false
+    description: Field tTraceDate from Lynq_ME_Trace_Task
+  t_order_type:
+    display: Tordertype
+    type: string
+    required: false
+    description: Field tOrderType from Lynq_ME_Trace_Task
+  t_item:
+    display: Titem
+    type: string
+    required: false
+    description: Field tItem from Lynq_ME_Trace_Task
+  t_labour_split_d_param1:
+    display: Tlaboursplitdparam1
+    type: decimal
+    required: false
+    description: Field tLabourSplitDParam1 from Lynq_ME_Trace_Task
+  t_oper_seq:
+    display: Toperseq
+    type: decimal
+    required: false
+    description: Field tOperSeq from Lynq_ME_Trace_Task
+  t_job_code:
+    display: Tjobcode
+    type: string
+    required: false
+    description: Field tJobCode from Lynq_ME_Trace_Task
+  t_type:
+    display: Ttype
+    type: string
+    required: false
+    description: Field tType from Lynq_ME_Trace_Task
+  t_order_status:
+    display: Torderstatus
+    type: string
+    required: false
+    description: Field tOrderStatus from Lynq_ME_Trace_Task
+  t_scrap_reported:
+    display: Tscrapreported
+    type: decimal
+    required: false
+    description: Field tScrapReported from Lynq_ME_Trace_Task
+  t_operation_code:
+    display: Toperationcode
+    type: string
+    required: false
+    description: Field tOperationCode from Lynq_ME_Trace_Task
+  t_units_per_facility_hour:
+    display: Tunitsperfacilityhour
+    type: decimal
+    required: false
+    description: Field tUnitsPerFacilityHour from Lynq_ME_Trace_Task
+  t_name:
+    display: Tname
+    type: string
+    required: false
+    description: Field tName from Lynq_ME_Trace_Task
+  t_item_serial_lot_flag:
+    display: Titemseriallotflag
+    type: string
+    required: false
+    description: Field tItemSerialLotFlag from Lynq_ME_Trace_Task
+  t_item_bin_flag:
+    display: Titembinflag
+    type: string
+    required: false
+    description: Field tItemBinFlag from Lynq_ME_Trace_Task
+  t_item_traceable_flag:
+    display: Titemtraceableflag
+    type: string
+    required: false
+    description: Field tItemTraceableFlag from Lynq_ME_Trace_Task
+  t_final_operation_flag:
+    display: Tfinaloperationflag
+    type: string
+    required: false
+    description: Field tFinalOperationFlag from Lynq_ME_Trace_Task

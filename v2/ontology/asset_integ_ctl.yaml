@@ -1,0 +1,28 @@
+concept: asset_integ_ctl
+display_name: AssetIntegCtl
+module: assets
+description: Auto-generated representation of the physical table AssetIntegCtl.
+synonyms:
+- assetintegctl
+- asset integ ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from AssetIntegCtl
+  branch_reqd:
+    display: Branchreqd
+    type: string
+    required: false
+    description: Field BranchReqd from AssetIntegCtl
+  cost_center_reqd:
+    display: Costcenterreqd
+    type: string
+    required: false
+    description: Field CostCenterReqd from AssetIntegCtl
+  group_code_reqd:
+    display: Groupcodereqd
+    type: string
+    required: false
+    description: Field GroupCodeReqd from AssetIntegCtl

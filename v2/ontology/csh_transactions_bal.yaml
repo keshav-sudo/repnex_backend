@@ -1,0 +1,163 @@
+concept: csh_transactions_bal
+display_name: CshTransactionsBal
+module: cashbook
+description: Auto-generated representation of the physical table CshTransactionsBal.
+synonyms:
+- cshtransactionsbal
+- csh transactions bal
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshTransactionsBal
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshTransactionsBal
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshTransactionsBal
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from CshTransactionsBal
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from CshTransactionsBal
+  cb_trn_bal1:
+    display: Cbtrnbal1
+    type: decimal
+    required: false
+    description: Field CbTrnBal1 from CshTransactionsBal
+  cb_trn_bal2:
+    display: Cbtrnbal2
+    type: decimal
+    required: false
+    description: Field CbTrnBal2 from CshTransactionsBal
+  cb_trn_bal3:
+    display: Cbtrnbal3
+    type: decimal
+    required: false
+    description: Field CbTrnBal3 from CshTransactionsBal
+  cb_trn_for_bal1:
+    display: Cbtrnforbal1
+    type: decimal
+    required: false
+    description: Field CbTrnForBal1 from CshTransactionsBal
+  cb_trn_for_bal2:
+    display: Cbtrnforbal2
+    type: decimal
+    required: false
+    description: Field CbTrnForBal2 from CshTransactionsBal
+  cb_trn_for_bal3:
+    display: Cbtrnforbal3
+    type: decimal
+    required: false
+    description: Field CbTrnForBal3 from CshTransactionsBal
+  currency_value_p1:
+    display: Currencyvaluep1
+    type: decimal
+    required: false
+    description: Field CurrencyValueP1 from CshTransactionsBal
+  post_currency_p1:
+    display: Postcurrencyp1
+    type: string
+    required: false
+    description: Field PostCurrencyP1 from CshTransactionsBal
+  conv_rate_p1:
+    display: Convratep1
+    type: decimal
+    required: false
+    description: Field ConvRateP1 from CshTransactionsBal
+  mul_div_p1:
+    display: Muldivp1
+    type: string
+    required: false
+    description: Field MulDivP1 from CshTransactionsBal
+  account_cur_p1:
+    display: Accountcurp1
+    type: string
+    required: false
+    description: Field AccountCurP1 from CshTransactionsBal
+  acc_conv_rate_p1:
+    display: Accconvratep1
+    type: decimal
+    required: false
+    description: Field AccConvRateP1 from CshTransactionsBal
+  acc_mul_div_p1:
+    display: Accmuldivp1
+    type: string
+    required: false
+    description: Field AccMulDivP1 from CshTransactionsBal
+  triang_currency_p1:
+    display: Triangcurrencyp1
+    type: string
+    required: false
+    description: Field TriangCurrencyP1 from CshTransactionsBal
+  triang_rate_p1:
+    display: Triangratep1
+    type: decimal
+    required: false
+    description: Field TriangRateP1 from CshTransactionsBal
+  triang_mul_div_p1:
+    display: Triangmuldivp1
+    type: string
+    required: false
+    description: Field TriangMulDivP1 from CshTransactionsBal
+  currency_value_p2:
+    display: Currencyvaluep2
+    type: decimal
+    required: false
+    description: Field CurrencyValueP2 from CshTransactionsBal
+  post_currency_p2:
+    display: Postcurrencyp2
+    type: string
+    required: false
+    description: Field PostCurrencyP2 from CshTransactionsBal
+  conv_rate_p2:
+    display: Convratep2
+    type: decimal
+    required: false
+    description: Field ConvRateP2 from CshTransactionsBal
+  mul_div_p2:
+    display: Muldivp2
+    type: string
+    required: false
+    description: Field MulDivP2 from CshTransactionsBal
+  account_cur_p2:
+    display: Accountcurp2
+    type: string
+    required: false
+    description: Field AccountCurP2 from CshTransactionsBal
+  acc_conv_rate_p2:
+    display: Accconvratep2
+    type: decimal
+    required: false
+    description: Field AccConvRateP2 from CshTransactionsBal
+  acc_mul_div_p2:
+    display: Accmuldivp2
+    type: string
+    required: false
+    description: Field AccMulDivP2 from CshTransactionsBal
+  triang_currency_p2:
+    display: Triangcurrencyp2
+    type: string
+    required: false
+    description: Field TriangCurrencyP2 from CshTransactionsBal
+  triang_rate_p2:
+    display: Triangratep2
+    type: decimal
+    required: false
+    description: Field TriangRateP2 from CshTransactionsBal
+  triang_mul_div_p2:
+    display: Triangmuldivp2
+    type: string
+    required: false
+    description: Field TriangMulDivP2 from CshTransactionsBal

@@ -1,0 +1,16 @@
+concept: whm_lpn_movements
+table: WhmLpnMovements
+alias: wlm
+fields:
+  license_plate_number: wlm.LicensePlateNumber
+  container: wlm.Container
+  line: wlm.Line
+  stock_code: wlm.StockCode
+  warehouse: wlm.Warehouse
+  bin: wlm.Bin
+  trn_type: wlm.TrnType
+  transaction_date: wlm.TransactionDate
+  current_quantity: wlm.CurrentQuantity
+  operator: wlm.Operator
+  to_warehouse: wlm.ToWarehouse
+  to_bin: wlm.ToBin

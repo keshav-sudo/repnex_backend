@@ -1,0 +1,17 @@
+concept: adm_usa_tax_history
+table: AdmUsaTaxHistory
+alias: auth
+fields:
+  state: auth.State
+  county_zip: auth.CountyZip
+  city: auth.City
+  effective_date: auth.EffectiveDate
+  first_rate1: auth.FirstRate1
+  first_limit1: auth.FirstLimit1
+  first_limit_value1: auth.FirstLimitValue1
+  first_rate2: auth.FirstRate2
+  first_limit2: auth.FirstLimit2
+  first_limit_value2: auth.FirstLimitValue2
+  first_rate3: auth.FirstRate3
+  first_limit3: auth.FirstLimit3
+  first_limit_value3: auth.FirstLimitValue3

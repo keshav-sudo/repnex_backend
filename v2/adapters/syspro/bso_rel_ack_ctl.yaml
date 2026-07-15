@@ -1,0 +1,6 @@
+concept: bso_rel_ack_ctl
+table: BsoRelAckCtl
+alias: brac
+fields:
+  ctl_flag: brac.CtlFlag
+  next_seq_num: brac.NextSeqNum

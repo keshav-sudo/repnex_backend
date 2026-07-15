@@ -1,0 +1,48 @@
+concept: iop_draft_stock_lvl
+display_name: IopDraftStockLvl
+module: other
+description: Auto-generated representation of the physical table IopDraftStockLvl.
+synonyms:
+- iopdraftstocklvl
+- iop draft stock lvl
+header_attributes:
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopDraftStockLvl
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from IopDraftStockLvl
+  minimum_qty:
+    display: Minimumqty
+    type: decimal
+    required: false
+    description: Field MinimumQty from IopDraftStockLvl
+  maximum_qty:
+    display: Maximumqty
+    type: decimal
+    required: false
+    description: Field MaximumQty from IopDraftStockLvl
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopDraftStockLvl
+  freeze:
+    display: Freeze
+    type: string
+    required: false
+    description: Field Freeze from IopDraftStockLvl
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from IopDraftStockLvl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from IopDraftStockLvl

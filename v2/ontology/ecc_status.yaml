@@ -1,0 +1,78 @@
+concept: ecc_status
+display_name: EccStatus
+module: other
+description: Auto-generated representation of the physical table EccStatus.
+synonyms:
+- eccstatus
+- ecc status
+header_attributes:
+  status_code:
+    display: Statuscode
+    type: string
+    required: false
+    description: Field StatusCode from EccStatus
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EccStatus
+  next_status_method:
+    display: Nextstatusmethod
+    type: string
+    required: false
+    description: Field NextStatusMethod from EccStatus
+  ecn_status:
+    display: Ecnstatus
+    type: string
+    required: false
+    description: Field EcnStatus from EccStatus
+  maint_items_allow:
+    display: Maintitemsallow
+    type: string
+    required: false
+    description: Field MaintItemsAllow from EccStatus
+  maint_hold_allow:
+    display: Maintholdallow
+    type: string
+    required: false
+    description: Field MaintHoldAllow from EccStatus
+  maint_rel_allow:
+    display: Maintrelallow
+    type: string
+    required: false
+    description: Field MaintRelAllow from EccStatus
+  maint_user_allow:
+    display: Maintuserallow
+    type: string
+    required: false
+    description: Field MaintUserAllow from EccStatus
+  maint_avail_allow:
+    display: Maintavailallow
+    type: string
+    required: false
+    description: Field MaintAvailAllow from EccStatus
+  maint_desc_allow:
+    display: Maintdescallow
+    type: string
+    required: false
+    description: Field MaintDescAllow from EccStatus
+  struct_enable_allow:
+    display: Structenableallow
+    type: string
+    required: false
+    description: Field StructEnableAllow from EccStatus
+  struct_apply_allow:
+    display: Structapplyallow
+    type: string
+    required: false
+    description: Field StructApplyAllow from EccStatus
+  struct_cancel_allow:
+    display: Structcancelallow
+    type: string
+    required: false
+    description: Field StructCancelAllow from EccStatus
+  unset_ecc_allow:
+    display: Unseteccallow
+    type: string
+    required: false
+    description: Field UnsetEccAllow from EccStatus

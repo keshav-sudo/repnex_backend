@@ -1,0 +1,723 @@
+concept: sor_arc_detail
+display_name: SorArcDetail
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorArcDetail.
+synonyms:
+- sorarcdetail
+- sor arc detail
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorArcDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorArcDetail
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from SorArcDetail
+  m_stock_code:
+    display: Mstockcode
+    type: string
+    required: false
+    description: Field MStockCode from SorArcDetail
+  m_stock_des:
+    display: Mstockdes
+    type: string
+    required: false
+    description: Field MStockDes from SorArcDetail
+  m_warehouse:
+    display: Mwarehouse
+    type: string
+    required: false
+    description: Field MWarehouse from SorArcDetail
+  m_bin:
+    display: Mbin
+    type: string
+    required: false
+    description: Field MBin from SorArcDetail
+  m_order_qty:
+    display: Morderqty
+    type: decimal
+    required: false
+    description: Field MOrderQty from SorArcDetail
+  m_ship_qty:
+    display: Mshipqty
+    type: decimal
+    required: false
+    description: Field MShipQty from SorArcDetail
+  m_back_order_qty:
+    display: Mbackorderqty
+    type: decimal
+    required: false
+    description: Field MBackOrderQty from SorArcDetail
+  m_unit_cost:
+    display: Munitcost
+    type: decimal
+    required: false
+    description: Field MUnitCost from SorArcDetail
+  m_bom_flag:
+    display: Mbomflag
+    type: string
+    required: false
+    description: Field MBomFlag from SorArcDetail
+  m_parent_kit_type:
+    display: Mparentkittype
+    type: string
+    required: false
+    description: Field MParentKitType from SorArcDetail
+  m_qty_per:
+    display: Mqtyper
+    type: decimal
+    required: false
+    description: Field MQtyPer from SorArcDetail
+  m_scrap_percentage:
+    display: Mscrappercentage
+    type: decimal
+    required: false
+    description: Field MScrapPercentage from SorArcDetail
+  m_print_component:
+    display: Mprintcomponent
+    type: string
+    required: false
+    description: Field MPrintComponent from SorArcDetail
+  m_component_seq:
+    display: Mcomponentseq
+    type: string
+    required: false
+    description: Field MComponentSeq from SorArcDetail
+  m_qty_changes_flag:
+    display: Mqtychangesflag
+    type: string
+    required: false
+    description: Field MQtyChangesFlag from SorArcDetail
+  m_optional_flag:
+    display: Moptionalflag
+    type: string
+    required: false
+    description: Field MOptionalFlag from SorArcDetail
+  m_decimals:
+    display: Mdecimals
+    type: decimal
+    required: false
+    description: Field MDecimals from SorArcDetail
+  m_order_uom:
+    display: Morderuom
+    type: string
+    required: false
+    description: Field MOrderUom from SorArcDetail
+  m_stock_qty_to_shp:
+    display: Mstockqtytoshp
+    type: decimal
+    required: false
+    description: Field MStockQtyToShp from SorArcDetail
+  m_stocking_uom:
+    display: Mstockinguom
+    type: string
+    required: false
+    description: Field MStockingUom from SorArcDetail
+  m_conv_fact_ord_um:
+    display: Mconvfactordum
+    type: decimal
+    required: false
+    description: Field MConvFactOrdUm from SorArcDetail
+  m_mul_div_prc_fct:
+    display: Mmuldivprcfct
+    type: string
+    required: false
+    description: Field MMulDivPrcFct from SorArcDetail
+  m_price:
+    display: Mprice
+    type: decimal
+    required: false
+    description: Field MPrice from SorArcDetail
+  m_price_uom:
+    display: Mpriceuom
+    type: string
+    required: false
+    description: Field MPriceUom from SorArcDetail
+  m_commission_code:
+    display: Mcommissioncode
+    type: string
+    required: false
+    description: Field MCommissionCode from SorArcDetail
+  m_disc_pct1:
+    display: Mdiscpct1
+    type: decimal
+    required: false
+    description: Field MDiscPct1 from SorArcDetail
+  m_disc_pct2:
+    display: Mdiscpct2
+    type: decimal
+    required: false
+    description: Field MDiscPct2 from SorArcDetail
+  m_disc_pct3:
+    display: Mdiscpct3
+    type: decimal
+    required: false
+    description: Field MDiscPct3 from SorArcDetail
+  m_disc_val_flag:
+    display: Mdiscvalflag
+    type: string
+    required: false
+    description: Field MDiscValFlag from SorArcDetail
+  m_disc_value:
+    display: Mdiscvalue
+    type: decimal
+    required: false
+    description: Field MDiscValue from SorArcDetail
+  m_product_class:
+    display: Mproductclass
+    type: string
+    required: false
+    description: Field MProductClass from SorArcDetail
+  m_tax_code:
+    display: Mtaxcode
+    type: string
+    required: false
+    description: Field MTaxCode from SorArcDetail
+  m_line_ship_date:
+    display: Mlineshipdate
+    type: date
+    required: false
+    description: Field MLineShipDate from SorArcDetail
+  m_alloc_stat_sched:
+    display: Mallocstatsched
+    type: string
+    required: false
+    description: Field MAllocStatSched from SorArcDetail
+  m_fst_tax_code:
+    display: Mfsttaxcode
+    type: string
+    required: false
+    description: Field MFstTaxCode from SorArcDetail
+  m_stock_unit_mass:
+    display: Mstockunitmass
+    type: decimal
+    required: false
+    description: Field MStockUnitMass from SorArcDetail
+  m_stock_unit_vol:
+    display: Mstockunitvol
+    type: decimal
+    required: false
+    description: Field MStockUnitVol from SorArcDetail
+  m_price_code:
+    display: Mpricecode
+    type: string
+    required: false
+    description: Field MPriceCode from SorArcDetail
+  m_conv_fact_alloc:
+    display: Mconvfactalloc
+    type: decimal
+    required: false
+    description: Field MConvFactAlloc from SorArcDetail
+  m_mul_div_qty_fct:
+    display: Mmuldivqtyfct
+    type: string
+    required: false
+    description: Field MMulDivQtyFct from SorArcDetail
+  m_traceable_type:
+    display: Mtraceabletype
+    type: string
+    required: false
+    description: Field MTraceableType from SorArcDetail
+  m_mps_flag:
+    display: Mmpsflag
+    type: string
+    required: false
+    description: Field MMpsFlag from SorArcDetail
+  m_picking_slip:
+    display: Mpickingslip
+    type: string
+    required: false
+    description: Field MPickingSlip from SorArcDetail
+  m_movement_reqd:
+    display: Mmovementreqd
+    type: string
+    required: false
+    description: Field MMovementReqd from SorArcDetail
+  m_serial_method:
+    display: Mserialmethod
+    type: string
+    required: false
+    description: Field MSerialMethod from SorArcDetail
+  m_zero_qty_cr_note:
+    display: Mzeroqtycrnote
+    type: string
+    required: false
+    description: Field MZeroQtyCrNote from SorArcDetail
+  m_abc_applied:
+    display: Mabcapplied
+    type: string
+    required: false
+    description: Field MAbcApplied from SorArcDetail
+  m_mps_gross_reqd:
+    display: Mmpsgrossreqd
+    type: string
+    required: false
+    description: Field MMpsGrossReqd from SorArcDetail
+  m_contract:
+    display: Mcontract
+    type: string
+    required: false
+    description: Field MContract from SorArcDetail
+  m_buying_group:
+    display: Mbuyinggroup
+    type: string
+    required: false
+    description: Field MBuyingGroup from SorArcDetail
+  m_cus_sup_stk_code:
+    display: Mcussupstkcode
+    type: string
+    required: false
+    description: Field MCusSupStkCode from SorArcDetail
+  m_cus_retail_price:
+    display: Mcusretailprice
+    type: decimal
+    required: false
+    description: Field MCusRetailPrice from SorArcDetail
+  m_tariff_code:
+    display: Mtariffcode
+    type: string
+    required: false
+    description: Field MTariffCode from SorArcDetail
+  m_line_receipt_dat:
+    display: Mlinereceiptdat
+    type: date
+    required: false
+    description: Field MLineReceiptDat from SorArcDetail
+  m_lead_time:
+    display: Mleadtime
+    type: decimal
+    required: false
+    description: Field MLeadTime from SorArcDetail
+  m_trf_cost_mult:
+    display: Mtrfcostmult
+    type: decimal
+    required: false
+    description: Field MTrfCostMult from SorArcDetail
+  m_supplementary_un:
+    display: Msupplementaryun
+    type: string
+    required: false
+    description: Field MSupplementaryUn from SorArcDetail
+  m_review_flag:
+    display: Mreviewflag
+    type: string
+    required: false
+    description: Field MReviewFlag from SorArcDetail
+  m_review_status:
+    display: Mreviewstatus
+    type: string
+    required: false
+    description: Field MReviewStatus from SorArcDetail
+  m_invoice_printed:
+    display: Minvoiceprinted
+    type: string
+    required: false
+    description: Field MInvoicePrinted from SorArcDetail
+  m_del_note_printed:
+    display: Mdelnoteprinted
+    type: string
+    required: false
+    description: Field MDelNotePrinted from SorArcDetail
+  m_ord_ack_printed:
+    display: Mordackprinted
+    type: string
+    required: false
+    description: Field MOrdAckPrinted from SorArcDetail
+  m_hierarchy_job:
+    display: Mhierarchyjob
+    type: string
+    required: false
+    description: Field MHierarchyJob from SorArcDetail
+  m_cust_request_dat:
+    display: Mcustrequestdat
+    type: date
+    required: false
+    description: Field MCustRequestDat from SorArcDetail
+  m_last_del_note:
+    display: Mlastdelnote
+    type: string
+    required: false
+    description: Field MLastDelNote from SorArcDetail
+  m_user_def:
+    display: Muserdef
+    type: string
+    required: false
+    description: Field MUserDef from SorArcDetail
+  m_qty_dispatched:
+    display: Mqtydispatched
+    type: decimal
+    required: false
+    description: Field MQtyDispatched from SorArcDetail
+  m_disc_changed:
+    display: Mdiscchanged
+    type: string
+    required: false
+    description: Field MDiscChanged from SorArcDetail
+  m_credit_order_no:
+    display: Mcreditorderno
+    type: string
+    required: false
+    description: Field MCreditOrderNo from SorArcDetail
+  m_credit_order_line:
+    display: Mcreditorderline
+    type: decimal
+    required: false
+    description: Field MCreditOrderLine from SorArcDetail
+  m_unit_quantity:
+    display: Munitquantity
+    type: string
+    required: false
+    description: Field MUnitQuantity from SorArcDetail
+  m_conv_fact_unit_q:
+    display: Mconvfactunitq
+    type: decimal
+    required: false
+    description: Field MConvFactUnitQ from SorArcDetail
+  m_alt_uom_unit_q:
+    display: Maltuomunitq
+    type: string
+    required: false
+    description: Field MAltUomUnitQ from SorArcDetail
+  m_decimals_unit_q:
+    display: Mdecimalsunitq
+    type: decimal
+    required: false
+    description: Field MDecimalsUnitQ from SorArcDetail
+  m_ecc_flag:
+    display: Meccflag
+    type: string
+    required: false
+    description: Field MEccFlag from SorArcDetail
+  m_version:
+    display: Mversion
+    type: string
+    required: false
+    description: Field MVersion from SorArcDetail
+  m_release:
+    display: Mrelease
+    type: string
+    required: false
+    description: Field MRelease from SorArcDetail
+  m_commit_date:
+    display: Mcommitdate
+    type: date
+    required: false
+    description: Field MCommitDate from SorArcDetail
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from SorArcDetail
+  n_comment:
+    display: Ncomment
+    type: string
+    required: false
+    description: Field NComment from SorArcDetail
+  n_comment_from_lin:
+    display: Ncommentfromlin
+    type: decimal
+    required: false
+    description: Field NCommentFromLin from SorArcDetail
+  n_msc_charge_value:
+    display: Nmscchargevalue
+    type: decimal
+    required: false
+    description: Field NMscChargeValue from SorArcDetail
+  n_msc_product_cls:
+    display: Nmscproductcls
+    type: string
+    required: false
+    description: Field NMscProductCls from SorArcDetail
+  n_msc_charge_cost:
+    display: Nmscchargecost
+    type: decimal
+    required: false
+    description: Field NMscChargeCost from SorArcDetail
+  n_msc_inv_charge:
+    display: Nmscinvcharge
+    type: string
+    required: false
+    description: Field NMscInvCharge from SorArcDetail
+  n_comment_type:
+    display: Ncommenttype
+    type: string
+    required: false
+    description: Field NCommentType from SorArcDetail
+  n_msc_tax_code:
+    display: Nmsctaxcode
+    type: string
+    required: false
+    description: Field NMscTaxCode from SorArcDetail
+  n_msc_fst_code:
+    display: Nmscfstcode
+    type: string
+    required: false
+    description: Field NMscFstCode from SorArcDetail
+  n_comment_text_typ:
+    display: Ncommenttexttyp
+    type: string
+    required: false
+    description: Field NCommentTextTyp from SorArcDetail
+  n_msc_charge_qty:
+    display: Nmscchargeqty
+    type: decimal
+    required: false
+    description: Field NMscChargeQty from SorArcDetail
+  n_srv_inc_total:
+    display: Nsrvinctotal
+    type: string
+    required: false
+    description: Field NSrvIncTotal from SorArcDetail
+  n_srv_summary:
+    display: Nsrvsummary
+    type: string
+    required: false
+    description: Field NSrvSummary from SorArcDetail
+  n_srv_charge_type:
+    display: Nsrvchargetype
+    type: string
+    required: false
+    description: Field NSrvChargeType from SorArcDetail
+  n_srv_parent_line:
+    display: Nsrvparentline
+    type: decimal
+    required: false
+    description: Field NSrvParentLine from SorArcDetail
+  n_srv_unit_price:
+    display: Nsrvunitprice
+    type: decimal
+    required: false
+    description: Field NSrvUnitPrice from SorArcDetail
+  n_srv_unit_cost:
+    display: Nsrvunitcost
+    type: decimal
+    required: false
+    description: Field NSrvUnitCost from SorArcDetail
+  n_srv_qty_factor:
+    display: Nsrvqtyfactor
+    type: decimal
+    required: false
+    description: Field NSrvQtyFactor from SorArcDetail
+  n_srv_apply_factor:
+    display: Nsrvapplyfactor
+    type: string
+    required: false
+    description: Field NSrvApplyFactor from SorArcDetail
+  n_srv_decimal_rnd:
+    display: Nsrvdecimalrnd
+    type: decimal
+    required: false
+    description: Field NSrvDecimalRnd from SorArcDetail
+  n_srv_dec_rnd_flag:
+    display: Nsrvdecrndflag
+    type: string
+    required: false
+    description: Field NSrvDecRndFlag from SorArcDetail
+  n_srv_min_value:
+    display: Nsrvminvalue
+    type: decimal
+    required: false
+    description: Field NSrvMinValue from SorArcDetail
+  n_srv_max_value:
+    display: Nsrvmaxvalue
+    type: decimal
+    required: false
+    description: Field NSrvMaxValue from SorArcDetail
+  n_srv_mul_div:
+    display: Nsrvmuldiv
+    type: string
+    required: false
+    description: Field NSrvMulDiv from SorArcDetail
+  n_prt_on_inv:
+    display: Nprtoninv
+    type: string
+    required: false
+    description: Field NPrtOnInv from SorArcDetail
+  n_prt_on_del:
+    display: Nprtondel
+    type: string
+    required: false
+    description: Field NPrtOnDel from SorArcDetail
+  n_prt_on_ack:
+    display: Nprtonack
+    type: string
+    required: false
+    description: Field NPrtOnAck from SorArcDetail
+  n_tax_amount_flag:
+    display: Ntaxamountflag
+    type: string
+    required: false
+    description: Field NTaxAmountFlag from SorArcDetail
+  n_dep_ret_flag_proj:
+    display: Ndepretflagproj
+    type: string
+    required: false
+    description: Field NDepRetFlagProj from SorArcDetail
+  n_retention_job:
+    display: Nretentionjob
+    type: string
+    required: false
+    description: Field NRetentionJob from SorArcDetail
+  n_srv_min_quantity:
+    display: Nsrvminquantity
+    type: decimal
+    required: false
+    description: Field NSrvMinQuantity from SorArcDetail
+  n_charge_code:
+    display: Nchargecode
+    type: string
+    required: false
+    description: Field NChargeCode from SorArcDetail
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from SorArcDetail
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from SorArcDetail
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from SorArcDetail
+  material_alloc_line:
+    display: Materialallocline
+    type: string
+    required: false
+    description: Field MaterialAllocLine from SorArcDetail
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from SorArcDetail
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from SorArcDetail
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from SorArcDetail
+  multi_ship_code:
+    display: Multishipcode
+    type: string
+    required: false
+    description: Field MultiShipCode from SorArcDetail
+  user1:
+    display: User1
+    type: string
+    required: false
+    description: Field User1 from SorArcDetail
+  credit_reason:
+    display: Creditreason
+    type: string
+    required: false
+    description: Field CreditReason from SorArcDetail
+  orig_ship_date_aps:
+    display: Origshipdateaps
+    type: date
+    required: false
+    description: Field OrigShipDateAps from SorArcDetail
+  tpm_usage_flag:
+    display: Tpmusageflag
+    type: string
+    required: false
+    description: Field TpmUsageFlag from SorArcDetail
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from SorArcDetail
+  tpm_sequence:
+    display: Tpmsequence
+    type: decimal
+    required: false
+    description: Field TpmSequence from SorArcDetail
+  sales_order_init_line:
+    display: Salesorderinitline
+    type: decimal
+    required: false
+    description: Field SalesOrderInitLine from SorArcDetail
+  preactor_priority:
+    display: Preactorpriority
+    type: decimal
+    required: false
+    description: Field PreactorPriority from SorArcDetail
+  sales_order_det_stat:
+    display: Salesorderdetstat
+    type: string
+    required: false
+    description: Field SalesOrderDetStat from SorArcDetail
+  sales_order_res_stat:
+    display: Salesorderresstat
+    type: string
+    required: false
+    description: Field SalesOrderResStat from SorArcDetail
+  qty_reserved_ship:
+    display: Qtyreservedship
+    type: decimal
+    required: false
+    description: Field QtyReservedShip from SorArcDetail
+  qty_released_to_pick:
+    display: Qtyreleasedtopick
+    type: decimal
+    required: false
+    description: Field QtyReleasedToPick from SorArcDetail
+  pick_number:
+    display: Picknumber
+    type: string
+    required: false
+    description: Field PickNumber from SorArcDetail
+  intrastat_exempt:
+    display: Intrastatexempt
+    type: string
+    required: false
+    description: Field IntrastatExempt from SorArcDetail
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from SorArcDetail
+  triang_disp_state:
+    display: Triangdispstate
+    type: string
+    required: false
+    description: Field TriangDispState from SorArcDetail
+  triang_dest_state:
+    display: Triangdeststate
+    type: string
+    required: false
+    description: Field TriangDestState from SorArcDetail
+  orig_country:
+    display: Origcountry
+    type: string
+    required: false
+    description: Field OrigCountry from SorArcDetail
+  price_group_rule:
+    display: Pricegrouprule
+    type: decimal
+    required: false
+    description: Field PriceGroupRule from SorArcDetail
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from SorArcDetail
+  cat_line_number:
+    display: Catlinenumber
+    type: decimal
+    required: false
+    description: Field CatLineNumber from SorArcDetail

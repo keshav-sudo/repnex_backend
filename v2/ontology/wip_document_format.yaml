@@ -1,0 +1,28 @@
+concept: wip_document_format
+display_name: WipDocumentFormat
+module: work_in_progress
+description: Auto-generated representation of the physical table WipDocumentFormat.
+synonyms:
+- wipdocumentformat
+- wip document format
+header_attributes:
+  document_number:
+    display: Documentnumber
+    type: string
+    required: false
+    description: Field DocumentNumber from WipDocumentFormat
+  wip_document_format:
+    display: Wipdocumentformat
+    type: string
+    required: false
+    description: Field WipDocumentFormat from WipDocumentFormat
+  document_record_type:
+    display: Documentrecordtype
+    type: string
+    required: false
+    description: Field DocumentRecordType from WipDocumentFormat
+  format_info:
+    display: Formatinfo
+    type: string
+    required: false
+    description: Field FormatInfo from WipDocumentFormat

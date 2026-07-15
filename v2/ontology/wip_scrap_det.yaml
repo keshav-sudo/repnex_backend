@@ -1,0 +1,88 @@
+concept: wip_scrap_det
+display_name: WipScrapDet
+module: work_in_progress
+description: Auto-generated representation of the physical table WipScrapDet.
+synonyms:
+- wipscrapdet
+- wip scrap det
+header_attributes:
+  record_flag:
+    display: Recordflag
+    type: string
+    required: false
+    description: Field RecordFlag from WipScrapDet
+  non_prod_scrap:
+    display: Nonprodscrap
+    type: string
+    required: false
+    description: Field NonProdScrap from WipScrapDet
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from WipScrapDet
+  date_entry:
+    display: Dateentry
+    type: date
+    required: false
+    description: Field DateEntry from WipScrapDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipScrapDet
+  jnl_ent_num:
+    display: Jnlentnum
+    type: decimal
+    required: false
+    description: Field JnlEntNum from WipScrapDet
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipScrapDet
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipScrapDet
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from WipScrapDet
+  qty_transferred:
+    display: Qtytransferred
+    type: decimal
+    required: false
+    description: Field QtyTransferred from WipScrapDet
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from WipScrapDet
+  hours_entered:
+    display: Hoursentered
+    type: decimal
+    required: false
+    description: Field HoursEntered from WipScrapDet
+  value_entered:
+    display: Valueentered
+    type: decimal
+    required: false
+    description: Field ValueEntered from WipScrapDet
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipScrapDet
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipScrapDet
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipScrapDet

@@ -1,15 +1,27 @@
 concept: inventory_item
-  # Column subset verified from the working template corpus -
-  # InvMaster/InvWarehouse were not present in the provided schema file.
 table: InvMaster
 alias: m
 fields:
   stock_code: m.StockCode
   description: m.Description
+  long_description: m.LongDesc
   product_class: m.ProductClass
   abc_class: m.AbcClass
   buyer: m.Buyer
-  date_last_sale: m.DateLastSale
+  planner: m.Planner
+  stock_uom: m.StockUom
+  supplier: m.Supplier
+  tax_code: m.TaxCode
+  stock_on_hold: m.StockOnHold
+  lead_time: m.LeadTime
+  serial_method: m.SerialMethod
+  traceable_type: m.TraceableType
+  kit_type: m.KitType
+  low_level_code: m.LowLevelCode
+  labour_cost: m.LabourCost
+  material_cost: m.MaterialCost
+  fix_overhead: m.FixOverhead
+  variable_overhead: m.VariableOverhead
 balance_mapping:
   table: InvWarehouse
   alias: w
@@ -18,10 +30,27 @@ balance_mapping:
     warehouse: w.Warehouse
     quantity_on_hand: w.QtyOnHand
     quantity_allocated: w.QtyAllocated
+    quantity_on_order: w.QtyOnOrder
+    quantity_on_back_order: w.QtyOnBackOrder
     minimum_quantity: w.MinimumQty
+    maximum_quantity: w.MaximumQty
     unit_cost: w.UnitCost
+    opening_balance: w.OpeningBalance
+    ytd_qty_sold: w.YtdQtySold
+    prev_year_qty_sold: w.PrevYearQtySold
+    reorder_qty: w.ReOrderQty
+    safety_stock_qty: w.SafetyStockQty
+    date_last_sale: w.DateLastSale
+    date_last_purchase: w.DateLastPurchase
+    date_last_stock_count: w.DateLastStockCnt
+    date_last_cost_change: w.DateLastCostChange
+    abc_class_warehouse: w.AbcClass
+    default_bin: w.DefaultBin
+    qty_in_transit: w.QtyInTransit
+    qty_allocated_wip: w.QtyAllocatedWip
 calculated_fields:
-  quantity_available: >-
-    (w.QtyOnHand - w.QtyAllocated)
-  stock_value: >-
-    (w.QtyOnHand * w.UnitCost)
+  quantity_available: (w.QtyOnHand - w.QtyAllocated)
+  stock_value: (w.QtyOnHand * w.UnitCost)
+  overstock_qty: (w.QtyOnHand - w.MaximumQty)
+default_filters:
+  in_stock_only: w.QtyOnHand > 0

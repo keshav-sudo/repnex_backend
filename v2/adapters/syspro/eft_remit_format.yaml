@@ -1,0 +1,7 @@
+concept: eft_remit_format
+table: EftRemitFormat
+alias: erf
+fields:
+  bank: erf.Bank
+  document_format: erf.DocumentFormat
+  format_info: erf.FormatInfo

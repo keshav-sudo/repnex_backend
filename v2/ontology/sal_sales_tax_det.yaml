@@ -1,0 +1,58 @@
+concept: sal_sales_tax_det
+display_name: SalSalesTaxDet
+module: other
+description: Auto-generated representation of the physical table SalSalesTaxDet.
+synonyms:
+- salsalestaxdet
+- sal sales tax det
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalSalesTaxDet
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalSalesTaxDet
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SalSalesTaxDet
+  invoice_register:
+    display: Invoiceregister
+    type: decimal
+    required: false
+    description: Field InvoiceRegister from SalSalesTaxDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SalSalesTaxDet
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SalSalesTaxDet
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from SalSalesTaxDet
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from SalSalesTaxDet
+  taxable_value:
+    display: Taxablevalue
+    type: decimal
+    required: false
+    description: Field TaxableValue from SalSalesTaxDet
+  non_tax_value:
+    display: Nontaxvalue
+    type: decimal
+    required: false
+    description: Field NonTaxValue from SalSalesTaxDet

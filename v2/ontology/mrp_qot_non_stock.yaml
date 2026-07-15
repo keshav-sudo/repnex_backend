@@ -1,0 +1,233 @@
+concept: mrp_qot_non_stock
+display_name: MrpQotNonStock
+module: mrp
+description: Auto-generated representation of the physical table MrpQotNonStock.
+synonyms:
+- mrpqotnonstock
+- mrp qot non stock
+header_attributes:
+  non_stock_code:
+    display: Nonstockcode
+    type: string
+    required: false
+    description: Field NonStockCode from MrpQotNonStock
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from MrpQotNonStock
+  structure_setup:
+    display: Structuresetup
+    type: string
+    required: false
+    description: Field StructureSetup from MrpQotNonStock
+  purch_price_setup:
+    display: Purchpricesetup
+    type: string
+    required: false
+    description: Field PurchPriceSetup from MrpQotNonStock
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from MrpQotNonStock
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from MrpQotNonStock
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from MrpQotNonStock
+  max_decimals:
+    display: Maxdecimals
+    type: decimal
+    required: false
+    description: Field MaxDecimals from MrpQotNonStock
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from MrpQotNonStock
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from MrpQotNonStock
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from MrpQotNonStock
+  other_tax_code:
+    display: Othertaxcode
+    type: string
+    required: false
+    description: Field OtherTaxCode from MrpQotNonStock
+  traceable_type:
+    display: Traceabletype
+    type: string
+    required: false
+    description: Field TraceableType from MrpQotNonStock
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from MrpQotNonStock
+  planner:
+    display: Planner
+    type: string
+    required: false
+    description: Field Planner from MrpQotNonStock
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from MrpQotNonStock
+  part_category:
+    display: Partcategory
+    type: string
+    required: false
+    description: Field PartCategory from MrpQotNonStock
+  specific_gravity:
+    display: Specificgravity
+    type: decimal
+    required: false
+    description: Field SpecificGravity from MrpQotNonStock
+  dock_to_stock:
+    display: Docktostock
+    type: decimal
+    required: false
+    description: Field DockToStock from MrpQotNonStock
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from MrpQotNonStock
+  resource_code:
+    display: Resourcecode
+    type: string
+    required: false
+    description: Field ResourceCode from MrpQotNonStock
+  gst_tax_code:
+    display: Gsttaxcode
+    type: string
+    required: false
+    description: Field GstTaxCode from MrpQotNonStock
+  gst_included:
+    display: Gstincluded
+    type: string
+    required: false
+    description: Field GstIncluded from MrpQotNonStock
+  tariff_code:
+    display: Tariffcode
+    type: string
+    required: false
+    description: Field TariffCode from MrpQotNonStock
+  supplementary_unit:
+    display: Supplementaryunit
+    type: string
+    required: false
+    description: Field SupplementaryUnit from MrpQotNonStock
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from MrpQotNonStock
+  route_reqd1:
+    display: Routereqd1
+    type: decimal
+    required: false
+    description: Field RouteReqd1 from MrpQotNonStock
+  route_reqd2:
+    display: Routereqd2
+    type: decimal
+    required: false
+    description: Field RouteReqd2 from MrpQotNonStock
+  route_reqd3:
+    display: Routereqd3
+    type: decimal
+    required: false
+    description: Field RouteReqd3 from MrpQotNonStock
+  route_reqd4:
+    display: Routereqd4
+    type: decimal
+    required: false
+    description: Field RouteReqd4 from MrpQotNonStock
+  route_reqd5:
+    display: Routereqd5
+    type: decimal
+    required: false
+    description: Field RouteReqd5 from MrpQotNonStock
+  route_reqd6:
+    display: Routereqd6
+    type: decimal
+    required: false
+    description: Field RouteReqd6 from MrpQotNonStock
+  route_desc1:
+    display: Routedesc1
+    type: string
+    required: false
+    description: Field RouteDesc1 from MrpQotNonStock
+  route_desc2:
+    display: Routedesc2
+    type: string
+    required: false
+    description: Field RouteDesc2 from MrpQotNonStock
+  route_desc3:
+    display: Routedesc3
+    type: string
+    required: false
+    description: Field RouteDesc3 from MrpQotNonStock
+  route_desc4:
+    display: Routedesc4
+    type: string
+    required: false
+    description: Field RouteDesc4 from MrpQotNonStock
+  route_desc5:
+    display: Routedesc5
+    type: string
+    required: false
+    description: Field RouteDesc5 from MrpQotNonStock
+  route_desc6:
+    display: Routedesc6
+    type: string
+    required: false
+    description: Field RouteDesc6 from MrpQotNonStock
+  auto_code_flag:
+    display: Autocodeflag
+    type: string
+    required: false
+    description: Field AutoCodeFlag from MrpQotNonStock
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MrpQotNonStock
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MrpQotNonStock
+  costing_method:
+    display: Costingmethod
+    type: string
+    required: false
+    description: Field CostingMethod from MrpQotNonStock
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from MrpQotNonStock
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from MrpQotNonStock
+  specific_gravity6:
+    display: Specificgravity6
+    type: decimal
+    required: false
+    description: Field SpecificGravity6 from MrpQotNonStock

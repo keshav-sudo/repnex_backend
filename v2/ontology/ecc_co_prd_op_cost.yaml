@@ -1,0 +1,38 @@
+concept: ecc_co_prd_op_cost
+display_name: EccCoPrdOpCost
+module: other
+description: Auto-generated representation of the physical table EccCoPrdOpCost.
+synonyms:
+- ecccoprdopcost
+- ecc co prd op cost
+header_attributes:
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccCoPrdOpCost
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from EccCoPrdOpCost
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from EccCoPrdOpCost
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from EccCoPrdOpCost
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from EccCoPrdOpCost
+  pct_labor_cost:
+    display: Pctlaborcost
+    type: decimal
+    required: false
+    description: Field PctLaborCost from EccCoPrdOpCost

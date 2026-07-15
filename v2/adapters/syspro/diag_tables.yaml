@@ -1,0 +1,26 @@
+concept: diag_tables
+table: DiagTables
+alias: dt
+fields:
+  table_name: dt.TableName
+  start_date: dt.StartDate
+  end_date: dt.EndDate
+  conv_status: dt.ConvStatus
+  conv_message: dt.ConvMessage
+  user_col_cnt: dt.UserColCnt
+  user_trigger_cnt: dt.UserTriggerCnt
+  user_computed_cnt: dt.UserComputedCnt
+  user_view_cnt: dt.UserViewCnt
+  user_constraint_cnt: dt.UserConstraintCnt
+  user_index_cnt: dt.UserIndexCnt
+  user_key_cnt: dt.UserKeyCnt
+  user_inv_col_cnt: dt.UserInvColCnt
+  dup_row_cnt: dt.DupRowCnt
+  key_found: dt.KeyFound
+  table_found: dt.TableFound
+  key_renamed: dt.KeyRenamed
+  key_on_diff_table: dt.KeyOnDiffTable
+  missing_columns: dt.MissingColumns
+  new_table: dt.NewTable
+  conv_message_pre: dt.ConvMessagePre
+  user_cnt: dt.UserCnt

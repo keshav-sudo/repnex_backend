@@ -1,0 +1,38 @@
+concept: ap_invoice_document
+display_name: ApInvoiceDocument
+module: accounts_payable
+description: Auto-generated representation of the physical table ApInvoiceDocument.
+synonyms:
+- apinvoicedocument
+- ap invoice document
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApInvoiceDocument
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApInvoiceDocument
+  document:
+    display: Document
+    type: string
+    required: false
+    description: Field Document from ApInvoiceDocument
+  recog_doc:
+    display: Recogdoc
+    type: string
+    required: false
+    description: Field RecogDoc from ApInvoiceDocument
+  tags:
+    display: Tags
+    type: string
+    required: false
+    description: Field Tags from ApInvoiceDocument
+  transaction_guid:
+    display: Transactionguid
+    type: string
+    required: false
+    description: Field TransactionGuid from ApInvoiceDocument

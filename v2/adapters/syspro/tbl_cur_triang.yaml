@@ -1,0 +1,13 @@
+concept: tbl_cur_triang
+table: TblCurTriang
+alias: tct
+fields:
+  source_currency: tct.SourceCurrency
+  target_currency: tct.TargetCurrency
+  triang_currency: tct.TriangCurrency
+  intermediate_cur: tct.IntermediateCur
+  fixed_rate_flag: tct.FixedRateFlag
+  tolerance: tct.Tolerance
+  buy_exchange_rate: tct.BuyExchangeRate
+  sell_exchange_rate: tct.SellExchangeRate
+  mul_div: tct.MulDiv

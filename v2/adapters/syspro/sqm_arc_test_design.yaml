@@ -1,0 +1,21 @@
+concept: sqm_arc_test_design
+table: SqmArcTestDesign
+alias: satd1
+fields:
+  test_name: satd1.TestName
+  test_version: satd1.TestVersion
+  field_id: satd1.FieldId
+  caption: satd1.Caption
+  sqm_level: satd1.SqmLevel
+  data_type: satd1.DataType
+  validation_req: satd1.ValidationReq
+  calculated_field: satd1.CalculatedField
+  hide_calc_field: satd1.HideCalcField
+  num_target: satd1.NumTarget
+  num_upper_target: satd1.NumUpperTarget
+  num_lower_target: satd1.NumLowerTarget
+  alpha_target: satd1.AlphaTarget
+  list_flag: satd1.ListFlag
+  expiry_flag: satd1.ExpiryFlag
+  expiry_number: satd1.ExpiryNumber
+  coc_flag: satd1.CocFlag

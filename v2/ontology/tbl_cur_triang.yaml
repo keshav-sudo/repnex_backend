@@ -1,0 +1,53 @@
+concept: tbl_cur_triang
+display_name: TblCurTriang
+module: other
+description: Auto-generated representation of the physical table TblCurTriang.
+synonyms:
+- tblcurtriang
+- tbl cur triang
+header_attributes:
+  source_currency:
+    display: Sourcecurrency
+    type: string
+    required: false
+    description: Field SourceCurrency from TblCurTriang
+  target_currency:
+    display: Targetcurrency
+    type: string
+    required: false
+    description: Field TargetCurrency from TblCurTriang
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from TblCurTriang
+  intermediate_cur:
+    display: Intermediatecur
+    type: string
+    required: false
+    description: Field IntermediateCur from TblCurTriang
+  fixed_rate_flag:
+    display: Fixedrateflag
+    type: string
+    required: false
+    description: Field FixedRateFlag from TblCurTriang
+  tolerance:
+    display: Tolerance
+    type: decimal
+    required: false
+    description: Field Tolerance from TblCurTriang
+  buy_exchange_rate:
+    display: Buyexchangerate
+    type: decimal
+    required: false
+    description: Field BuyExchangeRate from TblCurTriang
+  sell_exchange_rate:
+    display: Sellexchangerate
+    type: decimal
+    required: false
+    description: Field SellExchangeRate from TblCurTriang
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from TblCurTriang

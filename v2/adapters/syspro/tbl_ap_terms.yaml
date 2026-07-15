@@ -1,0 +1,13 @@
+concept: tbl_ap_terms
+table: TblApTerms
+alias: tat
+fields:
+  terms_code: tat.TermsCode
+  description: tat.Description
+  disc_pct: tat.DiscPct
+  disc_days: tat.DiscDays
+  disc_fix: tat.DiscFix
+  due_days: tat.DueDays
+  due_fix: tat.DueFix
+  disc_months: tat.DiscMonths
+  due_months: tat.DueMonths

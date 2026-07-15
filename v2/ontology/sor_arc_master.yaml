@@ -1,0 +1,658 @@
+concept: sor_arc_master
+display_name: SorArcMaster
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorArcMaster.
+synonyms:
+- sorarcmaster
+- sor arc master
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorArcMaster
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from SorArcMaster
+  order_status:
+    display: Orderstatus
+    type: string
+    required: false
+    description: Field OrderStatus from SorArcMaster
+  active_flag:
+    display: Activeflag
+    type: string
+    required: false
+    description: Field ActiveFlag from SorArcMaster
+  cancelled_flag:
+    display: Cancelledflag
+    type: string
+    required: false
+    description: Field CancelledFlag from SorArcMaster
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from SorArcMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorArcMaster
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from SorArcMaster
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from SorArcMaster
+  order_date:
+    display: Orderdate
+    type: date
+    required: false
+    description: Field OrderDate from SorArcMaster
+  entry_system_date:
+    display: Entrysystemdate
+    type: date
+    required: false
+    description: Field EntrySystemDate from SorArcMaster
+  req_ship_date:
+    display: Reqshipdate
+    type: date
+    required: false
+    description: Field ReqShipDate from SorArcMaster
+  date_last_doc_prt:
+    display: Datelastdocprt
+    type: date
+    required: false
+    description: Field DateLastDocPrt from SorArcMaster
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from SorArcMaster
+  shipping_instrs_cod:
+    display: Shippinginstrscod
+    type: string
+    required: false
+    description: Field ShippingInstrsCod from SorArcMaster
+  alt_ship_addr_flag:
+    display: Altshipaddrflag
+    type: string
+    required: false
+    description: Field AltShipAddrFlag from SorArcMaster
+  invoice_count:
+    display: Invoicecount
+    type: decimal
+    required: false
+    description: Field InvoiceCount from SorArcMaster
+  inv_terms_override:
+    display: Invtermsoverride
+    type: string
+    required: false
+    description: Field InvTermsOverride from SorArcMaster
+  credit_authority:
+    display: Creditauthority
+    type: string
+    required: false
+    description: Field CreditAuthority from SorArcMaster
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SorArcMaster
+  special_instrs:
+    display: Specialinstrs
+    type: string
+    required: false
+    description: Field SpecialInstrs from SorArcMaster
+  ent_invoice:
+    display: Entinvoice
+    type: string
+    required: false
+    description: Field EntInvoice from SorArcMaster
+  ent_invoice_date:
+    display: Entinvoicedate
+    type: date
+    required: false
+    description: Field EntInvoiceDate from SorArcMaster
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from SorArcMaster
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from SorArcMaster
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from SorArcMaster
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from SorArcMaster
+  tax_exempt_flag:
+    display: Taxexemptflag
+    type: string
+    required: false
+    description: Field TaxExemptFlag from SorArcMaster
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SorArcMaster
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from SorArcMaster
+  tax_exempt_override:
+    display: Taxexemptoverride
+    type: string
+    required: false
+    description: Field TaxExemptOverride from SorArcMaster
+  cash_credit:
+    display: Cashcredit
+    type: string
+    required: false
+    description: Field CashCredit from SorArcMaster
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SorArcMaster
+  last_invoice:
+    display: Lastinvoice
+    type: string
+    required: false
+    description: Field LastInvoice from SorArcMaster
+  scheduled_ord_flag:
+    display: Scheduledordflag
+    type: string
+    required: false
+    description: Field ScheduledOrdFlag from SorArcMaster
+  gst_exempt_flag:
+    display: Gstexemptflag
+    type: string
+    required: false
+    description: Field GstExemptFlag from SorArcMaster
+  gst_exempt_num:
+    display: Gstexemptnum
+    type: string
+    required: false
+    description: Field GstExemptNum from SorArcMaster
+  gst_exempt_o_ride:
+    display: Gstexemptoride
+    type: string
+    required: false
+    description: Field GstExemptORide from SorArcMaster
+  ibt_flag:
+    display: Ibtflag
+    type: string
+    required: false
+    description: Field IbtFlag from SorArcMaster
+  ord_acknw_printed:
+    display: Ordacknwprinted
+    type: string
+    required: false
+    description: Field OrdAcknwPrinted from SorArcMaster
+  det_cust_mvmt_reqd:
+    display: Detcustmvmtreqd
+    type: string
+    required: false
+    description: Field DetCustMvmtReqd from SorArcMaster
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from SorArcMaster
+  fix_exchange_rate:
+    display: Fixexchangerate
+    type: string
+    required: false
+    description: Field FixExchangeRate from SorArcMaster
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from SorArcMaster
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from SorArcMaster
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from SorArcMaster
+  gst_deduction:
+    display: Gstdeduction
+    type: string
+    required: false
+    description: Field GstDeduction from SorArcMaster
+  order_status_fail:
+    display: Orderstatusfail
+    type: string
+    required: false
+    description: Field OrderStatusFail from SorArcMaster
+  consolidated_order:
+    display: Consolidatedorder
+    type: string
+    required: false
+    description: Field ConsolidatedOrder from SorArcMaster
+  credited_inv_date:
+    display: Creditedinvdate
+    type: date
+    required: false
+    description: Field CreditedInvDate from SorArcMaster
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from SorArcMaster
+  serialised_flag:
+    display: Serialisedflag
+    type: string
+    required: false
+    description: Field SerialisedFlag from SorArcMaster
+  counter_sales_flag:
+    display: Countersalesflag
+    type: string
+    required: false
+    description: Field CounterSalesFlag from SorArcMaster
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from SorArcMaster
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from SorArcMaster
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from SorArcMaster
+  transport_mode:
+    display: Transportmode
+    type: decimal
+    required: false
+    description: Field TransportMode from SorArcMaster
+  process_flag:
+    display: Processflag
+    type: decimal
+    required: false
+    description: Field ProcessFlag from SorArcMaster
+  jobs_exist_flag:
+    display: Jobsexistflag
+    type: string
+    required: false
+    description: Field JobsExistFlag from SorArcMaster
+  alternate_key:
+    display: Alternatekey
+    type: string
+    required: false
+    description: Field AlternateKey from SorArcMaster
+  last_operator:
+    display: Lastoperator
+    type: string
+    required: false
+    description: Field LastOperator from SorArcMaster
+  hierarchy_flag:
+    display: Hierarchyflag
+    type: string
+    required: false
+    description: Field HierarchyFlag from SorArcMaster
+  deposit_flag:
+    display: Depositflag
+    type: string
+    required: false
+    description: Field DepositFlag from SorArcMaster
+  edi_source:
+    display: Edisource
+    type: string
+    required: false
+    description: Field EdiSource from SorArcMaster
+  delivery_note:
+    display: Deliverynote
+    type: string
+    required: false
+    description: Field DeliveryNote from SorArcMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SorArcMaster
+  line_comp:
+    display: Linecomp
+    type: string
+    required: false
+    description: Field LineComp from SorArcMaster
+  capture_hh:
+    display: Capturehh
+    type: decimal
+    required: false
+    description: Field CaptureHh from SorArcMaster
+  capture_mm:
+    display: Capturemm
+    type: decimal
+    required: false
+    description: Field CaptureMm from SorArcMaster
+  last_del_note:
+    display: Lastdelnote
+    type: date
+    required: false
+    description: Field LastDelNote from SorArcMaster
+  time_del_prted_hh:
+    display: Timedelprtedhh
+    type: decimal
+    required: false
+    description: Field TimeDelPrtedHh from SorArcMaster
+  time_del_prted_mm:
+    display: Timedelprtedmm
+    type: decimal
+    required: false
+    description: Field TimeDelPrtedMm from SorArcMaster
+  time_inv_prted_hh:
+    display: Timeinvprtedhh
+    type: decimal
+    required: false
+    description: Field TimeInvPrtedHh from SorArcMaster
+  time_inv_prted_mm:
+    display: Timeinvprtedmm
+    type: decimal
+    required: false
+    description: Field TimeInvPrtedMm from SorArcMaster
+  date_last_inv_prt:
+    display: Datelastinvprt
+    type: date
+    required: false
+    description: Field DateLastInvPrt from SorArcMaster
+  salesperson2:
+    display: Salesperson2
+    type: string
+    required: false
+    description: Field Salesperson2 from SorArcMaster
+  salesperson3:
+    display: Salesperson3
+    type: string
+    required: false
+    description: Field Salesperson3 from SorArcMaster
+  salesperson4:
+    display: Salesperson4
+    type: string
+    required: false
+    description: Field Salesperson4 from SorArcMaster
+  commission_sales1:
+    display: Commissionsales1
+    type: decimal
+    required: false
+    description: Field CommissionSales1 from SorArcMaster
+  commission_sales2:
+    display: Commissionsales2
+    type: decimal
+    required: false
+    description: Field CommissionSales2 from SorArcMaster
+  commission_sales3:
+    display: Commissionsales3
+    type: decimal
+    required: false
+    description: Field CommissionSales3 from SorArcMaster
+  commission_sales4:
+    display: Commissionsales4
+    type: decimal
+    required: false
+    description: Field CommissionSales4 from SorArcMaster
+  time_taken_to_add:
+    display: Timetakentoadd
+    type: decimal
+    required: false
+    description: Field TimeTakenToAdd from SorArcMaster
+  time_taken_to_chg:
+    display: Timetakentochg
+    type: decimal
+    required: false
+    description: Field TimeTakenToChg from SorArcMaster
+  fax_inv_in_batch:
+    display: Faxinvinbatch
+    type: string
+    required: false
+    description: Field FaxInvInBatch from SorArcMaster
+  inter_wh_sale:
+    display: Interwhsale
+    type: string
+    required: false
+    description: Field InterWhSale from SorArcMaster
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from SorArcMaster
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from SorArcMaster
+  dispatches_made:
+    display: Dispatchesmade
+    type: string
+    required: false
+    description: Field DispatchesMade from SorArcMaster
+  live_disp_exist:
+    display: Livedispexist
+    type: string
+    required: false
+    description: Field LiveDispExist from SorArcMaster
+  num_dispatches:
+    display: Numdispatches
+    type: decimal
+    required: false
+    description: Field NumDispatches from SorArcMaster
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from SorArcMaster
+  ship_address1:
+    display: Shipaddress1
+    type: string
+    required: false
+    description: Field ShipAddress1 from SorArcMaster
+  ship_address2:
+    display: Shipaddress2
+    type: string
+    required: false
+    description: Field ShipAddress2 from SorArcMaster
+  ship_address3:
+    display: Shipaddress3
+    type: string
+    required: false
+    description: Field ShipAddress3 from SorArcMaster
+  ship_address3_loc:
+    display: Shipaddress3Loc
+    type: string
+    required: false
+    description: Field ShipAddress3Loc from SorArcMaster
+  ship_address4:
+    display: Shipaddress4
+    type: string
+    required: false
+    description: Field ShipAddress4 from SorArcMaster
+  ship_address5:
+    display: Shipaddress5
+    type: string
+    required: false
+    description: Field ShipAddress5 from SorArcMaster
+  ship_postal_code:
+    display: Shippostalcode
+    type: string
+    required: false
+    description: Field ShipPostalCode from SorArcMaster
+  ship_to_gps_lat:
+    display: Shiptogpslat
+    type: decimal
+    required: false
+    description: Field ShipToGpsLat from SorArcMaster
+  ship_to_gps_long:
+    display: Shiptogpslong
+    type: decimal
+    required: false
+    description: Field ShipToGpsLong from SorArcMaster
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from SorArcMaster
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from SorArcMaster
+  extended_tax_code:
+    display: Extendedtaxcode
+    type: string
+    required: false
+    description: Field ExtendedTaxCode from SorArcMaster
+  multi_ship_code:
+    display: Multishipcode
+    type: string
+    required: false
+    description: Field MultiShipCode from SorArcMaster
+  web_created:
+    display: Webcreated
+    type: string
+    required: false
+    description: Field WebCreated from SorArcMaster
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from SorArcMaster
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from SorArcMaster
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from SorArcMaster
+  non_merch_flag:
+    display: Nonmerchflag
+    type: string
+    required: false
+    description: Field NonMerchFlag from SorArcMaster
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from SorArcMaster
+  user1:
+    display: User1
+    type: string
+    required: false
+    description: Field User1 from SorArcMaster
+  company_tax_no:
+    display: Companytaxno
+    type: string
+    required: false
+    description: Field CompanyTaxNo from SorArcMaster
+  tpm_pickup_flag:
+    display: Tpmpickupflag
+    type: string
+    required: false
+    description: Field TpmPickupFlag from SorArcMaster
+  tpm_evaluated_flag:
+    display: Tpmevaluatedflag
+    type: string
+    required: false
+    description: Field TpmEvaluatedFlag from SorArcMaster
+  standard_comment:
+    display: Standardcomment
+    type: string
+    required: false
+    description: Field StandardComment from SorArcMaster
+  detail_status:
+    display: Detailstatus
+    type: string
+    required: false
+    description: Field DetailStatus from SorArcMaster
+  sales_order_source:
+    display: Salesordersource
+    type: string
+    required: false
+    description: Field SalesOrderSource from SorArcMaster
+  sales_order_src_desc:
+    display: Salesordersrcdesc
+    type: string
+    required: false
+    description: Field SalesOrderSrcDesc from SorArcMaster
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from SorArcMaster
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from SorArcMaster
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from SorArcMaster
+  quick_quote:
+    display: Quickquote
+    type: string
+    required: false
+    description: Field QuickQuote from SorArcMaster
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from SorArcMaster
+  port_dispatch:
+    display: Portdispatch
+    type: string
+    required: false
+    description: Field PortDispatch from SorArcMaster
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from SorArcMaster
+  price_group_level:
+    display: Pricegrouplevel
+    type: string
+    required: false
+    description: Field PriceGroupLevel from SorArcMaster
+  last_op_inv_prt:
+    display: Lastopinvprt
+    type: string
+    required: false
+    description: Field LastOpInvPrt from SorArcMaster
+  dispatch_whole_so:
+    display: Dispatchwholeso
+    type: string
+    required: false
+    description: Field DispatchWholeSo from SorArcMaster
+  entity_dimensions:
+    display: Entitydimensions
+    type: string
+    required: false
+    description: Field EntityDimensions from SorArcMaster

@@ -1,0 +1,128 @@
+concept: ar_mult_address
+display_name: ArMultAddress
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArMultAddress.
+synonyms:
+- armultaddress
+- ar mult address
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArMultAddress
+  addr_code:
+    display: Addrcode
+    type: string
+    required: false
+    description: Field AddrCode from ArMultAddress
+  ship_to_name:
+    display: Shiptoname
+    type: string
+    required: false
+    description: Field ShipToName from ArMultAddress
+  ship_to_addr1:
+    display: Shiptoaddr1
+    type: string
+    required: false
+    description: Field ShipToAddr1 from ArMultAddress
+  ship_to_addr2:
+    display: Shiptoaddr2
+    type: string
+    required: false
+    description: Field ShipToAddr2 from ArMultAddress
+  ship_to_addr3:
+    display: Shiptoaddr3
+    type: string
+    required: false
+    description: Field ShipToAddr3 from ArMultAddress
+  ship_to_addr3_loc:
+    display: Shiptoaddr3Loc
+    type: string
+    required: false
+    description: Field ShipToAddr3Loc from ArMultAddress
+  ship_to_addr4:
+    display: Shiptoaddr4
+    type: string
+    required: false
+    description: Field ShipToAddr4 from ArMultAddress
+  ship_to_addr5:
+    display: Shiptoaddr5
+    type: string
+    required: false
+    description: Field ShipToAddr5 from ArMultAddress
+  ship_postal_code:
+    display: Shippostalcode
+    type: string
+    required: false
+    description: Field ShipPostalCode from ArMultAddress
+  ship_to_gps_lat:
+    display: Shiptogpslat
+    type: decimal
+    required: false
+    description: Field ShipToGpsLat from ArMultAddress
+  ship_to_gps_long:
+    display: Shiptogpslong
+    type: decimal
+    required: false
+    description: Field ShipToGpsLong from ArMultAddress
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArMultAddress
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from ArMultAddress
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from ArMultAddress
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from ArMultAddress
+  route_code:
+    display: Routecode
+    type: string
+    required: false
+    description: Field RouteCode from ArMultAddress
+  route_distance:
+    display: Routedistance
+    type: decimal
+    required: false
+    description: Field RouteDistance from ArMultAddress
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ArMultAddress
+  geographic_area:
+    display: Geographicarea
+    type: string
+    required: false
+    description: Field GeographicArea from ArMultAddress
+  tax_regn_num:
+    display: Taxregnnum
+    type: string
+    required: false
+    description: Field TaxRegnNum from ArMultAddress
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from ArMultAddress
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from ArMultAddress
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from ArMultAddress

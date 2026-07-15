@@ -1,0 +1,31 @@
+concept: whm_outer_detail
+table: WhmOuterDetail
+alias: wod
+fields:
+  outer_number: wod.OuterNumber
+  outer_line: wod.OuterLine
+  pick_number: wod.PickNumber
+  pick_line: wod.PickLine
+  sales_order: wod.SalesOrder
+  sales_order_line: wod.SalesOrderLine
+  pick_line_status: wod.PickLineStatus
+  qty_to_pick: wod.QtyToPick
+  qty_picked: wod.QtyPicked
+  stock_code: wod.StockCode
+  bin: wod.Bin
+  lot: wod.Lot
+  serial: wod.Serial
+  line_start_date: wod.LineStartDate
+  line_start_time: wod.LineStartTime
+  line_comp_date: wod.LineCompDate
+  line_comp_time: wod.LineCompTime
+  destination_bin: wod.DestinationBin
+  picker: wod.Picker
+  destination_whs: wod.DestinationWhs
+  unit_of_measure: wod.UnitOfMeasure
+  version: wod.Version
+  release: wod.Release
+  warehouse: wod.Warehouse
+  customer: wod.Customer
+  confirm_date: wod.ConfirmDate
+  confirmed_by: wod.ConfirmedBy

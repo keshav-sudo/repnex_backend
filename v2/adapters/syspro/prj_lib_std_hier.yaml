@@ -1,0 +1,22 @@
+concept: prj_lib_std_hier
+table: PrjLibStdHier
+alias: plsh
+fields:
+  hierarchy_type: plsh.HierarchyType
+  hierarchy_code: plsh.HierarchyCode
+  hier_head: plsh.HierHead
+  section1: plsh.Section1
+  section2: plsh.Section2
+  section3: plsh.Section3
+  section4: plsh.Section4
+  description: plsh.Description
+  wip_ctl_gl_code: plsh.WipCtlGlCode
+  track_costs_only: plsh.TrackCostsOnly
+  wip_cost_trk_gl_code: plsh.WipCostTrkGlCode
+  allow_stk_tran: plsh.AllowStkTran
+  allow_non_tran: plsh.AllowNonTran
+  allow_lab_tran: plsh.AllowLabTran
+  allow_sub_tran: plsh.AllowSubTran
+  allow_sls_tran: plsh.AllowSlsTran
+  allow_por_tran: plsh.AllowPorTran
+  pct_limit: plsh.PctLimit

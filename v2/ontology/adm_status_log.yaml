@@ -1,0 +1,73 @@
+concept: adm_status_log
+display_name: AdmStatusLog
+module: administration
+description: Auto-generated representation of the physical table AdmStatusLog.
+synonyms:
+- admstatuslog
+- adm status log
+header_attributes:
+  status_cur_date:
+    display: Statuscurdate
+    type: date
+    required: false
+    description: Field StatusCurDate from AdmStatusLog
+  status_cur_time:
+    display: Statuscurtime
+    type: decimal
+    required: false
+    description: Field StatusCurTime from AdmStatusLog
+  status_cur_line:
+    display: Statuscurline
+    type: decimal
+    required: false
+    description: Field StatusCurLine from AdmStatusLog
+  status_entity:
+    display: Statusentity
+    type: string
+    required: false
+    description: Field StatusEntity from AdmStatusLog
+  status_code:
+    display: Statuscode
+    type: string
+    required: false
+    description: Field StatusCode from AdmStatusLog
+  status_activity_flag:
+    display: Statusactivityflag
+    type: string
+    required: false
+    description: Field StatusActivityFlag from AdmStatusLog
+  status_act_type_flag:
+    display: Statusacttypeflag
+    type: string
+    required: false
+    description: Field StatusActTypeFlag from AdmStatusLog
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmStatusLog
+  adm_key_field:
+    display: Admkeyfield
+    type: string
+    required: false
+    description: Field AdmKeyField from AdmStatusLog
+  blocked_flag:
+    display: Blockedflag
+    type: string
+    required: false
+    description: Field BlockedFlag from AdmStatusLog
+  status_business_proc:
+    display: Statusbusinessproc
+    type: string
+    required: false
+    description: Field StatusBusinessProc from AdmStatusLog
+  status_process_flag:
+    display: Statusprocessflag
+    type: string
+    required: false
+    description: Field StatusProcessFlag from AdmStatusLog
+  status_comment:
+    display: Statuscomment
+    type: string
+    required: false
+    description: Field StatusComment from AdmStatusLog

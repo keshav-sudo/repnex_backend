@@ -1,0 +1,48 @@
+concept: inv_cycle_count
+display_name: InvCycleCount
+module: inventory
+description: Auto-generated representation of the physical table InvCycleCount.
+synonyms:
+- invcyclecount
+- inv cycle count
+header_attributes:
+  cycle_count:
+    display: Cyclecount
+    type: string
+    required: false
+    description: Field CycleCount from InvCycleCount
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvCycleCount
+  created_date:
+    display: Createddate
+    type: date
+    required: false
+    description: Field CreatedDate from InvCycleCount
+  xmlin:
+    display: Xmlin
+    type: string
+    required: false
+    description: Field Xmlin from InvCycleCount
+  parameter_xml:
+    display: Parameterxml
+    type: string
+    required: false
+    description: Field ParameterXml from InvCycleCount
+  last_changed:
+    display: Lastchanged
+    type: date
+    required: false
+    description: Field LastChanged from InvCycleCount
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from InvCycleCount
+  schedule_id:
+    display: Scheduleid
+    type: decimal
+    required: false
+    description: Field ScheduleId from InvCycleCount

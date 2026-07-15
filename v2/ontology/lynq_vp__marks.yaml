@@ -1,0 +1,33 @@
+concept: lynq_vp__marks
+display_name: Lynq VP Marks
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_Marks.
+synonyms:
+- lynq_vp_marks
+- lynq vp  marks
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_Marks
+  mark_key:
+    display: Markkey
+    type: string
+    required: false
+    description: Field MarkKey from Lynq_VP_Marks
+  mark_value:
+    display: Markvalue
+    type: string
+    required: false
+    description: Field MarkValue from Lynq_VP_Marks
+  color:
+    display: Color
+    type: string
+    required: false
+    description: Field Color from Lynq_VP_Marks
+  macola_fields:
+    display: Macolafields
+    type: string
+    required: false
+    description: Field MacolaFields from Lynq_VP_Marks

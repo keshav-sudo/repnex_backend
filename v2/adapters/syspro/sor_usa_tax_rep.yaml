@@ -1,0 +1,34 @@
+concept: sor_usa_tax_rep
+table: SorUsaTaxRep
+alias: sutr
+fields:
+  invoice: sutr.Invoice
+  sales_order: sutr.SalesOrder
+  state: sutr.State
+  county_zip: sutr.CountyZip
+  city: sutr.City
+  effective_date: sutr.EffectiveDate
+  description: sutr.Description
+  gl_code: sutr.GlCode
+  freight_taxable: sutr.FreightTaxable
+  verazip_county: sutr.VerazipCounty
+  limit_flag: sutr.LimitFlag
+  first_rate11: sutr.FirstRate11
+  first_rate12: sutr.FirstRate12
+  first_limit11: sutr.FirstLimit11
+  first_limit12: sutr.FirstLimit12
+  first_limit_value11: sutr.FirstLimitValue11
+  first_limit_value12: sutr.FirstLimitValue12
+  first_rate21: sutr.FirstRate21
+  first_rate22: sutr.FirstRate22
+  first_limit21: sutr.FirstLimit21
+  first_limit22: sutr.FirstLimit22
+  first_limit_value21: sutr.FirstLimitValue21
+  first_limit_value22: sutr.FirstLimitValue22
+  first_rate31: sutr.FirstRate31
+  first_rate32: sutr.FirstRate32
+  first_limit31: sutr.FirstLimit31
+  first_limit32: sutr.FirstLimit32
+  first_limit_value31: sutr.FirstLimitValue31
+  first_limit_value32: sutr.FirstLimitValue32
+  usa_or_normal_tax: sutr.UsaOrNormalTax

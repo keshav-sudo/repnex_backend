@@ -1,0 +1,18 @@
+concept: ar_collector_run_hdr
+table: ArCollectorRunHdr
+alias: acrh
+fields:
+  collector_run_no: acrh.CollectorRunNo
+  collector: acrh.Collector
+  date_collected: acrh.DateCollected
+  receipt_date: acrh.ReceiptDate
+  status: acrh.Status
+  bank: acrh.Bank
+  currency: acrh.Currency
+  batch_cash_total: acrh.BatchCashTotal
+  batch_check_total: acrh.BatchCheckTotal
+  batch_other_total: acrh.BatchOtherTotal
+  batch_pd_check_total: acrh.BatchPdCheckTotal
+  batch_total: acrh.BatchTotal
+  area: acrh.Area
+  salesperson: acrh.Salesperson

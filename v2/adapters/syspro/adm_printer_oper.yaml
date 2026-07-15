@@ -1,0 +1,15 @@
+concept: adm_printer_oper
+table: AdmPrinterOper
+alias: apo
+fields:
+  operator: apo.Operator
+  syspro_program: apo.SysproProgram
+  printer_name: apo.PrinterName
+  prt_current: apo.PrtCurrent
+  last_win_info: apo.LastWinInfo
+  last_sys_info: apo.LastSysInfo
+  print_attributes: apo.PrintAttributes
+  win_devmode: apo.WinDevmode
+  win_page_setup: apo.WinPageSetup
+  win_font_info: apo.WinFontInfo
+  extra_bytes: apo.ExtraBytes

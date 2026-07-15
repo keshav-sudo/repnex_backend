@@ -1,0 +1,8 @@
+concept: lynq_me__integration__sync__db_lock
+table: Lynq_ME_Integration_Sync_DbLock
+alias: lmeisdl
+fields:
+  id: lmeisdl.ID
+  process_name: lmeisdl.ProcessName
+  lock_count: lmeisdl.LockCount
+  last_lock_time: lmeisdl.LastLockTime

@@ -1,0 +1,28 @@
+concept: crm_comp_owners
+display_name: CrmCompOwners
+module: crm
+description: Auto-generated representation of the physical table CrmCompOwners.
+synonyms:
+- crmcompowners
+- crm comp owners
+header_attributes:
+  owner_id:
+    display: Ownerid
+    type: string
+    required: false
+    description: Field OwnerId from CrmCompOwners
+  owner_name:
+    display: Ownername
+    type: string
+    required: false
+    description: Field OwnerName from CrmCompOwners
+  owner_email:
+    display: Owneremail
+    type: string
+    required: false
+    description: Field OwnerEmail from CrmCompOwners
+  owner_branch:
+    display: Ownerbranch
+    type: string
+    required: false
+    description: Field OwnerBranch from CrmCompOwners

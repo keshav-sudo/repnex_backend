@@ -1,0 +1,32 @@
+concept: wip_inspect_det
+table: WipInspectDet
+alias: wid
+fields:
+  insp_reference: wid.InspReference
+  lot: wid.Lot
+  trn_date: wid.TrnDate
+  line: wid.Line
+  trn_type: wid.TrnType
+  trn_qty: wid.TrnQty
+  concession_num: wid.ConcessionNum
+  document_num: wid.DocumentNum
+  scrap_code: wid.ScrapCode
+  narration: wid.Narration
+  rework_job: wid.ReworkJob
+  stock_code: wid.StockCode
+  trn_value: wid.TrnValue
+  gl_code: wid.GlCode
+  journal: wid.Journal
+  entry_number: wid.EntryNumber
+  posting_period: wid.PostingPeriod
+  posting_year: wid.PostingYear
+  operator: wid.Operator
+  alt_warehouse: wid.AltWarehouse
+  trn_qty_ent: wid.TrnQtyEnt
+  wip_branch: wid.WipBranch
+  accept_qty: wid.AcceptQty
+  reject_qty: wid.RejectQty
+  qty_in_quarant: wid.QtyInQuarant
+  accept_qty_ent: wid.AcceptQtyEnt
+  reject_qty_ent: wid.RejectQtyEnt
+  qty_in_quarant_ent: wid.QtyInQuarantEnt

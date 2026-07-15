@@ -1,0 +1,423 @@
+concept: mrp_po_master_det
+display_name: MrpPoMasterDet
+module: mrp
+description: Auto-generated representation of the physical table MrpPoMasterDet.
+synonyms:
+- mrppomasterdet
+- mrp po master det
+header_attributes:
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from MrpPoMasterDet
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpPoMasterDet
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from MrpPoMasterDet
+  m_stock_code:
+    display: Mstockcode
+    type: string
+    required: false
+    description: Field MStockCode from MrpPoMasterDet
+  m_stock_des:
+    display: Mstockdes
+    type: string
+    required: false
+    description: Field MStockDes from MrpPoMasterDet
+  m_warehouse:
+    display: Mwarehouse
+    type: string
+    required: false
+    description: Field MWarehouse from MrpPoMasterDet
+  m_order_uom:
+    display: Morderuom
+    type: string
+    required: false
+    description: Field MOrderUom from MrpPoMasterDet
+  m_stocking_uom:
+    display: Mstockinguom
+    type: string
+    required: false
+    description: Field MStockingUom from MrpPoMasterDet
+  m_order_qty:
+    display: Morderqty
+    type: decimal
+    required: false
+    description: Field MOrderQty from MrpPoMasterDet
+  m_received_qty:
+    display: Mreceivedqty
+    type: decimal
+    required: false
+    description: Field MReceivedQty from MrpPoMasterDet
+  m_latest_due_date:
+    display: Mlatestduedate
+    type: date
+    required: false
+    description: Field MLatestDueDate from MrpPoMasterDet
+  m_last_receipt_dat:
+    display: Mlastreceiptdat
+    type: date
+    required: false
+    description: Field MLastReceiptDat from MrpPoMasterDet
+  m_sup_catalogue:
+    display: Msupcatalogue
+    type: string
+    required: false
+    description: Field MSupCatalogue from MrpPoMasterDet
+  m_disc_pct1:
+    display: Mdiscpct1
+    type: decimal
+    required: false
+    description: Field MDiscPct1 from MrpPoMasterDet
+  m_disc_pct2:
+    display: Mdiscpct2
+    type: decimal
+    required: false
+    description: Field MDiscPct2 from MrpPoMasterDet
+  m_disc_pct3:
+    display: Mdiscpct3
+    type: decimal
+    required: false
+    description: Field MDiscPct3 from MrpPoMasterDet
+  m_disc_val_flag:
+    display: Mdiscvalflag
+    type: string
+    required: false
+    description: Field MDiscValFlag from MrpPoMasterDet
+  m_disc_value:
+    display: Mdiscvalue
+    type: decimal
+    required: false
+    description: Field MDiscValue from MrpPoMasterDet
+  m_price:
+    display: Mprice
+    type: decimal
+    required: false
+    description: Field MPrice from MrpPoMasterDet
+  m_foreign_price:
+    display: Mforeignprice
+    type: decimal
+    required: false
+    description: Field MForeignPrice from MrpPoMasterDet
+  m_decimals_to_prt:
+    display: Mdecimalstoprt
+    type: decimal
+    required: false
+    description: Field MDecimalsToPrt from MrpPoMasterDet
+  m_conv_fact_prc_um:
+    display: Mconvfactprcum
+    type: decimal
+    required: false
+    description: Field MConvFactPrcUm from MrpPoMasterDet
+  m_mul_div_prc:
+    display: Mmuldivprc
+    type: string
+    required: false
+    description: Field MMulDivPrc from MrpPoMasterDet
+  m_price_uom:
+    display: Mpriceuom
+    type: string
+    required: false
+    description: Field MPriceUom from MrpPoMasterDet
+  m_tax_code:
+    display: Mtaxcode
+    type: string
+    required: false
+    description: Field MTaxCode from MrpPoMasterDet
+  m_conv_fact_ord_um:
+    display: Mconvfactordum
+    type: decimal
+    required: false
+    description: Field MConvFactOrdUm from MrpPoMasterDet
+  m_mul_div_alloc:
+    display: Mmuldivalloc
+    type: string
+    required: false
+    description: Field MMulDivAlloc from MrpPoMasterDet
+  m_product_class:
+    display: Mproductclass
+    type: string
+    required: false
+    description: Field MProductClass from MrpPoMasterDet
+  m_complete_flag:
+    display: Mcompleteflag
+    type: string
+    required: false
+    description: Field MCompleteFlag from MrpPoMasterDet
+  m_job:
+    display: Mjob
+    type: string
+    required: false
+    description: Field MJob from MrpPoMasterDet
+  m_job_line:
+    display: Mjobline
+    type: string
+    required: false
+    description: Field MJobLine from MrpPoMasterDet
+  m_gl_code:
+    display: Mglcode
+    type: string
+    required: false
+    description: Field MGlCode from MrpPoMasterDet
+  m_user_auth_reqn:
+    display: Muserauthreqn
+    type: string
+    required: false
+    description: Field MUserAuthReqn from MrpPoMasterDet
+  m_requisition:
+    display: Mrequisition
+    type: string
+    required: false
+    description: Field MRequisition from MrpPoMasterDet
+  m_requisition_line:
+    display: Mrequisitionline
+    type: decimal
+    required: false
+    description: Field MRequisitionLine from MrpPoMasterDet
+  m_sales_order:
+    display: Msalesorder
+    type: string
+    required: false
+    description: Field MSalesOrder from MrpPoMasterDet
+  m_sales_order_line:
+    display: Msalesorderline
+    type: decimal
+    required: false
+    description: Field MSalesOrderLine from MrpPoMasterDet
+  m_orig_due_date:
+    display: Morigduedate
+    type: date
+    required: false
+    description: Field MOrigDueDate from MrpPoMasterDet
+  m_resched_due_date:
+    display: Mreschedduedate
+    type: string
+    required: false
+    description: Field MReschedDueDate from MrpPoMasterDet
+  m_lct_confirmed:
+    display: Mlctconfirmed
+    type: string
+    required: false
+    description: Field MLctConfirmed from MrpPoMasterDet
+  m_original_line:
+    display: Moriginalline
+    type: decimal
+    required: false
+    description: Field MOriginalLine from MrpPoMasterDet
+  m_subcontract_op:
+    display: Msubcontractop
+    type: decimal
+    required: false
+    description: Field MSubcontractOp from MrpPoMasterDet
+  m_edi_extract_flag:
+    display: Mediextractflag
+    type: string
+    required: false
+    description: Field MEdiExtractFlag from MrpPoMasterDet
+  m_edi_action_flag:
+    display: Mediactionflag
+    type: string
+    required: false
+    description: Field MEdiActionFlag from MrpPoMasterDet
+  m_inspection_reqd:
+    display: Minspectionreqd
+    type: string
+    required: false
+    description: Field MInspectionReqd from MrpPoMasterDet
+  m_nons_unit_mass:
+    display: Mnonsunitmass
+    type: decimal
+    required: false
+    description: Field MNonsUnitMass from MrpPoMasterDet
+  m_nons_unit_vol:
+    display: Mnonsunitvol
+    type: decimal
+    required: false
+    description: Field MNonsUnitVol from MrpPoMasterDet
+  m_version:
+    display: Mversion
+    type: string
+    required: false
+    description: Field MVersion from MrpPoMasterDet
+  m_release:
+    display: Mrelease
+    type: string
+    required: false
+    description: Field MRelease from MrpPoMasterDet
+  n_comment:
+    display: Ncomment
+    type: string
+    required: false
+    description: Field NComment from MrpPoMasterDet
+  n_comment_from_lin:
+    display: Ncommentfromlin
+    type: decimal
+    required: false
+    description: Field NCommentFromLin from MrpPoMasterDet
+  n_msc_charge_value:
+    display: Nmscchargevalue
+    type: decimal
+    required: false
+    description: Field NMscChargeValue from MrpPoMasterDet
+  n_msc_charge_print:
+    display: Nmscchargeprint
+    type: string
+    required: false
+    description: Field NMscChargePrint from MrpPoMasterDet
+  n_com_print_type:
+    display: Ncomprinttype
+    type: string
+    required: false
+    description: Field NComPrintType from MrpPoMasterDet
+  n_msc_charge_tax:
+    display: Nmscchargetax
+    type: string
+    required: false
+    description: Field NMscChargeTax from MrpPoMasterDet
+  n_comment_flag:
+    display: Ncommentflag
+    type: string
+    required: false
+    description: Field NCommentFlag from MrpPoMasterDet
+  n_msc_charge_for:
+    display: Nmscchargefor
+    type: decimal
+    required: false
+    description: Field NMscChargeFor from MrpPoMasterDet
+  n_msc_charge_f_loc:
+    display: Nmscchargefloc
+    type: string
+    required: false
+    description: Field NMscChargeFLoc from MrpPoMasterDet
+  n_edi_extract:
+    display: Nediextract
+    type: string
+    required: false
+    description: Field NEdiExtract from MrpPoMasterDet
+  m_ecc_flag:
+    display: Meccflag
+    type: string
+    required: false
+    description: Field MEccFlag from MrpPoMasterDet
+  m_blanket_date:
+    display: Mblanketdate
+    type: date
+    required: false
+    description: Field MBlanketDate from MrpPoMasterDet
+  m_contract_number:
+    display: Mcontractnumber
+    type: string
+    required: false
+    description: Field MContractNumber from MrpPoMasterDet
+  m_blanket_cont_line:
+    display: Mblanketcontline
+    type: decimal
+    required: false
+    description: Field MBlanketContLine from MrpPoMasterDet
+  asset_flag:
+    display: Assetflag
+    type: string
+    required: false
+    description: Field AssetFlag from MrpPoMasterDet
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from MrpPoMasterDet
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from MrpPoMasterDet
+  selection_code:
+    display: Selectioncode
+    type: string
+    required: false
+    description: Field SelectionCode from MrpPoMasterDet
+  selection_type:
+    display: Selectiontype
+    type: string
+    required: false
+    description: Field SelectionType from MrpPoMasterDet
+  user1:
+    display: User1
+    type: string
+    required: false
+    description: Field User1 from MrpPoMasterDet
+  order_line_status:
+    display: Orderlinestatus
+    type: string
+    required: false
+    description: Field OrderLineStatus from MrpPoMasterDet
+  auto_voucher_reqd:
+    display: Autovoucherreqd
+    type: string
+    required: false
+    description: Field AutoVoucherReqd from MrpPoMasterDet
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from MrpPoMasterDet
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from MrpPoMasterDet
+  sourcing_policy:
+    display: Sourcingpolicy
+    type: string
+    required: false
+    description: Field SourcingPolicy from MrpPoMasterDet
+  sourcing_policy_type:
+    display: Sourcingpolicytype
+    type: string
+    required: false
+    description: Field SourcingPolicyType from MrpPoMasterDet
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from MrpPoMasterDet
+  rfq_line:
+    display: Rfqline
+    type: decimal
+    required: false
+    description: Field RfqLine from MrpPoMasterDet
+  intrastat_exempt:
+    display: Intrastatexempt
+    type: string
+    required: false
+    description: Field IntrastatExempt from MrpPoMasterDet
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from MrpPoMasterDet
+  triang_disp_state:
+    display: Triangdispstate
+    type: string
+    required: false
+    description: Field TriangDispState from MrpPoMasterDet
+  triang_dest_state:
+    display: Triangdeststate
+    type: string
+    required: false
+    description: Field TriangDestState from MrpPoMasterDet
+  orig_country:
+    display: Origcountry
+    type: string
+    required: false
+    description: Field OrigCountry from MrpPoMasterDet
+  serv_flag:
+    display: Servflag
+    type: string
+    required: false
+    description: Field ServFlag from MrpPoMasterDet

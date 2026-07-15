@@ -1,0 +1,6 @@
+concept: sal_regime_code
+table: SalRegimeCode
+alias: src
+fields:
+  regime_code: src.RegimeCode
+  description: src.Description

@@ -1,0 +1,14 @@
+concept: sqm_hier_level
+table: SqmHierLevel
+alias: shl
+fields:
+  inspect_type: shl.InspectType
+  warehouse: shl.Warehouse
+  stock_code: shl.StockCode
+  source_type: shl.SourceType
+  source_key: shl.SourceKey
+  sqm_rules: shl.SqmRules
+  inc_gen_tests: shl.IncGenTests
+  sample_basis: shl.SampleBasis
+  full_test_required: shl.FullTestRequired
+  inspector: shl.Inspector

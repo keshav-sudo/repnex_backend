@@ -1,0 +1,7 @@
+concept: por_sup_stk_inter
+table: PorSupStkInter
+alias: pssi1
+fields:
+  sup_catalogue_num: pssi1.SupCatalogueNum
+  supplier: pssi1.Supplier
+  stock_code: pssi1.StockCode

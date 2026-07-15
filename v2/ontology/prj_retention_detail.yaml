@@ -1,0 +1,48 @@
+concept: prj_retention_detail
+display_name: PrjRetentionDetail
+module: other
+description: Auto-generated representation of the physical table PrjRetentionDetail.
+synonyms:
+- prjretentiondetail
+- prj retention detail
+header_attributes:
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from PrjRetentionDetail
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from PrjRetentionDetail
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from PrjRetentionDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from PrjRetentionDetail
+  retention_value:
+    display: Retentionvalue
+    type: decimal
+    required: false
+    description: Field RetentionValue from PrjRetentionDetail
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from PrjRetentionDetail
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from PrjRetentionDetail
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from PrjRetentionDetail

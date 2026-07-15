@@ -1,0 +1,36 @@
+concept: rma_master
+table: RmaMaster
+alias: rm
+fields:
+  rma_number: rm.RmaNumber
+  next_line: rm.NextLine
+  customer: rm.Customer
+  branch: rm.Branch
+  ship_address1: rm.ShipAddress1
+  ship_address2: rm.ShipAddress2
+  ship_address3: rm.ShipAddress3
+  ship_address3_loc: rm.ShipAddress3Loc
+  ship_address4: rm.ShipAddress4
+  ship_address5: rm.ShipAddress5
+  ship_postal_code: rm.ShipPostalCode
+  ship_to_gps_lat: rm.ShipToGpsLat
+  ship_to_gps_long: rm.ShipToGpsLong
+  ext_tax_code: rm.ExtTaxCode
+  telephone: rm.Telephone
+  fax: rm.Fax
+  printed_flag: rm.PrintedFlag
+  status: rm.Status
+  entry_date: rm.EntryDate
+  last_transact_date: rm.LastTransactDate
+  operator: rm.Operator
+  user_field1: rm.UserField1
+  customer_name: rm.CustomerName
+  multi_ship_code: rm.MultiShipCode
+  area: rm.Area
+  special_instrs: rm.SpecialInstrs
+  currency: rm.Currency
+  alternate_key: rm.AlternateKey
+  order_type: rm.OrderType
+  service_ticket: rm.ServiceTicket
+  contact: rm.Contact
+  language_code: rm.LanguageCode

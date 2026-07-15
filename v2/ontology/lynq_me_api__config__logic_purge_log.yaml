@@ -1,0 +1,33 @@
+concept: lynq_me_api__config__logic_purge_log
+display_name: Lynq ME API Config LogicPurgeLog
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_API_Config_LogicPurgeLog.
+synonyms:
+- lynq_me_api_config_logicpurgelog
+- lynq me api  config  logic purge log
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_ME_API_Config_LogicPurgeLog
+  log_type_id:
+    display: Logtypeid
+    type: decimal
+    required: false
+    description: Field LogTypeId from Lynq_ME_API_Config_LogicPurgeLog
+  created_date_utc:
+    display: Createddateutc
+    type: date
+    required: false
+    description: Field CreatedDateUTC from Lynq_ME_API_Config_LogicPurgeLog
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from Lynq_ME_API_Config_LogicPurgeLog
+  stack_trace:
+    display: Stacktrace
+    type: string
+    required: false
+    description: Field StackTrace from Lynq_ME_API_Config_LogicPurgeLog

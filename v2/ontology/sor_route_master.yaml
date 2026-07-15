@@ -1,0 +1,58 @@
+concept: sor_route_master
+display_name: SorRouteMaster
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorRouteMaster.
+synonyms:
+- sorroutemaster
+- sor route master
+header_attributes:
+  route_code:
+    display: Routecode
+    type: string
+    required: false
+    description: Field RouteCode from SorRouteMaster
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from SorRouteMaster
+  frequency:
+    display: Frequency
+    type: decimal
+    required: false
+    description: Field Frequency from SorRouteMaster
+  daily_frequency:
+    display: Dailyfrequency
+    type: decimal
+    required: false
+    description: Field DailyFrequency from SorRouteMaster
+  next_delivery_date:
+    display: Nextdeliverydate
+    type: date
+    required: false
+    description: Field NextDeliveryDate from SorRouteMaster
+  next_delivery_seq:
+    display: Nextdeliveryseq
+    type: decimal
+    required: false
+    description: Field NextDeliverySeq from SorRouteMaster
+  route_description:
+    display: Routedescription
+    type: string
+    required: false
+    description: Field RouteDescription from SorRouteMaster
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from SorRouteMaster
+  limiting_factor:
+    display: Limitingfactor
+    type: string
+    required: false
+    description: Field LimitingFactor from SorRouteMaster
+  transport:
+    display: Transport
+    type: string
+    required: false
+    description: Field Transport from SorRouteMaster

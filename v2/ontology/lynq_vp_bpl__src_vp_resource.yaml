@@ -1,0 +1,23 @@
+concept: lynq_vp_bpl__src_vp_resource
+display_name: Lynq VP BPL Src VPResource
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_BPL_Src_VPResource.
+synonyms:
+- lynq_vp_bpl_src_vpresource
+- lynq vp bpl  src vp resource
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_BPL_Src_VPResource
+  res_code:
+    display: Rescode
+    type: string
+    required: false
+    description: Field ResCode from Lynq_VP_BPL_Src_VPResource
+  res_desc:
+    display: Resdesc
+    type: string
+    required: false
+    description: Field ResDesc from Lynq_VP_BPL_Src_VPResource

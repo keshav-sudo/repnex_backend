@@ -1,0 +1,7 @@
+concept: iop_year_start
+table: IopYearStart
+alias: iys
+fields:
+  calendar: iys.Calendar
+  forecast_year: iys.ForecastYear
+  year_start_date: iys.YearStartDate

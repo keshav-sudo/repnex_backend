@@ -1,0 +1,11 @@
+concept: lct_tariff
+table: LctTariff
+alias: lt
+fields:
+  tariff_code: lt.TariffCode
+  lct_country_status: lt.LctCountryStatus
+  tariff_desc: lt.TariffDesc
+  tariff_class: lt.TariffClass
+  duty_rate1: lt.DutyRate1
+  duty_rate2: lt.DutyRate2
+  duty_rate3: lt.DutyRate3

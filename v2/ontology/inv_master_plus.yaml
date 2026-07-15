@@ -1,0 +1,58 @@
+concept: inv_master_plus
+display_name: InvMaster+
+module: inventory
+description: Auto-generated representation of the physical table InvMaster+.
+synonyms:
+- invmaster+
+- inv master plus
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvMaster+
+  size1:
+    display: Size1
+    type: string
+    required: false
+    description: Field Size1 from InvMaster+
+  style:
+    display: Style
+    type: string
+    required: false
+    description: Field Style from InvMaster+
+  loading_factor:
+    display: Loadingfactor
+    type: decimal
+    required: false
+    description: Field LoadingFactor from InvMaster+
+  look_ahead_window:
+    display: Lookaheadwindow
+    type: decimal
+    required: false
+    description: Field LookAheadWindow from InvMaster+
+  gsm:
+    display: Gsm
+    type: string
+    required: false
+    description: Field Gsm from InvMaster+
+  color:
+    display: Color
+    type: string
+    required: false
+    description: Field Color from InvMaster+
+  quality:
+    display: Quality
+    type: string
+    required: false
+    description: Field Quality from InvMaster+
+  stores:
+    display: Stores
+    type: string
+    required: false
+    description: Field Stores from InvMaster+
+  foam_type:
+    display: Foamtype
+    type: string
+    required: false
+    description: Field FoamType from InvMaster+

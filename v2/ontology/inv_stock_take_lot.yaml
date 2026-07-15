@@ -1,0 +1,68 @@
+concept: inv_stock_take_lot
+display_name: InvStockTakeLot
+module: inventory
+description: Auto-generated representation of the physical table InvStockTakeLot.
+synonyms:
+- invstocktakelot
+- inv stock take lot
+header_attributes:
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvStockTakeLot
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvStockTakeLot
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvStockTakeLot
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvStockTakeLot
+  orig_qty_on_hand:
+    display: Origqtyonhand
+    type: decimal
+    required: false
+    description: Field OrigQtyOnHand from InvStockTakeLot
+  qty_captured:
+    display: Qtycaptured
+    type: decimal
+    required: false
+    description: Field QtyCaptured from InvStockTakeLot
+  st_reference:
+    display: Streference
+    type: string
+    required: false
+    description: Field StReference from InvStockTakeLot
+  create_lot_flag:
+    display: Createlotflag
+    type: string
+    required: false
+    description: Field CreateLotFlag from InvStockTakeLot
+  create_expiry_flag:
+    display: Createexpiryflag
+    type: date
+    required: false
+    description: Field CreateExpiryFlag from InvStockTakeLot
+  lot_expiry_date:
+    display: Lotexpirydate
+    type: date
+    required: false
+    description: Field LotExpiryDate from InvStockTakeLot
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvStockTakeLot
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvStockTakeLot

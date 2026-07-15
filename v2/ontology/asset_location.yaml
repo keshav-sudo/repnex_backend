@@ -1,0 +1,28 @@
+concept: asset_location
+display_name: AssetLocation
+module: assets
+description: Auto-generated representation of the physical table AssetLocation.
+synonyms:
+- assetlocation
+- asset location
+header_attributes:
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from AssetLocation
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetLocation
+  count_in_progress:
+    display: Countinprogress
+    type: string
+    required: false
+    description: Field CountInProgress from AssetLocation
+  verify_reqd:
+    display: Verifyreqd
+    type: string
+    required: false
+    description: Field VerifyReqd from AssetLocation

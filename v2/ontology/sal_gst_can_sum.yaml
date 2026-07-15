@@ -1,0 +1,48 @@
+concept: sal_gst_can_sum
+display_name: SalGstCanSum
+module: other
+description: Auto-generated representation of the physical table SalGstCanSum.
+synonyms:
+- salgstcansum
+- sal gst can sum
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from SalGstCanSum
+  gl_month:
+    display: Glmonth
+    type: decimal
+    required: false
+    description: Field GlMonth from SalGstCanSum
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from SalGstCanSum
+  collect_exempt:
+    display: Collectexempt
+    type: string
+    required: false
+    description: Field CollectExempt from SalGstCanSum
+  ptd_exe_bef_reg:
+    display: Ptdexebefreg
+    type: decimal
+    required: false
+    description: Field PtdExeBefReg from SalGstCanSum
+  ptd_tot_inv_bef_rg:
+    display: Ptdtotinvbefrg
+    type: decimal
+    required: false
+    description: Field PtdTotInvBefRg from SalGstCanSum
+  tot_inv_this_reg:
+    display: Totinvthisreg
+    type: decimal
+    required: false
+    description: Field TotInvThisReg from SalGstCanSum
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from SalGstCanSum

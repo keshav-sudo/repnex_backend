@@ -1,0 +1,7 @@
+concept: asset_depr_var_annual
+table: AssetDeprVarAnnual
+alias: adva
+fields:
+  depreciation_code: adva.DepreciationCode
+  depreciation_year: adva.DepreciationYear
+  depn_pct: adva.DepnPct

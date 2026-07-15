@@ -1,0 +1,113 @@
+concept: sor_cancelled
+display_name: SorCancelled
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorCancelled.
+synonyms:
+- sorcancelled
+- sor cancelled
+header_attributes:
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SorCancelled
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from SorCancelled
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorCancelled
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorCancelled
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from SorCancelled
+  cancelled_value:
+    display: Cancelledvalue
+    type: decimal
+    required: false
+    description: Field CancelledValue from SorCancelled
+  reason:
+    display: Reason
+    type: string
+    required: false
+    description: Field Reason from SorCancelled
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorCancelled
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from SorCancelled
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SorCancelled
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SorCancelled
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from SorCancelled
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SorCancelled
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from SorCancelled
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorCancelled
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SorCancelled
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SorCancelled
+  order_qty:
+    display: Orderqty
+    type: decimal
+    required: false
+    description: Field OrderQty from SorCancelled
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from SorCancelled
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SorCancelled
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from SorCancelled

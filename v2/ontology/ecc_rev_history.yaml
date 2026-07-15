@@ -1,0 +1,53 @@
+concept: ecc_rev_history
+display_name: EccRevHistory
+module: other
+description: Auto-generated representation of the physical table EccRevHistory.
+synonyms:
+- eccrevhistory
+- ecc rev history
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from EccRevHistory
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from EccRevHistory
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from EccRevHistory
+  date_released:
+    display: Datereleased
+    type: date
+    required: false
+    description: Field DateReleased from EccRevHistory
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccRevHistory
+  jobs_on_hold:
+    display: Jobsonhold
+    type: string
+    required: false
+    description: Field JobsOnHold from EccRevHistory
+  job_hold_allocs:
+    display: Jobholdallocs
+    type: string
+    required: false
+    description: Field JobHoldAllocs from EccRevHistory
+  purch_on_hold:
+    display: Purchonhold
+    type: string
+    required: false
+    description: Field PurchOnHold from EccRevHistory
+  sales_on_hold:
+    display: Salesonhold
+    type: string
+    required: false
+    description: Field SalesOnHold from EccRevHistory

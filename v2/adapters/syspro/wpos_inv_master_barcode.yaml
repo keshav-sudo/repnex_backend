@@ -1,0 +1,11 @@
+concept: wpos_inv_master_barcode
+table: WposInvMasterBarcode
+alias: wimb
+fields:
+  stock_code: wimb.StockCode
+  bar_code: wimb.BarCode
+  warehouse: wimb.Warehouse
+  uom: wimb.Uom
+  lot: wimb.Lot
+  bin: wimb.Bin
+  serial: wimb.Serial

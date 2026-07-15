@@ -1,0 +1,22 @@
+concept: adm_signature_log
+table: AdmSignatureLog
+alias: asl
+fields:
+  transaction_id: asl.TransactionId
+  signature_date: asl.SignatureDate
+  signature_time: asl.SignatureTime
+  signature_line: asl.SignatureLine
+  operator: asl.Operator
+  status: asl.Status
+  log_only: asl.LogOnly
+  printed_flag: asl.PrintedFlag
+  computer_name: asl.ComputerName
+  program_name: asl.ProgramName
+  syspro_flag: asl.SysproFlag
+  table_name: asl.TableName
+  item_key: asl.ItemKey
+  transaction_qty: asl.TransactionQty
+  transaction_value: asl.TransactionValue
+  condition_name: asl.ConditionName
+  transaction_guid: asl.TransactionGuid
+  role: asl.Role

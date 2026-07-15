@@ -1,0 +1,23 @@
+concept: bom_res_mask_desc
+display_name: BomResMaskDesc
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomResMaskDesc.
+synonyms:
+- bomresmaskdesc
+- bom res mask desc
+header_attributes:
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from BomResMaskDesc
+  resource_mask:
+    display: Resourcemask
+    type: string
+    required: false
+    description: Field ResourceMask from BomResMaskDesc
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomResMaskDesc

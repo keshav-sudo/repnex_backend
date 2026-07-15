@@ -1,0 +1,9 @@
+concept: lynq_me__integration__sync__db_lock__log
+table: Lynq_ME_Integration_Sync_DbLock_Log
+alias: lmeisdll
+fields:
+  id: lmeisdll.ID
+  process_name: lmeisdll.ProcessName
+  process_activity: lmeisdll.ProcessActivity
+  result: lmeisdll.Result
+  log_time: lmeisdll.LogTime

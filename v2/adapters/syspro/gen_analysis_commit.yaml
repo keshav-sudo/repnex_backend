@@ -1,0 +1,23 @@
+concept: gen_analysis_commit
+table: GenAnalysisCommit
+alias: gac2
+fields:
+  company: gac2.Company
+  section_number: gac2.SectionNumber
+  section_code: gac2.SectionCode
+  commitment_type: gac2.CommitmentType
+  account_type: gac2.AccountType
+  prevcommitted: gac2.Prevcommitted
+  commitment1: gac2.Commitment1
+  commitment2: gac2.Commitment2
+  commitment3: gac2.Commitment3
+  commitment4: gac2.Commitment4
+  commitment5: gac2.Commitment5
+  commitment6: gac2.Commitment6
+  commitment7: gac2.Commitment7
+  commitment8: gac2.Commitment8
+  commitment9: gac2.Commitment9
+  commitment10: gac2.Commitment10
+  commitment11: gac2.Commitment11
+  commitment12: gac2.Commitment12
+  commitment13: gac2.Commitment13

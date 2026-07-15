@@ -1,0 +1,40 @@
+concept: qot_structure
+table: QotStructure
+alias: qs
+fields:
+  parent_part: qs.ParentPart
+  route: qs.Route
+  sequence_num: qs.SequenceNum
+  component: qs.Component
+  operation: qs.Operation
+  operation_flag: qs.OperationFlag
+  qty_per: qs.QtyPer
+  scrap_percentage: qs.ScrapPercentage
+  scrap_quantity: qs.ScrapQuantity
+  optional_flag: qs.OptionalFlag
+  print_flag: qs.PrintFlag
+  scrap_print: qs.ScrapPrint
+  reason_change: qs.ReasonChange
+  ref_designator: qs.RefDesignator
+  assembly_place: qs.AssemblyPlace
+  item_number: qs.ItemNumber
+  auto_narr_code: qs.AutoNarrCode
+  component_type: qs.ComponentType
+  kit_issue_flag: qs.KitIssueFlag
+  non_stock_com: qs.NonStockCom
+  margin_markup_pct: qs.MarginMarkupPct
+  manual_cost: qs.ManualCost
+  manual_cost_flag: qs.ManualCostFlag
+  warehouse: qs.Warehouse
+  com_version: qs.ComVersion
+  com_release: qs.ComRelease
+  fixed_qty_per_flag: qs.FixedQtyPerFlag
+  fixed_qty_per: qs.FixedQtyPer
+  uom_flag: qs.UomFlag
+  qty_per_ent: qs.QtyPerEnt
+  scrap_quantity_ent: qs.ScrapQuantityEnt
+  fixed_qty_per_ent: qs.FixedQtyPerEnt
+  product_code: qs.ProductCode
+  library_code: qs.LibraryCode
+  first_seq: qs.FirstSeq
+  second_seq: qs.SecondSeq

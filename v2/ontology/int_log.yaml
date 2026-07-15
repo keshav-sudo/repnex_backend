@@ -1,0 +1,63 @@
+concept: int_log
+display_name: IntLog
+module: other
+description: Auto-generated representation of the physical table IntLog.
+synonyms:
+- intlog
+- int log
+header_attributes:
+  log_type:
+    display: Logtype
+    type: string
+    required: false
+    description: Field LogType from IntLog
+  site_code:
+    display: Sitecode
+    type: string
+    required: false
+    description: Field SiteCode from IntLog
+  group_number:
+    display: Groupnumber
+    type: decimal
+    required: false
+    description: Field GroupNumber from IntLog
+  seq_code:
+    display: Seqcode
+    type: string
+    required: false
+    description: Field SeqCode from IntLog
+  file_name:
+    display: Filename
+    type: string
+    required: false
+    description: Field FileName from IntLog
+  file_export_date:
+    display: Fileexportdate
+    type: date
+    required: false
+    description: Field FileExportDate from IntLog
+  file_import_date:
+    display: Fileimportdate
+    type: date
+    required: false
+    description: Field FileImportDate from IntLog
+  file_update:
+    display: Fileupdate
+    type: date
+    required: false
+    description: Field FileUpdate from IntLog
+  sys_date_file_exp:
+    display: Sysdatefileexp
+    type: date
+    required: false
+    description: Field SysDateFileExp from IntLog
+  sys_date_log_crt:
+    display: Sysdatelogcrt
+    type: date
+    required: false
+    description: Field SysDateLogCrt from IntLog
+  export_version:
+    display: Exportversion
+    type: string
+    required: false
+    description: Field ExportVersion from IntLog

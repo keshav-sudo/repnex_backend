@@ -1,0 +1,18 @@
+concept: lynq_me__statistics_storage_accumulator
+table: Lynq_ME_StatisticsStorageAccumulator
+alias: lmessa
+fields:
+  id: lmessa.ID
+  key_id: lmessa.KeyID
+  nl0: lmessa.NL0
+  nl1: lmessa.NL1
+  nl2: lmessa.NL2
+  nl3: lmessa.NL3
+  nd0: lmessa.ND0
+  nd1: lmessa.ND1
+  nd2: lmessa.ND2
+  nd3: lmessa.ND3
+  nd4: lmessa.ND4
+  nd5: lmessa.ND5
+  nd6: lmessa.ND6
+  nd7: lmessa.ND7

@@ -1,0 +1,23 @@
+concept: eft_extract_det
+table: EftExtractDet
+alias: eed
+fields:
+  eft_batch: eed.EftBatch
+  trn_source: eed.TrnSource
+  supplier: eed.Supplier
+  entry_number: eed.EntryNumber
+  invoice: eed.Invoice
+  payment_value: eed.PaymentValue
+  currency_value: eed.CurrencyValue
+  post_currency: eed.PostCurrency
+  eft_number: eed.EftNumber
+  trn_date: eed.TrnDate
+  check_register: eed.CheckRegister
+  invoice_date: eed.InvoiceDate
+  invoice_type: eed.InvoiceType
+  reference: eed.Reference
+  cb_bank: eed.CbBank
+  cb_trn_year: eed.CbTrnYear
+  cb_trn_month: eed.CbTrnMonth
+  cb_trn_date: eed.CbTrnDate
+  cb_trn_time: eed.CbTrnTime

@@ -1,0 +1,68 @@
+concept: adm_b2_b_failed
+display_name: AdmB2BFailed
+module: administration
+description: Auto-generated representation of the physical table AdmB2BFailed.
+synonyms:
+- admb2bfailed
+- adm b2 b failed
+header_attributes:
+  business_object:
+    display: Businessobject
+    type: string
+    required: false
+    description: Field BusinessObject from AdmB2BFailed
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from AdmB2BFailed
+  document_date:
+    display: Documentdate
+    type: date
+    required: false
+    description: Field DocumentDate from AdmB2BFailed
+  document_time:
+    display: Documenttime
+    type: decimal
+    required: false
+    description: Field DocumentTime from AdmB2BFailed
+  xml_fail_filename:
+    display: Xmlfailfilename
+    type: string
+    required: false
+    description: Field XmlFailFilename from AdmB2BFailed
+  original_doc:
+    display: Originaldoc
+    type: string
+    required: false
+    description: Field OriginalDoc from AdmB2BFailed
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from AdmB2BFailed
+  msg_id:
+    display: Msgid
+    type: string
+    required: false
+    description: Field MsgId from AdmB2BFailed
+  actioned_flag:
+    display: Actionedflag
+    type: string
+    required: false
+    description: Field ActionedFlag from AdmB2BFailed
+  actioned_by:
+    display: Actionedby
+    type: string
+    required: false
+    description: Field ActionedBy from AdmB2BFailed
+  actioned_date:
+    display: Actioneddate
+    type: date
+    required: false
+    description: Field ActionedDate from AdmB2BFailed
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmB2BFailed

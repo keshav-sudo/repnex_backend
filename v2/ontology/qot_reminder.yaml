@@ -1,0 +1,23 @@
+concept: qot_reminder
+display_name: QotReminder
+module: other
+description: Auto-generated representation of the physical table QotReminder.
+synonyms:
+- qotreminder
+- qot reminder
+header_attributes:
+  reminder_flag:
+    display: Reminderflag
+    type: string
+    required: false
+    description: Field ReminderFlag from QotReminder
+  buyer_planner:
+    display: Buyerplanner
+    type: string
+    required: false
+    description: Field BuyerPlanner from QotReminder
+  non_stock_code:
+    display: Nonstockcode
+    type: string
+    required: false
+    description: Field NonStockCode from QotReminder

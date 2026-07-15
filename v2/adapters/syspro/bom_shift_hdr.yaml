@@ -1,0 +1,26 @@
+concept: bom_shift_hdr
+table: BomShiftHdr
+alias: bsh
+fields:
+  shift_code: bsh.ShiftCode
+  description: bsh.Description
+  rec_pattern: bsh.RecPattern
+  start_date: bsh.StartDate
+  end_type: bsh.EndType
+  end_date: bsh.EndDate
+  occur: bsh.Occur
+  machine_eff: bsh.MachineEff
+  daily_type: bsh.DailyType
+  day_occur: bsh.DayOccur
+  week_occur: bsh.WeekOccur
+  monthly_type: bsh.MonthlyType
+  month_day: bsh.MonthDay
+  month_occ_day: bsh.MonthOccDay
+  month_occur: bsh.MonthOccur
+  mth_daily_pattern: bsh.MthDailyPattern
+  year_occur: bsh.YearOccur
+  yearly_type: bsh.YearlyType
+  year_month: bsh.YearMonth
+  year_day: bsh.YearDay
+  year_occ_day: bsh.YearOccDay
+  year_daily_pattern: bsh.YearDailyPattern

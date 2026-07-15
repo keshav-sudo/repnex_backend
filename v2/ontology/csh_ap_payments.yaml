@@ -1,0 +1,283 @@
+concept: csh_ap_payments
+display_name: CshApPayments
+module: cashbook
+description: Auto-generated representation of the physical table CshApPayments.
+synonyms:
+- cshappayments
+- csh ap payments
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshApPayments
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshApPayments
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from CshApPayments
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from CshApPayments
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from CshApPayments
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from CshApPayments
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from CshApPayments
+  cheque:
+    display: Cheque
+    type: decimal
+    required: false
+    description: Field Cheque from CshApPayments
+  cheque_type:
+    display: Chequetype
+    type: string
+    required: false
+    description: Field ChequeType from CshApPayments
+  cheque_register:
+    display: Chequeregister
+    type: decimal
+    required: false
+    description: Field ChequeRegister from CshApPayments
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from CshApPayments
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from CshApPayments
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from CshApPayments
+  invoice_type:
+    display: Invoicetype
+    type: string
+    required: false
+    description: Field InvoiceType from CshApPayments
+  cheque_date:
+    display: Chequedate
+    type: date
+    required: false
+    description: Field ChequeDate from CshApPayments
+  neg_cheque_flag:
+    display: Negchequeflag
+    type: string
+    required: false
+    description: Field NegChequeFlag from CshApPayments
+  gross_value:
+    display: Grossvalue
+    type: decimal
+    required: false
+    description: Field GrossValue from CshApPayments
+  discount_value:
+    display: Discountvalue
+    type: decimal
+    required: false
+    description: Field DiscountValue from CshApPayments
+  net_value:
+    display: Netvalue
+    type: decimal
+    required: false
+    description: Field NetValue from CshApPayments
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from CshApPayments
+  rate_entry_time:
+    display: Rateentrytime
+    type: decimal
+    required: false
+    description: Field RateEntryTime from CshApPayments
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from CshApPayments
+  with_tax_value:
+    display: Withtaxvalue
+    type: decimal
+    required: false
+    description: Field WithTaxValue from CshApPayments
+  gross_loc_value:
+    display: Grosslocvalue
+    type: decimal
+    required: false
+    description: Field GrossLocValue from CshApPayments
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from CshApPayments
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from CshApPayments
+  post_conv_rate:
+    display: Postconvrate
+    type: decimal
+    required: false
+    description: Field PostConvRate from CshApPayments
+  post_mul_div:
+    display: Postmuldiv
+    type: string
+    required: false
+    description: Field PostMulDiv from CshApPayments
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from CshApPayments
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from CshApPayments
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from CshApPayments
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from CshApPayments
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from CshApPayments
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from CshApPayments
+  eft_batch:
+    display: Eftbatch
+    type: string
+    required: false
+    description: Field EftBatch from CshApPayments
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from CshApPayments
+  mult_cur_pay:
+    display: Multcurpay
+    type: string
+    required: false
+    description: Field MultCurPay from CshApPayments
+  pay_grs_value:
+    display: Paygrsvalue
+    type: decimal
+    required: false
+    description: Field PayGrsValue from CshApPayments
+  pay_net_value:
+    display: Paynetvalue
+    type: decimal
+    required: false
+    description: Field PayNetValue from CshApPayments
+  pay_with_value:
+    display: Paywithvalue
+    type: decimal
+    required: false
+    description: Field PayWithValue from CshApPayments
+  pay_dsc_value:
+    display: Paydscvalue
+    type: decimal
+    required: false
+    description: Field PayDscValue from CshApPayments
+  pay_currency:
+    display: Paycurrency
+    type: string
+    required: false
+    description: Field PayCurrency from CshApPayments
+  pay_conv_rate:
+    display: Payconvrate
+    type: decimal
+    required: false
+    description: Field PayConvRate from CshApPayments
+  pay_post_mul_div:
+    display: Paypostmuldiv
+    type: string
+    required: false
+    description: Field PayPostMulDiv from CshApPayments
+  group_payment:
+    display: Grouppayment
+    type: string
+    required: false
+    description: Field GroupPayment from CshApPayments
+  grp_grs_value:
+    display: Grpgrsvalue
+    type: decimal
+    required: false
+    description: Field GrpGrsValue from CshApPayments
+  grp_net_value:
+    display: Grpnetvalue
+    type: decimal
+    required: false
+    description: Field GrpNetValue from CshApPayments
+  grp_with_value:
+    display: Grpwithvalue
+    type: decimal
+    required: false
+    description: Field GrpWithValue from CshApPayments
+  grp_dsc_value:
+    display: Grpdscvalue
+    type: decimal
+    required: false
+    description: Field GrpDscValue from CshApPayments
+  grp_currency:
+    display: Grpcurrency
+    type: string
+    required: false
+    description: Field GrpCurrency from CshApPayments
+  grp_conv_rate:
+    display: Grpconvrate
+    type: decimal
+    required: false
+    description: Field GrpConvRate from CshApPayments
+  grp_post_mul_div:
+    display: Grppostmuldiv
+    type: string
+    required: false
+    description: Field GrpPostMulDiv from CshApPayments
+  group_inter_company:
+    display: Groupintercompany
+    type: string
+    required: false
+    description: Field GroupInterCompany from CshApPayments
+  secondary_sup_name:
+    display: Secondarysupname
+    type: string
+    required: false
+    description: Field SecondarySupName from CshApPayments
+  secondary_company:
+    display: Secondarycompany
+    type: string
+    required: false
+    description: Field SecondaryCompany from CshApPayments

@@ -1,0 +1,53 @@
+concept: qot_non_pur_prc
+display_name: QotNonPurPrc
+module: other
+description: Auto-generated representation of the physical table QotNonPurPrc.
+synonyms:
+- qotnonpurprc
+- qot non pur prc
+header_attributes:
+  non_stock_code:
+    display: Nonstockcode
+    type: string
+    required: false
+    description: Field NonStockCode from QotNonPurPrc
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from QotNonPurPrc
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from QotNonPurPrc
+  purchase_price:
+    display: Purchaseprice
+    type: decimal
+    required: false
+    description: Field PurchasePrice from QotNonPurPrc
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from QotNonPurPrc
+  exchange_fixed:
+    display: Exchangefixed
+    type: string
+    required: false
+    description: Field ExchangeFixed from QotNonPurPrc
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from QotNonPurPrc
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from QotNonPurPrc
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from QotNonPurPrc

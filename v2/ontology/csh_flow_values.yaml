@@ -1,0 +1,83 @@
+concept: csh_flow_values
+display_name: CshFlowValues
+module: cashbook
+description: Auto-generated representation of the physical table CshFlowValues.
+synonyms:
+- cshflowvalues
+- csh flow values
+header_attributes:
+  model:
+    display: Model
+    type: string
+    required: false
+    description: Field Model from CshFlowValues
+  collector:
+    display: Collector
+    type: decimal
+    required: false
+    description: Field Collector from CshFlowValues
+  inclusion:
+    display: Inclusion
+    type: decimal
+    required: false
+    description: Field Inclusion from CshFlowValues
+  value1:
+    display: Value1
+    type: decimal
+    required: false
+    description: Field Value1 from CshFlowValues
+  value2:
+    display: Value2
+    type: decimal
+    required: false
+    description: Field Value2 from CshFlowValues
+  value3:
+    display: Value3
+    type: decimal
+    required: false
+    description: Field Value3 from CshFlowValues
+  value4:
+    display: Value4
+    type: decimal
+    required: false
+    description: Field Value4 from CshFlowValues
+  value5:
+    display: Value5
+    type: decimal
+    required: false
+    description: Field Value5 from CshFlowValues
+  value6:
+    display: Value6
+    type: decimal
+    required: false
+    description: Field Value6 from CshFlowValues
+  value7:
+    display: Value7
+    type: decimal
+    required: false
+    description: Field Value7 from CshFlowValues
+  value8:
+    display: Value8
+    type: decimal
+    required: false
+    description: Field Value8 from CshFlowValues
+  value9:
+    display: Value9
+    type: decimal
+    required: false
+    description: Field Value9 from CshFlowValues
+  value10:
+    display: Value10
+    type: decimal
+    required: false
+    description: Field Value10 from CshFlowValues
+  value11:
+    display: Value11
+    type: decimal
+    required: false
+    description: Field Value11 from CshFlowValues
+  value12:
+    display: Value12
+    type: decimal
+    required: false
+    description: Field Value12 from CshFlowValues

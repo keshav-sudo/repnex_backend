@@ -1,0 +1,7 @@
+concept: sor_quote_list_type
+table: SorQuoteListType
+alias: sqlt
+fields:
+  quote_list_type: sqlt.QuoteListType
+  description: sqlt.Description
+  inactive_flag: sqlt.InactiveFlag

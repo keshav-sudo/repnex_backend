@@ -1,0 +1,48 @@
+concept: lynq_me__activity_extension
+display_name: Lynq ME ActivityExtension
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_ActivityExtension.
+synonyms:
+- lynq_me_activityextension
+- lynq me  activity extension
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_ME_ActivityExtension
+  activity_id:
+    display: Activityid
+    type: string
+    required: false
+    description: Field ActivityId from Lynq_ME_ActivityExtension
+  assigned_to:
+    display: Assignedto
+    type: string
+    required: false
+    description: Field AssignedTo from Lynq_ME_ActivityExtension
+  is_resolved:
+    display: Isresolved
+    type: string
+    required: false
+    description: Field IsResolved from Lynq_ME_ActivityExtension
+  created_date:
+    display: Createddate
+    type: date
+    required: false
+    description: Field CreatedDate from Lynq_ME_ActivityExtension
+  last_modified:
+    display: Lastmodified
+    type: date
+    required: false
+    description: Field LastModified from Lynq_ME_ActivityExtension
+  resolved_by:
+    display: Resolvedby
+    type: string
+    required: false
+    description: Field ResolvedBy from Lynq_ME_ActivityExtension
+  a_force_stat_sync:
+    display: Aforcestatsync
+    type: string
+    required: false
+    description: Field aForceStatSync from Lynq_ME_ActivityExtension

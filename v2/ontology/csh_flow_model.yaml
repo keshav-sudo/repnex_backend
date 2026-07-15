@@ -1,0 +1,48 @@
+concept: csh_flow_model
+display_name: CshFlowModel
+module: cashbook
+description: Auto-generated representation of the physical table CshFlowModel.
+synonyms:
+- cshflowmodel
+- csh flow model
+header_attributes:
+  model:
+    display: Model
+    type: string
+    required: false
+    description: Field Model from CshFlowModel
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CshFlowModel
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from CshFlowModel
+  convert_to_local:
+    display: Converttolocal
+    type: string
+    required: false
+    description: Field ConvertToLocal from CshFlowModel
+  cur_budget:
+    display: Curbudget
+    type: string
+    required: false
+    description: Field CurBudget from CshFlowModel
+  cur_budget_no:
+    display: Curbudgetno
+    type: decimal
+    required: false
+    description: Field CurBudgetNo from CshFlowModel
+  next_budget:
+    display: Nextbudget
+    type: string
+    required: false
+    description: Field NextBudget from CshFlowModel
+  next_budget_no:
+    display: Nextbudgetno
+    type: decimal
+    required: false
+    description: Field NextBudgetNo from CshFlowModel

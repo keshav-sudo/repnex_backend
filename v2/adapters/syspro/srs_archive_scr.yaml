@@ -1,0 +1,11 @@
+concept: srs_archive_scr
+table: SrsArchiveSCR
+alias: sascr
+fields:
+  archive_date: sascr.ArchiveDate
+  archive_time: sascr.ArchiveTime
+  operator: sascr.Operator
+  archive_id: sascr.ArchiveId
+  archive_type: sascr.ArchiveType
+  archive_file: sascr.ArchiveFile
+  det_document: sascr.DetDocument

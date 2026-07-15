@@ -1,0 +1,33 @@
+concept: csh_perm_entries
+table: CshPermEntries
+alias: cpe
+fields:
+  release_day: cpe.ReleaseDay
+  reference: cpe.Reference
+  entry_type: cpe.EntryType
+  expiry_date: cpe.ExpiryDate
+  entry_value: cpe.EntryValue
+  deposit_withdrawal: cpe.DepositWithdrawal
+  bank: cpe.Bank
+  gl_code: cpe.GlCode
+  company: cpe.Company
+  narration: cpe.Narration
+  posted_flag: cpe.PostedFlag
+  next_post_prd_mmyy: cpe.NextPostPrdMmyy
+  transfer_freq: cpe.TransferFreq
+  cumulative_value: cpe.CumulativeValue
+  num_entries_posted: cpe.NumEntriesPosted
+  description1: cpe.Description1
+  description2: cpe.Description2
+  description3: cpe.Description3
+  cum_value_local: cpe.CumValueLocal
+  currency: cpe.Currency
+  tax_value: cpe.TaxValue
+  tax_code: cpe.TaxCode
+  tax2_value: cpe.Tax2Value
+  tax_inclusive_flag: cpe.TaxInclusiveFlag
+  analysis_entry: cpe.AnalysisEntry
+  posted_flag_prev1: cpe.PostedFlagPrev1
+  posted_flag_prev2: cpe.PostedFlagPrev2
+  dimension_entry: cpe.DimensionEntry
+  dimension_line: cpe.DimensionLine

@@ -1,0 +1,16 @@
+concept: srs_archive_prm
+table: SrsArchivePRM
+alias: saprm
+fields:
+  archive_date: saprm.ArchiveDate
+  archive_time: saprm.ArchiveTime
+  operator: saprm.Operator
+  archive_id: saprm.ArchiveId
+  archive_type: saprm.ArchiveType
+  archive_file: saprm.ArchiveFile
+  branch: saprm.Branch
+  currency: saprm.Currency
+  customer_code: saprm.CustomerCode
+  customer_name: saprm.CustomerName
+  invoice_number: saprm.InvoiceNumber
+  system_date_cymd: saprm.SystemDateCymd

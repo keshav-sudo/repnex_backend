@@ -1,0 +1,8 @@
+concept: lynq_vp__access_entity_deny
+table: Lynq_VP_AccessEntityDeny
+alias: lvpaed
+fields:
+  id: lvpaed.ID
+  category_id: lvpaed.CategoryID
+  usr_id: lvpaed.UsrID
+  entity_id: lvpaed.EntityID

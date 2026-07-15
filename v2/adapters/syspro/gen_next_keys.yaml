@@ -1,0 +1,7 @@
+concept: gen_next_keys
+table: GenNextKeys
+alias: gnk
+fields:
+  company: gnk.Company
+  key_type: gnk.KeyType
+  key_next: gnk.KeyNext

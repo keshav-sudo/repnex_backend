@@ -1,0 +1,38 @@
+concept: ap_inter_co_chk_reg
+display_name: ApInterCoChkReg
+module: accounts_payable
+description: Auto-generated representation of the physical table ApInterCoChkReg.
+synonyms:
+- apintercochkreg
+- ap inter co chk reg
+header_attributes:
+  secondary_company:
+    display: Secondarycompany
+    type: string
+    required: false
+    description: Field SecondaryCompany from ApInterCoChkReg
+  ch_register:
+    display: Chregister
+    type: decimal
+    required: false
+    description: Field ChRegister from ApInterCoChkReg
+  primary_company:
+    display: Primarycompany
+    type: string
+    required: false
+    description: Field PrimaryCompany from ApInterCoChkReg
+  primary_ch_register:
+    display: Primarychregister
+    type: decimal
+    required: false
+    description: Field PrimaryChRegister from ApInterCoChkReg
+  primary_pay_number:
+    display: Primarypaynumber
+    type: string
+    required: false
+    description: Field PrimaryPayNumber from ApInterCoChkReg
+  check_no:
+    display: Checkno
+    type: decimal
+    required: false
+    description: Field CheckNo from ApInterCoChkReg

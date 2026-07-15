@@ -1,0 +1,14 @@
+concept: ar_inv_health_fix
+table: ArInvHealthFix
+alias: aihf1
+fields:
+  run_date_time: aihf1.RunDateTime
+  customer: aihf1.Customer
+  invoice: aihf1.Invoice
+  document_type: aihf1.DocumentType
+  balance_year: aihf1.BalanceYear
+  balance_month: aihf1.BalanceMonth
+  trx_amount_value: aihf1.TrxAmountValue
+  trx_amount_before: aihf1.TrxAmountBefore
+  trx_amount_after: aihf1.TrxAmountAfter
+  message: aihf1.Message

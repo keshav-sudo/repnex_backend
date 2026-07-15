@@ -1,0 +1,18 @@
+concept: tbl_supplier_class
+display_name: TblSupplierClass
+module: other
+description: Auto-generated representation of the physical table TblSupplierClass.
+synonyms:
+- tblsupplierclass
+- tbl supplier class
+header_attributes:
+  class:
+    display: Class
+    type: string
+    required: false
+    description: Field Class from TblSupplierClass
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblSupplierClass

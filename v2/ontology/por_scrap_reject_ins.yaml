@@ -1,0 +1,88 @@
+concept: por_scrap_reject_ins
+display_name: PorScrapRejectIns
+module: procurement
+description: Auto-generated representation of the physical table PorScrapRejectIns.
+synonyms:
+- porscraprejectins
+- por scrap reject ins
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from PorScrapRejectIns
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from PorScrapRejectIns
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from PorScrapRejectIns
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from PorScrapRejectIns
+  po_date:
+    display: Podate
+    type: date
+    required: false
+    description: Field PoDate from PorScrapRejectIns
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from PorScrapRejectIns
+  orig_line_due_date:
+    display: Origlineduedate
+    type: date
+    required: false
+    description: Field OrigLineDueDate from PorScrapRejectIns
+  scrap_reject_date:
+    display: Scraprejectdate
+    type: date
+    required: false
+    description: Field ScrapRejectDate from PorScrapRejectIns
+  reject_code:
+    display: Rejectcode
+    type: string
+    required: false
+    description: Field RejectCode from PorScrapRejectIns
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from PorScrapRejectIns
+  document_num:
+    display: Documentnum
+    type: string
+    required: false
+    description: Field DocumentNum from PorScrapRejectIns
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from PorScrapRejectIns
+  scrap_reject_flag:
+    display: Scraprejectflag
+    type: string
+    required: false
+    description: Field ScrapRejectFlag from PorScrapRejectIns
+  scrap_reject_qty:
+    display: Scraprejectqty
+    type: decimal
+    required: false
+    description: Field ScrapRejectQty from PorScrapRejectIns
+  po_line:
+    display: Poline
+    type: decimal
+    required: false
+    description: Field PoLine from PorScrapRejectIns
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from PorScrapRejectIns

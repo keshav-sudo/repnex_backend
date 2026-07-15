@@ -1,0 +1,31 @@
+concept: csh_jnl
+table: CshJnl
+alias: cj
+fields:
+  cb_trn_year: cj.CbTrnYear
+  cb_trn_month: cj.CbTrnMonth
+  journal: cj.Journal
+  entry_number: cj.EntryNumber
+  entry_type: cj.EntryType
+  adjustment_type: cj.AdjustmentType
+  cheque: cj.Cheque
+  reference: cj.Reference
+  trn_value: cj.TrnValue
+  trn_date: cj.TrnDate
+  bank: cj.Bank
+  narration: cj.Narration
+  post_value: cj.PostValue
+  post_currency: cj.PostCurrency
+  conv_rate: cj.ConvRate
+  mul_div: cj.MulDiv
+  account_cur: cj.AccountCur
+  acc_conv_rate: cj.AccConvRate
+  acc_mul_div: cj.AccMulDiv
+  triang_currency: cj.TriangCurrency
+  triang_rate: cj.TriangRate
+  triang_mul_div: cj.TriangMulDiv
+  cb_trn_date: cj.CbTrnDate
+  cb_trn_time: cj.CbTrnTime
+  payment_reference: cj.PaymentReference
+  effective_date: cj.EffectiveDate
+  effective_entry: cj.EffectiveEntry

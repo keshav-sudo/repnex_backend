@@ -1,0 +1,10 @@
+concept: wip_co_prd_mat_cost
+table: WipCoPrdMatCost
+alias: wcpmc
+fields:
+  job: wcpmc.Job
+  co_product_line: wcpmc.CoProductLine
+  stock_code: wcpmc.StockCode
+  warehouse: wcpmc.Warehouse
+  line: wcpmc.Line
+  pct_material_cost: wcpmc.PctMaterialCost

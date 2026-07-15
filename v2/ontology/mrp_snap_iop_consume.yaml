@@ -1,0 +1,43 @@
+concept: mrp_snap_iop_consume
+display_name: MrpSnapIopConsume
+module: mrp
+description: Auto-generated representation of the physical table MrpSnapIopConsume.
+synonyms:
+- mrpsnapiopconsume
+- mrp snap iop consume
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpSnapIopConsume
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpSnapIopConsume
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpSnapIopConsume
+  forecast_wh:
+    display: Forecastwh
+    type: string
+    required: false
+    description: Field ForecastWh from MrpSnapIopConsume
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from MrpSnapIopConsume
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from MrpSnapIopConsume
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from MrpSnapIopConsume

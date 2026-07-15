@@ -1,0 +1,8 @@
+concept: asset_master_plus
+table: AssetMaster+
+alias: am3
+fields:
+  asset: am3.Asset
+  label: am3.Label
+  color: am3.Color
+  kva_rating: am3.KvaRating

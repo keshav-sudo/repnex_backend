@@ -1,0 +1,9 @@
+concept: sor_detail_lpn
+table: SorDetailLpn
+alias: sdl1
+fields:
+  sales_order: sdl1.SalesOrder
+  sales_order_line: sdl1.SalesOrderLine
+  license_plate_number: sdl1.LicensePlateNumber
+  lpn_ship_qty: sdl1.LpnShipQty
+  bin: sdl1.Bin

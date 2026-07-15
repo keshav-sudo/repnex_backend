@@ -1,0 +1,18 @@
+concept: adm_archive_pending
+table: AdmArchivePending
+alias: aap
+fields:
+  archive_id: aap.ArchiveId
+  operator: aap.Operator
+  archive_date: aap.ArchiveDate
+  archive_time: aap.ArchiveTime
+  archive_folder: aap.ArchiveFolder
+  template_name: aap.TemplateName
+  schema_name: aap.SchemaName
+  lock_operator: aap.LockOperator
+  lock_date: aap.LockDate
+  lock_time: aap.LockTime
+  document_type: aap.DocumentType
+  archive_type: aap.ArchiveType
+  sql_error_file: aap.SqlErrorFile
+  document_id: aap.DocumentId

@@ -1,0 +1,6 @@
+concept: mrp_trial_lock_ctl
+table: MrpTrialLockCtl
+alias: mtlc
+fields:
+  ctl_flag: mtlc.CtlFlag
+  operator: mtlc.Operator

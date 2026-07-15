@@ -1,0 +1,33 @@
+concept: gtr_wh_matrix
+display_name: GtrWhMatrix
+module: other
+description: Auto-generated representation of the physical table GtrWhMatrix.
+synonyms:
+- gtrwhmatrix
+- gtr wh matrix
+header_attributes:
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from GtrWhMatrix
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from GtrWhMatrix
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from GtrWhMatrix
+  transf_cost_gl:
+    display: Transfcostgl
+    type: string
+    required: false
+    description: Field TransfCostGl from GtrWhMatrix
+  multiplier:
+    display: Multiplier
+    type: decimal
+    required: false
+    description: Field Multiplier from GtrWhMatrix

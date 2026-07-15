@@ -1,0 +1,11 @@
+concept: adm_b2_b_control
+table: AdmB2BControl
+alias: abbc
+fields:
+  ctl_flag: abbc.CtlFlag
+  next_b2_b_file: abbc.NextB2BFile
+  num_days_history: abbc.NumDaysHistory
+  history_path: abbc.HistoryPath
+  history_incoming: abbc.HistoryIncoming
+  history_outgoing: abbc.HistoryOutgoing
+  history_copy: abbc.HistoryCopy

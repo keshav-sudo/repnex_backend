@@ -1,0 +1,9 @@
+concept: ar_cust_stk_xref
+table: ArCustStkXref
+alias: acsx
+fields:
+  customer: acsx.Customer
+  cust_stock_code: acsx.CustStockCode
+  stock_code: acsx.StockCode
+  description: acsx.Description
+  long_desc: acsx.LongDesc

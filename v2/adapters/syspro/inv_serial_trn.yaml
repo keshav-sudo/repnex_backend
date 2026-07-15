@@ -1,0 +1,40 @@
+concept: inv_serial_trn
+table: InvSerialTrn
+alias: ist1
+fields:
+  stock_code: ist1.StockCode
+  serial: ist1.Serial
+  entry_date: ist1.EntryDate
+  line: ist1.Line
+  warehouse: ist1.Warehouse
+  detail_type: ist1.DetailType
+  revision_level: ist1.RevisionLevel
+  reference: ist1.Reference
+  job: ist1.Job
+  notation: ist1.Notation
+  cust_supplier: ist1.CustSupplier
+  cust_sup_name: ist1.CustSupName
+  trn_qty: ist1.TrnQty
+  trn_value: ist1.TrnValue
+  trn_warehouse: ist1.TrnWarehouse
+  new_location: ist1.NewLocation
+  purchase_order: ist1.PurchaseOrder
+  lot: ist1.Lot
+  version: ist1.Version
+  release: ist1.Release
+  trf_from_wh: ist1.TrfFromWh
+  unit_cost: ist1.UnitCost
+  bucket: ist1.Bucket
+  jnl_year: ist1.JnlYear
+  jnl_month: ist1.JnlMonth
+  journal: ist1.Journal
+  journal_line: ist1.JournalLine
+  sales_order: ist1.SalesOrder
+  dispatch_note: ist1.DispatchNote
+  invoice: ist1.Invoice
+  expiry_date: ist1.ExpiryDate
+  bin: ist1.Bin
+  trn_bin: ist1.TrnBin
+  prv_bin: ist1.PrvBin
+  sales_order_line: ist1.SalesOrderLine
+  dispatch_note_line: ist1.DispatchNoteLine

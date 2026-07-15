@@ -1,0 +1,7 @@
+concept: arc_control
+table: ArcControl
+alias: ac7
+fields:
+  archive_type: ac7.ArchiveType
+  next_archive: ac7.NextArchive
+  archive_path: ac7.ArchivePath

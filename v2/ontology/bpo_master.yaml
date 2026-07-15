@@ -1,0 +1,293 @@
+concept: bpo_master
+display_name: BpoMaster
+module: other
+description: Auto-generated representation of the physical table BpoMaster.
+synonyms:
+- bpomaster
+- bpo master
+header_attributes:
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from BpoMaster
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from BpoMaster
+  contract_type:
+    display: Contracttype
+    type: string
+    required: false
+    description: Field ContractType from BpoMaster
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from BpoMaster
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from BpoMaster
+  order_status:
+    display: Orderstatus
+    type: string
+    required: false
+    description: Field OrderStatus from BpoMaster
+  active_flag:
+    display: Activeflag
+    type: string
+    required: false
+    description: Field ActiveFlag from BpoMaster
+  cancelled_flag:
+    display: Cancelledflag
+    type: string
+    required: false
+    description: Field CancelledFlag from BpoMaster
+  order_entry_date:
+    display: Orderentrydate
+    type: date
+    required: false
+    description: Field OrderEntryDate from BpoMaster
+  order_expiry_date:
+    display: Orderexpirydate
+    type: date
+    required: false
+    description: Field OrderExpiryDate from BpoMaster
+  order_due_date:
+    display: Orderduedate
+    type: date
+    required: false
+    description: Field OrderDueDate from BpoMaster
+  date_last_doc_prt:
+    display: Datelastdocprt
+    type: date
+    required: false
+    description: Field DateLastDocPrt from BpoMaster
+  supplier_class:
+    display: Supplierclass
+    type: string
+    required: false
+    description: Field SupplierClass from BpoMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from BpoMaster
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from BpoMaster
+  payment_terms:
+    display: Paymentterms
+    type: string
+    required: false
+    description: Field PaymentTerms from BpoMaster
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from BpoMaster
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from BpoMaster
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from BpoMaster
+  tax_status:
+    display: Taxstatus
+    type: string
+    required: false
+    description: Field TaxStatus from BpoMaster
+  print_count:
+    display: Printcount
+    type: decimal
+    required: false
+    description: Field PrintCount from BpoMaster
+  amended_count:
+    display: Amendedcount
+    type: decimal
+    required: false
+    description: Field AmendedCount from BpoMaster
+  date_po_completed:
+    display: Datepocompleted
+    type: date
+    required: false
+    description: Field DatePoCompleted from BpoMaster
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from BpoMaster
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from BpoMaster
+  user_confirmation:
+    display: Userconfirmation
+    type: string
+    required: false
+    description: Field UserConfirmation from BpoMaster
+  edi_po_flag:
+    display: Edipoflag
+    type: string
+    required: false
+    description: Field EdiPoFlag from BpoMaster
+  edi_extract_flag:
+    display: Ediextractflag
+    type: string
+    required: false
+    description: Field EdiExtractFlag from BpoMaster
+  edi_action_flag:
+    display: Ediactionflag
+    type: string
+    required: false
+    description: Field EdiActionFlag from BpoMaster
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from BpoMaster
+  edi_confirmation:
+    display: Ediconfirmation
+    type: string
+    required: false
+    description: Field EdiConfirmation from BpoMaster
+  fax_document:
+    display: Faxdocument
+    type: string
+    required: false
+    description: Field FaxDocument from BpoMaster
+  delivery_name:
+    display: Deliveryname
+    type: string
+    required: false
+    description: Field DeliveryName from BpoMaster
+  delivery_addr1:
+    display: Deliveryaddr1
+    type: string
+    required: false
+    description: Field DeliveryAddr1 from BpoMaster
+  delivery_addr2:
+    display: Deliveryaddr2
+    type: string
+    required: false
+    description: Field DeliveryAddr2 from BpoMaster
+  delivery_addr3:
+    display: Deliveryaddr3
+    type: string
+    required: false
+    description: Field DeliveryAddr3 from BpoMaster
+  delivery_addr3_loc:
+    display: Deliveryaddr3Loc
+    type: string
+    required: false
+    description: Field DeliveryAddr3Loc from BpoMaster
+  delivery_addr4:
+    display: Deliveryaddr4
+    type: string
+    required: false
+    description: Field DeliveryAddr4 from BpoMaster
+  delivery_addr5:
+    display: Deliveryaddr5
+    type: string
+    required: false
+    description: Field DeliveryAddr5 from BpoMaster
+  postal_code:
+    display: Postalcode
+    type: string
+    required: false
+    description: Field PostalCode from BpoMaster
+  delivery_gps_lat:
+    display: Deliverygpslat
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLat from BpoMaster
+  delivery_gps_long:
+    display: Deliverygpslong
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLong from BpoMaster
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from BpoMaster
+  delivery_interval:
+    display: Deliveryinterval
+    type: string
+    required: false
+    description: Field DeliveryInterval from BpoMaster
+  frequency:
+    display: Frequency
+    type: decimal
+    required: false
+    description: Field Frequency from BpoMaster
+  interval_period:
+    display: Intervalperiod
+    type: decimal
+    required: false
+    description: Field IntervalPeriod from BpoMaster
+  day_of_week_month:
+    display: Dayofweekmonth
+    type: decimal
+    required: false
+    description: Field DayOfWeekMonth from BpoMaster
+  total_deliveries:
+    display: Totaldeliveries
+    type: decimal
+    required: false
+    description: Field TotalDeliveries from BpoMaster
+  release_days:
+    display: Releasedays
+    type: decimal
+    required: false
+    description: Field ReleaseDays from BpoMaster
+  total_releases_made:
+    display: Totalreleasesmade
+    type: decimal
+    required: false
+    description: Field TotalReleasesMade from BpoMaster
+  fixed_contract:
+    display: Fixedcontract
+    type: string
+    required: false
+    description: Field FixedContract from BpoMaster
+  standing_schedule:
+    display: Standingschedule
+    type: string
+    required: false
+    description: Field StandingSchedule from BpoMaster
+  order_firm_days:
+    display: Orderfirmdays
+    type: decimal
+    required: false
+    description: Field OrderFirmDays from BpoMaster
+  auto_voucher_reqd:
+    display: Autovoucherreqd
+    type: string
+    required: false
+    description: Field AutoVoucherReqd from BpoMaster
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from BpoMaster
+  auto_update_po:
+    display: Autoupdatepo
+    type: string
+    required: false
+    description: Field AutoUpdatePo from BpoMaster
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from BpoMaster

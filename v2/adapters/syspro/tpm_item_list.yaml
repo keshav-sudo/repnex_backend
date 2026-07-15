@@ -1,0 +1,7 @@
+concept: tpm_item_list
+table: TpmItemList
+alias: til
+fields:
+  promotion_code: til.PromotionCode
+  list_type: til.ListType
+  list_code: til.ListCode

@@ -1,0 +1,15 @@
+concept: mdn_detail_ser
+table: MdnDetailSer
+alias: mds
+fields:
+  dispatch_note: mds.DispatchNote
+  dispatch_note_line: mds.DispatchNoteLine
+  sales_order: mds.SalesOrder
+  sales_order_line: mds.SalesOrderLine
+  lot: mds.Lot
+  serial: mds.Serial
+  stock_qty_to_ship: mds.StockQtyToShip
+  qty_this_session: mds.QtyThisSession
+  new_expiry_date: mds.NewExpiryDate
+  new_scrap_date: mds.NewScrapDate
+  bin: mds.Bin

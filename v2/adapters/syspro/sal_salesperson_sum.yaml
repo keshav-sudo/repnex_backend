@@ -1,0 +1,32 @@
+concept: sal_salesperson_sum
+table: SalSalespersonSum
+alias: sss
+fields:
+  branch: sss.Branch
+  salesperson: sss.Salesperson
+  product_class: sss.ProductClass
+  order_type: sss.OrderType
+  ptd_sales: sss.PtdSales
+  ptd_cost: sss.PtdCost
+  ptd_qty: sss.PtdQty
+  ptd_mass: sss.PtdMass
+  mtd_sales1: sss.MtdSales1
+  mtd_sales2: sss.MtdSales2
+  mtd_sales3: sss.MtdSales3
+  mtd_cost1: sss.MtdCost1
+  mtd_cost2: sss.MtdCost2
+  mtd_cost3: sss.MtdCost3
+  mtd_qty1: sss.MtdQty1
+  mtd_qty2: sss.MtdQty2
+  mtd_qty3: sss.MtdQty3
+  mtd_mass1: sss.MtdMass1
+  mtd_mass2: sss.MtdMass2
+  mtd_mass3: sss.MtdMass3
+  ytd_sales: sss.YtdSales
+  ytd_cost: sss.YtdCost
+  ytd_qty: sss.YtdQty
+  ytd_mass: sss.YtdMass
+  prv_year_sales: sss.PrvYearSales
+  prv_year_cost: sss.PrvYearCost
+  prv_year_qty: sss.PrvYearQty
+  prv_year_mass: sss.PrvYearMass

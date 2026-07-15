@@ -1,0 +1,20 @@
+concept: bso_del_confirm
+table: BsoDelConfirm
+alias: bdc
+fields:
+  customer: bdc.Customer
+  customer_po_number: bdc.CustomerPoNumber
+  cust_stock_code: bdc.CustStockCode
+  delivery_date: bdc.DeliveryDate
+  line: bdc.Line
+  line_type: bdc.LineType
+  invoice: bdc.Invoice
+  quantity_del: bdc.QuantityDel
+  quantity_rec: bdc.QuantityRec
+  confirmed_flag: bdc.ConfirmedFlag
+  narration: bdc.Narration
+  posted_rel_mast: bdc.PostedRelMast
+  cume_delivered: bdc.CumeDelivered
+  cume_received: bdc.CumeReceived
+  del_note_num: bdc.DelNoteNum
+  dispatch_note: bdc.DispatchNote

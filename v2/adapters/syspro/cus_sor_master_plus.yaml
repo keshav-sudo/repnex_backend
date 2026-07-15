@@ -1,0 +1,9 @@
+concept: cus_sor_master_plus
+table: CusSorMaster+
+alias: csm
+fields:
+  sales_order: csm.SalesOrder
+  invoice_number: csm.InvoiceNumber
+  route: csm.Route
+  vehicle_code: csm.VehicleCode
+  region: csm.Region

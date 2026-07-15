@@ -1,0 +1,38 @@
+concept: lynq_me__activity__gen_log_state
+display_name: Lynq ME Activity GenLogState
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Activity_GenLogState.
+synonyms:
+- lynq_me_activity_genlogstate
+- lynq me  activity  gen log state
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_Activity_GenLogState
+  data_type:
+    display: Datatype
+    type: string
+    required: false
+    description: Field DataType from Lynq_ME_Activity_GenLogState
+  guid_id:
+    display: Guidid
+    type: string
+    required: false
+    description: Field GuidID from Lynq_ME_Activity_GenLogState
+  int_id:
+    display: Intid
+    type: decimal
+    required: false
+    description: Field IntID from Lynq_ME_Activity_GenLogState
+  time_stamp:
+    display: Timestamp
+    type: string
+    required: false
+    description: Field TimeStamp from Lynq_ME_Activity_GenLogState
+  gen_log_id:
+    display: Genlogid
+    type: decimal
+    required: false
+    description: Field GenLogID from Lynq_ME_Activity_GenLogState

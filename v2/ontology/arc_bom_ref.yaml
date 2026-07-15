@@ -1,0 +1,38 @@
+concept: arc_bom_ref
+display_name: ArcBomRef
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArcBomRef.
+synonyms:
+- arcbomref
+- arc bom ref
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ArcBomRef
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from ArcBomRef
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from ArcBomRef
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from ArcBomRef
+  archive_number:
+    display: Archivenumber
+    type: decimal
+    required: false
+    description: Field ArchiveNumber from ArcBomRef
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from ArcBomRef

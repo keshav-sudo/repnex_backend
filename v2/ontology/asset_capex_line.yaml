@@ -1,0 +1,238 @@
+concept: asset_capex_line
+display_name: AssetCapexLine
+module: assets
+description: Auto-generated representation of the physical table AssetCapexLine.
+synonyms:
+- assetcapexline
+- asset capex line
+header_attributes:
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from AssetCapexLine
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from AssetCapexLine
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetCapexLine
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetCapexLine
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetCapexLine
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetCapexLine
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetCapexLine
+  capex_type:
+    display: Capextype
+    type: string
+    required: false
+    description: Field CapexType from AssetCapexLine
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from AssetCapexLine
+  system_date:
+    display: Systemdate
+    type: date
+    required: false
+    description: Field SystemDate from AssetCapexLine
+  approval_status:
+    display: Approvalstatus
+    type: string
+    required: false
+    description: Field ApprovalStatus from AssetCapexLine
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AssetCapexLine
+  operator_approved:
+    display: Operatorapproved
+    type: string
+    required: false
+    description: Field OperatorApproved from AssetCapexLine
+  date_approved:
+    display: Dateapproved
+    type: date
+    required: false
+    description: Field DateApproved from AssetCapexLine
+  last_requisition:
+    display: Lastrequisition
+    type: string
+    required: false
+    description: Field LastRequisition from AssetCapexLine
+  last_purchase_order:
+    display: Lastpurchaseorder
+    type: string
+    required: false
+    description: Field LastPurchaseOrder from AssetCapexLine
+  last_job:
+    display: Lastjob
+    type: string
+    required: false
+    description: Field LastJob from AssetCapexLine
+  last_grn:
+    display: Lastgrn
+    type: string
+    required: false
+    description: Field LastGrn from AssetCapexLine
+  last_part_billing:
+    display: Lastpartbilling
+    type: string
+    required: false
+    description: Field LastPartBilling from AssetCapexLine
+  originator:
+    display: Originator
+    type: string
+    required: false
+    description: Field Originator from AssetCapexLine
+  start_year:
+    display: Startyear
+    type: decimal
+    required: false
+    description: Field StartYear from AssetCapexLine
+  start_period:
+    display: Startperiod
+    type: decimal
+    required: false
+    description: Field StartPeriod from AssetCapexLine
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from AssetCapexLine
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from AssetCapexLine
+  asset_qty:
+    display: Assetqty
+    type: decimal
+    required: false
+    description: Field AssetQty from AssetCapexLine
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from AssetCapexLine
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from AssetCapexLine
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from AssetCapexLine
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from AssetCapexLine
+  supplier2:
+    display: Supplier2
+    type: string
+    required: false
+    description: Field Supplier2 from AssetCapexLine
+  unit_cost2:
+    display: Unitcost2
+    type: decimal
+    required: false
+    description: Field UnitCost2 from AssetCapexLine
+  asset_qty2:
+    display: Assetqty2
+    type: decimal
+    required: false
+    description: Field AssetQty2 from AssetCapexLine
+  uom2:
+    display: Uom2
+    type: string
+    required: false
+    description: Field Uom2 from AssetCapexLine
+  exchange_rate2:
+    display: Exchangerate2
+    type: decimal
+    required: false
+    description: Field ExchangeRate2 from AssetCapexLine
+  currency2:
+    display: Currency2
+    type: string
+    required: false
+    description: Field Currency2 from AssetCapexLine
+  mul_div2:
+    display: Muldiv2
+    type: string
+    required: false
+    description: Field MulDiv2 from AssetCapexLine
+  supplier3:
+    display: Supplier3
+    type: string
+    required: false
+    description: Field Supplier3 from AssetCapexLine
+  unit_cost3:
+    display: Unitcost3
+    type: decimal
+    required: false
+    description: Field UnitCost3 from AssetCapexLine
+  asset_qty3:
+    display: Assetqty3
+    type: decimal
+    required: false
+    description: Field AssetQty3 from AssetCapexLine
+  uom3:
+    display: Uom3
+    type: string
+    required: false
+    description: Field Uom3 from AssetCapexLine
+  exchange_rate3:
+    display: Exchangerate3
+    type: decimal
+    required: false
+    description: Field ExchangeRate3 from AssetCapexLine
+  currency3:
+    display: Currency3
+    type: string
+    required: false
+    description: Field Currency3 from AssetCapexLine
+  mul_div3:
+    display: Muldiv3
+    type: string
+    required: false
+    description: Field MulDiv3 from AssetCapexLine
+  value_uncommitted:
+    display: Valueuncommitted
+    type: decimal
+    required: false
+    description: Field ValueUncommitted from AssetCapexLine
+  value_committed:
+    display: Valuecommitted
+    type: decimal
+    required: false
+    description: Field ValueCommitted from AssetCapexLine
+  value_spent:
+    display: Valuespent
+    type: decimal
+    required: false
+    description: Field ValueSpent from AssetCapexLine

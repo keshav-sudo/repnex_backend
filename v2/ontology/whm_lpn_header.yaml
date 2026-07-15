@@ -1,0 +1,78 @@
+concept: whm_lpn_header
+display_name: WhmLpnHeader
+module: other
+description: Auto-generated representation of the physical table WhmLpnHeader.
+synonyms:
+- whmlpnheader
+- whm lpn header
+header_attributes:
+  license_plate_number:
+    display: Licenseplatenumber
+    type: string
+    required: false
+    description: Field LicensePlateNumber from WhmLpnHeader
+  container:
+    display: Container
+    type: string
+    required: false
+    description: Field Container from WhmLpnHeader
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WhmLpnHeader
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WhmLpnHeader
+  created_date:
+    display: Createddate
+    type: date
+    required: false
+    description: Field CreatedDate from WhmLpnHeader
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WhmLpnHeader
+  on_hold:
+    display: Onhold
+    type: string
+    required: false
+    description: Field OnHold from WhmLpnHeader
+  hold_reason:
+    display: Holdreason
+    type: string
+    required: false
+    description: Field HoldReason from WhmLpnHeader
+  archived:
+    display: Archived
+    type: string
+    required: false
+    description: Field Archived from WhmLpnHeader
+  awaiting_putaway:
+    display: Awaitingputaway
+    type: string
+    required: false
+    description: Field AwaitingPutaway from WhmLpnHeader
+  in_transit:
+    display: Intransit
+    type: string
+    required: false
+    description: Field InTransit from WhmLpnHeader
+  in_stock_take:
+    display: Instocktake
+    type: string
+    required: false
+    description: Field InStockTake from WhmLpnHeader
+  full_status:
+    display: Fullstatus
+    type: string
+    required: false
+    description: Field FullStatus from WhmLpnHeader
+  parent_lpn:
+    display: Parentlpn
+    type: string
+    required: false
+    description: Field ParentLpn from WhmLpnHeader

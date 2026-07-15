@@ -1,0 +1,93 @@
+concept: ar_pay_history
+display_name: ArPayHistory
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArPayHistory.
+synonyms:
+- arpayhistory
+- ar pay history
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArPayHistory
+  pay_date:
+    display: Paydate
+    type: date
+    required: false
+    description: Field PayDate from ArPayHistory
+  cash_journal:
+    display: Cashjournal
+    type: decimal
+    required: false
+    description: Field CashJournal from ArPayHistory
+  jnl_entry:
+    display: Jnlentry
+    type: decimal
+    required: false
+    description: Field JnlEntry from ArPayHistory
+  pay_value:
+    display: Payvalue
+    type: decimal
+    required: false
+    description: Field PayValue from ArPayHistory
+  currency_flag:
+    display: Currencyflag
+    type: string
+    required: false
+    description: Field CurrencyFlag from ArPayHistory
+  cheque_reference:
+    display: Chequereference
+    type: string
+    required: false
+    description: Field ChequeReference from ArPayHistory
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from ArPayHistory
+  paym_year:
+    display: Paymyear
+    type: decimal
+    required: false
+    description: Field PaymYear from ArPayHistory
+  paym_month:
+    display: Paymmonth
+    type: decimal
+    required: false
+    description: Field PaymMonth from ArPayHistory
+  local_pay_value:
+    display: Localpayvalue
+    type: decimal
+    required: false
+    description: Field LocalPayValue from ArPayHistory
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ArPayHistory
+  collector:
+    display: Collector
+    type: string
+    required: false
+    description: Field Collector from ArPayHistory
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArPayHistory
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArPayHistory
+  collector_number_ar:
+    display: Collectornumberar
+    type: string
+    required: false
+    description: Field CollectorNumberAr from ArPayHistory
+  group_pay:
+    display: Grouppay
+    type: string
+    required: false
+    description: Field GroupPay from ArPayHistory

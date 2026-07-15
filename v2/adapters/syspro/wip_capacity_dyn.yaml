@@ -1,0 +1,13 @@
+concept: wip_capacity_dyn
+table: WipCapacityDyn
+alias: wcd
+fields:
+  work_centre: wcd.WorkCentre
+  profile_date: wcd.ProfileDate
+  source: wcd.Source
+  job: wcd.Job
+  operation: wcd.Operation
+  planned_capacity: wcd.PlannedCapacity
+  actual_capacity: wcd.ActualCapacity
+  complete: wcd.Complete
+  trial_load_flag: wcd.TrialLoadFlag

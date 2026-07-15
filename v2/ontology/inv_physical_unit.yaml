@@ -1,0 +1,43 @@
+concept: inv_physical_unit
+display_name: InvPhysicalUnit
+module: inventory
+description: Auto-generated representation of the physical table InvPhysicalUnit.
+synonyms:
+- invphysicalunit
+- inv physical unit
+header_attributes:
+  physical_unit:
+    display: Physicalunit
+    type: string
+    required: false
+    description: Field PhysicalUnit from InvPhysicalUnit
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvPhysicalUnit
+  unit_group:
+    display: Unitgroup
+    type: string
+    required: false
+    description: Field UnitGroup from InvPhysicalUnit
+  unit_type:
+    display: Unittype
+    type: string
+    required: false
+    description: Field UnitType from InvPhysicalUnit
+  base_code:
+    display: Basecode
+    type: string
+    required: false
+    description: Field BaseCode from InvPhysicalUnit
+  base_conv_fact:
+    display: Baseconvfact
+    type: decimal
+    required: false
+    description: Field BaseConvFact from InvPhysicalUnit
+  base_mul_div:
+    display: Basemuldiv
+    type: string
+    required: false
+    description: Field BaseMulDiv from InvPhysicalUnit

@@ -1,0 +1,53 @@
+concept: inv_stock_take_lpn
+display_name: InvStockTakeLpn
+module: inventory
+description: Auto-generated representation of the physical table InvStockTakeLpn.
+synonyms:
+- invstocktakelpn
+- inv stock take lpn
+header_attributes:
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvStockTakeLpn
+  license_plate_num:
+    display: Licenseplatenum
+    type: string
+    required: false
+    description: Field LicensePlateNum from InvStockTakeLpn
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvStockTakeLpn
+  orig_qty_on_hand:
+    display: Origqtyonhand
+    type: decimal
+    required: false
+    description: Field OrigQtyOnHand from InvStockTakeLpn
+  qty_captured:
+    display: Qtycaptured
+    type: decimal
+    required: false
+    description: Field QtyCaptured from InvStockTakeLpn
+  save_date:
+    display: Savedate
+    type: date
+    required: false
+    description: Field SaveDate from InvStockTakeLpn
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvStockTakeLpn
+  num_times_captured:
+    display: Numtimescaptured
+    type: decimal
+    required: false
+    description: Field NumTimesCaptured from InvStockTakeLpn
+  created_lpn_flag:
+    display: Createdlpnflag
+    type: string
+    required: false
+    description: Field CreatedLpnFlag from InvStockTakeLpn

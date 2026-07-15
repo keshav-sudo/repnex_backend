@@ -1,0 +1,9 @@
+concept: adm_form_validation
+table: AdmFormValidation
+alias: afv
+fields:
+  form_type: afv.FormType
+  field_name: afv.FieldName
+  item: afv.Item
+  description: afv.Description
+  default_item: afv.DefaultItem

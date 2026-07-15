@@ -1,0 +1,38 @@
+concept: lot_transactions
+table: LotTransactions
+alias: lt2
+fields:
+  stock_code: lt2.StockCode
+  warehouse: lt2.Warehouse
+  lot: lt2.Lot
+  bin: lt2.Bin
+  trn_date: lt2.TrnDate
+  line: lt2.Line
+  trn_type: lt2.TrnType
+  trn_quantity: lt2.TrnQuantity
+  trn_value: lt2.TrnValue
+  reference: lt2.Reference
+  customer: lt2.Customer
+  doc_type: lt2.DocType
+  invoice: lt2.Invoice
+  old_expiry_date: lt2.OldExpiryDate
+  sales_order: lt2.SalesOrder
+  new_expiry_date: lt2.NewExpiryDate
+  sales_order_line: lt2.SalesOrderLine
+  job: lt2.Job
+  new_warehouse: lt2.NewWarehouse
+  concession_num: lt2.ConcessionNum
+  source: lt2.Source
+  job_purch_order: lt2.JobPurchOrder
+  purchase_order_lin: lt2.PurchaseOrderLin
+  supplier: lt2.Supplier
+  narration: lt2.Narration
+  certificate: lt2.Certificate
+  dispatch_note: lt2.DispatchNote
+  unit_cost: lt2.UnitCost
+  bucket: lt2.Bucket
+  jnl_year: lt2.JnlYear
+  jnl_month: lt2.JnlMonth
+  journal: lt2.Journal
+  journal_line: lt2.JournalLine
+  rma_number: lt2.RmaNumber

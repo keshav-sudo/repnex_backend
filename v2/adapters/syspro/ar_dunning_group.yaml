@@ -1,0 +1,6 @@
+concept: ar_dunning_group
+table: ArDunningGroup
+alias: adg
+fields:
+  dunning_group: adg.DunningGroup
+  description: adg.Description

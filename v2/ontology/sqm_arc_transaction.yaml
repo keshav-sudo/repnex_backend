@@ -1,0 +1,78 @@
+concept: sqm_arc_transaction
+display_name: SqmArcTransaction
+module: other
+description: Auto-generated representation of the physical table SqmArcTransaction.
+synonyms:
+- sqmarctransaction
+- sqm arc transaction
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmArcTransaction
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmArcTransaction
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmArcTransaction
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SqmArcTransaction
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SqmArcTransaction
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from SqmArcTransaction
+  trn_qty:
+    display: Trnqty
+    type: decimal
+    required: false
+    description: Field TrnQty from SqmArcTransaction
+  accept_qty:
+    display: Acceptqty
+    type: decimal
+    required: false
+    description: Field AcceptQty from SqmArcTransaction
+  reject_qty:
+    display: Rejectqty
+    type: decimal
+    required: false
+    description: Field RejectQty from SqmArcTransaction
+  inspector_code:
+    display: Inspectorcode
+    type: string
+    required: false
+    description: Field InspectorCode from SqmArcTransaction
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from SqmArcTransaction
+  sample_number:
+    display: Samplenumber
+    type: decimal
+    required: false
+    description: Field SampleNumber from SqmArcTransaction
+  sample_test:
+    display: Sampletest
+    type: decimal
+    required: false
+    description: Field SampleTest from SqmArcTransaction
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from SqmArcTransaction

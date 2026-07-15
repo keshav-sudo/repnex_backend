@@ -1,0 +1,563 @@
+concept: ap_control
+display_name: ApControl
+module: accounts_payable
+description: Auto-generated representation of the physical table ApControl.
+synonyms:
+- apcontrol
+- ap control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from ApControl
+  opening_balance1:
+    display: Openingbalance1
+    type: decimal
+    required: false
+    description: Field OpeningBalance1 from ApControl
+  opening_balance2:
+    display: Openingbalance2
+    type: decimal
+    required: false
+    description: Field OpeningBalance2 from ApControl
+  opening_balance3:
+    display: Openingbalance3
+    type: decimal
+    required: false
+    description: Field OpeningBalance3 from ApControl
+  mtd_invoices1:
+    display: Mtdinvoices1
+    type: decimal
+    required: false
+    description: Field MtdInvoices1 from ApControl
+  mtd_invoices2:
+    display: Mtdinvoices2
+    type: decimal
+    required: false
+    description: Field MtdInvoices2 from ApControl
+  mtd_invoices3:
+    display: Mtdinvoices3
+    type: decimal
+    required: false
+    description: Field MtdInvoices3 from ApControl
+  mtd_debit1:
+    display: Mtddebit1
+    type: decimal
+    required: false
+    description: Field MtdDebit1 from ApControl
+  mtd_debit2:
+    display: Mtddebit2
+    type: decimal
+    required: false
+    description: Field MtdDebit2 from ApControl
+  mtd_debit3:
+    display: Mtddebit3
+    type: decimal
+    required: false
+    description: Field MtdDebit3 from ApControl
+  mtd_credit1:
+    display: Mtdcredit1
+    type: decimal
+    required: false
+    description: Field MtdCredit1 from ApControl
+  mtd_credit2:
+    display: Mtdcredit2
+    type: decimal
+    required: false
+    description: Field MtdCredit2 from ApControl
+  mtd_credit3:
+    display: Mtdcredit3
+    type: decimal
+    required: false
+    description: Field MtdCredit3 from ApControl
+  mtd_adjustment1:
+    display: Mtdadjustment1
+    type: decimal
+    required: false
+    description: Field MtdAdjustment1 from ApControl
+  mtd_adjustment2:
+    display: Mtdadjustment2
+    type: decimal
+    required: false
+    description: Field MtdAdjustment2 from ApControl
+  mtd_adjustment3:
+    display: Mtdadjustment3
+    type: decimal
+    required: false
+    description: Field MtdAdjustment3 from ApControl
+  mtd_disburse1:
+    display: Mtddisburse1
+    type: decimal
+    required: false
+    description: Field MtdDisburse1 from ApControl
+  mtd_disburse2:
+    display: Mtddisburse2
+    type: decimal
+    required: false
+    description: Field MtdDisburse2 from ApControl
+  mtd_disburse3:
+    display: Mtddisburse3
+    type: decimal
+    required: false
+    description: Field MtdDisburse3 from ApControl
+  mtd_error_cor1:
+    display: Mtderrorcor1
+    type: decimal
+    required: false
+    description: Field MtdErrorCor1 from ApControl
+  mtd_error_cor2:
+    display: Mtderrorcor2
+    type: decimal
+    required: false
+    description: Field MtdErrorCor2 from ApControl
+  mtd_error_cor3:
+    display: Mtderrorcor3
+    type: decimal
+    required: false
+    description: Field MtdErrorCor3 from ApControl
+  cur_balance1:
+    display: Curbalance1
+    type: decimal
+    required: false
+    description: Field CurBalance1 from ApControl
+  cur_balance2:
+    display: Curbalance2
+    type: decimal
+    required: false
+    description: Field CurBalance2 from ApControl
+  cur_balance3:
+    display: Curbalance3
+    type: decimal
+    required: false
+    description: Field CurBalance3 from ApControl
+  fin_period:
+    display: Finperiod
+    type: decimal
+    required: false
+    description: Field FinPeriod from ApControl
+  fin_year:
+    display: Finyear
+    type: decimal
+    required: false
+    description: Field FinYear from ApControl
+  next_ap_jnl:
+    display: Nextapjnl
+    type: decimal
+    required: false
+    description: Field NextApJnl from ApControl
+  pr_next_ap_jnl:
+    display: Prnextapjnl
+    type: decimal
+    required: false
+    description: Field PrNextApJnl from ApControl
+  next_cheque_reg:
+    display: Nextchequereg
+    type: decimal
+    required: false
+    description: Field NextChequeReg from ApControl
+  pr_next_cheque_reg:
+    display: Prnextchequereg
+    type: decimal
+    required: false
+    description: Field PrNextChequeReg from ApControl
+  last_extract_date:
+    display: Lastextractdate
+    type: date
+    required: false
+    description: Field LastExtractDate from ApControl
+  low_unp_jnl_year:
+    display: Lowunpjnlyear
+    type: decimal
+    required: false
+    description: Field LowUnpJnlYear from ApControl
+  low_unp_jnl_month:
+    display: Lowunpjnlmonth
+    type: decimal
+    required: false
+    description: Field LowUnpJnlMonth from ApControl
+  low_unp_exp_jnl:
+    display: Lowunpexpjnl
+    type: decimal
+    required: false
+    description: Field LowUnpExpJnl from ApControl
+  unp_exp_year:
+    display: Unpexpyear
+    type: decimal
+    required: false
+    description: Field UnpExpYear from ApControl
+  unp_exp_period:
+    display: Unpexpperiod
+    type: decimal
+    required: false
+    description: Field UnpExpPeriod from ApControl
+  unp_disp_year:
+    display: Unpdispyear
+    type: decimal
+    required: false
+    description: Field UnpDispYear from ApControl
+  unp_disp_period:
+    display: Unpdispperiod
+    type: decimal
+    required: false
+    description: Field UnpDispPeriod from ApControl
+  cur_yr_mth_stat1:
+    display: Curyrmthstat1
+    type: string
+    required: false
+    description: Field CurYrMthStat1 from ApControl
+  cur_yr_mth_stat2:
+    display: Curyrmthstat2
+    type: string
+    required: false
+    description: Field CurYrMthStat2 from ApControl
+  cur_yr_mth_stat3:
+    display: Curyrmthstat3
+    type: string
+    required: false
+    description: Field CurYrMthStat3 from ApControl
+  cur_yr_mth_stat4:
+    display: Curyrmthstat4
+    type: string
+    required: false
+    description: Field CurYrMthStat4 from ApControl
+  cur_yr_mth_stat5:
+    display: Curyrmthstat5
+    type: string
+    required: false
+    description: Field CurYrMthStat5 from ApControl
+  cur_yr_mth_stat6:
+    display: Curyrmthstat6
+    type: string
+    required: false
+    description: Field CurYrMthStat6 from ApControl
+  cur_yr_mth_stat7:
+    display: Curyrmthstat7
+    type: string
+    required: false
+    description: Field CurYrMthStat7 from ApControl
+  cur_yr_mth_stat8:
+    display: Curyrmthstat8
+    type: string
+    required: false
+    description: Field CurYrMthStat8 from ApControl
+  cur_yr_mth_stat9:
+    display: Curyrmthstat9
+    type: string
+    required: false
+    description: Field CurYrMthStat9 from ApControl
+  cur_yr_mth_stat10:
+    display: Curyrmthstat10
+    type: string
+    required: false
+    description: Field CurYrMthStat10 from ApControl
+  cur_yr_mth_stat11:
+    display: Curyrmthstat11
+    type: string
+    required: false
+    description: Field CurYrMthStat11 from ApControl
+  cur_yr_mth_stat12:
+    display: Curyrmthstat12
+    type: string
+    required: false
+    description: Field CurYrMthStat12 from ApControl
+  cur_yr_mth_stat13:
+    display: Curyrmthstat13
+    type: string
+    required: false
+    description: Field CurYrMthStat13 from ApControl
+  cur_yr_mth_end1:
+    display: Curyrmthend1
+    type: date
+    required: false
+    description: Field CurYrMthEnd1 from ApControl
+  cur_yr_mth_end2:
+    display: Curyrmthend2
+    type: date
+    required: false
+    description: Field CurYrMthEnd2 from ApControl
+  cur_yr_mth_end3:
+    display: Curyrmthend3
+    type: date
+    required: false
+    description: Field CurYrMthEnd3 from ApControl
+  cur_yr_mth_end4:
+    display: Curyrmthend4
+    type: date
+    required: false
+    description: Field CurYrMthEnd4 from ApControl
+  cur_yr_mth_end5:
+    display: Curyrmthend5
+    type: date
+    required: false
+    description: Field CurYrMthEnd5 from ApControl
+  cur_yr_mth_end6:
+    display: Curyrmthend6
+    type: date
+    required: false
+    description: Field CurYrMthEnd6 from ApControl
+  cur_yr_mth_end7:
+    display: Curyrmthend7
+    type: date
+    required: false
+    description: Field CurYrMthEnd7 from ApControl
+  cur_yr_mth_end8:
+    display: Curyrmthend8
+    type: date
+    required: false
+    description: Field CurYrMthEnd8 from ApControl
+  cur_yr_mth_end9:
+    display: Curyrmthend9
+    type: date
+    required: false
+    description: Field CurYrMthEnd9 from ApControl
+  cur_yr_mth_end10:
+    display: Curyrmthend10
+    type: date
+    required: false
+    description: Field CurYrMthEnd10 from ApControl
+  cur_yr_mth_end11:
+    display: Curyrmthend11
+    type: date
+    required: false
+    description: Field CurYrMthEnd11 from ApControl
+  cur_yr_mth_end12:
+    display: Curyrmthend12
+    type: date
+    required: false
+    description: Field CurYrMthEnd12 from ApControl
+  cur_yr_mth_end13:
+    display: Curyrmthend13
+    type: date
+    required: false
+    description: Field CurYrMthEnd13 from ApControl
+  prv_yr_mth_stat1:
+    display: Prvyrmthstat1
+    type: string
+    required: false
+    description: Field PrvYrMthStat1 from ApControl
+  prv_yr_mth_stat2:
+    display: Prvyrmthstat2
+    type: string
+    required: false
+    description: Field PrvYrMthStat2 from ApControl
+  prv_yr_mth_stat3:
+    display: Prvyrmthstat3
+    type: string
+    required: false
+    description: Field PrvYrMthStat3 from ApControl
+  prv_yr_mth_stat4:
+    display: Prvyrmthstat4
+    type: string
+    required: false
+    description: Field PrvYrMthStat4 from ApControl
+  prv_yr_mth_stat5:
+    display: Prvyrmthstat5
+    type: string
+    required: false
+    description: Field PrvYrMthStat5 from ApControl
+  prv_yr_mth_stat6:
+    display: Prvyrmthstat6
+    type: string
+    required: false
+    description: Field PrvYrMthStat6 from ApControl
+  prv_yr_mth_stat7:
+    display: Prvyrmthstat7
+    type: string
+    required: false
+    description: Field PrvYrMthStat7 from ApControl
+  prv_yr_mth_stat8:
+    display: Prvyrmthstat8
+    type: string
+    required: false
+    description: Field PrvYrMthStat8 from ApControl
+  prv_yr_mth_stat9:
+    display: Prvyrmthstat9
+    type: string
+    required: false
+    description: Field PrvYrMthStat9 from ApControl
+  prv_yr_mth_stat10:
+    display: Prvyrmthstat10
+    type: string
+    required: false
+    description: Field PrvYrMthStat10 from ApControl
+  prv_yr_mth_stat11:
+    display: Prvyrmthstat11
+    type: string
+    required: false
+    description: Field PrvYrMthStat11 from ApControl
+  prv_yr_mth_stat12:
+    display: Prvyrmthstat12
+    type: string
+    required: false
+    description: Field PrvYrMthStat12 from ApControl
+  prv_yr_mth_stat13:
+    display: Prvyrmthstat13
+    type: string
+    required: false
+    description: Field PrvYrMthStat13 from ApControl
+  prv_yr_mth_end1:
+    display: Prvyrmthend1
+    type: date
+    required: false
+    description: Field PrvYrMthEnd1 from ApControl
+  prv_yr_mth_end2:
+    display: Prvyrmthend2
+    type: date
+    required: false
+    description: Field PrvYrMthEnd2 from ApControl
+  prv_yr_mth_end3:
+    display: Prvyrmthend3
+    type: date
+    required: false
+    description: Field PrvYrMthEnd3 from ApControl
+  prv_yr_mth_end4:
+    display: Prvyrmthend4
+    type: date
+    required: false
+    description: Field PrvYrMthEnd4 from ApControl
+  prv_yr_mth_end5:
+    display: Prvyrmthend5
+    type: date
+    required: false
+    description: Field PrvYrMthEnd5 from ApControl
+  prv_yr_mth_end6:
+    display: Prvyrmthend6
+    type: date
+    required: false
+    description: Field PrvYrMthEnd6 from ApControl
+  prv_yr_mth_end7:
+    display: Prvyrmthend7
+    type: date
+    required: false
+    description: Field PrvYrMthEnd7 from ApControl
+  prv_yr_mth_end8:
+    display: Prvyrmthend8
+    type: date
+    required: false
+    description: Field PrvYrMthEnd8 from ApControl
+  prv_yr_mth_end9:
+    display: Prvyrmthend9
+    type: date
+    required: false
+    description: Field PrvYrMthEnd9 from ApControl
+  prv_yr_mth_end10:
+    display: Prvyrmthend10
+    type: date
+    required: false
+    description: Field PrvYrMthEnd10 from ApControl
+  prv_yr_mth_end11:
+    display: Prvyrmthend11
+    type: date
+    required: false
+    description: Field PrvYrMthEnd11 from ApControl
+  prv_yr_mth_end12:
+    display: Prvyrmthend12
+    type: date
+    required: false
+    description: Field PrvYrMthEnd12 from ApControl
+  prv_yr_mth_end13:
+    display: Prvyrmthend13
+    type: date
+    required: false
+    description: Field PrvYrMthEnd13 from ApControl
+  ytd_merch_val:
+    display: Ytdmerchval
+    type: decimal
+    required: false
+    description: Field YtdMerchVal from ApControl
+  ytd_freight_val:
+    display: Ytdfreightval
+    type: decimal
+    required: false
+    description: Field YtdFreightVal from ApControl
+  ytd_other_val:
+    display: Ytdotherval
+    type: decimal
+    required: false
+    description: Field YtdOtherVal from ApControl
+  ytd_disburse_val:
+    display: Ytddisburseval
+    type: decimal
+    required: false
+    description: Field YtdDisburseVal from ApControl
+  pr_ytd_merch_val:
+    display: Prytdmerchval
+    type: decimal
+    required: false
+    description: Field PrYtdMerchVal from ApControl
+  pr_ytd_freight_val:
+    display: Prytdfreightval
+    type: decimal
+    required: false
+    description: Field PrYtdFreightVal from ApControl
+  pr_ytd_other_val:
+    display: Prytdotherval
+    type: decimal
+    required: false
+    description: Field PrYtdOtherVal from ApControl
+  pr_ytd_dsb_val:
+    display: Prytddsbval
+    type: decimal
+    required: false
+    description: Field PrYtdDsbVal from ApControl
+  ytd_supplier_tax:
+    display: Ytdsuppliertax
+    type: decimal
+    required: false
+    description: Field YtdSupplierTax from ApControl
+  next_payment_number:
+    display: Nextpaymentnumber
+    type: decimal
+    required: false
+    description: Field NextPaymentNumber from ApControl
+  mtd_revaluations1:
+    display: Mtdrevaluations1
+    type: decimal
+    required: false
+    description: Field MtdRevaluations1 from ApControl
+  mtd_revaluations2:
+    display: Mtdrevaluations2
+    type: decimal
+    required: false
+    description: Field MtdRevaluations2 from ApControl
+  mtd_revaluations3:
+    display: Mtdrevaluations3
+    type: decimal
+    required: false
+    description: Field MtdRevaluations3 from ApControl
+  next_supplier:
+    display: Nextsupplier
+    type: string
+    required: false
+    description: Field NextSupplier from ApControl
+  low_unp_jnl_upd_year:
+    display: Lowunpjnlupdyear
+    type: decimal
+    required: false
+    description: Field LowUnpJnlUpdYear from ApControl
+  low_unp_jnl_upd_month:
+    display: Lowunpjnlupdmonth
+    type: decimal
+    required: false
+    description: Field LowUnpJnlUpdMonth from ApControl
+  low_unp_jnl_upd:
+    display: Lowunpjnlupd
+    type: decimal
+    required: false
+    description: Field LowUnpJnlUpd from ApControl
+  unp_exp_upd_year:
+    display: Unpexpupdyear
+    type: decimal
+    required: false
+    description: Field UnpExpUpdYear from ApControl
+  unp_exp_upd_period:
+    display: Unpexpupdperiod
+    type: decimal
+    required: false
+    description: Field UnpExpUpdPeriod from ApControl
+  auto_voucher_next:
+    display: Autovouchernext
+    type: decimal
+    required: false
+    description: Field AutoVoucherNext from ApControl

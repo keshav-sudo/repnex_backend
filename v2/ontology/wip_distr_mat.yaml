@@ -1,0 +1,143 @@
+concept: wip_distr_mat
+display_name: WipDistrMat
+module: work_in_progress
+description: Auto-generated representation of the physical table WipDistrMat.
+synonyms:
+- wipdistrmat
+- wip distr mat
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from WipDistrMat
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from WipDistrMat
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from WipDistrMat
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipDistrMat
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from WipDistrMat
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from WipDistrMat
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipDistrMat
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipDistrMat
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from WipDistrMat
+  distribution_value:
+    display: Distributionvalue
+    type: decimal
+    required: false
+    description: Field DistributionValue from WipDistrMat
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from WipDistrMat
+  gl_entries_group:
+    display: Glentriesgroup
+    type: decimal
+    required: false
+    description: Field GlEntriesGroup from WipDistrMat
+  part_bill_zoom_key:
+    display: Partbillzoomkey
+    type: string
+    required: false
+    description: Field PartBillZoomKey from WipDistrMat
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from WipDistrMat
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipDistrMat
+  analysis_entry:
+    display: Analysisentry
+    type: decimal
+    required: false
+    description: Field AnalysisEntry from WipDistrMat
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from WipDistrMat
+  gl_int_printed:
+    display: Glintprinted
+    type: string
+    required: false
+    description: Field GlIntPrinted from WipDistrMat
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from WipDistrMat
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from WipDistrMat
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from WipDistrMat
+  gl_int_level:
+    display: Glintlevel
+    type: string
+    required: false
+    description: Field GlIntLevel from WipDistrMat
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipDistrMat
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from WipDistrMat
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from WipDistrMat
+  service_gl_desc:
+    display: Servicegldesc
+    type: string
+    required: false
+    description: Field ServiceGlDesc from WipDistrMat
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from WipDistrMat

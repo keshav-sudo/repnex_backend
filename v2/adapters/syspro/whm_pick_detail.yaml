@@ -1,0 +1,37 @@
+concept: whm_pick_detail
+table: WhmPickDetail
+alias: wpd
+fields:
+  pick_number: wpd.PickNumber
+  pick_line: wpd.PickLine
+  sales_order: wpd.SalesOrder
+  sales_order_line: wpd.SalesOrderLine
+  pick_line_status: wpd.PickLineStatus
+  qty_to_pick: wpd.QtyToPick
+  qty_picked: wpd.QtyPicked
+  stock_code: wpd.StockCode
+  bin: wpd.Bin
+  lot: wpd.Lot
+  serial: wpd.Serial
+  line_start_date: wpd.LineStartDate
+  line_start_time: wpd.LineStartTime
+  line_comp_date: wpd.LineCompDate
+  line_comp_time: wpd.LineCompTime
+  destination_bin: wpd.DestinationBin
+  picker: wpd.Picker
+  destination_whs: wpd.DestinationWhs
+  unit_of_measure: wpd.UnitOfMeasure
+  version: wpd.Version
+  release: wpd.Release
+  job: wpd.Job
+  alloc_line: wpd.AllocLine
+  warehouse: wpd.Warehouse
+  customer: wpd.Customer
+  confirm_date: wpd.ConfirmDate
+  confirmed_by: wpd.ConfirmedBy
+  pick_outer: wpd.PickOuter
+  packed_qty: wpd.PackedQty
+  confirmed_qty: wpd.ConfirmedQty
+  reason_change: wpd.ReasonChange
+  license_plate_number: wpd.LicensePlateNumber
+  full_container: wpd.FullContainer

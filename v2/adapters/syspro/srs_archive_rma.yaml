@@ -1,0 +1,11 @@
+concept: srs_archive_rma
+table: SrsArchiveRMA
+alias: sarma
+fields:
+  archive_date: sarma.ArchiveDate
+  archive_time: sarma.ArchiveTime
+  operator: sarma.Operator
+  archive_id: sarma.ArchiveId
+  archive_type: sarma.ArchiveType
+  archive_file: sarma.ArchiveFile
+  rma_number: sarma.RmaNumber

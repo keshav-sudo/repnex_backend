@@ -1,0 +1,7 @@
+concept: prj_cont_index
+table: PrjContIndex
+alias: pci
+fields:
+  hierarchy_type: pci.HierarchyType
+  job_estimate: pci.JobEstimate
+  contract: pci.Contract

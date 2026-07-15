@@ -1,0 +1,6 @@
+concept: sal_department
+table: SalDepartment
+alias: sd
+fields:
+  department: sd.Department
+  description: sd.Description

@@ -1,0 +1,50 @@
+concept: bom_structure
+table: BomStructure
+alias: bs
+fields:
+  parent_part: bs.ParentPart
+  version: bs.Version
+  release: bs.Release
+  route: bs.Route
+  sequence_num: bs.SequenceNum
+  component: bs.Component
+  com_version: bs.ComVersion
+  com_release: bs.ComRelease
+  ecc_consumption: bs.EccConsumption
+  structure_on_date: bs.StructureOnDate
+  structure_off_date: bs.StructureOffDate
+  op_offset_flag: bs.OpOffsetFlag
+  operation_offset: bs.OperationOffset
+  qty_per: bs.QtyPer
+  scrap_percentage: bs.ScrapPercentage
+  scrap_quantity: bs.ScrapQuantity
+  so_option_flag: bs.SoOptionFlag
+  so_print_flag: bs.SoPrintFlag
+  incl_scrap_flag: bs.InclScrapFlag
+  reason_for_change: bs.ReasonForChange
+  ref_designator: bs.RefDesignator
+  assembly_place: bs.AssemblyPlace
+  item_number: bs.ItemNumber
+  auto_narr_code: bs.AutoNarrCode
+  component_type: bs.ComponentType
+  incl_kit_issues: bs.InclKitIssues
+  create_sub_job: bs.CreateSubJob
+  wet_weight_percent: bs.WetWeightPercent
+  include_batch: bs.IncludeBatch
+  include_from_job: bs.IncludeFromJob
+  include_to_job: bs.IncludeToJob
+  fixed_qty_per_flag: bs.FixedQtyPerFlag
+  fixed_qty_per: bs.FixedQtyPer
+  roll_up_cost: bs.RollUpCost
+  warehouse: bs.Warehouse
+  ignore_floor_flag: bs.IgnoreFloorFlag
+  co_product_cost_val: bs.CoProductCostVal
+  uom_flag: bs.UomFlag
+  qty_per_ent: bs.QtyPerEnt
+  scrap_quantity_ent: bs.ScrapQuantityEnt
+  fixed_qty_per_ent: bs.FixedQtyPerEnt
+  product_code: bs.ProductCode
+  library_code: bs.LibraryCode
+  first_seq: bs.FirstSeq
+  second_seq: bs.SecondSeq
+  ovr_ecc_spec_iss: bs.OvrEccSpecIss

@@ -1,0 +1,23 @@
+concept: eam_service_type
+display_name: EamServiceType
+module: other
+description: Auto-generated representation of the physical table EamServiceType.
+synonyms:
+- eamservicetype
+- eam service type
+header_attributes:
+  maint_service_type:
+    display: Maintservicetype
+    type: string
+    required: false
+    description: Field MaintServiceType from EamServiceType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EamServiceType
+  type_of_service:
+    display: Typeofservice
+    type: string
+    required: false
+    description: Field TypeOfService from EamServiceType

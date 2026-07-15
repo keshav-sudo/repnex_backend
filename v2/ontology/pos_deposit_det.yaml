@@ -1,0 +1,48 @@
+concept: pos_deposit_det
+display_name: PosDepositDet
+module: other
+description: Auto-generated representation of the physical table PosDepositDet.
+synonyms:
+- posdepositdet
+- pos deposit det
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from PosDepositDet
+  deposit_date:
+    display: Depositdate
+    type: date
+    required: false
+    description: Field DepositDate from PosDepositDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from PosDepositDet
+  deposit_value:
+    display: Depositvalue
+    type: decimal
+    required: false
+    description: Field DepositValue from PosDepositDet
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from PosDepositDet
+  allocated_value:
+    display: Allocatedvalue
+    type: decimal
+    required: false
+    description: Field AllocatedValue from PosDepositDet
+  last_move_date:
+    display: Lastmovedate
+    type: date
+    required: false
+    description: Field LastMoveDate from PosDepositDet
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from PosDepositDet

@@ -138,7 +138,11 @@ async def append_turn(
     db: AsyncIOMotorDatabase, session: GISession, *, role: str, content: str, **kwargs
 ) -> None:
     cw = list(session.context_window or [])
-    turn = {"role": role, "content": content}
+    turn = {
+        "role": role,
+        "content": content,
+        "timestamp": datetime.now(UTC).isoformat()
+    }
     if kwargs:
         safe_kwargs = make_json_safe(kwargs)
         turn.update(safe_kwargs)

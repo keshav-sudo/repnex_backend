@@ -1,0 +1,453 @@
+concept: gen_journal_detail
+display_name: GenJournalDetail
+module: general_ledger
+description: Auto-generated representation of the physical table GenJournalDetail.
+synonyms:
+- genjournaldetail
+- gen journal detail
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenJournalDetail
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenJournalDetail
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from GenJournalDetail
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from GenJournalDetail
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from GenJournalDetail
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenJournalDetail
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from GenJournalDetail
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from GenJournalDetail
+  entry_value:
+    display: Entryvalue
+    type: decimal
+    required: false
+    description: Field EntryValue from GenJournalDetail
+  prev_per_bal:
+    display: Prevperbal
+    type: decimal
+    required: false
+    description: Field PrevPerBal from GenJournalDetail
+  inter_company_flag:
+    display: Intercompanyflag
+    type: string
+    required: false
+    description: Field InterCompanyFlag from GenJournalDetail
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenJournalDetail
+  debit_gl_code:
+    display: Debitglcode
+    type: string
+    required: false
+    description: Field DebitGlCode from GenJournalDetail
+  credit_gl_code:
+    display: Creditglcode
+    type: string
+    required: false
+    description: Field CreditGlCode from GenJournalDetail
+  shared_company:
+    display: Sharedcompany
+    type: string
+    required: false
+    description: Field SharedCompany from GenJournalDetail
+  path_genmst:
+    display: Pathgenmst
+    type: string
+    required: false
+    description: Field PathGenmst from GenJournalDetail
+  path_genhst:
+    display: Pathgenhst
+    type: string
+    required: false
+    description: Field PathGenhst from GenJournalDetail
+  path_gentrn:
+    display: Pathgentrn
+    type: string
+    required: false
+    description: Field PathGentrn from GenJournalDetail
+  path_genjnl:
+    display: Pathgenjnl
+    type: string
+    required: false
+    description: Field PathGenjnl from GenJournalDetail
+  path_genalc:
+    display: Pathgenalc
+    type: string
+    required: false
+    description: Field PathGenalc from GenJournalDetail
+  path_genald:
+    display: Pathgenald
+    type: string
+    required: false
+    description: Field PathGenald from GenJournalDetail
+  path_genalh:
+    display: Pathgenalh
+    type: string
+    required: false
+    description: Field PathGenalh from GenJournalDetail
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from GenJournalDetail
+  entry_posted:
+    display: Entryposted
+    type: string
+    required: false
+    description: Field EntryPosted from GenJournalDetail
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from GenJournalDetail
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from GenJournalDetail
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from GenJournalDetail
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from GenJournalDetail
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from GenJournalDetail
+  acc_conv_rate:
+    display: Accconvrate
+    type: decimal
+    required: false
+    description: Field AccConvRate from GenJournalDetail
+  acc_mul_div:
+    display: Accmuldiv
+    type: string
+    required: false
+    description: Field AccMulDiv from GenJournalDetail
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from GenJournalDetail
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from GenJournalDetail
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from GenJournalDetail
+  analysis_entry:
+    display: Analysisentry
+    type: decimal
+    required: false
+    description: Field AnalysisEntry from GenJournalDetail
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from GenJournalDetail
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from GenJournalDetail
+  source_ap:
+    display: Sourceap
+    type: string
+    required: false
+    description: Field SourceAp from GenJournalDetail
+  origin_zoom_key:
+    display: Originzoomkey
+    type: string
+    required: false
+    description: Field OriginZoomKey from GenJournalDetail
+  modified_flag:
+    display: Modifiedflag
+    type: string
+    required: false
+    description: Field ModifiedFlag from GenJournalDetail
+  commitment_flag:
+    display: Commitmentflag
+    type: string
+    required: false
+    description: Field CommitmentFlag from GenJournalDetail
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from GenJournalDetail
+  sub_mod_journal:
+    display: Submodjournal
+    type: decimal
+    required: false
+    description: Field SubModJournal from GenJournalDetail
+  sub_mod_invoice_reg:
+    display: Submodinvoicereg
+    type: decimal
+    required: false
+    description: Field SubModInvoiceReg from GenJournalDetail
+  sub_mod_asset_reg:
+    display: Submodassetreg
+    type: decimal
+    required: false
+    description: Field SubModAssetReg from GenJournalDetail
+  sub_mod_ar_invoice:
+    display: Submodarinvoice
+    type: string
+    required: false
+    description: Field SubModArInvoice from GenJournalDetail
+  sub_mod_ap_invoice:
+    display: Submodapinvoice
+    type: string
+    required: false
+    description: Field SubModApInvoice from GenJournalDetail
+  sub_mod_supplier:
+    display: Submodsupplier
+    type: string
+    required: false
+    description: Field SubModSupplier from GenJournalDetail
+  sub_mod_customer:
+    display: Submodcustomer
+    type: string
+    required: false
+    description: Field SubModCustomer from GenJournalDetail
+  sub_mod_ref:
+    display: Submodref
+    type: string
+    required: false
+    description: Field SubModRef from GenJournalDetail
+  sub_mod_check:
+    display: Submodcheck
+    type: string
+    required: false
+    description: Field SubModCheck from GenJournalDetail
+  sub_mod_bank:
+    display: Submodbank
+    type: string
+    required: false
+    description: Field SubModBank from GenJournalDetail
+  sub_mod_ap_branch:
+    display: Submodapbranch
+    type: string
+    required: false
+    description: Field SubModApBranch from GenJournalDetail
+  sub_mod_ar_branch:
+    display: Submodarbranch
+    type: string
+    required: false
+    description: Field SubModArBranch from GenJournalDetail
+  sub_mod_wh:
+    display: Submodwh
+    type: string
+    required: false
+    description: Field SubModWh from GenJournalDetail
+  sub_mod_stock:
+    display: Submodstock
+    type: string
+    required: false
+    description: Field SubModStock from GenJournalDetail
+  sub_mod_jnl_area:
+    display: Submodjnlarea
+    type: string
+    required: false
+    description: Field SubModJnlArea from GenJournalDetail
+  sub_mod_trans_desc:
+    display: Submodtransdesc
+    type: string
+    required: false
+    description: Field SubModTransDesc from GenJournalDetail
+  sub_mod_asset:
+    display: Submodasset
+    type: string
+    required: false
+    description: Field SubModAsset from GenJournalDetail
+  sub_mod_grn:
+    display: Submodgrn
+    type: string
+    required: false
+    description: Field SubModGrn from GenJournalDetail
+  sub_mod_job:
+    display: Submodjob
+    type: string
+    required: false
+    description: Field SubModJob from GenJournalDetail
+  sub_mod_operation:
+    display: Submodoperation
+    type: decimal
+    required: false
+    description: Field SubModOperation from GenJournalDetail
+  sub_mod_work_center:
+    display: Submodworkcenter
+    type: string
+    required: false
+    description: Field SubModWorkCenter from GenJournalDetail
+  sub_mod_employee:
+    display: Submodemployee
+    type: string
+    required: false
+    description: Field SubModEmployee from GenJournalDetail
+  sub_mod_sales_order:
+    display: Submodsalesorder
+    type: string
+    required: false
+    description: Field SubModSalesOrder from GenJournalDetail
+  document_date:
+    display: Documentdate
+    type: date
+    required: false
+    description: Field DocumentDate from GenJournalDetail
+  payment_reference:
+    display: Paymentreference
+    type: string
+    required: false
+    description: Field PaymentReference from GenJournalDetail
+  mult_cur_pay:
+    display: Multcurpay
+    type: string
+    required: false
+    description: Field MultCurPay from GenJournalDetail
+  pay_entry_value:
+    display: Payentryvalue
+    type: decimal
+    required: false
+    description: Field PayEntryValue from GenJournalDetail
+  pay_currency:
+    display: Paycurrency
+    type: string
+    required: false
+    description: Field PayCurrency from GenJournalDetail
+  pay_conv_rate:
+    display: Payconvrate
+    type: decimal
+    required: false
+    description: Field PayConvRate from GenJournalDetail
+  pay_post_mul_div:
+    display: Paypostmuldiv
+    type: string
+    required: false
+    description: Field PayPostMulDiv from GenJournalDetail
+  sub_mod_wip_branch:
+    display: Submodwipbranch
+    type: string
+    required: false
+    description: Field SubModWipBranch from GenJournalDetail
+  group_payment:
+    display: Grouppayment
+    type: string
+    required: false
+    description: Field GroupPayment from GenJournalDetail
+  grp_pay_value:
+    display: Grppayvalue
+    type: decimal
+    required: false
+    description: Field GrpPayValue from GenJournalDetail
+  grp_pay_currency:
+    display: Grppaycurrency
+    type: string
+    required: false
+    description: Field GrpPayCurrency from GenJournalDetail
+  grp_pay_conv_rate:
+    display: Grppayconvrate
+    type: decimal
+    required: false
+    description: Field GrpPayConvRate from GenJournalDetail
+  grp_pay_post_mul_div:
+    display: Grppaypostmuldiv
+    type: string
+    required: false
+    description: Field GrpPayPostMulDiv from GenJournalDetail
+  group_inter_company:
+    display: Groupintercompany
+    type: string
+    required: false
+    description: Field GroupInterCompany from GenJournalDetail
+  inter_company_trx:
+    display: Intercompanytrx
+    type: string
+    required: false
+    description: Field InterCompanyTrx from GenJournalDetail
+  primary_supplier:
+    display: Primarysupplier
+    type: string
+    required: false
+    description: Field PrimarySupplier from GenJournalDetail
+  primary_company:
+    display: Primarycompany
+    type: string
+    required: false
+    description: Field PrimaryCompany from GenJournalDetail
+  secondary_company:
+    display: Secondarycompany
+    type: string
+    required: false
+    description: Field SecondaryCompany from GenJournalDetail
+  xref_ch_register:
+    display: Xrefchregister
+    type: decimal
+    required: false
+    description: Field XrefChRegister from GenJournalDetail
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from GenJournalDetail
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from GenJournalDetail
+  payment_number_ar:
+    display: Paymentnumberar
+    type: string
+    required: false
+    description: Field PaymentNumberAr from GenJournalDetail
+  primary_customer:
+    display: Primarycustomer
+    type: string
+    required: false
+    description: Field PrimaryCustomer from GenJournalDetail
+  payment_number_ap:
+    display: Paymentnumberap
+    type: string
+    required: false
+    description: Field PaymentNumberAp from GenJournalDetail

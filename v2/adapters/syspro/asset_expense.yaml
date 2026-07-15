@@ -1,0 +1,8 @@
+concept: asset_expense
+table: AssetExpense
+alias: ae2
+fields:
+  expense_code: ae2.ExpenseCode
+  description: ae2.Description
+  mtd_expenses: ae2.MtdExpenses
+  ytd_expenses: ae2.YtdExpenses

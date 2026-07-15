@@ -1,0 +1,8 @@
+concept: adm_multimedia
+table: AdmMultimedia
+alias: am
+fields:
+  multimedia_flag: am.MultimediaFlag
+  key_field: am.KeyField
+  object_type: am.ObjectType
+  object_text: am.ObjectText

@@ -1,0 +1,7 @@
+concept: crm_activity_type
+table: CrmActivityType
+alias: cat1
+fields:
+  activity_type: cat1.ActivityType
+  description: cat1.Description
+  activity_usage: cat1.ActivityUsage

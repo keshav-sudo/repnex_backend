@@ -1,0 +1,18 @@
+concept: adm_rtp_product_areas
+display_name: AdmRtpProductAreas
+module: administration
+description: Auto-generated representation of the physical table AdmRtpProductAreas.
+synonyms:
+- admrtpproductareas
+- adm rtp product areas
+header_attributes:
+  rtp_product_code:
+    display: Rtpproductcode
+    type: string
+    required: false
+    description: Field RtpProductCode from AdmRtpProductAreas
+  functional_area:
+    display: Functionalarea
+    type: string
+    required: false
+    description: Field FunctionalArea from AdmRtpProductAreas

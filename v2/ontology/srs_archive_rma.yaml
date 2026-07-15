@@ -1,0 +1,43 @@
+concept: srs_archive_rma
+display_name: SrsArchiveRMA
+module: other
+description: Auto-generated representation of the physical table SrsArchiveRMA.
+synonyms:
+- srsarchiverma
+- srs archive rma
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveRMA
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveRMA
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveRMA
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveRMA
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveRMA
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveRMA
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from SrsArchiveRMA

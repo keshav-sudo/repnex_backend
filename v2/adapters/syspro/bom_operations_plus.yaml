@@ -1,0 +1,12 @@
+concept: bom_operations_plus
+table: BomOperations+
+alias: bo1
+fields:
+  stock_code: bo1.StockCode
+  version: bo1.Version
+  release: bo1.Release
+  route: bo1.Route
+  operation: bo1.Operation
+  color: bo1.Color
+  max_operation_span: bo1.MaxOperationSpan
+  operation_slack: bo1.OperationSlack

@@ -1,0 +1,18 @@
+concept: mrp_sug_gtr_master
+table: MrpSugGtrMaster
+alias: msgm
+fields:
+  gtr_reference: msgm.GtrReference
+  source_warehouse: msgm.SourceWarehouse
+  target_warehouse: msgm.TargetWarehouse
+  entry_type: msgm.EntryType
+  next_line: msgm.NextLine
+  control_account: msgm.ControlAccount
+  initial_value: msgm.InitialValue
+  val_rec_to_date: msgm.ValRecToDate
+  date_created: msgm.DateCreated
+  time_created_hh: msgm.TimeCreatedHh
+  time_created_mm: msgm.TimeCreatedMm
+  operator: msgm.Operator
+  complete: msgm.Complete
+  interface_flag: msgm.InterfaceFlag

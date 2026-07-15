@@ -1,0 +1,73 @@
+concept: gen_analysis_cat
+display_name: GenAnalysisCat
+module: general_ledger
+description: Auto-generated representation of the physical table GenAnalysisCat.
+synonyms:
+- genanalysiscat
+- gen analysis cat
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenAnalysisCat
+  analysis_category:
+    display: Analysiscategory
+    type: string
+    required: false
+    description: Field AnalysisCategory from GenAnalysisCat
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from GenAnalysisCat
+  type1_description:
+    display: Type1Description
+    type: string
+    required: false
+    description: Field Type1Description from GenAnalysisCat
+  type1_compulsory:
+    display: Type1Compulsory
+    type: string
+    required: false
+    description: Field Type1Compulsory from GenAnalysisCat
+  type2_description:
+    display: Type2Description
+    type: string
+    required: false
+    description: Field Type2Description from GenAnalysisCat
+  type2_compulsory:
+    display: Type2Compulsory
+    type: string
+    required: false
+    description: Field Type2Compulsory from GenAnalysisCat
+  type3_description:
+    display: Type3Description
+    type: string
+    required: false
+    description: Field Type3Description from GenAnalysisCat
+  type3_compulsory:
+    display: Type3Compulsory
+    type: string
+    required: false
+    description: Field Type3Compulsory from GenAnalysisCat
+  type4_description:
+    display: Type4Description
+    type: string
+    required: false
+    description: Field Type4Description from GenAnalysisCat
+  type4_compulsory:
+    display: Type4Compulsory
+    type: string
+    required: false
+    description: Field Type4Compulsory from GenAnalysisCat
+  type5_description:
+    display: Type5Description
+    type: string
+    required: false
+    description: Field Type5Description from GenAnalysisCat
+  type5_compulsory:
+    display: Type5Compulsory
+    type: string
+    required: false
+    description: Field Type5Compulsory from GenAnalysisCat

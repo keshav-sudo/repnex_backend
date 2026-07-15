@@ -1,0 +1,8 @@
+concept: lynq_vp__users_role
+table: Lynq_VP_UsersRole
+alias: lvpur
+fields:
+  id: lvpur.ID
+  role_id: lvpur.RoleID
+  usr_name: lvpur.UsrName
+  lic_id: lvpur.LicID

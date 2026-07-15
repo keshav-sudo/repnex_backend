@@ -1,0 +1,29 @@
+concept: adm_event
+table: AdmEvent
+alias: ae1
+fields:
+  event_module: ae1.EventModule
+  event_code: ae1.EventCode
+  event_name: ae1.EventName
+  log_reqd: ae1.LogReqd
+  event_active: ae1.EventActive
+  active_from_date: ae1.ActiveFromDate
+  active_to_date: ae1.ActiveToDate
+  event_type: ae1.EventType
+  event_parameter: ae1.EventParameter
+  description: ae1.Description
+  program: ae1.Program
+  start_in: ae1.StartIn
+  prog_desc: ae1.ProgDesc
+  mail_users: ae1.MailUsers
+  mail_subject: ae1.MailSubject
+  mail_message: ae1.MailMessage
+  special_notify: ae1.SpecialNotify
+  mail_list: ae1.MailList
+  no_default_email: ae1.NoDefaultEmail
+  com_event_flag: ae1.ComEventFlag
+  message_text: ae1.MessageText
+  operator: ae1.Operator
+  program_to_run: ae1.ProgramToRun
+  use_date: ae1.UseDate
+  prevent_duplicate: ae1.PreventDuplicate

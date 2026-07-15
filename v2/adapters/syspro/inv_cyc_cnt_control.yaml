@@ -1,0 +1,6 @@
+concept: inv_cyc_cnt_control
+table: InvCycCntControl
+alias: iccc
+fields:
+  ctl_flag: iccc.CtlFlag
+  next_cycle_count_num: iccc.NextCycleCountNum

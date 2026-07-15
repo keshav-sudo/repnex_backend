@@ -1,0 +1,16 @@
+concept: prj_proj_hier
+table: PrjProjHier
+alias: pph
+fields:
+  job: pph.Job
+  hier_head: pph.HierHead
+  section1: pph.Section1
+  section2: pph.Section2
+  section3: pph.Section3
+  section4: pph.Section4
+  trn_type: pph.TrnType
+  purchase_order: pph.PurchaseOrder
+  purchase_order_lin: pph.PurchaseOrderLin
+  posting_date: pph.PostingDate
+  stock_code: pph.StockCode
+  post_job: pph.PostJob

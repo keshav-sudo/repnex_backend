@@ -1,0 +1,8 @@
+concept: mrp_overload
+table: MrpOverload
+alias: mo
+fields:
+  operator: mo.Operator
+  work_centre: mo.WorkCentre
+  overload_date: mo.OverloadDate
+  overload_actioned: mo.OverloadActioned

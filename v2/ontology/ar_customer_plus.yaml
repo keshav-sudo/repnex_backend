@@ -1,0 +1,23 @@
+concept: ar_customer_plus
+display_name: ArCustomer+
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCustomer+.
+synonyms:
+- arcustomer+
+- ar customer plus
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCustomer+
+  title:
+    display: Title
+    type: string
+    required: false
+    description: Field Title from ArCustomer+
+  marketing:
+    display: Marketing
+    type: string
+    required: false
+    description: Field Marketing from ArCustomer+

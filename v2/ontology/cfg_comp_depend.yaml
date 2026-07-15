@@ -1,0 +1,48 @@
+concept: cfg_comp_depend
+display_name: CfgCompDepend
+module: other
+description: Auto-generated representation of the physical table CfgCompDepend.
+synonyms:
+- cfgcompdepend
+- cfg comp depend
+header_attributes:
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from CfgCompDepend
+  option_num:
+    display: Optionnum
+    type: decimal
+    required: false
+    description: Field OptionNum from CfgCompDepend
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from CfgCompDepend
+  depend_component:
+    display: Dependcomponent
+    type: string
+    required: false
+    description: Field DependComponent from CfgCompDepend
+  factor:
+    display: Factor
+    type: decimal
+    required: false
+    description: Field Factor from CfgCompDepend
+  link_type:
+    display: Linktype
+    type: string
+    required: false
+    description: Field LinkType from CfgCompDepend
+  option_linked:
+    display: Optionlinked
+    type: decimal
+    required: false
+    description: Field OptionLinked from CfgCompDepend
+  linked_line:
+    display: Linkedline
+    type: decimal
+    required: false
+    description: Field LinkedLine from CfgCompDepend

@@ -1,0 +1,63 @@
+concept: pos_summary_sal
+display_name: PosSummarySal
+module: other
+description: Auto-generated representation of the physical table PosSummarySal.
+synonyms:
+- possummarysal
+- pos summary sal
+header_attributes:
+  cash_drawer:
+    display: Cashdrawer
+    type: string
+    required: false
+    description: Field CashDrawer from PosSummarySal
+  currency:
+    display: Currency
+    type: decimal
+    required: false
+    description: Field Currency from PosSummarySal
+  no_of_invoices:
+    display: Noofinvoices
+    type: decimal
+    required: false
+    description: Field NoOfInvoices from PosSummarySal
+  no_of_credits:
+    display: Noofcredits
+    type: decimal
+    required: false
+    description: Field NoOfCredits from PosSummarySal
+  no_of_debits:
+    display: Noofdebits
+    type: decimal
+    required: false
+    description: Field NoOfDebits from PosSummarySal
+  no_of_operators:
+    display: Noofoperators
+    type: decimal
+    required: false
+    description: Field NoOfOperators from PosSummarySal
+  drawer_closed:
+    display: Drawerclosed
+    type: string
+    required: false
+    description: Field DrawerClosed from PosSummarySal
+  drawer_printed:
+    display: Drawerprinted
+    type: string
+    required: false
+    description: Field DrawerPrinted from PosSummarySal
+  cash_float:
+    display: Cashfloat
+    type: decimal
+    required: false
+    description: Field CashFloat from PosSummarySal
+  total_deposits:
+    display: Totaldeposits
+    type: decimal
+    required: false
+    description: Field TotalDeposits from PosSummarySal
+  total_cash_in_out:
+    display: Totalcashinout
+    type: decimal
+    required: false
+    description: Field TotalCashInOut from PosSummarySal

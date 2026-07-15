@@ -1,0 +1,13 @@
+concept: qot_non_pur_prc
+table: QotNonPurPrc
+alias: qnpp
+fields:
+  non_stock_code: qnpp.NonStockCode
+  supplier: qnpp.Supplier
+  quantity: qnpp.Quantity
+  purchase_price: qnpp.PurchasePrice
+  currency: qnpp.Currency
+  exchange_fixed: qnpp.ExchangeFixed
+  conv_rate: qnpp.ConvRate
+  mul_div: qnpp.MulDiv
+  lead_time: qnpp.LeadTime

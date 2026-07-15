@@ -1,0 +1,11 @@
+concept: eft_extract_hdr
+table: EftExtractHdr
+alias: eeh
+fields:
+  eft_batch: eeh.EftBatch
+  trn_source: eeh.TrnSource
+  supplier: eeh.Supplier
+  payment_value: eeh.PaymentValue
+  currency_value: eeh.CurrencyValue
+  post_currency: eeh.PostCurrency
+  select_indicator: eeh.SelectIndicator

@@ -1,0 +1,15 @@
+concept: adm_print_funct
+table: AdmPrintFunct
+alias: apf
+fields:
+  operator: apf.Operator
+  function_type: apf.FunctionType
+  printer_name: apf.PrinterName
+  prt_current: apf.PrtCurrent
+  last_win_info: apf.LastWinInfo
+  last_sys_info: apf.LastSysInfo
+  print_attributes: apf.PrintAttributes
+  win_devmode: apf.WinDevmode
+  win_page_setup: apf.WinPageSetup
+  win_font_info: apf.WinFontInfo
+  extra_bytes: apf.ExtraBytes

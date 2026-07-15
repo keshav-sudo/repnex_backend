@@ -1,0 +1,10 @@
+concept: lynq_vp__week_template_timing
+table: Lynq_VP_WeekTemplateTiming
+alias: lvpwtt
+fields:
+  id: lvpwtt.ID
+  week_template_id: lvpwtt.WeekTemplateID
+  day_of_week: lvpwtt.DayOfWeek
+  activity_code: lvpwtt.ActivityCode
+  start_time: lvpwtt.StartTime
+  end_time: lvpwtt.EndTime

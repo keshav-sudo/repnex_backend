@@ -1,0 +1,13 @@
+concept: srq_supplier
+table: SrqSupplier
+alias: ss4
+fields:
+  rfq_reference: ss4.RfqReference
+  rfq_line: ss4.RfqLine
+  supplier: ss4.Supplier
+  lead_time: ss4.LeadTime
+  supplier_status: ss4.SupplierStatus
+  price: ss4.Price
+  price_uom: ss4.PriceUom
+  reason: ss4.Reason
+  next_entry_number: ss4.NextEntryNumber

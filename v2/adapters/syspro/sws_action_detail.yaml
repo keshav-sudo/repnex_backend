@@ -1,0 +1,12 @@
+concept: sws_action_detail
+table: SwsActionDetail
+alias: sad1
+fields:
+  action_id: sad1.ActionId
+  action_number: sad1.ActionNumber
+  description: sad1.Description
+  action_type: sad1.ActionType
+  user_action_type: sad1.UserActionType
+  tool_tip: sad1.ToolTip
+  program_to_call: sad1.ProgramToCall
+  program_parameter: sad1.ProgramParameter

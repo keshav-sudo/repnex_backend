@@ -1,0 +1,22 @@
+concept: bom_co_products
+table: BomCoProducts
+alias: bcp
+fields:
+  parent_part: bcp.ParentPart
+  version: bcp.Version
+  release: bcp.Release
+  route: bcp.Route
+  co_product_line: bcp.CoProductLine
+  co_product: bcp.CoProduct
+  co_product_version: bcp.CoProductVersion
+  co_product_release: bcp.CoProductRelease
+  operation_offset: bcp.OperationOffset
+  optional_flag: bcp.OptionalFlag
+  qty_per: bcp.QtyPer
+  pct_material_cost: bcp.PctMaterialCost
+  pct_sub_contract_cost: bcp.PctSubContractCost
+  pct_labor_cost: bcp.PctLaborCost
+  plan_weight: bcp.PlanWeight
+  pct_quantity: bcp.PctQuantity
+  uom_flag: bcp.UomFlag
+  qty_per_ent: bcp.QtyPerEnt

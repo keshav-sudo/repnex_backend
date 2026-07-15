@@ -1,0 +1,48 @@
+concept: srs_archive_del
+display_name: SrsArchiveDEL
+module: other
+description: Auto-generated representation of the physical table SrsArchiveDEL.
+synonyms:
+- srsarchivedel
+- srs archive del
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveDEL
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveDEL
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveDEL
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveDEL
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveDEL
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveDEL
+  gen_delivery_note:
+    display: Gendeliverynote
+    type: string
+    required: false
+    description: Field GenDeliveryNote from SrsArchiveDEL
+  internal_sales_order:
+    display: Internalsalesorder
+    type: string
+    required: false
+    description: Field InternalSalesOrder from SrsArchiveDEL

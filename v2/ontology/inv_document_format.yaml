@@ -1,0 +1,28 @@
+concept: inv_document_format
+display_name: InvDocumentFormat
+module: inventory
+description: Auto-generated representation of the physical table InvDocumentFormat.
+synonyms:
+- invdocumentformat
+- inv document format
+header_attributes:
+  tran_type:
+    display: Trantype
+    type: string
+    required: false
+    description: Field TranType from InvDocumentFormat
+  format_code:
+    display: Formatcode
+    type: string
+    required: false
+    description: Field FormatCode from InvDocumentFormat
+  record_type:
+    display: Recordtype
+    type: string
+    required: false
+    description: Field RecordType from InvDocumentFormat
+  format_info:
+    display: Formatinfo
+    type: string
+    required: false
+    description: Field FormatInfo from InvDocumentFormat

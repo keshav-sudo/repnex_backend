@@ -1,0 +1,28 @@
+concept: ap_supplier_addr
+table: ApSupplierAddr
+alias: asa1
+fields:
+  supplier: asa1.Supplier
+  sup_addr1: asa1.SupAddr1
+  sup_addr2: asa1.SupAddr2
+  sup_addr3: asa1.SupAddr3
+  sup_addr3_loc: asa1.SupAddr3Loc
+  sup_addr4: asa1.SupAddr4
+  sup_addr5: asa1.SupAddr5
+  sup_postal_code: asa1.SupPostalCode
+  sup_add_gps_lat: asa1.SupAddGpsLat
+  sup_add_gps_long: asa1.SupAddGpsLong
+  remit_name: asa1.RemitName
+  remit_addr1: asa1.RemitAddr1
+  remit_addr2: asa1.RemitAddr2
+  remit_addr3: asa1.RemitAddr3
+  remit_addr3_loc: asa1.RemitAddr3Loc
+  remit_addr4: asa1.RemitAddr4
+  remit_addr5: asa1.RemitAddr5
+  remit_postal_code: asa1.RemitPostalCode
+  remit_gps_lat: asa1.RemitGpsLat
+  remit_gps_long: asa1.RemitGpsLong
+  fax_remit_contact: asa1.FaxRemitContact
+  shipping_instrs: asa1.ShippingInstrs
+  language_code: asa1.LanguageCode
+  language_code_rem: asa1.LanguageCodeRem

@@ -1,0 +1,283 @@
+concept: lynq_me__trace_cbom
+display_name: Lynq ME Trace CBOM
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Trace_CBOM.
+synonyms:
+- lynq_me_trace_cbom
+- lynq me  trace cbom
+header_attributes:
+  c_id:
+    display: Cid
+    type: decimal
+    required: false
+    description: Field cId from Lynq_ME_Trace_CBOM
+  c_code:
+    display: Ccode
+    type: string
+    required: false
+    description: Field cCode from Lynq_ME_Trace_CBOM
+  c_facility_code:
+    display: Cfacilitycode
+    type: string
+    required: false
+    description: Field cFacilityCode from Lynq_ME_Trace_CBOM
+  c_item:
+    display: Citem
+    type: string
+    required: false
+    description: Field cItem from Lynq_ME_Trace_CBOM
+  c_item_description:
+    display: Citemdescription
+    type: string
+    required: false
+    description: Field cItemDescription from Lynq_ME_Trace_CBOM
+  c_qty_per:
+    display: Cqtyper
+    type: decimal
+    required: false
+    description: Field cQtyPer from Lynq_ME_Trace_CBOM
+  c_quantity:
+    display: Cquantity
+    type: decimal
+    required: false
+    description: Field cQuantity from Lynq_ME_Trace_CBOM
+  c_quantityconsumed:
+    display: Cquantityconsumed
+    type: decimal
+    required: false
+    description: Field cQuantityconsumed from Lynq_ME_Trace_CBOM
+  c_date:
+    display: Cdate
+    type: date
+    required: false
+    description: Field cDate from Lynq_ME_Trace_CBOM
+  c_warehouse:
+    display: Cwarehouse
+    type: string
+    required: false
+    description: Field cWarehouse from Lynq_ME_Trace_CBOM
+  c_req1:
+    display: Creq1
+    type: decimal
+    required: false
+    description: Field cReq1 from Lynq_ME_Trace_CBOM
+  c_req2:
+    display: Creq2
+    type: decimal
+    required: false
+    description: Field cReq2 from Lynq_ME_Trace_CBOM
+  c_req3:
+    display: Creq3
+    type: decimal
+    required: false
+    description: Field cReq3 from Lynq_ME_Trace_CBOM
+  c_req4:
+    display: Creq4
+    type: decimal
+    required: false
+    description: Field cReq4 from Lynq_ME_Trace_CBOM
+  c_req5:
+    display: Creq5
+    type: decimal
+    required: false
+    description: Field cReq5 from Lynq_ME_Trace_CBOM
+  c_param1:
+    display: Cparam1
+    type: string
+    required: false
+    description: Field cParam1 from Lynq_ME_Trace_CBOM
+  c_param2:
+    display: Cparam2
+    type: string
+    required: false
+    description: Field cParam2 from Lynq_ME_Trace_CBOM
+  c_param3:
+    display: Cparam3
+    type: string
+    required: false
+    description: Field cParam3 from Lynq_ME_Trace_CBOM
+  c_param4:
+    display: Cparam4
+    type: string
+    required: false
+    description: Field cParam4 from Lynq_ME_Trace_CBOM
+  c_param5:
+    display: Cparam5
+    type: string
+    required: false
+    description: Field cParam5 from Lynq_ME_Trace_CBOM
+  c_text1:
+    display: Ctext1
+    type: string
+    required: false
+    description: Field cText1 from Lynq_ME_Trace_CBOM
+  c_text2:
+    display: Ctext2
+    type: string
+    required: false
+    description: Field cText2 from Lynq_ME_Trace_CBOM
+  c_text3:
+    display: Ctext3
+    type: string
+    required: false
+    description: Field cText3 from Lynq_ME_Trace_CBOM
+  c_text4:
+    display: Ctext4
+    type: string
+    required: false
+    description: Field cText4 from Lynq_ME_Trace_CBOM
+  c_text5:
+    display: Ctext5
+    type: string
+    required: false
+    description: Field cText5 from Lynq_ME_Trace_CBOM
+  c_int1:
+    display: Cint1
+    type: decimal
+    required: false
+    description: Field cInt1 from Lynq_ME_Trace_CBOM
+  c_int2:
+    display: Cint2
+    type: decimal
+    required: false
+    description: Field cInt2 from Lynq_ME_Trace_CBOM
+  c_int3:
+    display: Cint3
+    type: decimal
+    required: false
+    description: Field cInt3 from Lynq_ME_Trace_CBOM
+  c_int4:
+    display: Cint4
+    type: decimal
+    required: false
+    description: Field cInt4 from Lynq_ME_Trace_CBOM
+  c_int5:
+    display: Cint5
+    type: decimal
+    required: false
+    description: Field cInt5 from Lynq_ME_Trace_CBOM
+  c_decimal1:
+    display: Cdecimal1
+    type: decimal
+    required: false
+    description: Field cDecimal1 from Lynq_ME_Trace_CBOM
+  c_decimal2:
+    display: Cdecimal2
+    type: decimal
+    required: false
+    description: Field cDecimal2 from Lynq_ME_Trace_CBOM
+  c_decimal3:
+    display: Cdecimal3
+    type: decimal
+    required: false
+    description: Field cDecimal3 from Lynq_ME_Trace_CBOM
+  c_decimal4:
+    display: Cdecimal4
+    type: decimal
+    required: false
+    description: Field cDecimal4 from Lynq_ME_Trace_CBOM
+  c_decimal5:
+    display: Cdecimal5
+    type: decimal
+    required: false
+    description: Field cDecimal5 from Lynq_ME_Trace_CBOM
+  c_date1:
+    display: Cdate1
+    type: date
+    required: false
+    description: Field cDate1 from Lynq_ME_Trace_CBOM
+  c_date2:
+    display: Cdate2
+    type: date
+    required: false
+    description: Field cDate2 from Lynq_ME_Trace_CBOM
+  c_date3:
+    display: Cdate3
+    type: date
+    required: false
+    description: Field cDate3 from Lynq_ME_Trace_CBOM
+  c_date4:
+    display: Cdate4
+    type: date
+    required: false
+    description: Field cDate4 from Lynq_ME_Trace_CBOM
+  c_date5:
+    display: Cdate5
+    type: date
+    required: false
+    description: Field cDate5 from Lynq_ME_Trace_CBOM
+  c_trace_date:
+    display: Ctracedate
+    type: date
+    required: false
+    description: Field cTraceDate from Lynq_ME_Trace_CBOM
+  c_per_size:
+    display: Cpersize
+    type: decimal
+    required: false
+    description: Field cPerSize from Lynq_ME_Trace_CBOM
+  c_qty_fixed:
+    display: Cqtyfixed
+    type: decimal
+    required: false
+    description: Field cQtyFixed from Lynq_ME_Trace_CBOM
+  c_qty_required:
+    display: Cqtyrequired
+    type: decimal
+    required: false
+    description: Field cQtyRequired from Lynq_ME_Trace_CBOM
+  c_qty_rejected:
+    display: Cqtyrejected
+    type: decimal
+    required: false
+    description: Field cQtyRejected from Lynq_ME_Trace_CBOM
+  c_qty_scrapped:
+    display: Cqtyscrapped
+    type: decimal
+    required: false
+    description: Field cQtyScrapped from Lynq_ME_Trace_CBOM
+  c_job_code:
+    display: Cjobcode
+    type: string
+    required: false
+    description: Field cJobCode from Lynq_ME_Trace_CBOM
+  c_operation_code:
+    display: Coperationcode
+    type: string
+    required: false
+    description: Field cOperationCode from Lynq_ME_Trace_CBOM
+  c_uom:
+    display: Cuom
+    type: string
+    required: false
+    description: Field cUOM from Lynq_ME_Trace_CBOM
+  c_component_type:
+    display: Ccomponenttype
+    type: string
+    required: false
+    description: Field cComponentType from Lynq_ME_Trace_CBOM
+  c_serial_lot_flag:
+    display: Cseriallotflag
+    type: string
+    required: false
+    description: Field cSerialLotFlag from Lynq_ME_Trace_CBOM
+  c_bin_flag:
+    display: Cbinflag
+    type: string
+    required: false
+    description: Field cBinFlag from Lynq_ME_Trace_CBOM
+  c_traceable_flag:
+    display: Ctraceableflag
+    type: string
+    required: false
+    description: Field cTraceableFlag from Lynq_ME_Trace_CBOM
+  c_sequence_number:
+    display: Csequencenumber
+    type: decimal
+    required: false
+    description: Field cSequenceNumber from Lynq_ME_Trace_CBOM
+  c_name:
+    display: Cname
+    type: string
+    required: false
+    description: Field cName from Lynq_ME_Trace_CBOM

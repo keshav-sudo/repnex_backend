@@ -1,0 +1,6 @@
+concept: sor_next_keys
+table: SorNextKeys
+alias: snk
+fields:
+  key_type: snk.KeyType
+  key_next: snk.KeyNext

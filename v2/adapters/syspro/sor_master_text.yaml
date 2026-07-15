@@ -1,0 +1,7 @@
+concept: sor_master_text
+table: SorMasterText
+alias: smt
+fields:
+  sales_order: smt.SalesOrder
+  line: smt.Line
+  text: smt.Text

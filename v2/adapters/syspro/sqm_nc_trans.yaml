@@ -1,0 +1,15 @@
+concept: sqm_nc_trans
+table: SqmNcTrans
+alias: snt
+fields:
+  conform_number: snt.ConformNumber
+  trn_date: snt.TrnDate
+  line: snt.Line
+  conform_area: snt.ConformArea
+  action_number: snt.ActionNumber
+  stake_holder: snt.StakeHolder
+  action_type: snt.ActionType
+  field_updated: snt.FieldUpdated
+  old_field: snt.OldField
+  new_field: snt.NewField
+  tran_note: snt.TranNote

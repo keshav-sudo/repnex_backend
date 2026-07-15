@@ -1,0 +1,63 @@
+concept: sal_history_summary
+display_name: SalHistorySummary
+module: other
+description: Auto-generated representation of the physical table SalHistorySummary.
+synonyms:
+- salhistorysummary
+- sal history summary
+header_attributes:
+  sequencetype:
+    display: Sequencetype
+    type: string
+    required: false
+    description: Field Sequencetype from SalHistorySummary
+  sequence1:
+    display: Sequence1
+    type: string
+    required: false
+    description: Field Sequence1 from SalHistorySummary
+  sequence2:
+    display: Sequence2
+    type: string
+    required: false
+    description: Field Sequence2 from SalHistorySummary
+  sequence3:
+    display: Sequence3
+    type: string
+    required: false
+    description: Field Sequence3 from SalHistorySummary
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalHistorySummary
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalHistorySummary
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from SalHistorySummary
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from SalHistorySummary
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from SalHistorySummary
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from SalHistorySummary
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from SalHistorySummary

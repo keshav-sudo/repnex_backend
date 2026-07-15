@@ -1,0 +1,7 @@
+concept: lynq_me_api__config__auto_call_exec
+table: Lynq_ME_API_Config_AutoCallExec
+alias: lmeapicace
+fields:
+  id: lmeapicace.Id
+  auto_call_key: lmeapicace.AutoCallKey
+  last_exec_date: lmeapicace.LastExecDate

@@ -1,0 +1,28 @@
+concept: asset_dist_head
+display_name: AssetDistHead
+module: assets
+description: Auto-generated representation of the physical table AssetDistHead.
+synonyms:
+- assetdisthead
+- asset dist head
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from AssetDistHead
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from AssetDistHead
+  dist_reg_num:
+    display: Distregnum
+    type: decimal
+    required: false
+    description: Field DistRegNum from AssetDistHead
+  dist_status:
+    display: Diststatus
+    type: string
+    required: false
+    description: Field DistStatus from AssetDistHead

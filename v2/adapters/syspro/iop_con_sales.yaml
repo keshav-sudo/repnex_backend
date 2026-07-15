@@ -1,0 +1,14 @@
+concept: iop_con_sales
+table: IopConSales
+alias: ics3
+fields:
+  collection: ics3.Collection
+  instance: ics3.Instance
+  stock_code: ics3.StockCode
+  version: ics3.Version
+  release: ics3.Release
+  movement_date: ics3.MovementDate
+  trans_count: ics3.TransCount
+  quantity: ics3.Quantity
+  cost_value: ics3.CostValue
+  sales_value: ics3.SalesValue

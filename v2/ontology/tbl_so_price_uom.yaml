@@ -1,0 +1,28 @@
+concept: tbl_so_price_uom
+display_name: TblSoPriceUom
+module: other
+description: Auto-generated representation of the physical table TblSoPriceUom.
+synonyms:
+- tblsopriceuom
+- tbl so price uom
+header_attributes:
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from TblSoPriceUom
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from TblSoPriceUom
+  conv_factor:
+    display: Convfactor
+    type: decimal
+    required: false
+    description: Field ConvFactor from TblSoPriceUom
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from TblSoPriceUom

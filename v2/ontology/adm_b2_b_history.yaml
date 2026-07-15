@@ -1,0 +1,48 @@
+concept: adm_b2_b_history
+display_name: AdmB2BHistory
+module: administration
+description: Auto-generated representation of the physical table AdmB2BHistory.
+synonyms:
+- admb2bhistory
+- adm b2 b history
+header_attributes:
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from AdmB2BHistory
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from AdmB2BHistory
+  key_field:
+    display: Keyfield
+    type: string
+    required: false
+    description: Field KeyField from AdmB2BHistory
+  document_date:
+    display: Documentdate
+    type: date
+    required: false
+    description: Field DocumentDate from AdmB2BHistory
+  document_time:
+    display: Documenttime
+    type: decimal
+    required: false
+    description: Field DocumentTime from AdmB2BHistory
+  xml_doc_filename:
+    display: Xmldocfilename
+    type: string
+    required: false
+    description: Field XmlDocFilename from AdmB2BHistory
+  xml_hist_filename:
+    display: Xmlhistfilename
+    type: string
+    required: false
+    description: Field XmlHistFilename from AdmB2BHistory
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmB2BHistory

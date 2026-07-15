@@ -1,0 +1,53 @@
+concept: lynq_me__integration__sync__processing_log
+display_name: Lynq ME Integration Sync ProcessingLog
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Integration_Sync_ProcessingLog.
+synonyms:
+- lynq_me_integration_sync_processinglog
+- lynq me  integration  sync  processing log
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_Integration_Sync_ProcessingLog
+  phase_key:
+    display: Phasekey
+    type: string
+    required: false
+    description: Field PhaseKey from Lynq_ME_Integration_Sync_ProcessingLog
+  process_name:
+    display: Processname
+    type: string
+    required: false
+    description: Field ProcessName from Lynq_ME_Integration_Sync_ProcessingLog
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from Lynq_ME_Integration_Sync_ProcessingLog
+  item_id:
+    display: Itemid
+    type: string
+    required: false
+    description: Field ItemID from Lynq_ME_Integration_Sync_ProcessingLog
+  item_description:
+    display: Itemdescription
+    type: string
+    required: false
+    description: Field ItemDescription from Lynq_ME_Integration_Sync_ProcessingLog
+  result_code:
+    display: Resultcode
+    type: string
+    required: false
+    description: Field ResultCode from Lynq_ME_Integration_Sync_ProcessingLog
+  result_message:
+    display: Resultmessage
+    type: string
+    required: false
+    description: Field ResultMessage from Lynq_ME_Integration_Sync_ProcessingLog
+  log_time:
+    display: Logtime
+    type: date
+    required: false
+    description: Field LogTime from Lynq_ME_Integration_Sync_ProcessingLog

@@ -1,0 +1,48 @@
+concept: ar_csh_jnl_det_pos
+display_name: ArCshJnlDetPos
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCshJnlDetPos.
+synonyms:
+- arcshjnldetpos
+- ar csh jnl det pos
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArCshJnlDetPos
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArCshJnlDetPos
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ArCshJnlDetPos
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ArCshJnlDetPos
+  pos_transaction_type:
+    display: Postransactiontype
+    type: string
+    required: false
+    description: Field PosTransactionType from ArCshJnlDetPos
+  pos_trans_branch:
+    display: Postransbranch
+    type: string
+    required: false
+    description: Field PosTransBranch from ArCshJnlDetPos
+  pos_unique_id:
+    display: Posuniqueid
+    type: string
+    required: false
+    description: Field PosUniqueId from ArCshJnlDetPos
+  pos_payment_line:
+    display: Pospaymentline
+    type: decimal
+    required: false
+    description: Field PosPaymentLine from ArCshJnlDetPos

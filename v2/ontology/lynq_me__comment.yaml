@@ -1,0 +1,43 @@
+concept: lynq_me__comment
+display_name: Lynq ME Comment
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Comment.
+synonyms:
+- lynq_me_comment
+- lynq me  comment
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_ME_Comment
+  parent_id:
+    display: Parentid
+    type: string
+    required: false
+    description: Field ParentId from Lynq_ME_Comment
+  originator:
+    display: Originator
+    type: string
+    required: false
+    description: Field Originator from Lynq_ME_Comment
+  date:
+    display: Date
+    type: date
+    required: false
+    description: Field Date from Lynq_ME_Comment
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from Lynq_ME_Comment
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from Lynq_ME_Comment
+  is_read:
+    display: Isread
+    type: string
+    required: false
+    description: Field IsRead from Lynq_ME_Comment

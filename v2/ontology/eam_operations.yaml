@@ -1,0 +1,223 @@
+concept: eam_operations
+display_name: EamOperations
+module: other
+description: Auto-generated representation of the physical table EamOperations.
+synonyms:
+- eamoperations
+- eam operations
+header_attributes:
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from EamOperations
+  maint_service_type:
+    display: Maintservicetype
+    type: string
+    required: false
+    description: Field MaintServiceType from EamOperations
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from EamOperations
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from EamOperations
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from EamOperations
+  work_rate_ind:
+    display: Workrateind
+    type: decimal
+    required: false
+    description: Field WorkRateInd from EamOperations
+  subcontract_flag:
+    display: Subcontractflag
+    type: string
+    required: false
+    description: Field SubcontractFlag from EamOperations
+  i_setup_time:
+    display: Isetuptime
+    type: decimal
+    required: false
+    description: Field ISetupTime from EamOperations
+  i_run_time:
+    display: Iruntime
+    type: decimal
+    required: false
+    description: Field IRunTime from EamOperations
+  i_startup_time:
+    display: Istartuptime
+    type: decimal
+    required: false
+    description: Field IStartupTime from EamOperations
+  i_teardown_time:
+    display: Iteardowntime
+    type: decimal
+    required: false
+    description: Field ITeardownTime from EamOperations
+  i_wait_time:
+    display: Iwaittime
+    type: decimal
+    required: false
+    description: Field IWaitTime from EamOperations
+  i_startup_qty:
+    display: Istartupqty
+    type: decimal
+    required: false
+    description: Field IStartupQty from EamOperations
+  i_machine:
+    display: Imachine
+    type: string
+    required: false
+    description: Field IMachine from EamOperations
+  i_unit_cap_req:
+    display: Iunitcapreq
+    type: decimal
+    required: false
+    description: Field IUnitCapReq from EamOperations
+  i_max_operators:
+    display: Imaxoperators
+    type: decimal
+    required: false
+    description: Field IMaxOperators from EamOperations
+  i_max_prod_units:
+    display: Imaxprodunits
+    type: decimal
+    required: false
+    description: Field IMaxProdUnits from EamOperations
+  i_time_taken:
+    display: Itimetaken
+    type: decimal
+    required: false
+    description: Field ITimeTaken from EamOperations
+  i_block_qty:
+    display: Iblockqty
+    type: decimal
+    required: false
+    description: Field IBlockQty from EamOperations
+  sub_supplier:
+    display: Subsupplier
+    type: string
+    required: false
+    description: Field SubSupplier from EamOperations
+  sub_po_stock_code:
+    display: Subpostockcode
+    type: string
+    required: false
+    description: Field SubPoStockCode from EamOperations
+  sub_qty_per:
+    display: Subqtyper
+    type: decimal
+    required: false
+    description: Field SubQtyPer from EamOperations
+  sub_order_uom:
+    display: Suborderuom
+    type: string
+    required: false
+    description: Field SubOrderUom from EamOperations
+  sub_op_unit_value:
+    display: Subopunitvalue
+    type: decimal
+    required: false
+    description: Field SubOpUnitValue from EamOperations
+  sub_planner:
+    display: Subplanner
+    type: string
+    required: false
+    description: Field SubPlanner from EamOperations
+  sub_buyer:
+    display: Subbuyer
+    type: string
+    required: false
+    description: Field SubBuyer from EamOperations
+  sub_lead_time:
+    display: Subleadtime
+    type: decimal
+    required: false
+    description: Field SubLeadTime from EamOperations
+  sub_dock_to_stock:
+    display: Subdocktostock
+    type: decimal
+    required: false
+    description: Field SubDockToStock from EamOperations
+  sub_offsite_days:
+    display: Suboffsitedays
+    type: decimal
+    required: false
+    description: Field SubOffsiteDays from EamOperations
+  milestone:
+    display: Milestone
+    type: string
+    required: false
+    description: Field Milestone from EamOperations
+  elapsed_time:
+    display: Elapsedtime
+    type: decimal
+    required: false
+    description: Field ElapsedTime from EamOperations
+  movement_time:
+    display: Movementtime
+    type: decimal
+    required: false
+    description: Field MovementTime from EamOperations
+  narration_code:
+    display: Narrationcode
+    type: string
+    required: false
+    description: Field NarrationCode from EamOperations
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from EamOperations
+  pieces:
+    display: Pieces
+    type: decimal
+    required: false
+    description: Field Pieces from EamOperations
+  inspection_flag:
+    display: Inspectionflag
+    type: string
+    required: false
+    description: Field InspectionFlag from EamOperations
+  minor_setup:
+    display: Minorsetup
+    type: decimal
+    required: false
+    description: Field MinorSetup from EamOperations
+  minor_setup_code:
+    display: Minorsetupcode
+    type: string
+    required: false
+    description: Field MinorSetupCode from EamOperations
+  tool_set:
+    display: Toolset
+    type: string
+    required: false
+    description: Field ToolSet from EamOperations
+  tool_set_qty:
+    display: Toolsetqty
+    type: decimal
+    required: false
+    description: Field ToolSetQty from EamOperations
+  tool_consumption:
+    display: Toolconsumption
+    type: decimal
+    required: false
+    description: Field ToolConsumption from EamOperations
+  elapsed_time_cal:
+    display: Elapsedtimecal
+    type: string
+    required: false
+    description: Field ElapsedTimeCal from EamOperations
+  reason_for_change:
+    display: Reasonforchange
+    type: string
+    required: false
+    description: Field ReasonForChange from EamOperations

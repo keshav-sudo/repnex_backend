@@ -1,0 +1,13 @@
+concept: sor_control
+table: SorControl
+alias: sc4
+fields:
+  ctl_flag: sc4.CtlFlag
+  next_ord_num: sc4.NextOrdNum
+  next_credit_memo: sc4.NextCreditMemo
+  next_debit_memo: sc4.NextDebitMemo
+  next_del_note: sc4.NextDelNote
+  next_disp_ref: sc4.NextDispRef
+  next_rma_number: sc4.NextRmaNumber
+  next_load_number: sc4.NextLoadNumber
+  next_pick_number: sc4.NextPickNumber

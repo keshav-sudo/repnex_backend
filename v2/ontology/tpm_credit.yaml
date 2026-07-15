@@ -1,0 +1,18 @@
+concept: tpm_credit
+display_name: TpmCredit
+module: other
+description: Auto-generated representation of the physical table TpmCredit.
+synonyms:
+- tpmcredit
+- tpm credit
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from TpmCredit
+  customer_sub:
+    display: Customersub
+    type: string
+    required: false
+    description: Field CustomerSub from TpmCredit

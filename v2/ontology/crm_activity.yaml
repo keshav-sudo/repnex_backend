@@ -1,0 +1,178 @@
+concept: crm_activity
+display_name: CrmActivity
+module: crm
+description: Auto-generated representation of the physical table CrmActivity.
+synonyms:
+- crmactivity
+- crm activity
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmActivity
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from CrmActivity
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from CrmActivity
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from CrmActivity
+  end_time:
+    display: Endtime
+    type: decimal
+    required: false
+    description: Field EndTime from CrmActivity
+  follow_up_reqd:
+    display: Followupreqd
+    type: string
+    required: false
+    description: Field FollowUpReqd from CrmActivity
+  follow_up_oper:
+    display: Followupoper
+    type: string
+    required: false
+    description: Field FollowUpOper from CrmActivity
+  follow_up_date:
+    display: Followupdate
+    type: date
+    required: false
+    description: Field FollowUpDate from CrmActivity
+  follow_up_time:
+    display: Followuptime
+    type: decimal
+    required: false
+    description: Field FollowUpTime from CrmActivity
+  created_by:
+    display: Createdby
+    type: string
+    required: false
+    description: Field CreatedBy from CrmActivity
+  owner_oper:
+    display: Owneroper
+    type: string
+    required: false
+    description: Field OwnerOper from CrmActivity
+  owner_privacy:
+    display: Ownerprivacy
+    type: string
+    required: false
+    description: Field OwnerPrivacy from CrmActivity
+  activity_type:
+    display: Activitytype
+    type: decimal
+    required: false
+    description: Field ActivityType from CrmActivity
+  follow_up_flag:
+    display: Followupflag
+    type: decimal
+    required: false
+    description: Field FollowUpFlag from CrmActivity
+  priority:
+    display: Priority
+    type: decimal
+    required: false
+    description: Field Priority from CrmActivity
+  subject:
+    display: Subject
+    type: string
+    required: false
+    description: Field Subject from CrmActivity
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from CrmActivity
+  body_text:
+    display: Bodytext
+    type: string
+    required: false
+    description: Field BodyText from CrmActivity
+  body_text_file:
+    display: Bodytextfile
+    type: string
+    required: false
+    description: Field BodyTextFile from CrmActivity
+  regarding:
+    display: Regarding
+    type: string
+    required: false
+    description: Field Regarding from CrmActivity
+  result:
+    display: Result
+    type: string
+    required: false
+    description: Field Result from CrmActivity
+  activity_source:
+    display: Activitysource
+    type: string
+    required: false
+    description: Field ActivitySource from CrmActivity
+  attachment_count:
+    display: Attachmentcount
+    type: decimal
+    required: false
+    description: Field AttachmentCount from CrmActivity
+  activity_label:
+    display: Activitylabel
+    type: decimal
+    required: false
+    description: Field ActivityLabel from CrmActivity
+  all_day_event:
+    display: Alldayevent
+    type: string
+    required: false
+    description: Field AllDayEvent from CrmActivity
+  show_time_as:
+    display: Showtimeas
+    type: string
+    required: false
+    description: Field ShowTimeAs from CrmActivity
+  reminder_popup_flag:
+    display: Reminderpopupflag
+    type: string
+    required: false
+    description: Field ReminderPopupFlag from CrmActivity
+  task_status:
+    display: Taskstatus
+    type: decimal
+    required: false
+    description: Field TaskStatus from CrmActivity
+  task_pct_complete:
+    display: Taskpctcomplete
+    type: decimal
+    required: false
+    description: Field TaskPctComplete from CrmActivity
+  task_due_date:
+    display: Taskduedate
+    type: date
+    required: false
+    description: Field TaskDueDate from CrmActivity
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from CrmActivity
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from CrmActivity
+  user_field3:
+    display: Userfield3
+    type: string
+    required: false
+    description: Field UserField3 from CrmActivity
+  files_in_sql:
+    display: Filesinsql
+    type: string
+    required: false
+    description: Field FilesInSql from CrmActivity

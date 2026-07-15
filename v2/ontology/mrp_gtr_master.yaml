@@ -1,0 +1,78 @@
+concept: mrp_gtr_master
+display_name: MrpGtrMaster
+module: mrp
+description: Auto-generated representation of the physical table MrpGtrMaster.
+synonyms:
+- mrpgtrmaster
+- mrp gtr master
+header_attributes:
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from MrpGtrMaster
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from MrpGtrMaster
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from MrpGtrMaster
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from MrpGtrMaster
+  next_line:
+    display: Nextline
+    type: decimal
+    required: false
+    description: Field NextLine from MrpGtrMaster
+  control_account:
+    display: Controlaccount
+    type: string
+    required: false
+    description: Field ControlAccount from MrpGtrMaster
+  initial_value:
+    display: Initialvalue
+    type: decimal
+    required: false
+    description: Field InitialValue from MrpGtrMaster
+  val_rec_to_date:
+    display: Valrectodate
+    type: decimal
+    required: false
+    description: Field ValRecToDate from MrpGtrMaster
+  date_created:
+    display: Datecreated
+    type: date
+    required: false
+    description: Field DateCreated from MrpGtrMaster
+  time_created_hh:
+    display: Timecreatedhh
+    type: decimal
+    required: false
+    description: Field TimeCreatedHh from MrpGtrMaster
+  time_created_mm:
+    display: Timecreatedmm
+    type: decimal
+    required: false
+    description: Field TimeCreatedMm from MrpGtrMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MrpGtrMaster
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from MrpGtrMaster
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from MrpGtrMaster

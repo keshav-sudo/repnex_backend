@@ -1,0 +1,15 @@
+concept: gen_journal_ref
+table: GenJournalRef
+alias: gjr
+fields:
+  gl_year: gjr.GlYear
+  gl_period: gjr.GlPeriod
+  gl_journal: gjr.GlJournal
+  allocated_by_program: gjr.AllocatedByProgram
+  called_from_program: gjr.CalledFromProgram
+  allocated_date: gjr.AllocatedDate
+  allocated_time: gjr.AllocatedTime
+  allocated_by_oper: gjr.AllocatedByOper
+  status: gjr.Status
+  closed_date: gjr.ClosedDate
+  closed_time: gjr.ClosedTime

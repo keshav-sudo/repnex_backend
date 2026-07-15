@@ -1,0 +1,16 @@
+concept: inv_wh_bin
+table: InvWhBin
+alias: iwb
+fields:
+  warehouse: iwb.Warehouse
+  bin: iwb.Bin
+  bin_seq: iwb.BinSeq
+  wh_area: iwb.WhArea
+  bin_type: iwb.BinType
+  bin_barcode: iwb.BinBarcode
+  bin_rfid: iwb.BinRfid
+  reserved_stock_code: iwb.ReservedStockCode
+  bin_on_hold: iwb.BinOnHold
+  on_hold_reason: iwb.OnHoldReason
+  active_cycle_count: iwb.ActiveCycleCount
+  allow_replenish: iwb.AllowReplenish

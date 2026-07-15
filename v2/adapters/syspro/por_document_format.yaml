@@ -1,0 +1,9 @@
+concept: por_document_format
+table: PorDocumentFormat
+alias: pdf
+fields:
+  po_document_type: pdf.PoDocumentType
+  document_format: pdf.DocumentFormat
+  format_info1: pdf.FormatInfo1
+  format_info2: pdf.FormatInfo2
+  format_info3: pdf.FormatInfo3

@@ -1,0 +1,17 @@
+concept: gtr_lot
+table: GtrLot
+alias: gl
+fields:
+  gtr_reference: gl.GtrReference
+  source_warehouse: gl.SourceWarehouse
+  target_warehouse: gl.TargetWarehouse
+  line: gl.Line
+  lot: gl.Lot
+  source_bin: gl.SourceBin
+  quantity: gl.Quantity
+  qty_received: gl.QtyReceived
+  version: gl.Version
+  release: gl.Release
+  certificate: gl.Certificate
+  expiry_date: gl.ExpiryDate
+  complete: gl.Complete

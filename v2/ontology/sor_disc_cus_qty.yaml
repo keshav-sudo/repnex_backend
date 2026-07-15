@@ -1,0 +1,628 @@
+concept: sor_disc_cus_qty
+display_name: SorDiscCusQty
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorDiscCusQty.
+synonyms:
+- sordisccusqty
+- sor disc cus qty
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorDiscCusQty
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SorDiscCusQty
+  discount_type:
+    display: Discounttype
+    type: string
+    required: false
+    description: Field DiscountType from SorDiscCusQty
+  minimum1:
+    display: Minimum1
+    type: decimal
+    required: false
+    description: Field Minimum1 from SorDiscCusQty
+  minimum2:
+    display: Minimum2
+    type: decimal
+    required: false
+    description: Field Minimum2 from SorDiscCusQty
+  minimum3:
+    display: Minimum3
+    type: decimal
+    required: false
+    description: Field Minimum3 from SorDiscCusQty
+  minimum4:
+    display: Minimum4
+    type: decimal
+    required: false
+    description: Field Minimum4 from SorDiscCusQty
+  minimum5:
+    display: Minimum5
+    type: decimal
+    required: false
+    description: Field Minimum5 from SorDiscCusQty
+  minimum6:
+    display: Minimum6
+    type: decimal
+    required: false
+    description: Field Minimum6 from SorDiscCusQty
+  minimum7:
+    display: Minimum7
+    type: decimal
+    required: false
+    description: Field Minimum7 from SorDiscCusQty
+  minimum8:
+    display: Minimum8
+    type: decimal
+    required: false
+    description: Field Minimum8 from SorDiscCusQty
+  minimum9:
+    display: Minimum9
+    type: decimal
+    required: false
+    description: Field Minimum9 from SorDiscCusQty
+  minimum10:
+    display: Minimum10
+    type: decimal
+    required: false
+    description: Field Minimum10 from SorDiscCusQty
+  minimum11:
+    display: Minimum11
+    type: decimal
+    required: false
+    description: Field Minimum11 from SorDiscCusQty
+  minimum12:
+    display: Minimum12
+    type: decimal
+    required: false
+    description: Field Minimum12 from SorDiscCusQty
+  minimum13:
+    display: Minimum13
+    type: decimal
+    required: false
+    description: Field Minimum13 from SorDiscCusQty
+  minimum14:
+    display: Minimum14
+    type: decimal
+    required: false
+    description: Field Minimum14 from SorDiscCusQty
+  minimum15:
+    display: Minimum15
+    type: decimal
+    required: false
+    description: Field Minimum15 from SorDiscCusQty
+  minimum16:
+    display: Minimum16
+    type: decimal
+    required: false
+    description: Field Minimum16 from SorDiscCusQty
+  minimum17:
+    display: Minimum17
+    type: decimal
+    required: false
+    description: Field Minimum17 from SorDiscCusQty
+  minimum18:
+    display: Minimum18
+    type: decimal
+    required: false
+    description: Field Minimum18 from SorDiscCusQty
+  minimum19:
+    display: Minimum19
+    type: decimal
+    required: false
+    description: Field Minimum19 from SorDiscCusQty
+  minimum20:
+    display: Minimum20
+    type: decimal
+    required: false
+    description: Field Minimum20 from SorDiscCusQty
+  minimum21:
+    display: Minimum21
+    type: decimal
+    required: false
+    description: Field Minimum21 from SorDiscCusQty
+  minimum22:
+    display: Minimum22
+    type: decimal
+    required: false
+    description: Field Minimum22 from SorDiscCusQty
+  minimum23:
+    display: Minimum23
+    type: decimal
+    required: false
+    description: Field Minimum23 from SorDiscCusQty
+  minimum24:
+    display: Minimum24
+    type: decimal
+    required: false
+    description: Field Minimum24 from SorDiscCusQty
+  minimum25:
+    display: Minimum25
+    type: decimal
+    required: false
+    description: Field Minimum25 from SorDiscCusQty
+  minimum26:
+    display: Minimum26
+    type: decimal
+    required: false
+    description: Field Minimum26 from SorDiscCusQty
+  minimum27:
+    display: Minimum27
+    type: decimal
+    required: false
+    description: Field Minimum27 from SorDiscCusQty
+  minimum28:
+    display: Minimum28
+    type: decimal
+    required: false
+    description: Field Minimum28 from SorDiscCusQty
+  minimum29:
+    display: Minimum29
+    type: decimal
+    required: false
+    description: Field Minimum29 from SorDiscCusQty
+  minimum30:
+    display: Minimum30
+    type: decimal
+    required: false
+    description: Field Minimum30 from SorDiscCusQty
+  discount11:
+    display: Discount11
+    type: decimal
+    required: false
+    description: Field Discount11 from SorDiscCusQty
+  discount12:
+    display: Discount12
+    type: decimal
+    required: false
+    description: Field Discount12 from SorDiscCusQty
+  discount13:
+    display: Discount13
+    type: decimal
+    required: false
+    description: Field Discount13 from SorDiscCusQty
+  discount14:
+    display: Discount14
+    type: decimal
+    required: false
+    description: Field Discount14 from SorDiscCusQty
+  discount15:
+    display: Discount15
+    type: decimal
+    required: false
+    description: Field Discount15 from SorDiscCusQty
+  discount16:
+    display: Discount16
+    type: decimal
+    required: false
+    description: Field Discount16 from SorDiscCusQty
+  discount17:
+    display: Discount17
+    type: decimal
+    required: false
+    description: Field Discount17 from SorDiscCusQty
+  discount18:
+    display: Discount18
+    type: decimal
+    required: false
+    description: Field Discount18 from SorDiscCusQty
+  discount19:
+    display: Discount19
+    type: decimal
+    required: false
+    description: Field Discount19 from SorDiscCusQty
+  discount110:
+    display: Discount110
+    type: decimal
+    required: false
+    description: Field Discount110 from SorDiscCusQty
+  discount111:
+    display: Discount111
+    type: decimal
+    required: false
+    description: Field Discount111 from SorDiscCusQty
+  discount112:
+    display: Discount112
+    type: decimal
+    required: false
+    description: Field Discount112 from SorDiscCusQty
+  discount113:
+    display: Discount113
+    type: decimal
+    required: false
+    description: Field Discount113 from SorDiscCusQty
+  discount114:
+    display: Discount114
+    type: decimal
+    required: false
+    description: Field Discount114 from SorDiscCusQty
+  discount115:
+    display: Discount115
+    type: decimal
+    required: false
+    description: Field Discount115 from SorDiscCusQty
+  discount116:
+    display: Discount116
+    type: decimal
+    required: false
+    description: Field Discount116 from SorDiscCusQty
+  discount117:
+    display: Discount117
+    type: decimal
+    required: false
+    description: Field Discount117 from SorDiscCusQty
+  discount118:
+    display: Discount118
+    type: decimal
+    required: false
+    description: Field Discount118 from SorDiscCusQty
+  discount119:
+    display: Discount119
+    type: decimal
+    required: false
+    description: Field Discount119 from SorDiscCusQty
+  discount120:
+    display: Discount120
+    type: decimal
+    required: false
+    description: Field Discount120 from SorDiscCusQty
+  discount121:
+    display: Discount121
+    type: decimal
+    required: false
+    description: Field Discount121 from SorDiscCusQty
+  discount122:
+    display: Discount122
+    type: decimal
+    required: false
+    description: Field Discount122 from SorDiscCusQty
+  discount123:
+    display: Discount123
+    type: decimal
+    required: false
+    description: Field Discount123 from SorDiscCusQty
+  discount124:
+    display: Discount124
+    type: decimal
+    required: false
+    description: Field Discount124 from SorDiscCusQty
+  discount125:
+    display: Discount125
+    type: decimal
+    required: false
+    description: Field Discount125 from SorDiscCusQty
+  discount126:
+    display: Discount126
+    type: decimal
+    required: false
+    description: Field Discount126 from SorDiscCusQty
+  discount127:
+    display: Discount127
+    type: decimal
+    required: false
+    description: Field Discount127 from SorDiscCusQty
+  discount128:
+    display: Discount128
+    type: decimal
+    required: false
+    description: Field Discount128 from SorDiscCusQty
+  discount129:
+    display: Discount129
+    type: decimal
+    required: false
+    description: Field Discount129 from SorDiscCusQty
+  discount130:
+    display: Discount130
+    type: decimal
+    required: false
+    description: Field Discount130 from SorDiscCusQty
+  discount21:
+    display: Discount21
+    type: decimal
+    required: false
+    description: Field Discount21 from SorDiscCusQty
+  discount22:
+    display: Discount22
+    type: decimal
+    required: false
+    description: Field Discount22 from SorDiscCusQty
+  discount23:
+    display: Discount23
+    type: decimal
+    required: false
+    description: Field Discount23 from SorDiscCusQty
+  discount24:
+    display: Discount24
+    type: decimal
+    required: false
+    description: Field Discount24 from SorDiscCusQty
+  discount25:
+    display: Discount25
+    type: decimal
+    required: false
+    description: Field Discount25 from SorDiscCusQty
+  discount26:
+    display: Discount26
+    type: decimal
+    required: false
+    description: Field Discount26 from SorDiscCusQty
+  discount27:
+    display: Discount27
+    type: decimal
+    required: false
+    description: Field Discount27 from SorDiscCusQty
+  discount28:
+    display: Discount28
+    type: decimal
+    required: false
+    description: Field Discount28 from SorDiscCusQty
+  discount29:
+    display: Discount29
+    type: decimal
+    required: false
+    description: Field Discount29 from SorDiscCusQty
+  discount210:
+    display: Discount210
+    type: decimal
+    required: false
+    description: Field Discount210 from SorDiscCusQty
+  discount211:
+    display: Discount211
+    type: decimal
+    required: false
+    description: Field Discount211 from SorDiscCusQty
+  discount212:
+    display: Discount212
+    type: decimal
+    required: false
+    description: Field Discount212 from SorDiscCusQty
+  discount213:
+    display: Discount213
+    type: decimal
+    required: false
+    description: Field Discount213 from SorDiscCusQty
+  discount214:
+    display: Discount214
+    type: decimal
+    required: false
+    description: Field Discount214 from SorDiscCusQty
+  discount215:
+    display: Discount215
+    type: decimal
+    required: false
+    description: Field Discount215 from SorDiscCusQty
+  discount216:
+    display: Discount216
+    type: decimal
+    required: false
+    description: Field Discount216 from SorDiscCusQty
+  discount217:
+    display: Discount217
+    type: decimal
+    required: false
+    description: Field Discount217 from SorDiscCusQty
+  discount218:
+    display: Discount218
+    type: decimal
+    required: false
+    description: Field Discount218 from SorDiscCusQty
+  discount219:
+    display: Discount219
+    type: decimal
+    required: false
+    description: Field Discount219 from SorDiscCusQty
+  discount220:
+    display: Discount220
+    type: decimal
+    required: false
+    description: Field Discount220 from SorDiscCusQty
+  discount221:
+    display: Discount221
+    type: decimal
+    required: false
+    description: Field Discount221 from SorDiscCusQty
+  discount222:
+    display: Discount222
+    type: decimal
+    required: false
+    description: Field Discount222 from SorDiscCusQty
+  discount223:
+    display: Discount223
+    type: decimal
+    required: false
+    description: Field Discount223 from SorDiscCusQty
+  discount224:
+    display: Discount224
+    type: decimal
+    required: false
+    description: Field Discount224 from SorDiscCusQty
+  discount225:
+    display: Discount225
+    type: decimal
+    required: false
+    description: Field Discount225 from SorDiscCusQty
+  discount226:
+    display: Discount226
+    type: decimal
+    required: false
+    description: Field Discount226 from SorDiscCusQty
+  discount227:
+    display: Discount227
+    type: decimal
+    required: false
+    description: Field Discount227 from SorDiscCusQty
+  discount228:
+    display: Discount228
+    type: decimal
+    required: false
+    description: Field Discount228 from SorDiscCusQty
+  discount229:
+    display: Discount229
+    type: decimal
+    required: false
+    description: Field Discount229 from SorDiscCusQty
+  discount230:
+    display: Discount230
+    type: decimal
+    required: false
+    description: Field Discount230 from SorDiscCusQty
+  discount31:
+    display: Discount31
+    type: decimal
+    required: false
+    description: Field Discount31 from SorDiscCusQty
+  discount32:
+    display: Discount32
+    type: decimal
+    required: false
+    description: Field Discount32 from SorDiscCusQty
+  discount33:
+    display: Discount33
+    type: decimal
+    required: false
+    description: Field Discount33 from SorDiscCusQty
+  discount34:
+    display: Discount34
+    type: decimal
+    required: false
+    description: Field Discount34 from SorDiscCusQty
+  discount35:
+    display: Discount35
+    type: decimal
+    required: false
+    description: Field Discount35 from SorDiscCusQty
+  discount36:
+    display: Discount36
+    type: decimal
+    required: false
+    description: Field Discount36 from SorDiscCusQty
+  discount37:
+    display: Discount37
+    type: decimal
+    required: false
+    description: Field Discount37 from SorDiscCusQty
+  discount38:
+    display: Discount38
+    type: decimal
+    required: false
+    description: Field Discount38 from SorDiscCusQty
+  discount39:
+    display: Discount39
+    type: decimal
+    required: false
+    description: Field Discount39 from SorDiscCusQty
+  discount310:
+    display: Discount310
+    type: decimal
+    required: false
+    description: Field Discount310 from SorDiscCusQty
+  discount311:
+    display: Discount311
+    type: decimal
+    required: false
+    description: Field Discount311 from SorDiscCusQty
+  discount312:
+    display: Discount312
+    type: decimal
+    required: false
+    description: Field Discount312 from SorDiscCusQty
+  discount313:
+    display: Discount313
+    type: decimal
+    required: false
+    description: Field Discount313 from SorDiscCusQty
+  discount314:
+    display: Discount314
+    type: decimal
+    required: false
+    description: Field Discount314 from SorDiscCusQty
+  discount315:
+    display: Discount315
+    type: decimal
+    required: false
+    description: Field Discount315 from SorDiscCusQty
+  discount316:
+    display: Discount316
+    type: decimal
+    required: false
+    description: Field Discount316 from SorDiscCusQty
+  discount317:
+    display: Discount317
+    type: decimal
+    required: false
+    description: Field Discount317 from SorDiscCusQty
+  discount318:
+    display: Discount318
+    type: decimal
+    required: false
+    description: Field Discount318 from SorDiscCusQty
+  discount319:
+    display: Discount319
+    type: decimal
+    required: false
+    description: Field Discount319 from SorDiscCusQty
+  discount320:
+    display: Discount320
+    type: decimal
+    required: false
+    description: Field Discount320 from SorDiscCusQty
+  discount321:
+    display: Discount321
+    type: decimal
+    required: false
+    description: Field Discount321 from SorDiscCusQty
+  discount322:
+    display: Discount322
+    type: decimal
+    required: false
+    description: Field Discount322 from SorDiscCusQty
+  discount323:
+    display: Discount323
+    type: decimal
+    required: false
+    description: Field Discount323 from SorDiscCusQty
+  discount324:
+    display: Discount324
+    type: decimal
+    required: false
+    description: Field Discount324 from SorDiscCusQty
+  discount325:
+    display: Discount325
+    type: decimal
+    required: false
+    description: Field Discount325 from SorDiscCusQty
+  discount326:
+    display: Discount326
+    type: decimal
+    required: false
+    description: Field Discount326 from SorDiscCusQty
+  discount327:
+    display: Discount327
+    type: decimal
+    required: false
+    description: Field Discount327 from SorDiscCusQty
+  discount328:
+    display: Discount328
+    type: decimal
+    required: false
+    description: Field Discount328 from SorDiscCusQty
+  discount329:
+    display: Discount329
+    type: decimal
+    required: false
+    description: Field Discount329 from SorDiscCusQty
+  discount330:
+    display: Discount330
+    type: decimal
+    required: false
+    description: Field Discount330 from SorDiscCusQty
+  conv_ord_uom_flag:
+    display: Convorduomflag
+    type: string
+    required: false
+    description: Field ConvOrdUomFlag from SorDiscCusQty

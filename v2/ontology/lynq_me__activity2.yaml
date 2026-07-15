@@ -1,0 +1,408 @@
+concept: lynq_me__activity2
+display_name: Lynq ME Activity2
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Activity2.
+synonyms:
+- lynq_me_activity2
+- lynq me  activity2
+header_attributes:
+  id:
+    display: Id
+    type: string
+    required: false
+    description: Field ID from Lynq_ME_Activity2
+  a_event_id:
+    display: Aeventid
+    type: string
+    required: false
+    description: Field aEventID from Lynq_ME_Activity2
+  a_date:
+    display: Adate
+    type: date
+    required: false
+    description: Field aDate from Lynq_ME_Activity2
+  a_rel_id:
+    display: Arelid
+    type: string
+    required: false
+    description: Field aRelID from Lynq_ME_Activity2
+  a_source:
+    display: Asource
+    type: string
+    required: false
+    description: Field aSource from Lynq_ME_Activity2
+  a_status:
+    display: Astatus
+    type: decimal
+    required: false
+    description: Field aStatus from Lynq_ME_Activity2
+  a_is_deleted:
+    display: Aisdeleted
+    type: string
+    required: false
+    description: Field aIsDeleted from Lynq_ME_Activity2
+  a_start_date:
+    display: Astartdate
+    type: date
+    required: false
+    description: Field aStartDate from Lynq_ME_Activity2
+  a_end_date:
+    display: Aenddate
+    type: date
+    required: false
+    description: Field aEndDate from Lynq_ME_Activity2
+  a_type:
+    display: Atype
+    type: decimal
+    required: false
+    description: Field aType from Lynq_ME_Activity2
+  a_reporter_code:
+    display: Areportercode
+    type: string
+    required: false
+    description: Field aReporterCode from Lynq_ME_Activity2
+  a_membership:
+    display: Amembership
+    type: string
+    required: false
+    description: Field aMembership from Lynq_ME_Activity2
+  a_task_code:
+    display: Ataskcode
+    type: string
+    required: false
+    description: Field aTaskCode from Lynq_ME_Activity2
+  a_labour_hours:
+    display: Alabourhours
+    type: decimal
+    required: false
+    description: Field aLabourHours from Lynq_ME_Activity2
+  a_task_count:
+    display: Ataskcount
+    type: decimal
+    required: false
+    description: Field aTaskCount from Lynq_ME_Activity2
+  a_outcome_qty:
+    display: Aoutcomeqty
+    type: decimal
+    required: false
+    description: Field aOutcomeQty from Lynq_ME_Activity2
+  a_outcome_status:
+    display: Aoutcomestatus
+    type: string
+    required: false
+    description: Field aOutcomeStatus from Lynq_ME_Activity2
+  a_office_time_hours:
+    display: Aofficetimehours
+    type: decimal
+    required: false
+    description: Field aOfficeTimeHours from Lynq_ME_Activity2
+  a_param1:
+    display: Aparam1
+    type: string
+    required: false
+    description: Field aParam1 from Lynq_ME_Activity2
+  a_param2:
+    display: Aparam2
+    type: string
+    required: false
+    description: Field aParam2 from Lynq_ME_Activity2
+  a_param3:
+    display: Aparam3
+    type: string
+    required: false
+    description: Field aParam3 from Lynq_ME_Activity2
+  a_param4:
+    display: Aparam4
+    type: string
+    required: false
+    description: Field aParam4 from Lynq_ME_Activity2
+  a_param5:
+    display: Aparam5
+    type: string
+    required: false
+    description: Field aParam5 from Lynq_ME_Activity2
+  a_param6:
+    display: Aparam6
+    type: string
+    required: false
+    description: Field aParam6 from Lynq_ME_Activity2
+  a_param7:
+    display: Aparam7
+    type: string
+    required: false
+    description: Field aParam7 from Lynq_ME_Activity2
+  a_param8:
+    display: Aparam8
+    type: string
+    required: false
+    description: Field aParam8 from Lynq_ME_Activity2
+  a_param9:
+    display: Aparam9
+    type: string
+    required: false
+    description: Field aParam9 from Lynq_ME_Activity2
+  a_param10:
+    display: Aparam10
+    type: string
+    required: false
+    description: Field aParam10 from Lynq_ME_Activity2
+  a_error_message:
+    display: Aerrormessage
+    type: string
+    required: false
+    description: Field aErrorMessage from Lynq_ME_Activity2
+  a_created:
+    display: Acreated
+    type: date
+    required: false
+    description: Field aCreated from Lynq_ME_Activity2
+  a_modified:
+    display: Amodified
+    type: date
+    required: false
+    description: Field aModified from Lynq_ME_Activity2
+  a_outcome_scrap:
+    display: Aoutcomescrap
+    type: decimal
+    required: false
+    description: Field aOutcomeScrap from Lynq_ME_Activity2
+  a_cbom_code:
+    display: Acbomcode
+    type: string
+    required: false
+    description: Field aCBOMCode from Lynq_ME_Activity2
+  a_outcome_cbom_quantity:
+    display: Aoutcomecbomquantity
+    type: decimal
+    required: false
+    description: Field aOutcomeCBOMQuantity from Lynq_ME_Activity2
+  a_facility_code:
+    display: Afacilitycode
+    type: string
+    required: false
+    description: Field aFacilityCode from Lynq_ME_Activity2
+  a_diversion_code:
+    display: Adiversioncode
+    type: string
+    required: false
+    description: Field aDiversionCode from Lynq_ME_Activity2
+  a_intenvention_type1:
+    display: Aintenventiontype1
+    type: string
+    required: false
+    description: Field aIntenventionType1 from Lynq_ME_Activity2
+  a_intenvention_type2:
+    display: Aintenventiontype2
+    type: string
+    required: false
+    description: Field aIntenventionType2 from Lynq_ME_Activity2
+  a_intenvention_qty:
+    display: Aintenventionqty
+    type: decimal
+    required: false
+    description: Field aIntenventionQty from Lynq_ME_Activity2
+  a_intenvention_duration:
+    display: Aintenventionduration
+    type: decimal
+    required: false
+    description: Field aIntenventionDuration from Lynq_ME_Activity2
+  a_erp_employee_code:
+    display: Aerpemployeecode
+    type: string
+    required: false
+    description: Field aErpEmployeeCode from Lynq_ME_Activity2
+  a_type1:
+    display: Atype1
+    type: string
+    required: false
+    description: Field aType1 from Lynq_ME_Activity2
+  a_type2:
+    display: Atype2
+    type: string
+    required: false
+    description: Field aType2 from Lynq_ME_Activity2
+  a_qty1:
+    display: Aqty1
+    type: decimal
+    required: false
+    description: Field aQty1 from Lynq_ME_Activity2
+  a_qty2:
+    display: Aqty2
+    type: decimal
+    required: false
+    description: Field aQty2 from Lynq_ME_Activity2
+  a_qty3:
+    display: Aqty3
+    type: decimal
+    required: false
+    description: Field aQty3 from Lynq_ME_Activity2
+  a_duration1:
+    display: Aduration1
+    type: decimal
+    required: false
+    description: Field aDuration1 from Lynq_ME_Activity2
+  a_duration2:
+    display: Aduration2
+    type: decimal
+    required: false
+    description: Field aDuration2 from Lynq_ME_Activity2
+  a_duration3:
+    display: Aduration3
+    type: decimal
+    required: false
+    description: Field aDuration3 from Lynq_ME_Activity2
+  a_dt1:
+    display: Adt1
+    type: date
+    required: false
+    description: Field aDt1 from Lynq_ME_Activity2
+  a_dt2:
+    display: Adt2
+    type: date
+    required: false
+    description: Field aDt2 from Lynq_ME_Activity2
+  a_str1:
+    display: Astr1
+    type: string
+    required: false
+    description: Field aStr1 from Lynq_ME_Activity2
+  a_str2:
+    display: Astr2
+    type: string
+    required: false
+    description: Field aStr2 from Lynq_ME_Activity2
+  a_str3:
+    display: Astr3
+    type: string
+    required: false
+    description: Field aStr3 from Lynq_ME_Activity2
+  a_classification_code:
+    display: Aclassificationcode
+    type: string
+    required: false
+    description: Field aClassificationCode from Lynq_ME_Activity2
+  a_approved_by:
+    display: Aapprovedby
+    type: string
+    required: false
+    description: Field aApprovedBy from Lynq_ME_Activity2
+  a_labour_split_type:
+    display: Alaboursplittype
+    type: string
+    required: false
+    description: Field aLabourSplitType from Lynq_ME_Activity2
+  a_labour_split_d_param1:
+    display: Alaboursplitdparam1
+    type: decimal
+    required: false
+    description: Field aLabourSplitDParam1 from Lynq_ME_Activity2
+  a_labour_split_d_param1_type_aggr:
+    display: Alaboursplitdparam1Typeaggr
+    type: decimal
+    required: false
+    description: Field aLabourSplitDParam1TypeAggr from Lynq_ME_Activity2
+  a_labour_split_type_task_count:
+    display: Alaboursplittypetaskcount
+    type: decimal
+    required: false
+    description: Field aLabourSplitTypeTaskCount from Lynq_ME_Activity2
+  a_facility_hours:
+    display: Afacilityhours
+    type: decimal
+    required: false
+    description: Field aFacilityHours from Lynq_ME_Activity2
+  a_status_before_posting:
+    display: Astatusbeforeposting
+    type: decimal
+    required: false
+    description: Field aStatusBeforePosting from Lynq_ME_Activity2
+  a_originated_id:
+    display: Aoriginatedid
+    type: decimal
+    required: false
+    description: Field aOriginatedID from Lynq_ME_Activity2
+  a_job_code:
+    display: Ajobcode
+    type: string
+    required: false
+    description: Field aJobCode from Lynq_ME_Activity2
+  a_operation_code:
+    display: Aoperationcode
+    type: string
+    required: false
+    description: Field aOperationCode from Lynq_ME_Activity2
+  a_direct:
+    display: Adirect
+    type: string
+    required: false
+    description: Field aDirect from Lynq_ME_Activity2
+  a_operational_type:
+    display: Aoperationaltype
+    type: string
+    required: false
+    description: Field aOperationalType from Lynq_ME_Activity2
+  a_category:
+    display: Acategory
+    type: string
+    required: false
+    description: Field aCategory from Lynq_ME_Activity2
+  a_color:
+    display: Acolor
+    type: string
+    required: false
+    description: Field aColor from Lynq_ME_Activity2
+  a_erp_non_productive_code:
+    display: Aerpnonproductivecode
+    type: string
+    required: false
+    description: Field aErpNonProductiveCode from Lynq_ME_Activity2
+  a_employee_code:
+    display: Aemployeecode
+    type: string
+    required: false
+    description: Field aEmployeeCode from Lynq_ME_Activity2
+  a_resource_count:
+    display: Aresourcecount
+    type: decimal
+    required: false
+    description: Field aResourceCount from Lynq_ME_Activity2
+  a_elapsed_time:
+    display: Aelapsedtime
+    type: decimal
+    required: false
+    description: Field aElapsedTime from Lynq_ME_Activity2
+  a_erp_facility_code:
+    display: Aerpfacilitycode
+    type: string
+    required: false
+    description: Field aErpFacilityCode from Lynq_ME_Activity2
+  a_time_uom_conversion:
+    display: Atimeuomconversion
+    type: decimal
+    required: false
+    description: Field aTimeUOMConversion from Lynq_ME_Activity2
+  a_time_uom_converted:
+    display: Atimeuomconverted
+    type: string
+    required: false
+    description: Field aTimeUOMConverted from Lynq_ME_Activity2
+  a_event_task_code:
+    display: Aeventtaskcode
+    type: string
+    required: false
+    description: Field aEventTaskCode from Lynq_ME_Activity2
+  a_facility_rate_indicator:
+    display: Afacilityrateindicator
+    type: string
+    required: false
+    description: Field aFacilityRateIndicator from Lynq_ME_Activity2
+  a_employee_rate_indicator:
+    display: Aemployeerateindicator
+    type: string
+    required: false
+    description: Field aEmployeeRateIndicator from Lynq_ME_Activity2
+  a_force_stat_sync:
+    display: Aforcestatsync
+    type: string
+    required: false
+    description: Field aForceStatSync from Lynq_ME_Activity2

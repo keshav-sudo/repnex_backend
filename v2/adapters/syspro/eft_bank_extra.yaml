@@ -1,0 +1,6 @@
+concept: eft_bank_extra
+table: EftBankExtra
+alias: ebe
+fields:
+  bank: ebe.Bank
+  bank_info: ebe.BankInfo

@@ -1,0 +1,34 @@
+concept: ar_csh_jnl_ctl
+table: ArCshJnlCtl
+alias: acjc
+fields:
+  trn_year: acjc.TrnYear
+  trn_month: acjc.TrnMonth
+  journal: acjc.Journal
+  status: acjc.Status
+  posted_flag: acjc.PostedFlag
+  journal_date: acjc.JournalDate
+  begin_cust_bal: acjc.BeginCustBal
+  pmt_total_amount: acjc.PmtTotalAmount
+  no_of_payments: acjc.NoOfPayments
+  disc_allow_value: acjc.DiscAllowValue
+  disc_allow_number: acjc.DiscAllowNumber
+  adjustments_value: acjc.AdjustmentsValue
+  adjustments_number: acjc.AdjustmentsNumber
+  pay_reverse_value: acjc.PayReverseValue
+  pay_reverse_number: acjc.PayReverseNumber
+  adj_reverse_value: acjc.AdjReverseValue
+  adj_reverse_number: acjc.AdjReverseNumber
+  bank_deposit_prt: acjc.BankDepositPrt
+  cash_acc_bank: acjc.CashAccBank
+  currency: acjc.Currency
+  ldg_post_year: acjc.LdgPostYear
+  ldg_per_num: acjc.LdgPerNum
+  deposit_in_bank: acjc.DepositInBank
+  post_deposit_in_det: acjc.PostDepositInDet
+  revaluation_value: acjc.RevaluationValue
+  tax_relief_value: acjc.TaxReliefValue
+  tax_relief_number: acjc.TaxReliefNumber
+  group_pay: acjc.GroupPay
+  payment_number: acjc.PaymentNumber
+  group_total_amount: acjc.GroupTotalAmount

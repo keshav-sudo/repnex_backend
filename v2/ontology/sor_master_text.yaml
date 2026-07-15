@@ -1,0 +1,23 @@
+concept: sor_master_text
+display_name: SorMasterText
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorMasterText.
+synonyms:
+- sormastertext
+- sor master text
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorMasterText
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SorMasterText
+  text:
+    display: Text
+    type: string
+    required: false
+    description: Field Text from SorMasterText

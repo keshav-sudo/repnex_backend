@@ -1,0 +1,36 @@
+concept: lot_detail
+table: LotDetail
+alias: ld
+fields:
+  stock_code: ld.StockCode
+  warehouse: ld.Warehouse
+  lot: ld.Lot
+  bin: ld.Bin
+  next_trn_line: ld.NextTrnLine
+  orig_qty_received: ld.OrigQtyReceived
+  qty_on_hand: ld.QtyOnHand
+  qty_to_ship: ld.QtyToShip
+  version: ld.Version
+  release: ld.Release
+  expiry_date: ld.ExpiryDate
+  creation_date: ld.CreationDate
+  draw_office_num: ld.DrawOfficeNum
+  last_trn_date: ld.LastTrnDate
+  archive_filename: ld.ArchiveFilename
+  qty_in_transit: ld.QtyInTransit
+  lot_hold_flag: ld.LotHoldFlag
+  note: ld.Note
+  ecc_dummy: ld.EccDummy
+  qty_awaiting_credit: ld.QtyAwaitingCredit
+  qty_reserved: ld.QtyReserved
+  supplier_lot: ld.SupplierLot
+  product_shelf_life: ld.ProductShelfLife
+  internal_shelf_life: ld.InternalShelfLife
+  use_by_date: ld.UseByDate
+  sell_by_date: ld.SellByDate
+  internal_expiry_date: ld.InternalExpiryDate
+  manufacture_date: ld.ManufactureDate
+  dispatch_date: ld.DispatchDate
+  best_before_date: ld.BestBeforeDate
+  prd_recall_flag: ld.PrdRecallFlag
+  reason_code: ld.ReasonCode

@@ -1,0 +1,18 @@
+concept: tpm_resolution
+display_name: TpmResolution
+module: other
+description: Auto-generated representation of the physical table TpmResolution.
+synonyms:
+- tpmresolution
+- tpm resolution
+header_attributes:
+  resolution_code:
+    display: Resolutioncode
+    type: string
+    required: false
+    description: Field ResolutionCode from TpmResolution
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TpmResolution

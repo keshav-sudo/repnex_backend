@@ -1,0 +1,10 @@
+concept: pos_drawer
+table: PosDrawer
+alias: pd1
+fields:
+  cash_drawer: pd1.CashDrawer
+  drawer_description: pd1.DrawerDescription
+  drawer_float: pd1.DrawerFloat
+  open_draw_hex_code: pd1.OpenDrawHexCode
+  printer_port_flag: pd1.PrinterPortFlag
+  cash_drawer_device: pd1.CashDrawerDevice

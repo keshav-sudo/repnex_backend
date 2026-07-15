@@ -1,0 +1,63 @@
+concept: bpo_schedule
+display_name: BpoSchedule
+module: other
+description: Auto-generated representation of the physical table BpoSchedule.
+synonyms:
+- bposchedule
+- bpo schedule
+header_attributes:
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from BpoSchedule
+  schedule_date:
+    display: Scheduledate
+    type: date
+    required: false
+    description: Field ScheduleDate from BpoSchedule
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from BpoSchedule
+  deliveries_per_day:
+    display: Deliveriesperday
+    type: decimal
+    required: false
+    description: Field DeliveriesPerDay from BpoSchedule
+  purchase_order1:
+    display: Purchaseorder1
+    type: string
+    required: false
+    description: Field PurchaseOrder1 from BpoSchedule
+  purchase_order2:
+    display: Purchaseorder2
+    type: string
+    required: false
+    description: Field PurchaseOrder2 from BpoSchedule
+  purchase_order3:
+    display: Purchaseorder3
+    type: string
+    required: false
+    description: Field PurchaseOrder3 from BpoSchedule
+  time_of_day1:
+    display: Timeofday1
+    type: decimal
+    required: false
+    description: Field TimeOfDay1 from BpoSchedule
+  time_of_day2:
+    display: Timeofday2
+    type: decimal
+    required: false
+    description: Field TimeOfDay2 from BpoSchedule
+  time_of_day3:
+    display: Timeofday3
+    type: decimal
+    required: false
+    description: Field TimeOfDay3 from BpoSchedule
+  release_date:
+    display: Releasedate
+    type: date
+    required: false
+    description: Field ReleaseDate from BpoSchedule

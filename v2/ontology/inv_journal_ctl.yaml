@@ -1,0 +1,148 @@
+concept: inv_journal_ctl
+display_name: InvJournalCtl
+module: inventory
+description: Auto-generated representation of the physical table InvJournalCtl.
+synonyms:
+- invjournalctl
+- inv journal ctl
+header_attributes:
+  year_post:
+    display: Yearpost
+    type: decimal
+    required: false
+    description: Field YearPost from InvJournalCtl
+  month_post:
+    display: Monthpost
+    type: decimal
+    required: false
+    description: Field MonthPost from InvJournalCtl
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from InvJournalCtl
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from InvJournalCtl
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from InvJournalCtl
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvJournalCtl
+  ledg_warehouse:
+    display: Ledgwarehouse
+    type: string
+    required: false
+    description: Field LedgWarehouse from InvJournalCtl
+  ledg_non_stocked:
+    display: Ledgnonstocked
+    type: string
+    required: false
+    description: Field LedgNonStocked from InvJournalCtl
+  file_extract_flag:
+    display: Fileextractflag
+    type: string
+    required: false
+    description: Field FileExtractFlag from InvJournalCtl
+  ledg_code_cost:
+    display: Ledgcodecost
+    type: string
+    required: false
+    description: Field LedgCodeCost from InvJournalCtl
+  ledg_sub_contract:
+    display: Ledgsubcontract
+    type: string
+    required: false
+    description: Field LedgSubContract from InvJournalCtl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from InvJournalCtl
+  ledg_variance_acc:
+    display: Ledgvarianceacc
+    type: string
+    required: false
+    description: Field LedgVarianceAcc from InvJournalCtl
+  year_post_ledg:
+    display: Yearpostledg
+    type: decimal
+    required: false
+    description: Field YearPostLedg from InvJournalCtl
+  ledg_period:
+    display: Ledgperiod
+    type: decimal
+    required: false
+    description: Field LedgPeriod from InvJournalCtl
+  ledg_grn_price_var:
+    display: Ledggrnpricevar
+    type: string
+    required: false
+    description: Field LedgGrnPriceVar from InvJournalCtl
+  goods_in_tran_ctl:
+    display: Goodsintranctl
+    type: string
+    required: false
+    description: Field GoodsInTranCtl from InvJournalCtl
+  goods_in_tran_jnl:
+    display: Goodsintranjnl
+    type: string
+    required: false
+    description: Field GoodsInTranJnl from InvJournalCtl
+  wip_inspect_ctl:
+    display: Wipinspectctl
+    type: string
+    required: false
+    description: Field WipInspectCtl from InvJournalCtl
+  analysis_entry:
+    display: Analysisentry
+    type: decimal
+    required: false
+    description: Field AnalysisEntry from InvJournalCtl
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from InvJournalCtl
+  gl_int_printed:
+    display: Glintprinted
+    type: string
+    required: false
+    description: Field GlIntPrinted from InvJournalCtl
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from InvJournalCtl
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from InvJournalCtl
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from InvJournalCtl
+  gl_int_level:
+    display: Glintlevel
+    type: string
+    required: false
+    description: Field GlIntLevel from InvJournalCtl
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from InvJournalCtl
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from InvJournalCtl

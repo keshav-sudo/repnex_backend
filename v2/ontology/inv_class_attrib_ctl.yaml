@@ -1,0 +1,58 @@
+concept: inv_class_attrib_ctl
+display_name: InvClassAttribCtl
+module: inventory
+description: Auto-generated representation of the physical table InvClassAttribCtl.
+synonyms:
+- invclassattribctl
+- inv class attrib ctl
+header_attributes:
+  stock_class:
+    display: Stockclass
+    type: string
+    required: false
+    description: Field StockClass from InvClassAttribCtl
+  sequence_number:
+    display: Sequencenumber
+    type: decimal
+    required: false
+    description: Field SequenceNumber from InvClassAttribCtl
+  class_attrib:
+    display: Classattrib
+    type: string
+    required: false
+    description: Field ClassAttrib from InvClassAttribCtl
+  attrib_description:
+    display: Attribdescription
+    type: string
+    required: false
+    description: Field AttribDescription from InvClassAttribCtl
+  field_type:
+    display: Fieldtype
+    type: string
+    required: false
+    description: Field FieldType from InvClassAttribCtl
+  field_length:
+    display: Fieldlength
+    type: decimal
+    required: false
+    description: Field FieldLength from InvClassAttribCtl
+  field_decimals:
+    display: Fielddecimals
+    type: decimal
+    required: false
+    description: Field FieldDecimals from InvClassAttribCtl
+  default_value:
+    display: Defaultvalue
+    type: string
+    required: false
+    description: Field DefaultValue from InvClassAttribCtl
+  allow_null:
+    display: Allownull
+    type: decimal
+    required: false
+    description: Field AllowNull from InvClassAttribCtl
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from InvClassAttribCtl

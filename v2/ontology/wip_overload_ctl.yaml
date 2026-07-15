@@ -1,0 +1,28 @@
+concept: wip_overload_ctl
+display_name: WipOverloadCtl
+module: work_in_progress
+description: Auto-generated representation of the physical table WipOverloadCtl.
+synonyms:
+- wipoverloadctl
+- wip overload ctl
+header_attributes:
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WipOverloadCtl
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from WipOverloadCtl
+  incl_suggested_job:
+    display: Inclsuggestedjob
+    type: string
+    required: false
+    description: Field InclSuggestedJob from WipOverloadCtl
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from WipOverloadCtl

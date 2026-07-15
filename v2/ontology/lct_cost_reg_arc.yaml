@@ -1,0 +1,113 @@
+concept: lct_cost_reg_arc
+display_name: LctCostRegArc
+module: other
+description: Auto-generated representation of the physical table LctCostRegArc.
+synonyms:
+- lctcostregarc
+- lct cost reg arc
+header_attributes:
+  vessel:
+    display: Vessel
+    type: string
+    required: false
+    description: Field Vessel from LctCostRegArc
+  departure_date:
+    display: Departuredate
+    type: date
+    required: false
+    description: Field DepartureDate from LctCostRegArc
+  shipment_reference:
+    display: Shipmentreference
+    type: string
+    required: false
+    description: Field ShipmentReference from LctCostRegArc
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from LctCostRegArc
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from LctCostRegArc
+  qty_shipped:
+    display: Qtyshipped
+    type: decimal
+    required: false
+    description: Field QtyShipped from LctCostRegArc
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from LctCostRegArc
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LctCostRegArc
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from LctCostRegArc
+  receipt_flag:
+    display: Receiptflag
+    type: string
+    required: false
+    description: Field ReceiptFlag from LctCostRegArc
+  tot_cost_merch:
+    display: Totcostmerch
+    type: decimal
+    required: false
+    description: Field TotCostMerch from LctCostRegArc
+  unit_cost_merch:
+    display: Unitcostmerch
+    type: decimal
+    required: false
+    description: Field UnitCostMerch from LctCostRegArc
+  date_archived:
+    display: Datearchived
+    type: date
+    required: false
+    description: Field DateArchived from LctCostRegArc
+  sundry_item_mass:
+    display: Sundryitemmass
+    type: decimal
+    required: false
+    description: Field SundryItemMass from LctCostRegArc
+  sundry_item_volume:
+    display: Sundryitemvolume
+    type: decimal
+    required: false
+    description: Field SundryItemVolume from LctCostRegArc
+  traceability_flag:
+    display: Traceabilityflag
+    type: string
+    required: false
+    description: Field TraceabilityFlag from LctCostRegArc
+  temp_exch_rate:
+    display: Tempexchrate
+    type: decimal
+    required: false
+    description: Field TempExchRate from LctCostRegArc
+  temp_exch_mul_div:
+    display: Tempexchmuldiv
+    type: string
+    required: false
+    description: Field TempExchMulDiv from LctCostRegArc
+  receipt_sundry:
+    display: Receiptsundry
+    type: decimal
+    required: false
+    description: Field ReceiptSundry from LctCostRegArc
+  sup_catalogue:
+    display: Supcatalogue
+    type: string
+    required: false
+    description: Field SupCatalogue from LctCostRegArc
+  shipped_qty_stk_um:
+    display: Shippedqtystkum
+    type: decimal
+    required: false
+    description: Field ShippedQtyStkUm from LctCostRegArc

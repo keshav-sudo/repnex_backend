@@ -1,0 +1,13 @@
+concept: mrp_gtr_supply_chain
+table: MrpGtrSupplyChain
+alias: mgsc
+fields:
+  stock_code: mgsc.StockCode
+  chain_number: mgsc.ChainNumber
+  level_number: mgsc.LevelNumber
+  target_warehouse: mgsc.TargetWarehouse
+  source_warehouse: mgsc.SourceWarehouse
+  lead_time: mgsc.LeadTime
+  gl_code: mgsc.GlCode
+  cost_multiplier: mgsc.CostMultiplier
+  buying_rule_flag: mgsc.BuyingRuleFlag

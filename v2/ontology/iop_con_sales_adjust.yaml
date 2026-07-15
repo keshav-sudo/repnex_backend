@@ -1,0 +1,83 @@
+concept: iop_con_sales_adjust
+display_name: IopConSalesAdjust
+module: other
+description: Auto-generated representation of the physical table IopConSalesAdjust.
+synonyms:
+- iopconsalesadjust
+- iop con sales adjust
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopConSalesAdjust
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopConSalesAdjust
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopConSalesAdjust
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopConSalesAdjust
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopConSalesAdjust
+  movement_date:
+    display: Movementdate
+    type: date
+    required: false
+    description: Field MovementDate from IopConSalesAdjust
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from IopConSalesAdjust
+  adjust_type:
+    display: Adjusttype
+    type: string
+    required: false
+    description: Field AdjustType from IopConSalesAdjust
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from IopConSalesAdjust
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopConSalesAdjust
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopConSalesAdjust
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from IopConSalesAdjust
+  orig_warehouse:
+    display: Origwarehouse
+    type: string
+    required: false
+    description: Field OrigWarehouse from IopConSalesAdjust
+  lost_sale_trn_date:
+    display: Lostsaletrndate
+    type: date
+    required: false
+    description: Field LostSaleTrnDate from IopConSalesAdjust
+  lost_sale_trn_time:
+    display: Lostsaletrntime
+    type: decimal
+    required: false
+    description: Field LostSaleTrnTime from IopConSalesAdjust

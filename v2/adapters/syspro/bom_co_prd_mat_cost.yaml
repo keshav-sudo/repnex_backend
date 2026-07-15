@@ -1,0 +1,12 @@
+concept: bom_co_prd_mat_cost
+table: BomCoPrdMatCost
+alias: bcpmc
+fields:
+  parent_part: bcpmc.ParentPart
+  version: bcpmc.Version
+  release: bcpmc.Release
+  route: bcpmc.Route
+  co_product_line: bcpmc.CoProductLine
+  sequence_num: bcpmc.SequenceNum
+  component: bcpmc.Component
+  pct_material_cost: bcpmc.PctMaterialCost

@@ -1,0 +1,23 @@
+concept: prj_cont_index
+display_name: PrjContIndex
+module: other
+description: Auto-generated representation of the physical table PrjContIndex.
+synonyms:
+- prjcontindex
+- prj cont index
+header_attributes:
+  hierarchy_type:
+    display: Hierarchytype
+    type: string
+    required: false
+    description: Field HierarchyType from PrjContIndex
+  job_estimate:
+    display: Jobestimate
+    type: string
+    required: false
+    description: Field JobEstimate from PrjContIndex
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from PrjContIndex

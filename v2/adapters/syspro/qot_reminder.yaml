@@ -1,0 +1,7 @@
+concept: qot_reminder
+table: QotReminder
+alias: qr1
+fields:
+  reminder_flag: qr1.ReminderFlag
+  buyer_planner: qr1.BuyerPlanner
+  non_stock_code: qr1.NonStockCode

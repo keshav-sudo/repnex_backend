@@ -1,0 +1,46 @@
+concept: lct_calc_code
+table: LctCalcCode
+alias: lcc
+fields:
+  calc_code: lcc.CalcCode
+  description: lcc.Description
+  field11: lcc.Field11
+  field12: lcc.Field12
+  field13: lcc.Field13
+  field14: lcc.Field14
+  field15: lcc.Field15
+  operand11: lcc.Operand11
+  operand12: lcc.Operand12
+  operand13: lcc.Operand13
+  operand14: lcc.Operand14
+  operand15: lcc.Operand15
+  field21: lcc.Field21
+  field22: lcc.Field22
+  field23: lcc.Field23
+  field24: lcc.Field24
+  field25: lcc.Field25
+  operand21: lcc.Operand21
+  operand22: lcc.Operand22
+  operand23: lcc.Operand23
+  operand24: lcc.Operand24
+  operand25: lcc.Operand25
+  field31: lcc.Field31
+  field32: lcc.Field32
+  field33: lcc.Field33
+  field34: lcc.Field34
+  field35: lcc.Field35
+  operand31: lcc.Operand31
+  operand32: lcc.Operand32
+  operand33: lcc.Operand33
+  operand34: lcc.Operand34
+  operand35: lcc.Operand35
+  field41: lcc.Field41
+  field42: lcc.Field42
+  field43: lcc.Field43
+  field44: lcc.Field44
+  field45: lcc.Field45
+  operand41: lcc.Operand41
+  operand42: lcc.Operand42
+  operand43: lcc.Operand43
+  operand44: lcc.Operand44
+  operand45: lcc.Operand45

@@ -1,0 +1,8 @@
+concept: iop_structure
+table: IopStructure
+alias: is2
+fields:
+  parent_collection: is2.ParentCollection
+  parent_instance: is2.ParentInstance
+  child_collection: is2.ChildCollection
+  child_instance: is2.ChildInstance

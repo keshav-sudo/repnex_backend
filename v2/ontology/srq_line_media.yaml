@@ -1,0 +1,53 @@
+concept: srq_line_media
+display_name: SrqLineMedia
+module: other
+description: Auto-generated representation of the physical table SrqLineMedia.
+synonyms:
+- srqlinemedia
+- srq line media
+header_attributes:
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from SrqLineMedia
+  rfq_line:
+    display: Rfqline
+    type: decimal
+    required: false
+    description: Field RfqLine from SrqLineMedia
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from SrqLineMedia
+  date_media_added:
+    display: Datemediaadded
+    type: date
+    required: false
+    description: Field DateMediaAdded from SrqLineMedia
+  time_media_added:
+    display: Timemediaadded
+    type: decimal
+    required: false
+    description: Field TimeMediaAdded from SrqLineMedia
+  media:
+    display: Media
+    type: string
+    required: false
+    description: Field Media from SrqLineMedia
+  media_file_name:
+    display: Mediafilename
+    type: string
+    required: false
+    description: Field MediaFileName from SrqLineMedia
+  media_file_extension:
+    display: Mediafileextension
+    type: string
+    required: false
+    description: Field MediaFileExtension from SrqLineMedia
+  media_file_size:
+    display: Mediafilesize
+    type: decimal
+    required: false
+    description: Field MediaFileSize from SrqLineMedia

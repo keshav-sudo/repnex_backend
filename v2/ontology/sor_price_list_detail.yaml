@@ -1,0 +1,523 @@
+concept: sor_price_list_detail
+display_name: SorPriceListDetail
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPriceListDetail.
+synonyms:
+- sorpricelistdetail
+- sor price list detail
+header_attributes:
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from SorPriceListDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorPriceListDetail
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SorPriceListDetail
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from SorPriceListDetail
+  price_category:
+    display: Pricecategory
+    type: string
+    required: false
+    description: Field PriceCategory from SorPriceListDetail
+  basis_price_list:
+    display: Basispricelist
+    type: string
+    required: false
+    description: Field BasisPriceList from SorPriceListDetail
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from SorPriceListDetail
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from SorPriceListDetail
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from SorPriceListDetail
+  disc_value:
+    display: Discvalue
+    type: decimal
+    required: false
+    description: Field DiscValue from SorPriceListDetail
+  mark_up_pct:
+    display: Markuppct
+    type: decimal
+    required: false
+    description: Field MarkUpPct from SorPriceListDetail
+  threshold_qty1:
+    display: Thresholdqty1
+    type: decimal
+    required: false
+    description: Field ThresholdQty1 from SorPriceListDetail
+  threshold_qty2:
+    display: Thresholdqty2
+    type: decimal
+    required: false
+    description: Field ThresholdQty2 from SorPriceListDetail
+  threshold_qty3:
+    display: Thresholdqty3
+    type: decimal
+    required: false
+    description: Field ThresholdQty3 from SorPriceListDetail
+  threshold_qty4:
+    display: Thresholdqty4
+    type: decimal
+    required: false
+    description: Field ThresholdQty4 from SorPriceListDetail
+  threshold_qty5:
+    display: Thresholdqty5
+    type: decimal
+    required: false
+    description: Field ThresholdQty5 from SorPriceListDetail
+  threshold_qty6:
+    display: Thresholdqty6
+    type: decimal
+    required: false
+    description: Field ThresholdQty6 from SorPriceListDetail
+  threshold_qty7:
+    display: Thresholdqty7
+    type: decimal
+    required: false
+    description: Field ThresholdQty7 from SorPriceListDetail
+  threshold_qty8:
+    display: Thresholdqty8
+    type: decimal
+    required: false
+    description: Field ThresholdQty8 from SorPriceListDetail
+  threshold_qty9:
+    display: Thresholdqty9
+    type: decimal
+    required: false
+    description: Field ThresholdQty9 from SorPriceListDetail
+  threshold_qty10:
+    display: Thresholdqty10
+    type: decimal
+    required: false
+    description: Field ThresholdQty10 from SorPriceListDetail
+  threshold_qty11:
+    display: Thresholdqty11
+    type: decimal
+    required: false
+    description: Field ThresholdQty11 from SorPriceListDetail
+  threshold_qty12:
+    display: Thresholdqty12
+    type: decimal
+    required: false
+    description: Field ThresholdQty12 from SorPriceListDetail
+  threshold_qty13:
+    display: Thresholdqty13
+    type: decimal
+    required: false
+    description: Field ThresholdQty13 from SorPriceListDetail
+  threshold_qty14:
+    display: Thresholdqty14
+    type: decimal
+    required: false
+    description: Field ThresholdQty14 from SorPriceListDetail
+  threshold_qty15:
+    display: Thresholdqty15
+    type: decimal
+    required: false
+    description: Field ThresholdQty15 from SorPriceListDetail
+  threshold_qty16:
+    display: Thresholdqty16
+    type: decimal
+    required: false
+    description: Field ThresholdQty16 from SorPriceListDetail
+  threshold_qty17:
+    display: Thresholdqty17
+    type: decimal
+    required: false
+    description: Field ThresholdQty17 from SorPriceListDetail
+  threshold_qty18:
+    display: Thresholdqty18
+    type: decimal
+    required: false
+    description: Field ThresholdQty18 from SorPriceListDetail
+  threshold_qty19:
+    display: Thresholdqty19
+    type: decimal
+    required: false
+    description: Field ThresholdQty19 from SorPriceListDetail
+  threshold_qty20:
+    display: Thresholdqty20
+    type: decimal
+    required: false
+    description: Field ThresholdQty20 from SorPriceListDetail
+  threshold_qty21:
+    display: Thresholdqty21
+    type: decimal
+    required: false
+    description: Field ThresholdQty21 from SorPriceListDetail
+  threshold_qty22:
+    display: Thresholdqty22
+    type: decimal
+    required: false
+    description: Field ThresholdQty22 from SorPriceListDetail
+  threshold_qty23:
+    display: Thresholdqty23
+    type: decimal
+    required: false
+    description: Field ThresholdQty23 from SorPriceListDetail
+  threshold_qty24:
+    display: Thresholdqty24
+    type: decimal
+    required: false
+    description: Field ThresholdQty24 from SorPriceListDetail
+  threshold_qty25:
+    display: Thresholdqty25
+    type: decimal
+    required: false
+    description: Field ThresholdQty25 from SorPriceListDetail
+  threshold_qty26:
+    display: Thresholdqty26
+    type: decimal
+    required: false
+    description: Field ThresholdQty26 from SorPriceListDetail
+  threshold_qty27:
+    display: Thresholdqty27
+    type: decimal
+    required: false
+    description: Field ThresholdQty27 from SorPriceListDetail
+  threshold_qty28:
+    display: Thresholdqty28
+    type: decimal
+    required: false
+    description: Field ThresholdQty28 from SorPriceListDetail
+  threshold_qty29:
+    display: Thresholdqty29
+    type: decimal
+    required: false
+    description: Field ThresholdQty29 from SorPriceListDetail
+  threshold_qty30:
+    display: Thresholdqty30
+    type: decimal
+    required: false
+    description: Field ThresholdQty30 from SorPriceListDetail
+  qdb_price1:
+    display: Qdbprice1
+    type: decimal
+    required: false
+    description: Field QdbPrice1 from SorPriceListDetail
+  qdb_price2:
+    display: Qdbprice2
+    type: decimal
+    required: false
+    description: Field QdbPrice2 from SorPriceListDetail
+  qdb_price3:
+    display: Qdbprice3
+    type: decimal
+    required: false
+    description: Field QdbPrice3 from SorPriceListDetail
+  qdb_price4:
+    display: Qdbprice4
+    type: decimal
+    required: false
+    description: Field QdbPrice4 from SorPriceListDetail
+  qdb_price5:
+    display: Qdbprice5
+    type: decimal
+    required: false
+    description: Field QdbPrice5 from SorPriceListDetail
+  qdb_price6:
+    display: Qdbprice6
+    type: decimal
+    required: false
+    description: Field QdbPrice6 from SorPriceListDetail
+  qdb_price7:
+    display: Qdbprice7
+    type: decimal
+    required: false
+    description: Field QdbPrice7 from SorPriceListDetail
+  qdb_price8:
+    display: Qdbprice8
+    type: decimal
+    required: false
+    description: Field QdbPrice8 from SorPriceListDetail
+  qdb_price9:
+    display: Qdbprice9
+    type: decimal
+    required: false
+    description: Field QdbPrice9 from SorPriceListDetail
+  qdb_price10:
+    display: Qdbprice10
+    type: decimal
+    required: false
+    description: Field QdbPrice10 from SorPriceListDetail
+  qdb_price11:
+    display: Qdbprice11
+    type: decimal
+    required: false
+    description: Field QdbPrice11 from SorPriceListDetail
+  qdb_price12:
+    display: Qdbprice12
+    type: decimal
+    required: false
+    description: Field QdbPrice12 from SorPriceListDetail
+  qdb_price13:
+    display: Qdbprice13
+    type: decimal
+    required: false
+    description: Field QdbPrice13 from SorPriceListDetail
+  qdb_price14:
+    display: Qdbprice14
+    type: decimal
+    required: false
+    description: Field QdbPrice14 from SorPriceListDetail
+  qdb_price15:
+    display: Qdbprice15
+    type: decimal
+    required: false
+    description: Field QdbPrice15 from SorPriceListDetail
+  qdb_price16:
+    display: Qdbprice16
+    type: decimal
+    required: false
+    description: Field QdbPrice16 from SorPriceListDetail
+  qdb_price17:
+    display: Qdbprice17
+    type: decimal
+    required: false
+    description: Field QdbPrice17 from SorPriceListDetail
+  qdb_price18:
+    display: Qdbprice18
+    type: decimal
+    required: false
+    description: Field QdbPrice18 from SorPriceListDetail
+  qdb_price19:
+    display: Qdbprice19
+    type: decimal
+    required: false
+    description: Field QdbPrice19 from SorPriceListDetail
+  qdb_price20:
+    display: Qdbprice20
+    type: decimal
+    required: false
+    description: Field QdbPrice20 from SorPriceListDetail
+  qdb_price21:
+    display: Qdbprice21
+    type: decimal
+    required: false
+    description: Field QdbPrice21 from SorPriceListDetail
+  qdb_price22:
+    display: Qdbprice22
+    type: decimal
+    required: false
+    description: Field QdbPrice22 from SorPriceListDetail
+  qdb_price23:
+    display: Qdbprice23
+    type: decimal
+    required: false
+    description: Field QdbPrice23 from SorPriceListDetail
+  qdb_price24:
+    display: Qdbprice24
+    type: decimal
+    required: false
+    description: Field QdbPrice24 from SorPriceListDetail
+  qdb_price25:
+    display: Qdbprice25
+    type: decimal
+    required: false
+    description: Field QdbPrice25 from SorPriceListDetail
+  qdb_price26:
+    display: Qdbprice26
+    type: decimal
+    required: false
+    description: Field QdbPrice26 from SorPriceListDetail
+  qdb_price27:
+    display: Qdbprice27
+    type: decimal
+    required: false
+    description: Field QdbPrice27 from SorPriceListDetail
+  qdb_price28:
+    display: Qdbprice28
+    type: decimal
+    required: false
+    description: Field QdbPrice28 from SorPriceListDetail
+  qdb_price29:
+    display: Qdbprice29
+    type: decimal
+    required: false
+    description: Field QdbPrice29 from SorPriceListDetail
+  qdb_price30:
+    display: Qdbprice30
+    type: decimal
+    required: false
+    description: Field QdbPrice30 from SorPriceListDetail
+  qdb_discount1:
+    display: Qdbdiscount1
+    type: decimal
+    required: false
+    description: Field QdbDiscount1 from SorPriceListDetail
+  qdb_discount2:
+    display: Qdbdiscount2
+    type: decimal
+    required: false
+    description: Field QdbDiscount2 from SorPriceListDetail
+  qdb_discount3:
+    display: Qdbdiscount3
+    type: decimal
+    required: false
+    description: Field QdbDiscount3 from SorPriceListDetail
+  qdb_discount4:
+    display: Qdbdiscount4
+    type: decimal
+    required: false
+    description: Field QdbDiscount4 from SorPriceListDetail
+  qdb_discount5:
+    display: Qdbdiscount5
+    type: decimal
+    required: false
+    description: Field QdbDiscount5 from SorPriceListDetail
+  qdb_discount6:
+    display: Qdbdiscount6
+    type: decimal
+    required: false
+    description: Field QdbDiscount6 from SorPriceListDetail
+  qdb_discount7:
+    display: Qdbdiscount7
+    type: decimal
+    required: false
+    description: Field QdbDiscount7 from SorPriceListDetail
+  qdb_discount8:
+    display: Qdbdiscount8
+    type: decimal
+    required: false
+    description: Field QdbDiscount8 from SorPriceListDetail
+  qdb_discount9:
+    display: Qdbdiscount9
+    type: decimal
+    required: false
+    description: Field QdbDiscount9 from SorPriceListDetail
+  qdb_discount10:
+    display: Qdbdiscount10
+    type: decimal
+    required: false
+    description: Field QdbDiscount10 from SorPriceListDetail
+  qdb_discount11:
+    display: Qdbdiscount11
+    type: decimal
+    required: false
+    description: Field QdbDiscount11 from SorPriceListDetail
+  qdb_discount12:
+    display: Qdbdiscount12
+    type: decimal
+    required: false
+    description: Field QdbDiscount12 from SorPriceListDetail
+  qdb_discount13:
+    display: Qdbdiscount13
+    type: decimal
+    required: false
+    description: Field QdbDiscount13 from SorPriceListDetail
+  qdb_discount14:
+    display: Qdbdiscount14
+    type: decimal
+    required: false
+    description: Field QdbDiscount14 from SorPriceListDetail
+  qdb_discount15:
+    display: Qdbdiscount15
+    type: decimal
+    required: false
+    description: Field QdbDiscount15 from SorPriceListDetail
+  qdb_discount16:
+    display: Qdbdiscount16
+    type: decimal
+    required: false
+    description: Field QdbDiscount16 from SorPriceListDetail
+  qdb_discount17:
+    display: Qdbdiscount17
+    type: decimal
+    required: false
+    description: Field QdbDiscount17 from SorPriceListDetail
+  qdb_discount18:
+    display: Qdbdiscount18
+    type: decimal
+    required: false
+    description: Field QdbDiscount18 from SorPriceListDetail
+  qdb_discount19:
+    display: Qdbdiscount19
+    type: decimal
+    required: false
+    description: Field QdbDiscount19 from SorPriceListDetail
+  qdb_discount20:
+    display: Qdbdiscount20
+    type: decimal
+    required: false
+    description: Field QdbDiscount20 from SorPriceListDetail
+  qdb_discount21:
+    display: Qdbdiscount21
+    type: decimal
+    required: false
+    description: Field QdbDiscount21 from SorPriceListDetail
+  qdb_discount22:
+    display: Qdbdiscount22
+    type: decimal
+    required: false
+    description: Field QdbDiscount22 from SorPriceListDetail
+  qdb_discount23:
+    display: Qdbdiscount23
+    type: decimal
+    required: false
+    description: Field QdbDiscount23 from SorPriceListDetail
+  qdb_discount24:
+    display: Qdbdiscount24
+    type: decimal
+    required: false
+    description: Field QdbDiscount24 from SorPriceListDetail
+  qdb_discount25:
+    display: Qdbdiscount25
+    type: decimal
+    required: false
+    description: Field QdbDiscount25 from SorPriceListDetail
+  qdb_discount26:
+    display: Qdbdiscount26
+    type: decimal
+    required: false
+    description: Field QdbDiscount26 from SorPriceListDetail
+  qdb_discount27:
+    display: Qdbdiscount27
+    type: decimal
+    required: false
+    description: Field QdbDiscount27 from SorPriceListDetail
+  qdb_discount28:
+    display: Qdbdiscount28
+    type: decimal
+    required: false
+    description: Field QdbDiscount28 from SorPriceListDetail
+  qdb_discount29:
+    display: Qdbdiscount29
+    type: decimal
+    required: false
+    description: Field QdbDiscount29 from SorPriceListDetail
+  qdb_discount30:
+    display: Qdbdiscount30
+    type: decimal
+    required: false
+    description: Field QdbDiscount30 from SorPriceListDetail
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from SorPriceListDetail
+  price_basis:
+    display: Pricebasis
+    type: string
+    required: false
+    description: Field PriceBasis from SorPriceListDetail

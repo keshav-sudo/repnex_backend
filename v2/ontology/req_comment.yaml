@@ -1,0 +1,33 @@
+concept: req_comment
+display_name: ReqComment
+module: other
+description: Auto-generated representation of the physical table ReqComment.
+synonyms:
+- reqcomment
+- req comment
+header_attributes:
+  requisition:
+    display: Requisition
+    type: string
+    required: false
+    description: Field Requisition from ReqComment
+  requisition_line:
+    display: Requisitionline
+    type: decimal
+    required: false
+    description: Field RequisitionLine from ReqComment
+  narration_type:
+    display: Narrationtype
+    type: string
+    required: false
+    description: Field NarrationType from ReqComment
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from ReqComment
+  text:
+    display: Text
+    type: string
+    required: false
+    description: Field Text from ReqComment

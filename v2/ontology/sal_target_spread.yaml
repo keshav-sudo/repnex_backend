@@ -1,0 +1,148 @@
+concept: sal_target_spread
+display_name: SalTargetSpread
+module: other
+description: Auto-generated representation of the physical table SalTargetSpread.
+synonyms:
+- saltargetspread
+- sal target spread
+header_attributes:
+  target_type:
+    display: Targettype
+    type: string
+    required: false
+    description: Field TargetType from SalTargetSpread
+  target_sum_seq:
+    display: Targetsumseq
+    type: string
+    required: false
+    description: Field TargetSumSeq from SalTargetSpread
+  sales_spread1:
+    display: Salesspread1
+    type: decimal
+    required: false
+    description: Field SalesSpread1 from SalTargetSpread
+  sales_spread2:
+    display: Salesspread2
+    type: decimal
+    required: false
+    description: Field SalesSpread2 from SalTargetSpread
+  sales_spread3:
+    display: Salesspread3
+    type: decimal
+    required: false
+    description: Field SalesSpread3 from SalTargetSpread
+  sales_spread4:
+    display: Salesspread4
+    type: decimal
+    required: false
+    description: Field SalesSpread4 from SalTargetSpread
+  sales_spread5:
+    display: Salesspread5
+    type: decimal
+    required: false
+    description: Field SalesSpread5 from SalTargetSpread
+  sales_spread6:
+    display: Salesspread6
+    type: decimal
+    required: false
+    description: Field SalesSpread6 from SalTargetSpread
+  sales_spread7:
+    display: Salesspread7
+    type: decimal
+    required: false
+    description: Field SalesSpread7 from SalTargetSpread
+  sales_spread8:
+    display: Salesspread8
+    type: decimal
+    required: false
+    description: Field SalesSpread8 from SalTargetSpread
+  sales_spread9:
+    display: Salesspread9
+    type: decimal
+    required: false
+    description: Field SalesSpread9 from SalTargetSpread
+  sales_spread10:
+    display: Salesspread10
+    type: decimal
+    required: false
+    description: Field SalesSpread10 from SalTargetSpread
+  sales_spread11:
+    display: Salesspread11
+    type: decimal
+    required: false
+    description: Field SalesSpread11 from SalTargetSpread
+  sales_spread12:
+    display: Salesspread12
+    type: decimal
+    required: false
+    description: Field SalesSpread12 from SalTargetSpread
+  sales_spread13:
+    display: Salesspread13
+    type: decimal
+    required: false
+    description: Field SalesSpread13 from SalTargetSpread
+  profit_spread1:
+    display: Profitspread1
+    type: decimal
+    required: false
+    description: Field ProfitSpread1 from SalTargetSpread
+  profit_spread2:
+    display: Profitspread2
+    type: decimal
+    required: false
+    description: Field ProfitSpread2 from SalTargetSpread
+  profit_spread3:
+    display: Profitspread3
+    type: decimal
+    required: false
+    description: Field ProfitSpread3 from SalTargetSpread
+  profit_spread4:
+    display: Profitspread4
+    type: decimal
+    required: false
+    description: Field ProfitSpread4 from SalTargetSpread
+  profit_spread5:
+    display: Profitspread5
+    type: decimal
+    required: false
+    description: Field ProfitSpread5 from SalTargetSpread
+  profit_spread6:
+    display: Profitspread6
+    type: decimal
+    required: false
+    description: Field ProfitSpread6 from SalTargetSpread
+  profit_spread7:
+    display: Profitspread7
+    type: decimal
+    required: false
+    description: Field ProfitSpread7 from SalTargetSpread
+  profit_spread8:
+    display: Profitspread8
+    type: decimal
+    required: false
+    description: Field ProfitSpread8 from SalTargetSpread
+  profit_spread9:
+    display: Profitspread9
+    type: decimal
+    required: false
+    description: Field ProfitSpread9 from SalTargetSpread
+  profit_spread10:
+    display: Profitspread10
+    type: decimal
+    required: false
+    description: Field ProfitSpread10 from SalTargetSpread
+  profit_spread11:
+    display: Profitspread11
+    type: decimal
+    required: false
+    description: Field ProfitSpread11 from SalTargetSpread
+  profit_spread12:
+    display: Profitspread12
+    type: decimal
+    required: false
+    description: Field ProfitSpread12 from SalTargetSpread
+  profit_spread13:
+    display: Profitspread13
+    type: decimal
+    required: false
+    description: Field ProfitSpread13 from SalTargetSpread

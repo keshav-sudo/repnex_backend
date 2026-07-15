@@ -1,0 +1,34 @@
+concept: asset_depn_tax
+table: AssetDepnTax
+alias: adt
+fields:
+  asset: adt.Asset
+  asset_cost: adt.AssetCost
+  current_value: adt.CurrentValue
+  accum_depn: adt.AccumDepn
+  depn_prev_yr: adt.DepnPrevYr
+  depn_this_year: adt.DepnThisYear
+  depn_this_period: adt.DepnThisPeriod
+  residual_value: adt.ResidualValue
+  book_val_dep: adt.BookValDep
+  suspend: adt.Suspend
+  start_dep_date: adt.StartDepDate
+  depn_start_period: adt.DepnStartPeriod
+  depn_start_year: adt.DepnStartYear
+  thruput_eul: adt.ThruputEul
+  stat_gl_code: adt.StatGlCode
+  number_of_periods: adt.NumberOfPeriods
+  number_of_years: adt.NumberOfYears
+  reval_reserve_to_date: adt.RevalReserveToDate
+  sold_value: adt.SoldValue
+  disposal_cost: adt.DisposalCost
+  remaining_periods: adt.RemainingPeriods
+  total_periods_td: adt.TotalPeriodsTd
+  varying_anniversary: adt.VaryingAnniversary
+  reval_reason: adt.RevalReason
+  capital_gains_tax_val: adt.CapitalGainsTaxVal
+  invest_allow_pct: adt.InvestAllowPct
+  initial_allow_pct: adt.InitialAllowPct
+  initial_allow_val: adt.InitialAllowVal
+  invest_allow_val: adt.InvestAllowVal
+  allow_taken_flag: adt.AllowTakenFlag

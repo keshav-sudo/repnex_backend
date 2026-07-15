@@ -1,0 +1,7 @@
+concept: bom_rate_desc
+table: BomRateDesc
+alias: brd
+fields:
+  rate: brd.Rate
+  description: brd.Description
+  time_uom: brd.TimeUom

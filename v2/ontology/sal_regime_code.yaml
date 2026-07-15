@@ -1,0 +1,18 @@
+concept: sal_regime_code
+display_name: SalRegimeCode
+module: other
+description: Auto-generated representation of the physical table SalRegimeCode.
+synonyms:
+- salregimecode
+- sal regime code
+header_attributes:
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from SalRegimeCode
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SalRegimeCode

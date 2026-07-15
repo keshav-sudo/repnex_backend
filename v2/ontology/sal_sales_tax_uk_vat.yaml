@@ -1,0 +1,73 @@
+concept: sal_sales_tax_uk_vat
+display_name: SalSalesTaxUkVat
+module: other
+description: Auto-generated representation of the physical table SalSalesTaxUkVat.
+synonyms:
+- salsalestaxukvat
+- sal sales tax uk vat
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalSalesTaxUkVat
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalSalesTaxUkVat
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SalSalesTaxUkVat
+  invoice_register:
+    display: Invoiceregister
+    type: decimal
+    required: false
+    description: Field InvoiceRegister from SalSalesTaxUkVat
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SalSalesTaxUkVat
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SalSalesTaxUkVat
+  exempt_value:
+    display: Exemptvalue
+    type: decimal
+    required: false
+    description: Field ExemptValue from SalSalesTaxUkVat
+  non_exempt_value:
+    display: Nonexemptvalue
+    type: decimal
+    required: false
+    description: Field NonExemptValue from SalSalesTaxUkVat
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from SalSalesTaxUkVat
+  taxable_value:
+    display: Taxablevalue
+    type: decimal
+    required: false
+    description: Field TaxableValue from SalSalesTaxUkVat
+  uk_currency:
+    display: Ukcurrency
+    type: string
+    required: false
+    description: Field UkCurrency from SalSalesTaxUkVat
+  uk_rate:
+    display: Ukrate
+    type: decimal
+    required: false
+    description: Field UkRate from SalSalesTaxUkVat
+  uk_mul_div:
+    display: Ukmuldiv
+    type: string
+    required: false
+    description: Field UkMulDiv from SalSalesTaxUkVat

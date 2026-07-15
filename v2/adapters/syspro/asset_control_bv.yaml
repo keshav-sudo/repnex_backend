@@ -1,0 +1,26 @@
+concept: asset_control_bv
+table: AssetControlBv
+alias: acb2
+fields:
+  ctl_flag: acb2.CtlFlag
+  depn_value_ytd: acb2.DepnValueYtd
+  depn_reval_ytd: acb2.DepnRevalYtd
+  depn_ici_ytd: acb2.DepnIciYtd
+  depn_ico_ytd: acb2.DepnIcoYtd
+  depn_adds_ytd: acb2.DepnAddsYtd
+  depn_disps_ytd: acb2.DepnDispsYtd
+  depn_count_ytd: acb2.DepnCountYtd
+  depn_split_ytd: acb2.DepnSplitYtd
+  reval_ytd: acb2.RevalYtd
+  ici_ytd: acb2.IciYtd
+  ico_ytd: acb2.IcoYtd
+  additions_ytd: acb2.AdditionsYtd
+  disposals_ytd: acb2.DisposalsYtd
+  disposal_cost: acb2.DisposalCost
+  sold_value: acb2.SoldValue
+  count_ytd: acb2.CountYtd
+  split_ytd: acb2.SplitYtd
+  change_ytd: acb2.ChangeYtd
+  open_value: acb2.OpenValue
+  open_depn_value: acb2.OpenDepnValue
+  open_depn_reval_value: acb2.OpenDepnRevalValue

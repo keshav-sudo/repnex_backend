@@ -1,0 +1,348 @@
+concept: wip_inspect
+display_name: WipInspect
+module: work_in_progress
+description: Auto-generated representation of the physical table WipInspect.
+synonyms:
+- wipinspect
+- wip inspect
+header_attributes:
+  insp_reference:
+    display: Inspreference
+    type: string
+    required: false
+    description: Field InspReference from WipInspect
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipInspect
+  next_line:
+    display: Nextline
+    type: decimal
+    required: false
+    description: Field NextLine from WipInspect
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipInspect
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipInspect
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipInspect
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipInspect
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipInspect
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WipInspect
+  receipt_date:
+    display: Receiptdate
+    type: date
+    required: false
+    description: Field ReceiptDate from WipInspect
+  receipt_time:
+    display: Receipttime
+    type: decimal
+    required: false
+    description: Field ReceiptTime from WipInspect
+  insp_narration:
+    display: Inspnarration
+    type: string
+    required: false
+    description: Field InspNarration from WipInspect
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from WipInspect
+  concession_num:
+    display: Concessionnum
+    type: string
+    required: false
+    description: Field ConcessionNum from WipInspect
+  document_printed:
+    display: Documentprinted
+    type: string
+    required: false
+    description: Field DocumentPrinted from WipInspect
+  qty_manufactured:
+    display: Qtymanufactured
+    type: decimal
+    required: false
+    description: Field QtyManufactured from WipInspect
+  qty_inspected:
+    display: Qtyinspected
+    type: decimal
+    required: false
+    description: Field QtyInspected from WipInspect
+  qty_accepted:
+    display: Qtyaccepted
+    type: decimal
+    required: false
+    description: Field QtyAccepted from WipInspect
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from WipInspect
+  qty_reworked:
+    display: Qtyreworked
+    type: decimal
+    required: false
+    description: Field QtyReworked from WipInspect
+  inspect_completed:
+    display: Inspectcompleted
+    type: string
+    required: false
+    description: Field InspectCompleted from WipInspect
+  traceable_type:
+    display: Traceabletype
+    type: string
+    required: false
+    description: Field TraceableType from WipInspect
+  inspect_gl_code:
+    display: Inspectglcode
+    type: string
+    required: false
+    description: Field InspectGlCode from WipInspect
+  original_value:
+    display: Originalvalue
+    type: decimal
+    required: false
+    description: Field OriginalValue from WipInspect
+  current_value:
+    display: Currentvalue
+    type: decimal
+    required: false
+    description: Field CurrentValue from WipInspect
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from WipInspect
+  cost_uom:
+    display: Costuom
+    type: string
+    required: false
+    description: Field CostUom from WipInspect
+  job_description:
+    display: Jobdescription
+    type: string
+    required: false
+    description: Field JobDescription from WipInspect
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from WipInspect
+  job_type:
+    display: Jobtype
+    type: string
+    required: false
+    description: Field JobType from WipInspect
+  master_job:
+    display: Masterjob
+    type: string
+    required: false
+    description: Field MasterJob from WipInspect
+  allocation_line:
+    display: Allocationline
+    type: string
+    required: false
+    description: Field AllocationLine from WipInspect
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from WipInspect
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from WipInspect
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from WipInspect
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from WipInspect
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from WipInspect
+  job_delivery_date:
+    display: Jobdeliverydate
+    type: date
+    required: false
+    description: Field JobDeliveryDate from WipInspect
+  inspect_hold:
+    display: Inspecthold
+    type: string
+    required: false
+    description: Field InspectHold from WipInspect
+  inspect_complete:
+    display: Inspectcomplete
+    type: string
+    required: false
+    description: Field InspectComplete from WipInspect
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipInspect
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from WipInspect
+  conv_fact_uom:
+    display: Convfactuom
+    type: decimal
+    required: false
+    description: Field ConvFactUom from WipInspect
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from WipInspect
+  qty_manufactured_ent:
+    display: Qtymanufacturedent
+    type: decimal
+    required: false
+    description: Field QtyManufacturedEnt from WipInspect
+  qty_inspected_ent:
+    display: Qtyinspectedent
+    type: decimal
+    required: false
+    description: Field QtyInspectedEnt from WipInspect
+  qty_accepted_ent:
+    display: Qtyacceptedent
+    type: decimal
+    required: false
+    description: Field QtyAcceptedEnt from WipInspect
+  qty_scrapped_ent:
+    display: Qtyscrappedent
+    type: decimal
+    required: false
+    description: Field QtyScrappedEnt from WipInspect
+  qty_reworked_ent:
+    display: Qtyreworkedent
+    type: decimal
+    required: false
+    description: Field QtyReworkedEnt from WipInspect
+  use_by_date:
+    display: Usebydate
+    type: date
+    required: false
+    description: Field UseByDate from WipInspect
+  sell_by_date:
+    display: Sellbydate
+    type: date
+    required: false
+    description: Field SellByDate from WipInspect
+  internal_expiry_date:
+    display: Internalexpirydate
+    type: date
+    required: false
+    description: Field InternalExpiryDate from WipInspect
+  manufacture_date:
+    display: Manufacturedate
+    type: date
+    required: false
+    description: Field ManufactureDate from WipInspect
+  dispatch_date:
+    display: Dispatchdate
+    type: date
+    required: false
+    description: Field DispatchDate from WipInspect
+  best_before_date:
+    display: Bestbeforedate
+    type: date
+    required: false
+    description: Field BestBeforeDate from WipInspect
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipInspect
+  sqm_inspection:
+    display: Sqminspection
+    type: string
+    required: false
+    description: Field SqmInspection from WipInspect
+  sample_basis:
+    display: Samplebasis
+    type: string
+    required: false
+    description: Field SampleBasis from WipInspect
+  qty_counted:
+    display: Qtycounted
+    type: decimal
+    required: false
+    description: Field QtyCounted from WipInspect
+  count_completed:
+    display: Countcompleted
+    type: string
+    required: false
+    description: Field CountCompleted from WipInspect
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from WipInspect
+  qty_to_accept:
+    display: Qtytoaccept
+    type: decimal
+    required: false
+    description: Field QtyToAccept from WipInspect
+  qty_to_reject:
+    display: Qtytoreject
+    type: decimal
+    required: false
+    description: Field QtyToReject from WipInspect
+  qty_in_quarant:
+    display: Qtyinquarant
+    type: decimal
+    required: false
+    description: Field QtyInQuarant from WipInspect
+  qty_counted_ent:
+    display: Qtycountedent
+    type: decimal
+    required: false
+    description: Field QtyCountedEnt from WipInspect
+  qty_to_accept_ent:
+    display: Qtytoacceptent
+    type: decimal
+    required: false
+    description: Field QtyToAcceptEnt from WipInspect
+  qty_to_reject_ent:
+    display: Qtytorejectent
+    type: decimal
+    required: false
+    description: Field QtyToRejectEnt from WipInspect
+  qty_in_quarant_ent:
+    display: Qtyinquarantent
+    type: decimal
+    required: false
+    description: Field QtyInQuarantEnt from WipInspect

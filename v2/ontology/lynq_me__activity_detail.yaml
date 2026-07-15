@@ -1,0 +1,93 @@
+concept: lynq_me__activity_detail
+display_name: Lynq ME ActivityDetail
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_ActivityDetail.
+synonyms:
+- lynq_me_activitydetail
+- lynq me  activity detail
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_ActivityDetail
+  d_quantity:
+    display: Dquantity
+    type: decimal
+    required: false
+    description: Field dQuantity from Lynq_ME_ActivityDetail
+  d_activity_id:
+    display: Dactivityid
+    type: string
+    required: false
+    description: Field dActivityID from Lynq_ME_ActivityDetail
+  d_info1:
+    display: Dinfo1
+    type: string
+    required: false
+    description: Field dInfo1 from Lynq_ME_ActivityDetail
+  d_info2:
+    display: Dinfo2
+    type: string
+    required: false
+    description: Field dInfo2 from Lynq_ME_ActivityDetail
+  d_info3:
+    display: Dinfo3
+    type: string
+    required: false
+    description: Field dInfo3 from Lynq_ME_ActivityDetail
+  d_info4:
+    display: Dinfo4
+    type: string
+    required: false
+    description: Field dInfo4 from Lynq_ME_ActivityDetail
+  d_info5:
+    display: Dinfo5
+    type: string
+    required: false
+    description: Field dInfo5 from Lynq_ME_ActivityDetail
+  d_originated_id:
+    display: Doriginatedid
+    type: decimal
+    required: false
+    description: Field dOriginatedID from Lynq_ME_ActivityDetail
+  d_serial_lot_number_info:
+    display: Dseriallotnumberinfo
+    type: string
+    required: false
+    description: Field dSerialLotNumberInfo from Lynq_ME_ActivityDetail
+  d_bin_info:
+    display: Dbininfo
+    type: string
+    required: false
+    description: Field dBinInfo from Lynq_ME_ActivityDetail
+  d_traceability_code_info:
+    display: Dtraceabilitycodeinfo
+    type: string
+    required: false
+    description: Field dTraceabilityCodeInfo from Lynq_ME_ActivityDetail
+  d_scrap_reason_info:
+    display: Dscrapreasoninfo
+    type: string
+    required: false
+    description: Field dScrapReasonInfo from Lynq_ME_ActivityDetail
+  d_reject_reason_info:
+    display: Drejectreasoninfo
+    type: string
+    required: false
+    description: Field dRejectReasonInfo from Lynq_ME_ActivityDetail
+  d_location_info:
+    display: Dlocationinfo
+    type: string
+    required: false
+    description: Field dLocationInfo from Lynq_ME_ActivityDetail
+  d_warehouse_info:
+    display: Dwarehouseinfo
+    type: string
+    required: false
+    description: Field dWarehouseInfo from Lynq_ME_ActivityDetail
+  a_force_stat_sync:
+    display: Aforcestatsync
+    type: string
+    required: false
+    description: Field aForceStatSync from Lynq_ME_ActivityDetail

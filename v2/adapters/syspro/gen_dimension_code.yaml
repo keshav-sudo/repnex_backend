@@ -1,0 +1,12 @@
+concept: gen_dimension_code
+table: GenDimensionCode
+alias: gdc1
+fields:
+  company: gdc1.Company
+  dimension_code: gdc1.DimensionCode
+  dimension_category: gdc1.DimensionCategory
+  description: gdc1.Description
+  status: gdc1.Status
+  active_from_date: gdc1.ActiveFromDate
+  active_to_date: gdc1.ActiveToDate
+  template_flag: gdc1.TemplateFlag

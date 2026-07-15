@@ -1,0 +1,38 @@
+concept: tpm_deduction_codes
+display_name: TpmDeductionCodes
+module: other
+description: Auto-generated representation of the physical table TpmDeductionCodes.
+synonyms:
+- tpmdeductioncodes
+- tpm deduction codes
+header_attributes:
+  deduction_code:
+    display: Deductioncode
+    type: string
+    required: false
+    description: Field DeductionCode from TpmDeductionCodes
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TpmDeductionCodes
+  deduction_ldg:
+    display: Deductionldg
+    type: string
+    required: false
+    description: Field DeductionLdg from TpmDeductionCodes
+  resolution_ldg:
+    display: Resolutionldg
+    type: string
+    required: false
+    description: Field ResolutionLdg from TpmDeductionCodes
+  write_off_ldg:
+    display: Writeoffldg
+    type: string
+    required: false
+    description: Field WriteOffLdg from TpmDeductionCodes
+  credit_flag:
+    display: Creditflag
+    type: decimal
+    required: false
+    description: Field CreditFlag from TpmDeductionCodes

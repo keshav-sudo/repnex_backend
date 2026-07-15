@@ -1,0 +1,11 @@
+concept: qot_parent_info
+table: QotParentInfo
+alias: qpi
+fields:
+  parent_part: qpi.ParentPart
+  route: qpi.Route
+  any_operations: qpi.AnyOperations
+  any_materials: qpi.AnyMaterials
+  narrations: qpi.Narrations
+  product_code: qpi.ProductCode
+  library_code: qpi.LibraryCode

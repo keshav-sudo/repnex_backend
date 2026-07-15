@@ -1,0 +1,16 @@
+concept: inv_stock_take_lot
+table: InvStockTakeLot
+alias: istl
+fields:
+  warehouse: istl.Warehouse
+  stock_code: istl.StockCode
+  lot: istl.Lot
+  bin: istl.Bin
+  orig_qty_on_hand: istl.OrigQtyOnHand
+  qty_captured: istl.QtyCaptured
+  st_reference: istl.StReference
+  create_lot_flag: istl.CreateLotFlag
+  create_expiry_flag: istl.CreateExpiryFlag
+  lot_expiry_date: istl.LotExpiryDate
+  version: istl.Version
+  release: istl.Release

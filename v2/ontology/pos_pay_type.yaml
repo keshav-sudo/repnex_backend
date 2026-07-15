@@ -1,0 +1,93 @@
+concept: pos_pay_type
+display_name: PosPayType
+module: other
+description: Auto-generated representation of the physical table PosPayType.
+synonyms:
+- pospaytype
+- pos pay type
+header_attributes:
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from PosPayType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from PosPayType
+  deposit_in_bank:
+    display: Depositinbank
+    type: string
+    required: false
+    description: Field DepositInBank from PosPayType
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from PosPayType
+  ar_pay_type:
+    display: Arpaytype
+    type: string
+    required: false
+    description: Field ArPayType from PosPayType
+  credit_card:
+    display: Creditcard
+    type: string
+    required: false
+    description: Field CreditCard from PosPayType
+  commission_pct:
+    display: Commissionpct
+    type: decimal
+    required: false
+    description: Field CommissionPct from PosPayType
+  req_credit_card:
+    display: Reqcreditcard
+    type: string
+    required: false
+    description: Field ReqCreditCard from PosPayType
+  req_start_date:
+    display: Reqstartdate
+    type: string
+    required: false
+    description: Field ReqStartDate from PosPayType
+  full_payment:
+    display: Fullpayment
+    type: string
+    required: false
+    description: Field FullPayment from PosPayType
+  allow_change:
+    display: Allowchange
+    type: string
+    required: false
+    description: Field AllowChange from PosPayType
+  req_reference:
+    display: Reqreference
+    type: string
+    required: false
+    description: Field ReqReference from PosPayType
+  req_notation:
+    display: Reqnotation
+    type: string
+    required: false
+    description: Field ReqNotation from PosPayType
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from PosPayType
+  min_value_auth:
+    display: Minvalueauth
+    type: decimal
+    required: false
+    description: Field MinValueAuth from PosPayType
+  req_deposit_slip:
+    display: Reqdepositslip
+    type: string
+    required: false
+    description: Field ReqDepositSlip from PosPayType
+  allow_overpay:
+    display: Allowoverpay
+    type: string
+    required: false
+    description: Field AllowOverpay from PosPayType

@@ -1,0 +1,15 @@
+concept: srs_archive_dsc
+table: SrsArchiveDSC
+alias: sadsc
+fields:
+  archive_date: sadsc.ArchiveDate
+  archive_time: sadsc.ArchiveTime
+  operator: sadsc.Operator
+  archive_id: sadsc.ArchiveId
+  archive_type: sadsc.ArchiveType
+  archive_file: sadsc.ArchiveFile
+  customer_code: sadsc.CustomerCode
+  customer_name: sadsc.CustomerName
+  document_number: sadsc.DocumentNumber
+  document_type: sadsc.DocumentType
+  system_date_cymd: sadsc.SystemDateCymd

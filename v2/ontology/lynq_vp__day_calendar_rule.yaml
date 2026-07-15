@@ -1,0 +1,48 @@
+concept: lynq_vp__day_calendar_rule
+display_name: Lynq VP DayCalendarRule
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_DayCalendarRule.
+synonyms:
+- lynq_vp_daycalendarrule
+- lynq vp  day calendar rule
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_DayCalendarRule
+  wc_id:
+    display: Wcid
+    type: decimal
+    required: false
+    description: Field WcID from Lynq_VP_DayCalendarRule
+  rule_code:
+    display: Rulecode
+    type: string
+    required: false
+    description: Field RuleCode from Lynq_VP_DayCalendarRule
+  rule_description:
+    display: Ruledescription
+    type: string
+    required: false
+    description: Field RuleDescription from Lynq_VP_DayCalendarRule
+  is_default:
+    display: Isdefault
+    type: string
+    required: false
+    description: Field IsDefault from Lynq_VP_DayCalendarRule
+  day_of_week:
+    display: Dayofweek
+    type: decimal
+    required: false
+    description: Field DayOfWeek from Lynq_VP_DayCalendarRule
+  rule_color:
+    display: Rulecolor
+    type: string
+    required: false
+    description: Field RuleColor from Lynq_VP_DayCalendarRule
+  template_id:
+    display: Templateid
+    type: decimal
+    required: false
+    description: Field TemplateID from Lynq_VP_DayCalendarRule

@@ -1,0 +1,12 @@
+concept: mdn_detail_bin
+table: MdnDetailBin
+alias: mdb
+fields:
+  dispatch_note: mdb.DispatchNote
+  dispatch_note_line: mdb.DispatchNoteLine
+  sales_order: mdb.SalesOrder
+  sales_order_line: mdb.SalesOrderLine
+  lot: mdb.Lot
+  bin: mdb.Bin
+  stock_qty_to_ship: mdb.StockQtyToShip
+  qty_this_session: mdb.QtyThisSession

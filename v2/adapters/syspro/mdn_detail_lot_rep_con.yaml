@@ -1,0 +1,21 @@
+concept: mdn_detail_lot_rep_con
+table: MdnDetailLotRepCon
+alias: mdlrc
+fields:
+  key_invoice: mdlrc.KeyInvoice
+  key_sales_order: mdlrc.KeySalesOrder
+  key_sales_order_line: mdlrc.KeySalesOrderLine
+  key_dispatch_note: mdlrc.KeyDispatchNote
+  key_dispatch_line: mdlrc.KeyDispatchLine
+  key_record_count: mdlrc.KeyRecordCount
+  dispatch_note: mdlrc.DispatchNote
+  dispatch_note_line: mdlrc.DispatchNoteLine
+  sales_order: mdlrc.SalesOrder
+  sales_order_line: mdlrc.SalesOrderLine
+  lot: mdlrc.Lot
+  stock_qty_to_ship: mdlrc.StockQtyToShip
+  qty_this_session: mdlrc.QtyThisSession
+  version: mdlrc.Version
+  release: mdlrc.Release
+  certificate: mdlrc.Certificate
+  lot_expiry_date: mdlrc.LotExpiryDate

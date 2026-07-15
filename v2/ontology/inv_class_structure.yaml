@@ -1,0 +1,18 @@
+concept: inv_class_structure
+display_name: InvClassStructure
+module: inventory
+description: Auto-generated representation of the physical table InvClassStructure.
+synonyms:
+- invclassstructure
+- inv class structure
+header_attributes:
+  parent_class:
+    display: Parentclass
+    type: string
+    required: false
+    description: Field ParentClass from InvClassStructure
+  child_class:
+    display: Childclass
+    type: string
+    required: false
+    description: Field ChildClass from InvClassStructure

@@ -1,0 +1,16 @@
+concept: ar_tax_susp_header
+table: ArTaxSuspHeader
+alias: atsh
+fields:
+  customer: atsh.Customer
+  invoice: atsh.Invoice
+  document_type: atsh.DocumentType
+  post_currency: atsh.PostCurrency
+  local_invoice_value: atsh.LocalInvoiceValue
+  local_tax_value: atsh.LocalTaxValue
+  cur_invoice_value: atsh.CurInvoiceValue
+  cur_tax_value: atsh.CurTaxValue
+  tax_rounding_account: atsh.TaxRoundingAccount
+  next_line: atsh.NextLine
+  year_tax_bal_zero: atsh.YearTaxBalZero
+  month_tax_bal_zero: atsh.MonthTaxBalZero

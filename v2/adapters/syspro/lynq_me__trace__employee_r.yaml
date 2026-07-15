@@ -1,0 +1,47 @@
+concept: lynq_me__trace__employee_r
+table: Lynq_ME_Trace_Employee_R
+alias: lmeter
+fields:
+  r_id: lmeter.rId
+  r_code: lmeter.rCode
+  r_facility_code: lmeter.rFacilityCode
+  r_membership: lmeter.rMembership
+  r_master_flag: lmeter.rMasterFlag
+  r_name: lmeter.rName
+  r_name1: lmeter.rName1
+  r_name2: lmeter.rName2
+  r_name3: lmeter.rName3
+  r_req1: lmeter.rReq1
+  r_req2: lmeter.rReq2
+  r_req3: lmeter.rReq3
+  r_req4: lmeter.rReq4
+  r_req5: lmeter.rReq5
+  r_param1: lmeter.rParam1
+  r_param2: lmeter.rParam2
+  r_param3: lmeter.rParam3
+  r_param4: lmeter.rParam4
+  r_param5: lmeter.rParam5
+  r_text1: lmeter.rText1
+  r_text2: lmeter.rText2
+  r_text3: lmeter.rText3
+  r_text4: lmeter.rText4
+  r_text5: lmeter.rText5
+  r_int1: lmeter.rInt1
+  r_int2: lmeter.rInt2
+  r_int3: lmeter.rInt3
+  r_int4: lmeter.rInt4
+  r_int5: lmeter.rInt5
+  r_decimal1: lmeter.rDecimal1
+  r_decimal2: lmeter.rDecimal2
+  r_decimal3: lmeter.rDecimal3
+  r_decimal4: lmeter.rDecimal4
+  r_decimal5: lmeter.rDecimal5
+  r_date1: lmeter.rDate1
+  r_date2: lmeter.rDate2
+  r_date3: lmeter.rDate3
+  r_date4: lmeter.rDate4
+  r_date5: lmeter.rDate5
+  r_manager: lmeter.rManager
+  r_trace_date: lmeter.rTraceDate
+  r_erp_specific: lmeter.rErpSpecific
+  r_erp_reporter_code: lmeter.rErpReporterCode

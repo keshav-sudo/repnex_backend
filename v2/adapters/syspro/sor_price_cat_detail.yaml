@@ -1,0 +1,32 @@
+concept: sor_price_cat_detail
+table: SorPriceCatDetail
+alias: spcd1
+fields:
+  catalogue: spcd1.Catalogue
+  stock_code: spcd1.StockCode
+  line_number: spcd1.LineNumber
+  price_group: spcd1.PriceGroup
+  price_group_rule: spcd1.PriceGroupRule
+  contract: spcd1.Contract
+  price_list: spcd1.PriceList
+  price: spcd1.Price
+  price_basis: spcd1.PriceBasis
+  tax_code: spcd1.TaxCode
+  tax_percentage: spcd1.TaxPercentage
+  tax_inc_excl: spcd1.TaxIncExcl
+  tax_value: spcd1.TaxValue
+  warehouse: spcd1.Warehouse
+  threshold_qty: spcd1.ThresholdQty
+  promotion_code: spcd1.PromotionCode
+  promotion_value: spcd1.PromotionValue
+  invoice_price: spcd1.InvoicePrice
+  customer_price: spcd1.CustomerPrice
+  threshold: spcd1.Threshold
+  tpm_threshold_qty: spcd1.TpmThresholdQty
+  tpm_stock_code: spcd1.TpmStockCode
+  disc_pct1: spcd1.DiscPct1
+  disc_pct2: spcd1.DiscPct2
+  disc_pct3: spcd1.DiscPct3
+  disc_value: spcd1.DiscValue
+  mark_up_pct: spcd1.MarkUpPct
+  gross_price: spcd1.GrossPrice

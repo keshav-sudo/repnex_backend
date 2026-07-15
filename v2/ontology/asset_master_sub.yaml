@@ -1,0 +1,18 @@
+concept: asset_master_sub
+display_name: AssetMasterSub
+module: assets
+description: Auto-generated representation of the physical table AssetMasterSub.
+synonyms:
+- assetmastersub
+- asset master sub
+header_attributes:
+  master_asset:
+    display: Masterasset
+    type: string
+    required: false
+    description: Field MasterAsset from AssetMasterSub
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetMasterSub

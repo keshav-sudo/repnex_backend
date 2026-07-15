@@ -1,0 +1,26 @@
+concept: rma_action_history
+table: RmaActionHistory
+alias: rah
+fields:
+  rma_number: rah.RmaNumber
+  rma_line_number: rah.RmaLineNumber
+  hist_seq_number: rah.HistSeqNumber
+  rma_action: rah.RmaAction
+  operator: rah.Operator
+  date_changed: rah.DateChanged
+  time_changed_hr: rah.TimeChangedHr
+  time_changed_min: rah.TimeChangedMin
+  time_changed_sec: rah.TimeChangedSec
+  time_changed100: rah.TimeChanged100
+  comment_line1: rah.CommentLine1
+  comment_line2: rah.CommentLine2
+  comment_line3: rah.CommentLine3
+  comment_line4: rah.CommentLine4
+  comment_line5: rah.CommentLine5
+  comment_line6: rah.CommentLine6
+  comment_line7: rah.CommentLine7
+  comment_line8: rah.CommentLine8
+  comment_line9: rah.CommentLine9
+  comment_line10: rah.CommentLine10
+  comment_line11: rah.CommentLine11
+  comment_line12: rah.CommentLine12

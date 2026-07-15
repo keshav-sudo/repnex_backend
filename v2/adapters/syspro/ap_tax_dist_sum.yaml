@@ -1,0 +1,13 @@
+concept: ap_tax_dist_sum
+table: ApTaxDistSum
+alias: atds1
+fields:
+  jnl_year: atds1.JnlYear
+  jnl_month: atds1.JnlMonth
+  journal: atds1.Journal
+  jnl_status: atds1.JnlStatus
+  jnl_date: atds1.JnlDate
+  invoice_value: atds1.InvoiceValue
+  invoice_disc: atds1.InvoiceDisc
+  invoice_tax: atds1.InvoiceTax
+  rev_charge_flag: atds1.RevChargeFlag

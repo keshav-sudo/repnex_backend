@@ -1,0 +1,21 @@
+concept: prj_ord_lin_hier
+table: PrjOrdLinHier
+alias: polh
+fields:
+  job: polh.Job
+  hier_head: polh.HierHead
+  section1: polh.Section1
+  section2: polh.Section2
+  section3: polh.Section3
+  section4: polh.Section4
+  source: polh.Source
+  sales_order: polh.SalesOrder
+  sales_order_line: polh.SalesOrderLine
+  entry: polh.Entry
+  post_date: polh.PostDate
+  val_orig_value: polh.ValOrigValue
+  ptd_adjust_val: polh.PtdAdjustVal
+  ytd_adjust_val: polh.YtdAdjustVal
+  pyr_adjust_val: polh.PyrAdjustVal
+  customer: polh.Customer
+  line_ship_date: polh.LineShipDate

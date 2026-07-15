@@ -1,0 +1,148 @@
+concept: wip_inspect_det
+display_name: WipInspectDet
+module: work_in_progress
+description: Auto-generated representation of the physical table WipInspectDet.
+synonyms:
+- wipinspectdet
+- wip inspect det
+header_attributes:
+  insp_reference:
+    display: Inspreference
+    type: string
+    required: false
+    description: Field InspReference from WipInspectDet
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipInspectDet
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from WipInspectDet
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from WipInspectDet
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from WipInspectDet
+  trn_qty:
+    display: Trnqty
+    type: decimal
+    required: false
+    description: Field TrnQty from WipInspectDet
+  concession_num:
+    display: Concessionnum
+    type: string
+    required: false
+    description: Field ConcessionNum from WipInspectDet
+  document_num:
+    display: Documentnum
+    type: string
+    required: false
+    description: Field DocumentNum from WipInspectDet
+  scrap_code:
+    display: Scrapcode
+    type: string
+    required: false
+    description: Field ScrapCode from WipInspectDet
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from WipInspectDet
+  rework_job:
+    display: Reworkjob
+    type: string
+    required: false
+    description: Field ReworkJob from WipInspectDet
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipInspectDet
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from WipInspectDet
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from WipInspectDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipInspectDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from WipInspectDet
+  posting_period:
+    display: Postingperiod
+    type: decimal
+    required: false
+    description: Field PostingPeriod from WipInspectDet
+  posting_year:
+    display: Postingyear
+    type: decimal
+    required: false
+    description: Field PostingYear from WipInspectDet
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WipInspectDet
+  alt_warehouse:
+    display: Altwarehouse
+    type: string
+    required: false
+    description: Field AltWarehouse from WipInspectDet
+  trn_qty_ent:
+    display: Trnqtyent
+    type: decimal
+    required: false
+    description: Field TrnQtyEnt from WipInspectDet
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipInspectDet
+  accept_qty:
+    display: Acceptqty
+    type: decimal
+    required: false
+    description: Field AcceptQty from WipInspectDet
+  reject_qty:
+    display: Rejectqty
+    type: decimal
+    required: false
+    description: Field RejectQty from WipInspectDet
+  qty_in_quarant:
+    display: Qtyinquarant
+    type: decimal
+    required: false
+    description: Field QtyInQuarant from WipInspectDet
+  accept_qty_ent:
+    display: Acceptqtyent
+    type: decimal
+    required: false
+    description: Field AcceptQtyEnt from WipInspectDet
+  reject_qty_ent:
+    display: Rejectqtyent
+    type: decimal
+    required: false
+    description: Field RejectQtyEnt from WipInspectDet
+  qty_in_quarant_ent:
+    display: Qtyinquarantent
+    type: decimal
+    required: false
+    description: Field QtyInQuarantEnt from WipInspectDet

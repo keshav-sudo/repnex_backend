@@ -1,0 +1,193 @@
+concept: iop_policy_amend_jnl
+display_name: IopPolicyAmendJnl
+module: other
+description: Auto-generated representation of the physical table IopPolicyAmendJnl.
+synonyms:
+- ioppolicyamendjnl
+- iop policy amend jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from IopPolicyAmendJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from IopPolicyAmendJnl
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopPolicyAmendJnl
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from IopPolicyAmendJnl
+  jnl_printed:
+    display: Jnlprinted
+    type: string
+    required: false
+    description: Field JnlPrinted from IopPolicyAmendJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from IopPolicyAmendJnl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from IopPolicyAmendJnl
+  o_reference:
+    display: Oreference
+    type: string
+    required: false
+    description: Field OReference from IopPolicyAmendJnl
+  o_policy_source:
+    display: Opolicysource
+    type: string
+    required: false
+    description: Field OPolicySource from IopPolicyAmendJnl
+  o_select_set:
+    display: Oselectset
+    type: string
+    required: false
+    description: Field OSelectSet from IopPolicyAmendJnl
+  o_policy_type:
+    display: Opolicytype
+    type: string
+    required: false
+    description: Field OPolicyType from IopPolicyAmendJnl
+  o_days_or_quantity:
+    display: Odaysorquantity
+    type: string
+    required: false
+    description: Field ODaysOrQuantity from IopPolicyAmendJnl
+  o_safety_days:
+    display: Osafetydays
+    type: decimal
+    required: false
+    description: Field OSafetyDays from IopPolicyAmendJnl
+  o_safety_qty:
+    display: Osafetyqty
+    type: decimal
+    required: false
+    description: Field OSafetyQty from IopPolicyAmendJnl
+  o_safety_cap_days:
+    display: Osafetycapdays
+    type: decimal
+    required: false
+    description: Field OSafetyCapDays from IopPolicyAmendJnl
+  o_safety_cap_qty:
+    display: Osafetycapqty
+    type: decimal
+    required: false
+    description: Field OSafetyCapQty from IopPolicyAmendJnl
+  o_algorithm_used:
+    display: Oalgorithmused
+    type: string
+    required: false
+    description: Field OAlgorithmUsed from IopPolicyAmendJnl
+  o_target_service_lvl:
+    display: Otargetservicelvl
+    type: decimal
+    required: false
+    description: Field OTargetServiceLvl from IopPolicyAmendJnl
+  o_service_level_msr:
+    display: Oservicelevelmsr
+    type: string
+    required: false
+    description: Field OServiceLevelMsr from IopPolicyAmendJnl
+  o_lead_time_days:
+    display: Oleadtimedays
+    type: decimal
+    required: false
+    description: Field OLeadTimeDays from IopPolicyAmendJnl
+  o_review_freq:
+    display: Oreviewfreq
+    type: decimal
+    required: false
+    description: Field OReviewFreq from IopPolicyAmendJnl
+  o_supply_code:
+    display: Osupplycode
+    type: string
+    required: false
+    description: Field OSupplyCode from IopPolicyAmendJnl
+  n_reference:
+    display: Nreference
+    type: string
+    required: false
+    description: Field NReference from IopPolicyAmendJnl
+  n_policy_source:
+    display: Npolicysource
+    type: string
+    required: false
+    description: Field NPolicySource from IopPolicyAmendJnl
+  n_select_set:
+    display: Nselectset
+    type: string
+    required: false
+    description: Field NSelectSet from IopPolicyAmendJnl
+  n_policy_type:
+    display: Npolicytype
+    type: string
+    required: false
+    description: Field NPolicyType from IopPolicyAmendJnl
+  n_days_or_quantity:
+    display: Ndaysorquantity
+    type: string
+    required: false
+    description: Field NDaysOrQuantity from IopPolicyAmendJnl
+  n_safety_days:
+    display: Nsafetydays
+    type: decimal
+    required: false
+    description: Field NSafetyDays from IopPolicyAmendJnl
+  n_safety_qty:
+    display: Nsafetyqty
+    type: decimal
+    required: false
+    description: Field NSafetyQty from IopPolicyAmendJnl
+  n_safety_cap_days:
+    display: Nsafetycapdays
+    type: decimal
+    required: false
+    description: Field NSafetyCapDays from IopPolicyAmendJnl
+  n_safety_cap_qty:
+    display: Nsafetycapqty
+    type: decimal
+    required: false
+    description: Field NSafetyCapQty from IopPolicyAmendJnl
+  n_algorithm_used:
+    display: Nalgorithmused
+    type: string
+    required: false
+    description: Field NAlgorithmUsed from IopPolicyAmendJnl
+  n_target_service_lvl:
+    display: Ntargetservicelvl
+    type: decimal
+    required: false
+    description: Field NTargetServiceLvl from IopPolicyAmendJnl
+  n_service_level_msr:
+    display: Nservicelevelmsr
+    type: string
+    required: false
+    description: Field NServiceLevelMsr from IopPolicyAmendJnl
+  n_lead_time_days:
+    display: Nleadtimedays
+    type: decimal
+    required: false
+    description: Field NLeadTimeDays from IopPolicyAmendJnl
+  n_review_freq:
+    display: Nreviewfreq
+    type: decimal
+    required: false
+    description: Field NReviewFreq from IopPolicyAmendJnl
+  n_supply_code:
+    display: Nsupplycode
+    type: string
+    required: false
+    description: Field NSupplyCode from IopPolicyAmendJnl

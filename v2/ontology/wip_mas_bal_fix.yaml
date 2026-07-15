@@ -1,0 +1,118 @@
+concept: wip_mas_bal_fix
+display_name: WipMasBalFix
+module: work_in_progress
+description: Auto-generated representation of the physical table WipMasBalFix.
+synonyms:
+- wipmasbalfix
+- wip mas bal fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from WipMasBalFix
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipMasBalFix
+  old_hrs_book_to_date:
+    display: Oldhrsbooktodate
+    type: decimal
+    required: false
+    description: Field OldHrsBookToDate from WipMasBalFix
+  new_hrs_book_to_date:
+    display: Newhrsbooktodate
+    type: decimal
+    required: false
+    description: Field NewHrsBookToDate from WipMasBalFix
+  old_mat_cost_to_date:
+    display: Oldmatcosttodate
+    type: decimal
+    required: false
+    description: Field OldMatCostToDate from WipMasBalFix
+  new_mat_cost_to_date:
+    display: Newmatcosttodate
+    type: decimal
+    required: false
+    description: Field NewMatCostToDate from WipMasBalFix
+  old_lab_cost_to_date:
+    display: Oldlabcosttodate
+    type: decimal
+    required: false
+    description: Field OldLabCostToDate from WipMasBalFix
+  new_lab_cost_to_date:
+    display: Newlabcosttodate
+    type: decimal
+    required: false
+    description: Field NewLabCostToDate from WipMasBalFix
+  old_lab_value_issues:
+    display: Oldlabvalueissues
+    type: decimal
+    required: false
+    description: Field OldLabValueIssues from WipMasBalFix
+  new_lab_value_issues:
+    display: Newlabvalueissues
+    type: decimal
+    required: false
+    description: Field NewLabValueIssues from WipMasBalFix
+  old_qty_manufactured:
+    display: Oldqtymanufactured
+    type: decimal
+    required: false
+    description: Field OldQtyManufactured from WipMasBalFix
+  new_qty_manufactured:
+    display: Newqtymanufactured
+    type: decimal
+    required: false
+    description: Field NewQtyManufactured from WipMasBalFix
+  old_qty_manu_ent:
+    display: Oldqtymanuent
+    type: decimal
+    required: false
+    description: Field OldQtyManuEnt from WipMasBalFix
+  new_qty_manu_ent:
+    display: Newqtymanuent
+    type: decimal
+    required: false
+    description: Field NewQtyManuEnt from WipMasBalFix
+  old_inspect_value:
+    display: Oldinspectvalue
+    type: decimal
+    required: false
+    description: Field OldInspectValue from WipMasBalFix
+  new_inspect_value:
+    display: Newinspectvalue
+    type: decimal
+    required: false
+    description: Field NewInspectValue from WipMasBalFix
+  old_inspect_qty_manu:
+    display: Oldinspectqtymanu
+    type: decimal
+    required: false
+    description: Field OldInspectQtyManu from WipMasBalFix
+  new_inspect_qty_manu:
+    display: Newinspectqtymanu
+    type: decimal
+    required: false
+    description: Field NewInspectQtyManu from WipMasBalFix
+  old_mat_value_issues:
+    display: Oldmatvalueissues
+    type: decimal
+    required: false
+    description: Field OldMatValueIssues from WipMasBalFix
+  new_mat_value_issues:
+    display: Newmatvalueissues
+    type: decimal
+    required: false
+    description: Field NewMatValueIssues from WipMasBalFix
+  old_next_op_for_all:
+    display: Oldnextopforall
+    type: decimal
+    required: false
+    description: Field OldNextOpForAll from WipMasBalFix
+  new_next_op_for_all:
+    display: Newnextopforall
+    type: decimal
+    required: false
+    description: Field NewNextOpForAll from WipMasBalFix

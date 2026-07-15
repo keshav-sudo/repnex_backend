@@ -1,0 +1,18 @@
+concept: ar_inter_co_pay_gl
+display_name: ArInterCoPayGl
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArInterCoPayGl.
+synonyms:
+- arintercopaygl
+- ar inter co pay gl
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from ArInterCoPayGl
+  gl_interco_pay_code:
+    display: Glintercopaycode
+    type: string
+    required: false
+    description: Field GlIntercoPayCode from ArInterCoPayGl

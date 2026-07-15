@@ -1,0 +1,88 @@
+concept: mrp_all_mat_ser
+display_name: MrpAllMatSer
+module: mrp
+description: Auto-generated representation of the physical table MrpAllMatSer.
+synonyms:
+- mrpallmatser
+- mrp all mat ser
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpAllMatSer
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpAllMatSer
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpAllMatSer
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from MrpAllMatSer
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from MrpAllMatSer
+  serial_method:
+    display: Serialmethod
+    type: string
+    required: false
+    description: Field SerialMethod from MrpAllMatSer
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from MrpAllMatSer
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from MrpAllMatSer
+  qty_issued:
+    display: Qtyissued
+    type: decimal
+    required: false
+    description: Field QtyIssued from MrpAllMatSer
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from MrpAllMatSer
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from MrpAllMatSer
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpAllMatSer
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpAllMatSer
+  ser_complete:
+    display: Sercomplete
+    type: string
+    required: false
+    description: Field SerComplete from MrpAllMatSer
+  neg_allocation:
+    display: Negallocation
+    type: string
+    required: false
+    description: Field NegAllocation from MrpAllMatSer
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from MrpAllMatSer

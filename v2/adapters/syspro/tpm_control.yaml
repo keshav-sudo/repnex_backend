@@ -1,0 +1,7 @@
+concept: tpm_control
+table: TpmControl
+alias: tc1
+fields:
+  ctl_flag: tc1.CtlFlag
+  next_reference_no: tc1.NextReferenceNo
+  next_tpm_jnl: tc1.NextTpmJnl

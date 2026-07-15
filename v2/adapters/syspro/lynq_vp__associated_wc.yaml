@@ -1,0 +1,7 @@
+concept: lynq_vp__associated_wc
+table: Lynq_VP_AssociatedWc
+alias: lvpaw
+fields:
+  id: lvpaw.ID
+  wc_id: lvpaw.WcID
+  erp_wc_id_str: lvpaw.ErpWcIDStr

@@ -1,0 +1,16 @@
+concept: ar_cust_health_bal
+table: ArCustHealthBal
+alias: achb2
+fields:
+  run_date_time: achb2.RunDateTime
+  trx_source: achb2.TrxSource
+  customer: achb2.Customer
+  balance_year: achb2.BalanceYear
+  balance_month: achb2.BalanceMonth
+  trx_amount_value: achb2.TrxAmountValue
+  trx_amount_before: achb2.TrxAmountBefore
+  trx_amount_after: achb2.TrxAmountAfter
+  inv_count_value: achb2.InvCountValue
+  inv_count_before: achb2.InvCountBefore
+  inv_count_after: achb2.InvCountAfter
+  message: achb2.Message

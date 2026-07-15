@@ -1,0 +1,18 @@
+concept: lct_constant
+display_name: LctConstant
+module: other
+description: Auto-generated representation of the physical table LctConstant.
+synonyms:
+- lctconstant
+- lct constant
+header_attributes:
+  constant:
+    display: Constant
+    type: string
+    required: false
+    description: Field Constant from LctConstant
+  constant_value:
+    display: Constantvalue
+    type: decimal
+    required: false
+    description: Field ConstantValue from LctConstant

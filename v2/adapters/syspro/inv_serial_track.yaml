@@ -1,0 +1,22 @@
+concept: inv_serial_track
+table: InvSerialTrack
+alias: ist
+fields:
+  stock_code: ist.StockCode
+  warehouse: ist.Warehouse
+  serial: ist.Serial
+  line: ist.Line
+  job: ist.Job
+  quantity: ist.Quantity
+  parent_serial: ist.ParentSerial
+  parent_warehouse: ist.ParentWarehouse
+  parent_part: ist.ParentPart
+  issue_line: ist.IssueLine
+  issue_date: ist.IssueDate
+  lot: ist.Lot
+  version: ist.Version
+  release: ist.Release
+  m_allocation_line: ist.MAllocationLine
+  master_job: ist.MasterJob
+  bin: ist.Bin
+  parent_bin: ist.ParentBin

@@ -1,0 +1,28 @@
+concept: mrp_co_prd_op_cost
+display_name: MrpCoPrdOpCost
+module: mrp
+description: Auto-generated representation of the physical table MrpCoPrdOpCost.
+synonyms:
+- mrpcoprdopcost
+- mrp co prd op cost
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpCoPrdOpCost
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from MrpCoPrdOpCost
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from MrpCoPrdOpCost
+  pct_labor_cost:
+    display: Pctlaborcost
+    type: decimal
+    required: false
+    description: Field PctLaborCost from MrpCoPrdOpCost

@@ -1,0 +1,21 @@
+concept: mdn_detail_lot_cons
+table: MdnDetailLotCons
+alias: mdlc
+fields:
+  key_invoice: mdlc.KeyInvoice
+  key_sales_order: mdlc.KeySalesOrder
+  key_sales_order_line: mdlc.KeySalesOrderLine
+  key_dispatch_note: mdlc.KeyDispatchNote
+  key_dispatch_line: mdlc.KeyDispatchLine
+  key_record_count: mdlc.KeyRecordCount
+  dispatch_note: mdlc.DispatchNote
+  dispatch_note_line: mdlc.DispatchNoteLine
+  sales_order: mdlc.SalesOrder
+  sales_order_line: mdlc.SalesOrderLine
+  lot: mdlc.Lot
+  stock_qty_to_ship: mdlc.StockQtyToShip
+  qty_this_session: mdlc.QtyThisSession
+  version: mdlc.Version
+  release: mdlc.Release
+  certificate: mdlc.Certificate
+  lot_expiry_date: mdlc.LotExpiryDate

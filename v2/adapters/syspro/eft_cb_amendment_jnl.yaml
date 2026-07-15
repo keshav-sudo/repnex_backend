@@ -1,0 +1,14 @@
+concept: eft_cb_amendment_jnl
+table: EftCbAmendmentJnl
+alias: ecaj
+fields:
+  jnl_date: ecaj.JnlDate
+  jnl_time: ecaj.JnlTime
+  jnl_line: ecaj.JnlLine
+  supplier: ecaj.Supplier
+  journal_printed: ecaj.JournalPrinted
+  change_flag: ecaj.ChangeFlag
+  column_name: ecaj.ColumnName
+  before: ecaj.Before
+  after: ecaj.After
+  operator: ecaj.Operator

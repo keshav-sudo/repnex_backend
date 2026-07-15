@@ -1,0 +1,93 @@
+concept: sqm_serial
+display_name: SqmSerial
+module: other
+description: Auto-generated representation of the physical table SqmSerial.
+synonyms:
+- sqmserial
+- sqm serial
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmSerial
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmSerial
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmSerial
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from SqmSerial
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from SqmSerial
+  qty_inspected:
+    display: Qtyinspected
+    type: decimal
+    required: false
+    description: Field QtyInspected from SqmSerial
+  qty_to_accept:
+    display: Qtytoaccept
+    type: decimal
+    required: false
+    description: Field QtyToAccept from SqmSerial
+  qty_to_reject:
+    display: Qtytoreject
+    type: decimal
+    required: false
+    description: Field QtyToReject from SqmSerial
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from SqmSerial
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SqmSerial
+  document_num:
+    display: Documentnum
+    type: string
+    required: false
+    description: Field DocumentNum from SqmSerial
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SqmSerial
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from SqmSerial
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from SqmSerial
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from SqmSerial
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from SqmSerial
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from SqmSerial

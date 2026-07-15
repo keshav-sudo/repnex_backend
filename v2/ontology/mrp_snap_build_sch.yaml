@@ -1,0 +1,78 @@
+concept: mrp_snap_build_sch
+display_name: MrpSnapBuildSch
+module: mrp
+description: Auto-generated representation of the physical table MrpSnapBuildSch.
+synonyms:
+- mrpsnapbuildsch
+- mrp snap build sch
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpSnapBuildSch
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpSnapBuildSch
+  date_required:
+    display: Daterequired
+    type: date
+    required: false
+    description: Field DateRequired from MrpSnapBuildSch
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpSnapBuildSch
+  outst_qty_to_make:
+    display: Outstqtytomake
+    type: decimal
+    required: false
+    description: Field OutstQtyToMake from MrpSnapBuildSch
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from MrpSnapBuildSch
+  resource_parent:
+    display: Resourceparent
+    type: string
+    required: false
+    description: Field ResourceParent from MrpSnapBuildSch
+  total_qty_received:
+    display: Totalqtyreceived
+    type: decimal
+    required: false
+    description: Field TotalQtyReceived from MrpSnapBuildSch
+  orig_date_reqd:
+    display: Origdatereqd
+    type: date
+    required: false
+    description: Field OrigDateReqd from MrpSnapBuildSch
+  original_line:
+    display: Originalline
+    type: decimal
+    required: false
+    description: Field OriginalLine from MrpSnapBuildSch
+  orig_outst_qty:
+    display: Origoutstqty
+    type: decimal
+    required: false
+    description: Field OrigOutstQty from MrpSnapBuildSch
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpSnapBuildSch
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpSnapBuildSch
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from MrpSnapBuildSch

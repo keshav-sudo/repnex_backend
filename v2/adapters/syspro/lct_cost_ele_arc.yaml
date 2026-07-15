@@ -1,0 +1,22 @@
+concept: lct_cost_ele_arc
+table: LctCostEleArc
+alias: lcea
+fields:
+  vessel: lcea.Vessel
+  departure_date: lcea.DepartureDate
+  shipment_reference: lcea.ShipmentReference
+  purchase_order: lcea.PurchaseOrder
+  purchase_order_lin: lcea.PurchaseOrderLin
+  element_seq_num: lcea.ElementSeqNum
+  element: lcea.Element
+  tot_expected_cost: lcea.TotExpectedCost
+  total_actual_cost: lcea.TotalActualCost
+  total_grn_value: lcea.TotalGrnValue
+  invoice_count: lcea.InvoiceCount
+  supplier: lcea.Supplier
+  total_dutiable_val: lcea.TotalDutiableVal
+  custom_currency: lcea.CustomCurrency
+  tariff_code_custom: lcea.TariffCodeCustom
+  tariff_code_county: lcea.TariffCodeCounty
+  calculation_code: lcea.CalculationCode
+  fixed_cost_element: lcea.FixedCostElement

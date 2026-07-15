@@ -1,0 +1,23 @@
+concept: adm_defaults
+display_name: AdmDefaults
+module: administration
+description: Auto-generated representation of the physical table AdmDefaults.
+synonyms:
+- admdefaults
+- adm defaults
+header_attributes:
+  default_type:
+    display: Defaulttype
+    type: string
+    required: false
+    description: Field DefaultType from AdmDefaults
+  default_key:
+    display: Defaultkey
+    type: string
+    required: false
+    description: Field DefaultKey from AdmDefaults
+  default_record:
+    display: Defaultrecord
+    type: string
+    required: false
+    description: Field DefaultRecord from AdmDefaults

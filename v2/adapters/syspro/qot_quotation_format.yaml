@@ -1,0 +1,7 @@
+concept: qot_quotation_format
+table: QotQuotationFormat
+alias: qqf
+fields:
+  qot_document_type: qqf.QotDocumentType
+  document_record_type: qqf.DocumentRecordType
+  document_info: qqf.DocumentInfo

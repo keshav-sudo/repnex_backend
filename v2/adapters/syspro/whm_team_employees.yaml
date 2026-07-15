@@ -1,0 +1,7 @@
+concept: whm_team_employees
+table: WhmTeamEmployees
+alias: wte
+fields:
+  team: wte.Team
+  employee: wte.Employee
+  description: wte.Description

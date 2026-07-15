@@ -1,0 +1,13 @@
+concept: ecc_rev_history
+table: EccRevHistory
+alias: erh
+fields:
+  stock_code: erh.StockCode
+  version: erh.Version
+  release: erh.Release
+  date_released: erh.DateReleased
+  change_order: erh.ChangeOrder
+  jobs_on_hold: erh.JobsOnHold
+  job_hold_allocs: erh.JobHoldAllocs
+  purch_on_hold: erh.PurchOnHold
+  sales_on_hold: erh.SalesOnHold

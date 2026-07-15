@@ -1,0 +1,23 @@
+concept: crm_organization
+display_name: CrmOrganization
+module: crm
+description: Auto-generated representation of the physical table CrmOrganization.
+synonyms:
+- crmorganization
+- crm organization
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmOrganization
+  organization_type:
+    display: Organizationtype
+    type: string
+    required: false
+    description: Field OrganizationType from CrmOrganization
+  organization_code:
+    display: Organizationcode
+    type: string
+    required: false
+    description: Field OrganizationCode from CrmOrganization

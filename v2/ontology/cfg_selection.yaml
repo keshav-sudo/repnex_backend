@@ -1,0 +1,138 @@
+concept: cfg_selection
+display_name: CfgSelection
+module: other
+description: Auto-generated representation of the physical table CfgSelection.
+synonyms:
+- cfgselection
+- cfg selection
+header_attributes:
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from CfgSelection
+  selection_num:
+    display: Selectionnum
+    type: decimal
+    required: false
+    description: Field SelectionNum from CfgSelection
+  sel_criterion:
+    display: Selcriterion
+    type: decimal
+    required: false
+    description: Field SelCriterion from CfgSelection
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CfgSelection
+  cri_short_desc:
+    display: Crishortdesc
+    type: string
+    required: false
+    description: Field CriShortDesc from CfgSelection
+  selection_flag:
+    display: Selectionflag
+    type: string
+    required: false
+    description: Field SelectionFlag from CfgSelection
+  short_desc:
+    display: Shortdesc
+    type: string
+    required: false
+    description: Field ShortDesc from CfgSelection
+  sel_ass_val_crit:
+    display: Selassvalcrit
+    type: string
+    required: false
+    description: Field SelAssValCrit from CfgSelection
+  sel_decimals:
+    display: Seldecimals
+    type: decimal
+    required: false
+    description: Field SelDecimals from CfgSelection
+  sel_use_increments:
+    display: Seluseincrements
+    type: string
+    required: false
+    description: Field SelUseIncrements from CfgSelection
+  sel_prompt_for_val:
+    display: Selpromptforval
+    type: string
+    required: false
+    description: Field SelPromptForVal from CfgSelection
+  sel_use_to_bld_par:
+    display: Selusetobldpar
+    type: string
+    required: false
+    description: Field SelUseToBldPar from CfgSelection
+  sel_alpha_numeric:
+    display: Selalphanumeric
+    type: string
+    required: false
+    description: Field SelAlphaNumeric from CfgSelection
+  sel_start_in_par:
+    display: Selstartinpar
+    type: decimal
+    required: false
+    description: Field SelStartInPar from CfgSelection
+  sel_lgt_ent_parent:
+    display: Sellgtentparent
+    type: decimal
+    required: false
+    description: Field SelLgtEntParent from CfgSelection
+  sel_use_bld_par_de:
+    display: Selusebldparde
+    type: string
+    required: false
+    description: Field SelUseBldParDe from CfgSelection
+  sel_sel_des_type:
+    display: Selseldestype
+    type: string
+    required: false
+    description: Field SelSelDesType from CfgSelection
+  sel_start_in_desc:
+    display: Selstartindesc
+    type: decimal
+    required: false
+    description: Field SelStartInDesc from CfgSelection
+  sel_lgt_entry_desc:
+    display: Sellgtentrydesc
+    type: decimal
+    required: false
+    description: Field SelLgtEntryDesc from CfgSelection
+  sel_inc_cri_com:
+    display: Selinccricom
+    type: string
+    required: false
+    description: Field SelIncCriCom from CfgSelection
+  cri_from_value:
+    display: Crifromvalue
+    type: decimal
+    required: false
+    description: Field CriFromValue from CfgSelection
+  cri_to_value:
+    display: Critovalue
+    type: decimal
+    required: false
+    description: Field CriToValue from CfgSelection
+  cri_step_increment:
+    display: Cristepincrement
+    type: decimal
+    required: false
+    description: Field CriStepIncrement from CfgSelection
+  cri_parent_string:
+    display: Criparentstring
+    type: string
+    required: false
+    description: Field CriParentString from CfgSelection
+  cri_description:
+    display: Cridescription
+    type: string
+    required: false
+    description: Field CriDescription from CfgSelection
+  cri_comment:
+    display: Cricomment
+    type: string
+    required: false
+    description: Field CriComment from CfgSelection

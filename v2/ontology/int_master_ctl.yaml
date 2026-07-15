@@ -1,0 +1,38 @@
+concept: int_master_ctl
+display_name: IntMasterCtl
+module: other
+description: Auto-generated representation of the physical table IntMasterCtl.
+synonyms:
+- intmasterctl
+- int master ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from IntMasterCtl
+  local_site_code:
+    display: Localsitecode
+    type: string
+    required: false
+    description: Field LocalSiteCode from IntMasterCtl
+  local_description:
+    display: Localdescription
+    type: string
+    required: false
+    description: Field LocalDescription from IntMasterCtl
+  edi_send_receive:
+    display: Edisendreceive
+    type: string
+    required: false
+    description: Field EdiSendReceive from IntMasterCtl
+  next_edi_ref:
+    display: Nextediref
+    type: decimal
+    required: false
+    description: Field NextEdiRef from IntMasterCtl
+  next_edi_file:
+    display: Nextedifile
+    type: decimal
+    required: false
+    description: Field NextEdiFile from IntMasterCtl

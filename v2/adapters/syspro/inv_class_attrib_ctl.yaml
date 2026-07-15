@@ -1,0 +1,14 @@
+concept: inv_class_attrib_ctl
+table: InvClassAttribCtl
+alias: icac
+fields:
+  stock_class: icac.StockClass
+  sequence_number: icac.SequenceNumber
+  class_attrib: icac.ClassAttrib
+  attrib_description: icac.AttribDescription
+  field_type: icac.FieldType
+  field_length: icac.FieldLength
+  field_decimals: icac.FieldDecimals
+  default_value: icac.DefaultValue
+  allow_null: icac.AllowNull
+  table_name: icac.TableName

@@ -1,0 +1,548 @@
+concept: bom_work_centre
+display_name: BomWorkCentre
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomWorkCentre.
+synonyms:
+- bomworkcentre
+- bom work centre
+header_attributes:
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from BomWorkCentre
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomWorkCentre
+  cost_centre:
+    display: Costcentre
+    type: string
+    required: false
+    description: Field CostCentre from BomWorkCentre
+  set_up_rate1:
+    display: Setuprate1
+    type: decimal
+    required: false
+    description: Field SetUpRate1 from BomWorkCentre
+  set_up_rate2:
+    display: Setuprate2
+    type: decimal
+    required: false
+    description: Field SetUpRate2 from BomWorkCentre
+  set_up_rate3:
+    display: Setuprate3
+    type: decimal
+    required: false
+    description: Field SetUpRate3 from BomWorkCentre
+  set_up_rate4:
+    display: Setuprate4
+    type: decimal
+    required: false
+    description: Field SetUpRate4 from BomWorkCentre
+  set_up_rate5:
+    display: Setuprate5
+    type: decimal
+    required: false
+    description: Field SetUpRate5 from BomWorkCentre
+  set_up_rate6:
+    display: Setuprate6
+    type: decimal
+    required: false
+    description: Field SetUpRate6 from BomWorkCentre
+  set_up_rate7:
+    display: Setuprate7
+    type: decimal
+    required: false
+    description: Field SetUpRate7 from BomWorkCentre
+  set_up_rate8:
+    display: Setuprate8
+    type: decimal
+    required: false
+    description: Field SetUpRate8 from BomWorkCentre
+  set_up_rate9:
+    display: Setuprate9
+    type: decimal
+    required: false
+    description: Field SetUpRate9 from BomWorkCentre
+  run_time_rate1:
+    display: Runtimerate1
+    type: decimal
+    required: false
+    description: Field RunTimeRate1 from BomWorkCentre
+  run_time_rate2:
+    display: Runtimerate2
+    type: decimal
+    required: false
+    description: Field RunTimeRate2 from BomWorkCentre
+  run_time_rate3:
+    display: Runtimerate3
+    type: decimal
+    required: false
+    description: Field RunTimeRate3 from BomWorkCentre
+  run_time_rate4:
+    display: Runtimerate4
+    type: decimal
+    required: false
+    description: Field RunTimeRate4 from BomWorkCentre
+  run_time_rate5:
+    display: Runtimerate5
+    type: decimal
+    required: false
+    description: Field RunTimeRate5 from BomWorkCentre
+  run_time_rate6:
+    display: Runtimerate6
+    type: decimal
+    required: false
+    description: Field RunTimeRate6 from BomWorkCentre
+  run_time_rate7:
+    display: Runtimerate7
+    type: decimal
+    required: false
+    description: Field RunTimeRate7 from BomWorkCentre
+  run_time_rate8:
+    display: Runtimerate8
+    type: decimal
+    required: false
+    description: Field RunTimeRate8 from BomWorkCentre
+  run_time_rate9:
+    display: Runtimerate9
+    type: decimal
+    required: false
+    description: Field RunTimeRate9 from BomWorkCentre
+  fix_over_rate1:
+    display: Fixoverrate1
+    type: decimal
+    required: false
+    description: Field FixOverRate1 from BomWorkCentre
+  fix_over_rate2:
+    display: Fixoverrate2
+    type: decimal
+    required: false
+    description: Field FixOverRate2 from BomWorkCentre
+  fix_over_rate3:
+    display: Fixoverrate3
+    type: decimal
+    required: false
+    description: Field FixOverRate3 from BomWorkCentre
+  fix_over_rate4:
+    display: Fixoverrate4
+    type: decimal
+    required: false
+    description: Field FixOverRate4 from BomWorkCentre
+  fix_over_rate5:
+    display: Fixoverrate5
+    type: decimal
+    required: false
+    description: Field FixOverRate5 from BomWorkCentre
+  fix_over_rate6:
+    display: Fixoverrate6
+    type: decimal
+    required: false
+    description: Field FixOverRate6 from BomWorkCentre
+  fix_over_rate7:
+    display: Fixoverrate7
+    type: decimal
+    required: false
+    description: Field FixOverRate7 from BomWorkCentre
+  fix_over_rate8:
+    display: Fixoverrate8
+    type: decimal
+    required: false
+    description: Field FixOverRate8 from BomWorkCentre
+  fix_over_rate9:
+    display: Fixoverrate9
+    type: decimal
+    required: false
+    description: Field FixOverRate9 from BomWorkCentre
+  var_over_rate1:
+    display: Varoverrate1
+    type: decimal
+    required: false
+    description: Field VarOverRate1 from BomWorkCentre
+  var_over_rate2:
+    display: Varoverrate2
+    type: decimal
+    required: false
+    description: Field VarOverRate2 from BomWorkCentre
+  var_over_rate3:
+    display: Varoverrate3
+    type: decimal
+    required: false
+    description: Field VarOverRate3 from BomWorkCentre
+  var_over_rate4:
+    display: Varoverrate4
+    type: decimal
+    required: false
+    description: Field VarOverRate4 from BomWorkCentre
+  var_over_rate5:
+    display: Varoverrate5
+    type: decimal
+    required: false
+    description: Field VarOverRate5 from BomWorkCentre
+  var_over_rate6:
+    display: Varoverrate6
+    type: decimal
+    required: false
+    description: Field VarOverRate6 from BomWorkCentre
+  var_over_rate7:
+    display: Varoverrate7
+    type: decimal
+    required: false
+    description: Field VarOverRate7 from BomWorkCentre
+  var_over_rate8:
+    display: Varoverrate8
+    type: decimal
+    required: false
+    description: Field VarOverRate8 from BomWorkCentre
+  var_over_rate9:
+    display: Varoverrate9
+    type: decimal
+    required: false
+    description: Field VarOverRate9 from BomWorkCentre
+  startup_rate1:
+    display: Startuprate1
+    type: decimal
+    required: false
+    description: Field StartupRate1 from BomWorkCentre
+  startup_rate2:
+    display: Startuprate2
+    type: decimal
+    required: false
+    description: Field StartupRate2 from BomWorkCentre
+  startup_rate3:
+    display: Startuprate3
+    type: decimal
+    required: false
+    description: Field StartupRate3 from BomWorkCentre
+  startup_rate4:
+    display: Startuprate4
+    type: decimal
+    required: false
+    description: Field StartupRate4 from BomWorkCentre
+  startup_rate5:
+    display: Startuprate5
+    type: decimal
+    required: false
+    description: Field StartupRate5 from BomWorkCentre
+  startup_rate6:
+    display: Startuprate6
+    type: decimal
+    required: false
+    description: Field StartupRate6 from BomWorkCentre
+  startup_rate7:
+    display: Startuprate7
+    type: decimal
+    required: false
+    description: Field StartupRate7 from BomWorkCentre
+  startup_rate8:
+    display: Startuprate8
+    type: decimal
+    required: false
+    description: Field StartupRate8 from BomWorkCentre
+  startup_rate9:
+    display: Startuprate9
+    type: decimal
+    required: false
+    description: Field StartupRate9 from BomWorkCentre
+  teardown_rate1:
+    display: Teardownrate1
+    type: decimal
+    required: false
+    description: Field TeardownRate1 from BomWorkCentre
+  teardown_rate2:
+    display: Teardownrate2
+    type: decimal
+    required: false
+    description: Field TeardownRate2 from BomWorkCentre
+  teardown_rate3:
+    display: Teardownrate3
+    type: decimal
+    required: false
+    description: Field TeardownRate3 from BomWorkCentre
+  teardown_rate4:
+    display: Teardownrate4
+    type: decimal
+    required: false
+    description: Field TeardownRate4 from BomWorkCentre
+  teardown_rate5:
+    display: Teardownrate5
+    type: decimal
+    required: false
+    description: Field TeardownRate5 from BomWorkCentre
+  teardown_rate6:
+    display: Teardownrate6
+    type: decimal
+    required: false
+    description: Field TeardownRate6 from BomWorkCentre
+  teardown_rate7:
+    display: Teardownrate7
+    type: decimal
+    required: false
+    description: Field TeardownRate7 from BomWorkCentre
+  teardown_rate8:
+    display: Teardownrate8
+    type: decimal
+    required: false
+    description: Field TeardownRate8 from BomWorkCentre
+  teardown_rate9:
+    display: Teardownrate9
+    type: decimal
+    required: false
+    description: Field TeardownRate9 from BomWorkCentre
+  time_uom:
+    display: Timeuom
+    type: string
+    required: false
+    description: Field TimeUom from BomWorkCentre
+  et_calc_meth:
+    display: Etcalcmeth
+    type: string
+    required: false
+    description: Field EtCalcMeth from BomWorkCentre
+  capacity_uom:
+    display: Capacityuom
+    type: string
+    required: false
+    description: Field CapacityUom from BomWorkCentre
+  cst_to_cap_fact:
+    display: Csttocapfact
+    type: decimal
+    required: false
+    description: Field CstToCapFact from BomWorkCentre
+  cst_to_cap_mul_div:
+    display: Csttocapmuldiv
+    type: string
+    required: false
+    description: Field CstToCapMulDiv from BomWorkCentre
+  prod_unit_desc:
+    display: Produnitdesc
+    type: string
+    required: false
+    description: Field ProdUnitDesc from BomWorkCentre
+  subcontract_flag:
+    display: Subcontractflag
+    type: string
+    required: false
+    description: Field SubcontractFlag from BomWorkCentre
+  use_employee_rate:
+    display: Useemployeerate
+    type: string
+    required: false
+    description: Field UseEmployeeRate from BomWorkCentre
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from BomWorkCentre
+  run_time:
+    display: Runtime
+    type: string
+    required: false
+    description: Field RunTime from BomWorkCentre
+  setup_time:
+    display: Setuptime
+    type: string
+    required: false
+    description: Field SetupTime from BomWorkCentre
+  fix_time:
+    display: Fixtime
+    type: string
+    required: false
+    description: Field FixTime from BomWorkCentre
+  var_time:
+    display: Vartime
+    type: string
+    required: false
+    description: Field VarTime from BomWorkCentre
+  start_time:
+    display: Starttime
+    type: string
+    required: false
+    description: Field StartTime from BomWorkCentre
+  teardown_time:
+    display: Teardowntime
+    type: string
+    required: false
+    description: Field TeardownTime from BomWorkCentre
+  non_run_time:
+    display: Nonruntime
+    type: string
+    required: false
+    description: Field NonRunTime from BomWorkCentre
+  non_setup_time:
+    display: Nonsetuptime
+    type: string
+    required: false
+    description: Field NonSetupTime from BomWorkCentre
+  non_fix_time:
+    display: Nonfixtime
+    type: string
+    required: false
+    description: Field NonFixTime from BomWorkCentre
+  non_var_time:
+    display: Nonvartime
+    type: string
+    required: false
+    description: Field NonVarTime from BomWorkCentre
+  non_start_time:
+    display: Nonstarttime
+    type: string
+    required: false
+    description: Field NonStartTime from BomWorkCentre
+  non_tear_time:
+    display: Nonteartime
+    type: string
+    required: false
+    description: Field NonTearTime from BomWorkCentre
+  ptd_std_hours:
+    display: Ptdstdhours
+    type: decimal
+    required: false
+    description: Field PtdStdHours from BomWorkCentre
+  ptd_non_hours:
+    display: Ptdnonhours
+    type: decimal
+    required: false
+    description: Field PtdNonHours from BomWorkCentre
+  ptd_act_hours:
+    display: Ptdacthours
+    type: decimal
+    required: false
+    description: Field PtdActHours from BomWorkCentre
+  mtd_std_hours:
+    display: Mtdstdhours
+    type: decimal
+    required: false
+    description: Field MtdStdHours from BomWorkCentre
+  mtd_non_hours:
+    display: Mtdnonhours
+    type: decimal
+    required: false
+    description: Field MtdNonHours from BomWorkCentre
+  mtd_act_hours:
+    display: Mtdacthours
+    type: decimal
+    required: false
+    description: Field MtdActHours from BomWorkCentre
+  ytd_std_hours:
+    display: Ytdstdhours
+    type: decimal
+    required: false
+    description: Field YtdStdHours from BomWorkCentre
+  ytd_non_hours:
+    display: Ytdnonhours
+    type: decimal
+    required: false
+    description: Field YtdNonHours from BomWorkCentre
+  ytd_act_hours:
+    display: Ytdacthours
+    type: decimal
+    required: false
+    description: Field YtdActHours from BomWorkCentre
+  utilise_pct:
+    display: Utilisepct
+    type: decimal
+    required: false
+    description: Field UtilisePct from BomWorkCentre
+  overtime_cap_pct:
+    display: Overtimecappct
+    type: decimal
+    required: false
+    description: Field OvertimeCapPct from BomWorkCentre
+  use_overtime_cap:
+    display: Useovertimecap
+    type: string
+    required: false
+    description: Field UseOvertimeCap from BomWorkCentre
+  normal_capacity:
+    display: Normalcapacity
+    type: decimal
+    required: false
+    description: Field NormalCapacity from BomWorkCentre
+  queue_time:
+    display: Queuetime
+    type: decimal
+    required: false
+    description: Field QueueTime from BomWorkCentre
+  def_sub_supplier:
+    display: Defsubsupplier
+    type: string
+    required: false
+    description: Field DefSubSupplier from BomWorkCentre
+  def_sub_planner:
+    display: Defsubplanner
+    type: string
+    required: false
+    description: Field DefSubPlanner from BomWorkCentre
+  def_sub_buyer:
+    display: Defsubbuyer
+    type: string
+    required: false
+    description: Field DefSubBuyer from BomWorkCentre
+  work_operators:
+    display: Workoperators
+    type: decimal
+    required: false
+    description: Field WorkOperators from BomWorkCentre
+  prod_units:
+    display: Produnits
+    type: decimal
+    required: false
+    description: Field ProdUnits from BomWorkCentre
+  time_per_unit:
+    display: Timeperunit
+    type: decimal
+    required: false
+    description: Field TimePerUnit from BomWorkCentre
+  calc_cap_conv_fact:
+    display: Calccapconvfact
+    type: string
+    required: false
+    description: Field CalcCapConvFact from BomWorkCentre
+  load_level_scale:
+    display: Loadlevelscale
+    type: decimal
+    required: false
+    description: Field LoadLevelScale from BomWorkCentre
+  load_level_scl_flg:
+    display: Loadlevelsclflg
+    type: string
+    required: false
+    description: Field LoadLevelSclFlg from BomWorkCentre
+  cell_id:
+    display: Cellid
+    type: string
+    required: false
+    description: Field CellId from BomWorkCentre
+  charge_code:
+    display: Chargecode
+    type: string
+    required: false
+    description: Field ChargeCode from BomWorkCentre
+  op_split_flag:
+    display: Opsplitflag
+    type: string
+    required: false
+    description: Field OpSplitFlag from BomWorkCentre
+  nest_scrap:
+    display: Nestscrap
+    type: string
+    required: false
+    description: Field NestScrap from BomWorkCentre
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from BomWorkCentre
+  site_code:
+    display: Sitecode
+    type: string
+    required: false
+    description: Field SiteCode from BomWorkCentre
+  shift_code:
+    display: Shiftcode
+    type: string
+    required: false
+    description: Field ShiftCode from BomWorkCentre

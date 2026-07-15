@@ -1,0 +1,8 @@
+concept: adm_status_detail
+table: AdmStatusDetail
+alias: asd
+fields:
+  status_entity: asd.StatusEntity
+  status_code: asd.StatusCode
+  status_business_proc: asd.StatusBusinessProc
+  status_process_flag: asd.StatusProcessFlag

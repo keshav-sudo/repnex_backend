@@ -1,0 +1,21 @@
+concept: ar_tax_susp_detail
+table: ArTaxSuspDetail
+alias: atsd
+fields:
+  customer: atsd.Customer
+  invoice: atsd.Invoice
+  document_type: atsd.DocumentType
+  line: atsd.Line
+  doc_trn_year: atsd.DocTrnYear
+  doc_trn_month: atsd.DocTrnMonth
+  doc_register: atsd.DocRegister
+  doc_invoice: atsd.DocInvoice
+  doc_summary_line: atsd.DocSummaryLine
+  doc_detail_line: atsd.DocDetailLine
+  conv_rate: atsd.ConvRate
+  mul_div: atsd.MulDiv
+  local_invoice_value: atsd.LocalInvoiceValue
+  local_tax_value: atsd.LocalTaxValue
+  cur_invoice_value: atsd.CurInvoiceValue
+  cur_tax_value: atsd.CurTaxValue
+  transaction_type: atsd.TransactionType

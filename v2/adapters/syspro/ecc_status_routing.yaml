@@ -1,0 +1,6 @@
+concept: ecc_status_routing
+table: EccStatusRouting
+alias: esr
+fields:
+  from_status: esr.FromStatus
+  to_status: esr.ToStatus

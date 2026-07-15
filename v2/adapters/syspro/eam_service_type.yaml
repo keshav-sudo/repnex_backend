@@ -1,0 +1,7 @@
+concept: eam_service_type
+table: EamServiceType
+alias: est
+fields:
+  maint_service_type: est.MaintServiceType
+  description: est.Description
+  type_of_service: est.TypeOfService

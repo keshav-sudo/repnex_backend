@@ -1,0 +1,9 @@
+concept: rma_comment
+table: RmaComment
+alias: rc2
+fields:
+  rma_number: rc2.RmaNumber
+  rma_line_number: rc2.RmaLineNumber
+  comment_line: rc2.CommentLine
+  comment: rc2.Comment
+  comment_date: rc2.CommentDate

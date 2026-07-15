@@ -1,0 +1,19 @@
+concept: ecc_parent_info
+table: EccParentInfo
+alias: epi
+fields:
+  change_order: epi.ChangeOrder
+  parent_part: epi.ParentPart
+  version: epi.Version
+  release: epi.Release
+  route: epi.Route
+  co_product_cost_met: epi.CoProductCostMet
+  co_product_cost_val: epi.CoProductCostVal
+  co_product_type: epi.CoProductType
+  co_product_next: epi.CoProductNext
+  co_product_plan_prd: epi.CoProductPlanPrd
+  any_operations: epi.AnyOperations
+  any_materials: epi.AnyMaterials
+  uom_flag: epi.UomFlag
+  product_code: epi.ProductCode
+  library_code: epi.LibraryCode

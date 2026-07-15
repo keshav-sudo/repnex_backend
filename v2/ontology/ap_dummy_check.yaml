@@ -1,0 +1,38 @@
+concept: ap_dummy_check
+display_name: ApDummyCheck
+module: accounts_payable
+description: Auto-generated representation of the physical table ApDummyCheck.
+synonyms:
+- apdummycheck
+- ap dummy check
+header_attributes:
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ApDummyCheck
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApDummyCheck
+  dummy_cheque:
+    display: Dummycheque
+    type: decimal
+    required: false
+    description: Field DummyCheque from ApDummyCheck
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from ApDummyCheck
+  post_month:
+    display: Postmonth
+    type: decimal
+    required: false
+    description: Field PostMonth from ApDummyCheck
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApDummyCheck

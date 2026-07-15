@@ -1,0 +1,53 @@
+concept: inv_allocated_bal
+display_name: InvAllocatedBal
+module: inventory
+description: Auto-generated representation of the physical table InvAllocatedBal.
+synonyms:
+- invallocatedbal
+- inv allocated bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from InvAllocatedBal
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvAllocatedBal
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvAllocatedBal
+  all_on_order_qty:
+    display: Allonorderqty
+    type: decimal
+    required: false
+    description: Field AllOnOrderQty from InvAllocatedBal
+  whs_on_order_qty:
+    display: Whsonorderqty
+    type: decimal
+    required: false
+    description: Field WhsOnOrderQty from InvAllocatedBal
+  all_in_inspection_qty:
+    display: Allininspectionqty
+    type: decimal
+    required: false
+    description: Field AllInInspectionQty from InvAllocatedBal
+  whs_qty_in_inspection:
+    display: Whsqtyininspection
+    type: decimal
+    required: false
+    description: Field WhsQtyInInspection from InvAllocatedBal
+  all_allocated_wip_qty:
+    display: Allallocatedwipqty
+    type: decimal
+    required: false
+    description: Field AllAllocatedWipQty from InvAllocatedBal
+  whs_allocated_wip_qty:
+    display: Whsallocatedwipqty
+    type: decimal
+    required: false
+    description: Field WhsAllocatedWipQty from InvAllocatedBal

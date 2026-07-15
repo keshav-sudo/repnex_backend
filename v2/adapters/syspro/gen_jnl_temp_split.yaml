@@ -1,0 +1,11 @@
+concept: gen_jnl_temp_split
+table: GenJnlTempSplit
+alias: gjts
+fields:
+  gl_year: gjts.GlYear
+  gl_period: gjts.GlPeriod
+  journal: gjts.Journal
+  entry_number: gjts.EntryNumber
+  template_line_no: gjts.TemplateLineNo
+  gl_code: gjts.GlCode
+  entry_value: gjts.EntryValue

@@ -1,0 +1,10 @@
+concept: inv_inspect_doc_ser
+table: InvInspectDocSer
+alias: iids
+fields:
+  transaction_type: iids.TransactionType
+  document_num: iids.DocumentNum
+  grn: iids.Grn
+  warehouse: iids.Warehouse
+  serial: iids.Serial
+  quantity: iids.Quantity

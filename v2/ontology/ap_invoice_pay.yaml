@@ -1,0 +1,243 @@
+concept: ap_invoice_pay
+display_name: ApInvoicePay
+module: accounts_payable
+description: Auto-generated representation of the physical table ApInvoicePay.
+synonyms:
+- apinvoicepay
+- ap invoice pay
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApInvoicePay
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApInvoicePay
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ApInvoicePay
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from ApInvoicePay
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from ApInvoicePay
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApInvoicePay
+  payment_reference:
+    display: Paymentreference
+    type: string
+    required: false
+    description: Field PaymentReference from ApInvoicePay
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from ApInvoicePay
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ApInvoicePay
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ApInvoicePay
+  post_value:
+    display: Postvalue
+    type: decimal
+    required: false
+    description: Field PostValue from ApInvoicePay
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ApInvoicePay
+  post_conv_rate:
+    display: Postconvrate
+    type: decimal
+    required: false
+    description: Field PostConvRate from ApInvoicePay
+  post_mul_div:
+    display: Postmuldiv
+    type: string
+    required: false
+    description: Field PostMulDiv from ApInvoicePay
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ApInvoicePay
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from ApInvoicePay
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from ApInvoicePay
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ApInvoicePay
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from ApInvoicePay
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ApInvoicePay
+  invoice_take_on:
+    display: Invoicetakeon
+    type: string
+    required: false
+    description: Field InvoiceTakeOn from ApInvoicePay
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ApInvoicePay
+  summary_entry_number:
+    display: Summaryentrynumber
+    type: decimal
+    required: false
+    description: Field SummaryEntryNumber from ApInvoicePay
+  mult_cur_pay:
+    display: Multcurpay
+    type: string
+    required: false
+    description: Field MultCurPay from ApInvoicePay
+  pay_trn_value:
+    display: Paytrnvalue
+    type: decimal
+    required: false
+    description: Field PayTrnValue from ApInvoicePay
+  pay_currency:
+    display: Paycurrency
+    type: string
+    required: false
+    description: Field PayCurrency from ApInvoicePay
+  pay_conv_rate:
+    display: Payconvrate
+    type: decimal
+    required: false
+    description: Field PayConvRate from ApInvoicePay
+  pay_post_mul_div:
+    display: Paypostmuldiv
+    type: string
+    required: false
+    description: Field PayPostMulDiv from ApInvoicePay
+  group_payment:
+    display: Grouppayment
+    type: string
+    required: false
+    description: Field GroupPayment from ApInvoicePay
+  grp_pay_value:
+    display: Grppayvalue
+    type: decimal
+    required: false
+    description: Field GrpPayValue from ApInvoicePay
+  grp_pay_currency:
+    display: Grppaycurrency
+    type: string
+    required: false
+    description: Field GrpPayCurrency from ApInvoicePay
+  grp_pay_conv_rate:
+    display: Grppayconvrate
+    type: decimal
+    required: false
+    description: Field GrpPayConvRate from ApInvoicePay
+  grp_pay_post_mul_div:
+    display: Grppaypostmuldiv
+    type: string
+    required: false
+    description: Field GrpPayPostMulDiv from ApInvoicePay
+  primary_supplier:
+    display: Primarysupplier
+    type: string
+    required: false
+    description: Field PrimarySupplier from ApInvoicePay
+  primary_sup_name:
+    display: Primarysupname
+    type: string
+    required: false
+    description: Field PrimarySupName from ApInvoicePay
+  group_inter_company:
+    display: Groupintercompany
+    type: string
+    required: false
+    description: Field GroupInterCompany from ApInvoicePay
+  primary_company:
+    display: Primarycompany
+    type: string
+    required: false
+    description: Field PrimaryCompany from ApInvoicePay
+  xref_sup_currency:
+    display: Xrefsupcurrency
+    type: string
+    required: false
+    description: Field XrefSupCurrency from ApInvoicePay
+  xref_cur_description:
+    display: Xrefcurdescription
+    type: string
+    required: false
+    description: Field XrefCurDescription from ApInvoicePay
+  primary_ch_register:
+    display: Primarychregister
+    type: decimal
+    required: false
+    description: Field PrimaryChRegister from ApInvoicePay
+  local_value_prime:
+    display: Localvalueprime
+    type: decimal
+    required: false
+    description: Field LocalValuePrime from ApInvoicePay
+  local_cur_primary:
+    display: Localcurprimary
+    type: string
+    required: false
+    description: Field LocalCurPrimary from ApInvoicePay
+  local_value_second:
+    display: Localvaluesecond
+    type: decimal
+    required: false
+    description: Field LocalValueSecond from ApInvoicePay
+  local_cur_second:
+    display: Localcursecond
+    type: string
+    required: false
+    description: Field LocalCurSecond from ApInvoicePay
+  xref_loc_currency:
+    display: Xrefloccurrency
+    type: string
+    required: false
+    description: Field XrefLocCurrency from ApInvoicePay
+  conv_rate_sec_prime:
+    display: Convratesecprime
+    type: decimal
+    required: false
+    description: Field ConvRateSecPrime from ApInvoicePay
+  mul_div_sec_prime:
+    display: Muldivsecprime
+    type: string
+    required: false
+    description: Field MulDivSecPrime from ApInvoicePay

@@ -1,0 +1,33 @@
+concept: inv_price
+display_name: InvPrice
+module: inventory
+description: Auto-generated representation of the physical table InvPrice.
+synonyms:
+- invprice
+- inv price
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvPrice
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from InvPrice
+  selling_price:
+    display: Sellingprice
+    type: decimal
+    required: false
+    description: Field SellingPrice from InvPrice
+  price_basis:
+    display: Pricebasis
+    type: string
+    required: false
+    description: Field PriceBasis from InvPrice
+  commission_code:
+    display: Commissioncode
+    type: string
+    required: false
+    description: Field CommissionCode from InvPrice

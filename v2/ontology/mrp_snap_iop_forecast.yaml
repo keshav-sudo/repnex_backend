@@ -1,0 +1,43 @@
+concept: mrp_snap_iop_forecast
+display_name: MrpSnapIopForecast
+module: mrp
+description: Auto-generated representation of the physical table MrpSnapIopForecast.
+synonyms:
+- mrpsnapiopforecast
+- mrp snap iop forecast
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpSnapIopForecast
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpSnapIopForecast
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpSnapIopForecast
+  forecast_wh:
+    display: Forecastwh
+    type: string
+    required: false
+    description: Field ForecastWh from MrpSnapIopForecast
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from MrpSnapIopForecast
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from MrpSnapIopForecast
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from MrpSnapIopForecast

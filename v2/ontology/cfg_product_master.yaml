@@ -1,0 +1,243 @@
+concept: cfg_product_master
+display_name: CfgProductMaster
+module: other
+description: Auto-generated representation of the physical table CfgProductMaster.
+synonyms:
+- cfgproductmaster
+- cfg product master
+header_attributes:
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from CfgProductMaster
+  product_desc:
+    display: Productdesc
+    type: string
+    required: false
+    description: Field ProductDesc from CfgProductMaster
+  engineer_code:
+    display: Engineercode
+    type: string
+    required: false
+    description: Field EngineerCode from CfgProductMaster
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from CfgProductMaster
+  avail_from_date:
+    display: Availfromdate
+    type: date
+    required: false
+    description: Field AvailFromDate from CfgProductMaster
+  avail_to_date:
+    display: Availtodate
+    type: date
+    required: false
+    description: Field AvailToDate from CfgProductMaster
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from CfgProductMaster
+  can_use_so:
+    display: Canuseso
+    type: string
+    required: false
+    description: Field CanUseSo from CfgProductMaster
+  can_use_ests:
+    display: Canuseests
+    type: string
+    required: false
+    description: Field CanUseEsts from CfgProductMaster
+  can_use_wip:
+    display: Canusewip
+    type: string
+    required: false
+    description: Field CanUseWip from CfgProductMaster
+  can_use_bom:
+    display: Canusebom
+    type: string
+    required: false
+    description: Field CanUseBom from CfgProductMaster
+  ask_quantity:
+    display: Askquantity
+    type: string
+    required: false
+    description: Field AskQuantity from CfgProductMaster
+  ask_warehouse:
+    display: Askwarehouse
+    type: string
+    required: false
+    description: Field AskWarehouse from CfgProductMaster
+  alternate_stock:
+    display: Alternatestock
+    type: string
+    required: false
+    description: Field AlternateStock from CfgProductMaster
+  alternate_wh:
+    display: Alternatewh
+    type: string
+    required: false
+    description: Field AlternateWh from CfgProductMaster
+  consol_merch_lines:
+    display: Consolmerchlines
+    type: string
+    required: false
+    description: Field ConsolMerchLines from CfgProductMaster
+  sel_cri_comments:
+    display: Selcricomments
+    type: string
+    required: false
+    description: Field SelCriComments from CfgProductMaster
+  user_def_comments:
+    display: Userdefcomments
+    type: string
+    required: false
+    description: Field UserDefComments from CfgProductMaster
+  library_req:
+    display: Libraryreq
+    type: string
+    required: false
+    description: Field LibraryReq from CfgProductMaster
+  parent_type:
+    display: Parenttype
+    type: decimal
+    required: false
+    description: Field ParentType from CfgProductMaster
+  generate_parent:
+    display: Generateparent
+    type: string
+    required: false
+    description: Field GenerateParent from CfgProductMaster
+  allow_override:
+    display: Allowoverride
+    type: string
+    required: false
+    description: Field AllowOverride from CfgProductMaster
+  template_g_or_p:
+    display: Templategorp
+    type: string
+    required: false
+    description: Field TemplateGOrP from CfgProductMaster
+  def_par_prod_class:
+    display: Defparprodclass
+    type: string
+    required: false
+    description: Field DefParProdClass from CfgProductMaster
+  gen_prefix:
+    display: Genprefix
+    type: string
+    required: false
+    description: Field GenPrefix from CfgProductMaster
+  disc_allowed:
+    display: Discallowed
+    type: string
+    required: false
+    description: Field DiscAllowed from CfgProductMaster
+  prt_disc_on_del:
+    display: Prtdiscondel
+    type: string
+    required: false
+    description: Field PrtDiscOnDel from CfgProductMaster
+  prt_disc_on_inv:
+    display: Prtdisconinv
+    type: string
+    required: false
+    description: Field PrtDiscOnInv from CfgProductMaster
+  prt_disc_on_ack:
+    display: Prtdisconack
+    type: string
+    required: false
+    description: Field PrtDiscOnAck from CfgProductMaster
+  discount_pcls:
+    display: Discountpcls
+    type: string
+    required: false
+    description: Field DiscountPcls from CfgProductMaster
+  labour_pcl:
+    display: Labourpcl
+    type: string
+    required: false
+    description: Field LabourPcl from CfgProductMaster
+  def_non_stock_pcl:
+    display: Defnonstockpcl
+    type: string
+    required: false
+    description: Field DefNonStockPcl from CfgProductMaster
+  def_stocked_pcl:
+    display: Defstockedpcl
+    type: string
+    required: false
+    description: Field DefStockedPcl from CfgProductMaster
+  def_stocked_wh:
+    display: Defstockedwh
+    type: string
+    required: false
+    description: Field DefStockedWh from CfgProductMaster
+  def_route:
+    display: Defroute
+    type: string
+    required: false
+    description: Field DefRoute from CfgProductMaster
+  override_route:
+    display: Overrideroute
+    type: string
+    required: false
+    description: Field OverrideRoute from CfgProductMaster
+  def_job_class:
+    display: Defjobclass
+    type: string
+    required: false
+    description: Field DefJobClass from CfgProductMaster
+  def_job_pri:
+    display: Defjobpri
+    type: decimal
+    required: false
+    description: Field DefJobPri from CfgProductMaster
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from CfgProductMaster
+  seq_check_req:
+    display: Seqcheckreq
+    type: string
+    required: false
+    description: Field SeqCheckReq from CfgProductMaster
+  job_confirmed:
+    display: Jobconfirmed
+    type: string
+    required: false
+    description: Field JobConfirmed from CfgProductMaster
+  place_job_on_hold:
+    display: Placejobonhold
+    type: string
+    required: false
+    description: Field PlaceJobOnHold from CfgProductMaster
+  resource_parent:
+    display: Resourceparent
+    type: string
+    required: false
+    description: Field ResourceParent from CfgProductMaster
+  probability:
+    display: Probability
+    type: string
+    required: false
+    description: Field Probability from CfgProductMaster
+  place_on_hld:
+    display: Placeonhld
+    type: string
+    required: false
+    description: Field PlaceOnHld from CfgProductMaster
+  next_product:
+    display: Nextproduct
+    type: decimal
+    required: false
+    description: Field NextProduct from CfgProductMaster
+  allow_in_process:
+    display: Allowinprocess
+    type: string
+    required: false
+    description: Field AllowInProcess from CfgProductMaster

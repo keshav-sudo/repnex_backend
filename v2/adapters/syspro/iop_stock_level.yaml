@@ -1,0 +1,12 @@
+concept: iop_stock_level
+table: IopStockLevel
+alias: isl1
+fields:
+  id_number: isl1.IdNumber
+  start_date: isl1.StartDate
+  minimum_qty: isl1.MinimumQty
+  maximum_qty: isl1.MaximumQty
+  effective_date: isl1.EffectiveDate
+  operator: isl1.Operator
+  reference: isl1.Reference
+  freeze: isl1.Freeze

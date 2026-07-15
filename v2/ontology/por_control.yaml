@@ -1,0 +1,53 @@
+concept: por_control
+display_name: PorControl
+module: procurement
+description: Auto-generated representation of the physical table PorControl.
+synonyms:
+- porcontrol
+- por control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from PorControl
+  next_po_num:
+    display: Nextponum
+    type: decimal
+    required: false
+    description: Field NextPoNum from PorControl
+  next_grn_num:
+    display: Nextgrnnum
+    type: decimal
+    required: false
+    description: Field NextGrnNum from PorControl
+  next_req_num:
+    display: Nextreqnum
+    type: decimal
+    required: false
+    description: Field NextReqNum from PorControl
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from PorControl
+  post_month:
+    display: Postmonth
+    type: decimal
+    required: false
+    description: Field PostMonth from PorControl
+  cur_yr_nxt_jnl:
+    display: Curyrnxtjnl
+    type: decimal
+    required: false
+    description: Field CurYrNxtJnl from PorControl
+  prv_yr_nxt_jnl:
+    display: Prvyrnxtjnl
+    type: decimal
+    required: false
+    description: Field PrvYrNxtJnl from PorControl
+  next_rfq_num:
+    display: Nextrfqnum
+    type: decimal
+    required: false
+    description: Field NextRfqNum from PorControl

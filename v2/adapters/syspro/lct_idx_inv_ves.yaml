@@ -1,0 +1,14 @@
+concept: lct_idx_inv_ves
+table: LctIdxInvVes
+alias: liiv
+fields:
+  vessel: liiv.Vessel
+  departure_date: liiv.DepartureDate
+  shipment_reference: liiv.ShipmentReference
+  purchase_order: liiv.PurchaseOrder
+  purchase_order_lin: liiv.PurchaseOrderLin
+  sequence_num: liiv.SequenceNum
+  element: liiv.Element
+  supplier: liiv.Supplier
+  invoice: liiv.Invoice
+  actual_cost_val: liiv.ActualCostVal

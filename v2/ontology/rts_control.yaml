@@ -1,0 +1,28 @@
+concept: rts_control
+display_name: RtsControl
+module: other
+description: Auto-generated representation of the physical table RtsControl.
+synonyms:
+- rtscontrol
+- rts control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from RtsControl
+  next_rts_num:
+    display: Nextrtsnum
+    type: decimal
+    required: false
+    description: Field NextRtsNum from RtsControl
+  next_rts_jnl_num:
+    display: Nextrtsjnlnum
+    type: decimal
+    required: false
+    description: Field NextRtsJnlNum from RtsControl
+  next_rts_inv_num:
+    display: Nextrtsinvnum
+    type: decimal
+    required: false
+    description: Field NextRtsInvNum from RtsControl

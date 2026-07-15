@@ -1,0 +1,233 @@
+concept: qot_non_stock
+display_name: QotNonStock
+module: other
+description: Auto-generated representation of the physical table QotNonStock.
+synonyms:
+- qotnonstock
+- qot non stock
+header_attributes:
+  non_stock_code:
+    display: Nonstockcode
+    type: string
+    required: false
+    description: Field NonStockCode from QotNonStock
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from QotNonStock
+  structure_setup:
+    display: Structuresetup
+    type: string
+    required: false
+    description: Field StructureSetup from QotNonStock
+  purch_price_setup:
+    display: Purchpricesetup
+    type: string
+    required: false
+    description: Field PurchPriceSetup from QotNonStock
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from QotNonStock
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from QotNonStock
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from QotNonStock
+  max_decimals:
+    display: Maxdecimals
+    type: decimal
+    required: false
+    description: Field MaxDecimals from QotNonStock
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from QotNonStock
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from QotNonStock
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from QotNonStock
+  other_tax_code:
+    display: Othertaxcode
+    type: string
+    required: false
+    description: Field OtherTaxCode from QotNonStock
+  traceable_type:
+    display: Traceabletype
+    type: string
+    required: false
+    description: Field TraceableType from QotNonStock
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from QotNonStock
+  planner:
+    display: Planner
+    type: string
+    required: false
+    description: Field Planner from QotNonStock
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from QotNonStock
+  part_category:
+    display: Partcategory
+    type: string
+    required: false
+    description: Field PartCategory from QotNonStock
+  specific_gravity:
+    display: Specificgravity
+    type: decimal
+    required: false
+    description: Field SpecificGravity from QotNonStock
+  dock_to_stock:
+    display: Docktostock
+    type: decimal
+    required: false
+    description: Field DockToStock from QotNonStock
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from QotNonStock
+  resource_code:
+    display: Resourcecode
+    type: string
+    required: false
+    description: Field ResourceCode from QotNonStock
+  gst_tax_code:
+    display: Gsttaxcode
+    type: string
+    required: false
+    description: Field GstTaxCode from QotNonStock
+  gst_included:
+    display: Gstincluded
+    type: string
+    required: false
+    description: Field GstIncluded from QotNonStock
+  tariff_code:
+    display: Tariffcode
+    type: string
+    required: false
+    description: Field TariffCode from QotNonStock
+  supplementary_unit:
+    display: Supplementaryunit
+    type: string
+    required: false
+    description: Field SupplementaryUnit from QotNonStock
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from QotNonStock
+  route_reqd1:
+    display: Routereqd1
+    type: decimal
+    required: false
+    description: Field RouteReqd1 from QotNonStock
+  route_reqd2:
+    display: Routereqd2
+    type: decimal
+    required: false
+    description: Field RouteReqd2 from QotNonStock
+  route_reqd3:
+    display: Routereqd3
+    type: decimal
+    required: false
+    description: Field RouteReqd3 from QotNonStock
+  route_reqd4:
+    display: Routereqd4
+    type: decimal
+    required: false
+    description: Field RouteReqd4 from QotNonStock
+  route_reqd5:
+    display: Routereqd5
+    type: decimal
+    required: false
+    description: Field RouteReqd5 from QotNonStock
+  route_reqd6:
+    display: Routereqd6
+    type: decimal
+    required: false
+    description: Field RouteReqd6 from QotNonStock
+  route_desc1:
+    display: Routedesc1
+    type: string
+    required: false
+    description: Field RouteDesc1 from QotNonStock
+  route_desc2:
+    display: Routedesc2
+    type: string
+    required: false
+    description: Field RouteDesc2 from QotNonStock
+  route_desc3:
+    display: Routedesc3
+    type: string
+    required: false
+    description: Field RouteDesc3 from QotNonStock
+  route_desc4:
+    display: Routedesc4
+    type: string
+    required: false
+    description: Field RouteDesc4 from QotNonStock
+  route_desc5:
+    display: Routedesc5
+    type: string
+    required: false
+    description: Field RouteDesc5 from QotNonStock
+  route_desc6:
+    display: Routedesc6
+    type: string
+    required: false
+    description: Field RouteDesc6 from QotNonStock
+  auto_code_flag:
+    display: Autocodeflag
+    type: string
+    required: false
+    description: Field AutoCodeFlag from QotNonStock
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from QotNonStock
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from QotNonStock
+  costing_method:
+    display: Costingmethod
+    type: string
+    required: false
+    description: Field CostingMethod from QotNonStock
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from QotNonStock
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from QotNonStock
+  specific_gravity6:
+    display: Specificgravity6
+    type: decimal
+    required: false
+    description: Field SpecificGravity6 from QotNonStock

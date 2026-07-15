@@ -1,0 +1,20 @@
+concept: csh_chq_reg
+table: CshChqReg
+alias: ccr1
+fields:
+  cb_trn_year: ccr1.CbTrnYear
+  cb_trn_month: ccr1.CbTrnMonth
+  register: ccr1.Register
+  line: ccr1.Line
+  cheque: ccr1.Cheque
+  cheque_date: ccr1.ChequeDate
+  reference: ccr1.Reference
+  notation: ccr1.Notation
+  cheque_value: ccr1.ChequeValue
+  currency: ccr1.Currency
+  cheque_reprint: ccr1.ChequeReprint
+  last_cheque_prted: ccr1.LastChequePrted
+  void_flag: ccr1.VoidFlag
+  void_from: ccr1.VoidFrom
+  void_to: ccr1.VoidTo
+  supplier: ccr1.Supplier

@@ -1,0 +1,16 @@
+concept: adm_sql_health_bal_fix
+table: AdmSqlHealthBalFix
+alias: ashbf
+fields:
+  run_date_time: ashbf.RunDateTime
+  correction_type: ashbf.CorrectionType
+  table_name: ashbf.TableName
+  object_count: ashbf.ObjectCount
+  correction_code: ashbf.CorrectionCode
+  column_name: ashbf.ColumnName
+  index_name: ashbf.IndexName
+  foreign_key_name: ashbf.ForeignKeyName
+  message: ashbf.Message
+  new_value: ashbf.NewValue
+  orig_value: ashbf.OrigValue
+  correction_status: ashbf.CorrectionStatus

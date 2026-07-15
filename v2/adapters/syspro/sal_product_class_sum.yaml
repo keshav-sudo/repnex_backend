@@ -1,0 +1,31 @@
+concept: sal_product_class_sum
+table: SalProductClassSum
+alias: spcs
+fields:
+  branch: spcs.Branch
+  product_class: spcs.ProductClass
+  order_type: spcs.OrderType
+  ptd_sales: spcs.PtdSales
+  ptd_cost: spcs.PtdCost
+  ptd_qty: spcs.PtdQty
+  ptd_mass: spcs.PtdMass
+  mtd_sales1: spcs.MtdSales1
+  mtd_sales2: spcs.MtdSales2
+  mtd_sales3: spcs.MtdSales3
+  mtd_cost1: spcs.MtdCost1
+  mtd_cost2: spcs.MtdCost2
+  mtd_cost3: spcs.MtdCost3
+  mtd_qty1: spcs.MtdQty1
+  mtd_qty2: spcs.MtdQty2
+  mtd_qty3: spcs.MtdQty3
+  mtd_mass1: spcs.MtdMass1
+  mtd_mass2: spcs.MtdMass2
+  mtd_mass3: spcs.MtdMass3
+  ytd_sales: spcs.YtdSales
+  ytd_cost: spcs.YtdCost
+  ytd_qty: spcs.YtdQty
+  ytd_mass: spcs.YtdMass
+  prv_yr_sales: spcs.PrvYrSales
+  prv_yr_cost: spcs.PrvYrCost
+  prv_yr_qty: spcs.PrvYrQty
+  prv_yr_mass: spcs.PrvYrMass

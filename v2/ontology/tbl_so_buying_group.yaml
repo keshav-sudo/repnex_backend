@@ -1,0 +1,18 @@
+concept: tbl_so_buying_group
+display_name: TblSoBuyingGroup
+module: other
+description: Auto-generated representation of the physical table TblSoBuyingGroup.
+synonyms:
+- tblsobuyinggroup
+- tbl so buying group
+header_attributes:
+  buying_group:
+    display: Buyinggroup
+    type: string
+    required: false
+    description: Field BuyingGroup from TblSoBuyingGroup
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblSoBuyingGroup

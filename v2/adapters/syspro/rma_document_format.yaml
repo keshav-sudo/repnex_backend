@@ -1,0 +1,8 @@
+concept: rma_document_format
+table: RmaDocumentFormat
+alias: rdf
+fields:
+  rma_document_type: rdf.RmaDocumentType
+  document_format: rdf.DocumentFormat
+  document_record_type: rdf.DocumentRecordType
+  document_info: rdf.DocumentInfo

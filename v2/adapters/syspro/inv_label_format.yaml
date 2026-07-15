@@ -1,0 +1,8 @@
+concept: inv_label_format
+table: InvLabelFormat
+alias: ilf
+fields:
+  label_form_type: ilf.LabelFormType
+  document_format: ilf.DocumentFormat
+  document_record_type: ilf.DocumentRecordType
+  format_info: ilf.FormatInfo

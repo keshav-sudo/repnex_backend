@@ -1,0 +1,15 @@
+concept: int_log
+table: IntLog
+alias: il
+fields:
+  log_type: il.LogType
+  site_code: il.SiteCode
+  group_number: il.GroupNumber
+  seq_code: il.SeqCode
+  file_name: il.FileName
+  file_export_date: il.FileExportDate
+  file_import_date: il.FileImportDate
+  file_update: il.FileUpdate
+  sys_date_file_exp: il.SysDateFileExp
+  sys_date_log_crt: il.SysDateLogCrt
+  export_version: il.ExportVersion

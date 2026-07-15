@@ -1,0 +1,19 @@
+concept: adm_health_log
+table: AdmHealthLog
+alias: ahl
+fields:
+  run_date_time: ahl.RunDateTime
+  operator: ahl.Operator
+  health_function: ahl.HealthFunction
+  description: ahl.Description
+  status_flag: ahl.StatusFlag
+  end_date_time: ahl.EndDateTime
+  message: ahl.Message
+  message_number: ahl.MessageNumber
+  syspro_mnu_ver: ahl.SysproMnuVer
+  syspro_abt_ver: ahl.SysproAbtVer
+  licensed_users: ahl.LicensedUsers
+  logged_on_users: ahl.LoggedOnUsers
+  server_os: ahl.ServerOs
+  sql_version: ahl.SqlVersion
+  rows_affected: ahl.RowsAffected

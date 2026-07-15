@@ -1,0 +1,63 @@
+concept: adm_signature_log_det
+display_name: AdmSignatureLogDet
+module: administration
+description: Auto-generated representation of the physical table AdmSignatureLogDet.
+synonyms:
+- admsignaturelogdet
+- adm signature log det
+header_attributes:
+  transaction_id:
+    display: Transactionid
+    type: string
+    required: false
+    description: Field TransactionId from AdmSignatureLogDet
+  signature_date:
+    display: Signaturedate
+    type: date
+    required: false
+    description: Field SignatureDate from AdmSignatureLogDet
+  signature_time:
+    display: Signaturetime
+    type: decimal
+    required: false
+    description: Field SignatureTime from AdmSignatureLogDet
+  signature_line:
+    display: Signatureline
+    type: decimal
+    required: false
+    description: Field SignatureLine from AdmSignatureLogDet
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmSignatureLogDet
+  variable:
+    display: Variable
+    type: string
+    required: false
+    description: Field Variable from AdmSignatureLogDet
+  variable_desc:
+    display: Variabledesc
+    type: string
+    required: false
+    description: Field VariableDesc from AdmSignatureLogDet
+  variable_type:
+    display: Variabletype
+    type: string
+    required: false
+    description: Field VariableType from AdmSignatureLogDet
+  var_alpha_value:
+    display: Varalphavalue
+    type: string
+    required: false
+    description: Field VarAlphaValue from AdmSignatureLogDet
+  var_numeric_value:
+    display: Varnumericvalue
+    type: decimal
+    required: false
+    description: Field VarNumericValue from AdmSignatureLogDet
+  var_date_value:
+    display: Vardatevalue
+    type: date
+    required: false
+    description: Field VarDateValue from AdmSignatureLogDet

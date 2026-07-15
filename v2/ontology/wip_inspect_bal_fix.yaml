@@ -1,0 +1,43 @@
+concept: wip_inspect_bal_fix
+display_name: WipInspectBalFix
+module: work_in_progress
+description: Auto-generated representation of the physical table WipInspectBalFix.
+synonyms:
+- wipinspectbalfix
+- wip inspect bal fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from WipInspectBalFix
+  insp_reference:
+    display: Inspreference
+    type: string
+    required: false
+    description: Field InspReference from WipInspectBalFix
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipInspectBalFix
+  old_inspect_value:
+    display: Oldinspectvalue
+    type: decimal
+    required: false
+    description: Field OldInspectValue from WipInspectBalFix
+  new_inspect_value:
+    display: Newinspectvalue
+    type: decimal
+    required: false
+    description: Field NewInspectValue from WipInspectBalFix
+  old_inspect_qty:
+    display: Oldinspectqty
+    type: decimal
+    required: false
+    description: Field OldInspectQty from WipInspectBalFix
+  new_inspect_qty:
+    display: Newinspectqty
+    type: decimal
+    required: false
+    description: Field NewInspectQty from WipInspectBalFix

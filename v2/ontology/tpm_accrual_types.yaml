@@ -1,0 +1,18 @@
+concept: tpm_accrual_types
+display_name: TpmAccrualTypes
+module: other
+description: Auto-generated representation of the physical table TpmAccrualTypes.
+synonyms:
+- tpmaccrualtypes
+- tpm accrual types
+header_attributes:
+  accrual_type:
+    display: Accrualtype
+    type: string
+    required: false
+    description: Field AccrualType from TpmAccrualTypes
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TpmAccrualTypes

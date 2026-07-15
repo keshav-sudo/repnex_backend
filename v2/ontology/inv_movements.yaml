@@ -1,0 +1,228 @@
+concept: inv_movements
+display_name: InvMovements
+module: inventory
+description: Auto-generated representation of the physical table InvMovements.
+synonyms:
+- invmovements
+- inv movements
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvMovements
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvMovements
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from InvMovements
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from InvMovements
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from InvMovements
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from InvMovements
+  movement_type:
+    display: Movementtype
+    type: string
+    required: false
+    description: Field MovementType from InvMovements
+  trn_qty:
+    display: Trnqty
+    type: decimal
+    required: false
+    description: Field TrnQty from InvMovements
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from InvMovements
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from InvMovements
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from InvMovements
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from InvMovements
+  journal_entry:
+    display: Journalentry
+    type: decimal
+    required: false
+    description: Field JournalEntry from InvMovements
+  entered_cost:
+    display: Enteredcost
+    type: decimal
+    required: false
+    description: Field EnteredCost from InvMovements
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from InvMovements
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvMovements
+  add_reference:
+    display: Addreference
+    type: string
+    required: false
+    description: Field AddReference from InvMovements
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from InvMovements
+  new_warehouse:
+    display: Newwarehouse
+    type: string
+    required: false
+    description: Field NewWarehouse from InvMovements
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvMovements
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from InvMovements
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from InvMovements
+  document:
+    display: Document
+    type: decimal
+    required: false
+    description: Field Document from InvMovements
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from InvMovements
+  invoice_register:
+    display: Invoiceregister
+    type: decimal
+    required: false
+    description: Field InvoiceRegister from InvMovements
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from InvMovements
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from InvMovements
+  doc_type:
+    display: Doctype
+    type: string
+    required: false
+    description: Field DocType from InvMovements
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from InvMovements
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from InvMovements
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from InvMovements
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from InvMovements
+  sales_bin:
+    display: Salesbin
+    type: string
+    required: false
+    description: Field SalesBin from InvMovements
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from InvMovements
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from InvMovements
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from InvMovements
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from InvMovements
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from InvMovements
+  detail_line:
+    display: Detailline
+    type: decimal
+    required: false
+    description: Field DetailLine from InvMovements
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvMovements
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvMovements
+  lot_serial:
+    display: Lotserial
+    type: string
+    required: false
+    description: Field LotSerial from InvMovements
+  io_processed_flag:
+    display: Ioprocessedflag
+    type: string
+    required: false
+    description: Field IoProcessedFlag from InvMovements
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from InvMovements

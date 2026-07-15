@@ -1,0 +1,6 @@
+concept: tbl_so_buying_group
+table: TblSoBuyingGroup
+alias: tsbg
+fields:
+  buying_group: tsbg.BuyingGroup
+  description: tsbg.Description

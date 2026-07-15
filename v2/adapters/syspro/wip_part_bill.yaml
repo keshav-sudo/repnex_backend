@@ -1,0 +1,18 @@
+concept: wip_part_bill
+table: WipPartBill
+alias: wpb
+fields:
+  trn_year: wpb.TrnYear
+  trn_month: wpb.TrnMonth
+  journal: wpb.Journal
+  entry_number: wpb.EntryNumber
+  job: wpb.Job
+  entry_date: wpb.EntryDate
+  qty_supplied: wpb.QtySupplied
+  labour_value: wpb.LabourValue
+  material_value: wpb.MaterialValue
+  journal_printed: wpb.JournalPrinted
+  operator: wpb.Operator
+  sales_order: wpb.SalesOrder
+  dimension_entry: wpb.DimensionEntry
+  dimension_line: wpb.DimensionLine

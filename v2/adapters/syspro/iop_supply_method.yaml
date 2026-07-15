@@ -1,0 +1,22 @@
+concept: iop_supply_method
+table: IopSupplyMethod
+alias: ism1
+fields:
+  id_number: ism1.IdNumber
+  supply_code: ism1.SupplyCode
+  reference: ism1.Reference
+  supply_type: ism1.SupplyType
+  supplier: ism1.Supplier
+  route: ism1.Route
+  source_wh: ism1.SourceWh
+  plan_order_freq: ism1.PlanOrderFreq
+  interval_period: ism1.IntervalPeriod
+  day_of_week_month: ism1.DayOfWeekMonth
+  delivery_method: ism1.DeliveryMethod
+  int_lead_time: ism1.IntLeadTime
+  sup_lead_time: ism1.SupLeadTime
+  inspect_lead: ism1.InspectLead
+  major_order_mult: ism1.MajorOrderMult
+  minor_order_mult: ism1.MinorOrderMult
+  order_minimum: ism1.OrderMinimum
+  order_maximum: ism1.OrderMaximum

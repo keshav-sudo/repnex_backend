@@ -1,0 +1,6 @@
+concept: wip_master_sub
+table: WipMasterSub
+alias: wms
+fields:
+  job: wms.Job
+  sub_job: wms.SubJob

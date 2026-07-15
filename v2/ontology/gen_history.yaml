@@ -1,0 +1,103 @@
+concept: gen_history
+display_name: GenHistory
+module: general_ledger
+description: Auto-generated representation of the physical table GenHistory.
+synonyms:
+- genhistory
+- gen history
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenHistory
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenHistory
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenHistory
+  begin_year_balance:
+    display: Beginyearbalance
+    type: decimal
+    required: false
+    description: Field BeginYearBalance from GenHistory
+  closing_bal_per1:
+    display: Closingbalper1
+    type: decimal
+    required: false
+    description: Field ClosingBalPer1 from GenHistory
+  closing_bal_per2:
+    display: Closingbalper2
+    type: decimal
+    required: false
+    description: Field ClosingBalPer2 from GenHistory
+  closing_bal_per3:
+    display: Closingbalper3
+    type: decimal
+    required: false
+    description: Field ClosingBalPer3 from GenHistory
+  closing_bal_per4:
+    display: Closingbalper4
+    type: decimal
+    required: false
+    description: Field ClosingBalPer4 from GenHistory
+  closing_bal_per5:
+    display: Closingbalper5
+    type: decimal
+    required: false
+    description: Field ClosingBalPer5 from GenHistory
+  closing_bal_per6:
+    display: Closingbalper6
+    type: decimal
+    required: false
+    description: Field ClosingBalPer6 from GenHistory
+  closing_bal_per7:
+    display: Closingbalper7
+    type: decimal
+    required: false
+    description: Field ClosingBalPer7 from GenHistory
+  closing_bal_per8:
+    display: Closingbalper8
+    type: decimal
+    required: false
+    description: Field ClosingBalPer8 from GenHistory
+  closing_bal_per9:
+    display: Closingbalper9
+    type: decimal
+    required: false
+    description: Field ClosingBalPer9 from GenHistory
+  closing_bal_per10:
+    display: Closingbalper10
+    type: decimal
+    required: false
+    description: Field ClosingBalPer10 from GenHistory
+  closing_bal_per11:
+    display: Closingbalper11
+    type: decimal
+    required: false
+    description: Field ClosingBalPer11 from GenHistory
+  closing_bal_per12:
+    display: Closingbalper12
+    type: decimal
+    required: false
+    description: Field ClosingBalPer12 from GenHistory
+  closing_bal_per13:
+    display: Closingbalper13
+    type: decimal
+    required: false
+    description: Field ClosingBalPer13 from GenHistory
+  closing_bal_per14:
+    display: Closingbalper14
+    type: decimal
+    required: false
+    description: Field ClosingBalPer14 from GenHistory
+  closing_bal_per15:
+    display: Closingbalper15
+    type: decimal
+    required: false
+    description: Field ClosingBalPer15 from GenHistory

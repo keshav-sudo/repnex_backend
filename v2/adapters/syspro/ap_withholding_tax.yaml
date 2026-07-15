@@ -1,0 +1,24 @@
+concept: ap_withholding_tax
+table: ApWithholdingTax
+alias: awt2
+fields:
+  wht_year: awt2.WhtYear
+  period: awt2.Period
+  cheque_register: awt2.ChequeRegister
+  journal: awt2.Journal
+  distr_entry: awt2.DistrEntry
+  invoice: awt2.Invoice
+  supplier: awt2.Supplier
+  with_tax_acc_basis: awt2.WithTaxAccBasis
+  with_tax_expense_type: awt2.WithTaxExpenseType
+  tax_indicator: awt2.TaxIndicator
+  transaction_code: awt2.TransactionCode
+  invoice_date: awt2.InvoiceDate
+  with_tax_code: awt2.WithTaxCode
+  with_tax_rate: awt2.WithTaxRate
+  bank: awt2.Bank
+  with_taxable_value: awt2.WithTaxableValue
+  with_tax_value: awt2.WithTaxValue
+  invoice_value: awt2.InvoiceValue
+  status: awt2.Status
+  conv_rate: awt2.ConvRate

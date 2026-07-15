@@ -1,0 +1,123 @@
+concept: gen_dimension_bud
+display_name: GenDimensionBud
+module: general_ledger
+description: Auto-generated representation of the physical table GenDimensionBud.
+synonyms:
+- gendimensionbud
+- gen dimension bud
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenDimensionBud
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenDimensionBud
+  dimension_category:
+    display: Dimensioncategory
+    type: string
+    required: false
+    description: Field DimensionCategory from GenDimensionBud
+  dimension_code:
+    display: Dimensioncode
+    type: string
+    required: false
+    description: Field DimensionCode from GenDimensionBud
+  budget_type:
+    display: Budgettype
+    type: string
+    required: false
+    description: Field BudgetType from GenDimensionBud
+  budget_number:
+    display: Budgetnumber
+    type: decimal
+    required: false
+    description: Field BudgetNumber from GenDimensionBud
+  revision_level:
+    display: Revisionlevel
+    type: string
+    required: false
+    description: Field RevisionLevel from GenDimensionBud
+  date_last_modified:
+    display: Datelastmodified
+    type: date
+    required: false
+    description: Field DateLastModified from GenDimensionBud
+  budget1:
+    display: Budget1
+    type: decimal
+    required: false
+    description: Field Budget1 from GenDimensionBud
+  budget2:
+    display: Budget2
+    type: decimal
+    required: false
+    description: Field Budget2 from GenDimensionBud
+  budget3:
+    display: Budget3
+    type: decimal
+    required: false
+    description: Field Budget3 from GenDimensionBud
+  budget4:
+    display: Budget4
+    type: decimal
+    required: false
+    description: Field Budget4 from GenDimensionBud
+  budget5:
+    display: Budget5
+    type: decimal
+    required: false
+    description: Field Budget5 from GenDimensionBud
+  budget6:
+    display: Budget6
+    type: decimal
+    required: false
+    description: Field Budget6 from GenDimensionBud
+  budget7:
+    display: Budget7
+    type: decimal
+    required: false
+    description: Field Budget7 from GenDimensionBud
+  budget8:
+    display: Budget8
+    type: decimal
+    required: false
+    description: Field Budget8 from GenDimensionBud
+  budget9:
+    display: Budget9
+    type: decimal
+    required: false
+    description: Field Budget9 from GenDimensionBud
+  budget10:
+    display: Budget10
+    type: decimal
+    required: false
+    description: Field Budget10 from GenDimensionBud
+  budget11:
+    display: Budget11
+    type: decimal
+    required: false
+    description: Field Budget11 from GenDimensionBud
+  budget12:
+    display: Budget12
+    type: decimal
+    required: false
+    description: Field Budget12 from GenDimensionBud
+  budget13:
+    display: Budget13
+    type: decimal
+    required: false
+    description: Field Budget13 from GenDimensionBud
+  budget14:
+    display: Budget14
+    type: decimal
+    required: false
+    description: Field Budget14 from GenDimensionBud
+  budget15:
+    display: Budget15
+    type: decimal
+    required: false
+    description: Field Budget15 from GenDimensionBud

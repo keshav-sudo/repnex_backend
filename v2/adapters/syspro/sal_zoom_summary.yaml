@@ -1,0 +1,13 @@
+concept: sal_zoom_summary
+table: SalZoomSummary
+alias: szs
+fields:
+  sequence1: szs.Sequence1
+  sequence2: szs.Sequence2
+  sequence3: szs.Sequence3
+  trn_year: szs.TrnYear
+  trn_month: szs.TrnMonth
+  register: szs.Register
+  invoice: szs.Invoice
+  summary_line: szs.SummaryLine
+  detail_line: szs.DetailLine

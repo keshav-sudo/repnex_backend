@@ -1,0 +1,93 @@
+concept: mrp_snap_forecast
+display_name: MrpSnapForecast
+module: mrp
+description: Auto-generated representation of the physical table MrpSnapForecast.
+synonyms:
+- mrpsnapforecast
+- mrp snap forecast
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpSnapForecast
+  forecast_wh:
+    display: Forecastwh
+    type: string
+    required: false
+    description: Field ForecastWh from MrpSnapForecast
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from MrpSnapForecast
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpSnapForecast
+  forecast_qty_outst:
+    display: Forecastqtyoutst
+    type: decimal
+    required: false
+    description: Field ForecastQtyOutst from MrpSnapForecast
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from MrpSnapForecast
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from MrpSnapForecast
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MrpSnapForecast
+  resource_parent:
+    display: Resourceparent
+    type: string
+    required: false
+    description: Field ResourceParent from MrpSnapForecast
+  inactive_flag:
+    display: Inactiveflag
+    type: string
+    required: false
+    description: Field InactiveFlag from MrpSnapForecast
+  forecast_type:
+    display: Forecasttype
+    type: string
+    required: false
+    description: Field ForecastType from MrpSnapForecast
+  qty_invoiced:
+    display: Qtyinvoiced
+    type: decimal
+    required: false
+    description: Field QtyInvoiced from MrpSnapForecast
+  orig_forecast_date:
+    display: Origforecastdate
+    type: date
+    required: false
+    description: Field OrigForecastDate from MrpSnapForecast
+  original_line:
+    display: Originalline
+    type: decimal
+    required: false
+    description: Field OriginalLine from MrpSnapForecast
+  orig_qty_outst:
+    display: Origqtyoutst
+    type: decimal
+    required: false
+    description: Field OrigQtyOutst from MrpSnapForecast
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpSnapForecast
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpSnapForecast

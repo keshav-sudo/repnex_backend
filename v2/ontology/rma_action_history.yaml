@@ -1,0 +1,118 @@
+concept: rma_action_history
+display_name: RmaActionHistory
+module: other
+description: Auto-generated representation of the physical table RmaActionHistory.
+synonyms:
+- rmaactionhistory
+- rma action history
+header_attributes:
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RmaActionHistory
+  rma_line_number:
+    display: Rmalinenumber
+    type: decimal
+    required: false
+    description: Field RmaLineNumber from RmaActionHistory
+  hist_seq_number:
+    display: Histseqnumber
+    type: decimal
+    required: false
+    description: Field HistSeqNumber from RmaActionHistory
+  rma_action:
+    display: Rmaaction
+    type: string
+    required: false
+    description: Field RmaAction from RmaActionHistory
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from RmaActionHistory
+  date_changed:
+    display: Datechanged
+    type: date
+    required: false
+    description: Field DateChanged from RmaActionHistory
+  time_changed_hr:
+    display: Timechangedhr
+    type: decimal
+    required: false
+    description: Field TimeChangedHr from RmaActionHistory
+  time_changed_min:
+    display: Timechangedmin
+    type: decimal
+    required: false
+    description: Field TimeChangedMin from RmaActionHistory
+  time_changed_sec:
+    display: Timechangedsec
+    type: decimal
+    required: false
+    description: Field TimeChangedSec from RmaActionHistory
+  time_changed100:
+    display: Timechanged100
+    type: decimal
+    required: false
+    description: Field TimeChanged100 from RmaActionHistory
+  comment_line1:
+    display: Commentline1
+    type: string
+    required: false
+    description: Field CommentLine1 from RmaActionHistory
+  comment_line2:
+    display: Commentline2
+    type: string
+    required: false
+    description: Field CommentLine2 from RmaActionHistory
+  comment_line3:
+    display: Commentline3
+    type: string
+    required: false
+    description: Field CommentLine3 from RmaActionHistory
+  comment_line4:
+    display: Commentline4
+    type: string
+    required: false
+    description: Field CommentLine4 from RmaActionHistory
+  comment_line5:
+    display: Commentline5
+    type: string
+    required: false
+    description: Field CommentLine5 from RmaActionHistory
+  comment_line6:
+    display: Commentline6
+    type: string
+    required: false
+    description: Field CommentLine6 from RmaActionHistory
+  comment_line7:
+    display: Commentline7
+    type: string
+    required: false
+    description: Field CommentLine7 from RmaActionHistory
+  comment_line8:
+    display: Commentline8
+    type: string
+    required: false
+    description: Field CommentLine8 from RmaActionHistory
+  comment_line9:
+    display: Commentline9
+    type: string
+    required: false
+    description: Field CommentLine9 from RmaActionHistory
+  comment_line10:
+    display: Commentline10
+    type: string
+    required: false
+    description: Field CommentLine10 from RmaActionHistory
+  comment_line11:
+    display: Commentline11
+    type: string
+    required: false
+    description: Field CommentLine11 from RmaActionHistory
+  comment_line12:
+    display: Commentline12
+    type: string
+    required: false
+    description: Field CommentLine12 from RmaActionHistory

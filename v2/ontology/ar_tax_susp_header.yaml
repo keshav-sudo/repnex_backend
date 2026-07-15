@@ -1,0 +1,68 @@
+concept: ar_tax_susp_header
+display_name: ArTaxSuspHeader
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArTaxSuspHeader.
+synonyms:
+- artaxsuspheader
+- ar tax susp header
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArTaxSuspHeader
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArTaxSuspHeader
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArTaxSuspHeader
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ArTaxSuspHeader
+  local_invoice_value:
+    display: Localinvoicevalue
+    type: decimal
+    required: false
+    description: Field LocalInvoiceValue from ArTaxSuspHeader
+  local_tax_value:
+    display: Localtaxvalue
+    type: decimal
+    required: false
+    description: Field LocalTaxValue from ArTaxSuspHeader
+  cur_invoice_value:
+    display: Curinvoicevalue
+    type: decimal
+    required: false
+    description: Field CurInvoiceValue from ArTaxSuspHeader
+  cur_tax_value:
+    display: Curtaxvalue
+    type: decimal
+    required: false
+    description: Field CurTaxValue from ArTaxSuspHeader
+  tax_rounding_account:
+    display: Taxroundingaccount
+    type: string
+    required: false
+    description: Field TaxRoundingAccount from ArTaxSuspHeader
+  next_line:
+    display: Nextline
+    type: decimal
+    required: false
+    description: Field NextLine from ArTaxSuspHeader
+  year_tax_bal_zero:
+    display: Yeartaxbalzero
+    type: decimal
+    required: false
+    description: Field YearTaxBalZero from ArTaxSuspHeader
+  month_tax_bal_zero:
+    display: Monthtaxbalzero
+    type: decimal
+    required: false
+    description: Field MonthTaxBalZero from ArTaxSuspHeader

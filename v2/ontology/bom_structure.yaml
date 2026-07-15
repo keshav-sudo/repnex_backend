@@ -1,0 +1,238 @@
+concept: bom_structure
+display_name: BomStructure
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomStructure.
+synonyms:
+- bomstructure
+- bom structure
+header_attributes:
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from BomStructure
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BomStructure
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BomStructure
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomStructure
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from BomStructure
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from BomStructure
+  com_version:
+    display: Comversion
+    type: string
+    required: false
+    description: Field ComVersion from BomStructure
+  com_release:
+    display: Comrelease
+    type: string
+    required: false
+    description: Field ComRelease from BomStructure
+  ecc_consumption:
+    display: Eccconsumption
+    type: string
+    required: false
+    description: Field EccConsumption from BomStructure
+  structure_on_date:
+    display: Structureondate
+    type: date
+    required: false
+    description: Field StructureOnDate from BomStructure
+  structure_off_date:
+    display: Structureoffdate
+    type: date
+    required: false
+    description: Field StructureOffDate from BomStructure
+  op_offset_flag:
+    display: Opoffsetflag
+    type: string
+    required: false
+    description: Field OpOffsetFlag from BomStructure
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from BomStructure
+  qty_per:
+    display: Qtyper
+    type: decimal
+    required: false
+    description: Field QtyPer from BomStructure
+  scrap_percentage:
+    display: Scrappercentage
+    type: decimal
+    required: false
+    description: Field ScrapPercentage from BomStructure
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from BomStructure
+  so_option_flag:
+    display: Sooptionflag
+    type: string
+    required: false
+    description: Field SoOptionFlag from BomStructure
+  so_print_flag:
+    display: Soprintflag
+    type: string
+    required: false
+    description: Field SoPrintFlag from BomStructure
+  incl_scrap_flag:
+    display: Inclscrapflag
+    type: string
+    required: false
+    description: Field InclScrapFlag from BomStructure
+  reason_for_change:
+    display: Reasonforchange
+    type: string
+    required: false
+    description: Field ReasonForChange from BomStructure
+  ref_designator:
+    display: Refdesignator
+    type: string
+    required: false
+    description: Field RefDesignator from BomStructure
+  assembly_place:
+    display: Assemblyplace
+    type: string
+    required: false
+    description: Field AssemblyPlace from BomStructure
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from BomStructure
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from BomStructure
+  component_type:
+    display: Componenttype
+    type: string
+    required: false
+    description: Field ComponentType from BomStructure
+  incl_kit_issues:
+    display: Inclkitissues
+    type: string
+    required: false
+    description: Field InclKitIssues from BomStructure
+  create_sub_job:
+    display: Createsubjob
+    type: string
+    required: false
+    description: Field CreateSubJob from BomStructure
+  wet_weight_percent:
+    display: Wetweightpercent
+    type: decimal
+    required: false
+    description: Field WetWeightPercent from BomStructure
+  include_batch:
+    display: Includebatch
+    type: string
+    required: false
+    description: Field IncludeBatch from BomStructure
+  include_from_job:
+    display: Includefromjob
+    type: string
+    required: false
+    description: Field IncludeFromJob from BomStructure
+  include_to_job:
+    display: Includetojob
+    type: string
+    required: false
+    description: Field IncludeToJob from BomStructure
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from BomStructure
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from BomStructure
+  roll_up_cost:
+    display: Rollupcost
+    type: string
+    required: false
+    description: Field RollUpCost from BomStructure
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from BomStructure
+  ignore_floor_flag:
+    display: Ignorefloorflag
+    type: string
+    required: false
+    description: Field IgnoreFloorFlag from BomStructure
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from BomStructure
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from BomStructure
+  qty_per_ent:
+    display: Qtyperent
+    type: decimal
+    required: false
+    description: Field QtyPerEnt from BomStructure
+  scrap_quantity_ent:
+    display: Scrapquantityent
+    type: decimal
+    required: false
+    description: Field ScrapQuantityEnt from BomStructure
+  fixed_qty_per_ent:
+    display: Fixedqtyperent
+    type: decimal
+    required: false
+    description: Field FixedQtyPerEnt from BomStructure
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from BomStructure
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from BomStructure
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from BomStructure
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from BomStructure
+  ovr_ecc_spec_iss:
+    display: Ovreccspeciss
+    type: string
+    required: false
+    description: Field OvrEccSpecIss from BomStructure

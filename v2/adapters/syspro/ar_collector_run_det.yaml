@@ -1,0 +1,19 @@
+concept: ar_collector_run_det
+table: ArCollectorRunDet
+alias: acrd
+fields:
+  collector_run_no: acrd.CollectorRunNo
+  line_number: acrd.LineNumber
+  collector: acrd.Collector
+  collection_date: acrd.CollectionDate
+  receipt_date: acrd.ReceiptDate
+  customer: acrd.Customer
+  invoice: acrd.Invoice
+  invoice_amount: acrd.InvoiceAmount
+  cash_total: acrd.CashTotal
+  check_total: acrd.CheckTotal
+  other_total: acrd.OtherTotal
+  area: acrd.Area
+  salesperson: acrd.Salesperson
+  document_type: acrd.DocumentType
+  reference: acrd.Reference

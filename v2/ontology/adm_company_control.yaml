@@ -1,0 +1,18 @@
+concept: adm_company_control
+display_name: AdmCompanyControl
+module: administration
+description: Auto-generated representation of the physical table AdmCompanyControl.
+synonyms:
+- admcompanycontrol
+- adm company control
+header_attributes:
+  record_type:
+    display: Recordtype
+    type: string
+    required: false
+    description: Field RecordType from AdmCompanyControl
+  data_string:
+    display: Datastring
+    type: string
+    required: false
+    description: Field DataString from AdmCompanyControl

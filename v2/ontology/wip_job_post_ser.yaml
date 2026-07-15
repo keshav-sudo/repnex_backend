@@ -1,0 +1,43 @@
+concept: wip_job_post_ser
+display_name: WipJobPostSer
+module: work_in_progress
+description: Auto-generated representation of the physical table WipJobPostSer.
+synonyms:
+- wipjobpostser
+- wip job post ser
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipJobPostSer
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from WipJobPostSer
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipJobPostSer
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from WipJobPostSer
+  stock_qty_issued:
+    display: Stockqtyissued
+    type: decimal
+    required: false
+    description: Field StockQtyIssued from WipJobPostSer
+  serial_expiry_date:
+    display: Serialexpirydate
+    type: date
+    required: false
+    description: Field SerialExpiryDate from WipJobPostSer
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WipJobPostSer

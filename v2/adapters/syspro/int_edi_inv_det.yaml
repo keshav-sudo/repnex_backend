@@ -1,0 +1,27 @@
+concept: int_edi_inv_det
+table: IntEdiInvDet
+alias: ieid
+fields:
+  customer: ieid.Customer
+  document_type: ieid.DocumentType
+  invoice: ieid.Invoice
+  line: ieid.Line
+  line_type: ieid.LineType
+  stock_code: ieid.StockCode
+  cust_stock_code: ieid.CustStockCode
+  description: ieid.Description
+  ship_qty: ieid.ShipQty
+  stk_qty_to_ship: ieid.StkQtyToShip
+  uom: ieid.Uom
+  tax_code: ieid.TaxCode
+  contract_num: ieid.ContractNum
+  unit_price: ieid.UnitPrice
+  extended_line_val: ieid.ExtendedLineVal
+  line_tax_val: ieid.LineTaxVal
+  decimals: ieid.Decimals
+  comment: ieid.Comment
+  price_uom: ieid.PriceUom
+  back_order_qty: ieid.BackOrderQty
+  tax_rate: ieid.TaxRate
+  discount_amount: ieid.DiscountAmount
+  order_uom: ieid.OrderUom

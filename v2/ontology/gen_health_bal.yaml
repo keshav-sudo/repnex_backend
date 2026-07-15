@@ -1,0 +1,63 @@
+concept: gen_health_bal
+display_name: GenHealthBal
+module: general_ledger
+description: Auto-generated representation of the physical table GenHealthBal.
+synonyms:
+- genhealthbal
+- gen health bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from GenHealthBal
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from GenHealthBal
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenHealthBal
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from GenHealthBal
+  hcheck_year:
+    display: Hcheckyear
+    type: decimal
+    required: false
+    description: Field HcheckYear from GenHealthBal
+  hcheck_month:
+    display: Hcheckmonth
+    type: decimal
+    required: false
+    description: Field HcheckMonth from GenHealthBal
+  error_description:
+    display: Errordescription
+    type: string
+    required: false
+    description: Field ErrorDescription from GenHealthBal
+  bal_value:
+    display: Balvalue
+    type: decimal
+    required: false
+    description: Field BalValue from GenHealthBal
+  calc_value:
+    display: Calcvalue
+    type: decimal
+    required: false
+    description: Field CalcValue from GenHealthBal
+  diff_value:
+    display: Diffvalue
+    type: decimal
+    required: false
+    description: Field DiffValue from GenHealthBal
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from GenHealthBal

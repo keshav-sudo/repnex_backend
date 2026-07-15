@@ -1,0 +1,113 @@
+concept: iop_sales_adjust
+display_name: IopSalesAdjust
+module: other
+description: Auto-generated representation of the physical table IopSalesAdjust.
+synonyms:
+- iopsalesadjust
+- iop sales adjust
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopSalesAdjust
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopSalesAdjust
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopSalesAdjust
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopSalesAdjust
+  movement_date:
+    display: Movementdate
+    type: date
+    required: false
+    description: Field MovementDate from IopSalesAdjust
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from IopSalesAdjust
+  adjust_type:
+    display: Adjusttype
+    type: string
+    required: false
+    description: Field AdjustType from IopSalesAdjust
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from IopSalesAdjust
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopSalesAdjust
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopSalesAdjust
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from IopSalesAdjust
+  movement_trn_year:
+    display: Movementtrnyear
+    type: decimal
+    required: false
+    description: Field MovementTrnYear from IopSalesAdjust
+  movement_trn_month:
+    display: Movementtrnmonth
+    type: decimal
+    required: false
+    description: Field MovementTrnMonth from IopSalesAdjust
+  movement_trn_time:
+    display: Movementtrntime
+    type: decimal
+    required: false
+    description: Field MovementTrnTime from IopSalesAdjust
+  lost_trn_date:
+    display: Losttrndate
+    type: date
+    required: false
+    description: Field LostTrnDate from IopSalesAdjust
+  lost_trn_time:
+    display: Losttrntime
+    type: decimal
+    required: false
+    description: Field LostTrnTime from IopSalesAdjust
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from IopSalesAdjust
+  from_stock:
+    display: Fromstock
+    type: string
+    required: false
+    description: Field FromStock from IopSalesAdjust
+  from_version:
+    display: Fromversion
+    type: string
+    required: false
+    description: Field FromVersion from IopSalesAdjust
+  from_release:
+    display: Fromrelease
+    type: string
+    required: false
+    description: Field FromRelease from IopSalesAdjust
+  from_warehouse:
+    display: Fromwarehouse
+    type: string
+    required: false
+    description: Field FromWarehouse from IopSalesAdjust

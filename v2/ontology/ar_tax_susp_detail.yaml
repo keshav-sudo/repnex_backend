@@ -1,0 +1,93 @@
+concept: ar_tax_susp_detail
+display_name: ArTaxSuspDetail
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArTaxSuspDetail.
+synonyms:
+- artaxsuspdetail
+- ar tax susp detail
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArTaxSuspDetail
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArTaxSuspDetail
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArTaxSuspDetail
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from ArTaxSuspDetail
+  doc_trn_year:
+    display: Doctrnyear
+    type: decimal
+    required: false
+    description: Field DocTrnYear from ArTaxSuspDetail
+  doc_trn_month:
+    display: Doctrnmonth
+    type: decimal
+    required: false
+    description: Field DocTrnMonth from ArTaxSuspDetail
+  doc_register:
+    display: Docregister
+    type: decimal
+    required: false
+    description: Field DocRegister from ArTaxSuspDetail
+  doc_invoice:
+    display: Docinvoice
+    type: string
+    required: false
+    description: Field DocInvoice from ArTaxSuspDetail
+  doc_summary_line:
+    display: Docsummaryline
+    type: decimal
+    required: false
+    description: Field DocSummaryLine from ArTaxSuspDetail
+  doc_detail_line:
+    display: Docdetailline
+    type: decimal
+    required: false
+    description: Field DocDetailLine from ArTaxSuspDetail
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from ArTaxSuspDetail
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from ArTaxSuspDetail
+  local_invoice_value:
+    display: Localinvoicevalue
+    type: decimal
+    required: false
+    description: Field LocalInvoiceValue from ArTaxSuspDetail
+  local_tax_value:
+    display: Localtaxvalue
+    type: decimal
+    required: false
+    description: Field LocalTaxValue from ArTaxSuspDetail
+  cur_invoice_value:
+    display: Curinvoicevalue
+    type: decimal
+    required: false
+    description: Field CurInvoiceValue from ArTaxSuspDetail
+  cur_tax_value:
+    display: Curtaxvalue
+    type: decimal
+    required: false
+    description: Field CurTaxValue from ArTaxSuspDetail
+  transaction_type:
+    display: Transactiontype
+    type: string
+    required: false
+    description: Field TransactionType from ArTaxSuspDetail

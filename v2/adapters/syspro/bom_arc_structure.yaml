@@ -1,0 +1,50 @@
+concept: bom_arc_structure
+table: BomArcStructure
+alias: bas
+fields:
+  parent_part: bas.ParentPart
+  version: bas.Version
+  release: bas.Release
+  route: bas.Route
+  sequence_num: bas.SequenceNum
+  component: bas.Component
+  com_version: bas.ComVersion
+  com_release: bas.ComRelease
+  ecc_consumption: bas.EccConsumption
+  structure_on_date: bas.StructureOnDate
+  structure_off_date: bas.StructureOffDate
+  op_offset_flag: bas.OpOffsetFlag
+  operation_offset: bas.OperationOffset
+  qty_per: bas.QtyPer
+  scrap_percentage: bas.ScrapPercentage
+  scrap_quantity: bas.ScrapQuantity
+  so_option_flag: bas.SoOptionFlag
+  so_print_flag: bas.SoPrintFlag
+  incl_scrap_flag: bas.InclScrapFlag
+  reason_for_change: bas.ReasonForChange
+  ref_designator: bas.RefDesignator
+  assembly_place: bas.AssemblyPlace
+  item_number: bas.ItemNumber
+  auto_narr_code: bas.AutoNarrCode
+  component_type: bas.ComponentType
+  incl_kit_issues: bas.InclKitIssues
+  create_sub_job: bas.CreateSubJob
+  wet_weight_percent: bas.WetWeightPercent
+  include_batch: bas.IncludeBatch
+  include_from_job: bas.IncludeFromJob
+  include_to_job: bas.IncludeToJob
+  fixed_qty_per_flag: bas.FixedQtyPerFlag
+  fixed_qty_per: bas.FixedQtyPer
+  roll_up_cost: bas.RollUpCost
+  warehouse: bas.Warehouse
+  ignore_floor_flag: bas.IgnoreFloorFlag
+  co_product_cost_val: bas.CoProductCostVal
+  uom_flag: bas.UomFlag
+  qty_per_ent: bas.QtyPerEnt
+  scrap_quantity_ent: bas.ScrapQuantityEnt
+  fixed_qty_per_ent: bas.FixedQtyPerEnt
+  product_code: bas.ProductCode
+  library_code: bas.LibraryCode
+  first_seq: bas.FirstSeq
+  second_seq: bas.SecondSeq
+  ovr_ecc_spec_iss: bas.OvrEccSpecIss

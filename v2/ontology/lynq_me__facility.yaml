@@ -1,0 +1,273 @@
+concept: lynq_me__facility
+display_name: Lynq ME Facility
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Facility.
+synonyms:
+- lynq_me_facility
+- lynq me  facility
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_Facility
+  f_code:
+    display: Fcode
+    type: string
+    required: false
+    description: Field fCode from Lynq_ME_Facility
+  f_group1:
+    display: Fgroup1
+    type: string
+    required: false
+    description: Field fGroup1 from Lynq_ME_Facility
+  f_group2:
+    display: Fgroup2
+    type: string
+    required: false
+    description: Field fGroup2 from Lynq_ME_Facility
+  f_group3:
+    display: Fgroup3
+    type: string
+    required: false
+    description: Field fGroup3 from Lynq_ME_Facility
+  f_group4:
+    display: Fgroup4
+    type: string
+    required: false
+    description: Field fGroup4 from Lynq_ME_Facility
+  f_group5:
+    display: Fgroup5
+    type: string
+    required: false
+    description: Field fGroup5 from Lynq_ME_Facility
+  f_name:
+    display: Fname
+    type: string
+    required: false
+    description: Field fName from Lynq_ME_Facility
+  f_name1:
+    display: Fname1
+    type: string
+    required: false
+    description: Field fName1 from Lynq_ME_Facility
+  f_name2:
+    display: Fname2
+    type: string
+    required: false
+    description: Field fName2 from Lynq_ME_Facility
+  f_description1:
+    display: Fdescription1
+    type: string
+    required: false
+    description: Field fDescription1 from Lynq_ME_Facility
+  f_description2:
+    display: Fdescription2
+    type: string
+    required: false
+    description: Field fDescription2 from Lynq_ME_Facility
+  f_alternative:
+    display: Falternative
+    type: string
+    required: false
+    description: Field fAlternative from Lynq_ME_Facility
+  f_req1:
+    display: Freq1
+    type: decimal
+    required: false
+    description: Field fReq1 from Lynq_ME_Facility
+  f_req2:
+    display: Freq2
+    type: decimal
+    required: false
+    description: Field fReq2 from Lynq_ME_Facility
+  f_req3:
+    display: Freq3
+    type: decimal
+    required: false
+    description: Field fReq3 from Lynq_ME_Facility
+  f_req4:
+    display: Freq4
+    type: decimal
+    required: false
+    description: Field fReq4 from Lynq_ME_Facility
+  f_req5:
+    display: Freq5
+    type: decimal
+    required: false
+    description: Field fReq5 from Lynq_ME_Facility
+  f_param1:
+    display: Fparam1
+    type: string
+    required: false
+    description: Field fParam1 from Lynq_ME_Facility
+  f_param2:
+    display: Fparam2
+    type: string
+    required: false
+    description: Field fParam2 from Lynq_ME_Facility
+  f_param3:
+    display: Fparam3
+    type: string
+    required: false
+    description: Field fParam3 from Lynq_ME_Facility
+  f_param4:
+    display: Fparam4
+    type: string
+    required: false
+    description: Field fParam4 from Lynq_ME_Facility
+  f_param5:
+    display: Fparam5
+    type: string
+    required: false
+    description: Field fParam5 from Lynq_ME_Facility
+  f_text1:
+    display: Ftext1
+    type: string
+    required: false
+    description: Field fText1 from Lynq_ME_Facility
+  f_text2:
+    display: Ftext2
+    type: string
+    required: false
+    description: Field fText2 from Lynq_ME_Facility
+  f_text3:
+    display: Ftext3
+    type: string
+    required: false
+    description: Field fText3 from Lynq_ME_Facility
+  f_text4:
+    display: Ftext4
+    type: string
+    required: false
+    description: Field fText4 from Lynq_ME_Facility
+  f_text5:
+    display: Ftext5
+    type: string
+    required: false
+    description: Field fText5 from Lynq_ME_Facility
+  f_int1:
+    display: Fint1
+    type: decimal
+    required: false
+    description: Field fInt1 from Lynq_ME_Facility
+  f_int2:
+    display: Fint2
+    type: decimal
+    required: false
+    description: Field fInt2 from Lynq_ME_Facility
+  f_int3:
+    display: Fint3
+    type: decimal
+    required: false
+    description: Field fInt3 from Lynq_ME_Facility
+  f_int4:
+    display: Fint4
+    type: decimal
+    required: false
+    description: Field fInt4 from Lynq_ME_Facility
+  f_int5:
+    display: Fint5
+    type: decimal
+    required: false
+    description: Field fInt5 from Lynq_ME_Facility
+  f_decimal1:
+    display: Fdecimal1
+    type: decimal
+    required: false
+    description: Field fDecimal1 from Lynq_ME_Facility
+  f_decimal2:
+    display: Fdecimal2
+    type: decimal
+    required: false
+    description: Field fDecimal2 from Lynq_ME_Facility
+  f_decimal3:
+    display: Fdecimal3
+    type: decimal
+    required: false
+    description: Field fDecimal3 from Lynq_ME_Facility
+  f_decimal4:
+    display: Fdecimal4
+    type: decimal
+    required: false
+    description: Field fDecimal4 from Lynq_ME_Facility
+  f_decimal5:
+    display: Fdecimal5
+    type: decimal
+    required: false
+    description: Field fDecimal5 from Lynq_ME_Facility
+  f_date1:
+    display: Fdate1
+    type: date
+    required: false
+    description: Field fDate1 from Lynq_ME_Facility
+  f_date2:
+    display: Fdate2
+    type: date
+    required: false
+    description: Field fDate2 from Lynq_ME_Facility
+  f_date3:
+    display: Fdate3
+    type: date
+    required: false
+    description: Field fDate3 from Lynq_ME_Facility
+  f_date4:
+    display: Fdate4
+    type: date
+    required: false
+    description: Field fDate4 from Lynq_ME_Facility
+  f_date5:
+    display: Fdate5
+    type: date
+    required: false
+    description: Field fDate5 from Lynq_ME_Facility
+  f_masterflag:
+    display: Fmasterflag
+    type: string
+    required: false
+    description: Field fMasterflag from Lynq_ME_Facility
+  f_manager:
+    display: Fmanager
+    type: string
+    required: false
+    description: Field fManager from Lynq_ME_Facility
+  f_labr_hrs_coef:
+    display: Flabrhrscoef
+    type: decimal
+    required: false
+    description: Field fLabrHrsCoef from Lynq_ME_Facility
+  f_mach_hrs_coef:
+    display: Fmachhrscoef
+    type: decimal
+    required: false
+    description: Field fMachHrsCoef from Lynq_ME_Facility
+  f_erp_facility_code:
+    display: Ferpfacilitycode
+    type: string
+    required: false
+    description: Field fErpFacilityCode from Lynq_ME_Facility
+  f_time_uom_conversion:
+    display: Ftimeuomconversion
+    type: decimal
+    required: false
+    description: Field fTimeUOMConversion from Lynq_ME_Facility
+  f_erp_specific:
+    display: Ferpspecific
+    type: string
+    required: false
+    description: Field fErpSpecific from Lynq_ME_Facility
+  f_resource_qty:
+    display: Fresourceqty
+    type: decimal
+    required: false
+    description: Field fResourceQty from Lynq_ME_Facility
+  f_type:
+    display: Ftype
+    type: string
+    required: false
+    description: Field fType from Lynq_ME_Facility
+  f_time_uom_converted:
+    display: Ftimeuomconverted
+    type: string
+    required: false
+    description: Field fTimeUOMConverted from Lynq_ME_Facility

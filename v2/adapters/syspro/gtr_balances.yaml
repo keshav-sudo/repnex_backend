@@ -1,0 +1,18 @@
+concept: gtr_balances
+table: GtrBalances
+alias: gb1
+fields:
+  run_date_time: gb1.RunDateTime
+  gtr_reference: gb1.GtrReference
+  source_warehouse: gb1.SourceWarehouse
+  target_warehouse: gb1.TargetWarehouse
+  line: gb1.Line
+  stock_code: gb1.StockCode
+  cur_out_value: gb1.CurOutValue
+  clc_out_value: gb1.ClcOutValue
+  cur_in_value: gb1.CurInValue
+  clc_in_value: gb1.ClcInValue
+  cur_out_quantity: gb1.CurOutQuantity
+  clc_out_quantity: gb1.ClcOutQuantity
+  cur_in_quantity: gb1.CurInQuantity
+  clc_in_quantity: gb1.ClcInQuantity

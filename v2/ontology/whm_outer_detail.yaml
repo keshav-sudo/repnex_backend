@@ -1,0 +1,143 @@
+concept: whm_outer_detail
+display_name: WhmOuterDetail
+module: other
+description: Auto-generated representation of the physical table WhmOuterDetail.
+synonyms:
+- whmouterdetail
+- whm outer detail
+header_attributes:
+  outer_number:
+    display: Outernumber
+    type: string
+    required: false
+    description: Field OuterNumber from WhmOuterDetail
+  outer_line:
+    display: Outerline
+    type: decimal
+    required: false
+    description: Field OuterLine from WhmOuterDetail
+  pick_number:
+    display: Picknumber
+    type: string
+    required: false
+    description: Field PickNumber from WhmOuterDetail
+  pick_line:
+    display: Pickline
+    type: decimal
+    required: false
+    description: Field PickLine from WhmOuterDetail
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from WhmOuterDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from WhmOuterDetail
+  pick_line_status:
+    display: Picklinestatus
+    type: string
+    required: false
+    description: Field PickLineStatus from WhmOuterDetail
+  qty_to_pick:
+    display: Qtytopick
+    type: decimal
+    required: false
+    description: Field QtyToPick from WhmOuterDetail
+  qty_picked:
+    display: Qtypicked
+    type: decimal
+    required: false
+    description: Field QtyPicked from WhmOuterDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WhmOuterDetail
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WhmOuterDetail
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WhmOuterDetail
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from WhmOuterDetail
+  line_start_date:
+    display: Linestartdate
+    type: date
+    required: false
+    description: Field LineStartDate from WhmOuterDetail
+  line_start_time:
+    display: Linestarttime
+    type: decimal
+    required: false
+    description: Field LineStartTime from WhmOuterDetail
+  line_comp_date:
+    display: Linecompdate
+    type: date
+    required: false
+    description: Field LineCompDate from WhmOuterDetail
+  line_comp_time:
+    display: Linecomptime
+    type: decimal
+    required: false
+    description: Field LineCompTime from WhmOuterDetail
+  destination_bin:
+    display: Destinationbin
+    type: string
+    required: false
+    description: Field DestinationBin from WhmOuterDetail
+  picker:
+    display: Picker
+    type: string
+    required: false
+    description: Field Picker from WhmOuterDetail
+  destination_whs:
+    display: Destinationwhs
+    type: string
+    required: false
+    description: Field DestinationWhs from WhmOuterDetail
+  unit_of_measure:
+    display: Unitofmeasure
+    type: string
+    required: false
+    description: Field UnitOfMeasure from WhmOuterDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WhmOuterDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WhmOuterDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WhmOuterDetail
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from WhmOuterDetail
+  confirm_date:
+    display: Confirmdate
+    type: date
+    required: false
+    description: Field ConfirmDate from WhmOuterDetail
+  confirmed_by:
+    display: Confirmedby
+    type: string
+    required: false
+    description: Field ConfirmedBy from WhmOuterDetail

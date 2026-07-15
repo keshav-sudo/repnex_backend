@@ -1,0 +1,33 @@
+concept: eam_service_gl
+display_name: EamServiceGl
+module: other
+description: Auto-generated representation of the physical table EamServiceGl.
+synonyms:
+- eamservicegl
+- eam service gl
+header_attributes:
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from EamServiceGl
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from EamServiceGl
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EamServiceGl
+  only_expense:
+    display: Onlyexpense
+    type: string
+    required: false
+    description: Field OnlyExpense from EamServiceGl
+  service_notes:
+    display: Servicenotes
+    type: string
+    required: false
+    description: Field ServiceNotes from EamServiceGl

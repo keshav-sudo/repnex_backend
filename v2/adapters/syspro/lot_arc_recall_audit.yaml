@@ -1,0 +1,25 @@
+concept: lot_arc_recall_audit
+table: LotArcRecallAudit
+alias: lara
+fields:
+  product_recall: lara.ProductRecall
+  audit_sequence: lara.AuditSequence
+  audit_date: lara.AuditDate
+  audit_time: lara.AuditTime
+  status: lara.Status
+  reason_code: lara.ReasonCode
+  on_hold_reason: lara.OnHoldReason
+  scrap_reason_code: lara.ScrapReasonCode
+  release_reason: lara.ReleaseReason
+  operator: lara.Operator
+  stock_code: lara.StockCode
+  warehouse: lara.Warehouse
+  bin: lara.Bin
+  lot: lara.Lot
+  serial: lara.Serial
+  journal: lara.Journal
+  journal_line: lara.JournalLine
+  jnl_year: lara.JnlYear
+  jnl_month: lara.JnlMonth
+  version: lara.Version
+  release: lara.Release

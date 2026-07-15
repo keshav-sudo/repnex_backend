@@ -1,0 +1,11 @@
+concept: lynq_me__comment
+table: Lynq_ME_Comment
+alias: lmec
+fields:
+  id: lmec.Id
+  parent_id: lmec.ParentId
+  originator: lmec.Originator
+  date: lmec.Date
+  source: lmec.Source
+  message: lmec.Message
+  is_read: lmec.IsRead

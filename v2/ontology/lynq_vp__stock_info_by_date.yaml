@@ -1,0 +1,48 @@
+concept: lynq_vp__stock_info_by_date
+display_name: Lynq VP StockInfoByDate
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_StockInfoByDate.
+synonyms:
+- lynq_vp_stockinfobydate
+- lynq vp  stock info by date
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_StockInfoByDate
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from Lynq_VP_StockInfoByDate
+  location_code:
+    display: Locationcode
+    type: string
+    required: false
+    description: Field LocationCode from Lynq_VP_StockInfoByDate
+  date:
+    display: Date
+    type: date
+    required: false
+    description: Field Date from Lynq_VP_StockInfoByDate
+  qty_on_start:
+    display: Qtyonstart
+    type: decimal
+    required: false
+    description: Field QtyOnStart from Lynq_VP_StockInfoByDate
+  qty_in:
+    display: Qtyin
+    type: decimal
+    required: false
+    description: Field QtyIn from Lynq_VP_StockInfoByDate
+  qty_out:
+    display: Qtyout
+    type: decimal
+    required: false
+    description: Field QtyOut from Lynq_VP_StockInfoByDate
+  qty_on_end:
+    display: Qtyonend
+    type: decimal
+    required: false
+    description: Field QtyOnEnd from Lynq_VP_StockInfoByDate

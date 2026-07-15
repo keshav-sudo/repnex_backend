@@ -1,0 +1,318 @@
+concept: lynq_vp_bpl__src__routing_operation
+display_name: Lynq VP BPL Src RoutingOperation
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_BPL_Src_RoutingOperation.
+synonyms:
+- lynq_vp_bpl_src_routingoperation
+- lynq vp bpl  src  routing operation
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_BPL_Src_RoutingOperation
+  id_rtg_detail_str:
+    display: Idrtgdetailstr
+    type: string
+    required: false
+    description: Field IDRtgDetailStr from Lynq_VP_BPL_Src_RoutingOperation
+  id_rtg_header_str:
+    display: Idrtgheaderstr
+    type: string
+    required: false
+    description: Field IDRtgHeaderStr from Lynq_VP_BPL_Src_RoutingOperation
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from Lynq_VP_BPL_Src_RoutingOperation
+  routing:
+    display: Routing
+    type: string
+    required: false
+    description: Field Routing from Lynq_VP_BPL_Src_RoutingOperation
+  routing_description:
+    display: Routingdescription
+    type: string
+    required: false
+    description: Field RoutingDescription from Lynq_VP_BPL_Src_RoutingOperation
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from Lynq_VP_BPL_Src_RoutingOperation
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from Lynq_VP_BPL_Src_RoutingOperation
+  oper_number:
+    display: Opernumber
+    type: decimal
+    required: false
+    description: Field OperNumber from Lynq_VP_BPL_Src_RoutingOperation
+  path_number:
+    display: Pathnumber
+    type: decimal
+    required: false
+    description: Field PathNumber from Lynq_VP_BPL_Src_RoutingOperation
+  par_path_number:
+    display: Parpathnumber
+    type: decimal
+    required: false
+    description: Field ParPathNumber from Lynq_VP_BPL_Src_RoutingOperation
+  oper_sequence_number:
+    display: Opersequencenumber
+    type: decimal
+    required: false
+    description: Field OperSequenceNumber from Lynq_VP_BPL_Src_RoutingOperation
+  rec_type:
+    display: Rectype
+    type: string
+    required: false
+    description: Field RecType from Lynq_VP_BPL_Src_RoutingOperation
+  oper_type:
+    display: Opertype
+    type: string
+    required: false
+    description: Field OperType from Lynq_VP_BPL_Src_RoutingOperation
+  oper_description:
+    display: Operdescription
+    type: string
+    required: false
+    description: Field OperDescription from Lynq_VP_BPL_Src_RoutingOperation
+  wc_dept_code:
+    display: Wcdeptcode
+    type: string
+    required: false
+    description: Field WcDeptCode from Lynq_VP_BPL_Src_RoutingOperation
+  wc_code:
+    display: Wccode
+    type: string
+    required: false
+    description: Field WcCode from Lynq_VP_BPL_Src_RoutingOperation
+  ord_zone_type:
+    display: Ordzonetype
+    type: string
+    required: false
+    description: Field OrdZoneType from Lynq_VP_BPL_Src_RoutingOperation
+  tool_cons_mthd:
+    display: Toolconsmthd
+    type: string
+    required: false
+    description: Field ToolConsMthd from Lynq_VP_BPL_Src_RoutingOperation
+  setup_batch_size:
+    display: Setupbatchsize
+    type: decimal
+    required: false
+    description: Field SetupBatchSize from Lynq_VP_BPL_Src_RoutingOperation
+  setup_cycles_per_batch:
+    display: Setupcyclesperbatch
+    type: decimal
+    required: false
+    description: Field SetupCyclesPerBatch from Lynq_VP_BPL_Src_RoutingOperation
+  setup_people_hrs_per_cycle:
+    display: Setuppeoplehrspercycle
+    type: decimal
+    required: false
+    description: Field SetupPeopleHrsPerCycle from Lynq_VP_BPL_Src_RoutingOperation
+  setup_people_per_cycle:
+    display: Setuppeoplepercycle
+    type: decimal
+    required: false
+    description: Field SetupPeoplePerCycle from Lynq_VP_BPL_Src_RoutingOperation
+  setup_machine_hrs_per_cycle:
+    display: Setupmachinehrspercycle
+    type: decimal
+    required: false
+    description: Field SetupMachineHrsPerCycle from Lynq_VP_BPL_Src_RoutingOperation
+  setup_machines_per_cycle:
+    display: Setupmachinespercycle
+    type: decimal
+    required: false
+    description: Field SetupMachinesPerCycle from Lynq_VP_BPL_Src_RoutingOperation
+  batch_size:
+    display: Batchsize
+    type: decimal
+    required: false
+    description: Field BatchSize from Lynq_VP_BPL_Src_RoutingOperation
+  cycles_per_batch:
+    display: Cyclesperbatch
+    type: decimal
+    required: false
+    description: Field CyclesPerBatch from Lynq_VP_BPL_Src_RoutingOperation
+  people_hrs_per_cycle:
+    display: Peoplehrspercycle
+    type: decimal
+    required: false
+    description: Field PeopleHrsPerCycle from Lynq_VP_BPL_Src_RoutingOperation
+  people_per_cycle:
+    display: Peoplepercycle
+    type: decimal
+    required: false
+    description: Field PeoplePerCycle from Lynq_VP_BPL_Src_RoutingOperation
+  machine_hrs_per_cycle:
+    display: Machinehrspercycle
+    type: decimal
+    required: false
+    description: Field MachineHrsPerCycle from Lynq_VP_BPL_Src_RoutingOperation
+  machines_per_cycle:
+    display: Machinespercycle
+    type: decimal
+    required: false
+    description: Field MachinesPerCycle from Lynq_VP_BPL_Src_RoutingOperation
+  overlap_fg:
+    display: Overlapfg
+    type: string
+    required: false
+    description: Field OverlapFg from Lynq_VP_BPL_Src_RoutingOperation
+  overlap_pt:
+    display: Overlappt
+    type: decimal
+    required: false
+    description: Field OverlapPt from Lynq_VP_BPL_Src_RoutingOperation
+  move_time:
+    display: Movetime
+    type: decimal
+    required: false
+    description: Field MoveTime from Lynq_VP_BPL_Src_RoutingOperation
+  queue_time:
+    display: Queuetime
+    type: decimal
+    required: false
+    description: Field QueueTime from Lynq_VP_BPL_Src_RoutingOperation
+  wc_stop_time:
+    display: Wcstoptime
+    type: decimal
+    required: false
+    description: Field WcStopTime from Lynq_VP_BPL_Src_RoutingOperation
+  processing_time:
+    display: Processingtime
+    type: decimal
+    required: false
+    description: Field ProcessingTime from Lynq_VP_BPL_Src_RoutingOperation
+  status_code1:
+    display: Statuscode1
+    type: string
+    required: false
+    description: Field StatusCode1 from Lynq_VP_BPL_Src_RoutingOperation
+  status_code2:
+    display: Statuscode2
+    type: string
+    required: false
+    description: Field StatusCode2 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_date_time1:
+    display: Flddatetime1
+    type: date
+    required: false
+    description: Field FldDateTime1 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_date_time2:
+    display: Flddatetime2
+    type: date
+    required: false
+    description: Field FldDateTime2 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_date_time3:
+    display: Flddatetime3
+    type: date
+    required: false
+    description: Field FldDateTime3 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_decimal1:
+    display: Flddecimal1
+    type: decimal
+    required: false
+    description: Field FldDecimal1 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_decimal2:
+    display: Flddecimal2
+    type: decimal
+    required: false
+    description: Field FldDecimal2 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_decimal3:
+    display: Flddecimal3
+    type: decimal
+    required: false
+    description: Field FldDecimal3 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_decimal4:
+    display: Flddecimal4
+    type: decimal
+    required: false
+    description: Field FldDecimal4 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_decimal5:
+    display: Flddecimal5
+    type: decimal
+    required: false
+    description: Field FldDecimal5 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_string1:
+    display: Fldstring1
+    type: string
+    required: false
+    description: Field FldString1 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_string2:
+    display: Fldstring2
+    type: string
+    required: false
+    description: Field FldString2 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_string3:
+    display: Fldstring3
+    type: string
+    required: false
+    description: Field FldString3 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_string4:
+    display: Fldstring4
+    type: string
+    required: false
+    description: Field FldString4 from Lynq_VP_BPL_Src_RoutingOperation
+  fld_string5:
+    display: Fldstring5
+    type: string
+    required: false
+    description: Field FldString5 from Lynq_VP_BPL_Src_RoutingOperation
+  par_to_previous:
+    display: Partoprevious
+    type: string
+    required: false
+    description: Field ParToPrevious from Lynq_VP_BPL_Src_RoutingOperation
+  run_labour_time_fixed:
+    display: Runlabourtimefixed
+    type: decimal
+    required: false
+    description: Field RunLabourTimeFixed from Lynq_VP_BPL_Src_RoutingOperation
+  run_machine_time_fixed:
+    display: Runmachinetimefixed
+    type: decimal
+    required: false
+    description: Field RunMachineTimeFixed from Lynq_VP_BPL_Src_RoutingOperation
+  setup_labour_time_fixed:
+    display: Setuplabourtimefixed
+    type: decimal
+    required: false
+    description: Field SetupLabourTimeFixed from Lynq_VP_BPL_Src_RoutingOperation
+  setup_machine_time_fixed:
+    display: Setupmachinetimefixed
+    type: decimal
+    required: false
+    description: Field SetupMachineTimeFixed from Lynq_VP_BPL_Src_RoutingOperation
+  completeness_flag:
+    display: Completenessflag
+    type: string
+    required: false
+    description: Field CompletenessFlag from Lynq_VP_BPL_Src_RoutingOperation
+  outside_flag:
+    display: Outsideflag
+    type: string
+    required: false
+    description: Field OutsideFlag from Lynq_VP_BPL_Src_RoutingOperation
+  status_code1_description:
+    display: Statuscode1Description
+    type: string
+    required: false
+    description: Field StatusCode1Description from Lynq_VP_BPL_Src_RoutingOperation
+  status_code2_description:
+    display: Statuscode2Description
+    type: string
+    required: false
+    description: Field StatusCode2Description from Lynq_VP_BPL_Src_RoutingOperation
+  oper_code:
+    display: Opercode
+    type: string
+    required: false
+    description: Field OperCode from Lynq_VP_BPL_Src_RoutingOperation

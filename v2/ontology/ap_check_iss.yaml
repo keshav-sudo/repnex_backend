@@ -1,0 +1,138 @@
+concept: ap_check_iss
+display_name: ApCheckIss
+module: accounts_payable
+description: Auto-generated representation of the physical table ApCheckIss.
+synonyms:
+- apcheckiss
+- ap check iss
+header_attributes:
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ApCheckIss
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApCheckIss
+  cheque:
+    display: Cheque
+    type: decimal
+    required: false
+    description: Field Cheque from ApCheckIss
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from ApCheckIss
+  cheque_date:
+    display: Chequedate
+    type: date
+    required: false
+    description: Field ChequeDate from ApCheckIss
+  supplier_issued_to:
+    display: Supplierissuedto
+    type: string
+    required: false
+    description: Field SupplierIssuedTo from ApCheckIss
+  cheque_value:
+    display: Chequevalue
+    type: decimal
+    required: false
+    description: Field ChequeValue from ApCheckIss
+  void_status:
+    display: Voidstatus
+    type: string
+    required: false
+    description: Field VoidStatus from ApCheckIss
+  reconciled_flag:
+    display: Reconciledflag
+    type: string
+    required: false
+    description: Field ReconciledFlag from ApCheckIss
+  pay_year:
+    display: Payyear
+    type: decimal
+    required: false
+    description: Field PayYear from ApCheckIss
+  pay_month:
+    display: Paymonth
+    type: decimal
+    required: false
+    description: Field PayMonth from ApCheckIss
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApCheckIss
+  void_payment_number:
+    display: Voidpaymentnumber
+    type: string
+    required: false
+    description: Field VoidPaymentNumber from ApCheckIss
+  restab_check:
+    display: Restabcheck
+    type: string
+    required: false
+    description: Field RestabCheck from ApCheckIss
+  void_pay_year:
+    display: Voidpayyear
+    type: decimal
+    required: false
+    description: Field VoidPayYear from ApCheckIss
+  void_pay_month:
+    display: Voidpaymonth
+    type: decimal
+    required: false
+    description: Field VoidPayMonth from ApCheckIss
+  mult_cur_pay:
+    display: Multcurpay
+    type: string
+    required: false
+    description: Field MultCurPay from ApCheckIss
+  pay_cheque_value:
+    display: Paychequevalue
+    type: decimal
+    required: false
+    description: Field PayChequeValue from ApCheckIss
+  pay_currency:
+    display: Paycurrency
+    type: string
+    required: false
+    description: Field PayCurrency from ApCheckIss
+  pay_conv_rte:
+    display: Payconvrte
+    type: decimal
+    required: false
+    description: Field PayConvRte from ApCheckIss
+  pay_post_mul_div:
+    display: Paypostmuldiv
+    type: string
+    required: false
+    description: Field PayPostMulDiv from ApCheckIss
+  group_payment:
+    display: Grouppayment
+    type: string
+    required: false
+    description: Field GroupPayment from ApCheckIss
+  group_conv_rate:
+    display: Groupconvrate
+    type: decimal
+    required: false
+    description: Field GroupConvRate from ApCheckIss
+  group_post_mul_div:
+    display: Grouppostmuldiv
+    type: string
+    required: false
+    description: Field GroupPostMulDiv from ApCheckIss
+  group_inter_company:
+    display: Groupintercompany
+    type: string
+    required: false
+    description: Field GroupInterCompany from ApCheckIss
+  check_value_local:
+    display: Checkvaluelocal
+    type: decimal
+    required: false
+    description: Field CheckValueLocal from ApCheckIss

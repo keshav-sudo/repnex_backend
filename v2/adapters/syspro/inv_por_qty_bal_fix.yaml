@@ -1,0 +1,13 @@
+concept: inv_por_qty_bal_fix
+table: InvPorQtyBalFix
+alias: ipqbf
+fields:
+  run_date_time: ipqbf.RunDateTime
+  stock_code: ipqbf.StockCode
+  warehouse: ipqbf.Warehouse
+  old_qty_on_order: ipqbf.OldQtyOnOrder
+  new_qty_on_order: ipqbf.NewQtyOnOrder
+  old_allocated_to_wip: ipqbf.OldAllocatedToWip
+  new_allocated_to_wip: ipqbf.NewAllocatedToWip
+  old_qty_in_inspection: ipqbf.OldQtyInInspection
+  new_qty_in_inspection: ipqbf.NewQtyInInspection

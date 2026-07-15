@@ -1,0 +1,178 @@
+concept: adm_calendar
+display_name: AdmCalendar
+module: administration
+description: Auto-generated representation of the physical table AdmCalendar.
+synonyms:
+- admcalendar
+- adm calendar
+header_attributes:
+  cal_century:
+    display: Calcentury
+    type: decimal
+    required: false
+    description: Field CalCentury from AdmCalendar
+  cal_year:
+    display: Calyear
+    type: decimal
+    required: false
+    description: Field CalYear from AdmCalendar
+  cal_month:
+    display: Calmonth
+    type: decimal
+    required: false
+    description: Field CalMonth from AdmCalendar
+  cal_day1:
+    display: Calday1
+    type: decimal
+    required: false
+    description: Field CalDay1 from AdmCalendar
+  cal_day2:
+    display: Calday2
+    type: decimal
+    required: false
+    description: Field CalDay2 from AdmCalendar
+  cal_day3:
+    display: Calday3
+    type: decimal
+    required: false
+    description: Field CalDay3 from AdmCalendar
+  cal_day4:
+    display: Calday4
+    type: decimal
+    required: false
+    description: Field CalDay4 from AdmCalendar
+  cal_day5:
+    display: Calday5
+    type: decimal
+    required: false
+    description: Field CalDay5 from AdmCalendar
+  cal_day6:
+    display: Calday6
+    type: decimal
+    required: false
+    description: Field CalDay6 from AdmCalendar
+  cal_day7:
+    display: Calday7
+    type: decimal
+    required: false
+    description: Field CalDay7 from AdmCalendar
+  cal_day8:
+    display: Calday8
+    type: decimal
+    required: false
+    description: Field CalDay8 from AdmCalendar
+  cal_day9:
+    display: Calday9
+    type: decimal
+    required: false
+    description: Field CalDay9 from AdmCalendar
+  cal_day10:
+    display: Calday10
+    type: decimal
+    required: false
+    description: Field CalDay10 from AdmCalendar
+  cal_day11:
+    display: Calday11
+    type: decimal
+    required: false
+    description: Field CalDay11 from AdmCalendar
+  cal_day12:
+    display: Calday12
+    type: decimal
+    required: false
+    description: Field CalDay12 from AdmCalendar
+  cal_day13:
+    display: Calday13
+    type: decimal
+    required: false
+    description: Field CalDay13 from AdmCalendar
+  cal_day14:
+    display: Calday14
+    type: decimal
+    required: false
+    description: Field CalDay14 from AdmCalendar
+  cal_day15:
+    display: Calday15
+    type: decimal
+    required: false
+    description: Field CalDay15 from AdmCalendar
+  cal_day16:
+    display: Calday16
+    type: decimal
+    required: false
+    description: Field CalDay16 from AdmCalendar
+  cal_day17:
+    display: Calday17
+    type: decimal
+    required: false
+    description: Field CalDay17 from AdmCalendar
+  cal_day18:
+    display: Calday18
+    type: decimal
+    required: false
+    description: Field CalDay18 from AdmCalendar
+  cal_day19:
+    display: Calday19
+    type: decimal
+    required: false
+    description: Field CalDay19 from AdmCalendar
+  cal_day20:
+    display: Calday20
+    type: decimal
+    required: false
+    description: Field CalDay20 from AdmCalendar
+  cal_day21:
+    display: Calday21
+    type: decimal
+    required: false
+    description: Field CalDay21 from AdmCalendar
+  cal_day22:
+    display: Calday22
+    type: decimal
+    required: false
+    description: Field CalDay22 from AdmCalendar
+  cal_day23:
+    display: Calday23
+    type: decimal
+    required: false
+    description: Field CalDay23 from AdmCalendar
+  cal_day24:
+    display: Calday24
+    type: decimal
+    required: false
+    description: Field CalDay24 from AdmCalendar
+  cal_day25:
+    display: Calday25
+    type: decimal
+    required: false
+    description: Field CalDay25 from AdmCalendar
+  cal_day26:
+    display: Calday26
+    type: decimal
+    required: false
+    description: Field CalDay26 from AdmCalendar
+  cal_day27:
+    display: Calday27
+    type: decimal
+    required: false
+    description: Field CalDay27 from AdmCalendar
+  cal_day28:
+    display: Calday28
+    type: decimal
+    required: false
+    description: Field CalDay28 from AdmCalendar
+  cal_day29:
+    display: Calday29
+    type: decimal
+    required: false
+    description: Field CalDay29 from AdmCalendar
+  cal_day30:
+    display: Calday30
+    type: decimal
+    required: false
+    description: Field CalDay30 from AdmCalendar
+  cal_day31:
+    display: Calday31
+    type: decimal
+    required: false
+    description: Field CalDay31 from AdmCalendar

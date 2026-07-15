@@ -1,0 +1,14 @@
+concept: lot_arc_ser_det
+table: LotArcSerDet
+alias: lasd
+fields:
+  stock_code: lasd.StockCode
+  lot: lasd.Lot
+  serial: lasd.Serial
+  entry_number: lasd.EntryNumber
+  trn_qty: lasd.TrnQty
+  status: lasd.Status
+  customer: lasd.Customer
+  job: lasd.Job
+  sales_order: lasd.SalesOrder
+  reference: lasd.Reference

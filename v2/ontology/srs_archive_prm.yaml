@@ -1,0 +1,68 @@
+concept: srs_archive_prm
+display_name: SrsArchivePRM
+module: other
+description: Auto-generated representation of the physical table SrsArchivePRM.
+synonyms:
+- srsarchiveprm
+- srs archive prm
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchivePRM
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchivePRM
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchivePRM
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchivePRM
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchivePRM
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchivePRM
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SrsArchivePRM
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from SrsArchivePRM
+  customer_code:
+    display: Customercode
+    type: string
+    required: false
+    description: Field CustomerCode from SrsArchivePRM
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from SrsArchivePRM
+  invoice_number:
+    display: Invoicenumber
+    type: string
+    required: false
+    description: Field InvoiceNumber from SrsArchivePRM
+  system_date_cymd:
+    display: Systemdatecymd
+    type: date
+    required: false
+    description: Field SystemDateCymd from SrsArchivePRM

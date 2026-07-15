@@ -1,0 +1,28 @@
+concept: sqm_stan_doc
+display_name: SqmStanDoc
+module: other
+description: Auto-generated representation of the physical table SqmStanDoc.
+synonyms:
+- sqmstandoc
+- sqm stan doc
+header_attributes:
+  conform_standard:
+    display: Conformstandard
+    type: string
+    required: false
+    description: Field ConformStandard from SqmStanDoc
+  stand_doc:
+    display: Standdoc
+    type: string
+    required: false
+    description: Field StandDoc from SqmStanDoc
+  stand_file:
+    display: Standfile
+    type: string
+    required: false
+    description: Field StandFile from SqmStanDoc
+  file_contents:
+    display: Filecontents
+    type: string
+    required: false
+    description: Field FileContents from SqmStanDoc

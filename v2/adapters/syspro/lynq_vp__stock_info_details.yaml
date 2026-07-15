@@ -1,0 +1,18 @@
+concept: lynq_vp__stock_info_details
+table: Lynq_VP_StockInfoDetails
+alias: lvpsid
+fields:
+  id: lvpsid.ID
+  item_number: lvpsid.ItemNumber
+  location_code: lvpsid.LocationCode
+  date: lvpsid.Date
+  moment: lvpsid.Moment
+  elem_type_id: lvpsid.ElemTypeID
+  elem_id_str: lvpsid.ElemIDStr
+  ord_type_id: lvpsid.OrdTypeID
+  ord_id_str: lvpsid.OrdIDStr
+  job_type_id: lvpsid.JobTypeID
+  job_id_str: lvpsid.JobIDStr
+  qty: lvpsid.Qty
+  available: lvpsid.Available
+  is_stocked: lvpsid.IsStocked

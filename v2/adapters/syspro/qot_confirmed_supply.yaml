@@ -1,0 +1,17 @@
+concept: qot_confirmed_supply
+table: QotConfirmedSupply
+alias: qcs
+fields:
+  quote: qcs.Quote
+  quote_version: qcs.QuoteVersion
+  line: qcs.Line
+  non_stock_code: qcs.NonStockCode
+  line_unique: qcs.LineUnique
+  supply_type: qcs.SupplyType
+  originator: qcs.Originator
+  requisition: qcs.Requisition
+  requisition_line: qcs.RequisitionLine
+  purchase_order: qcs.PurchaseOrder
+  purchase_order_line: qcs.PurchaseOrderLine
+  order_quantity: qcs.OrderQuantity
+  matched_flag: qcs.MatchedFlag

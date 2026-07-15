@@ -1,0 +1,26 @@
+concept: wip_mas_bal_fix
+table: WipMasBalFix
+alias: wmbf
+fields:
+  run_date_time: wmbf.RunDateTime
+  job: wmbf.Job
+  old_hrs_book_to_date: wmbf.OldHrsBookToDate
+  new_hrs_book_to_date: wmbf.NewHrsBookToDate
+  old_mat_cost_to_date: wmbf.OldMatCostToDate
+  new_mat_cost_to_date: wmbf.NewMatCostToDate
+  old_lab_cost_to_date: wmbf.OldLabCostToDate
+  new_lab_cost_to_date: wmbf.NewLabCostToDate
+  old_lab_value_issues: wmbf.OldLabValueIssues
+  new_lab_value_issues: wmbf.NewLabValueIssues
+  old_qty_manufactured: wmbf.OldQtyManufactured
+  new_qty_manufactured: wmbf.NewQtyManufactured
+  old_qty_manu_ent: wmbf.OldQtyManuEnt
+  new_qty_manu_ent: wmbf.NewQtyManuEnt
+  old_inspect_value: wmbf.OldInspectValue
+  new_inspect_value: wmbf.NewInspectValue
+  old_inspect_qty_manu: wmbf.OldInspectQtyManu
+  new_inspect_qty_manu: wmbf.NewInspectQtyManu
+  old_mat_value_issues: wmbf.OldMatValueIssues
+  new_mat_value_issues: wmbf.NewMatValueIssues
+  old_next_op_for_all: wmbf.OldNextOpForAll
+  new_next_op_for_all: wmbf.NewNextOpForAll

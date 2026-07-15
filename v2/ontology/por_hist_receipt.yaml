@@ -1,0 +1,133 @@
+concept: por_hist_receipt
+display_name: PorHistReceipt
+module: procurement
+description: Auto-generated representation of the physical table PorHistReceipt.
+synonyms:
+- porhistreceipt
+- por hist receipt
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from PorHistReceipt
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from PorHistReceipt
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from PorHistReceipt
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from PorHistReceipt
+  journal_entry:
+    display: Journalentry
+    type: decimal
+    required: false
+    description: Field JournalEntry from PorHistReceipt
+  po_date:
+    display: Podate
+    type: date
+    required: false
+    description: Field PoDate from PorHistReceipt
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from PorHistReceipt
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from PorHistReceipt
+  line_due_date:
+    display: Lineduedate
+    type: date
+    required: false
+    description: Field LineDueDate from PorHistReceipt
+  date_received:
+    display: Datereceived
+    type: date
+    required: false
+    description: Field DateReceived from PorHistReceipt
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from PorHistReceipt
+  price_received:
+    display: Pricereceived
+    type: decimal
+    required: false
+    description: Field PriceReceived from PorHistReceipt
+  reject_code:
+    display: Rejectcode
+    type: string
+    required: false
+    description: Field RejectCode from PorHistReceipt
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from PorHistReceipt
+  add_reference:
+    display: Addreference
+    type: string
+    required: false
+    description: Field AddReference from PorHistReceipt
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from PorHistReceipt
+  orig_purch_price:
+    display: Origpurchprice
+    type: decimal
+    required: false
+    description: Field OrigPurchPrice from PorHistReceipt
+  orig_purch_prc_for:
+    display: Origpurchprcfor
+    type: decimal
+    required: false
+    description: Field OrigPurchPrcFor from PorHistReceipt
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from PorHistReceipt
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from PorHistReceipt
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from PorHistReceipt
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from PorHistReceipt
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from PorHistReceipt
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from PorHistReceipt
+  delivery_method:
+    display: Deliverymethod
+    type: string
+    required: false
+    description: Field DeliveryMethod from PorHistReceipt

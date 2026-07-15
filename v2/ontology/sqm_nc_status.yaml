@@ -1,0 +1,18 @@
+concept: sqm_nc_status
+display_name: SqmNcStatus
+module: other
+description: Auto-generated representation of the physical table SqmNcStatus.
+synonyms:
+- sqmncstatus
+- sqm nc status
+header_attributes:
+  conform_status:
+    display: Conformstatus
+    type: string
+    required: false
+    description: Field ConformStatus from SqmNcStatus
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SqmNcStatus

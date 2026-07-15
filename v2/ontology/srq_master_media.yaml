@@ -1,0 +1,48 @@
+concept: srq_master_media
+display_name: SrqMasterMedia
+module: other
+description: Auto-generated representation of the physical table SrqMasterMedia.
+synonyms:
+- srqmastermedia
+- srq master media
+header_attributes:
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from SrqMasterMedia
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from SrqMasterMedia
+  date_media_added:
+    display: Datemediaadded
+    type: date
+    required: false
+    description: Field DateMediaAdded from SrqMasterMedia
+  time_media_added:
+    display: Timemediaadded
+    type: decimal
+    required: false
+    description: Field TimeMediaAdded from SrqMasterMedia
+  media:
+    display: Media
+    type: string
+    required: false
+    description: Field Media from SrqMasterMedia
+  media_file_name:
+    display: Mediafilename
+    type: string
+    required: false
+    description: Field MediaFileName from SrqMasterMedia
+  media_file_extension:
+    display: Mediafileextension
+    type: string
+    required: false
+    description: Field MediaFileExtension from SrqMasterMedia
+  media_file_size:
+    display: Mediafilesize
+    type: decimal
+    required: false
+    description: Field MediaFileSize from SrqMasterMedia

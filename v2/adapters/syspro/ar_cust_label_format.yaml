@@ -1,0 +1,6 @@
+concept: ar_cust_label_format
+table: ArCustLabelFormat
+alias: aclf
+fields:
+  perm_entry_format: aclf.PermEntryFormat
+  preferences: aclf.Preferences

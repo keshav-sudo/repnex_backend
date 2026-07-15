@@ -1,0 +1,17 @@
+concept: inv_app_manf_stock
+table: InvAppManfStock
+alias: iams
+fields:
+  stock_code: iams.StockCode
+  app_manufacturer: iams.AppManufacturer
+  man_part_number: iams.ManPartNumber
+  man_part_info1: iams.ManPartInfo1
+  man_part_info2: iams.ManPartInfo2
+  man_part_info3: iams.ManPartInfo3
+  man_part_info4: iams.ManPartInfo4
+  man_part_info5: iams.ManPartInfo5
+  man_part_info6: iams.ManPartInfo6
+  preferred_flag: iams.PreferredFlag
+  status: iams.Status
+  revision_number: iams.RevisionNumber
+  effective_date: iams.EffectiveDate

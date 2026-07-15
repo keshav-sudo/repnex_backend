@@ -1,0 +1,8 @@
+concept: ap_control_ext
+table: ApControlExt
+alias: ace
+fields:
+  ctl_flag: ace.CtlFlag
+  mtd_tax_relief1: ace.MtdTaxRelief1
+  mtd_tax_relief2: ace.MtdTaxRelief2
+  mtd_tax_relief3: ace.MtdTaxRelief3

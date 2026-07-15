@@ -1,0 +1,103 @@
+concept: mrp_wip_branch
+display_name: MrpWipBranch
+module: mrp
+description: Auto-generated representation of the physical table MrpWipBranch.
+synonyms:
+- mrpwipbranch
+- mrp wip branch
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from MrpWipBranch
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from MrpWipBranch
+  wip_brn_gl_code:
+    display: Wipbrnglcode
+    type: string
+    required: false
+    description: Field WipBrnGlCode from MrpWipBranch
+  wip_var_brn_gl_code:
+    display: Wipvarbrnglcode
+    type: string
+    required: false
+    description: Field WipVarBrnGlCode from MrpWipBranch
+  wip_auto_brn_gl_code:
+    display: Wipautobrnglcode
+    type: string
+    required: false
+    description: Field WipAutoBrnGlCode from MrpWipBranch
+  wip_insp_brn_gl_code:
+    display: Wipinspbrnglcode
+    type: string
+    required: false
+    description: Field WipInspBrnGlCode from MrpWipBranch
+  branch_job_prefix:
+    display: Branchjobprefix
+    type: string
+    required: false
+    description: Field BranchJobPrefix from MrpWipBranch
+  branch_job_suffix:
+    display: Branchjobsuffix
+    type: decimal
+    required: false
+    description: Field BranchJobSuffix from MrpWipBranch
+  wip_inspect_prefix:
+    display: Wipinspectprefix
+    type: string
+    required: false
+    description: Field WipInspectPrefix from MrpWipBranch
+  next_insp_reference:
+    display: Nextinspreference
+    type: decimal
+    required: false
+    description: Field NextInspReference from MrpWipBranch
+  branch_addr_build:
+    display: Branchaddrbuild
+    type: string
+    required: false
+    description: Field BranchAddrBuild from MrpWipBranch
+  branch_addr1:
+    display: Branchaddr1
+    type: string
+    required: false
+    description: Field BranchAddr1 from MrpWipBranch
+  branch_addr2:
+    display: Branchaddr2
+    type: string
+    required: false
+    description: Field BranchAddr2 from MrpWipBranch
+  branch_addr_loc:
+    display: Branchaddrloc
+    type: string
+    required: false
+    description: Field BranchAddrLoc from MrpWipBranch
+  branch_addr3:
+    display: Branchaddr3
+    type: string
+    required: false
+    description: Field BranchAddr3 from MrpWipBranch
+  branch_addr_country:
+    display: Branchaddrcountry
+    type: string
+    required: false
+    description: Field BranchAddrCountry from MrpWipBranch
+  branch_postal_code:
+    display: Branchpostalcode
+    type: string
+    required: false
+    description: Field BranchPostalCode from MrpWipBranch
+  branch_gps_lat:
+    display: Branchgpslat
+    type: decimal
+    required: false
+    description: Field BranchGpsLat from MrpWipBranch
+  branch_gps_long:
+    display: Branchgpslong
+    type: decimal
+    required: false
+    description: Field BranchGpsLong from MrpWipBranch

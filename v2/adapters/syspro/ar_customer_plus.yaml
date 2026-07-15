@@ -1,0 +1,7 @@
+concept: ar_customer_plus
+table: ArCustomer+
+alias: ac6
+fields:
+  customer: ac6.Customer
+  title: ac6.Title
+  marketing: ac6.Marketing

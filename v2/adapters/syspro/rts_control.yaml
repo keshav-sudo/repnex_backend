@@ -1,0 +1,8 @@
+concept: rts_control
+table: RtsControl
+alias: rc3
+fields:
+  ctl_flag: rc3.CtlFlag
+  next_rts_num: rc3.NextRtsNum
+  next_rts_jnl_num: rc3.NextRtsJnlNum
+  next_rts_inv_num: rc3.NextRtsInvNum

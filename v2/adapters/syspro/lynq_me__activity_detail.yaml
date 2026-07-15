@@ -1,0 +1,21 @@
+concept: lynq_me__activity_detail
+table: Lynq_ME_ActivityDetail
+alias: lmead
+fields:
+  id: lmead.ID
+  d_quantity: lmead.dQuantity
+  d_activity_id: lmead.dActivityID
+  d_info1: lmead.dInfo1
+  d_info2: lmead.dInfo2
+  d_info3: lmead.dInfo3
+  d_info4: lmead.dInfo4
+  d_info5: lmead.dInfo5
+  d_originated_id: lmead.dOriginatedID
+  d_serial_lot_number_info: lmead.dSerialLotNumberInfo
+  d_bin_info: lmead.dBinInfo
+  d_traceability_code_info: lmead.dTraceabilityCodeInfo
+  d_scrap_reason_info: lmead.dScrapReasonInfo
+  d_reject_reason_info: lmead.dRejectReasonInfo
+  d_location_info: lmead.dLocationInfo
+  d_warehouse_info: lmead.dWarehouseInfo
+  a_force_stat_sync: lmead.aForceStatSync

@@ -1,0 +1,16 @@
+concept: asset_depreciation
+table: AssetDepreciation
+alias: ad1
+fields:
+  depreciation_code: ad1.DepreciationCode
+  description: ad1.Description
+  depn_type: ad1.DepnType
+  varying_depn_flag: ad1.VaryingDepnFlag
+  annual_depn_pct: ad1.AnnualDepnPct
+  number_of_periods: ad1.NumberOfPeriods
+  half_rule: ad1.HalfRule
+  date_convention: ad1.DateConvention
+  stat_gl_code: ad1.StatGlCode
+  number_of_years: ad1.NumberOfYears
+  thruput_eul: ad1.ThruputEul
+  varying_anniversary: ad1.VaryingAnniversary

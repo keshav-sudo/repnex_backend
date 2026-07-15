@@ -1,0 +1,258 @@
+concept: crm_contact
+display_name: CrmContact
+module: crm
+description: Auto-generated representation of the physical table CrmContact.
+synonyms:
+- crmcontact
+- crm contact
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmContact
+  full_name:
+    display: Fullname
+    type: string
+    required: false
+    description: Field FullName from CrmContact
+  full_name_upper:
+    display: Fullnameupper
+    type: string
+    required: false
+    description: Field FullNameUpper from CrmContact
+  government_id:
+    display: Governmentid
+    type: string
+    required: false
+    description: Field GovernmentId from CrmContact
+  government_id_upper:
+    display: Governmentidupper
+    type: string
+    required: false
+    description: Field GovernmentIdUpper from CrmContact
+  title:
+    display: Title
+    type: string
+    required: false
+    description: Field Title from CrmContact
+  first_name:
+    display: Firstname
+    type: string
+    required: false
+    description: Field FirstName from CrmContact
+  middle_name:
+    display: Middlename
+    type: string
+    required: false
+    description: Field MiddleName from CrmContact
+  last_name:
+    display: Lastname
+    type: string
+    required: false
+    description: Field LastName from CrmContact
+  suffix:
+    display: Suffix
+    type: string
+    required: false
+    description: Field Suffix from CrmContact
+  preferred_name:
+    display: Preferredname
+    type: string
+    required: false
+    description: Field PreferredName from CrmContact
+  partner_name:
+    display: Partnername
+    type: string
+    required: false
+    description: Field PartnerName from CrmContact
+  gender:
+    display: Gender
+    type: string
+    required: false
+    description: Field Gender from CrmContact
+  date_of_birth:
+    display: Dateofbirth
+    type: date
+    required: false
+    description: Field DateOfBirth from CrmContact
+  preferred_language:
+    display: Preferredlanguage
+    type: string
+    required: false
+    description: Field PreferredLanguage from CrmContact
+  job_title:
+    display: Jobtitle
+    type: string
+    required: false
+    description: Field JobTitle from CrmContact
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from CrmContact
+  office:
+    display: Office
+    type: string
+    required: false
+    description: Field Office from CrmContact
+  manager_name:
+    display: Managername
+    type: string
+    required: false
+    description: Field ManagerName from CrmContact
+  assistant_name:
+    display: Assistantname
+    type: string
+    required: false
+    description: Field AssistantName from CrmContact
+  contact_class:
+    display: Contactclass
+    type: string
+    required: false
+    description: Field ContactClass from CrmContact
+  contact_type:
+    display: Contacttype
+    type: string
+    required: false
+    description: Field ContactType from CrmContact
+  contact_category:
+    display: Contactcategory
+    type: string
+    required: false
+    description: Field ContactCategory from CrmContact
+  contact_territory:
+    display: Contactterritory
+    type: string
+    required: false
+    description: Field ContactTerritory from CrmContact
+  influence:
+    display: Influence
+    type: decimal
+    required: false
+    description: Field Influence from CrmContact
+  contact_property:
+    display: Contactproperty
+    type: decimal
+    required: false
+    description: Field ContactProperty from CrmContact
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from CrmContact
+  contact_method:
+    display: Contactmethod
+    type: string
+    required: false
+    description: Field ContactMethod from CrmContact
+  do_not_phone:
+    display: Donotphone
+    type: string
+    required: false
+    description: Field DoNotPhone from CrmContact
+  do_not_email:
+    display: Donotemail
+    type: string
+    required: false
+    description: Field DoNotEmail from CrmContact
+  do_not_sms_text:
+    display: Donotsmstext
+    type: string
+    required: false
+    description: Field DoNotSmsText from CrmContact
+  do_not_fax:
+    display: Donotfax
+    type: string
+    required: false
+    description: Field DoNotFax from CrmContact
+  do_not_post:
+    display: Donotpost
+    type: string
+    required: false
+    description: Field DoNotPost from CrmContact
+  do_not_bulk_email:
+    display: Donotbulkemail
+    type: string
+    required: false
+    description: Field DoNotBulkEmail from CrmContact
+  do_not_bulk_sms_text:
+    display: Donotbulksmstext
+    type: string
+    required: false
+    description: Field DoNotBulkSmsText from CrmContact
+  do_not_bulk_fax:
+    display: Donotbulkfax
+    type: string
+    required: false
+    description: Field DoNotBulkFax from CrmContact
+  do_not_bulk_post:
+    display: Donotbulkpost
+    type: string
+    required: false
+    description: Field DoNotBulkPost from CrmContact
+  contact_owner:
+    display: Contactowner
+    type: string
+    required: false
+    description: Field ContactOwner from CrmContact
+  private:
+    display: Private
+    type: string
+    required: false
+    description: Field Private from CrmContact
+  contact_status:
+    display: Contactstatus
+    type: string
+    required: false
+    description: Field ContactStatus from CrmContact
+  default_flag:
+    display: Defaultflag
+    type: string
+    required: false
+    description: Field DefaultFlag from CrmContact
+  created_date:
+    display: Createddate
+    type: date
+    required: false
+    description: Field CreatedDate from CrmContact
+  created_time:
+    display: Createdtime
+    type: decimal
+    required: false
+    description: Field CreatedTime from CrmContact
+  created_by:
+    display: Createdby
+    type: string
+    required: false
+    description: Field CreatedBy from CrmContact
+  last_changed_date:
+    display: Lastchangeddate
+    type: date
+    required: false
+    description: Field LastChangedDate from CrmContact
+  last_changed_time:
+    display: Lastchangedtime
+    type: decimal
+    required: false
+    description: Field LastChangedTime from CrmContact
+  last_changed_by:
+    display: Lastchangedby
+    type: string
+    required: false
+    description: Field LastChangedBy from CrmContact
+  last_contact_date:
+    display: Lastcontactdate
+    type: date
+    required: false
+    description: Field LastContactDate from CrmContact
+  last_contact_time:
+    display: Lastcontacttime
+    type: decimal
+    required: false
+    description: Field LastContactTime from CrmContact
+  last_contact_by:
+    display: Lastcontactby
+    type: string
+    required: false
+    description: Field LastContactBy from CrmContact

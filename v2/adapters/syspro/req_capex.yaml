@@ -1,0 +1,9 @@
+concept: req_capex
+table: ReqCapex
+alias: rc
+fields:
+  capex_num: rc.CapexNum
+  capex_description: rc.CapexDescription
+  authorising_user: rc.AuthorisingUser
+  max_value: rc.MaxValue
+  accum_po_value: rc.AccumPoValue

@@ -1,0 +1,21 @@
+concept: ar_pay_history
+table: ArPayHistory
+alias: aph
+fields:
+  customer: aph.Customer
+  pay_date: aph.PayDate
+  cash_journal: aph.CashJournal
+  jnl_entry: aph.JnlEntry
+  pay_value: aph.PayValue
+  currency_flag: aph.CurrencyFlag
+  cheque_reference: aph.ChequeReference
+  narration: aph.Narration
+  paym_year: aph.PaymYear
+  paym_month: aph.PaymMonth
+  local_pay_value: aph.LocalPayValue
+  payment_number: aph.PaymentNumber
+  collector: aph.Collector
+  salesperson: aph.Salesperson
+  area: aph.Area
+  collector_number_ar: aph.CollectorNumberAr
+  group_pay: aph.GroupPay

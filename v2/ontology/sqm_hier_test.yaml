@@ -1,0 +1,43 @@
+concept: sqm_hier_test
+display_name: SqmHierTest
+module: other
+description: Auto-generated representation of the physical table SqmHierTest.
+synonyms:
+- sqmhiertest
+- sqm hier test
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmHierTest
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SqmHierTest
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SqmHierTest
+  source_type:
+    display: Sourcetype
+    type: string
+    required: false
+    description: Field SourceType from SqmHierTest
+  source_key:
+    display: Sourcekey
+    type: string
+    required: false
+    description: Field SourceKey from SqmHierTest
+  test_name:
+    display: Testname
+    type: string
+    required: false
+    description: Field TestName from SqmHierTest
+  test_version:
+    display: Testversion
+    type: decimal
+    required: false
+    description: Field TestVersion from SqmHierTest

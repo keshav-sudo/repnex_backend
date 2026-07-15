@@ -1,0 +1,7 @@
+concept: crm_organization
+table: CrmOrganization
+alias: co
+fields:
+  contact_id: co.ContactId
+  organization_type: co.OrganizationType
+  organization_code: co.OrganizationCode

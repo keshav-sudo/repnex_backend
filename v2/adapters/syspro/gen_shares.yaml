@@ -1,0 +1,7 @@
+concept: gen_shares
+table: GenShares
+alias: gs1
+fields:
+  company: gs1.Company
+  date_shares_change: gs1.DateSharesChange
+  share_qty: gs1.ShareQty

@@ -1,0 +1,32 @@
+concept: lot_arc_wip_insp_det
+table: LotArcWipInspDet
+alias: lawid
+fields:
+  insp_reference: lawid.InspReference
+  lot: lawid.Lot
+  trn_date: lawid.TrnDate
+  line: lawid.Line
+  trn_type: lawid.TrnType
+  trn_qty: lawid.TrnQty
+  concession_num: lawid.ConcessionNum
+  document_num: lawid.DocumentNum
+  scrap_code: lawid.ScrapCode
+  narration: lawid.Narration
+  rework_job: lawid.ReworkJob
+  stock_code: lawid.StockCode
+  trn_value: lawid.TrnValue
+  gl_code: lawid.GlCode
+  journal: lawid.Journal
+  entry_number: lawid.EntryNumber
+  posting_period: lawid.PostingPeriod
+  posting_year: lawid.PostingYear
+  operator: lawid.Operator
+  alt_warehouse: lawid.AltWarehouse
+  trn_qty_ent: lawid.TrnQtyEnt
+  wip_branch: lawid.WipBranch
+  accept_qty: lawid.AcceptQty
+  reject_qty: lawid.RejectQty
+  qty_in_quarant: lawid.QtyInQuarant
+  accept_qty_ent: lawid.AcceptQtyEnt
+  reject_qty_ent: lawid.RejectQtyEnt
+  qty_in_quarant_ent: lawid.QtyInQuarantEnt

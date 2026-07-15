@@ -1,0 +1,26 @@
+concept: gen_analysis_section
+table: GenAnalysisSection
+alias: gas
+fields:
+  currency: gas.Currency
+  company: gas.Company
+  section_number: gas.SectionNumber
+  section_code: gas.SectionCode
+  gl_year: gas.GlYear
+  account_type: gas.AccountType
+  begin_year_balance: gas.BeginYearBalance
+  closing_bal_per1: gas.ClosingBalPer1
+  closing_bal_per2: gas.ClosingBalPer2
+  closing_bal_per3: gas.ClosingBalPer3
+  closing_bal_per4: gas.ClosingBalPer4
+  closing_bal_per5: gas.ClosingBalPer5
+  closing_bal_per6: gas.ClosingBalPer6
+  closing_bal_per7: gas.ClosingBalPer7
+  closing_bal_per8: gas.ClosingBalPer8
+  closing_bal_per9: gas.ClosingBalPer9
+  closing_bal_per10: gas.ClosingBalPer10
+  closing_bal_per11: gas.ClosingBalPer11
+  closing_bal_per12: gas.ClosingBalPer12
+  closing_bal_per13: gas.ClosingBalPer13
+  closing_bal_per14: gas.ClosingBalPer14
+  closing_bal_per15: gas.ClosingBalPer15

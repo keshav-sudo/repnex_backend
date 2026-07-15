@@ -1,0 +1,73 @@
+concept: inv_inspect_serial
+display_name: InvInspectSerial
+module: inventory
+description: Auto-generated representation of the physical table InvInspectSerial.
+synonyms:
+- invinspectserial
+- inv inspect serial
+header_attributes:
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from InvInspectSerial
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvInspectSerial
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from InvInspectSerial
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from InvInspectSerial
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from InvInspectSerial
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from InvInspectSerial
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from InvInspectSerial
+  document_num:
+    display: Documentnum
+    type: string
+    required: false
+    description: Field DocumentNum from InvInspectSerial
+  transf_to_new_wh:
+    display: Transftonewwh
+    type: string
+    required: false
+    description: Field TransfToNewWh from InvInspectSerial
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvInspectSerial
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvInspectSerial
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvInspectSerial
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from InvInspectSerial

@@ -1,0 +1,24 @@
+concept: gen_alt_cur_hst
+table: GenAltCurHst
+alias: gach
+fields:
+  currency: gach.Currency
+  company: gach.Company
+  gl_code: gach.GlCode
+  gl_year: gach.GlYear
+  beg_year_bal: gach.BegYearBal
+  closing_bal1: gach.ClosingBal1
+  closing_bal2: gach.ClosingBal2
+  closing_bal3: gach.ClosingBal3
+  closing_bal4: gach.ClosingBal4
+  closing_bal5: gach.ClosingBal5
+  closing_bal6: gach.ClosingBal6
+  closing_bal7: gach.ClosingBal7
+  closing_bal8: gach.ClosingBal8
+  closing_bal9: gach.ClosingBal9
+  closing_bal10: gach.ClosingBal10
+  closing_bal11: gach.ClosingBal11
+  closing_bal12: gach.ClosingBal12
+  closing_bal13: gach.ClosingBal13
+  closing_bal14: gach.ClosingBal14
+  closing_bal15: gach.ClosingBal15

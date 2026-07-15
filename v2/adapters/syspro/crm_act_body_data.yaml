@@ -1,0 +1,8 @@
+concept: crm_act_body_data
+table: CrmActBodyData
+alias: cabd
+fields:
+  contact_id: cabd.ContactId
+  start_date: cabd.StartDate
+  start_time: cabd.StartTime
+  body_data: cabd.BodyData

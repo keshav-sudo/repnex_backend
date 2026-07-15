@@ -1,0 +1,48 @@
+concept: gen_dimension_code
+display_name: GenDimensionCode
+module: general_ledger
+description: Auto-generated representation of the physical table GenDimensionCode.
+synonyms:
+- gendimensioncode
+- gen dimension code
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenDimensionCode
+  dimension_code:
+    display: Dimensioncode
+    type: string
+    required: false
+    description: Field DimensionCode from GenDimensionCode
+  dimension_category:
+    display: Dimensioncategory
+    type: string
+    required: false
+    description: Field DimensionCategory from GenDimensionCode
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from GenDimensionCode
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from GenDimensionCode
+  active_from_date:
+    display: Activefromdate
+    type: date
+    required: false
+    description: Field ActiveFromDate from GenDimensionCode
+  active_to_date:
+    display: Activetodate
+    type: date
+    required: false
+    description: Field ActiveToDate from GenDimensionCode
+  template_flag:
+    display: Templateflag
+    type: string
+    required: false
+    description: Field TemplateFlag from GenDimensionCode

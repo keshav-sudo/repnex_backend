@@ -1,0 +1,63 @@
+concept: sal_control
+display_name: SalControl
+module: other
+description: Auto-generated representation of the physical table SalControl.
+synonyms:
+- salcontrol
+- sal control
+header_attributes:
+  control_flag:
+    display: Controlflag
+    type: string
+    required: false
+    description: Field ControlFlag from SalControl
+  ptd_sales:
+    display: Ptdsales
+    type: decimal
+    required: false
+    description: Field PtdSales from SalControl
+  ptd_cost:
+    display: Ptdcost
+    type: decimal
+    required: false
+    description: Field PtdCost from SalControl
+  ptd_units:
+    display: Ptdunits
+    type: decimal
+    required: false
+    description: Field PtdUnits from SalControl
+  mtd_sales:
+    display: Mtdsales
+    type: decimal
+    required: false
+    description: Field MtdSales from SalControl
+  mtd_cost:
+    display: Mtdcost
+    type: decimal
+    required: false
+    description: Field MtdCost from SalControl
+  mtd_units:
+    display: Mtdunits
+    type: decimal
+    required: false
+    description: Field MtdUnits from SalControl
+  ytd_sales:
+    display: Ytdsales
+    type: decimal
+    required: false
+    description: Field YtdSales from SalControl
+  ytd_cost:
+    display: Ytdcost
+    type: decimal
+    required: false
+    description: Field YtdCost from SalControl
+  ytd_units:
+    display: Ytdunits
+    type: decimal
+    required: false
+    description: Field YtdUnits from SalControl
+  date_last_update:
+    display: Datelastupdate
+    type: date
+    required: false
+    description: Field DateLastUpdate from SalControl

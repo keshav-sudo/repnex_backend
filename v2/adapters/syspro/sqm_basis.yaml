@@ -1,0 +1,14 @@
+concept: sqm_basis
+table: SqmBasis
+alias: sb1
+fields:
+  plan_type: sb1.PlanType
+  inspect_level: sb1.InspectLevel
+  source_type: sb1.SourceType
+  source_key: sb1.SourceKey
+  critical_apply: sb1.CriticalApply
+  critical_aql: sb1.CriticalAql
+  major_apply: sb1.MajorApply
+  major_aql: sb1.MajorAql
+  minor_apply: sb1.MinorApply
+  minor_aql: sb1.MinorAql

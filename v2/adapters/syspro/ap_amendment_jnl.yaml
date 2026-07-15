@@ -1,0 +1,14 @@
+concept: ap_amendment_jnl
+table: ApAmendmentJnl
+alias: aaj
+fields:
+  jnl_date: aaj.JnlDate
+  jnl_time: aaj.JnlTime
+  jnl_line: aaj.JnlLine
+  supplier: aaj.Supplier
+  journal_printed: aaj.JournalPrinted
+  change_flag: aaj.ChangeFlag
+  column_name: aaj.ColumnName
+  before: aaj.Before
+  after: aaj.After
+  operator_code: aaj.OperatorCode

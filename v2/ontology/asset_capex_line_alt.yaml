@@ -1,0 +1,48 @@
+concept: asset_capex_line_alt
+display_name: AssetCapexLineAlt
+module: assets
+description: Auto-generated representation of the physical table AssetCapexLineAlt.
+synonyms:
+- assetcapexlinealt
+- asset capex line alt
+header_attributes:
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from AssetCapexLineAlt
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from AssetCapexLineAlt
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from AssetCapexLineAlt
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from AssetCapexLineAlt
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from AssetCapexLineAlt
+  value_uncommitted:
+    display: Valueuncommitted
+    type: decimal
+    required: false
+    description: Field ValueUncommitted from AssetCapexLineAlt
+  value_committed:
+    display: Valuecommitted
+    type: decimal
+    required: false
+    description: Field ValueCommitted from AssetCapexLineAlt
+  value_spent:
+    display: Valuespent
+    type: decimal
+    required: false
+    description: Field ValueSpent from AssetCapexLineAlt

@@ -1,0 +1,37 @@
+concept: gen_commitment
+table: GenCommitment
+alias: gc1
+fields:
+  company: gc1.Company
+  gl_code: gc1.GlCode
+  commitment_type: gc1.CommitmentType
+  prev_uncommitted: gc1.PrevUncommitted
+  future_uncommitted: gc1.FutureUncommitted
+  uncommitted1: gc1.Uncommitted1
+  uncommitted2: gc1.Uncommitted2
+  uncommitted3: gc1.Uncommitted3
+  uncommitted4: gc1.Uncommitted4
+  uncommitted5: gc1.Uncommitted5
+  uncommitted6: gc1.Uncommitted6
+  uncommitted7: gc1.Uncommitted7
+  uncommitted8: gc1.Uncommitted8
+  uncommitted9: gc1.Uncommitted9
+  uncommitted10: gc1.Uncommitted10
+  uncommitted11: gc1.Uncommitted11
+  uncommitted12: gc1.Uncommitted12
+  uncommitted13: gc1.Uncommitted13
+  prev_commitment: gc1.PrevCommitment
+  future_commitment: gc1.FutureCommitment
+  commitment1: gc1.Commitment1
+  commitment2: gc1.Commitment2
+  commitment3: gc1.Commitment3
+  commitment4: gc1.Commitment4
+  commitment5: gc1.Commitment5
+  commitment6: gc1.Commitment6
+  commitment7: gc1.Commitment7
+  commitment8: gc1.Commitment8
+  commitment9: gc1.Commitment9
+  commitment10: gc1.Commitment10
+  commitment11: gc1.Commitment11
+  commitment12: gc1.Commitment12
+  commitment13: gc1.Commitment13

@@ -1,0 +1,378 @@
+concept: inv_control
+display_name: InvControl
+module: inventory
+description: Auto-generated representation of the physical table InvControl.
+synonyms:
+- invcontrol
+- inv control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from InvControl
+  fin_month:
+    display: Finmonth
+    type: decimal
+    required: false
+    description: Field FinMonth from InvControl
+  fin_year:
+    display: Finyear
+    type: decimal
+    required: false
+    description: Field FinYear from InvControl
+  year_end_date1:
+    display: Yearenddate1
+    type: date
+    required: false
+    description: Field YearEndDate1 from InvControl
+  year_end_date2:
+    display: Yearenddate2
+    type: date
+    required: false
+    description: Field YearEndDate2 from InvControl
+  year_end_date3:
+    display: Yearenddate3
+    type: date
+    required: false
+    description: Field YearEndDate3 from InvControl
+  year_end_date4:
+    display: Yearenddate4
+    type: date
+    required: false
+    description: Field YearEndDate4 from InvControl
+  year_end_date5:
+    display: Yearenddate5
+    type: date
+    required: false
+    description: Field YearEndDate5 from InvControl
+  cur_yr_mth_stat1:
+    display: Curyrmthstat1
+    type: string
+    required: false
+    description: Field CurYrMthStat1 from InvControl
+  cur_yr_mth_stat2:
+    display: Curyrmthstat2
+    type: string
+    required: false
+    description: Field CurYrMthStat2 from InvControl
+  cur_yr_mth_stat3:
+    display: Curyrmthstat3
+    type: string
+    required: false
+    description: Field CurYrMthStat3 from InvControl
+  cur_yr_mth_stat4:
+    display: Curyrmthstat4
+    type: string
+    required: false
+    description: Field CurYrMthStat4 from InvControl
+  cur_yr_mth_stat5:
+    display: Curyrmthstat5
+    type: string
+    required: false
+    description: Field CurYrMthStat5 from InvControl
+  cur_yr_mth_stat6:
+    display: Curyrmthstat6
+    type: string
+    required: false
+    description: Field CurYrMthStat6 from InvControl
+  cur_yr_mth_stat7:
+    display: Curyrmthstat7
+    type: string
+    required: false
+    description: Field CurYrMthStat7 from InvControl
+  cur_yr_mth_stat8:
+    display: Curyrmthstat8
+    type: string
+    required: false
+    description: Field CurYrMthStat8 from InvControl
+  cur_yr_mth_stat9:
+    display: Curyrmthstat9
+    type: string
+    required: false
+    description: Field CurYrMthStat9 from InvControl
+  cur_yr_mth_stat10:
+    display: Curyrmthstat10
+    type: string
+    required: false
+    description: Field CurYrMthStat10 from InvControl
+  cur_yr_mth_stat11:
+    display: Curyrmthstat11
+    type: string
+    required: false
+    description: Field CurYrMthStat11 from InvControl
+  cur_yr_mth_stat12:
+    display: Curyrmthstat12
+    type: string
+    required: false
+    description: Field CurYrMthStat12 from InvControl
+  cur_yr_mth_stat13:
+    display: Curyrmthstat13
+    type: string
+    required: false
+    description: Field CurYrMthStat13 from InvControl
+  cur_yr_mth_end1:
+    display: Curyrmthend1
+    type: date
+    required: false
+    description: Field CurYrMthEnd1 from InvControl
+  cur_yr_mth_end2:
+    display: Curyrmthend2
+    type: date
+    required: false
+    description: Field CurYrMthEnd2 from InvControl
+  cur_yr_mth_end3:
+    display: Curyrmthend3
+    type: date
+    required: false
+    description: Field CurYrMthEnd3 from InvControl
+  cur_yr_mth_end4:
+    display: Curyrmthend4
+    type: date
+    required: false
+    description: Field CurYrMthEnd4 from InvControl
+  cur_yr_mth_end5:
+    display: Curyrmthend5
+    type: date
+    required: false
+    description: Field CurYrMthEnd5 from InvControl
+  cur_yr_mth_end6:
+    display: Curyrmthend6
+    type: date
+    required: false
+    description: Field CurYrMthEnd6 from InvControl
+  cur_yr_mth_end7:
+    display: Curyrmthend7
+    type: date
+    required: false
+    description: Field CurYrMthEnd7 from InvControl
+  cur_yr_mth_end8:
+    display: Curyrmthend8
+    type: date
+    required: false
+    description: Field CurYrMthEnd8 from InvControl
+  cur_yr_mth_end9:
+    display: Curyrmthend9
+    type: date
+    required: false
+    description: Field CurYrMthEnd9 from InvControl
+  cur_yr_mth_end10:
+    display: Curyrmthend10
+    type: date
+    required: false
+    description: Field CurYrMthEnd10 from InvControl
+  cur_yr_mth_end11:
+    display: Curyrmthend11
+    type: date
+    required: false
+    description: Field CurYrMthEnd11 from InvControl
+  cur_yr_mth_end12:
+    display: Curyrmthend12
+    type: date
+    required: false
+    description: Field CurYrMthEnd12 from InvControl
+  cur_yr_mth_end13:
+    display: Curyrmthend13
+    type: date
+    required: false
+    description: Field CurYrMthEnd13 from InvControl
+  prv_yr_mth_stat1:
+    display: Prvyrmthstat1
+    type: string
+    required: false
+    description: Field PrvYrMthStat1 from InvControl
+  prv_yr_mth_stat2:
+    display: Prvyrmthstat2
+    type: string
+    required: false
+    description: Field PrvYrMthStat2 from InvControl
+  prv_yr_mth_stat3:
+    display: Prvyrmthstat3
+    type: string
+    required: false
+    description: Field PrvYrMthStat3 from InvControl
+  prv_yr_mth_stat4:
+    display: Prvyrmthstat4
+    type: string
+    required: false
+    description: Field PrvYrMthStat4 from InvControl
+  prv_yr_mth_stat5:
+    display: Prvyrmthstat5
+    type: string
+    required: false
+    description: Field PrvYrMthStat5 from InvControl
+  prv_yr_mth_stat6:
+    display: Prvyrmthstat6
+    type: string
+    required: false
+    description: Field PrvYrMthStat6 from InvControl
+  prv_yr_mth_stat7:
+    display: Prvyrmthstat7
+    type: string
+    required: false
+    description: Field PrvYrMthStat7 from InvControl
+  prv_yr_mth_stat8:
+    display: Prvyrmthstat8
+    type: string
+    required: false
+    description: Field PrvYrMthStat8 from InvControl
+  prv_yr_mth_stat9:
+    display: Prvyrmthstat9
+    type: string
+    required: false
+    description: Field PrvYrMthStat9 from InvControl
+  prv_yr_mth_stat10:
+    display: Prvyrmthstat10
+    type: string
+    required: false
+    description: Field PrvYrMthStat10 from InvControl
+  prv_yr_mth_stat11:
+    display: Prvyrmthstat11
+    type: string
+    required: false
+    description: Field PrvYrMthStat11 from InvControl
+  prv_yr_mth_stat12:
+    display: Prvyrmthstat12
+    type: string
+    required: false
+    description: Field PrvYrMthStat12 from InvControl
+  prv_yr_mth_stat13:
+    display: Prvyrmthstat13
+    type: string
+    required: false
+    description: Field PrvYrMthStat13 from InvControl
+  prv_yr_mth_end1:
+    display: Prvyrmthend1
+    type: date
+    required: false
+    description: Field PrvYrMthEnd1 from InvControl
+  prv_yr_mth_end2:
+    display: Prvyrmthend2
+    type: date
+    required: false
+    description: Field PrvYrMthEnd2 from InvControl
+  prv_yr_mth_end3:
+    display: Prvyrmthend3
+    type: date
+    required: false
+    description: Field PrvYrMthEnd3 from InvControl
+  prv_yr_mth_end4:
+    display: Prvyrmthend4
+    type: date
+    required: false
+    description: Field PrvYrMthEnd4 from InvControl
+  prv_yr_mth_end5:
+    display: Prvyrmthend5
+    type: date
+    required: false
+    description: Field PrvYrMthEnd5 from InvControl
+  prv_yr_mth_end6:
+    display: Prvyrmthend6
+    type: date
+    required: false
+    description: Field PrvYrMthEnd6 from InvControl
+  prv_yr_mth_end7:
+    display: Prvyrmthend7
+    type: date
+    required: false
+    description: Field PrvYrMthEnd7 from InvControl
+  prv_yr_mth_end8:
+    display: Prvyrmthend8
+    type: date
+    required: false
+    description: Field PrvYrMthEnd8 from InvControl
+  prv_yr_mth_end9:
+    display: Prvyrmthend9
+    type: date
+    required: false
+    description: Field PrvYrMthEnd9 from InvControl
+  prv_yr_mth_end10:
+    display: Prvyrmthend10
+    type: date
+    required: false
+    description: Field PrvYrMthEnd10 from InvControl
+  prv_yr_mth_end11:
+    display: Prvyrmthend11
+    type: date
+    required: false
+    description: Field PrvYrMthEnd11 from InvControl
+  prv_yr_mth_end12:
+    display: Prvyrmthend12
+    type: date
+    required: false
+    description: Field PrvYrMthEnd12 from InvControl
+  prv_yr_mth_end13:
+    display: Prvyrmthend13
+    type: date
+    required: false
+    description: Field PrvYrMthEnd13 from InvControl
+  next_trf_out_doc:
+    display: Nexttrfoutdoc
+    type: decimal
+    required: false
+    description: Field NextTrfOutDoc from InvControl
+  next_issue_doc:
+    display: Nextissuedoc
+    type: decimal
+    required: false
+    description: Field NextIssueDoc from InvControl
+  next_rec_doc:
+    display: Nextrecdoc
+    type: decimal
+    required: false
+    description: Field NextRecDoc from InvControl
+  gtr_next_ref_no:
+    display: Gtrnextrefno
+    type: decimal
+    required: false
+    description: Field GtrNextRefNo from InvControl
+  next_lot:
+    display: Nextlot
+    type: decimal
+    required: false
+    description: Field NextLot from InvControl
+  next_archive_num:
+    display: Nextarchivenum
+    type: decimal
+    required: false
+    description: Field NextArchiveNum from InvControl
+  gtr_structure_change:
+    display: Gtrstructurechange
+    type: string
+    required: false
+    description: Field GtrStructureChange from InvControl
+  next_gtr_inv_num:
+    display: Nextgtrinvnum
+    type: decimal
+    required: false
+    description: Field NextGtrInvNum from InvControl
+  next_ins_doc_num:
+    display: Nextinsdocnum
+    type: decimal
+    required: false
+    description: Field NextInsDocNum from InvControl
+  next_rej_doc_num:
+    display: Nextrejdocnum
+    type: decimal
+    required: false
+    description: Field NextRejDocNum from InvControl
+  next_scr_doc_num:
+    display: Nextscrdocnum
+    type: decimal
+    required: false
+    description: Field NextScrDocNum from InvControl
+  serial_prefix:
+    display: Serialprefix
+    type: string
+    required: false
+    description: Field SerialPrefix from InvControl
+  serial_suffix:
+    display: Serialsuffix
+    type: string
+    required: false
+    description: Field SerialSuffix from InvControl
+  next_stock_code:
+    display: Nextstockcode
+    type: decimal
+    required: false
+    description: Field NextStockCode from InvControl

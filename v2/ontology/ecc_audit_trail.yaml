@@ -1,0 +1,48 @@
+concept: ecc_audit_trail
+display_name: EccAuditTrail
+module: other
+description: Auto-generated representation of the physical table EccAuditTrail.
+synonyms:
+- eccaudittrail
+- ecc audit trail
+header_attributes:
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccAuditTrail
+  audit_sequence:
+    display: Auditsequence
+    type: decimal
+    required: false
+    description: Field AuditSequence from EccAuditTrail
+  audit_date:
+    display: Auditdate
+    type: date
+    required: false
+    description: Field AuditDate from EccAuditTrail
+  audit_time:
+    display: Audittime
+    type: decimal
+    required: false
+    description: Field AuditTime from EccAuditTrail
+  status_code:
+    display: Statuscode
+    type: string
+    required: false
+    description: Field StatusCode from EccAuditTrail
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EccAuditTrail
+  ecc_user:
+    display: Eccuser
+    type: string
+    required: false
+    description: Field EccUser from EccAuditTrail
+  event_type:
+    display: Eventtype
+    type: string
+    required: false
+    description: Field EventType from EccAuditTrail

@@ -1,0 +1,508 @@
+concept: bom_cost_centre
+display_name: BomCostCentre
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomCostCentre.
+synonyms:
+- bomcostcentre
+- bom cost centre
+header_attributes:
+  cost_centre:
+    display: Costcentre
+    type: string
+    required: false
+    description: Field CostCentre from BomCostCentre
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomCostCentre
+  set_up_rate1:
+    display: Setuprate1
+    type: decimal
+    required: false
+    description: Field SetUpRate1 from BomCostCentre
+  set_up_rate2:
+    display: Setuprate2
+    type: decimal
+    required: false
+    description: Field SetUpRate2 from BomCostCentre
+  set_up_rate3:
+    display: Setuprate3
+    type: decimal
+    required: false
+    description: Field SetUpRate3 from BomCostCentre
+  set_up_rate4:
+    display: Setuprate4
+    type: decimal
+    required: false
+    description: Field SetUpRate4 from BomCostCentre
+  set_up_rate5:
+    display: Setuprate5
+    type: decimal
+    required: false
+    description: Field SetUpRate5 from BomCostCentre
+  set_up_rate6:
+    display: Setuprate6
+    type: decimal
+    required: false
+    description: Field SetUpRate6 from BomCostCentre
+  set_up_rate7:
+    display: Setuprate7
+    type: decimal
+    required: false
+    description: Field SetUpRate7 from BomCostCentre
+  set_up_rate8:
+    display: Setuprate8
+    type: decimal
+    required: false
+    description: Field SetUpRate8 from BomCostCentre
+  set_up_rate9:
+    display: Setuprate9
+    type: decimal
+    required: false
+    description: Field SetUpRate9 from BomCostCentre
+  run_time_rate1:
+    display: Runtimerate1
+    type: decimal
+    required: false
+    description: Field RunTimeRate1 from BomCostCentre
+  run_time_rate2:
+    display: Runtimerate2
+    type: decimal
+    required: false
+    description: Field RunTimeRate2 from BomCostCentre
+  run_time_rate3:
+    display: Runtimerate3
+    type: decimal
+    required: false
+    description: Field RunTimeRate3 from BomCostCentre
+  run_time_rate4:
+    display: Runtimerate4
+    type: decimal
+    required: false
+    description: Field RunTimeRate4 from BomCostCentre
+  run_time_rate5:
+    display: Runtimerate5
+    type: decimal
+    required: false
+    description: Field RunTimeRate5 from BomCostCentre
+  run_time_rate6:
+    display: Runtimerate6
+    type: decimal
+    required: false
+    description: Field RunTimeRate6 from BomCostCentre
+  run_time_rate7:
+    display: Runtimerate7
+    type: decimal
+    required: false
+    description: Field RunTimeRate7 from BomCostCentre
+  run_time_rate8:
+    display: Runtimerate8
+    type: decimal
+    required: false
+    description: Field RunTimeRate8 from BomCostCentre
+  run_time_rate9:
+    display: Runtimerate9
+    type: decimal
+    required: false
+    description: Field RunTimeRate9 from BomCostCentre
+  fix_over_rate1:
+    display: Fixoverrate1
+    type: decimal
+    required: false
+    description: Field FixOverRate1 from BomCostCentre
+  fix_over_rate2:
+    display: Fixoverrate2
+    type: decimal
+    required: false
+    description: Field FixOverRate2 from BomCostCentre
+  fix_over_rate3:
+    display: Fixoverrate3
+    type: decimal
+    required: false
+    description: Field FixOverRate3 from BomCostCentre
+  fix_over_rate4:
+    display: Fixoverrate4
+    type: decimal
+    required: false
+    description: Field FixOverRate4 from BomCostCentre
+  fix_over_rate5:
+    display: Fixoverrate5
+    type: decimal
+    required: false
+    description: Field FixOverRate5 from BomCostCentre
+  fix_over_rate6:
+    display: Fixoverrate6
+    type: decimal
+    required: false
+    description: Field FixOverRate6 from BomCostCentre
+  fix_over_rate7:
+    display: Fixoverrate7
+    type: decimal
+    required: false
+    description: Field FixOverRate7 from BomCostCentre
+  fix_over_rate8:
+    display: Fixoverrate8
+    type: decimal
+    required: false
+    description: Field FixOverRate8 from BomCostCentre
+  fix_over_rate9:
+    display: Fixoverrate9
+    type: decimal
+    required: false
+    description: Field FixOverRate9 from BomCostCentre
+  var_over_rate1:
+    display: Varoverrate1
+    type: decimal
+    required: false
+    description: Field VarOverRate1 from BomCostCentre
+  var_over_rate2:
+    display: Varoverrate2
+    type: decimal
+    required: false
+    description: Field VarOverRate2 from BomCostCentre
+  var_over_rate3:
+    display: Varoverrate3
+    type: decimal
+    required: false
+    description: Field VarOverRate3 from BomCostCentre
+  var_over_rate4:
+    display: Varoverrate4
+    type: decimal
+    required: false
+    description: Field VarOverRate4 from BomCostCentre
+  var_over_rate5:
+    display: Varoverrate5
+    type: decimal
+    required: false
+    description: Field VarOverRate5 from BomCostCentre
+  var_over_rate6:
+    display: Varoverrate6
+    type: decimal
+    required: false
+    description: Field VarOverRate6 from BomCostCentre
+  var_over_rate7:
+    display: Varoverrate7
+    type: decimal
+    required: false
+    description: Field VarOverRate7 from BomCostCentre
+  var_over_rate8:
+    display: Varoverrate8
+    type: decimal
+    required: false
+    description: Field VarOverRate8 from BomCostCentre
+  var_over_rate9:
+    display: Varoverrate9
+    type: decimal
+    required: false
+    description: Field VarOverRate9 from BomCostCentre
+  startup_rate1:
+    display: Startuprate1
+    type: decimal
+    required: false
+    description: Field StartupRate1 from BomCostCentre
+  startup_rate2:
+    display: Startuprate2
+    type: decimal
+    required: false
+    description: Field StartupRate2 from BomCostCentre
+  startup_rate3:
+    display: Startuprate3
+    type: decimal
+    required: false
+    description: Field StartupRate3 from BomCostCentre
+  startup_rate4:
+    display: Startuprate4
+    type: decimal
+    required: false
+    description: Field StartupRate4 from BomCostCentre
+  startup_rate5:
+    display: Startuprate5
+    type: decimal
+    required: false
+    description: Field StartupRate5 from BomCostCentre
+  startup_rate6:
+    display: Startuprate6
+    type: decimal
+    required: false
+    description: Field StartupRate6 from BomCostCentre
+  startup_rate7:
+    display: Startuprate7
+    type: decimal
+    required: false
+    description: Field StartupRate7 from BomCostCentre
+  startup_rate8:
+    display: Startuprate8
+    type: decimal
+    required: false
+    description: Field StartupRate8 from BomCostCentre
+  startup_rate9:
+    display: Startuprate9
+    type: decimal
+    required: false
+    description: Field StartupRate9 from BomCostCentre
+  teardown_rate1:
+    display: Teardownrate1
+    type: decimal
+    required: false
+    description: Field TeardownRate1 from BomCostCentre
+  teardown_rate2:
+    display: Teardownrate2
+    type: decimal
+    required: false
+    description: Field TeardownRate2 from BomCostCentre
+  teardown_rate3:
+    display: Teardownrate3
+    type: decimal
+    required: false
+    description: Field TeardownRate3 from BomCostCentre
+  teardown_rate4:
+    display: Teardownrate4
+    type: decimal
+    required: false
+    description: Field TeardownRate4 from BomCostCentre
+  teardown_rate5:
+    display: Teardownrate5
+    type: decimal
+    required: false
+    description: Field TeardownRate5 from BomCostCentre
+  teardown_rate6:
+    display: Teardownrate6
+    type: decimal
+    required: false
+    description: Field TeardownRate6 from BomCostCentre
+  teardown_rate7:
+    display: Teardownrate7
+    type: decimal
+    required: false
+    description: Field TeardownRate7 from BomCostCentre
+  teardown_rate8:
+    display: Teardownrate8
+    type: decimal
+    required: false
+    description: Field TeardownRate8 from BomCostCentre
+  teardown_rate9:
+    display: Teardownrate9
+    type: decimal
+    required: false
+    description: Field TeardownRate9 from BomCostCentre
+  time_uom:
+    display: Timeuom
+    type: string
+    required: false
+    description: Field TimeUom from BomCostCentre
+  et_calc_meth:
+    display: Etcalcmeth
+    type: string
+    required: false
+    description: Field EtCalcMeth from BomCostCentre
+  capacity_uom:
+    display: Capacityuom
+    type: string
+    required: false
+    description: Field CapacityUom from BomCostCentre
+  cst_to_cap_fact:
+    display: Csttocapfact
+    type: decimal
+    required: false
+    description: Field CstToCapFact from BomCostCentre
+  cst_to_cap_mul_div:
+    display: Csttocapmuldiv
+    type: string
+    required: false
+    description: Field CstToCapMulDiv from BomCostCentre
+  prod_unit_desc:
+    display: Produnitdesc
+    type: string
+    required: false
+    description: Field ProdUnitDesc from BomCostCentre
+  subcontract_flag:
+    display: Subcontractflag
+    type: string
+    required: false
+    description: Field SubcontractFlag from BomCostCentre
+  use_employee_rate:
+    display: Useemployeerate
+    type: string
+    required: false
+    description: Field UseEmployeeRate from BomCostCentre
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from BomCostCentre
+  run_time:
+    display: Runtime
+    type: string
+    required: false
+    description: Field RunTime from BomCostCentre
+  setup_time:
+    display: Setuptime
+    type: string
+    required: false
+    description: Field SetupTime from BomCostCentre
+  fix_time:
+    display: Fixtime
+    type: string
+    required: false
+    description: Field FixTime from BomCostCentre
+  var_time:
+    display: Vartime
+    type: string
+    required: false
+    description: Field VarTime from BomCostCentre
+  start_time:
+    display: Starttime
+    type: string
+    required: false
+    description: Field StartTime from BomCostCentre
+  teardown_time:
+    display: Teardowntime
+    type: string
+    required: false
+    description: Field TeardownTime from BomCostCentre
+  non_run_time:
+    display: Nonruntime
+    type: string
+    required: false
+    description: Field NonRunTime from BomCostCentre
+  non_setup_time:
+    display: Nonsetuptime
+    type: string
+    required: false
+    description: Field NonSetupTime from BomCostCentre
+  non_fix_time:
+    display: Nonfixtime
+    type: string
+    required: false
+    description: Field NonFixTime from BomCostCentre
+  non_var_time:
+    display: Nonvartime
+    type: string
+    required: false
+    description: Field NonVarTime from BomCostCentre
+  non_start_time:
+    display: Nonstarttime
+    type: string
+    required: false
+    description: Field NonStartTime from BomCostCentre
+  non_tear_time:
+    display: Nonteartime
+    type: string
+    required: false
+    description: Field NonTearTime from BomCostCentre
+  ptd_std_hours:
+    display: Ptdstdhours
+    type: decimal
+    required: false
+    description: Field PtdStdHours from BomCostCentre
+  ptd_non_hours:
+    display: Ptdnonhours
+    type: decimal
+    required: false
+    description: Field PtdNonHours from BomCostCentre
+  ptd_act_hours:
+    display: Ptdacthours
+    type: decimal
+    required: false
+    description: Field PtdActHours from BomCostCentre
+  mtd_std_hours:
+    display: Mtdstdhours
+    type: decimal
+    required: false
+    description: Field MtdStdHours from BomCostCentre
+  mtd_non_hours:
+    display: Mtdnonhours
+    type: decimal
+    required: false
+    description: Field MtdNonHours from BomCostCentre
+  mtd_act_hours:
+    display: Mtdacthours
+    type: decimal
+    required: false
+    description: Field MtdActHours from BomCostCentre
+  ytd_std_hours:
+    display: Ytdstdhours
+    type: decimal
+    required: false
+    description: Field YtdStdHours from BomCostCentre
+  ytd_non_hours:
+    display: Ytdnonhours
+    type: decimal
+    required: false
+    description: Field YtdNonHours from BomCostCentre
+  ytd_act_hours:
+    display: Ytdacthours
+    type: decimal
+    required: false
+    description: Field YtdActHours from BomCostCentre
+  utilise_pct:
+    display: Utilisepct
+    type: decimal
+    required: false
+    description: Field UtilisePct from BomCostCentre
+  overtime_cap_pct:
+    display: Overtimecappct
+    type: decimal
+    required: false
+    description: Field OvertimeCapPct from BomCostCentre
+  use_overtime_cap:
+    display: Useovertimecap
+    type: string
+    required: false
+    description: Field UseOvertimeCap from BomCostCentre
+  normal_capacity:
+    display: Normalcapacity
+    type: decimal
+    required: false
+    description: Field NormalCapacity from BomCostCentre
+  queue_time:
+    display: Queuetime
+    type: decimal
+    required: false
+    description: Field QueueTime from BomCostCentre
+  def_sub_supplier:
+    display: Defsubsupplier
+    type: string
+    required: false
+    description: Field DefSubSupplier from BomCostCentre
+  def_sub_planner:
+    display: Defsubplanner
+    type: string
+    required: false
+    description: Field DefSubPlanner from BomCostCentre
+  def_sub_buyer:
+    display: Defsubbuyer
+    type: string
+    required: false
+    description: Field DefSubBuyer from BomCostCentre
+  work_operators:
+    display: Workoperators
+    type: decimal
+    required: false
+    description: Field WorkOperators from BomCostCentre
+  prod_units:
+    display: Produnits
+    type: decimal
+    required: false
+    description: Field ProdUnits from BomCostCentre
+  time_per_unit:
+    display: Timeperunit
+    type: decimal
+    required: false
+    description: Field TimePerUnit from BomCostCentre
+  calc_cap_conv_fact:
+    display: Calccapconvfact
+    type: string
+    required: false
+    description: Field CalcCapConvFact from BomCostCentre
+  load_level_scale:
+    display: Loadlevelscale
+    type: decimal
+    required: false
+    description: Field LoadLevelScale from BomCostCentre
+  load_level_scl_flg:
+    display: Loadlevelsclflg
+    type: string
+    required: false
+    description: Field LoadLevelSclFlg from BomCostCentre

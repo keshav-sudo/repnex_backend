@@ -1,0 +1,6 @@
+concept: crm_territory
+table: CrmTerritory
+alias: ct1
+fields:
+  contact_territory: ct1.ContactTerritory
+  description: ct1.Description

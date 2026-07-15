@@ -1,0 +1,39 @@
+concept: lynq_vp_bpl__src__inventory_item
+table: Lynq_VP_BPL_Src_InventoryItem
+alias: lvpbplsii
+fields:
+  id: lvpbplsii.ID
+  item_number: lvpbplsii.ItemNumber
+  item_description1: lvpbplsii.ItemDescription1
+  item_description2: lvpbplsii.ItemDescription2
+  uom: lvpbplsii.UOM
+  type1: lvpbplsii.Type1
+  type2: lvpbplsii.Type2
+  type3: lvpbplsii.Type3
+  active: lvpbplsii.Active
+  status1: lvpbplsii.Status1
+  status2: lvpbplsii.Status2
+  status3: lvpbplsii.Status3
+  location_code: lvpbplsii.LocationCode
+  serial: lvpbplsii.Serial
+  group1: lvpbplsii.Group1
+  group2: lvpbplsii.Group2
+  group3: lvpbplsii.Group3
+  class: lvpbplsii.Class
+  category: lvpbplsii.Category
+  planner_code: lvpbplsii.PlannerCode
+  material_wait_time: lvpbplsii.MaterialWaitTime
+  fld_date_time1: lvpbplsii.FldDateTime1
+  fld_date_time2: lvpbplsii.FldDateTime2
+  fld_date_time3: lvpbplsii.FldDateTime3
+  fld_decimal1: lvpbplsii.FldDecimal1
+  fld_decimal2: lvpbplsii.FldDecimal2
+  fld_decimal3: lvpbplsii.FldDecimal3
+  fld_decimal4: lvpbplsii.FldDecimal4
+  fld_decimal5: lvpbplsii.FldDecimal5
+  fld_string1: lvpbplsii.FldString1
+  fld_string2: lvpbplsii.FldString2
+  fld_string3: lvpbplsii.FldString3
+  fld_string4: lvpbplsii.FldString4
+  fld_string5: lvpbplsii.FldString5
+  stocked: lvpbplsii.Stocked

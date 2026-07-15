@@ -1,0 +1,123 @@
+concept: asset_control_alt
+display_name: AssetControlAlt
+module: assets
+description: Auto-generated representation of the physical table AssetControlAlt.
+synonyms:
+- assetcontrolalt
+- asset control alt
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from AssetControlAlt
+  alt_code:
+    display: Altcode
+    type: decimal
+    required: false
+    description: Field AltCode from AssetControlAlt
+  depn_value_ytd:
+    display: Depnvalueytd
+    type: decimal
+    required: false
+    description: Field DepnValueYtd from AssetControlAlt
+  depn_reval_ytd:
+    display: Depnrevalytd
+    type: decimal
+    required: false
+    description: Field DepnRevalYtd from AssetControlAlt
+  depn_ici_ytd:
+    display: Depniciytd
+    type: decimal
+    required: false
+    description: Field DepnIciYtd from AssetControlAlt
+  depn_ico_ytd:
+    display: Depnicoytd
+    type: decimal
+    required: false
+    description: Field DepnIcoYtd from AssetControlAlt
+  depn_adds_ytd:
+    display: Depnaddsytd
+    type: decimal
+    required: false
+    description: Field DepnAddsYtd from AssetControlAlt
+  depn_disps_ytd:
+    display: Depndispsytd
+    type: decimal
+    required: false
+    description: Field DepnDispsYtd from AssetControlAlt
+  depn_count_ytd:
+    display: Depncountytd
+    type: decimal
+    required: false
+    description: Field DepnCountYtd from AssetControlAlt
+  depn_split_ytd:
+    display: Depnsplitytd
+    type: decimal
+    required: false
+    description: Field DepnSplitYtd from AssetControlAlt
+  reval_ytd:
+    display: Revalytd
+    type: decimal
+    required: false
+    description: Field RevalYtd from AssetControlAlt
+  ici_ytd:
+    display: Iciytd
+    type: decimal
+    required: false
+    description: Field IciYtd from AssetControlAlt
+  ico_ytd:
+    display: Icoytd
+    type: decimal
+    required: false
+    description: Field IcoYtd from AssetControlAlt
+  additions_ytd:
+    display: Additionsytd
+    type: decimal
+    required: false
+    description: Field AdditionsYtd from AssetControlAlt
+  disposals_ytd:
+    display: Disposalsytd
+    type: decimal
+    required: false
+    description: Field DisposalsYtd from AssetControlAlt
+  disposal_cost:
+    display: Disposalcost
+    type: decimal
+    required: false
+    description: Field DisposalCost from AssetControlAlt
+  sold_value:
+    display: Soldvalue
+    type: decimal
+    required: false
+    description: Field SoldValue from AssetControlAlt
+  count_ytd:
+    display: Countytd
+    type: decimal
+    required: false
+    description: Field CountYtd from AssetControlAlt
+  split_ytd:
+    display: Splitytd
+    type: decimal
+    required: false
+    description: Field SplitYtd from AssetControlAlt
+  change_ytd:
+    display: Changeytd
+    type: decimal
+    required: false
+    description: Field ChangeYtd from AssetControlAlt
+  open_value:
+    display: Openvalue
+    type: decimal
+    required: false
+    description: Field OpenValue from AssetControlAlt
+  open_depn_value:
+    display: Opendepnvalue
+    type: decimal
+    required: false
+    description: Field OpenDepnValue from AssetControlAlt
+  open_depn_reval_value:
+    display: Opendepnrevalvalue
+    type: decimal
+    required: false
+    description: Field OpenDepnRevalValue from AssetControlAlt

@@ -1,0 +1,83 @@
+concept: bso_rel_ack_hdr
+display_name: BsoRelAckHdr
+module: other
+description: Auto-generated representation of the physical table BsoRelAckHdr.
+synonyms:
+- bsorelackhdr
+- bso rel ack hdr
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from BsoRelAckHdr
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from BsoRelAckHdr
+  cust_stock_code:
+    display: Custstockcode
+    type: string
+    required: false
+    description: Field CustStockCode from BsoRelAckHdr
+  sequence_num:
+    display: Sequencenum
+    type: decimal
+    required: false
+    description: Field SequenceNum from BsoRelAckHdr
+  req_rel_date:
+    display: Reqreldate
+    type: date
+    required: false
+    description: Field ReqRelDate from BsoRelAckHdr
+  rel_reference:
+    display: Relreference
+    type: string
+    required: false
+    description: Field RelReference from BsoRelAckHdr
+  open_cume_qty:
+    display: Opencumeqty
+    type: decimal
+    required: false
+    description: Field OpenCumeQty from BsoRelAckHdr
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from BsoRelAckHdr
+  release_manager:
+    display: Releasemanager
+    type: string
+    required: false
+    description: Field ReleaseManager from BsoRelAckHdr
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from BsoRelAckHdr
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from BsoRelAckHdr
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BsoRelAckHdr
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from BsoRelAckHdr
+  ack_printed:
+    display: Ackprinted
+    type: string
+    required: false
+    description: Field AckPrinted from BsoRelAckHdr
+  ack_edi_flag:
+    display: Ackediflag
+    type: string
+    required: false
+    description: Field AckEdiFlag from BsoRelAckHdr

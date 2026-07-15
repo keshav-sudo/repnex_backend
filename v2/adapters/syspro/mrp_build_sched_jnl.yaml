@@ -1,0 +1,23 @@
+concept: mrp_build_sched_jnl
+table: MrpBuildSchedJnl
+alias: mbsj
+fields:
+  journal: mbsj.Journal
+  entry: mbsj.Entry
+  status: mbsj.Status
+  jnl_date: mbsj.JnlDate
+  stock_code: mbsj.StockCode
+  warehouse: mbsj.Warehouse
+  schedule_date: mbsj.ScheduleDate
+  qty_required: mbsj.QtyRequired
+  reference: mbsj.Reference
+  resource_parent: mbsj.ResourceParent
+  maint_funct: mbsj.MaintFunct
+  old_build_date: mbsj.OldBuildDate
+  old_qty_reqd: mbsj.OldQtyReqd
+  old_res_parent: mbsj.OldResParent
+  version: mbsj.Version
+  release: mbsj.Release
+  route: mbsj.Route
+  old_route: mbsj.OldRoute
+  operator: mbsj.Operator

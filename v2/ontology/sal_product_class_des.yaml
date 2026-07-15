@@ -1,0 +1,18 @@
+concept: sal_product_class_des
+display_name: SalProductClassDes
+module: other
+description: Auto-generated representation of the physical table SalProductClassDes.
+synonyms:
+- salproductclassdes
+- sal product class des
+header_attributes:
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SalProductClassDes
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SalProductClassDes

@@ -1,0 +1,28 @@
+concept: lynq_me__activity__general_log__temp
+display_name: Lynq ME Activity GeneralLog Temp
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Activity_GeneralLog_Temp.
+synonyms:
+- lynq_me_activity_generallog_temp
+- lynq me  activity  general log  temp
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_Activity_GeneralLog_Temp
+  pack_key:
+    display: Packkey
+    type: string
+    required: false
+    description: Field PackKey from Lynq_ME_Activity_GeneralLog_Temp
+  act_type:
+    display: Acttype
+    type: string
+    required: false
+    description: Field ActType from Lynq_ME_Activity_GeneralLog_Temp
+  log_id:
+    display: Logid
+    type: decimal
+    required: false
+    description: Field LogID from Lynq_ME_Activity_GeneralLog_Temp

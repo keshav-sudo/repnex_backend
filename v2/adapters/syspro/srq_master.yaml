@@ -1,0 +1,12 @@
+concept: srq_master
+table: SrqMaster
+alias: sm2
+fields:
+  rfq_reference: sm2.RfqReference
+  description: sm2.Description
+  rfq_status: sm2.RfqStatus
+  rfq_user: sm2.RfqUser
+  date_created: sm2.DateCreated
+  expiry_date: sm2.ExpiryDate
+  document_format: sm2.DocumentFormat
+  company: sm2.Company

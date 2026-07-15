@@ -1,0 +1,43 @@
+concept: sqm_arc_test_header
+display_name: SqmArcTestHeader
+module: other
+description: Auto-generated representation of the physical table SqmArcTestHeader.
+synonyms:
+- sqmarctestheader
+- sqm arc test header
+header_attributes:
+  test_name:
+    display: Testname
+    type: string
+    required: false
+    description: Field TestName from SqmArcTestHeader
+  test_version:
+    display: Testversion
+    type: decimal
+    required: false
+    description: Field TestVersion from SqmArcTestHeader
+  critical_req:
+    display: Criticalreq
+    type: string
+    required: false
+    description: Field CriticalReq from SqmArcTestHeader
+  major_req:
+    display: Majorreq
+    type: string
+    required: false
+    description: Field MajorReq from SqmArcTestHeader
+  minor_req:
+    display: Minorreq
+    type: string
+    required: false
+    description: Field MinorReq from SqmArcTestHeader
+  file_contents:
+    display: Filecontents
+    type: string
+    required: false
+    description: Field FileContents from SqmArcTestHeader
+  script_contents:
+    display: Scriptcontents
+    type: string
+    required: false
+    description: Field ScriptContents from SqmArcTestHeader

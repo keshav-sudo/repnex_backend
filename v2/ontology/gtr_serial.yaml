@@ -1,0 +1,68 @@
+concept: gtr_serial
+display_name: GtrSerial
+module: other
+description: Auto-generated representation of the physical table GtrSerial.
+synonyms:
+- gtrserial
+- gtr serial
+header_attributes:
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from GtrSerial
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from GtrSerial
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from GtrSerial
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from GtrSerial
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from GtrSerial
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from GtrSerial
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from GtrSerial
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from GtrSerial
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from GtrSerial
+  scrap_date:
+    display: Scrapdate
+    type: date
+    required: false
+    description: Field ScrapDate from GtrSerial
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from GtrSerial
+  source_bin:
+    display: Sourcebin
+    type: string
+    required: false
+    description: Field SourceBin from GtrSerial

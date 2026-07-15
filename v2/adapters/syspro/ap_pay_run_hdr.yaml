@@ -1,0 +1,50 @@
+concept: ap_pay_run_hdr
+table: ApPayRunHdr
+alias: aprh
+fields:
+  payment_number: aprh.PaymentNumber
+  bank: aprh.Bank
+  payment_date: aprh.PaymentDate
+  ch_print_date: aprh.ChPrintDate
+  ch_reg_print_date: aprh.ChRegPrintDate
+  num_suppliers: aprh.NumSuppliers
+  num_invoices: aprh.NumInvoices
+  currency: aprh.Currency
+  payment_type: aprh.PaymentType
+  gross_pay_value: aprh.GrossPayValue
+  disc_pay_value: aprh.DiscPayValue
+  with_tax_value: aprh.WithTaxValue
+  net_pay_value: aprh.NetPayValue
+  payment_run_status: aprh.PaymentRunStatus
+  pay_year: aprh.PayYear
+  pay_month: aprh.PayMonth
+  operator: aprh.Operator
+  group_code: aprh.GroupCode
+  ap_post_method: aprh.ApPostMethod
+  eft_void: aprh.EftVoid
+  ch_register: aprh.ChRegister
+  payment_reference: aprh.PaymentReference
+  eft_remit_print: aprh.EftRemitPrint
+  mult_cur_pay: aprh.MultCurPay
+  pay_grs_value: aprh.PayGrsValue
+  pay_net_value: aprh.PayNetValue
+  pay_with_value: aprh.PayWithValue
+  pay_dsc_value: aprh.PayDscValue
+  pay_currency: aprh.PayCurrency
+  group_payment: aprh.GroupPayment
+  group_supplier: aprh.GroupSupplier
+  group_value: aprh.GroupValue
+  group_pay_currency: aprh.GroupPayCurrency
+  group_conv_rate: aprh.GroupConvRate
+  group_post_mul_div: aprh.GroupPostMulDiv
+  group_check: aprh.GroupCheck
+  grp_check_date: aprh.GrpCheckDate
+  xref_payment_number: aprh.XrefPaymentNumber
+  int_by_bo: aprh.IntByBo
+  reg_printed: aprh.RegPrinted
+  group_inter_company: aprh.GroupInterCompany
+  cdb_apply: aprh.CdbApply
+  cdb_date: aprh.CdbDate
+  cdb_rate: aprh.CdbRate
+  cdb_mul_div: aprh.CdbMulDiv
+  use_original_pay_rate: aprh.UseOriginalPayRate

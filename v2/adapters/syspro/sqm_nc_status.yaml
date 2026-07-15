@@ -1,0 +1,6 @@
+concept: sqm_nc_status
+table: SqmNcStatus
+alias: sns1
+fields:
+  conform_status: sns1.ConformStatus
+  description: sns1.Description

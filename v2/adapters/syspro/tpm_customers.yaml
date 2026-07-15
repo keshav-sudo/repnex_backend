@@ -1,0 +1,8 @@
+concept: tpm_customers
+table: TpmCustomers
+alias: tc3
+fields:
+  tpm_customer: tc3.TpmCustomer
+  name: tc3.Name
+  credit_limit: tc3.CreditLimit
+  currency: tc3.Currency

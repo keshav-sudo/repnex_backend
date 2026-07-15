@@ -1,0 +1,42 @@
+concept: rma_cross_shipment
+table: RmaCrossShipment
+alias: rcs
+fields:
+  rma_number: rcs.RmaNumber
+  rma_line_number: rcs.RmaLineNumber
+  stock_code: rcs.StockCode
+  non_stock_flag: rcs.NonStockFlag
+  description: rcs.Description
+  warehouse: rcs.Warehouse
+  product_class: rcs.ProductClass
+  unit_cost: rcs.UnitCost
+  mass: rcs.Mass
+  purchase_date: rcs.PurchaseDate
+  price: rcs.Price
+  qty_cross_shipped: rcs.QtyCrossShipped
+  date_cross_shipped: rcs.DateCrossShipped
+  sales_order: rcs.SalesOrder
+  sales_order_line: rcs.SalesOrderLine
+  volume: rcs.Volume
+  uom: rcs.Uom
+  tax_flag: rcs.TaxFlag
+  tax_code: rcs.TaxCode
+  tax_gst: rcs.TaxGST
+  cus_sup_stk_code: rcs.CusSupStkCode
+  unit_quantity: rcs.UnitQuantity
+  conv_fact_unit_q: rcs.ConvFactUnitQ
+  alt_uom_unit_q: rcs.AltUomUnitQ
+  decimals_unit_q: rcs.DecimalsUnitQ
+  ecc_flag: rcs.EccFlag
+  version: rcs.Version
+  release: rcs.Release
+  selection_code: rcs.SelectionCode
+  selection_type: rcs.SelectionType
+  line_disc_pct1: rcs.LineDiscPct1
+  line_disc_pct2: rcs.LineDiscPct2
+  line_disc_pct3: rcs.LineDiscPct3
+  line_disc_val_flag: rcs.LineDiscValFlag
+  line_disc_value: rcs.LineDiscValue
+  ord_disc_pct1: rcs.OrdDiscPct1
+  ord_disc_pct2: rcs.OrdDiscPct2
+  ord_disc_pct3: rcs.OrdDiscPct3

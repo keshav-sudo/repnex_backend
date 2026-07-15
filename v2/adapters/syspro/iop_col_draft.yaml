@@ -1,0 +1,13 @@
+concept: iop_col_draft
+table: IopColDraft
+alias: icd
+fields:
+  collection: icd.Collection
+  instance: icd.Instance
+  forecast_date: icd.ForecastDate
+  forecast_qty: icd.ForecastQty
+  cost_value: icd.CostValue
+  sales_value: icd.SalesValue
+  reference: icd.Reference
+  forecast_batch: icd.ForecastBatch
+  freeze: icd.Freeze

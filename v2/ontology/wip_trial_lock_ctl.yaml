@@ -1,0 +1,18 @@
+concept: wip_trial_lock_ctl
+display_name: WipTrialLockCtl
+module: work_in_progress
+description: Auto-generated representation of the physical table WipTrialLockCtl.
+synonyms:
+- wiptriallockctl
+- wip trial lock ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from WipTrialLockCtl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WipTrialLockCtl

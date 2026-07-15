@@ -1,0 +1,15 @@
+concept: eft_void_jnl_hdr
+table: EftVoidJnlHdr
+alias: evjh
+fields:
+  bank: evjh.Bank
+  eft_number: evjh.EftNumber
+  supplier: evjh.Supplier
+  entry_number: evjh.EntryNumber
+  void_date: evjh.VoidDate
+  payment_value: evjh.PaymentValue
+  currency_value: evjh.CurrencyValue
+  post_currency: evjh.PostCurrency
+  operator: evjh.Operator
+  program_source: evjh.ProgramSource
+  journal_printed: evjh.JournalPrinted

@@ -1,0 +1,18 @@
+concept: sal_department
+display_name: SalDepartment
+module: other
+description: Auto-generated representation of the physical table SalDepartment.
+synonyms:
+- saldepartment
+- sal department
+header_attributes:
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from SalDepartment
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SalDepartment

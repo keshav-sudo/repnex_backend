@@ -1,0 +1,8 @@
+concept: ap_supplier_ext
+table: ApSupplierExt
+alias: ase
+fields:
+  supplier: ase.Supplier
+  credit_limit: ase.CreditLimit
+  outstanding_po: ase.OutstandingPo
+  outstanding_grn: ase.OutstandingGrn

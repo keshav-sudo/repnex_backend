@@ -1,0 +1,12 @@
+concept: srs_archive_dis
+table: SrsArchiveDIS
+alias: sadis
+fields:
+  archive_date: sadis.ArchiveDate
+  archive_time: sadis.ArchiveTime
+  operator: sadis.Operator
+  archive_id: sadis.ArchiveId
+  archive_type: sadis.ArchiveType
+  archive_file: sadis.ArchiveFile
+  dispatch_note: sadis.DispatchNote
+  internal_sales_order: sadis.InternalSalesOrder

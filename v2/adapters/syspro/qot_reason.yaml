@@ -1,0 +1,6 @@
+concept: qot_reason
+table: QotReason
+alias: qr
+fields:
+  reason: qr.Reason
+  description: qr.Description

@@ -1,0 +1,7 @@
+concept: ap_supplier_plus
+table: ApSupplier+
+alias: as2
+fields:
+  supplier: as2.Supplier
+  truck: as2.Truck
+  route: as2.Route

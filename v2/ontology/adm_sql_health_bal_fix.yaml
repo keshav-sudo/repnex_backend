@@ -1,0 +1,68 @@
+concept: adm_sql_health_bal_fix
+display_name: AdmSqlHealthBalFix
+module: administration
+description: Auto-generated representation of the physical table AdmSqlHealthBalFix.
+synonyms:
+- admsqlhealthbalfix
+- adm sql health bal fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from AdmSqlHealthBalFix
+  correction_type:
+    display: Correctiontype
+    type: string
+    required: false
+    description: Field CorrectionType from AdmSqlHealthBalFix
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from AdmSqlHealthBalFix
+  object_count:
+    display: Objectcount
+    type: decimal
+    required: false
+    description: Field ObjectCount from AdmSqlHealthBalFix
+  correction_code:
+    display: Correctioncode
+    type: string
+    required: false
+    description: Field CorrectionCode from AdmSqlHealthBalFix
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from AdmSqlHealthBalFix
+  index_name:
+    display: Indexname
+    type: string
+    required: false
+    description: Field IndexName from AdmSqlHealthBalFix
+  foreign_key_name:
+    display: Foreignkeyname
+    type: string
+    required: false
+    description: Field ForeignKeyName from AdmSqlHealthBalFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from AdmSqlHealthBalFix
+  new_value:
+    display: Newvalue
+    type: string
+    required: false
+    description: Field NewValue from AdmSqlHealthBalFix
+  orig_value:
+    display: Origvalue
+    type: string
+    required: false
+    description: Field OrigValue from AdmSqlHealthBalFix
+  correction_status:
+    display: Correctionstatus
+    type: string
+    required: false
+    description: Field CorrectionStatus from AdmSqlHealthBalFix

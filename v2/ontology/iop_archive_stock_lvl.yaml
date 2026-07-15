@@ -1,0 +1,53 @@
+concept: iop_archive_stock_lvl
+display_name: IopArchiveStockLvl
+module: other
+description: Auto-generated representation of the physical table IopArchiveStockLvl.
+synonyms:
+- ioparchivestocklvl
+- iop archive stock lvl
+header_attributes:
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopArchiveStockLvl
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from IopArchiveStockLvl
+  archive_number:
+    display: Archivenumber
+    type: decimal
+    required: false
+    description: Field ArchiveNumber from IopArchiveStockLvl
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from IopArchiveStockLvl
+  minimum_qty:
+    display: Minimumqty
+    type: decimal
+    required: false
+    description: Field MinimumQty from IopArchiveStockLvl
+  maximum_qty:
+    display: Maximumqty
+    type: decimal
+    required: false
+    description: Field MaximumQty from IopArchiveStockLvl
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from IopArchiveStockLvl
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopArchiveStockLvl
+  freeze:
+    display: Freeze
+    type: string
+    required: false
+    description: Field Freeze from IopArchiveStockLvl

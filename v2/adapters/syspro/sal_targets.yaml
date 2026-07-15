@@ -1,0 +1,15 @@
+concept: sal_targets
+table: SalTargets
+alias: st
+fields:
+  sequence_type: st.SequenceType
+  sequence1: st.Sequence1
+  sequence2: st.Sequence2
+  sequence3: st.Sequence3
+  trn_year: st.TrnYear
+  trn_month: st.TrnMonth
+  sales_value: st.SalesValue
+  cost_value: st.CostValue
+  quantity: st.Quantity
+  mass: st.Mass
+  volume: st.Volume

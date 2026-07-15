@@ -1,0 +1,48 @@
+concept: lynq_pg__integration__syspro__log__activity_upload
+display_name: Lynq PG Integration Syspro Log ActivityUpload
+module: other
+description: Auto-generated representation of the physical table Lynq_PG_Integration_Syspro_Log_ActivityUpload.
+synonyms:
+- lynq_pg_integration_syspro_log_activityupload
+- lynq pg  integration  syspro  log  activity upload
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_PG_Integration_Syspro_Log_ActivityUpload
+  moment:
+    display: Moment
+    type: date
+    required: false
+    description: Field Moment from Lynq_PG_Integration_Syspro_Log_ActivityUpload
+  activity_id:
+    display: Activityid
+    type: string
+    required: false
+    description: Field ActivityId from Lynq_PG_Integration_Syspro_Log_ActivityUpload
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from Lynq_PG_Integration_Syspro_Log_ActivityUpload
+  activity_status:
+    display: Activitystatus
+    type: decimal
+    required: false
+    description: Field ActivityStatus from Lynq_PG_Integration_Syspro_Log_ActivityUpload
+  data:
+    display: Data
+    type: string
+    required: false
+    description: Field Data from Lynq_PG_Integration_Syspro_Log_ActivityUpload
+  is_processed:
+    display: Isprocessed
+    type: string
+    required: false
+    description: Field IsProcessed from Lynq_PG_Integration_Syspro_Log_ActivityUpload
+  msg:
+    display: Msg
+    type: string
+    required: false
+    description: Field Msg from Lynq_PG_Integration_Syspro_Log_ActivityUpload

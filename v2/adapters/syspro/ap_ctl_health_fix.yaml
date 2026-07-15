@@ -1,0 +1,12 @@
+concept: ap_ctl_health_fix
+table: ApCtlHealthFix
+alias: achf
+fields:
+  run_date_time: achf.RunDateTime
+  trx_type: achf.TrxType
+  hfix_year: achf.HfixYear
+  hfix_month: achf.HfixMonth
+  trx_amt_vary: achf.TrxAmtVary
+  trx_amt_actual: achf.TrxAmtActual
+  trx_amt_calc: achf.TrxAmtCalc
+  message: achf.Message

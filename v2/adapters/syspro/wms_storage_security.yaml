@@ -1,0 +1,7 @@
+concept: wms_storage_security
+table: WmsStorageSecurity
+alias: wss
+fields:
+  storage_security: wss.StorageSecurity
+  storage_security_lvl: wss.StorageSecurityLvl
+  description: wss.Description

@@ -1,0 +1,47 @@
+concept: eam_operations
+table: EamOperations
+alias: eo
+fields:
+  equipment_code: eo.EquipmentCode
+  maint_service_type: eo.MaintServiceType
+  route: eo.Route
+  operation: eo.Operation
+  work_centre: eo.WorkCentre
+  work_rate_ind: eo.WorkRateInd
+  subcontract_flag: eo.SubcontractFlag
+  i_setup_time: eo.ISetupTime
+  i_run_time: eo.IRunTime
+  i_startup_time: eo.IStartupTime
+  i_teardown_time: eo.ITeardownTime
+  i_wait_time: eo.IWaitTime
+  i_startup_qty: eo.IStartupQty
+  i_machine: eo.IMachine
+  i_unit_cap_req: eo.IUnitCapReq
+  i_max_operators: eo.IMaxOperators
+  i_max_prod_units: eo.IMaxProdUnits
+  i_time_taken: eo.ITimeTaken
+  i_block_qty: eo.IBlockQty
+  sub_supplier: eo.SubSupplier
+  sub_po_stock_code: eo.SubPoStockCode
+  sub_qty_per: eo.SubQtyPer
+  sub_order_uom: eo.SubOrderUom
+  sub_op_unit_value: eo.SubOpUnitValue
+  sub_planner: eo.SubPlanner
+  sub_buyer: eo.SubBuyer
+  sub_lead_time: eo.SubLeadTime
+  sub_dock_to_stock: eo.SubDockToStock
+  sub_offsite_days: eo.SubOffsiteDays
+  milestone: eo.Milestone
+  elapsed_time: eo.ElapsedTime
+  movement_time: eo.MovementTime
+  narration_code: eo.NarrationCode
+  auto_narr_code: eo.AutoNarrCode
+  pieces: eo.Pieces
+  inspection_flag: eo.InspectionFlag
+  minor_setup: eo.MinorSetup
+  minor_setup_code: eo.MinorSetupCode
+  tool_set: eo.ToolSet
+  tool_set_qty: eo.ToolSetQty
+  tool_consumption: eo.ToolConsumption
+  elapsed_time_cal: eo.ElapsedTimeCal
+  reason_for_change: eo.ReasonForChange

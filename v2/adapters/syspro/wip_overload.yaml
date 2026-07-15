@@ -1,0 +1,8 @@
+concept: wip_overload
+table: WipOverload
+alias: wo
+fields:
+  operator: wo.Operator
+  work_centre: wo.WorkCentre
+  overload_date: wo.OverloadDate
+  overload_actioned: wo.OverloadActioned

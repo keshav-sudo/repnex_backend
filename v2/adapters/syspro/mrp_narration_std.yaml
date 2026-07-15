@@ -1,0 +1,7 @@
+concept: mrp_narration_std
+table: MrpNarrationStd
+alias: mns
+fields:
+  narration_code: mns.NarrationCode
+  line: mns.Line
+  narration: mns.Narration

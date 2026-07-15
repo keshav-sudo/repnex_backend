@@ -1,0 +1,12 @@
+concept: sor_detail_bin_rep
+table: SorDetailBinRep
+alias: sdbr
+fields:
+  invoice: sdbr.Invoice
+  sales_order: sdbr.SalesOrder
+  sales_order_line: sdbr.SalesOrderLine
+  lot: sdbr.Lot
+  bin: sdbr.Bin
+  stock_qty_to_ship: sdbr.StockQtyToShip
+  qty_this_session: sdbr.QtyThisSession
+  qty_reserved: sdbr.QtyReserved

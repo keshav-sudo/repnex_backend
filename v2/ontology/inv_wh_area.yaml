@@ -1,0 +1,53 @@
+concept: inv_wh_area
+display_name: InvWhArea
+module: inventory
+description: Auto-generated representation of the physical table InvWhArea.
+synonyms:
+- invwharea
+- inv wh area
+header_attributes:
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvWhArea
+  wh_area:
+    display: Wharea
+    type: string
+    required: false
+    description: Field WhArea from InvWhArea
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvWhArea
+  bin_format:
+    display: Binformat
+    type: string
+    required: false
+    description: Field BinFormat from InvWhArea
+  width_tag:
+    display: Widthtag
+    type: string
+    required: false
+    description: Field WidthTag from InvWhArea
+  length_tag:
+    display: Lengthtag
+    type: string
+    required: false
+    description: Field LengthTag from InvWhArea
+  bin_count:
+    display: Bincount
+    type: decimal
+    required: false
+    description: Field BinCount from InvWhArea
+  group_ops:
+    display: Groupops
+    type: string
+    required: false
+    description: Field GroupOps from InvWhArea
+  bin_pick_strategy:
+    display: Binpickstrategy
+    type: string
+    required: false
+    description: Field BinPickStrategy from InvWhArea

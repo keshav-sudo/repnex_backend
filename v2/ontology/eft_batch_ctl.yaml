@@ -1,0 +1,88 @@
+concept: eft_batch_ctl
+display_name: EftBatchCtl
+module: other
+description: Auto-generated representation of the physical table EftBatchCtl.
+synonyms:
+- eftbatchctl
+- eft batch ctl
+header_attributes:
+  eft_batch:
+    display: Eftbatch
+    type: decimal
+    required: false
+    description: Field EftBatch from EftBatchCtl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from EftBatchCtl
+  action_date:
+    display: Actiondate
+    type: date
+    required: false
+    description: Field ActionDate from EftBatchCtl
+  original_run_date:
+    display: Originalrundate
+    type: date
+    required: false
+    description: Field OriginalRunDate from EftBatchCtl
+  re_run_date:
+    display: Rerundate
+    type: date
+    required: false
+    description: Field ReRunDate from EftBatchCtl
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from EftBatchCtl
+  payment_value:
+    display: Paymentvalue
+    type: decimal
+    required: false
+    description: Field PaymentValue from EftBatchCtl
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from EftBatchCtl
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from EftBatchCtl
+  bank_currency:
+    display: Bankcurrency
+    type: string
+    required: false
+    description: Field BankCurrency from EftBatchCtl
+  last_sequence:
+    display: Lastsequence
+    type: decimal
+    required: false
+    description: Field LastSequence from EftBatchCtl
+  eft_xml_location:
+    display: Eftxmllocation
+    type: string
+    required: false
+    description: Field EftXmlLocation from EftBatchCtl
+  eft_xml_file:
+    display: Eftxmlfile
+    type: string
+    required: false
+    description: Field EftXmlFile from EftBatchCtl
+  eft_pay_location:
+    display: Eftpaylocation
+    type: string
+    required: false
+    description: Field EftPayLocation from EftBatchCtl
+  eft_pay_file:
+    display: Eftpayfile
+    type: string
+    required: false
+    description: Field EftPayFile from EftBatchCtl
+  eft_file_id:
+    display: Eftfileid
+    type: string
+    required: false
+    description: Field EftFileId from EftBatchCtl

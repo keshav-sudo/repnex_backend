@@ -1,0 +1,10 @@
+concept: sal_history_sum_ctl
+table: SalHistorySumCtl
+alias: shsc
+fields:
+  sequence_type: shsc.SequenceType
+  description: shsc.Description
+  summary_key1: shsc.SummaryKey1
+  summary_key2: shsc.SummaryKey2
+  summary_key3: shsc.SummaryKey3
+  summary_target: shsc.SummaryTarget

@@ -1,0 +1,118 @@
+concept: gen_analysis_section
+display_name: GenAnalysisSection
+module: general_ledger
+description: Auto-generated representation of the physical table GenAnalysisSection.
+synonyms:
+- genanalysissection
+- gen analysis section
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from GenAnalysisSection
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenAnalysisSection
+  section_number:
+    display: Sectionnumber
+    type: decimal
+    required: false
+    description: Field SectionNumber from GenAnalysisSection
+  section_code:
+    display: Sectioncode
+    type: string
+    required: false
+    description: Field SectionCode from GenAnalysisSection
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenAnalysisSection
+  account_type:
+    display: Accounttype
+    type: string
+    required: false
+    description: Field AccountType from GenAnalysisSection
+  begin_year_balance:
+    display: Beginyearbalance
+    type: decimal
+    required: false
+    description: Field BeginYearBalance from GenAnalysisSection
+  closing_bal_per1:
+    display: Closingbalper1
+    type: decimal
+    required: false
+    description: Field ClosingBalPer1 from GenAnalysisSection
+  closing_bal_per2:
+    display: Closingbalper2
+    type: decimal
+    required: false
+    description: Field ClosingBalPer2 from GenAnalysisSection
+  closing_bal_per3:
+    display: Closingbalper3
+    type: decimal
+    required: false
+    description: Field ClosingBalPer3 from GenAnalysisSection
+  closing_bal_per4:
+    display: Closingbalper4
+    type: decimal
+    required: false
+    description: Field ClosingBalPer4 from GenAnalysisSection
+  closing_bal_per5:
+    display: Closingbalper5
+    type: decimal
+    required: false
+    description: Field ClosingBalPer5 from GenAnalysisSection
+  closing_bal_per6:
+    display: Closingbalper6
+    type: decimal
+    required: false
+    description: Field ClosingBalPer6 from GenAnalysisSection
+  closing_bal_per7:
+    display: Closingbalper7
+    type: decimal
+    required: false
+    description: Field ClosingBalPer7 from GenAnalysisSection
+  closing_bal_per8:
+    display: Closingbalper8
+    type: decimal
+    required: false
+    description: Field ClosingBalPer8 from GenAnalysisSection
+  closing_bal_per9:
+    display: Closingbalper9
+    type: decimal
+    required: false
+    description: Field ClosingBalPer9 from GenAnalysisSection
+  closing_bal_per10:
+    display: Closingbalper10
+    type: decimal
+    required: false
+    description: Field ClosingBalPer10 from GenAnalysisSection
+  closing_bal_per11:
+    display: Closingbalper11
+    type: decimal
+    required: false
+    description: Field ClosingBalPer11 from GenAnalysisSection
+  closing_bal_per12:
+    display: Closingbalper12
+    type: decimal
+    required: false
+    description: Field ClosingBalPer12 from GenAnalysisSection
+  closing_bal_per13:
+    display: Closingbalper13
+    type: decimal
+    required: false
+    description: Field ClosingBalPer13 from GenAnalysisSection
+  closing_bal_per14:
+    display: Closingbalper14
+    type: decimal
+    required: false
+    description: Field ClosingBalPer14 from GenAnalysisSection
+  closing_bal_per15:
+    display: Closingbalper15
+    type: decimal
+    required: false
+    description: Field ClosingBalPer15 from GenAnalysisSection

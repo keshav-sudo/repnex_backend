@@ -1,0 +1,173 @@
+concept: wip_job_nest
+display_name: WipJobNest
+module: work_in_progress
+description: Auto-generated representation of the physical table WipJobNest.
+synonyms:
+- wipjobnest
+- wip job nest
+header_attributes:
+  job_nest:
+    display: Jobnest
+    type: string
+    required: false
+    description: Field JobNest from WipJobNest
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipJobNest
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipJobNest
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipJobNest
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from WipJobNest
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from WipJobNest
+  nest_stock_code:
+    display: Neststockcode
+    type: string
+    required: false
+    description: Field NestStockCode from WipJobNest
+  sheet:
+    display: Sheet
+    type: string
+    required: false
+    description: Field Sheet from WipJobNest
+  nest_description:
+    display: Nestdescription
+    type: string
+    required: false
+    description: Field NestDescription from WipJobNest
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipJobNest
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipJobNest
+  scrap_flag:
+    display: Scrapflag
+    type: string
+    required: false
+    description: Field ScrapFlag from WipJobNest
+  qty_reqd:
+    display: Qtyreqd
+    type: decimal
+    required: false
+    description: Field QtyReqd from WipJobNest
+  qty_issued:
+    display: Qtyissued
+    type: decimal
+    required: false
+    description: Field QtyIssued from WipJobNest
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from WipJobNest
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from WipJobNest
+  pct_utilization:
+    display: Pctutilization
+    type: decimal
+    required: false
+    description: Field PctUtilization from WipJobNest
+  qty_to_make:
+    display: Qtytomake
+    type: decimal
+    required: false
+    description: Field QtyToMake from WipJobNest
+  qty_manufactured:
+    display: Qtymanufactured
+    type: decimal
+    required: false
+    description: Field QtyManufactured from WipJobNest
+  machine:
+    display: Machine
+    type: string
+    required: false
+    description: Field Machine from WipJobNest
+  run_time:
+    display: Runtime
+    type: decimal
+    required: false
+    description: Field RunTime from WipJobNest
+  set_up_time:
+    display: Setuptime
+    type: decimal
+    required: false
+    description: Field SetUpTime from WipJobNest
+  start_up_time:
+    display: Startuptime
+    type: decimal
+    required: false
+    description: Field StartUpTime from WipJobNest
+  shutdown_time:
+    display: Shutdowntime
+    type: decimal
+    required: false
+    description: Field ShutdownTime from WipJobNest
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from WipJobNest
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from WipJobNest
+  nest_status:
+    display: Neststatus
+    type: string
+    required: false
+    description: Field NestStatus from WipJobNest
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from WipJobNest
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from WipJobNest
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from WipJobNest
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipJobNest
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from WipJobNest
+  split_flag:
+    display: Splitflag
+    type: string
+    required: false
+    description: Field SplitFlag from WipJobNest

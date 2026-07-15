@@ -1,0 +1,623 @@
+concept: asset_control
+display_name: AssetControl
+module: assets
+description: Auto-generated representation of the physical table AssetControl.
+synonyms:
+- assetcontrol
+- asset control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from AssetControl
+  current_month:
+    display: Currentmonth
+    type: decimal
+    required: false
+    description: Field CurrentMonth from AssetControl
+  current_year:
+    display: Currentyear
+    type: decimal
+    required: false
+    description: Field CurrentYear from AssetControl
+  depn_calculated:
+    display: Depncalculated
+    type: string
+    required: false
+    description: Field DepnCalculated from AssetControl
+  cur_yr_mth_stat1:
+    display: Curyrmthstat1
+    type: string
+    required: false
+    description: Field CurYrMthStat1 from AssetControl
+  cur_yr_mth_stat2:
+    display: Curyrmthstat2
+    type: string
+    required: false
+    description: Field CurYrMthStat2 from AssetControl
+  cur_yr_mth_stat3:
+    display: Curyrmthstat3
+    type: string
+    required: false
+    description: Field CurYrMthStat3 from AssetControl
+  cur_yr_mth_stat4:
+    display: Curyrmthstat4
+    type: string
+    required: false
+    description: Field CurYrMthStat4 from AssetControl
+  cur_yr_mth_stat5:
+    display: Curyrmthstat5
+    type: string
+    required: false
+    description: Field CurYrMthStat5 from AssetControl
+  cur_yr_mth_stat6:
+    display: Curyrmthstat6
+    type: string
+    required: false
+    description: Field CurYrMthStat6 from AssetControl
+  cur_yr_mth_stat7:
+    display: Curyrmthstat7
+    type: string
+    required: false
+    description: Field CurYrMthStat7 from AssetControl
+  cur_yr_mth_stat8:
+    display: Curyrmthstat8
+    type: string
+    required: false
+    description: Field CurYrMthStat8 from AssetControl
+  cur_yr_mth_stat9:
+    display: Curyrmthstat9
+    type: string
+    required: false
+    description: Field CurYrMthStat9 from AssetControl
+  cur_yr_mth_stat10:
+    display: Curyrmthstat10
+    type: string
+    required: false
+    description: Field CurYrMthStat10 from AssetControl
+  cur_yr_mth_stat11:
+    display: Curyrmthstat11
+    type: string
+    required: false
+    description: Field CurYrMthStat11 from AssetControl
+  cur_yr_mth_stat12:
+    display: Curyrmthstat12
+    type: string
+    required: false
+    description: Field CurYrMthStat12 from AssetControl
+  cur_yr_mth_stat13:
+    display: Curyrmthstat13
+    type: string
+    required: false
+    description: Field CurYrMthStat13 from AssetControl
+  cur_yr_mth_end1:
+    display: Curyrmthend1
+    type: date
+    required: false
+    description: Field CurYrMthEnd1 from AssetControl
+  cur_yr_mth_end2:
+    display: Curyrmthend2
+    type: date
+    required: false
+    description: Field CurYrMthEnd2 from AssetControl
+  cur_yr_mth_end3:
+    display: Curyrmthend3
+    type: date
+    required: false
+    description: Field CurYrMthEnd3 from AssetControl
+  cur_yr_mth_end4:
+    display: Curyrmthend4
+    type: date
+    required: false
+    description: Field CurYrMthEnd4 from AssetControl
+  cur_yr_mth_end5:
+    display: Curyrmthend5
+    type: date
+    required: false
+    description: Field CurYrMthEnd5 from AssetControl
+  cur_yr_mth_end6:
+    display: Curyrmthend6
+    type: date
+    required: false
+    description: Field CurYrMthEnd6 from AssetControl
+  cur_yr_mth_end7:
+    display: Curyrmthend7
+    type: date
+    required: false
+    description: Field CurYrMthEnd7 from AssetControl
+  cur_yr_mth_end8:
+    display: Curyrmthend8
+    type: date
+    required: false
+    description: Field CurYrMthEnd8 from AssetControl
+  cur_yr_mth_end9:
+    display: Curyrmthend9
+    type: date
+    required: false
+    description: Field CurYrMthEnd9 from AssetControl
+  cur_yr_mth_end10:
+    display: Curyrmthend10
+    type: date
+    required: false
+    description: Field CurYrMthEnd10 from AssetControl
+  cur_yr_mth_end11:
+    display: Curyrmthend11
+    type: date
+    required: false
+    description: Field CurYrMthEnd11 from AssetControl
+  cur_yr_mth_end12:
+    display: Curyrmthend12
+    type: date
+    required: false
+    description: Field CurYrMthEnd12 from AssetControl
+  cur_yr_mth_end13:
+    display: Curyrmthend13
+    type: date
+    required: false
+    description: Field CurYrMthEnd13 from AssetControl
+  prv_yr_mth_stat1:
+    display: Prvyrmthstat1
+    type: string
+    required: false
+    description: Field PrvYrMthStat1 from AssetControl
+  prv_yr_mth_stat2:
+    display: Prvyrmthstat2
+    type: string
+    required: false
+    description: Field PrvYrMthStat2 from AssetControl
+  prv_yr_mth_stat3:
+    display: Prvyrmthstat3
+    type: string
+    required: false
+    description: Field PrvYrMthStat3 from AssetControl
+  prv_yr_mth_stat4:
+    display: Prvyrmthstat4
+    type: string
+    required: false
+    description: Field PrvYrMthStat4 from AssetControl
+  prv_yr_mth_stat5:
+    display: Prvyrmthstat5
+    type: string
+    required: false
+    description: Field PrvYrMthStat5 from AssetControl
+  prv_yr_mth_stat6:
+    display: Prvyrmthstat6
+    type: string
+    required: false
+    description: Field PrvYrMthStat6 from AssetControl
+  prv_yr_mth_stat7:
+    display: Prvyrmthstat7
+    type: string
+    required: false
+    description: Field PrvYrMthStat7 from AssetControl
+  prv_yr_mth_stat8:
+    display: Prvyrmthstat8
+    type: string
+    required: false
+    description: Field PrvYrMthStat8 from AssetControl
+  prv_yr_mth_stat9:
+    display: Prvyrmthstat9
+    type: string
+    required: false
+    description: Field PrvYrMthStat9 from AssetControl
+  prv_yr_mth_stat10:
+    display: Prvyrmthstat10
+    type: string
+    required: false
+    description: Field PrvYrMthStat10 from AssetControl
+  prv_yr_mth_stat11:
+    display: Prvyrmthstat11
+    type: string
+    required: false
+    description: Field PrvYrMthStat11 from AssetControl
+  prv_yr_mth_stat12:
+    display: Prvyrmthstat12
+    type: string
+    required: false
+    description: Field PrvYrMthStat12 from AssetControl
+  prv_yr_mth_stat13:
+    display: Prvyrmthstat13
+    type: string
+    required: false
+    description: Field PrvYrMthStat13 from AssetControl
+  prv_yr_mth_end1:
+    display: Prvyrmthend1
+    type: date
+    required: false
+    description: Field PrvYrMthEnd1 from AssetControl
+  prv_yr_mth_end2:
+    display: Prvyrmthend2
+    type: date
+    required: false
+    description: Field PrvYrMthEnd2 from AssetControl
+  prv_yr_mth_end3:
+    display: Prvyrmthend3
+    type: date
+    required: false
+    description: Field PrvYrMthEnd3 from AssetControl
+  prv_yr_mth_end4:
+    display: Prvyrmthend4
+    type: date
+    required: false
+    description: Field PrvYrMthEnd4 from AssetControl
+  prv_yr_mth_end5:
+    display: Prvyrmthend5
+    type: date
+    required: false
+    description: Field PrvYrMthEnd5 from AssetControl
+  prv_yr_mth_end6:
+    display: Prvyrmthend6
+    type: date
+    required: false
+    description: Field PrvYrMthEnd6 from AssetControl
+  prv_yr_mth_end7:
+    display: Prvyrmthend7
+    type: date
+    required: false
+    description: Field PrvYrMthEnd7 from AssetControl
+  prv_yr_mth_end8:
+    display: Prvyrmthend8
+    type: date
+    required: false
+    description: Field PrvYrMthEnd8 from AssetControl
+  prv_yr_mth_end9:
+    display: Prvyrmthend9
+    type: date
+    required: false
+    description: Field PrvYrMthEnd9 from AssetControl
+  prv_yr_mth_end10:
+    display: Prvyrmthend10
+    type: date
+    required: false
+    description: Field PrvYrMthEnd10 from AssetControl
+  prv_yr_mth_end11:
+    display: Prvyrmthend11
+    type: date
+    required: false
+    description: Field PrvYrMthEnd11 from AssetControl
+  prv_yr_mth_end12:
+    display: Prvyrmthend12
+    type: date
+    required: false
+    description: Field PrvYrMthEnd12 from AssetControl
+  prv_yr_mth_end13:
+    display: Prvyrmthend13
+    type: date
+    required: false
+    description: Field PrvYrMthEnd13 from AssetControl
+  hist_dist_periods:
+    display: Histdistperiods
+    type: decimal
+    required: false
+    description: Field HistDistPeriods from AssetControl
+  hist_capex_periods:
+    display: Histcapexperiods
+    type: decimal
+    required: false
+    description: Field HistCapexPeriods from AssetControl
+  hist_disp_periods:
+    display: Histdispperiods
+    type: decimal
+    required: false
+    description: Field HistDispPeriods from AssetControl
+  hist_ent_periods:
+    display: Histentperiods
+    type: decimal
+    required: false
+    description: Field HistEntPeriods from AssetControl
+  hist_ent_periods_tx:
+    display: Histentperiodstx
+    type: decimal
+    required: false
+    description: Field HistEntPeriodsTx from AssetControl
+  hist_ent_prds_alt1:
+    display: Histentprdsalt1
+    type: decimal
+    required: false
+    description: Field HistEntPrdsAlt1 from AssetControl
+  hist_ent_prds_alt2:
+    display: Histentprdsalt2
+    type: decimal
+    required: false
+    description: Field HistEntPrdsAlt2 from AssetControl
+  hist_ent_prds_alt3:
+    display: Histentprdsalt3
+    type: decimal
+    required: false
+    description: Field HistEntPrdsAlt3 from AssetControl
+  hist_ent_prds_alt4:
+    display: Histentprdsalt4
+    type: decimal
+    required: false
+    description: Field HistEntPrdsAlt4 from AssetControl
+  hist_ent_prds_alt5:
+    display: Histentprdsalt5
+    type: decimal
+    required: false
+    description: Field HistEntPrdsAlt5 from AssetControl
+  hist_ent_prds_alt6:
+    display: Histentprdsalt6
+    type: decimal
+    required: false
+    description: Field HistEntPrdsAlt6 from AssetControl
+  hist_ent_prds_alt7:
+    display: Histentprdsalt7
+    type: decimal
+    required: false
+    description: Field HistEntPrdsAlt7 from AssetControl
+  hist_ent_prds_alt8:
+    display: Histentprdsalt8
+    type: decimal
+    required: false
+    description: Field HistEntPrdsAlt8 from AssetControl
+  hist_ent_prds_alt9:
+    display: Histentprdsalt9
+    type: decimal
+    required: false
+    description: Field HistEntPrdsAlt9 from AssetControl
+  hist_ent_prds_alt10:
+    display: Histentprdsalt10
+    type: decimal
+    required: false
+    description: Field HistEntPrdsAlt10 from AssetControl
+  hist_capex_cm_periods:
+    display: Histcapexcmperiods
+    type: decimal
+    required: false
+    description: Field HistCapexCmPeriods from AssetControl
+  hist_trans_periods:
+    display: Histtransperiods
+    type: decimal
+    required: false
+    description: Field HistTransPeriods from AssetControl
+  history_years_bv:
+    display: Historyyearsbv
+    type: decimal
+    required: false
+    description: Field HistoryYearsBv from AssetControl
+  history_years_tax:
+    display: Historyyearstax
+    type: decimal
+    required: false
+    description: Field HistoryYearsTax from AssetControl
+  history_years_alt1:
+    display: Historyyearsalt1
+    type: decimal
+    required: false
+    description: Field HistoryYearsAlt1 from AssetControl
+  history_years_alt2:
+    display: Historyyearsalt2
+    type: decimal
+    required: false
+    description: Field HistoryYearsAlt2 from AssetControl
+  history_years_alt3:
+    display: Historyyearsalt3
+    type: decimal
+    required: false
+    description: Field HistoryYearsAlt3 from AssetControl
+  history_years_alt4:
+    display: Historyyearsalt4
+    type: decimal
+    required: false
+    description: Field HistoryYearsAlt4 from AssetControl
+  history_years_alt5:
+    display: Historyyearsalt5
+    type: decimal
+    required: false
+    description: Field HistoryYearsAlt5 from AssetControl
+  history_years_alt6:
+    display: Historyyearsalt6
+    type: decimal
+    required: false
+    description: Field HistoryYearsAlt6 from AssetControl
+  history_years_alt7:
+    display: Historyyearsalt7
+    type: decimal
+    required: false
+    description: Field HistoryYearsAlt7 from AssetControl
+  history_years_alt8:
+    display: Historyyearsalt8
+    type: decimal
+    required: false
+    description: Field HistoryYearsAlt8 from AssetControl
+  history_years_alt9:
+    display: Historyyearsalt9
+    type: decimal
+    required: false
+    description: Field HistoryYearsAlt9 from AssetControl
+  history_years_alt10:
+    display: Historyyearsalt10
+    type: decimal
+    required: false
+    description: Field HistoryYearsAlt10 from AssetControl
+  depn_period:
+    display: Depnperiod
+    type: decimal
+    required: false
+    description: Field DepnPeriod from AssetControl
+  valuation_head1:
+    display: Valuationhead1
+    type: string
+    required: false
+    description: Field ValuationHead1 from AssetControl
+  valuation_head2:
+    display: Valuationhead2
+    type: string
+    required: false
+    description: Field ValuationHead2 from AssetControl
+  valuation_head3:
+    display: Valuationhead3
+    type: string
+    required: false
+    description: Field ValuationHead3 from AssetControl
+  valuation_head4:
+    display: Valuationhead4
+    type: string
+    required: false
+    description: Field ValuationHead4 from AssetControl
+  valuation_head5:
+    display: Valuationhead5
+    type: string
+    required: false
+    description: Field ValuationHead5 from AssetControl
+  valuation_head6:
+    display: Valuationhead6
+    type: string
+    required: false
+    description: Field ValuationHead6 from AssetControl
+  valuation_head7:
+    display: Valuationhead7
+    type: string
+    required: false
+    description: Field ValuationHead7 from AssetControl
+  valuation_head8:
+    display: Valuationhead8
+    type: string
+    required: false
+    description: Field ValuationHead8 from AssetControl
+  valuation_head9:
+    display: Valuationhead9
+    type: string
+    required: false
+    description: Field ValuationHead9 from AssetControl
+  valuation_head10:
+    display: Valuationhead10
+    type: string
+    required: false
+    description: Field ValuationHead10 from AssetControl
+  low_key:
+    display: Lowkey
+    type: string
+    required: false
+    description: Field LowKey from AssetControl
+  date_conv_def:
+    display: Dateconvdef
+    type: string
+    required: false
+    description: Field DateConvDef from AssetControl
+  bv_convention:
+    display: Bvconvention
+    type: string
+    required: false
+    description: Field BvConvention from AssetControl
+  tax_convention:
+    display: Taxconvention
+    type: string
+    required: false
+    description: Field TaxConvention from AssetControl
+  alt_convention1:
+    display: Altconvention1
+    type: string
+    required: false
+    description: Field AltConvention1 from AssetControl
+  alt_convention2:
+    display: Altconvention2
+    type: string
+    required: false
+    description: Field AltConvention2 from AssetControl
+  alt_convention3:
+    display: Altconvention3
+    type: string
+    required: false
+    description: Field AltConvention3 from AssetControl
+  alt_convention4:
+    display: Altconvention4
+    type: string
+    required: false
+    description: Field AltConvention4 from AssetControl
+  alt_convention5:
+    display: Altconvention5
+    type: string
+    required: false
+    description: Field AltConvention5 from AssetControl
+  alt_convention6:
+    display: Altconvention6
+    type: string
+    required: false
+    description: Field AltConvention6 from AssetControl
+  alt_convention7:
+    display: Altconvention7
+    type: string
+    required: false
+    description: Field AltConvention7 from AssetControl
+  alt_convention8:
+    display: Altconvention8
+    type: string
+    required: false
+    description: Field AltConvention8 from AssetControl
+  alt_convention9:
+    display: Altconvention9
+    type: string
+    required: false
+    description: Field AltConvention9 from AssetControl
+  alt_convention10:
+    display: Altconvention10
+    type: string
+    required: false
+    description: Field AltConvention10 from AssetControl
+  tax_basis:
+    display: Taxbasis
+    type: string
+    required: false
+    description: Field TaxBasis from AssetControl
+  alt_basis1:
+    display: Altbasis1
+    type: string
+    required: false
+    description: Field AltBasis1 from AssetControl
+  alt_basis2:
+    display: Altbasis2
+    type: string
+    required: false
+    description: Field AltBasis2 from AssetControl
+  alt_basis3:
+    display: Altbasis3
+    type: string
+    required: false
+    description: Field AltBasis3 from AssetControl
+  alt_basis4:
+    display: Altbasis4
+    type: string
+    required: false
+    description: Field AltBasis4 from AssetControl
+  alt_basis5:
+    display: Altbasis5
+    type: string
+    required: false
+    description: Field AltBasis5 from AssetControl
+  alt_basis6:
+    display: Altbasis6
+    type: string
+    required: false
+    description: Field AltBasis6 from AssetControl
+  alt_basis7:
+    display: Altbasis7
+    type: string
+    required: false
+    description: Field AltBasis7 from AssetControl
+  alt_basis8:
+    display: Altbasis8
+    type: string
+    required: false
+    description: Field AltBasis8 from AssetControl
+  alt_basis9:
+    display: Altbasis9
+    type: string
+    required: false
+    description: Field AltBasis9 from AssetControl
+  alt_basis10:
+    display: Altbasis10
+    type: string
+    required: false
+    description: Field AltBasis10 from AssetControl
+  next_asset:
+    display: Nextasset
+    type: string
+    required: false
+    description: Field NextAsset from AssetControl
+  next_capex:
+    display: Nextcapex
+    type: string
+    required: false
+    description: Field NextCapex from AssetControl

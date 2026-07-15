@@ -1,0 +1,6 @@
+concept: crm_type
+table: CrmType
+alias: ct2
+fields:
+  contact_type: ct2.ContactType
+  description: ct2.Description

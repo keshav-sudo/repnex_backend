@@ -1,0 +1,18 @@
+concept: csh_flow_proj_dates
+display_name: CshFlowProjDates
+module: cashbook
+description: Auto-generated representation of the physical table CshFlowProjDates.
+synonyms:
+- cshflowprojdates
+- csh flow proj dates
+header_attributes:
+  model:
+    display: Model
+    type: string
+    required: false
+    description: Field Model from CshFlowProjDates
+  projection_date:
+    display: Projectiondate
+    type: date
+    required: false
+    description: Field ProjectionDate from CshFlowProjDates

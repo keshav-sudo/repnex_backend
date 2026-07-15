@@ -1,0 +1,12 @@
+concept: srs_archive_pol
+table: SrsArchivePOL
+alias: sapol
+fields:
+  archive_date: sapol.ArchiveDate
+  archive_time: sapol.ArchiveTime
+  operator: sapol.Operator
+  archive_id: sapol.ArchiveId
+  archive_type: sapol.ArchiveType
+  archive_file: sapol.ArchiveFile
+  customer_p_order: sapol.CustomerPOrder
+  purchase_order: sapol.PurchaseOrder

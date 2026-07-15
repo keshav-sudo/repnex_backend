@@ -1,0 +1,58 @@
+concept: sal_tax_uk_vat_det
+display_name: SalTaxUkVatDet
+module: other
+description: Auto-generated representation of the physical table SalTaxUkVatDet.
+synonyms:
+- saltaxukvatdet
+- sal tax uk vat det
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalTaxUkVatDet
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalTaxUkVatDet
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SalTaxUkVatDet
+  invoice_register:
+    display: Invoiceregister
+    type: decimal
+    required: false
+    description: Field InvoiceRegister from SalTaxUkVatDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SalTaxUkVatDet
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SalTaxUkVatDet
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from SalTaxUkVatDet
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from SalTaxUkVatDet
+  taxable_value:
+    display: Taxablevalue
+    type: decimal
+    required: false
+    description: Field TaxableValue from SalTaxUkVatDet
+  non_tax_value:
+    display: Nontaxvalue
+    type: decimal
+    required: false
+    description: Field NonTaxValue from SalTaxUkVatDet

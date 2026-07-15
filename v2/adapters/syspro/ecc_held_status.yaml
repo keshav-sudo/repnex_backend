@@ -1,0 +1,7 @@
+concept: ecc_held_status
+table: EccHeldStatus
+alias: ehs
+fields:
+  change_order: ehs.ChangeOrder
+  status_code: ehs.StatusCode
+  event_number: ehs.EventNumber

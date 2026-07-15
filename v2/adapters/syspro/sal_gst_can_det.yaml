@@ -1,0 +1,31 @@
+concept: sal_gst_can_det
+table: SalGstCanDet
+alias: sgcd
+fields:
+  gl_year: sgcd.GlYear
+  gl_month: sgcd.GlMonth
+  register: sgcd.Register
+  collect_exempt: sgcd.CollectExempt
+  line: sgcd.Line
+  exempt_flag: sgcd.ExemptFlag
+  invoice_date: sgcd.InvoiceDate
+  document_type: sgcd.DocumentType
+  customer: sgcd.Customer
+  exemption_number: sgcd.ExemptionNumber
+  customer_po_number: sgcd.CustomerPoNumber
+  branch: sgcd.Branch
+  line_type: sgcd.LineType
+  stock_code: sgcd.StockCode
+  description: sgcd.Description
+  qty_invoiced: sgcd.QtyInvoiced
+  taxable_val: sgcd.TaxableVal
+  tax_code: sgcd.TaxCode
+  tax_rate: sgcd.TaxRate
+  tax_value: sgcd.TaxValue
+  tot_inv_value: sgcd.TotInvValue
+  last_for_invoice: sgcd.LastForInvoice
+  decimals: sgcd.Decimals
+  forced_exempt: sgcd.ForcedExempt
+  area: sgcd.Area
+  print_flag: sgcd.PrintFlag
+  cash_credit: sgcd.CashCredit

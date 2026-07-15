@@ -1,0 +1,12 @@
+concept: sor_price_cat_header
+table: SorPriceCatHeader
+alias: spch
+fields:
+  catalogue: spch.Catalogue
+  description: spch.Description
+  start_date: spch.StartDate
+  expiry_date: spch.ExpiryDate
+  currency: spch.Currency
+  include_tpm: spch.IncludeTpm
+  warehouse_for_cost: spch.WarehouseForCost
+  catalogue_status: spch.CatalogueStatus

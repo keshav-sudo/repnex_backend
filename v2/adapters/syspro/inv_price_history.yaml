@@ -1,0 +1,13 @@
+concept: inv_price_history
+table: InvPriceHistory
+alias: iph
+fields:
+  price_code: iph.PriceCode
+  stock_code: iph.StockCode
+  date_changed: iph.DateChanged
+  time_changed: iph.TimeChanged
+  new_selling_price: iph.NewSellingPrice
+  old_selling_price: iph.OldSellingPrice
+  new_price_basis: iph.NewPriceBasis
+  old_price_basis: iph.OldPriceBasis
+  operator: iph.Operator

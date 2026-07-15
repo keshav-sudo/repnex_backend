@@ -1,0 +1,23 @@
+concept: ap_supplier_plus
+display_name: ApSupplier+
+module: accounts_payable
+description: Auto-generated representation of the physical table ApSupplier+.
+synonyms:
+- apsupplier+
+- ap supplier plus
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApSupplier+
+  truck:
+    display: Truck
+    type: string
+    required: false
+    description: Field Truck from ApSupplier+
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from ApSupplier+

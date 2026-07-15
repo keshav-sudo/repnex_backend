@@ -1,0 +1,228 @@
+concept: ap_bank
+display_name: ApBank
+module: accounts_payable
+description: Auto-generated representation of the physical table ApBank.
+synonyms:
+- apbank
+- ap bank
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApBank
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from ApBank
+  cash_gl_code:
+    display: Cashglcode
+    type: string
+    required: false
+    description: Field CashGlCode from ApBank
+  next_cheque_num:
+    display: Nextchequenum
+    type: decimal
+    required: false
+    description: Field NextChequeNum from ApBank
+  first_cheque_num:
+    display: Firstchequenum
+    type: decimal
+    required: false
+    description: Field FirstChequeNum from ApBank
+  low_cheque_num:
+    display: Lowchequenum
+    type: decimal
+    required: false
+    description: Field LowChequeNum from ApBank
+  high_cheque_num:
+    display: Highchequenum
+    type: decimal
+    required: false
+    description: Field HighChequeNum from ApBank
+  cb_stmt_bal1:
+    display: Cbstmtbal1
+    type: decimal
+    required: false
+    description: Field CbStmtBal1 from ApBank
+  cb_stmt_bal2:
+    display: Cbstmtbal2
+    type: decimal
+    required: false
+    description: Field CbStmtBal2 from ApBank
+  cb_stmt_bal3:
+    display: Cbstmtbal3
+    type: decimal
+    required: false
+    description: Field CbStmtBal3 from ApBank
+  cb_stmt_bal_loc1:
+    display: Cbstmtballoc1
+    type: decimal
+    required: false
+    description: Field CbStmtBalLoc1 from ApBank
+  cb_stmt_bal_loc2:
+    display: Cbstmtballoc2
+    type: decimal
+    required: false
+    description: Field CbStmtBalLoc2 from ApBank
+  cb_stmt_bal_loc3:
+    display: Cbstmtballoc3
+    type: decimal
+    required: false
+    description: Field CbStmtBalLoc3 from ApBank
+  outst_dep1:
+    display: Outstdep1
+    type: decimal
+    required: false
+    description: Field OutstDep1 from ApBank
+  outst_dep2:
+    display: Outstdep2
+    type: decimal
+    required: false
+    description: Field OutstDep2 from ApBank
+  outst_dep3:
+    display: Outstdep3
+    type: decimal
+    required: false
+    description: Field OutstDep3 from ApBank
+  outst_with1:
+    display: Outstwith1
+    type: decimal
+    required: false
+    description: Field OutstWith1 from ApBank
+  outst_with2:
+    display: Outstwith2
+    type: decimal
+    required: false
+    description: Field OutstWith2 from ApBank
+  outst_with3:
+    display: Outstwith3
+    type: decimal
+    required: false
+    description: Field OutstWith3 from ApBank
+  cb_cur_bal1:
+    display: Cbcurbal1
+    type: decimal
+    required: false
+    description: Field CbCurBal1 from ApBank
+  cb_cur_bal2:
+    display: Cbcurbal2
+    type: decimal
+    required: false
+    description: Field CbCurBal2 from ApBank
+  cb_cur_bal3:
+    display: Cbcurbal3
+    type: decimal
+    required: false
+    description: Field CbCurBal3 from ApBank
+  cb_cur_bal_loc1:
+    display: Cbcurballoc1
+    type: decimal
+    required: false
+    description: Field CbCurBalLoc1 from ApBank
+  cb_cur_bal_loc2:
+    display: Cbcurballoc2
+    type: decimal
+    required: false
+    description: Field CbCurBalLoc2 from ApBank
+  cb_cur_bal_loc3:
+    display: Cbcurballoc3
+    type: decimal
+    required: false
+    description: Field CbCurBalLoc3 from ApBank
+  date_last_extract:
+    display: Datelastextract
+    type: date
+    required: false
+    description: Field DateLastExtract from ApBank
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from ApBank
+  bank_account:
+    display: Bankaccount
+    type: string
+    required: false
+    description: Field BankAccount from ApBank
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApBank
+  date_last_var_upd:
+    display: Datelastvarupd
+    type: date
+    required: false
+    description: Field DateLastVarUpd from ApBank
+  gl_exch_var_code:
+    display: Glexchvarcode
+    type: string
+    required: false
+    description: Field GlExchVarCode from ApBank
+  cb_open_bal1:
+    display: Cbopenbal1
+    type: decimal
+    required: false
+    description: Field CbOpenBal1 from ApBank
+  cb_open_bal2:
+    display: Cbopenbal2
+    type: decimal
+    required: false
+    description: Field CbOpenBal2 from ApBank
+  cb_open_bal3:
+    display: Cbopenbal3
+    type: decimal
+    required: false
+    description: Field CbOpenBal3 from ApBank
+  on_line_cheques:
+    display: Onlinecheques
+    type: string
+    required: false
+    description: Field OnLineCheques from ApBank
+  ar_bank_charge_reqd:
+    display: Arbankchargereqd
+    type: string
+    required: false
+    description: Field ArBankChargeReqd from ApBank
+  ar_bank_charge_gl_code:
+    display: Arbankchargeglcode
+    type: string
+    required: false
+    description: Field ArBankChargeGlCode from ApBank
+  ap_eft_payments:
+    display: Apeftpayments
+    type: string
+    required: false
+    description: Field ApEftPayments from ApBank
+  ap_post_method:
+    display: Appostmethod
+    type: string
+    required: false
+    description: Field ApPostMethod from ApBank
+  next_eft_num:
+    display: Nexteftnum
+    type: decimal
+    required: false
+    description: Field NextEftNum from ApBank
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ApBank
+  gl_exch_separate:
+    display: Glexchseparate
+    type: string
+    required: false
+    description: Field GlExchSeparate from ApBank
+  gl_exch_loss_code:
+    display: Glexchlosscode
+    type: string
+    required: false
+    description: Field GlExchLossCode from ApBank
+  check_print:
+    display: Checkprint
+    type: string
+    required: false
+    description: Field CheckPrint from ApBank

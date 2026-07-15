@@ -1,0 +1,19 @@
+concept: bom_arc_parent_info
+table: BomArcParentInfo
+alias: bapi
+fields:
+  parent_part: bapi.ParentPart
+  version: bapi.Version
+  release: bapi.Release
+  route: bapi.Route
+  co_product_cost_met: bapi.CoProductCostMet
+  co_product_cost_val: bapi.CoProductCostVal
+  co_product_type: bapi.CoProductType
+  co_product_next: bapi.CoProductNext
+  co_product_plan_prd: bapi.CoProductPlanPrd
+  any_operations: bapi.AnyOperations
+  any_materials: bapi.AnyMaterials
+  uom_flag: bapi.UomFlag
+  narrations: bapi.Narrations
+  product_code: bapi.ProductCode
+  library_code: bapi.LibraryCode

@@ -1,0 +1,48 @@
+concept: ar_invoice_pay_pos
+display_name: ArInvoicePayPos
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArInvoicePayPos.
+synonyms:
+- arinvoicepaypos
+- ar invoice pay pos
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArInvoicePayPos
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArInvoicePayPos
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArInvoicePayPos
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ArInvoicePayPos
+  pos_transaction_type:
+    display: Postransactiontype
+    type: string
+    required: false
+    description: Field PosTransactionType from ArInvoicePayPos
+  pos_trans_branch:
+    display: Postransbranch
+    type: string
+    required: false
+    description: Field PosTransBranch from ArInvoicePayPos
+  pos_unique_id:
+    display: Posuniqueid
+    type: string
+    required: false
+    description: Field PosUniqueId from ArInvoicePayPos
+  pos_payment_line:
+    display: Pospaymentline
+    type: decimal
+    required: false
+    description: Field PosPaymentLine from ArInvoicePayPos

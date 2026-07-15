@@ -1,0 +1,53 @@
+concept: mrp_gtr_supply_chain
+display_name: MrpGtrSupplyChain
+module: mrp
+description: Auto-generated representation of the physical table MrpGtrSupplyChain.
+synonyms:
+- mrpgtrsupplychain
+- mrp gtr supply chain
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpGtrSupplyChain
+  chain_number:
+    display: Chainnumber
+    type: decimal
+    required: false
+    description: Field ChainNumber from MrpGtrSupplyChain
+  level_number:
+    display: Levelnumber
+    type: decimal
+    required: false
+    description: Field LevelNumber from MrpGtrSupplyChain
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from MrpGtrSupplyChain
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from MrpGtrSupplyChain
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from MrpGtrSupplyChain
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from MrpGtrSupplyChain
+  cost_multiplier:
+    display: Costmultiplier
+    type: decimal
+    required: false
+    description: Field CostMultiplier from MrpGtrSupplyChain
+  buying_rule_flag:
+    display: Buyingruleflag
+    type: decimal
+    required: false
+    description: Field BuyingRuleFlag from MrpGtrSupplyChain

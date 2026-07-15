@@ -1,0 +1,30 @@
+concept: inv_inspect_doc
+table: InvInspectDoc
+alias: iid1
+fields:
+  transaction_type: iid1.TransactionType
+  document_num: iid1.DocumentNum
+  grn: iid1.Grn
+  warehouse: iid1.Warehouse
+  lot: iid1.Lot
+  reprint_flag: iid1.ReprintFlag
+  version: iid1.Version
+  release: iid1.Release
+  stock_code: iid1.StockCode
+  purchase_order: iid1.PurchaseOrder
+  line: iid1.Line
+  supplier: iid1.Supplier
+  job: iid1.Job
+  reject_code: iid1.RejectCode
+  transaction_date: iid1.TransactionDate
+  quantity: iid1.Quantity
+  delivery_note: iid1.DeliveryNote
+  delivery_note_date: iid1.DeliveryNoteDate
+  certificate: iid1.Certificate
+  expiry_date: iid1.ExpiryDate
+  orig_due_date: iid1.OrigDueDate
+  latest_due_date: iid1.LatestDueDate
+  bin: iid1.Bin
+  notation: iid1.Notation
+  trn_document: iid1.TrnDocument
+  description: iid1.Description

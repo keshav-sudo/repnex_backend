@@ -1,0 +1,51 @@
+concept: lynq_me__trace__employee
+table: Lynq_ME_Trace_Employee
+alias: lmete
+fields:
+  l_id: lmete.lId
+  l_code: lmete.lCode
+  l_facility_code: lmete.lFacilityCode
+  l_membership: lmete.lMembership
+  l_master_flag: lmete.lMasterFlag
+  l_name: lmete.lName
+  l_name1: lmete.lName1
+  l_name2: lmete.lName2
+  l_name3: lmete.lName3
+  l_req1: lmete.lReq1
+  l_req2: lmete.lReq2
+  l_req3: lmete.lReq3
+  l_req4: lmete.lReq4
+  l_req5: lmete.lReq5
+  l_param1: lmete.lParam1
+  l_param2: lmete.lParam2
+  l_param3: lmete.lParam3
+  l_param4: lmete.lParam4
+  l_param5: lmete.lParam5
+  l_text1: lmete.lText1
+  l_text2: lmete.lText2
+  l_text3: lmete.lText3
+  l_text4: lmete.lText4
+  l_text5: lmete.lText5
+  l_int1: lmete.lInt1
+  l_int2: lmete.lInt2
+  l_int3: lmete.lInt3
+  l_int4: lmete.lInt4
+  l_int5: lmete.lInt5
+  l_decimal1: lmete.lDecimal1
+  l_decimal2: lmete.lDecimal2
+  l_decimal3: lmete.lDecimal3
+  l_decimal4: lmete.lDecimal4
+  l_decimal5: lmete.lDecimal5
+  l_date1: lmete.lDate1
+  l_date2: lmete.lDate2
+  l_date3: lmete.lDate3
+  l_date4: lmete.lDate4
+  l_date5: lmete.lDate5
+  l_manager: lmete.lManager
+  l_trace_date: lmete.lTraceDate
+  l_erp_specific: lmete.lErpSpecific
+  l_erp_reporter_code: lmete.lErpReporterCode
+  l_resource_qty: lmete.lResourceQty
+  l_type: lmete.lType
+  l_rate_indicator: lmete.lRateIndicator
+  l_rate: lmete.lRate

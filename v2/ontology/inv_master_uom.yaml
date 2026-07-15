@@ -1,0 +1,83 @@
+concept: inv_master_uom
+display_name: InvMasterUom
+module: inventory
+description: Auto-generated representation of the physical table InvMasterUom.
+synonyms:
+- invmasteruom
+- inv master uom
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvMasterUom
+  uom_code:
+    display: Uomcode
+    type: string
+    required: false
+    description: Field UomCode from InvMasterUom
+  stock_units_per_uom:
+    display: Stockunitsperuom
+    type: string
+    required: false
+    description: Field StockUnitsPerUom from InvMasterUom
+  conv_fact:
+    display: Convfact
+    type: decimal
+    required: false
+    description: Field ConvFact from InvMasterUom
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from InvMasterUom
+  barcode:
+    display: Barcode
+    type: string
+    required: false
+    description: Field Barcode from InvMasterUom
+  rfid:
+    display: Rfid
+    type: string
+    required: false
+    description: Field Rfid from InvMasterUom
+  dimension_unit:
+    display: Dimensionunit
+    type: string
+    required: false
+    description: Field DimensionUnit from InvMasterUom
+  physical_length:
+    display: Physicallength
+    type: decimal
+    required: false
+    description: Field PhysicalLength from InvMasterUom
+  physical_width:
+    display: Physicalwidth
+    type: decimal
+    required: false
+    description: Field PhysicalWidth from InvMasterUom
+  physical_height:
+    display: Physicalheight
+    type: decimal
+    required: false
+    description: Field PhysicalHeight from InvMasterUom
+  mass_unit:
+    display: Massunit
+    type: string
+    required: false
+    description: Field MassUnit from InvMasterUom
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from InvMasterUom
+  volume_unit:
+    display: Volumeunit
+    type: string
+    required: false
+    description: Field VolumeUnit from InvMasterUom
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from InvMasterUom

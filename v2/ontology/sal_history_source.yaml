@@ -1,0 +1,303 @@
+concept: sal_history_source
+display_name: SalHistorySource
+module: other
+description: Auto-generated representation of the physical table SalHistorySource.
+synonyms:
+- salhistorysource
+- sal history source
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalHistorySource
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalHistorySource
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from SalHistorySource
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SalHistorySource
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from SalHistorySource
+  detail_line:
+    display: Detailline
+    type: decimal
+    required: false
+    description: Field DetailLine from SalHistorySource
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from SalHistorySource
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalHistorySource
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from SalHistorySource
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SalHistorySource
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from SalHistorySource
+  inter_branch_trf:
+    display: Interbranchtrf
+    type: string
+    required: false
+    description: Field InterBranchTrf from SalHistorySource
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SalHistorySource
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SalHistorySource
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SalHistorySource
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SalHistorySource
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from SalHistorySource
+  tax_status:
+    display: Taxstatus
+    type: string
+    required: false
+    description: Field TaxStatus from SalHistorySource
+  customer_class:
+    display: Customerclass
+    type: string
+    required: false
+    description: Field CustomerClass from SalHistorySource
+  qty_invoiced:
+    display: Qtyinvoiced
+    type: decimal
+    required: false
+    description: Field QtyInvoiced from SalHistorySource
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from SalHistorySource
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from SalHistorySource
+  net_sales_value:
+    display: Netsalesvalue
+    type: decimal
+    required: false
+    description: Field NetSalesValue from SalHistorySource
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from SalHistorySource
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from SalHistorySource
+  disc_value:
+    display: Discvalue
+    type: decimal
+    required: false
+    description: Field DiscValue from SalHistorySource
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from SalHistorySource
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from SalHistorySource
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from SalHistorySource
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from SalHistorySource
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from SalHistorySource
+  tax_code_fst:
+    display: Taxcodefst
+    type: string
+    required: false
+    description: Field TaxCodeFst from SalHistorySource
+  tax_value_fst:
+    display: Taxvaluefst
+    type: decimal
+    required: false
+    description: Field TaxValueFst from SalHistorySource
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SalHistorySource
+  contract_prc_num:
+    display: Contractprcnum
+    type: string
+    required: false
+    description: Field ContractPrcNum from SalHistorySource
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from SalHistorySource
+  line_invoice_disc:
+    display: Lineinvoicedisc
+    type: decimal
+    required: false
+    description: Field LineInvoiceDisc from SalHistorySource
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from SalHistorySource
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from SalHistorySource
+  user_field3:
+    display: Userfield3
+    type: string
+    required: false
+    description: Field UserField3 from SalHistorySource
+  user_field4:
+    display: Userfield4
+    type: string
+    required: false
+    description: Field UserField4 from SalHistorySource
+  taxable_value:
+    display: Taxablevalue
+    type: decimal
+    required: false
+    description: Field TaxableValue from SalHistorySource
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from SalHistorySource
+  buying_group:
+    display: Buyinggroup
+    type: string
+    required: false
+    description: Field BuyingGroup from SalHistorySource
+  post_value:
+    display: Postvalue
+    type: decimal
+    required: false
+    description: Field PostValue from SalHistorySource
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from SalHistorySource
+  post_conv_rate:
+    display: Postconvrate
+    type: decimal
+    required: false
+    description: Field PostConvRate from SalHistorySource
+  post_mul_div:
+    display: Postmuldiv
+    type: string
+    required: false
+    description: Field PostMulDiv from SalHistorySource
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from SalHistorySource
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from SalHistorySource
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from SalHistorySource
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from SalHistorySource
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from SalHistorySource
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from SalHistorySource
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from SalHistorySource
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from SalHistorySource
+  price_group_rule:
+    display: Pricegrouprule
+    type: decimal
+    required: false
+    description: Field PriceGroupRule from SalHistorySource
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from SalHistorySource
+  cat_line_number:
+    display: Catlinenumber
+    type: decimal
+    required: false
+    description: Field CatLineNumber from SalHistorySource

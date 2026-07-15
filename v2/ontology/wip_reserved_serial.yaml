@@ -1,0 +1,93 @@
+concept: wip_reserved_serial
+display_name: WipReservedSerial
+module: work_in_progress
+description: Auto-generated representation of the physical table WipReservedSerial.
+synonyms:
+- wipreservedserial
+- wip reserved serial
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipReservedSerial
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipReservedSerial
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipReservedSerial
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from WipReservedSerial
+  serial_method:
+    display: Serialmethod
+    type: string
+    required: false
+    description: Field SerialMethod from WipReservedSerial
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipReservedSerial
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from WipReservedSerial
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from WipReservedSerial
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from WipReservedSerial
+  inspection_qty:
+    display: Inspectionqty
+    type: decimal
+    required: false
+    description: Field InspectionQty from WipReservedSerial
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from WipReservedSerial
+  qty_reworked:
+    display: Qtyreworked
+    type: decimal
+    required: false
+    description: Field QtyReworked from WipReservedSerial
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from WipReservedSerial
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipReservedSerial
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipReservedSerial
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipReservedSerial
+  ser_complete:
+    display: Sercomplete
+    type: string
+    required: false
+    description: Field SerComplete from WipReservedSerial

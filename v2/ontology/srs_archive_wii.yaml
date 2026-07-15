@@ -1,0 +1,58 @@
+concept: srs_archive_wii
+display_name: SrsArchiveWII
+module: other
+description: Auto-generated representation of the physical table SrsArchiveWII.
+synonyms:
+- srsarchivewii
+- srs archive wii
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveWII
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveWII
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveWII
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveWII
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveWII
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveWII
+  det_job:
+    display: Detjob
+    type: string
+    required: false
+    description: Field DetJob from SrsArchiveWII
+  det_lot:
+    display: Detlot
+    type: string
+    required: false
+    description: Field DetLot from SrsArchiveWII
+  det_reference:
+    display: Detreference
+    type: string
+    required: false
+    description: Field DetReference from SrsArchiveWII
+  det_warehouse:
+    display: Detwarehouse
+    type: string
+    required: false
+    description: Field DetWarehouse from SrsArchiveWII

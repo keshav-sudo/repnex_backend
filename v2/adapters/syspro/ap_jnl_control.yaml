@@ -1,0 +1,24 @@
+concept: ap_jnl_control
+table: ApJnlControl
+alias: ajc
+fields:
+  fin_year: ajc.FinYear
+  fin_month: ajc.FinMonth
+  journal: ajc.Journal
+  journal_status: ajc.JournalStatus
+  journal_date: ajc.JournalDate
+  date_prepared: ajc.DatePrepared
+  num_entries_jnl: ajc.NumEntriesJnl
+  beg_ap_balance: ajc.BegApBalance
+  invoice_value: ajc.InvoiceValue
+  credit_memo_value: ajc.CreditMemoValue
+  debit_memo_value: ajc.DebitMemoValue
+  adjustment_value: ajc.AdjustmentValue
+  end_ap_balance: ajc.EndApBalance
+  gl_year: ajc.GlYear
+  gl_period: ajc.GlPeriod
+  operator: ajc.Operator
+  revaluation_value: ajc.RevaluationValue
+  tax_relief_value: ajc.TaxReliefValue
+  with_tax_value: ajc.WithTaxValue
+  tax_portion_disc: ajc.TaxPortionDisc

@@ -1,0 +1,34 @@
+concept: ap_invoice_reval
+table: ApInvoiceReval
+alias: air1
+fields:
+  supplier: air1.Supplier
+  invoice: air1.Invoice
+  entry_number: air1.EntryNumber
+  journal_date: air1.JournalDate
+  journal: air1.Journal
+  bal_revalued: air1.BalRevalued
+  reval_value: air1.RevalValue
+  trn_year: air1.TrnYear
+  trn_month: air1.TrnMonth
+  post_currency: air1.PostCurrency
+  post_conv_rate: air1.PostConvRate
+  post_mul_div: air1.PostMulDiv
+  account_cur: air1.AccountCur
+  account_conv_rate: air1.AccountConvRate
+  account_mul_div: air1.AccountMulDiv
+  triang_currency: air1.TriangCurrency
+  triang_conv_rate: air1.TriangConvRate
+  triang_mul_div: air1.TriangMulDiv
+  bef_value: air1.BefValue
+  bef_post_currency: air1.BefPostCurrency
+  bef_post_conv_rate: air1.BefPostConvRate
+  bef_post_mul_div: air1.BefPostMulDiv
+  bef_account_cur: air1.BefAccountCur
+  bef_account_conv_rate: air1.BefAccountConvRate
+  bef_account_mul_div: air1.BefAccountMulDiv
+  bef_triang_currency: air1.BefTriangCurrency
+  bef_triang_conv_rate: air1.BefTriangConvRate
+  bef_triang_mul_div: air1.BefTriangMulDiv
+  effective_date: air1.EffectiveDate
+  effective_entry: air1.EffectiveEntry

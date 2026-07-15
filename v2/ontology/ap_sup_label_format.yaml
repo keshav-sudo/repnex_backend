@@ -1,0 +1,18 @@
+concept: ap_sup_label_format
+display_name: ApSupLabelFormat
+module: accounts_payable
+description: Auto-generated representation of the physical table ApSupLabelFormat.
+synonyms:
+- apsuplabelformat
+- ap sup label format
+header_attributes:
+  perm_entry_format:
+    display: Permentryformat
+    type: string
+    required: false
+    description: Field PermEntryFormat from ApSupLabelFormat
+  preferences:
+    display: Preferences
+    type: string
+    required: false
+    description: Field Preferences from ApSupLabelFormat

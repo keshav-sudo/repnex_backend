@@ -1,0 +1,23 @@
+concept: tbl_po_comment
+display_name: TblPoComment
+module: other
+description: Auto-generated representation of the physical table TblPoComment.
+synonyms:
+- tblpocomment
+- tbl po comment
+header_attributes:
+  comment_code:
+    display: Commentcode
+    type: string
+    required: false
+    description: Field CommentCode from TblPoComment
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from TblPoComment
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from TblPoComment

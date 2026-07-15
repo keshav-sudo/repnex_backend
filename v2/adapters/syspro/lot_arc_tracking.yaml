@@ -1,0 +1,19 @@
+concept: lot_arc_tracking
+table: LotArcTracking
+alias: lat
+fields:
+  stock_code: lat.StockCode
+  warehouse: lat.Warehouse
+  lot: lat.Lot
+  bin: lat.Bin
+  line: lat.Line
+  job: lat.Job
+  quantity: lat.Quantity
+  parent_part: lat.ParentPart
+  parent_warehouse: lat.ParentWarehouse
+  parent_lot: lat.ParentLot
+  parent_bin: lat.ParentBin
+  issue_line: lat.IssueLine
+  issue_date: lat.IssueDate
+  m_allocation_line: lat.MAllocationLine
+  master_job: lat.MasterJob

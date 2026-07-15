@@ -1,0 +1,73 @@
+concept: req_routing
+display_name: ReqRouting
+module: other
+description: Auto-generated representation of the physical table ReqRouting.
+synonyms:
+- reqrouting
+- req routing
+header_attributes:
+  requisition:
+    display: Requisition
+    type: string
+    required: false
+    description: Field Requisition from ReqRouting
+  requisition_line:
+    display: Requisitionline
+    type: decimal
+    required: false
+    description: Field RequisitionLine from ReqRouting
+  route:
+    display: Route
+    type: decimal
+    required: false
+    description: Field Route from ReqRouting
+  routed_user:
+    display: Routeduser
+    type: string
+    required: false
+    description: Field RoutedUser from ReqRouting
+  creation_date:
+    display: Creationdate
+    type: date
+    required: false
+    description: Field CreationDate from ReqRouting
+  route_narrative:
+    display: Routenarrative
+    type: string
+    required: false
+    description: Field RouteNarrative from ReqRouting
+  reqn_originator:
+    display: Reqnoriginator
+    type: string
+    required: false
+    description: Field ReqnOriginator from ReqRouting
+  receipt_quantity:
+    display: Receiptquantity
+    type: decimal
+    required: false
+    description: Field ReceiptQuantity from ReqRouting
+  order_quantity:
+    display: Orderquantity
+    type: decimal
+    required: false
+    description: Field OrderQuantity from ReqRouting
+  receipt_date:
+    display: Receiptdate
+    type: date
+    required: false
+    description: Field ReceiptDate from ReqRouting
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ReqRouting
+  routing_user:
+    display: Routinguser
+    type: string
+    required: false
+    description: Field RoutingUser from ReqRouting
+  routing_operator:
+    display: Routingoperator
+    type: string
+    required: false
+    description: Field RoutingOperator from ReqRouting

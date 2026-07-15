@@ -1,0 +1,83 @@
+concept: iop_sales_perf
+display_name: IopSalesPerf
+module: other
+description: Auto-generated representation of the physical table IopSalesPerf.
+synonyms:
+- iopsalesperf
+- iop sales perf
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopSalesPerf
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopSalesPerf
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopSalesPerf
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopSalesPerf
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from IopSalesPerf
+  sales_order_init_line:
+    display: Salesorderinitline
+    type: decimal
+    required: false
+    description: Field SalesOrderInitLine from IopSalesPerf
+  entry_system_date:
+    display: Entrysystemdate
+    type: date
+    required: false
+    description: Field EntrySystemDate from IopSalesPerf
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from IopSalesPerf
+  order_qty:
+    display: Orderqty
+    type: decimal
+    required: false
+    description: Field OrderQty from IopSalesPerf
+  ship_qty:
+    display: Shipqty
+    type: decimal
+    required: false
+    description: Field ShipQty from IopSalesPerf
+  line_ship_date:
+    display: Lineshipdate
+    type: date
+    required: false
+    description: Field LineShipDate from IopSalesPerf
+  cust_request_date:
+    display: Custrequestdate
+    type: date
+    required: false
+    description: Field CustRequestDate from IopSalesPerf
+  delivery_cnt:
+    display: Deliverycnt
+    type: decimal
+    required: false
+    description: Field DeliveryCnt from IopSalesPerf
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from IopSalesPerf
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from IopSalesPerf

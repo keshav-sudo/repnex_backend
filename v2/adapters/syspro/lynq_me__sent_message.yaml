@@ -1,0 +1,20 @@
+concept: lynq_me__sent_message
+table: Lynq_ME_SentMessage
+alias: lmesm
+fields:
+  id: lmesm.Id
+  owner_type_id: lmesm.OwnerTypeId
+  owner_code: lmesm.OwnerCode
+  sent_date: lmesm.SentDate
+  header: lmesm.Header
+  body: lmesm.Body
+  state_id: lmesm.StateId
+  type_name: lmesm.TypeName
+  measurement_code: lmesm.MeasurementCode
+  measurement_object_code: lmesm.MeasurementObjectCode
+  object_members: lmesm.ObjectMembers
+  terminal_id: lmesm.TerminalId
+  work_center_code: lmesm.WorkCenterCode
+  task_codes: lmesm.TaskCodes
+  triggered_value: lmesm.TriggeredValue
+  membership: lmesm.Membership

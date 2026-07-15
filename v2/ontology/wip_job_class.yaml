@@ -1,0 +1,63 @@
+concept: wip_job_class
+display_name: WipJobClass
+module: work_in_progress
+description: Auto-generated representation of the physical table WipJobClass.
+synonyms:
+- wipjobclass
+- wip job class
+header_attributes:
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from WipJobClass
+  class_description:
+    display: Classdescription
+    type: string
+    required: false
+    description: Field ClassDescription from WipJobClass
+  class_job_prefix:
+    display: Classjobprefix
+    type: string
+    required: false
+    description: Field ClassJobPrefix from WipJobClass
+  class_job_suffix:
+    display: Classjobsuffix
+    type: decimal
+    required: false
+    description: Field ClassJobSuffix from WipJobClass
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from WipJobClass
+  wip_ins_gl_code:
+    display: Wipinsglcode
+    type: string
+    required: false
+    description: Field WipInsGlCode from WipJobClass
+  wip_auto_gl_code:
+    display: Wipautoglcode
+    type: string
+    required: false
+    description: Field WipAutoGlCode from WipJobClass
+  wip_var_gl_code:
+    display: Wipvarglcode
+    type: string
+    required: false
+    description: Field WipVarGlCode from WipJobClass
+  wip_inspect_prefix:
+    display: Wipinspectprefix
+    type: string
+    required: false
+    description: Field WipInspectPrefix from WipJobClass
+  next_insp_reference:
+    display: Nextinspreference
+    type: decimal
+    required: false
+    description: Field NextInspReference from WipJobClass
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipJobClass

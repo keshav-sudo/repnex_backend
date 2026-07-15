@@ -1,0 +1,45 @@
+concept: sal_ec_sales
+table: SalEcSales
+alias: ses
+fields:
+  nationality: ses.Nationality
+  cust_vat_regn_num: ses.CustVatRegnNum
+  trn_year: ses.TrnYear
+  invoice_register: ses.InvoiceRegister
+  summary_line: ses.SummaryLine
+  invoice_reg_line: ses.InvoiceRegLine
+  customer: ses.Customer
+  invoice: ses.Invoice
+  tariff_code: ses.TariffCode
+  process_code: ses.ProcessCode
+  net_sales_value: ses.NetSalesValue
+  net_mass: ses.NetMass
+  supplementary_unit: ses.SupplementaryUnit
+  transport_mode: ses.TransportMode
+  delivery_terms: ses.DeliveryTerms
+  transaction_nature: ses.TransactionNature
+  trn_date: ses.TrnDate
+  detail_aggreg_prt: ses.DetailAggregPrt
+  summary_aggreg_prt: ses.SummaryAggregPrt
+  supplementary_prt: ses.SupplementaryPrt
+  trn_month: ses.TrnMonth
+  sales_order: ses.SalesOrder
+  invoice_ec: ses.InvoiceEc
+  currency: ses.Currency
+  country_of_origin: ses.CountryOfOrigin
+  suppl_unit_code: ses.SupplUnitCode
+  suppl_unit_qty: ses.SupplUnitQty
+  shipping_location: ses.ShippingLocation
+  triangulation_role: ses.TriangulationRole
+  triang_disp_state: ses.TriangDispState
+  triang_dest_state: ses.TriangDestState
+  intrastat_exempt: ses.IntrastatExempt
+  regime_code: ses.RegimeCode
+  port_dispatch: ses.PortDispatch
+  frt_misc_cost: ses.FrtMiscCost
+  intrastat_tran_type: ses.IntrastatTranType
+  supp_unit_factor: ses.SuppUnitFactor
+  supp_units_mul_div: ses.SuppUnitsMulDiv
+  sales_order_line: ses.SalesOrderLine
+  dispatch_note: ses.DispatchNote
+  dispatch_note_line: ses.DispatchNoteLine

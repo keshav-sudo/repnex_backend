@@ -1,0 +1,8 @@
+concept: ar_customer_group
+table: ArCustomerGroup
+alias: acg
+fields:
+  group_customer: acg.GroupCustomer
+  company: acg.Company
+  customer: acg.Customer
+  currency: acg.Currency

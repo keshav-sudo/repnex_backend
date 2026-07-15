@@ -1,0 +1,33 @@
+concept: sqm_nc_narration
+display_name: SqmNcNarration
+module: other
+description: Auto-generated representation of the physical table SqmNcNarration.
+synonyms:
+- sqmncnarration
+- sqm nc narration
+header_attributes:
+  conform_number:
+    display: Conformnumber
+    type: string
+    required: false
+    description: Field ConformNumber from SqmNcNarration
+  text_type:
+    display: Texttype
+    type: string
+    required: false
+    description: Field TextType from SqmNcNarration
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from SqmNcNarration
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SqmNcNarration
+  text:
+    display: Text
+    type: string
+    required: false
+    description: Field Text from SqmNcNarration

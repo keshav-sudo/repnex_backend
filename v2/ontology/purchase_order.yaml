@@ -1,0 +1,117 @@
+concept: purchase_order
+display_name: Purchase Order
+module: procurement
+description: A purchase order raised to a supplier for goods or services. Covers header
+  details, line items, receipt progress and financials.
+synonyms:
+- PO
+- supplier order
+- procurement order
+- purchase requisition order
+header_attributes:
+  purchase_order:
+    display: Purchase Order
+    type: string
+    required: false
+    description: Purchase order field
+  supplier_code:
+    display: Supplier Code
+    type: string
+    required: false
+    description: Supplier code field
+  order_status:
+    display: Order Status
+    type: string
+    required: false
+    description: Order status field
+  order_date:
+    display: Order Date
+    type: date
+    required: false
+    description: Order date field
+  due_date:
+    display: Due Date
+    type: date
+    required: false
+    description: Due date field
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Warehouse field
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Buyer field
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Currency field
+  exchange_rate:
+    display: Exchange Rate
+    type: decimal
+    required: false
+    description: Exchange rate field
+  payment_terms:
+    display: Payment Terms
+    type: string
+    required: false
+    description: Payment terms field
+  cancelled_flag:
+    display: Cancelled Flag
+    type: string
+    required: false
+    description: Cancelled flag field
+detail_attributes:
+  line_number:
+    display: Line Number
+    type: decimal
+    required: false
+    description: Line number field
+  stock_code:
+    display: Stock Code
+    type: string
+    required: false
+    description: Stock code field
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Description field
+  order_qty:
+    display: Order Qty
+    type: decimal
+    required: false
+    description: Order qty field
+  received_qty:
+    display: Received Qty
+    type: decimal
+    required: false
+    description: Received qty field
+  unit_price:
+    display: Unit Price
+    type: decimal
+    required: false
+    description: Unit price field
+  line_due_date:
+    display: Line Due Date
+    type: date
+    required: false
+    description: Line due date field
+  line_complete:
+    display: Line Complete
+    type: string
+    required: false
+    description: Line complete field
+  tax_code:
+    display: Tax Code
+    type: string
+    required: false
+    description: Tax code field
+  product_class:
+    display: Product Class
+    type: string
+    required: false
+    description: Product class field

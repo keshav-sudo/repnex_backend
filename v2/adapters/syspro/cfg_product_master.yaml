@@ -1,0 +1,51 @@
+concept: cfg_product_master
+table: CfgProductMaster
+alias: cpm
+fields:
+  product_code: cpm.ProductCode
+  product_desc: cpm.ProductDesc
+  engineer_code: cpm.EngineerCode
+  status: cpm.Status
+  avail_from_date: cpm.AvailFromDate
+  avail_to_date: cpm.AvailToDate
+  comment: cpm.Comment
+  can_use_so: cpm.CanUseSo
+  can_use_ests: cpm.CanUseEsts
+  can_use_wip: cpm.CanUseWip
+  can_use_bom: cpm.CanUseBom
+  ask_quantity: cpm.AskQuantity
+  ask_warehouse: cpm.AskWarehouse
+  alternate_stock: cpm.AlternateStock
+  alternate_wh: cpm.AlternateWh
+  consol_merch_lines: cpm.ConsolMerchLines
+  sel_cri_comments: cpm.SelCriComments
+  user_def_comments: cpm.UserDefComments
+  library_req: cpm.LibraryReq
+  parent_type: cpm.ParentType
+  generate_parent: cpm.GenerateParent
+  allow_override: cpm.AllowOverride
+  template_g_or_p: cpm.TemplateGOrP
+  def_par_prod_class: cpm.DefParProdClass
+  gen_prefix: cpm.GenPrefix
+  disc_allowed: cpm.DiscAllowed
+  prt_disc_on_del: cpm.PrtDiscOnDel
+  prt_disc_on_inv: cpm.PrtDiscOnInv
+  prt_disc_on_ack: cpm.PrtDiscOnAck
+  discount_pcls: cpm.DiscountPcls
+  labour_pcl: cpm.LabourPcl
+  def_non_stock_pcl: cpm.DefNonStockPcl
+  def_stocked_pcl: cpm.DefStockedPcl
+  def_stocked_wh: cpm.DefStockedWh
+  def_route: cpm.DefRoute
+  override_route: cpm.OverrideRoute
+  def_job_class: cpm.DefJobClass
+  def_job_pri: cpm.DefJobPri
+  wip_ctl_gl_code: cpm.WipCtlGlCode
+  seq_check_req: cpm.SeqCheckReq
+  job_confirmed: cpm.JobConfirmed
+  place_job_on_hold: cpm.PlaceJobOnHold
+  resource_parent: cpm.ResourceParent
+  probability: cpm.Probability
+  place_on_hld: cpm.PlaceOnHld
+  next_product: cpm.NextProduct
+  allow_in_process: cpm.AllowInProcess

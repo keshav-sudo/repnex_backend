@@ -1,0 +1,18 @@
+concept: sqm_aq_limit
+display_name: SqmAqLimit
+module: other
+description: Auto-generated representation of the physical table SqmAqLimit.
+synonyms:
+- sqmaqlimit
+- sqm aq limit
+header_attributes:
+  plan_type:
+    display: Plantype
+    type: string
+    required: false
+    description: Field PlanType from SqmAqLimit
+  acc_quality_limit:
+    display: Accqualitylimit
+    type: decimal
+    required: false
+    description: Field AccQualityLimit from SqmAqLimit

@@ -1,0 +1,15 @@
+concept: gen_health_fix
+table: GenHealthFix
+alias: ghf
+fields:
+  run_date_time: ghf.RunDateTime
+  currency: ghf.Currency
+  gl_code: ghf.GlCode
+  type: ghf.Type
+  hcheck_year: ghf.HcheckYear
+  hcheck_month: ghf.HcheckMonth
+  error_description: ghf.ErrorDescription
+  bal_value: ghf.BalValue
+  calc_value: ghf.CalcValue
+  diff_value: ghf.DiffValue
+  message: ghf.Message

@@ -1,0 +1,23 @@
+concept: lynq_me_ds__general_info
+display_name: Lynq ME DS GeneralInfo
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_DS_GeneralInfo.
+synonyms:
+- lynq_me_ds_generalinfo
+- lynq me ds  general info
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_DS_GeneralInfo
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from Lynq_ME_DS_GeneralInfo
+  value:
+    display: Value
+    type: string
+    required: false
+    description: Field Value from Lynq_ME_DS_GeneralInfo

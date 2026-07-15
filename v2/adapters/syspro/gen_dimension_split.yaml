@@ -1,0 +1,17 @@
+concept: gen_dimension_split
+table: GenDimensionSplit
+alias: gds
+fields:
+  company: gds.Company
+  gl_year: gds.GlYear
+  gl_period: gds.GlPeriod
+  dimension_entry: gds.DimensionEntry
+  gl_line: gds.GlLine
+  dimension_category: gds.DimensionCategory
+  dimension_template: gds.DimensionTemplate
+  dimension_code: gds.DimensionCode
+  amount: gds.Amount
+  document_date: gds.DocumentDate
+  operator: gds.Operator
+  last_changed_by: gds.LastChangedBy
+  document_upd_date: gds.DocumentUpdDate

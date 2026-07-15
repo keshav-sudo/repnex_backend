@@ -1,0 +1,17 @@
+concept: prj_cont_bill_sched
+table: PrjContBillSched
+alias: pcbs
+fields:
+  contract: pcbs.Contract
+  job: pcbs.Job
+  hier_head: pcbs.HierHead
+  section1: pcbs.Section1
+  section2: pcbs.Section2
+  section3: pcbs.Section3
+  section4: pcbs.Section4
+  schedule_line: pcbs.ScheduleLine
+  schedule_date: pcbs.ScheduleDate
+  billing_method: pcbs.BillingMethod
+  bill_percent: pcbs.BillPercent
+  bill_value: pcbs.BillValue
+  schedule_posted: pcbs.SchedulePosted

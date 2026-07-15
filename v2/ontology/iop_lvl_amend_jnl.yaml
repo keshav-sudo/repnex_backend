@@ -1,0 +1,88 @@
+concept: iop_lvl_amend_jnl
+display_name: IopLvlAmendJnl
+module: other
+description: Auto-generated representation of the physical table IopLvlAmendJnl.
+synonyms:
+- ioplvlamendjnl
+- iop lvl amend jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from IopLvlAmendJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from IopLvlAmendJnl
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopLvlAmendJnl
+  jnl_printed:
+    display: Jnlprinted
+    type: string
+    required: false
+    description: Field JnlPrinted from IopLvlAmendJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from IopLvlAmendJnl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from IopLvlAmendJnl
+  old_start_date:
+    display: Oldstartdate
+    type: date
+    required: false
+    description: Field OldStartDate from IopLvlAmendJnl
+  old_minimum_qty:
+    display: Oldminimumqty
+    type: decimal
+    required: false
+    description: Field OldMinimumQty from IopLvlAmendJnl
+  old_maximum_qty:
+    display: Oldmaximumqty
+    type: decimal
+    required: false
+    description: Field OldMaximumQty from IopLvlAmendJnl
+  old_reference:
+    display: Oldreference
+    type: string
+    required: false
+    description: Field OldReference from IopLvlAmendJnl
+  old_freeze:
+    display: Oldfreeze
+    type: string
+    required: false
+    description: Field OldFreeze from IopLvlAmendJnl
+  new_start_date:
+    display: Newstartdate
+    type: date
+    required: false
+    description: Field NewStartDate from IopLvlAmendJnl
+  new_minimum_qty:
+    display: Newminimumqty
+    type: decimal
+    required: false
+    description: Field NewMinimumQty from IopLvlAmendJnl
+  new_maximum_qty:
+    display: Newmaximumqty
+    type: decimal
+    required: false
+    description: Field NewMaximumQty from IopLvlAmendJnl
+  new_reference:
+    display: Newreference
+    type: string
+    required: false
+    description: Field NewReference from IopLvlAmendJnl
+  new_freeze:
+    display: Newfreeze
+    type: string
+    required: false
+    description: Field NewFreeze from IopLvlAmendJnl

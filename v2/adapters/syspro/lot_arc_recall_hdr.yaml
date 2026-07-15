@@ -1,0 +1,13 @@
+concept: lot_arc_recall_hdr
+table: LotArcRecallHdr
+alias: larh
+fields:
+  product_recall: larh.ProductRecall
+  description: larh.Description
+  type: larh.Type
+  start_date: larh.StartDate
+  end_date: larh.EndDate
+  start_time: larh.StartTime
+  end_time: larh.EndTime
+  complete: larh.Complete
+  operator: larh.Operator

@@ -1,0 +1,6 @@
+concept: sqm_reasons
+table: SqmReasons
+alias: sr
+fields:
+  reason_code: sr.ReasonCode
+  description: sr.Description

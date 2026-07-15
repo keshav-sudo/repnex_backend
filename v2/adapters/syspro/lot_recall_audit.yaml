@@ -1,0 +1,25 @@
+concept: lot_recall_audit
+table: LotRecallAudit
+alias: lra
+fields:
+  product_recall: lra.ProductRecall
+  audit_sequence: lra.AuditSequence
+  audit_date: lra.AuditDate
+  audit_time: lra.AuditTime
+  status: lra.Status
+  reason_code: lra.ReasonCode
+  on_hold_reason: lra.OnHoldReason
+  scrap_reason_code: lra.ScrapReasonCode
+  release_reason: lra.ReleaseReason
+  operator: lra.Operator
+  stock_code: lra.StockCode
+  warehouse: lra.Warehouse
+  bin: lra.Bin
+  lot: lra.Lot
+  serial: lra.Serial
+  journal: lra.Journal
+  journal_line: lra.JournalLine
+  jnl_year: lra.JnlYear
+  jnl_month: lra.JnlMonth
+  version: lra.Version
+  release: lra.Release

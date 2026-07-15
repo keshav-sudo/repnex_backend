@@ -1,0 +1,23 @@
+concept: crm_activity_type
+display_name: CrmActivityType
+module: crm
+description: Auto-generated representation of the physical table CrmActivityType.
+synonyms:
+- crmactivitytype
+- crm activity type
+header_attributes:
+  activity_type:
+    display: Activitytype
+    type: string
+    required: false
+    description: Field ActivityType from CrmActivityType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmActivityType
+  activity_usage:
+    display: Activityusage
+    type: string
+    required: false
+    description: Field ActivityUsage from CrmActivityType

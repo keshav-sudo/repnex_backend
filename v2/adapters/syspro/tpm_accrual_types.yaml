@@ -1,0 +1,6 @@
+concept: tpm_accrual_types
+table: TpmAccrualTypes
+alias: tat2
+fields:
+  accrual_type: tat2.AccrualType
+  description: tat2.Description

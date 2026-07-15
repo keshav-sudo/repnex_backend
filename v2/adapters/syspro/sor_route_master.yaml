@@ -1,0 +1,14 @@
+concept: sor_route_master
+table: SorRouteMaster
+alias: srm
+fields:
+  route_code: srm.RouteCode
+  volume: srm.Volume
+  frequency: srm.Frequency
+  daily_frequency: srm.DailyFrequency
+  next_delivery_date: srm.NextDeliveryDate
+  next_delivery_seq: srm.NextDeliverySeq
+  route_description: srm.RouteDescription
+  mass: srm.Mass
+  limiting_factor: srm.LimitingFactor
+  transport: srm.Transport

@@ -1,0 +1,7 @@
+concept: iop_selection_list
+table: IopSelectionList
+alias: isl
+fields:
+  selection_set: isl.SelectionSet
+  list_type: isl.ListType
+  list_entry: isl.ListEntry

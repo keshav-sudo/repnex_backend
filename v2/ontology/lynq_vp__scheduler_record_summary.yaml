@@ -1,0 +1,68 @@
+concept: lynq_vp__scheduler_record_summary
+display_name: Lynq VP SchedulerRecordSummary
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_SchedulerRecordSummary.
+synonyms:
+- lynq_vp_schedulerrecordsummary
+- lynq vp  scheduler record summary
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_SchedulerRecordSummary
+  modified:
+    display: Modified
+    type: date
+    required: false
+    description: Field Modified from Lynq_VP_SchedulerRecordSummary
+  summary_date:
+    display: Summarydate
+    type: date
+    required: false
+    description: Field SummaryDate from Lynq_VP_SchedulerRecordSummary
+  ord_sched_type:
+    display: Ordschedtype
+    type: string
+    required: false
+    description: Field OrdSchedType from Lynq_VP_SchedulerRecordSummary
+  ord_number:
+    display: Ordnumber
+    type: string
+    required: false
+    description: Field OrdNumber from Lynq_VP_SchedulerRecordSummary
+  oper_number:
+    display: Opernumber
+    type: decimal
+    required: false
+    description: Field OperNumber from Lynq_VP_SchedulerRecordSummary
+  path_number:
+    display: Pathnumber
+    type: decimal
+    required: false
+    description: Field PathNumber from Lynq_VP_SchedulerRecordSummary
+  oper_sequence_number:
+    display: Opersequencenumber
+    type: decimal
+    required: false
+    description: Field OperSequenceNumber from Lynq_VP_SchedulerRecordSummary
+  wc_id:
+    display: Wcid
+    type: decimal
+    required: false
+    description: Field WcID from Lynq_VP_SchedulerRecordSummary
+  detail_type:
+    display: Detailtype
+    type: string
+    required: false
+    description: Field DetailType from Lynq_VP_SchedulerRecordSummary
+  res_hours:
+    display: Reshours
+    type: decimal
+    required: false
+    description: Field ResHours from Lynq_VP_SchedulerRecordSummary
+  finished_discretes:
+    display: Finisheddiscretes
+    type: decimal
+    required: false
+    description: Field FinishedDiscretes from Lynq_VP_SchedulerRecordSummary

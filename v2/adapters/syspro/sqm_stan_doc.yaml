@@ -1,0 +1,8 @@
+concept: sqm_stan_doc
+table: SqmStanDoc
+alias: ssd
+fields:
+  conform_standard: ssd.ConformStandard
+  stand_doc: ssd.StandDoc
+  stand_file: ssd.StandFile
+  file_contents: ssd.FileContents

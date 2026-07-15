@@ -1,0 +1,53 @@
+concept: sor_price_cat_sel
+display_name: SorPriceCatSel
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPriceCatSel.
+synonyms:
+- sorpricecatsel
+- sor price cat sel
+header_attributes:
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from SorPriceCatSel
+  customer_selection:
+    display: Customerselection
+    type: string
+    required: false
+    description: Field CustomerSelection from SorPriceCatSel
+  cust_list:
+    display: Custlist
+    type: string
+    required: false
+    description: Field CustList from SorPriceCatSel
+  branch_selection:
+    display: Branchselection
+    type: string
+    required: false
+    description: Field BranchSelection from SorPriceCatSel
+  branch_list:
+    display: Branchlist
+    type: string
+    required: false
+    description: Field BranchList from SorPriceCatSel
+  geo_selection:
+    display: Geoselection
+    type: string
+    required: false
+    description: Field GeoSelection from SorPriceCatSel
+  geo_list:
+    display: Geolist
+    type: string
+    required: false
+    description: Field GeoList from SorPriceCatSel
+  cust_class_selection:
+    display: Custclassselection
+    type: string
+    required: false
+    description: Field CustClassSelection from SorPriceCatSel
+  cust_class_list:
+    display: Custclasslist
+    type: string
+    required: false
+    description: Field CustClassList from SorPriceCatSel

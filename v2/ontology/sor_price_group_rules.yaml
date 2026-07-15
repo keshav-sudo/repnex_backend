@@ -1,0 +1,68 @@
+concept: sor_price_group_rules
+display_name: SorPriceGroupRules
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPriceGroupRules.
+synonyms:
+- sorpricegrouprules
+- sor price group rules
+header_attributes:
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from SorPriceGroupRules
+  price_group_rule:
+    display: Pricegrouprule
+    type: decimal
+    required: false
+    description: Field PriceGroupRule from SorPriceGroupRules
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SorPriceGroupRules
+  configuration:
+    display: Configuration
+    type: string
+    required: false
+    description: Field Configuration from SorPriceGroupRules
+  date_basis:
+    display: Datebasis
+    type: string
+    required: false
+    description: Field DateBasis from SorPriceGroupRules
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from SorPriceGroupRules
+  priority:
+    display: Priority
+    type: decimal
+    required: false
+    description: Field Priority from SorPriceGroupRules
+  inv_discount_code:
+    display: Invdiscountcode
+    type: string
+    required: false
+    description: Field InvDiscountCode from SorPriceGroupRules
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from SorPriceGroupRules
+  closing_date:
+    display: Closingdate
+    type: date
+    required: false
+    description: Field ClosingDate from SorPriceGroupRules
+  price_basis:
+    display: Pricebasis
+    type: string
+    required: false
+    description: Field PriceBasis from SorPriceGroupRules
+  price_indicator:
+    display: Priceindicator
+    type: string
+    required: false
+    description: Field PriceIndicator from SorPriceGroupRules

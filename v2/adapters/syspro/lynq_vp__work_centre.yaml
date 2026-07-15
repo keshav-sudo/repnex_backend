@@ -1,0 +1,27 @@
+concept: lynq_vp__work_centre
+table: Lynq_VP_WorkCentre
+alias: lvpwc
+fields:
+  id: lvpwc.ID
+  line_code: lvpwc.LineCode
+  line_description: lvpwc.LineDescription
+  standard_resource_qty: lvpwc.StandardResourceQty
+  line_change_time_min: lvpwc.LineChangeTimeMin
+  tool_change_time_min: lvpwc.ToolChangeTimeMin
+  dept_code: lvpwc.DeptCode
+  week_template_id: lvpwc.WeekTemplateID
+  is_overlap_mode: lvpwc.IsOverlapMode
+  resource_id: lvpwc.ResourceID
+  float_resource_usage: lvpwc.FloatResourceUsage
+  min_resource_consumption: lvpwc.MinResourceConsumption
+  max_resource_consumption: lvpwc.MaxResourceConsumption
+  rec_load_lvl: lvpwc.RecLoadLvl
+  line_tool_change_behaviour: lvpwc.LineToolChangeBehaviour
+  min_time_res_cons: lvpwc.MinTimeResCons
+  max_time_interruption: lvpwc.MaxTimeInterruption
+  float_discrete_resource_usage: lvpwc.FloatDiscreteResourceUsage
+  float_resource_usage_type: lvpwc.FloatResourceUsageType
+  tool_code: lvpwc.ToolCode
+  tool_priority: lvpwc.ToolPriority
+  is_shared_tool: lvpwc.IsSharedTool
+  sort_sequence: lvpwc.SortSequence

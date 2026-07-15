@@ -1,0 +1,22 @@
+concept: lct_cost_ele_det
+table: LctCostEleDet
+alias: lced
+fields:
+  vessel: lced.Vessel
+  departure_date: lced.DepartureDate
+  shipment_reference: lced.ShipmentReference
+  purchase_order: lced.PurchaseOrder
+  purchase_order_lin: lced.PurchaseOrderLin
+  element_seq_num: lced.ElementSeqNum
+  element: lced.Element
+  tot_expected_cost: lced.TotExpectedCost
+  total_actual_cost: lced.TotalActualCost
+  total_grn_value: lced.TotalGrnValue
+  invoice_count: lced.InvoiceCount
+  supplier: lced.Supplier
+  total_dutiable_val: lced.TotalDutiableVal
+  custom_currency: lced.CustomCurrency
+  tariff_code_custom: lced.TariffCodeCustom
+  tariff_code_county: lced.TariffCodeCounty
+  calculation_code: lced.CalculationCode
+  fixed_cost_element: lced.FixedCostElement

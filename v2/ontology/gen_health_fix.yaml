@@ -1,0 +1,63 @@
+concept: gen_health_fix
+display_name: GenHealthFix
+module: general_ledger
+description: Auto-generated representation of the physical table GenHealthFix.
+synonyms:
+- genhealthfix
+- gen health fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from GenHealthFix
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from GenHealthFix
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenHealthFix
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from GenHealthFix
+  hcheck_year:
+    display: Hcheckyear
+    type: decimal
+    required: false
+    description: Field HcheckYear from GenHealthFix
+  hcheck_month:
+    display: Hcheckmonth
+    type: decimal
+    required: false
+    description: Field HcheckMonth from GenHealthFix
+  error_description:
+    display: Errordescription
+    type: string
+    required: false
+    description: Field ErrorDescription from GenHealthFix
+  bal_value:
+    display: Balvalue
+    type: decimal
+    required: false
+    description: Field BalValue from GenHealthFix
+  calc_value:
+    display: Calcvalue
+    type: decimal
+    required: false
+    description: Field CalcValue from GenHealthFix
+  diff_value:
+    display: Diffvalue
+    type: decimal
+    required: false
+    description: Field DiffValue from GenHealthFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from GenHealthFix

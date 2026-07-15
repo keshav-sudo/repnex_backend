@@ -1,0 +1,58 @@
+concept: tpm_deduct_notes
+display_name: TpmDeductNotes
+module: other
+description: Auto-generated representation of the physical table TpmDeductNotes.
+synonyms:
+- tpmdeductnotes
+- tpm deduct notes
+header_attributes:
+  note_type:
+    display: Notetype
+    type: string
+    required: false
+    description: Field NoteType from TpmDeductNotes
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from TpmDeductNotes
+  deduct_customer:
+    display: Deductcustomer
+    type: string
+    required: false
+    description: Field DeductCustomer from TpmDeductNotes
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from TpmDeductNotes
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from TpmDeductNotes
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from TpmDeductNotes
+  text:
+    display: Text
+    type: string
+    required: false
+    description: Field Text from TpmDeductNotes
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from TpmDeductNotes
+  note_date:
+    display: Notedate
+    type: date
+    required: false
+    description: Field NoteDate from TpmDeductNotes
+  note_time:
+    display: Notetime
+    type: decimal
+    required: false
+    description: Field NoteTime from TpmDeductNotes

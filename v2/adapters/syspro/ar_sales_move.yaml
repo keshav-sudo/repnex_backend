@@ -1,0 +1,35 @@
+concept: ar_sales_move
+table: ArSalesMove
+alias: asm
+fields:
+  customer: asm.Customer
+  trn_date: asm.TrnDate
+  register: asm.Register
+  summary_line: asm.SummaryLine
+  detail_line: asm.DetailLine
+  invoice: asm.Invoice
+  stock_code: asm.StockCode
+  warehouse: asm.Warehouse
+  invoice_qty: asm.InvoiceQty
+  invoice_value: asm.InvoiceValue
+  cost_value: asm.CostValue
+  document_type: asm.DocumentType
+  branch: asm.Branch
+  salesperson: asm.Salesperson
+  bin: asm.Bin
+  order_type: asm.OrderType
+  area: asm.Area
+  product_class: asm.ProductClass
+  tax_code: asm.TaxCode
+  tax_value: asm.TaxValue
+  disc_value: asm.DiscValue
+  tax_code_fst: asm.TaxCodeFst
+  tax_value_fst: asm.TaxValueFst
+  sales_order: asm.SalesOrder
+  customer_po_number: asm.CustomerPoNumber
+  trn_year: asm.TrnYear
+  trn_month: asm.TrnMonth
+  for_invoice_value: asm.ForInvoiceValue
+  invoice_currency: asm.InvoiceCurrency
+  sales_order_line: asm.SalesOrderLine
+  stock_description: asm.StockDescription

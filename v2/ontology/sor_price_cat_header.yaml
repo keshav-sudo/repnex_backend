@@ -1,0 +1,48 @@
+concept: sor_price_cat_header
+display_name: SorPriceCatHeader
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPriceCatHeader.
+synonyms:
+- sorpricecatheader
+- sor price cat header
+header_attributes:
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from SorPriceCatHeader
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SorPriceCatHeader
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from SorPriceCatHeader
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from SorPriceCatHeader
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from SorPriceCatHeader
+  include_tpm:
+    display: Includetpm
+    type: string
+    required: false
+    description: Field IncludeTpm from SorPriceCatHeader
+  warehouse_for_cost:
+    display: Warehouseforcost
+    type: string
+    required: false
+    description: Field WarehouseForCost from SorPriceCatHeader
+  catalogue_status:
+    display: Cataloguestatus
+    type: string
+    required: false
+    description: Field CatalogueStatus from SorPriceCatHeader

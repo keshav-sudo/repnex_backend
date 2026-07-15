@@ -1,0 +1,103 @@
+concept: tpm_transaction
+display_name: TpmTransaction
+module: other
+description: Auto-generated representation of the physical table TpmTransaction.
+synonyms:
+- tpmtransaction
+- tpm transaction
+header_attributes:
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from TpmTransaction
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from TpmTransaction
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from TpmTransaction
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from TpmTransaction
+  deduction_code:
+    display: Deductioncode
+    type: string
+    required: false
+    description: Field DeductionCode from TpmTransaction
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from TpmTransaction
+  line_number:
+    display: Linenumber
+    type: decimal
+    required: false
+    description: Field LineNumber from TpmTransaction
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from TpmTransaction
+  promotion_type:
+    display: Promotiontype
+    type: string
+    required: false
+    description: Field PromotionType from TpmTransaction
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from TpmTransaction
+  amount:
+    display: Amount
+    type: decimal
+    required: false
+    description: Field Amount from TpmTransaction
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from TpmTransaction
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from TpmTransaction
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from TpmTransaction
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from TpmTransaction
+  invoice2:
+    display: Invoice2
+    type: string
+    required: false
+    description: Field Invoice2 from TpmTransaction
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from TpmTransaction
+  adjust_reference:
+    display: Adjustreference
+    type: string
+    required: false
+    description: Field AdjustReference from TpmTransaction
+  deduction_id:
+    display: Deductionid
+    type: string
+    required: false
+    description: Field DeductionId from TpmTransaction

@@ -1,0 +1,6 @@
+concept: tbl_supplier_class
+table: TblSupplierClass
+alias: tsc1
+fields:
+  class: tsc1.Class
+  description: tsc1.Description

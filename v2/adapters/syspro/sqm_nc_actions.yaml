@@ -1,0 +1,24 @@
+concept: sqm_nc_actions
+table: SqmNcActions
+alias: sna
+fields:
+  conform_number: sna.ConformNumber
+  conform_area: sna.ConformArea
+  action_number: sna.ActionNumber
+  nc_action: sna.NcAction
+  stake_holder: sna.StakeHolder
+  action_status: sna.ActionStatus
+  action_started: sna.ActionStarted
+  action_completed: sna.ActionCompleted
+  started_date: sna.StartedDate
+  due_date: sna.DueDate
+  end_date: sna.EndDate
+  link_type: sna.LinkType
+  link_key: sna.LinkKey
+  narration: sna.Narration
+  audit_status: sna.AuditStatus
+  ca_implemented: sna.CaImplemented
+  ca_effective: sna.CaEffective
+  pa_implemented: sna.PaImplemented
+  pa_effective: sna.PaEffective
+  stand_updated: sna.StandUpdated

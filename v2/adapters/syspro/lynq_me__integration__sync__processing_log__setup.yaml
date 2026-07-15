@@ -1,0 +1,7 @@
+concept: lynq_me__integration__sync__processing_log__setup
+table: Lynq_ME_Integration_Sync_ProcessingLog_Setup
+alias: lmeispls
+fields:
+  id: lmeispls.ID
+  name: lmeispls.Name
+  value: lmeispls.Value

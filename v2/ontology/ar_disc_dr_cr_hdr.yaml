@@ -1,0 +1,83 @@
+concept: ar_disc_dr_cr_hdr
+display_name: ArDiscDrCrHdr
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArDiscDrCrHdr.
+synonyms:
+- ardiscdrcrhdr
+- ar disc dr cr hdr
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArDiscDrCrHdr
+  disc_dr_cr:
+    display: Discdrcr
+    type: decimal
+    required: false
+    description: Field DiscDrCr from ArDiscDrCrHdr
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArDiscDrCrHdr
+  discount_status:
+    display: Discountstatus
+    type: decimal
+    required: false
+    description: Field DiscountStatus from ArDiscDrCrHdr
+  dr_cr_value:
+    display: Drcrvalue
+    type: decimal
+    required: false
+    description: Field DrCrValue from ArDiscDrCrHdr
+  dr_cr_tax:
+    display: Drcrtax
+    type: decimal
+    required: false
+    description: Field DrCrTax from ArDiscDrCrHdr
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from ArDiscDrCrHdr
+  post_period:
+    display: Postperiod
+    type: decimal
+    required: false
+    description: Field PostPeriod from ArDiscDrCrHdr
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArDiscDrCrHdr
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ArDiscDrCrHdr
+  pay_date:
+    display: Paydate
+    type: date
+    required: false
+    description: Field PayDate from ArDiscDrCrHdr
+  cash_journal:
+    display: Cashjournal
+    type: decimal
+    required: false
+    description: Field CashJournal from ArDiscDrCrHdr
+  jnl_entry:
+    display: Jnlentry
+    type: decimal
+    required: false
+    description: Field JnlEntry from ArDiscDrCrHdr
+  dr_cr_type:
+    display: Drcrtype
+    type: string
+    required: false
+    description: Field DrCrType from ArDiscDrCrHdr
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ArDiscDrCrHdr

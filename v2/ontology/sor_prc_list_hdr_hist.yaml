@@ -1,0 +1,88 @@
+concept: sor_prc_list_hdr_hist
+display_name: SorPrcListHdrHist
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPrcListHdrHist.
+synonyms:
+- sorprclisthdrhist
+- sor prc list hdr hist
+header_attributes:
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from SorPrcListHdrHist
+  date_changed:
+    display: Datechanged
+    type: date
+    required: false
+    description: Field DateChanged from SorPrcListHdrHist
+  time_changed:
+    display: Timechanged
+    type: decimal
+    required: false
+    description: Field TimeChanged from SorPrcListHdrHist
+  start_new_date:
+    display: Startnewdate
+    type: date
+    required: false
+    description: Field StartNewDate from SorPrcListHdrHist
+  start_old_date:
+    display: Startolddate
+    type: date
+    required: false
+    description: Field StartOldDate from SorPrcListHdrHist
+  closing_new_date:
+    display: Closingnewdate
+    type: date
+    required: false
+    description: Field ClosingNewDate from SorPrcListHdrHist
+  closing_old_date:
+    display: Closingolddate
+    type: date
+    required: false
+    description: Field ClosingOldDate from SorPrcListHdrHist
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SorPrcListHdrHist
+  price_list_status_new:
+    display: Priceliststatusnew
+    type: string
+    required: false
+    description: Field PriceListStatusNew from SorPrcListHdrHist
+  price_list_status_old:
+    display: Priceliststatusold
+    type: string
+    required: false
+    description: Field PriceListStatusOld from SorPrcListHdrHist
+  description_new:
+    display: Descriptionnew
+    type: string
+    required: false
+    description: Field DescriptionNew from SorPrcListHdrHist
+  description_old:
+    display: Descriptionold
+    type: string
+    required: false
+    description: Field DescriptionOld from SorPrcListHdrHist
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from SorPrcListHdrHist
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from SorPrcListHdrHist
+  price_method:
+    display: Pricemethod
+    type: string
+    required: false
+    description: Field PriceMethod from SorPrcListHdrHist
+  stock_selection:
+    display: Stockselection
+    type: string
+    required: false
+    description: Field StockSelection from SorPrcListHdrHist

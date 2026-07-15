@@ -1,0 +1,7 @@
+concept: ap_ar_link
+table: ApArLink
+alias: aal
+fields:
+  supplier: aal.Supplier
+  customer: aal.Customer
+  tpm_flag: aal.TpmFlag

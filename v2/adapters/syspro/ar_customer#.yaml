@@ -1,0 +1,7 @@
+concept: ar_customer#
+table: ArCustomer#
+alias: ac5
+fields:
+  customer: ac5.Customer
+  post_date_time: ac5.PostDateTime
+  outst_ord_val: ac5.OutstOrdVal

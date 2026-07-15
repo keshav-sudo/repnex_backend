@@ -1,0 +1,48 @@
+concept: lct_shipment_hdr
+display_name: LctShipmentHdr
+module: other
+description: Auto-generated representation of the physical table LctShipmentHdr.
+synonyms:
+- lctshipmenthdr
+- lct shipment hdr
+header_attributes:
+  vessel:
+    display: Vessel
+    type: string
+    required: false
+    description: Field Vessel from LctShipmentHdr
+  departure_date:
+    display: Departuredate
+    type: date
+    required: false
+    description: Field DepartureDate from LctShipmentHdr
+  vessel_name:
+    display: Vesselname
+    type: string
+    required: false
+    description: Field VesselName from LctShipmentHdr
+  est_arrival_date:
+    display: Estarrivaldate
+    type: date
+    required: false
+    description: Field EstArrivalDate from LctShipmentHdr
+  act_arrival_date:
+    display: Actarrivaldate
+    type: date
+    required: false
+    description: Field ActArrivalDate from LctShipmentHdr
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from LctShipmentHdr
+  place_of_shipment:
+    display: Placeofshipment
+    type: string
+    required: false
+    description: Field PlaceOfShipment from LctShipmentHdr
+  place_of_destination:
+    display: Placeofdestination
+    type: string
+    required: false
+    description: Field PlaceOfDestination from LctShipmentHdr

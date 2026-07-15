@@ -1,0 +1,28 @@
+concept: ar_mult_address
+table: ArMultAddress
+alias: ama
+fields:
+  customer: ama.Customer
+  addr_code: ama.AddrCode
+  ship_to_name: ama.ShipToName
+  ship_to_addr1: ama.ShipToAddr1
+  ship_to_addr2: ama.ShipToAddr2
+  ship_to_addr3: ama.ShipToAddr3
+  ship_to_addr3_loc: ama.ShipToAddr3Loc
+  ship_to_addr4: ama.ShipToAddr4
+  ship_to_addr5: ama.ShipToAddr5
+  ship_postal_code: ama.ShipPostalCode
+  ship_to_gps_lat: ama.ShipToGpsLat
+  ship_to_gps_long: ama.ShipToGpsLong
+  area: ama.Area
+  state: ama.State
+  county_zip: ama.CountyZip
+  city: ama.City
+  route_code: ama.RouteCode
+  route_distance: ama.RouteDistance
+  nationality: ama.Nationality
+  geographic_area: ama.GeographicArea
+  tax_regn_num: ama.TaxRegnNum
+  language_code: ama.LanguageCode
+  shipping_location: ama.ShippingLocation
+  delivery_terms: ama.DeliveryTerms

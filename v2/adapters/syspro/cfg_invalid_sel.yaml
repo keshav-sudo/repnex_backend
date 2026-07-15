@@ -1,0 +1,9 @@
+concept: cfg_invalid_sel
+table: CfgInvalidSel
+alias: cis
+fields:
+  product_code: cis.ProductCode
+  selection_num1: cis.SelectionNum1
+  criteria_num1: cis.CriteriaNum1
+  selection_num2: cis.SelectionNum2
+  criteria_num2: cis.CriteriaNum2

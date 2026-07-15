@@ -1,0 +1,108 @@
+concept: por_sup_stk_info
+display_name: PorSupStkInfo
+module: procurement
+description: Auto-generated representation of the physical table PorSupStkInfo.
+synonyms:
+- porsupstkinfo
+- por sup stk info
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from PorSupStkInfo
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from PorSupStkInfo
+  sup_catalogue_num:
+    display: Supcataloguenum
+    type: string
+    required: false
+    description: Field SupCatalogueNum from PorSupStkInfo
+  demo_lead_time:
+    display: Demoleadtime
+    type: decimal
+    required: false
+    description: Field DemoLeadTime from PorSupStkInfo
+  last_price_paid:
+    display: Lastpricepaid
+    type: decimal
+    required: false
+    description: Field LastPricePaid from PorSupStkInfo
+  last_receipt_date:
+    display: Lastreceiptdate
+    type: date
+    required: false
+    description: Field LastReceiptDate from PorSupStkInfo
+  last_receipt_qty:
+    display: Lastreceiptqty
+    type: decimal
+    required: false
+    description: Field LastReceiptQty from PorSupStkInfo
+  order_qty_uom:
+    display: Orderqtyuom
+    type: string
+    required: false
+    description: Field OrderQtyUom from PorSupStkInfo
+  sup_stock_desc:
+    display: Supstockdesc
+    type: string
+    required: false
+    description: Field SupStockDesc from PorSupStkInfo
+  sup_long_desc:
+    display: Suplongdesc
+    type: string
+    required: false
+    description: Field SupLongDesc from PorSupStkInfo
+  po_text1:
+    display: Potext1
+    type: string
+    required: false
+    description: Field PoText1 from PorSupStkInfo
+  po_text2:
+    display: Potext2
+    type: string
+    required: false
+    description: Field PoText2 from PorSupStkInfo
+  po_text3:
+    display: Potext3
+    type: string
+    required: false
+    description: Field PoText3 from PorSupStkInfo
+  po_text4:
+    display: Potext4
+    type: string
+    required: false
+    description: Field PoText4 from PorSupStkInfo
+  lct_merch_price:
+    display: Lctmerchprice
+    type: decimal
+    required: false
+    description: Field LctMerchPrice from PorSupStkInfo
+  default_price:
+    display: Defaultprice
+    type: decimal
+    required: false
+    description: Field DefaultPrice from PorSupStkInfo
+  stock_item_flag:
+    display: Stockitemflag
+    type: string
+    required: false
+    description: Field StockItemFlag from PorSupStkInfo
+  default_prc_uom:
+    display: Defaultprcuom
+    type: string
+    required: false
+    description: Field DefaultPrcUom from PorSupStkInfo
+  last_prc_uom:
+    display: Lastprcuom
+    type: string
+    required: false
+    description: Field LastPrcUom from PorSupStkInfo
+  alt_doc_price:
+    display: Altdocprice
+    type: decimal
+    required: false
+    description: Field AltDocPrice from PorSupStkInfo

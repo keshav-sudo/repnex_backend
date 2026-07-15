@@ -1,0 +1,218 @@
+concept: mrp_qot_offer
+display_name: MrpQotOffer
+module: mrp
+description: Auto-generated representation of the physical table MrpQotOffer.
+synonyms:
+- mrpqotoffer
+- mrp qot offer
+header_attributes:
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from MrpQotOffer
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from MrpQotOffer
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpQotOffer
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from MrpQotOffer
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from MrpQotOffer
+  m_quantity:
+    display: Mquantity
+    type: decimal
+    required: false
+    description: Field MQuantity from MrpQotOffer
+  m_ship_uom:
+    display: Mshipuom
+    type: string
+    required: false
+    description: Field MShipUom from MrpQotOffer
+  m_conv_fact:
+    display: Mconvfact
+    type: decimal
+    required: false
+    description: Field MConvFact from MrpQotOffer
+  m_mul_div:
+    display: Mmuldiv
+    type: string
+    required: false
+    description: Field MMulDiv from MrpQotOffer
+  m_route_to_use:
+    display: Mroutetouse
+    type: string
+    required: false
+    description: Field MRouteToUse from MrpQotOffer
+  m_markup_margin:
+    display: Mmarkupmargin
+    type: decimal
+    required: false
+    description: Field MMarkupMargin from MrpQotOffer
+  m_price_override:
+    display: Mpriceoverride
+    type: decimal
+    required: false
+    description: Field MPriceOverride from MrpQotOffer
+  m_price_code:
+    display: Mpricecode
+    type: string
+    required: false
+    description: Field MPriceCode from MrpQotOffer
+  m_price:
+    display: Mprice
+    type: decimal
+    required: false
+    description: Field MPrice from MrpQotOffer
+  m_price_uom:
+    display: Mpriceuom
+    type: string
+    required: false
+    description: Field MPriceUom from MrpQotOffer
+  m_price_conv_fact:
+    display: Mpriceconvfact
+    type: decimal
+    required: false
+    description: Field MPriceConvFact from MrpQotOffer
+  m_price_fact_code:
+    display: Mpricefactcode
+    type: string
+    required: false
+    description: Field MPriceFactCode from MrpQotOffer
+  m_line_disc1:
+    display: Mlinedisc1
+    type: decimal
+    required: false
+    description: Field MLineDisc1 from MrpQotOffer
+  m_line_disc2:
+    display: Mlinedisc2
+    type: decimal
+    required: false
+    description: Field MLineDisc2 from MrpQotOffer
+  m_line_disc3:
+    display: Mlinedisc3
+    type: decimal
+    required: false
+    description: Field MLineDisc3 from MrpQotOffer
+  m_discount_flag:
+    display: Mdiscountflag
+    type: string
+    required: false
+    description: Field MDiscountFlag from MrpQotOffer
+  m_discount_value:
+    display: Mdiscountvalue
+    type: decimal
+    required: false
+    description: Field MDiscountValue from MrpQotOffer
+  m_net_value:
+    display: Mnetvalue
+    type: decimal
+    required: false
+    description: Field MNetValue from MrpQotOffer
+  m_commission_code:
+    display: Mcommissioncode
+    type: string
+    required: false
+    description: Field MCommissionCode from MrpQotOffer
+  m_contract:
+    display: Mcontract
+    type: string
+    required: false
+    description: Field MContract from MrpQotOffer
+  m_buying_group:
+    display: Mbuyinggroup
+    type: string
+    required: false
+    description: Field MBuyingGroup from MrpQotOffer
+  m_contract_expiry:
+    display: Mcontractexpiry
+    type: date
+    required: false
+    description: Field MContractExpiry from MrpQotOffer
+  m_fixed_markup:
+    display: Mfixedmarkup
+    type: string
+    required: false
+    description: Field MFixedMarkup from MrpQotOffer
+  m_rollup_flag:
+    display: Mrollupflag
+    type: string
+    required: false
+    description: Field MRollupFlag from MrpQotOffer
+  m_cost:
+    display: Mcost
+    type: decimal
+    required: false
+    description: Field MCost from MrpQotOffer
+  m_lead_time:
+    display: Mleadtime
+    type: decimal
+    required: false
+    description: Field MLeadTime from MrpQotOffer
+  m_route_used:
+    display: Mrouteused
+    type: string
+    required: false
+    description: Field MRouteUsed from MrpQotOffer
+  m_qty_changes_flag:
+    display: Mqtychangesflag
+    type: string
+    required: false
+    description: Field MQtyChangesFlag from MrpQotOffer
+  m_disc_changed:
+    display: Mdiscchanged
+    type: string
+    required: false
+    description: Field MDiscChanged from MrpQotOffer
+  misc_charge_val:
+    display: Miscchargeval
+    type: decimal
+    required: false
+    description: Field MiscChargeVal from MrpQotOffer
+  misc_charge_cost:
+    display: Miscchargecost
+    type: decimal
+    required: false
+    description: Field MiscChargeCost from MrpQotOffer
+  misc_charge_qty:
+    display: Miscchargeqty
+    type: decimal
+    required: false
+    description: Field MiscChargeQty from MrpQotOffer
+  misc_unit_price:
+    display: Miscunitprice
+    type: decimal
+    required: false
+    description: Field MiscUnitPrice from MrpQotOffer
+  misc_unit_cost:
+    display: Miscunitcost
+    type: decimal
+    required: false
+    description: Field MiscUnitCost from MrpQotOffer
+  price_group_rule:
+    display: Pricegrouprule
+    type: decimal
+    required: false
+    description: Field PriceGroupRule from MrpQotOffer
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from MrpQotOffer
+  cat_line_number:
+    display: Catlinenumber
+    type: decimal
+    required: false
+    description: Field CatLineNumber from MrpQotOffer

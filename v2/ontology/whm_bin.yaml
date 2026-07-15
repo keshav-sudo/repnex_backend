@@ -1,0 +1,183 @@
+concept: whm_bin
+display_name: WhmBin
+module: other
+description: Auto-generated representation of the physical table WhmBin.
+synonyms:
+- whmbin
+- whm bin
+header_attributes:
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WhmBin
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WhmBin
+  bin_seq:
+    display: Binseq
+    type: decimal
+    required: false
+    description: Field BinSeq from WhmBin
+  wh_area:
+    display: Wharea
+    type: string
+    required: false
+    description: Field WhArea from WhmBin
+  bin_type:
+    display: Bintype
+    type: string
+    required: false
+    description: Field BinType from WhmBin
+  bin_barcode:
+    display: Binbarcode
+    type: string
+    required: false
+    description: Field BinBarcode from WhmBin
+  bin_rfid:
+    display: Binrfid
+    type: string
+    required: false
+    description: Field BinRfid from WhmBin
+  bin_on_hold:
+    display: Binonhold
+    type: string
+    required: false
+    description: Field BinOnHold from WhmBin
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from WhmBin
+  allow_mult_cont:
+    display: Allowmultcont
+    type: string
+    required: false
+    description: Field AllowMultCont from WhmBin
+  allow_mult_skus:
+    display: Allowmultskus
+    type: string
+    required: false
+    description: Field AllowMultSkus from WhmBin
+  dimensions_unit:
+    display: Dimensionsunit
+    type: string
+    required: false
+    description: Field DimensionsUnit from WhmBin
+  physical_length:
+    display: Physicallength
+    type: decimal
+    required: false
+    description: Field PhysicalLength from WhmBin
+  physical_width:
+    display: Physicalwidth
+    type: decimal
+    required: false
+    description: Field PhysicalWidth from WhmBin
+  physical_height:
+    display: Physicalheight
+    type: decimal
+    required: false
+    description: Field PhysicalHeight from WhmBin
+  physical_ground_hgt:
+    display: Physicalgroundhgt
+    type: decimal
+    required: false
+    description: Field PhysicalGroundHgt from WhmBin
+  mass_unit:
+    display: Massunit
+    type: string
+    required: false
+    description: Field MassUnit from WhmBin
+  mass_max:
+    display: Massmax
+    type: decimal
+    required: false
+    description: Field MassMax from WhmBin
+  volume_unit:
+    display: Volumeunit
+    type: string
+    required: false
+    description: Field VolumeUnit from WhmBin
+  volume_max:
+    display: Volumemax
+    type: decimal
+    required: false
+    description: Field VolumeMax from WhmBin
+  confirm_as_source:
+    display: Confirmassource
+    type: string
+    required: false
+    description: Field ConfirmAsSource from WhmBin
+  confirm_as_target:
+    display: Confirmastarget
+    type: string
+    required: false
+    description: Field ConfirmAsTarget from WhmBin
+  kanban_bin:
+    display: Kanbanbin
+    type: string
+    required: false
+    description: Field KanbanBin from WhmBin
+  wip_bin:
+    display: Wipbin
+    type: string
+    required: false
+    description: Field WipBin from WhmBin
+  pick_bin:
+    display: Pickbin
+    type: string
+    required: false
+    description: Field PickBin from WhmBin
+  put_bin:
+    display: Putbin
+    type: string
+    required: false
+    description: Field PutBin from WhmBin
+  postman_walk_number:
+    display: Postmanwalknumber
+    type: decimal
+    required: false
+    description: Field PostmanWalkNumber from WhmBin
+  z_pick_seq:
+    display: Zpickseq
+    type: decimal
+    required: false
+    description: Field ZPickSeq from WhmBin
+  velocity_pareto:
+    display: Velocitypareto
+    type: string
+    required: false
+    description: Field VelocityPareto from WhmBin
+  container_rules:
+    display: Containerrules
+    type: string
+    required: false
+    description: Field ContainerRules from WhmBin
+  dispatch_bin:
+    display: Dispatchbin
+    type: string
+    required: false
+    description: Field DispatchBin from WhmBin
+  receiving_bin:
+    display: Receivingbin
+    type: string
+    required: false
+    description: Field ReceivingBin from WhmBin
+  cycle_count_variance:
+    display: Cyclecountvariance
+    type: decimal
+    required: false
+    description: Field CycleCountVariance from WhmBin
+  in_cycle_count:
+    display: Incyclecount
+    type: string
+    required: false
+    description: Field InCycleCount from WhmBin
+  in_stock_take:
+    display: Instocktake
+    type: string
+    required: false
+    description: Field InStockTake from WhmBin

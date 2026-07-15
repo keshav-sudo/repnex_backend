@@ -1,0 +1,23 @@
+concept: lynq_vp__file_content
+display_name: Lynq VP FileContent
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_FileContent.
+synonyms:
+- lynq_vp_filecontent
+- lynq vp  file content
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_FileContent
+  file_id:
+    display: Fileid
+    type: decimal
+    required: false
+    description: Field FileID from Lynq_VP_FileContent
+  data:
+    display: Data
+    type: string
+    required: false
+    description: Field DATA from Lynq_VP_FileContent

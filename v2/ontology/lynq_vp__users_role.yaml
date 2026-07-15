@@ -1,0 +1,28 @@
+concept: lynq_vp__users_role
+display_name: Lynq VP UsersRole
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_UsersRole.
+synonyms:
+- lynq_vp_usersrole
+- lynq vp  users role
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_UsersRole
+  role_id:
+    display: Roleid
+    type: decimal
+    required: false
+    description: Field RoleID from Lynq_VP_UsersRole
+  usr_name:
+    display: Usrname
+    type: string
+    required: false
+    description: Field UsrName from Lynq_VP_UsersRole
+  lic_id:
+    display: Licid
+    type: decimal
+    required: false
+    description: Field LicID from Lynq_VP_UsersRole

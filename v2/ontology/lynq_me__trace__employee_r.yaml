@@ -1,0 +1,223 @@
+concept: lynq_me__trace__employee_r
+display_name: Lynq ME Trace Employee R
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Trace_Employee_R.
+synonyms:
+- lynq_me_trace_employee_r
+- lynq me  trace  employee r
+header_attributes:
+  r_id:
+    display: Rid
+    type: decimal
+    required: false
+    description: Field rId from Lynq_ME_Trace_Employee_R
+  r_code:
+    display: Rcode
+    type: string
+    required: false
+    description: Field rCode from Lynq_ME_Trace_Employee_R
+  r_facility_code:
+    display: Rfacilitycode
+    type: string
+    required: false
+    description: Field rFacilityCode from Lynq_ME_Trace_Employee_R
+  r_membership:
+    display: Rmembership
+    type: string
+    required: false
+    description: Field rMembership from Lynq_ME_Trace_Employee_R
+  r_master_flag:
+    display: Rmasterflag
+    type: string
+    required: false
+    description: Field rMasterFlag from Lynq_ME_Trace_Employee_R
+  r_name:
+    display: Rname
+    type: string
+    required: false
+    description: Field rName from Lynq_ME_Trace_Employee_R
+  r_name1:
+    display: Rname1
+    type: string
+    required: false
+    description: Field rName1 from Lynq_ME_Trace_Employee_R
+  r_name2:
+    display: Rname2
+    type: string
+    required: false
+    description: Field rName2 from Lynq_ME_Trace_Employee_R
+  r_name3:
+    display: Rname3
+    type: string
+    required: false
+    description: Field rName3 from Lynq_ME_Trace_Employee_R
+  r_req1:
+    display: Rreq1
+    type: string
+    required: false
+    description: Field rReq1 from Lynq_ME_Trace_Employee_R
+  r_req2:
+    display: Rreq2
+    type: string
+    required: false
+    description: Field rReq2 from Lynq_ME_Trace_Employee_R
+  r_req3:
+    display: Rreq3
+    type: string
+    required: false
+    description: Field rReq3 from Lynq_ME_Trace_Employee_R
+  r_req4:
+    display: Rreq4
+    type: string
+    required: false
+    description: Field rReq4 from Lynq_ME_Trace_Employee_R
+  r_req5:
+    display: Rreq5
+    type: string
+    required: false
+    description: Field rReq5 from Lynq_ME_Trace_Employee_R
+  r_param1:
+    display: Rparam1
+    type: string
+    required: false
+    description: Field rParam1 from Lynq_ME_Trace_Employee_R
+  r_param2:
+    display: Rparam2
+    type: string
+    required: false
+    description: Field rParam2 from Lynq_ME_Trace_Employee_R
+  r_param3:
+    display: Rparam3
+    type: string
+    required: false
+    description: Field rParam3 from Lynq_ME_Trace_Employee_R
+  r_param4:
+    display: Rparam4
+    type: string
+    required: false
+    description: Field rParam4 from Lynq_ME_Trace_Employee_R
+  r_param5:
+    display: Rparam5
+    type: string
+    required: false
+    description: Field rParam5 from Lynq_ME_Trace_Employee_R
+  r_text1:
+    display: Rtext1
+    type: string
+    required: false
+    description: Field rText1 from Lynq_ME_Trace_Employee_R
+  r_text2:
+    display: Rtext2
+    type: string
+    required: false
+    description: Field rText2 from Lynq_ME_Trace_Employee_R
+  r_text3:
+    display: Rtext3
+    type: string
+    required: false
+    description: Field rText3 from Lynq_ME_Trace_Employee_R
+  r_text4:
+    display: Rtext4
+    type: string
+    required: false
+    description: Field rText4 from Lynq_ME_Trace_Employee_R
+  r_text5:
+    display: Rtext5
+    type: string
+    required: false
+    description: Field rText5 from Lynq_ME_Trace_Employee_R
+  r_int1:
+    display: Rint1
+    type: decimal
+    required: false
+    description: Field rInt1 from Lynq_ME_Trace_Employee_R
+  r_int2:
+    display: Rint2
+    type: decimal
+    required: false
+    description: Field rInt2 from Lynq_ME_Trace_Employee_R
+  r_int3:
+    display: Rint3
+    type: decimal
+    required: false
+    description: Field rInt3 from Lynq_ME_Trace_Employee_R
+  r_int4:
+    display: Rint4
+    type: decimal
+    required: false
+    description: Field rInt4 from Lynq_ME_Trace_Employee_R
+  r_int5:
+    display: Rint5
+    type: decimal
+    required: false
+    description: Field rInt5 from Lynq_ME_Trace_Employee_R
+  r_decimal1:
+    display: Rdecimal1
+    type: decimal
+    required: false
+    description: Field rDecimal1 from Lynq_ME_Trace_Employee_R
+  r_decimal2:
+    display: Rdecimal2
+    type: decimal
+    required: false
+    description: Field rDecimal2 from Lynq_ME_Trace_Employee_R
+  r_decimal3:
+    display: Rdecimal3
+    type: decimal
+    required: false
+    description: Field rDecimal3 from Lynq_ME_Trace_Employee_R
+  r_decimal4:
+    display: Rdecimal4
+    type: decimal
+    required: false
+    description: Field rDecimal4 from Lynq_ME_Trace_Employee_R
+  r_decimal5:
+    display: Rdecimal5
+    type: decimal
+    required: false
+    description: Field rDecimal5 from Lynq_ME_Trace_Employee_R
+  r_date1:
+    display: Rdate1
+    type: date
+    required: false
+    description: Field rDate1 from Lynq_ME_Trace_Employee_R
+  r_date2:
+    display: Rdate2
+    type: date
+    required: false
+    description: Field rDate2 from Lynq_ME_Trace_Employee_R
+  r_date3:
+    display: Rdate3
+    type: date
+    required: false
+    description: Field rDate3 from Lynq_ME_Trace_Employee_R
+  r_date4:
+    display: Rdate4
+    type: date
+    required: false
+    description: Field rDate4 from Lynq_ME_Trace_Employee_R
+  r_date5:
+    display: Rdate5
+    type: date
+    required: false
+    description: Field rDate5 from Lynq_ME_Trace_Employee_R
+  r_manager:
+    display: Rmanager
+    type: string
+    required: false
+    description: Field rManager from Lynq_ME_Trace_Employee_R
+  r_trace_date:
+    display: Rtracedate
+    type: date
+    required: false
+    description: Field rTraceDate from Lynq_ME_Trace_Employee_R
+  r_erp_specific:
+    display: Rerpspecific
+    type: string
+    required: false
+    description: Field rErpSpecific from Lynq_ME_Trace_Employee_R
+  r_erp_reporter_code:
+    display: Rerpreportercode
+    type: string
+    required: false
+    description: Field rErpReporterCode from Lynq_ME_Trace_Employee_R

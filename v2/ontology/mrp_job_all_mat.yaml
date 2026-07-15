@@ -1,0 +1,408 @@
+concept: mrp_job_all_mat
+display_name: MrpJobAllMat
+module: mrp
+description: Auto-generated representation of the physical table MrpJobAllMat.
+synonyms:
+- mrpjoballmat
+- mrp job all mat
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpJobAllMat
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpJobAllMat
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpJobAllMat
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from MrpJobAllMat
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from MrpJobAllMat
+  unit_qty_reqd:
+    display: Unitqtyreqd
+    type: decimal
+    required: false
+    description: Field UnitQtyReqd from MrpJobAllMat
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from MrpJobAllMat
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from MrpJobAllMat
+  op_offset_flag:
+    display: Opoffsetflag
+    type: string
+    required: false
+    description: Field OpOffsetFlag from MrpJobAllMat
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from MrpJobAllMat
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from MrpJobAllMat
+  qty_issued:
+    display: Qtyissued
+    type: decimal
+    required: false
+    description: Field QtyIssued from MrpJobAllMat
+  value_issued:
+    display: Valueissued
+    type: decimal
+    required: false
+    description: Field ValueIssued from MrpJobAllMat
+  qty_billed:
+    display: Qtybilled
+    type: decimal
+    required: false
+    description: Field QtyBilled from MrpJobAllMat
+  value_billed:
+    display: Valuebilled
+    type: decimal
+    required: false
+    description: Field ValueBilled from MrpJobAllMat
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from MrpJobAllMat
+  alloc_completed:
+    display: Alloccompleted
+    type: string
+    required: false
+    description: Field AllocCompleted from MrpJobAllMat
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from MrpJobAllMat
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from MrpJobAllMat
+  phantom_parent:
+    display: Phantomparent
+    type: string
+    required: false
+    description: Field PhantomParent from MrpJobAllMat
+  non_conform_flag:
+    display: Nonconformflag
+    type: string
+    required: false
+    description: Field NonConformFlag from MrpJobAllMat
+  apply_cost_uom:
+    display: Applycostuom
+    type: string
+    required: false
+    description: Field ApplyCostUom from MrpJobAllMat
+  cost_uom:
+    display: Costuom
+    type: string
+    required: false
+    description: Field CostUom from MrpJobAllMat
+  bulk_issue_item:
+    display: Bulkissueitem
+    type: string
+    required: false
+    description: Field BulkIssueItem from MrpJobAllMat
+  scrap_percentage:
+    display: Scrappercentage
+    type: decimal
+    required: false
+    description: Field ScrapPercentage from MrpJobAllMat
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from MrpJobAllMat
+  incl_scrap_on_doc:
+    display: Inclscrapondoc
+    type: string
+    required: false
+    description: Field InclScrapOnDoc from MrpJobAllMat
+  dock_to_stock:
+    display: Docktostock
+    type: decimal
+    required: false
+    description: Field DockToStock from MrpJobAllMat
+  hierarchy_job1:
+    display: Hierarchyjob1
+    type: string
+    required: false
+    description: Field HierarchyJob1 from MrpJobAllMat
+  hierarchy_job2:
+    display: Hierarchyjob2
+    type: string
+    required: false
+    description: Field HierarchyJob2 from MrpJobAllMat
+  hierarchy_job3:
+    display: Hierarchyjob3
+    type: string
+    required: false
+    description: Field HierarchyJob3 from MrpJobAllMat
+  hierarchy_job4:
+    display: Hierarchyjob4
+    type: string
+    required: false
+    description: Field HierarchyJob4 from MrpJobAllMat
+  hierarchy_job5:
+    display: Hierarchyjob5
+    type: string
+    required: false
+    description: Field HierarchyJob5 from MrpJobAllMat
+  kit_issue_item:
+    display: Kitissueitem
+    type: string
+    required: false
+    description: Field KitIssueItem from MrpJobAllMat
+  completed_job_flag:
+    display: Completedjobflag
+    type: string
+    required: false
+    description: Field CompletedJobFlag from MrpJobAllMat
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpJobAllMat
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpJobAllMat
+  ecc_consumption:
+    display: Eccconsumption
+    type: string
+    required: false
+    description: Field EccConsumption from MrpJobAllMat
+  sub_job:
+    display: Subjob
+    type: string
+    required: false
+    description: Field SubJob from MrpJobAllMat
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from MrpJobAllMat
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from MrpJobAllMat
+  net_unit_qty_reqd:
+    display: Netunitqtyreqd
+    type: decimal
+    required: false
+    description: Field NetUnitQtyReqd from MrpJobAllMat
+  reserved_lot_ser_flag:
+    display: Reservedlotserflag
+    type: string
+    required: false
+    description: Field ReservedLotSerFlag from MrpJobAllMat
+  roll_up_cost_flag:
+    display: Rollupcostflag
+    type: string
+    required: false
+    description: Field RollUpCostFlag from MrpJobAllMat
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from MrpJobAllMat
+  reserved_lot_qty:
+    display: Reservedlotqty
+    type: decimal
+    required: false
+    description: Field ReservedLotQty from MrpJobAllMat
+  reserved_ser_qty:
+    display: Reservedserqty
+    type: decimal
+    required: false
+    description: Field ReservedSerQty from MrpJobAllMat
+  conv_fact_uom:
+    display: Convfactuom
+    type: decimal
+    required: false
+    description: Field ConvFactUom from MrpJobAllMat
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from MrpJobAllMat
+  unit_qty_reqd_ent:
+    display: Unitqtyreqdent
+    type: decimal
+    required: false
+    description: Field UnitQtyReqdEnt from MrpJobAllMat
+  qty_issued_ent:
+    display: Qtyissuedent
+    type: decimal
+    required: false
+    description: Field QtyIssuedEnt from MrpJobAllMat
+  qty_billed_ent:
+    display: Qtybilledent
+    type: decimal
+    required: false
+    description: Field QtyBilledEnt from MrpJobAllMat
+  scrap_quantity_ent:
+    display: Scrapquantityent
+    type: decimal
+    required: false
+    description: Field ScrapQuantityEnt from MrpJobAllMat
+  net_unit_qty_reqd_ent:
+    display: Netunitqtyreqdent
+    type: decimal
+    required: false
+    description: Field NetUnitQtyReqdEnt from MrpJobAllMat
+  fixed_qty_per_ent:
+    display: Fixedqtyperent
+    type: decimal
+    required: false
+    description: Field FixedQtyPerEnt from MrpJobAllMat
+  ref_designator:
+    display: Refdesignator
+    type: string
+    required: false
+    description: Field RefDesignator from MrpJobAllMat
+  assembly_place:
+    display: Assemblyplace
+    type: string
+    required: false
+    description: Field AssemblyPlace from MrpJobAllMat
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from MrpJobAllMat
+  component_type:
+    display: Componenttype
+    type: string
+    required: false
+    description: Field ComponentType from MrpJobAllMat
+  qty_tot_required:
+    display: Qtytotrequired
+    type: decimal
+    required: false
+    description: Field QtyTotRequired from MrpJobAllMat
+  qty_tot_required_ent:
+    display: Qtytotrequiredent
+    type: decimal
+    required: false
+    description: Field QtyTotRequiredEnt from MrpJobAllMat
+  qty_outstanding:
+    display: Qtyoutstanding
+    type: decimal
+    required: false
+    description: Field QtyOutstanding from MrpJobAllMat
+  qty_outstanding_ent:
+    display: Qtyoutstandingent
+    type: decimal
+    required: false
+    description: Field QtyOutstandingEnt from MrpJobAllMat
+  qty_to_issue:
+    display: Qtytoissue
+    type: decimal
+    required: false
+    description: Field QtyToIssue from MrpJobAllMat
+  qty_to_issue_ent:
+    display: Qtytoissueent
+    type: decimal
+    required: false
+    description: Field QtyToIssueEnt from MrpJobAllMat
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from MrpJobAllMat
+  qty_reserved_ent:
+    display: Qtyreservedent
+    type: decimal
+    required: false
+    description: Field QtyReservedEnt from MrpJobAllMat
+  line_status:
+    display: Linestatus
+    type: string
+    required: false
+    description: Field LineStatus from MrpJobAllMat
+  sales_order_init_line:
+    display: Salesorderinitline
+    type: decimal
+    required: false
+    description: Field SalesOrderInitLine from MrpJobAllMat
+  created_by:
+    display: Createdby
+    type: string
+    required: false
+    description: Field CreatedBy from MrpJobAllMat
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from MrpJobAllMat
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from MrpJobAllMat
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from MrpJobAllMat
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from MrpJobAllMat
+  ovr_ecc_spec_iss:
+    display: Ovreccspeciss
+    type: string
+    required: false
+    description: Field OvrEccSpecIss from MrpJobAllMat
+  job_nest:
+    display: Jobnest
+    type: string
+    required: false
+    description: Field JobNest from MrpJobAllMat
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from MrpJobAllMat
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from MrpJobAllMat
+  pick_quantity:
+    display: Pickquantity
+    type: decimal
+    required: false
+    description: Field PickQuantity from MrpJobAllMat
+  reserved_bin_qty:
+    display: Reservedbinqty
+    type: decimal
+    required: false
+    description: Field ReservedBinQty from MrpJobAllMat

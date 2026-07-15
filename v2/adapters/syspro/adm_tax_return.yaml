@@ -1,0 +1,40 @@
+concept: adm_tax_return
+table: AdmTaxReturn
+alias: atr
+fields:
+  company: atr.Company
+  source: atr.Source
+  jnl_year: atr.JnlYear
+  jnl_month: atr.JnlMonth
+  journal: atr.Journal
+  entry: atr.Entry
+  tax_code: atr.TaxCode
+  input_out_put: atr.InputOutPut
+  vendor: atr.Vendor
+  status: atr.Status
+  invoice: atr.Invoice
+  reference: atr.Reference
+  invoice_date: atr.InvoiceDate
+  invoice_value: atr.InvoiceValue
+  invoice_disc: atr.InvoiceDisc
+  tax_value: atr.TaxValue
+  nationality: atr.Nationality
+  ec_acquisition: atr.EcAcquisition
+  purchase_type: atr.PurchaseType
+  exempt_value: atr.ExemptValue
+  tax_ret_submitted: atr.TaxRetSubmitted
+  submitted_date: atr.SubmittedDate
+  year_ret_submitted: atr.YearRetSubmitted
+  mth_ret_submitted: atr.MthRetSubmitted
+  vat_period: atr.VatPeriod
+  vat_year: atr.VatYear
+  transaction_code: atr.TransactionCode
+  dtt_status: atr.DttStatus
+  dtt_submitted: atr.DttSubmitted
+  dtt_submitted_date: atr.DttSubmittedDate
+  dtt_year_submitted: atr.DttYearSubmitted
+  dtt_mth_submitted: atr.DttMthSubmitted
+  rev_charge_flag: atr.RevChargeFlag
+  rev_charge_tax_rate: atr.RevChargeTaxRate
+  rev_charge_tax_value: atr.RevChargeTaxValue
+  tax_based_inv: atr.TaxBasedInv

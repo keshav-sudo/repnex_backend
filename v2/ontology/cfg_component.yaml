@@ -1,0 +1,478 @@
+concept: cfg_component
+display_name: CfgComponent
+module: other
+description: Auto-generated representation of the physical table CfgComponent.
+synonyms:
+- cfgcomponent
+- cfg component
+header_attributes:
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from CfgComponent
+  option_num:
+    display: Optionnum
+    type: decimal
+    required: false
+    description: Field OptionNum from CfgComponent
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from CfgComponent
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from CfgComponent
+  m_stock_code:
+    display: Mstockcode
+    type: string
+    required: false
+    description: Field MStockCode from CfgComponent
+  m_description:
+    display: Mdescription
+    type: string
+    required: false
+    description: Field MDescription from CfgComponent
+  m_prt_order_flag:
+    display: Mprtorderflag
+    type: string
+    required: false
+    description: Field MPrtOrderFlag from CfgComponent
+  m_summary_code:
+    display: Msummarycode
+    type: string
+    required: false
+    description: Field MSummaryCode from CfgComponent
+  m_min_quantity:
+    display: Mminquantity
+    type: decimal
+    required: false
+    description: Field MMinQuantity from CfgComponent
+  m_max_quantity:
+    display: Mmaxquantity
+    type: decimal
+    required: false
+    description: Field MMaxQuantity from CfgComponent
+  m_component_qty:
+    display: Mcomponentqty
+    type: decimal
+    required: false
+    description: Field MComponentQty from CfgComponent
+  m_material_type:
+    display: Mmaterialtype
+    type: string
+    required: false
+    description: Field MMaterialType from CfgComponent
+  m_decimals:
+    display: Mdecimals
+    type: decimal
+    required: false
+    description: Field MDecimals from CfgComponent
+  m_prt_line_del_not:
+    display: Mprtlinedelnot
+    type: string
+    required: false
+    description: Field MPrtLineDelNot from CfgComponent
+  m_prt_line_inv:
+    display: Mprtlineinv
+    type: string
+    required: false
+    description: Field MPrtLineInv from CfgComponent
+  m_prt_line_ack:
+    display: Mprtlineack
+    type: string
+    required: false
+    description: Field MPrtLineAck from CfgComponent
+  m_non_stk_flag:
+    display: Mnonstkflag
+    type: string
+    required: false
+    description: Field MNonStkFlag from CfgComponent
+  m_non_stk_uom:
+    display: Mnonstkuom
+    type: string
+    required: false
+    description: Field MNonStkUom from CfgComponent
+  m_non_stk_unit_cst:
+    display: Mnonstkunitcst
+    type: decimal
+    required: false
+    description: Field MNonStkUnitCst from CfgComponent
+  m_non_stk_unit_prc:
+    display: Mnonstkunitprc
+    type: decimal
+    required: false
+    description: Field MNonStkUnitPrc from CfgComponent
+  m_price_uom:
+    display: Mpriceuom
+    type: string
+    required: false
+    description: Field MPriceUom from CfgComponent
+  m_conv_factor:
+    display: Mconvfactor
+    type: decimal
+    required: false
+    description: Field MConvFactor from CfgComponent
+  m_mul_div:
+    display: Mmuldiv
+    type: string
+    required: false
+    description: Field MMulDiv from CfgComponent
+  m_non_stk_com_code:
+    display: Mnonstkcomcode
+    type: string
+    required: false
+    description: Field MNonStkComCode from CfgComponent
+  m_non_stk_mass:
+    display: Mnonstkmass
+    type: decimal
+    required: false
+    description: Field MNonStkMass from CfgComponent
+  m_non_stk_prod_cls:
+    display: Mnonstkprodcls
+    type: string
+    required: false
+    description: Field MNonStkProdCls from CfgComponent
+  m_non_stk_tax_code:
+    display: Mnonstktaxcode
+    type: string
+    required: false
+    description: Field MNonStkTaxCode from CfgComponent
+  m_non_stk_fst_code:
+    display: Mnonstkfstcode
+    type: string
+    required: false
+    description: Field MNonStkFstCode from CfgComponent
+  m_scrap_percentage:
+    display: Mscrappercentage
+    type: decimal
+    required: false
+    description: Field MScrapPercentage from CfgComponent
+  m_scrap_quantity:
+    display: Mscrapquantity
+    type: decimal
+    required: false
+    description: Field MScrapQuantity from CfgComponent
+  m_structure_narr:
+    display: Mstructurenarr
+    type: decimal
+    required: false
+    description: Field MStructureNarr from CfgComponent
+  m_opt_comp_order:
+    display: Moptcomporder
+    type: string
+    required: false
+    description: Field MOptCompOrder from CfgComponent
+  m_inc_kit_issues:
+    display: Minckitissues
+    type: string
+    required: false
+    description: Field MIncKitIssues from CfgComponent
+  m_issue_scrap_auto:
+    display: Missuescrapauto
+    type: string
+    required: false
+    description: Field MIssueScrapAuto from CfgComponent
+  m_structure_on_date:
+    display: Mstructureondate
+    type: date
+    required: false
+    description: Field MStructureOnDate from CfgComponent
+  m_structure_off_dt:
+    display: Mstructureoffdt
+    type: date
+    required: false
+    description: Field MStructureOffDt from CfgComponent
+  m_calculated_flag:
+    display: Mcalculatedflag
+    type: string
+    required: false
+    description: Field MCalculatedFlag from CfgComponent
+  m_est_markup_pct:
+    display: Mestmarkuppct
+    type: decimal
+    required: false
+    description: Field MEstMarkupPct from CfgComponent
+  l_op_description:
+    display: Lopdescription
+    type: string
+    required: false
+    description: Field LOpDescription from CfgComponent
+  l_multiplier:
+    display: Lmultiplier
+    type: decimal
+    required: false
+    description: Field LMultiplier from CfgComponent
+  l_prt_op_order:
+    display: Lprtoporder
+    type: string
+    required: false
+    description: Field LPrtOpOrder from CfgComponent
+  l_lab_summary_code:
+    display: Llabsummarycode
+    type: string
+    required: false
+    description: Field LLabSummaryCode from CfgComponent
+  l_work_centre:
+    display: Lworkcentre
+    type: string
+    required: false
+    description: Field LWorkCentre from CfgComponent
+  l_work_ctr_rate_in:
+    display: Lworkctrratein
+    type: decimal
+    required: false
+    description: Field LWorkCtrRateIn from CfgComponent
+  l_sub_cont_op_flag:
+    display: Lsubcontopflag
+    type: string
+    required: false
+    description: Field LSubContOpFlag from CfgComponent
+  l_milestone:
+    display: Lmilestone
+    type: string
+    required: false
+    description: Field LMilestone from CfgComponent
+  l_elapsed_time:
+    display: Lelapsedtime
+    type: decimal
+    required: false
+    description: Field LElapsedTime from CfgComponent
+  l_time_between_ops:
+    display: Ltimebetweenops
+    type: decimal
+    required: false
+    description: Field LTimeBetweenOps from CfgComponent
+  l_narration_code:
+    display: Lnarrationcode
+    type: string
+    required: false
+    description: Field LNarrationCode from CfgComponent
+  l_auto_nar_code:
+    display: Lautonarcode
+    type: decimal
+    required: false
+    description: Field LAutoNarCode from CfgComponent
+  l_num_pieces_op:
+    display: Lnumpiecesop
+    type: decimal
+    required: false
+    description: Field LNumPiecesOp from CfgComponent
+  l_inspection_flag:
+    display: Linspectionflag
+    type: string
+    required: false
+    description: Field LInspectionFlag from CfgComponent
+  l_tool_set:
+    display: Ltoolset
+    type: string
+    required: false
+    description: Field LToolSet from CfgComponent
+  l_tool_set_qty:
+    display: Ltoolsetqty
+    type: decimal
+    required: false
+    description: Field LToolSetQty from CfgComponent
+  l_tool_consumption:
+    display: Ltoolconsumption
+    type: decimal
+    required: false
+    description: Field LToolConsumption from CfgComponent
+  l_minor_setup:
+    display: Lminorsetup
+    type: decimal
+    required: false
+    description: Field LMinorSetup from CfgComponent
+  l_minor_setup_code:
+    display: Lminorsetupcode
+    type: string
+    required: false
+    description: Field LMinorSetupCode from CfgComponent
+  l_run_op_type:
+    display: Lrunoptype
+    type: string
+    required: false
+    description: Field LRunOpType from CfgComponent
+  l_max_run_time:
+    display: Lmaxruntime
+    type: decimal
+    required: false
+    description: Field LMaxRunTime from CfgComponent
+  l_prt_line_del_not:
+    display: Lprtlinedelnot
+    type: string
+    required: false
+    description: Field LPrtLineDelNot from CfgComponent
+  l_prt_line_inv:
+    display: Lprtlineinv
+    type: string
+    required: false
+    description: Field LPrtLineInv from CfgComponent
+  l_prt_line_ack:
+    display: Lprtlineack
+    type: string
+    required: false
+    description: Field LPrtLineAck from CfgComponent
+  l_markup_percent:
+    display: Lmarkuppercent
+    type: decimal
+    required: false
+    description: Field LMarkupPercent from CfgComponent
+  l_calculated_flag:
+    display: Lcalculatedflag
+    type: string
+    required: false
+    description: Field LCalculatedFlag from CfgComponent
+  li_setup_time:
+    display: Lisetuptime
+    type: decimal
+    required: false
+    description: Field LiSetupTime from CfgComponent
+  li_run_time:
+    display: Liruntime
+    type: decimal
+    required: false
+    description: Field LiRunTime from CfgComponent
+  li_startup_time:
+    display: Listartuptime
+    type: decimal
+    required: false
+    description: Field LiStartupTime from CfgComponent
+  li_teardown_time:
+    display: Liteardowntime
+    type: decimal
+    required: false
+    description: Field LiTeardownTime from CfgComponent
+  li_wait_time:
+    display: Liwaittime
+    type: decimal
+    required: false
+    description: Field LiWaitTime from CfgComponent
+  li_startup_qty:
+    display: Listartupqty
+    type: decimal
+    required: false
+    description: Field LiStartupQty from CfgComponent
+  li_machine:
+    display: Limachine
+    type: string
+    required: false
+    description: Field LiMachine from CfgComponent
+  li_unit_capacity:
+    display: Liunitcapacity
+    type: decimal
+    required: false
+    description: Field LiUnitCapacity from CfgComponent
+  li_num_operators:
+    display: Linumoperators
+    type: decimal
+    required: false
+    description: Field LiNumOperators from CfgComponent
+  li_num_prod_units:
+    display: Linumprodunits
+    type: decimal
+    required: false
+    description: Field LiNumProdUnits from CfgComponent
+  li_time_taken:
+    display: Litimetaken
+    type: decimal
+    required: false
+    description: Field LiTimeTaken from CfgComponent
+  li_rate_blk_qty:
+    display: Lirateblkqty
+    type: decimal
+    required: false
+    description: Field LiRateBlkQty from CfgComponent
+  sub_supplier:
+    display: Subsupplier
+    type: string
+    required: false
+    description: Field SubSupplier from CfgComponent
+  sub_po_stock_code:
+    display: Subpostockcode
+    type: string
+    required: false
+    description: Field SubPoStockCode from CfgComponent
+  sub_qty_per:
+    display: Subqtyper
+    type: decimal
+    required: false
+    description: Field SubQtyPer from CfgComponent
+  sub_order_uom:
+    display: Suborderuom
+    type: string
+    required: false
+    description: Field SubOrderUom from CfgComponent
+  sub_op_unit_value:
+    display: Subopunitvalue
+    type: decimal
+    required: false
+    description: Field SubOpUnitValue from CfgComponent
+  sub_what_if_value:
+    display: Subwhatifvalue
+    type: decimal
+    required: false
+    description: Field SubWhatIfValue from CfgComponent
+  sub_planner:
+    display: Subplanner
+    type: string
+    required: false
+    description: Field SubPlanner from CfgComponent
+  sub_buyer:
+    display: Subbuyer
+    type: string
+    required: false
+    description: Field SubBuyer from CfgComponent
+  sub_lead_time:
+    display: Subleadtime
+    type: decimal
+    required: false
+    description: Field SubLeadTime from CfgComponent
+  sub_dock_to_stock:
+    display: Subdocktostock
+    type: decimal
+    required: false
+    description: Field SubDockToStock from CfgComponent
+  sub_offsite_days:
+    display: Suboffsitedays
+    type: decimal
+    required: false
+    description: Field SubOffsiteDays from CfgComponent
+  exclude_from_price:
+    display: Excludefromprice
+    type: string
+    required: false
+    description: Field ExcludeFromPrice from CfgComponent
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from CfgComponent
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from CfgComponent
+  create_sub_job:
+    display: Createsubjob
+    type: string
+    required: false
+    description: Field CreateSubJob from CfgComponent
+  roll_up_cost_flag:
+    display: Rollupcostflag
+    type: string
+    required: false
+    description: Field RollUpCostFlag from CfgComponent
+  ignore_floor_flag:
+    display: Ignorefloorflag
+    type: string
+    required: false
+    description: Field IgnoreFloorFlag from CfgComponent
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from CfgComponent

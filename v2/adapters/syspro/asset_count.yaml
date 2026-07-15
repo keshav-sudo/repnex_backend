@@ -1,0 +1,16 @@
+concept: asset_count
+table: AssetCount
+alias: ac9
+fields:
+  branch: ac9.Branch
+  location: ac9.Location
+  asset: ac9.Asset
+  asset_id: ac9.AssetId
+  saved_qty: ac9.SavedQty
+  saved_branch: ac9.SavedBranch
+  saved_location: ac9.SavedLocation
+  saved_asset_id: ac9.SavedAssetId
+  qty_captured: ac9.QtyCaptured
+  qty_verified: ac9.QtyVerified
+  saved_date: ac9.SavedDate
+  conclusion: ac9.Conclusion

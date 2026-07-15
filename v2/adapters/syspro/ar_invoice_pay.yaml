@@ -1,0 +1,44 @@
+concept: ar_invoice_pay
+table: ArInvoicePay
+alias: aip1
+fields:
+  customer: aip1.Customer
+  invoice: aip1.Invoice
+  document_type: aip1.DocumentType
+  entry_number: aip1.EntryNumber
+  trn_type: aip1.TrnType
+  journal_date: aip1.JournalDate
+  journal: aip1.Journal
+  reference: aip1.Reference
+  trn_value: aip1.TrnValue
+  disc_value: aip1.DiscValue
+  trn_year: aip1.TrnYear
+  trn_month: aip1.TrnMonth
+  sales_order: aip1.SalesOrder
+  post_value: aip1.PostValue
+  post_currency: aip1.PostCurrency
+  post_conv_rate: aip1.PostConvRate
+  post_mul_div: aip1.PostMulDiv
+  account_cur: aip1.AccountCur
+  account_conv_rate: aip1.AccountConvRate
+  account_mul_div: aip1.AccountMulDiv
+  triang_currency: aip1.TriangCurrency
+  triang_conv_rate: aip1.TriangConvRate
+  triang_mul_div: aip1.TriangMulDiv
+  branch: aip1.Branch
+  payment_number: aip1.PaymentNumber
+  collector: aip1.Collector
+  salesperson: aip1.Salesperson
+  invoice_notation: aip1.InvoiceNotation
+  area: aip1.Area
+  collector_number_ar: aip1.CollectorNumberAr
+  mult_cur_pay: aip1.MultCurPay
+  pay_rec_currency: aip1.PayRecCurrency
+  pay_rec_net_value: aip1.PayRecNetValue
+  pay_rec_dsc_value: aip1.PayRecDscValue
+  pay_rec_conv_rate: aip1.PayRecConvRate
+  pay_rec_mul_div: aip1.PayRecMulDiv
+  group_pay: aip1.GroupPay
+  inter_company_trx: aip1.InterCompanyTrx
+  primary_company: aip1.PrimaryCompany
+  secondary_company: aip1.SecondaryCompany

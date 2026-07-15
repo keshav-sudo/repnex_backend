@@ -1,0 +1,43 @@
+concept: wip_all_mat_lpn
+display_name: WipAllMatLpn
+module: work_in_progress
+description: Auto-generated representation of the physical table WipAllMatLpn.
+synonyms:
+- wipallmatlpn
+- wip all mat lpn
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipAllMatLpn
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipAllMatLpn
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipAllMatLpn
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from WipAllMatLpn
+  license_plate_number:
+    display: Licenseplatenumber
+    type: string
+    required: false
+    description: Field LicensePlateNumber from WipAllMatLpn
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from WipAllMatLpn
+  qty_issued:
+    display: Qtyissued
+    type: decimal
+    required: false
+    description: Field QtyIssued from WipAllMatLpn

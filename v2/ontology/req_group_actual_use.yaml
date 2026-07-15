@@ -1,0 +1,158 @@
+concept: req_group_actual_use
+display_name: ReqGroupActualUse
+module: other
+description: Auto-generated representation of the physical table ReqGroupActualUse.
+synonyms:
+- reqgroupactualuse
+- req group actual use
+header_attributes:
+  requisition_group:
+    display: Requisitiongroup
+    type: string
+    required: false
+    description: Field RequisitionGroup from ReqGroupActualUse
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from ReqGroupActualUse
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ReqGroupActualUse
+  budget_year:
+    display: Budgetyear
+    type: decimal
+    required: false
+    description: Field BudgetYear from ReqGroupActualUse
+  group_approved1:
+    display: Groupapproved1
+    type: decimal
+    required: false
+    description: Field GroupApproved1 from ReqGroupActualUse
+  group_approved2:
+    display: Groupapproved2
+    type: decimal
+    required: false
+    description: Field GroupApproved2 from ReqGroupActualUse
+  group_approved3:
+    display: Groupapproved3
+    type: decimal
+    required: false
+    description: Field GroupApproved3 from ReqGroupActualUse
+  group_approved4:
+    display: Groupapproved4
+    type: decimal
+    required: false
+    description: Field GroupApproved4 from ReqGroupActualUse
+  group_approved5:
+    display: Groupapproved5
+    type: decimal
+    required: false
+    description: Field GroupApproved5 from ReqGroupActualUse
+  group_approved6:
+    display: Groupapproved6
+    type: decimal
+    required: false
+    description: Field GroupApproved6 from ReqGroupActualUse
+  group_approved7:
+    display: Groupapproved7
+    type: decimal
+    required: false
+    description: Field GroupApproved7 from ReqGroupActualUse
+  group_approved8:
+    display: Groupapproved8
+    type: decimal
+    required: false
+    description: Field GroupApproved8 from ReqGroupActualUse
+  group_approved9:
+    display: Groupapproved9
+    type: decimal
+    required: false
+    description: Field GroupApproved9 from ReqGroupActualUse
+  group_approved10:
+    display: Groupapproved10
+    type: decimal
+    required: false
+    description: Field GroupApproved10 from ReqGroupActualUse
+  group_approved11:
+    display: Groupapproved11
+    type: decimal
+    required: false
+    description: Field GroupApproved11 from ReqGroupActualUse
+  group_approved12:
+    display: Groupapproved12
+    type: decimal
+    required: false
+    description: Field GroupApproved12 from ReqGroupActualUse
+  group_approved13:
+    display: Groupapproved13
+    type: decimal
+    required: false
+    description: Field GroupApproved13 from ReqGroupActualUse
+  group_actual1:
+    display: Groupactual1
+    type: decimal
+    required: false
+    description: Field GroupActual1 from ReqGroupActualUse
+  group_actual2:
+    display: Groupactual2
+    type: decimal
+    required: false
+    description: Field GroupActual2 from ReqGroupActualUse
+  group_actual3:
+    display: Groupactual3
+    type: decimal
+    required: false
+    description: Field GroupActual3 from ReqGroupActualUse
+  group_actual4:
+    display: Groupactual4
+    type: decimal
+    required: false
+    description: Field GroupActual4 from ReqGroupActualUse
+  group_actual5:
+    display: Groupactual5
+    type: decimal
+    required: false
+    description: Field GroupActual5 from ReqGroupActualUse
+  group_actual6:
+    display: Groupactual6
+    type: decimal
+    required: false
+    description: Field GroupActual6 from ReqGroupActualUse
+  group_actual7:
+    display: Groupactual7
+    type: decimal
+    required: false
+    description: Field GroupActual7 from ReqGroupActualUse
+  group_actual8:
+    display: Groupactual8
+    type: decimal
+    required: false
+    description: Field GroupActual8 from ReqGroupActualUse
+  group_actual9:
+    display: Groupactual9
+    type: decimal
+    required: false
+    description: Field GroupActual9 from ReqGroupActualUse
+  group_actual10:
+    display: Groupactual10
+    type: decimal
+    required: false
+    description: Field GroupActual10 from ReqGroupActualUse
+  group_actual11:
+    display: Groupactual11
+    type: decimal
+    required: false
+    description: Field GroupActual11 from ReqGroupActualUse
+  group_actual12:
+    display: Groupactual12
+    type: decimal
+    required: false
+    description: Field GroupActual12 from ReqGroupActualUse
+  group_actual13:
+    display: Groupactual13
+    type: decimal
+    required: false
+    description: Field GroupActual13 from ReqGroupActualUse

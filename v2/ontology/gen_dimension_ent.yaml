@@ -1,0 +1,78 @@
+concept: gen_dimension_ent
+display_name: GenDimensionEnt
+module: general_ledger
+description: Auto-generated representation of the physical table GenDimensionEnt.
+synonyms:
+- gendimensionent
+- gen dimension ent
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenDimensionEnt
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenDimensionEnt
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenDimensionEnt
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from GenDimensionEnt
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from GenDimensionEnt
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from GenDimensionEnt
+  source_key:
+    display: Sourcekey
+    type: string
+    required: false
+    description: Field SourceKey from GenDimensionEnt
+  num_dim_ent:
+    display: Numdiment
+    type: decimal
+    required: false
+    description: Field NumDimEnt from GenDimensionEnt
+  total_amount:
+    display: Totalamount
+    type: decimal
+    required: false
+    description: Field TotalAmount from GenDimensionEnt
+  gl_updated:
+    display: Glupdated
+    type: string
+    required: false
+    description: Field GlUpdated from GenDimensionEnt
+  sub_module_key:
+    display: Submodulekey
+    type: string
+    required: false
+    description: Field SubModuleKey from GenDimensionEnt
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from GenDimensionEnt
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from GenDimensionEnt
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from GenDimensionEnt

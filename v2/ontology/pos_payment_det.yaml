@@ -1,0 +1,88 @@
+concept: pos_payment_det
+display_name: PosPaymentDet
+module: other
+description: Auto-generated representation of the physical table PosPaymentDet.
+synonyms:
+- pospaymentdet
+- pos payment det
+header_attributes:
+  cash_drawer:
+    display: Cashdrawer
+    type: string
+    required: false
+    description: Field CashDrawer from PosPaymentDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from PosPaymentDet
+  invoice_type:
+    display: Invoicetype
+    type: string
+    required: false
+    description: Field InvoiceType from PosPaymentDet
+  pay_type:
+    display: Paytype
+    type: string
+    required: false
+    description: Field PayType from PosPaymentDet
+  pay_count:
+    display: Paycount
+    type: decimal
+    required: false
+    description: Field PayCount from PosPaymentDet
+  pay_value_f:
+    display: Payvaluef
+    type: decimal
+    required: false
+    description: Field PayValueF from PosPaymentDet
+  pay_value_l:
+    display: Payvaluel
+    type: decimal
+    required: false
+    description: Field PayValueL from PosPaymentDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from PosPaymentDet
+  jnl_notation:
+    display: Jnlnotation
+    type: string
+    required: false
+    description: Field JnlNotation from PosPaymentDet
+  credit_card:
+    display: Creditcard
+    type: string
+    required: false
+    description: Field CreditCard from PosPaymentDet
+  start_mmyy:
+    display: Startmmyy
+    type: decimal
+    required: false
+    description: Field StartMmyy from PosPaymentDet
+  expiry_mmyy:
+    display: Expirymmyy
+    type: decimal
+    required: false
+    description: Field ExpiryMmyy from PosPaymentDet
+  authorisation_num:
+    display: Authorisationnum
+    type: string
+    required: false
+    description: Field AuthorisationNum from PosPaymentDet
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from PosPaymentDet
+  deposit_flag:
+    display: Depositflag
+    type: string
+    required: false
+    description: Field DepositFlag from PosPaymentDet
+  cash_in_out_flag:
+    display: Cashinoutflag
+    type: string
+    required: false
+    description: Field CashInOutFlag from PosPaymentDet

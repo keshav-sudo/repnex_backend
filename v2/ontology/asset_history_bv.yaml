@@ -1,0 +1,1138 @@
+concept: asset_history_bv
+display_name: AssetHistoryBv
+module: assets
+description: Auto-generated representation of the physical table AssetHistoryBv.
+synonyms:
+- assethistorybv
+- asset history bv
+header_attributes:
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetHistoryBv
+  depreciation_year:
+    display: Depreciationyear
+    type: decimal
+    required: false
+    description: Field DepreciationYear from AssetHistoryBv
+  depn_value1:
+    display: Depnvalue1
+    type: decimal
+    required: false
+    description: Field DepnValue1 from AssetHistoryBv
+  depn_value2:
+    display: Depnvalue2
+    type: decimal
+    required: false
+    description: Field DepnValue2 from AssetHistoryBv
+  depn_value3:
+    display: Depnvalue3
+    type: decimal
+    required: false
+    description: Field DepnValue3 from AssetHistoryBv
+  depn_value4:
+    display: Depnvalue4
+    type: decimal
+    required: false
+    description: Field DepnValue4 from AssetHistoryBv
+  depn_value5:
+    display: Depnvalue5
+    type: decimal
+    required: false
+    description: Field DepnValue5 from AssetHistoryBv
+  depn_value6:
+    display: Depnvalue6
+    type: decimal
+    required: false
+    description: Field DepnValue6 from AssetHistoryBv
+  depn_value7:
+    display: Depnvalue7
+    type: decimal
+    required: false
+    description: Field DepnValue7 from AssetHistoryBv
+  depn_value8:
+    display: Depnvalue8
+    type: decimal
+    required: false
+    description: Field DepnValue8 from AssetHistoryBv
+  depn_value9:
+    display: Depnvalue9
+    type: decimal
+    required: false
+    description: Field DepnValue9 from AssetHistoryBv
+  depn_value10:
+    display: Depnvalue10
+    type: decimal
+    required: false
+    description: Field DepnValue10 from AssetHistoryBv
+  depn_value11:
+    display: Depnvalue11
+    type: decimal
+    required: false
+    description: Field DepnValue11 from AssetHistoryBv
+  depn_value12:
+    display: Depnvalue12
+    type: decimal
+    required: false
+    description: Field DepnValue12 from AssetHistoryBv
+  depn_value13:
+    display: Depnvalue13
+    type: decimal
+    required: false
+    description: Field DepnValue13 from AssetHistoryBv
+  depn_reval_value1:
+    display: Depnrevalvalue1
+    type: decimal
+    required: false
+    description: Field DepnRevalValue1 from AssetHistoryBv
+  depn_reval_value2:
+    display: Depnrevalvalue2
+    type: decimal
+    required: false
+    description: Field DepnRevalValue2 from AssetHistoryBv
+  depn_reval_value3:
+    display: Depnrevalvalue3
+    type: decimal
+    required: false
+    description: Field DepnRevalValue3 from AssetHistoryBv
+  depn_reval_value4:
+    display: Depnrevalvalue4
+    type: decimal
+    required: false
+    description: Field DepnRevalValue4 from AssetHistoryBv
+  depn_reval_value5:
+    display: Depnrevalvalue5
+    type: decimal
+    required: false
+    description: Field DepnRevalValue5 from AssetHistoryBv
+  depn_reval_value6:
+    display: Depnrevalvalue6
+    type: decimal
+    required: false
+    description: Field DepnRevalValue6 from AssetHistoryBv
+  depn_reval_value7:
+    display: Depnrevalvalue7
+    type: decimal
+    required: false
+    description: Field DepnRevalValue7 from AssetHistoryBv
+  depn_reval_value8:
+    display: Depnrevalvalue8
+    type: decimal
+    required: false
+    description: Field DepnRevalValue8 from AssetHistoryBv
+  depn_reval_value9:
+    display: Depnrevalvalue9
+    type: decimal
+    required: false
+    description: Field DepnRevalValue9 from AssetHistoryBv
+  depn_reval_value10:
+    display: Depnrevalvalue10
+    type: decimal
+    required: false
+    description: Field DepnRevalValue10 from AssetHistoryBv
+  depn_reval_value11:
+    display: Depnrevalvalue11
+    type: decimal
+    required: false
+    description: Field DepnRevalValue11 from AssetHistoryBv
+  depn_reval_value12:
+    display: Depnrevalvalue12
+    type: decimal
+    required: false
+    description: Field DepnRevalValue12 from AssetHistoryBv
+  depn_reval_value13:
+    display: Depnrevalvalue13
+    type: decimal
+    required: false
+    description: Field DepnRevalValue13 from AssetHistoryBv
+  depn_additions1:
+    display: Depnadditions1
+    type: decimal
+    required: false
+    description: Field DepnAdditions1 from AssetHistoryBv
+  depn_additions2:
+    display: Depnadditions2
+    type: decimal
+    required: false
+    description: Field DepnAdditions2 from AssetHistoryBv
+  depn_additions3:
+    display: Depnadditions3
+    type: decimal
+    required: false
+    description: Field DepnAdditions3 from AssetHistoryBv
+  depn_additions4:
+    display: Depnadditions4
+    type: decimal
+    required: false
+    description: Field DepnAdditions4 from AssetHistoryBv
+  depn_additions5:
+    display: Depnadditions5
+    type: decimal
+    required: false
+    description: Field DepnAdditions5 from AssetHistoryBv
+  depn_additions6:
+    display: Depnadditions6
+    type: decimal
+    required: false
+    description: Field DepnAdditions6 from AssetHistoryBv
+  depn_additions7:
+    display: Depnadditions7
+    type: decimal
+    required: false
+    description: Field DepnAdditions7 from AssetHistoryBv
+  depn_additions8:
+    display: Depnadditions8
+    type: decimal
+    required: false
+    description: Field DepnAdditions8 from AssetHistoryBv
+  depn_additions9:
+    display: Depnadditions9
+    type: decimal
+    required: false
+    description: Field DepnAdditions9 from AssetHistoryBv
+  depn_additions10:
+    display: Depnadditions10
+    type: decimal
+    required: false
+    description: Field DepnAdditions10 from AssetHistoryBv
+  depn_additions11:
+    display: Depnadditions11
+    type: decimal
+    required: false
+    description: Field DepnAdditions11 from AssetHistoryBv
+  depn_additions12:
+    display: Depnadditions12
+    type: decimal
+    required: false
+    description: Field DepnAdditions12 from AssetHistoryBv
+  depn_additions13:
+    display: Depnadditions13
+    type: decimal
+    required: false
+    description: Field DepnAdditions13 from AssetHistoryBv
+  depn_disposals1:
+    display: Depndisposals1
+    type: decimal
+    required: false
+    description: Field DepnDisposals1 from AssetHistoryBv
+  depn_disposals2:
+    display: Depndisposals2
+    type: decimal
+    required: false
+    description: Field DepnDisposals2 from AssetHistoryBv
+  depn_disposals3:
+    display: Depndisposals3
+    type: decimal
+    required: false
+    description: Field DepnDisposals3 from AssetHistoryBv
+  depn_disposals4:
+    display: Depndisposals4
+    type: decimal
+    required: false
+    description: Field DepnDisposals4 from AssetHistoryBv
+  depn_disposals5:
+    display: Depndisposals5
+    type: decimal
+    required: false
+    description: Field DepnDisposals5 from AssetHistoryBv
+  depn_disposals6:
+    display: Depndisposals6
+    type: decimal
+    required: false
+    description: Field DepnDisposals6 from AssetHistoryBv
+  depn_disposals7:
+    display: Depndisposals7
+    type: decimal
+    required: false
+    description: Field DepnDisposals7 from AssetHistoryBv
+  depn_disposals8:
+    display: Depndisposals8
+    type: decimal
+    required: false
+    description: Field DepnDisposals8 from AssetHistoryBv
+  depn_disposals9:
+    display: Depndisposals9
+    type: decimal
+    required: false
+    description: Field DepnDisposals9 from AssetHistoryBv
+  depn_disposals10:
+    display: Depndisposals10
+    type: decimal
+    required: false
+    description: Field DepnDisposals10 from AssetHistoryBv
+  depn_disposals11:
+    display: Depndisposals11
+    type: decimal
+    required: false
+    description: Field DepnDisposals11 from AssetHistoryBv
+  depn_disposals12:
+    display: Depndisposals12
+    type: decimal
+    required: false
+    description: Field DepnDisposals12 from AssetHistoryBv
+  depn_disposals13:
+    display: Depndisposals13
+    type: decimal
+    required: false
+    description: Field DepnDisposals13 from AssetHistoryBv
+  depn_asset_count1:
+    display: Depnassetcount1
+    type: decimal
+    required: false
+    description: Field DepnAssetCount1 from AssetHistoryBv
+  depn_asset_count2:
+    display: Depnassetcount2
+    type: decimal
+    required: false
+    description: Field DepnAssetCount2 from AssetHistoryBv
+  depn_asset_count3:
+    display: Depnassetcount3
+    type: decimal
+    required: false
+    description: Field DepnAssetCount3 from AssetHistoryBv
+  depn_asset_count4:
+    display: Depnassetcount4
+    type: decimal
+    required: false
+    description: Field DepnAssetCount4 from AssetHistoryBv
+  depn_asset_count5:
+    display: Depnassetcount5
+    type: decimal
+    required: false
+    description: Field DepnAssetCount5 from AssetHistoryBv
+  depn_asset_count6:
+    display: Depnassetcount6
+    type: decimal
+    required: false
+    description: Field DepnAssetCount6 from AssetHistoryBv
+  depn_asset_count7:
+    display: Depnassetcount7
+    type: decimal
+    required: false
+    description: Field DepnAssetCount7 from AssetHistoryBv
+  depn_asset_count8:
+    display: Depnassetcount8
+    type: decimal
+    required: false
+    description: Field DepnAssetCount8 from AssetHistoryBv
+  depn_asset_count9:
+    display: Depnassetcount9
+    type: decimal
+    required: false
+    description: Field DepnAssetCount9 from AssetHistoryBv
+  depn_asset_count10:
+    display: Depnassetcount10
+    type: decimal
+    required: false
+    description: Field DepnAssetCount10 from AssetHistoryBv
+  depn_asset_count11:
+    display: Depnassetcount11
+    type: decimal
+    required: false
+    description: Field DepnAssetCount11 from AssetHistoryBv
+  depn_asset_count12:
+    display: Depnassetcount12
+    type: decimal
+    required: false
+    description: Field DepnAssetCount12 from AssetHistoryBv
+  depn_asset_count13:
+    display: Depnassetcount13
+    type: decimal
+    required: false
+    description: Field DepnAssetCount13 from AssetHistoryBv
+  depn_asset_split1:
+    display: Depnassetsplit1
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit1 from AssetHistoryBv
+  depn_asset_split2:
+    display: Depnassetsplit2
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit2 from AssetHistoryBv
+  depn_asset_split3:
+    display: Depnassetsplit3
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit3 from AssetHistoryBv
+  depn_asset_split4:
+    display: Depnassetsplit4
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit4 from AssetHistoryBv
+  depn_asset_split5:
+    display: Depnassetsplit5
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit5 from AssetHistoryBv
+  depn_asset_split6:
+    display: Depnassetsplit6
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit6 from AssetHistoryBv
+  depn_asset_split7:
+    display: Depnassetsplit7
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit7 from AssetHistoryBv
+  depn_asset_split8:
+    display: Depnassetsplit8
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit8 from AssetHistoryBv
+  depn_asset_split9:
+    display: Depnassetsplit9
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit9 from AssetHistoryBv
+  depn_asset_split10:
+    display: Depnassetsplit10
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit10 from AssetHistoryBv
+  depn_asset_split11:
+    display: Depnassetsplit11
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit11 from AssetHistoryBv
+  depn_asset_split12:
+    display: Depnassetsplit12
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit12 from AssetHistoryBv
+  depn_asset_split13:
+    display: Depnassetsplit13
+    type: decimal
+    required: false
+    description: Field DepnAssetSplit13 from AssetHistoryBv
+  reval_value1:
+    display: Revalvalue1
+    type: decimal
+    required: false
+    description: Field RevalValue1 from AssetHistoryBv
+  reval_value2:
+    display: Revalvalue2
+    type: decimal
+    required: false
+    description: Field RevalValue2 from AssetHistoryBv
+  reval_value3:
+    display: Revalvalue3
+    type: decimal
+    required: false
+    description: Field RevalValue3 from AssetHistoryBv
+  reval_value4:
+    display: Revalvalue4
+    type: decimal
+    required: false
+    description: Field RevalValue4 from AssetHistoryBv
+  reval_value5:
+    display: Revalvalue5
+    type: decimal
+    required: false
+    description: Field RevalValue5 from AssetHistoryBv
+  reval_value6:
+    display: Revalvalue6
+    type: decimal
+    required: false
+    description: Field RevalValue6 from AssetHistoryBv
+  reval_value7:
+    display: Revalvalue7
+    type: decimal
+    required: false
+    description: Field RevalValue7 from AssetHistoryBv
+  reval_value8:
+    display: Revalvalue8
+    type: decimal
+    required: false
+    description: Field RevalValue8 from AssetHistoryBv
+  reval_value9:
+    display: Revalvalue9
+    type: decimal
+    required: false
+    description: Field RevalValue9 from AssetHistoryBv
+  reval_value10:
+    display: Revalvalue10
+    type: decimal
+    required: false
+    description: Field RevalValue10 from AssetHistoryBv
+  reval_value11:
+    display: Revalvalue11
+    type: decimal
+    required: false
+    description: Field RevalValue11 from AssetHistoryBv
+  reval_value12:
+    display: Revalvalue12
+    type: decimal
+    required: false
+    description: Field RevalValue12 from AssetHistoryBv
+  reval_value13:
+    display: Revalvalue13
+    type: decimal
+    required: false
+    description: Field RevalValue13 from AssetHistoryBv
+  inter_co_in1:
+    display: Intercoin1
+    type: decimal
+    required: false
+    description: Field InterCoIn1 from AssetHistoryBv
+  inter_co_in2:
+    display: Intercoin2
+    type: decimal
+    required: false
+    description: Field InterCoIn2 from AssetHistoryBv
+  inter_co_in3:
+    display: Intercoin3
+    type: decimal
+    required: false
+    description: Field InterCoIn3 from AssetHistoryBv
+  inter_co_in4:
+    display: Intercoin4
+    type: decimal
+    required: false
+    description: Field InterCoIn4 from AssetHistoryBv
+  inter_co_in5:
+    display: Intercoin5
+    type: decimal
+    required: false
+    description: Field InterCoIn5 from AssetHistoryBv
+  inter_co_in6:
+    display: Intercoin6
+    type: decimal
+    required: false
+    description: Field InterCoIn6 from AssetHistoryBv
+  inter_co_in7:
+    display: Intercoin7
+    type: decimal
+    required: false
+    description: Field InterCoIn7 from AssetHistoryBv
+  inter_co_in8:
+    display: Intercoin8
+    type: decimal
+    required: false
+    description: Field InterCoIn8 from AssetHistoryBv
+  inter_co_in9:
+    display: Intercoin9
+    type: decimal
+    required: false
+    description: Field InterCoIn9 from AssetHistoryBv
+  inter_co_in10:
+    display: Intercoin10
+    type: decimal
+    required: false
+    description: Field InterCoIn10 from AssetHistoryBv
+  inter_co_in11:
+    display: Intercoin11
+    type: decimal
+    required: false
+    description: Field InterCoIn11 from AssetHistoryBv
+  inter_co_in12:
+    display: Intercoin12
+    type: decimal
+    required: false
+    description: Field InterCoIn12 from AssetHistoryBv
+  inter_co_in13:
+    display: Intercoin13
+    type: decimal
+    required: false
+    description: Field InterCoIn13 from AssetHistoryBv
+  inter_co_out1:
+    display: Intercoout1
+    type: decimal
+    required: false
+    description: Field InterCoOut1 from AssetHistoryBv
+  inter_co_out2:
+    display: Intercoout2
+    type: decimal
+    required: false
+    description: Field InterCoOut2 from AssetHistoryBv
+  inter_co_out3:
+    display: Intercoout3
+    type: decimal
+    required: false
+    description: Field InterCoOut3 from AssetHistoryBv
+  inter_co_out4:
+    display: Intercoout4
+    type: decimal
+    required: false
+    description: Field InterCoOut4 from AssetHistoryBv
+  inter_co_out5:
+    display: Intercoout5
+    type: decimal
+    required: false
+    description: Field InterCoOut5 from AssetHistoryBv
+  inter_co_out6:
+    display: Intercoout6
+    type: decimal
+    required: false
+    description: Field InterCoOut6 from AssetHistoryBv
+  inter_co_out7:
+    display: Intercoout7
+    type: decimal
+    required: false
+    description: Field InterCoOut7 from AssetHistoryBv
+  inter_co_out8:
+    display: Intercoout8
+    type: decimal
+    required: false
+    description: Field InterCoOut8 from AssetHistoryBv
+  inter_co_out9:
+    display: Intercoout9
+    type: decimal
+    required: false
+    description: Field InterCoOut9 from AssetHistoryBv
+  inter_co_out10:
+    display: Intercoout10
+    type: decimal
+    required: false
+    description: Field InterCoOut10 from AssetHistoryBv
+  inter_co_out11:
+    display: Intercoout11
+    type: decimal
+    required: false
+    description: Field InterCoOut11 from AssetHistoryBv
+  inter_co_out12:
+    display: Intercoout12
+    type: decimal
+    required: false
+    description: Field InterCoOut12 from AssetHistoryBv
+  inter_co_out13:
+    display: Intercoout13
+    type: decimal
+    required: false
+    description: Field InterCoOut13 from AssetHistoryBv
+  additions1:
+    display: Additions1
+    type: decimal
+    required: false
+    description: Field Additions1 from AssetHistoryBv
+  additions2:
+    display: Additions2
+    type: decimal
+    required: false
+    description: Field Additions2 from AssetHistoryBv
+  additions3:
+    display: Additions3
+    type: decimal
+    required: false
+    description: Field Additions3 from AssetHistoryBv
+  additions4:
+    display: Additions4
+    type: decimal
+    required: false
+    description: Field Additions4 from AssetHistoryBv
+  additions5:
+    display: Additions5
+    type: decimal
+    required: false
+    description: Field Additions5 from AssetHistoryBv
+  additions6:
+    display: Additions6
+    type: decimal
+    required: false
+    description: Field Additions6 from AssetHistoryBv
+  additions7:
+    display: Additions7
+    type: decimal
+    required: false
+    description: Field Additions7 from AssetHistoryBv
+  additions8:
+    display: Additions8
+    type: decimal
+    required: false
+    description: Field Additions8 from AssetHistoryBv
+  additions9:
+    display: Additions9
+    type: decimal
+    required: false
+    description: Field Additions9 from AssetHistoryBv
+  additions10:
+    display: Additions10
+    type: decimal
+    required: false
+    description: Field Additions10 from AssetHistoryBv
+  additions11:
+    display: Additions11
+    type: decimal
+    required: false
+    description: Field Additions11 from AssetHistoryBv
+  additions12:
+    display: Additions12
+    type: decimal
+    required: false
+    description: Field Additions12 from AssetHistoryBv
+  additions13:
+    display: Additions13
+    type: decimal
+    required: false
+    description: Field Additions13 from AssetHistoryBv
+  disposals1:
+    display: Disposals1
+    type: decimal
+    required: false
+    description: Field Disposals1 from AssetHistoryBv
+  disposals2:
+    display: Disposals2
+    type: decimal
+    required: false
+    description: Field Disposals2 from AssetHistoryBv
+  disposals3:
+    display: Disposals3
+    type: decimal
+    required: false
+    description: Field Disposals3 from AssetHistoryBv
+  disposals4:
+    display: Disposals4
+    type: decimal
+    required: false
+    description: Field Disposals4 from AssetHistoryBv
+  disposals5:
+    display: Disposals5
+    type: decimal
+    required: false
+    description: Field Disposals5 from AssetHistoryBv
+  disposals6:
+    display: Disposals6
+    type: decimal
+    required: false
+    description: Field Disposals6 from AssetHistoryBv
+  disposals7:
+    display: Disposals7
+    type: decimal
+    required: false
+    description: Field Disposals7 from AssetHistoryBv
+  disposals8:
+    display: Disposals8
+    type: decimal
+    required: false
+    description: Field Disposals8 from AssetHistoryBv
+  disposals9:
+    display: Disposals9
+    type: decimal
+    required: false
+    description: Field Disposals9 from AssetHistoryBv
+  disposals10:
+    display: Disposals10
+    type: decimal
+    required: false
+    description: Field Disposals10 from AssetHistoryBv
+  disposals11:
+    display: Disposals11
+    type: decimal
+    required: false
+    description: Field Disposals11 from AssetHistoryBv
+  disposals12:
+    display: Disposals12
+    type: decimal
+    required: false
+    description: Field Disposals12 from AssetHistoryBv
+  disposals13:
+    display: Disposals13
+    type: decimal
+    required: false
+    description: Field Disposals13 from AssetHistoryBv
+  disposal_cost1:
+    display: Disposalcost1
+    type: decimal
+    required: false
+    description: Field DisposalCost1 from AssetHistoryBv
+  disposal_cost2:
+    display: Disposalcost2
+    type: decimal
+    required: false
+    description: Field DisposalCost2 from AssetHistoryBv
+  disposal_cost3:
+    display: Disposalcost3
+    type: decimal
+    required: false
+    description: Field DisposalCost3 from AssetHistoryBv
+  disposal_cost4:
+    display: Disposalcost4
+    type: decimal
+    required: false
+    description: Field DisposalCost4 from AssetHistoryBv
+  disposal_cost5:
+    display: Disposalcost5
+    type: decimal
+    required: false
+    description: Field DisposalCost5 from AssetHistoryBv
+  disposal_cost6:
+    display: Disposalcost6
+    type: decimal
+    required: false
+    description: Field DisposalCost6 from AssetHistoryBv
+  disposal_cost7:
+    display: Disposalcost7
+    type: decimal
+    required: false
+    description: Field DisposalCost7 from AssetHistoryBv
+  disposal_cost8:
+    display: Disposalcost8
+    type: decimal
+    required: false
+    description: Field DisposalCost8 from AssetHistoryBv
+  disposal_cost9:
+    display: Disposalcost9
+    type: decimal
+    required: false
+    description: Field DisposalCost9 from AssetHistoryBv
+  disposal_cost10:
+    display: Disposalcost10
+    type: decimal
+    required: false
+    description: Field DisposalCost10 from AssetHistoryBv
+  disposal_cost11:
+    display: Disposalcost11
+    type: decimal
+    required: false
+    description: Field DisposalCost11 from AssetHistoryBv
+  disposal_cost12:
+    display: Disposalcost12
+    type: decimal
+    required: false
+    description: Field DisposalCost12 from AssetHistoryBv
+  disposal_cost13:
+    display: Disposalcost13
+    type: decimal
+    required: false
+    description: Field DisposalCost13 from AssetHistoryBv
+  sold_value1:
+    display: Soldvalue1
+    type: decimal
+    required: false
+    description: Field SoldValue1 from AssetHistoryBv
+  sold_value2:
+    display: Soldvalue2
+    type: decimal
+    required: false
+    description: Field SoldValue2 from AssetHistoryBv
+  sold_value3:
+    display: Soldvalue3
+    type: decimal
+    required: false
+    description: Field SoldValue3 from AssetHistoryBv
+  sold_value4:
+    display: Soldvalue4
+    type: decimal
+    required: false
+    description: Field SoldValue4 from AssetHistoryBv
+  sold_value5:
+    display: Soldvalue5
+    type: decimal
+    required: false
+    description: Field SoldValue5 from AssetHistoryBv
+  sold_value6:
+    display: Soldvalue6
+    type: decimal
+    required: false
+    description: Field SoldValue6 from AssetHistoryBv
+  sold_value7:
+    display: Soldvalue7
+    type: decimal
+    required: false
+    description: Field SoldValue7 from AssetHistoryBv
+  sold_value8:
+    display: Soldvalue8
+    type: decimal
+    required: false
+    description: Field SoldValue8 from AssetHistoryBv
+  sold_value9:
+    display: Soldvalue9
+    type: decimal
+    required: false
+    description: Field SoldValue9 from AssetHistoryBv
+  sold_value10:
+    display: Soldvalue10
+    type: decimal
+    required: false
+    description: Field SoldValue10 from AssetHistoryBv
+  sold_value11:
+    display: Soldvalue11
+    type: decimal
+    required: false
+    description: Field SoldValue11 from AssetHistoryBv
+  sold_value12:
+    display: Soldvalue12
+    type: decimal
+    required: false
+    description: Field SoldValue12 from AssetHistoryBv
+  sold_value13:
+    display: Soldvalue13
+    type: decimal
+    required: false
+    description: Field SoldValue13 from AssetHistoryBv
+  asset_count1:
+    display: Assetcount1
+    type: decimal
+    required: false
+    description: Field AssetCount1 from AssetHistoryBv
+  asset_count2:
+    display: Assetcount2
+    type: decimal
+    required: false
+    description: Field AssetCount2 from AssetHistoryBv
+  asset_count3:
+    display: Assetcount3
+    type: decimal
+    required: false
+    description: Field AssetCount3 from AssetHistoryBv
+  asset_count4:
+    display: Assetcount4
+    type: decimal
+    required: false
+    description: Field AssetCount4 from AssetHistoryBv
+  asset_count5:
+    display: Assetcount5
+    type: decimal
+    required: false
+    description: Field AssetCount5 from AssetHistoryBv
+  asset_count6:
+    display: Assetcount6
+    type: decimal
+    required: false
+    description: Field AssetCount6 from AssetHistoryBv
+  asset_count7:
+    display: Assetcount7
+    type: decimal
+    required: false
+    description: Field AssetCount7 from AssetHistoryBv
+  asset_count8:
+    display: Assetcount8
+    type: decimal
+    required: false
+    description: Field AssetCount8 from AssetHistoryBv
+  asset_count9:
+    display: Assetcount9
+    type: decimal
+    required: false
+    description: Field AssetCount9 from AssetHistoryBv
+  asset_count10:
+    display: Assetcount10
+    type: decimal
+    required: false
+    description: Field AssetCount10 from AssetHistoryBv
+  asset_count11:
+    display: Assetcount11
+    type: decimal
+    required: false
+    description: Field AssetCount11 from AssetHistoryBv
+  asset_count12:
+    display: Assetcount12
+    type: decimal
+    required: false
+    description: Field AssetCount12 from AssetHistoryBv
+  asset_count13:
+    display: Assetcount13
+    type: decimal
+    required: false
+    description: Field AssetCount13 from AssetHistoryBv
+  asset_split1:
+    display: Assetsplit1
+    type: decimal
+    required: false
+    description: Field AssetSplit1 from AssetHistoryBv
+  asset_split2:
+    display: Assetsplit2
+    type: decimal
+    required: false
+    description: Field AssetSplit2 from AssetHistoryBv
+  asset_split3:
+    display: Assetsplit3
+    type: decimal
+    required: false
+    description: Field AssetSplit3 from AssetHistoryBv
+  asset_split4:
+    display: Assetsplit4
+    type: decimal
+    required: false
+    description: Field AssetSplit4 from AssetHistoryBv
+  asset_split5:
+    display: Assetsplit5
+    type: decimal
+    required: false
+    description: Field AssetSplit5 from AssetHistoryBv
+  asset_split6:
+    display: Assetsplit6
+    type: decimal
+    required: false
+    description: Field AssetSplit6 from AssetHistoryBv
+  asset_split7:
+    display: Assetsplit7
+    type: decimal
+    required: false
+    description: Field AssetSplit7 from AssetHistoryBv
+  asset_split8:
+    display: Assetsplit8
+    type: decimal
+    required: false
+    description: Field AssetSplit8 from AssetHistoryBv
+  asset_split9:
+    display: Assetsplit9
+    type: decimal
+    required: false
+    description: Field AssetSplit9 from AssetHistoryBv
+  asset_split10:
+    display: Assetsplit10
+    type: decimal
+    required: false
+    description: Field AssetSplit10 from AssetHistoryBv
+  asset_split11:
+    display: Assetsplit11
+    type: decimal
+    required: false
+    description: Field AssetSplit11 from AssetHistoryBv
+  asset_split12:
+    display: Assetsplit12
+    type: decimal
+    required: false
+    description: Field AssetSplit12 from AssetHistoryBv
+  asset_split13:
+    display: Assetsplit13
+    type: decimal
+    required: false
+    description: Field AssetSplit13 from AssetHistoryBv
+  asset_change1:
+    display: Assetchange1
+    type: decimal
+    required: false
+    description: Field AssetChange1 from AssetHistoryBv
+  asset_change2:
+    display: Assetchange2
+    type: decimal
+    required: false
+    description: Field AssetChange2 from AssetHistoryBv
+  asset_change3:
+    display: Assetchange3
+    type: decimal
+    required: false
+    description: Field AssetChange3 from AssetHistoryBv
+  asset_change4:
+    display: Assetchange4
+    type: decimal
+    required: false
+    description: Field AssetChange4 from AssetHistoryBv
+  asset_change5:
+    display: Assetchange5
+    type: decimal
+    required: false
+    description: Field AssetChange5 from AssetHistoryBv
+  asset_change6:
+    display: Assetchange6
+    type: decimal
+    required: false
+    description: Field AssetChange6 from AssetHistoryBv
+  asset_change7:
+    display: Assetchange7
+    type: decimal
+    required: false
+    description: Field AssetChange7 from AssetHistoryBv
+  asset_change8:
+    display: Assetchange8
+    type: decimal
+    required: false
+    description: Field AssetChange8 from AssetHistoryBv
+  asset_change9:
+    display: Assetchange9
+    type: decimal
+    required: false
+    description: Field AssetChange9 from AssetHistoryBv
+  asset_change10:
+    display: Assetchange10
+    type: decimal
+    required: false
+    description: Field AssetChange10 from AssetHistoryBv
+  asset_change11:
+    display: Assetchange11
+    type: decimal
+    required: false
+    description: Field AssetChange11 from AssetHistoryBv
+  asset_change12:
+    display: Assetchange12
+    type: decimal
+    required: false
+    description: Field AssetChange12 from AssetHistoryBv
+  asset_change13:
+    display: Assetchange13
+    type: decimal
+    required: false
+    description: Field AssetChange13 from AssetHistoryBv
+  reval_flag1:
+    display: Revalflag1
+    type: string
+    required: false
+    description: Field RevalFlag1 from AssetHistoryBv
+  reval_flag2:
+    display: Revalflag2
+    type: string
+    required: false
+    description: Field RevalFlag2 from AssetHistoryBv
+  reval_flag3:
+    display: Revalflag3
+    type: string
+    required: false
+    description: Field RevalFlag3 from AssetHistoryBv
+  reval_flag4:
+    display: Revalflag4
+    type: string
+    required: false
+    description: Field RevalFlag4 from AssetHistoryBv
+  reval_flag5:
+    display: Revalflag5
+    type: string
+    required: false
+    description: Field RevalFlag5 from AssetHistoryBv
+  reval_flag6:
+    display: Revalflag6
+    type: string
+    required: false
+    description: Field RevalFlag6 from AssetHistoryBv
+  reval_flag7:
+    display: Revalflag7
+    type: string
+    required: false
+    description: Field RevalFlag7 from AssetHistoryBv
+  reval_flag8:
+    display: Revalflag8
+    type: string
+    required: false
+    description: Field RevalFlag8 from AssetHistoryBv
+  reval_flag9:
+    display: Revalflag9
+    type: string
+    required: false
+    description: Field RevalFlag9 from AssetHistoryBv
+  reval_flag10:
+    display: Revalflag10
+    type: string
+    required: false
+    description: Field RevalFlag10 from AssetHistoryBv
+  reval_flag11:
+    display: Revalflag11
+    type: string
+    required: false
+    description: Field RevalFlag11 from AssetHistoryBv
+  reval_flag12:
+    display: Revalflag12
+    type: string
+    required: false
+    description: Field RevalFlag12 from AssetHistoryBv
+  reval_flag13:
+    display: Revalflag13
+    type: string
+    required: false
+    description: Field RevalFlag13 from AssetHistoryBv
+  opening_value:
+    display: Openingvalue
+    type: decimal
+    required: false
+    description: Field OpeningValue from AssetHistoryBv
+  opening_depn_value:
+    display: Openingdepnvalue
+    type: decimal
+    required: false
+    description: Field OpeningDepnValue from AssetHistoryBv
+  opening_rev_depn_val:
+    display: Openingrevdepnval
+    type: decimal
+    required: false
+    description: Field OpeningRevDepnVal from AssetHistoryBv

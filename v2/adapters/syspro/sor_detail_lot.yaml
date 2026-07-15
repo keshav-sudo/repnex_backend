@@ -1,0 +1,21 @@
+concept: sor_detail_lot
+table: SorDetailLot
+alias: sdl
+fields:
+  sales_order: sdl.SalesOrder
+  sales_order_line: sdl.SalesOrderLine
+  lot: sdl.Lot
+  stock_qty_to_ship: sdl.StockQtyToShip
+  qty_this_session: sdl.QtyThisSession
+  version: sdl.Version
+  release: sdl.Release
+  certificate: sdl.Certificate
+  lot_expiry_date: sdl.LotExpiryDate
+  qty_reserved: sdl.QtyReserved
+  rma_number: sdl.RmaNumber
+  use_by_date: sdl.UseByDate
+  sell_by_date: sdl.SellByDate
+  internal_expiry_date: sdl.InternalExpiryDate
+  manufacture_date: sdl.ManufactureDate
+  dispatch_date: sdl.DispatchDate
+  best_before_date: sdl.BestBeforeDate

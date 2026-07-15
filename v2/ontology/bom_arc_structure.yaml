@@ -1,0 +1,238 @@
+concept: bom_arc_structure
+display_name: BomArcStructure
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomArcStructure.
+synonyms:
+- bomarcstructure
+- bom arc structure
+header_attributes:
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from BomArcStructure
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BomArcStructure
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BomArcStructure
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomArcStructure
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from BomArcStructure
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from BomArcStructure
+  com_version:
+    display: Comversion
+    type: string
+    required: false
+    description: Field ComVersion from BomArcStructure
+  com_release:
+    display: Comrelease
+    type: string
+    required: false
+    description: Field ComRelease from BomArcStructure
+  ecc_consumption:
+    display: Eccconsumption
+    type: string
+    required: false
+    description: Field EccConsumption from BomArcStructure
+  structure_on_date:
+    display: Structureondate
+    type: date
+    required: false
+    description: Field StructureOnDate from BomArcStructure
+  structure_off_date:
+    display: Structureoffdate
+    type: date
+    required: false
+    description: Field StructureOffDate from BomArcStructure
+  op_offset_flag:
+    display: Opoffsetflag
+    type: string
+    required: false
+    description: Field OpOffsetFlag from BomArcStructure
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from BomArcStructure
+  qty_per:
+    display: Qtyper
+    type: decimal
+    required: false
+    description: Field QtyPer from BomArcStructure
+  scrap_percentage:
+    display: Scrappercentage
+    type: decimal
+    required: false
+    description: Field ScrapPercentage from BomArcStructure
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from BomArcStructure
+  so_option_flag:
+    display: Sooptionflag
+    type: string
+    required: false
+    description: Field SoOptionFlag from BomArcStructure
+  so_print_flag:
+    display: Soprintflag
+    type: string
+    required: false
+    description: Field SoPrintFlag from BomArcStructure
+  incl_scrap_flag:
+    display: Inclscrapflag
+    type: string
+    required: false
+    description: Field InclScrapFlag from BomArcStructure
+  reason_for_change:
+    display: Reasonforchange
+    type: string
+    required: false
+    description: Field ReasonForChange from BomArcStructure
+  ref_designator:
+    display: Refdesignator
+    type: string
+    required: false
+    description: Field RefDesignator from BomArcStructure
+  assembly_place:
+    display: Assemblyplace
+    type: string
+    required: false
+    description: Field AssemblyPlace from BomArcStructure
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from BomArcStructure
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from BomArcStructure
+  component_type:
+    display: Componenttype
+    type: string
+    required: false
+    description: Field ComponentType from BomArcStructure
+  incl_kit_issues:
+    display: Inclkitissues
+    type: string
+    required: false
+    description: Field InclKitIssues from BomArcStructure
+  create_sub_job:
+    display: Createsubjob
+    type: string
+    required: false
+    description: Field CreateSubJob from BomArcStructure
+  wet_weight_percent:
+    display: Wetweightpercent
+    type: decimal
+    required: false
+    description: Field WetWeightPercent from BomArcStructure
+  include_batch:
+    display: Includebatch
+    type: string
+    required: false
+    description: Field IncludeBatch from BomArcStructure
+  include_from_job:
+    display: Includefromjob
+    type: string
+    required: false
+    description: Field IncludeFromJob from BomArcStructure
+  include_to_job:
+    display: Includetojob
+    type: string
+    required: false
+    description: Field IncludeToJob from BomArcStructure
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from BomArcStructure
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from BomArcStructure
+  roll_up_cost:
+    display: Rollupcost
+    type: string
+    required: false
+    description: Field RollUpCost from BomArcStructure
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from BomArcStructure
+  ignore_floor_flag:
+    display: Ignorefloorflag
+    type: string
+    required: false
+    description: Field IgnoreFloorFlag from BomArcStructure
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from BomArcStructure
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from BomArcStructure
+  qty_per_ent:
+    display: Qtyperent
+    type: decimal
+    required: false
+    description: Field QtyPerEnt from BomArcStructure
+  scrap_quantity_ent:
+    display: Scrapquantityent
+    type: decimal
+    required: false
+    description: Field ScrapQuantityEnt from BomArcStructure
+  fixed_qty_per_ent:
+    display: Fixedqtyperent
+    type: decimal
+    required: false
+    description: Field FixedQtyPerEnt from BomArcStructure
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from BomArcStructure
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from BomArcStructure
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from BomArcStructure
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from BomArcStructure
+  ovr_ecc_spec_iss:
+    display: Ovreccspeciss
+    type: string
+    required: false
+    description: Field OvrEccSpecIss from BomArcStructure

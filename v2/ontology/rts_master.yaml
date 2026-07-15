@@ -1,0 +1,248 @@
+concept: rts_master
+display_name: RtsMaster
+module: other
+description: Auto-generated representation of the physical table RtsMaster.
+synonyms:
+- rtsmaster
+- rts master
+header_attributes:
+  rts_number:
+    display: Rtsnumber
+    type: string
+    required: false
+    description: Field RtsNumber from RtsMaster
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from RtsMaster
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from RtsMaster
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from RtsMaster
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from RtsMaster
+  stock_type:
+    display: Stocktype
+    type: string
+    required: false
+    description: Field StockType from RtsMaster
+  rts_status:
+    display: Rtsstatus
+    type: string
+    required: false
+    description: Field RtsStatus from RtsMaster
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from RtsMaster
+  rts_cr_date:
+    display: Rtscrdate
+    type: date
+    required: false
+    description: Field RtsCrDate from RtsMaster
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from RtsMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from RtsMaster
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RtsMaster
+  rma_line_number:
+    display: Rmalinenumber
+    type: decimal
+    required: false
+    description: Field RmaLineNumber from RtsMaster
+  rts_org_qty:
+    display: Rtsorgqty
+    type: decimal
+    required: false
+    description: Field RtsOrgQty from RtsMaster
+  rts_org_cst:
+    display: Rtsorgcst
+    type: decimal
+    required: false
+    description: Field RtsOrgCst from RtsMaster
+  rts_type:
+    display: Rtstype
+    type: string
+    required: false
+    description: Field RtsType from RtsMaster
+  rts_ret_date:
+    display: Rtsretdate
+    type: date
+    required: false
+    description: Field RtsRetDate from RtsMaster
+  rts_apr_qty:
+    display: Rtsaprqty
+    type: decimal
+    required: false
+    description: Field RtsAprQty from RtsMaster
+  rts_apr_cst:
+    display: Rtsaprcst
+    type: decimal
+    required: false
+    description: Field RtsAprCst from RtsMaster
+  rts_var_val:
+    display: Rtsvarval
+    type: decimal
+    required: false
+    description: Field RtsVarVal from RtsMaster
+  rts_sup_ref:
+    display: Rtssupref
+    type: string
+    required: false
+    description: Field RtsSupRef from RtsMaster
+  rts_notation:
+    display: Rtsnotation
+    type: string
+    required: false
+    description: Field RtsNotation from RtsMaster
+  rts_grn:
+    display: Rtsgrn
+    type: string
+    required: false
+    description: Field RtsGrn from RtsMaster
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from RtsMaster
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from RtsMaster
+  rts_last_op:
+    display: Rtslastop
+    type: string
+    required: false
+    description: Field RtsLastOp from RtsMaster
+  rts_po_grn_no:
+    display: Rtspogrnno
+    type: string
+    required: false
+    description: Field RtsPoGrnNo from RtsMaster
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from RtsMaster
+  entry_group:
+    display: Entrygroup
+    type: decimal
+    required: false
+    description: Field EntryGroup from RtsMaster
+  rts_close_date:
+    display: Rtsclosedate
+    type: date
+    required: false
+    description: Field RtsCloseDate from RtsMaster
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from RtsMaster
+  rts_nons_gl:
+    display: Rtsnonsgl
+    type: string
+    required: false
+    description: Field RtsNonsGl from RtsMaster
+  rts_supl_chg:
+    display: Rtssuplchg
+    type: decimal
+    required: false
+    description: Field RtsSuplChg from RtsMaster
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from RtsMaster
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from RtsMaster
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from RtsMaster
+  rts_grn_jnl:
+    display: Rtsgrnjnl
+    type: decimal
+    required: false
+    description: Field RtsGrnJnl from RtsMaster
+  rts_grn_jnle:
+    display: Rtsgrnjnle
+    type: decimal
+    required: false
+    description: Field RtsGrnJnle from RtsMaster
+  rts_ret_slip:
+    display: Rtsretslip
+    type: decimal
+    required: false
+    description: Field RtsRetSlip from RtsMaster
+  rts_org_po:
+    display: Rtsorgpo
+    type: string
+    required: false
+    description: Field RtsOrgPo from RtsMaster
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from RtsMaster
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from RtsMaster
+  contact:
+    display: Contact
+    type: string
+    required: false
+    description: Field Contact from RtsMaster
+  rts_freight:
+    display: Rtsfreight
+    type: decimal
+    required: false
+    description: Field RtsFreight from RtsMaster
+  rts_handle:
+    display: Rtshandle
+    type: decimal
+    required: false
+    description: Field RtsHandle from RtsMaster
+  rts_frt_gl:
+    display: Rtsfrtgl
+    type: string
+    required: false
+    description: Field RtsFrtGl from RtsMaster
+  rts_hnd_gl:
+    display: Rtshndgl
+    type: string
+    required: false
+    description: Field RtsHndGl from RtsMaster
+  rts_ret_report:
+    display: Rtsretreport
+    type: decimal
+    required: false
+    description: Field RtsRetReport from RtsMaster

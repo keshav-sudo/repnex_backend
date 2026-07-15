@@ -1,0 +1,28 @@
+concept: sor_master_txt_rep
+display_name: SorMasterTxtRep
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorMasterTxtRep.
+synonyms:
+- sormastertxtrep
+- sor master txt rep
+header_attributes:
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SorMasterTxtRep
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorMasterTxtRep
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SorMasterTxtRep
+  text:
+    display: Text
+    type: string
+    required: false
+    description: Field Text from SorMasterTxtRep

@@ -1,0 +1,30 @@
+concept: asset_dist_reg
+table: AssetDistReg
+alias: adr
+fields:
+  gl_year: adr.GlYear
+  gl_period: adr.GlPeriod
+  gl_code: adr.GlCode
+  dist_reg_num: adr.DistRegNum
+  entry: adr.Entry
+  asset: adr.Asset
+  asset_description: adr.AssetDescription
+  entry_type: adr.EntryType
+  month_end_date: adr.MonthEndDate
+  dist_value: adr.DistValue
+  dist_type: adr.DistType
+  status: adr.Status
+  entries_group: adr.EntriesGroup
+  asset_key: adr.AssetKey
+  entry_year: adr.EntryYear
+  entry_month: adr.EntryMonth
+  system_date: adr.SystemDate
+  system_time: adr.SystemTime
+  analysis_entry: adr.AnalysisEntry
+  gl_int_updated: adr.GlIntUpdated
+  gl_int_year: adr.GlIntYear
+  gl_int_period: adr.GlIntPeriod
+  gl_journal: adr.GlJournal
+  gl_int_level: adr.GlIntLevel
+  dimension_entry: adr.DimensionEntry
+  dimension_line: adr.DimensionLine

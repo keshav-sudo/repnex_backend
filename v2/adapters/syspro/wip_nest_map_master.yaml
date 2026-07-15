@@ -1,0 +1,8 @@
+concept: wip_nest_map_master
+table: WipNestMapMaster
+alias: wnmm
+fields:
+  format: wnmm.Format
+  description: wnmm.Description
+  format_type: wnmm.FormatType
+  file_type: wnmm.FileType

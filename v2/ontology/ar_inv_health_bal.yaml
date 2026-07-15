@@ -1,0 +1,58 @@
+concept: ar_inv_health_bal
+display_name: ArInvHealthBal
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArInvHealthBal.
+synonyms:
+- arinvhealthbal
+- ar inv health bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from ArInvHealthBal
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArInvHealthBal
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArInvHealthBal
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArInvHealthBal
+  balance_year:
+    display: Balanceyear
+    type: decimal
+    required: false
+    description: Field BalanceYear from ArInvHealthBal
+  balance_month:
+    display: Balancemonth
+    type: decimal
+    required: false
+    description: Field BalanceMonth from ArInvHealthBal
+  trx_amount_value:
+    display: Trxamountvalue
+    type: decimal
+    required: false
+    description: Field TrxAmountValue from ArInvHealthBal
+  trx_amount_before:
+    display: Trxamountbefore
+    type: decimal
+    required: false
+    description: Field TrxAmountBefore from ArInvHealthBal
+  trx_amount_after:
+    display: Trxamountafter
+    type: decimal
+    required: false
+    description: Field TrxAmountAfter from ArInvHealthBal
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ArInvHealthBal

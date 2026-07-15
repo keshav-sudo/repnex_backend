@@ -1,0 +1,28 @@
+concept: asset_depr_var_period
+display_name: AssetDeprVarPeriod
+module: assets
+description: Auto-generated representation of the physical table AssetDeprVarPeriod.
+synonyms:
+- assetdeprvarperiod
+- asset depr var period
+header_attributes:
+  depreciation_code:
+    display: Depreciationcode
+    type: string
+    required: false
+    description: Field DepreciationCode from AssetDeprVarPeriod
+  depreciation_year:
+    display: Depreciationyear
+    type: decimal
+    required: false
+    description: Field DepreciationYear from AssetDeprVarPeriod
+  period:
+    display: Period
+    type: decimal
+    required: false
+    description: Field Period from AssetDeprVarPeriod
+  depn_pct:
+    display: Depnpct
+    type: decimal
+    required: false
+    description: Field DepnPct from AssetDeprVarPeriod

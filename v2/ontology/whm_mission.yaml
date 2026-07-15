@@ -1,0 +1,68 @@
+concept: whm_mission
+display_name: WhmMission
+module: other
+description: Auto-generated representation of the physical table WhmMission.
+synonyms:
+- whmmission
+- whm mission
+header_attributes:
+  mission:
+    display: Mission
+    type: string
+    required: false
+    description: Field Mission from WhmMission
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from WhmMission
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from WhmMission
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from WhmMission
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from WhmMission
+  comp_date:
+    display: Compdate
+    type: date
+    required: false
+    description: Field CompDate from WhmMission
+  comp_time:
+    display: Comptime
+    type: decimal
+    required: false
+    description: Field CompTime from WhmMission
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from WhmMission
+  due_time:
+    display: Duetime
+    type: decimal
+    required: false
+    description: Field DueTime from WhmMission
+  team:
+    display: Team
+    type: string
+    required: false
+    description: Field Team from WhmMission
+  employee:
+    display: Employee
+    type: string
+    required: false
+    description: Field Employee from WhmMission
+  priority:
+    display: Priority
+    type: string
+    required: false
+    description: Field Priority from WhmMission

@@ -1,0 +1,18 @@
+concept: csh_next_keys
+display_name: CshNextKeys
+module: cashbook
+description: Auto-generated representation of the physical table CshNextKeys.
+synonyms:
+- cshnextkeys
+- csh next keys
+header_attributes:
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from CshNextKeys
+  key_next:
+    display: Keynext
+    type: decimal
+    required: false
+    description: Field KeyNext from CshNextKeys

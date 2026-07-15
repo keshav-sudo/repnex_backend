@@ -1,0 +1,18 @@
+concept: prj_deposit_header
+table: PrjDepositHeader
+alias: pdh
+fields:
+  contract: pdh.Contract
+  job: pdh.Job
+  deposit_type: pdh.DepositType
+  deposit_percent: pdh.DepositPercent
+  deposit_value: pdh.DepositValue
+  deposit_remaining: pdh.DepositRemaining
+  product_class: pdh.ProductClass
+  comment: pdh.Comment
+  tax_code: pdh.TaxCode
+  gst_tax_code: pdh.GstTaxCode
+  customer: pdh.Customer
+  sales_order: pdh.SalesOrder
+  invoice: pdh.Invoice
+  next_line: pdh.NextLine

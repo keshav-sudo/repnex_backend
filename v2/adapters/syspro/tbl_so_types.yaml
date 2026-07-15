@@ -1,0 +1,6 @@
+concept: tbl_so_types
+table: TblSoTypes
+alias: tst
+fields:
+  order_type: tst.OrderType
+  description: tst.Description

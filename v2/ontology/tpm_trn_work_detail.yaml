@@ -1,0 +1,103 @@
+concept: tpm_trn_work_detail
+display_name: TpmTrnWorkDetail
+module: other
+description: Auto-generated representation of the physical table TpmTrnWorkDetail.
+synonyms:
+- tpmtrnworkdetail
+- tpm trn work detail
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from TpmTrnWorkDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from TpmTrnWorkDetail
+  tpm_sequence:
+    display: Tpmsequence
+    type: decimal
+    required: false
+    description: Field TpmSequence from TpmTrnWorkDetail
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from TpmTrnWorkDetail
+  global_line:
+    display: Globalline
+    type: decimal
+    required: false
+    description: Field GlobalLine from TpmTrnWorkDetail
+  current_level:
+    display: Currentlevel
+    type: decimal
+    required: false
+    description: Field CurrentLevel from TpmTrnWorkDetail
+  line_ship_level:
+    display: Lineshiplevel
+    type: decimal
+    required: false
+    description: Field LineShipLevel from TpmTrnWorkDetail
+  line_total_ship_level:
+    display: Linetotalshiplevel
+    type: decimal
+    required: false
+    description: Field LineTotalShipLevel from TpmTrnWorkDetail
+  current_amount:
+    display: Currentamount
+    type: decimal
+    required: false
+    description: Field CurrentAmount from TpmTrnWorkDetail
+  line_ship_amount:
+    display: Lineshipamount
+    type: decimal
+    required: false
+    description: Field LineShipAmount from TpmTrnWorkDetail
+  line_total_ship_amt:
+    display: Linetotalshipamt
+    type: decimal
+    required: false
+    description: Field LineTotalShipAmt from TpmTrnWorkDetail
+  current_value:
+    display: Currentvalue
+    type: decimal
+    required: false
+    description: Field CurrentValue from TpmTrnWorkDetail
+  line_ship_value:
+    display: Lineshipvalue
+    type: decimal
+    required: false
+    description: Field LineShipValue from TpmTrnWorkDetail
+  line_total_ship_value:
+    display: Linetotalshipvalue
+    type: decimal
+    required: false
+    description: Field LineTotalShipValue from TpmTrnWorkDetail
+  current_quantity:
+    display: Currentquantity
+    type: decimal
+    required: false
+    description: Field CurrentQuantity from TpmTrnWorkDetail
+  line_ship_quantity:
+    display: Lineshipquantity
+    type: decimal
+    required: false
+    description: Field LineShipQuantity from TpmTrnWorkDetail
+  line_total_ship_qty:
+    display: Linetotalshipqty
+    type: decimal
+    required: false
+    description: Field LineTotalShipQty from TpmTrnWorkDetail
+  line_price:
+    display: Lineprice
+    type: decimal
+    required: false
+    description: Field LinePrice from TpmTrnWorkDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from TpmTrnWorkDetail

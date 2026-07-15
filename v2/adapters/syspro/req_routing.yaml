@@ -1,0 +1,17 @@
+concept: req_routing
+table: ReqRouting
+alias: rr
+fields:
+  requisition: rr.Requisition
+  requisition_line: rr.RequisitionLine
+  route: rr.Route
+  routed_user: rr.RoutedUser
+  creation_date: rr.CreationDate
+  route_narrative: rr.RouteNarrative
+  reqn_originator: rr.ReqnOriginator
+  receipt_quantity: rr.ReceiptQuantity
+  order_quantity: rr.OrderQuantity
+  receipt_date: rr.ReceiptDate
+  operator: rr.Operator
+  routing_user: rr.RoutingUser
+  routing_operator: rr.RoutingOperator

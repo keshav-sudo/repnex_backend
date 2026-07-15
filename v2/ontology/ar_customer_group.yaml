@@ -1,0 +1,28 @@
+concept: ar_customer_group
+display_name: ArCustomerGroup
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCustomerGroup.
+synonyms:
+- arcustomergroup
+- ar customer group
+header_attributes:
+  group_customer:
+    display: Groupcustomer
+    type: string
+    required: false
+    description: Field GroupCustomer from ArCustomerGroup
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from ArCustomerGroup
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCustomerGroup
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ArCustomerGroup

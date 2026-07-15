@@ -1,0 +1,18 @@
+concept: tpm_product_group
+display_name: TpmProductGroup
+module: other
+description: Auto-generated representation of the physical table TpmProductGroup.
+synonyms:
+- tpmproductgroup
+- tpm product group
+header_attributes:
+  product_group:
+    display: Productgroup
+    type: string
+    required: false
+    description: Field ProductGroup from TpmProductGroup
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TpmProductGroup

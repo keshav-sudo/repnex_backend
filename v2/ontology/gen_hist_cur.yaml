@@ -1,0 +1,53 @@
+concept: gen_hist_cur
+display_name: GenHistCur
+module: general_ledger
+description: Auto-generated representation of the physical table GenHistCur.
+synonyms:
+- genhistcur
+- gen hist cur
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from GenHistCur
+  date_rate_change:
+    display: Dateratechange
+    type: date
+    required: false
+    description: Field DateRateChange from GenHistCur
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from GenHistCur
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from GenHistCur
+  triangulated:
+    display: Triangulated
+    type: string
+    required: false
+    description: Field Triangulated from GenHistCur
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from GenHistCur
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from GenHistCur
+  reason_for_change:
+    display: Reasonforchange
+    type: string
+    required: false
+    description: Field ReasonForChange from GenHistCur
+  time_rate_change:
+    display: Timeratechange
+    type: decimal
+    required: false
+    description: Field TimeRateChange from GenHistCur

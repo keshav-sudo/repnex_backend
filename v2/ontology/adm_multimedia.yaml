@@ -1,0 +1,28 @@
+concept: adm_multimedia
+display_name: AdmMultimedia
+module: administration
+description: Auto-generated representation of the physical table AdmMultimedia.
+synonyms:
+- admmultimedia
+- adm multimedia
+header_attributes:
+  multimedia_flag:
+    display: Multimediaflag
+    type: string
+    required: false
+    description: Field MultimediaFlag from AdmMultimedia
+  key_field:
+    display: Keyfield
+    type: string
+    required: false
+    description: Field KeyField from AdmMultimedia
+  object_type:
+    display: Objecttype
+    type: string
+    required: false
+    description: Field ObjectType from AdmMultimedia
+  object_text:
+    display: Objecttext
+    type: string
+    required: false
+    description: Field ObjectText from AdmMultimedia

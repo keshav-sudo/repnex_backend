@@ -1,0 +1,38 @@
+concept: adm_calendar
+table: AdmCalendar
+alias: ac
+fields:
+  cal_century: ac.CalCentury
+  cal_year: ac.CalYear
+  cal_month: ac.CalMonth
+  cal_day1: ac.CalDay1
+  cal_day2: ac.CalDay2
+  cal_day3: ac.CalDay3
+  cal_day4: ac.CalDay4
+  cal_day5: ac.CalDay5
+  cal_day6: ac.CalDay6
+  cal_day7: ac.CalDay7
+  cal_day8: ac.CalDay8
+  cal_day9: ac.CalDay9
+  cal_day10: ac.CalDay10
+  cal_day11: ac.CalDay11
+  cal_day12: ac.CalDay12
+  cal_day13: ac.CalDay13
+  cal_day14: ac.CalDay14
+  cal_day15: ac.CalDay15
+  cal_day16: ac.CalDay16
+  cal_day17: ac.CalDay17
+  cal_day18: ac.CalDay18
+  cal_day19: ac.CalDay19
+  cal_day20: ac.CalDay20
+  cal_day21: ac.CalDay21
+  cal_day22: ac.CalDay22
+  cal_day23: ac.CalDay23
+  cal_day24: ac.CalDay24
+  cal_day25: ac.CalDay25
+  cal_day26: ac.CalDay26
+  cal_day27: ac.CalDay27
+  cal_day28: ac.CalDay28
+  cal_day29: ac.CalDay29
+  cal_day30: ac.CalDay30
+  cal_day31: ac.CalDay31

@@ -1,0 +1,20 @@
+concept: lynq_vp_bpl__src__inventory_location
+table: Lynq_VP_BPL_Src_InventoryLocation
+alias: lvpbplsil
+fields:
+  id: lvpbplsil.ID
+  location_code: lvpbplsil.LocationCode
+  description: lvpbplsil.Description
+  fld_date_time1: lvpbplsil.FldDateTime1
+  fld_date_time2: lvpbplsil.FldDateTime2
+  fld_date_time3: lvpbplsil.FldDateTime3
+  fld_decimal1: lvpbplsil.FldDecimal1
+  fld_decimal2: lvpbplsil.FldDecimal2
+  fld_decimal3: lvpbplsil.FldDecimal3
+  fld_decimal4: lvpbplsil.FldDecimal4
+  fld_decimal5: lvpbplsil.FldDecimal5
+  fld_string1: lvpbplsil.FldString1
+  fld_string2: lvpbplsil.FldString2
+  fld_string3: lvpbplsil.FldString3
+  fld_string4: lvpbplsil.FldString4
+  fld_string5: lvpbplsil.FldString5

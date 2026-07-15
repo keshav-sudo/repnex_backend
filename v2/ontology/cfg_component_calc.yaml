@@ -1,0 +1,528 @@
+concept: cfg_component_calc
+display_name: CfgComponentCalc
+module: other
+description: Auto-generated representation of the physical table CfgComponentCalc.
+synonyms:
+- cfgcomponentcalc
+- cfg component calc
+header_attributes:
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from CfgComponentCalc
+  option_num:
+    display: Optionnum
+    type: decimal
+    required: false
+    description: Field OptionNum from CfgComponentCalc
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from CfgComponentCalc
+  result1:
+    display: Result1
+    type: string
+    required: false
+    description: Field Result1 from CfgComponentCalc
+  result2:
+    display: Result2
+    type: string
+    required: false
+    description: Field Result2 from CfgComponentCalc
+  result3:
+    display: Result3
+    type: string
+    required: false
+    description: Field Result3 from CfgComponentCalc
+  result4:
+    display: Result4
+    type: string
+    required: false
+    description: Field Result4 from CfgComponentCalc
+  result5:
+    display: Result5
+    type: string
+    required: false
+    description: Field Result5 from CfgComponentCalc
+  result6:
+    display: Result6
+    type: string
+    required: false
+    description: Field Result6 from CfgComponentCalc
+  result7:
+    display: Result7
+    type: string
+    required: false
+    description: Field Result7 from CfgComponentCalc
+  result8:
+    display: Result8
+    type: string
+    required: false
+    description: Field Result8 from CfgComponentCalc
+  result9:
+    display: Result9
+    type: string
+    required: false
+    description: Field Result9 from CfgComponentCalc
+  result10:
+    display: Result10
+    type: string
+    required: false
+    description: Field Result10 from CfgComponentCalc
+  field11:
+    display: Field11
+    type: string
+    required: false
+    description: Field Field11 from CfgComponentCalc
+  field12:
+    display: Field12
+    type: string
+    required: false
+    description: Field Field12 from CfgComponentCalc
+  field13:
+    display: Field13
+    type: string
+    required: false
+    description: Field Field13 from CfgComponentCalc
+  field14:
+    display: Field14
+    type: string
+    required: false
+    description: Field Field14 from CfgComponentCalc
+  field15:
+    display: Field15
+    type: string
+    required: false
+    description: Field Field15 from CfgComponentCalc
+  field16:
+    display: Field16
+    type: string
+    required: false
+    description: Field Field16 from CfgComponentCalc
+  field17:
+    display: Field17
+    type: string
+    required: false
+    description: Field Field17 from CfgComponentCalc
+  field18:
+    display: Field18
+    type: string
+    required: false
+    description: Field Field18 from CfgComponentCalc
+  field19:
+    display: Field19
+    type: string
+    required: false
+    description: Field Field19 from CfgComponentCalc
+  field110:
+    display: Field110
+    type: string
+    required: false
+    description: Field Field110 from CfgComponentCalc
+  operand11:
+    display: Operand11
+    type: string
+    required: false
+    description: Field Operand11 from CfgComponentCalc
+  operand12:
+    display: Operand12
+    type: string
+    required: false
+    description: Field Operand12 from CfgComponentCalc
+  operand13:
+    display: Operand13
+    type: string
+    required: false
+    description: Field Operand13 from CfgComponentCalc
+  operand14:
+    display: Operand14
+    type: string
+    required: false
+    description: Field Operand14 from CfgComponentCalc
+  operand15:
+    display: Operand15
+    type: string
+    required: false
+    description: Field Operand15 from CfgComponentCalc
+  operand16:
+    display: Operand16
+    type: string
+    required: false
+    description: Field Operand16 from CfgComponentCalc
+  operand17:
+    display: Operand17
+    type: string
+    required: false
+    description: Field Operand17 from CfgComponentCalc
+  operand18:
+    display: Operand18
+    type: string
+    required: false
+    description: Field Operand18 from CfgComponentCalc
+  operand19:
+    display: Operand19
+    type: string
+    required: false
+    description: Field Operand19 from CfgComponentCalc
+  operand110:
+    display: Operand110
+    type: string
+    required: false
+    description: Field Operand110 from CfgComponentCalc
+  field21:
+    display: Field21
+    type: string
+    required: false
+    description: Field Field21 from CfgComponentCalc
+  field22:
+    display: Field22
+    type: string
+    required: false
+    description: Field Field22 from CfgComponentCalc
+  field23:
+    display: Field23
+    type: string
+    required: false
+    description: Field Field23 from CfgComponentCalc
+  field24:
+    display: Field24
+    type: string
+    required: false
+    description: Field Field24 from CfgComponentCalc
+  field25:
+    display: Field25
+    type: string
+    required: false
+    description: Field Field25 from CfgComponentCalc
+  field26:
+    display: Field26
+    type: string
+    required: false
+    description: Field Field26 from CfgComponentCalc
+  field27:
+    display: Field27
+    type: string
+    required: false
+    description: Field Field27 from CfgComponentCalc
+  field28:
+    display: Field28
+    type: string
+    required: false
+    description: Field Field28 from CfgComponentCalc
+  field29:
+    display: Field29
+    type: string
+    required: false
+    description: Field Field29 from CfgComponentCalc
+  field210:
+    display: Field210
+    type: string
+    required: false
+    description: Field Field210 from CfgComponentCalc
+  operand21:
+    display: Operand21
+    type: string
+    required: false
+    description: Field Operand21 from CfgComponentCalc
+  operand22:
+    display: Operand22
+    type: string
+    required: false
+    description: Field Operand22 from CfgComponentCalc
+  operand23:
+    display: Operand23
+    type: string
+    required: false
+    description: Field Operand23 from CfgComponentCalc
+  operand24:
+    display: Operand24
+    type: string
+    required: false
+    description: Field Operand24 from CfgComponentCalc
+  operand25:
+    display: Operand25
+    type: string
+    required: false
+    description: Field Operand25 from CfgComponentCalc
+  operand26:
+    display: Operand26
+    type: string
+    required: false
+    description: Field Operand26 from CfgComponentCalc
+  operand27:
+    display: Operand27
+    type: string
+    required: false
+    description: Field Operand27 from CfgComponentCalc
+  operand28:
+    display: Operand28
+    type: string
+    required: false
+    description: Field Operand28 from CfgComponentCalc
+  operand29:
+    display: Operand29
+    type: string
+    required: false
+    description: Field Operand29 from CfgComponentCalc
+  operand210:
+    display: Operand210
+    type: string
+    required: false
+    description: Field Operand210 from CfgComponentCalc
+  field31:
+    display: Field31
+    type: string
+    required: false
+    description: Field Field31 from CfgComponentCalc
+  field32:
+    display: Field32
+    type: string
+    required: false
+    description: Field Field32 from CfgComponentCalc
+  field33:
+    display: Field33
+    type: string
+    required: false
+    description: Field Field33 from CfgComponentCalc
+  field34:
+    display: Field34
+    type: string
+    required: false
+    description: Field Field34 from CfgComponentCalc
+  field35:
+    display: Field35
+    type: string
+    required: false
+    description: Field Field35 from CfgComponentCalc
+  field36:
+    display: Field36
+    type: string
+    required: false
+    description: Field Field36 from CfgComponentCalc
+  field37:
+    display: Field37
+    type: string
+    required: false
+    description: Field Field37 from CfgComponentCalc
+  field38:
+    display: Field38
+    type: string
+    required: false
+    description: Field Field38 from CfgComponentCalc
+  field39:
+    display: Field39
+    type: string
+    required: false
+    description: Field Field39 from CfgComponentCalc
+  field310:
+    display: Field310
+    type: string
+    required: false
+    description: Field Field310 from CfgComponentCalc
+  operand31:
+    display: Operand31
+    type: string
+    required: false
+    description: Field Operand31 from CfgComponentCalc
+  operand32:
+    display: Operand32
+    type: string
+    required: false
+    description: Field Operand32 from CfgComponentCalc
+  operand33:
+    display: Operand33
+    type: string
+    required: false
+    description: Field Operand33 from CfgComponentCalc
+  operand34:
+    display: Operand34
+    type: string
+    required: false
+    description: Field Operand34 from CfgComponentCalc
+  operand35:
+    display: Operand35
+    type: string
+    required: false
+    description: Field Operand35 from CfgComponentCalc
+  operand36:
+    display: Operand36
+    type: string
+    required: false
+    description: Field Operand36 from CfgComponentCalc
+  operand37:
+    display: Operand37
+    type: string
+    required: false
+    description: Field Operand37 from CfgComponentCalc
+  operand38:
+    display: Operand38
+    type: string
+    required: false
+    description: Field Operand38 from CfgComponentCalc
+  operand39:
+    display: Operand39
+    type: string
+    required: false
+    description: Field Operand39 from CfgComponentCalc
+  operand310:
+    display: Operand310
+    type: string
+    required: false
+    description: Field Operand310 from CfgComponentCalc
+  field41:
+    display: Field41
+    type: string
+    required: false
+    description: Field Field41 from CfgComponentCalc
+  field42:
+    display: Field42
+    type: string
+    required: false
+    description: Field Field42 from CfgComponentCalc
+  field43:
+    display: Field43
+    type: string
+    required: false
+    description: Field Field43 from CfgComponentCalc
+  field44:
+    display: Field44
+    type: string
+    required: false
+    description: Field Field44 from CfgComponentCalc
+  field45:
+    display: Field45
+    type: string
+    required: false
+    description: Field Field45 from CfgComponentCalc
+  field46:
+    display: Field46
+    type: string
+    required: false
+    description: Field Field46 from CfgComponentCalc
+  field47:
+    display: Field47
+    type: string
+    required: false
+    description: Field Field47 from CfgComponentCalc
+  field48:
+    display: Field48
+    type: string
+    required: false
+    description: Field Field48 from CfgComponentCalc
+  field49:
+    display: Field49
+    type: string
+    required: false
+    description: Field Field49 from CfgComponentCalc
+  field410:
+    display: Field410
+    type: string
+    required: false
+    description: Field Field410 from CfgComponentCalc
+  rounding1:
+    display: Rounding1
+    type: string
+    required: false
+    description: Field Rounding1 from CfgComponentCalc
+  rounding2:
+    display: Rounding2
+    type: string
+    required: false
+    description: Field Rounding2 from CfgComponentCalc
+  rounding3:
+    display: Rounding3
+    type: string
+    required: false
+    description: Field Rounding3 from CfgComponentCalc
+  rounding4:
+    display: Rounding4
+    type: string
+    required: false
+    description: Field Rounding4 from CfgComponentCalc
+  rounding5:
+    display: Rounding5
+    type: string
+    required: false
+    description: Field Rounding5 from CfgComponentCalc
+  rounding6:
+    display: Rounding6
+    type: string
+    required: false
+    description: Field Rounding6 from CfgComponentCalc
+  rounding7:
+    display: Rounding7
+    type: string
+    required: false
+    description: Field Rounding7 from CfgComponentCalc
+  rounding8:
+    display: Rounding8
+    type: string
+    required: false
+    description: Field Rounding8 from CfgComponentCalc
+  rounding9:
+    display: Rounding9
+    type: string
+    required: false
+    description: Field Rounding9 from CfgComponentCalc
+  rounding10:
+    display: Rounding10
+    type: string
+    required: false
+    description: Field Rounding10 from CfgComponentCalc
+  decimals1:
+    display: Decimals1
+    type: decimal
+    required: false
+    description: Field Decimals1 from CfgComponentCalc
+  decimals2:
+    display: Decimals2
+    type: decimal
+    required: false
+    description: Field Decimals2 from CfgComponentCalc
+  decimals3:
+    display: Decimals3
+    type: decimal
+    required: false
+    description: Field Decimals3 from CfgComponentCalc
+  decimals4:
+    display: Decimals4
+    type: decimal
+    required: false
+    description: Field Decimals4 from CfgComponentCalc
+  decimals5:
+    display: Decimals5
+    type: decimal
+    required: false
+    description: Field Decimals5 from CfgComponentCalc
+  decimals6:
+    display: Decimals6
+    type: decimal
+    required: false
+    description: Field Decimals6 from CfgComponentCalc
+  decimals7:
+    display: Decimals7
+    type: decimal
+    required: false
+    description: Field Decimals7 from CfgComponentCalc
+  decimals8:
+    display: Decimals8
+    type: decimal
+    required: false
+    description: Field Decimals8 from CfgComponentCalc
+  decimals9:
+    display: Decimals9
+    type: decimal
+    required: false
+    description: Field Decimals9 from CfgComponentCalc
+  decimals10:
+    display: Decimals10
+    type: decimal
+    required: false
+    description: Field Decimals10 from CfgComponentCalc
+  ignore_zero:
+    display: Ignorezero
+    type: string
+    required: false
+    description: Field IgnoreZero from CfgComponentCalc

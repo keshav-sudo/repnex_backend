@@ -1,0 +1,9 @@
+concept: gen_dimension_apport
+table: GenDimensionApport
+alias: gda
+fields:
+  company: gda.Company
+  dimension_category: gda.DimensionCategory
+  dimension_template: gda.DimensionTemplate
+  dimension_code: gda.DimensionCode
+  percentage: gda.Percentage

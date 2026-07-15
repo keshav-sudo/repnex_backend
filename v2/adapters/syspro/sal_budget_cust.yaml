@@ -1,0 +1,31 @@
+concept: sal_budget_cust
+table: SalBudgetCust
+alias: sbc
+fields:
+  customer: sbc.Customer
+  sales1: sbc.Sales1
+  sales2: sbc.Sales2
+  sales3: sbc.Sales3
+  sales4: sbc.Sales4
+  sales5: sbc.Sales5
+  sales6: sbc.Sales6
+  sales7: sbc.Sales7
+  sales8: sbc.Sales8
+  sales9: sbc.Sales9
+  sales10: sbc.Sales10
+  sales11: sbc.Sales11
+  sales12: sbc.Sales12
+  sales13: sbc.Sales13
+  profit1: sbc.Profit1
+  profit2: sbc.Profit2
+  profit3: sbc.Profit3
+  profit4: sbc.Profit4
+  profit5: sbc.Profit5
+  profit6: sbc.Profit6
+  profit7: sbc.Profit7
+  profit8: sbc.Profit8
+  profit9: sbc.Profit9
+  profit10: sbc.Profit10
+  profit11: sbc.Profit11
+  profit12: sbc.Profit12
+  profit13: sbc.Profit13

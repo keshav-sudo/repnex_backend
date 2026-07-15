@@ -1,0 +1,21 @@
+concept: sqm_ind_test
+table: SqmIndTest
+alias: sit
+fields:
+  inspect_type: sit.InspectType
+  inspect_number: sit.InspectNumber
+  lot: sit.Lot
+  sample_number: sit.SampleNumber
+  sample_test: sit.SampleTest
+  test_name: sit.TestName
+  test_version: sit.TestVersion
+  critical_status: sit.CriticalStatus
+  major_status: sit.MajorStatus
+  minor_status: sit.MinorStatus
+  test_complete: sit.TestComplete
+  inspector_code: sit.InspectorCode
+  test_status: sit.TestStatus
+  start_date: sit.StartDate
+  end_date: sit.EndDate
+  start_time: sit.StartTime
+  end_time: sit.EndTime

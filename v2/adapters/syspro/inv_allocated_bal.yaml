@@ -1,0 +1,13 @@
+concept: inv_allocated_bal
+table: InvAllocatedBal
+alias: iab
+fields:
+  run_date_time: iab.RunDateTime
+  stock_code: iab.StockCode
+  warehouse: iab.Warehouse
+  all_on_order_qty: iab.AllOnOrderQty
+  whs_on_order_qty: iab.WhsOnOrderQty
+  all_in_inspection_qty: iab.AllInInspectionQty
+  whs_qty_in_inspection: iab.WhsQtyInInspection
+  all_allocated_wip_qty: iab.AllAllocatedWipQty
+  whs_allocated_wip_qty: iab.WhsAllocatedWipQty

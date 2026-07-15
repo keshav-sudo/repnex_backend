@@ -1,0 +1,44 @@
+concept: lynq_me__statistics_storage_key
+table: Lynq_ME_StatisticsStorageKey
+alias: lmessk
+fields:
+  id: lmessk.ID
+  ad: lmessk.AD
+  d0: lmessk.D0
+  d1: lmessk.D1
+  d2: lmessk.D2
+  d3: lmessk.D3
+  s00: lmessk.S00
+  s01: lmessk.S01
+  s02: lmessk.S02
+  s03: lmessk.S03
+  s04: lmessk.S04
+  s05: lmessk.S05
+  s06: lmessk.S06
+  s07: lmessk.S07
+  s08: lmessk.S08
+  s09: lmessk.S09
+  s10: lmessk.S10
+  s11: lmessk.S11
+  s12: lmessk.S12
+  s13: lmessk.S13
+  s14: lmessk.S14
+  s15: lmessk.S15
+  s16: lmessk.S16
+  s17: lmessk.S17
+  s18: lmessk.S18
+  s19: lmessk.S19
+  s20: lmessk.S20
+  s21: lmessk.S21
+  s22: lmessk.S22
+  s23: lmessk.S23
+  nd0: lmessk.ND0
+  nd1: lmessk.ND1
+  nd2: lmessk.ND2
+  nd3: lmessk.ND3
+  nl0: lmessk.NL0
+  nl1: lmessk.NL1
+  nl2: lmessk.NL2
+  nl3: lmessk.NL3
+  nl4: lmessk.NL4
+  nl5: lmessk.NL5

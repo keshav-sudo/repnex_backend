@@ -1,0 +1,53 @@
+concept: sor_customer_bal
+display_name: SorCustomerBal
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorCustomerBal.
+synonyms:
+- sorcustomerbal
+- sor customer bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from SorCustomerBal
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorCustomerBal
+  outst_ord_val:
+    display: Outstordval
+    type: decimal
+    required: false
+    description: Field OutstOrdVal from SorCustomerBal
+  num_outst_ord:
+    display: Numoutstord
+    type: decimal
+    required: false
+    description: Field NumOutstOrd from SorCustomerBal
+  rel_ord_os_value:
+    display: Relordosvalue
+    type: decimal
+    required: false
+    description: Field RelOrdOsValue from SorCustomerBal
+  ar_cus_outst_ord_val:
+    display: Arcusoutstordval
+    type: decimal
+    required: false
+    description: Field ArCusOutstOrdVal from SorCustomerBal
+  ar_cus_num_outst_ord:
+    display: Arcusnumoutstord
+    type: decimal
+    required: false
+    description: Field ArCusNumOutstOrd from SorCustomerBal
+  ar_cus_rel_ord_os_value:
+    display: Arcusrelordosvalue
+    type: decimal
+    required: false
+    description: Field ArCusRelOrdOsValue from SorCustomerBal
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from SorCustomerBal

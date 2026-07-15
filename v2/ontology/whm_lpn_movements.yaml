@@ -1,0 +1,68 @@
+concept: whm_lpn_movements
+display_name: WhmLpnMovements
+module: other
+description: Auto-generated representation of the physical table WhmLpnMovements.
+synonyms:
+- whmlpnmovements
+- whm lpn movements
+header_attributes:
+  license_plate_number:
+    display: Licenseplatenumber
+    type: string
+    required: false
+    description: Field LicensePlateNumber from WhmLpnMovements
+  container:
+    display: Container
+    type: string
+    required: false
+    description: Field Container from WhmLpnMovements
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from WhmLpnMovements
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WhmLpnMovements
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WhmLpnMovements
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WhmLpnMovements
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from WhmLpnMovements
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from WhmLpnMovements
+  current_quantity:
+    display: Currentquantity
+    type: decimal
+    required: false
+    description: Field CurrentQuantity from WhmLpnMovements
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WhmLpnMovements
+  to_warehouse:
+    display: Towarehouse
+    type: string
+    required: false
+    description: Field ToWarehouse from WhmLpnMovements
+  to_bin:
+    display: Tobin
+    type: string
+    required: false
+    description: Field ToBin from WhmLpnMovements

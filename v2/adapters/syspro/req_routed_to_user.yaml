@@ -1,0 +1,13 @@
+concept: req_routed_to_user
+table: ReqRoutedToUser
+alias: rrtu
+fields:
+  user_code: rrtu.UserCode
+  status: rrtu.Status
+  requisition: rrtu.Requisition
+  requisition_line: rrtu.RequisitionLine
+  originator: rrtu.Originator
+  routing_num: rrtu.RoutingNum
+  from_user: rrtu.FromUser
+  notation: rrtu.Notation
+  requisition_type: rrtu.RequisitionType

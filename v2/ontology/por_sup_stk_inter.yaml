@@ -1,0 +1,23 @@
+concept: por_sup_stk_inter
+display_name: PorSupStkInter
+module: procurement
+description: Auto-generated representation of the physical table PorSupStkInter.
+synonyms:
+- porsupstkinter
+- por sup stk inter
+header_attributes:
+  sup_catalogue_num:
+    display: Supcataloguenum
+    type: string
+    required: false
+    description: Field SupCatalogueNum from PorSupStkInter
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from PorSupStkInter
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from PorSupStkInter

@@ -1,0 +1,33 @@
+concept: inv_price_date
+display_name: InvPriceDate
+module: inventory
+description: Auto-generated representation of the physical table InvPriceDate.
+synonyms:
+- invpricedate
+- inv price date
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvPriceDate
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from InvPriceDate
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from InvPriceDate
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from InvPriceDate
+  selling_price:
+    display: Sellingprice
+    type: decimal
+    required: false
+    description: Field SellingPrice from InvPriceDate

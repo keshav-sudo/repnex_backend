@@ -1,0 +1,17 @@
+concept: lot_arc_inv_insp_ser
+table: LotArcInvInspSer
+alias: laiis
+fields:
+  grn: laiis.Grn
+  lot: laiis.Lot
+  serial: laiis.Serial
+  status: laiis.Status
+  quantity: laiis.Quantity
+  transaction_date: laiis.TransactionDate
+  line: laiis.Line
+  document_num: laiis.DocumentNum
+  transf_to_new_wh: laiis.TransfToNewWh
+  stock_code: laiis.StockCode
+  version: laiis.Version
+  release: laiis.Release
+  expiry_date: laiis.ExpiryDate

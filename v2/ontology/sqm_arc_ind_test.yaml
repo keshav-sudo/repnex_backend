@@ -1,0 +1,93 @@
+concept: sqm_arc_ind_test
+display_name: SqmArcIndTest
+module: other
+description: Auto-generated representation of the physical table SqmArcIndTest.
+synonyms:
+- sqmarcindtest
+- sqm arc ind test
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmArcIndTest
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmArcIndTest
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmArcIndTest
+  sample_number:
+    display: Samplenumber
+    type: decimal
+    required: false
+    description: Field SampleNumber from SqmArcIndTest
+  sample_test:
+    display: Sampletest
+    type: decimal
+    required: false
+    description: Field SampleTest from SqmArcIndTest
+  test_name:
+    display: Testname
+    type: string
+    required: false
+    description: Field TestName from SqmArcIndTest
+  test_version:
+    display: Testversion
+    type: decimal
+    required: false
+    description: Field TestVersion from SqmArcIndTest
+  critical_status:
+    display: Criticalstatus
+    type: string
+    required: false
+    description: Field CriticalStatus from SqmArcIndTest
+  major_status:
+    display: Majorstatus
+    type: string
+    required: false
+    description: Field MajorStatus from SqmArcIndTest
+  minor_status:
+    display: Minorstatus
+    type: string
+    required: false
+    description: Field MinorStatus from SqmArcIndTest
+  test_complete:
+    display: Testcomplete
+    type: string
+    required: false
+    description: Field TestComplete from SqmArcIndTest
+  inspector_code:
+    display: Inspectorcode
+    type: string
+    required: false
+    description: Field InspectorCode from SqmArcIndTest
+  test_status:
+    display: Teststatus
+    type: string
+    required: false
+    description: Field TestStatus from SqmArcIndTest
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from SqmArcIndTest
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from SqmArcIndTest
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from SqmArcIndTest
+  end_time:
+    display: Endtime
+    type: decimal
+    required: false
+    description: Field EndTime from SqmArcIndTest

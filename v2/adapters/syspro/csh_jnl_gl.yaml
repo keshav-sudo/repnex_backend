@@ -1,0 +1,25 @@
+concept: csh_jnl_gl
+table: CshJnlGl
+alias: cjg
+fields:
+  cb_trn_year: cjg.CbTrnYear
+  cb_trn_month: cjg.CbTrnMonth
+  journal: cjg.Journal
+  entry_number: cjg.EntryNumber
+  line: cjg.Line
+  gl_code: cjg.GlCode
+  company: cjg.Company
+  dist_value: cjg.DistValue
+  narration: cjg.Narration
+  gl_updated: cjg.GlUpdated
+  distr_printed: cjg.DistrPrinted
+  gl_period: cjg.GlPeriod
+  gl_year: cjg.GlYear
+  tax_entry: cjg.TaxEntry
+  entries_group: cjg.EntriesGroup
+  job: cjg.Job
+  analysis_entry: cjg.AnalysisEntry
+  tax_code: cjg.TaxCode
+  tax_gl_code: cjg.TaxGlCode
+  dimension_entry: cjg.DimensionEntry
+  dimension_line: cjg.DimensionLine

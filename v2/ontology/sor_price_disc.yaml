@@ -1,0 +1,628 @@
+concept: sor_price_disc
+display_name: SorPriceDisc
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPriceDisc.
+synonyms:
+- sorpricedisc
+- sor price disc
+header_attributes:
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from SorPriceDisc
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SorPriceDisc
+  discount_type:
+    display: Discounttype
+    type: string
+    required: false
+    description: Field DiscountType from SorPriceDisc
+  minimum1:
+    display: Minimum1
+    type: decimal
+    required: false
+    description: Field Minimum1 from SorPriceDisc
+  minimum2:
+    display: Minimum2
+    type: decimal
+    required: false
+    description: Field Minimum2 from SorPriceDisc
+  minimum3:
+    display: Minimum3
+    type: decimal
+    required: false
+    description: Field Minimum3 from SorPriceDisc
+  minimum4:
+    display: Minimum4
+    type: decimal
+    required: false
+    description: Field Minimum4 from SorPriceDisc
+  minimum5:
+    display: Minimum5
+    type: decimal
+    required: false
+    description: Field Minimum5 from SorPriceDisc
+  minimum6:
+    display: Minimum6
+    type: decimal
+    required: false
+    description: Field Minimum6 from SorPriceDisc
+  minimum7:
+    display: Minimum7
+    type: decimal
+    required: false
+    description: Field Minimum7 from SorPriceDisc
+  minimum8:
+    display: Minimum8
+    type: decimal
+    required: false
+    description: Field Minimum8 from SorPriceDisc
+  minimum9:
+    display: Minimum9
+    type: decimal
+    required: false
+    description: Field Minimum9 from SorPriceDisc
+  minimum10:
+    display: Minimum10
+    type: decimal
+    required: false
+    description: Field Minimum10 from SorPriceDisc
+  minimum11:
+    display: Minimum11
+    type: decimal
+    required: false
+    description: Field Minimum11 from SorPriceDisc
+  minimum12:
+    display: Minimum12
+    type: decimal
+    required: false
+    description: Field Minimum12 from SorPriceDisc
+  minimum13:
+    display: Minimum13
+    type: decimal
+    required: false
+    description: Field Minimum13 from SorPriceDisc
+  minimum14:
+    display: Minimum14
+    type: decimal
+    required: false
+    description: Field Minimum14 from SorPriceDisc
+  minimum15:
+    display: Minimum15
+    type: decimal
+    required: false
+    description: Field Minimum15 from SorPriceDisc
+  minimum16:
+    display: Minimum16
+    type: decimal
+    required: false
+    description: Field Minimum16 from SorPriceDisc
+  minimum17:
+    display: Minimum17
+    type: decimal
+    required: false
+    description: Field Minimum17 from SorPriceDisc
+  minimum18:
+    display: Minimum18
+    type: decimal
+    required: false
+    description: Field Minimum18 from SorPriceDisc
+  minimum19:
+    display: Minimum19
+    type: decimal
+    required: false
+    description: Field Minimum19 from SorPriceDisc
+  minimum20:
+    display: Minimum20
+    type: decimal
+    required: false
+    description: Field Minimum20 from SorPriceDisc
+  minimum21:
+    display: Minimum21
+    type: decimal
+    required: false
+    description: Field Minimum21 from SorPriceDisc
+  minimum22:
+    display: Minimum22
+    type: decimal
+    required: false
+    description: Field Minimum22 from SorPriceDisc
+  minimum23:
+    display: Minimum23
+    type: decimal
+    required: false
+    description: Field Minimum23 from SorPriceDisc
+  minimum24:
+    display: Minimum24
+    type: decimal
+    required: false
+    description: Field Minimum24 from SorPriceDisc
+  minimum25:
+    display: Minimum25
+    type: decimal
+    required: false
+    description: Field Minimum25 from SorPriceDisc
+  minimum26:
+    display: Minimum26
+    type: decimal
+    required: false
+    description: Field Minimum26 from SorPriceDisc
+  minimum27:
+    display: Minimum27
+    type: decimal
+    required: false
+    description: Field Minimum27 from SorPriceDisc
+  minimum28:
+    display: Minimum28
+    type: decimal
+    required: false
+    description: Field Minimum28 from SorPriceDisc
+  minimum29:
+    display: Minimum29
+    type: decimal
+    required: false
+    description: Field Minimum29 from SorPriceDisc
+  minimum30:
+    display: Minimum30
+    type: decimal
+    required: false
+    description: Field Minimum30 from SorPriceDisc
+  discount11:
+    display: Discount11
+    type: decimal
+    required: false
+    description: Field Discount11 from SorPriceDisc
+  discount12:
+    display: Discount12
+    type: decimal
+    required: false
+    description: Field Discount12 from SorPriceDisc
+  discount13:
+    display: Discount13
+    type: decimal
+    required: false
+    description: Field Discount13 from SorPriceDisc
+  discount14:
+    display: Discount14
+    type: decimal
+    required: false
+    description: Field Discount14 from SorPriceDisc
+  discount15:
+    display: Discount15
+    type: decimal
+    required: false
+    description: Field Discount15 from SorPriceDisc
+  discount16:
+    display: Discount16
+    type: decimal
+    required: false
+    description: Field Discount16 from SorPriceDisc
+  discount17:
+    display: Discount17
+    type: decimal
+    required: false
+    description: Field Discount17 from SorPriceDisc
+  discount18:
+    display: Discount18
+    type: decimal
+    required: false
+    description: Field Discount18 from SorPriceDisc
+  discount19:
+    display: Discount19
+    type: decimal
+    required: false
+    description: Field Discount19 from SorPriceDisc
+  discount110:
+    display: Discount110
+    type: decimal
+    required: false
+    description: Field Discount110 from SorPriceDisc
+  discount111:
+    display: Discount111
+    type: decimal
+    required: false
+    description: Field Discount111 from SorPriceDisc
+  discount112:
+    display: Discount112
+    type: decimal
+    required: false
+    description: Field Discount112 from SorPriceDisc
+  discount113:
+    display: Discount113
+    type: decimal
+    required: false
+    description: Field Discount113 from SorPriceDisc
+  discount114:
+    display: Discount114
+    type: decimal
+    required: false
+    description: Field Discount114 from SorPriceDisc
+  discount115:
+    display: Discount115
+    type: decimal
+    required: false
+    description: Field Discount115 from SorPriceDisc
+  discount116:
+    display: Discount116
+    type: decimal
+    required: false
+    description: Field Discount116 from SorPriceDisc
+  discount117:
+    display: Discount117
+    type: decimal
+    required: false
+    description: Field Discount117 from SorPriceDisc
+  discount118:
+    display: Discount118
+    type: decimal
+    required: false
+    description: Field Discount118 from SorPriceDisc
+  discount119:
+    display: Discount119
+    type: decimal
+    required: false
+    description: Field Discount119 from SorPriceDisc
+  discount120:
+    display: Discount120
+    type: decimal
+    required: false
+    description: Field Discount120 from SorPriceDisc
+  discount121:
+    display: Discount121
+    type: decimal
+    required: false
+    description: Field Discount121 from SorPriceDisc
+  discount122:
+    display: Discount122
+    type: decimal
+    required: false
+    description: Field Discount122 from SorPriceDisc
+  discount123:
+    display: Discount123
+    type: decimal
+    required: false
+    description: Field Discount123 from SorPriceDisc
+  discount124:
+    display: Discount124
+    type: decimal
+    required: false
+    description: Field Discount124 from SorPriceDisc
+  discount125:
+    display: Discount125
+    type: decimal
+    required: false
+    description: Field Discount125 from SorPriceDisc
+  discount126:
+    display: Discount126
+    type: decimal
+    required: false
+    description: Field Discount126 from SorPriceDisc
+  discount127:
+    display: Discount127
+    type: decimal
+    required: false
+    description: Field Discount127 from SorPriceDisc
+  discount128:
+    display: Discount128
+    type: decimal
+    required: false
+    description: Field Discount128 from SorPriceDisc
+  discount129:
+    display: Discount129
+    type: decimal
+    required: false
+    description: Field Discount129 from SorPriceDisc
+  discount130:
+    display: Discount130
+    type: decimal
+    required: false
+    description: Field Discount130 from SorPriceDisc
+  discount21:
+    display: Discount21
+    type: decimal
+    required: false
+    description: Field Discount21 from SorPriceDisc
+  discount22:
+    display: Discount22
+    type: decimal
+    required: false
+    description: Field Discount22 from SorPriceDisc
+  discount23:
+    display: Discount23
+    type: decimal
+    required: false
+    description: Field Discount23 from SorPriceDisc
+  discount24:
+    display: Discount24
+    type: decimal
+    required: false
+    description: Field Discount24 from SorPriceDisc
+  discount25:
+    display: Discount25
+    type: decimal
+    required: false
+    description: Field Discount25 from SorPriceDisc
+  discount26:
+    display: Discount26
+    type: decimal
+    required: false
+    description: Field Discount26 from SorPriceDisc
+  discount27:
+    display: Discount27
+    type: decimal
+    required: false
+    description: Field Discount27 from SorPriceDisc
+  discount28:
+    display: Discount28
+    type: decimal
+    required: false
+    description: Field Discount28 from SorPriceDisc
+  discount29:
+    display: Discount29
+    type: decimal
+    required: false
+    description: Field Discount29 from SorPriceDisc
+  discount210:
+    display: Discount210
+    type: decimal
+    required: false
+    description: Field Discount210 from SorPriceDisc
+  discount211:
+    display: Discount211
+    type: decimal
+    required: false
+    description: Field Discount211 from SorPriceDisc
+  discount212:
+    display: Discount212
+    type: decimal
+    required: false
+    description: Field Discount212 from SorPriceDisc
+  discount213:
+    display: Discount213
+    type: decimal
+    required: false
+    description: Field Discount213 from SorPriceDisc
+  discount214:
+    display: Discount214
+    type: decimal
+    required: false
+    description: Field Discount214 from SorPriceDisc
+  discount215:
+    display: Discount215
+    type: decimal
+    required: false
+    description: Field Discount215 from SorPriceDisc
+  discount216:
+    display: Discount216
+    type: decimal
+    required: false
+    description: Field Discount216 from SorPriceDisc
+  discount217:
+    display: Discount217
+    type: decimal
+    required: false
+    description: Field Discount217 from SorPriceDisc
+  discount218:
+    display: Discount218
+    type: decimal
+    required: false
+    description: Field Discount218 from SorPriceDisc
+  discount219:
+    display: Discount219
+    type: decimal
+    required: false
+    description: Field Discount219 from SorPriceDisc
+  discount220:
+    display: Discount220
+    type: decimal
+    required: false
+    description: Field Discount220 from SorPriceDisc
+  discount221:
+    display: Discount221
+    type: decimal
+    required: false
+    description: Field Discount221 from SorPriceDisc
+  discount222:
+    display: Discount222
+    type: decimal
+    required: false
+    description: Field Discount222 from SorPriceDisc
+  discount223:
+    display: Discount223
+    type: decimal
+    required: false
+    description: Field Discount223 from SorPriceDisc
+  discount224:
+    display: Discount224
+    type: decimal
+    required: false
+    description: Field Discount224 from SorPriceDisc
+  discount225:
+    display: Discount225
+    type: decimal
+    required: false
+    description: Field Discount225 from SorPriceDisc
+  discount226:
+    display: Discount226
+    type: decimal
+    required: false
+    description: Field Discount226 from SorPriceDisc
+  discount227:
+    display: Discount227
+    type: decimal
+    required: false
+    description: Field Discount227 from SorPriceDisc
+  discount228:
+    display: Discount228
+    type: decimal
+    required: false
+    description: Field Discount228 from SorPriceDisc
+  discount229:
+    display: Discount229
+    type: decimal
+    required: false
+    description: Field Discount229 from SorPriceDisc
+  discount230:
+    display: Discount230
+    type: decimal
+    required: false
+    description: Field Discount230 from SorPriceDisc
+  discount31:
+    display: Discount31
+    type: decimal
+    required: false
+    description: Field Discount31 from SorPriceDisc
+  discount32:
+    display: Discount32
+    type: decimal
+    required: false
+    description: Field Discount32 from SorPriceDisc
+  discount33:
+    display: Discount33
+    type: decimal
+    required: false
+    description: Field Discount33 from SorPriceDisc
+  discount34:
+    display: Discount34
+    type: decimal
+    required: false
+    description: Field Discount34 from SorPriceDisc
+  discount35:
+    display: Discount35
+    type: decimal
+    required: false
+    description: Field Discount35 from SorPriceDisc
+  discount36:
+    display: Discount36
+    type: decimal
+    required: false
+    description: Field Discount36 from SorPriceDisc
+  discount37:
+    display: Discount37
+    type: decimal
+    required: false
+    description: Field Discount37 from SorPriceDisc
+  discount38:
+    display: Discount38
+    type: decimal
+    required: false
+    description: Field Discount38 from SorPriceDisc
+  discount39:
+    display: Discount39
+    type: decimal
+    required: false
+    description: Field Discount39 from SorPriceDisc
+  discount310:
+    display: Discount310
+    type: decimal
+    required: false
+    description: Field Discount310 from SorPriceDisc
+  discount311:
+    display: Discount311
+    type: decimal
+    required: false
+    description: Field Discount311 from SorPriceDisc
+  discount312:
+    display: Discount312
+    type: decimal
+    required: false
+    description: Field Discount312 from SorPriceDisc
+  discount313:
+    display: Discount313
+    type: decimal
+    required: false
+    description: Field Discount313 from SorPriceDisc
+  discount314:
+    display: Discount314
+    type: decimal
+    required: false
+    description: Field Discount314 from SorPriceDisc
+  discount315:
+    display: Discount315
+    type: decimal
+    required: false
+    description: Field Discount315 from SorPriceDisc
+  discount316:
+    display: Discount316
+    type: decimal
+    required: false
+    description: Field Discount316 from SorPriceDisc
+  discount317:
+    display: Discount317
+    type: decimal
+    required: false
+    description: Field Discount317 from SorPriceDisc
+  discount318:
+    display: Discount318
+    type: decimal
+    required: false
+    description: Field Discount318 from SorPriceDisc
+  discount319:
+    display: Discount319
+    type: decimal
+    required: false
+    description: Field Discount319 from SorPriceDisc
+  discount320:
+    display: Discount320
+    type: decimal
+    required: false
+    description: Field Discount320 from SorPriceDisc
+  discount321:
+    display: Discount321
+    type: decimal
+    required: false
+    description: Field Discount321 from SorPriceDisc
+  discount322:
+    display: Discount322
+    type: decimal
+    required: false
+    description: Field Discount322 from SorPriceDisc
+  discount323:
+    display: Discount323
+    type: decimal
+    required: false
+    description: Field Discount323 from SorPriceDisc
+  discount324:
+    display: Discount324
+    type: decimal
+    required: false
+    description: Field Discount324 from SorPriceDisc
+  discount325:
+    display: Discount325
+    type: decimal
+    required: false
+    description: Field Discount325 from SorPriceDisc
+  discount326:
+    display: Discount326
+    type: decimal
+    required: false
+    description: Field Discount326 from SorPriceDisc
+  discount327:
+    display: Discount327
+    type: decimal
+    required: false
+    description: Field Discount327 from SorPriceDisc
+  discount328:
+    display: Discount328
+    type: decimal
+    required: false
+    description: Field Discount328 from SorPriceDisc
+  discount329:
+    display: Discount329
+    type: decimal
+    required: false
+    description: Field Discount329 from SorPriceDisc
+  discount330:
+    display: Discount330
+    type: decimal
+    required: false
+    description: Field Discount330 from SorPriceDisc
+  conv_ord_uom_flag:
+    display: Convorduomflag
+    type: string
+    required: false
+    description: Field ConvOrdUomFlag from SorPriceDisc

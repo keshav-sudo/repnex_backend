@@ -1,0 +1,15 @@
+concept: lynq_vp_bpl__src_vp_resource_linear_mapping
+table: Lynq_VP_BPL_Src_VPResourceLinearMapping
+alias: lvpbplsvprlm
+fields:
+  id: lvpbplsvprlm.ID
+  res_id: lvpbplsvprlm.ResID
+  sys_res_code: lvpbplsvprlm.SysResCode
+  stp_res_qty: lvpbplsvprlm.STPResQty
+  stp_res_hrs: lvpbplsvprlm.STPResHrs
+  prd_res_qty: lvpbplsvprlm.PRDResQty
+  prd_res_hrs: lvpbplsvprlm.PRDResHrs
+  pc1_res_qty: lvpbplsvprlm.PC1ResQty
+  pc1_res_hrs: lvpbplsvprlm.PC1ResHrs
+  pc2_res_qty: lvpbplsvprlm.PC2ResQty
+  pc2_res_hrs: lvpbplsvprlm.PC2ResHrs

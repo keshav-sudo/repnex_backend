@@ -1,0 +1,78 @@
+concept: adm_archive_pending
+display_name: AdmArchivePending
+module: administration
+description: Auto-generated representation of the physical table AdmArchivePending.
+synonyms:
+- admarchivepending
+- adm archive pending
+header_attributes:
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from AdmArchivePending
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmArchivePending
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from AdmArchivePending
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from AdmArchivePending
+  archive_folder:
+    display: Archivefolder
+    type: string
+    required: false
+    description: Field ArchiveFolder from AdmArchivePending
+  template_name:
+    display: Templatename
+    type: string
+    required: false
+    description: Field TemplateName from AdmArchivePending
+  schema_name:
+    display: Schemaname
+    type: string
+    required: false
+    description: Field SchemaName from AdmArchivePending
+  lock_operator:
+    display: Lockoperator
+    type: string
+    required: false
+    description: Field LockOperator from AdmArchivePending
+  lock_date:
+    display: Lockdate
+    type: date
+    required: false
+    description: Field LockDate from AdmArchivePending
+  lock_time:
+    display: Locktime
+    type: decimal
+    required: false
+    description: Field LockTime from AdmArchivePending
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from AdmArchivePending
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from AdmArchivePending
+  sql_error_file:
+    display: Sqlerrorfile
+    type: string
+    required: false
+    description: Field SqlErrorFile from AdmArchivePending
+  document_id:
+    display: Documentid
+    type: decimal
+    required: false
+    description: Field DocumentId from AdmArchivePending

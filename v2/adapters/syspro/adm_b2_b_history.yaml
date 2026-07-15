@@ -1,0 +1,12 @@
+concept: adm_b2_b_history
+table: AdmB2BHistory
+alias: abbh
+fields:
+  key_type: abbh.KeyType
+  document_type: abbh.DocumentType
+  key_field: abbh.KeyField
+  document_date: abbh.DocumentDate
+  document_time: abbh.DocumentTime
+  xml_doc_filename: abbh.XmlDocFilename
+  xml_hist_filename: abbh.XmlHistFilename
+  operator: abbh.Operator

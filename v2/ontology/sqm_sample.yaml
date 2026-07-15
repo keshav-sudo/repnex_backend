@@ -1,0 +1,33 @@
+concept: sqm_sample
+display_name: SqmSample
+module: other
+description: Auto-generated representation of the physical table SqmSample.
+synonyms:
+- sqmsample
+- sqm sample
+header_attributes:
+  plan_type:
+    display: Plantype
+    type: string
+    required: false
+    description: Field PlanType from SqmSample
+  lot_size_min:
+    display: Lotsizemin
+    type: decimal
+    required: false
+    description: Field LotSizeMin from SqmSample
+  lot_size_max:
+    display: Lotsizemax
+    type: decimal
+    required: false
+    description: Field LotSizeMax from SqmSample
+  inspect_level:
+    display: Inspectlevel
+    type: string
+    required: false
+    description: Field InspectLevel from SqmSample
+  sample_code:
+    display: Samplecode
+    type: string
+    required: false
+    description: Field SampleCode from SqmSample

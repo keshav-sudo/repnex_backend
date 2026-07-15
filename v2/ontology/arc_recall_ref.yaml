@@ -1,0 +1,28 @@
+concept: arc_recall_ref
+display_name: ArcRecallRef
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArcRecallRef.
+synonyms:
+- arcrecallref
+- arc recall ref
+header_attributes:
+  product_recall:
+    display: Productrecall
+    type: string
+    required: false
+    description: Field ProductRecall from ArcRecallRef
+  archive_number:
+    display: Archivenumber
+    type: decimal
+    required: false
+    description: Field ArchiveNumber from ArcRecallRef
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from ArcRecallRef
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from ArcRecallRef

@@ -1,0 +1,43 @@
+concept: gen_std_jnl_det
+display_name: GenStdJnlDet
+module: general_ledger
+description: Auto-generated representation of the physical table GenStdJnlDet.
+synonyms:
+- genstdjnldet
+- gen std jnl det
+header_attributes:
+  journal_code:
+    display: Journalcode
+    type: string
+    required: false
+    description: Field JournalCode from GenStdJnlDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from GenStdJnlDet
+  debit_credit:
+    display: Debitcredit
+    type: string
+    required: false
+    description: Field DebitCredit from GenStdJnlDet
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenStdJnlDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from GenStdJnlDet
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from GenStdJnlDet
+  entry_amount:
+    display: Entryamount
+    type: decimal
+    required: false
+    description: Field EntryAmount from GenStdJnlDet

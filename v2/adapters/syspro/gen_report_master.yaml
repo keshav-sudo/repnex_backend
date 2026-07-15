@@ -1,0 +1,12 @@
+concept: gen_report_master
+table: GenReportMaster
+alias: grm
+fields:
+  gl_report_code: grm.GlReportCode
+  temp_rename_flag: grm.TempRenameFlag
+  report_line: grm.ReportLine
+  report_line_type: grm.ReportLineType
+  report_section: grm.ReportSection
+  report_entry: grm.ReportEntry
+  record_type: grm.RecordType
+  report_info: grm.ReportInfo

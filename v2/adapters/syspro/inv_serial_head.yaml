@@ -1,0 +1,34 @@
+concept: inv_serial_head
+table: InvSerialHead
+alias: ish
+fields:
+  stock_code: ish.StockCode
+  warehouse: ish.Warehouse
+  serial: ish.Serial
+  next_detail_line: ish.NextDetailLine
+  serial_method: ish.SerialMethod
+  serial_description: ish.SerialDescription
+  expiry_date: ish.ExpiryDate
+  scrap_date: ish.ScrapDate
+  qty_received: ish.QtyReceived
+  qty_available: ish.QtyAvailable
+  qty_on_hand: ish.QtyOnHand
+  location: ish.Location
+  service_flag: ish.ServiceFlag
+  load_flag: ish.LoadFlag
+  service_depot_flag: ish.ServiceDepotFlag
+  due_date: ish.DueDate
+  customer: ish.Customer
+  lot: ish.Lot
+  archive_filename: ish.ArchiveFilename
+  date_created: ish.DateCreated
+  prv_warehouse: ish.PrvWarehouse
+  qty_in_transit_out: ish.QtyInTransitOut
+  version: ish.Version
+  release: ish.Release
+  bin: ish.Bin
+  prv_bin: ish.PrvBin
+  serial_on_hold: ish.SerialOnHold
+  on_hold_reason: ish.OnHoldReason
+  prd_recall_flag: ish.PrdRecallFlag
+  reason_code: ish.ReasonCode

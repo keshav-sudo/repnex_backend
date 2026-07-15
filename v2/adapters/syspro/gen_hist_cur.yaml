@@ -1,0 +1,13 @@
+concept: gen_hist_cur
+table: GenHistCur
+alias: ghc
+fields:
+  currency: ghc.Currency
+  date_rate_change: ghc.DateRateChange
+  conv_rate: ghc.ConvRate
+  mul_div: ghc.MulDiv
+  triangulated: ghc.Triangulated
+  triang_currency: ghc.TriangCurrency
+  operator: ghc.Operator
+  reason_for_change: ghc.ReasonForChange
+  time_rate_change: ghc.TimeRateChange

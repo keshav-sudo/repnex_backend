@@ -1,0 +1,93 @@
+concept: por_delivery_addr
+display_name: PorDeliveryAddr
+module: procurement
+description: Auto-generated representation of the physical table PorDeliveryAddr.
+synonyms:
+- pordeliveryaddr
+- por delivery addr
+header_attributes:
+  delivery_addr_code:
+    display: Deliveryaddrcode
+    type: string
+    required: false
+    description: Field DeliveryAddrCode from PorDeliveryAddr
+  delivery_name:
+    display: Deliveryname
+    type: string
+    required: false
+    description: Field DeliveryName from PorDeliveryAddr
+  delivery_addr1:
+    display: Deliveryaddr1
+    type: string
+    required: false
+    description: Field DeliveryAddr1 from PorDeliveryAddr
+  delivery_addr2:
+    display: Deliveryaddr2
+    type: string
+    required: false
+    description: Field DeliveryAddr2 from PorDeliveryAddr
+  delivery_addr3:
+    display: Deliveryaddr3
+    type: string
+    required: false
+    description: Field DeliveryAddr3 from PorDeliveryAddr
+  delivery_addr3_loc:
+    display: Deliveryaddr3Loc
+    type: string
+    required: false
+    description: Field DeliveryAddr3Loc from PorDeliveryAddr
+  delivery_addr4:
+    display: Deliveryaddr4
+    type: string
+    required: false
+    description: Field DeliveryAddr4 from PorDeliveryAddr
+  delivery_addr5:
+    display: Deliveryaddr5
+    type: string
+    required: false
+    description: Field DeliveryAddr5 from PorDeliveryAddr
+  delivery_post_code:
+    display: Deliverypostcode
+    type: string
+    required: false
+    description: Field DeliveryPostCode from PorDeliveryAddr
+  delivery_gps_lat:
+    display: Deliverygpslat
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLat from PorDeliveryAddr
+  delivery_gps_long:
+    display: Deliverygpslong
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLong from PorDeliveryAddr
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from PorDeliveryAddr
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from PorDeliveryAddr
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from PorDeliveryAddr
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from PorDeliveryAddr
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from PorDeliveryAddr
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from PorDeliveryAddr

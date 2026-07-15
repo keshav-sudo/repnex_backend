@@ -1,0 +1,6 @@
+concept: tpm_resolution
+table: TpmResolution
+alias: tr
+fields:
+  resolution_code: tr.ResolutionCode
+  description: tr.Description

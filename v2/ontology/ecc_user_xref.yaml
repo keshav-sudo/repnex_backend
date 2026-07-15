@@ -1,0 +1,28 @@
+concept: ecc_user_xref
+display_name: EccUserXref
+module: other
+description: Auto-generated representation of the physical table EccUserXref.
+synonyms:
+- eccuserxref
+- ecc user xref
+header_attributes:
+  ecc_user:
+    display: Eccuser
+    type: string
+    required: false
+    description: Field EccUser from EccUserXref
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from EccUserXref
+  notify:
+    display: Notify
+    type: string
+    required: false
+    description: Field Notify from EccUserXref
+  enc_notify:
+    display: Encnotify
+    type: string
+    required: false
+    description: Field EncNotify from EccUserXref

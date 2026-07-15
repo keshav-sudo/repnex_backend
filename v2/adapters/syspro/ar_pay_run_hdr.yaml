@@ -1,0 +1,36 @@
+concept: ar_pay_run_hdr
+table: ArPayRunHdr
+alias: aprh1
+fields:
+  payment_number: aprh1.PaymentNumber
+  collector: aprh1.Collector
+  collector_number_ar: aprh1.CollectorNumberAr
+  bank: aprh1.Bank
+  currency: aprh1.Currency
+  payment_type: aprh1.PaymentType
+  payment_run_status: aprh1.PaymentRunStatus
+  created_date: aprh1.CreatedDate
+  payment_date: aprh1.PaymentDate
+  authorized_date: aprh1.AuthorizedDate
+  posted_date: aprh1.PostedDate
+  hash_value: aprh1.HashValue
+  reference: aprh1.Reference
+  notation: aprh1.Notation
+  narration: aprh1.Narration
+  pay_rate_method: aprh1.PayRateMethod
+  payment_rate: aprh1.PaymentRate
+  gl_exch_var_code: aprh1.GlExchVarCode
+  pay_cr_flag: aprh1.PayCrFlag
+  pay_settle_note: aprh1.PaySettleNote
+  reset_cr_flag: aprh1.ResetCrFlag
+  drawers_name: aprh1.DrawersName
+  bank_payment_type: aprh1.BankPaymentType
+  drawers_bank: aprh1.DrawersBank
+  drawers_bank_brnch: aprh1.DrawersBankBrnch
+  bank_charge: aprh1.BankCharge
+  operator: aprh1.Operator
+  group_code: aprh1.GroupCode
+  salesperson: aprh1.Salesperson
+  area: aprh1.Area
+  customer: aprh1.Customer
+  payment_mul_div: aprh1.PaymentMulDiv

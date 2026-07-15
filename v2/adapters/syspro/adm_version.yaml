@@ -1,0 +1,15 @@
+concept: adm_version
+table: AdmVersion
+alias: av
+fields:
+  ctl_flag: av.CtlFlag
+  update_date: av.UpdateDate
+  database_version: av.DatabaseVersion
+  description: av.Description
+  syspro_full_version: av.SysproFullVersion
+  syspro_version: av.SysproVersion
+  syspro_sp: av.SysproSp
+  update_source: av.UpdateSource
+  update_source_info: av.UpdateSourceInfo
+  update_status: av.UpdateStatus
+  baq_version: av.BaqVersion

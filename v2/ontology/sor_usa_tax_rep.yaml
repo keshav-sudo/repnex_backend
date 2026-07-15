@@ -1,0 +1,158 @@
+concept: sor_usa_tax_rep
+display_name: SorUsaTaxRep
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorUsaTaxRep.
+synonyms:
+- sorusataxrep
+- sor usa tax rep
+header_attributes:
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SorUsaTaxRep
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorUsaTaxRep
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from SorUsaTaxRep
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from SorUsaTaxRep
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from SorUsaTaxRep
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from SorUsaTaxRep
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SorUsaTaxRep
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from SorUsaTaxRep
+  freight_taxable:
+    display: Freighttaxable
+    type: string
+    required: false
+    description: Field FreightTaxable from SorUsaTaxRep
+  verazip_county:
+    display: Verazipcounty
+    type: string
+    required: false
+    description: Field VerazipCounty from SorUsaTaxRep
+  limit_flag:
+    display: Limitflag
+    type: string
+    required: false
+    description: Field LimitFlag from SorUsaTaxRep
+  first_rate11:
+    display: Firstrate11
+    type: decimal
+    required: false
+    description: Field FirstRate11 from SorUsaTaxRep
+  first_rate12:
+    display: Firstrate12
+    type: decimal
+    required: false
+    description: Field FirstRate12 from SorUsaTaxRep
+  first_limit11:
+    display: Firstlimit11
+    type: decimal
+    required: false
+    description: Field FirstLimit11 from SorUsaTaxRep
+  first_limit12:
+    display: Firstlimit12
+    type: decimal
+    required: false
+    description: Field FirstLimit12 from SorUsaTaxRep
+  first_limit_value11:
+    display: Firstlimitvalue11
+    type: decimal
+    required: false
+    description: Field FirstLimitValue11 from SorUsaTaxRep
+  first_limit_value12:
+    display: Firstlimitvalue12
+    type: decimal
+    required: false
+    description: Field FirstLimitValue12 from SorUsaTaxRep
+  first_rate21:
+    display: Firstrate21
+    type: decimal
+    required: false
+    description: Field FirstRate21 from SorUsaTaxRep
+  first_rate22:
+    display: Firstrate22
+    type: decimal
+    required: false
+    description: Field FirstRate22 from SorUsaTaxRep
+  first_limit21:
+    display: Firstlimit21
+    type: decimal
+    required: false
+    description: Field FirstLimit21 from SorUsaTaxRep
+  first_limit22:
+    display: Firstlimit22
+    type: decimal
+    required: false
+    description: Field FirstLimit22 from SorUsaTaxRep
+  first_limit_value21:
+    display: Firstlimitvalue21
+    type: decimal
+    required: false
+    description: Field FirstLimitValue21 from SorUsaTaxRep
+  first_limit_value22:
+    display: Firstlimitvalue22
+    type: decimal
+    required: false
+    description: Field FirstLimitValue22 from SorUsaTaxRep
+  first_rate31:
+    display: Firstrate31
+    type: decimal
+    required: false
+    description: Field FirstRate31 from SorUsaTaxRep
+  first_rate32:
+    display: Firstrate32
+    type: decimal
+    required: false
+    description: Field FirstRate32 from SorUsaTaxRep
+  first_limit31:
+    display: Firstlimit31
+    type: decimal
+    required: false
+    description: Field FirstLimit31 from SorUsaTaxRep
+  first_limit32:
+    display: Firstlimit32
+    type: decimal
+    required: false
+    description: Field FirstLimit32 from SorUsaTaxRep
+  first_limit_value31:
+    display: Firstlimitvalue31
+    type: decimal
+    required: false
+    description: Field FirstLimitValue31 from SorUsaTaxRep
+  first_limit_value32:
+    display: Firstlimitvalue32
+    type: decimal
+    required: false
+    description: Field FirstLimitValue32 from SorUsaTaxRep
+  usa_or_normal_tax:
+    display: Usaornormaltax
+    type: string
+    required: false
+    description: Field UsaOrNormalTax from SorUsaTaxRep

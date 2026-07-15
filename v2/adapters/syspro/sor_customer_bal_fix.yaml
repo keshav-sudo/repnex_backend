@@ -1,0 +1,13 @@
+concept: sor_customer_bal_fix
+table: SorCustomerBalFix
+alias: scbf
+fields:
+  run_date_time: scbf.RunDateTime
+  customer: scbf.Customer
+  old_outst_ord_val: scbf.OldOutstOrdVal
+  new_outst_ord_val: scbf.NewOutstOrdVal
+  old_num_outst_ord: scbf.OldNumOutstOrd
+  new_num_outst_ord: scbf.NewNumOutstOrd
+  old_rel_ord_os_value: scbf.OldRelOrdOsValue
+  new_rel_ord_os_value: scbf.NewRelOrdOsValue
+  message: scbf.Message

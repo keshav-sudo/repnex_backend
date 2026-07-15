@@ -1,0 +1,63 @@
+concept: eft_pay_format_det
+display_name: EftPayFormatDet
+module: other
+description: Auto-generated representation of the physical table EftPayFormatDet.
+synonyms:
+- eftpayformatdet
+- eft pay format det
+header_attributes:
+  format_code:
+    display: Formatcode
+    type: string
+    required: false
+    description: Field FormatCode from EftPayFormatDet
+  record_type:
+    display: Recordtype
+    type: string
+    required: false
+    description: Field RecordType from EftPayFormatDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from EftPayFormatDet
+  field_length:
+    display: Fieldlength
+    type: decimal
+    required: false
+    description: Field FieldLength from EftPayFormatDet
+  field_desc:
+    display: Fielddesc
+    type: string
+    required: false
+    description: Field FieldDesc from EftPayFormatDet
+  field_map:
+    display: Fieldmap
+    type: string
+    required: false
+    description: Field FieldMap from EftPayFormatDet
+  data_element:
+    display: Dataelement
+    type: string
+    required: false
+    description: Field DataElement from EftPayFormatDet
+  constant:
+    display: Constant
+    type: string
+    required: false
+    description: Field Constant from EftPayFormatDet
+  calculation:
+    display: Calculation
+    type: string
+    required: false
+    description: Field Calculation from EftPayFormatDet
+  custom_form_type:
+    display: Customformtype
+    type: string
+    required: false
+    description: Field CustomFormType from EftPayFormatDet
+  custom_form_field:
+    display: Customformfield
+    type: string
+    required: false
+    description: Field CustomFormField from EftPayFormatDet

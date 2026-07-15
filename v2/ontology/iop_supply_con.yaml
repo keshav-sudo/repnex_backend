@@ -1,0 +1,73 @@
+concept: iop_supply_con
+display_name: IopSupplyCon
+module: other
+description: Auto-generated representation of the physical table IopSupplyCon.
+synonyms:
+- iopsupplycon
+- iop supply con
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from IopSupplyCon
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopSupplyCon
+  delivery_method:
+    display: Deliverymethod
+    type: string
+    required: false
+    description: Field DeliveryMethod from IopSupplyCon
+  min_value:
+    display: Minvalue
+    type: decimal
+    required: false
+    description: Field MinValue from IopSupplyCon
+  max_value:
+    display: Maxvalue
+    type: decimal
+    required: false
+    description: Field MaxValue from IopSupplyCon
+  min_mass:
+    display: Minmass
+    type: decimal
+    required: false
+    description: Field MinMass from IopSupplyCon
+  max_mass:
+    display: Maxmass
+    type: decimal
+    required: false
+    description: Field MaxMass from IopSupplyCon
+  min_volume:
+    display: Minvolume
+    type: decimal
+    required: false
+    description: Field MinVolume from IopSupplyCon
+  max_volume:
+    display: Maxvolume
+    type: decimal
+    required: false
+    description: Field MaxVolume from IopSupplyCon
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from IopSupplyCon
+  delivery_freq:
+    display: Deliveryfreq
+    type: string
+    required: false
+    description: Field DeliveryFreq from IopSupplyCon
+  interval_period:
+    display: Intervalperiod
+    type: decimal
+    required: false
+    description: Field IntervalPeriod from IopSupplyCon
+  day_of_week_month:
+    display: Dayofweekmonth
+    type: decimal
+    required: false
+    description: Field DayOfWeekMonth from IopSupplyCon

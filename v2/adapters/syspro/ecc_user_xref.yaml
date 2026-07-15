@@ -1,0 +1,8 @@
+concept: ecc_user_xref
+table: EccUserXref
+alias: eux
+fields:
+  ecc_user: eux.EccUser
+  operator: eux.Operator
+  notify: eux.Notify
+  enc_notify: eux.EncNotify

@@ -1,0 +1,368 @@
+concept: rma_detail
+display_name: RmaDetail
+module: other
+description: Auto-generated representation of the physical table RmaDetail.
+synonyms:
+- rmadetail
+- rma detail
+header_attributes:
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RmaDetail
+  rma_line_number:
+    display: Rmalinenumber
+    type: decimal
+    required: false
+    description: Field RmaLineNumber from RmaDetail
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from RmaDetail
+  orig_tax:
+    display: Origtax
+    type: string
+    required: false
+    description: Field OrigTax from RmaDetail
+  line_status:
+    display: Linestatus
+    type: string
+    required: false
+    description: Field LineStatus from RmaDetail
+  rma_action:
+    display: Rmaaction
+    type: string
+    required: false
+    description: Field RmaAction from RmaDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from RmaDetail
+  rma_uom:
+    display: Rmauom
+    type: string
+    required: false
+    description: Field RmaUom from RmaDetail
+  non_stklag:
+    display: Nonstklag
+    type: string
+    required: false
+    description: Field NonStklag from RmaDetail
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from RmaDetail
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from RmaDetail
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from RmaDetail
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from RmaDetail
+  problem_code:
+    display: Problemcode
+    type: string
+    required: false
+    description: Field ProblemCode from RmaDetail
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from RmaDetail
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from RmaDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from RmaDetail
+  authorized_qty:
+    display: Authorizedqty
+    type: decimal
+    required: false
+    description: Field AuthorizedQty from RmaDetail
+  received_qty:
+    display: Receivedqty
+    type: decimal
+    required: false
+    description: Field ReceivedQty from RmaDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from RmaDetail
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from RmaDetail
+  purchase_date:
+    display: Purchasedate
+    type: date
+    required: false
+    description: Field PurchaseDate from RmaDetail
+  issue_date:
+    display: Issuedate
+    type: date
+    required: false
+    description: Field IssueDate from RmaDetail
+  received_date:
+    display: Receiveddate
+    type: date
+    required: false
+    description: Field ReceivedDate from RmaDetail
+  warranty_date:
+    display: Warrantydate
+    type: date
+    required: false
+    description: Field WarrantyDate from RmaDetail
+  billable_flag:
+    display: Billableflag
+    type: string
+    required: false
+    description: Field BillableFlag from RmaDetail
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from RmaDetail
+  inventory_updated:
+    display: Inventoryupdated
+    type: string
+    required: false
+    description: Field InventoryUpdated from RmaDetail
+  est_repair_date:
+    display: Estrepairdate
+    type: date
+    required: false
+    description: Field EstRepairDate from RmaDetail
+  est_labor_cost:
+    display: Estlaborcost
+    type: decimal
+    required: false
+    description: Field EstLaborCost from RmaDetail
+  est_material_cost:
+    display: Estmaterialcost
+    type: decimal
+    required: false
+    description: Field EstMaterialCost from RmaDetail
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from RmaDetail
+  repair_sales_order:
+    display: Repairsalesorder
+    type: string
+    required: false
+    description: Field RepairSalesOrder from RmaDetail
+  repair_date:
+    display: Repairdate
+    type: date
+    required: false
+    description: Field RepairDate from RmaDetail
+  date_back:
+    display: Dateback
+    type: date
+    required: false
+    description: Field DateBack from RmaDetail
+  rec_credit_number:
+    display: Reccreditnumber
+    type: string
+    required: false
+    description: Field RecCreditNumber from RmaDetail
+  rec_sales_order:
+    display: Recsalesorder
+    type: string
+    required: false
+    description: Field RecSalesOrder from RmaDetail
+  vendor_code:
+    display: Vendorcode
+    type: string
+    required: false
+    description: Field VendorCode from RmaDetail
+  vendors_rma:
+    display: Vendorsrma
+    type: string
+    required: false
+    description: Field VendorsRma from RmaDetail
+  cross_ship_ind:
+    display: Crossshipind
+    type: string
+    required: false
+    description: Field CrossShipInd from RmaDetail
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from RmaDetail
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from RmaDetail
+  orig_warehouse:
+    display: Origwarehouse
+    type: string
+    required: false
+    description: Field OrigWarehouse from RmaDetail
+  line_disc_pct1:
+    display: Linediscpct1
+    type: decimal
+    required: false
+    description: Field LineDiscPct1 from RmaDetail
+  line_disc_pct2:
+    display: Linediscpct2
+    type: decimal
+    required: false
+    description: Field LineDiscPct2 from RmaDetail
+  line_disc_pct3:
+    display: Linediscpct3
+    type: decimal
+    required: false
+    description: Field LineDiscPct3 from RmaDetail
+  line_disc_val_flag:
+    display: Linediscvalflag
+    type: string
+    required: false
+    description: Field LineDiscValFlag from RmaDetail
+  line_disc_value:
+    display: Linediscvalue
+    type: decimal
+    required: false
+    description: Field LineDiscValue from RmaDetail
+  ord_disc_pct1:
+    display: Orddiscpct1
+    type: decimal
+    required: false
+    description: Field OrdDiscPct1 from RmaDetail
+  ord_disc_pct2:
+    display: Orddiscpct2
+    type: decimal
+    required: false
+    description: Field OrdDiscPct2 from RmaDetail
+  ord_disc_pct3:
+    display: Orddiscpct3
+    type: decimal
+    required: false
+    description: Field OrdDiscPct3 from RmaDetail
+  cust_stock:
+    display: Custstock
+    type: string
+    required: false
+    description: Field CustStock from RmaDetail
+  disp_sales_order:
+    display: Dispsalesorder
+    type: string
+    required: false
+    description: Field DispSalesOrder from RmaDetail
+  disp_sales_order_line:
+    display: Dispsalesorderline
+    type: decimal
+    required: false
+    description: Field DispSalesOrderLine from RmaDetail
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from RmaDetail
+  dispatch_note_line:
+    display: Dispatchnoteline
+    type: decimal
+    required: false
+    description: Field DispatchNoteLine from RmaDetail
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from RmaDetail
+  unit_quantity:
+    display: Unitquantity
+    type: string
+    required: false
+    description: Field UnitQuantity from RmaDetail
+  conv_fact_unit_q:
+    display: Convfactunitq
+    type: decimal
+    required: false
+    description: Field ConvFactUnitQ from RmaDetail
+  alt_uom_unit_q:
+    display: Altuomunitq
+    type: string
+    required: false
+    description: Field AltUomUnitQ from RmaDetail
+  decimals_unit_q:
+    display: Decimalsunitq
+    type: decimal
+    required: false
+    description: Field DecimalsUnitQ from RmaDetail
+  ecc_flag:
+    display: Eccflag
+    type: string
+    required: false
+    description: Field EccFlag from RmaDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from RmaDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from RmaDetail
+  credit_reason:
+    display: Creditreason
+    type: string
+    required: false
+    description: Field CreditReason from RmaDetail
+  selection_code:
+    display: Selectioncode
+    type: string
+    required: false
+    description: Field SelectionCode from RmaDetail
+  selection_type:
+    display: Selectiontype
+    type: string
+    required: false
+    description: Field SelectionType from RmaDetail
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from RmaDetail
+  conv_fact_rma_um:
+    display: Convfactrmaum
+    type: decimal
+    required: false
+    description: Field ConvFactRmaUm from RmaDetail
+  mul_div_prc_fct:
+    display: Muldivprcfct
+    type: string
+    required: false
+    description: Field MulDivPrcFct from RmaDetail
+  last_action_date:
+    display: Lastactiondate
+    type: date
+    required: false
+    description: Field LastActionDate from RmaDetail
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from RmaDetail

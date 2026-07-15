@@ -1,0 +1,32 @@
+concept: lynq_vp_bpl__src_mrp_purchase_order_lines
+table: Lynq_VP_BPL_Src_MRPPurchaseOrderLines
+alias: lvpbplsmrppol
+fields:
+  id: lvpbplsmrppol.ID
+  type_id: lvpbplsmrppol.TypeID
+  ord_type: lvpbplsmrppol.OrdType
+  ord_number: lvpbplsmrppol.OrdNumber
+  ord_id_str: lvpbplsmrppol.OrdIDStr
+  ord_type_id: lvpbplsmrppol.OrdTypeID
+  status_code1: lvpbplsmrppol.StatusCode1
+  item_number: lvpbplsmrppol.ItemNumber
+  location_code: lvpbplsmrppol.LocationCode
+  line: lvpbplsmrppol.Line
+  quantity_required: lvpbplsmrppol.QuantityRequired
+  req_date: lvpbplsmrppol.ReqDate
+  material_wait_time: lvpbplsmrppol.MaterialWaitTime
+  supplier_code: lvpbplsmrppol.SupplierCode
+  supplier_name: lvpbplsmrppol.SupplierName
+  fld_date_time1: lvpbplsmrppol.FldDateTime1
+  fld_date_time2: lvpbplsmrppol.FldDateTime2
+  fld_date_time3: lvpbplsmrppol.FldDateTime3
+  fld_decimal1: lvpbplsmrppol.FldDecimal1
+  fld_decimal2: lvpbplsmrppol.FldDecimal2
+  fld_decimal3: lvpbplsmrppol.FldDecimal3
+  fld_decimal4: lvpbplsmrppol.FldDecimal4
+  fld_decimal5: lvpbplsmrppol.FldDecimal5
+  fld_string1: lvpbplsmrppol.FldString1
+  fld_string2: lvpbplsmrppol.FldString2
+  fld_string3: lvpbplsmrppol.FldString3
+  fld_string4: lvpbplsmrppol.FldString4
+  fld_string5: lvpbplsmrppol.FldString5

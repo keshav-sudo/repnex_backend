@@ -1,0 +1,24 @@
+concept: sqm_test_status
+table: SqmTestStatus
+alias: sts1
+fields:
+  inspect_type: sts1.InspectType
+  inspect_number: sts1.InspectNumber
+  lot: sts1.Lot
+  sample_number: sts1.SampleNumber
+  sample_test: sts1.SampleTest
+  number_tests: sts1.NumberTests
+  completed_tests: sts1.CompletedTests
+  serial: sts1.Serial
+  critical_status: sts1.CriticalStatus
+  major_status: sts1.MajorStatus
+  minor_status: sts1.MinorStatus
+  test_complete: sts1.TestComplete
+  inspector_code: sts1.InspectorCode
+  test_status: sts1.TestStatus
+  start_date: sts1.StartDate
+  exp_end_date: sts1.ExpEndDate
+  end_date: sts1.EndDate
+  start_time: sts1.StartTime
+  end_time: sts1.EndTime
+  insp_narration: sts1.InspNarration

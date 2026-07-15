@@ -1,0 +1,8 @@
+concept: gen_journal_ctl_prd
+table: GenJournalCtlPrd
+alias: gjcp
+fields:
+  company: gjcp.Company
+  gl_year: gjcp.GlYear
+  gl_period: gjcp.GlPeriod
+  cur_per_nxt_jnl: gjcp.CurPerNxtJnl

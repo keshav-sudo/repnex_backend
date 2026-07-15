@@ -1,0 +1,35 @@
+concept: csh_transactions_bal
+table: CshTransactionsBal
+alias: ctb
+fields:
+  bank: ctb.Bank
+  cb_trn_year: ctb.CbTrnYear
+  cb_trn_month: ctb.CbTrnMonth
+  cb_trn_date: ctb.CbTrnDate
+  cb_trn_time: ctb.CbTrnTime
+  cb_trn_bal1: ctb.CbTrnBal1
+  cb_trn_bal2: ctb.CbTrnBal2
+  cb_trn_bal3: ctb.CbTrnBal3
+  cb_trn_for_bal1: ctb.CbTrnForBal1
+  cb_trn_for_bal2: ctb.CbTrnForBal2
+  cb_trn_for_bal3: ctb.CbTrnForBal3
+  currency_value_p1: ctb.CurrencyValueP1
+  post_currency_p1: ctb.PostCurrencyP1
+  conv_rate_p1: ctb.ConvRateP1
+  mul_div_p1: ctb.MulDivP1
+  account_cur_p1: ctb.AccountCurP1
+  acc_conv_rate_p1: ctb.AccConvRateP1
+  acc_mul_div_p1: ctb.AccMulDivP1
+  triang_currency_p1: ctb.TriangCurrencyP1
+  triang_rate_p1: ctb.TriangRateP1
+  triang_mul_div_p1: ctb.TriangMulDivP1
+  currency_value_p2: ctb.CurrencyValueP2
+  post_currency_p2: ctb.PostCurrencyP2
+  conv_rate_p2: ctb.ConvRateP2
+  mul_div_p2: ctb.MulDivP2
+  account_cur_p2: ctb.AccountCurP2
+  acc_conv_rate_p2: ctb.AccConvRateP2
+  acc_mul_div_p2: ctb.AccMulDivP2
+  triang_currency_p2: ctb.TriangCurrencyP2
+  triang_rate_p2: ctb.TriangRateP2
+  triang_mul_div_p2: ctb.TriangMulDivP2

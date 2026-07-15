@@ -1,0 +1,6 @@
+concept: crm_account_type
+table: CrmAccountType
+alias: cat
+fields:
+  account_type: cat.AccountType
+  description: cat.Description

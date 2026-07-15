@@ -1,0 +1,23 @@
+concept: lynq_vp__setup
+display_name: Lynq VP Setup
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_Setup.
+synonyms:
+- lynq_vp_setup
+- lynq vp  setup
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_Setup
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from Lynq_VP_Setup
+  value:
+    display: Value
+    type: string
+    required: false
+    description: Field Value from Lynq_VP_Setup

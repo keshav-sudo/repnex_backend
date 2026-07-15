@@ -1,0 +1,18 @@
+concept: grn_adjustment
+table: GrnAdjustment
+alias: ga1
+fields:
+  supplier: ga1.Supplier
+  grn: ga1.Grn
+  grn_source: ga1.GrnSource
+  orig_journal: ga1.OrigJournal
+  orig_journal_entry: ga1.OrigJournalEntry
+  adj_journal: ga1.AdjJournal
+  adj_journal_entry: ga1.AdjJournalEntry
+  adj_journal_date: ga1.AdjJournalDate
+  gl_code: ga1.GlCode
+  adj_year: ga1.AdjYear
+  adj_month: ga1.AdjMonth
+  adj_reference: ga1.AdjReference
+  grn_adj_value: ga1.GrnAdjValue
+  notation: ga1.Notation

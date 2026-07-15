@@ -1,0 +1,21 @@
+concept: pos_pay_type
+table: PosPayType
+alias: ppt
+fields:
+  payment_type: ppt.PaymentType
+  description: ppt.Description
+  deposit_in_bank: ppt.DepositInBank
+  bank: ppt.Bank
+  ar_pay_type: ppt.ArPayType
+  credit_card: ppt.CreditCard
+  commission_pct: ppt.CommissionPct
+  req_credit_card: ppt.ReqCreditCard
+  req_start_date: ppt.ReqStartDate
+  full_payment: ppt.FullPayment
+  allow_change: ppt.AllowChange
+  req_reference: ppt.ReqReference
+  req_notation: ppt.ReqNotation
+  currency: ppt.Currency
+  min_value_auth: ppt.MinValueAuth
+  req_deposit_slip: ppt.ReqDepositSlip
+  allow_overpay: ppt.AllowOverpay

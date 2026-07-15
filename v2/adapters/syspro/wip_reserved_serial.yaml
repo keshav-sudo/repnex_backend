@@ -1,0 +1,21 @@
+concept: wip_reserved_serial
+table: WipReservedSerial
+alias: wrs
+fields:
+  job: wrs.Job
+  stock_code: wrs.StockCode
+  co_product_line: wrs.CoProductLine
+  serial: wrs.Serial
+  serial_method: wrs.SerialMethod
+  warehouse: wrs.Warehouse
+  expiry_date: wrs.ExpiryDate
+  qty_reserved: wrs.QtyReserved
+  qty_received: wrs.QtyReceived
+  inspection_qty: wrs.InspectionQty
+  qty_scrapped: wrs.QtyScrapped
+  qty_reworked: wrs.QtyReworked
+  location: wrs.Location
+  lot: wrs.Lot
+  version: wrs.Version
+  release: wrs.Release
+  ser_complete: wrs.SerComplete

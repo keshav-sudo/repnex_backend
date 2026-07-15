@@ -1,0 +1,53 @@
+concept: inv_por_qty_bal_fix
+display_name: InvPorQtyBalFix
+module: inventory
+description: Auto-generated representation of the physical table InvPorQtyBalFix.
+synonyms:
+- invporqtybalfix
+- inv por qty bal fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from InvPorQtyBalFix
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvPorQtyBalFix
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvPorQtyBalFix
+  old_qty_on_order:
+    display: Oldqtyonorder
+    type: decimal
+    required: false
+    description: Field OldQtyOnOrder from InvPorQtyBalFix
+  new_qty_on_order:
+    display: Newqtyonorder
+    type: decimal
+    required: false
+    description: Field NewQtyOnOrder from InvPorQtyBalFix
+  old_allocated_to_wip:
+    display: Oldallocatedtowip
+    type: decimal
+    required: false
+    description: Field OldAllocatedToWip from InvPorQtyBalFix
+  new_allocated_to_wip:
+    display: Newallocatedtowip
+    type: decimal
+    required: false
+    description: Field NewAllocatedToWip from InvPorQtyBalFix
+  old_qty_in_inspection:
+    display: Oldqtyininspection
+    type: decimal
+    required: false
+    description: Field OldQtyInInspection from InvPorQtyBalFix
+  new_qty_in_inspection:
+    display: Newqtyininspection
+    type: decimal
+    required: false
+    description: Field NewQtyInInspection from InvPorQtyBalFix

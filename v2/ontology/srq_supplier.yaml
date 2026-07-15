@@ -1,0 +1,53 @@
+concept: srq_supplier
+display_name: SrqSupplier
+module: other
+description: Auto-generated representation of the physical table SrqSupplier.
+synonyms:
+- srqsupplier
+- srq supplier
+header_attributes:
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from SrqSupplier
+  rfq_line:
+    display: Rfqline
+    type: decimal
+    required: false
+    description: Field RfqLine from SrqSupplier
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from SrqSupplier
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from SrqSupplier
+  supplier_status:
+    display: Supplierstatus
+    type: string
+    required: false
+    description: Field SupplierStatus from SrqSupplier
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from SrqSupplier
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from SrqSupplier
+  reason:
+    display: Reason
+    type: string
+    required: false
+    description: Field Reason from SrqSupplier
+  next_entry_number:
+    display: Nextentrynumber
+    type: decimal
+    required: false
+    description: Field NextEntryNumber from SrqSupplier

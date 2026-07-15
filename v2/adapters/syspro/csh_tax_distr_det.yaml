@@ -1,0 +1,26 @@
+concept: csh_tax_distr_det
+table: CshTaxDistrDet
+alias: ctdd
+fields:
+  input_output: ctdd.InputOutput
+  cb_trn_year: ctdd.CbTrnYear
+  cb_trn_month: ctdd.CbTrnMonth
+  journal: ctdd.Journal
+  entry_number: ctdd.EntryNumber
+  printed_flag: ctdd.PrintedFlag
+  bank: ctdd.Bank
+  reference: ctdd.Reference
+  entry_date: ctdd.EntryDate
+  trn_value: ctdd.TrnValue
+  tot_tax_value: ctdd.TotTaxValue
+  cheque: ctdd.Cheque
+  entry_type: ctdd.EntryType
+  cb_trn_date: ctdd.CbTrnDate
+  cb_trn_time: ctdd.CbTrnTime
+  tax_ret_submitted: ctdd.TaxRetSubmitted
+  year_ret_submitted: ctdd.YearRetSubmitted
+  mth_ret_submitted: ctdd.MthRetSubmitted
+  jnl_cb_trn_year: ctdd.JnlCbTrnYear
+  jnl_cb_trn_month: ctdd.JnlCbTrnMonth
+  jnl_journal: ctdd.JnlJournal
+  jnl_entry_number: ctdd.JnlEntryNumber

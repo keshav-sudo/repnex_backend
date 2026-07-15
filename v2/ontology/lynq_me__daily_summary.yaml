@@ -1,0 +1,113 @@
+concept: lynq_me__daily_summary
+display_name: Lynq ME DailySummary
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_DailySummary.
+synonyms:
+- lynq_me_dailysummary
+- lynq me  daily summary
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_DailySummary
+  d_task_code:
+    display: Dtaskcode
+    type: string
+    required: false
+    description: Field dTaskCode from Lynq_ME_DailySummary
+  d_reporter_code:
+    display: Dreportercode
+    type: string
+    required: false
+    description: Field dReporterCode from Lynq_ME_DailySummary
+  d_membership:
+    display: Dmembership
+    type: string
+    required: false
+    description: Field dMembership from Lynq_ME_DailySummary
+  d_facility_code:
+    display: Dfacilitycode
+    type: string
+    required: false
+    description: Field dFacilityCode from Lynq_ME_DailySummary
+  d_date:
+    display: Ddate
+    type: date
+    required: false
+    description: Field dDate from Lynq_ME_DailySummary
+  d_units_per_hour:
+    display: Dunitsperhour
+    type: decimal
+    required: false
+    description: Field dUnitsPerHour from Lynq_ME_DailySummary
+  d_labour_hours:
+    display: Dlabourhours
+    type: decimal
+    required: false
+    description: Field dLabourHours from Lynq_ME_DailySummary
+  d_outcome_qty:
+    display: Doutcomeqty
+    type: decimal
+    required: false
+    description: Field dOutcomeQty from Lynq_ME_DailySummary
+  d_outcome_scrap:
+    display: Doutcomescrap
+    type: decimal
+    required: false
+    description: Field dOutcomeScrap from Lynq_ME_DailySummary
+  d_office_time_hours:
+    display: Dofficetimehours
+    type: decimal
+    required: false
+    description: Field dOfficeTimeHours from Lynq_ME_DailySummary
+  d_diversion_code:
+    display: Ddiversioncode
+    type: string
+    required: false
+    description: Field dDiversionCode from Lynq_ME_DailySummary
+  d_job_code:
+    display: Djobcode
+    type: string
+    required: false
+    description: Field dJobCode from Lynq_ME_DailySummary
+  d_operation_code:
+    display: Doperationcode
+    type: string
+    required: false
+    description: Field dOperationCode from Lynq_ME_DailySummary
+  d_direct:
+    display: Ddirect
+    type: string
+    required: false
+    description: Field dDirect from Lynq_ME_DailySummary
+  d_operational_type:
+    display: Doperationaltype
+    type: string
+    required: false
+    description: Field dOperationalType from Lynq_ME_DailySummary
+  d_category:
+    display: Dcategory
+    type: string
+    required: false
+    description: Field dCategory from Lynq_ME_DailySummary
+  d_color:
+    display: Dcolor
+    type: string
+    required: false
+    description: Field dColor from Lynq_ME_DailySummary
+  d_erp_non_productive_code:
+    display: Derpnonproductivecode
+    type: string
+    required: false
+    description: Field dErpNonProductiveCode from Lynq_ME_DailySummary
+  d_employee_code:
+    display: Demployeecode
+    type: string
+    required: false
+    description: Field dEmployeeCode from Lynq_ME_DailySummary
+  d_facility_hours:
+    display: Dfacilityhours
+    type: decimal
+    required: false
+    description: Field dFacilityHours from Lynq_ME_DailySummary

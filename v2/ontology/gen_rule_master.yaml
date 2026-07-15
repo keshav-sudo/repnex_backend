@@ -1,0 +1,33 @@
+concept: gen_rule_master
+display_name: GenRuleMaster
+module: general_ledger
+description: Auto-generated representation of the physical table GenRuleMaster.
+synonyms:
+- genrulemaster
+- gen rule master
+header_attributes:
+  gl_rule:
+    display: Glrule
+    type: string
+    required: false
+    description: Field GlRule from GenRuleMaster
+  source_gl_code:
+    display: Sourceglcode
+    type: string
+    required: false
+    description: Field SourceGlCode from GenRuleMaster
+  rule_select:
+    display: Ruleselect
+    type: string
+    required: false
+    description: Field RuleSelect from GenRuleMaster
+  source_mov_bal:
+    display: Sourcemovbal
+    type: string
+    required: false
+    description: Field SourceMovBal from GenRuleMaster
+  stat_mov_bal:
+    display: Statmovbal
+    type: string
+    required: false
+    description: Field StatMovBal from GenRuleMaster

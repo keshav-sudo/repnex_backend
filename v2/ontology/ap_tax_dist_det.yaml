@@ -1,0 +1,123 @@
+concept: ap_tax_dist_det
+display_name: ApTaxDistDet
+module: accounts_payable
+description: Auto-generated representation of the physical table ApTaxDistDet.
+synonyms:
+- aptaxdistdet
+- ap tax dist det
+header_attributes:
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from ApTaxDistDet
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from ApTaxDistDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApTaxDistDet
+  entry:
+    display: Entry
+    type: decimal
+    required: false
+    description: Field Entry from ApTaxDistDet
+  status:
+    display: Status
+    type: decimal
+    required: false
+    description: Field Status from ApTaxDistDet
+  transaction_type:
+    display: Transactiontype
+    type: string
+    required: false
+    description: Field TransactionType from ApTaxDistDet
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApTaxDistDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApTaxDistDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ApTaxDistDet
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ApTaxDistDet
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApTaxDistDet
+  invoice_disc:
+    display: Invoicedisc
+    type: decimal
+    required: false
+    description: Field InvoiceDisc from ApTaxDistDet
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from ApTaxDistDet
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ApTaxDistDet
+  ec_acquisition:
+    display: Ecacquisition
+    type: string
+    required: false
+    description: Field EcAcquisition from ApTaxDistDet
+  purchase_type:
+    display: Purchasetype
+    type: string
+    required: false
+    description: Field PurchaseType from ApTaxDistDet
+  exempt_value:
+    display: Exemptvalue
+    type: decimal
+    required: false
+    description: Field ExemptValue from ApTaxDistDet
+  tax_ret_submitted:
+    display: Taxretsubmitted
+    type: string
+    required: false
+    description: Field TaxRetSubmitted from ApTaxDistDet
+  year_ret_submitted:
+    display: Yearretsubmitted
+    type: decimal
+    required: false
+    description: Field YearRetSubmitted from ApTaxDistDet
+  mth_ret_submitted:
+    display: Mthretsubmitted
+    type: decimal
+    required: false
+    description: Field MthRetSubmitted from ApTaxDistDet
+  rev_charge_flag:
+    display: Revchargeflag
+    type: string
+    required: false
+    description: Field RevChargeFlag from ApTaxDistDet
+  rev_charge_tax_code:
+    display: Revchargetaxcode
+    type: string
+    required: false
+    description: Field RevChargeTaxCode from ApTaxDistDet
+  rev_charge_tax_value:
+    display: Revchargetaxvalue
+    type: decimal
+    required: false
+    description: Field RevChargeTaxValue from ApTaxDistDet

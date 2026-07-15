@@ -1,0 +1,14 @@
+concept: csh_tax_code_distr_hdr
+table: CshTaxCodeDistrHdr
+alias: ctcdh
+fields:
+  input_output: ctcdh.InputOutput
+  cb_trn_year: ctcdh.CbTrnYear
+  cb_trn_month: ctcdh.CbTrnMonth
+  journal: ctcdh.Journal
+  tax_code: ctcdh.TaxCode
+  distributed_amt: ctcdh.DistributedAmt
+  taxable_amount: ctcdh.TaxableAmount
+  tax_portion: ctcdh.TaxPortion
+  tax_basis: ctcdh.TaxBasis
+  tax_rate: ctcdh.TaxRate

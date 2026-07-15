@@ -1,0 +1,15 @@
+concept: whm_container_type
+table: WhmContainerType
+alias: wct
+fields:
+  container: wct.Container
+  description: wct.Description
+  default_flag: wct.DefaultFlag
+  width: wct.Width
+  depth: wct.Depth
+  height: wct.Height
+  max_weight: wct.MaxWeight
+  max_volume: wct.MaxVolume
+  flex_volume_flag: wct.FlexVolumeFlag
+  stacking_allowed: wct.StackingAllowed
+  label_format: wct.LabelFormat

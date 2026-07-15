@@ -1,0 +1,15 @@
+concept: bso_rel_ack_det
+table: BsoRelAckDet
+alias: brad
+fields:
+  customer: brad.Customer
+  customer_po_number: brad.CustomerPoNumber
+  cust_stock_code: brad.CustStockCode
+  sequence_num: brad.SequenceNum
+  line: brad.Line
+  release_date: brad.ReleaseDate
+  exist_cume: brad.ExistCume
+  request_cume: brad.RequestCume
+  accept_cume: brad.AcceptCume
+  narration: brad.Narration
+  decimals: brad.Decimals

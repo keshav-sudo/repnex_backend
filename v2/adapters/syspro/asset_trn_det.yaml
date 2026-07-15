@@ -1,0 +1,15 @@
+concept: asset_trn_det
+table: AssetTrnDet
+alias: atd2
+fields:
+  asset: atd2.Asset
+  entry_type: atd2.EntryType
+  line: atd2.Line
+  journal: atd2.Journal
+  entry_date: atd2.EntryDate
+  invoice: atd2.Invoice
+  invoice_value: atd2.InvoiceValue
+  supplier: atd2.Supplier
+  expense: atd2.Expense
+  reference: atd2.Reference
+  branch: atd2.Branch

@@ -1,0 +1,12 @@
+concept: inv_idx_ticket
+table: InvIdxTicket
+alias: iit
+fields:
+  warehouse: iit.Warehouse
+  ticket_num: iit.TicketNum
+  stock_code: iit.StockCode
+  bin: iit.Bin
+  qty_captured: iit.QtyCaptured
+  times_captured: iit.TimesCaptured
+  decimals: iit.Decimals
+  uom: iit.Uom

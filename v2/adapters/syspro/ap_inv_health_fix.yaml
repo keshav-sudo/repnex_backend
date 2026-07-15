@@ -1,0 +1,15 @@
+concept: ap_inv_health_fix
+table: ApInvHealthFix
+alias: aihf
+fields:
+  run_date_time: aihf.RunDateTime
+  supplier: aihf.Supplier
+  invoice: aihf.Invoice
+  trx_type: aihf.TrxType
+  hfix_year: aihf.HfixYear
+  hfix_month: aihf.HfixMonth
+  currency: aihf.Currency
+  trx_amt_vary: aihf.TrxAmtVary
+  trx_amt_actual: aihf.TrxAmtActual
+  trx_amt_calc: aihf.TrxAmtCalc
+  message: aihf.Message

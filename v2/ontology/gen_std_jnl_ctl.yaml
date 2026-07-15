@@ -1,0 +1,38 @@
+concept: gen_std_jnl_ctl
+display_name: GenStdJnlCtl
+module: general_ledger
+description: Auto-generated representation of the physical table GenStdJnlCtl.
+synonyms:
+- genstdjnlctl
+- gen std jnl ctl
+header_attributes:
+  journal_code:
+    display: Journalcode
+    type: string
+    required: false
+    description: Field JournalCode from GenStdJnlCtl
+  no_of_entries:
+    display: Noofentries
+    type: decimal
+    required: false
+    description: Field NoOfEntries from GenStdJnlCtl
+  total_debit:
+    display: Totaldebit
+    type: decimal
+    required: false
+    description: Field TotalDebit from GenStdJnlCtl
+  total_credit:
+    display: Totalcredit
+    type: decimal
+    required: false
+    description: Field TotalCredit from GenStdJnlCtl
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from GenStdJnlCtl
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from GenStdJnlCtl

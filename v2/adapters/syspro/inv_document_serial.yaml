@@ -1,0 +1,16 @@
+concept: inv_document_serial
+table: InvDocumentSerial
+alias: ids
+fields:
+  transaction_type: ids.TransactionType
+  key_warehouse: ids.KeyWarehouse
+  key_bin: ids.KeyBin
+  reference: ids.Reference
+  key_purchase_order: ids.KeyPurchaseOrder
+  key_purchase_ord_line: ids.KeyPurchaseOrdLine
+  jnl_year: ids.JnlYear
+  jnl_month: ids.JnlMonth
+  journal: ids.Journal
+  entry_number: ids.EntryNumber
+  serial: ids.Serial
+  quantity: ids.Quantity

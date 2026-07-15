@@ -1,0 +1,16 @@
+concept: gen_rec_jnl_det
+table: GenRecJnlDet
+alias: grjd
+fields:
+  journal_code: grjd.JournalCode
+  entry_number: grjd.EntryNumber
+  entry_type: grjd.EntryType
+  gl_code: grjd.GlCode
+  reference: grjd.Reference
+  comment: grjd.Comment
+  entry_value: grjd.EntryValue
+  line_type: grjd.LineType
+  target_dr_gl_code: grjd.TargetDrGlCode
+  target_cr_gl_code: grjd.TargetCrGlCode
+  transfer_pct: grjd.TransferPct
+  dimension_entry: grjd.DimensionEntry

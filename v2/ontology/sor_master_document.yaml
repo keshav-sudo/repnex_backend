@@ -1,0 +1,33 @@
+concept: sor_master_document
+display_name: SorMasterDocument
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorMasterDocument.
+synonyms:
+- sormasterdocument
+- sor master document
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorMasterDocument
+  document:
+    display: Document
+    type: string
+    required: false
+    description: Field Document from SorMasterDocument
+  recog_doc:
+    display: Recogdoc
+    type: string
+    required: false
+    description: Field RecogDoc from SorMasterDocument
+  tags:
+    display: Tags
+    type: string
+    required: false
+    description: Field Tags from SorMasterDocument
+  transaction_guid:
+    display: Transactionguid
+    type: string
+    required: false
+    description: Field TransactionGuid from SorMasterDocument

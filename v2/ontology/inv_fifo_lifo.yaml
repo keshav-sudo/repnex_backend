@@ -1,0 +1,88 @@
+concept: inv_fifo_lifo
+display_name: InvFifoLifo
+module: inventory
+description: Auto-generated representation of the physical table InvFifoLifo.
+synonyms:
+- invfifolifo
+- inv fifo lifo
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvFifoLifo
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvFifoLifo
+  bucket:
+    display: Bucket
+    type: decimal
+    required: false
+    description: Field Bucket from InvFifoLifo
+  qty_on_hand1:
+    display: Qtyonhand1
+    type: decimal
+    required: false
+    description: Field QtyOnHand1 from InvFifoLifo
+  qty_on_hand2:
+    display: Qtyonhand2
+    type: decimal
+    required: false
+    description: Field QtyOnHand2 from InvFifoLifo
+  qty_on_hand3:
+    display: Qtyonhand3
+    type: decimal
+    required: false
+    description: Field QtyOnHand3 from InvFifoLifo
+  unit_cost1:
+    display: Unitcost1
+    type: decimal
+    required: false
+    description: Field UnitCost1 from InvFifoLifo
+  unit_cost2:
+    display: Unitcost2
+    type: decimal
+    required: false
+    description: Field UnitCost2 from InvFifoLifo
+  unit_cost3:
+    display: Unitcost3
+    type: decimal
+    required: false
+    description: Field UnitCost3 from InvFifoLifo
+  last_receipt_date:
+    display: Lastreceiptdate
+    type: date
+    required: false
+    description: Field LastReceiptDate from InvFifoLifo
+  last_issue_date:
+    display: Lastissuedate
+    type: date
+    required: false
+    description: Field LastIssueDate from InvFifoLifo
+  qty_dispatched:
+    display: Qtydispatched
+    type: decimal
+    required: false
+    description: Field QtyDispatched from InvFifoLifo
+  receipt_qty:
+    display: Receiptqty
+    type: decimal
+    required: false
+    description: Field ReceiptQty from InvFifoLifo
+  lot_serial:
+    display: Lotserial
+    type: string
+    required: false
+    description: Field LotSerial from InvFifoLifo
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvFifoLifo
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvFifoLifo

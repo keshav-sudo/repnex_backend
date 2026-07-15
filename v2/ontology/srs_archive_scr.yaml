@@ -1,0 +1,43 @@
+concept: srs_archive_scr
+display_name: SrsArchiveSCR
+module: other
+description: Auto-generated representation of the physical table SrsArchiveSCR.
+synonyms:
+- srsarchivescr
+- srs archive scr
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveSCR
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveSCR
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveSCR
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveSCR
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveSCR
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveSCR
+  det_document:
+    display: Detdocument
+    type: string
+    required: false
+    description: Field DetDocument from SrsArchiveSCR

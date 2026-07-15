@@ -1,0 +1,30 @@
+concept: ap_check_iss
+table: ApCheckIss
+alias: aci
+fields:
+  payment_number: aci.PaymentNumber
+  bank: aci.Bank
+  cheque: aci.Cheque
+  payment_type: aci.PaymentType
+  cheque_date: aci.ChequeDate
+  supplier_issued_to: aci.SupplierIssuedTo
+  cheque_value: aci.ChequeValue
+  void_status: aci.VoidStatus
+  reconciled_flag: aci.ReconciledFlag
+  pay_year: aci.PayYear
+  pay_month: aci.PayMonth
+  currency: aci.Currency
+  void_payment_number: aci.VoidPaymentNumber
+  restab_check: aci.RestabCheck
+  void_pay_year: aci.VoidPayYear
+  void_pay_month: aci.VoidPayMonth
+  mult_cur_pay: aci.MultCurPay
+  pay_cheque_value: aci.PayChequeValue
+  pay_currency: aci.PayCurrency
+  pay_conv_rte: aci.PayConvRte
+  pay_post_mul_div: aci.PayPostMulDiv
+  group_payment: aci.GroupPayment
+  group_conv_rate: aci.GroupConvRate
+  group_post_mul_div: aci.GroupPostMulDiv
+  group_inter_company: aci.GroupInterCompany
+  check_value_local: aci.CheckValueLocal

@@ -1,0 +1,8 @@
+concept: whm_bin_area
+table: WhmBinArea
+alias: wba
+fields:
+  warehouse: wba.Warehouse
+  wh_area: wba.WhArea
+  description: wba.Description
+  wh_area_type: wba.WhAreaType

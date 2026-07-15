@@ -1,0 +1,25 @@
+concept: lct_costing_reg
+table: LctCostingReg
+alias: lcr
+fields:
+  vessel: lcr.Vessel
+  departure_date: lcr.DepartureDate
+  shipment_reference: lcr.ShipmentReference
+  purchase_order: lcr.PurchaseOrder
+  purchase_order_lin: lcr.PurchaseOrderLin
+  shipped_qty: lcr.ShippedQty
+  supplier: lcr.Supplier
+  stock_code: lcr.StockCode
+  warehouse: lcr.Warehouse
+  receipt_flag: lcr.ReceiptFlag
+  total_merch_cost: lcr.TotalMerchCost
+  unit_cost_merch: lcr.UnitCostMerch
+  receipt_arch_date: lcr.ReceiptArchDate
+  sundry_item_mass: lcr.SundryItemMass
+  sundry_item_volume: lcr.SundryItemVolume
+  traceable_inspect: lcr.TraceableInspect
+  exchange_rate: lcr.ExchangeRate
+  mul_div: lcr.MulDiv
+  receipt_sundry: lcr.ReceiptSundry
+  sup_catalogue: lcr.SupCatalogue
+  shipped_qty_stk_um: lcr.ShippedQtyStkUm

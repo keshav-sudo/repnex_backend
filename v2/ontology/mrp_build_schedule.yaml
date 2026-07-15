@@ -1,0 +1,78 @@
+concept: mrp_build_schedule
+display_name: MrpBuildSchedule
+module: mrp
+description: Auto-generated representation of the physical table MrpBuildSchedule.
+synonyms:
+- mrpbuildschedule
+- mrp build schedule
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpBuildSchedule
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpBuildSchedule
+  date_required:
+    display: Daterequired
+    type: date
+    required: false
+    description: Field DateRequired from MrpBuildSchedule
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpBuildSchedule
+  outst_qty_to_make:
+    display: Outstqtytomake
+    type: decimal
+    required: false
+    description: Field OutstQtyToMake from MrpBuildSchedule
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from MrpBuildSchedule
+  resource_parent:
+    display: Resourceparent
+    type: string
+    required: false
+    description: Field ResourceParent from MrpBuildSchedule
+  total_qty_received:
+    display: Totalqtyreceived
+    type: decimal
+    required: false
+    description: Field TotalQtyReceived from MrpBuildSchedule
+  orig_date_reqd:
+    display: Origdatereqd
+    type: date
+    required: false
+    description: Field OrigDateReqd from MrpBuildSchedule
+  original_line:
+    display: Originalline
+    type: decimal
+    required: false
+    description: Field OriginalLine from MrpBuildSchedule
+  orig_outst_qty:
+    display: Origoutstqty
+    type: decimal
+    required: false
+    description: Field OrigOutstQty from MrpBuildSchedule
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpBuildSchedule
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpBuildSchedule
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from MrpBuildSchedule

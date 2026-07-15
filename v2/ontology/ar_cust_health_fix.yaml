@@ -1,0 +1,68 @@
+concept: ar_cust_health_fix
+display_name: ArCustHealthFix
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCustHealthFix.
+synonyms:
+- arcusthealthfix
+- ar cust health fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from ArCustHealthFix
+  trx_source:
+    display: Trxsource
+    type: string
+    required: false
+    description: Field TrxSource from ArCustHealthFix
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCustHealthFix
+  balance_year:
+    display: Balanceyear
+    type: decimal
+    required: false
+    description: Field BalanceYear from ArCustHealthFix
+  balance_month:
+    display: Balancemonth
+    type: decimal
+    required: false
+    description: Field BalanceMonth from ArCustHealthFix
+  trx_amount_value:
+    display: Trxamountvalue
+    type: decimal
+    required: false
+    description: Field TrxAmountValue from ArCustHealthFix
+  trx_amount_before:
+    display: Trxamountbefore
+    type: decimal
+    required: false
+    description: Field TrxAmountBefore from ArCustHealthFix
+  trx_amount_after:
+    display: Trxamountafter
+    type: decimal
+    required: false
+    description: Field TrxAmountAfter from ArCustHealthFix
+  inv_count_value:
+    display: Invcountvalue
+    type: decimal
+    required: false
+    description: Field InvCountValue from ArCustHealthFix
+  inv_count_before:
+    display: Invcountbefore
+    type: decimal
+    required: false
+    description: Field InvCountBefore from ArCustHealthFix
+  inv_count_after:
+    display: Invcountafter
+    type: decimal
+    required: false
+    description: Field InvCountAfter from ArCustHealthFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ArCustHealthFix

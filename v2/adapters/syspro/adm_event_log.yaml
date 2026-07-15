@@ -1,0 +1,17 @@
+concept: adm_event_log
+table: AdmEventLog
+alias: ael
+fields:
+  event_date: ael.EventDate
+  event_time: ael.EventTime
+  event_module: ael.EventModule
+  event_code: ael.EventCode
+  event_desc: ael.EventDesc
+  event_name: ael.EventName
+  event_type: ael.EventType
+  description: ael.Description
+  key1: ael.Key1
+  key2: ael.Key2
+  log_printed: ael.LogPrinted
+  operator: ael.Operator
+  prog_gen_event: ael.ProgGenEvent

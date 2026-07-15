@@ -1,0 +1,25 @@
+concept: asset_capex_item
+table: AssetCapexItem
+alias: aci1
+fields:
+  capex_code: aci1.CapexCode
+  description: aci1.Description
+  capex_ref: aci1.CapexRef
+  branch: aci1.Branch
+  asset_group_code: aci1.AssetGroupCode
+  asset_cost_center: aci1.AssetCostCenter
+  capex_class: aci1.CapexClass
+  approval_status: aci1.ApprovalStatus
+  value_budgeted: aci1.ValueBudgeted
+  value_uncommitted: aci1.ValueUncommitted
+  value_committed: aci1.ValueCommitted
+  value_spent: aci1.ValueSpent
+  operator: aci1.Operator
+  system_date: aci1.SystemDate
+  operator_approved: aci1.OperatorApproved
+  date_approved: aci1.DateApproved
+  start_year: aci1.StartYear
+  start_period: aci1.StartPeriod
+  end_year: aci1.EndYear
+  end_period: aci1.EndPeriod
+  capex_next_line: aci1.CapexNextLine

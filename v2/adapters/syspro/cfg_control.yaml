@@ -1,0 +1,7 @@
+concept: cfg_control
+table: CfgControl
+alias: cc1
+fields:
+  ctl_flag: cc1.CtlFlag
+  wizard_date: cc1.WizardDate
+  wizard_time: cc1.WizardTime

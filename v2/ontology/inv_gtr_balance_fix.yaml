@@ -1,0 +1,48 @@
+concept: inv_gtr_balance_fix
+display_name: InvGtrBalanceFix
+module: inventory
+description: Auto-generated representation of the physical table InvGtrBalanceFix.
+synonyms:
+- invgtrbalancefix
+- inv gtr balance fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from InvGtrBalanceFix
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvGtrBalanceFix
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvGtrBalanceFix
+  active_gtr:
+    display: Activegtr
+    type: decimal
+    required: false
+    description: Field ActiveGtr from InvGtrBalanceFix
+  old_transit_val:
+    display: Oldtransitval
+    type: decimal
+    required: false
+    description: Field OldTransitVal from InvGtrBalanceFix
+  new_transit_val:
+    display: Newtransitval
+    type: decimal
+    required: false
+    description: Field NewTransitVal from InvGtrBalanceFix
+  old_transit_qty:
+    display: Oldtransitqty
+    type: decimal
+    required: false
+    description: Field OldTransitQty from InvGtrBalanceFix
+  new_transit_qty:
+    display: Newtransitqty
+    type: decimal
+    required: false
+    description: Field NewTransitQty from InvGtrBalanceFix

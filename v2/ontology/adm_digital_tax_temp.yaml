@@ -1,0 +1,23 @@
+concept: adm_digital_tax_temp
+display_name: AdmDigitalTaxTemp
+module: administration
+description: Auto-generated representation of the physical table AdmDigitalTaxTemp.
+synonyms:
+- admdigitaltaxtemp
+- adm digital tax temp
+header_attributes:
+  code:
+    display: Code
+    type: string
+    required: false
+    description: Field Code from AdmDigitalTaxTemp
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmDigitalTaxTemp
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmDigitalTaxTemp

@@ -1,0 +1,38 @@
+concept: bom_icons
+display_name: BomIcons
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomIcons.
+synonyms:
+- bomicons
+- bom icons
+header_attributes:
+  icon_type:
+    display: Icontype
+    type: string
+    required: false
+    description: Field IconType from BomIcons
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from BomIcons
+  icon_dll:
+    display: Icondll
+    type: string
+    required: false
+    description: Field IconDll from BomIcons
+  base_icon:
+    display: Baseicon
+    type: decimal
+    required: false
+    description: Field BaseIcon from BomIcons
+  closed_icon:
+    display: Closedicon
+    type: decimal
+    required: false
+    description: Field ClosedIcon from BomIcons
+  open_icon:
+    display: Openicon
+    type: decimal
+    required: false
+    description: Field OpenIcon from BomIcons

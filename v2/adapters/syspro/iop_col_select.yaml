@@ -1,0 +1,37 @@
+concept: iop_col_select
+table: IopColSelect
+alias: ics1
+fields:
+  collection: ics1.Collection
+  instance: ics1.Instance
+  auto_number: ics1.AutoNumber
+  description: ics1.Description
+  stock_code_ars: ics1.StockCodeArs
+  stock_code_from: ics1.StockCodeFrom
+  stock_code_to: ics1.StockCodeTo
+  warehouse_ars: ics1.WarehouseArs
+  warehouse_from: ics1.WarehouseFrom
+  warehouse_to: ics1.WarehouseTo
+  product_class_ars: ics1.ProductClassArs
+  product_class_from: ics1.ProductClassFrom
+  product_class_to: ics1.ProductClassTo
+  supplier_ars: ics1.SupplierArs
+  supplier_from: ics1.SupplierFrom
+  supplier_to: ics1.SupplierTo
+  planner_ars: ics1.PlannerArs
+  planner_from: ics1.PlannerFrom
+  planner_to: ics1.PlannerTo
+  buyer_ars: ics1.BuyerArs
+  buyer_from: ics1.BuyerFrom
+  buyer_to: ics1.BuyerTo
+  abc_type: ics1.AbcType
+  abc_level: ics1.AbcLevel
+  abc_include_a: ics1.AbcIncludeA
+  abc_include_b: ics1.AbcIncludeB
+  abc_include_c: ics1.AbcIncludeC
+  abc_include_d: ics1.AbcIncludeD
+  abc_include_e: ics1.AbcIncludeE
+  abc_include_no_class: ics1.AbcIncludeNoClass
+  date_saved: ics1.DateSaved
+  time_saved: ics1.TimeSaved
+  selection_set: ics1.SelectionSet

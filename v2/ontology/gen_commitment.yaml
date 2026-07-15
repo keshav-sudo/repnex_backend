@@ -1,0 +1,173 @@
+concept: gen_commitment
+display_name: GenCommitment
+module: general_ledger
+description: Auto-generated representation of the physical table GenCommitment.
+synonyms:
+- gencommitment
+- gen commitment
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenCommitment
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenCommitment
+  commitment_type:
+    display: Commitmenttype
+    type: string
+    required: false
+    description: Field CommitmentType from GenCommitment
+  prev_uncommitted:
+    display: Prevuncommitted
+    type: decimal
+    required: false
+    description: Field PrevUncommitted from GenCommitment
+  future_uncommitted:
+    display: Futureuncommitted
+    type: decimal
+    required: false
+    description: Field FutureUncommitted from GenCommitment
+  uncommitted1:
+    display: Uncommitted1
+    type: decimal
+    required: false
+    description: Field Uncommitted1 from GenCommitment
+  uncommitted2:
+    display: Uncommitted2
+    type: decimal
+    required: false
+    description: Field Uncommitted2 from GenCommitment
+  uncommitted3:
+    display: Uncommitted3
+    type: decimal
+    required: false
+    description: Field Uncommitted3 from GenCommitment
+  uncommitted4:
+    display: Uncommitted4
+    type: decimal
+    required: false
+    description: Field Uncommitted4 from GenCommitment
+  uncommitted5:
+    display: Uncommitted5
+    type: decimal
+    required: false
+    description: Field Uncommitted5 from GenCommitment
+  uncommitted6:
+    display: Uncommitted6
+    type: decimal
+    required: false
+    description: Field Uncommitted6 from GenCommitment
+  uncommitted7:
+    display: Uncommitted7
+    type: decimal
+    required: false
+    description: Field Uncommitted7 from GenCommitment
+  uncommitted8:
+    display: Uncommitted8
+    type: decimal
+    required: false
+    description: Field Uncommitted8 from GenCommitment
+  uncommitted9:
+    display: Uncommitted9
+    type: decimal
+    required: false
+    description: Field Uncommitted9 from GenCommitment
+  uncommitted10:
+    display: Uncommitted10
+    type: decimal
+    required: false
+    description: Field Uncommitted10 from GenCommitment
+  uncommitted11:
+    display: Uncommitted11
+    type: decimal
+    required: false
+    description: Field Uncommitted11 from GenCommitment
+  uncommitted12:
+    display: Uncommitted12
+    type: decimal
+    required: false
+    description: Field Uncommitted12 from GenCommitment
+  uncommitted13:
+    display: Uncommitted13
+    type: decimal
+    required: false
+    description: Field Uncommitted13 from GenCommitment
+  prev_commitment:
+    display: Prevcommitment
+    type: decimal
+    required: false
+    description: Field PrevCommitment from GenCommitment
+  future_commitment:
+    display: Futurecommitment
+    type: decimal
+    required: false
+    description: Field FutureCommitment from GenCommitment
+  commitment1:
+    display: Commitment1
+    type: decimal
+    required: false
+    description: Field Commitment1 from GenCommitment
+  commitment2:
+    display: Commitment2
+    type: decimal
+    required: false
+    description: Field Commitment2 from GenCommitment
+  commitment3:
+    display: Commitment3
+    type: decimal
+    required: false
+    description: Field Commitment3 from GenCommitment
+  commitment4:
+    display: Commitment4
+    type: decimal
+    required: false
+    description: Field Commitment4 from GenCommitment
+  commitment5:
+    display: Commitment5
+    type: decimal
+    required: false
+    description: Field Commitment5 from GenCommitment
+  commitment6:
+    display: Commitment6
+    type: decimal
+    required: false
+    description: Field Commitment6 from GenCommitment
+  commitment7:
+    display: Commitment7
+    type: decimal
+    required: false
+    description: Field Commitment7 from GenCommitment
+  commitment8:
+    display: Commitment8
+    type: decimal
+    required: false
+    description: Field Commitment8 from GenCommitment
+  commitment9:
+    display: Commitment9
+    type: decimal
+    required: false
+    description: Field Commitment9 from GenCommitment
+  commitment10:
+    display: Commitment10
+    type: decimal
+    required: false
+    description: Field Commitment10 from GenCommitment
+  commitment11:
+    display: Commitment11
+    type: decimal
+    required: false
+    description: Field Commitment11 from GenCommitment
+  commitment12:
+    display: Commitment12
+    type: decimal
+    required: false
+    description: Field Commitment12 from GenCommitment
+  commitment13:
+    display: Commitment13
+    type: decimal
+    required: false
+    description: Field Commitment13 from GenCommitment

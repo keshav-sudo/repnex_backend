@@ -1,0 +1,22 @@
+concept: ecc_rev_history_cost
+table: EccRevHistoryCost
+alias: erhc
+fields:
+  stock_code: erhc.StockCode
+  version: erhc.Version
+  release: erhc.Release
+  warehouse: erhc.Warehouse
+  lead_time: erhc.LeadTime
+  manuf_lead_time: erhc.ManufLeadTime
+  implosion_num: erhc.ImplosionNum
+  labour_cost: erhc.LabourCost
+  material_cost: erhc.MaterialCost
+  fix_overhead: erhc.FixOverhead
+  variable_overhead: erhc.VariableOverhead
+  abc_pre_prod: erhc.AbcPreProd
+  abc_manufacturing: erhc.AbcManufacturing
+  abc_sales: erhc.AbcSales
+  abc_cum_pre_prod: erhc.AbcCumPreProd
+  abc_cum_manuf: erhc.AbcCumManuf
+  std_lab_costs_bill: erhc.StdLabCostsBill
+  sub_contract_cost: erhc.SubContractCost

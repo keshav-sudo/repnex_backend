@@ -1,0 +1,48 @@
+concept: iop_stock_level
+display_name: IopStockLevel
+module: other
+description: Auto-generated representation of the physical table IopStockLevel.
+synonyms:
+- iopstocklevel
+- iop stock level
+header_attributes:
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopStockLevel
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from IopStockLevel
+  minimum_qty:
+    display: Minimumqty
+    type: decimal
+    required: false
+    description: Field MinimumQty from IopStockLevel
+  maximum_qty:
+    display: Maximumqty
+    type: decimal
+    required: false
+    description: Field MaximumQty from IopStockLevel
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from IopStockLevel
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from IopStockLevel
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopStockLevel
+  freeze:
+    display: Freeze
+    type: string
+    required: false
+    description: Field Freeze from IopStockLevel

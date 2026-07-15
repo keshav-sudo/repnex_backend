@@ -1,0 +1,9 @@
+concept: crm_comp_groups
+table: CrmCompGroups
+alias: ccg
+fields:
+  complaint_group: ccg.ComplaintGroup
+  group_name: ccg.GroupName
+  group_desc: ccg.GroupDesc
+  group_owner: ccg.GroupOwner
+  owner_branch: ccg.OwnerBranch

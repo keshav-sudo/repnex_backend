@@ -1,0 +1,18 @@
+concept: ar_dunning_format
+display_name: ArDunningFormat
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArDunningFormat.
+synonyms:
+- ardunningformat
+- ar dunning format
+header_attributes:
+  doc_format:
+    display: Docformat
+    type: string
+    required: false
+    description: Field DocFormat from ArDunningFormat
+  preferences:
+    display: Preferences
+    type: string
+    required: false
+    description: Field Preferences from ArDunningFormat

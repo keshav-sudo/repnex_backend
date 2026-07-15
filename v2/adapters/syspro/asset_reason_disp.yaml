@@ -1,0 +1,6 @@
+concept: asset_reason_disp
+table: AssetReasonDisp
+alias: ard
+fields:
+  disposal_reason: ard.DisposalReason
+  description: ard.Description

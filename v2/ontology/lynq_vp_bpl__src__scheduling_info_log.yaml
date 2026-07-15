@@ -1,0 +1,108 @@
+concept: lynq_vp_bpl__src__scheduling_info_log
+display_name: Lynq VP BPL Src SchedulingInfoLog
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_BPL_Src_SchedulingInfoLog.
+synonyms:
+- lynq_vp_bpl_src_schedulinginfolog
+- lynq vp bpl  src  scheduling info log
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_BPL_Src_SchedulingInfoLog
+  type_id:
+    display: Typeid
+    type: string
+    required: false
+    description: Field TypeID from Lynq_VP_BPL_Src_SchedulingInfoLog
+  ord_type:
+    display: Ordtype
+    type: string
+    required: false
+    description: Field OrdType from Lynq_VP_BPL_Src_SchedulingInfoLog
+  ord_number:
+    display: Ordnumber
+    type: string
+    required: false
+    description: Field OrdNumber from Lynq_VP_BPL_Src_SchedulingInfoLog
+  is_header:
+    display: Isheader
+    type: string
+    required: false
+    description: Field IsHeader from Lynq_VP_BPL_Src_SchedulingInfoLog
+  oper_number:
+    display: Opernumber
+    type: decimal
+    required: false
+    description: Field OperNumber from Lynq_VP_BPL_Src_SchedulingInfoLog
+  path_number:
+    display: Pathnumber
+    type: decimal
+    required: false
+    description: Field PathNumber from Lynq_VP_BPL_Src_SchedulingInfoLog
+  par_path_number:
+    display: Parpathnumber
+    type: decimal
+    required: false
+    description: Field ParPathNumber from Lynq_VP_BPL_Src_SchedulingInfoLog
+  oper_sequence_number:
+    display: Opersequencenumber
+    type: decimal
+    required: false
+    description: Field OperSequenceNumber from Lynq_VP_BPL_Src_SchedulingInfoLog
+  rec_type:
+    display: Rectype
+    type: string
+    required: false
+    description: Field RecType from Lynq_VP_BPL_Src_SchedulingInfoLog
+  oper_type:
+    display: Opertype
+    type: string
+    required: false
+    description: Field OperType from Lynq_VP_BPL_Src_SchedulingInfoLog
+  is_scheduled:
+    display: Isscheduled
+    type: string
+    required: false
+    description: Field IsScheduled from Lynq_VP_BPL_Src_SchedulingInfoLog
+  src_start_date:
+    display: Srcstartdate
+    type: date
+    required: false
+    description: Field SrcStartDate from Lynq_VP_BPL_Src_SchedulingInfoLog
+  src_end_date:
+    display: Srcenddate
+    type: date
+    required: false
+    description: Field SrcEndDate from Lynq_VP_BPL_Src_SchedulingInfoLog
+  src_wc_code:
+    display: Srcwccode
+    type: string
+    required: false
+    description: Field SrcWcCode from Lynq_VP_BPL_Src_SchedulingInfoLog
+  src_wc_dept_code:
+    display: Srcwcdeptcode
+    type: string
+    required: false
+    description: Field SrcWcDeptCode from Lynq_VP_BPL_Src_SchedulingInfoLog
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from Lynq_VP_BPL_Src_SchedulingInfoLog
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from Lynq_VP_BPL_Src_SchedulingInfoLog
+  wc_id:
+    display: Wcid
+    type: decimal
+    required: false
+    description: Field WcID from Lynq_VP_BPL_Src_SchedulingInfoLog
+  created:
+    display: Created
+    type: date
+    required: false
+    description: Field Created from Lynq_VP_BPL_Src_SchedulingInfoLog

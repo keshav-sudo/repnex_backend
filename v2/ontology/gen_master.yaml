@@ -1,0 +1,233 @@
+concept: gen_master
+display_name: GenMaster
+module: general_ledger
+description: Auto-generated representation of the physical table GenMaster.
+synonyms:
+- genmaster
+- gen master
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenMaster
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenMaster
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from GenMaster
+  next_gl_line:
+    display: Nextglline
+    type: decimal
+    required: false
+    description: Field NextGlLine from GenMaster
+  next_gl_line_pyr:
+    display: Nextgllinepyr
+    type: decimal
+    required: false
+    description: Field NextGlLinePyr from GenMaster
+  next_line:
+    display: Nextline
+    type: string
+    required: false
+    description: Field NextLine from GenMaster
+  next_line_pyr:
+    display: Nextlinepyr
+    type: string
+    required: false
+    description: Field NextLinePyr from GenMaster
+  report_index1:
+    display: Reportindex1
+    type: string
+    required: false
+    description: Field ReportIndex1 from GenMaster
+  report_index2:
+    display: Reportindex2
+    type: string
+    required: false
+    description: Field ReportIndex2 from GenMaster
+  account_type:
+    display: Accounttype
+    type: string
+    required: false
+    description: Field AccountType from GenMaster
+  expense_type:
+    display: Expensetype
+    type: string
+    required: false
+    description: Field ExpenseType from GenMaster
+  ptd_dr_value:
+    display: Ptddrvalue
+    type: decimal
+    required: false
+    description: Field PtdDrValue from GenMaster
+  ptd_cr_value:
+    display: Ptdcrvalue
+    type: decimal
+    required: false
+    description: Field PtdCrValue from GenMaster
+  current_balance:
+    display: Currentbalance
+    type: decimal
+    required: false
+    description: Field CurrentBalance from GenMaster
+  prev_per_end_bal:
+    display: Prevperendbal
+    type: decimal
+    required: false
+    description: Field PrevPerEndBal from GenMaster
+  gl_group:
+    display: Glgroup
+    type: string
+    required: false
+    description: Field GlGroup from GenMaster
+  budget_method:
+    display: Budgetmethod
+    type: string
+    required: false
+    description: Field BudgetMethod from GenMaster
+  control_acc_flag:
+    display: Controlaccflag
+    type: string
+    required: false
+    description: Field ControlAccFlag from GenMaster
+  acc_on_hld_flag:
+    display: Acconhldflag
+    type: string
+    required: false
+    description: Field AccOnHldFlag from GenMaster
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from GenMaster
+  num_detail_cur_yr:
+    display: Numdetailcuryr
+    type: decimal
+    required: false
+    description: Field NumDetailCurYr from GenMaster
+  num_detail_prv_yr:
+    display: Numdetailprvyr
+    type: decimal
+    required: false
+    description: Field NumDetailPrvYr from GenMaster
+  integration_method:
+    display: Integrationmethod
+    type: string
+    required: false
+    description: Field IntegrationMethod from GenMaster
+  alt_description:
+    display: Altdescription
+    type: string
+    required: false
+    description: Field AltDescription from GenMaster
+  historical:
+    display: Historical
+    type: decimal
+    required: false
+    description: Field Historical from GenMaster
+  tax2_code:
+    display: Tax2Code
+    type: string
+    required: false
+    description: Field Tax2Code from GenMaster
+  reval_category:
+    display: Revalcategory
+    type: string
+    required: false
+    description: Field RevalCategory from GenMaster
+  alt_cur_indicator:
+    display: Altcurindicator
+    type: string
+    required: false
+    description: Field AltCurIndicator from GenMaster
+  gl_unit_of_measure:
+    display: Glunitofmeasure
+    type: string
+    required: false
+    description: Field GlUnitOfMeasure from GenMaster
+  business_process1:
+    display: Businessprocess1
+    type: string
+    required: false
+    description: Field BusinessProcess1 from GenMaster
+  business_process2:
+    display: Businessprocess2
+    type: string
+    required: false
+    description: Field BusinessProcess2 from GenMaster
+  business_process3:
+    display: Businessprocess3
+    type: string
+    required: false
+    description: Field BusinessProcess3 from GenMaster
+  business_process4:
+    display: Businessprocess4
+    type: string
+    required: false
+    description: Field BusinessProcess4 from GenMaster
+  business_process5:
+    display: Businessprocess5
+    type: string
+    required: false
+    description: Field BusinessProcess5 from GenMaster
+  business_process6:
+    display: Businessprocess6
+    type: string
+    required: false
+    description: Field BusinessProcess6 from GenMaster
+  business_process7:
+    display: Businessprocess7
+    type: string
+    required: false
+    description: Field BusinessProcess7 from GenMaster
+  business_process8:
+    display: Businessprocess8
+    type: string
+    required: false
+    description: Field BusinessProcess8 from GenMaster
+  business_process9:
+    display: Businessprocess9
+    type: string
+    required: false
+    description: Field BusinessProcess9 from GenMaster
+  business_process10:
+    display: Businessprocess10
+    type: string
+    required: false
+    description: Field BusinessProcess10 from GenMaster
+  analysis_required:
+    display: Analysisrequired
+    type: string
+    required: false
+    description: Field AnalysisRequired from GenMaster
+  analysis_category:
+    display: Analysiscategory
+    type: string
+    required: false
+    description: Field AnalysisCategory from GenMaster
+  current_ind:
+    display: Currentind
+    type: string
+    required: false
+    description: Field CurrentInd from GenMaster
+  ret_earns_account:
+    display: Retearnsaccount
+    type: string
+    required: false
+    description: Field RetEarnsAccount from GenMaster
+  tax_account:
+    display: Taxaccount
+    type: string
+    required: false
+    description: Field TaxAccount from GenMaster
+  interest_account:
+    display: Interestaccount
+    type: string
+    required: false
+    description: Field InterestAccount from GenMaster

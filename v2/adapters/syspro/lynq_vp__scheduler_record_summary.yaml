@@ -1,0 +1,16 @@
+concept: lynq_vp__scheduler_record_summary
+table: Lynq_VP_SchedulerRecordSummary
+alias: lvpsrs
+fields:
+  id: lvpsrs.ID
+  modified: lvpsrs.Modified
+  summary_date: lvpsrs.SummaryDate
+  ord_sched_type: lvpsrs.OrdSchedType
+  ord_number: lvpsrs.OrdNumber
+  oper_number: lvpsrs.OperNumber
+  path_number: lvpsrs.PathNumber
+  oper_sequence_number: lvpsrs.OperSequenceNumber
+  wc_id: lvpsrs.WcID
+  detail_type: lvpsrs.DetailType
+  res_hours: lvpsrs.ResHours
+  finished_discretes: lvpsrs.FinishedDiscretes

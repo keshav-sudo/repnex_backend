@@ -1,0 +1,63 @@
+concept: sor_detail_ser_rep
+display_name: SorDetailSerRep
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorDetailSerRep.
+synonyms:
+- sordetailserrep
+- sor detail ser rep
+header_attributes:
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SorDetailSerRep
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorDetailSerRep
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorDetailSerRep
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SorDetailSerRep
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from SorDetailSerRep
+  stock_qty_to_ship:
+    display: Stockqtytoship
+    type: decimal
+    required: false
+    description: Field StockQtyToShip from SorDetailSerRep
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from SorDetailSerRep
+  new_expiry_date:
+    display: Newexpirydate
+    type: date
+    required: false
+    description: Field NewExpiryDate from SorDetailSerRep
+  new_scrap_date:
+    display: Newscrapdate
+    type: date
+    required: false
+    description: Field NewScrapDate from SorDetailSerRep
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from SorDetailSerRep
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from SorDetailSerRep

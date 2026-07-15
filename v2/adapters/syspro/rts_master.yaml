@@ -1,0 +1,52 @@
+concept: rts_master
+table: RtsMaster
+alias: rm1
+fields:
+  rts_number: rm1.RtsNumber
+  stock_code: rm1.StockCode
+  description: rm1.Description
+  warehouse: rm1.Warehouse
+  product_class: rm1.ProductClass
+  stock_type: rm1.StockType
+  rts_status: rm1.RtsStatus
+  supplier: rm1.Supplier
+  rts_cr_date: rm1.RtsCrDate
+  reference: rm1.Reference
+  operator: rm1.Operator
+  rma_number: rm1.RmaNumber
+  rma_line_number: rm1.RmaLineNumber
+  rts_org_qty: rm1.RtsOrgQty
+  rts_org_cst: rm1.RtsOrgCst
+  rts_type: rm1.RtsType
+  rts_ret_date: rm1.RtsRetDate
+  rts_apr_qty: rm1.RtsAprQty
+  rts_apr_cst: rm1.RtsAprCst
+  rts_var_val: rm1.RtsVarVal
+  rts_sup_ref: rm1.RtsSupRef
+  rts_notation: rm1.RtsNotation
+  rts_grn: rm1.RtsGrn
+  purchase_order: rm1.PurchaseOrder
+  line: rm1.Line
+  rts_last_op: rm1.RtsLastOp
+  rts_po_grn_no: rm1.RtsPoGrnNo
+  journal: rm1.Journal
+  entry_group: rm1.EntryGroup
+  rts_close_date: rm1.RtsCloseDate
+  order_uom: rm1.OrderUom
+  rts_nons_gl: rm1.RtsNonsGl
+  rts_supl_chg: rm1.RtsSuplChg
+  jnl_year: rm1.JnlYear
+  jnl_month: rm1.JnlMonth
+  tax_code: rm1.TaxCode
+  rts_grn_jnl: rm1.RtsGrnJnl
+  rts_grn_jnle: rm1.RtsGrnJnle
+  rts_ret_slip: rm1.RtsRetSlip
+  rts_org_po: rm1.RtsOrgPo
+  buyer: rm1.Buyer
+  name: rm1.Name
+  contact: rm1.Contact
+  rts_freight: rm1.RtsFreight
+  rts_handle: rm1.RtsHandle
+  rts_frt_gl: rm1.RtsFrtGl
+  rts_hnd_gl: rm1.RtsHndGl
+  rts_ret_report: rm1.RtsRetReport

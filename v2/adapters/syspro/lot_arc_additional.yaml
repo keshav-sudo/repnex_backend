@@ -1,0 +1,7 @@
+concept: lot_arc_additional
+table: LotArcAdditional
+alias: laa
+fields:
+  stock_code: laa.StockCode
+  lot: laa.Lot
+  additional_lot_name: laa.AdditionalLotName

@@ -1,0 +1,78 @@
+concept: mrp_sug_gtr_master
+display_name: MrpSugGtrMaster
+module: mrp
+description: Auto-generated representation of the physical table MrpSugGtrMaster.
+synonyms:
+- mrpsuggtrmaster
+- mrp sug gtr master
+header_attributes:
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from MrpSugGtrMaster
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from MrpSugGtrMaster
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from MrpSugGtrMaster
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from MrpSugGtrMaster
+  next_line:
+    display: Nextline
+    type: decimal
+    required: false
+    description: Field NextLine from MrpSugGtrMaster
+  control_account:
+    display: Controlaccount
+    type: string
+    required: false
+    description: Field ControlAccount from MrpSugGtrMaster
+  initial_value:
+    display: Initialvalue
+    type: decimal
+    required: false
+    description: Field InitialValue from MrpSugGtrMaster
+  val_rec_to_date:
+    display: Valrectodate
+    type: decimal
+    required: false
+    description: Field ValRecToDate from MrpSugGtrMaster
+  date_created:
+    display: Datecreated
+    type: date
+    required: false
+    description: Field DateCreated from MrpSugGtrMaster
+  time_created_hh:
+    display: Timecreatedhh
+    type: decimal
+    required: false
+    description: Field TimeCreatedHh from MrpSugGtrMaster
+  time_created_mm:
+    display: Timecreatedmm
+    type: decimal
+    required: false
+    description: Field TimeCreatedMm from MrpSugGtrMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MrpSugGtrMaster
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from MrpSugGtrMaster
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from MrpSugGtrMaster

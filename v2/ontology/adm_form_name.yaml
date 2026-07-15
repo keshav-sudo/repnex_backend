@@ -1,0 +1,23 @@
+concept: adm_form_name
+display_name: AdmFormName
+module: administration
+description: Auto-generated representation of the physical table AdmFormName.
+synonyms:
+- admformname
+- adm form name
+header_attributes:
+  form_type:
+    display: Formtype
+    type: string
+    required: false
+    description: Field FormType from AdmFormName
+  form_number:
+    display: Formnumber
+    type: decimal
+    required: false
+    description: Field FormNumber from AdmFormName
+  form_name:
+    display: Formname
+    type: string
+    required: false
+    description: Field FormName from AdmFormName

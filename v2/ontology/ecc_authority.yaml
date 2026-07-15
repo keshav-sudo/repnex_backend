@@ -1,0 +1,28 @@
+concept: ecc_authority
+display_name: EccAuthority
+module: other
+description: Auto-generated representation of the physical table EccAuthority.
+synonyms:
+- eccauthority
+- ecc authority
+header_attributes:
+  ecc_user:
+    display: Eccuser
+    type: string
+    required: false
+    description: Field EccUser from EccAuthority
+  authority_type:
+    display: Authoritytype
+    type: string
+    required: false
+    description: Field AuthorityType from EccAuthority
+  authority_code:
+    display: Authoritycode
+    type: string
+    required: false
+    description: Field AuthorityCode from EccAuthority
+  authority:
+    display: Authority
+    type: decimal
+    required: false
+    description: Field Authority from EccAuthority

@@ -1,0 +1,11 @@
+concept: iop_fore_consume
+table: IopForeConsume
+alias: ifc
+fields:
+  stock_code: ifc.StockCode
+  version: ifc.Version
+  release: ifc.Release
+  forecast_wh: ifc.ForecastWh
+  forecast_date: ifc.ForecastDate
+  forecast_qty: ifc.ForecastQty
+  reference: ifc.Reference

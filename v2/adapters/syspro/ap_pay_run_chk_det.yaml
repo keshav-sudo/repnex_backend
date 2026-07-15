@@ -1,0 +1,11 @@
+concept: ap_pay_run_chk_det
+table: ApPayRunChkDet
+alias: aprcd
+fields:
+  payment_number: aprcd.PaymentNumber
+  ch_register: aprcd.ChRegister
+  supplier: aprcd.Supplier
+  cheque: aprcd.Cheque
+  cheque_date: aprcd.ChequeDate
+  bank: aprcd.Bank
+  last_cheque_val: aprcd.LastChequeVal

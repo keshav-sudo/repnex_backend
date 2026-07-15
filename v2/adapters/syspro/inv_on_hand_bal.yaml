@@ -1,0 +1,12 @@
+concept: inv_on_hand_bal
+table: InvOnHandBal
+alias: iohb
+fields:
+  run_date_time: iohb.RunDateTime
+  stock_code: iohb.StockCode
+  warehouse: iohb.Warehouse
+  whs_on_hand: iohb.WhsOnHand
+  bin_on_hand: iohb.BinOnHand
+  lot_on_hand: iohb.LotOnHand
+  fifo_on_hand: iohb.FifoOnHand
+  ser_on_hand: iohb.SerOnHand

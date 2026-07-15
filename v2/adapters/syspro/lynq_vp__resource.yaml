@@ -1,0 +1,7 @@
+concept: lynq_vp__resource
+table: Lynq_VP_Resource
+alias: lvpr
+fields:
+  id: lvpr.ID
+  resource_code: lvpr.ResourceCode
+  resource_description: lvpr.ResourceDescription

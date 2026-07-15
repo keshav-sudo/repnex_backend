@@ -1,0 +1,13 @@
+concept: inv_gtr_balance
+table: InvGtrBalance
+alias: igb
+fields:
+  run_date_time: igb.RunDateTime
+  stock_code: igb.StockCode
+  warehouse: igb.Warehouse
+  active_gtr: igb.ActiveGtr
+  in_process_gtr: igb.InProcessGtr
+  whs_transit_val: igb.WhsTransitVal
+  gtr_transit_val: igb.GtrTransitVal
+  whs_transit_qty: igb.WhsTransitQty
+  gtr_transit_qty: igb.GtrTransitQty

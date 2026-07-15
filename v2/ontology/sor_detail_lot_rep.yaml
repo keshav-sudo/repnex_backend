@@ -1,0 +1,63 @@
+concept: sor_detail_lot_rep
+display_name: SorDetailLotRep
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorDetailLotRep.
+synonyms:
+- sordetaillotrep
+- sor detail lot rep
+header_attributes:
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SorDetailLotRep
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorDetailLotRep
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorDetailLotRep
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SorDetailLotRep
+  stock_qty_to_ship:
+    display: Stockqtytoship
+    type: decimal
+    required: false
+    description: Field StockQtyToShip from SorDetailLotRep
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from SorDetailLotRep
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from SorDetailLotRep
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from SorDetailLotRep
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from SorDetailLotRep
+  lot_expiry_date:
+    display: Lotexpirydate
+    type: date
+    required: false
+    description: Field LotExpiryDate from SorDetailLotRep
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from SorDetailLotRep

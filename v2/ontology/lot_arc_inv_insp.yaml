@@ -1,0 +1,358 @@
+concept: lot_arc_inv_insp
+display_name: LotArcInvInsp
+module: other
+description: Auto-generated representation of the physical table LotArcInvInsp.
+synonyms:
+- lotarcinvinsp
+- lot arc inv insp
+header_attributes:
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from LotArcInvInsp
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotArcInvInsp
+  next_line:
+    display: Nextline
+    type: decimal
+    required: false
+    description: Field NextLine from LotArcInvInsp
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from LotArcInvInsp
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from LotArcInvInsp
+  grn_receipt_date:
+    display: Grnreceiptdate
+    type: date
+    required: false
+    description: Field GrnReceiptDate from LotArcInvInsp
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotArcInvInsp
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from LotArcInvInsp
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from LotArcInvInsp
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from LotArcInvInsp
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from LotArcInvInsp
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from LotArcInvInsp
+  sup_del_note:
+    display: Supdelnote
+    type: string
+    required: false
+    description: Field SupDelNote from LotArcInvInsp
+  delivery_date:
+    display: Deliverydate
+    type: date
+    required: false
+    description: Field DeliveryDate from LotArcInvInsp
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from LotArcInvInsp
+  insp_narration:
+    display: Inspnarration
+    type: string
+    required: false
+    description: Field InspNarration from LotArcInvInsp
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from LotArcInvInsp
+  document_printed:
+    display: Documentprinted
+    type: string
+    required: false
+    description: Field DocumentPrinted from LotArcInvInsp
+  qty_advised:
+    display: Qtyadvised
+    type: decimal
+    required: false
+    description: Field QtyAdvised from LotArcInvInsp
+  qty_off_site:
+    display: Qtyoffsite
+    type: decimal
+    required: false
+    description: Field QtyOffSite from LotArcInvInsp
+  qty_inspected:
+    display: Qtyinspected
+    type: decimal
+    required: false
+    description: Field QtyInspected from LotArcInvInsp
+  qty_counted:
+    display: Qtycounted
+    type: decimal
+    required: false
+    description: Field QtyCounted from LotArcInvInsp
+  qty_accepted:
+    display: Qtyaccepted
+    type: decimal
+    required: false
+    description: Field QtyAccepted from LotArcInvInsp
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from LotArcInvInsp
+  qty_rejected:
+    display: Qtyrejected
+    type: decimal
+    required: false
+    description: Field QtyRejected from LotArcInvInsp
+  count_completed:
+    display: Countcompleted
+    type: string
+    required: false
+    description: Field CountCompleted from LotArcInvInsp
+  inspect_completed:
+    display: Inspectcompleted
+    type: string
+    required: false
+    description: Field InspectCompleted from LotArcInvInsp
+  po_price:
+    display: Poprice
+    type: decimal
+    required: false
+    description: Field PoPrice from LotArcInvInsp
+  po_price_for:
+    display: Popricefor
+    type: decimal
+    required: false
+    description: Field PoPriceFor from LotArcInvInsp
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from LotArcInvInsp
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from LotArcInvInsp
+  conv_fact_prc_uom:
+    display: Convfactprcuom
+    type: decimal
+    required: false
+    description: Field ConvFactPrcUom from LotArcInvInsp
+  prc_factor:
+    display: Prcfactor
+    type: string
+    required: false
+    description: Field PrcFactor from LotArcInvInsp
+  conv_fact_ord_uom:
+    display: Convfactorduom
+    type: decimal
+    required: false
+    description: Field ConvFactOrdUom from LotArcInvInsp
+  ord_factor:
+    display: Ordfactor
+    type: string
+    required: false
+    description: Field OrdFactor from LotArcInvInsp
+  po_tax_status:
+    display: Potaxstatus
+    type: string
+    required: false
+    description: Field PoTaxStatus from LotArcInvInsp
+  po_tax_code:
+    display: Potaxcode
+    type: string
+    required: false
+    description: Field PoTaxCode from LotArcInvInsp
+  disc_l_pct1:
+    display: Disclpct1
+    type: decimal
+    required: false
+    description: Field DiscLPct1 from LotArcInvInsp
+  disc_l_pct2:
+    display: Disclpct2
+    type: decimal
+    required: false
+    description: Field DiscLPct2 from LotArcInvInsp
+  disc_l_pct3:
+    display: Disclpct3
+    type: decimal
+    required: false
+    description: Field DiscLPct3 from LotArcInvInsp
+  disc_l_val_flag:
+    display: Disclvalflag
+    type: string
+    required: false
+    description: Field DiscLValFlag from LotArcInvInsp
+  disc_l_value:
+    display: Disclvalue
+    type: decimal
+    required: false
+    description: Field DiscLValue from LotArcInvInsp
+  disc_h_pct1:
+    display: Dischpct1
+    type: decimal
+    required: false
+    description: Field DiscHPct1 from LotArcInvInsp
+  disc_h_pct2:
+    display: Dischpct2
+    type: decimal
+    required: false
+    description: Field DiscHPct2 from LotArcInvInsp
+  disc_h_pct3:
+    display: Dischpct3
+    type: decimal
+    required: false
+    description: Field DiscHPct3 from LotArcInvInsp
+  po_currency:
+    display: Pocurrency
+    type: string
+    required: false
+    description: Field PoCurrency from LotArcInvInsp
+  po_due_date:
+    display: Poduedate
+    type: date
+    required: false
+    description: Field PoDueDate from LotArcInvInsp
+  latest_due_date:
+    display: Latestduedate
+    type: date
+    required: false
+    description: Field LatestDueDate from LotArcInvInsp
+  traceable_type:
+    display: Traceabletype
+    type: string
+    required: false
+    description: Field TraceableType from LotArcInvInsp
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from LotArcInvInsp
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from LotArcInvInsp
+  orig_order_qty:
+    display: Origorderqty
+    type: decimal
+    required: false
+    description: Field OrigOrderQty from LotArcInvInsp
+  total_receipt_qty:
+    display: Totalreceiptqty
+    type: decimal
+    required: false
+    description: Field TotalReceiptQty from LotArcInvInsp
+  sup_nationality:
+    display: Supnationality
+    type: string
+    required: false
+    description: Field SupNationality from LotArcInvInsp
+  orig_due_date:
+    display: Origduedate
+    type: date
+    required: false
+    description: Field OrigDueDate from LotArcInvInsp
+  lct_flag:
+    display: Lctflag
+    type: string
+    required: false
+    description: Field LctFlag from LotArcInvInsp
+  po_date_entered:
+    display: Podateentered
+    type: date
+    required: false
+    description: Field PoDateEntered from LotArcInvInsp
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from LotArcInvInsp
+  grn_on_hold:
+    display: Grnonhold
+    type: string
+    required: false
+    description: Field GrnOnHold from LotArcInvInsp
+  use_by_date:
+    display: Usebydate
+    type: date
+    required: false
+    description: Field UseByDate from LotArcInvInsp
+  sell_by_date:
+    display: Sellbydate
+    type: date
+    required: false
+    description: Field SellByDate from LotArcInvInsp
+  internal_expiry_date:
+    display: Internalexpirydate
+    type: date
+    required: false
+    description: Field InternalExpiryDate from LotArcInvInsp
+  manufacture_date:
+    display: Manufacturedate
+    type: date
+    required: false
+    description: Field ManufactureDate from LotArcInvInsp
+  dispatch_date:
+    display: Dispatchdate
+    type: date
+    required: false
+    description: Field DispatchDate from LotArcInvInsp
+  best_before_date:
+    display: Bestbeforedate
+    type: date
+    required: false
+    description: Field BestBeforeDate from LotArcInvInsp
+  sqm_inspection:
+    display: Sqminspection
+    type: string
+    required: false
+    description: Field SqmInspection from LotArcInvInsp
+  sample_basis:
+    display: Samplebasis
+    type: string
+    required: false
+    description: Field SampleBasis from LotArcInvInsp
+  qty_to_accept:
+    display: Qtytoaccept
+    type: decimal
+    required: false
+    description: Field QtyToAccept from LotArcInvInsp
+  qty_to_reject:
+    display: Qtytoreject
+    type: decimal
+    required: false
+    description: Field QtyToReject from LotArcInvInsp
+  qty_in_quarant:
+    display: Qtyinquarant
+    type: decimal
+    required: false
+    description: Field QtyInQuarant from LotArcInvInsp

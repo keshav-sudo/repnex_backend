@@ -1,0 +1,8 @@
+concept: ar_document_format
+table: ArDocumentFormat
+alias: adf2
+fields:
+  ar_document_type: adf2.ArDocumentType
+  document_format: adf2.DocumentFormat
+  document_record_type: adf2.DocumentRecordType
+  format_info: adf2.FormatInfo

@@ -1,0 +1,98 @@
+concept: bom_co_products
+display_name: BomCoProducts
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomCoProducts.
+synonyms:
+- bomcoproducts
+- bom co products
+header_attributes:
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from BomCoProducts
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BomCoProducts
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BomCoProducts
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomCoProducts
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from BomCoProducts
+  co_product:
+    display: Coproduct
+    type: string
+    required: false
+    description: Field CoProduct from BomCoProducts
+  co_product_version:
+    display: Coproductversion
+    type: string
+    required: false
+    description: Field CoProductVersion from BomCoProducts
+  co_product_release:
+    display: Coproductrelease
+    type: string
+    required: false
+    description: Field CoProductRelease from BomCoProducts
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from BomCoProducts
+  optional_flag:
+    display: Optionalflag
+    type: string
+    required: false
+    description: Field OptionalFlag from BomCoProducts
+  qty_per:
+    display: Qtyper
+    type: decimal
+    required: false
+    description: Field QtyPer from BomCoProducts
+  pct_material_cost:
+    display: Pctmaterialcost
+    type: decimal
+    required: false
+    description: Field PctMaterialCost from BomCoProducts
+  pct_sub_contract_cost:
+    display: Pctsubcontractcost
+    type: decimal
+    required: false
+    description: Field PctSubContractCost from BomCoProducts
+  pct_labor_cost:
+    display: Pctlaborcost
+    type: decimal
+    required: false
+    description: Field PctLaborCost from BomCoProducts
+  plan_weight:
+    display: Planweight
+    type: decimal
+    required: false
+    description: Field PlanWeight from BomCoProducts
+  pct_quantity:
+    display: Pctquantity
+    type: decimal
+    required: false
+    description: Field PctQuantity from BomCoProducts
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from BomCoProducts
+  qty_per_ent:
+    display: Qtyperent
+    type: decimal
+    required: false
+    description: Field QtyPerEnt from BomCoProducts

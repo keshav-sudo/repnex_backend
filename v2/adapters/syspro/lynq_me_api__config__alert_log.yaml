@@ -1,0 +1,9 @@
+concept: lynq_me_api__config__alert_log
+table: Lynq_ME_API_Config_AlertLog
+alias: lmeapical
+fields:
+  id: lmeapical.Id
+  log_type_id: lmeapical.LogTypeId
+  created_date_utc: lmeapical.CreatedDateUTC
+  message: lmeapical.Message
+  stack_trace: lmeapical.StackTrace

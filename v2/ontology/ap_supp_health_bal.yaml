@@ -1,0 +1,58 @@
+concept: ap_supp_health_bal
+display_name: ApSuppHealthBal
+module: accounts_payable
+description: Auto-generated representation of the physical table ApSuppHealthBal.
+synonyms:
+- apsupphealthbal
+- ap supp health bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from ApSuppHealthBal
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApSuppHealthBal
+  trx_type:
+    display: Trxtype
+    type: string
+    required: false
+    description: Field TrxType from ApSuppHealthBal
+  hcheck_year:
+    display: Hcheckyear
+    type: decimal
+    required: false
+    description: Field HcheckYear from ApSuppHealthBal
+  hcheck_month:
+    display: Hcheckmonth
+    type: decimal
+    required: false
+    description: Field HcheckMonth from ApSuppHealthBal
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApSuppHealthBal
+  trx_amt_vary:
+    display: Trxamtvary
+    type: decimal
+    required: false
+    description: Field TrxAmtVary from ApSuppHealthBal
+  trx_amt_actual:
+    display: Trxamtactual
+    type: decimal
+    required: false
+    description: Field TrxAmtActual from ApSuppHealthBal
+  trx_amt_calc:
+    display: Trxamtcalc
+    type: decimal
+    required: false
+    description: Field TrxAmtCalc from ApSuppHealthBal
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ApSuppHealthBal

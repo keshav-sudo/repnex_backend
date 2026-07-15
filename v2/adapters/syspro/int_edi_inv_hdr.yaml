@@ -1,0 +1,34 @@
+concept: int_edi_inv_hdr
+table: IntEdiInvHdr
+alias: ieih
+fields:
+  customer: ieih.Customer
+  document_type: ieih.DocumentType
+  invoice: ieih.Invoice
+  status: ieih.Status
+  document_date: ieih.DocumentDate
+  salesperson: ieih.Salesperson
+  branch: ieih.Branch
+  last_del_note: ieih.LastDelNote
+  sales_order: ieih.SalesOrder
+  sales_order_date: ieih.SalesOrderDate
+  customer_po_number: ieih.CustomerPoNumber
+  doc_value_exc_tax: ieih.DocValueExcTax
+  tax_value: ieih.TaxValue
+  gross_doc_value: ieih.GrossDocValue
+  total_discount: ieih.TotalDiscount
+  ship_to_name: ieih.ShipToName
+  ship_address1: ieih.ShipAddress1
+  ship_address2: ieih.ShipAddress2
+  ship_address3: ieih.ShipAddress3
+  ship_address3_loc: ieih.ShipAddress3Loc
+  ship_address4: ieih.ShipAddress4
+  ship_address5: ieih.ShipAddress5
+  postal_code: ieih.PostalCode
+  ship_gps_lat: ieih.ShipGpsLat
+  ship_gps_long: ieih.ShipGpsLong
+  currency: ieih.Currency
+  terms_code: ieih.TermsCode
+  state: ieih.State
+  county_zip: ieih.CountyZip
+  extended_tax_code: ieih.ExtendedTaxCode

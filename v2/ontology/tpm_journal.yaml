@@ -1,0 +1,173 @@
+concept: tpm_journal
+display_name: TpmJournal
+module: other
+description: Auto-generated representation of the physical table TpmJournal.
+synonyms:
+- tpmjournal
+- tpm journal
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from TpmJournal
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from TpmJournal
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from TpmJournal
+  debit_gl_code:
+    display: Debitglcode
+    type: string
+    required: false
+    description: Field DebitGlCode from TpmJournal
+  credit_gl_code:
+    display: Creditglcode
+    type: string
+    required: false
+    description: Field CreditGlCode from TpmJournal
+  deduction_code:
+    display: Deductioncode
+    type: string
+    required: false
+    description: Field DeductionCode from TpmJournal
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from TpmJournal
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from TpmJournal
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from TpmJournal
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from TpmJournal
+  amount:
+    display: Amount
+    type: decimal
+    required: false
+    description: Field Amount from TpmJournal
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from TpmJournal
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from TpmJournal
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from TpmJournal
+  entries_group:
+    display: Entriesgroup
+    type: decimal
+    required: false
+    description: Field EntriesGroup from TpmJournal
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from TpmJournal
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from TpmJournal
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from TpmJournal
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from TpmJournal
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from TpmJournal
+  acc_conv_rate:
+    display: Accconvrate
+    type: decimal
+    required: false
+    description: Field AccConvRate from TpmJournal
+  acc_mul_div:
+    display: Accmuldiv
+    type: string
+    required: false
+    description: Field AccMulDiv from TpmJournal
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from TpmJournal
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from TpmJournal
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from TpmJournal
+  dr_analysis_entry:
+    display: Dranalysisentry
+    type: decimal
+    required: false
+    description: Field DrAnalysisEntry from TpmJournal
+  cr_analysis_entry:
+    display: Cranalysisentry
+    type: decimal
+    required: false
+    description: Field CrAnalysisEntry from TpmJournal
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from TpmJournal
+  gl_int_printed:
+    display: Glintprinted
+    type: string
+    required: false
+    description: Field GlIntPrinted from TpmJournal
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from TpmJournal
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from TpmJournal
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from TpmJournal
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from TpmJournal

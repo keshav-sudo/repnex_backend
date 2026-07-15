@@ -1,0 +1,48 @@
+concept: ap_tax2_dist_sum
+display_name: ApTax2DistSum
+module: accounts_payable
+description: Auto-generated representation of the physical table ApTax2DistSum.
+synonyms:
+- aptax2distsum
+- ap tax2 dist sum
+header_attributes:
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from ApTax2DistSum
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from ApTax2DistSum
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApTax2DistSum
+  jnl_status:
+    display: Jnlstatus
+    type: decimal
+    required: false
+    description: Field JnlStatus from ApTax2DistSum
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from ApTax2DistSum
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApTax2DistSum
+  invoice_disc:
+    display: Invoicedisc
+    type: decimal
+    required: false
+    description: Field InvoiceDisc from ApTax2DistSum
+  invoice_tax:
+    display: Invoicetax
+    type: decimal
+    required: false
+    description: Field InvoiceTax from ApTax2DistSum

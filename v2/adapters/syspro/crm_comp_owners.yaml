@@ -1,0 +1,8 @@
+concept: crm_comp_owners
+table: CrmCompOwners
+alias: cco
+fields:
+  owner_id: cco.OwnerId
+  owner_name: cco.OwnerName
+  owner_email: cco.OwnerEmail
+  owner_branch: cco.OwnerBranch

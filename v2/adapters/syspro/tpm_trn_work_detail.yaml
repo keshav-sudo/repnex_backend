@@ -1,0 +1,23 @@
+concept: tpm_trn_work_detail
+table: TpmTrnWorkDetail
+alias: ttwd
+fields:
+  sales_order: ttwd.SalesOrder
+  sales_order_line: ttwd.SalesOrderLine
+  tpm_sequence: ttwd.TpmSequence
+  promotion_code: ttwd.PromotionCode
+  global_line: ttwd.GlobalLine
+  current_level: ttwd.CurrentLevel
+  line_ship_level: ttwd.LineShipLevel
+  line_total_ship_level: ttwd.LineTotalShipLevel
+  current_amount: ttwd.CurrentAmount
+  line_ship_amount: ttwd.LineShipAmount
+  line_total_ship_amt: ttwd.LineTotalShipAmt
+  current_value: ttwd.CurrentValue
+  line_ship_value: ttwd.LineShipValue
+  line_total_ship_value: ttwd.LineTotalShipValue
+  current_quantity: ttwd.CurrentQuantity
+  line_ship_quantity: ttwd.LineShipQuantity
+  line_total_ship_qty: ttwd.LineTotalShipQty
+  line_price: ttwd.LinePrice
+  stock_code: ttwd.StockCode

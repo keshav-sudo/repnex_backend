@@ -1,0 +1,88 @@
+concept: lynq_me__sent_message
+display_name: Lynq ME SentMessage
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_SentMessage.
+synonyms:
+- lynq_me_sentmessage
+- lynq me  sent message
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_ME_SentMessage
+  owner_type_id:
+    display: Ownertypeid
+    type: decimal
+    required: false
+    description: Field OwnerTypeId from Lynq_ME_SentMessage
+  owner_code:
+    display: Ownercode
+    type: string
+    required: false
+    description: Field OwnerCode from Lynq_ME_SentMessage
+  sent_date:
+    display: Sentdate
+    type: date
+    required: false
+    description: Field SentDate from Lynq_ME_SentMessage
+  header:
+    display: Header
+    type: string
+    required: false
+    description: Field Header from Lynq_ME_SentMessage
+  body:
+    display: Body
+    type: string
+    required: false
+    description: Field Body from Lynq_ME_SentMessage
+  state_id:
+    display: Stateid
+    type: decimal
+    required: false
+    description: Field StateId from Lynq_ME_SentMessage
+  type_name:
+    display: Typename
+    type: string
+    required: false
+    description: Field TypeName from Lynq_ME_SentMessage
+  measurement_code:
+    display: Measurementcode
+    type: string
+    required: false
+    description: Field MeasurementCode from Lynq_ME_SentMessage
+  measurement_object_code:
+    display: Measurementobjectcode
+    type: decimal
+    required: false
+    description: Field MeasurementObjectCode from Lynq_ME_SentMessage
+  object_members:
+    display: Objectmembers
+    type: string
+    required: false
+    description: Field ObjectMembers from Lynq_ME_SentMessage
+  terminal_id:
+    display: Terminalid
+    type: string
+    required: false
+    description: Field TerminalId from Lynq_ME_SentMessage
+  work_center_code:
+    display: Workcentercode
+    type: string
+    required: false
+    description: Field WorkCenterCode from Lynq_ME_SentMessage
+  task_codes:
+    display: Taskcodes
+    type: string
+    required: false
+    description: Field TaskCodes from Lynq_ME_SentMessage
+  triggered_value:
+    display: Triggeredvalue
+    type: string
+    required: false
+    description: Field TriggeredValue from Lynq_ME_SentMessage
+  membership:
+    display: Membership
+    type: string
+    required: false
+    description: Field Membership from Lynq_ME_SentMessage

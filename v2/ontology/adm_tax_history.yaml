@@ -1,0 +1,23 @@
+concept: adm_tax_history
+display_name: AdmTaxHistory
+module: administration
+description: Auto-generated representation of the physical table AdmTaxHistory.
+synonyms:
+- admtaxhistory
+- adm tax history
+header_attributes:
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from AdmTaxHistory
+  tax_eff_date:
+    display: Taxeffdate
+    type: date
+    required: false
+    description: Field TaxEffDate from AdmTaxHistory
+  prv_tax_rate:
+    display: Prvtaxrate
+    type: decimal
+    required: false
+    description: Field PrvTaxRate from AdmTaxHistory

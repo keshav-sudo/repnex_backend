@@ -1,0 +1,24 @@
+concept: wip_inspect_doc
+table: WipInspectDoc
+alias: wid1
+fields:
+  trans_type: wid1.TransType
+  document_num: wid1.DocumentNum
+  insp_reference: wid1.InspReference
+  lot: wid1.Lot
+  warehouse: wid1.Warehouse
+  reprint_flag: wid1.ReprintFlag
+  version: wid1.Version
+  release: wid1.Release
+  stock_code: wid1.StockCode
+  job: wid1.Job
+  customer: wid1.Customer
+  scrap_code: wid1.ScrapCode
+  transaction_date: wid1.TransactionDate
+  quantity: wid1.Quantity
+  concession_num: wid1.ConcessionNum
+  expiry_date: wid1.ExpiryDate
+  job_delivery_date: wid1.JobDeliveryDate
+  bin: wid1.Bin
+  narration: wid1.Narration
+  trn_document: wid1.TrnDocument

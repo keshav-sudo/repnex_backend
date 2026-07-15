@@ -1,0 +1,18 @@
+concept: sor_detail_qty_bal_fix
+table: SorDetailQtyBalFix
+alias: sdqbf
+fields:
+  run_date_time: sdqbf.RunDateTime
+  sales_order: sdqbf.SalesOrder
+  sales_order_line: sdqbf.SalesOrderLine
+  line: sdqbf.Line
+  stock_code: sdqbf.StockCode
+  warehouse: sdqbf.Warehouse
+  old_quantity: sdqbf.OldQuantity
+  new_quantity: sdqbf.NewQuantity
+  correction_type: sdqbf.CorrectionType
+  correction_src: sdqbf.CorrectionSrc
+  reserved_flag: sdqbf.ReservedFlag
+  message: sdqbf.Message
+  message_number: sdqbf.MessageNumber
+  dispatch_flag: sdqbf.DispatchFlag

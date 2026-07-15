@@ -1,0 +1,14 @@
+concept: sal_gl_int_sale
+table: SalGlIntSale
+alias: sgis
+fields:
+  branch: sgis.Branch
+  product_class: sgis.ProductClass
+  area: sgis.Area
+  warehouse: sgis.Warehouse
+  sales_gl_code: sgis.SalesGlCode
+  cos_gl_code: sgis.CosGlCode
+  ibt_sales_gl_code: sgis.IbtSalesGlCode
+  ibt_cos_gl_code: sgis.IbtCosGlCode
+  credit_gl_code: sgis.CreditGlCode
+  dis_gl_code: sgis.DisGlCode

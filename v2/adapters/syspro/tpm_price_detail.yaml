@@ -1,0 +1,15 @@
+concept: tpm_price_detail
+table: TpmPriceDetail
+alias: tpd1
+fields:
+  price_type: tpd1.PriceType
+  key_area: tpd1.KeyArea
+  pickup_delivery: tpd1.PickupDelivery
+  currency: tpd1.Currency
+  selection_type: tpd1.SelectionType
+  selection_area: tpd1.SelectionArea
+  price_break: tpd1.PriceBreak
+  basis: tpd1.Basis
+  price: tpd1.Price
+  price_discount_flag: tpd1.PriceDiscountFlag
+  price_code: tpd1.PriceCode

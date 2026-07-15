@@ -1,0 +1,9 @@
+concept: inv_narration
+table: InvNarration
+alias: in
+fields:
+  stock_code: in.StockCode
+  text_type: in.TextType
+  language_code: in.LanguageCode
+  line: in.Line
+  text: in.Text

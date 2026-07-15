@@ -1,0 +1,193 @@
+concept: diag_company_setup
+display_name: DiagCompanySetup
+module: other
+description: Auto-generated representation of the physical table DiagCompanySetup.
+synonyms:
+- diagcompanysetup
+- diag company setup
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from DiagCompanySetup
+  company_id:
+    display: Companyid
+    type: string
+    required: false
+    description: Field CompanyId from DiagCompanySetup
+  company_name:
+    display: Companyname
+    type: string
+    required: false
+    description: Field CompanyName from DiagCompanySetup
+  conv_status:
+    display: Convstatus
+    type: decimal
+    required: false
+    description: Field ConvStatus from DiagCompanySetup
+  srs_arc_table_cnt:
+    display: Srsarctablecnt
+    type: decimal
+    required: false
+    description: Field SRSArcTableCnt from DiagCompanySetup
+  db_compat_level:
+    display: Dbcompatlevel
+    type: decimal
+    required: false
+    description: Field DBCompatLevel from DiagCompanySetup
+  db_compat_error:
+    display: Dbcompaterror
+    type: string
+    required: false
+    description: Field DBCompatError from DiagCompanySetup
+  db_case_insensitive:
+    display: Dbcaseinsensitive
+    type: string
+    required: false
+    description: Field DBCaseInsensitive from DiagCompanySetup
+  ap_grn_alpha_numeric:
+    display: Apgrnalphanumeric
+    type: string
+    required: false
+    description: Field ApGrnAlphaNumeric from DiagCompanySetup
+  ap_sup_prefix:
+    display: Apsupprefix
+    type: string
+    required: false
+    description: Field ApSupPrefix from DiagCompanySetup
+  ap_sup_alpha_numeric:
+    display: Apsupalphanumeric
+    type: string
+    required: false
+    description: Field ApSupAlphaNumeric from DiagCompanySetup
+  ap_grn_prefix:
+    display: Apgrnprefix
+    type: string
+    required: false
+    description: Field ApGrnPrefix from DiagCompanySetup
+  ar_cus_alpha_numeric:
+    display: Arcusalphanumeric
+    type: string
+    required: false
+    description: Field ArCusAlphaNumeric from DiagCompanySetup
+  ar_cus_prefix:
+    display: Arcusprefix
+    type: string
+    required: false
+    description: Field ArCusPrefix from DiagCompanySetup
+  ar_bgr_alpha_numeric:
+    display: Arbgralphanumeric
+    type: string
+    required: false
+    description: Field ArBgrAlphaNumeric from DiagCompanySetup
+  ar_bgr_prefix:
+    display: Arbgrprefix
+    type: string
+    required: false
+    description: Field ArBgrPrefix from DiagCompanySetup
+  ar_inv_alpha_numeric:
+    display: Arinvalphanumeric
+    type: string
+    required: false
+    description: Field ArInvAlphaNumeric from DiagCompanySetup
+  ar_inv_prefix:
+    display: Arinvprefix
+    type: string
+    required: false
+    description: Field ArInvPrefix from DiagCompanySetup
+  in_lot_alpha_numeric:
+    display: Inlotalphanumeric
+    type: string
+    required: false
+    description: Field InLotAlphaNumeric from DiagCompanySetup
+  in_lot_prefix:
+    display: Inlotprefix
+    type: string
+    required: false
+    description: Field InLotPrefix from DiagCompanySetup
+  po_ord_alpha_numeric:
+    display: Poordalphanumeric
+    type: string
+    required: false
+    description: Field PoOrdAlphaNumeric from DiagCompanySetup
+  po_ord_prefix:
+    display: Poordprefix
+    type: string
+    required: false
+    description: Field PoOrdPrefix from DiagCompanySetup
+  quote_alpha_numeric:
+    display: Quotealphanumeric
+    type: string
+    required: false
+    description: Field QuoteAlphaNumeric from DiagCompanySetup
+  quote_prefix:
+    display: Quoteprefix
+    type: string
+    required: false
+    description: Field QuotePrefix from DiagCompanySetup
+  so_ord_alpha_numeric:
+    display: Soordalphanumeric
+    type: string
+    required: false
+    description: Field SoOrdAlphaNumeric from DiagCompanySetup
+  so_ord_prefix:
+    display: Soordprefix
+    type: string
+    required: false
+    description: Field SoOrdPrefix from DiagCompanySetup
+  so_rma_alpha_numeric:
+    display: Sormaalphanumeric
+    type: string
+    required: false
+    description: Field SoRmaAlphaNumeric from DiagCompanySetup
+  so_rma_prefix:
+    display: Sormaprefix
+    type: string
+    required: false
+    description: Field SoRmaPrefix from DiagCompanySetup
+  wp_ins_alpha_numeric:
+    display: Wpinsalphanumeric
+    type: string
+    required: false
+    description: Field WpInsAlphaNumeric from DiagCompanySetup
+  wp_ins_prefix:
+    display: Wpinsprefix
+    type: string
+    required: false
+    description: Field WpInsPrefix from DiagCompanySetup
+  wp_job_alpha_numeric:
+    display: Wpjobalphanumeric
+    type: string
+    required: false
+    description: Field WpJobAlphaNumeric from DiagCompanySetup
+  wp_job_prefix:
+    display: Wpjobprefix
+    type: string
+    required: false
+    description: Field WpJobPrefix from DiagCompanySetup
+  bom_rev_alpha_numeric:
+    display: Bomrevalphanumeric
+    type: string
+    required: false
+    description: Field BomRevAlphaNumeric from DiagCompanySetup
+  bom_rel_alpha_numeric:
+    display: Bomrelalphanumeric
+    type: string
+    required: false
+    description: Field BomRelAlphaNumeric from DiagCompanySetup
+  ecc_stock_level:
+    display: Eccstocklevel
+    type: string
+    required: false
+    description: Field EccStockLevel from DiagCompanySetup
+  bom_eco_alpha_numeric:
+    display: Bomecoalphanumeric
+    type: string
+    required: false
+    description: Field BomEcoAlphaNumeric from DiagCompanySetup
+  bom_eco_prefix:
+    display: Bomecoprefix
+    type: string
+    required: false
+    description: Field BomEcoPrefix from DiagCompanySetup

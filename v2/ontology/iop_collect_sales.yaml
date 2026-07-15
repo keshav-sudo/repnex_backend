@@ -1,0 +1,43 @@
+concept: iop_collect_sales
+display_name: IopCollectSales
+module: other
+description: Auto-generated representation of the physical table IopCollectSales.
+synonyms:
+- iopcollectsales
+- iop collect sales
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopCollectSales
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopCollectSales
+  movement_date:
+    display: Movementdate
+    type: date
+    required: false
+    description: Field MovementDate from IopCollectSales
+  trans_count:
+    display: Transcount
+    type: decimal
+    required: false
+    description: Field TransCount from IopCollectSales
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from IopCollectSales
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopCollectSales
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopCollectSales

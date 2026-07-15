@@ -1,0 +1,38 @@
+concept: asset_capex_suspense
+table: AssetCapexSuspense
+alias: acs
+fields:
+  capex_code: acs.CapexCode
+  capex_line: acs.CapexLine
+  asset: acs.Asset
+  branch: acs.Branch
+  asset_cost_center: acs.AssetCostCenter
+  asset_group_code: acs.AssetGroupCode
+  location: acs.Location
+  asset_type: acs.AssetType
+  gl_code: acs.GlCode
+  asset_status: acs.AssetStatus
+  cycle_count: acs.CycleCount
+  resp_user: acs.RespUser
+  asset_owner: acs.AssetOwner
+  book_val_dep: acs.BookValDep
+  book_val_residual: acs.BookValResidual
+  thruput_eul: acs.ThruputEul
+  stat_gl_code: acs.StatGlCode
+  total_periods: acs.TotalPeriods
+  wear_tear_dep: acs.WearTearDep
+  wear_tear_residual: acs.WearTearResidual
+  suspend: acs.Suspend
+  book_val_dep_flag: acs.BookValDepFlag
+  asset_cost: acs.AssetCost
+  asset_tax: acs.AssetTax
+  asset_qty: acs.AssetQty
+  created_from_flag: acs.CreatedFromFlag
+  created_from_key: acs.CreatedFromKey
+  purchase_date: acs.PurchaseDate
+  start_dep: acs.StartDep
+  wear_dep_start_date: acs.WearDepStartDate
+  suspense_year: acs.SuspenseYear
+  suspense_period: acs.SuspensePeriod
+  hold_flag: acs.HoldFlag
+  description: acs.Description

@@ -1,0 +1,25 @@
+concept: inv_mult_bin
+table: InvMultBin
+alias: imb
+fields:
+  stock_code: imb.StockCode
+  warehouse: imb.Warehouse
+  bin: imb.Bin
+  qty_on_hand1: imb.QtyOnHand1
+  qty_on_hand2: imb.QtyOnHand2
+  qty_on_hand3: imb.QtyOnHand3
+  last_receipt_date: imb.LastReceiptDate
+  last_issue_date: imb.LastIssueDate
+  so_qty_to_ship: imb.SoQtyToShip
+  note: imb.Note
+  qty_dispatched: imb.QtyDispatched
+  on_hold: imb.OnHold
+  on_hold_reason: imb.OnHoldReason
+  qty_resv_pick: imb.QtyResvPick
+  prd_recall_flag: imb.PrdRecallFlag
+  reason_code: imb.ReasonCode
+  kanban_active: imb.KanbanActive
+  kanban_pull_level: imb.KanbanPullLevel
+  kanban_pull_qty: imb.KanbanPullQty
+  kanban_full_cont: imb.KanbanFullCont
+  kanban_replen_flag: imb.KanbanReplenFlag

@@ -1,0 +1,8 @@
+concept: ar_integration_ctl
+table: ArIntegrationCtl
+alias: aic1
+fields:
+  ctl_flag: aic1.CtlFlag
+  branch_reqd: aic1.BranchReqd
+  currency_reqd: aic1.CurrencyReqd
+  gl_exch_separate: aic1.GlExchSeparate

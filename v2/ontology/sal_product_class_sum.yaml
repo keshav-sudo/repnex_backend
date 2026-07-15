@@ -1,0 +1,143 @@
+concept: sal_product_class_sum
+display_name: SalProductClassSum
+module: other
+description: Auto-generated representation of the physical table SalProductClassSum.
+synonyms:
+- salproductclasssum
+- sal product class sum
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalProductClassSum
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SalProductClassSum
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from SalProductClassSum
+  ptd_sales:
+    display: Ptdsales
+    type: decimal
+    required: false
+    description: Field PtdSales from SalProductClassSum
+  ptd_cost:
+    display: Ptdcost
+    type: decimal
+    required: false
+    description: Field PtdCost from SalProductClassSum
+  ptd_qty:
+    display: Ptdqty
+    type: decimal
+    required: false
+    description: Field PtdQty from SalProductClassSum
+  ptd_mass:
+    display: Ptdmass
+    type: decimal
+    required: false
+    description: Field PtdMass from SalProductClassSum
+  mtd_sales1:
+    display: Mtdsales1
+    type: decimal
+    required: false
+    description: Field MtdSales1 from SalProductClassSum
+  mtd_sales2:
+    display: Mtdsales2
+    type: decimal
+    required: false
+    description: Field MtdSales2 from SalProductClassSum
+  mtd_sales3:
+    display: Mtdsales3
+    type: decimal
+    required: false
+    description: Field MtdSales3 from SalProductClassSum
+  mtd_cost1:
+    display: Mtdcost1
+    type: decimal
+    required: false
+    description: Field MtdCost1 from SalProductClassSum
+  mtd_cost2:
+    display: Mtdcost2
+    type: decimal
+    required: false
+    description: Field MtdCost2 from SalProductClassSum
+  mtd_cost3:
+    display: Mtdcost3
+    type: decimal
+    required: false
+    description: Field MtdCost3 from SalProductClassSum
+  mtd_qty1:
+    display: Mtdqty1
+    type: decimal
+    required: false
+    description: Field MtdQty1 from SalProductClassSum
+  mtd_qty2:
+    display: Mtdqty2
+    type: decimal
+    required: false
+    description: Field MtdQty2 from SalProductClassSum
+  mtd_qty3:
+    display: Mtdqty3
+    type: decimal
+    required: false
+    description: Field MtdQty3 from SalProductClassSum
+  mtd_mass1:
+    display: Mtdmass1
+    type: decimal
+    required: false
+    description: Field MtdMass1 from SalProductClassSum
+  mtd_mass2:
+    display: Mtdmass2
+    type: decimal
+    required: false
+    description: Field MtdMass2 from SalProductClassSum
+  mtd_mass3:
+    display: Mtdmass3
+    type: decimal
+    required: false
+    description: Field MtdMass3 from SalProductClassSum
+  ytd_sales:
+    display: Ytdsales
+    type: decimal
+    required: false
+    description: Field YtdSales from SalProductClassSum
+  ytd_cost:
+    display: Ytdcost
+    type: decimal
+    required: false
+    description: Field YtdCost from SalProductClassSum
+  ytd_qty:
+    display: Ytdqty
+    type: decimal
+    required: false
+    description: Field YtdQty from SalProductClassSum
+  ytd_mass:
+    display: Ytdmass
+    type: decimal
+    required: false
+    description: Field YtdMass from SalProductClassSum
+  prv_yr_sales:
+    display: Prvyrsales
+    type: decimal
+    required: false
+    description: Field PrvYrSales from SalProductClassSum
+  prv_yr_cost:
+    display: Prvyrcost
+    type: decimal
+    required: false
+    description: Field PrvYrCost from SalProductClassSum
+  prv_yr_qty:
+    display: Prvyrqty
+    type: decimal
+    required: false
+    description: Field PrvYrQty from SalProductClassSum
+  prv_yr_mass:
+    display: Prvyrmass
+    type: decimal
+    required: false
+    description: Field PrvYrMass from SalProductClassSum

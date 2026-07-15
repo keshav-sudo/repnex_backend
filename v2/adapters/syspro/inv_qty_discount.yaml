@@ -1,0 +1,8 @@
+concept: inv_qty_discount
+table: InvQtyDiscount
+alias: iqd
+fields:
+  stock_code: iqd.StockCode
+  currency: iqd.Currency
+  qty_break: iqd.QtyBreak
+  price_code: iqd.PriceCode

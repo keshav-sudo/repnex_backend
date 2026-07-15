@@ -1,0 +1,24 @@
+concept: por_sup_stk_info
+table: PorSupStkInfo
+alias: pssi
+fields:
+  supplier: pssi.Supplier
+  stock_code: pssi.StockCode
+  sup_catalogue_num: pssi.SupCatalogueNum
+  demo_lead_time: pssi.DemoLeadTime
+  last_price_paid: pssi.LastPricePaid
+  last_receipt_date: pssi.LastReceiptDate
+  last_receipt_qty: pssi.LastReceiptQty
+  order_qty_uom: pssi.OrderQtyUom
+  sup_stock_desc: pssi.SupStockDesc
+  sup_long_desc: pssi.SupLongDesc
+  po_text1: pssi.PoText1
+  po_text2: pssi.PoText2
+  po_text3: pssi.PoText3
+  po_text4: pssi.PoText4
+  lct_merch_price: pssi.LctMerchPrice
+  default_price: pssi.DefaultPrice
+  stock_item_flag: pssi.StockItemFlag
+  default_prc_uom: pssi.DefaultPrcUom
+  last_prc_uom: pssi.LastPrcUom
+  alt_doc_price: pssi.AltDocPrice

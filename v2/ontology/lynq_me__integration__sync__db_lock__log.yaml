@@ -1,0 +1,33 @@
+concept: lynq_me__integration__sync__db_lock__log
+display_name: Lynq ME Integration Sync DbLock Log
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Integration_Sync_DbLock_Log.
+synonyms:
+- lynq_me_integration_sync_dblock_log
+- lynq me  integration  sync  db lock  log
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_Integration_Sync_DbLock_Log
+  process_name:
+    display: Processname
+    type: string
+    required: false
+    description: Field ProcessName from Lynq_ME_Integration_Sync_DbLock_Log
+  process_activity:
+    display: Processactivity
+    type: string
+    required: false
+    description: Field ProcessActivity from Lynq_ME_Integration_Sync_DbLock_Log
+  result:
+    display: Result
+    type: string
+    required: false
+    description: Field Result from Lynq_ME_Integration_Sync_DbLock_Log
+  log_time:
+    display: Logtime
+    type: date
+    required: false
+    description: Field LogTime from Lynq_ME_Integration_Sync_DbLock_Log

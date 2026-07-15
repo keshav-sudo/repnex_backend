@@ -1,0 +1,8 @@
+concept: wip_lab_jnl_ctl
+table: WipLabJnlCtl
+alias: wljc
+fields:
+  journal: wljc.Journal
+  status: wljc.Status
+  journal_date: wljc.JournalDate
+  operator_code: wljc.OperatorCode

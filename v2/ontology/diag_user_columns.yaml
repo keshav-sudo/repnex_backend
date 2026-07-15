@@ -1,0 +1,38 @@
+concept: diag_user_columns
+display_name: DiagUserColumns
+module: other
+description: Auto-generated representation of the physical table DiagUserColumns.
+synonyms:
+- diagusercolumns
+- diag user columns
+header_attributes:
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from DiagUserColumns
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from DiagUserColumns
+  data_type:
+    display: Datatype
+    type: string
+    required: false
+    description: Field DataType from DiagUserColumns
+  can_be_null:
+    display: Canbenull
+    type: string
+    required: false
+    description: Field CanBeNull from DiagUserColumns
+  collation:
+    display: Collation
+    type: string
+    required: false
+    description: Field Collation from DiagUserColumns
+  create_def:
+    display: Createdef
+    type: string
+    required: false
+    description: Field CreateDef from DiagUserColumns

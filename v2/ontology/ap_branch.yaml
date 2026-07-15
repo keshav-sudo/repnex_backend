@@ -1,0 +1,53 @@
+concept: ap_branch
+display_name: ApBranch
+module: accounts_payable
+description: Auto-generated representation of the physical table ApBranch.
+synonyms:
+- apbranch
+- ap branch
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ApBranch
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from ApBranch
+  ap_brn_gl_code:
+    display: Apbrnglcode
+    type: string
+    required: false
+    description: Field ApBrnGlCode from ApBranch
+  ap_brn_dsc_gl_code:
+    display: Apbrndscglcode
+    type: string
+    required: false
+    description: Field ApBrnDscGlCode from ApBranch
+  po_prefix:
+    display: Poprefix
+    type: string
+    required: false
+    description: Field PoPrefix from ApBranch
+  po_next_number:
+    display: Ponextnumber
+    type: decimal
+    required: false
+    description: Field PoNextNumber from ApBranch
+  grn_prefix:
+    display: Grnprefix
+    type: string
+    required: false
+    description: Field GrnPrefix from ApBranch
+  grn_next_number:
+    display: Grnnextnumber
+    type: decimal
+    required: false
+    description: Field GrnNextNumber from ApBranch
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ApBranch

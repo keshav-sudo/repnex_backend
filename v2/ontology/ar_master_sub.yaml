@@ -1,0 +1,18 @@
+concept: ar_master_sub
+display_name: ArMasterSub
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArMasterSub.
+synonyms:
+- armastersub
+- ar master sub
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArMasterSub
+  customer_sub:
+    display: Customersub
+    type: string
+    required: false
+    description: Field CustomerSub from ArMasterSub

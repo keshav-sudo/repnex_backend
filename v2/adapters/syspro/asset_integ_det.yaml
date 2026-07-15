@@ -1,0 +1,15 @@
+concept: asset_integ_det
+table: AssetIntegDet
+alias: aid3
+fields:
+  branch: aid3.Branch
+  asset_cost_center: aid3.AssetCostCenter
+  asset_group_code: aid3.AssetGroupCode
+  asset_clear_gl_code: aid3.AssetClearGlCode
+  profit_loss_gl_code: aid3.ProfitLossGlCode
+  pl_inter_comp_gl_code: aid3.PlInterCompGlCode
+  capex_gl_code: aid3.CapexGlCode
+  reval_res_gl_code: aid3.RevalResGlCode
+  asset_ctl_gl_code: aid3.AssetCtlGlCode
+  depn_gl_code: aid3.DepnGlCode
+  accum_depn_gl_code: aid3.AccumDepnGlCode

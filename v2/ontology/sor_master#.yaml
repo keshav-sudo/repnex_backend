@@ -1,0 +1,23 @@
+concept: sor_master#
+display_name: SorMaster#
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorMaster#.
+synonyms:
+- sormaster#
+- sor master#
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorMaster#
+  post_date_time:
+    display: Postdatetime
+    type: date
+    required: false
+    description: Field PostDateTime from SorMaster#
+  order_value:
+    display: Ordervalue
+    type: decimal
+    required: false
+    description: Field OrderValue from SorMaster#

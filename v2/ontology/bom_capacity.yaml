@@ -1,0 +1,193 @@
+concept: bom_capacity
+display_name: BomCapacity
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomCapacity.
+synonyms:
+- bomcapacity
+- bom capacity
+header_attributes:
+  capacity_flag:
+    display: Capacityflag
+    type: string
+    required: false
+    description: Field CapacityFlag from BomCapacity
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from BomCapacity
+  capacity_century:
+    display: Capacitycentury
+    type: decimal
+    required: false
+    description: Field CapacityCentury from BomCapacity
+  capacity_year:
+    display: Capacityyear
+    type: decimal
+    required: false
+    description: Field CapacityYear from BomCapacity
+  capacity_month:
+    display: Capacitymonth
+    type: decimal
+    required: false
+    description: Field CapacityMonth from BomCapacity
+  capacity_avail1:
+    display: Capacityavail1
+    type: decimal
+    required: false
+    description: Field CapacityAvail1 from BomCapacity
+  capacity_avail2:
+    display: Capacityavail2
+    type: decimal
+    required: false
+    description: Field CapacityAvail2 from BomCapacity
+  capacity_avail3:
+    display: Capacityavail3
+    type: decimal
+    required: false
+    description: Field CapacityAvail3 from BomCapacity
+  capacity_avail4:
+    display: Capacityavail4
+    type: decimal
+    required: false
+    description: Field CapacityAvail4 from BomCapacity
+  capacity_avail5:
+    display: Capacityavail5
+    type: decimal
+    required: false
+    description: Field CapacityAvail5 from BomCapacity
+  capacity_avail6:
+    display: Capacityavail6
+    type: decimal
+    required: false
+    description: Field CapacityAvail6 from BomCapacity
+  capacity_avail7:
+    display: Capacityavail7
+    type: decimal
+    required: false
+    description: Field CapacityAvail7 from BomCapacity
+  capacity_avail8:
+    display: Capacityavail8
+    type: decimal
+    required: false
+    description: Field CapacityAvail8 from BomCapacity
+  capacity_avail9:
+    display: Capacityavail9
+    type: decimal
+    required: false
+    description: Field CapacityAvail9 from BomCapacity
+  capacity_avail10:
+    display: Capacityavail10
+    type: decimal
+    required: false
+    description: Field CapacityAvail10 from BomCapacity
+  capacity_avail11:
+    display: Capacityavail11
+    type: decimal
+    required: false
+    description: Field CapacityAvail11 from BomCapacity
+  capacity_avail12:
+    display: Capacityavail12
+    type: decimal
+    required: false
+    description: Field CapacityAvail12 from BomCapacity
+  capacity_avail13:
+    display: Capacityavail13
+    type: decimal
+    required: false
+    description: Field CapacityAvail13 from BomCapacity
+  capacity_avail14:
+    display: Capacityavail14
+    type: decimal
+    required: false
+    description: Field CapacityAvail14 from BomCapacity
+  capacity_avail15:
+    display: Capacityavail15
+    type: decimal
+    required: false
+    description: Field CapacityAvail15 from BomCapacity
+  capacity_avail16:
+    display: Capacityavail16
+    type: decimal
+    required: false
+    description: Field CapacityAvail16 from BomCapacity
+  capacity_avail17:
+    display: Capacityavail17
+    type: decimal
+    required: false
+    description: Field CapacityAvail17 from BomCapacity
+  capacity_avail18:
+    display: Capacityavail18
+    type: decimal
+    required: false
+    description: Field CapacityAvail18 from BomCapacity
+  capacity_avail19:
+    display: Capacityavail19
+    type: decimal
+    required: false
+    description: Field CapacityAvail19 from BomCapacity
+  capacity_avail20:
+    display: Capacityavail20
+    type: decimal
+    required: false
+    description: Field CapacityAvail20 from BomCapacity
+  capacity_avail21:
+    display: Capacityavail21
+    type: decimal
+    required: false
+    description: Field CapacityAvail21 from BomCapacity
+  capacity_avail22:
+    display: Capacityavail22
+    type: decimal
+    required: false
+    description: Field CapacityAvail22 from BomCapacity
+  capacity_avail23:
+    display: Capacityavail23
+    type: decimal
+    required: false
+    description: Field CapacityAvail23 from BomCapacity
+  capacity_avail24:
+    display: Capacityavail24
+    type: decimal
+    required: false
+    description: Field CapacityAvail24 from BomCapacity
+  capacity_avail25:
+    display: Capacityavail25
+    type: decimal
+    required: false
+    description: Field CapacityAvail25 from BomCapacity
+  capacity_avail26:
+    display: Capacityavail26
+    type: decimal
+    required: false
+    description: Field CapacityAvail26 from BomCapacity
+  capacity_avail27:
+    display: Capacityavail27
+    type: decimal
+    required: false
+    description: Field CapacityAvail27 from BomCapacity
+  capacity_avail28:
+    display: Capacityavail28
+    type: decimal
+    required: false
+    description: Field CapacityAvail28 from BomCapacity
+  capacity_avail29:
+    display: Capacityavail29
+    type: decimal
+    required: false
+    description: Field CapacityAvail29 from BomCapacity
+  capacity_avail30:
+    display: Capacityavail30
+    type: decimal
+    required: false
+    description: Field CapacityAvail30 from BomCapacity
+  capacity_avail31:
+    display: Capacityavail31
+    type: decimal
+    required: false
+    description: Field CapacityAvail31 from BomCapacity
+  leap_year_flag:
+    display: Leapyearflag
+    type: string
+    required: false
+    description: Field LeapYearFlag from BomCapacity

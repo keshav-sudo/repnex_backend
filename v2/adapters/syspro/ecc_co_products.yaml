@@ -1,0 +1,21 @@
+concept: ecc_co_products
+table: EccCoProducts
+alias: ecp
+fields:
+  change_order: ecp.ChangeOrder
+  parent_part: ecp.ParentPart
+  route: ecp.Route
+  co_product_line: ecp.CoProductLine
+  co_product: ecp.CoProduct
+  co_product_version: ecp.CoProductVersion
+  co_product_release: ecp.CoProductRelease
+  operation_offset: ecp.OperationOffset
+  optional_flag: ecp.OptionalFlag
+  qty_per: ecp.QtyPer
+  pct_material_cost: ecp.PctMaterialCost
+  pct_sub_contract_cost: ecp.PctSubContractCost
+  pct_labor_cost: ecp.PctLaborCost
+  plan_weight: ecp.PlanWeight
+  pct_quantity: ecp.PctQuantity
+  uom_flag: ecp.UomFlag
+  qty_per_ent: ecp.QtyPerEnt

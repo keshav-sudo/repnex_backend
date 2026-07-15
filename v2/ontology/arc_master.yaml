@@ -1,0 +1,48 @@
+concept: arc_master
+display_name: ArcMaster
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArcMaster.
+synonyms:
+- arcmaster
+- arc master
+header_attributes:
+  archive_type:
+    display: Archivetype
+    type: string
+    required: false
+    description: Field ArchiveType from ArcMaster
+  archive_number:
+    display: Archivenumber
+    type: decimal
+    required: false
+    description: Field ArchiveNumber from ArcMaster
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from ArcMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ArcMaster
+  archive_file_name:
+    display: Archivefilename
+    type: string
+    required: false
+    description: Field ArchiveFileName from ArcMaster
+  impact_version:
+    display: Impactversion
+    type: string
+    required: false
+    description: Field ImpactVersion from ArcMaster
+  archive_offline:
+    display: Archiveoffline
+    type: string
+    required: false
+    description: Field ArchiveOffline from ArcMaster
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from ArcMaster

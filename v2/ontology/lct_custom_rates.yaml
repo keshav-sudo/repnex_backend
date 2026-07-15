@@ -1,0 +1,28 @@
+concept: lct_custom_rates
+display_name: LctCustomRates
+module: other
+description: Auto-generated representation of the physical table LctCustomRates.
+synonyms:
+- lctcustomrates
+- lct custom rates
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from LctCustomRates
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from LctCustomRates
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from LctCustomRates
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from LctCustomRates

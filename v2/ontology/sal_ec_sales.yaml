@@ -1,0 +1,213 @@
+concept: sal_ec_sales
+display_name: SalEcSales
+module: other
+description: Auto-generated representation of the physical table SalEcSales.
+synonyms:
+- salecsales
+- sal ec sales
+header_attributes:
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from SalEcSales
+  cust_vat_regn_num:
+    display: Custvatregnnum
+    type: string
+    required: false
+    description: Field CustVatRegnNum from SalEcSales
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalEcSales
+  invoice_register:
+    display: Invoiceregister
+    type: decimal
+    required: false
+    description: Field InvoiceRegister from SalEcSales
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from SalEcSales
+  invoice_reg_line:
+    display: Invoiceregline
+    type: decimal
+    required: false
+    description: Field InvoiceRegLine from SalEcSales
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SalEcSales
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SalEcSales
+  tariff_code:
+    display: Tariffcode
+    type: string
+    required: false
+    description: Field TariffCode from SalEcSales
+  process_code:
+    display: Processcode
+    type: decimal
+    required: false
+    description: Field ProcessCode from SalEcSales
+  net_sales_value:
+    display: Netsalesvalue
+    type: decimal
+    required: false
+    description: Field NetSalesValue from SalEcSales
+  net_mass:
+    display: Netmass
+    type: decimal
+    required: false
+    description: Field NetMass from SalEcSales
+  supplementary_unit:
+    display: Supplementaryunit
+    type: string
+    required: false
+    description: Field SupplementaryUnit from SalEcSales
+  transport_mode:
+    display: Transportmode
+    type: decimal
+    required: false
+    description: Field TransportMode from SalEcSales
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from SalEcSales
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from SalEcSales
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SalEcSales
+  detail_aggreg_prt:
+    display: Detailaggregprt
+    type: string
+    required: false
+    description: Field DetailAggregPrt from SalEcSales
+  summary_aggreg_prt:
+    display: Summaryaggregprt
+    type: string
+    required: false
+    description: Field SummaryAggregPrt from SalEcSales
+  supplementary_prt:
+    display: Supplementaryprt
+    type: string
+    required: false
+    description: Field SupplementaryPrt from SalEcSales
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalEcSales
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SalEcSales
+  invoice_ec:
+    display: Invoiceec
+    type: string
+    required: false
+    description: Field InvoiceEc from SalEcSales
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from SalEcSales
+  country_of_origin:
+    display: Countryoforigin
+    type: string
+    required: false
+    description: Field CountryOfOrigin from SalEcSales
+  suppl_unit_code:
+    display: Supplunitcode
+    type: string
+    required: false
+    description: Field SupplUnitCode from SalEcSales
+  suppl_unit_qty:
+    display: Supplunitqty
+    type: decimal
+    required: false
+    description: Field SupplUnitQty from SalEcSales
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from SalEcSales
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from SalEcSales
+  triang_disp_state:
+    display: Triangdispstate
+    type: string
+    required: false
+    description: Field TriangDispState from SalEcSales
+  triang_dest_state:
+    display: Triangdeststate
+    type: string
+    required: false
+    description: Field TriangDestState from SalEcSales
+  intrastat_exempt:
+    display: Intrastatexempt
+    type: string
+    required: false
+    description: Field IntrastatExempt from SalEcSales
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from SalEcSales
+  port_dispatch:
+    display: Portdispatch
+    type: string
+    required: false
+    description: Field PortDispatch from SalEcSales
+  frt_misc_cost:
+    display: Frtmisccost
+    type: decimal
+    required: false
+    description: Field FrtMiscCost from SalEcSales
+  intrastat_tran_type:
+    display: Intrastattrantype
+    type: string
+    required: false
+    description: Field IntrastatTranType from SalEcSales
+  supp_unit_factor:
+    display: Suppunitfactor
+    type: decimal
+    required: false
+    description: Field SuppUnitFactor from SalEcSales
+  supp_units_mul_div:
+    display: Suppunitsmuldiv
+    type: string
+    required: false
+    description: Field SuppUnitsMulDiv from SalEcSales
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SalEcSales
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from SalEcSales
+  dispatch_note_line:
+    display: Dispatchnoteline
+    type: decimal
+    required: false
+    description: Field DispatchNoteLine from SalEcSales

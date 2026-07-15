@@ -1,0 +1,9 @@
+concept: crm_activity_attend
+table: CrmActivityAttend
+alias: caa1
+fields:
+  contact_id: caa1.ContactId
+  start_date: caa1.StartDate
+  start_time: caa1.StartTime
+  attendee_line: caa1.AttendeeLine
+  attendee_contact_id: caa1.AttendeeContactId

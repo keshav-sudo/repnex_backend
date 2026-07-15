@@ -1,0 +1,168 @@
+concept: eft_csh_supplier
+display_name: EftCshSupplier
+module: other
+description: Auto-generated representation of the physical table EftCshSupplier.
+synonyms:
+- eftcshsupplier
+- eft csh supplier
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from EftCshSupplier
+  supplier_name:
+    display: Suppliername
+    type: string
+    required: false
+    description: Field SupplierName from EftCshSupplier
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from EftCshSupplier
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from EftCshSupplier
+  bank_account:
+    display: Bankaccount
+    type: string
+    required: false
+    description: Field BankAccount from EftCshSupplier
+  bank_branch:
+    display: Bankbranch
+    type: string
+    required: false
+    description: Field BankBranch from EftCshSupplier
+  eft_bank_acc_type:
+    display: Eftbankacctype
+    type: string
+    required: false
+    description: Field EftBankAccType from EftCshSupplier
+  eft_statement_ref:
+    display: Eftstatementref
+    type: string
+    required: false
+    description: Field EftStatementRef from EftCshSupplier
+  sup_addr0_building:
+    display: Supaddr0Building
+    type: string
+    required: false
+    description: Field SupAddr0Building from EftCshSupplier
+  sup_addr1:
+    display: Supaddr1
+    type: string
+    required: false
+    description: Field SupAddr1 from EftCshSupplier
+  sup_addr2:
+    display: Supaddr2
+    type: string
+    required: false
+    description: Field SupAddr2 from EftCshSupplier
+  sup_addr2_loc:
+    display: Supaddr2Loc
+    type: string
+    required: false
+    description: Field SupAddr2Loc from EftCshSupplier
+  sup_addr3:
+    display: Supaddr3
+    type: string
+    required: false
+    description: Field SupAddr3 from EftCshSupplier
+  sup_addr3_country:
+    display: Supaddr3Country
+    type: string
+    required: false
+    description: Field SupAddr3Country from EftCshSupplier
+  sup_postal_code:
+    display: Suppostalcode
+    type: string
+    required: false
+    description: Field SupPostalCode from EftCshSupplier
+  sup_add_gps_lat:
+    display: Supaddgpslat
+    type: decimal
+    required: false
+    description: Field SupAddGpsLat from EftCshSupplier
+  sup_add_gps_long:
+    display: Supaddgpslong
+    type: decimal
+    required: false
+    description: Field SupAddGpsLong from EftCshSupplier
+  contact:
+    display: Contact
+    type: string
+    required: false
+    description: Field Contact from EftCshSupplier
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from EftCshSupplier
+  fax:
+    display: Fax
+    type: string
+    required: false
+    description: Field Fax from EftCshSupplier
+  tax_regn_num:
+    display: Taxregnnum
+    type: string
+    required: false
+    description: Field TaxRegnNum from EftCshSupplier
+  eft_user_field1:
+    display: Eftuserfield1
+    type: string
+    required: false
+    description: Field EftUserField1 from EftCshSupplier
+  eft_user_field2:
+    display: Eftuserfield2
+    type: decimal
+    required: false
+    description: Field EftUserField2 from EftCshSupplier
+  eft_remit_method:
+    display: Eftremitmethod
+    type: string
+    required: false
+    description: Field EftRemitMethod from EftCshSupplier
+  eft_email:
+    display: Eftemail
+    type: string
+    required: false
+    description: Field EftEmail from EftCshSupplier
+  fax_contact:
+    display: Faxcontact
+    type: string
+    required: false
+    description: Field FaxContact from EftCshSupplier
+  fax_remit_num:
+    display: Faxremitnum
+    type: string
+    required: false
+    description: Field FaxRemitNum from EftCshSupplier
+  eft_default_doc:
+    display: Eftdefaultdoc
+    type: string
+    required: false
+    description: Field EftDefaultDoc from EftCshSupplier
+  date_supp_added:
+    display: Datesuppadded
+    type: date
+    required: false
+    description: Field DateSuppAdded from EftCshSupplier
+  last_eft_date:
+    display: Lasteftdate
+    type: date
+    required: false
+    description: Field LastEftDate from EftCshSupplier
+  eft_trn_code:
+    display: Efttrncode
+    type: string
+    required: false
+    description: Field EftTrnCode from EftCshSupplier
+  eft_routing_no:
+    display: Eftroutingno
+    type: string
+    required: false
+    description: Field EftRoutingNo from EftCshSupplier

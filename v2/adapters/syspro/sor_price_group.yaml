@@ -1,0 +1,11 @@
+concept: sor_price_group
+table: SorPriceGroup
+alias: spg
+fields:
+  price_group: spg.PriceGroup
+  description: spg.Description
+  selection_type: spg.SelectionType
+  branch: spg.Branch
+  geo_area: spg.GeoArea
+  customer_class: spg.CustomerClass
+  custom_form: spg.CustomForm

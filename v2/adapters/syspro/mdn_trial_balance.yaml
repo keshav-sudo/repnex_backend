@@ -1,0 +1,23 @@
+concept: mdn_trial_balance
+table: MdnTrialBalance
+alias: mtb
+fields:
+  gl_code: mtb.GlCode
+  dispatch_note: mtb.DispatchNote
+  posting_period: mtb.PostingPeriod
+  entry_number: mtb.EntryNumber
+  transaction_date: mtb.TransactionDate
+  cost: mtb.Cost
+  stock_code: mtb.StockCode
+  warehouse: mtb.Warehouse
+  quantity: mtb.Quantity
+  invoice: mtb.Invoice
+  customer: mtb.Customer
+  salesperson: mtb.Salesperson
+  branch: mtb.Branch
+  area: mtb.Area
+  last_period: mtb.LastPeriod
+  next_entry: mtb.NextEntry
+  total_cost_debit: mtb.TotalCostDebit
+  total_cost_credit: mtb.TotalCostCredit
+  first_period: mtb.FirstPeriod

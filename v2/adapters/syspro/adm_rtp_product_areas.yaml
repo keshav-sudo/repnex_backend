@@ -1,0 +1,6 @@
+concept: adm_rtp_product_areas
+table: AdmRtpProductAreas
+alias: arpa
+fields:
+  rtp_product_code: arpa.RtpProductCode
+  functional_area: arpa.FunctionalArea

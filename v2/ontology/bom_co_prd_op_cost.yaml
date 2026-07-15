@@ -1,0 +1,43 @@
+concept: bom_co_prd_op_cost
+display_name: BomCoPrdOpCost
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomCoPrdOpCost.
+synonyms:
+- bomcoprdopcost
+- bom co prd op cost
+header_attributes:
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from BomCoPrdOpCost
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BomCoPrdOpCost
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BomCoPrdOpCost
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomCoPrdOpCost
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from BomCoPrdOpCost
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from BomCoPrdOpCost
+  pct_labor_cost:
+    display: Pctlaborcost
+    type: decimal
+    required: false
+    description: Field PctLaborCost from BomCoPrdOpCost

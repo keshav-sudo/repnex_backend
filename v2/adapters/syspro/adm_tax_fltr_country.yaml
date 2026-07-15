@@ -1,0 +1,7 @@
+concept: adm_tax_fltr_country
+table: AdmTaxFltrCountry
+alias: atfc
+fields:
+  country_code: atfc.CountryCode
+  country_name: atfc.CountryName
+  exclude_flag: atfc.ExcludeFlag

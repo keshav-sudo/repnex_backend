@@ -1,0 +1,28 @@
+concept: lot_control
+display_name: LotControl
+module: other
+description: Auto-generated representation of the physical table LotControl.
+synonyms:
+- lotcontrol
+- lot control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from LotControl
+  next_lot:
+    display: Nextlot
+    type: decimal
+    required: false
+    description: Field NextLot from LotControl
+  next_archive_num:
+    display: Nextarchivenum
+    type: decimal
+    required: false
+    description: Field NextArchiveNum from LotControl
+  next_product_recall:
+    display: Nextproductrecall
+    type: decimal
+    required: false
+    description: Field NextProductRecall from LotControl

@@ -1,0 +1,58 @@
+concept: ap_tax_cod_two_dist_sum
+display_name: ApTaxCodTwoDistSum
+module: accounts_payable
+description: Auto-generated representation of the physical table ApTaxCodTwoDistSum.
+synonyms:
+- aptaxcodtwodistsum
+- ap tax cod two dist sum
+header_attributes:
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from ApTaxCodTwoDistSum
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from ApTaxCodTwoDistSum
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApTaxCodTwoDistSum
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ApTaxCodTwoDistSum
+  distributed_amt:
+    display: Distributedamt
+    type: decimal
+    required: false
+    description: Field DistributedAmt from ApTaxCodTwoDistSum
+  taxable_amount:
+    display: Taxableamount
+    type: decimal
+    required: false
+    description: Field TaxableAmount from ApTaxCodTwoDistSum
+  tax_portion:
+    display: Taxportion
+    type: decimal
+    required: false
+    description: Field TaxPortion from ApTaxCodTwoDistSum
+  exempt_amount:
+    display: Exemptamount
+    type: decimal
+    required: false
+    description: Field ExemptAmount from ApTaxCodTwoDistSum
+  tax_basis:
+    display: Taxbasis
+    type: string
+    required: false
+    description: Field TaxBasis from ApTaxCodTwoDistSum
+  tax_rate:
+    display: Taxrate
+    type: decimal
+    required: false
+    description: Field TaxRate from ApTaxCodTwoDistSum

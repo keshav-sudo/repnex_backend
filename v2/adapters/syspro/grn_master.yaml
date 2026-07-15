@@ -1,0 +1,16 @@
+concept: grn_master
+table: GrnMaster
+alias: gm1
+fields:
+  grn: gm1.Grn
+  supplier: gm1.Supplier
+  grn_source: gm1.GrnSource
+  journal: gm1.Journal
+  journal_entry: gm1.JournalEntry
+  lot: gm1.Lot
+  ship_reference: gm1.ShipReference
+  orig_date: gm1.OrigDate
+  orig_time: gm1.OrigTime
+  operator: gm1.Operator
+  purchase_order: gm1.PurchaseOrder
+  purchase_order_lin: gm1.PurchaseOrderLin

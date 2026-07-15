@@ -1,0 +1,23 @@
+concept: inv_buyer
+display_name: InvBuyer
+module: inventory
+description: Auto-generated representation of the physical table InvBuyer.
+synonyms:
+- invbuyer
+- inv buyer
+header_attributes:
+  buyer:
+    display: Buyer
+    type: string
+    required: false
+    description: Field Buyer from InvBuyer
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from InvBuyer
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from InvBuyer

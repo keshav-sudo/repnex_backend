@@ -1,0 +1,11 @@
+concept: csh_flow_collector
+table: CshFlowCollector
+alias: cfc
+fields:
+  model: cfc.Model
+  collector: cfc.Collector
+  description: cfc.Description
+  sequence: cfc.Sequence
+  collector_type: cfc.CollectorType
+  update_date: cfc.UpdateDate
+  update_time: cfc.UpdateTime

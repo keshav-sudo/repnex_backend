@@ -1,0 +1,10 @@
+concept: int_master_ctl
+table: IntMasterCtl
+alias: imc
+fields:
+  ctl_flag: imc.CtlFlag
+  local_site_code: imc.LocalSiteCode
+  local_description: imc.LocalDescription
+  edi_send_receive: imc.EdiSendReceive
+  next_edi_ref: imc.NextEdiRef
+  next_edi_file: imc.NextEdiFile

@@ -1,0 +1,25 @@
+concept: lynq_vp_bpl__src__inventory
+table: Lynq_VP_BPL_Src_Inventory
+alias: lvpbplsi
+fields:
+  id: lvpbplsi.ID
+  item_number: lvpbplsi.ItemNumber
+  location_code: lvpbplsi.LocationCode
+  qty_on_hand: lvpbplsi.QtyOnHand
+  qty_allocated: lvpbplsi.QtyAllocated
+  qty_on_order: lvpbplsi.QtyOnOrder
+  qty_back_order: lvpbplsi.QtyBackOrder
+  lead_time: lvpbplsi.LeadTime
+  fld_date_time1: lvpbplsi.FldDateTime1
+  fld_date_time2: lvpbplsi.FldDateTime2
+  fld_date_time3: lvpbplsi.FldDateTime3
+  fld_decimal1: lvpbplsi.FldDecimal1
+  fld_decimal2: lvpbplsi.FldDecimal2
+  fld_decimal3: lvpbplsi.FldDecimal3
+  fld_decimal4: lvpbplsi.FldDecimal4
+  fld_decimal5: lvpbplsi.FldDecimal5
+  fld_string1: lvpbplsi.FldString1
+  fld_string2: lvpbplsi.FldString2
+  fld_string3: lvpbplsi.FldString3
+  fld_string4: lvpbplsi.FldString4
+  fld_string5: lvpbplsi.FldString5

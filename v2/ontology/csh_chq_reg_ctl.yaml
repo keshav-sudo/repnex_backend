@@ -1,0 +1,43 @@
+concept: csh_chq_reg_ctl
+display_name: CshChqRegCtl
+module: cashbook
+description: Auto-generated representation of the physical table CshChqRegCtl.
+synonyms:
+- cshchqregctl
+- csh chq reg ctl
+header_attributes:
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshChqRegCtl
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshChqRegCtl
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from CshChqRegCtl
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshChqRegCtl
+  register_date:
+    display: Registerdate
+    type: date
+    required: false
+    description: Field RegisterDate from CshChqRegCtl
+  print_flag:
+    display: Printflag
+    type: string
+    required: false
+    description: Field PrintFlag from CshChqRegCtl
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from CshChqRegCtl

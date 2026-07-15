@@ -1,0 +1,28 @@
+concept: inv_qty_discount
+display_name: InvQtyDiscount
+module: inventory
+description: Auto-generated representation of the physical table InvQtyDiscount.
+synonyms:
+- invqtydiscount
+- inv qty discount
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvQtyDiscount
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from InvQtyDiscount
+  qty_break:
+    display: Qtybreak
+    type: decimal
+    required: false
+    description: Field QtyBreak from InvQtyDiscount
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from InvQtyDiscount

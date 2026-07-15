@@ -1,0 +1,458 @@
+concept: mdn_master
+display_name: MdnMaster
+module: other
+description: Auto-generated representation of the physical table MdnMaster.
+synonyms:
+- mdnmaster
+- mdn master
+header_attributes:
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from MdnMaster
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from MdnMaster
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MdnMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MdnMaster
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from MdnMaster
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from MdnMaster
+  shipping_instrs_cod:
+    display: Shippinginstrscod
+    type: string
+    required: false
+    description: Field ShippingInstrsCod from MdnMaster
+  special_instrs:
+    display: Specialinstrs
+    type: string
+    required: false
+    description: Field SpecialInstrs from MdnMaster
+  dispatch_comments1:
+    display: Dispatchcomments1
+    type: string
+    required: false
+    description: Field DispatchComments1 from MdnMaster
+  dispatch_comments2:
+    display: Dispatchcomments2
+    type: string
+    required: false
+    description: Field DispatchComments2 from MdnMaster
+  dispatch_comments3:
+    display: Dispatchcomments3
+    type: string
+    required: false
+    description: Field DispatchComments3 from MdnMaster
+  dispatch_comments4:
+    display: Dispatchcomments4
+    type: string
+    required: false
+    description: Field DispatchComments4 from MdnMaster
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from MdnMaster
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from MdnMaster
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from MdnMaster
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from MdnMaster
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from MdnMaster
+  fix_exchange_rate:
+    display: Fixexchangerate
+    type: string
+    required: false
+    description: Field FixExchangeRate from MdnMaster
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from MdnMaster
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from MdnMaster
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from MdnMaster
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from MdnMaster
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from MdnMaster
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from MdnMaster
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from MdnMaster
+  inv_terms_override:
+    display: Invtermsoverride
+    type: string
+    required: false
+    description: Field InvTermsOverride from MdnMaster
+  reprint_format:
+    display: Reprintformat
+    type: string
+    required: false
+    description: Field ReprintFormat from MdnMaster
+  tax_exempt_flag:
+    display: Taxexemptflag
+    type: string
+    required: false
+    description: Field TaxExemptFlag from MdnMaster
+  tax_exempt_override:
+    display: Taxexemptoverride
+    type: string
+    required: false
+    description: Field TaxExemptOverride from MdnMaster
+  ibt_flag:
+    display: Ibtflag
+    type: string
+    required: false
+    description: Field IbtFlag from MdnMaster
+  dispatch_name:
+    display: Dispatchname
+    type: string
+    required: false
+    description: Field DispatchName from MdnMaster
+  planned_deliver_date:
+    display: Planneddeliverdate
+    type: date
+    required: false
+    description: Field PlannedDeliverDate from MdnMaster
+  actual_delivery_date:
+    display: Actualdeliverydate
+    type: date
+    required: false
+    description: Field ActualDeliveryDate from MdnMaster
+  ship_address_flag:
+    display: Shipaddressflag
+    type: string
+    required: false
+    description: Field ShipAddressFlag from MdnMaster
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from MdnMaster
+  company_tax_no:
+    display: Companytaxno
+    type: string
+    required: false
+    description: Field CompanyTaxNo from MdnMaster
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from MdnMaster
+  invoice_created_date:
+    display: Invoicecreateddate
+    type: date
+    required: false
+    description: Field InvoiceCreatedDate from MdnMaster
+  consolidate_inv_flag:
+    display: Consolidateinvflag
+    type: string
+    required: false
+    description: Field ConsolidateInvFlag from MdnMaster
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from MdnMaster
+  dispatch_note_status:
+    display: Dispatchnotestatus
+    type: string
+    required: false
+    description: Field DispatchNoteStatus from MdnMaster
+  prev_status:
+    display: Prevstatus
+    type: string
+    required: false
+    description: Field PrevStatus from MdnMaster
+  active_flag:
+    display: Activeflag
+    type: string
+    required: false
+    description: Field ActiveFlag from MdnMaster
+  reason:
+    display: Reason
+    type: string
+    required: false
+    description: Field Reason from MdnMaster
+  status_when_held:
+    display: Statuswhenheld
+    type: string
+    required: false
+    description: Field StatusWhenHeld from MdnMaster
+  date_last_inv_prt:
+    display: Datelastinvprt
+    type: date
+    required: false
+    description: Field DateLastInvPrt from MdnMaster
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from MdnMaster
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from MdnMaster
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from MdnMaster
+  transport_mode:
+    display: Transportmode
+    type: decimal
+    required: false
+    description: Field TransportMode from MdnMaster
+  process_flag:
+    display: Processflag
+    type: decimal
+    required: false
+    description: Field ProcessFlag from MdnMaster
+  dispatch_cust_name:
+    display: Dispatchcustname
+    type: string
+    required: false
+    description: Field DispatchCustName from MdnMaster
+  dispatch_address1:
+    display: Dispatchaddress1
+    type: string
+    required: false
+    description: Field DispatchAddress1 from MdnMaster
+  dispatch_address2:
+    display: Dispatchaddress2
+    type: string
+    required: false
+    description: Field DispatchAddress2 from MdnMaster
+  dispatch_address3:
+    display: Dispatchaddress3
+    type: string
+    required: false
+    description: Field DispatchAddress3 from MdnMaster
+  dispatch_addr_loc:
+    display: Dispatchaddrloc
+    type: string
+    required: false
+    description: Field DispatchAddrLoc from MdnMaster
+  dispatch_address4:
+    display: Dispatchaddress4
+    type: string
+    required: false
+    description: Field DispatchAddress4 from MdnMaster
+  dispatch_address5:
+    display: Dispatchaddress5
+    type: string
+    required: false
+    description: Field DispatchAddress5 from MdnMaster
+  dispatch_postal_code:
+    display: Dispatchpostalcode
+    type: string
+    required: false
+    description: Field DispatchPostalCode from MdnMaster
+  dispatch_gps_lat:
+    display: Dispatchgpslat
+    type: decimal
+    required: false
+    description: Field DispatchGpsLat from MdnMaster
+  dispatch_gps_long:
+    display: Dispatchgpslong
+    type: decimal
+    required: false
+    description: Field DispatchGpsLong from MdnMaster
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from MdnMaster
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from MdnMaster
+  extended_tax_code:
+    display: Extendedtaxcode
+    type: string
+    required: false
+    description: Field ExtendedTaxCode from MdnMaster
+  multi_ship_code:
+    display: Multishipcode
+    type: string
+    required: false
+    description: Field MultiShipCode from MdnMaster
+  web_created:
+    display: Webcreated
+    type: string
+    required: false
+    description: Field WebCreated from MdnMaster
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from MdnMaster
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from MdnMaster
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from MdnMaster
+  last_operator:
+    display: Lastoperator
+    type: string
+    required: false
+    description: Field LastOperator from MdnMaster
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from MdnMaster
+  credit_authority:
+    display: Creditauthority
+    type: string
+    required: false
+    description: Field CreditAuthority from MdnMaster
+  tpm_pickup_flag:
+    display: Tpmpickupflag
+    type: string
+    required: false
+    description: Field TpmPickupFlag from MdnMaster
+  tpm_evaluated_flag:
+    display: Tpmevaluatedflag
+    type: string
+    required: false
+    description: Field TpmEvaluatedFlag from MdnMaster
+  standard_comment:
+    display: Standardcomment
+    type: string
+    required: false
+    description: Field StandardComment from MdnMaster
+  detail_status:
+    display: Detailstatus
+    type: string
+    required: false
+    description: Field DetailStatus from MdnMaster
+  sales_order_source:
+    display: Salesordersource
+    type: string
+    required: false
+    description: Field SalesOrderSource from MdnMaster
+  sales_order_src_desc:
+    display: Salesordersrcdesc
+    type: string
+    required: false
+    description: Field SalesOrderSrcDesc from MdnMaster
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from MdnMaster
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from MdnMaster
+  regime_code:
+    display: Regimecode
+    type: string
+    required: false
+    description: Field RegimeCode from MdnMaster
+  port_dispatch:
+    display: Portdispatch
+    type: string
+    required: false
+    description: Field PortDispatch from MdnMaster
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from MdnMaster
+  price_group_level:
+    display: Pricegrouplevel
+    type: string
+    required: false
+    description: Field PriceGroupLevel from MdnMaster
+  last_op_inv_prt:
+    display: Lastopinvprt
+    type: string
+    required: false
+    description: Field LastOpInvPrt from MdnMaster
+  dispatch_whole_so:
+    display: Dispatchwholeso
+    type: string
+    required: false
+    description: Field DispatchWholeSo from MdnMaster
+  gst_exempt_flag:
+    display: Gstexemptflag
+    type: string
+    required: false
+    description: Field GstExemptFlag from MdnMaster
+  gst_exempt_num:
+    display: Gstexemptnum
+    type: string
+    required: false
+    description: Field GstExemptNum from MdnMaster
+  gst_exempt_o_ride:
+    display: Gstexemptoride
+    type: string
+    required: false
+    description: Field GstExemptORide from MdnMaster
+  entity_dimensions:
+    display: Entitydimensions
+    type: string
+    required: false
+    description: Field EntityDimensions from MdnMaster

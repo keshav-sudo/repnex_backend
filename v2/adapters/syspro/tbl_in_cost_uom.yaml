@@ -1,0 +1,8 @@
+concept: tbl_in_cost_uom
+table: TblInCostUom
+alias: ticu
+fields:
+  stocking_uom: ticu.StockingUom
+  cost_uom: ticu.CostUom
+  conv_factor: ticu.ConvFactor
+  mul_div: ticu.MulDiv

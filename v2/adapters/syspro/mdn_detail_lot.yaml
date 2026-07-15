@@ -1,0 +1,15 @@
+concept: mdn_detail_lot
+table: MdnDetailLot
+alias: mdl
+fields:
+  dispatch_note: mdl.DispatchNote
+  dispatch_note_line: mdl.DispatchNoteLine
+  sales_order: mdl.SalesOrder
+  sales_order_line: mdl.SalesOrderLine
+  lot: mdl.Lot
+  stock_qty_to_ship: mdl.StockQtyToShip
+  qty_this_session: mdl.QtyThisSession
+  version: mdl.Version
+  release: mdl.Release
+  certificate: mdl.Certificate
+  lot_expiry_date: mdl.LotExpiryDate

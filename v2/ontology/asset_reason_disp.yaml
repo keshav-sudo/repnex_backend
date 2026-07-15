@@ -1,0 +1,18 @@
+concept: asset_reason_disp
+display_name: AssetReasonDisp
+module: assets
+description: Auto-generated representation of the physical table AssetReasonDisp.
+synonyms:
+- assetreasondisp
+- asset reason disp
+header_attributes:
+  disposal_reason:
+    display: Disposalreason
+    type: string
+    required: false
+    description: Field DisposalReason from AssetReasonDisp
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetReasonDisp

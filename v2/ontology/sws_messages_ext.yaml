@@ -1,0 +1,43 @@
+concept: sws_messages_ext
+display_name: SwsMessagesExt
+module: other
+description: Auto-generated representation of the physical table SwsMessagesExt.
+synonyms:
+- swsmessagesext
+- sws messages ext
+header_attributes:
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from SwsMessagesExt
+  date_created:
+    display: Datecreated
+    type: date
+    required: false
+    description: Field DateCreated from SwsMessagesExt
+  time_created:
+    display: Timecreated
+    type: decimal
+    required: false
+    description: Field TimeCreated from SwsMessagesExt
+  store_type1:
+    display: Storetype1
+    type: string
+    required: false
+    description: Field StoreType1 from SwsMessagesExt
+  store_data1:
+    display: Storedata1
+    type: string
+    required: false
+    description: Field StoreData1 from SwsMessagesExt
+  store_type2:
+    display: Storetype2
+    type: string
+    required: false
+    description: Field StoreType2 from SwsMessagesExt
+  store_data2:
+    display: Storedata2
+    type: string
+    required: false
+    description: Field StoreData2 from SwsMessagesExt

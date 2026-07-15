@@ -1,0 +1,93 @@
+concept: wip_lab_bal_fix
+display_name: WipLabBalFix
+module: work_in_progress
+description: Auto-generated representation of the physical table WipLabBalFix.
+synonyms:
+- wiplabbalfix
+- wip lab bal fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from WipLabBalFix
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipLabBalFix
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from WipLabBalFix
+  old_startup_hours:
+    display: Oldstartuphours
+    type: decimal
+    required: false
+    description: Field OldStartupHours from WipLabBalFix
+  new_startup_hours:
+    display: Newstartuphours
+    type: decimal
+    required: false
+    description: Field NewStartupHours from WipLabBalFix
+  old_set_up_hours:
+    display: Oldsetuphours
+    type: decimal
+    required: false
+    description: Field OldSetUpHours from WipLabBalFix
+  new_set_up_hours:
+    display: Newsetuphours
+    type: decimal
+    required: false
+    description: Field NewSetUpHours from WipLabBalFix
+  old_run_time_hours:
+    display: Oldruntimehours
+    type: decimal
+    required: false
+    description: Field OldRunTimeHours from WipLabBalFix
+  new_run_time_hours:
+    display: Newruntimehours
+    type: decimal
+    required: false
+    description: Field NewRunTimeHours from WipLabBalFix
+  old_teardown_hours:
+    display: Oldteardownhours
+    type: decimal
+    required: false
+    description: Field OldTeardownHours from WipLabBalFix
+  new_teardown_hours:
+    display: Newteardownhours
+    type: decimal
+    required: false
+    description: Field NewTeardownHours from WipLabBalFix
+  old_trn_value:
+    display: Oldtrnvalue
+    type: decimal
+    required: false
+    description: Field OldTrnValue from WipLabBalFix
+  new_trn_value:
+    display: Newtrnvalue
+    type: decimal
+    required: false
+    description: Field NewTrnValue from WipLabBalFix
+  old_wc_rate_ind:
+    display: Oldwcrateind
+    type: decimal
+    required: false
+    description: Field OldWcRateInd from WipLabBalFix
+  new_wc_rate_ind:
+    display: Newwcrateind
+    type: decimal
+    required: false
+    description: Field NewWcRateInd from WipLabBalFix
+  old_capacity_issued:
+    display: Oldcapacityissued
+    type: decimal
+    required: false
+    description: Field OldCapacityIssued from WipLabBalFix
+  new_capacity_issued:
+    display: Newcapacityissued
+    type: decimal
+    required: false
+    description: Field NewCapacityIssued from WipLabBalFix

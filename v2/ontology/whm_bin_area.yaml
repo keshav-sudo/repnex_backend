@@ -1,0 +1,28 @@
+concept: whm_bin_area
+display_name: WhmBinArea
+module: other
+description: Auto-generated representation of the physical table WhmBinArea.
+synonyms:
+- whmbinarea
+- whm bin area
+header_attributes:
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WhmBinArea
+  wh_area:
+    display: Wharea
+    type: string
+    required: false
+    description: Field WhArea from WhmBinArea
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WhmBinArea
+  wh_area_type:
+    display: Whareatype
+    type: string
+    required: false
+    description: Field WhAreaType from WhmBinArea

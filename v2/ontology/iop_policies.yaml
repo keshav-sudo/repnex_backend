@@ -1,0 +1,93 @@
+concept: iop_policies
+display_name: IopPolicies
+module: other
+description: Auto-generated representation of the physical table IopPolicies.
+synonyms:
+- ioppolicies
+- iop policies
+header_attributes:
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopPolicies
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from IopPolicies
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopPolicies
+  policy_source:
+    display: Policysource
+    type: string
+    required: false
+    description: Field PolicySource from IopPolicies
+  selection_set:
+    display: Selectionset
+    type: string
+    required: false
+    description: Field SelectionSet from IopPolicies
+  policy_type:
+    display: Policytype
+    type: string
+    required: false
+    description: Field PolicyType from IopPolicies
+  days_or_quantity:
+    display: Daysorquantity
+    type: string
+    required: false
+    description: Field DaysOrQuantity from IopPolicies
+  safety_days:
+    display: Safetydays
+    type: decimal
+    required: false
+    description: Field SafetyDays from IopPolicies
+  safety_qty:
+    display: Safetyqty
+    type: decimal
+    required: false
+    description: Field SafetyQty from IopPolicies
+  safety_cap_days:
+    display: Safetycapdays
+    type: decimal
+    required: false
+    description: Field SafetyCapDays from IopPolicies
+  safety_cap_qty:
+    display: Safetycapqty
+    type: decimal
+    required: false
+    description: Field SafetyCapQty from IopPolicies
+  algorithm_used:
+    display: Algorithmused
+    type: string
+    required: false
+    description: Field AlgorithmUsed from IopPolicies
+  target_service_lvl:
+    display: Targetservicelvl
+    type: decimal
+    required: false
+    description: Field TargetServiceLvl from IopPolicies
+  service_level_msr:
+    display: Servicelevelmsr
+    type: string
+    required: false
+    description: Field ServiceLevelMsr from IopPolicies
+  lead_time_days:
+    display: Leadtimedays
+    type: decimal
+    required: false
+    description: Field LeadTimeDays from IopPolicies
+  review_freq:
+    display: Reviewfreq
+    type: decimal
+    required: false
+    description: Field ReviewFreq from IopPolicies
+  supply_code:
+    display: Supplycode
+    type: string
+    required: false
+    description: Field SupplyCode from IopPolicies

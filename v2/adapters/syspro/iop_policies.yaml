@@ -1,0 +1,21 @@
+concept: iop_policies
+table: IopPolicies
+alias: ip2
+fields:
+  id_number: ip2.IdNumber
+  effective_date: ip2.EffectiveDate
+  reference: ip2.Reference
+  policy_source: ip2.PolicySource
+  selection_set: ip2.SelectionSet
+  policy_type: ip2.PolicyType
+  days_or_quantity: ip2.DaysOrQuantity
+  safety_days: ip2.SafetyDays
+  safety_qty: ip2.SafetyQty
+  safety_cap_days: ip2.SafetyCapDays
+  safety_cap_qty: ip2.SafetyCapQty
+  algorithm_used: ip2.AlgorithmUsed
+  target_service_lvl: ip2.TargetServiceLvl
+  service_level_msr: ip2.ServiceLevelMsr
+  lead_time_days: ip2.LeadTimeDays
+  review_freq: ip2.ReviewFreq
+  supply_code: ip2.SupplyCode

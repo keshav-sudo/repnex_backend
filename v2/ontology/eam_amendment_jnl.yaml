@@ -1,0 +1,273 @@
+concept: eam_amendment_jnl
+display_name: EamAmendmentJnl
+module: other
+description: Auto-generated representation of the physical table EamAmendmentJnl.
+synonyms:
+- eamamendmentjnl
+- eam amendment jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from EamAmendmentJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from EamAmendmentJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from EamAmendmentJnl
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from EamAmendmentJnl
+  maint_service_type:
+    display: Maintservicetype
+    type: string
+    required: false
+    description: Field MaintServiceType from EamAmendmentJnl
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from EamAmendmentJnl
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from EamAmendmentJnl
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from EamAmendmentJnl
+  operator_name:
+    display: Operatorname
+    type: string
+    required: false
+    description: Field OperatorName from EamAmendmentJnl
+  jnl_printed:
+    display: Jnlprinted
+    type: string
+    required: false
+    description: Field JnlPrinted from EamAmendmentJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from EamAmendmentJnl
+  old_description:
+    display: Olddescription
+    type: string
+    required: false
+    description: Field OldDescription from EamAmendmentJnl
+  old_com_revision:
+    display: Oldcomrevision
+    type: string
+    required: false
+    description: Field OldComRevision from EamAmendmentJnl
+  old_com_release:
+    display: Oldcomrelease
+    type: string
+    required: false
+    description: Field OldComRelease from EamAmendmentJnl
+  old_ecc_consumption:
+    display: Oldeccconsumption
+    type: string
+    required: false
+    description: Field OldEccConsumption from EamAmendmentJnl
+  old_op_offset_flag:
+    display: Oldopoffsetflag
+    type: string
+    required: false
+    description: Field OldOpOffsetFlag from EamAmendmentJnl
+  old_operation_offset:
+    display: Oldoperationoffset
+    type: decimal
+    required: false
+    description: Field OldOperationOffset from EamAmendmentJnl
+  old_qty_per:
+    display: Oldqtyper
+    type: decimal
+    required: false
+    description: Field OldQtyPer from EamAmendmentJnl
+  old_qty_per_ent:
+    display: Oldqtyperent
+    type: decimal
+    required: false
+    description: Field OldQtyPerEnt from EamAmendmentJnl
+  old_auto_narr_code:
+    display: Oldautonarrcode
+    type: decimal
+    required: false
+    description: Field OldAutoNarrCode from EamAmendmentJnl
+  old_incl_kit_issues:
+    display: Oldinclkitissues
+    type: string
+    required: false
+    description: Field OldInclKitIssues from EamAmendmentJnl
+  old_warehouse:
+    display: Oldwarehouse
+    type: string
+    required: false
+    description: Field OldWarehouse from EamAmendmentJnl
+  old_uom_flag:
+    display: Olduomflag
+    type: string
+    required: false
+    description: Field OldUomFlag from EamAmendmentJnl
+  old_non_stock_com:
+    display: Oldnonstockcom
+    type: string
+    required: false
+    description: Field OldNonStockCom from EamAmendmentJnl
+  old_non_stk_cost:
+    display: Oldnonstkcost
+    type: decimal
+    required: false
+    description: Field OldNonStkCost from EamAmendmentJnl
+  old_max_decimals:
+    display: Oldmaxdecimals
+    type: decimal
+    required: false
+    description: Field OldMaxDecimals from EamAmendmentJnl
+  old_unit_of_measure:
+    display: Oldunitofmeasure
+    type: string
+    required: false
+    description: Field OldUnitOfMeasure from EamAmendmentJnl
+  old_reason_for_change:
+    display: Oldreasonforchange
+    type: string
+    required: false
+    description: Field OldReasonForChange from EamAmendmentJnl
+  old_scrap_qty:
+    display: Oldscrapqty
+    type: decimal
+    required: false
+    description: Field OldScrapQty from EamAmendmentJnl
+  old_scrap_qty_ent:
+    display: Oldscrapqtyent
+    type: decimal
+    required: false
+    description: Field OldScrapQtyEnt from EamAmendmentJnl
+  old_scrap_perc:
+    display: Oldscrapperc
+    type: decimal
+    required: false
+    description: Field OldScrapPerc from EamAmendmentJnl
+  old_incl_scrap_flag:
+    display: Oldinclscrapflag
+    type: string
+    required: false
+    description: Field OldInclScrapFlag from EamAmendmentJnl
+  new_description:
+    display: Newdescription
+    type: string
+    required: false
+    description: Field NewDescription from EamAmendmentJnl
+  new_com_revision:
+    display: Newcomrevision
+    type: string
+    required: false
+    description: Field NewComRevision from EamAmendmentJnl
+  new_com_release:
+    display: Newcomrelease
+    type: string
+    required: false
+    description: Field NewComRelease from EamAmendmentJnl
+  new_ecc_consumption:
+    display: Neweccconsumption
+    type: string
+    required: false
+    description: Field NewEccConsumption from EamAmendmentJnl
+  new_op_offset_flag:
+    display: Newopoffsetflag
+    type: string
+    required: false
+    description: Field NewOpOffsetFlag from EamAmendmentJnl
+  new_operation_offset:
+    display: Newoperationoffset
+    type: decimal
+    required: false
+    description: Field NewOperationOffset from EamAmendmentJnl
+  new_qty_per:
+    display: Newqtyper
+    type: decimal
+    required: false
+    description: Field NewQtyPer from EamAmendmentJnl
+  new_qty_per_ent:
+    display: Newqtyperent
+    type: decimal
+    required: false
+    description: Field NewQtyPerEnt from EamAmendmentJnl
+  new_auto_narr_code:
+    display: Newautonarrcode
+    type: decimal
+    required: false
+    description: Field NewAutoNarrCode from EamAmendmentJnl
+  new_incl_kit_issues:
+    display: Newinclkitissues
+    type: string
+    required: false
+    description: Field NewInclKitIssues from EamAmendmentJnl
+  new_warehouse:
+    display: Newwarehouse
+    type: string
+    required: false
+    description: Field NewWarehouse from EamAmendmentJnl
+  new_uom_flag:
+    display: Newuomflag
+    type: string
+    required: false
+    description: Field NewUomFlag from EamAmendmentJnl
+  new_non_stock_com:
+    display: Newnonstockcom
+    type: string
+    required: false
+    description: Field NewNonStockCom from EamAmendmentJnl
+  new_non_stk_cost:
+    display: Newnonstkcost
+    type: decimal
+    required: false
+    description: Field NewNonStkCost from EamAmendmentJnl
+  new_max_decimals:
+    display: Newmaxdecimals
+    type: decimal
+    required: false
+    description: Field NewMaxDecimals from EamAmendmentJnl
+  new_unit_of_measure:
+    display: Newunitofmeasure
+    type: string
+    required: false
+    description: Field NewUnitOfMeasure from EamAmendmentJnl
+  new_reason_for_change:
+    display: Newreasonforchange
+    type: string
+    required: false
+    description: Field NewReasonForChange from EamAmendmentJnl
+  new_scrap_qty:
+    display: Newscrapqty
+    type: decimal
+    required: false
+    description: Field NewScrapQty from EamAmendmentJnl
+  new_scrap_qty_ent:
+    display: Newscrapqtyent
+    type: decimal
+    required: false
+    description: Field NewScrapQtyEnt from EamAmendmentJnl
+  new_scrap_perc:
+    display: Newscrapperc
+    type: decimal
+    required: false
+    description: Field NewScrapPerc from EamAmendmentJnl
+  new_incl_scrap_flag:
+    display: Newinclscrapflag
+    type: string
+    required: false
+    description: Field NewInclScrapFlag from EamAmendmentJnl

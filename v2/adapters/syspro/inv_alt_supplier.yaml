@@ -1,0 +1,6 @@
+concept: inv_alt_supplier
+table: InvAltSupplier
+alias: ias1
+fields:
+  stock_code: ias1.StockCode
+  supplier: ias1.Supplier

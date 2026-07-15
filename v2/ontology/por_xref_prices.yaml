@@ -1,0 +1,113 @@
+concept: por_xref_prices
+display_name: PorXrefPrices
+module: procurement
+description: Auto-generated representation of the physical table PorXrefPrices.
+synonyms:
+- porxrefprices
+- por xref prices
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from PorXrefPrices
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from PorXrefPrices
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from PorXrefPrices
+  price_reference:
+    display: Pricereference
+    type: string
+    required: false
+    description: Field PriceReference from PorXrefPrices
+  purchase_price:
+    display: Purchaseprice
+    type: decimal
+    required: false
+    description: Field PurchasePrice from PorXrefPrices
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from PorXrefPrices
+  price_comment:
+    display: Pricecomment
+    type: string
+    required: false
+    description: Field PriceComment from PorXrefPrices
+  discount_code:
+    display: Discountcode
+    type: string
+    required: false
+    description: Field DiscountCode from PorXrefPrices
+  pack_size:
+    display: Packsize
+    type: decimal
+    required: false
+    description: Field PackSize from PorXrefPrices
+  minimum_qty:
+    display: Minimumqty
+    type: decimal
+    required: false
+    description: Field MinimumQty from PorXrefPrices
+  price_start_date:
+    display: Pricestartdate
+    type: date
+    required: false
+    description: Field PriceStartDate from PorXrefPrices
+  price_expiry_date:
+    display: Priceexpirydate
+    type: date
+    required: false
+    description: Field PriceExpiryDate from PorXrefPrices
+  price_quote_date:
+    display: Pricequotedate
+    type: date
+    required: false
+    description: Field PriceQuoteDate from PorXrefPrices
+  quote_lead_time:
+    display: Quoteleadtime
+    type: decimal
+    required: false
+    description: Field QuoteLeadTime from PorXrefPrices
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from PorXrefPrices
+  freight_charges:
+    display: Freightcharges
+    type: decimal
+    required: false
+    description: Field FreightCharges from PorXrefPrices
+  freight_comment:
+    display: Freightcomment
+    type: string
+    required: false
+    description: Field FreightComment from PorXrefPrices
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from PorXrefPrices
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from PorXrefPrices
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from PorXrefPrices
+  minimum_qty_uom:
+    display: Minimumqtyuom
+    type: string
+    required: false
+    description: Field MinimumQtyUom from PorXrefPrices

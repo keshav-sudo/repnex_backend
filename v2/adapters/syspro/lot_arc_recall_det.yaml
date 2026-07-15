@@ -1,0 +1,22 @@
+concept: lot_arc_recall_det
+table: LotArcRecallDet
+alias: lard
+fields:
+  product_recall: lard.ProductRecall
+  stock_code: lard.StockCode
+  warehouse: lard.Warehouse
+  bin: lard.Bin
+  lot: lard.Lot
+  serial: lard.Serial
+  hold_level: lard.HoldLevel
+  status: lard.Status
+  insp_quantity: lard.InspQuantity
+  insp_complete: lard.InspComplete
+  release_qty: lard.ReleaseQty
+  scrap_qty: lard.ScrapQty
+  last_trn_date: lard.LastTrnDate
+  last_trn_time: lard.LastTrnTime
+  reason_code: lard.ReasonCode
+  on_hold_reason: lard.OnHoldReason
+  scrap_reason_code: lard.ScrapReasonCode
+  release_reason: lard.ReleaseReason

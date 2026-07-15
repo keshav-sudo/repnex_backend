@@ -1,0 +1,6 @@
+concept: whm_bin_type
+table: WhmBinType
+alias: wbt
+fields:
+  bin_type: wbt.BinType
+  description: wbt.Description

@@ -1,0 +1,13 @@
+concept: iop_calendar
+table: IopCalendar
+alias: ic2
+fields:
+  calendar: ic2.Calendar
+  description: ic2.Description
+  calendar_units: ic2.CalendarUnits
+  unit_multiples: ic2.UnitMultiples
+  week_day: ic2.WeekDay
+  month_day: ic2.MonthDay
+  start_method: ic2.StartMethod
+  first_month: ic2.FirstMonth
+  first_week: ic2.FirstWeek

@@ -1,0 +1,83 @@
+concept: bom_arc_parent_info
+display_name: BomArcParentInfo
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomArcParentInfo.
+synonyms:
+- bomarcparentinfo
+- bom arc parent info
+header_attributes:
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from BomArcParentInfo
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BomArcParentInfo
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BomArcParentInfo
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomArcParentInfo
+  co_product_cost_met:
+    display: Coproductcostmet
+    type: string
+    required: false
+    description: Field CoProductCostMet from BomArcParentInfo
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from BomArcParentInfo
+  co_product_type:
+    display: Coproducttype
+    type: string
+    required: false
+    description: Field CoProductType from BomArcParentInfo
+  co_product_next:
+    display: Coproductnext
+    type: decimal
+    required: false
+    description: Field CoProductNext from BomArcParentInfo
+  co_product_plan_prd:
+    display: Coproductplanprd
+    type: decimal
+    required: false
+    description: Field CoProductPlanPrd from BomArcParentInfo
+  any_operations:
+    display: Anyoperations
+    type: string
+    required: false
+    description: Field AnyOperations from BomArcParentInfo
+  any_materials:
+    display: Anymaterials
+    type: string
+    required: false
+    description: Field AnyMaterials from BomArcParentInfo
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from BomArcParentInfo
+  narrations:
+    display: Narrations
+    type: decimal
+    required: false
+    description: Field Narrations from BomArcParentInfo
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from BomArcParentInfo
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from BomArcParentInfo

@@ -1,0 +1,28 @@
+concept: wip_nest_map_master
+display_name: WipNestMapMaster
+module: work_in_progress
+description: Auto-generated representation of the physical table WipNestMapMaster.
+synonyms:
+- wipnestmapmaster
+- wip nest map master
+header_attributes:
+  format:
+    display: Format
+    type: string
+    required: false
+    description: Field Format from WipNestMapMaster
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WipNestMapMaster
+  format_type:
+    display: Formattype
+    type: string
+    required: false
+    description: Field FormatType from WipNestMapMaster
+  file_type:
+    display: Filetype
+    type: string
+    required: false
+    description: Field FileType from WipNestMapMaster

@@ -1,0 +1,7 @@
+concept: lynq_pg_il__general_info
+table: Lynq_PG_IL_GeneralInfo
+alias: lpgilgi
+fields:
+  id: lpgilgi.ID
+  name: lpgilgi.Name
+  value: lpgilgi.Value

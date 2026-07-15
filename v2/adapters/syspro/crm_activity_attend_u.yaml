@@ -1,0 +1,10 @@
+concept: crm_activity_attend_u
+table: CrmActivityAttendU
+alias: caau
+fields:
+  contact_id: caau.ContactId
+  start_date: caau.StartDate
+  start_time: caau.StartTime
+  attendee_line: caau.AttendeeLine
+  attendee_name: caau.AttendeeName
+  attendee_type: caau.AttendeeType

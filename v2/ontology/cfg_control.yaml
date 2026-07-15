@@ -1,0 +1,23 @@
+concept: cfg_control
+display_name: CfgControl
+module: other
+description: Auto-generated representation of the physical table CfgControl.
+synonyms:
+- cfgcontrol
+- cfg control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from CfgControl
+  wizard_date:
+    display: Wizarddate
+    type: date
+    required: false
+    description: Field WizardDate from CfgControl
+  wizard_time:
+    display: Wizardtime
+    type: decimal
+    required: false
+    description: Field WizardTime from CfgControl

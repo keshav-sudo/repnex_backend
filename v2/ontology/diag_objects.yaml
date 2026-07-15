@@ -1,0 +1,33 @@
+concept: diag_objects
+display_name: DiagObjects
+module: other
+description: Auto-generated representation of the physical table DiagObjects.
+synonyms:
+- diagobjects
+- diag objects
+header_attributes:
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from DiagObjects
+  object_type:
+    display: Objecttype
+    type: string
+    required: false
+    description: Field ObjectType from DiagObjects
+  object_name:
+    display: Objectname
+    type: string
+    required: false
+    description: Field ObjectName from DiagObjects
+  key_position:
+    display: Keyposition
+    type: string
+    required: false
+    description: Field KeyPosition from DiagObjects
+  new_column:
+    display: Newcolumn
+    type: string
+    required: false
+    description: Field NewColumn from DiagObjects

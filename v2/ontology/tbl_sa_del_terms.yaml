@@ -1,0 +1,18 @@
+concept: tbl_sa_del_terms
+display_name: TblSaDelTerms
+module: other
+description: Auto-generated representation of the physical table TblSaDelTerms.
+synonyms:
+- tblsadelterms
+- tbl sa del terms
+header_attributes:
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from TblSaDelTerms
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblSaDelTerms

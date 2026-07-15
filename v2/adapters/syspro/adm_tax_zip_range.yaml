@@ -1,0 +1,7 @@
+concept: adm_tax_zip_range
+table: AdmTaxZipRange
+alias: atzr
+fields:
+  zip_from: atzr.ZipFrom
+  zip_to: atzr.ZipTo
+  description: atzr.Description

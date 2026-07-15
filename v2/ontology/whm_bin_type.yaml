@@ -1,0 +1,18 @@
+concept: whm_bin_type
+display_name: WhmBinType
+module: other
+description: Auto-generated representation of the physical table WhmBinType.
+synonyms:
+- whmbintype
+- whm bin type
+header_attributes:
+  bin_type:
+    display: Bintype
+    type: string
+    required: false
+    description: Field BinType from WhmBinType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WhmBinType

@@ -1,0 +1,7 @@
+concept: tpm_prom_threshold
+table: TpmPromThreshold
+alias: tpt
+fields:
+  promotion_code: tpt.PromotionCode
+  threshold: tpt.Threshold
+  qty_to_ship: tpt.QtyToShip

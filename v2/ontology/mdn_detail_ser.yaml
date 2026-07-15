@@ -1,0 +1,63 @@
+concept: mdn_detail_ser
+display_name: MdnDetailSer
+module: other
+description: Auto-generated representation of the physical table MdnDetailSer.
+synonyms:
+- mdndetailser
+- mdn detail ser
+header_attributes:
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from MdnDetailSer
+  dispatch_note_line:
+    display: Dispatchnoteline
+    type: decimal
+    required: false
+    description: Field DispatchNoteLine from MdnDetailSer
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MdnDetailSer
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MdnDetailSer
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from MdnDetailSer
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from MdnDetailSer
+  stock_qty_to_ship:
+    display: Stockqtytoship
+    type: decimal
+    required: false
+    description: Field StockQtyToShip from MdnDetailSer
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from MdnDetailSer
+  new_expiry_date:
+    display: Newexpirydate
+    type: date
+    required: false
+    description: Field NewExpiryDate from MdnDetailSer
+  new_scrap_date:
+    display: Newscrapdate
+    type: date
+    required: false
+    description: Field NewScrapDate from MdnDetailSer
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from MdnDetailSer

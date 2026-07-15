@@ -1,0 +1,36 @@
+concept: mrp_lot_detail
+table: MrpLotDetail
+alias: mld
+fields:
+  stock_code: mld.StockCode
+  warehouse: mld.Warehouse
+  lot: mld.Lot
+  bin: mld.Bin
+  next_trn_line: mld.NextTrnLine
+  orig_qty_received: mld.OrigQtyReceived
+  qty_on_hand: mld.QtyOnHand
+  qty_to_ship: mld.QtyToShip
+  version: mld.Version
+  release: mld.Release
+  expiry_date: mld.ExpiryDate
+  creation_date: mld.CreationDate
+  draw_office_num: mld.DrawOfficeNum
+  last_trn_date: mld.LastTrnDate
+  archive_filename: mld.ArchiveFilename
+  qty_in_transit: mld.QtyInTransit
+  lot_hold_flag: mld.LotHoldFlag
+  note: mld.Note
+  ecc_dummy: mld.EccDummy
+  qty_awaiting_credit: mld.QtyAwaitingCredit
+  qty_reserved: mld.QtyReserved
+  supplier_lot: mld.SupplierLot
+  product_shelf_life: mld.ProductShelfLife
+  internal_shelf_life: mld.InternalShelfLife
+  use_by_date: mld.UseByDate
+  sell_by_date: mld.SellByDate
+  internal_expiry_date: mld.InternalExpiryDate
+  manufacture_date: mld.ManufactureDate
+  dispatch_date: mld.DispatchDate
+  best_before_date: mld.BestBeforeDate
+  prd_recall_flag: mld.PrdRecallFlag
+  reason_code: mld.ReasonCode

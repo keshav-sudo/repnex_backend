@@ -1,0 +1,23 @@
+concept: adm_analytics_ctl
+display_name: AdmAnalyticsCtl
+module: administration
+description: Auto-generated representation of the physical table AdmAnalyticsCtl.
+synonyms:
+- admanalyticsctl
+- adm analytics ctl
+header_attributes:
+  filter_site:
+    display: Filtersite
+    type: decimal
+    required: false
+    description: Field FilterSite from AdmAnalyticsCtl
+  filter_table:
+    display: Filtertable
+    type: string
+    required: false
+    description: Field FilterTable from AdmAnalyticsCtl
+  filter_value:
+    display: Filtervalue
+    type: string
+    required: false
+    description: Field FilterValue from AdmAnalyticsCtl

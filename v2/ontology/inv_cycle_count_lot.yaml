@@ -1,0 +1,78 @@
+concept: inv_cycle_count_lot
+display_name: InvCycleCountLot
+module: inventory
+description: Auto-generated representation of the physical table InvCycleCountLot.
+synonyms:
+- invcyclecountlot
+- inv cycle count lot
+header_attributes:
+  cycle_count:
+    display: Cyclecount
+    type: string
+    required: false
+    description: Field CycleCount from InvCycleCountLot
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvCycleCountLot
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvCycleCountLot
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvCycleCountLot
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvCycleCountLot
+  original_quantity:
+    display: Originalquantity
+    type: decimal
+    required: false
+    description: Field OriginalQuantity from InvCycleCountLot
+  captured_quantity:
+    display: Capturedquantity
+    type: decimal
+    required: false
+    description: Field CapturedQuantity from InvCycleCountLot
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvCycleCountLot
+  create_lot_flag:
+    display: Createlotflag
+    type: string
+    required: false
+    description: Field CreateLotFlag from InvCycleCountLot
+  create_expiry_flag:
+    display: Createexpiryflag
+    type: date
+    required: false
+    description: Field CreateExpiryFlag from InvCycleCountLot
+  lot_expiry_date:
+    display: Lotexpirydate
+    type: date
+    required: false
+    description: Field LotExpiryDate from InvCycleCountLot
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvCycleCountLot
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvCycleCountLot
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from InvCycleCountLot

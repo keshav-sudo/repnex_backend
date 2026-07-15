@@ -1,0 +1,38 @@
+concept: pos_drawer
+display_name: PosDrawer
+module: other
+description: Auto-generated representation of the physical table PosDrawer.
+synonyms:
+- posdrawer
+- pos drawer
+header_attributes:
+  cash_drawer:
+    display: Cashdrawer
+    type: string
+    required: false
+    description: Field CashDrawer from PosDrawer
+  drawer_description:
+    display: Drawerdescription
+    type: string
+    required: false
+    description: Field DrawerDescription from PosDrawer
+  drawer_float:
+    display: Drawerfloat
+    type: decimal
+    required: false
+    description: Field DrawerFloat from PosDrawer
+  open_draw_hex_code:
+    display: Opendrawhexcode
+    type: string
+    required: false
+    description: Field OpenDrawHexCode from PosDrawer
+  printer_port_flag:
+    display: Printerportflag
+    type: string
+    required: false
+    description: Field PrinterPortFlag from PosDrawer
+  cash_drawer_device:
+    display: Cashdrawerdevice
+    type: string
+    required: false
+    description: Field CashDrawerDevice from PosDrawer

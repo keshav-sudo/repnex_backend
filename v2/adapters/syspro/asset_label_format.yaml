@@ -1,0 +1,6 @@
+concept: asset_label_format
+table: AssetLabelFormat
+alias: alf
+fields:
+  asset_label_format: alf.AssetLabelFormat
+  format_info: alf.FormatInfo

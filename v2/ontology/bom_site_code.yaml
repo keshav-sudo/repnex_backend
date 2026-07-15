@@ -1,0 +1,93 @@
+concept: bom_site_code
+display_name: BomSiteCode
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomSiteCode.
+synonyms:
+- bomsitecode
+- bom site code
+header_attributes:
+  site_code:
+    display: Sitecode
+    type: string
+    required: false
+    description: Field SiteCode from BomSiteCode
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomSiteCode
+  shift_code:
+    display: Shiftcode
+    type: string
+    required: false
+    description: Field ShiftCode from BomSiteCode
+  site_planner:
+    display: Siteplanner
+    type: string
+    required: false
+    description: Field SitePlanner from BomSiteCode
+  site_contact:
+    display: Sitecontact
+    type: string
+    required: false
+    description: Field SiteContact from BomSiteCode
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from BomSiteCode
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from BomSiteCode
+  site_addr_build:
+    display: Siteaddrbuild
+    type: string
+    required: false
+    description: Field SiteAddrBuild from BomSiteCode
+  site_addr1:
+    display: Siteaddr1
+    type: string
+    required: false
+    description: Field SiteAddr1 from BomSiteCode
+  site_addr2:
+    display: Siteaddr2
+    type: string
+    required: false
+    description: Field SiteAddr2 from BomSiteCode
+  site_addr3:
+    display: Siteaddr3
+    type: string
+    required: false
+    description: Field SiteAddr3 from BomSiteCode
+  site_addr_loc:
+    display: Siteaddrloc
+    type: string
+    required: false
+    description: Field SiteAddrLoc from BomSiteCode
+  site_addr_country:
+    display: Siteaddrcountry
+    type: string
+    required: false
+    description: Field SiteAddrCountry from BomSiteCode
+  site_postal_code:
+    display: Sitepostalcode
+    type: string
+    required: false
+    description: Field SitePostalCode from BomSiteCode
+  site_gps_lat:
+    display: Sitegpslat
+    type: decimal
+    required: false
+    description: Field SiteGpsLat from BomSiteCode
+  site_gps_long:
+    display: Sitegpslong
+    type: decimal
+    required: false
+    description: Field SiteGpsLong from BomSiteCode
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from BomSiteCode

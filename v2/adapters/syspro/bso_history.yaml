@@ -1,0 +1,14 @@
+concept: bso_history
+table: BsoHistory
+alias: bh
+fields:
+  customer: bh.Customer
+  customer_po_number: bh.CustomerPoNumber
+  cust_stock_code: bh.CustStockCode
+  rel_seq_num: bh.RelSeqNum
+  sequence_num: bh.SequenceNum
+  release_date: bh.ReleaseDate
+  line: bh.Line
+  accept_cume: bh.AcceptCume
+  accept_qty: bh.AcceptQty
+  rel_reference: bh.RelReference

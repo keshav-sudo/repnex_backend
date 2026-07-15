@@ -1,0 +1,15 @@
+concept: adm_job_logging_det
+table: AdmJobLoggingDet
+alias: ajld
+fields:
+  prog_run_date: ajld.ProgRunDate
+  prog_run_time: ajld.ProgRunTime
+  prog_cur_date: ajld.ProgCurDate
+  prog_cur_time: ajld.ProgCurTime
+  num3: ajld.Num3
+  prog_message: ajld.ProgMessage
+  database_name: ajld.DatabaseName
+  database_table: ajld.DatabaseTable
+  sql_status: ajld.SqlStatus
+  sql_message: ajld.SqlMessage
+  sql_command: ajld.SqlCommand

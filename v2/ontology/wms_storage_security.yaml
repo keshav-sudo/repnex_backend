@@ -1,0 +1,23 @@
+concept: wms_storage_security
+display_name: WmsStorageSecurity
+module: other
+description: Auto-generated representation of the physical table WmsStorageSecurity.
+synonyms:
+- wmsstoragesecurity
+- wms storage security
+header_attributes:
+  storage_security:
+    display: Storagesecurity
+    type: string
+    required: false
+    description: Field StorageSecurity from WmsStorageSecurity
+  storage_security_lvl:
+    display: Storagesecuritylvl
+    type: decimal
+    required: false
+    description: Field StorageSecurityLvl from WmsStorageSecurity
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from WmsStorageSecurity

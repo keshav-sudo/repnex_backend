@@ -1,0 +1,6 @@
+concept: csh_flow_proj_dates
+table: CshFlowProjDates
+alias: cfpd
+fields:
+  model: cfpd.Model
+  projection_date: cfpd.ProjectionDate

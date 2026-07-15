@@ -1,0 +1,178 @@
+concept: int_edi_inv_extra
+display_name: IntEdiInvExtra
+module: other
+description: Auto-generated representation of the physical table IntEdiInvExtra.
+synonyms:
+- intediinvextra
+- int edi inv extra
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from IntEdiInvExtra
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from IntEdiInvExtra
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from IntEdiInvExtra
+  sold_to_name:
+    display: Soldtoname
+    type: string
+    required: false
+    description: Field SoldToName from IntEdiInvExtra
+  sold_address1:
+    display: Soldaddress1
+    type: string
+    required: false
+    description: Field SoldAddress1 from IntEdiInvExtra
+  sold_address2:
+    display: Soldaddress2
+    type: string
+    required: false
+    description: Field SoldAddress2 from IntEdiInvExtra
+  sold_address3:
+    display: Soldaddress3
+    type: string
+    required: false
+    description: Field SoldAddress3 from IntEdiInvExtra
+  sold_address3_loc:
+    display: Soldaddress3Loc
+    type: string
+    required: false
+    description: Field SoldAddress3Loc from IntEdiInvExtra
+  sold_address4:
+    display: Soldaddress4
+    type: string
+    required: false
+    description: Field SoldAddress4 from IntEdiInvExtra
+  sold_address5:
+    display: Soldaddress5
+    type: string
+    required: false
+    description: Field SoldAddress5 from IntEdiInvExtra
+  postal_code:
+    display: Postalcode
+    type: string
+    required: false
+    description: Field PostalCode from IntEdiInvExtra
+  sold_gps_lat:
+    display: Soldgpslat
+    type: decimal
+    required: false
+    description: Field SoldGpsLat from IntEdiInvExtra
+  sold_gps_long:
+    display: Soldgpslong
+    type: decimal
+    required: false
+    description: Field SoldGpsLong from IntEdiInvExtra
+  company_reg_no:
+    display: Companyregno
+    type: string
+    required: false
+    description: Field CompanyRegNo from IntEdiInvExtra
+  ship_date:
+    display: Shipdate
+    type: date
+    required: false
+    description: Field ShipDate from IntEdiInvExtra
+  terms_desc:
+    display: Termsdesc
+    type: string
+    required: false
+    description: Field TermsDesc from IntEdiInvExtra
+  terms_discount:
+    display: Termsdiscount
+    type: decimal
+    required: false
+    description: Field TermsDiscount from IntEdiInvExtra
+  terms_due_date:
+    display: Termsduedate
+    type: date
+    required: false
+    description: Field TermsDueDate from IntEdiInvExtra
+  currency_code:
+    display: Currencycode
+    type: string
+    required: false
+    description: Field CurrencyCode from IntEdiInvExtra
+  currency_desc:
+    display: Currencydesc
+    type: string
+    required: false
+    description: Field CurrencyDesc from IntEdiInvExtra
+  currency_rate:
+    display: Currencyrate
+    type: decimal
+    required: false
+    description: Field CurrencyRate from IntEdiInvExtra
+  currency_mul_div:
+    display: Currencymuldiv
+    type: string
+    required: false
+    description: Field CurrencyMulDiv from IntEdiInvExtra
+  for_value_exc_tax:
+    display: Forvalueexctax
+    type: decimal
+    required: false
+    description: Field ForValueExcTax from IntEdiInvExtra
+  for_tax_value:
+    display: Fortaxvalue
+    type: decimal
+    required: false
+    description: Field ForTaxValue from IntEdiInvExtra
+  for_gross_value:
+    display: Forgrossvalue
+    type: decimal
+    required: false
+    description: Field ForGrossValue from IntEdiInvExtra
+  for_total_discount:
+    display: Fortotaldiscount
+    type: decimal
+    required: false
+    description: Field ForTotalDiscount from IntEdiInvExtra
+  for_terms_disc:
+    display: Fortermsdisc
+    type: decimal
+    required: false
+    description: Field ForTermsDisc from IntEdiInvExtra
+  disc_pct:
+    display: Discpct
+    type: decimal
+    required: false
+    description: Field DiscPct from IntEdiInvExtra
+  due_days:
+    display: Duedays
+    type: decimal
+    required: false
+    description: Field DueDays from IntEdiInvExtra
+  disc_days:
+    display: Discdays
+    type: decimal
+    required: false
+    description: Field DiscDays from IntEdiInvExtra
+  invoice_due_date:
+    display: Invoiceduedate
+    type: date
+    required: false
+    description: Field InvoiceDueDate from IntEdiInvExtra
+  total_mass:
+    display: Totalmass
+    type: decimal
+    required: false
+    description: Field TotalMass from IntEdiInvExtra
+  total_volume:
+    display: Totalvolume
+    type: decimal
+    required: false
+    description: Field TotalVolume from IntEdiInvExtra
+  total_quantity:
+    display: Totalquantity
+    type: decimal
+    required: false
+    description: Field TotalQuantity from IntEdiInvExtra

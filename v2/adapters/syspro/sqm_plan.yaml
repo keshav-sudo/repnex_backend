@@ -1,0 +1,14 @@
+concept: sqm_plan
+table: SqmPlan
+alias: sp
+fields:
+  plan_type: sp.PlanType
+  sample_plan: sp.SamplePlan
+  inspect_control: sp.InspectControl
+  sample_code: sp.SampleCode
+  acceptance_limit: sp.AcceptanceLimit
+  sample_number: sp.SampleNumber
+  sample_size: sp.SampleSize
+  acceptance_num: sp.AcceptanceNum
+  rejection_num: sp.RejectionNum
+  accept_allowed: sp.AcceptAllowed

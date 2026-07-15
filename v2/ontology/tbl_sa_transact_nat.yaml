@@ -1,0 +1,18 @@
+concept: tbl_sa_transact_nat
+display_name: TblSaTransactNat
+module: other
+description: Auto-generated representation of the physical table TblSaTransactNat.
+synonyms:
+- tblsatransactnat
+- tbl sa transact nat
+header_attributes:
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from TblSaTransactNat
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblSaTransactNat

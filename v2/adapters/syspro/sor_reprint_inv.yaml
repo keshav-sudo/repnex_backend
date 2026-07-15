@@ -1,0 +1,12 @@
+concept: sor_reprint_inv
+table: SorReprintInv
+alias: sri
+fields:
+  invoice: sri.Invoice
+  sales_order: sri.SalesOrder
+  invoice_source: sri.InvoiceSource
+  customer: sri.Customer
+  dispatch_note: sri.DispatchNote
+  gtr_reference: sri.GtrReference
+  source_warehouse: sri.SourceWarehouse
+  target_warehouse: sri.TargetWarehouse

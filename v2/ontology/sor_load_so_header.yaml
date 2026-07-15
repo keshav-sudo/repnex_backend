@@ -1,0 +1,33 @@
+concept: sor_load_so_header
+display_name: SorLoadSoHeader
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorLoadSoHeader.
+synonyms:
+- sorloadsoheader
+- sor load so header
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorLoadSoHeader
+  route_code:
+    display: Routecode
+    type: string
+    required: false
+    description: Field RouteCode from SorLoadSoHeader
+  complete_flag:
+    display: Completeflag
+    type: string
+    required: false
+    description: Field CompleteFlag from SorLoadSoHeader
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from SorLoadSoHeader
+  preactor_priority:
+    display: Preactorpriority
+    type: decimal
+    required: false
+    description: Field PreactorPriority from SorLoadSoHeader

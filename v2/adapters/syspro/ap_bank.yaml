@@ -1,0 +1,48 @@
+concept: ap_bank
+table: ApBank
+alias: ab
+fields:
+  bank: ab.Bank
+  description: ab.Description
+  cash_gl_code: ab.CashGlCode
+  next_cheque_num: ab.NextChequeNum
+  first_cheque_num: ab.FirstChequeNum
+  low_cheque_num: ab.LowChequeNum
+  high_cheque_num: ab.HighChequeNum
+  cb_stmt_bal1: ab.CbStmtBal1
+  cb_stmt_bal2: ab.CbStmtBal2
+  cb_stmt_bal3: ab.CbStmtBal3
+  cb_stmt_bal_loc1: ab.CbStmtBalLoc1
+  cb_stmt_bal_loc2: ab.CbStmtBalLoc2
+  cb_stmt_bal_loc3: ab.CbStmtBalLoc3
+  outst_dep1: ab.OutstDep1
+  outst_dep2: ab.OutstDep2
+  outst_dep3: ab.OutstDep3
+  outst_with1: ab.OutstWith1
+  outst_with2: ab.OutstWith2
+  outst_with3: ab.OutstWith3
+  cb_cur_bal1: ab.CbCurBal1
+  cb_cur_bal2: ab.CbCurBal2
+  cb_cur_bal3: ab.CbCurBal3
+  cb_cur_bal_loc1: ab.CbCurBalLoc1
+  cb_cur_bal_loc2: ab.CbCurBalLoc2
+  cb_cur_bal_loc3: ab.CbCurBalLoc3
+  date_last_extract: ab.DateLastExtract
+  telephone: ab.Telephone
+  bank_account: ab.BankAccount
+  currency: ab.Currency
+  date_last_var_upd: ab.DateLastVarUpd
+  gl_exch_var_code: ab.GlExchVarCode
+  cb_open_bal1: ab.CbOpenBal1
+  cb_open_bal2: ab.CbOpenBal2
+  cb_open_bal3: ab.CbOpenBal3
+  on_line_cheques: ab.OnLineCheques
+  ar_bank_charge_reqd: ab.ArBankChargeReqd
+  ar_bank_charge_gl_code: ab.ArBankChargeGlCode
+  ap_eft_payments: ab.ApEftPayments
+  ap_post_method: ab.ApPostMethod
+  next_eft_num: ab.NextEftNum
+  nationality: ab.Nationality
+  gl_exch_separate: ab.GlExchSeparate
+  gl_exch_loss_code: ab.GlExchLossCode
+  check_print: ab.CheckPrint

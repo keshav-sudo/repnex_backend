@@ -1,0 +1,33 @@
+concept: grn_journal
+table: GrnJournal
+alias: gj
+fields:
+  journal_year: gj.JournalYear
+  journal_month: gj.JournalMonth
+  grn_journal: gj.GrnJournal
+  journal_entry: gj.JournalEntry
+  supplier: gj.Supplier
+  grn: gj.Grn
+  purchase_order: gj.PurchaseOrder
+  purchase_order_lin: gj.PurchaseOrderLin
+  adj_date: gj.AdjDate
+  gl_code: gj.GlCode
+  jnl_reference: gj.JnlReference
+  grn_adj_value: gj.GrnAdjValue
+  notation: gj.Notation
+  journal_printed: gj.JournalPrinted
+  operator: gj.Operator
+  stock_code: gj.StockCode
+  warehouse: gj.Warehouse
+  gl_int_updated: gj.GlIntUpdated
+  gl_int_printed: gj.GlIntPrinted
+  gl_int_year: gj.GlIntYear
+  gl_int_period: gj.GlIntPeriod
+  gl_journal: gj.GlJournal
+  control_gl_code: gj.ControlGlCode
+  transaction_ana_ent: gj.TransactionAnaEnt
+  control_ana_entry: gj.ControlAnaEntry
+  product_class: gj.ProductClass
+  gl_int_level: gj.GlIntLevel
+  dimension_entry: gj.DimensionEntry
+  dimension_line: gj.DimensionLine

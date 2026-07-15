@@ -1,0 +1,17 @@
+concept: arc_job_ref
+table: ArcJobRef
+alias: ajr
+fields:
+  job: ajr.Job
+  archive_number: ajr.ArchiveNumber
+  job_description: ajr.JobDescription
+  job_classification: ajr.JobClassification
+  stock_code: ajr.StockCode
+  customer: ajr.Customer
+  sales_order: ajr.SalesOrder
+  sales_order_line: ajr.SalesOrderLine
+  job_completed: ajr.JobCompleted
+  warehouse: ajr.Warehouse
+  version: ajr.Version
+  release: ajr.Release
+  contract: ajr.Contract

@@ -1,0 +1,46 @@
+concept: mrp_qot_offer
+table: MrpQotOffer
+alias: mqo
+fields:
+  quote: mqo.Quote
+  quote_version: mqo.QuoteVersion
+  line: mqo.Line
+  entry_number: mqo.EntryNumber
+  line_type: mqo.LineType
+  m_quantity: mqo.MQuantity
+  m_ship_uom: mqo.MShipUom
+  m_conv_fact: mqo.MConvFact
+  m_mul_div: mqo.MMulDiv
+  m_route_to_use: mqo.MRouteToUse
+  m_markup_margin: mqo.MMarkupMargin
+  m_price_override: mqo.MPriceOverride
+  m_price_code: mqo.MPriceCode
+  m_price: mqo.MPrice
+  m_price_uom: mqo.MPriceUom
+  m_price_conv_fact: mqo.MPriceConvFact
+  m_price_fact_code: mqo.MPriceFactCode
+  m_line_disc1: mqo.MLineDisc1
+  m_line_disc2: mqo.MLineDisc2
+  m_line_disc3: mqo.MLineDisc3
+  m_discount_flag: mqo.MDiscountFlag
+  m_discount_value: mqo.MDiscountValue
+  m_net_value: mqo.MNetValue
+  m_commission_code: mqo.MCommissionCode
+  m_contract: mqo.MContract
+  m_buying_group: mqo.MBuyingGroup
+  m_contract_expiry: mqo.MContractExpiry
+  m_fixed_markup: mqo.MFixedMarkup
+  m_rollup_flag: mqo.MRollupFlag
+  m_cost: mqo.MCost
+  m_lead_time: mqo.MLeadTime
+  m_route_used: mqo.MRouteUsed
+  m_qty_changes_flag: mqo.MQtyChangesFlag
+  m_disc_changed: mqo.MDiscChanged
+  misc_charge_val: mqo.MiscChargeVal
+  misc_charge_cost: mqo.MiscChargeCost
+  misc_charge_qty: mqo.MiscChargeQty
+  misc_unit_price: mqo.MiscUnitPrice
+  misc_unit_cost: mqo.MiscUnitCost
+  price_group_rule: mqo.PriceGroupRule
+  catalogue: mqo.Catalogue
+  cat_line_number: mqo.CatLineNumber

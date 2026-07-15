@@ -1,0 +1,63 @@
+concept: asset_amendment_jnl
+display_name: AssetAmendmentJnl
+module: assets
+description: Auto-generated representation of the physical table AssetAmendmentJnl.
+synonyms:
+- assetamendmentjnl
+- asset amendment jnl
+header_attributes:
+  asset_file_name:
+    display: Assetfilename
+    type: string
+    required: false
+    description: Field AssetFileName from AssetAmendmentJnl
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from AssetAmendmentJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from AssetAmendmentJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from AssetAmendmentJnl
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetAmendmentJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from AssetAmendmentJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from AssetAmendmentJnl
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from AssetAmendmentJnl
+  before:
+    display: Before
+    type: string
+    required: false
+    description: Field Before from AssetAmendmentJnl
+  after:
+    display: After
+    type: string
+    required: false
+    description: Field After from AssetAmendmentJnl
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from AssetAmendmentJnl

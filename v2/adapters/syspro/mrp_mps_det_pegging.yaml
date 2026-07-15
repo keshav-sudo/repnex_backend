@@ -1,0 +1,23 @@
+concept: mrp_mps_det_pegging
+table: MrpMpsDetPegging
+alias: mmdp
+fields:
+  stock_code: mmdp.StockCode
+  version: mmdp.Version
+  release: mmdp.Release
+  warehouse: mmdp.Warehouse
+  supply_demand_date: mmdp.SupplyDemandDate
+  source_type: mmdp.SourceType
+  orig_source_key: mmdp.OrigSourceKey
+  quantity: mmdp.Quantity
+  parent_stock_code: mmdp.ParentStockCode
+  parent_line: mmdp.ParentLine
+  order_number: mmdp.OrderNumber
+  quote_version: mmdp.QuoteVersion
+  line_number: mmdp.LineNumber
+  job_line: mmdp.JobLine
+  user_code: mmdp.UserCode
+  source_warehouse: mmdp.SourceWarehouse
+  target_warehouse: mmdp.TargetWarehouse
+  forecast_date: mmdp.ForecastDate
+  live_date: mmdp.LiveDate

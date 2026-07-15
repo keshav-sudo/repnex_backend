@@ -1,0 +1,63 @@
+concept: mdn_detail_lot
+display_name: MdnDetailLot
+module: other
+description: Auto-generated representation of the physical table MdnDetailLot.
+synonyms:
+- mdndetaillot
+- mdn detail lot
+header_attributes:
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from MdnDetailLot
+  dispatch_note_line:
+    display: Dispatchnoteline
+    type: decimal
+    required: false
+    description: Field DispatchNoteLine from MdnDetailLot
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MdnDetailLot
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MdnDetailLot
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from MdnDetailLot
+  stock_qty_to_ship:
+    display: Stockqtytoship
+    type: decimal
+    required: false
+    description: Field StockQtyToShip from MdnDetailLot
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from MdnDetailLot
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MdnDetailLot
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MdnDetailLot
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from MdnDetailLot
+  lot_expiry_date:
+    display: Lotexpirydate
+    type: date
+    required: false
+    description: Field LotExpiryDate from MdnDetailLot

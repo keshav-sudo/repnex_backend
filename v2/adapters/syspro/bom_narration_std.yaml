@@ -1,0 +1,7 @@
+concept: bom_narration_std
+table: BomNarrationStd
+alias: bns
+fields:
+  narration_code: bns.NarrationCode
+  line: bns.Line
+  narration: bns.Narration

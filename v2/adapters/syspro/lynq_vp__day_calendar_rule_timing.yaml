@@ -1,0 +1,10 @@
+concept: lynq_vp__day_calendar_rule_timing
+table: Lynq_VP_DayCalendarRuleTiming
+alias: lvpdcrt
+fields:
+  id: lvpdcrt.ID
+  day_calendar_rule_id: lvpdcrt.DayCalendarRuleID
+  start_time: lvpdcrt.StartTime
+  end_time: lvpdcrt.EndTime
+  activity_code: lvpdcrt.ActivityCode
+  resource_qty: lvpdcrt.ResourceQty

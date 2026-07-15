@@ -1,0 +1,48 @@
+concept: ar_ctl_health_fix
+display_name: ArCtlHealthFix
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCtlHealthFix.
+synonyms:
+- arctlhealthfix
+- ar ctl health fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from ArCtlHealthFix
+  trx_type:
+    display: Trxtype
+    type: string
+    required: false
+    description: Field TrxType from ArCtlHealthFix
+  balance_year:
+    display: Balanceyear
+    type: decimal
+    required: false
+    description: Field BalanceYear from ArCtlHealthFix
+  balance_month:
+    display: Balancemonth
+    type: decimal
+    required: false
+    description: Field BalanceMonth from ArCtlHealthFix
+  trx_amount:
+    display: Trxamount
+    type: decimal
+    required: false
+    description: Field TrxAmount from ArCtlHealthFix
+  trx_amount_before:
+    display: Trxamountbefore
+    type: decimal
+    required: false
+    description: Field TrxAmountBefore from ArCtlHealthFix
+  trx_amount_after:
+    display: Trxamountafter
+    type: decimal
+    required: false
+    description: Field TrxAmountAfter from ArCtlHealthFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ArCtlHealthFix

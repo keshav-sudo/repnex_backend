@@ -1,0 +1,21 @@
+concept: sal_history_master
+table: SalHistoryMaster
+alias: shm
+fields:
+  trn_year: shm.TrnYear
+  trn_month: shm.TrnMonth
+  branch: shm.Branch
+  product_class: shm.ProductClass
+  salesperson: shm.Salesperson
+  area: shm.Area
+  order_type: shm.OrderType
+  customer_class: shm.CustomerClass
+  customer: shm.Customer
+  warehouse: shm.Warehouse
+  department: shm.Department
+  stock_code: shm.StockCode
+  sales_value: shm.SalesValue
+  cost_value: shm.CostValue
+  quantity_sold: shm.QuantitySold
+  mass_sold: shm.MassSold
+  volume_sold: shm.VolumeSold

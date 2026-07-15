@@ -1,0 +1,10 @@
+concept: arc_bom_ref
+table: ArcBomRef
+alias: abr
+fields:
+  stock_code: abr.StockCode
+  version: abr.Version
+  release: abr.Release
+  route: abr.Route
+  archive_number: abr.ArchiveNumber
+  description: abr.Description

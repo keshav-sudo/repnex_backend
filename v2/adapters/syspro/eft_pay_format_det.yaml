@@ -1,0 +1,15 @@
+concept: eft_pay_format_det
+table: EftPayFormatDet
+alias: epfd
+fields:
+  format_code: epfd.FormatCode
+  record_type: epfd.RecordType
+  entry_number: epfd.EntryNumber
+  field_length: epfd.FieldLength
+  field_desc: epfd.FieldDesc
+  field_map: epfd.FieldMap
+  data_element: epfd.DataElement
+  constant: epfd.Constant
+  calculation: epfd.Calculation
+  custom_form_type: epfd.CustomFormType
+  custom_form_field: epfd.CustomFormField

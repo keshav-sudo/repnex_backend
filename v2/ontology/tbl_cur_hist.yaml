@@ -1,0 +1,78 @@
+concept: tbl_cur_hist
+display_name: TblCurHist
+module: other
+description: Auto-generated representation of the physical table TblCurHist.
+synonyms:
+- tblcurhist
+- tbl cur hist
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from TblCurHist
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from TblCurHist
+  buy_exchange_rate:
+    display: Buyexchangerate
+    type: decimal
+    required: false
+    description: Field BuyExchangeRate from TblCurHist
+  buy_mul_div:
+    display: Buymuldiv
+    type: string
+    required: false
+    description: Field BuyMulDiv from TblCurHist
+  buy_ec_decl_rate:
+    display: Buyecdeclrate
+    type: decimal
+    required: false
+    description: Field BuyEcDeclRate from TblCurHist
+  buy_ec_decl_fact:
+    display: Buyecdeclfact
+    type: string
+    required: false
+    description: Field BuyEcDeclFact from TblCurHist
+  sell_exchange_rate:
+    display: Sellexchangerate
+    type: decimal
+    required: false
+    description: Field SellExchangeRate from TblCurHist
+  sell_mul_div:
+    display: Sellmuldiv
+    type: string
+    required: false
+    description: Field SellMulDiv from TblCurHist
+  sell_ec_decl_rate:
+    display: Sellecdeclrate
+    type: decimal
+    required: false
+    description: Field SellEcDeclRate from TblCurHist
+  sell_ec_decl_fact:
+    display: Sellecdeclfact
+    type: string
+    required: false
+    description: Field SellEcDeclFact from TblCurHist
+  triang_reqd:
+    display: Triangreqd
+    type: string
+    required: false
+    description: Field TriangReqd from TblCurHist
+  intermediate_cur:
+    display: Intermediatecur
+    type: string
+    required: false
+    description: Field IntermediateCur from TblCurHist
+  fixed_rate:
+    display: Fixedrate
+    type: string
+    required: false
+    description: Field FixedRate from TblCurHist
+  tolerance:
+    display: Tolerance
+    type: decimal
+    required: false
+    description: Field Tolerance from TblCurHist

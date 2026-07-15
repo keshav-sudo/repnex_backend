@@ -1,0 +1,53 @@
+concept: adm_version_history
+display_name: AdmVersionHistory
+module: administration
+description: Auto-generated representation of the physical table AdmVersionHistory.
+synonyms:
+- admversionhistory
+- adm version history
+header_attributes:
+  update_date:
+    display: Updatedate
+    type: date
+    required: false
+    description: Field UpdateDate from AdmVersionHistory
+  database_version:
+    display: Databaseversion
+    type: string
+    required: false
+    description: Field DatabaseVersion from AdmVersionHistory
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmVersionHistory
+  syspro_full_version:
+    display: Sysprofullversion
+    type: string
+    required: false
+    description: Field SysproFullVersion from AdmVersionHistory
+  syspro_version:
+    display: Sysproversion
+    type: string
+    required: false
+    description: Field SysproVersion from AdmVersionHistory
+  syspro_sp:
+    display: Sysprosp
+    type: string
+    required: false
+    description: Field SysproSp from AdmVersionHistory
+  update_source:
+    display: Updatesource
+    type: string
+    required: false
+    description: Field UpdateSource from AdmVersionHistory
+  update_source_info:
+    display: Updatesourceinfo
+    type: string
+    required: false
+    description: Field UpdateSourceInfo from AdmVersionHistory
+  baq_version:
+    display: Baqversion
+    type: string
+    required: false
+    description: Field BaqVersion from AdmVersionHistory

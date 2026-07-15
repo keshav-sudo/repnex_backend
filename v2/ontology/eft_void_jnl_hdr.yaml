@@ -1,0 +1,63 @@
+concept: eft_void_jnl_hdr
+display_name: EftVoidJnlHdr
+module: other
+description: Auto-generated representation of the physical table EftVoidJnlHdr.
+synonyms:
+- eftvoidjnlhdr
+- eft void jnl hdr
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from EftVoidJnlHdr
+  eft_number:
+    display: Eftnumber
+    type: string
+    required: false
+    description: Field EftNumber from EftVoidJnlHdr
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from EftVoidJnlHdr
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from EftVoidJnlHdr
+  void_date:
+    display: Voiddate
+    type: date
+    required: false
+    description: Field VoidDate from EftVoidJnlHdr
+  payment_value:
+    display: Paymentvalue
+    type: decimal
+    required: false
+    description: Field PaymentValue from EftVoidJnlHdr
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from EftVoidJnlHdr
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from EftVoidJnlHdr
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from EftVoidJnlHdr
+  program_source:
+    display: Programsource
+    type: string
+    required: false
+    description: Field ProgramSource from EftVoidJnlHdr
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from EftVoidJnlHdr

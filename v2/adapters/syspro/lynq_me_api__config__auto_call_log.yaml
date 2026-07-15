@@ -1,0 +1,9 @@
+concept: lynq_me_api__config__auto_call_log
+table: Lynq_ME_API_Config_AutoCallLog
+alias: lmeapicacl
+fields:
+  id: lmeapicacl.Id
+  log_type_id: lmeapicacl.LogTypeId
+  created_date_utc: lmeapicacl.CreatedDateUTC
+  message: lmeapicacl.Message
+  stack_trace: lmeapicacl.StackTrace

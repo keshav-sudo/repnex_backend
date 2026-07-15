@@ -1,0 +1,98 @@
+concept: lot_recall_detail
+display_name: LotRecallDetail
+module: other
+description: Auto-generated representation of the physical table LotRecallDetail.
+synonyms:
+- lotrecalldetail
+- lot recall detail
+header_attributes:
+  product_recall:
+    display: Productrecall
+    type: string
+    required: false
+    description: Field ProductRecall from LotRecallDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotRecallDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from LotRecallDetail
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from LotRecallDetail
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotRecallDetail
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from LotRecallDetail
+  hold_level:
+    display: Holdlevel
+    type: string
+    required: false
+    description: Field HoldLevel from LotRecallDetail
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from LotRecallDetail
+  insp_quantity:
+    display: Inspquantity
+    type: decimal
+    required: false
+    description: Field InspQuantity from LotRecallDetail
+  insp_complete:
+    display: Inspcomplete
+    type: string
+    required: false
+    description: Field InspComplete from LotRecallDetail
+  release_qty:
+    display: Releaseqty
+    type: decimal
+    required: false
+    description: Field ReleaseQty from LotRecallDetail
+  scrap_qty:
+    display: Scrapqty
+    type: decimal
+    required: false
+    description: Field ScrapQty from LotRecallDetail
+  last_trn_date:
+    display: Lasttrndate
+    type: date
+    required: false
+    description: Field LastTrnDate from LotRecallDetail
+  last_trn_time:
+    display: Lasttrntime
+    type: decimal
+    required: false
+    description: Field LastTrnTime from LotRecallDetail
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from LotRecallDetail
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from LotRecallDetail
+  scrap_reason_code:
+    display: Scrapreasoncode
+    type: string
+    required: false
+    description: Field ScrapReasonCode from LotRecallDetail
+  release_reason:
+    display: Releasereason
+    type: string
+    required: false
+    description: Field ReleaseReason from LotRecallDetail

@@ -1,0 +1,28 @@
+concept: por_master_hdr_plus
+display_name: PorMasterHdr+
+module: procurement
+description: Auto-generated representation of the physical table PorMasterHdr+.
+synonyms:
+- pormasterhdr+
+- por master hdr plus
+header_attributes:
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from PorMasterHdr+
+  ship:
+    display: Ship
+    type: string
+    required: false
+    description: Field Ship from PorMasterHdr+
+  delivery:
+    display: Delivery
+    type: string
+    required: false
+    description: Field Delivery from PorMasterHdr+
+  category:
+    display: Category
+    type: string
+    required: false
+    description: Field Category from PorMasterHdr+

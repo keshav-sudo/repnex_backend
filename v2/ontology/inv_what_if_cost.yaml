@@ -1,0 +1,43 @@
+concept: inv_what_if_cost
+display_name: InvWhatIfCost
+module: inventory
+description: Auto-generated representation of the physical table InvWhatIfCost.
+synonyms:
+- invwhatifcost
+- inv what if cost
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvWhatIfCost
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvWhatIfCost
+  what_if_lab_cost:
+    display: Whatiflabcost
+    type: decimal
+    required: false
+    description: Field WhatIfLabCost from InvWhatIfCost
+  what_if_mat_cost:
+    display: Whatifmatcost
+    type: decimal
+    required: false
+    description: Field WhatIfMatCost from InvWhatIfCost
+  what_if_fix_cost:
+    display: Whatiffixcost
+    type: decimal
+    required: false
+    description: Field WhatIfFixCost from InvWhatIfCost
+  what_if_var_cost:
+    display: Whatifvarcost
+    type: decimal
+    required: false
+    description: Field WhatIfVarCost from InvWhatIfCost
+  what_if_sub_cont_cost:
+    display: Whatifsubcontcost
+    type: decimal
+    required: false
+    description: Field WhatIfSubContCost from InvWhatIfCost

@@ -1,0 +1,11 @@
+concept: iop_forecast
+table: IopForecast
+alias: if
+fields:
+  stock_code: if.StockCode
+  version: if.Version
+  release: if.Release
+  forecast_wh: if.ForecastWh
+  forecast_date: if.ForecastDate
+  forecast_qty: if.ForecastQty
+  reference: if.Reference

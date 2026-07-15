@@ -1,0 +1,13 @@
+concept: adm_tax_fltr_pcls
+display_name: AdmTaxFltrPcls
+module: administration
+description: Auto-generated representation of the physical table AdmTaxFltrPcls.
+synonyms:
+- admtaxfltrpcls
+- adm tax fltr pcls
+header_attributes:
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from AdmTaxFltrPcls

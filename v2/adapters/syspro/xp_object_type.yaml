@@ -1,0 +1,7 @@
+concept: xp_object_type
+table: XPObjectType
+alias: xpot
+fields:
+  oid: xpot.OID
+  type_name: xpot.TypeName
+  assembly_name: xpot.AssemblyName

@@ -1,0 +1,21 @@
+concept: prj_hierarchy_xref
+table: PrjHierarchyXref
+alias: phx
+fields:
+  hierarchy_type: phx.HierarchyType
+  job_estimate: phx.JobEstimate
+  hier_head: phx.HierHead
+  section1: phx.Section1
+  section2: phx.Section2
+  section3: phx.Section3
+  section4: phx.Section4
+  trn_type: phx.TrnType
+  source_key: phx.SourceKey
+  index_job: phx.IndexJob
+  stock_code: phx.StockCode
+  warehouse: phx.Warehouse
+  mat_alloc_line: phx.MatAllocLine
+  post_line: phx.PostLine
+  operation: phx.Operation
+  supplier: phx.Supplier
+  post_job: phx.PostJob

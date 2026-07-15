@@ -1,0 +1,23 @@
+concept: bom_narration
+display_name: BomNarration
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomNarration.
+synonyms:
+- bomnarration
+- bom narration
+header_attributes:
+  narration_num:
+    display: Narrationnum
+    type: decimal
+    required: false
+    description: Field NarrationNum from BomNarration
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from BomNarration
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from BomNarration

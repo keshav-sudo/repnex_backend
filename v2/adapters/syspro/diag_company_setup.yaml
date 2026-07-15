@@ -1,0 +1,41 @@
+concept: diag_company_setup
+table: DiagCompanySetup
+alias: dcs
+fields:
+  ctl_flag: dcs.CtlFlag
+  company_id: dcs.CompanyId
+  company_name: dcs.CompanyName
+  conv_status: dcs.ConvStatus
+  srs_arc_table_cnt: dcs.SRSArcTableCnt
+  db_compat_level: dcs.DBCompatLevel
+  db_compat_error: dcs.DBCompatError
+  db_case_insensitive: dcs.DBCaseInsensitive
+  ap_grn_alpha_numeric: dcs.ApGrnAlphaNumeric
+  ap_sup_prefix: dcs.ApSupPrefix
+  ap_sup_alpha_numeric: dcs.ApSupAlphaNumeric
+  ap_grn_prefix: dcs.ApGrnPrefix
+  ar_cus_alpha_numeric: dcs.ArCusAlphaNumeric
+  ar_cus_prefix: dcs.ArCusPrefix
+  ar_bgr_alpha_numeric: dcs.ArBgrAlphaNumeric
+  ar_bgr_prefix: dcs.ArBgrPrefix
+  ar_inv_alpha_numeric: dcs.ArInvAlphaNumeric
+  ar_inv_prefix: dcs.ArInvPrefix
+  in_lot_alpha_numeric: dcs.InLotAlphaNumeric
+  in_lot_prefix: dcs.InLotPrefix
+  po_ord_alpha_numeric: dcs.PoOrdAlphaNumeric
+  po_ord_prefix: dcs.PoOrdPrefix
+  quote_alpha_numeric: dcs.QuoteAlphaNumeric
+  quote_prefix: dcs.QuotePrefix
+  so_ord_alpha_numeric: dcs.SoOrdAlphaNumeric
+  so_ord_prefix: dcs.SoOrdPrefix
+  so_rma_alpha_numeric: dcs.SoRmaAlphaNumeric
+  so_rma_prefix: dcs.SoRmaPrefix
+  wp_ins_alpha_numeric: dcs.WpInsAlphaNumeric
+  wp_ins_prefix: dcs.WpInsPrefix
+  wp_job_alpha_numeric: dcs.WpJobAlphaNumeric
+  wp_job_prefix: dcs.WpJobPrefix
+  bom_rev_alpha_numeric: dcs.BomRevAlphaNumeric
+  bom_rel_alpha_numeric: dcs.BomRelAlphaNumeric
+  ecc_stock_level: dcs.EccStockLevel
+  bom_eco_alpha_numeric: dcs.BomEcoAlphaNumeric
+  bom_eco_prefix: dcs.BomEcoPrefix

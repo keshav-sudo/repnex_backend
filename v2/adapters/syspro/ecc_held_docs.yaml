@@ -1,0 +1,13 @@
+concept: ecc_held_docs
+table: EccHeldDocs
+alias: ehd
+fields:
+  change_order: ehd.ChangeOrder
+  doc_type: ehd.DocType
+  doc_key: ehd.DocKey
+  stock_code: ehd.StockCode
+  version: ehd.Version
+  release: ehd.Release
+  date_held: ehd.DateHeld
+  status: ehd.Status
+  audit_sequence: ehd.AuditSequence

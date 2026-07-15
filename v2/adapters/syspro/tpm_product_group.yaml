@@ -1,0 +1,6 @@
+concept: tpm_product_group
+table: TpmProductGroup
+alias: tpg
+fields:
+  product_group: tpg.ProductGroup
+  description: tpg.Description

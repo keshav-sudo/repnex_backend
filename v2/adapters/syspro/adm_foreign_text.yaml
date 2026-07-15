@@ -1,0 +1,8 @@
+concept: adm_foreign_text
+table: AdmForeignText
+alias: aft
+fields:
+  language_code: aft.LanguageCode
+  text_type_flag: aft.TextTypeFlag
+  adm_key_field: aft.AdmKeyField
+  text: aft.Text

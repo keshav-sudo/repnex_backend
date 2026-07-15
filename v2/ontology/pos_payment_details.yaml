@@ -1,0 +1,43 @@
+concept: pos_payment_details
+display_name: PosPaymentDetails
+module: other
+description: Auto-generated representation of the physical table PosPaymentDetails.
+synonyms:
+- pospaymentdetails
+- pos payment details
+header_attributes:
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from PosPaymentDetails
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from PosPaymentDetails
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from PosPaymentDetails
+  dep_invoice:
+    display: Depinvoice
+    type: string
+    required: false
+    description: Field DepInvoice from PosPaymentDetails
+  payment_value:
+    display: Paymentvalue
+    type: decimal
+    required: false
+    description: Field PaymentValue from PosPaymentDetails
+  payment_date:
+    display: Paymentdate
+    type: date
+    required: false
+    description: Field PaymentDate from PosPaymentDetails
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from PosPaymentDetails

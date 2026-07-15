@@ -1,0 +1,58 @@
+concept: iop_col_archive
+display_name: IopColArchive
+module: other
+description: Auto-generated representation of the physical table IopColArchive.
+synonyms:
+- iopcolarchive
+- iop col archive
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopColArchive
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopColArchive
+  date_prepared:
+    display: Dateprepared
+    type: date
+    required: false
+    description: Field DatePrepared from IopColArchive
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from IopColArchive
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from IopColArchive
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopColArchive
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopColArchive
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopColArchive
+  forecast_batch:
+    display: Forecastbatch
+    type: string
+    required: false
+    description: Field ForecastBatch from IopColArchive
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from IopColArchive

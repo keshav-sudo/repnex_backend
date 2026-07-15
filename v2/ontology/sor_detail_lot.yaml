@@ -1,0 +1,93 @@
+concept: sor_detail_lot
+display_name: SorDetailLot
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorDetailLot.
+synonyms:
+- sordetaillot
+- sor detail lot
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorDetailLot
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorDetailLot
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SorDetailLot
+  stock_qty_to_ship:
+    display: Stockqtytoship
+    type: decimal
+    required: false
+    description: Field StockQtyToShip from SorDetailLot
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from SorDetailLot
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from SorDetailLot
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from SorDetailLot
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from SorDetailLot
+  lot_expiry_date:
+    display: Lotexpirydate
+    type: date
+    required: false
+    description: Field LotExpiryDate from SorDetailLot
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from SorDetailLot
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from SorDetailLot
+  use_by_date:
+    display: Usebydate
+    type: date
+    required: false
+    description: Field UseByDate from SorDetailLot
+  sell_by_date:
+    display: Sellbydate
+    type: date
+    required: false
+    description: Field SellByDate from SorDetailLot
+  internal_expiry_date:
+    display: Internalexpirydate
+    type: date
+    required: false
+    description: Field InternalExpiryDate from SorDetailLot
+  manufacture_date:
+    display: Manufacturedate
+    type: date
+    required: false
+    description: Field ManufactureDate from SorDetailLot
+  dispatch_date:
+    display: Dispatchdate
+    type: date
+    required: false
+    description: Field DispatchDate from SorDetailLot
+  best_before_date:
+    display: Bestbeforedate
+    type: date
+    required: false
+    description: Field BestBeforeDate from SorDetailLot

@@ -1,0 +1,98 @@
+concept: ap_jnl_distrib
+display_name: ApJnlDistrib
+module: accounts_payable
+description: Auto-generated representation of the physical table ApJnlDistrib.
+synonyms:
+- apjnldistrib
+- ap jnl distrib
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ApJnlDistrib
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ApJnlDistrib
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApJnlDistrib
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ApJnlDistrib
+  sub_entry:
+    display: Subentry
+    type: decimal
+    required: false
+    description: Field SubEntry from ApJnlDistrib
+  expense_type:
+    display: Expensetype
+    type: string
+    required: false
+    description: Field ExpenseType from ApJnlDistrib
+  expense_gl_code:
+    display: Expenseglcode
+    type: string
+    required: false
+    description: Field ExpenseGlCode from ApJnlDistrib
+  distr_value:
+    display: Distrvalue
+    type: decimal
+    required: false
+    description: Field DistrValue from ApJnlDistrib
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ApJnlDistrib
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from ApJnlDistrib
+  analysis_entry:
+    display: Analysisentry
+    type: decimal
+    required: false
+    description: Field AnalysisEntry from ApJnlDistrib
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ApJnlDistrib
+  origin:
+    display: Origin
+    type: string
+    required: false
+    description: Field Origin from ApJnlDistrib
+  rev_charge_flag:
+    display: Revchargeflag
+    type: string
+    required: false
+    description: Field RevChargeFlag from ApJnlDistrib
+  rev_charge_tax_code:
+    display: Revchargetaxcode
+    type: string
+    required: false
+    description: Field RevChargeTaxCode from ApJnlDistrib
+  rev_charge_tax_value:
+    display: Revchargetaxvalue
+    type: decimal
+    required: false
+    description: Field RevChargeTaxValue from ApJnlDistrib
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from ApJnlDistrib
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from ApJnlDistrib

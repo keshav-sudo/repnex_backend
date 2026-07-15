@@ -1,0 +1,48 @@
+concept: inv_idx_ticket
+display_name: InvIdxTicket
+module: inventory
+description: Auto-generated representation of the physical table InvIdxTicket.
+synonyms:
+- invidxticket
+- inv idx ticket
+header_attributes:
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvIdxTicket
+  ticket_num:
+    display: Ticketnum
+    type: decimal
+    required: false
+    description: Field TicketNum from InvIdxTicket
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvIdxTicket
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvIdxTicket
+  qty_captured:
+    display: Qtycaptured
+    type: decimal
+    required: false
+    description: Field QtyCaptured from InvIdxTicket
+  times_captured:
+    display: Timescaptured
+    type: decimal
+    required: false
+    description: Field TimesCaptured from InvIdxTicket
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from InvIdxTicket
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from InvIdxTicket

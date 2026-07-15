@@ -1,0 +1,46 @@
+concept: ap_grp_pay_run_sup
+table: ApGrpPayRunSup
+alias: agprs
+fields:
+  payment_number: agprs.PaymentNumber
+  company: agprs.Company
+  supplier: agprs.Supplier
+  currency: agprs.Currency
+  gross_value_sup: agprs.GrossValueSup
+  gross_value_pay: agprs.GrossValuePay
+  disc_value_sup: agprs.DiscValueSup
+  disc_value_pay: agprs.DiscValuePay
+  wtax_sup: agprs.WtaxSup
+  wtax_pay: agprs.WtaxPay
+  net_value_sup: agprs.NetValueSup
+  net_value_pay: agprs.NetValuePay
+  tax_disc_sup: agprs.TaxDiscSup
+  tax_disc_pay: agprs.TaxDiscPay
+  qst_disc_sup: agprs.QstDiscSup
+  qst_disc_pay: agprs.QstDiscPay
+  with_taxable_sup: agprs.WithTaxableSup
+  with_taxable_pay: agprs.WithTaxablePay
+  pay_run_status: agprs.PayRunStatus
+  negative_flag: agprs.NegativeFlag
+  payment_type: agprs.PaymentType
+  chk_voided: agprs.ChkVoided
+  xref_payment_number: agprs.XrefPaymentNumber
+  xref_payment_type: agprs.XrefPaymentType
+  total_adjustments: agprs.TotalAdjustments
+  gross_value_primary: agprs.GrossValuePrimary
+  net_value_primary: agprs.NetValuePrimary
+  wtax_primary: agprs.WtaxPrimary
+  disc_value_primary: agprs.DiscValuePrimary
+  tax_disc_primary: agprs.TaxDiscPrimary
+  qst_disc_primary: agprs.QstDiscPrimary
+  with_taxable_primary: agprs.WithTaxablePrimary
+  currency_primary: agprs.CurrencyPrimary
+  gross_value_second: agprs.GrossValueSecond
+  net_value_second: agprs.NetValueSecond
+  wtax_second: agprs.WtaxSecond
+  disc_value_second: agprs.DiscValueSecond
+  tax_disc_second: agprs.TaxDiscSecond
+  qst_disc_second: agprs.QstDiscSecond
+  with_taxable_second: agprs.WithTaxableSecond
+  currency_second: agprs.CurrencySecond
+  xref_sup_currency: agprs.XrefSupCurrency

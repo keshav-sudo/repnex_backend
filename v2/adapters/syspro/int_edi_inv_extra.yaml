@@ -1,0 +1,38 @@
+concept: int_edi_inv_extra
+table: IntEdiInvExtra
+alias: ieie
+fields:
+  customer: ieie.Customer
+  document_type: ieie.DocumentType
+  invoice: ieie.Invoice
+  sold_to_name: ieie.SoldToName
+  sold_address1: ieie.SoldAddress1
+  sold_address2: ieie.SoldAddress2
+  sold_address3: ieie.SoldAddress3
+  sold_address3_loc: ieie.SoldAddress3Loc
+  sold_address4: ieie.SoldAddress4
+  sold_address5: ieie.SoldAddress5
+  postal_code: ieie.PostalCode
+  sold_gps_lat: ieie.SoldGpsLat
+  sold_gps_long: ieie.SoldGpsLong
+  company_reg_no: ieie.CompanyRegNo
+  ship_date: ieie.ShipDate
+  terms_desc: ieie.TermsDesc
+  terms_discount: ieie.TermsDiscount
+  terms_due_date: ieie.TermsDueDate
+  currency_code: ieie.CurrencyCode
+  currency_desc: ieie.CurrencyDesc
+  currency_rate: ieie.CurrencyRate
+  currency_mul_div: ieie.CurrencyMulDiv
+  for_value_exc_tax: ieie.ForValueExcTax
+  for_tax_value: ieie.ForTaxValue
+  for_gross_value: ieie.ForGrossValue
+  for_total_discount: ieie.ForTotalDiscount
+  for_terms_disc: ieie.ForTermsDisc
+  disc_pct: ieie.DiscPct
+  due_days: ieie.DueDays
+  disc_days: ieie.DiscDays
+  invoice_due_date: ieie.InvoiceDueDate
+  total_mass: ieie.TotalMass
+  total_volume: ieie.TotalVolume
+  total_quantity: ieie.TotalQuantity

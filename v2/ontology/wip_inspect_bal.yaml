@@ -1,0 +1,43 @@
+concept: wip_inspect_bal
+display_name: WipInspectBal
+module: work_in_progress
+description: Auto-generated representation of the physical table WipInspectBal.
+synonyms:
+- wipinspectbal
+- wip inspect bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from WipInspectBal
+  insp_reference:
+    display: Inspreference
+    type: string
+    required: false
+    description: Field InspReference from WipInspectBal
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipInspectBal
+  cur_inspect_value:
+    display: Curinspectvalue
+    type: decimal
+    required: false
+    description: Field CurInspectValue from WipInspectBal
+  clc_inspect_value:
+    display: Clcinspectvalue
+    type: decimal
+    required: false
+    description: Field ClcInspectValue from WipInspectBal
+  cur_inspect_qty:
+    display: Curinspectqty
+    type: decimal
+    required: false
+    description: Field CurInspectQty from WipInspectBal
+  clc_inspect_qty:
+    display: Clcinspectqty
+    type: decimal
+    required: false
+    description: Field ClcInspectQty from WipInspectBal

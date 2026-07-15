@@ -1,0 +1,21 @@
+concept: sqm_test_design
+table: SqmTestDesign
+alias: std1
+fields:
+  test_name: std1.TestName
+  test_version: std1.TestVersion
+  field_id: std1.FieldId
+  caption: std1.Caption
+  sqm_level: std1.SqmLevel
+  data_type: std1.DataType
+  validation_req: std1.ValidationReq
+  calculated_field: std1.CalculatedField
+  hide_calc_field: std1.HideCalcField
+  num_target: std1.NumTarget
+  num_upper_target: std1.NumUpperTarget
+  num_lower_target: std1.NumLowerTarget
+  alpha_target: std1.AlphaTarget
+  list_flag: std1.ListFlag
+  expiry_flag: std1.ExpiryFlag
+  expiry_number: std1.ExpiryNumber
+  coc_flag: std1.CocFlag

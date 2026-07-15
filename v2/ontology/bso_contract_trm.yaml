@@ -1,0 +1,63 @@
+concept: bso_contract_trm
+display_name: BsoContractTrm
+module: other
+description: Auto-generated representation of the physical table BsoContractTrm.
+synonyms:
+- bsocontracttrm
+- bso contract trm
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from BsoContractTrm
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from BsoContractTrm
+  cust_stock_code:
+    display: Custstockcode
+    type: string
+    required: false
+    description: Field CustStockCode from BsoContractTrm
+  day_range_start:
+    display: Dayrangestart
+    type: decimal
+    required: false
+    description: Field DayRangeStart from BsoContractTrm
+  day_range_finish:
+    display: Dayrangefinish
+    type: decimal
+    required: false
+    description: Field DayRangeFinish from BsoContractTrm
+  positive_pdiff:
+    display: Positivepdiff
+    type: decimal
+    required: false
+    description: Field PositivePdiff from BsoContractTrm
+  negative_pdiff:
+    display: Negativepdiff
+    type: decimal
+    required: false
+    description: Field NegativePdiff from BsoContractTrm
+  positive_qty_diff:
+    display: Positiveqtydiff
+    type: decimal
+    required: false
+    description: Field PositiveQtyDiff from BsoContractTrm
+  negative_qty_diff:
+    display: Negativeqtydiff
+    type: decimal
+    required: false
+    description: Field NegativeQtyDiff from BsoContractTrm
+  basis_diff_flag:
+    display: Basisdiffflag
+    type: string
+    required: false
+    description: Field BasisDiffFlag from BsoContractTrm
+  matching_method:
+    display: Matchingmethod
+    type: string
+    required: false
+    description: Field MatchingMethod from BsoContractTrm

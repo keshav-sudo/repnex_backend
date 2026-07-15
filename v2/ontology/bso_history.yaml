@@ -1,0 +1,58 @@
+concept: bso_history
+display_name: BsoHistory
+module: other
+description: Auto-generated representation of the physical table BsoHistory.
+synonyms:
+- bsohistory
+- bso history
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from BsoHistory
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from BsoHistory
+  cust_stock_code:
+    display: Custstockcode
+    type: string
+    required: false
+    description: Field CustStockCode from BsoHistory
+  rel_seq_num:
+    display: Relseqnum
+    type: decimal
+    required: false
+    description: Field RelSeqNum from BsoHistory
+  sequence_num:
+    display: Sequencenum
+    type: decimal
+    required: false
+    description: Field SequenceNum from BsoHistory
+  release_date:
+    display: Releasedate
+    type: date
+    required: false
+    description: Field ReleaseDate from BsoHistory
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from BsoHistory
+  accept_cume:
+    display: Acceptcume
+    type: decimal
+    required: false
+    description: Field AcceptCume from BsoHistory
+  accept_qty:
+    display: Acceptqty
+    type: decimal
+    required: false
+    description: Field AcceptQty from BsoHistory
+  rel_reference:
+    display: Relreference
+    type: string
+    required: false
+    description: Field RelReference from BsoHistory

@@ -1,0 +1,8 @@
+concept: bom_resource_mask
+table: BomResourceMask
+alias: brm
+fields:
+  work_centre: brm.WorkCentre
+  resource_mask: brm.ResourceMask
+  machine: brm.Machine
+  factor: brm.Factor

@@ -1,0 +1,63 @@
+concept: bom_machine
+display_name: BomMachine
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomMachine.
+synonyms:
+- bommachine
+- bom machine
+header_attributes:
+  machine:
+    display: Machine
+    type: string
+    required: false
+    description: Field Machine from BomMachine
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomMachine
+  mtd_std_hrs_earned:
+    display: Mtdstdhrsearned
+    type: decimal
+    required: false
+    description: Field MtdStdHrsEarned from BomMachine
+  mtd_non_prod_hours:
+    display: Mtdnonprodhours
+    type: decimal
+    required: false
+    description: Field MtdNonProdHours from BomMachine
+  mtd_act_prod_hours:
+    display: Mtdactprodhours
+    type: decimal
+    required: false
+    description: Field MtdActProdHours from BomMachine
+  std_hrs_per_month:
+    display: Stdhrspermonth
+    type: decimal
+    required: false
+    description: Field StdHrsPerMonth from BomMachine
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from BomMachine
+  shift_id:
+    display: Shiftid
+    type: string
+    required: false
+    description: Field ShiftId from BomMachine
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from BomMachine
+  prod_line:
+    display: Prodline
+    type: string
+    required: false
+    description: Field ProdLine from BomMachine
+  shift_code:
+    display: Shiftcode
+    type: string
+    required: false
+    description: Field ShiftCode from BomMachine

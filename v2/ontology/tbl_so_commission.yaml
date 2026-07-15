@@ -1,0 +1,23 @@
+concept: tbl_so_commission
+display_name: TblSoCommission
+module: other
+description: Auto-generated representation of the physical table TblSoCommission.
+synonyms:
+- tblsocommission
+- tbl so commission
+header_attributes:
+  commission_code:
+    display: Commissioncode
+    type: string
+    required: false
+    description: Field CommissionCode from TblSoCommission
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblSoCommission
+  commission_pct:
+    display: Commissionpct
+    type: decimal
+    required: false
+    description: Field CommissionPct from TblSoCommission

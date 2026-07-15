@@ -1,0 +1,15 @@
+concept: tbl_curr_dated_rates
+table: TblCurrDatedRates
+alias: tcdr
+fields:
+  currency: tcdr.Currency
+  currency_rate_type: tcdr.CurrencyRateType
+  effective_date: tcdr.EffectiveDate
+  effective_entry: tcdr.EffectiveEntry
+  exchange_rate: tcdr.ExchangeRate
+  mul_div: tcdr.MulDiv
+  update_date: tcdr.UpdateDate
+  update_time: tcdr.UpdateTime
+  update_type: tcdr.UpdateType
+  operator: tcdr.Operator
+  reason_for_change: tcdr.ReasonForChange

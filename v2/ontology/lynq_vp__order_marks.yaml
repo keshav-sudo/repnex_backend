@@ -1,0 +1,53 @@
+concept: lynq_vp__order_marks
+display_name: Lynq VP OrderMarks
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_OrderMarks.
+synonyms:
+- lynq_vp_ordermarks
+- lynq vp  order marks
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_OrderMarks
+  order_type_code:
+    display: Ordertypecode
+    type: string
+    required: false
+    description: Field OrderTypeCode from Lynq_VP_OrderMarks
+  order_number:
+    display: Ordernumber
+    type: string
+    required: false
+    description: Field OrderNumber from Lynq_VP_OrderMarks
+  operation_number:
+    display: Operationnumber
+    type: decimal
+    required: false
+    description: Field OperationNumber from Lynq_VP_OrderMarks
+  path_number:
+    display: Pathnumber
+    type: decimal
+    required: false
+    description: Field PathNumber from Lynq_VP_OrderMarks
+  sequence_number:
+    display: Sequencenumber
+    type: decimal
+    required: false
+    description: Field SequenceNumber from Lynq_VP_OrderMarks
+  captured_mark_key:
+    display: Capturedmarkkey
+    type: string
+    required: false
+    description: Field CapturedMarkKey from Lynq_VP_OrderMarks
+  captured_mark_value:
+    display: Capturedmarkvalue
+    type: string
+    required: false
+    description: Field CapturedMarkValue from Lynq_VP_OrderMarks
+  captured_mark_color:
+    display: Capturedmarkcolor
+    type: string
+    required: false
+    description: Field CapturedMarkColor from Lynq_VP_OrderMarks

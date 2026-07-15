@@ -1,0 +1,6 @@
+concept: ar_inter_co_pay_gl
+table: ArInterCoPayGl
+alias: aicpg1
+fields:
+  company: aicpg1.Company
+  gl_interco_pay_code: aicpg1.GlIntercoPayCode

@@ -1,0 +1,213 @@
+concept: sor_quote_det
+display_name: SorQuoteDet
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorQuoteDet.
+synonyms:
+- sorquotedet
+- sor quote det
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorQuoteDet
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SorQuoteDet
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from SorQuoteDet
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SorQuoteDet
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorQuoteDet
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SorQuoteDet
+  qty_ordered:
+    display: Qtyordered
+    type: decimal
+    required: false
+    description: Field QtyOrdered from SorQuoteDet
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from SorQuoteDet
+  prc_conversion:
+    display: Prcconversion
+    type: decimal
+    required: false
+    description: Field PrcConversion from SorQuoteDet
+  prc_factor:
+    display: Prcfactor
+    type: string
+    required: false
+    description: Field PrcFactor from SorQuoteDet
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from SorQuoteDet
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from SorQuoteDet
+  commission_code:
+    display: Commissioncode
+    type: string
+    required: false
+    description: Field CommissionCode from SorQuoteDet
+  disc1:
+    display: Disc1
+    type: decimal
+    required: false
+    description: Field Disc1 from SorQuoteDet
+  disc2:
+    display: Disc2
+    type: decimal
+    required: false
+    description: Field Disc2 from SorQuoteDet
+  disc3:
+    display: Disc3
+    type: decimal
+    required: false
+    description: Field Disc3 from SorQuoteDet
+  disc_val_flag:
+    display: Discvalflag
+    type: string
+    required: false
+    description: Field DiscValFlag from SorQuoteDet
+  disc_value:
+    display: Discvalue
+    type: decimal
+    required: false
+    description: Field DiscValue from SorQuoteDet
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from SorQuoteDet
+  order_conversion:
+    display: Orderconversion
+    type: decimal
+    required: false
+    description: Field OrderConversion from SorQuoteDet
+  order_factor:
+    display: Orderfactor
+    type: string
+    required: false
+    description: Field OrderFactor from SorQuoteDet
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from SorQuoteDet
+  buying_group:
+    display: Buyinggroup
+    type: string
+    required: false
+    description: Field BuyingGroup from SorQuoteDet
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from SorQuoteDet
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SorQuoteDet
+  qty_shipped:
+    display: Qtyshipped
+    type: decimal
+    required: false
+    description: Field QtyShipped from SorQuoteDet
+  unit_quantity:
+    display: Unitquantity
+    type: string
+    required: false
+    description: Field UnitQuantity from SorQuoteDet
+  conv_fact_unit_q:
+    display: Convfactunitq
+    type: decimal
+    required: false
+    description: Field ConvFactUnitQ from SorQuoteDet
+  alt_uom_unit_q:
+    display: Altuomunitq
+    type: string
+    required: false
+    description: Field AltUomUnitQ from SorQuoteDet
+  decimals_unit_q:
+    display: Decimalsunitq
+    type: decimal
+    required: false
+    description: Field DecimalsUnitQ from SorQuoteDet
+  selection_code:
+    display: Selectioncode
+    type: string
+    required: false
+    description: Field SelectionCode from SorQuoteDet
+  selection_type:
+    display: Selectiontype
+    type: string
+    required: false
+    description: Field SelectionType from SorQuoteDet
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SorQuoteDet
+  intrastat_exempt:
+    display: Intrastatexempt
+    type: string
+    required: false
+    description: Field IntrastatExempt from SorQuoteDet
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from SorQuoteDet
+  triang_disp_state:
+    display: Triangdispstate
+    type: string
+    required: false
+    description: Field TriangDispState from SorQuoteDet
+  triang_dest_state:
+    display: Triangdeststate
+    type: string
+    required: false
+    description: Field TriangDestState from SorQuoteDet
+  orig_country:
+    display: Origcountry
+    type: string
+    required: false
+    description: Field OrigCountry from SorQuoteDet
+  price_group_rule:
+    display: Pricegrouprule
+    type: decimal
+    required: false
+    description: Field PriceGroupRule from SorQuoteDet
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from SorQuoteDet
+  cat_line_number:
+    display: Catlinenumber
+    type: decimal
+    required: false
+    description: Field CatLineNumber from SorQuoteDet

@@ -1,0 +1,12 @@
+concept: eft_pay_format
+table: EftPayFormat
+alias: epf
+fields:
+  format_code: epf.FormatCode
+  format_name: epf.FormatName
+  format_type: epf.FormatType
+  format_class: epf.FormatClass
+  record_length: epf.RecordLength
+  balanced: epf.Balanced
+  file_ctl: epf.FileCtl
+  comp_ctl: epf.CompCtl

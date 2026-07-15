@@ -1,0 +1,188 @@
+concept: qot_structure
+display_name: QotStructure
+module: other
+description: Auto-generated representation of the physical table QotStructure.
+synonyms:
+- qotstructure
+- qot structure
+header_attributes:
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from QotStructure
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from QotStructure
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from QotStructure
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from QotStructure
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from QotStructure
+  operation_flag:
+    display: Operationflag
+    type: string
+    required: false
+    description: Field OperationFlag from QotStructure
+  qty_per:
+    display: Qtyper
+    type: decimal
+    required: false
+    description: Field QtyPer from QotStructure
+  scrap_percentage:
+    display: Scrappercentage
+    type: decimal
+    required: false
+    description: Field ScrapPercentage from QotStructure
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from QotStructure
+  optional_flag:
+    display: Optionalflag
+    type: string
+    required: false
+    description: Field OptionalFlag from QotStructure
+  print_flag:
+    display: Printflag
+    type: string
+    required: false
+    description: Field PrintFlag from QotStructure
+  scrap_print:
+    display: Scrapprint
+    type: string
+    required: false
+    description: Field ScrapPrint from QotStructure
+  reason_change:
+    display: Reasonchange
+    type: string
+    required: false
+    description: Field ReasonChange from QotStructure
+  ref_designator:
+    display: Refdesignator
+    type: string
+    required: false
+    description: Field RefDesignator from QotStructure
+  assembly_place:
+    display: Assemblyplace
+    type: string
+    required: false
+    description: Field AssemblyPlace from QotStructure
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from QotStructure
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from QotStructure
+  component_type:
+    display: Componenttype
+    type: string
+    required: false
+    description: Field ComponentType from QotStructure
+  kit_issue_flag:
+    display: Kitissueflag
+    type: string
+    required: false
+    description: Field KitIssueFlag from QotStructure
+  non_stock_com:
+    display: Nonstockcom
+    type: string
+    required: false
+    description: Field NonStockCom from QotStructure
+  margin_markup_pct:
+    display: Marginmarkuppct
+    type: decimal
+    required: false
+    description: Field MarginMarkupPct from QotStructure
+  manual_cost:
+    display: Manualcost
+    type: decimal
+    required: false
+    description: Field ManualCost from QotStructure
+  manual_cost_flag:
+    display: Manualcostflag
+    type: string
+    required: false
+    description: Field ManualCostFlag from QotStructure
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from QotStructure
+  com_version:
+    display: Comversion
+    type: string
+    required: false
+    description: Field ComVersion from QotStructure
+  com_release:
+    display: Comrelease
+    type: string
+    required: false
+    description: Field ComRelease from QotStructure
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from QotStructure
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from QotStructure
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from QotStructure
+  qty_per_ent:
+    display: Qtyperent
+    type: decimal
+    required: false
+    description: Field QtyPerEnt from QotStructure
+  scrap_quantity_ent:
+    display: Scrapquantityent
+    type: decimal
+    required: false
+    description: Field ScrapQuantityEnt from QotStructure
+  fixed_qty_per_ent:
+    display: Fixedqtyperent
+    type: decimal
+    required: false
+    description: Field FixedQtyPerEnt from QotStructure
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from QotStructure
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from QotStructure
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from QotStructure
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from QotStructure

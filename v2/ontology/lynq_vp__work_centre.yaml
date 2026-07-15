@@ -1,0 +1,123 @@
+concept: lynq_vp__work_centre
+display_name: Lynq VP WorkCentre
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_WorkCentre.
+synonyms:
+- lynq_vp_workcentre
+- lynq vp  work centre
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_WorkCentre
+  line_code:
+    display: Linecode
+    type: string
+    required: false
+    description: Field LineCode from Lynq_VP_WorkCentre
+  line_description:
+    display: Linedescription
+    type: string
+    required: false
+    description: Field LineDescription from Lynq_VP_WorkCentre
+  standard_resource_qty:
+    display: Standardresourceqty
+    type: decimal
+    required: false
+    description: Field StandardResourceQty from Lynq_VP_WorkCentre
+  line_change_time_min:
+    display: Linechangetimemin
+    type: decimal
+    required: false
+    description: Field LineChangeTimeMin from Lynq_VP_WorkCentre
+  tool_change_time_min:
+    display: Toolchangetimemin
+    type: decimal
+    required: false
+    description: Field ToolChangeTimeMin from Lynq_VP_WorkCentre
+  dept_code:
+    display: Deptcode
+    type: string
+    required: false
+    description: Field DeptCode from Lynq_VP_WorkCentre
+  week_template_id:
+    display: Weektemplateid
+    type: decimal
+    required: false
+    description: Field WeekTemplateID from Lynq_VP_WorkCentre
+  is_overlap_mode:
+    display: Isoverlapmode
+    type: string
+    required: false
+    description: Field IsOverlapMode from Lynq_VP_WorkCentre
+  resource_id:
+    display: Resourceid
+    type: decimal
+    required: false
+    description: Field ResourceID from Lynq_VP_WorkCentre
+  float_resource_usage:
+    display: Floatresourceusage
+    type: string
+    required: false
+    description: Field FloatResourceUsage from Lynq_VP_WorkCentre
+  min_resource_consumption:
+    display: Minresourceconsumption
+    type: decimal
+    required: false
+    description: Field MinResourceConsumption from Lynq_VP_WorkCentre
+  max_resource_consumption:
+    display: Maxresourceconsumption
+    type: decimal
+    required: false
+    description: Field MaxResourceConsumption from Lynq_VP_WorkCentre
+  rec_load_lvl:
+    display: Recloadlvl
+    type: decimal
+    required: false
+    description: Field RecLoadLvl from Lynq_VP_WorkCentre
+  line_tool_change_behaviour:
+    display: Linetoolchangebehaviour
+    type: decimal
+    required: false
+    description: Field LineToolChangeBehaviour from Lynq_VP_WorkCentre
+  min_time_res_cons:
+    display: Mintimerescons
+    type: decimal
+    required: false
+    description: Field MinTimeResCons from Lynq_VP_WorkCentre
+  max_time_interruption:
+    display: Maxtimeinterruption
+    type: decimal
+    required: false
+    description: Field MaxTimeInterruption from Lynq_VP_WorkCentre
+  float_discrete_resource_usage:
+    display: Floatdiscreteresourceusage
+    type: string
+    required: false
+    description: Field FloatDiscreteResourceUsage from Lynq_VP_WorkCentre
+  float_resource_usage_type:
+    display: Floatresourceusagetype
+    type: decimal
+    required: false
+    description: Field FloatResourceUsageType from Lynq_VP_WorkCentre
+  tool_code:
+    display: Toolcode
+    type: string
+    required: false
+    description: Field ToolCode from Lynq_VP_WorkCentre
+  tool_priority:
+    display: Toolpriority
+    type: decimal
+    required: false
+    description: Field ToolPriority from Lynq_VP_WorkCentre
+  is_shared_tool:
+    display: Issharedtool
+    type: string
+    required: false
+    description: Field IsSharedTool from Lynq_VP_WorkCentre
+  sort_sequence:
+    display: Sortsequence
+    type: decimal
+    required: false
+    description: Field SortSequence from Lynq_VP_WorkCentre

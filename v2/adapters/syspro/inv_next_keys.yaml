@@ -1,0 +1,7 @@
+concept: inv_next_keys
+table: InvNextKeys
+alias: ink
+fields:
+  company: ink.Company
+  key_type: ink.KeyType
+  key_next: ink.KeyNext

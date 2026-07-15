@@ -1,0 +1,10 @@
+concept: sor_load_transport
+table: SorLoadTransport
+alias: slt
+fields:
+  transport: slt.Transport
+  transport_desc: slt.TransportDesc
+  reference: slt.Reference
+  mass: slt.Mass
+  volume: slt.Volume
+  employee: slt.Employee

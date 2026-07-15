@@ -1,0 +1,6 @@
+concept: sor_quote_control
+table: SorQuoteControl
+alias: sqc
+fields:
+  ctl_flag: sqc.CtlFlag
+  next_quick_quote: sqc.NextQuickQuote

@@ -1,0 +1,93 @@
+concept: abc_element
+display_name: AbcElement
+module: other
+description: Auto-generated representation of the physical table AbcElement.
+synonyms:
+- abcelement
+- abc element
+header_attributes:
+  element:
+    display: Element
+    type: string
+    required: false
+    description: Field Element from AbcElement
+  calculation_method:
+    display: Calculationmethod
+    type: string
+    required: false
+    description: Field CalculationMethod from AbcElement
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AbcElement
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from AbcElement
+  rate:
+    display: Rate
+    type: decimal
+    required: false
+    description: Field Rate from AbcElement
+  group_code:
+    display: Groupcode
+    type: string
+    required: false
+    description: Field GroupCode from AbcElement
+  element_nar1:
+    display: Elementnar1
+    type: string
+    required: false
+    description: Field ElementNar1 from AbcElement
+  element_nar2:
+    display: Elementnar2
+    type: string
+    required: false
+    description: Field ElementNar2 from AbcElement
+  element_nar3:
+    display: Elementnar3
+    type: string
+    required: false
+    description: Field ElementNar3 from AbcElement
+  element_nar4:
+    display: Elementnar4
+    type: string
+    required: false
+    description: Field ElementNar4 from AbcElement
+  element_nar5:
+    display: Elementnar5
+    type: string
+    required: false
+    description: Field ElementNar5 from AbcElement
+  element_nar6:
+    display: Elementnar6
+    type: string
+    required: false
+    description: Field ElementNar6 from AbcElement
+  element_nar7:
+    display: Elementnar7
+    type: string
+    required: false
+    description: Field ElementNar7 from AbcElement
+  element_nar8:
+    display: Elementnar8
+    type: string
+    required: false
+    description: Field ElementNar8 from AbcElement
+  user_def1:
+    display: Userdef1
+    type: string
+    required: false
+    description: Field UserDef1 from AbcElement
+  user_def2:
+    display: Userdef2
+    type: string
+    required: false
+    description: Field UserDef2 from AbcElement
+  user_def3:
+    display: Userdef3
+    type: decimal
+    required: false
+    description: Field UserDef3 from AbcElement

@@ -1,0 +1,63 @@
+concept: srs_archive_csh
+display_name: SrsArchiveCSH
+module: other
+description: Auto-generated representation of the physical table SrsArchiveCSH.
+synonyms:
+- srsarchivecsh
+- srs archive csh
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveCSH
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveCSH
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveCSH
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveCSH
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveCSH
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveCSH
+  bank_id:
+    display: Bankid
+    type: string
+    required: false
+    description: Field BankId from SrsArchiveCSH
+  bank_name:
+    display: Bankname
+    type: string
+    required: false
+    description: Field BankName from SrsArchiveCSH
+  payment_date_cymd:
+    display: Paymentdatecymd
+    type: date
+    required: false
+    description: Field PaymentDateCymd from SrsArchiveCSH
+  supplier_name:
+    display: Suppliername
+    type: string
+    required: false
+    description: Field SupplierName from SrsArchiveCSH
+  tot_check_number:
+    display: Totchecknumber
+    type: decimal
+    required: false
+    description: Field TotCheckNumber from SrsArchiveCSH

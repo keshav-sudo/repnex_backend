@@ -1,0 +1,9 @@
+concept: sal_area
+table: SalArea
+alias: sa
+fields:
+  area: sa.Area
+  description: sa.Description
+  tax_code: sa.TaxCode
+  prov_tax_flag: sa.ProvTaxFlag
+  area_gst_code: sa.AreaGstCode

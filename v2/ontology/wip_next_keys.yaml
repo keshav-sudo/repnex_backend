@@ -1,0 +1,18 @@
+concept: wip_next_keys
+display_name: WipNextKeys
+module: work_in_progress
+description: Auto-generated representation of the physical table WipNextKeys.
+synonyms:
+- wipnextkeys
+- wip next keys
+header_attributes:
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from WipNextKeys
+  key_next:
+    display: Keynext
+    type: decimal
+    required: false
+    description: Field KeyNext from WipNextKeys

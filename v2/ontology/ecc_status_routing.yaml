@@ -1,0 +1,18 @@
+concept: ecc_status_routing
+display_name: EccStatusRouting
+module: other
+description: Auto-generated representation of the physical table EccStatusRouting.
+synonyms:
+- eccstatusrouting
+- ecc status routing
+header_attributes:
+  from_status:
+    display: Fromstatus
+    type: string
+    required: false
+    description: Field FromStatus from EccStatusRouting
+  to_status:
+    display: Tostatus
+    type: string
+    required: false
+    description: Field ToStatus from EccStatusRouting

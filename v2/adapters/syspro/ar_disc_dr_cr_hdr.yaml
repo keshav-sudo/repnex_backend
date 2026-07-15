@@ -1,0 +1,19 @@
+concept: ar_disc_dr_cr_hdr
+table: ArDiscDrCrHdr
+alias: addch
+fields:
+  customer: addch.Customer
+  disc_dr_cr: addch.DiscDrCr
+  document_type: addch.DocumentType
+  discount_status: addch.DiscountStatus
+  dr_cr_value: addch.DrCrValue
+  dr_cr_tax: addch.DrCrTax
+  post_year: addch.PostYear
+  post_period: addch.PostPeriod
+  invoice: addch.Invoice
+  entry_number: addch.EntryNumber
+  pay_date: addch.PayDate
+  cash_journal: addch.CashJournal
+  jnl_entry: addch.JnlEntry
+  dr_cr_type: addch.DrCrType
+  tax_code: addch.TaxCode

@@ -1,0 +1,18 @@
+concept: sqm_transaction
+table: SqmTransaction
+alias: st1
+fields:
+  inspect_type: st1.InspectType
+  inspect_number: st1.InspectNumber
+  lot: st1.Lot
+  trn_date: st1.TrnDate
+  line: st1.Line
+  trn_type: st1.TrnType
+  trn_qty: st1.TrnQty
+  accept_qty: st1.AcceptQty
+  reject_qty: st1.RejectQty
+  inspector_code: st1.InspectorCode
+  narration: st1.Narration
+  sample_number: st1.SampleNumber
+  sample_test: st1.SampleTest
+  trn_time: st1.TrnTime

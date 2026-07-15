@@ -1,0 +1,9 @@
+concept: lynq_vp__marks
+table: Lynq_VP_Marks
+alias: lvpm
+fields:
+  id: lvpm.ID
+  mark_key: lvpm.MarkKey
+  mark_value: lvpm.MarkValue
+  color: lvpm.Color
+  macola_fields: lvpm.MacolaFields

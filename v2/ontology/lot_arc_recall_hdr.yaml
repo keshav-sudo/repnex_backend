@@ -1,0 +1,53 @@
+concept: lot_arc_recall_hdr
+display_name: LotArcRecallHdr
+module: other
+description: Auto-generated representation of the physical table LotArcRecallHdr.
+synonyms:
+- lotarcrecallhdr
+- lot arc recall hdr
+header_attributes:
+  product_recall:
+    display: Productrecall
+    type: string
+    required: false
+    description: Field ProductRecall from LotArcRecallHdr
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from LotArcRecallHdr
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from LotArcRecallHdr
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from LotArcRecallHdr
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from LotArcRecallHdr
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from LotArcRecallHdr
+  end_time:
+    display: Endtime
+    type: decimal
+    required: false
+    description: Field EndTime from LotArcRecallHdr
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from LotArcRecallHdr
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from LotArcRecallHdr

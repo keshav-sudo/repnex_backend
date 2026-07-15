@@ -1,0 +1,38 @@
+concept: inv_inspect_doc_ser
+display_name: InvInspectDocSer
+module: inventory
+description: Auto-generated representation of the physical table InvInspectDocSer.
+synonyms:
+- invinspectdocser
+- inv inspect doc ser
+header_attributes:
+  transaction_type:
+    display: Transactiontype
+    type: string
+    required: false
+    description: Field TransactionType from InvInspectDocSer
+  document_num:
+    display: Documentnum
+    type: decimal
+    required: false
+    description: Field DocumentNum from InvInspectDocSer
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from InvInspectDocSer
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvInspectDocSer
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from InvInspectDocSer
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from InvInspectDocSer

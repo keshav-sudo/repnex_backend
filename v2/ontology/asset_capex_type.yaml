@@ -1,0 +1,18 @@
+concept: asset_capex_type
+display_name: AssetCapexType
+module: assets
+description: Auto-generated representation of the physical table AssetCapexType.
+synonyms:
+- assetcapextype
+- asset capex type
+header_attributes:
+  capex_type:
+    display: Capextype
+    type: string
+    required: false
+    description: Field CapexType from AssetCapexType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetCapexType

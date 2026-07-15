@@ -1,0 +1,68 @@
+concept: prj_proj_hier
+display_name: PrjProjHier
+module: other
+description: Auto-generated representation of the physical table PrjProjHier.
+synonyms:
+- prjprojhier
+- prj proj hier
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from PrjProjHier
+  hier_head:
+    display: Hierhead
+    type: string
+    required: false
+    description: Field HierHead from PrjProjHier
+  section1:
+    display: Section1
+    type: string
+    required: false
+    description: Field Section1 from PrjProjHier
+  section2:
+    display: Section2
+    type: string
+    required: false
+    description: Field Section2 from PrjProjHier
+  section3:
+    display: Section3
+    type: string
+    required: false
+    description: Field Section3 from PrjProjHier
+  section4:
+    display: Section4
+    type: string
+    required: false
+    description: Field Section4 from PrjProjHier
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from PrjProjHier
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from PrjProjHier
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from PrjProjHier
+  posting_date:
+    display: Postingdate
+    type: date
+    required: false
+    description: Field PostingDate from PrjProjHier
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from PrjProjHier
+  post_job:
+    display: Postjob
+    type: string
+    required: false
+    description: Field PostJob from PrjProjHier

@@ -1,0 +1,278 @@
+concept: tpm_promotion
+display_name: TpmPromotion
+module: other
+description: Auto-generated representation of the physical table TpmPromotion.
+synonyms:
+- tpmpromotion
+- tpm promotion
+header_attributes:
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from TpmPromotion
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TpmPromotion
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from TpmPromotion
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from TpmPromotion
+  stock_category:
+    display: Stockcategory
+    type: string
+    required: false
+    description: Field StockCategory from TpmPromotion
+  stock_cat_code:
+    display: Stockcatcode
+    type: string
+    required: false
+    description: Field StockCatCode from TpmPromotion
+  customer_category:
+    display: Customercategory
+    type: string
+    required: false
+    description: Field CustomerCategory from TpmPromotion
+  cust_cat_code:
+    display: Custcatcode
+    type: string
+    required: false
+    description: Field CustCatCode from TpmPromotion
+  amount_type:
+    display: Amounttype
+    type: string
+    required: false
+    description: Field AmountType from TpmPromotion
+  basis:
+    display: Basis
+    type: string
+    required: false
+    description: Field Basis from TpmPromotion
+  threshold:
+    display: Threshold
+    type: decimal
+    required: false
+    description: Field Threshold from TpmPromotion
+  promotion_value:
+    display: Promotionvalue
+    type: decimal
+    required: false
+    description: Field PromotionValue from TpmPromotion
+  gross_net:
+    display: Grossnet
+    type: string
+    required: false
+    description: Field GrossNet from TpmPromotion
+  promotion_type:
+    display: Promotiontype
+    type: string
+    required: false
+    description: Field PromotionType from TpmPromotion
+  off_invoice_type:
+    display: Offinvoicetype
+    type: string
+    required: false
+    description: Field OffInvoiceType from TpmPromotion
+  accrual_ldg:
+    display: Accrualldg
+    type: string
+    required: false
+    description: Field AccrualLdg from TpmPromotion
+  expense_ldg:
+    display: Expenseldg
+    type: string
+    required: false
+    description: Field ExpenseLdg from TpmPromotion
+  deduction_code:
+    display: Deductioncode
+    type: string
+    required: false
+    description: Field DeductionCode from TpmPromotion
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from TpmPromotion
+  date_type:
+    display: Datetype
+    type: string
+    required: false
+    description: Field DateType from TpmPromotion
+  accrual_type:
+    display: Accrualtype
+    type: string
+    required: false
+    description: Field AccrualType from TpmPromotion
+  apply_sub:
+    display: Applysub
+    type: string
+    required: false
+    description: Field ApplySub from TpmPromotion
+  free_good_type:
+    display: Freegoodtype
+    type: string
+    required: false
+    description: Field FreeGoodType from TpmPromotion
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from TpmPromotion
+  max_threshold:
+    display: Maxthreshold
+    type: decimal
+    required: false
+    description: Field MaxThreshold from TpmPromotion
+  global_flag:
+    display: Globalflag
+    type: string
+    required: false
+    description: Field GlobalFlag from TpmPromotion
+  free_goods_apply_flag:
+    display: Freegoodsapplyflag
+    type: string
+    required: false
+    description: Field FreeGoodsApplyFlag from TpmPromotion
+  invoice_price:
+    display: Invoiceprice
+    type: decimal
+    required: false
+    description: Field InvoicePrice from TpmPromotion
+  customer_price:
+    display: Customerprice
+    type: decimal
+    required: false
+    description: Field CustomerPrice from TpmPromotion
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from TpmPromotion
+  tiered_prom_flag:
+    display: Tieredpromflag
+    type: string
+    required: false
+    description: Field TieredPromFlag from TpmPromotion
+  multiple_of_flag:
+    display: Multipleofflag
+    type: string
+    required: false
+    description: Field MultipleOfFlag from TpmPromotion
+  free_good_rounding:
+    display: Freegoodrounding
+    type: string
+    required: false
+    description: Field FreeGoodRounding from TpmPromotion
+  tpm_sequence:
+    display: Tpmsequence
+    type: decimal
+    required: false
+    description: Field TpmSequence from TpmPromotion
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from TpmPromotion
+  price_code_cus_prc:
+    display: Pricecodecusprc
+    type: string
+    required: false
+    description: Field PriceCodeCusPrc from TpmPromotion
+  stock_cat_type:
+    display: Stockcattype
+    type: string
+    required: false
+    description: Field StockCatType from TpmPromotion
+  stock_category2:
+    display: Stockcategory2
+    type: string
+    required: false
+    description: Field StockCategory2 from TpmPromotion
+  stock_cat_code2:
+    display: Stockcatcode2
+    type: string
+    required: false
+    description: Field StockCatCode2 from TpmPromotion
+  customer_cat_type:
+    display: Customercattype
+    type: string
+    required: false
+    description: Field CustomerCatType from TpmPromotion
+  customer_category2:
+    display: Customercategory2
+    type: string
+    required: false
+    description: Field CustomerCategory2 from TpmPromotion
+  cust_cat_code2:
+    display: Custcatcode2
+    type: string
+    required: false
+    description: Field CustCatCode2 from TpmPromotion
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from TpmPromotion
+  limit_used:
+    display: Limitused
+    type: string
+    required: false
+    description: Field LimitUsed from TpmPromotion
+  limit_type:
+    display: Limittype
+    type: string
+    required: false
+    description: Field LimitType from TpmPromotion
+  assoc_stock_cat:
+    display: Assocstockcat
+    type: string
+    required: false
+    description: Field AssocStockCat from TpmPromotion
+  assoc_stock_code:
+    display: Assocstockcode
+    type: string
+    required: false
+    description: Field AssocStockCode from TpmPromotion
+  tax_code_accrual:
+    display: Taxcodeaccrual
+    type: string
+    required: false
+    description: Field TaxCodeAccrual from TpmPromotion
+  fst_code_accrual:
+    display: Fstcodeaccrual
+    type: string
+    required: false
+    description: Field FstCodeAccrual from TpmPromotion
+  promo_sel_flag:
+    display: Promoselflag
+    type: string
+    required: false
+    description: Field PromoSelFlag from TpmPromotion
+  promo_group_flag:
+    display: Promogroupflag
+    type: string
+    required: false
+    description: Field PromoGroupFlag from TpmPromotion
+  promo_group_max:
+    display: Promogroupmax
+    type: decimal
+    required: false
+    description: Field PromoGroupMax from TpmPromotion
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from TpmPromotion
+  price_list_cus_prc:
+    display: Pricelistcusprc
+    type: string
+    required: false
+    description: Field PriceListCusPrc from TpmPromotion

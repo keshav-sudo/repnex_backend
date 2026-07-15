@@ -1,0 +1,143 @@
+concept: lynq_vp_bpl__src_vp_resource_item_operation
+display_name: Lynq VP BPL Src VPResourceItemOperation
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_BPL_Src_VPResourceItemOperation.
+synonyms:
+- lynq_vp_bpl_src_vpresourceitemoperation
+- lynq vp bpl  src vp resource item operation
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_BPL_Src_VPResourceItemOperation
+  res_id:
+    display: Resid
+    type: decimal
+    required: false
+    description: Field ResID from Lynq_VP_BPL_Src_VPResourceItemOperation
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from Lynq_VP_BPL_Src_VPResourceItemOperation
+  oper_code:
+    display: Opercode
+    type: string
+    required: false
+    description: Field OperCode from Lynq_VP_BPL_Src_VPResourceItemOperation
+  setup_quantity_ordered:
+    display: Setupquantityordered
+    type: decimal
+    required: false
+    description: Field SetupQuantityOrdered from Lynq_VP_BPL_Src_VPResourceItemOperation
+  setup_batch_size:
+    display: Setupbatchsize
+    type: decimal
+    required: false
+    description: Field SetupBatchSize from Lynq_VP_BPL_Src_VPResourceItemOperation
+  setup_cycles_per_batch:
+    display: Setupcyclesperbatch
+    type: decimal
+    required: false
+    description: Field SetupCyclesPerBatch from Lynq_VP_BPL_Src_VPResourceItemOperation
+  setup_people_hrs_per_cycle:
+    display: Setuppeoplehrspercycle
+    type: decimal
+    required: false
+    description: Field SetupPeopleHrsPerCycle from Lynq_VP_BPL_Src_VPResourceItemOperation
+  setup_people_per_cycle:
+    display: Setuppeoplepercycle
+    type: decimal
+    required: false
+    description: Field SetupPeoplePerCycle from Lynq_VP_BPL_Src_VPResourceItemOperation
+  setup_machine_hrs_per_cycle:
+    display: Setupmachinehrspercycle
+    type: decimal
+    required: false
+    description: Field SetupMachineHrsPerCycle from Lynq_VP_BPL_Src_VPResourceItemOperation
+  setup_machines_per_cycle:
+    display: Setupmachinespercycle
+    type: decimal
+    required: false
+    description: Field SetupMachinesPerCycle from Lynq_VP_BPL_Src_VPResourceItemOperation
+  setup_labour_time_fixed:
+    display: Setuplabourtimefixed
+    type: decimal
+    required: false
+    description: Field SetupLabourTimeFixed from Lynq_VP_BPL_Src_VPResourceItemOperation
+  setup_machine_time_fixed:
+    display: Setupmachinetimefixed
+    type: decimal
+    required: false
+    description: Field SetupMachineTimeFixed from Lynq_VP_BPL_Src_VPResourceItemOperation
+  batch_size:
+    display: Batchsize
+    type: decimal
+    required: false
+    description: Field BatchSize from Lynq_VP_BPL_Src_VPResourceItemOperation
+  cycles_per_batch:
+    display: Cyclesperbatch
+    type: decimal
+    required: false
+    description: Field CyclesPerBatch from Lynq_VP_BPL_Src_VPResourceItemOperation
+  people_hrs_per_cycle:
+    display: Peoplehrspercycle
+    type: decimal
+    required: false
+    description: Field PeopleHrsPerCycle from Lynq_VP_BPL_Src_VPResourceItemOperation
+  people_per_cycle:
+    display: Peoplepercycle
+    type: decimal
+    required: false
+    description: Field PeoplePerCycle from Lynq_VP_BPL_Src_VPResourceItemOperation
+  machine_hrs_per_cycle:
+    display: Machinehrspercycle
+    type: decimal
+    required: false
+    description: Field MachineHrsPerCycle from Lynq_VP_BPL_Src_VPResourceItemOperation
+  machines_per_cycle:
+    display: Machinespercycle
+    type: decimal
+    required: false
+    description: Field MachinesPerCycle from Lynq_VP_BPL_Src_VPResourceItemOperation
+  run_labour_time_fixed:
+    display: Runlabourtimefixed
+    type: decimal
+    required: false
+    description: Field RunLabourTimeFixed from Lynq_VP_BPL_Src_VPResourceItemOperation
+  run_machine_time_fixed:
+    display: Runmachinetimefixed
+    type: decimal
+    required: false
+    description: Field RunMachineTimeFixed from Lynq_VP_BPL_Src_VPResourceItemOperation
+  overlap_fg:
+    display: Overlapfg
+    type: string
+    required: false
+    description: Field OverlapFg from Lynq_VP_BPL_Src_VPResourceItemOperation
+  overlap_pt:
+    display: Overlappt
+    type: decimal
+    required: false
+    description: Field OverlapPt from Lynq_VP_BPL_Src_VPResourceItemOperation
+  move_time:
+    display: Movetime
+    type: decimal
+    required: false
+    description: Field MoveTime from Lynq_VP_BPL_Src_VPResourceItemOperation
+  queue_time:
+    display: Queuetime
+    type: decimal
+    required: false
+    description: Field QueueTime from Lynq_VP_BPL_Src_VPResourceItemOperation
+  wc_stop_time:
+    display: Wcstoptime
+    type: decimal
+    required: false
+    description: Field WcStopTime from Lynq_VP_BPL_Src_VPResourceItemOperation
+  processing_time:
+    display: Processingtime
+    type: decimal
+    required: false
+    description: Field ProcessingTime from Lynq_VP_BPL_Src_VPResourceItemOperation

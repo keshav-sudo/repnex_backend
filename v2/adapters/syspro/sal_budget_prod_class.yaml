@@ -1,0 +1,32 @@
+concept: sal_budget_prod_class
+table: SalBudgetProdClass
+alias: sbpc
+fields:
+  branch: sbpc.Branch
+  product_class: sbpc.ProductClass
+  sales1: sbpc.Sales1
+  sales2: sbpc.Sales2
+  sales3: sbpc.Sales3
+  sales4: sbpc.Sales4
+  sales5: sbpc.Sales5
+  sales6: sbpc.Sales6
+  sales7: sbpc.Sales7
+  sales8: sbpc.Sales8
+  sales9: sbpc.Sales9
+  sales10: sbpc.Sales10
+  sales11: sbpc.Sales11
+  sales12: sbpc.Sales12
+  sales13: sbpc.Sales13
+  profit1: sbpc.Profit1
+  profit2: sbpc.Profit2
+  profit3: sbpc.Profit3
+  profit4: sbpc.Profit4
+  profit5: sbpc.Profit5
+  profit6: sbpc.Profit6
+  profit7: sbpc.Profit7
+  profit8: sbpc.Profit8
+  profit9: sbpc.Profit9
+  profit10: sbpc.Profit10
+  profit11: sbpc.Profit11
+  profit12: sbpc.Profit12
+  profit13: sbpc.Profit13

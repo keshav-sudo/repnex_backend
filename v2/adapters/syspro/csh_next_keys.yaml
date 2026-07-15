@@ -1,0 +1,6 @@
+concept: csh_next_keys
+table: CshNextKeys
+alias: cnk
+fields:
+  key_type: cnk.KeyType
+  key_next: cnk.KeyNext

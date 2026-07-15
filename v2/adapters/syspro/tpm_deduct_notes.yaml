@@ -1,0 +1,14 @@
+concept: tpm_deduct_notes
+table: TpmDeductNotes
+alias: tdn
+fields:
+  note_type: tdn.NoteType
+  customer: tdn.Customer
+  deduct_customer: tdn.DeductCustomer
+  trn_date: tdn.TrnDate
+  trn_time: tdn.TrnTime
+  line: tdn.Line
+  text: tdn.Text
+  operator: tdn.Operator
+  note_date: tdn.NoteDate
+  note_time: tdn.NoteTime

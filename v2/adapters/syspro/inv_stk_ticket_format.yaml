@@ -1,0 +1,8 @@
+concept: inv_stk_ticket_format
+table: InvStkTicketFormat
+alias: istf
+fields:
+  label_form_type: istf.LabelFormType
+  document_format: istf.DocumentFormat
+  document_record_type: istf.DocumentRecordType
+  format_info: istf.FormatInfo

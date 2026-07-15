@@ -1,0 +1,63 @@
+concept: sqm_nc_standard
+display_name: SqmNcStandard
+module: other
+description: Auto-generated representation of the physical table SqmNcStandard.
+synonyms:
+- sqmncstandard
+- sqm nc standard
+header_attributes:
+  conform_standard:
+    display: Conformstandard
+    type: string
+    required: false
+    description: Field ConformStandard from SqmNcStandard
+  stan_description:
+    display: Standescription
+    type: string
+    required: false
+    description: Field StanDescription from SqmNcStandard
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from SqmNcStandard
+  severity_level:
+    display: Severitylevel
+    type: string
+    required: false
+    description: Field SeverityLevel from SqmNcStandard
+  conform_type:
+    display: Conformtype
+    type: string
+    required: false
+    description: Field ConformType from SqmNcStandard
+  result_hours:
+    display: Resulthours
+    type: decimal
+    required: false
+    description: Field ResultHours from SqmNcStandard
+  nc_process:
+    display: Ncprocess
+    type: string
+    required: false
+    description: Field NcProcess from SqmNcStandard
+  require_close:
+    display: Requireclose
+    type: string
+    required: false
+    description: Field RequireClose from SqmNcStandard
+  require_ca:
+    display: Requireca
+    type: string
+    required: false
+    description: Field RequireCa from SqmNcStandard
+  require_pa:
+    display: Requirepa
+    type: string
+    required: false
+    description: Field RequirePa from SqmNcStandard
+  require_audit:
+    display: Requireaudit
+    type: string
+    required: false
+    description: Field RequireAudit from SqmNcStandard

@@ -1,0 +1,78 @@
+concept: ar_invoice_reference
+display_name: ArInvoiceReference
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArInvoiceReference.
+synonyms:
+- arinvoicereference
+- ar invoice reference
+header_attributes:
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArInvoiceReference
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArInvoiceReference
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArInvoiceReference
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ArInvoiceReference
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from ArInvoiceReference
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from ArInvoiceReference
+  allocated_by_program:
+    display: Allocatedbyprogram
+    type: string
+    required: false
+    description: Field AllocatedByProgram from ArInvoiceReference
+  allocated_date:
+    display: Allocateddate
+    type: date
+    required: false
+    description: Field AllocatedDate from ArInvoiceReference
+  allocated_time:
+    display: Allocatedtime
+    type: decimal
+    required: false
+    description: Field AllocatedTime from ArInvoiceReference
+  allocated_by_oper:
+    display: Allocatedbyoper
+    type: string
+    required: false
+    description: Field AllocatedByOper from ArInvoiceReference
+  created_by_program:
+    display: Createdbyprogram
+    type: string
+    required: false
+    description: Field CreatedByProgram from ArInvoiceReference
+  created_date:
+    display: Createddate
+    type: date
+    required: false
+    description: Field CreatedDate from ArInvoiceReference
+  created_time:
+    display: Createdtime
+    type: decimal
+    required: false
+    description: Field CreatedTime from ArInvoiceReference
+  created_by_oper:
+    display: Createdbyoper
+    type: string
+    required: false
+    description: Field CreatedByOper from ArInvoiceReference

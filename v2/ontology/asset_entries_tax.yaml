@@ -1,0 +1,243 @@
+concept: asset_entries_tax
+display_name: AssetEntriesTax
+module: assets
+description: Auto-generated representation of the physical table AssetEntriesTax.
+synonyms:
+- assetentriestax
+- asset entries tax
+header_attributes:
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetEntriesTax
+  entry_year:
+    display: Entryyear
+    type: decimal
+    required: false
+    description: Field EntryYear from AssetEntriesTax
+  entry_month:
+    display: Entrymonth
+    type: decimal
+    required: false
+    description: Field EntryMonth from AssetEntriesTax
+  system_date:
+    display: Systemdate
+    type: date
+    required: false
+    description: Field SystemDate from AssetEntriesTax
+  system_time:
+    display: Systemtime
+    type: decimal
+    required: false
+    description: Field SystemTime from AssetEntriesTax
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from AssetEntriesTax
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from AssetEntriesTax
+  entry_amount:
+    display: Entryamount
+    type: decimal
+    required: false
+    description: Field EntryAmount from AssetEntriesTax
+  asset_cost:
+    display: Assetcost
+    type: decimal
+    required: false
+    description: Field AssetCost from AssetEntriesTax
+  asset_current_value:
+    display: Assetcurrentvalue
+    type: decimal
+    required: false
+    description: Field AssetCurrentValue from AssetEntriesTax
+  entry_qty:
+    display: Entryqty
+    type: decimal
+    required: false
+    description: Field EntryQty from AssetEntriesTax
+  asset_qty:
+    display: Assetqty
+    type: decimal
+    required: false
+    description: Field AssetQty from AssetEntriesTax
+  depn_ytd:
+    display: Depnytd
+    type: decimal
+    required: false
+    description: Field DepnYtd from AssetEntriesTax
+  depn_prev_year:
+    display: Depnprevyear
+    type: decimal
+    required: false
+    description: Field DepnPrevYear from AssetEntriesTax
+  accum_depn:
+    display: Accumdepn
+    type: decimal
+    required: false
+    description: Field AccumDepn from AssetEntriesTax
+  residual_value:
+    display: Residualvalue
+    type: decimal
+    required: false
+    description: Field ResidualValue from AssetEntriesTax
+  depn_code:
+    display: Depncode
+    type: string
+    required: false
+    description: Field DepnCode from AssetEntriesTax
+  depn_rate:
+    display: Depnrate
+    type: decimal
+    required: false
+    description: Field DepnRate from AssetEntriesTax
+  depn_start_date:
+    display: Depnstartdate
+    type: date
+    required: false
+    description: Field DepnStartDate from AssetEntriesTax
+  thruput_eul:
+    display: Thruputeul
+    type: decimal
+    required: false
+    description: Field ThruputEul from AssetEntriesTax
+  reval_reserve_to_date:
+    display: Revalreservetodate
+    type: decimal
+    required: false
+    description: Field RevalReserveToDate from AssetEntriesTax
+  stat_gl_code:
+    display: Statglcode
+    type: string
+    required: false
+    description: Field StatGlCode from AssetEntriesTax
+  number_of_periods:
+    display: Numberofperiods
+    type: decimal
+    required: false
+    description: Field NumberOfPeriods from AssetEntriesTax
+  number_of_years:
+    display: Numberofyears
+    type: decimal
+    required: false
+    description: Field NumberOfYears from AssetEntriesTax
+  total_periods_td:
+    display: Totalperiodstd
+    type: decimal
+    required: false
+    description: Field TotalPeriodsTd from AssetEntriesTax
+  min_book_value:
+    display: Minbookvalue
+    type: decimal
+    required: false
+    description: Field MinBookValue from AssetEntriesTax
+  suspend:
+    display: Suspend
+    type: string
+    required: false
+    description: Field Suspend from AssetEntriesTax
+  reason:
+    display: Reason
+    type: string
+    required: false
+    description: Field Reason from AssetEntriesTax
+  asset_status:
+    display: Assetstatus
+    type: string
+    required: false
+    description: Field AssetStatus from AssetEntriesTax
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetEntriesTax
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from AssetEntriesTax
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetEntriesTax
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetEntriesTax
+  company_before:
+    display: Companybefore
+    type: string
+    required: false
+    description: Field CompanyBefore from AssetEntriesTax
+  company_after:
+    display: Companyafter
+    type: string
+    required: false
+    description: Field CompanyAfter from AssetEntriesTax
+  branch_after:
+    display: Branchafter
+    type: string
+    required: false
+    description: Field BranchAfter from AssetEntriesTax
+  group_after:
+    display: Groupafter
+    type: string
+    required: false
+    description: Field GroupAfter from AssetEntriesTax
+  cost_center_after:
+    display: Costcenterafter
+    type: string
+    required: false
+    description: Field CostCenterAfter from AssetEntriesTax
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from AssetEntriesTax
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AssetEntriesTax
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from AssetEntriesTax
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from AssetEntriesTax
+  entry_reference:
+    display: Entryreference
+    type: string
+    required: false
+    description: Field EntryReference from AssetEntriesTax
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from AssetEntriesTax
+  asset_dist_reg:
+    display: Assetdistreg
+    type: decimal
+    required: false
+    description: Field AssetDistReg from AssetEntriesTax
+  sold_value:
+    display: Soldvalue
+    type: decimal
+    required: false
+    description: Field SoldValue from AssetEntriesTax
+  disposal_cost:
+    display: Disposalcost
+    type: decimal
+    required: false
+    description: Field DisposalCost from AssetEntriesTax

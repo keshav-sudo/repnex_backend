@@ -1,0 +1,7 @@
+concept: tbl_so_std_com
+table: TblSoStdCom
+alias: tssc
+fields:
+  comment_code: tssc.CommentCode
+  line: tssc.Line
+  comment: tssc.Comment

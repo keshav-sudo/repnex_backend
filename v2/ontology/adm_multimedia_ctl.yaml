@@ -1,0 +1,28 @@
+concept: adm_multimedia_ctl
+display_name: AdmMultimediaCtl
+module: administration
+description: Auto-generated representation of the physical table AdmMultimediaCtl.
+synonyms:
+- admmultimediactl
+- adm multimedia ctl
+header_attributes:
+  object_type:
+    display: Objecttype
+    type: string
+    required: false
+    description: Field ObjectType from AdmMultimediaCtl
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmMultimediaCtl
+  icon_number:
+    display: Iconnumber
+    type: decimal
+    required: false
+    description: Field IconNumber from AdmMultimediaCtl
+  object_parameter:
+    display: Objectparameter
+    type: string
+    required: false
+    description: Field ObjectParameter from AdmMultimediaCtl

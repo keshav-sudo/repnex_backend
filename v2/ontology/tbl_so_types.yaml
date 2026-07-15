@@ -1,0 +1,18 @@
+concept: tbl_so_types
+display_name: TblSoTypes
+module: other
+description: Auto-generated representation of the physical table TblSoTypes.
+synonyms:
+- tblsotypes
+- tbl so types
+header_attributes:
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from TblSoTypes
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblSoTypes

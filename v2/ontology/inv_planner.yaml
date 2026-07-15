@@ -1,0 +1,23 @@
+concept: inv_planner
+display_name: InvPlanner
+module: inventory
+description: Auto-generated representation of the physical table InvPlanner.
+synonyms:
+- invplanner
+- inv planner
+header_attributes:
+  planner:
+    display: Planner
+    type: string
+    required: false
+    description: Field Planner from InvPlanner
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from InvPlanner
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from InvPlanner

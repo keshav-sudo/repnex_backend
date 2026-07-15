@@ -1,0 +1,15 @@
+concept: eft_control
+table: EftControl
+alias: ec1
+fields:
+  ctl_flag: ec1.CtlFlag
+  last_eft_batch_number: ec1.LastEftBatchNumber
+  cb_amendment_jnl: ec1.CbAmendmentJnl
+  ap_user1: ec1.ApUser1
+  ap_user2: ec1.ApUser2
+  cb_user1: ec1.CbUser1
+  cb_user2: ec1.CbUser2
+  eft_sup_days: ec1.EftSupDays
+  eft_batch_days: ec1.EftBatchDays
+  eft_audit_batch_days: ec1.EftAuditBatchDays
+  eft_audit_void_days: ec1.EftAuditVoidDays

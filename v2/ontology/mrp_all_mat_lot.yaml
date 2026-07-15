@@ -1,0 +1,68 @@
+concept: mrp_all_mat_lot
+display_name: MrpAllMatLot
+module: mrp
+description: Auto-generated representation of the physical table MrpAllMatLot.
+synonyms:
+- mrpallmatlot
+- mrp all mat lot
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpAllMatLot
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpAllMatLot
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpAllMatLot
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from MrpAllMatLot
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from MrpAllMatLot
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from MrpAllMatLot
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from MrpAllMatLot
+  qty_issued:
+    display: Qtyissued
+    type: decimal
+    required: false
+    description: Field QtyIssued from MrpAllMatLot
+  lot_completed:
+    display: Lotcompleted
+    type: string
+    required: false
+    description: Field LotCompleted from MrpAllMatLot
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpAllMatLot
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpAllMatLot
+  neg_allocation:
+    display: Negallocation
+    type: string
+    required: false
+    description: Field NegAllocation from MrpAllMatLot

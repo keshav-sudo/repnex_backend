@@ -1,0 +1,44 @@
+concept: iop_col_instance
+table: IopColInstance
+alias: ici
+fields:
+  collection: ici.Collection
+  instance: ici.Instance
+  calendar: ici.Calendar
+  uom: ici.Uom
+  algorithm: ici.Algorithm
+  override_alg: ici.OverrideAlg
+  alg_a_months: ici.AlgAMonths
+  alg_a_basis: ici.AlgABasis
+  alg_b_months: ici.AlgBMonths
+  alg_c_months: ici.AlgCMonths
+  alg_d_months: ici.AlgDMonths
+  alg_f_smooth: ici.AlgFSmooth
+  alg_f_trend: ici.AlgFTrend
+  alg_g_coeff1: ici.AlgGCoeff1
+  alg_g_coeff2: ici.AlgGCoeff2
+  alg_g_coeff3: ici.AlgGCoeff3
+  alg_h_coeff1: ici.AlgHCoeff1
+  alg_h_coeff2: ici.AlgHCoeff2
+  alg_h_coeff3: ici.AlgHCoeff3
+  alg_h_coeff4: ici.AlgHCoeff4
+  alg_i_coeff1: ici.AlgICoeff1
+  alg_i_coeff2: ici.AlgICoeff2
+  alg_i_coeff3: ici.AlgICoeff3
+  alg_j_coeff1: ici.AlgJCoeff1
+  alg_j_coeff2: ici.AlgJCoeff2
+  alg_j_coeff3: ici.AlgJCoeff3
+  alg_k_coeff1: ici.AlgKCoeff1
+  alg_k_coeff2: ici.AlgKCoeff2
+  alg_k_coeff3: ici.AlgKCoeff3
+  season_sides: ici.SeasonSides
+  season_periods: ici.SeasonPeriods
+  season_coeff: ici.SeasonCoeff
+  outlier_std_dev: ici.OutlierStdDev
+  sku_adjustments: ici.SkuAdjustments
+  aggregation_date: ici.AggregationDate
+  aggregation_time: ici.AggregationTime
+  consolidate_wh: ici.ConsolidateWh
+  listed_warehouse: ici.ListedWarehouse
+  decimals: ici.Decimals
+  disaggregate: ici.Disaggregate

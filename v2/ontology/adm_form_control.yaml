@@ -1,0 +1,73 @@
+concept: adm_form_control
+display_name: AdmFormControl
+module: administration
+description: Auto-generated representation of the physical table AdmFormControl.
+synonyms:
+- admformcontrol
+- adm form control
+header_attributes:
+  form_type:
+    display: Formtype
+    type: string
+    required: false
+    description: Field FormType from AdmFormControl
+  sequence_number:
+    display: Sequencenumber
+    type: decimal
+    required: false
+    description: Field SequenceNumber from AdmFormControl
+  field_name:
+    display: Fieldname
+    type: string
+    required: false
+    description: Field FieldName from AdmFormControl
+  field_description:
+    display: Fielddescription
+    type: string
+    required: false
+    description: Field FieldDescription from AdmFormControl
+  field_type:
+    display: Fieldtype
+    type: string
+    required: false
+    description: Field FieldType from AdmFormControl
+  field_length:
+    display: Fieldlength
+    type: decimal
+    required: false
+    description: Field FieldLength from AdmFormControl
+  field_decimals:
+    display: Fielddecimals
+    type: decimal
+    required: false
+    description: Field FieldDecimals from AdmFormControl
+  default_value:
+    display: Defaultvalue
+    type: string
+    required: false
+    description: Field DefaultValue from AdmFormControl
+  allow_null:
+    display: Allownull
+    type: decimal
+    required: false
+    description: Field AllowNull from AdmFormControl
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from AdmFormControl
+  form_number:
+    display: Formnumber
+    type: decimal
+    required: false
+    description: Field FormNumber from AdmFormControl
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from AdmFormControl
+  index_flag:
+    display: Indexflag
+    type: string
+    required: false
+    description: Field IndexFlag from AdmFormControl

@@ -1,0 +1,133 @@
+concept: ar_disc_dr_cr_det
+display_name: ArDiscDrCrDet
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArDiscDrCrDet.
+synonyms:
+- ardiscdrcrdet
+- ar disc dr cr det
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArDiscDrCrDet
+  disc_dr_cr:
+    display: Discdrcr
+    type: decimal
+    required: false
+    description: Field DiscDrCr from ArDiscDrCrDet
+  sequence:
+    display: Sequence
+    type: decimal
+    required: false
+    description: Field Sequence from ArDiscDrCrDet
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArDiscDrCrDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArDiscDrCrDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ArDiscDrCrDet
+  pay_date:
+    display: Paydate
+    type: date
+    required: false
+    description: Field PayDate from ArDiscDrCrDet
+  cash_journal:
+    display: Cashjournal
+    type: decimal
+    required: false
+    description: Field CashJournal from ArDiscDrCrDet
+  jnl_entry:
+    display: Jnlentry
+    type: decimal
+    required: false
+    description: Field JnlEntry from ArDiscDrCrDet
+  dr_cr_type:
+    display: Drcrtype
+    type: string
+    required: false
+    description: Field DrCrType from ArDiscDrCrDet
+  dr_cr_value:
+    display: Drcrvalue
+    type: decimal
+    required: false
+    description: Field DrCrValue from ArDiscDrCrDet
+  dr_cr_tax:
+    display: Drcrtax
+    type: decimal
+    required: false
+    description: Field DrCrTax from ArDiscDrCrDet
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from ArDiscDrCrDet
+  post_period:
+    display: Postperiod
+    type: decimal
+    required: false
+    description: Field PostPeriod from ArDiscDrCrDet
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from ArDiscDrCrDet
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ArDiscDrCrDet
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from ArDiscDrCrDet
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from ArDiscDrCrDet
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ArDiscDrCrDet
+  acc_conv_rate:
+    display: Accconvrate
+    type: decimal
+    required: false
+    description: Field AccConvRate from ArDiscDrCrDet
+  acc_mul_div:
+    display: Accmuldiv
+    type: string
+    required: false
+    description: Field AccMulDiv from ArDiscDrCrDet
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ArDiscDrCrDet
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from ArDiscDrCrDet
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ArDiscDrCrDet
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ArDiscDrCrDet

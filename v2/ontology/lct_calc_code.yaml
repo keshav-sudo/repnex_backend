@@ -1,0 +1,218 @@
+concept: lct_calc_code
+display_name: LctCalcCode
+module: other
+description: Auto-generated representation of the physical table LctCalcCode.
+synonyms:
+- lctcalccode
+- lct calc code
+header_attributes:
+  calc_code:
+    display: Calccode
+    type: string
+    required: false
+    description: Field CalcCode from LctCalcCode
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from LctCalcCode
+  field11:
+    display: Field11
+    type: string
+    required: false
+    description: Field Field11 from LctCalcCode
+  field12:
+    display: Field12
+    type: string
+    required: false
+    description: Field Field12 from LctCalcCode
+  field13:
+    display: Field13
+    type: string
+    required: false
+    description: Field Field13 from LctCalcCode
+  field14:
+    display: Field14
+    type: string
+    required: false
+    description: Field Field14 from LctCalcCode
+  field15:
+    display: Field15
+    type: string
+    required: false
+    description: Field Field15 from LctCalcCode
+  operand11:
+    display: Operand11
+    type: string
+    required: false
+    description: Field Operand11 from LctCalcCode
+  operand12:
+    display: Operand12
+    type: string
+    required: false
+    description: Field Operand12 from LctCalcCode
+  operand13:
+    display: Operand13
+    type: string
+    required: false
+    description: Field Operand13 from LctCalcCode
+  operand14:
+    display: Operand14
+    type: string
+    required: false
+    description: Field Operand14 from LctCalcCode
+  operand15:
+    display: Operand15
+    type: string
+    required: false
+    description: Field Operand15 from LctCalcCode
+  field21:
+    display: Field21
+    type: string
+    required: false
+    description: Field Field21 from LctCalcCode
+  field22:
+    display: Field22
+    type: string
+    required: false
+    description: Field Field22 from LctCalcCode
+  field23:
+    display: Field23
+    type: string
+    required: false
+    description: Field Field23 from LctCalcCode
+  field24:
+    display: Field24
+    type: string
+    required: false
+    description: Field Field24 from LctCalcCode
+  field25:
+    display: Field25
+    type: string
+    required: false
+    description: Field Field25 from LctCalcCode
+  operand21:
+    display: Operand21
+    type: string
+    required: false
+    description: Field Operand21 from LctCalcCode
+  operand22:
+    display: Operand22
+    type: string
+    required: false
+    description: Field Operand22 from LctCalcCode
+  operand23:
+    display: Operand23
+    type: string
+    required: false
+    description: Field Operand23 from LctCalcCode
+  operand24:
+    display: Operand24
+    type: string
+    required: false
+    description: Field Operand24 from LctCalcCode
+  operand25:
+    display: Operand25
+    type: string
+    required: false
+    description: Field Operand25 from LctCalcCode
+  field31:
+    display: Field31
+    type: string
+    required: false
+    description: Field Field31 from LctCalcCode
+  field32:
+    display: Field32
+    type: string
+    required: false
+    description: Field Field32 from LctCalcCode
+  field33:
+    display: Field33
+    type: string
+    required: false
+    description: Field Field33 from LctCalcCode
+  field34:
+    display: Field34
+    type: string
+    required: false
+    description: Field Field34 from LctCalcCode
+  field35:
+    display: Field35
+    type: string
+    required: false
+    description: Field Field35 from LctCalcCode
+  operand31:
+    display: Operand31
+    type: string
+    required: false
+    description: Field Operand31 from LctCalcCode
+  operand32:
+    display: Operand32
+    type: string
+    required: false
+    description: Field Operand32 from LctCalcCode
+  operand33:
+    display: Operand33
+    type: string
+    required: false
+    description: Field Operand33 from LctCalcCode
+  operand34:
+    display: Operand34
+    type: string
+    required: false
+    description: Field Operand34 from LctCalcCode
+  operand35:
+    display: Operand35
+    type: string
+    required: false
+    description: Field Operand35 from LctCalcCode
+  field41:
+    display: Field41
+    type: string
+    required: false
+    description: Field Field41 from LctCalcCode
+  field42:
+    display: Field42
+    type: string
+    required: false
+    description: Field Field42 from LctCalcCode
+  field43:
+    display: Field43
+    type: string
+    required: false
+    description: Field Field43 from LctCalcCode
+  field44:
+    display: Field44
+    type: string
+    required: false
+    description: Field Field44 from LctCalcCode
+  field45:
+    display: Field45
+    type: string
+    required: false
+    description: Field Field45 from LctCalcCode
+  operand41:
+    display: Operand41
+    type: string
+    required: false
+    description: Field Operand41 from LctCalcCode
+  operand42:
+    display: Operand42
+    type: string
+    required: false
+    description: Field Operand42 from LctCalcCode
+  operand43:
+    display: Operand43
+    type: string
+    required: false
+    description: Field Operand43 from LctCalcCode
+  operand44:
+    display: Operand44
+    type: string
+    required: false
+    description: Field Operand44 from LctCalcCode
+  operand45:
+    display: Operand45
+    type: string
+    required: false
+    description: Field Operand45 from LctCalcCode

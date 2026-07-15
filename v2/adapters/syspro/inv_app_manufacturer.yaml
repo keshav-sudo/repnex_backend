@@ -1,0 +1,12 @@
+concept: inv_app_manufacturer
+table: InvAppManufacturer
+alias: iam
+fields:
+  app_manufacturer: iam.AppManufacturer
+  manufacturer_name: iam.ManufacturerName
+  manufacturer_info1: iam.ManufacturerInfo1
+  manufacturer_info2: iam.ManufacturerInfo2
+  manufacturer_info3: iam.ManufacturerInfo3
+  manufacturer_info4: iam.ManufacturerInfo4
+  manufacturer_info5: iam.ManufacturerInfo5
+  manufacturer_info6: iam.ManufacturerInfo6

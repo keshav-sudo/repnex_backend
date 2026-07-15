@@ -1,0 +1,9 @@
+concept: mrp_gtr_wh_matrix
+table: MrpGtrWhMatrix
+alias: mgwm
+fields:
+  source_warehouse: mgwm.SourceWarehouse
+  target_warehouse: mgwm.TargetWarehouse
+  lead_time: mgwm.LeadTime
+  transf_cost_gl: mgwm.TransfCostGl
+  multiplier: mgwm.Multiplier

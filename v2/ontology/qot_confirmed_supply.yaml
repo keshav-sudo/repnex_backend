@@ -1,0 +1,73 @@
+concept: qot_confirmed_supply
+display_name: QotConfirmedSupply
+module: other
+description: Auto-generated representation of the physical table QotConfirmedSupply.
+synonyms:
+- qotconfirmedsupply
+- qot confirmed supply
+header_attributes:
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from QotConfirmedSupply
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from QotConfirmedSupply
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from QotConfirmedSupply
+  non_stock_code:
+    display: Nonstockcode
+    type: string
+    required: false
+    description: Field NonStockCode from QotConfirmedSupply
+  line_unique:
+    display: Lineunique
+    type: decimal
+    required: false
+    description: Field LineUnique from QotConfirmedSupply
+  supply_type:
+    display: Supplytype
+    type: string
+    required: false
+    description: Field SupplyType from QotConfirmedSupply
+  originator:
+    display: Originator
+    type: string
+    required: false
+    description: Field Originator from QotConfirmedSupply
+  requisition:
+    display: Requisition
+    type: string
+    required: false
+    description: Field Requisition from QotConfirmedSupply
+  requisition_line:
+    display: Requisitionline
+    type: decimal
+    required: false
+    description: Field RequisitionLine from QotConfirmedSupply
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from QotConfirmedSupply
+  purchase_order_line:
+    display: Purchaseorderline
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLine from QotConfirmedSupply
+  order_quantity:
+    display: Orderquantity
+    type: decimal
+    required: false
+    description: Field OrderQuantity from QotConfirmedSupply
+  matched_flag:
+    display: Matchedflag
+    type: decimal
+    required: false
+    description: Field MatchedFlag from QotConfirmedSupply

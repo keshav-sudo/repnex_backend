@@ -1,0 +1,53 @@
+concept: tbl_so_discount
+display_name: TblSoDiscount
+module: other
+description: Auto-generated representation of the physical table TblSoDiscount.
+synonyms:
+- tblsodiscount
+- tbl so discount
+header_attributes:
+  discount_code:
+    display: Discountcode
+    type: string
+    required: false
+    description: Field DiscountCode from TblSoDiscount
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblSoDiscount
+  discount_pct1:
+    display: Discountpct1
+    type: decimal
+    required: false
+    description: Field DiscountPct1 from TblSoDiscount
+  discount_pct2:
+    display: Discountpct2
+    type: decimal
+    required: false
+    description: Field DiscountPct2 from TblSoDiscount
+  discount_pct3:
+    display: Discountpct3
+    type: decimal
+    required: false
+    description: Field DiscountPct3 from TblSoDiscount
+  disc_basis:
+    display: Discbasis
+    type: string
+    required: false
+    description: Field DiscBasis from TblSoDiscount
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from TblSoDiscount
+  price_flag:
+    display: Priceflag
+    type: string
+    required: false
+    description: Field PriceFlag from TblSoDiscount
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from TblSoDiscount

@@ -1,0 +1,168 @@
+concept: lot_detail
+display_name: LotDetail
+module: other
+description: Auto-generated representation of the physical table LotDetail.
+synonyms:
+- lotdetail
+- lot detail
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from LotDetail
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotDetail
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from LotDetail
+  next_trn_line:
+    display: Nexttrnline
+    type: decimal
+    required: false
+    description: Field NextTrnLine from LotDetail
+  orig_qty_received:
+    display: Origqtyreceived
+    type: decimal
+    required: false
+    description: Field OrigQtyReceived from LotDetail
+  qty_on_hand:
+    display: Qtyonhand
+    type: decimal
+    required: false
+    description: Field QtyOnHand from LotDetail
+  qty_to_ship:
+    display: Qtytoship
+    type: decimal
+    required: false
+    description: Field QtyToShip from LotDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from LotDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from LotDetail
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from LotDetail
+  creation_date:
+    display: Creationdate
+    type: date
+    required: false
+    description: Field CreationDate from LotDetail
+  draw_office_num:
+    display: Drawofficenum
+    type: string
+    required: false
+    description: Field DrawOfficeNum from LotDetail
+  last_trn_date:
+    display: Lasttrndate
+    type: date
+    required: false
+    description: Field LastTrnDate from LotDetail
+  archive_filename:
+    display: Archivefilename
+    type: string
+    required: false
+    description: Field ArchiveFilename from LotDetail
+  qty_in_transit:
+    display: Qtyintransit
+    type: decimal
+    required: false
+    description: Field QtyInTransit from LotDetail
+  lot_hold_flag:
+    display: Lotholdflag
+    type: string
+    required: false
+    description: Field LotHoldFlag from LotDetail
+  note:
+    display: Note
+    type: string
+    required: false
+    description: Field Note from LotDetail
+  ecc_dummy:
+    display: Eccdummy
+    type: string
+    required: false
+    description: Field EccDummy from LotDetail
+  qty_awaiting_credit:
+    display: Qtyawaitingcredit
+    type: decimal
+    required: false
+    description: Field QtyAwaitingCredit from LotDetail
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from LotDetail
+  supplier_lot:
+    display: Supplierlot
+    type: string
+    required: false
+    description: Field SupplierLot from LotDetail
+  product_shelf_life:
+    display: Productshelflife
+    type: decimal
+    required: false
+    description: Field ProductShelfLife from LotDetail
+  internal_shelf_life:
+    display: Internalshelflife
+    type: decimal
+    required: false
+    description: Field InternalShelfLife from LotDetail
+  use_by_date:
+    display: Usebydate
+    type: date
+    required: false
+    description: Field UseByDate from LotDetail
+  sell_by_date:
+    display: Sellbydate
+    type: date
+    required: false
+    description: Field SellByDate from LotDetail
+  internal_expiry_date:
+    display: Internalexpirydate
+    type: date
+    required: false
+    description: Field InternalExpiryDate from LotDetail
+  manufacture_date:
+    display: Manufacturedate
+    type: date
+    required: false
+    description: Field ManufactureDate from LotDetail
+  dispatch_date:
+    display: Dispatchdate
+    type: date
+    required: false
+    description: Field DispatchDate from LotDetail
+  best_before_date:
+    display: Bestbeforedate
+    type: date
+    required: false
+    description: Field BestBeforeDate from LotDetail
+  prd_recall_flag:
+    display: Prdrecallflag
+    type: string
+    required: false
+    description: Field PrdRecallFlag from LotDetail
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from LotDetail

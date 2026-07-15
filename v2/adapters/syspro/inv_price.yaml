@@ -1,0 +1,9 @@
+concept: inv_price
+table: InvPrice
+alias: ip1
+fields:
+  stock_code: ip1.StockCode
+  price_code: ip1.PriceCode
+  selling_price: ip1.SellingPrice
+  price_basis: ip1.PriceBasis
+  commission_code: ip1.CommissionCode

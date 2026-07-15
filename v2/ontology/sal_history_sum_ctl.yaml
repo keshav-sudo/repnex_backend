@@ -1,0 +1,38 @@
+concept: sal_history_sum_ctl
+display_name: SalHistorySumCtl
+module: other
+description: Auto-generated representation of the physical table SalHistorySumCtl.
+synonyms:
+- salhistorysumctl
+- sal history sum ctl
+header_attributes:
+  sequence_type:
+    display: Sequencetype
+    type: string
+    required: false
+    description: Field SequenceType from SalHistorySumCtl
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SalHistorySumCtl
+  summary_key1:
+    display: Summarykey1
+    type: string
+    required: false
+    description: Field SummaryKey1 from SalHistorySumCtl
+  summary_key2:
+    display: Summarykey2
+    type: string
+    required: false
+    description: Field SummaryKey2 from SalHistorySumCtl
+  summary_key3:
+    display: Summarykey3
+    type: string
+    required: false
+    description: Field SummaryKey3 from SalHistorySumCtl
+  summary_target:
+    display: Summarytarget
+    type: string
+    required: false
+    description: Field SummaryTarget from SalHistorySumCtl

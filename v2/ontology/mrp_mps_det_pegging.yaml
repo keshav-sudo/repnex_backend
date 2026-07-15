@@ -1,0 +1,103 @@
+concept: mrp_mps_det_pegging
+display_name: MrpMpsDetPegging
+module: mrp
+description: Auto-generated representation of the physical table MrpMpsDetPegging.
+synonyms:
+- mrpmpsdetpegging
+- mrp mps det pegging
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpMpsDetPegging
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpMpsDetPegging
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpMpsDetPegging
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpMpsDetPegging
+  supply_demand_date:
+    display: Supplydemanddate
+    type: date
+    required: false
+    description: Field SupplyDemandDate from MrpMpsDetPegging
+  source_type:
+    display: Sourcetype
+    type: string
+    required: false
+    description: Field SourceType from MrpMpsDetPegging
+  orig_source_key:
+    display: Origsourcekey
+    type: string
+    required: false
+    description: Field OrigSourceKey from MrpMpsDetPegging
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from MrpMpsDetPegging
+  parent_stock_code:
+    display: Parentstockcode
+    type: string
+    required: false
+    description: Field ParentStockCode from MrpMpsDetPegging
+  parent_line:
+    display: Parentline
+    type: decimal
+    required: false
+    description: Field ParentLine from MrpMpsDetPegging
+  order_number:
+    display: Ordernumber
+    type: string
+    required: false
+    description: Field OrderNumber from MrpMpsDetPegging
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from MrpMpsDetPegging
+  line_number:
+    display: Linenumber
+    type: decimal
+    required: false
+    description: Field LineNumber from MrpMpsDetPegging
+  job_line:
+    display: Jobline
+    type: string
+    required: false
+    description: Field JobLine from MrpMpsDetPegging
+  user_code:
+    display: Usercode
+    type: string
+    required: false
+    description: Field UserCode from MrpMpsDetPegging
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from MrpMpsDetPegging
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from MrpMpsDetPegging
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from MrpMpsDetPegging
+  live_date:
+    display: Livedate
+    type: date
+    required: false
+    description: Field LiveDate from MrpMpsDetPegging

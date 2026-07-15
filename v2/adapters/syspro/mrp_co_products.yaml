@@ -1,0 +1,57 @@
+concept: mrp_co_products
+table: MrpCoProducts
+alias: mcp
+fields:
+  job: mcp.Job
+  co_product_line: mcp.CoProductLine
+  co_product: mcp.CoProduct
+  co_product_version: mcp.CoProductVersion
+  co_product_release: mcp.CoProductRelease
+  stock_description: mcp.StockDescription
+  warehouse: mcp.Warehouse
+  operation_offset: mcp.OperationOffset
+  act_complete_date: mcp.ActCompleteDate
+  complete: mcp.Complete
+  exp_labour: mcp.ExpLabour
+  exp_material: mcp.ExpMaterial
+  qty_per: mcp.QtyPer
+  qty_to_make: mcp.QtyToMake
+  qty_manufactured: mcp.QtyManufactured
+  total_qty_scrapped: mcp.TotalQtyScrapped
+  pct_complete_flag: mcp.PctCompleteFlag
+  selling_price: mcp.SellingPrice
+  confirmed_flag: mcp.ConfirmedFlag
+  traceable_type: mcp.TraceableType
+  decimals: mcp.Decimals
+  mat_cost_to_date1: mcp.MatCostToDate1
+  mat_cost_to_date2: mcp.MatCostToDate2
+  mat_cost_to_date3: mcp.MatCostToDate3
+  lab_cost_to_date1: mcp.LabCostToDate1
+  lab_cost_to_date2: mcp.LabCostToDate2
+  lab_cost_to_date3: mcp.LabCostToDate3
+  hrs_book_to_date1: mcp.HrsBookToDate1
+  hrs_book_to_date2: mcp.HrsBookToDate2
+  hrs_book_to_date3: mcp.HrsBookToDate3
+  mat_value_issues1: mcp.MatValueIssues1
+  mat_value_issues2: mcp.MatValueIssues2
+  mat_value_issues3: mcp.MatValueIssues3
+  lab_value_issues1: mcp.LabValueIssues1
+  lab_value_issues2: mcp.LabValueIssues2
+  lab_value_issues3: mcp.LabValueIssues3
+  due_date: mcp.DueDate
+  orig_due_date: mcp.OrigDueDate
+  exp_lab_current: mcp.ExpLabCurrent
+  exp_mat_current: mcp.ExpMatCurrent
+  pct_material_cost: mcp.PctMaterialCost
+  pct_sub_contract_cost: mcp.PctSubContractCost
+  pct_labor_cost: mcp.PctLaborCost
+  pct_quantity: mcp.PctQuantity
+  uom: mcp.Uom
+  conv_fact_uom: mcp.ConvFactUom
+  conv_mul_div: mcp.ConvMulDiv
+  qty_per_ent: mcp.QtyPerEnt
+  qty_to_make_ent: mcp.QtyToMakeEnt
+  qty_manufactured_ent: mcp.QtyManufacturedEnt
+  total_qty_scrap_ent: mcp.TotalQtyScrapEnt
+  wip_branch: mcp.WipBranch
+  wip_ctl_gl_code: mcp.WipCtlGlCode

@@ -1,0 +1,33 @@
+concept: por_document_format
+display_name: PorDocumentFormat
+module: procurement
+description: Auto-generated representation of the physical table PorDocumentFormat.
+synonyms:
+- pordocumentformat
+- por document format
+header_attributes:
+  po_document_type:
+    display: Podocumenttype
+    type: string
+    required: false
+    description: Field PoDocumentType from PorDocumentFormat
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from PorDocumentFormat
+  format_info1:
+    display: Formatinfo1
+    type: string
+    required: false
+    description: Field FormatInfo1 from PorDocumentFormat
+  format_info2:
+    display: Formatinfo2
+    type: string
+    required: false
+    description: Field FormatInfo2 from PorDocumentFormat
+  format_info3:
+    display: Formatinfo3
+    type: string
+    required: false
+    description: Field FormatInfo3 from PorDocumentFormat

@@ -1,0 +1,23 @@
+concept: arc_control
+display_name: ArcControl
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArcControl.
+synonyms:
+- arccontrol
+- arc control
+header_attributes:
+  archive_type:
+    display: Archivetype
+    type: string
+    required: false
+    description: Field ArchiveType from ArcControl
+  next_archive:
+    display: Nextarchive
+    type: decimal
+    required: false
+    description: Field NextArchive from ArcControl
+  archive_path:
+    display: Archivepath
+    type: string
+    required: false
+    description: Field ArchivePath from ArcControl

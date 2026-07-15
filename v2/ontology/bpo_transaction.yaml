@@ -1,0 +1,123 @@
+concept: bpo_transaction
+display_name: BpoTransaction
+module: other
+description: Auto-generated representation of the physical table BpoTransaction.
+synonyms:
+- bpotransaction
+- bpo transaction
+header_attributes:
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from BpoTransaction
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from BpoTransaction
+  schedule_date:
+    display: Scheduledate
+    type: date
+    required: false
+    description: Field ScheduleDate from BpoTransaction
+  tran_date:
+    display: Trandate
+    type: date
+    required: false
+    description: Field TranDate from BpoTransaction
+  tran_time:
+    display: Trantime
+    type: decimal
+    required: false
+    description: Field TranTime from BpoTransaction
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from BpoTransaction
+  tran_type:
+    display: Trantype
+    type: string
+    required: false
+    description: Field TranType from BpoTransaction
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from BpoTransaction
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from BpoTransaction
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from BpoTransaction
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from BpoTransaction
+  tran_qty:
+    display: Tranqty
+    type: decimal
+    required: false
+    description: Field TranQty from BpoTransaction
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from BpoTransaction
+  transaction_value:
+    display: Transactionvalue
+    type: decimal
+    required: false
+    description: Field TransactionValue from BpoTransaction
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from BpoTransaction
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from BpoTransaction
+  conv_fact_prc_um:
+    display: Convfactprcum
+    type: decimal
+    required: false
+    description: Field ConvFactPrcUm from BpoTransaction
+  mul_div_prc:
+    display: Muldivprc
+    type: string
+    required: false
+    description: Field MulDivPrc from BpoTransaction
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from BpoTransaction
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from BpoTransaction
+  edi_extract_flag:
+    display: Ediextractflag
+    type: string
+    required: false
+    description: Field EdiExtractFlag from BpoTransaction
+  edi_action_flag:
+    display: Ediactionflag
+    type: string
+    required: false
+    description: Field EdiActionFlag from BpoTransaction
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from BpoTransaction

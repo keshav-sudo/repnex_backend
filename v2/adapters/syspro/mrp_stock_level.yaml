@@ -1,0 +1,12 @@
+concept: mrp_stock_level
+table: MrpStockLevel
+alias: msl
+fields:
+  id_number: msl.IdNumber
+  start_date: msl.StartDate
+  minimum_qty: msl.MinimumQty
+  maximum_qty: msl.MaximumQty
+  effective_date: msl.EffectiveDate
+  operator: msl.Operator
+  reference: msl.Reference
+  freeze: msl.Freeze

@@ -1,0 +1,12 @@
+concept: ar_post_dated_ch_inv
+table: ArPostDatedChInv
+alias: apdci
+fields:
+  customer: apdci.Customer
+  available_date: apdci.AvailableDate
+  cheque: apdci.Cheque
+  invoice: apdci.Invoice
+  document_type: apdci.DocumentType
+  amount: apdci.Amount
+  collector_number_ar: apdci.CollectorNumberAr
+  allocation: apdci.Allocation

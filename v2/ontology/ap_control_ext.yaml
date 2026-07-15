@@ -1,0 +1,28 @@
+concept: ap_control_ext
+display_name: ApControlExt
+module: accounts_payable
+description: Auto-generated representation of the physical table ApControlExt.
+synonyms:
+- apcontrolext
+- ap control ext
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from ApControlExt
+  mtd_tax_relief1:
+    display: Mtdtaxrelief1
+    type: decimal
+    required: false
+    description: Field MtdTaxRelief1 from ApControlExt
+  mtd_tax_relief2:
+    display: Mtdtaxrelief2
+    type: decimal
+    required: false
+    description: Field MtdTaxRelief2 from ApControlExt
+  mtd_tax_relief3:
+    display: Mtdtaxrelief3
+    type: decimal
+    required: false
+    description: Field MtdTaxRelief3 from ApControlExt

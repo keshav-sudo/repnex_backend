@@ -1,0 +1,63 @@
+concept: adm_printer_oper
+display_name: AdmPrinterOper
+module: administration
+description: Auto-generated representation of the physical table AdmPrinterOper.
+synonyms:
+- admprinteroper
+- adm printer oper
+header_attributes:
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmPrinterOper
+  syspro_program:
+    display: Sysproprogram
+    type: string
+    required: false
+    description: Field SysproProgram from AdmPrinterOper
+  printer_name:
+    display: Printername
+    type: string
+    required: false
+    description: Field PrinterName from AdmPrinterOper
+  prt_current:
+    display: Prtcurrent
+    type: string
+    required: false
+    description: Field PrtCurrent from AdmPrinterOper
+  last_win_info:
+    display: Lastwininfo
+    type: string
+    required: false
+    description: Field LastWinInfo from AdmPrinterOper
+  last_sys_info:
+    display: Lastsysinfo
+    type: string
+    required: false
+    description: Field LastSysInfo from AdmPrinterOper
+  print_attributes:
+    display: Printattributes
+    type: string
+    required: false
+    description: Field PrintAttributes from AdmPrinterOper
+  win_devmode:
+    display: Windevmode
+    type: string
+    required: false
+    description: Field WinDevmode from AdmPrinterOper
+  win_page_setup:
+    display: Winpagesetup
+    type: string
+    required: false
+    description: Field WinPageSetup from AdmPrinterOper
+  win_font_info:
+    display: Winfontinfo
+    type: string
+    required: false
+    description: Field WinFontInfo from AdmPrinterOper
+  extra_bytes:
+    display: Extrabytes
+    type: decimal
+    required: false
+    description: Field ExtraBytes from AdmPrinterOper

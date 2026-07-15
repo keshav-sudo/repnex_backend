@@ -1,0 +1,583 @@
+concept: adm_company_details
+display_name: AdmCompanyDetails
+module: administration
+description: Auto-generated representation of the physical table AdmCompanyDetails.
+synonyms:
+- admcompanydetails
+- adm company details
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from AdmCompanyDetails
+  company_name:
+    display: Companyname
+    type: string
+    required: false
+    description: Field CompanyName from AdmCompanyDetails
+  company_ref:
+    display: Companyref
+    type: string
+    required: false
+    description: Field CompanyRef from AdmCompanyDetails
+  company_addr1:
+    display: Companyaddr1
+    type: string
+    required: false
+    description: Field CompanyAddr1 from AdmCompanyDetails
+  company_addr2:
+    display: Companyaddr2
+    type: string
+    required: false
+    description: Field CompanyAddr2 from AdmCompanyDetails
+  company_addr3:
+    display: Companyaddr3
+    type: string
+    required: false
+    description: Field CompanyAddr3 from AdmCompanyDetails
+  company_addr3_loc:
+    display: Companyaddr3Loc
+    type: string
+    required: false
+    description: Field CompanyAddr3Loc from AdmCompanyDetails
+  company_addr4:
+    display: Companyaddr4
+    type: string
+    required: false
+    description: Field CompanyAddr4 from AdmCompanyDetails
+  company_addr5:
+    display: Companyaddr5
+    type: string
+    required: false
+    description: Field CompanyAddr5 from AdmCompanyDetails
+  company_postal_code:
+    display: Companypostalcode
+    type: string
+    required: false
+    description: Field CompanyPostalCode from AdmCompanyDetails
+  company_gps_lat:
+    display: Companygpslat
+    type: decimal
+    required: false
+    description: Field CompanyGpsLat from AdmCompanyDetails
+  company_gps_long:
+    display: Companygpslong
+    type: decimal
+    required: false
+    description: Field CompanyGpsLong from AdmCompanyDetails
+  delivery_addr1:
+    display: Deliveryaddr1
+    type: string
+    required: false
+    description: Field DeliveryAddr1 from AdmCompanyDetails
+  delivery_addr2:
+    display: Deliveryaddr2
+    type: string
+    required: false
+    description: Field DeliveryAddr2 from AdmCompanyDetails
+  delivery_addr3:
+    display: Deliveryaddr3
+    type: string
+    required: false
+    description: Field DeliveryAddr3 from AdmCompanyDetails
+  delivery_addr3_loc:
+    display: Deliveryaddr3Loc
+    type: string
+    required: false
+    description: Field DeliveryAddr3Loc from AdmCompanyDetails
+  delivery_addr4:
+    display: Deliveryaddr4
+    type: string
+    required: false
+    description: Field DeliveryAddr4 from AdmCompanyDetails
+  delivery_addr5:
+    display: Deliveryaddr5
+    type: string
+    required: false
+    description: Field DeliveryAddr5 from AdmCompanyDetails
+  delivery_postal_code:
+    display: Deliverypostalcode
+    type: string
+    required: false
+    description: Field DeliveryPostalCode from AdmCompanyDetails
+  delivery_gps_lat:
+    display: Deliverygpslat
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLat from AdmCompanyDetails
+  delivery_gps_long:
+    display: Deliverygpslong
+    type: decimal
+    required: false
+    description: Field DeliveryGpsLong from AdmCompanyDetails
+  company_tax_number:
+    display: Companytaxnumber
+    type: string
+    required: false
+    description: Field CompanyTaxNumber from AdmCompanyDetails
+  company_reg_number:
+    display: Companyregnumber
+    type: string
+    required: false
+    description: Field CompanyRegNumber from AdmCompanyDetails
+  company_def_whs:
+    display: Companydefwhs
+    type: string
+    required: false
+    description: Field CompanyDefWhs from AdmCompanyDetails
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from AdmCompanyDetails
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from AdmCompanyDetails
+  gl_periods:
+    display: Glperiods
+    type: decimal
+    required: false
+    description: Field GlPeriods from AdmCompanyDetails
+  shared_inv_flag:
+    display: Sharedinvflag
+    type: string
+    required: false
+    description: Field SharedInvFlag from AdmCompanyDetails
+  shared_inv_company:
+    display: Sharedinvcompany
+    type: string
+    required: false
+    description: Field SharedInvCompany from AdmCompanyDetails
+  shared_gl_flag:
+    display: Sharedglflag
+    type: string
+    required: false
+    description: Field SharedGlFlag from AdmCompanyDetails
+  shared_gl_company:
+    display: Sharedglcompany
+    type: string
+    required: false
+    description: Field SharedGlCompany from AdmCompanyDetails
+  installed_srs:
+    display: Installedsrs
+    type: string
+    required: false
+    description: Field InstalledSrs from AdmCompanyDetails
+  installed_ap:
+    display: Installedap
+    type: string
+    required: false
+    description: Field InstalledAp from AdmCompanyDetails
+  installed_ar:
+    display: Installedar
+    type: string
+    required: false
+    description: Field InstalledAr from AdmCompanyDetails
+  installed_csh:
+    display: Installedcsh
+    type: string
+    required: false
+    description: Field InstalledCsh from AdmCompanyDetails
+  installed_gen:
+    display: Installedgen
+    type: string
+    required: false
+    description: Field InstalledGen from AdmCompanyDetails
+  installed_inv:
+    display: Installedinv
+    type: string
+    required: false
+    description: Field InstalledInv from AdmCompanyDetails
+  installed_pur:
+    display: Installedpur
+    type: string
+    required: false
+    description: Field InstalledPur from AdmCompanyDetails
+  installed_sal:
+    display: Installedsal
+    type: string
+    required: false
+    description: Field InstalledSal from AdmCompanyDetails
+  installed_sor:
+    display: Installedsor
+    type: string
+    required: false
+    description: Field InstalledSor from AdmCompanyDetails
+  installed_assets:
+    display: Installedassets
+    type: string
+    required: false
+    description: Field InstalledAssets from AdmCompanyDetails
+  installed_rep:
+    display: Installedrep
+    type: string
+    required: false
+    description: Field InstalledRep from AdmCompanyDetails
+  installed_bom:
+    display: Installedbom
+    type: string
+    required: false
+    description: Field InstalledBom from AdmCompanyDetails
+  installed_qot:
+    display: Installedqot
+    type: string
+    required: false
+    description: Field InstalledQot from AdmCompanyDetails
+  installed_fac_doc:
+    display: Installedfacdoc
+    type: string
+    required: false
+    description: Field InstalledFacDoc from AdmCompanyDetails
+  installed_req_plan:
+    display: Installedreqplan
+    type: string
+    required: false
+    description: Field InstalledReqPlan from AdmCompanyDetails
+  installed_ecc:
+    display: Installedecc
+    type: string
+    required: false
+    description: Field InstalledEcc from AdmCompanyDetails
+  installed_wip:
+    display: Installedwip
+    type: string
+    required: false
+    description: Field InstalledWip from AdmCompanyDetails
+  installed_trc:
+    display: Installedtrc
+    type: string
+    required: false
+    description: Field InstalledTrc from AdmCompanyDetails
+  installed_btb:
+    display: Installedbtb
+    type: string
+    required: false
+    description: Field InstalledBtb from AdmCompanyDetails
+  installed_ctr_sales:
+    display: Installedctrsales
+    type: string
+    required: false
+    description: Field InstalledCtrSales from AdmCompanyDetails
+  installed_abc:
+    display: Installedabc
+    type: string
+    required: false
+    description: Field InstalledAbc from AdmCompanyDetails
+  installed_cfg:
+    display: Installedcfg
+    type: string
+    required: false
+    description: Field InstalledCfg from AdmCompanyDetails
+  installed_lct:
+    display: Installedlct
+    type: string
+    required: false
+    description: Field InstalledLct from AdmCompanyDetails
+  installed_prj:
+    display: Installedprj
+    type: string
+    required: false
+    description: Field InstalledPrj from AdmCompanyDetails
+  installed_scr_cus:
+    display: Installedscrcus
+    type: string
+    required: false
+    description: Field InstalledScrCus from AdmCompanyDetails
+  installed_bso:
+    display: Installedbso
+    type: string
+    required: false
+    description: Field InstalledBso from AdmCompanyDetails
+  installed_wms:
+    display: Installedwms
+    type: string
+    required: false
+    description: Field InstalledWms from AdmCompanyDetails
+  installed_sws:
+    display: Installedsws
+    type: string
+    required: false
+    description: Field InstalledSws from AdmCompanyDetails
+  installed_swp:
+    display: Installedswp
+    type: string
+    required: false
+    description: Field InstalledSwp from AdmCompanyDetails
+  installed_pos:
+    display: Installedpos
+    type: string
+    required: false
+    description: Field InstalledPos from AdmCompanyDetails
+  installed_poi:
+    display: Installedpoi
+    type: string
+    required: false
+    description: Field InstalledPoi from AdmCompanyDetails
+  installed_spm:
+    display: Installedspm
+    type: string
+    required: false
+    description: Field InstalledSpm from AdmCompanyDetails
+  installed_sed:
+    display: Installedsed
+    type: string
+    required: false
+    description: Field InstalledSed from AdmCompanyDetails
+  installed_bus:
+    display: Installedbus
+    type: string
+    required: false
+    description: Field InstalledBus from AdmCompanyDetails
+  installed_enet:
+    display: Installedenet
+    type: string
+    required: false
+    description: Field InstalledEnet from AdmCompanyDetails
+  installed_dfm:
+    display: Installeddfm
+    type: string
+    required: false
+    description: Field InstalledDfm from AdmCompanyDetails
+  installed_web:
+    display: Installedweb
+    type: string
+    required: false
+    description: Field InstalledWeb from AdmCompanyDetails
+  installed_analytics:
+    display: Installedanalytics
+    type: string
+    required: false
+    description: Field InstalledAnalytics from AdmCompanyDetails
+  installed_crm:
+    display: Installedcrm
+    type: string
+    required: false
+    description: Field InstalledCrm from AdmCompanyDetails
+  installed_fcs:
+    display: Installedfcs
+    type: string
+    required: false
+    description: Field InstalledFcs from AdmCompanyDetails
+  installed_fpl:
+    display: Installedfpl
+    type: string
+    required: false
+    description: Field InstalledFpl from AdmCompanyDetails
+  installed_fpt:
+    display: Installedfpt
+    type: string
+    required: false
+    description: Field InstalledFpt from AdmCompanyDetails
+  installed_fqm:
+    display: Installedfqm
+    type: string
+    required: false
+    description: Field InstalledFqm from AdmCompanyDetails
+  installed_eft:
+    display: Installedeft
+    type: string
+    required: false
+    description: Field InstalledEft from AdmCompanyDetails
+  installed_rma:
+    display: Installedrma
+    type: string
+    required: false
+    description: Field InstalledRma from AdmCompanyDetails
+  installed_for:
+    display: Installedfor
+    type: string
+    required: false
+    description: Field InstalledFor from AdmCompanyDetails
+  installed_fam:
+    display: Installedfam
+    type: string
+    required: false
+    description: Field InstalledFam from AdmCompanyDetails
+  installed_opt:
+    display: Installedopt
+    type: string
+    required: false
+    description: Field InstalledOpt from AdmCompanyDetails
+  installed_pre:
+    display: Installedpre
+    type: string
+    required: false
+    description: Field InstalledPre from AdmCompanyDetails
+  installed_tpm:
+    display: Installedtpm
+    type: string
+    required: false
+    description: Field InstalledTpm from AdmCompanyDetails
+  installed_cms:
+    display: Installedcms
+    type: string
+    required: false
+    description: Field InstalledCms from AdmCompanyDetails
+  installed_rts:
+    display: Installedrts
+    type: string
+    required: false
+    description: Field InstalledRts from AdmCompanyDetails
+  installed_sams:
+    display: Installedsams
+    type: string
+    required: false
+    description: Field InstalledSams from AdmCompanyDetails
+  saa_s:
+    display: Saas
+    type: string
+    required: false
+    description: Field SaaS from AdmCompanyDetails
+  bundle_distr:
+    display: Bundledistr
+    type: string
+    required: false
+    description: Field BundleDistr from AdmCompanyDetails
+  bundle_manuf:
+    display: Bundlemanuf
+    type: string
+    required: false
+    description: Field BundleManuf from AdmCompanyDetails
+  subscription_months:
+    display: Subscriptionmonths
+    type: decimal
+    required: false
+    description: Field SubscriptionMonths from AdmCompanyDetails
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from AdmCompanyDetails
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from AdmCompanyDetails
+  warning_days:
+    display: Warningdays
+    type: decimal
+    required: false
+    description: Field WarningDays from AdmCompanyDetails
+  dfm_users:
+    display: Dfmusers
+    type: decimal
+    required: false
+    description: Field DfmUsers from AdmCompanyDetails
+  bundle_found_adv:
+    display: Bundlefoundadv
+    type: string
+    required: false
+    description: Field BundleFoundAdv from AdmCompanyDetails
+  bundle_finan_adv:
+    display: Bundlefinanadv
+    type: string
+    required: false
+    description: Field BundleFinanAdv from AdmCompanyDetails
+  bundle_distr_adv:
+    display: Bundledistradv
+    type: string
+    required: false
+    description: Field BundleDistrAdv from AdmCompanyDetails
+  bundle_manuf_adv:
+    display: Bundlemanufadv
+    type: string
+    required: false
+    description: Field BundleManufAdv from AdmCompanyDetails
+  syspro_api_fin_qry:
+    display: Sysproapifinqry
+    type: decimal
+    required: false
+    description: Field SysproApiFinQry from AdmCompanyDetails
+  syspro_api_dis_qry:
+    display: Sysproapidisqry
+    type: decimal
+    required: false
+    description: Field SysproApiDisQry from AdmCompanyDetails
+  syspro_api_ope_qry:
+    display: Sysproapiopeqry
+    type: decimal
+    required: false
+    description: Field SysproApiOpeQry from AdmCompanyDetails
+  syspro_api_mst_man:
+    display: Sysproapimstman
+    type: decimal
+    required: false
+    description: Field SysproApiMstMan from AdmCompanyDetails
+  syspro_api_pro_man:
+    display: Sysproapiproman
+    type: decimal
+    required: false
+    description: Field SysproApiProMan from AdmCompanyDetails
+  syspro_api_sal_man:
+    display: Sysproapisalman
+    type: decimal
+    required: false
+    description: Field SysproApiSalMan from AdmCompanyDetails
+  syspro_api_ope_man:
+    display: Sysproapiopeman
+    type: decimal
+    required: false
+    description: Field SysproApiOpeMan from AdmCompanyDetails
+  syspro_api_inv_man:
+    display: Sysproapiinvman
+    type: decimal
+    required: false
+    description: Field SysproApiInvMan from AdmCompanyDetails
+  installed_bot:
+    display: Installedbot
+    type: string
+    required: false
+    description: Field InstalledBot from AdmCompanyDetails
+  installed_tax_ava:
+    display: Installedtaxava
+    type: string
+    required: false
+    description: Field InstalledTaxAva from AdmCompanyDetails
+  installed_tax_ver:
+    display: Installedtaxver
+    type: string
+    required: false
+    description: Field InstalledTaxVer from AdmCompanyDetails
+  installed_odata:
+    display: Installedodata
+    type: string
+    required: false
+    description: Field InstalledOdata from AdmCompanyDetails
+  installed_sqm:
+    display: Installedsqm
+    type: string
+    required: false
+    description: Field InstalledSqm from AdmCompanyDetails
+  installed_eam:
+    display: Installedeam
+    type: string
+    required: false
+    description: Field InstalledEam from AdmCompanyDetails
+  installed_sea:
+    display: Installedsea
+    type: string
+    required: false
+    description: Field InstalledSea from AdmCompanyDetails
+  customer_id:
+    display: Customerid
+    type: string
+    required: false
+    description: Field CustomerId from AdmCompanyDetails
+  srs_client_server:
+    display: Srsclientserver
+    type: string
+    required: false
+    description: Field SrsClientServer from AdmCompanyDetails
+  installed_efi:
+    display: Installedefi
+    type: string
+    required: false
+    description: Field InstalledEfi from AdmCompanyDetails
+  production_company:
+    display: Productioncompany
+    type: string
+    required: false
+    description: Field ProductionCompany from AdmCompanyDetails

@@ -1,0 +1,15 @@
+concept: sor_route_so_detail
+table: SorRouteSoDetail
+alias: srsd
+fields:
+  route_code: srsd.RouteCode
+  delivery_date: srsd.DeliveryDate
+  delivery_seq: srsd.DeliverySeq
+  sales_order: srsd.SalesOrder
+  sales_order_line: srsd.SalesOrderLine
+  dispatch_note: srsd.DispatchNote
+  dispatch_note_line: srsd.DispatchNoteLine
+  line_volume: srsd.LineVolume
+  line_mass: srsd.LineMass
+  route_distance: srsd.RouteDistance
+  line_quantity: srsd.LineQuantity

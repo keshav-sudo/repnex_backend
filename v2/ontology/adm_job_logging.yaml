@@ -1,0 +1,138 @@
+concept: adm_job_logging
+display_name: AdmJobLogging
+module: administration
+description: Auto-generated representation of the physical table AdmJobLogging.
+synonyms:
+- admjoblogging
+- adm job logging
+header_attributes:
+  prog_run_date:
+    display: Progrundate
+    type: date
+    required: false
+    description: Field ProgRunDate from AdmJobLogging
+  prog_run_time:
+    display: Progruntime
+    type: decimal
+    required: false
+    description: Field ProgRunTime from AdmJobLogging
+  prog_end_date:
+    display: Progenddate
+    type: date
+    required: false
+    description: Field ProgEndDate from AdmJobLogging
+  prog_end_time:
+    display: Progendtime
+    type: decimal
+    required: false
+    description: Field ProgEndTime from AdmJobLogging
+  program_name:
+    display: Programname
+    type: string
+    required: false
+    description: Field ProgramName from AdmJobLogging
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmJobLogging
+  group_code:
+    display: Groupcode
+    type: string
+    required: false
+    description: Field GroupCode from AdmJobLogging
+  impact_date:
+    display: Impactdate
+    type: date
+    required: false
+    description: Field ImpactDate from AdmJobLogging
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from AdmJobLogging
+  prog_error_code:
+    display: Progerrorcode
+    type: decimal
+    required: false
+    description: Field ProgErrorCode from AdmJobLogging
+  error_status_code:
+    display: Errorstatuscode
+    type: string
+    required: false
+    description: Field ErrorStatusCode from AdmJobLogging
+  error_filename:
+    display: Errorfilename
+    type: string
+    required: false
+    description: Field ErrorFilename from AdmJobLogging
+  computer_name:
+    display: Computername
+    type: string
+    required: false
+    description: Field ComputerName from AdmJobLogging
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from AdmJobLogging
+  client_server_id:
+    display: Clientserverid
+    type: string
+    required: false
+    description: Field ClientServerId from AdmJobLogging
+  process_id:
+    display: Processid
+    type: decimal
+    required: false
+    description: Field ProcessId from AdmJobLogging
+  transaction_status:
+    display: Transactionstatus
+    type: string
+    required: false
+    description: Field TransactionStatus from AdmJobLogging
+  detail_flag:
+    display: Detailflag
+    type: string
+    required: false
+    description: Field DetailFlag from AdmJobLogging
+  program_version:
+    display: Programversion
+    type: string
+    required: false
+    description: Field ProgramVersion from AdmJobLogging
+  role:
+    display: Role
+    type: string
+    required: false
+    description: Field Role from AdmJobLogging
+  sql_spid:
+    display: Sqlspid
+    type: decimal
+    required: false
+    description: Field SqlSpid from AdmJobLogging
+  avanti_flag:
+    display: Avantiflag
+    type: string
+    required: false
+    description: Field AvantiFlag from AdmJobLogging
+  syspro_source:
+    display: Sysprosource
+    type: string
+    required: false
+    description: Field SysproSource from AdmJobLogging
+  sql_status:
+    display: Sqlstatus
+    type: string
+    required: false
+    description: Field SqlStatus from AdmJobLogging
+  client_server_fail:
+    display: Clientserverfail
+    type: string
+    required: false
+    description: Field ClientServerFail from AdmJobLogging
+  operator_type:
+    display: Operatortype
+    type: string
+    required: false
+    description: Field OperatorType from AdmJobLogging

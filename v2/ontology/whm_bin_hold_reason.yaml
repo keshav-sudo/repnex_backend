@@ -1,0 +1,18 @@
+concept: whm_bin_hold_reason
+display_name: WhmBinHoldReason
+module: other
+description: Auto-generated representation of the physical table WhmBinHoldReason.
+synonyms:
+- whmbinholdreason
+- whm bin hold reason
+header_attributes:
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from WhmBinHoldReason
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from WhmBinHoldReason

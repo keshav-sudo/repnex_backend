@@ -1,0 +1,118 @@
+concept: gen_category
+display_name: GenCategory
+module: general_ledger
+description: Auto-generated representation of the physical table GenCategory.
+synonyms:
+- gencategory
+- gen category
+header_attributes:
+  reval_category:
+    display: Revalcategory
+    type: string
+    required: false
+    description: Field RevalCategory from GenCategory
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from GenCategory
+  type1:
+    display: Type1
+    type: string
+    required: false
+    description: Field Type1 from GenCategory
+  type2:
+    display: Type2
+    type: string
+    required: false
+    description: Field Type2 from GenCategory
+  type3:
+    display: Type3
+    type: string
+    required: false
+    description: Field Type3 from GenCategory
+  type4:
+    display: Type4
+    type: string
+    required: false
+    description: Field Type4 from GenCategory
+  type5:
+    display: Type5
+    type: string
+    required: false
+    description: Field Type5 from GenCategory
+  type6:
+    display: Type6
+    type: string
+    required: false
+    description: Field Type6 from GenCategory
+  type7:
+    display: Type7
+    type: string
+    required: false
+    description: Field Type7 from GenCategory
+  type8:
+    display: Type8
+    type: string
+    required: false
+    description: Field Type8 from GenCategory
+  type9:
+    display: Type9
+    type: string
+    required: false
+    description: Field Type9 from GenCategory
+  type10:
+    display: Type10
+    type: string
+    required: false
+    description: Field Type10 from GenCategory
+  gain_loss_account1:
+    display: Gainlossaccount1
+    type: string
+    required: false
+    description: Field GainLossAccount1 from GenCategory
+  gain_loss_account2:
+    display: Gainlossaccount2
+    type: string
+    required: false
+    description: Field GainLossAccount2 from GenCategory
+  gain_loss_account3:
+    display: Gainlossaccount3
+    type: string
+    required: false
+    description: Field GainLossAccount3 from GenCategory
+  gain_loss_account4:
+    display: Gainlossaccount4
+    type: string
+    required: false
+    description: Field GainLossAccount4 from GenCategory
+  gain_loss_account5:
+    display: Gainlossaccount5
+    type: string
+    required: false
+    description: Field GainLossAccount5 from GenCategory
+  gain_loss_account6:
+    display: Gainlossaccount6
+    type: string
+    required: false
+    description: Field GainLossAccount6 from GenCategory
+  gain_loss_account7:
+    display: Gainlossaccount7
+    type: string
+    required: false
+    description: Field GainLossAccount7 from GenCategory
+  gain_loss_account8:
+    display: Gainlossaccount8
+    type: string
+    required: false
+    description: Field GainLossAccount8 from GenCategory
+  gain_loss_account9:
+    display: Gainlossaccount9
+    type: string
+    required: false
+    description: Field GainLossAccount9 from GenCategory
+  gain_loss_account10:
+    display: Gainlossaccount10
+    type: string
+    required: false
+    description: Field GainLossAccount10 from GenCategory

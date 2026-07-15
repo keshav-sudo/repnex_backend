@@ -1,0 +1,63 @@
+concept: int_edi_inv_det_ex
+display_name: IntEdiInvDetEx
+module: other
+description: Auto-generated representation of the physical table IntEdiInvDetEx.
+synonyms:
+- intediinvdetex
+- int edi inv det ex
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from IntEdiInvDetEx
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from IntEdiInvDetEx
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from IntEdiInvDetEx
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from IntEdiInvDetEx
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from IntEdiInvDetEx
+  order_qty:
+    display: Orderqty
+    type: decimal
+    required: false
+    description: Field OrderQty from IntEdiInvDetEx
+  retail_price:
+    display: Retailprice
+    type: decimal
+    required: false
+    description: Field RetailPrice from IntEdiInvDetEx
+  extended_val_for:
+    display: Extendedvalfor
+    type: decimal
+    required: false
+    description: Field ExtendedValFor from IntEdiInvDetEx
+  line_tax_val_for:
+    display: Linetaxvalfor
+    type: decimal
+    required: false
+    description: Field LineTaxValFor from IntEdiInvDetEx
+  discount_amount_for:
+    display: Discountamountfor
+    type: decimal
+    required: false
+    description: Field DiscountAmountFor from IntEdiInvDetEx
+  order_price:
+    display: Orderprice
+    type: decimal
+    required: false
+    description: Field OrderPrice from IntEdiInvDetEx

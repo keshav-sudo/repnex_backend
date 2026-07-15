@@ -1,0 +1,23 @@
+concept: wip_arc_part_book
+table: WipArcPartBook
+alias: wapb
+fields:
+  job: wapb.Job
+  line: wapb.Line
+  qty_supplied: wapb.QtySupplied
+  trn_date: wapb.TrnDate
+  journal: wapb.Journal
+  labour_value: wapb.LabourValue
+  material_value: wapb.MaterialValue
+  reference: wapb.Reference
+  add_reference: wapb.AddReference
+  sales_order: wapb.SalesOrder
+  master_job: wapb.MasterJob
+  co_product_line: wapb.CoProductLine
+  co_product: wapb.CoProduct
+  qty_supplied_ent: wapb.QtySuppliedEnt
+  gl_int_updated: wapb.GlIntUpdated
+  gl_int_printed: wapb.GlIntPrinted
+  gl_int_year: wapb.GlIntYear
+  gl_int_period: wapb.GlIntPeriod
+  gl_journal: wapb.GlJournal

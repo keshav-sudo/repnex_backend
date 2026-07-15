@@ -1,0 +1,9 @@
+concept: lynq_vp__day_template_timing
+table: Lynq_VP_DayTemplateTiming
+alias: lvpdtt
+fields:
+  id: lvpdtt.ID
+  day_template_id: lvpdtt.DayTemplateID
+  activity_code: lvpdtt.ActivityCode
+  start_time: lvpdtt.StartTime
+  end_time: lvpdtt.EndTime

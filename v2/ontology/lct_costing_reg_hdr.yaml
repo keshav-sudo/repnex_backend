@@ -1,0 +1,23 @@
+concept: lct_costing_reg_hdr
+display_name: LctCostingRegHdr
+module: other
+description: Auto-generated representation of the physical table LctCostingRegHdr.
+synonyms:
+- lctcostingreghdr
+- lct costing reg hdr
+header_attributes:
+  shipment_reference:
+    display: Shipmentreference
+    type: string
+    required: false
+    description: Field ShipmentReference from LctCostingRegHdr
+  vessel:
+    display: Vessel
+    type: string
+    required: false
+    description: Field Vessel from LctCostingRegHdr
+  departure_date:
+    display: Departuredate
+    type: date
+    required: false
+    description: Field DepartureDate from LctCostingRegHdr

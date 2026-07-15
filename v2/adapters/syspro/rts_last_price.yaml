@@ -1,0 +1,8 @@
+concept: rts_last_price
+table: RtsLastPrice
+alias: rlp
+fields:
+  stock_code: rlp.StockCode
+  warehouse: rlp.Warehouse
+  last_purch_date: rlp.LastPurchDate
+  last_cost: rlp.LastCost

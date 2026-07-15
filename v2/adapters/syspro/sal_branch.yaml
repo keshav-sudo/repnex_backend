@@ -1,0 +1,46 @@
+concept: sal_branch
+table: SalBranch
+alias: sb
+fields:
+  branch: sb.Branch
+  description: sb.Description
+  branch_addr0_build: sb.BranchAddr0Build
+  branch_addr1: sb.BranchAddr1
+  branch_addr2: sb.BranchAddr2
+  branch_addr2_loc: sb.BranchAddr2Loc
+  branch_addr3: sb.BranchAddr3
+  branch_addr3_country: sb.BranchAddr3Country
+  branch_postal_code: sb.BranchPostalCode
+  branch_gps_lat: sb.BranchGpsLat
+  branch_gps_long: sb.BranchGpsLong
+  frt_cos_acc: sb.FrtCosAcc
+  sales_ctl_acc: sb.SalesCtlAcc
+  cos_ctl_acc: sb.CosCtlAcc
+  frt_sales_acc: sb.FrtSalesAcc
+  fin_charge_acc: sb.FinChargeAcc
+  rounding_acc: sb.RoundingAcc
+  sales_tax_acc: sb.SalesTaxAcc
+  fst_acc: sb.FstAcc
+  deposit_acc: sb.DepositAcc
+  prefix_next_inv: sb.PrefixNextInv
+  next_invoice: sb.NextInvoice
+  next_credit_note: sb.NextCreditNote
+  next_debit_note: sb.NextDebitNote
+  prefix_next_so: sb.PrefixNextSo
+  next_sales_order: sb.NextSalesOrder
+  next_so_cr_note: sb.NextSoCrNote
+  next_so_db_note: sb.NextSoDbNote
+  next_del_note: sb.NextDelNote
+  prefix_next_rma: sb.PrefixNextRma
+  next_rma: sb.NextRma
+  nationality: sb.Nationality
+  next_credit_disc: sb.NextCreditDisc
+  next_debit_disc: sb.NextDebitDisc
+  language_code: sb.LanguageCode
+  quote_prefix: sb.QuotePrefix
+  next_quote: sb.NextQuote
+  quick_quote_prefix: sb.QuickQuotePrefix
+  next_quick_quote: sb.NextQuickQuote
+  vat_registration_no: sb.VatRegistrationNo
+  user_tax_reference: sb.UserTaxReference
+  exclude_from_avalara: sb.ExcludeFromAvalara

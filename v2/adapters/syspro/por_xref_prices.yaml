@@ -1,0 +1,25 @@
+concept: por_xref_prices
+table: PorXrefPrices
+alias: pxp
+fields:
+  supplier: pxp.Supplier
+  stock_code: pxp.StockCode
+  contract: pxp.Contract
+  price_reference: pxp.PriceReference
+  purchase_price: pxp.PurchasePrice
+  price_uom: pxp.PriceUom
+  price_comment: pxp.PriceComment
+  discount_code: pxp.DiscountCode
+  pack_size: pxp.PackSize
+  minimum_qty: pxp.MinimumQty
+  price_start_date: pxp.PriceStartDate
+  price_expiry_date: pxp.PriceExpiryDate
+  price_quote_date: pxp.PriceQuoteDate
+  quote_lead_time: pxp.QuoteLeadTime
+  shipping_instrs: pxp.ShippingInstrs
+  freight_charges: pxp.FreightCharges
+  freight_comment: pxp.FreightComment
+  disc_pct1: pxp.DiscPct1
+  disc_pct2: pxp.DiscPct2
+  disc_pct3: pxp.DiscPct3
+  minimum_qty_uom: pxp.MinimumQtyUom

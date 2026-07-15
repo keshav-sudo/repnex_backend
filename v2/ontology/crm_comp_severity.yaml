@@ -1,0 +1,23 @@
+concept: crm_comp_severity
+display_name: CrmCompSeverity
+module: crm
+description: Auto-generated representation of the physical table CrmCompSeverity.
+synonyms:
+- crmcompseverity
+- crm comp severity
+header_attributes:
+  severity_id:
+    display: Severityid
+    type: string
+    required: false
+    description: Field SeverityId from CrmCompSeverity
+  severity_desc:
+    display: Severitydesc
+    type: string
+    required: false
+    description: Field SeverityDesc from CrmCompSeverity
+  resolve_in:
+    display: Resolvein
+    type: decimal
+    required: false
+    description: Field ResolveIn from CrmCompSeverity

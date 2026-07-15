@@ -1,0 +1,103 @@
+concept: bom_employee
+display_name: BomEmployee
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomEmployee.
+synonyms:
+- bomemployee
+- bom employee
+header_attributes:
+  employee:
+    display: Employee
+    type: string
+    required: false
+    description: Field Employee from BomEmployee
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from BomEmployee
+  mtd_std_hrs_earned:
+    display: Mtdstdhrsearned
+    type: decimal
+    required: false
+    description: Field MtdStdHrsEarned from BomEmployee
+  mtd_non_prod_hours:
+    display: Mtdnonprodhours
+    type: decimal
+    required: false
+    description: Field MtdNonProdHours from BomEmployee
+  mtd_act_prod_hours:
+    display: Mtdactprodhours
+    type: decimal
+    required: false
+    description: Field MtdActProdHours from BomEmployee
+  std_hrs_per_month:
+    display: Stdhrspermonth
+    type: decimal
+    required: false
+    description: Field StdHrsPerMonth from BomEmployee
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from BomEmployee
+  employee_act_cost:
+    display: Employeeactcost
+    type: string
+    required: false
+    description: Field EmployeeActCost from BomEmployee
+  rates1:
+    display: Rates1
+    type: decimal
+    required: false
+    description: Field Rates1 from BomEmployee
+  rates2:
+    display: Rates2
+    type: decimal
+    required: false
+    description: Field Rates2 from BomEmployee
+  rates3:
+    display: Rates3
+    type: decimal
+    required: false
+    description: Field Rates3 from BomEmployee
+  rates4:
+    display: Rates4
+    type: decimal
+    required: false
+    description: Field Rates4 from BomEmployee
+  rates5:
+    display: Rates5
+    type: decimal
+    required: false
+    description: Field Rates5 from BomEmployee
+  rates6:
+    display: Rates6
+    type: decimal
+    required: false
+    description: Field Rates6 from BomEmployee
+  rates7:
+    display: Rates7
+    type: decimal
+    required: false
+    description: Field Rates7 from BomEmployee
+  rates8:
+    display: Rates8
+    type: decimal
+    required: false
+    description: Field Rates8 from BomEmployee
+  rates9:
+    display: Rates9
+    type: decimal
+    required: false
+    description: Field Rates9 from BomEmployee
+  shift_id:
+    display: Shiftid
+    type: string
+    required: false
+    description: Field ShiftId from BomEmployee
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from BomEmployee

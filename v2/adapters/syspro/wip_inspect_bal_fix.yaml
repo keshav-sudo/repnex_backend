@@ -1,0 +1,11 @@
+concept: wip_inspect_bal_fix
+table: WipInspectBalFix
+alias: wibf
+fields:
+  run_date_time: wibf.RunDateTime
+  insp_reference: wibf.InspReference
+  lot: wibf.Lot
+  old_inspect_value: wibf.OldInspectValue
+  new_inspect_value: wibf.NewInspectValue
+  old_inspect_qty: wibf.OldInspectQty
+  new_inspect_qty: wibf.NewInspectQty

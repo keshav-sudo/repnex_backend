@@ -1,0 +1,123 @@
+concept: int_edi_inv_det
+display_name: IntEdiInvDet
+module: other
+description: Auto-generated representation of the physical table IntEdiInvDet.
+synonyms:
+- intediinvdet
+- int edi inv det
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from IntEdiInvDet
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from IntEdiInvDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from IntEdiInvDet
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from IntEdiInvDet
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from IntEdiInvDet
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IntEdiInvDet
+  cust_stock_code:
+    display: Custstockcode
+    type: string
+    required: false
+    description: Field CustStockCode from IntEdiInvDet
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from IntEdiInvDet
+  ship_qty:
+    display: Shipqty
+    type: decimal
+    required: false
+    description: Field ShipQty from IntEdiInvDet
+  stk_qty_to_ship:
+    display: Stkqtytoship
+    type: decimal
+    required: false
+    description: Field StkQtyToShip from IntEdiInvDet
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from IntEdiInvDet
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from IntEdiInvDet
+  contract_num:
+    display: Contractnum
+    type: string
+    required: false
+    description: Field ContractNum from IntEdiInvDet
+  unit_price:
+    display: Unitprice
+    type: decimal
+    required: false
+    description: Field UnitPrice from IntEdiInvDet
+  extended_line_val:
+    display: Extendedlineval
+    type: decimal
+    required: false
+    description: Field ExtendedLineVal from IntEdiInvDet
+  line_tax_val:
+    display: Linetaxval
+    type: decimal
+    required: false
+    description: Field LineTaxVal from IntEdiInvDet
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from IntEdiInvDet
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from IntEdiInvDet
+  price_uom:
+    display: Priceuom
+    type: string
+    required: false
+    description: Field PriceUom from IntEdiInvDet
+  back_order_qty:
+    display: Backorderqty
+    type: decimal
+    required: false
+    description: Field BackOrderQty from IntEdiInvDet
+  tax_rate:
+    display: Taxrate
+    type: decimal
+    required: false
+    description: Field TaxRate from IntEdiInvDet
+  discount_amount:
+    display: Discountamount
+    type: decimal
+    required: false
+    description: Field DiscountAmount from IntEdiInvDet
+  order_uom:
+    display: Orderuom
+    type: string
+    required: false
+    description: Field OrderUom from IntEdiInvDet

@@ -1,0 +1,133 @@
+concept: req_user
+display_name: ReqUser
+module: other
+description: Auto-generated representation of the physical table ReqUser.
+synonyms:
+- requser
+- req user
+header_attributes:
+  user_code:
+    display: Usercode
+    type: string
+    required: false
+    description: Field UserCode from ReqUser
+  user_name:
+    display: Username
+    type: string
+    required: false
+    description: Field UserName from ReqUser
+  authority_level:
+    display: Authoritylevel
+    type: string
+    required: false
+    description: Field AuthorityLevel from ReqUser
+  max_line_value:
+    display: Maxlinevalue
+    type: decimal
+    required: false
+    description: Field MaxLineValue from ReqUser
+  auth_warehouse:
+    display: Authwarehouse
+    type: string
+    required: false
+    description: Field AuthWarehouse from ReqUser
+  next_user:
+    display: Nextuser
+    type: string
+    required: false
+    description: Field NextUser from ReqUser
+  mandatory_chk_reqd:
+    display: Mandatorychkreqd
+    type: string
+    required: false
+    description: Field MandatoryChkReqd from ReqUser
+  so_review_flag:
+    display: Soreviewflag
+    type: string
+    required: false
+    description: Field SoReviewFlag from ReqUser
+  maintain_reqn_flag:
+    display: Maintainreqnflag
+    type: string
+    required: false
+    description: Field MaintainReqnFlag from ReqUser
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from ReqUser
+  incl_planning:
+    display: Inclplanning
+    type: string
+    required: false
+    description: Field InclPlanning from ReqUser
+  can_add_reqn:
+    display: Canaddreqn
+    type: string
+    required: false
+    description: Field CanAddReqn from ReqUser
+  can_add_reqn_details:
+    display: Canaddreqndetails
+    type: string
+    required: false
+    description: Field CanAddReqnDetails from ReqUser
+  can_chg_reqn_details:
+    display: Canchgreqndetails
+    type: string
+    required: false
+    description: Field CanChgReqnDetails from ReqUser
+  can_approve_reqn:
+    display: Canapprovereqn
+    type: string
+    required: false
+    description: Field CanApproveReqn from ReqUser
+  can_create_order:
+    display: Cancreateorder
+    type: string
+    required: false
+    description: Field CanCreateOrder from ReqUser
+  max_approve_value:
+    display: Maxapprovevalue
+    type: decimal
+    required: false
+    description: Field MaxApproveValue from ReqUser
+  on_hold_flag:
+    display: Onholdflag
+    type: string
+    required: false
+    description: Field OnHoldFlag from ReqUser
+  forward_to_user:
+    display: Forwardtouser
+    type: string
+    required: false
+    description: Field ForwardToUser from ReqUser
+  user_for_porder:
+    display: Userforporder
+    type: string
+    required: false
+    description: Field UserForPorder from ReqUser
+  requisition_group:
+    display: Requisitiongroup
+    type: string
+    required: false
+    description: Field RequisitionGroup from ReqUser
+  admin_user_flag:
+    display: Adminuserflag
+    type: string
+    required: false
+    description: Field AdminUserFlag from ReqUser
+  admin_stop_flag:
+    display: Adminstopflag
+    type: string
+    required: false
+    description: Field AdminStopFlag from ReqUser
+  can_create_rfq:
+    display: Cancreaterfq
+    type: string
+    required: false
+    description: Field CanCreateRfq from ReqUser
+  user_for_rfq:
+    display: Userforrfq
+    type: string
+    required: false
+    description: Field UserForRfq from ReqUser

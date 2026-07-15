@@ -1,0 +1,208 @@
+concept: ar_invoice_pay
+display_name: ArInvoicePay
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArInvoicePay.
+synonyms:
+- arinvoicepay
+- ar invoice pay
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArInvoicePay
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArInvoicePay
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArInvoicePay
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ArInvoicePay
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from ArInvoicePay
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from ArInvoicePay
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ArInvoicePay
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ArInvoicePay
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from ArInvoicePay
+  disc_value:
+    display: Discvalue
+    type: decimal
+    required: false
+    description: Field DiscValue from ArInvoicePay
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArInvoicePay
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArInvoicePay
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from ArInvoicePay
+  post_value:
+    display: Postvalue
+    type: decimal
+    required: false
+    description: Field PostValue from ArInvoicePay
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ArInvoicePay
+  post_conv_rate:
+    display: Postconvrate
+    type: decimal
+    required: false
+    description: Field PostConvRate from ArInvoicePay
+  post_mul_div:
+    display: Postmuldiv
+    type: string
+    required: false
+    description: Field PostMulDiv from ArInvoicePay
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ArInvoicePay
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from ArInvoicePay
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from ArInvoicePay
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ArInvoicePay
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from ArInvoicePay
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ArInvoicePay
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArInvoicePay
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ArInvoicePay
+  collector:
+    display: Collector
+    type: string
+    required: false
+    description: Field Collector from ArInvoicePay
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArInvoicePay
+  invoice_notation:
+    display: Invoicenotation
+    type: string
+    required: false
+    description: Field InvoiceNotation from ArInvoicePay
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArInvoicePay
+  collector_number_ar:
+    display: Collectornumberar
+    type: string
+    required: false
+    description: Field CollectorNumberAr from ArInvoicePay
+  mult_cur_pay:
+    display: Multcurpay
+    type: string
+    required: false
+    description: Field MultCurPay from ArInvoicePay
+  pay_rec_currency:
+    display: Payreccurrency
+    type: string
+    required: false
+    description: Field PayRecCurrency from ArInvoicePay
+  pay_rec_net_value:
+    display: Payrecnetvalue
+    type: decimal
+    required: false
+    description: Field PayRecNetValue from ArInvoicePay
+  pay_rec_dsc_value:
+    display: Payrecdscvalue
+    type: decimal
+    required: false
+    description: Field PayRecDscValue from ArInvoicePay
+  pay_rec_conv_rate:
+    display: Payrecconvrate
+    type: decimal
+    required: false
+    description: Field PayRecConvRate from ArInvoicePay
+  pay_rec_mul_div:
+    display: Payrecmuldiv
+    type: string
+    required: false
+    description: Field PayRecMulDiv from ArInvoicePay
+  group_pay:
+    display: Grouppay
+    type: string
+    required: false
+    description: Field GroupPay from ArInvoicePay
+  inter_company_trx:
+    display: Intercompanytrx
+    type: string
+    required: false
+    description: Field InterCompanyTrx from ArInvoicePay
+  primary_company:
+    display: Primarycompany
+    type: string
+    required: false
+    description: Field PrimaryCompany from ArInvoicePay
+  secondary_company:
+    display: Secondarycompany
+    type: string
+    required: false
+    description: Field SecondaryCompany from ArInvoicePay

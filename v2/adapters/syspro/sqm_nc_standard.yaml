@@ -1,0 +1,15 @@
+concept: sqm_nc_standard
+table: SqmNcStandard
+alias: sns
+fields:
+  conform_standard: sns.ConformStandard
+  stan_description: sns.StanDescription
+  department: sns.Department
+  severity_level: sns.SeverityLevel
+  conform_type: sns.ConformType
+  result_hours: sns.ResultHours
+  nc_process: sns.NcProcess
+  require_close: sns.RequireClose
+  require_ca: sns.RequireCa
+  require_pa: sns.RequirePa
+  require_audit: sns.RequireAudit

@@ -1,0 +1,58 @@
+concept: sqm_hier_level
+display_name: SqmHierLevel
+module: other
+description: Auto-generated representation of the physical table SqmHierLevel.
+synonyms:
+- sqmhierlevel
+- sqm hier level
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmHierLevel
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SqmHierLevel
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SqmHierLevel
+  source_type:
+    display: Sourcetype
+    type: string
+    required: false
+    description: Field SourceType from SqmHierLevel
+  source_key:
+    display: Sourcekey
+    type: string
+    required: false
+    description: Field SourceKey from SqmHierLevel
+  sqm_rules:
+    display: Sqmrules
+    type: string
+    required: false
+    description: Field SqmRules from SqmHierLevel
+  inc_gen_tests:
+    display: Incgentests
+    type: string
+    required: false
+    description: Field IncGenTests from SqmHierLevel
+  sample_basis:
+    display: Samplebasis
+    type: string
+    required: false
+    description: Field SampleBasis from SqmHierLevel
+  full_test_required:
+    display: Fulltestrequired
+    type: string
+    required: false
+    description: Field FullTestRequired from SqmHierLevel
+  inspector:
+    display: Inspector
+    type: string
+    required: false
+    description: Field Inspector from SqmHierLevel

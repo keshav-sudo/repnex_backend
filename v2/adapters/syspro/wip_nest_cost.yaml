@@ -1,0 +1,14 @@
+concept: wip_nest_cost
+table: WipNestCost
+alias: wnc
+fields:
+  stock_code: wnc.StockCode
+  warehouse: wnc.Warehouse
+  bucket: wnc.Bucket
+  receipt_date: wnc.ReceiptDate
+  receipt_qty: wnc.ReceiptQty
+  unit_cost: wnc.UnitCost
+  job_nest: wnc.JobNest
+  job: wnc.Job
+  version: wnc.Version
+  release: wnc.Release

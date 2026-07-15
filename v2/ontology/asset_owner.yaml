@@ -1,0 +1,18 @@
+concept: asset_owner
+display_name: AssetOwner
+module: assets
+description: Auto-generated representation of the physical table AssetOwner.
+synonyms:
+- assetowner
+- asset owner
+header_attributes:
+  asset_owner:
+    display: Assetowner
+    type: string
+    required: false
+    description: Field AssetOwner from AssetOwner
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetOwner

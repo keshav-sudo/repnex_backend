@@ -1,0 +1,243 @@
+concept: asset_entries_alt
+display_name: AssetEntriesAlt
+module: assets
+description: Auto-generated representation of the physical table AssetEntriesAlt.
+synonyms:
+- assetentriesalt
+- asset entries alt
+header_attributes:
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetEntriesAlt
+  alt_code:
+    display: Altcode
+    type: decimal
+    required: false
+    description: Field AltCode from AssetEntriesAlt
+  entry_year:
+    display: Entryyear
+    type: decimal
+    required: false
+    description: Field EntryYear from AssetEntriesAlt
+  entry_month:
+    display: Entrymonth
+    type: decimal
+    required: false
+    description: Field EntryMonth from AssetEntriesAlt
+  system_date:
+    display: Systemdate
+    type: date
+    required: false
+    description: Field SystemDate from AssetEntriesAlt
+  system_time:
+    display: Systemtime
+    type: decimal
+    required: false
+    description: Field SystemTime from AssetEntriesAlt
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from AssetEntriesAlt
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from AssetEntriesAlt
+  entry_amount:
+    display: Entryamount
+    type: decimal
+    required: false
+    description: Field EntryAmount from AssetEntriesAlt
+  asset_cost:
+    display: Assetcost
+    type: decimal
+    required: false
+    description: Field AssetCost from AssetEntriesAlt
+  asset_current_value:
+    display: Assetcurrentvalue
+    type: decimal
+    required: false
+    description: Field AssetCurrentValue from AssetEntriesAlt
+  entry_qty:
+    display: Entryqty
+    type: decimal
+    required: false
+    description: Field EntryQty from AssetEntriesAlt
+  asset_qty:
+    display: Assetqty
+    type: decimal
+    required: false
+    description: Field AssetQty from AssetEntriesAlt
+  depn_ytd:
+    display: Depnytd
+    type: decimal
+    required: false
+    description: Field DepnYtd from AssetEntriesAlt
+  depn_prev_year:
+    display: Depnprevyear
+    type: decimal
+    required: false
+    description: Field DepnPrevYear from AssetEntriesAlt
+  accum_depn:
+    display: Accumdepn
+    type: decimal
+    required: false
+    description: Field AccumDepn from AssetEntriesAlt
+  residual_value:
+    display: Residualvalue
+    type: decimal
+    required: false
+    description: Field ResidualValue from AssetEntriesAlt
+  depn_code:
+    display: Depncode
+    type: string
+    required: false
+    description: Field DepnCode from AssetEntriesAlt
+  depn_rate:
+    display: Depnrate
+    type: decimal
+    required: false
+    description: Field DepnRate from AssetEntriesAlt
+  depn_start_date:
+    display: Depnstartdate
+    type: date
+    required: false
+    description: Field DepnStartDate from AssetEntriesAlt
+  thruput_eul:
+    display: Thruputeul
+    type: decimal
+    required: false
+    description: Field ThruputEul from AssetEntriesAlt
+  reval_reserve_to_date:
+    display: Revalreservetodate
+    type: decimal
+    required: false
+    description: Field RevalReserveToDate from AssetEntriesAlt
+  stat_gl_code:
+    display: Statglcode
+    type: string
+    required: false
+    description: Field StatGlCode from AssetEntriesAlt
+  number_of_periods:
+    display: Numberofperiods
+    type: decimal
+    required: false
+    description: Field NumberOfPeriods from AssetEntriesAlt
+  number_of_years:
+    display: Numberofyears
+    type: decimal
+    required: false
+    description: Field NumberOfYears from AssetEntriesAlt
+  total_periods_td:
+    display: Totalperiodstd
+    type: decimal
+    required: false
+    description: Field TotalPeriodsTd from AssetEntriesAlt
+  min_book_value:
+    display: Minbookvalue
+    type: decimal
+    required: false
+    description: Field MinBookValue from AssetEntriesAlt
+  suspend:
+    display: Suspend
+    type: string
+    required: false
+    description: Field Suspend from AssetEntriesAlt
+  reason:
+    display: Reason
+    type: string
+    required: false
+    description: Field Reason from AssetEntriesAlt
+  asset_status:
+    display: Assetstatus
+    type: string
+    required: false
+    description: Field AssetStatus from AssetEntriesAlt
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetEntriesAlt
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from AssetEntriesAlt
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetEntriesAlt
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetEntriesAlt
+  company_before:
+    display: Companybefore
+    type: string
+    required: false
+    description: Field CompanyBefore from AssetEntriesAlt
+  company_after:
+    display: Companyafter
+    type: string
+    required: false
+    description: Field CompanyAfter from AssetEntriesAlt
+  branch_after:
+    display: Branchafter
+    type: string
+    required: false
+    description: Field BranchAfter from AssetEntriesAlt
+  group_after:
+    display: Groupafter
+    type: string
+    required: false
+    description: Field GroupAfter from AssetEntriesAlt
+  cost_center_after:
+    display: Costcenterafter
+    type: string
+    required: false
+    description: Field CostCenterAfter from AssetEntriesAlt
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from AssetEntriesAlt
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AssetEntriesAlt
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from AssetEntriesAlt
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from AssetEntriesAlt
+  entry_reference:
+    display: Entryreference
+    type: string
+    required: false
+    description: Field EntryReference from AssetEntriesAlt
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from AssetEntriesAlt
+  sold_value:
+    display: Soldvalue
+    type: decimal
+    required: false
+    description: Field SoldValue from AssetEntriesAlt
+  disposal_cost:
+    display: Disposalcost
+    type: decimal
+    required: false
+    description: Field DisposalCost from AssetEntriesAlt

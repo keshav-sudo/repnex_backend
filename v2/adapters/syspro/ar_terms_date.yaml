@@ -1,0 +1,7 @@
+concept: ar_terms_date
+table: ArTermsDate
+alias: atd
+fields:
+  terms_code: atd.TermsCode
+  date_type: atd.DateType
+  due_date: atd.DueDate

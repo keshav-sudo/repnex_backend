@@ -1,0 +1,48 @@
+concept: gen_last_reval_rate
+display_name: GenLastRevalRate
+module: general_ledger
+description: Auto-generated representation of the physical table GenLastRevalRate.
+synonyms:
+- genlastrevalrate
+- gen last reval rate
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from GenLastRevalRate
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenLastRevalRate
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenLastRevalRate
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenLastRevalRate
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenLastRevalRate
+  gl_line:
+    display: Glline
+    type: decimal
+    required: false
+    description: Field GlLine from GenLastRevalRate
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from GenLastRevalRate
+  last_rate:
+    display: Lastrate
+    type: decimal
+    required: false
+    description: Field LastRate from GenLastRevalRate

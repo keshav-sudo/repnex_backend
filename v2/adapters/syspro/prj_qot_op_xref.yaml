@@ -1,0 +1,13 @@
+concept: prj_qot_op_xref
+table: PrjQotOpXref
+alias: pqox
+fields:
+  estimate: pqox.Estimate
+  non_stock_code: pqox.NonStockCode
+  route: pqox.Route
+  operation: pqox.Operation
+  hierarchy_qot1: pqox.HierarchyQot1
+  hierarchy_qot2: pqox.HierarchyQot2
+  hierarchy_qot3: pqox.HierarchyQot3
+  hierarchy_qot4: pqox.HierarchyQot4
+  hierarchy_qot5: pqox.HierarchyQot5

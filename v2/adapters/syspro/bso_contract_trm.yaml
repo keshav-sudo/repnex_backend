@@ -1,0 +1,15 @@
+concept: bso_contract_trm
+table: BsoContractTrm
+alias: bct1
+fields:
+  customer: bct1.Customer
+  customer_po_number: bct1.CustomerPoNumber
+  cust_stock_code: bct1.CustStockCode
+  day_range_start: bct1.DayRangeStart
+  day_range_finish: bct1.DayRangeFinish
+  positive_pdiff: bct1.PositivePdiff
+  negative_pdiff: bct1.NegativePdiff
+  positive_qty_diff: bct1.PositiveQtyDiff
+  negative_qty_diff: bct1.NegativeQtyDiff
+  basis_diff_flag: bct1.BasisDiffFlag
+  matching_method: bct1.MatchingMethod

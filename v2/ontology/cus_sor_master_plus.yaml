@@ -1,0 +1,33 @@
+concept: cus_sor_master_plus
+display_name: CusSorMaster+
+module: other
+description: Auto-generated representation of the physical table CusSorMaster+.
+synonyms:
+- cussormaster+
+- cus sor master plus
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from CusSorMaster+
+  invoice_number:
+    display: Invoicenumber
+    type: string
+    required: false
+    description: Field InvoiceNumber from CusSorMaster+
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from CusSorMaster+
+  vehicle_code:
+    display: Vehiclecode
+    type: string
+    required: false
+    description: Field VehicleCode from CusSorMaster+
+  region:
+    display: Region
+    type: string
+    required: false
+    description: Field Region from CusSorMaster+

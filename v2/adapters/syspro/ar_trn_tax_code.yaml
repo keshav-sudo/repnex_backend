@@ -1,0 +1,14 @@
+concept: ar_trn_tax_code
+table: ArTrnTaxCode
+alias: attc
+fields:
+  trn_year: attc.TrnYear
+  trn_month: attc.TrnMonth
+  register: attc.Register
+  invoice: attc.Invoice
+  summary_line: attc.SummaryLine
+  tax_code: attc.TaxCode
+  taxable_value: attc.TaxableValue
+  tax_value: attc.TaxValue
+  non_tax_value: attc.NonTaxValue
+  foreign_tax_val: attc.ForeignTaxVal

@@ -1,0 +1,7 @@
+concept: lynq_me__association
+table: Lynq_ME_Association
+alias: lmea2
+fields:
+  id: lmea2.ID
+  employee_code: lmea2.EmployeeCode
+  facility_code: lmea2.FacilityCode

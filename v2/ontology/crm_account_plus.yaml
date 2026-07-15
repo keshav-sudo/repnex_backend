@@ -1,0 +1,18 @@
+concept: crm_account_plus
+display_name: CrmAccount+
+module: crm
+description: Auto-generated representation of the physical table CrmAccount+.
+synonyms:
+- crmaccount+
+- crm account plus
+header_attributes:
+  account:
+    display: Account
+    type: string
+    required: false
+    description: Field Account from CrmAccount+
+  classification:
+    display: Classification
+    type: string
+    required: false
+    description: Field Classification from CrmAccount+

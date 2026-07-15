@@ -1,0 +1,29 @@
+concept: bom_shift_emp
+table: BomShiftEmp
+alias: bse
+fields:
+  employee: bse.Employee
+  shift_code: bse.ShiftCode
+  name: bse.Name
+  shift_team: bse.ShiftTeam
+  complete_shift: bse.CompleteShift
+  shift_det_code1: bse.ShiftDetCode1
+  shift_det_code2: bse.ShiftDetCode2
+  shift_det_code3: bse.ShiftDetCode3
+  shift_det_code4: bse.ShiftDetCode4
+  shift_det_code5: bse.ShiftDetCode5
+  shift_det_code6: bse.ShiftDetCode6
+  shift_det_code7: bse.ShiftDetCode7
+  shift_det_code8: bse.ShiftDetCode8
+  shift_det_code9: bse.ShiftDetCode9
+  shift_det_code10: bse.ShiftDetCode10
+  shift_det_code11: bse.ShiftDetCode11
+  shift_det_code12: bse.ShiftDetCode12
+  shift_det_code13: bse.ShiftDetCode13
+  shift_det_code14: bse.ShiftDetCode14
+  shift_det_code15: bse.ShiftDetCode15
+  shift_det_code16: bse.ShiftDetCode16
+  shift_det_code17: bse.ShiftDetCode17
+  shift_det_code18: bse.ShiftDetCode18
+  shift_det_code19: bse.ShiftDetCode19
+  shift_det_code20: bse.ShiftDetCode20

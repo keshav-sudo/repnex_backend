@@ -1,0 +1,8 @@
+concept: tbl_po_price_uom
+table: TblPoPriceUom
+alias: tppu
+fields:
+  order_uom: tppu.OrderUom
+  price_uom: tppu.PriceUom
+  conv_factor: tppu.ConvFactor
+  mul_div: tppu.MulDiv

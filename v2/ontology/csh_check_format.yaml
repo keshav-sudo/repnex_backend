@@ -1,0 +1,18 @@
+concept: csh_check_format
+display_name: CshCheckFormat
+module: cashbook
+description: Auto-generated representation of the physical table CshCheckFormat.
+synonyms:
+- cshcheckformat
+- csh check format
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshCheckFormat
+  format_info:
+    display: Formatinfo
+    type: string
+    required: false
+    description: Field FormatInfo from CshCheckFormat

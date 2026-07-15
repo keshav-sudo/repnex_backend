@@ -1,0 +1,98 @@
+concept: ar_trn_tax
+display_name: ArTrnTax
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArTrnTax.
+synonyms:
+- artrntax
+- ar trn tax
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArTrnTax
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArTrnTax
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from ArTrnTax
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArTrnTax
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from ArTrnTax
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from ArTrnTax
+  blank_taxable_val:
+    display: Blanktaxableval
+    type: decimal
+    required: false
+    description: Field BlankTaxableVal from ArTrnTax
+  sales_distr_upd:
+    display: Salesdistrupd
+    type: string
+    required: false
+    description: Field SalesDistrUpd from ArTrnTax
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArTrnTax
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ArTrnTax
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from ArTrnTax
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from ArTrnTax
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from ArTrnTax
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from ArTrnTax
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from ArTrnTax
+  eec_invoice_flag:
+    display: Eecinvoiceflag
+    type: string
+    required: false
+    description: Field EecInvoiceFlag from ArTrnTax
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ArTrnTax
+  uk_vat_flag:
+    display: Ukvatflag
+    type: string
+    required: false
+    description: Field UkVatFlag from ArTrnTax

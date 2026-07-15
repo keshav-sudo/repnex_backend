@@ -1,0 +1,43 @@
+concept: whm_lpn_detail
+display_name: WhmLpnDetail
+module: other
+description: Auto-generated representation of the physical table WhmLpnDetail.
+synonyms:
+- whmlpndetail
+- whm lpn detail
+header_attributes:
+  license_plate_number:
+    display: Licenseplatenumber
+    type: string
+    required: false
+    description: Field LicensePlateNumber from WhmLpnDetail
+  content_id:
+    display: Contentid
+    type: decimal
+    required: false
+    description: Field ContentId from WhmLpnDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WhmLpnDetail
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from WhmLpnDetail
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WhmLpnDetail
+  current_quantity:
+    display: Currentquantity
+    type: decimal
+    required: false
+    description: Field CurrentQuantity from WhmLpnDetail
+  available_quantity:
+    display: Availablequantity
+    type: decimal
+    required: false
+    description: Field AvailableQuantity from WhmLpnDetail

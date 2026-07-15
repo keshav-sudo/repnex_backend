@@ -1,0 +1,29 @@
+concept: lot_arc_wip_insp_ser
+table: LotArcWipInspSer
+alias: lawis
+fields:
+  insp_reference: lawis.InspReference
+  lot: lawis.Lot
+  serial: lawis.Serial
+  status: lawis.Status
+  qty_inspected: lawis.QtyInspected
+  quantity: lawis.Quantity
+  qty_accepted: lawis.QtyAccepted
+  qty_scrapped: lawis.QtyScrapped
+  qty_reworked: lawis.QtyReworked
+  transaction_date: lawis.TransactionDate
+  line: lawis.Line
+  document_num: lawis.DocumentNum
+  transf_to_new_wh: lawis.TransfToNewWh
+  stock_code: lawis.StockCode
+  version: lawis.Version
+  release: lawis.Release
+  rework_job: lawis.ReworkJob
+  expiry_date: lawis.ExpiryDate
+  location: lawis.Location
+  co_product_line: lawis.CoProductLine
+  qty_inspected_ent: lawis.QtyInspectedEnt
+  quantity_ent: lawis.QuantityEnt
+  qty_accepted_ent: lawis.QtyAcceptedEnt
+  qty_scrapped_ent: lawis.QtyScrappedEnt
+  qty_reworked_ent: lawis.QtyReworkedEnt

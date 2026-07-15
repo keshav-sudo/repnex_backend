@@ -1,0 +1,6 @@
+concept: tbl_so_xrf_prc_cur
+table: TblSoXrfPrcCur
+alias: tsxpc
+fields:
+  price_code: tsxpc.PriceCode
+  currency: tsxpc.Currency

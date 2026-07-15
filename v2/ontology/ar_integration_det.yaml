@@ -1,0 +1,33 @@
+concept: ar_integration_det
+display_name: ArIntegrationDet
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArIntegrationDet.
+synonyms:
+- arintegrationdet
+- ar integration det
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArIntegrationDet
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ArIntegrationDet
+  gl_exch_var_code:
+    display: Glexchvarcode
+    type: string
+    required: false
+    description: Field GlExchVarCode from ArIntegrationDet
+  gl_exch_loss_code:
+    display: Glexchlosscode
+    type: string
+    required: false
+    description: Field GlExchLossCode from ArIntegrationDet
+  un_realized_forex:
+    display: Unrealizedforex
+    type: string
+    required: false
+    description: Field UnRealizedForex from ArIntegrationDet

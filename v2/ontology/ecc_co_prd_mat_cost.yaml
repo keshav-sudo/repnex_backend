@@ -1,0 +1,43 @@
+concept: ecc_co_prd_mat_cost
+display_name: EccCoPrdMatCost
+module: other
+description: Auto-generated representation of the physical table EccCoPrdMatCost.
+synonyms:
+- ecccoprdmatcost
+- ecc co prd mat cost
+header_attributes:
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccCoPrdMatCost
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from EccCoPrdMatCost
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from EccCoPrdMatCost
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from EccCoPrdMatCost
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from EccCoPrdMatCost
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from EccCoPrdMatCost
+  pct_material_cost:
+    display: Pctmaterialcost
+    type: decimal
+    required: false
+    description: Field PctMaterialCost from EccCoPrdMatCost

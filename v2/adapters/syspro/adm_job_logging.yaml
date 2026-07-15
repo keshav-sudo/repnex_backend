@@ -1,0 +1,30 @@
+concept: adm_job_logging
+table: AdmJobLogging
+alias: ajl
+fields:
+  prog_run_date: ajl.ProgRunDate
+  prog_run_time: ajl.ProgRunTime
+  prog_end_date: ajl.ProgEndDate
+  prog_end_time: ajl.ProgEndTime
+  program_name: ajl.ProgramName
+  operator: ajl.Operator
+  group_code: ajl.GroupCode
+  impact_date: ajl.ImpactDate
+  printed_flag: ajl.PrintedFlag
+  prog_error_code: ajl.ProgErrorCode
+  error_status_code: ajl.ErrorStatusCode
+  error_filename: ajl.ErrorFilename
+  computer_name: ajl.ComputerName
+  message: ajl.Message
+  client_server_id: ajl.ClientServerId
+  process_id: ajl.ProcessId
+  transaction_status: ajl.TransactionStatus
+  detail_flag: ajl.DetailFlag
+  program_version: ajl.ProgramVersion
+  role: ajl.Role
+  sql_spid: ajl.SqlSpid
+  avanti_flag: ajl.AvantiFlag
+  syspro_source: ajl.SysproSource
+  sql_status: ajl.SqlStatus
+  client_server_fail: ajl.ClientServerFail
+  operator_type: ajl.OperatorType

@@ -1,0 +1,83 @@
+concept: crm_address
+display_name: CrmAddress
+module: crm
+description: Auto-generated representation of the physical table CrmAddress.
+synonyms:
+- crmaddress
+- crm address
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmAddress
+  address_type:
+    display: Addresstype
+    type: decimal
+    required: false
+    description: Field AddressType from CrmAddress
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmAddress
+  building:
+    display: Building
+    type: string
+    required: false
+    description: Field Building from CrmAddress
+  street:
+    display: Street
+    type: string
+    required: false
+    description: Field Street from CrmAddress
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from CrmAddress
+  locality:
+    display: Locality
+    type: string
+    required: false
+    description: Field Locality from CrmAddress
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from CrmAddress
+  country:
+    display: Country
+    type: string
+    required: false
+    description: Field Country from CrmAddress
+  zip:
+    display: Zip
+    type: string
+    required: false
+    description: Field Zip from CrmAddress
+  address_gps_lat:
+    display: Addressgpslat
+    type: decimal
+    required: false
+    description: Field AddressGpsLat from CrmAddress
+  address_gps_long:
+    display: Addressgpslong
+    type: decimal
+    required: false
+    description: Field AddressGpsLong from CrmAddress
+  work_home_flag:
+    display: Workhomeflag
+    type: string
+    required: false
+    description: Field WorkHomeFlag from CrmAddress
+  preferred:
+    display: Preferred
+    type: string
+    required: false
+    description: Field Preferred from CrmAddress
+  private:
+    display: Private
+    type: string
+    required: false
+    description: Field Private from CrmAddress

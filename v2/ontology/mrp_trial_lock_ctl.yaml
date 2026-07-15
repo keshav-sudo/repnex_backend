@@ -1,0 +1,18 @@
+concept: mrp_trial_lock_ctl
+display_name: MrpTrialLockCtl
+module: mrp
+description: Auto-generated representation of the physical table MrpTrialLockCtl.
+synonyms:
+- mrptriallockctl
+- mrp trial lock ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from MrpTrialLockCtl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from MrpTrialLockCtl

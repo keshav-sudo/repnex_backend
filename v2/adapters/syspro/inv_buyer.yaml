@@ -1,0 +1,7 @@
+concept: inv_buyer
+table: InvBuyer
+alias: ib
+fields:
+  buyer: ib.Buyer
+  name: ib.Name
+  email: ib.Email

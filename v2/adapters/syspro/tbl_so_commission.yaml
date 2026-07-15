@@ -1,0 +1,7 @@
+concept: tbl_so_commission
+table: TblSoCommission
+alias: tsc
+fields:
+  commission_code: tsc.CommissionCode
+  description: tsc.Description
+  commission_pct: tsc.CommissionPct

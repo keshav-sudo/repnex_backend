@@ -1,0 +1,6 @@
+concept: ar_master_sub
+table: ArMasterSub
+alias: ams
+fields:
+  customer: ams.Customer
+  customer_sub: ams.CustomerSub

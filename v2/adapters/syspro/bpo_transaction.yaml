@@ -1,0 +1,27 @@
+concept: bpo_transaction
+table: BpoTransaction
+alias: bt1
+fields:
+  contract: bt1.Contract
+  stock_code: bt1.StockCode
+  schedule_date: bt1.ScheduleDate
+  tran_date: bt1.TranDate
+  tran_time: bt1.TranTime
+  line_type: bt1.LineType
+  tran_type: bt1.TranType
+  purchase_order: bt1.PurchaseOrder
+  line: bt1.Line
+  warehouse: bt1.Warehouse
+  order_uom: bt1.OrderUom
+  tran_qty: bt1.TranQty
+  price: bt1.Price
+  transaction_value: bt1.TransactionValue
+  mass: bt1.Mass
+  volume: bt1.Volume
+  conv_fact_prc_um: bt1.ConvFactPrcUm
+  mul_div_prc: bt1.MulDivPrc
+  price_uom: bt1.PriceUom
+  product_class: bt1.ProductClass
+  edi_extract_flag: bt1.EdiExtractFlag
+  edi_action_flag: bt1.EdiActionFlag
+  grn: bt1.Grn

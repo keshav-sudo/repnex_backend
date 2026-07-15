@@ -1,0 +1,33 @@
+concept: inv_narration
+display_name: InvNarration
+module: inventory
+description: Auto-generated representation of the physical table InvNarration.
+synonyms:
+- invnarration
+- inv narration
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvNarration
+  text_type:
+    display: Texttype
+    type: string
+    required: false
+    description: Field TextType from InvNarration
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from InvNarration
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from InvNarration
+  text:
+    display: Text
+    type: string
+    required: false
+    description: Field Text from InvNarration

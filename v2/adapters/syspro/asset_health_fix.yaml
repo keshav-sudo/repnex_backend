@@ -1,0 +1,15 @@
+concept: asset_health_fix
+table: AssetHealthFix
+alias: ahf
+fields:
+  run_date_time: ahf.RunDateTime
+  asset: ahf.Asset
+  origin: ahf.Origin
+  type: ahf.Type
+  hfix_year: ahf.HfixYear
+  hfix_month: ahf.HfixMonth
+  actual_value: ahf.ActualValue
+  calc_value: ahf.CalcValue
+  diff_value: ahf.DiffValue
+  message: ahf.Message
+  self_healing_flag: ahf.SelfHealingFlag

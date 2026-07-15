@@ -1,0 +1,37 @@
+concept: ar_trn_gst
+table: ArTrnGst
+alias: atg
+fields:
+  trn_year: atg.TrnYear
+  trn_month: atg.TrnMonth
+  register: atg.Register
+  invoice: atg.Invoice
+  summary_line: atg.SummaryLine
+  detail_line: atg.DetailLine
+  gst_exempt_flag: atg.GstExemptFlag
+  invoice_date: atg.InvoiceDate
+  document_type: atg.DocumentType
+  customer: atg.Customer
+  gst_exempt_num: atg.GstExemptNum
+  customer_po_number: atg.CustomerPoNumber
+  branch: atg.Branch
+  line_type: atg.LineType
+  stock_code: atg.StockCode
+  description: atg.Description
+  qty_invoiced: atg.QtyInvoiced
+  gst_taxable_value: atg.GstTaxableValue
+  gst_basis: atg.GstBasis
+  gst_tax_code: atg.GstTaxCode
+  gst_rate: atg.GstRate
+  gst_value: atg.GstValue
+  gst_upd: atg.GstUpd
+  interface_flag: atg.InterfaceFlag
+  invoice_value: atg.InvoiceValue
+  last_fst_record: atg.LastFstRecord
+  decimals: atg.Decimals
+  exempt_forced_flag: atg.ExemptForcedFlag
+  area: atg.Area
+  cash_credit: atg.CashCredit
+  global_tax_upd: atg.GlobalTaxUpd
+  user_field1: atg.UserField1
+  user_field2: atg.UserField2

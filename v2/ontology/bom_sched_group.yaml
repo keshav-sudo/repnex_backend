@@ -1,0 +1,18 @@
+concept: bom_sched_group
+display_name: BomSchedGroup
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomSchedGroup.
+synonyms:
+- bomschedgroup
+- bom sched group
+header_attributes:
+  scheduling_group:
+    display: Schedulinggroup
+    type: string
+    required: false
+    description: Field SchedulingGroup from BomSchedGroup
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomSchedGroup

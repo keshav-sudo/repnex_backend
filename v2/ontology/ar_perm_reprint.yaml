@@ -1,0 +1,143 @@
+concept: ar_perm_reprint
+display_name: ArPermReprint
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArPermReprint.
+synonyms:
+- arpermreprint
+- ar perm reprint
+header_attributes:
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArPermReprint
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ArPermReprint
+  foreign_tax_code:
+    display: Foreigntaxcode
+    type: string
+    required: false
+    description: Field ForeignTaxCode from ArPermReprint
+  foreign_tax_val:
+    display: Foreigntaxval
+    type: decimal
+    required: false
+    description: Field ForeignTaxVal from ArPermReprint
+  foreign_tax_amount:
+    display: Foreigntaxamount
+    type: decimal
+    required: false
+    description: Field ForeignTaxAmount from ArPermReprint
+  extended_tax_value:
+    display: Extendedtaxvalue
+    type: decimal
+    required: false
+    description: Field ExtendedTaxValue from ArPermReprint
+  temp_tax_rate:
+    display: Temptaxrate
+    type: decimal
+    required: false
+    description: Field TempTaxRate from ArPermReprint
+  tax_rate:
+    display: Taxrate
+    type: decimal
+    required: false
+    description: Field TaxRate from ArPermReprint
+  orig_inv_value:
+    display: Originvvalue
+    type: decimal
+    required: false
+    description: Field OrigInvValue from ArPermReprint
+  fst_code:
+    display: Fstcode
+    type: string
+    required: false
+    description: Field FstCode from ArPermReprint
+  fst_tax_val:
+    display: Fsttaxval
+    type: decimal
+    required: false
+    description: Field FstTaxVal from ArPermReprint
+  fst_tax_rate:
+    display: Fsttaxrate
+    type: decimal
+    required: false
+    description: Field FstTaxRate from ArPermReprint
+  orig_disc_value:
+    display: Origdiscvalue
+    type: decimal
+    required: false
+    description: Field OrigDiscValue from ArPermReprint
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ArPermReprint
+  day_of_mth_rel:
+    display: Dayofmthrel
+    type: decimal
+    required: false
+    description: Field DayOfMthRel from ArPermReprint
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArPermReprint
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from ArPermReprint
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ArPermReprint
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from ArPermReprint
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ArPermReprint
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from ArPermReprint
+  next_post_mmyy:
+    display: Nextpostmmyy
+    type: decimal
+    required: false
+    description: Field NextPostMmyy from ArPermReprint
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from ArPermReprint
+  freq_of_transfer:
+    display: Freqoftransfer
+    type: decimal
+    required: false
+    description: Field FreqOfTransfer from ArPermReprint
+  posted_flag:
+    display: Postedflag
+    type: string
+    required: false
+    description: Field PostedFlag from ArPermReprint
+  can_gst_code:
+    display: Cangstcode
+    type: string
+    required: false
+    description: Field CanGstCode from ArPermReprint
+  entry_description:
+    display: Entrydescription
+    type: string
+    required: false
+    description: Field EntryDescription from ArPermReprint

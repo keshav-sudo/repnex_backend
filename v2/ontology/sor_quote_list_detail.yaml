@@ -1,0 +1,28 @@
+concept: sor_quote_list_detail
+display_name: SorQuoteListDetail
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorQuoteListDetail.
+synonyms:
+- sorquotelistdetail
+- sor quote list detail
+header_attributes:
+  quote_list_source:
+    display: Quotelistsource
+    type: string
+    required: false
+    description: Field QuoteListSource from SorQuoteListDetail
+  quote_list_type:
+    display: Quotelisttype
+    type: string
+    required: false
+    description: Field QuoteListType from SorQuoteListDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorQuoteListDetail
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from SorQuoteListDetail

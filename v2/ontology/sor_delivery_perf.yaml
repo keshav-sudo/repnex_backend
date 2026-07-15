@@ -1,0 +1,148 @@
+concept: sor_delivery_perf
+display_name: SorDeliveryPerf
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorDeliveryPerf.
+synonyms:
+- sordeliveryperf
+- sor delivery perf
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SorDeliveryPerf
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SorDeliveryPerf
+  invoice_register:
+    display: Invoiceregister
+    type: decimal
+    required: false
+    description: Field InvoiceRegister from SorDeliveryPerf
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SorDeliveryPerf
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from SorDeliveryPerf
+  detail_line:
+    display: Detailline
+    type: decimal
+    required: false
+    description: Field DetailLine from SorDeliveryPerf
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from SorDeliveryPerf
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SorDeliveryPerf
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from SorDeliveryPerf
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorDeliveryPerf
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from SorDeliveryPerf
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorDeliveryPerf
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SorDeliveryPerf
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SorDeliveryPerf
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from SorDeliveryPerf
+  customer_class:
+    display: Customerclass
+    type: string
+    required: false
+    description: Field CustomerClass from SorDeliveryPerf
+  qty_invoiced:
+    display: Qtyinvoiced
+    type: decimal
+    required: false
+    description: Field QtyInvoiced from SorDeliveryPerf
+  qty_outstanding:
+    display: Qtyoutstanding
+    type: decimal
+    required: false
+    description: Field QtyOutstanding from SorDeliveryPerf
+  net_sls_val_ex_tax:
+    display: Netslsvalextax
+    type: decimal
+    required: false
+    description: Field NetSlsValExTax from SorDeliveryPerf
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorDeliveryPerf
+  line_ship_date:
+    display: Lineshipdate
+    type: date
+    required: false
+    description: Field LineShipDate from SorDeliveryPerf
+  cust_request_date:
+    display: Custrequestdate
+    type: date
+    required: false
+    description: Field CustRequestDate from SorDeliveryPerf
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorDeliveryPerf
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SorDeliveryPerf
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SorDeliveryPerf
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from SorDeliveryPerf
+  order_line_ship_date:
+    display: Orderlineshipdate
+    type: date
+    required: false
+    description: Field OrderLineShipDate from SorDeliveryPerf
+  sales_order_init_line:
+    display: Salesorderinitline
+    type: decimal
+    required: false
+    description: Field SalesOrderInitLine from SorDeliveryPerf

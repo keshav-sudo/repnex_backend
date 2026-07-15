@@ -1,0 +1,43 @@
+concept: sqm_test_header
+display_name: SqmTestHeader
+module: other
+description: Auto-generated representation of the physical table SqmTestHeader.
+synonyms:
+- sqmtestheader
+- sqm test header
+header_attributes:
+  test_name:
+    display: Testname
+    type: string
+    required: false
+    description: Field TestName from SqmTestHeader
+  test_version:
+    display: Testversion
+    type: decimal
+    required: false
+    description: Field TestVersion from SqmTestHeader
+  critical_req:
+    display: Criticalreq
+    type: string
+    required: false
+    description: Field CriticalReq from SqmTestHeader
+  major_req:
+    display: Majorreq
+    type: string
+    required: false
+    description: Field MajorReq from SqmTestHeader
+  minor_req:
+    display: Minorreq
+    type: string
+    required: false
+    description: Field MinorReq from SqmTestHeader
+  file_contents:
+    display: Filecontents
+    type: string
+    required: false
+    description: Field FileContents from SqmTestHeader
+  script_contents:
+    display: Scriptcontents
+    type: string
+    required: false
+    description: Field ScriptContents from SqmTestHeader

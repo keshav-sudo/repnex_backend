@@ -1,0 +1,6 @@
+concept: sqm_next_keys
+table: SqmNextKeys
+alias: snk1
+fields:
+  key_type: snk1.KeyType
+  key_next: snk1.KeyNext

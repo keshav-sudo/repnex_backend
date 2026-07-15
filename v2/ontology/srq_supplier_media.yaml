@@ -1,0 +1,58 @@
+concept: srq_supplier_media
+display_name: SrqSupplierMedia
+module: other
+description: Auto-generated representation of the physical table SrqSupplierMedia.
+synonyms:
+- srqsuppliermedia
+- srq supplier media
+header_attributes:
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from SrqSupplierMedia
+  rfq_line:
+    display: Rfqline
+    type: decimal
+    required: false
+    description: Field RfqLine from SrqSupplierMedia
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from SrqSupplierMedia
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from SrqSupplierMedia
+  date_media_added:
+    display: Datemediaadded
+    type: date
+    required: false
+    description: Field DateMediaAdded from SrqSupplierMedia
+  time_media_added:
+    display: Timemediaadded
+    type: decimal
+    required: false
+    description: Field TimeMediaAdded from SrqSupplierMedia
+  media:
+    display: Media
+    type: string
+    required: false
+    description: Field Media from SrqSupplierMedia
+  media_file_name:
+    display: Mediafilename
+    type: string
+    required: false
+    description: Field MediaFileName from SrqSupplierMedia
+  media_file_extension:
+    display: Mediafileextension
+    type: string
+    required: false
+    description: Field MediaFileExtension from SrqSupplierMedia
+  media_file_size:
+    display: Mediafilesize
+    type: decimal
+    required: false
+    description: Field MediaFileSize from SrqSupplierMedia

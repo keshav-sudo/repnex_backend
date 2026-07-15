@@ -1,0 +1,158 @@
+concept: req_group_actual_qty
+display_name: ReqGroupActualQty
+module: other
+description: Auto-generated representation of the physical table ReqGroupActualQty.
+synonyms:
+- reqgroupactualqty
+- req group actual qty
+header_attributes:
+  requisition_group:
+    display: Requisitiongroup
+    type: string
+    required: false
+    description: Field RequisitionGroup from ReqGroupActualQty
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from ReqGroupActualQty
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ReqGroupActualQty
+  budget_year:
+    display: Budgetyear
+    type: decimal
+    required: false
+    description: Field BudgetYear from ReqGroupActualQty
+  group_approved_qty1:
+    display: Groupapprovedqty1
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty1 from ReqGroupActualQty
+  group_approved_qty2:
+    display: Groupapprovedqty2
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty2 from ReqGroupActualQty
+  group_approved_qty3:
+    display: Groupapprovedqty3
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty3 from ReqGroupActualQty
+  group_approved_qty4:
+    display: Groupapprovedqty4
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty4 from ReqGroupActualQty
+  group_approved_qty5:
+    display: Groupapprovedqty5
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty5 from ReqGroupActualQty
+  group_approved_qty6:
+    display: Groupapprovedqty6
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty6 from ReqGroupActualQty
+  group_approved_qty7:
+    display: Groupapprovedqty7
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty7 from ReqGroupActualQty
+  group_approved_qty8:
+    display: Groupapprovedqty8
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty8 from ReqGroupActualQty
+  group_approved_qty9:
+    display: Groupapprovedqty9
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty9 from ReqGroupActualQty
+  group_approved_qty10:
+    display: Groupapprovedqty10
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty10 from ReqGroupActualQty
+  group_approved_qty11:
+    display: Groupapprovedqty11
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty11 from ReqGroupActualQty
+  group_approved_qty12:
+    display: Groupapprovedqty12
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty12 from ReqGroupActualQty
+  group_approved_qty13:
+    display: Groupapprovedqty13
+    type: decimal
+    required: false
+    description: Field GroupApprovedQty13 from ReqGroupActualQty
+  group_actual_qty1:
+    display: Groupactualqty1
+    type: decimal
+    required: false
+    description: Field GroupActualQty1 from ReqGroupActualQty
+  group_actual_qty2:
+    display: Groupactualqty2
+    type: decimal
+    required: false
+    description: Field GroupActualQty2 from ReqGroupActualQty
+  group_actual_qty3:
+    display: Groupactualqty3
+    type: decimal
+    required: false
+    description: Field GroupActualQty3 from ReqGroupActualQty
+  group_actual_qty4:
+    display: Groupactualqty4
+    type: decimal
+    required: false
+    description: Field GroupActualQty4 from ReqGroupActualQty
+  group_actual_qty5:
+    display: Groupactualqty5
+    type: decimal
+    required: false
+    description: Field GroupActualQty5 from ReqGroupActualQty
+  group_actual_qty6:
+    display: Groupactualqty6
+    type: decimal
+    required: false
+    description: Field GroupActualQty6 from ReqGroupActualQty
+  group_actual_qty7:
+    display: Groupactualqty7
+    type: decimal
+    required: false
+    description: Field GroupActualQty7 from ReqGroupActualQty
+  group_actual_qty8:
+    display: Groupactualqty8
+    type: decimal
+    required: false
+    description: Field GroupActualQty8 from ReqGroupActualQty
+  group_actual_qty9:
+    display: Groupactualqty9
+    type: decimal
+    required: false
+    description: Field GroupActualQty9 from ReqGroupActualQty
+  group_actual_qty10:
+    display: Groupactualqty10
+    type: decimal
+    required: false
+    description: Field GroupActualQty10 from ReqGroupActualQty
+  group_actual_qty11:
+    display: Groupactualqty11
+    type: decimal
+    required: false
+    description: Field GroupActualQty11 from ReqGroupActualQty
+  group_actual_qty12:
+    display: Groupactualqty12
+    type: decimal
+    required: false
+    description: Field GroupActualQty12 from ReqGroupActualQty
+  group_actual_qty13:
+    display: Groupactualqty13
+    type: decimal
+    required: false
+    description: Field GroupActualQty13 from ReqGroupActualQty

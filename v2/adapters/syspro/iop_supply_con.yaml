@@ -1,0 +1,17 @@
+concept: iop_supply_con
+table: IopSupplyCon
+alias: isc
+fields:
+  supplier: isc.Supplier
+  warehouse: isc.Warehouse
+  delivery_method: isc.DeliveryMethod
+  min_value: isc.MinValue
+  max_value: isc.MaxValue
+  min_mass: isc.MinMass
+  max_mass: isc.MaxMass
+  min_volume: isc.MinVolume
+  max_volume: isc.MaxVolume
+  lead_time: isc.LeadTime
+  delivery_freq: isc.DeliveryFreq
+  interval_period: isc.IntervalPeriod
+  day_of_week_month: isc.DayOfWeekMonth

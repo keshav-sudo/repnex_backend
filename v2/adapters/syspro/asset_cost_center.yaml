@@ -1,0 +1,7 @@
+concept: asset_cost_center
+table: AssetCostCenter
+alias: acc2
+fields:
+  branch: acc2.Branch
+  asset_cost_center: acc2.AssetCostCenter
+  description: acc2.Description

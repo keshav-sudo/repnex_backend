@@ -1,0 +1,23 @@
+concept: diag_obs_objects
+display_name: DiagObsObjects
+module: other
+description: Auto-generated representation of the physical table DiagObsObjects.
+synonyms:
+- diagobsobjects
+- diag obs objects
+header_attributes:
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from DiagObsObjects
+  object_type:
+    display: Objecttype
+    type: string
+    required: false
+    description: Field ObjectType from DiagObsObjects
+  object_name:
+    display: Objectname
+    type: string
+    required: false
+    description: Field ObjectName from DiagObsObjects

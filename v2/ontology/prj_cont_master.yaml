@@ -1,0 +1,208 @@
+concept: prj_cont_master
+display_name: PrjContMaster
+module: other
+description: Auto-generated representation of the physical table PrjContMaster.
+synonyms:
+- prjcontmaster
+- prj cont master
+header_attributes:
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from PrjContMaster
+  contract_desc1:
+    display: Contractdesc1
+    type: string
+    required: false
+    description: Field ContractDesc1 from PrjContMaster
+  contract_desc2:
+    display: Contractdesc2
+    type: string
+    required: false
+    description: Field ContractDesc2 from PrjContMaster
+  contract_desc3:
+    display: Contractdesc3
+    type: string
+    required: false
+    description: Field ContractDesc3 from PrjContMaster
+  contract_desc4:
+    display: Contractdesc4
+    type: string
+    required: false
+    description: Field ContractDesc4 from PrjContMaster
+  contract_desc5:
+    display: Contractdesc5
+    type: string
+    required: false
+    description: Field ContractDesc5 from PrjContMaster
+  responsibility:
+    display: Responsibility
+    type: string
+    required: false
+    description: Field Responsibility from PrjContMaster
+  resp_person:
+    display: Respperson
+    type: string
+    required: false
+    description: Field RespPerson from PrjContMaster
+  est_compl_date:
+    display: Estcompldate
+    type: date
+    required: false
+    description: Field EstComplDate from PrjContMaster
+  next_review_date:
+    display: Nextreviewdate
+    type: date
+    required: false
+    description: Field NextReviewDate from PrjContMaster
+  next_billing_date:
+    display: Nextbillingdate
+    type: date
+    required: false
+    description: Field NextBillingDate from PrjContMaster
+  last_review_date:
+    display: Lastreviewdate
+    type: date
+    required: false
+    description: Field LastReviewDate from PrjContMaster
+  actual_compl_date:
+    display: Actualcompldate
+    type: date
+    required: false
+    description: Field ActualComplDate from PrjContMaster
+  hierarchy_code:
+    display: Hierarchycode
+    type: string
+    required: false
+    description: Field HierarchyCode from PrjContMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from PrjContMaster
+  retention_customer:
+    display: Retentioncustomer
+    type: string
+    required: false
+    description: Field RetentionCustomer from PrjContMaster
+  retention_prd:
+    display: Retentionprd
+    type: decimal
+    required: false
+    description: Field RetentionPrd from PrjContMaster
+  retention_pct:
+    display: Retentionpct
+    type: decimal
+    required: false
+    description: Field RetentionPct from PrjContMaster
+  follow_up_prd:
+    display: Followupprd
+    type: decimal
+    required: false
+    description: Field FollowUpPrd from PrjContMaster
+  prg_billing_method:
+    display: Prgbillingmethod
+    type: string
+    required: false
+    description: Field PrgBillingMethod from PrjContMaster
+  bill_day_of_month:
+    display: Billdayofmonth
+    type: decimal
+    required: false
+    description: Field BillDayOfMonth from PrjContMaster
+  number_of_billings:
+    display: Numberofbillings
+    type: decimal
+    required: false
+    description: Field NumberOfBillings from PrjContMaster
+  billing_percent:
+    display: Billingpercent
+    type: decimal
+    required: false
+    description: Field BillingPercent from PrjContMaster
+  notational_bill_val:
+    display: Notationalbillval
+    type: decimal
+    required: false
+    description: Field NotationalBillVal from PrjContMaster
+  deposit_required:
+    display: Depositrequired
+    type: string
+    required: false
+    description: Field DepositRequired from PrjContMaster
+  deposit_method:
+    display: Depositmethod
+    type: string
+    required: false
+    description: Field DepositMethod from PrjContMaster
+  deposit_type:
+    display: Deposittype
+    type: string
+    required: false
+    description: Field DepositType from PrjContMaster
+  deposit_percent:
+    display: Depositpercent
+    type: decimal
+    required: false
+    description: Field DepositPercent from PrjContMaster
+  deposit_prod_class:
+    display: Depositprodclass
+    type: string
+    required: false
+    description: Field DepositProdClass from PrjContMaster
+  deposit_comment:
+    display: Depositcomment
+    type: string
+    required: false
+    description: Field DepositComment from PrjContMaster
+  deposit_tax_code:
+    display: Deposittaxcode
+    type: string
+    required: false
+    description: Field DepositTaxCode from PrjContMaster
+  deposit_gst_tax_code:
+    display: Depositgsttaxcode
+    type: string
+    required: false
+    description: Field DepositGstTaxCode from PrjContMaster
+  retention_required:
+    display: Retentionrequired
+    type: string
+    required: false
+    description: Field RetentionRequired from PrjContMaster
+  retention_method:
+    display: Retentionmethod
+    type: string
+    required: false
+    description: Field RetentionMethod from PrjContMaster
+  retention_type:
+    display: Retentiontype
+    type: string
+    required: false
+    description: Field RetentionType from PrjContMaster
+  retention_prod_class:
+    display: Retentionprodclass
+    type: string
+    required: false
+    description: Field RetentionProdClass from PrjContMaster
+  retention_comment:
+    display: Retentioncomment
+    type: string
+    required: false
+    description: Field RetentionComment from PrjContMaster
+  retention_tax_code:
+    display: Retentiontaxcode
+    type: string
+    required: false
+    description: Field RetentionTaxCode from PrjContMaster
+  retention_gst_tax_cod:
+    display: Retentiongsttaxcod
+    type: string
+    required: false
+    description: Field RetentionGstTaxCod from PrjContMaster
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from PrjContMaster

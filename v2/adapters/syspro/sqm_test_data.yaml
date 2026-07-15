@@ -1,0 +1,33 @@
+concept: sqm_test_data
+table: SqmTestData
+alias: std
+fields:
+  inspect_type: std.InspectType
+  inspect_number: std.InspectNumber
+  lot: std.Lot
+  sample_number: std.SampleNumber
+  sample_test: std.SampleTest
+  test_name: std.TestName
+  test_version: std.TestVersion
+  field_id: std.FieldId
+  sqm_level: std.SqmLevel
+  data_type: std.DataType
+  calculated_field: std.CalculatedField
+  numeric_result: std.NumericResult
+  alpha_result: std.AlphaResult
+  boolean_result: std.BooleanResult
+  list_result: std.ListResult
+  list_cri_result: std.ListCriResult
+  field_status: std.FieldStatus
+  date_result: std.DateResult
+  validation_req: std.ValidationReq
+  num_target: std.NumTarget
+  num_upper_target: std.NumUpperTarget
+  num_lower_target: std.NumLowerTarget
+  alpha_target: std.AlphaTarget
+  list_flag: std.ListFlag
+  expiry_flag: std.ExpiryFlag
+  expiry_number: std.ExpiryNumber
+  coc_flag: std.CocFlag
+  test_date: std.TestDate
+  test_time: std.TestTime

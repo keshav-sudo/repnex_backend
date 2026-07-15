@@ -1,0 +1,43 @@
+concept: iop_forecast
+display_name: IopForecast
+module: other
+description: Auto-generated representation of the physical table IopForecast.
+synonyms:
+- iopforecast
+- iop forecast
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopForecast
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopForecast
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopForecast
+  forecast_wh:
+    display: Forecastwh
+    type: string
+    required: false
+    description: Field ForecastWh from IopForecast
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from IopForecast
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from IopForecast
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopForecast

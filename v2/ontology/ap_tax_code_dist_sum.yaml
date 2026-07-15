@@ -1,0 +1,63 @@
+concept: ap_tax_code_dist_sum
+display_name: ApTaxCodeDistSum
+module: accounts_payable
+description: Auto-generated representation of the physical table ApTaxCodeDistSum.
+synonyms:
+- aptaxcodedistsum
+- ap tax code dist sum
+header_attributes:
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from ApTaxCodeDistSum
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from ApTaxCodeDistSum
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApTaxCodeDistSum
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ApTaxCodeDistSum
+  distributed_amt:
+    display: Distributedamt
+    type: decimal
+    required: false
+    description: Field DistributedAmt from ApTaxCodeDistSum
+  taxable_amount:
+    display: Taxableamount
+    type: decimal
+    required: false
+    description: Field TaxableAmount from ApTaxCodeDistSum
+  tax_portion:
+    display: Taxportion
+    type: decimal
+    required: false
+    description: Field TaxPortion from ApTaxCodeDistSum
+  exempt_amount:
+    display: Exemptamount
+    type: decimal
+    required: false
+    description: Field ExemptAmount from ApTaxCodeDistSum
+  tax_basis:
+    display: Taxbasis
+    type: string
+    required: false
+    description: Field TaxBasis from ApTaxCodeDistSum
+  tax_rate:
+    display: Taxrate
+    type: decimal
+    required: false
+    description: Field TaxRate from ApTaxCodeDistSum
+  rev_charge_flag:
+    display: Revchargeflag
+    type: string
+    required: false
+    description: Field RevChargeFlag from ApTaxCodeDistSum

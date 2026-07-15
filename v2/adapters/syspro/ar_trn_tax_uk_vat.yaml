@@ -1,0 +1,14 @@
+concept: ar_trn_tax_uk_vat
+table: ArTrnTaxUkVat
+alias: attuv
+fields:
+  trn_year: attuv.TrnYear
+  trn_month: attuv.TrnMonth
+  register: attuv.Register
+  invoice: attuv.Invoice
+  summary_line: attuv.SummaryLine
+  interface_flag: attuv.InterfaceFlag
+  blank_taxable_val: attuv.BlankTaxableVal
+  uk_currency: attuv.UkCurrency
+  uk_rate: attuv.UkRate
+  uk_mul_div: attuv.UkMulDiv

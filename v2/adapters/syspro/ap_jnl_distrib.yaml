@@ -1,0 +1,22 @@
+concept: ap_jnl_distrib
+table: ApJnlDistrib
+alias: ajd
+fields:
+  trn_year: ajd.TrnYear
+  trn_month: ajd.TrnMonth
+  journal: ajd.Journal
+  entry_number: ajd.EntryNumber
+  sub_entry: ajd.SubEntry
+  expense_type: ajd.ExpenseType
+  expense_gl_code: ajd.ExpenseGlCode
+  distr_value: ajd.DistrValue
+  reference: ajd.Reference
+  job: ajd.Job
+  analysis_entry: ajd.AnalysisEntry
+  tax_code: ajd.TaxCode
+  origin: ajd.Origin
+  rev_charge_flag: ajd.RevChargeFlag
+  rev_charge_tax_code: ajd.RevChargeTaxCode
+  rev_charge_tax_value: ajd.RevChargeTaxValue
+  dimension_entry: ajd.DimensionEntry
+  dimension_line: ajd.DimensionLine

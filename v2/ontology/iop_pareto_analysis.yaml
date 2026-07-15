@@ -1,0 +1,63 @@
+concept: iop_pareto_analysis
+display_name: IopParetoAnalysis
+module: other
+description: Auto-generated representation of the physical table IopParetoAnalysis.
+synonyms:
+- iopparetoanalysis
+- iop pareto analysis
+header_attributes:
+  level_analysis:
+    display: Levelanalysis
+    type: string
+    required: false
+    description: Field LevelAnalysis from IopParetoAnalysis
+  level_key:
+    display: Levelkey
+    type: string
+    required: false
+    description: Field LevelKey from IopParetoAnalysis
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopParetoAnalysis
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopParetoAnalysis
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopParetoAnalysis
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopParetoAnalysis
+  analysis_type:
+    display: Analysistype
+    type: string
+    required: false
+    description: Field AnalysisType from IopParetoAnalysis
+  pareto_class:
+    display: Paretoclass
+    type: string
+    required: false
+    description: Field ParetoClass from IopParetoAnalysis
+  analysis_base:
+    display: Analysisbase
+    type: string
+    required: false
+    description: Field AnalysisBase from IopParetoAnalysis
+  analysis_set:
+    display: Analysisset
+    type: string
+    required: false
+    description: Field AnalysisSet from IopParetoAnalysis
+  date_analysed:
+    display: Dateanalysed
+    type: date
+    required: false
+    description: Field DateAnalysed from IopParetoAnalysis

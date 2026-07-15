@@ -1,0 +1,33 @@
+concept: lct_route
+display_name: LctRoute
+module: other
+description: Auto-generated representation of the physical table LctRoute.
+synonyms:
+- lctroute
+- lct route
+header_attributes:
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from LctRoute
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from LctRoute
+  days_before_eta:
+    display: Daysbeforeeta
+    type: decimal
+    required: false
+    description: Field DaysBeforeEta from LctRoute
+  demurrage_days:
+    display: Demurragedays
+    type: decimal
+    required: false
+    description: Field DemurrageDays from LctRoute
+  days_after_eta:
+    display: Daysaftereta
+    type: decimal
+    required: false
+    description: Field DaysAfterEta from LctRoute

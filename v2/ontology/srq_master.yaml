@@ -1,0 +1,48 @@
+concept: srq_master
+display_name: SrqMaster
+module: other
+description: Auto-generated representation of the physical table SrqMaster.
+synonyms:
+- srqmaster
+- srq master
+header_attributes:
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from SrqMaster
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SrqMaster
+  rfq_status:
+    display: Rfqstatus
+    type: string
+    required: false
+    description: Field RfqStatus from SrqMaster
+  rfq_user:
+    display: Rfquser
+    type: string
+    required: false
+    description: Field RfqUser from SrqMaster
+  date_created:
+    display: Datecreated
+    type: date
+    required: false
+    description: Field DateCreated from SrqMaster
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from SrqMaster
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from SrqMaster
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from SrqMaster

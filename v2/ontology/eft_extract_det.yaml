@@ -1,0 +1,103 @@
+concept: eft_extract_det
+display_name: EftExtractDet
+module: other
+description: Auto-generated representation of the physical table EftExtractDet.
+synonyms:
+- eftextractdet
+- eft extract det
+header_attributes:
+  eft_batch:
+    display: Eftbatch
+    type: decimal
+    required: false
+    description: Field EftBatch from EftExtractDet
+  trn_source:
+    display: Trnsource
+    type: string
+    required: false
+    description: Field TrnSource from EftExtractDet
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from EftExtractDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from EftExtractDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from EftExtractDet
+  payment_value:
+    display: Paymentvalue
+    type: decimal
+    required: false
+    description: Field PaymentValue from EftExtractDet
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from EftExtractDet
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from EftExtractDet
+  eft_number:
+    display: Eftnumber
+    type: string
+    required: false
+    description: Field EftNumber from EftExtractDet
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from EftExtractDet
+  check_register:
+    display: Checkregister
+    type: decimal
+    required: false
+    description: Field CheckRegister from EftExtractDet
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from EftExtractDet
+  invoice_type:
+    display: Invoicetype
+    type: string
+    required: false
+    description: Field InvoiceType from EftExtractDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from EftExtractDet
+  cb_bank:
+    display: Cbbank
+    type: string
+    required: false
+    description: Field CbBank from EftExtractDet
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from EftExtractDet
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from EftExtractDet
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from EftExtractDet
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from EftExtractDet

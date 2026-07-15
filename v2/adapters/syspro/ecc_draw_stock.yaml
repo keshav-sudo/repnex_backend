@@ -1,0 +1,6 @@
+concept: ecc_draw_stock
+table: EccDrawStock
+alias: eds
+fields:
+  stock_code: eds.StockCode
+  draw_office_num: eds.DrawOfficeNum

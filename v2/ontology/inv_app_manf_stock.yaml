@@ -1,0 +1,73 @@
+concept: inv_app_manf_stock
+display_name: InvAppManfStock
+module: inventory
+description: Auto-generated representation of the physical table InvAppManfStock.
+synonyms:
+- invappmanfstock
+- inv app manf stock
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvAppManfStock
+  app_manufacturer:
+    display: Appmanufacturer
+    type: string
+    required: false
+    description: Field AppManufacturer from InvAppManfStock
+  man_part_number:
+    display: Manpartnumber
+    type: string
+    required: false
+    description: Field ManPartNumber from InvAppManfStock
+  man_part_info1:
+    display: Manpartinfo1
+    type: string
+    required: false
+    description: Field ManPartInfo1 from InvAppManfStock
+  man_part_info2:
+    display: Manpartinfo2
+    type: string
+    required: false
+    description: Field ManPartInfo2 from InvAppManfStock
+  man_part_info3:
+    display: Manpartinfo3
+    type: string
+    required: false
+    description: Field ManPartInfo3 from InvAppManfStock
+  man_part_info4:
+    display: Manpartinfo4
+    type: string
+    required: false
+    description: Field ManPartInfo4 from InvAppManfStock
+  man_part_info5:
+    display: Manpartinfo5
+    type: string
+    required: false
+    description: Field ManPartInfo5 from InvAppManfStock
+  man_part_info6:
+    display: Manpartinfo6
+    type: string
+    required: false
+    description: Field ManPartInfo6 from InvAppManfStock
+  preferred_flag:
+    display: Preferredflag
+    type: string
+    required: false
+    description: Field PreferredFlag from InvAppManfStock
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from InvAppManfStock
+  revision_number:
+    display: Revisionnumber
+    type: string
+    required: false
+    description: Field RevisionNumber from InvAppManfStock
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from InvAppManfStock

@@ -1,0 +1,63 @@
+concept: ap_inv_health_bal
+display_name: ApInvHealthBal
+module: accounts_payable
+description: Auto-generated representation of the physical table ApInvHealthBal.
+synonyms:
+- apinvhealthbal
+- ap inv health bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from ApInvHealthBal
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApInvHealthBal
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApInvHealthBal
+  trx_type:
+    display: Trxtype
+    type: string
+    required: false
+    description: Field TrxType from ApInvHealthBal
+  hcheck_year:
+    display: Hcheckyear
+    type: decimal
+    required: false
+    description: Field HcheckYear from ApInvHealthBal
+  hcheck_month:
+    display: Hcheckmonth
+    type: decimal
+    required: false
+    description: Field HcheckMonth from ApInvHealthBal
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApInvHealthBal
+  trx_amt_vary:
+    display: Trxamtvary
+    type: decimal
+    required: false
+    description: Field TrxAmtVary from ApInvHealthBal
+  trx_amt_actual:
+    display: Trxamtactual
+    type: decimal
+    required: false
+    description: Field TrxAmtActual from ApInvHealthBal
+  trx_amount_calc:
+    display: Trxamountcalc
+    type: decimal
+    required: false
+    description: Field TrxAmountCalc from ApInvHealthBal
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ApInvHealthBal

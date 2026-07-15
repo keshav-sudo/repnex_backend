@@ -1,0 +1,8 @@
+concept: ap_reg_inv_nar
+table: ApRegInvNar
+alias: arin
+fields:
+  supplier: arin.Supplier
+  invoice: arin.Invoice
+  line: arin.Line
+  narration: arin.Narration

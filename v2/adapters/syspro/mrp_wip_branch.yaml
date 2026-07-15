@@ -1,0 +1,23 @@
+concept: mrp_wip_branch
+table: MrpWipBranch
+alias: mwb
+fields:
+  branch: mwb.Branch
+  description: mwb.Description
+  wip_brn_gl_code: mwb.WipBrnGlCode
+  wip_var_brn_gl_code: mwb.WipVarBrnGlCode
+  wip_auto_brn_gl_code: mwb.WipAutoBrnGlCode
+  wip_insp_brn_gl_code: mwb.WipInspBrnGlCode
+  branch_job_prefix: mwb.BranchJobPrefix
+  branch_job_suffix: mwb.BranchJobSuffix
+  wip_inspect_prefix: mwb.WipInspectPrefix
+  next_insp_reference: mwb.NextInspReference
+  branch_addr_build: mwb.BranchAddrBuild
+  branch_addr1: mwb.BranchAddr1
+  branch_addr2: mwb.BranchAddr2
+  branch_addr_loc: mwb.BranchAddrLoc
+  branch_addr3: mwb.BranchAddr3
+  branch_addr_country: mwb.BranchAddrCountry
+  branch_postal_code: mwb.BranchPostalCode
+  branch_gps_lat: mwb.BranchGpsLat
+  branch_gps_long: mwb.BranchGpsLong

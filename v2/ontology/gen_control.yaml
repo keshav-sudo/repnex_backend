@@ -1,0 +1,543 @@
+concept: gen_control
+display_name: GenControl
+module: general_ledger
+description: Auto-generated representation of the physical table GenControl.
+synonyms:
+- gencontrol
+- gen control
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenControl
+  cur_bal_asset:
+    display: Curbalasset
+    type: decimal
+    required: false
+    description: Field CurBalAsset from GenControl
+  cur_bal_liability:
+    display: Curballiability
+    type: decimal
+    required: false
+    description: Field CurBalLiability from GenControl
+  cur_bal_capital:
+    display: Curbalcapital
+    type: decimal
+    required: false
+    description: Field CurBalCapital from GenControl
+  cur_bal_revenue:
+    display: Curbalrevenue
+    type: decimal
+    required: false
+    description: Field CurBalRevenue from GenControl
+  cur_bal_expense:
+    display: Curbalexpense
+    type: decimal
+    required: false
+    description: Field CurBalExpense from GenControl
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenControl
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenControl
+  cur_yr_nxt_jnl:
+    display: Curyrnxtjnl
+    type: decimal
+    required: false
+    description: Field CurYrNxtJnl from GenControl
+  prv_yr_nxt_jnl:
+    display: Prvyrnxtjnl
+    type: decimal
+    required: false
+    description: Field PrvYrNxtJnl from GenControl
+  nxt_yr_nxt_jnl:
+    display: Nxtyrnxtjnl
+    type: decimal
+    required: false
+    description: Field NxtYrNxtJnl from GenControl
+  cur_yr_nxt_ent_grp:
+    display: Curyrnxtentgrp
+    type: decimal
+    required: false
+    description: Field CurYrNxtEntGrp from GenControl
+  prv_yr_nxt_ent_grp:
+    display: Prvyrnxtentgrp
+    type: decimal
+    required: false
+    description: Field PrvYrNxtEntGrp from GenControl
+  nxt_yr_nxt_ent_grp:
+    display: Nxtyrnxtentgrp
+    type: decimal
+    required: false
+    description: Field NxtYrNxtEntGrp from GenControl
+  shuffle_flag:
+    display: Shuffleflag
+    type: string
+    required: false
+    description: Field ShuffleFlag from GenControl
+  prov_entry_flag:
+    display: Proventryflag
+    type: string
+    required: false
+    description: Field ProvEntryFlag from GenControl
+  oldest_year_det:
+    display: Oldestyeardet
+    type: decimal
+    required: false
+    description: Field OldestYearDet from GenControl
+  unp_year:
+    display: Unpyear
+    type: decimal
+    required: false
+    description: Field UnpYear from GenControl
+  unp_per:
+    display: Unpper
+    type: decimal
+    required: false
+    description: Field UnpPer from GenControl
+  unp_jnl:
+    display: Unpjnl
+    type: decimal
+    required: false
+    description: Field UnpJnl from GenControl
+  cur_yr_prd_stat1:
+    display: Curyrprdstat1
+    type: string
+    required: false
+    description: Field CurYrPrdStat1 from GenControl
+  cur_yr_prd_stat2:
+    display: Curyrprdstat2
+    type: string
+    required: false
+    description: Field CurYrPrdStat2 from GenControl
+  cur_yr_prd_stat3:
+    display: Curyrprdstat3
+    type: string
+    required: false
+    description: Field CurYrPrdStat3 from GenControl
+  cur_yr_prd_stat4:
+    display: Curyrprdstat4
+    type: string
+    required: false
+    description: Field CurYrPrdStat4 from GenControl
+  cur_yr_prd_stat5:
+    display: Curyrprdstat5
+    type: string
+    required: false
+    description: Field CurYrPrdStat5 from GenControl
+  cur_yr_prd_stat6:
+    display: Curyrprdstat6
+    type: string
+    required: false
+    description: Field CurYrPrdStat6 from GenControl
+  cur_yr_prd_stat7:
+    display: Curyrprdstat7
+    type: string
+    required: false
+    description: Field CurYrPrdStat7 from GenControl
+  cur_yr_prd_stat8:
+    display: Curyrprdstat8
+    type: string
+    required: false
+    description: Field CurYrPrdStat8 from GenControl
+  cur_yr_prd_stat9:
+    display: Curyrprdstat9
+    type: string
+    required: false
+    description: Field CurYrPrdStat9 from GenControl
+  cur_yr_prd_stat10:
+    display: Curyrprdstat10
+    type: string
+    required: false
+    description: Field CurYrPrdStat10 from GenControl
+  cur_yr_prd_stat11:
+    display: Curyrprdstat11
+    type: string
+    required: false
+    description: Field CurYrPrdStat11 from GenControl
+  cur_yr_prd_stat12:
+    display: Curyrprdstat12
+    type: string
+    required: false
+    description: Field CurYrPrdStat12 from GenControl
+  cur_yr_prd_stat13:
+    display: Curyrprdstat13
+    type: string
+    required: false
+    description: Field CurYrPrdStat13 from GenControl
+  cur_yr_prd_stat14:
+    display: Curyrprdstat14
+    type: string
+    required: false
+    description: Field CurYrPrdStat14 from GenControl
+  cur_yr_prd_stat15:
+    display: Curyrprdstat15
+    type: string
+    required: false
+    description: Field CurYrPrdStat15 from GenControl
+  cur_yr_prd_end1:
+    display: Curyrprdend1
+    type: date
+    required: false
+    description: Field CurYrPrdEnd1 from GenControl
+  cur_yr_prd_end2:
+    display: Curyrprdend2
+    type: date
+    required: false
+    description: Field CurYrPrdEnd2 from GenControl
+  cur_yr_prd_end3:
+    display: Curyrprdend3
+    type: date
+    required: false
+    description: Field CurYrPrdEnd3 from GenControl
+  cur_yr_prd_end4:
+    display: Curyrprdend4
+    type: date
+    required: false
+    description: Field CurYrPrdEnd4 from GenControl
+  cur_yr_prd_end5:
+    display: Curyrprdend5
+    type: date
+    required: false
+    description: Field CurYrPrdEnd5 from GenControl
+  cur_yr_prd_end6:
+    display: Curyrprdend6
+    type: date
+    required: false
+    description: Field CurYrPrdEnd6 from GenControl
+  cur_yr_prd_end7:
+    display: Curyrprdend7
+    type: date
+    required: false
+    description: Field CurYrPrdEnd7 from GenControl
+  cur_yr_prd_end8:
+    display: Curyrprdend8
+    type: date
+    required: false
+    description: Field CurYrPrdEnd8 from GenControl
+  cur_yr_prd_end9:
+    display: Curyrprdend9
+    type: date
+    required: false
+    description: Field CurYrPrdEnd9 from GenControl
+  cur_yr_prd_end10:
+    display: Curyrprdend10
+    type: date
+    required: false
+    description: Field CurYrPrdEnd10 from GenControl
+  cur_yr_prd_end11:
+    display: Curyrprdend11
+    type: date
+    required: false
+    description: Field CurYrPrdEnd11 from GenControl
+  cur_yr_prd_end12:
+    display: Curyrprdend12
+    type: date
+    required: false
+    description: Field CurYrPrdEnd12 from GenControl
+  cur_yr_prd_end13:
+    display: Curyrprdend13
+    type: date
+    required: false
+    description: Field CurYrPrdEnd13 from GenControl
+  cur_yr_prd_end14:
+    display: Curyrprdend14
+    type: date
+    required: false
+    description: Field CurYrPrdEnd14 from GenControl
+  cur_yr_prd_end15:
+    display: Curyrprdend15
+    type: date
+    required: false
+    description: Field CurYrPrdEnd15 from GenControl
+  prv_yr_prd_stat1:
+    display: Prvyrprdstat1
+    type: string
+    required: false
+    description: Field PrvYrPrdStat1 from GenControl
+  prv_yr_prd_stat2:
+    display: Prvyrprdstat2
+    type: string
+    required: false
+    description: Field PrvYrPrdStat2 from GenControl
+  prv_yr_prd_stat3:
+    display: Prvyrprdstat3
+    type: string
+    required: false
+    description: Field PrvYrPrdStat3 from GenControl
+  prv_yr_prd_stat4:
+    display: Prvyrprdstat4
+    type: string
+    required: false
+    description: Field PrvYrPrdStat4 from GenControl
+  prv_yr_prd_stat5:
+    display: Prvyrprdstat5
+    type: string
+    required: false
+    description: Field PrvYrPrdStat5 from GenControl
+  prv_yr_prd_stat6:
+    display: Prvyrprdstat6
+    type: string
+    required: false
+    description: Field PrvYrPrdStat6 from GenControl
+  prv_yr_prd_stat7:
+    display: Prvyrprdstat7
+    type: string
+    required: false
+    description: Field PrvYrPrdStat7 from GenControl
+  prv_yr_prd_stat8:
+    display: Prvyrprdstat8
+    type: string
+    required: false
+    description: Field PrvYrPrdStat8 from GenControl
+  prv_yr_prd_stat9:
+    display: Prvyrprdstat9
+    type: string
+    required: false
+    description: Field PrvYrPrdStat9 from GenControl
+  prv_yr_prd_stat10:
+    display: Prvyrprdstat10
+    type: string
+    required: false
+    description: Field PrvYrPrdStat10 from GenControl
+  prv_yr_prd_stat11:
+    display: Prvyrprdstat11
+    type: string
+    required: false
+    description: Field PrvYrPrdStat11 from GenControl
+  prv_yr_prd_stat12:
+    display: Prvyrprdstat12
+    type: string
+    required: false
+    description: Field PrvYrPrdStat12 from GenControl
+  prv_yr_prd_stat13:
+    display: Prvyrprdstat13
+    type: string
+    required: false
+    description: Field PrvYrPrdStat13 from GenControl
+  prv_yr_prd_stat14:
+    display: Prvyrprdstat14
+    type: string
+    required: false
+    description: Field PrvYrPrdStat14 from GenControl
+  prv_yr_prd_stat15:
+    display: Prvyrprdstat15
+    type: string
+    required: false
+    description: Field PrvYrPrdStat15 from GenControl
+  prv_yr_prd_end1:
+    display: Prvyrprdend1
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd1 from GenControl
+  prv_yr_prd_end2:
+    display: Prvyrprdend2
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd2 from GenControl
+  prv_yr_prd_end3:
+    display: Prvyrprdend3
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd3 from GenControl
+  prv_yr_prd_end4:
+    display: Prvyrprdend4
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd4 from GenControl
+  prv_yr_prd_end5:
+    display: Prvyrprdend5
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd5 from GenControl
+  prv_yr_prd_end6:
+    display: Prvyrprdend6
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd6 from GenControl
+  prv_yr_prd_end7:
+    display: Prvyrprdend7
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd7 from GenControl
+  prv_yr_prd_end8:
+    display: Prvyrprdend8
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd8 from GenControl
+  prv_yr_prd_end9:
+    display: Prvyrprdend9
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd9 from GenControl
+  prv_yr_prd_end10:
+    display: Prvyrprdend10
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd10 from GenControl
+  prv_yr_prd_end11:
+    display: Prvyrprdend11
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd11 from GenControl
+  prv_yr_prd_end12:
+    display: Prvyrprdend12
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd12 from GenControl
+  prv_yr_prd_end13:
+    display: Prvyrprdend13
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd13 from GenControl
+  prv_yr_prd_end14:
+    display: Prvyrprdend14
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd14 from GenControl
+  prv_yr_prd_end15:
+    display: Prvyrprdend15
+    type: date
+    required: false
+    description: Field PrvYrPrdEnd15 from GenControl
+  pct_spread1:
+    display: Pctspread1
+    type: decimal
+    required: false
+    description: Field PctSpread1 from GenControl
+  pct_spread2:
+    display: Pctspread2
+    type: decimal
+    required: false
+    description: Field PctSpread2 from GenControl
+  pct_spread3:
+    display: Pctspread3
+    type: decimal
+    required: false
+    description: Field PctSpread3 from GenControl
+  pct_spread4:
+    display: Pctspread4
+    type: decimal
+    required: false
+    description: Field PctSpread4 from GenControl
+  pct_spread5:
+    display: Pctspread5
+    type: decimal
+    required: false
+    description: Field PctSpread5 from GenControl
+  pct_spread6:
+    display: Pctspread6
+    type: decimal
+    required: false
+    description: Field PctSpread6 from GenControl
+  pct_spread7:
+    display: Pctspread7
+    type: decimal
+    required: false
+    description: Field PctSpread7 from GenControl
+  pct_spread8:
+    display: Pctspread8
+    type: decimal
+    required: false
+    description: Field PctSpread8 from GenControl
+  pct_spread9:
+    display: Pctspread9
+    type: decimal
+    required: false
+    description: Field PctSpread9 from GenControl
+  pct_spread10:
+    display: Pctspread10
+    type: decimal
+    required: false
+    description: Field PctSpread10 from GenControl
+  pct_spread11:
+    display: Pctspread11
+    type: decimal
+    required: false
+    description: Field PctSpread11 from GenControl
+  pct_spread12:
+    display: Pctspread12
+    type: decimal
+    required: false
+    description: Field PctSpread12 from GenControl
+  pct_spread13:
+    display: Pctspread13
+    type: decimal
+    required: false
+    description: Field PctSpread13 from GenControl
+  pct_spread14:
+    display: Pctspread14
+    type: decimal
+    required: false
+    description: Field PctSpread14 from GenControl
+  pct_spread15:
+    display: Pctspread15
+    type: decimal
+    required: false
+    description: Field PctSpread15 from GenControl
+  nxt_yr1_nxt_jnl:
+    display: Nxtyr1Nxtjnl
+    type: decimal
+    required: false
+    description: Field NxtYr1NxtJnl from GenControl
+  nxt_yr1_nxt_ent_grp:
+    display: Nxtyr1Nxtentgrp
+    type: decimal
+    required: false
+    description: Field NxtYr1NxtEntGrp from GenControl
+  authorise_journals:
+    display: Authorisejournals
+    type: string
+    required: false
+    description: Field AuthoriseJournals from GenControl
+  limit_capturer_view:
+    display: Limitcapturerview
+    type: string
+    required: false
+    description: Field LimitCapturerView from GenControl
+  next_jnl_no_period:
+    display: Nextjnlnoperiod
+    type: string
+    required: false
+    description: Field NextJnlNoPeriod from GenControl
+  analyze_assets:
+    display: Analyzeassets
+    type: string
+    required: false
+    description: Field AnalyzeAssets from GenControl
+  analyze_liabilities:
+    display: Analyzeliabilities
+    type: string
+    required: false
+    description: Field AnalyzeLiabilities from GenControl
+  analyze_capital:
+    display: Analyzecapital
+    type: string
+    required: false
+    description: Field AnalyzeCapital from GenControl
+  analyze_revenue:
+    display: Analyzerevenue
+    type: string
+    required: false
+    description: Field AnalyzeRevenue from GenControl
+  analyze_expense:
+    display: Analyzeexpense
+    type: string
+    required: false
+    description: Field AnalyzeExpense from GenControl
+  analyze_stat:
+    display: Analyzestat
+    type: string
+    required: false
+    description: Field AnalyzeStat from GenControl
+  next_analysis_entry:
+    display: Nextanalysisentry
+    type: decimal
+    required: false
+    description: Field NextAnalysisEntry from GenControl

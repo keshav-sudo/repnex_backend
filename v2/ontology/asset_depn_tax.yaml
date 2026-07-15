@@ -1,0 +1,158 @@
+concept: asset_depn_tax
+display_name: AssetDepnTax
+module: assets
+description: Auto-generated representation of the physical table AssetDepnTax.
+synonyms:
+- assetdepntax
+- asset depn tax
+header_attributes:
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetDepnTax
+  asset_cost:
+    display: Assetcost
+    type: decimal
+    required: false
+    description: Field AssetCost from AssetDepnTax
+  current_value:
+    display: Currentvalue
+    type: decimal
+    required: false
+    description: Field CurrentValue from AssetDepnTax
+  accum_depn:
+    display: Accumdepn
+    type: decimal
+    required: false
+    description: Field AccumDepn from AssetDepnTax
+  depn_prev_yr:
+    display: Depnprevyr
+    type: decimal
+    required: false
+    description: Field DepnPrevYr from AssetDepnTax
+  depn_this_year:
+    display: Depnthisyear
+    type: decimal
+    required: false
+    description: Field DepnThisYear from AssetDepnTax
+  depn_this_period:
+    display: Depnthisperiod
+    type: decimal
+    required: false
+    description: Field DepnThisPeriod from AssetDepnTax
+  residual_value:
+    display: Residualvalue
+    type: decimal
+    required: false
+    description: Field ResidualValue from AssetDepnTax
+  book_val_dep:
+    display: Bookvaldep
+    type: string
+    required: false
+    description: Field BookValDep from AssetDepnTax
+  suspend:
+    display: Suspend
+    type: string
+    required: false
+    description: Field Suspend from AssetDepnTax
+  start_dep_date:
+    display: Startdepdate
+    type: date
+    required: false
+    description: Field StartDepDate from AssetDepnTax
+  depn_start_period:
+    display: Depnstartperiod
+    type: decimal
+    required: false
+    description: Field DepnStartPeriod from AssetDepnTax
+  depn_start_year:
+    display: Depnstartyear
+    type: decimal
+    required: false
+    description: Field DepnStartYear from AssetDepnTax
+  thruput_eul:
+    display: Thruputeul
+    type: decimal
+    required: false
+    description: Field ThruputEul from AssetDepnTax
+  stat_gl_code:
+    display: Statglcode
+    type: string
+    required: false
+    description: Field StatGlCode from AssetDepnTax
+  number_of_periods:
+    display: Numberofperiods
+    type: decimal
+    required: false
+    description: Field NumberOfPeriods from AssetDepnTax
+  number_of_years:
+    display: Numberofyears
+    type: decimal
+    required: false
+    description: Field NumberOfYears from AssetDepnTax
+  reval_reserve_to_date:
+    display: Revalreservetodate
+    type: decimal
+    required: false
+    description: Field RevalReserveToDate from AssetDepnTax
+  sold_value:
+    display: Soldvalue
+    type: decimal
+    required: false
+    description: Field SoldValue from AssetDepnTax
+  disposal_cost:
+    display: Disposalcost
+    type: decimal
+    required: false
+    description: Field DisposalCost from AssetDepnTax
+  remaining_periods:
+    display: Remainingperiods
+    type: decimal
+    required: false
+    description: Field RemainingPeriods from AssetDepnTax
+  total_periods_td:
+    display: Totalperiodstd
+    type: decimal
+    required: false
+    description: Field TotalPeriodsTd from AssetDepnTax
+  varying_anniversary:
+    display: Varyinganniversary
+    type: string
+    required: false
+    description: Field VaryingAnniversary from AssetDepnTax
+  reval_reason:
+    display: Revalreason
+    type: string
+    required: false
+    description: Field RevalReason from AssetDepnTax
+  capital_gains_tax_val:
+    display: Capitalgainstaxval
+    type: decimal
+    required: false
+    description: Field CapitalGainsTaxVal from AssetDepnTax
+  invest_allow_pct:
+    display: Investallowpct
+    type: decimal
+    required: false
+    description: Field InvestAllowPct from AssetDepnTax
+  initial_allow_pct:
+    display: Initialallowpct
+    type: decimal
+    required: false
+    description: Field InitialAllowPct from AssetDepnTax
+  initial_allow_val:
+    display: Initialallowval
+    type: decimal
+    required: false
+    description: Field InitialAllowVal from AssetDepnTax
+  invest_allow_val:
+    display: Investallowval
+    type: decimal
+    required: false
+    description: Field InvestAllowVal from AssetDepnTax
+  allow_taken_flag:
+    display: Allowtakenflag
+    type: string
+    required: false
+    description: Field AllowTakenFlag from AssetDepnTax

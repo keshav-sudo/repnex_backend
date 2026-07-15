@@ -1,0 +1,21 @@
+concept: sqm_serial
+table: SqmSerial
+alias: ss2
+fields:
+  inspect_type: ss2.InspectType
+  inspect_number: ss2.InspectNumber
+  lot: ss2.Lot
+  serial: ss2.Serial
+  status: ss2.Status
+  qty_inspected: ss2.QtyInspected
+  qty_to_accept: ss2.QtyToAccept
+  qty_to_reject: ss2.QtyToReject
+  transaction_date: ss2.TransactionDate
+  line: ss2.Line
+  document_num: ss2.DocumentNum
+  stock_code: ss2.StockCode
+  version: ss2.Version
+  release: ss2.Release
+  expiry_date: ss2.ExpiryDate
+  location: ss2.Location
+  co_product_line: ss2.CoProductLine

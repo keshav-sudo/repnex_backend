@@ -1,0 +1,25 @@
+concept: lynq_me__daily_summary
+table: Lynq_ME_DailySummary
+alias: lmeds
+fields:
+  id: lmeds.ID
+  d_task_code: lmeds.dTaskCode
+  d_reporter_code: lmeds.dReporterCode
+  d_membership: lmeds.dMembership
+  d_facility_code: lmeds.dFacilityCode
+  d_date: lmeds.dDate
+  d_units_per_hour: lmeds.dUnitsPerHour
+  d_labour_hours: lmeds.dLabourHours
+  d_outcome_qty: lmeds.dOutcomeQty
+  d_outcome_scrap: lmeds.dOutcomeScrap
+  d_office_time_hours: lmeds.dOfficeTimeHours
+  d_diversion_code: lmeds.dDiversionCode
+  d_job_code: lmeds.dJobCode
+  d_operation_code: lmeds.dOperationCode
+  d_direct: lmeds.dDirect
+  d_operational_type: lmeds.dOperationalType
+  d_category: lmeds.dCategory
+  d_color: lmeds.dColor
+  d_erp_non_productive_code: lmeds.dErpNonProductiveCode
+  d_employee_code: lmeds.dEmployeeCode
+  d_facility_hours: lmeds.dFacilityHours

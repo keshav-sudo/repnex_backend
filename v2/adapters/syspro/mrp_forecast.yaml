@@ -1,0 +1,21 @@
+concept: mrp_forecast
+table: MrpForecast
+alias: mf
+fields:
+  stock_code: mf.StockCode
+  forecast_wh: mf.ForecastWh
+  forecast_date: mf.ForecastDate
+  line: mf.Line
+  forecast_qty_outst: mf.ForecastQtyOutst
+  description: mf.Description
+  reference: mf.Reference
+  customer: mf.Customer
+  resource_parent: mf.ResourceParent
+  inactive_flag: mf.InactiveFlag
+  forecast_type: mf.ForecastType
+  qty_invoiced: mf.QtyInvoiced
+  orig_forecast_date: mf.OrigForecastDate
+  original_line: mf.OriginalLine
+  orig_qty_outst: mf.OrigQtyOutst
+  version: mf.Version
+  release: mf.Release

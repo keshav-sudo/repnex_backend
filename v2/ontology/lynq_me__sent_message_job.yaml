@@ -1,0 +1,38 @@
+concept: lynq_me__sent_message_job
+display_name: Lynq ME SentMessageJob
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_SentMessageJob.
+synonyms:
+- lynq_me_sentmessagejob
+- lynq me  sent message job
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_ME_SentMessageJob
+  sent_message_id:
+    display: Sentmessageid
+    type: decimal
+    required: false
+    description: Field SentMessageId from Lynq_ME_SentMessageJob
+  job_code:
+    display: Jobcode
+    type: string
+    required: false
+    description: Field JobCode from Lynq_ME_SentMessageJob
+  task_code:
+    display: Taskcode
+    type: string
+    required: false
+    description: Field TaskCode from Lynq_ME_SentMessageJob
+  f_code:
+    display: Fcode
+    type: string
+    required: false
+    description: Field fCode from Lynq_ME_SentMessageJob
+  e_code:
+    display: Ecode
+    type: string
+    required: false
+    description: Field eCode from Lynq_ME_SentMessageJob

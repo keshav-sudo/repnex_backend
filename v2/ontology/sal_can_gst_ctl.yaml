@@ -1,0 +1,48 @@
+concept: sal_can_gst_ctl
+display_name: SalCanGstCtl
+module: other
+description: Auto-generated representation of the physical table SalCanGstCtl.
+synonyms:
+- salcangstctl
+- sal can gst ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from SalCanGstCtl
+  ptd_taxable_val:
+    display: Ptdtaxableval
+    type: decimal
+    required: false
+    description: Field PtdTaxableVal from SalCanGstCtl
+  ptd_exempt_val:
+    display: Ptdexemptval
+    type: decimal
+    required: false
+    description: Field PtdExemptVal from SalCanGstCtl
+  ptd_invoice_val:
+    display: Ptdinvoiceval
+    type: decimal
+    required: false
+    description: Field PtdInvoiceVal from SalCanGstCtl
+  ytd_taxable_val:
+    display: Ytdtaxableval
+    type: decimal
+    required: false
+    description: Field YtdTaxableVal from SalCanGstCtl
+  ytd_exempt_val:
+    display: Ytdexemptval
+    type: decimal
+    required: false
+    description: Field YtdExemptVal from SalCanGstCtl
+  ytd_invoice_val:
+    display: Ytdinvoiceval
+    type: decimal
+    required: false
+    description: Field YtdInvoiceVal from SalCanGstCtl
+  last_prd_end_date:
+    display: Lastprdenddate
+    type: date
+    required: false
+    description: Field LastPrdEndDate from SalCanGstCtl

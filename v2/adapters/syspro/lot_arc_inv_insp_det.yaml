@@ -1,0 +1,20 @@
+concept: lot_arc_inv_insp_det
+table: LotArcInvInspDet
+alias: laiid
+fields:
+  grn: laiid.Grn
+  lot: laiid.Lot
+  trn_date: laiid.TrnDate
+  line: laiid.Line
+  trn_type: laiid.TrnType
+  trn_qty: laiid.TrnQty
+  concession_num: laiid.ConcessionNum
+  document_num: laiid.DocumentNum
+  reject_scrap_code: laiid.RejectScrapCode
+  narration: laiid.Narration
+  return_supplier: laiid.ReturnSupplier
+  return_sup_flag: laiid.ReturnSupFlag
+  scrap_gl_code: laiid.ScrapGlCode
+  accept_qty: laiid.AcceptQty
+  reject_qty: laiid.RejectQty
+  qty_in_quarant: laiid.QtyInQuarant

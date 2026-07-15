@@ -1,0 +1,723 @@
+concept: mrp_so_detail
+display_name: MrpSoDetail
+module: mrp
+description: Auto-generated representation of the physical table MrpSoDetail.
+synonyms:
+- mrpsodetail
+- mrp so detail
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MrpSoDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MrpSoDetail
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from MrpSoDetail
+  m_stock_code:
+    display: Mstockcode
+    type: string
+    required: false
+    description: Field MStockCode from MrpSoDetail
+  m_stock_des:
+    display: Mstockdes
+    type: string
+    required: false
+    description: Field MStockDes from MrpSoDetail
+  m_warehouse:
+    display: Mwarehouse
+    type: string
+    required: false
+    description: Field MWarehouse from MrpSoDetail
+  m_bin:
+    display: Mbin
+    type: string
+    required: false
+    description: Field MBin from MrpSoDetail
+  m_order_qty:
+    display: Morderqty
+    type: decimal
+    required: false
+    description: Field MOrderQty from MrpSoDetail
+  m_ship_qty:
+    display: Mshipqty
+    type: decimal
+    required: false
+    description: Field MShipQty from MrpSoDetail
+  m_back_order_qty:
+    display: Mbackorderqty
+    type: decimal
+    required: false
+    description: Field MBackOrderQty from MrpSoDetail
+  m_unit_cost:
+    display: Munitcost
+    type: decimal
+    required: false
+    description: Field MUnitCost from MrpSoDetail
+  m_bom_flag:
+    display: Mbomflag
+    type: string
+    required: false
+    description: Field MBomFlag from MrpSoDetail
+  m_parent_kit_type:
+    display: Mparentkittype
+    type: string
+    required: false
+    description: Field MParentKitType from MrpSoDetail
+  m_qty_per:
+    display: Mqtyper
+    type: decimal
+    required: false
+    description: Field MQtyPer from MrpSoDetail
+  m_scrap_percentage:
+    display: Mscrappercentage
+    type: decimal
+    required: false
+    description: Field MScrapPercentage from MrpSoDetail
+  m_print_component:
+    display: Mprintcomponent
+    type: string
+    required: false
+    description: Field MPrintComponent from MrpSoDetail
+  m_component_seq:
+    display: Mcomponentseq
+    type: string
+    required: false
+    description: Field MComponentSeq from MrpSoDetail
+  m_qty_changes_flag:
+    display: Mqtychangesflag
+    type: string
+    required: false
+    description: Field MQtyChangesFlag from MrpSoDetail
+  m_optional_flag:
+    display: Moptionalflag
+    type: string
+    required: false
+    description: Field MOptionalFlag from MrpSoDetail
+  m_decimals:
+    display: Mdecimals
+    type: decimal
+    required: false
+    description: Field MDecimals from MrpSoDetail
+  m_order_uom:
+    display: Morderuom
+    type: string
+    required: false
+    description: Field MOrderUom from MrpSoDetail
+  m_stock_qty_to_shp:
+    display: Mstockqtytoshp
+    type: decimal
+    required: false
+    description: Field MStockQtyToShp from MrpSoDetail
+  m_stocking_uom:
+    display: Mstockinguom
+    type: string
+    required: false
+    description: Field MStockingUom from MrpSoDetail
+  m_conv_fact_ord_um:
+    display: Mconvfactordum
+    type: decimal
+    required: false
+    description: Field MConvFactOrdUm from MrpSoDetail
+  m_mul_div_prc_fct:
+    display: Mmuldivprcfct
+    type: string
+    required: false
+    description: Field MMulDivPrcFct from MrpSoDetail
+  m_price:
+    display: Mprice
+    type: decimal
+    required: false
+    description: Field MPrice from MrpSoDetail
+  m_price_uom:
+    display: Mpriceuom
+    type: string
+    required: false
+    description: Field MPriceUom from MrpSoDetail
+  m_commission_code:
+    display: Mcommissioncode
+    type: string
+    required: false
+    description: Field MCommissionCode from MrpSoDetail
+  m_disc_pct1:
+    display: Mdiscpct1
+    type: decimal
+    required: false
+    description: Field MDiscPct1 from MrpSoDetail
+  m_disc_pct2:
+    display: Mdiscpct2
+    type: decimal
+    required: false
+    description: Field MDiscPct2 from MrpSoDetail
+  m_disc_pct3:
+    display: Mdiscpct3
+    type: decimal
+    required: false
+    description: Field MDiscPct3 from MrpSoDetail
+  m_disc_val_flag:
+    display: Mdiscvalflag
+    type: string
+    required: false
+    description: Field MDiscValFlag from MrpSoDetail
+  m_disc_value:
+    display: Mdiscvalue
+    type: decimal
+    required: false
+    description: Field MDiscValue from MrpSoDetail
+  m_product_class:
+    display: Mproductclass
+    type: string
+    required: false
+    description: Field MProductClass from MrpSoDetail
+  m_tax_code:
+    display: Mtaxcode
+    type: string
+    required: false
+    description: Field MTaxCode from MrpSoDetail
+  m_line_ship_date:
+    display: Mlineshipdate
+    type: date
+    required: false
+    description: Field MLineShipDate from MrpSoDetail
+  m_alloc_stat_sched:
+    display: Mallocstatsched
+    type: string
+    required: false
+    description: Field MAllocStatSched from MrpSoDetail
+  m_fst_tax_code:
+    display: Mfsttaxcode
+    type: string
+    required: false
+    description: Field MFstTaxCode from MrpSoDetail
+  m_stock_unit_mass:
+    display: Mstockunitmass
+    type: decimal
+    required: false
+    description: Field MStockUnitMass from MrpSoDetail
+  m_stock_unit_vol:
+    display: Mstockunitvol
+    type: decimal
+    required: false
+    description: Field MStockUnitVol from MrpSoDetail
+  m_price_code:
+    display: Mpricecode
+    type: string
+    required: false
+    description: Field MPriceCode from MrpSoDetail
+  m_conv_fact_alloc:
+    display: Mconvfactalloc
+    type: decimal
+    required: false
+    description: Field MConvFactAlloc from MrpSoDetail
+  m_mul_div_qty_fct:
+    display: Mmuldivqtyfct
+    type: string
+    required: false
+    description: Field MMulDivQtyFct from MrpSoDetail
+  m_traceable_type:
+    display: Mtraceabletype
+    type: string
+    required: false
+    description: Field MTraceableType from MrpSoDetail
+  m_mps_flag:
+    display: Mmpsflag
+    type: string
+    required: false
+    description: Field MMpsFlag from MrpSoDetail
+  m_picking_slip:
+    display: Mpickingslip
+    type: string
+    required: false
+    description: Field MPickingSlip from MrpSoDetail
+  m_movement_reqd:
+    display: Mmovementreqd
+    type: string
+    required: false
+    description: Field MMovementReqd from MrpSoDetail
+  m_serial_method:
+    display: Mserialmethod
+    type: string
+    required: false
+    description: Field MSerialMethod from MrpSoDetail
+  m_zero_qty_cr_note:
+    display: Mzeroqtycrnote
+    type: string
+    required: false
+    description: Field MZeroQtyCrNote from MrpSoDetail
+  m_abc_applied:
+    display: Mabcapplied
+    type: string
+    required: false
+    description: Field MAbcApplied from MrpSoDetail
+  m_mps_gross_reqd:
+    display: Mmpsgrossreqd
+    type: string
+    required: false
+    description: Field MMpsGrossReqd from MrpSoDetail
+  m_contract:
+    display: Mcontract
+    type: string
+    required: false
+    description: Field MContract from MrpSoDetail
+  m_buying_group:
+    display: Mbuyinggroup
+    type: string
+    required: false
+    description: Field MBuyingGroup from MrpSoDetail
+  m_cus_sup_stk_code:
+    display: Mcussupstkcode
+    type: string
+    required: false
+    description: Field MCusSupStkCode from MrpSoDetail
+  m_cus_retail_price:
+    display: Mcusretailprice
+    type: decimal
+    required: false
+    description: Field MCusRetailPrice from MrpSoDetail
+  m_tariff_code:
+    display: Mtariffcode
+    type: string
+    required: false
+    description: Field MTariffCode from MrpSoDetail
+  m_line_receipt_dat:
+    display: Mlinereceiptdat
+    type: date
+    required: false
+    description: Field MLineReceiptDat from MrpSoDetail
+  m_lead_time:
+    display: Mleadtime
+    type: decimal
+    required: false
+    description: Field MLeadTime from MrpSoDetail
+  m_trf_cost_mult:
+    display: Mtrfcostmult
+    type: decimal
+    required: false
+    description: Field MTrfCostMult from MrpSoDetail
+  m_supplementary_un:
+    display: Msupplementaryun
+    type: string
+    required: false
+    description: Field MSupplementaryUn from MrpSoDetail
+  m_review_flag:
+    display: Mreviewflag
+    type: string
+    required: false
+    description: Field MReviewFlag from MrpSoDetail
+  m_review_status:
+    display: Mreviewstatus
+    type: string
+    required: false
+    description: Field MReviewStatus from MrpSoDetail
+  m_invoice_printed:
+    display: Minvoiceprinted
+    type: string
+    required: false
+    description: Field MInvoicePrinted from MrpSoDetail
+  m_del_note_printed:
+    display: Mdelnoteprinted
+    type: string
+    required: false
+    description: Field MDelNotePrinted from MrpSoDetail
+  m_ord_ack_printed:
+    display: Mordackprinted
+    type: string
+    required: false
+    description: Field MOrdAckPrinted from MrpSoDetail
+  m_hierarchy_job:
+    display: Mhierarchyjob
+    type: string
+    required: false
+    description: Field MHierarchyJob from MrpSoDetail
+  m_cust_request_dat:
+    display: Mcustrequestdat
+    type: date
+    required: false
+    description: Field MCustRequestDat from MrpSoDetail
+  m_last_del_note:
+    display: Mlastdelnote
+    type: string
+    required: false
+    description: Field MLastDelNote from MrpSoDetail
+  m_user_def:
+    display: Muserdef
+    type: string
+    required: false
+    description: Field MUserDef from MrpSoDetail
+  m_qty_dispatched:
+    display: Mqtydispatched
+    type: decimal
+    required: false
+    description: Field MQtyDispatched from MrpSoDetail
+  m_disc_changed:
+    display: Mdiscchanged
+    type: string
+    required: false
+    description: Field MDiscChanged from MrpSoDetail
+  m_credit_order_no:
+    display: Mcreditorderno
+    type: string
+    required: false
+    description: Field MCreditOrderNo from MrpSoDetail
+  m_credit_order_line:
+    display: Mcreditorderline
+    type: decimal
+    required: false
+    description: Field MCreditOrderLine from MrpSoDetail
+  m_unit_quantity:
+    display: Munitquantity
+    type: string
+    required: false
+    description: Field MUnitQuantity from MrpSoDetail
+  m_conv_fact_unit_q:
+    display: Mconvfactunitq
+    type: decimal
+    required: false
+    description: Field MConvFactUnitQ from MrpSoDetail
+  m_alt_uom_unit_q:
+    display: Maltuomunitq
+    type: string
+    required: false
+    description: Field MAltUomUnitQ from MrpSoDetail
+  m_decimals_unit_q:
+    display: Mdecimalsunitq
+    type: decimal
+    required: false
+    description: Field MDecimalsUnitQ from MrpSoDetail
+  m_ecc_flag:
+    display: Meccflag
+    type: string
+    required: false
+    description: Field MEccFlag from MrpSoDetail
+  m_version:
+    display: Mversion
+    type: string
+    required: false
+    description: Field MVersion from MrpSoDetail
+  m_release:
+    display: Mrelease
+    type: string
+    required: false
+    description: Field MRelease from MrpSoDetail
+  m_commit_date:
+    display: Mcommitdate
+    type: date
+    required: false
+    description: Field MCommitDate from MrpSoDetail
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from MrpSoDetail
+  n_comment:
+    display: Ncomment
+    type: string
+    required: false
+    description: Field NComment from MrpSoDetail
+  n_comment_from_lin:
+    display: Ncommentfromlin
+    type: decimal
+    required: false
+    description: Field NCommentFromLin from MrpSoDetail
+  n_msc_charge_value:
+    display: Nmscchargevalue
+    type: decimal
+    required: false
+    description: Field NMscChargeValue from MrpSoDetail
+  n_msc_product_cls:
+    display: Nmscproductcls
+    type: string
+    required: false
+    description: Field NMscProductCls from MrpSoDetail
+  n_msc_charge_cost:
+    display: Nmscchargecost
+    type: decimal
+    required: false
+    description: Field NMscChargeCost from MrpSoDetail
+  n_msc_inv_charge:
+    display: Nmscinvcharge
+    type: string
+    required: false
+    description: Field NMscInvCharge from MrpSoDetail
+  n_comment_type:
+    display: Ncommenttype
+    type: string
+    required: false
+    description: Field NCommentType from MrpSoDetail
+  n_msc_tax_code:
+    display: Nmsctaxcode
+    type: string
+    required: false
+    description: Field NMscTaxCode from MrpSoDetail
+  n_msc_fst_code:
+    display: Nmscfstcode
+    type: string
+    required: false
+    description: Field NMscFstCode from MrpSoDetail
+  n_comment_text_typ:
+    display: Ncommenttexttyp
+    type: string
+    required: false
+    description: Field NCommentTextTyp from MrpSoDetail
+  n_msc_charge_qty:
+    display: Nmscchargeqty
+    type: decimal
+    required: false
+    description: Field NMscChargeQty from MrpSoDetail
+  n_srv_inc_total:
+    display: Nsrvinctotal
+    type: string
+    required: false
+    description: Field NSrvIncTotal from MrpSoDetail
+  n_srv_summary:
+    display: Nsrvsummary
+    type: string
+    required: false
+    description: Field NSrvSummary from MrpSoDetail
+  n_srv_charge_type:
+    display: Nsrvchargetype
+    type: string
+    required: false
+    description: Field NSrvChargeType from MrpSoDetail
+  n_srv_parent_line:
+    display: Nsrvparentline
+    type: decimal
+    required: false
+    description: Field NSrvParentLine from MrpSoDetail
+  n_srv_unit_price:
+    display: Nsrvunitprice
+    type: decimal
+    required: false
+    description: Field NSrvUnitPrice from MrpSoDetail
+  n_srv_unit_cost:
+    display: Nsrvunitcost
+    type: decimal
+    required: false
+    description: Field NSrvUnitCost from MrpSoDetail
+  n_srv_qty_factor:
+    display: Nsrvqtyfactor
+    type: decimal
+    required: false
+    description: Field NSrvQtyFactor from MrpSoDetail
+  n_srv_apply_factor:
+    display: Nsrvapplyfactor
+    type: string
+    required: false
+    description: Field NSrvApplyFactor from MrpSoDetail
+  n_srv_decimal_rnd:
+    display: Nsrvdecimalrnd
+    type: decimal
+    required: false
+    description: Field NSrvDecimalRnd from MrpSoDetail
+  n_srv_dec_rnd_flag:
+    display: Nsrvdecrndflag
+    type: string
+    required: false
+    description: Field NSrvDecRndFlag from MrpSoDetail
+  n_srv_min_value:
+    display: Nsrvminvalue
+    type: decimal
+    required: false
+    description: Field NSrvMinValue from MrpSoDetail
+  n_srv_max_value:
+    display: Nsrvmaxvalue
+    type: decimal
+    required: false
+    description: Field NSrvMaxValue from MrpSoDetail
+  n_srv_mul_div:
+    display: Nsrvmuldiv
+    type: string
+    required: false
+    description: Field NSrvMulDiv from MrpSoDetail
+  n_prt_on_inv:
+    display: Nprtoninv
+    type: string
+    required: false
+    description: Field NPrtOnInv from MrpSoDetail
+  n_prt_on_del:
+    display: Nprtondel
+    type: string
+    required: false
+    description: Field NPrtOnDel from MrpSoDetail
+  n_prt_on_ack:
+    display: Nprtonack
+    type: string
+    required: false
+    description: Field NPrtOnAck from MrpSoDetail
+  n_tax_amount_flag:
+    display: Ntaxamountflag
+    type: string
+    required: false
+    description: Field NTaxAmountFlag from MrpSoDetail
+  n_dep_ret_flag_proj:
+    display: Ndepretflagproj
+    type: string
+    required: false
+    description: Field NDepRetFlagProj from MrpSoDetail
+  n_retention_job:
+    display: Nretentionjob
+    type: string
+    required: false
+    description: Field NRetentionJob from MrpSoDetail
+  n_srv_min_quantity:
+    display: Nsrvminquantity
+    type: decimal
+    required: false
+    description: Field NSrvMinQuantity from MrpSoDetail
+  n_charge_code:
+    display: Nchargecode
+    type: string
+    required: false
+    description: Field NChargeCode from MrpSoDetail
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from MrpSoDetail
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from MrpSoDetail
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from MrpSoDetail
+  material_alloc_line:
+    display: Materialallocline
+    type: string
+    required: false
+    description: Field MaterialAllocLine from MrpSoDetail
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from MrpSoDetail
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from MrpSoDetail
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from MrpSoDetail
+  multi_ship_code:
+    display: Multishipcode
+    type: string
+    required: false
+    description: Field MultiShipCode from MrpSoDetail
+  user1:
+    display: User1
+    type: string
+    required: false
+    description: Field User1 from MrpSoDetail
+  credit_reason:
+    display: Creditreason
+    type: string
+    required: false
+    description: Field CreditReason from MrpSoDetail
+  orig_ship_date_aps:
+    display: Origshipdateaps
+    type: date
+    required: false
+    description: Field OrigShipDateAps from MrpSoDetail
+  tpm_usage_flag:
+    display: Tpmusageflag
+    type: string
+    required: false
+    description: Field TpmUsageFlag from MrpSoDetail
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from MrpSoDetail
+  tpm_sequence:
+    display: Tpmsequence
+    type: decimal
+    required: false
+    description: Field TpmSequence from MrpSoDetail
+  sales_order_init_line:
+    display: Salesorderinitline
+    type: decimal
+    required: false
+    description: Field SalesOrderInitLine from MrpSoDetail
+  preactor_priority:
+    display: Preactorpriority
+    type: decimal
+    required: false
+    description: Field PreactorPriority from MrpSoDetail
+  sales_order_det_stat:
+    display: Salesorderdetstat
+    type: string
+    required: false
+    description: Field SalesOrderDetStat from MrpSoDetail
+  sales_order_res_stat:
+    display: Salesorderresstat
+    type: string
+    required: false
+    description: Field SalesOrderResStat from MrpSoDetail
+  qty_reserved_ship:
+    display: Qtyreservedship
+    type: decimal
+    required: false
+    description: Field QtyReservedShip from MrpSoDetail
+  qty_released_to_pick:
+    display: Qtyreleasedtopick
+    type: decimal
+    required: false
+    description: Field QtyReleasedToPick from MrpSoDetail
+  pick_number:
+    display: Picknumber
+    type: string
+    required: false
+    description: Field PickNumber from MrpSoDetail
+  intrastat_exempt:
+    display: Intrastatexempt
+    type: string
+    required: false
+    description: Field IntrastatExempt from MrpSoDetail
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from MrpSoDetail
+  triang_disp_state:
+    display: Triangdispstate
+    type: string
+    required: false
+    description: Field TriangDispState from MrpSoDetail
+  triang_dest_state:
+    display: Triangdeststate
+    type: string
+    required: false
+    description: Field TriangDestState from MrpSoDetail
+  orig_country:
+    display: Origcountry
+    type: string
+    required: false
+    description: Field OrigCountry from MrpSoDetail
+  price_group_rule:
+    display: Pricegrouprule
+    type: decimal
+    required: false
+    description: Field PriceGroupRule from MrpSoDetail
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from MrpSoDetail
+  cat_line_number:
+    display: Catlinenumber
+    type: decimal
+    required: false
+    description: Field CatLineNumber from MrpSoDetail

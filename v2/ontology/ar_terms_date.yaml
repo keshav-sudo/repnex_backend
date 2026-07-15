@@ -1,0 +1,23 @@
+concept: ar_terms_date
+display_name: ArTermsDate
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArTermsDate.
+synonyms:
+- artermsdate
+- ar terms date
+header_attributes:
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from ArTermsDate
+  date_type:
+    display: Datetype
+    type: string
+    required: false
+    description: Field DateType from ArTermsDate
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from ArTermsDate

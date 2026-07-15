@@ -1,0 +1,88 @@
+concept: sor_contract_price
+display_name: SorContractPrice
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorContractPrice.
+synonyms:
+- sorcontractprice
+- sor contract price
+header_attributes:
+  contract_type:
+    display: Contracttype
+    type: string
+    required: false
+    description: Field ContractType from SorContractPrice
+  customer_buy_grp:
+    display: Customerbuygrp
+    type: string
+    required: false
+    description: Field CustomerBuyGrp from SorContractPrice
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorContractPrice
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from SorContractPrice
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from SorContractPrice
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from SorContractPrice
+  price_method:
+    display: Pricemethod
+    type: string
+    required: false
+    description: Field PriceMethod from SorContractPrice
+  fixed_uom:
+    display: Fixeduom
+    type: string
+    required: false
+    description: Field FixedUom from SorContractPrice
+  fixed_price_code:
+    display: Fixedpricecode
+    type: string
+    required: false
+    description: Field FixedPriceCode from SorContractPrice
+  fixed_price:
+    display: Fixedprice
+    type: decimal
+    required: false
+    description: Field FixedPrice from SorContractPrice
+  discount1:
+    display: Discount1
+    type: decimal
+    required: false
+    description: Field Discount1 from SorContractPrice
+  discount2:
+    display: Discount2
+    type: decimal
+    required: false
+    description: Field Discount2 from SorContractPrice
+  discount3:
+    display: Discount3
+    type: decimal
+    required: false
+    description: Field Discount3 from SorContractPrice
+  cust_list_price:
+    display: Custlistprice
+    type: decimal
+    required: false
+    description: Field CustListPrice from SorContractPrice
+  discount_pct:
+    display: Discountpct
+    type: decimal
+    required: false
+    description: Field DiscountPct from SorContractPrice
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from SorContractPrice

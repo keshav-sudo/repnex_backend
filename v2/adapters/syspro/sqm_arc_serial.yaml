@@ -1,0 +1,21 @@
+concept: sqm_arc_serial
+table: SqmArcSerial
+alias: sas
+fields:
+  inspect_type: sas.InspectType
+  inspect_number: sas.InspectNumber
+  lot: sas.Lot
+  serial: sas.Serial
+  status: sas.Status
+  qty_inspected: sas.QtyInspected
+  qty_to_accept: sas.QtyToAccept
+  qty_to_reject: sas.QtyToReject
+  transaction_date: sas.TransactionDate
+  line: sas.Line
+  document_num: sas.DocumentNum
+  stock_code: sas.StockCode
+  version: sas.Version
+  release: sas.Release
+  expiry_date: sas.ExpiryDate
+  location: sas.Location
+  co_product_line: sas.CoProductLine

@@ -1,0 +1,7 @@
+concept: sqm_inspect_lvl
+table: SqmInspectLvl
+alias: sil
+fields:
+  plan_type: sil.PlanType
+  inspect_level: sil.InspectLevel
+  description: sil.Description

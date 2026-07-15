@@ -1,0 +1,7 @@
+concept: lynq_vp__week_template
+table: Lynq_VP_WeekTemplate
+alias: lvpwt
+fields:
+  id: lvpwt.ID
+  week_template_name: lvpwt.WeekTemplateName
+  week_template_description: lvpwt.WeekTemplateDescription

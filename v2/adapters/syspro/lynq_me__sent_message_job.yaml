@@ -1,0 +1,10 @@
+concept: lynq_me__sent_message_job
+table: Lynq_ME_SentMessageJob
+alias: lmesmj
+fields:
+  id: lmesmj.Id
+  sent_message_id: lmesmj.SentMessageId
+  job_code: lmesmj.JobCode
+  task_code: lmesmj.TaskCode
+  f_code: lmesmj.fCode
+  e_code: lmesmj.eCode

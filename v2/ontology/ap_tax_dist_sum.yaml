@@ -1,0 +1,53 @@
+concept: ap_tax_dist_sum
+display_name: ApTaxDistSum
+module: accounts_payable
+description: Auto-generated representation of the physical table ApTaxDistSum.
+synonyms:
+- aptaxdistsum
+- ap tax dist sum
+header_attributes:
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from ApTaxDistSum
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from ApTaxDistSum
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApTaxDistSum
+  jnl_status:
+    display: Jnlstatus
+    type: decimal
+    required: false
+    description: Field JnlStatus from ApTaxDistSum
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from ApTaxDistSum
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApTaxDistSum
+  invoice_disc:
+    display: Invoicedisc
+    type: decimal
+    required: false
+    description: Field InvoiceDisc from ApTaxDistSum
+  invoice_tax:
+    display: Invoicetax
+    type: decimal
+    required: false
+    description: Field InvoiceTax from ApTaxDistSum
+  rev_charge_flag:
+    display: Revchargeflag
+    type: string
+    required: false
+    description: Field RevChargeFlag from ApTaxDistSum

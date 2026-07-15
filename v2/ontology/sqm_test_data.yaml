@@ -1,0 +1,153 @@
+concept: sqm_test_data
+display_name: SqmTestData
+module: other
+description: Auto-generated representation of the physical table SqmTestData.
+synonyms:
+- sqmtestdata
+- sqm test data
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmTestData
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmTestData
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmTestData
+  sample_number:
+    display: Samplenumber
+    type: decimal
+    required: false
+    description: Field SampleNumber from SqmTestData
+  sample_test:
+    display: Sampletest
+    type: decimal
+    required: false
+    description: Field SampleTest from SqmTestData
+  test_name:
+    display: Testname
+    type: string
+    required: false
+    description: Field TestName from SqmTestData
+  test_version:
+    display: Testversion
+    type: decimal
+    required: false
+    description: Field TestVersion from SqmTestData
+  field_id:
+    display: Fieldid
+    type: decimal
+    required: false
+    description: Field FieldId from SqmTestData
+  sqm_level:
+    display: Sqmlevel
+    type: string
+    required: false
+    description: Field SqmLevel from SqmTestData
+  data_type:
+    display: Datatype
+    type: string
+    required: false
+    description: Field DataType from SqmTestData
+  calculated_field:
+    display: Calculatedfield
+    type: string
+    required: false
+    description: Field CalculatedField from SqmTestData
+  numeric_result:
+    display: Numericresult
+    type: decimal
+    required: false
+    description: Field NumericResult from SqmTestData
+  alpha_result:
+    display: Alpharesult
+    type: string
+    required: false
+    description: Field AlphaResult from SqmTestData
+  boolean_result:
+    display: Booleanresult
+    type: string
+    required: false
+    description: Field BooleanResult from SqmTestData
+  list_result:
+    display: Listresult
+    type: string
+    required: false
+    description: Field ListResult from SqmTestData
+  list_cri_result:
+    display: Listcriresult
+    type: string
+    required: false
+    description: Field ListCriResult from SqmTestData
+  field_status:
+    display: Fieldstatus
+    type: string
+    required: false
+    description: Field FieldStatus from SqmTestData
+  date_result:
+    display: Dateresult
+    type: date
+    required: false
+    description: Field DateResult from SqmTestData
+  validation_req:
+    display: Validationreq
+    type: string
+    required: false
+    description: Field ValidationReq from SqmTestData
+  num_target:
+    display: Numtarget
+    type: decimal
+    required: false
+    description: Field NumTarget from SqmTestData
+  num_upper_target:
+    display: Numuppertarget
+    type: decimal
+    required: false
+    description: Field NumUpperTarget from SqmTestData
+  num_lower_target:
+    display: Numlowertarget
+    type: decimal
+    required: false
+    description: Field NumLowerTarget from SqmTestData
+  alpha_target:
+    display: Alphatarget
+    type: string
+    required: false
+    description: Field AlphaTarget from SqmTestData
+  list_flag:
+    display: Listflag
+    type: string
+    required: false
+    description: Field ListFlag from SqmTestData
+  expiry_flag:
+    display: Expiryflag
+    type: string
+    required: false
+    description: Field ExpiryFlag from SqmTestData
+  expiry_number:
+    display: Expirynumber
+    type: decimal
+    required: false
+    description: Field ExpiryNumber from SqmTestData
+  coc_flag:
+    display: Cocflag
+    type: string
+    required: false
+    description: Field CocFlag from SqmTestData
+  test_date:
+    display: Testdate
+    type: date
+    required: false
+    description: Field TestDate from SqmTestData
+  test_time:
+    display: Testtime
+    type: decimal
+    required: false
+    description: Field TestTime from SqmTestData

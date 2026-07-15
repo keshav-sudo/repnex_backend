@@ -1,0 +1,12 @@
+concept: iop_movements
+table: IopMovements
+alias: im3
+fields:
+  id_number: im3.IdNumber
+  trn_date: im3.TrnDate
+  opening_qty: im3.OpeningQty
+  qty_received: im3.QtyReceived
+  qty_issued: im3.QtyIssued
+  value_received: im3.ValueReceived
+  value_issued: im3.ValueIssued
+  number_stock_outs: im3.NumberStockOuts

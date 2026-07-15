@@ -1,0 +1,34 @@
+concept: req_group_actual_qty
+table: ReqGroupActualQty
+alias: rgaq
+fields:
+  requisition_group: rgaq.RequisitionGroup
+  product_class: rgaq.ProductClass
+  stock_code: rgaq.StockCode
+  budget_year: rgaq.BudgetYear
+  group_approved_qty1: rgaq.GroupApprovedQty1
+  group_approved_qty2: rgaq.GroupApprovedQty2
+  group_approved_qty3: rgaq.GroupApprovedQty3
+  group_approved_qty4: rgaq.GroupApprovedQty4
+  group_approved_qty5: rgaq.GroupApprovedQty5
+  group_approved_qty6: rgaq.GroupApprovedQty6
+  group_approved_qty7: rgaq.GroupApprovedQty7
+  group_approved_qty8: rgaq.GroupApprovedQty8
+  group_approved_qty9: rgaq.GroupApprovedQty9
+  group_approved_qty10: rgaq.GroupApprovedQty10
+  group_approved_qty11: rgaq.GroupApprovedQty11
+  group_approved_qty12: rgaq.GroupApprovedQty12
+  group_approved_qty13: rgaq.GroupApprovedQty13
+  group_actual_qty1: rgaq.GroupActualQty1
+  group_actual_qty2: rgaq.GroupActualQty2
+  group_actual_qty3: rgaq.GroupActualQty3
+  group_actual_qty4: rgaq.GroupActualQty4
+  group_actual_qty5: rgaq.GroupActualQty5
+  group_actual_qty6: rgaq.GroupActualQty6
+  group_actual_qty7: rgaq.GroupActualQty7
+  group_actual_qty8: rgaq.GroupActualQty8
+  group_actual_qty9: rgaq.GroupActualQty9
+  group_actual_qty10: rgaq.GroupActualQty10
+  group_actual_qty11: rgaq.GroupActualQty11
+  group_actual_qty12: rgaq.GroupActualQty12
+  group_actual_qty13: rgaq.GroupActualQty13

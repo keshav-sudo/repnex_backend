@@ -1,0 +1,50 @@
+concept: tpm_deduct_tran
+table: TpmDeductTran
+alias: tdt
+fields:
+  customer: tdt.Customer
+  deduct_customer: tdt.DeductCustomer
+  trn_date: tdt.TrnDate
+  trn_time: tdt.TrnTime
+  org_customer: tdt.OrgCustomer
+  org_deduct_customer: tdt.OrgDeductCustomer
+  org_trn_date: tdt.OrgTrnDate
+  org_trn_time: tdt.OrgTrnTime
+  last_customer: tdt.LastCustomer
+  last_deduct_customer: tdt.LastDeductCustomer
+  last_trn_date: tdt.LastTrnDate
+  last_trn_time: tdt.LastTrnTime
+  payment_value: tdt.PaymentValue
+  deduct_total: tdt.DeductTotal
+  cheque_reference: tdt.ChequeReference
+  pay_date: tdt.PayDate
+  notation: tdt.Notation
+  narration: tdt.Narration
+  transaction_code: tdt.TransactionCode
+  new_deduct_code: tdt.NewDeductCode
+  new_customer: tdt.NewCustomer
+  deduction_code: tdt.DeductionCode
+  deduction_amount: tdt.DeductionAmount
+  operator: tdt.Operator
+  printed_flag: tdt.PrintedFlag
+  adjust_ldg: tdt.AdjustLdg
+  adjust_date: tdt.AdjustDate
+  offset_ldg: tdt.OffsetLdg
+  reference: tdt.Reference
+  resolution_code: tdt.ResolutionCode
+  resolution_date: tdt.ResolutionDate
+  sales_order: tdt.SalesOrder
+  sales_order_line: tdt.SalesOrderLine
+  promotion_code: tdt.PromotionCode
+  promotion_seq: tdt.PromotionSeq
+  change_operator: tdt.ChangeOperator
+  change_date: tdt.ChangeDate
+  reinstate_operator: tdt.ReinstateOperator
+  reinstate_date: tdt.ReinstateDate
+  reinstate_cust: tdt.ReinstateCust
+  invoice: tdt.Invoice
+  document_type: tdt.DocumentType
+  trn_year: tdt.TrnYear
+  trn_month: tdt.TrnMonth
+  journal: tdt.Journal
+  trn_description: tdt.TrnDescription

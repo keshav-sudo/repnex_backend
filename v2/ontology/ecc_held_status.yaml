@@ -1,0 +1,23 @@
+concept: ecc_held_status
+display_name: EccHeldStatus
+module: other
+description: Auto-generated representation of the physical table EccHeldStatus.
+synonyms:
+- eccheldstatus
+- ecc held status
+header_attributes:
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccHeldStatus
+  status_code:
+    display: Statuscode
+    type: string
+    required: false
+    description: Field StatusCode from EccHeldStatus
+  event_number:
+    display: Eventnumber
+    type: decimal
+    required: false
+    description: Field EventNumber from EccHeldStatus

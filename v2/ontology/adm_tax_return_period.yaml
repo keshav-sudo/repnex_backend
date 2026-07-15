@@ -1,0 +1,28 @@
+concept: adm_tax_return_period
+display_name: AdmTaxReturnPeriod
+module: administration
+description: Auto-generated representation of the physical table AdmTaxReturnPeriod.
+synonyms:
+- admtaxreturnperiod
+- adm tax return period
+header_attributes:
+  tax_year:
+    display: Taxyear
+    type: decimal
+    required: false
+    description: Field TaxYear from AdmTaxReturnPeriod
+  tax_period:
+    display: Taxperiod
+    type: decimal
+    required: false
+    description: Field TaxPeriod from AdmTaxReturnPeriod
+  tax_date_from:
+    display: Taxdatefrom
+    type: date
+    required: false
+    description: Field TaxDateFrom from AdmTaxReturnPeriod
+  tax_date_to:
+    display: Taxdateto
+    type: date
+    required: false
+    description: Field TaxDateTo from AdmTaxReturnPeriod

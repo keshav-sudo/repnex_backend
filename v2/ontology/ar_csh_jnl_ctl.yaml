@@ -1,0 +1,158 @@
+concept: ar_csh_jnl_ctl
+display_name: ArCshJnlCtl
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCshJnlCtl.
+synonyms:
+- arcshjnlctl
+- ar csh jnl ctl
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArCshJnlCtl
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArCshJnlCtl
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ArCshJnlCtl
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from ArCshJnlCtl
+  posted_flag:
+    display: Postedflag
+    type: string
+    required: false
+    description: Field PostedFlag from ArCshJnlCtl
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from ArCshJnlCtl
+  begin_cust_bal:
+    display: Begincustbal
+    type: decimal
+    required: false
+    description: Field BeginCustBal from ArCshJnlCtl
+  pmt_total_amount:
+    display: Pmttotalamount
+    type: decimal
+    required: false
+    description: Field PmtTotalAmount from ArCshJnlCtl
+  no_of_payments:
+    display: Noofpayments
+    type: decimal
+    required: false
+    description: Field NoOfPayments from ArCshJnlCtl
+  disc_allow_value:
+    display: Discallowvalue
+    type: decimal
+    required: false
+    description: Field DiscAllowValue from ArCshJnlCtl
+  disc_allow_number:
+    display: Discallownumber
+    type: decimal
+    required: false
+    description: Field DiscAllowNumber from ArCshJnlCtl
+  adjustments_value:
+    display: Adjustmentsvalue
+    type: decimal
+    required: false
+    description: Field AdjustmentsValue from ArCshJnlCtl
+  adjustments_number:
+    display: Adjustmentsnumber
+    type: decimal
+    required: false
+    description: Field AdjustmentsNumber from ArCshJnlCtl
+  pay_reverse_value:
+    display: Payreversevalue
+    type: decimal
+    required: false
+    description: Field PayReverseValue from ArCshJnlCtl
+  pay_reverse_number:
+    display: Payreversenumber
+    type: decimal
+    required: false
+    description: Field PayReverseNumber from ArCshJnlCtl
+  adj_reverse_value:
+    display: Adjreversevalue
+    type: decimal
+    required: false
+    description: Field AdjReverseValue from ArCshJnlCtl
+  adj_reverse_number:
+    display: Adjreversenumber
+    type: decimal
+    required: false
+    description: Field AdjReverseNumber from ArCshJnlCtl
+  bank_deposit_prt:
+    display: Bankdepositprt
+    type: string
+    required: false
+    description: Field BankDepositPrt from ArCshJnlCtl
+  cash_acc_bank:
+    display: Cashaccbank
+    type: string
+    required: false
+    description: Field CashAccBank from ArCshJnlCtl
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ArCshJnlCtl
+  ldg_post_year:
+    display: Ldgpostyear
+    type: decimal
+    required: false
+    description: Field LdgPostYear from ArCshJnlCtl
+  ldg_per_num:
+    display: Ldgpernum
+    type: decimal
+    required: false
+    description: Field LdgPerNum from ArCshJnlCtl
+  deposit_in_bank:
+    display: Depositinbank
+    type: string
+    required: false
+    description: Field DepositInBank from ArCshJnlCtl
+  post_deposit_in_det:
+    display: Postdepositindet
+    type: string
+    required: false
+    description: Field PostDepositInDet from ArCshJnlCtl
+  revaluation_value:
+    display: Revaluationvalue
+    type: decimal
+    required: false
+    description: Field RevaluationValue from ArCshJnlCtl
+  tax_relief_value:
+    display: Taxreliefvalue
+    type: decimal
+    required: false
+    description: Field TaxReliefValue from ArCshJnlCtl
+  tax_relief_number:
+    display: Taxreliefnumber
+    type: decimal
+    required: false
+    description: Field TaxReliefNumber from ArCshJnlCtl
+  group_pay:
+    display: Grouppay
+    type: string
+    required: false
+    description: Field GroupPay from ArCshJnlCtl
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ArCshJnlCtl
+  group_total_amount:
+    display: Grouptotalamount
+    type: decimal
+    required: false
+    description: Field GroupTotalAmount from ArCshJnlCtl

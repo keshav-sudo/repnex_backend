@@ -1,0 +1,103 @@
+concept: wip_arc_part_book
+display_name: WipArcPartBook
+module: work_in_progress
+description: Auto-generated representation of the physical table WipArcPartBook.
+synonyms:
+- wiparcpartbook
+- wip arc part book
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipArcPartBook
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from WipArcPartBook
+  qty_supplied:
+    display: Qtysupplied
+    type: decimal
+    required: false
+    description: Field QtySupplied from WipArcPartBook
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from WipArcPartBook
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from WipArcPartBook
+  labour_value:
+    display: Labourvalue
+    type: decimal
+    required: false
+    description: Field LabourValue from WipArcPartBook
+  material_value:
+    display: Materialvalue
+    type: decimal
+    required: false
+    description: Field MaterialValue from WipArcPartBook
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from WipArcPartBook
+  add_reference:
+    display: Addreference
+    type: string
+    required: false
+    description: Field AddReference from WipArcPartBook
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from WipArcPartBook
+  master_job:
+    display: Masterjob
+    type: string
+    required: false
+    description: Field MasterJob from WipArcPartBook
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipArcPartBook
+  co_product:
+    display: Coproduct
+    type: string
+    required: false
+    description: Field CoProduct from WipArcPartBook
+  qty_supplied_ent:
+    display: Qtysuppliedent
+    type: decimal
+    required: false
+    description: Field QtySuppliedEnt from WipArcPartBook
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from WipArcPartBook
+  gl_int_printed:
+    display: Glintprinted
+    type: string
+    required: false
+    description: Field GlIntPrinted from WipArcPartBook
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from WipArcPartBook
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from WipArcPartBook
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from WipArcPartBook

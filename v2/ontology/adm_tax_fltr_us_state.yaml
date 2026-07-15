@@ -1,0 +1,23 @@
+concept: adm_tax_fltr_us_state
+display_name: AdmTaxFltrUsState
+module: administration
+description: Auto-generated representation of the physical table AdmTaxFltrUsState.
+synonyms:
+- admtaxfltrusstate
+- adm tax fltr us state
+header_attributes:
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from AdmTaxFltrUsState
+  state_name:
+    display: Statename
+    type: string
+    required: false
+    description: Field StateName from AdmTaxFltrUsState
+  exclude_flag:
+    display: Excludeflag
+    type: string
+    required: false
+    description: Field ExcludeFlag from AdmTaxFltrUsState

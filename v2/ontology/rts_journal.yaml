@@ -1,0 +1,133 @@
+concept: rts_journal
+display_name: RtsJournal
+module: other
+description: Auto-generated representation of the physical table RtsJournal.
+synonyms:
+- rtsjournal
+- rts journal
+header_attributes:
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from RtsJournal
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from RtsJournal
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from RtsJournal
+  journal_entry:
+    display: Journalentry
+    type: decimal
+    required: false
+    description: Field JournalEntry from RtsJournal
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from RtsJournal
+  rts_number:
+    display: Rtsnumber
+    type: string
+    required: false
+    description: Field RtsNumber from RtsJournal
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from RtsJournal
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from RtsJournal
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from RtsJournal
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from RtsJournal
+  rts_org_qty:
+    display: Rtsorgqty
+    type: decimal
+    required: false
+    description: Field RtsOrgQty from RtsJournal
+  rts_org_cst:
+    display: Rtsorgcst
+    type: decimal
+    required: false
+    description: Field RtsOrgCst from RtsJournal
+  rts_apr_qty:
+    display: Rtsaprqty
+    type: decimal
+    required: false
+    description: Field RtsAprQty from RtsJournal
+  rts_apr_cst:
+    display: Rtsaprcst
+    type: decimal
+    required: false
+    description: Field RtsAprCst from RtsJournal
+  variance_amt:
+    display: Varianceamt
+    type: decimal
+    required: false
+    description: Field VarianceAmt from RtsJournal
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from RtsJournal
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from RtsJournal
+  rts_printed:
+    display: Rtsprinted
+    type: decimal
+    required: false
+    description: Field RtsPrinted from RtsJournal
+  entry_group:
+    display: Entrygroup
+    type: decimal
+    required: false
+    description: Field EntryGroup from RtsJournal
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RtsJournal
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from RtsJournal
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from RtsJournal
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from RtsJournal
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from RtsJournal
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from RtsJournal

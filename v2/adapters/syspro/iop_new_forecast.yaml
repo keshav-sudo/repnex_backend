@@ -1,0 +1,14 @@
+concept: iop_new_forecast
+table: IopNewForecast
+alias: inf
+fields:
+  stock_code: inf.StockCode
+  version: inf.Version
+  release: inf.Release
+  forecast_wh: inf.ForecastWh
+  calendar: inf.Calendar
+  forecast_date: inf.ForecastDate
+  forecast_qty: inf.ForecastQty
+  reference: inf.Reference
+  forecast_batch: inf.ForecastBatch
+  freeze: inf.Freeze

@@ -1,0 +1,13 @@
+concept: inv_stock_take_lpn
+table: InvStockTakeLpn
+alias: istl1
+fields:
+  warehouse: istl1.Warehouse
+  license_plate_num: istl1.LicensePlateNum
+  bin: istl1.Bin
+  orig_qty_on_hand: istl1.OrigQtyOnHand
+  qty_captured: istl1.QtyCaptured
+  save_date: istl1.SaveDate
+  reference: istl1.Reference
+  num_times_captured: istl1.NumTimesCaptured
+  created_lpn_flag: istl1.CreatedLpnFlag

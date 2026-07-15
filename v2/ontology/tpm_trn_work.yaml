@@ -1,0 +1,478 @@
+concept: tpm_trn_work
+display_name: TpmTrnWork
+module: other
+description: Auto-generated representation of the physical table TpmTrnWork.
+synonyms:
+- tpmtrnwork
+- tpm trn work
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from TpmTrnWork
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from TpmTrnWork
+  tpm_sequence:
+    display: Tpmsequence
+    type: decimal
+    required: false
+    description: Field TpmSequence from TpmTrnWork
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from TpmTrnWork
+  selected_flag:
+    display: Selectedflag
+    type: string
+    required: false
+    description: Field SelectedFlag from TpmTrnWork
+  exception_flag:
+    display: Exceptionflag
+    type: string
+    required: false
+    description: Field ExceptionFlag from TpmTrnWork
+  so_charge_line:
+    display: Sochargeline
+    type: decimal
+    required: false
+    description: Field SoChargeLine from TpmTrnWork
+  amount_type:
+    display: Amounttype
+    type: string
+    required: false
+    description: Field AmountType from TpmTrnWork
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from TpmTrnWork
+  master_account:
+    display: Masteraccount
+    type: string
+    required: false
+    description: Field MasterAccount from TpmTrnWork
+  deduction_code:
+    display: Deductioncode
+    type: string
+    required: false
+    description: Field DeductionCode from TpmTrnWork
+  begin_balance:
+    display: Beginbalance
+    type: decimal
+    required: false
+    description: Field BeginBalance from TpmTrnWork
+  current_amount:
+    display: Currentamount
+    type: decimal
+    required: false
+    description: Field CurrentAmount from TpmTrnWork
+  last_amount:
+    display: Lastamount
+    type: decimal
+    required: false
+    description: Field LastAmount from TpmTrnWork
+  promotion_type:
+    display: Promotiontype
+    type: string
+    required: false
+    description: Field PromotionType from TpmTrnWork
+  accrual_ldg:
+    display: Accrualldg
+    type: string
+    required: false
+    description: Field AccrualLdg from TpmTrnWork
+  expense_ldg:
+    display: Expenseldg
+    type: string
+    required: false
+    description: Field ExpenseLdg from TpmTrnWork
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from TpmTrnWork
+  so_trn_date:
+    display: Sotrndate
+    type: date
+    required: false
+    description: Field SoTrnDate from TpmTrnWork
+  so_trn_operator:
+    display: Sotrnoperator
+    type: string
+    required: false
+    description: Field SoTrnOperator from TpmTrnWork
+  deduct_posted_flag:
+    display: Deductpostedflag
+    type: string
+    required: false
+    description: Field DeductPostedFlag from TpmTrnWork
+  deduct_trn_date:
+    display: Deducttrndate
+    type: date
+    required: false
+    description: Field DeductTrnDate from TpmTrnWork
+  deduct_trn_operator:
+    display: Deducttrnoperator
+    type: string
+    required: false
+    description: Field DeductTrnOperator from TpmTrnWork
+  original_price:
+    display: Originalprice
+    type: decimal
+    required: false
+    description: Field OriginalPrice from TpmTrnWork
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from TpmTrnWork
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from TpmTrnWork
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from TpmTrnWork
+  so_free_line:
+    display: Sofreeline
+    type: decimal
+    required: false
+    description: Field SoFreeLine from TpmTrnWork
+  so_free_quantity:
+    display: Sofreequantity
+    type: decimal
+    required: false
+    description: Field SoFreeQuantity from TpmTrnWork
+  global_flag:
+    display: Globalflag
+    type: string
+    required: false
+    description: Field GlobalFlag from TpmTrnWork
+  global_qual_flag:
+    display: Globalqualflag
+    type: string
+    required: false
+    description: Field GlobalQualFlag from TpmTrnWork
+  global_hash:
+    display: Globalhash
+    type: decimal
+    required: false
+    description: Field GlobalHash from TpmTrnWork
+  current_level:
+    display: Currentlevel
+    type: decimal
+    required: false
+    description: Field CurrentLevel from TpmTrnWork
+  free_goods_apply_flag:
+    display: Freegoodsapplyflag
+    type: string
+    required: false
+    description: Field FreeGoodsApplyFlag from TpmTrnWork
+  invoice_price:
+    display: Invoiceprice
+    type: decimal
+    required: false
+    description: Field InvoicePrice from TpmTrnWork
+  customer_price:
+    display: Customerprice
+    type: decimal
+    required: false
+    description: Field CustomerPrice from TpmTrnWork
+  global_ship_level:
+    display: Globalshiplevel
+    type: decimal
+    required: false
+    description: Field GlobalShipLevel from TpmTrnWork
+  global_value:
+    display: Globalvalue
+    type: decimal
+    required: false
+    description: Field GlobalValue from TpmTrnWork
+  global_ship_value:
+    display: Globalshipvalue
+    type: decimal
+    required: false
+    description: Field GlobalShipValue from TpmTrnWork
+  selected_disp_flag:
+    display: Selecteddispflag
+    type: string
+    required: false
+    description: Field SelectedDispFlag from TpmTrnWork
+  s_promotion:
+    display: Spromotion
+    type: string
+    required: false
+    description: Field SPromotion from TpmTrnWork
+  s_description:
+    display: Sdescription
+    type: string
+    required: false
+    description: Field SDescription from TpmTrnWork
+  s_expiry_date:
+    display: Sexpirydate
+    type: date
+    required: false
+    description: Field SExpiryDate from TpmTrnWork
+  s_start_date:
+    display: Sstartdate
+    type: date
+    required: false
+    description: Field SStartDate from TpmTrnWork
+  s_stock_category:
+    display: Sstockcategory
+    type: string
+    required: false
+    description: Field SStockCategory from TpmTrnWork
+  s_stock_cat_code:
+    display: Sstockcatcode
+    type: string
+    required: false
+    description: Field SStockCatCode from TpmTrnWork
+  s_customer_category:
+    display: Scustomercategory
+    type: string
+    required: false
+    description: Field SCustomerCategory from TpmTrnWork
+  s_cust_cat_code:
+    display: Scustcatcode
+    type: string
+    required: false
+    description: Field SCustCatCode from TpmTrnWork
+  s_amount_type:
+    display: Samounttype
+    type: string
+    required: false
+    description: Field SAmountType from TpmTrnWork
+  s_basis:
+    display: Sbasis
+    type: string
+    required: false
+    description: Field SBasis from TpmTrnWork
+  s_threshold:
+    display: Sthreshold
+    type: decimal
+    required: false
+    description: Field SThreshold from TpmTrnWork
+  s_promotion_value:
+    display: Spromotionvalue
+    type: decimal
+    required: false
+    description: Field SPromotionValue from TpmTrnWork
+  s_gross_net:
+    display: Sgrossnet
+    type: string
+    required: false
+    description: Field SGrossNet from TpmTrnWork
+  s_promotion_type:
+    display: Spromotiontype
+    type: string
+    required: false
+    description: Field SPromotionType from TpmTrnWork
+  s_off_invoice_type:
+    display: Soffinvoicetype
+    type: string
+    required: false
+    description: Field SOffInvoiceType from TpmTrnWork
+  s_accrual_ldg:
+    display: Saccrualldg
+    type: string
+    required: false
+    description: Field SAccrualLdg from TpmTrnWork
+  s_expense_ldg:
+    display: Sexpenseldg
+    type: string
+    required: false
+    description: Field SExpenseLdg from TpmTrnWork
+  s_deduction:
+    display: Sdeduction
+    type: string
+    required: false
+    description: Field SDeduction from TpmTrnWork
+  s_product_class:
+    display: Sproductclass
+    type: string
+    required: false
+    description: Field SProductClass from TpmTrnWork
+  s_date_type:
+    display: Sdatetype
+    type: string
+    required: false
+    description: Field SDateType from TpmTrnWork
+  s_accrual_type:
+    display: Saccrualtype
+    type: string
+    required: false
+    description: Field SAccrualType from TpmTrnWork
+  s_apply_sub:
+    display: Sapplysub
+    type: string
+    required: false
+    description: Field SApplySub from TpmTrnWork
+  s_free_good_type:
+    display: Sfreegoodtype
+    type: string
+    required: false
+    description: Field SFreeGoodType from TpmTrnWork
+  s_stock_code:
+    display: Sstockcode
+    type: string
+    required: false
+    description: Field SStockCode from TpmTrnWork
+  s_max_threshold:
+    display: Smaxthreshold
+    type: decimal
+    required: false
+    description: Field SMaxThreshold from TpmTrnWork
+  s_global_flag:
+    display: Sglobalflag
+    type: string
+    required: false
+    description: Field SGlobalFlag from TpmTrnWork
+  s_free_good_apply_flag:
+    display: Sfreegoodapplyflag
+    type: string
+    required: false
+    description: Field SFreeGoodApplyFlag from TpmTrnWork
+  s_invoice_price:
+    display: Sinvoiceprice
+    type: decimal
+    required: false
+    description: Field SInvoicePrice from TpmTrnWork
+  s_customer_price:
+    display: Scustomerprice
+    type: decimal
+    required: false
+    description: Field SCustomerPrice from TpmTrnWork
+  s_currency:
+    display: Scurrency
+    type: string
+    required: false
+    description: Field SCurrency from TpmTrnWork
+  s_tiered_prom_flag:
+    display: Stieredpromflag
+    type: string
+    required: false
+    description: Field STieredPromFlag from TpmTrnWork
+  s_multiple_of_flag:
+    display: Smultipleofflag
+    type: string
+    required: false
+    description: Field SMultipleOfFlag from TpmTrnWork
+  s_free_good_rounding:
+    display: Sfreegoodrounding
+    type: string
+    required: false
+    description: Field SFreeGoodRounding from TpmTrnWork
+  tpm_sequence2:
+    display: Tpmsequence2
+    type: decimal
+    required: false
+    description: Field TpmSequence2 from TpmTrnWork
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from TpmTrnWork
+  price_code_cus_prc:
+    display: Pricecodecusprc
+    type: string
+    required: false
+    description: Field PriceCodeCusPrc from TpmTrnWork
+  stock_cat_type:
+    display: Stockcattype
+    type: string
+    required: false
+    description: Field StockCatType from TpmTrnWork
+  stock_category2:
+    display: Stockcategory2
+    type: string
+    required: false
+    description: Field StockCategory2 from TpmTrnWork
+  stock_cat_code2:
+    display: Stockcatcode2
+    type: string
+    required: false
+    description: Field StockCatCode2 from TpmTrnWork
+  customer_cat_type:
+    display: Customercattype
+    type: string
+    required: false
+    description: Field CustomerCatType from TpmTrnWork
+  customer_category2:
+    display: Customercategory2
+    type: string
+    required: false
+    description: Field CustomerCategory2 from TpmTrnWork
+  cust_cat_code2:
+    display: Custcatcode2
+    type: string
+    required: false
+    description: Field CustCatCode2 from TpmTrnWork
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from TpmTrnWork
+  limit_used:
+    display: Limitused
+    type: string
+    required: false
+    description: Field LimitUsed from TpmTrnWork
+  limit_type:
+    display: Limittype
+    type: string
+    required: false
+    description: Field LimitType from TpmTrnWork
+  assoc_stock_cat:
+    display: Assocstockcat
+    type: string
+    required: false
+    description: Field AssocStockCat from TpmTrnWork
+  assoc_stock_code:
+    display: Assocstockcode
+    type: string
+    required: false
+    description: Field AssocStockCode from TpmTrnWork
+  tax_code_accrual:
+    display: Taxcodeaccrual
+    type: string
+    required: false
+    description: Field TaxCodeAccrual from TpmTrnWork
+  fst_code_accrual:
+    display: Fstcodeaccrual
+    type: string
+    required: false
+    description: Field FstCodeAccrual from TpmTrnWork
+  promo_sel_flag:
+    display: Promoselflag
+    type: string
+    required: false
+    description: Field PromoSelFlag from TpmTrnWork
+  promo_group_flag:
+    display: Promogroupflag
+    type: string
+    required: false
+    description: Field PromoGroupFlag from TpmTrnWork
+  promo_group_max:
+    display: Promogroupmax
+    type: decimal
+    required: false
+    description: Field PromoGroupMax from TpmTrnWork
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from TpmTrnWork
+  price_list_cus_prc:
+    display: Pricelistcusprc
+    type: string
+    required: false
+    description: Field PriceListCusPrc from TpmTrnWork

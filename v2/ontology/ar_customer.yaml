@@ -1,0 +1,748 @@
+concept: ar_customer
+display_name: ArCustomer
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCustomer.
+synonyms:
+- arcustomer
+- ar customer
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCustomer
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from ArCustomer
+  short_name:
+    display: Shortname
+    type: string
+    required: false
+    description: Field ShortName from ArCustomer
+  exempt_fin_chg:
+    display: Exemptfinchg
+    type: string
+    required: false
+    description: Field ExemptFinChg from ArCustomer
+  maint_history:
+    display: Mainthistory
+    type: string
+    required: false
+    description: Field MaintHistory from ArCustomer
+  customer_type:
+    display: Customertype
+    type: string
+    required: false
+    description: Field CustomerType from ArCustomer
+  master_account:
+    display: Masteraccount
+    type: string
+    required: false
+    description: Field MasterAccount from ArCustomer
+  store_number:
+    display: Storenumber
+    type: string
+    required: false
+    description: Field StoreNumber from ArCustomer
+  prt_master_add:
+    display: Prtmasteradd
+    type: string
+    required: false
+    description: Field PrtMasterAdd from ArCustomer
+  credit_status:
+    display: Creditstatus
+    type: string
+    required: false
+    description: Field CreditStatus from ArCustomer
+  credit_limit:
+    display: Creditlimit
+    type: decimal
+    required: false
+    description: Field CreditLimit from ArCustomer
+  invoice_count:
+    display: Invoicecount
+    type: decimal
+    required: false
+    description: Field InvoiceCount from ArCustomer
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArCustomer
+  salesperson1:
+    display: Salesperson1
+    type: string
+    required: false
+    description: Field Salesperson1 from ArCustomer
+  salesperson2:
+    display: Salesperson2
+    type: string
+    required: false
+    description: Field Salesperson2 from ArCustomer
+  salesperson3:
+    display: Salesperson3
+    type: string
+    required: false
+    description: Field Salesperson3 from ArCustomer
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from ArCustomer
+  customer_class:
+    display: Customerclass
+    type: string
+    required: false
+    description: Field CustomerClass from ArCustomer
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArCustomer
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from ArCustomer
+  inv_disc_code:
+    display: Invdisccode
+    type: string
+    required: false
+    description: Field InvDiscCode from ArCustomer
+  balance_type:
+    display: Balancetype
+    type: string
+    required: false
+    description: Field BalanceType from ArCustomer
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArCustomer
+  line_disc_code:
+    display: Linedisccode
+    type: string
+    required: false
+    description: Field LineDiscCode from ArCustomer
+  tax_status:
+    display: Taxstatus
+    type: string
+    required: false
+    description: Field TaxStatus from ArCustomer
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from ArCustomer
+  special_instrs:
+    display: Specialinstrs
+    type: string
+    required: false
+    description: Field SpecialInstrs from ArCustomer
+  price_category_table:
+    display: Pricecategorytable
+    type: string
+    required: false
+    description: Field PriceCategoryTable from ArCustomer
+  date_last_sale:
+    display: Datelastsale
+    type: date
+    required: false
+    description: Field DateLastSale from ArCustomer
+  date_last_pay:
+    display: Datelastpay
+    type: date
+    required: false
+    description: Field DateLastPay from ArCustomer
+  outst_ord_val:
+    display: Outstordval
+    type: decimal
+    required: false
+    description: Field OutstOrdVal from ArCustomer
+  num_outst_ord:
+    display: Numoutstord
+    type: decimal
+    required: false
+    description: Field NumOutstOrd from ArCustomer
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from ArCustomer
+  contact:
+    display: Contact
+    type: string
+    required: false
+    description: Field Contact from ArCustomer
+  add_telephone:
+    display: Addtelephone
+    type: string
+    required: false
+    description: Field AddTelephone from ArCustomer
+  fax:
+    display: Fax
+    type: string
+    required: false
+    description: Field Fax from ArCustomer
+  telex:
+    display: Telex
+    type: string
+    required: false
+    description: Field Telex from ArCustomer
+  telephone_extn:
+    display: Telephoneextn
+    type: string
+    required: false
+    description: Field TelephoneExtn from ArCustomer
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ArCustomer
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from ArCustomer
+  user_field2:
+    display: Userfield2
+    type: decimal
+    required: false
+    description: Field UserField2 from ArCustomer
+  gst_exempt_flag:
+    display: Gstexemptflag
+    type: string
+    required: false
+    description: Field GstExemptFlag from ArCustomer
+  gst_exempt_num:
+    display: Gstexemptnum
+    type: string
+    required: false
+    description: Field GstExemptNum from ArCustomer
+  gst_level:
+    display: Gstlevel
+    type: string
+    required: false
+    description: Field GstLevel from ArCustomer
+  detail_move_reqd:
+    display: Detailmovereqd
+    type: string
+    required: false
+    description: Field DetailMoveReqd from ArCustomer
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from ArCustomer
+  contract_prc_reqd:
+    display: Contractprcreqd
+    type: string
+    required: false
+    description: Field ContractPrcReqd from ArCustomer
+  buying_group1:
+    display: Buyinggroup1
+    type: string
+    required: false
+    description: Field BuyingGroup1 from ArCustomer
+  buying_group2:
+    display: Buyinggroup2
+    type: string
+    required: false
+    description: Field BuyingGroup2 from ArCustomer
+  buying_group3:
+    display: Buyinggroup3
+    type: string
+    required: false
+    description: Field BuyingGroup3 from ArCustomer
+  buying_group4:
+    display: Buyinggroup4
+    type: string
+    required: false
+    description: Field BuyingGroup4 from ArCustomer
+  buying_group5:
+    display: Buyinggroup5
+    type: string
+    required: false
+    description: Field BuyingGroup5 from ArCustomer
+  statement_reqd:
+    display: Statementreqd
+    type: string
+    required: false
+    description: Field StatementReqd from ArCustomer
+  back_ord_reqd:
+    display: Backordreqd
+    type: string
+    required: false
+    description: Field BackOrdReqd from ArCustomer
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from ArCustomer
+  shipping_instrs_cod:
+    display: Shippinginstrscod
+    type: string
+    required: false
+    description: Field ShippingInstrsCod from ArCustomer
+  state_code:
+    display: Statecode
+    type: string
+    required: false
+    description: Field StateCode from ArCustomer
+  date_cust_added:
+    display: Datecustadded
+    type: date
+    required: false
+    description: Field DateCustAdded from ArCustomer
+  stock_interchange:
+    display: Stockinterchange
+    type: string
+    required: false
+    description: Field StockInterchange from ArCustomer
+  maint_last_prc_paid:
+    display: Maintlastprcpaid
+    type: string
+    required: false
+    description: Field MaintLastPrcPaid from ArCustomer
+  ibt_customer:
+    display: Ibtcustomer
+    type: string
+    required: false
+    description: Field IbtCustomer from ArCustomer
+  so_default_doc:
+    display: Sodefaultdoc
+    type: string
+    required: false
+    description: Field SoDefaultDoc from ArCustomer
+  counter_sls_only:
+    display: Counterslsonly
+    type: string
+    required: false
+    description: Field CounterSlsOnly from ArCustomer
+  payment_status:
+    display: Paymentstatus
+    type: string
+    required: false
+    description: Field PaymentStatus from ArCustomer
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ArCustomer
+  highest_balance:
+    display: Highestbalance
+    type: decimal
+    required: false
+    description: Field HighestBalance from ArCustomer
+  customer_on_hold:
+    display: Customeronhold
+    type: string
+    required: false
+    description: Field CustomerOnHold from ArCustomer
+  inv_comment_code:
+    display: Invcommentcode
+    type: string
+    required: false
+    description: Field InvCommentCode from ArCustomer
+  edi_sender_code:
+    display: Edisendercode
+    type: string
+    required: false
+    description: Field EdiSenderCode from ArCustomer
+  rel_ord_os_value:
+    display: Relordosvalue
+    type: decimal
+    required: false
+    description: Field RelOrdOsValue from ArCustomer
+  edi_flag:
+    display: Ediflag
+    type: string
+    required: false
+    description: Field EdiFlag from ArCustomer
+  so_default_type:
+    display: Sodefaulttype
+    type: string
+    required: false
+    description: Field SoDefaultType from ArCustomer
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from ArCustomer
+  apply_ord_disc:
+    display: Applyorddisc
+    type: string
+    required: false
+    description: Field ApplyOrdDisc from ArCustomer
+  apply_line_disc:
+    display: Applylinedisc
+    type: string
+    required: false
+    description: Field ApplyLineDisc from ArCustomer
+  fax_invoices:
+    display: Faxinvoices
+    type: string
+    required: false
+    description: Field FaxInvoices from ArCustomer
+  fax_statements:
+    display: Faxstatements
+    type: string
+    required: false
+    description: Field FaxStatements from ArCustomer
+  high_inv_days:
+    display: Highinvdays
+    type: decimal
+    required: false
+    description: Field HighInvDays from ArCustomer
+  high_inv:
+    display: Highinv
+    type: string
+    required: false
+    description: Field HighInv from ArCustomer
+  doc_fax:
+    display: Docfax
+    type: string
+    required: false
+    description: Field DocFax from ArCustomer
+  doc_fax_contact:
+    display: Docfaxcontact
+    type: string
+    required: false
+    description: Field DocFaxContact from ArCustomer
+  sold_to_addr1:
+    display: Soldtoaddr1
+    type: string
+    required: false
+    description: Field SoldToAddr1 from ArCustomer
+  sold_to_addr2:
+    display: Soldtoaddr2
+    type: string
+    required: false
+    description: Field SoldToAddr2 from ArCustomer
+  sold_to_addr3:
+    display: Soldtoaddr3
+    type: string
+    required: false
+    description: Field SoldToAddr3 from ArCustomer
+  sold_to_addr3_loc:
+    display: Soldtoaddr3Loc
+    type: string
+    required: false
+    description: Field SoldToAddr3Loc from ArCustomer
+  sold_to_addr4:
+    display: Soldtoaddr4
+    type: string
+    required: false
+    description: Field SoldToAddr4 from ArCustomer
+  sold_to_addr5:
+    display: Soldtoaddr5
+    type: string
+    required: false
+    description: Field SoldToAddr5 from ArCustomer
+  sold_postal_code:
+    display: Soldpostalcode
+    type: string
+    required: false
+    description: Field SoldPostalCode from ArCustomer
+  sold_to_gps_lat:
+    display: Soldtogpslat
+    type: decimal
+    required: false
+    description: Field SoldToGpsLat from ArCustomer
+  sold_to_gps_long:
+    display: Soldtogpslong
+    type: decimal
+    required: false
+    description: Field SoldToGpsLong from ArCustomer
+  ship_to_addr1:
+    display: Shiptoaddr1
+    type: string
+    required: false
+    description: Field ShipToAddr1 from ArCustomer
+  ship_to_addr2:
+    display: Shiptoaddr2
+    type: string
+    required: false
+    description: Field ShipToAddr2 from ArCustomer
+  ship_to_addr3:
+    display: Shiptoaddr3
+    type: string
+    required: false
+    description: Field ShipToAddr3 from ArCustomer
+  ship_to_addr3_loc:
+    display: Shiptoaddr3Loc
+    type: string
+    required: false
+    description: Field ShipToAddr3Loc from ArCustomer
+  ship_to_addr4:
+    display: Shiptoaddr4
+    type: string
+    required: false
+    description: Field ShipToAddr4 from ArCustomer
+  ship_to_addr5:
+    display: Shiptoaddr5
+    type: string
+    required: false
+    description: Field ShipToAddr5 from ArCustomer
+  ship_postal_code:
+    display: Shippostalcode
+    type: string
+    required: false
+    description: Field ShipPostalCode from ArCustomer
+  ship_to_gps_lat:
+    display: Shiptogpslat
+    type: decimal
+    required: false
+    description: Field ShipToGpsLat from ArCustomer
+  ship_to_gps_long:
+    display: Shiptogpslong
+    type: decimal
+    required: false
+    description: Field ShipToGpsLong from ArCustomer
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from ArCustomer
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from ArCustomer
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from ArCustomer
+  state1:
+    display: State1
+    type: string
+    required: false
+    description: Field State1 from ArCustomer
+  county_zip1:
+    display: Countyzip1
+    type: string
+    required: false
+    description: Field CountyZip1 from ArCustomer
+  city1:
+    display: City1
+    type: string
+    required: false
+    description: Field City1 from ArCustomer
+  default_ord_type:
+    display: Defaultordtype
+    type: string
+    required: false
+    description: Field DefaultOrdType from ArCustomer
+  po_number_mandatory:
+    display: Ponumbermandatory
+    type: string
+    required: false
+    description: Field PoNumberMandatory from ArCustomer
+  credit_check_flag:
+    display: Creditcheckflag
+    type: string
+    required: false
+    description: Field CreditCheckFlag from ArCustomer
+  company_tax_number:
+    display: Companytaxnumber
+    type: string
+    required: false
+    description: Field CompanyTaxNumber from ArCustomer
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from ArCustomer
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from ArCustomer
+  delivery_terms_c:
+    display: Deliverytermsc
+    type: string
+    required: false
+    description: Field DeliveryTermsC from ArCustomer
+  transaction_nature_c:
+    display: Transactionnaturec
+    type: decimal
+    required: false
+    description: Field TransactionNatureC from ArCustomer
+  route_code:
+    display: Routecode
+    type: string
+    required: false
+    description: Field RouteCode from ArCustomer
+  fax_quotes:
+    display: Faxquotes
+    type: string
+    required: false
+    description: Field FaxQuotes from ArCustomer
+  route_distance:
+    display: Routedistance
+    type: decimal
+    required: false
+    description: Field RouteDistance from ArCustomer
+  tpm_customer_flag:
+    display: Tpmcustomerflag
+    type: string
+    required: false
+    description: Field TpmCustomerFlag from ArCustomer
+  sales_warehouse:
+    display: Saleswarehouse
+    type: string
+    required: false
+    description: Field SalesWarehouse from ArCustomer
+  tpm_pricing_flag:
+    display: Tpmpricingflag
+    type: string
+    required: false
+    description: Field TpmPricingFlag from ArCustomer
+  ar_statement_no:
+    display: Arstatementno
+    type: string
+    required: false
+    description: Field ArStatementNo from ArCustomer
+  tpm_credit_check:
+    display: Tpmcreditcheck
+    type: string
+    required: false
+    description: Field TpmCreditCheck from ArCustomer
+  whole_order_ship_flag:
+    display: Wholeordershipflag
+    type: string
+    required: false
+    description: Field WholeOrderShipFlag from ArCustomer
+  minimum_order_value:
+    display: Minimumordervalue
+    type: decimal
+    required: false
+    description: Field MinimumOrderValue from ArCustomer
+  minimum_order_chg_cod:
+    display: Minimumorderchgcod
+    type: string
+    required: false
+    description: Field MinimumOrderChgCod from ArCustomer
+  uk_vat_flag:
+    display: Ukvatflag
+    type: string
+    required: false
+    description: Field UkVatFlag from ArCustomer
+  uk_currency:
+    display: Ukcurrency
+    type: string
+    required: false
+    description: Field UkCurrency from ArCustomer
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from ArCustomer
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from ArCustomer
+  alt_method_flag:
+    display: Altmethodflag
+    type: string
+    required: false
+    description: Field AltMethodFlag from ArCustomer
+  sales_allowed:
+    display: Salesallowed
+    type: string
+    required: false
+    description: Field SalesAllowed from ArCustomer
+  unapp_pay_allowed:
+    display: Unapppayallowed
+    type: string
+    required: false
+    description: Field UnappPayAllowed from ArCustomer
+  payments_allowed:
+    display: Paymentsallowed
+    type: string
+    required: false
+    description: Field PaymentsAllowed from ArCustomer
+  quotes_allowed:
+    display: Quotesallowed
+    type: string
+    required: false
+    description: Field QuotesAllowed from ArCustomer
+  cr_notes_allowed:
+    display: Crnotesallowed
+    type: string
+    required: false
+    description: Field CrNotesAllowed from ArCustomer
+  dr_notes_allowed:
+    display: Drnotesallowed
+    type: string
+    required: false
+    description: Field DrNotesAllowed from ArCustomer
+  query_allowed:
+    display: Queryallowed
+    type: string
+    required: false
+    description: Field QueryAllowed from ArCustomer
+  dunning_group:
+    display: Dunninggroup
+    type: string
+    required: false
+    description: Field DunningGroup from ArCustomer
+  dunning_fax:
+    display: Dunningfax
+    type: string
+    required: false
+    description: Field DunningFax from ArCustomer
+  dunning_email:
+    display: Dunningemail
+    type: string
+    required: false
+    description: Field DunningEmail from ArCustomer
+  primary_customer:
+    display: Primarycustomer
+    type: string
+    required: false
+    description: Field PrimaryCustomer from ArCustomer
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from ArCustomer
+  third_party_tax_integ:
+    display: Thirdpartytaxinteg
+    type: string
+    required: false
+    description: Field ThirdPartyTaxInteg from ArCustomer
+  pick_marshalling:
+    display: Pickmarshalling
+    type: string
+    required: false
+    description: Field PickMarshalling from ArCustomer
+  dispatch_whole_so:
+    display: Dispatchwholeso
+    type: string
+    required: false
+    description: Field DispatchWholeSo from ArCustomer
+  elect_inv_required:
+    display: Electinvrequired
+    type: string
+    required: false
+    description: Field ElectInvRequired from ArCustomer
+  elect_inv_print:
+    display: Electinvprint
+    type: string
+    required: false
+    description: Field ElectInvPrint from ArCustomer
+  date_format:
+    display: Dateformat
+    type: decimal
+    required: false
+    description: Field DateFormat from ArCustomer
+  decimal_format:
+    display: Decimalformat
+    type: decimal
+    required: false
+    description: Field DecimalFormat from ArCustomer

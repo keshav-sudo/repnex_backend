@@ -1,0 +1,22 @@
+concept: sor_detail_qty_bal
+table: SorDetailQtyBal
+alias: sdqb
+fields:
+  run_date_time: sdqb.RunDateTime
+  sales_order: sdqb.SalesOrder
+  sales_order_line: sdqb.SalesOrderLine
+  stock_code: sdqb.StockCode
+  warehouse: sdqb.Warehouse
+  sales_order_init_line: sdqb.SalesOrderInitLine
+  order_in_process: sdqb.OrderInProcess
+  ord_ship_qty: sdqb.OrdShipQty
+  ord_resv_qty: sdqb.OrdResvQty
+  bin_ship_qty: sdqb.BinShipQty
+  bin_resv_qty: sdqb.BinResvQty
+  lot_ship_qty: sdqb.LotShipQty
+  lot_resv_qty: sdqb.LotResvQty
+  ser_ship_qty: sdqb.SerShipQty
+  ser_resv_qty: sdqb.SerResvQty
+  disp_in_process: sdqb.DispInProcess
+  ord_disp_qty: sdqb.OrdDispQty
+  dsp_disp_qty: sdqb.DspDispQty

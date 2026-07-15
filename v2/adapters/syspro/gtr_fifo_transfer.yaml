@@ -1,0 +1,19 @@
+concept: gtr_fifo_transfer
+table: GtrFifoTransfer
+alias: gft
+fields:
+  gtr_reference: gft.GtrReference
+  source_warehouse: gft.SourceWarehouse
+  target_warehouse: gft.TargetWarehouse
+  line: gft.Line
+  date_created: gft.DateCreated
+  time_created: gft.TimeCreated
+  stock_code: gft.StockCode
+  quantity: gft.Quantity
+  qty_received: gft.QtyReceived
+  fifo_cost: gft.FifoCost
+  date_last_receipt: gft.DateLastReceipt
+  complete: gft.Complete
+  lot_serial: gft.LotSerial
+  version: gft.Version
+  release: gft.Release

@@ -1,0 +1,15 @@
+concept: ap_tax_cod_two_dist_det
+table: ApTaxCodTwoDistDet
+alias: atctdd
+fields:
+  jnl_year: atctdd.JnlYear
+  jnl_month: atctdd.JnlMonth
+  journal: atctdd.Journal
+  entry: atctdd.Entry
+  tax_code: atctdd.TaxCode
+  distributed_amt: atctdd.DistributedAmt
+  taxable_amount: atctdd.TaxableAmount
+  tax_portion: atctdd.TaxPortion
+  exempt_amount: atctdd.ExemptAmount
+  tax_basis: atctdd.TaxBasis
+  tax_rate: atctdd.TaxRate

@@ -1,0 +1,63 @@
+concept: gen_dimension_def
+display_name: GenDimensionDef
+module: general_ledger
+description: Auto-generated representation of the physical table GenDimensionDef.
+synonyms:
+- gendimensiondef
+- gen dimension def
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenDimensionDef
+  dimension_category:
+    display: Dimensioncategory
+    type: string
+    required: false
+    description: Field DimensionCategory from GenDimensionDef
+  default_code:
+    display: Defaultcode
+    type: string
+    required: false
+    description: Field DefaultCode from GenDimensionDef
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from GenDimensionDef
+  dimension_code:
+    display: Dimensioncode
+    type: string
+    required: false
+    description: Field DimensionCode from GenDimensionDef
+  default_caption:
+    display: Defaultcaption
+    type: string
+    required: false
+    description: Field DefaultCaption from GenDimensionDef
+  posting_rule:
+    display: Postingrule
+    type: string
+    required: false
+    description: Field PostingRule from GenDimensionDef
+  entity_key1:
+    display: Entitykey1
+    type: string
+    required: false
+    description: Field EntityKey1 from GenDimensionDef
+  entity_key2:
+    display: Entitykey2
+    type: string
+    required: false
+    description: Field EntityKey2 from GenDimensionDef
+  entity_key3:
+    display: Entitykey3
+    type: string
+    required: false
+    description: Field EntityKey3 from GenDimensionDef
+  entity_key4:
+    display: Entitykey4
+    type: string
+    required: false
+    description: Field EntityKey4 from GenDimensionDef

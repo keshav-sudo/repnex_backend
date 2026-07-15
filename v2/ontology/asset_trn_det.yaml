@@ -1,0 +1,63 @@
+concept: asset_trn_det
+display_name: AssetTrnDet
+module: assets
+description: Auto-generated representation of the physical table AssetTrnDet.
+synonyms:
+- assettrndet
+- asset trn det
+header_attributes:
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetTrnDet
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from AssetTrnDet
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from AssetTrnDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from AssetTrnDet
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from AssetTrnDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from AssetTrnDet
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from AssetTrnDet
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from AssetTrnDet
+  expense:
+    display: Expense
+    type: string
+    required: false
+    description: Field Expense from AssetTrnDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from AssetTrnDet
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetTrnDet

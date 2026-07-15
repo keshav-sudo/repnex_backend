@@ -1,0 +1,253 @@
+concept: csh_transactions
+display_name: CshTransactions
+module: cashbook
+description: Auto-generated representation of the physical table CshTransactions.
+synonyms:
+- cshtransactions
+- csh transactions
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshTransactions
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshTransactions
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshTransactions
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from CshTransactions
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from CshTransactions
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from CshTransactions
+  trn_reference:
+    display: Trnreference
+    type: string
+    required: false
+    description: Field TrnReference from CshTransactions
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from CshTransactions
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from CshTransactions
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from CshTransactions
+  reconciled_flag:
+    display: Reconciledflag
+    type: string
+    required: false
+    description: Field ReconciledFlag from CshTransactions
+  reconciled_year:
+    display: Reconciledyear
+    type: decimal
+    required: false
+    description: Field ReconciledYear from CshTransactions
+  reconciled_month:
+    display: Reconciledmonth
+    type: decimal
+    required: false
+    description: Field ReconciledMonth from CshTransactions
+  cheque:
+    display: Cheque
+    type: decimal
+    required: false
+    description: Field Cheque from CshTransactions
+  cheque_type:
+    display: Chequetype
+    type: string
+    required: false
+    description: Field ChequeType from CshTransactions
+  next_gl_entry:
+    display: Nextglentry
+    type: decimal
+    required: false
+    description: Field NextGlEntry from CshTransactions
+  void_flag:
+    display: Voidflag
+    type: string
+    required: false
+    description: Field VoidFlag from CshTransactions
+  bank_currency:
+    display: Bankcurrency
+    type: string
+    required: false
+    description: Field BankCurrency from CshTransactions
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from CshTransactions
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from CshTransactions
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from CshTransactions
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from CshTransactions
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from CshTransactions
+  acc_conv_rate:
+    display: Accconvrate
+    type: decimal
+    required: false
+    description: Field AccConvRate from CshTransactions
+  acc_mul_div:
+    display: Accmuldiv
+    type: string
+    required: false
+    description: Field AccMulDiv from CshTransactions
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from CshTransactions
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from CshTransactions
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from CshTransactions
+  l_currency_value:
+    display: Lcurrencyvalue
+    type: decimal
+    required: false
+    description: Field LCurrencyValue from CshTransactions
+  l_post_currency:
+    display: Lpostcurrency
+    type: string
+    required: false
+    description: Field LPostCurrency from CshTransactions
+  l_conv_rate:
+    display: Lconvrate
+    type: decimal
+    required: false
+    description: Field LConvRate from CshTransactions
+  l_mul_div:
+    display: Lmuldiv
+    type: string
+    required: false
+    description: Field LMulDiv from CshTransactions
+  l_account_cur:
+    display: Laccountcur
+    type: string
+    required: false
+    description: Field LAccountCur from CshTransactions
+  l_acc_conv_rate:
+    display: Laccconvrate
+    type: decimal
+    required: false
+    description: Field LAccConvRate from CshTransactions
+  l_acc_mul_div:
+    display: Laccmuldiv
+    type: string
+    required: false
+    description: Field LAccMulDiv from CshTransactions
+  l_triang_currency:
+    display: Ltriangcurrency
+    type: string
+    required: false
+    description: Field LTriangCurrency from CshTransactions
+  l_triang_rate:
+    display: Ltriangrate
+    type: decimal
+    required: false
+    description: Field LTriangRate from CshTransactions
+  l_triang_mul_div:
+    display: Ltriangmuldiv
+    type: string
+    required: false
+    description: Field LTriangMulDiv from CshTransactions
+  trn_source:
+    display: Trnsource
+    type: string
+    required: false
+    description: Field TrnSource from CshTransactions
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from CshTransactions
+  eft_indicator:
+    display: Eftindicator
+    type: string
+    required: false
+    description: Field EftIndicator from CshTransactions
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from CshTransactions
+  eft_batch:
+    display: Eftbatch
+    type: string
+    required: false
+    description: Field EftBatch from CshTransactions
+  reconciled_date:
+    display: Reconcileddate
+    type: date
+    required: false
+    description: Field ReconciledDate from CshTransactions
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from CshTransactions
+  payment_reference:
+    display: Paymentreference
+    type: string
+    required: false
+    description: Field PaymentReference from CshTransactions
+  mult_cur_pay:
+    display: Multcurpay
+    type: string
+    required: false
+    description: Field MultCurPay from CshTransactions
+  group_pay:
+    display: Grouppay
+    type: string
+    required: false
+    description: Field GroupPay from CshTransactions
+  group_inter_company:
+    display: Groupintercompany
+    type: string
+    required: false
+    description: Field GroupInterCompany from CshTransactions

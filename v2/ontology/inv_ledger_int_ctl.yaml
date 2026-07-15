@@ -1,0 +1,23 @@
+concept: inv_ledger_int_ctl
+display_name: InvLedgerIntCtl
+module: inventory
+description: Auto-generated representation of the physical table InvLedgerIntCtl.
+synonyms:
+- invledgerintctl
+- inv ledger int ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from InvLedgerIntCtl
+  prod_class_req:
+    display: Prodclassreq
+    type: string
+    required: false
+    description: Field ProdClassReq from InvLedgerIntCtl
+  trn_type_req:
+    display: Trntypereq
+    type: string
+    required: false
+    description: Field TrnTypeReq from InvLedgerIntCtl

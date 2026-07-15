@@ -1,0 +1,29 @@
+concept: asset_depn_alt
+table: AssetDepnAlt
+alias: ada
+fields:
+  asset: ada.Asset
+  alt_code: ada.AltCode
+  asset_cost: ada.AssetCost
+  current_value: ada.CurrentValue
+  accum_depn: ada.AccumDepn
+  depn_prev_yr: ada.DepnPrevYr
+  depn_this_year: ada.DepnThisYear
+  depn_this_period: ada.DepnThisPeriod
+  residual_value: ada.ResidualValue
+  book_val_dep: ada.BookValDep
+  suspend: ada.Suspend
+  start_dep: ada.StartDep
+  depn_start_period: ada.DepnStartPeriod
+  depn_start_year: ada.DepnStartYear
+  thruput_eul: ada.ThruputEul
+  stat_gl_code: ada.StatGlCode
+  number_of_periods: ada.NumberOfPeriods
+  number_of_years: ada.NumberOfYears
+  reval_reserve_to_date: ada.RevalReserveToDate
+  sold_value: ada.SoldValue
+  disposal_cost: ada.DisposalCost
+  remaining_periods: ada.RemainingPeriods
+  total_periods_td: ada.TotalPeriodsTd
+  varying_anniversary: ada.VaryingAnniversary
+  reval_reason: ada.RevalReason

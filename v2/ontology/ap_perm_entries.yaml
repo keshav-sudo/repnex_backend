@@ -1,0 +1,138 @@
+concept: ap_perm_entries
+display_name: ApPermEntries
+module: accounts_payable
+description: Auto-generated representation of the physical table ApPermEntries.
+synonyms:
+- appermentries
+- ap perm entries
+header_attributes:
+  release_day:
+    display: Releaseday
+    type: decimal
+    required: false
+    description: Field ReleaseDay from ApPermEntries
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApPermEntries
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApPermEntries
+  invoice_line:
+    display: Invoiceline
+    type: decimal
+    required: false
+    description: Field InvoiceLine from ApPermEntries
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from ApPermEntries
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from ApPermEntries
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApPermEntries
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from ApPermEntries
+  next_post_period:
+    display: Nextpostperiod
+    type: decimal
+    required: false
+    description: Field NextPostPeriod from ApPermEntries
+  transfer_freq:
+    display: Transferfreq
+    type: decimal
+    required: false
+    description: Field TransferFreq from ApPermEntries
+  cumulative_value:
+    display: Cumulativevalue
+    type: decimal
+    required: false
+    description: Field CumulativeValue from ApPermEntries
+  posted_flag:
+    display: Postedflag
+    type: string
+    required: false
+    description: Field PostedFlag from ApPermEntries
+  discount_pct:
+    display: Discountpct
+    type: decimal
+    required: false
+    description: Field DiscountPct from ApPermEntries
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ApPermEntries
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from ApPermEntries
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from ApPermEntries
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ApPermEntries
+  tax2_value:
+    display: Tax2Value
+    type: decimal
+    required: false
+    description: Field Tax2Value from ApPermEntries
+  tax2_code:
+    display: Tax2Code
+    type: string
+    required: false
+    description: Field Tax2Code from ApPermEntries
+  analysis_entry:
+    display: Analysisentry
+    type: decimal
+    required: false
+    description: Field AnalysisEntry from ApPermEntries
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ApPermEntries
+  tax_regn_num:
+    display: Taxregnnum
+    type: string
+    required: false
+    description: Field TaxRegnNum from ApPermEntries
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from ApPermEntries
+  with_tax_code:
+    display: Withtaxcode
+    type: string
+    required: false
+    description: Field WithTaxCode from ApPermEntries
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from ApPermEntries
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from ApPermEntries

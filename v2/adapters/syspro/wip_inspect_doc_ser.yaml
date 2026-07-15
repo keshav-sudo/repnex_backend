@@ -1,0 +1,9 @@
+concept: wip_inspect_doc_ser
+table: WipInspectDocSer
+alias: wids
+fields:
+  trans_type: wids.TransType
+  document_num: wids.DocumentNum
+  insp_reference: wids.InspReference
+  serial: wids.Serial
+  quantity: wids.Quantity

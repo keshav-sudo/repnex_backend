@@ -1,0 +1,19 @@
+concept: wip_mat_bal_fix
+table: WipMatBalFix
+alias: wmbf1
+fields:
+  run_date_time: wmbf1.RunDateTime
+  job: wmbf1.Job
+  stock_code: wmbf1.StockCode
+  warehouse: wmbf1.Warehouse
+  line: wmbf1.Line
+  old_qty_issued: wmbf1.OldQtyIssued
+  new_qty_issued: wmbf1.NewQtyIssued
+  old_qty_issued_ent: wmbf1.OldQtyIssuedEnt
+  new_qty_issued_ent: wmbf1.NewQtyIssuedEnt
+  old_value_issued: wmbf1.OldValueIssued
+  new_value_issued: wmbf1.NewValueIssued
+  old_lot_qty_reserved: wmbf1.OldLotQtyReserved
+  new_lot_qty_reserved: wmbf1.NewLotQtyReserved
+  old_ser_qty_reserved: wmbf1.OldSerQtyReserved
+  new_ser_qty_reserved: wmbf1.NewSerQtyReserved

@@ -1,0 +1,38 @@
+concept: sqm_nc_plan
+display_name: SqmNcPlan
+module: other
+description: Auto-generated representation of the physical table SqmNcPlan.
+synonyms:
+- sqmncplan
+- sqm nc plan
+header_attributes:
+  conform_standard:
+    display: Conformstandard
+    type: string
+    required: false
+    description: Field ConformStandard from SqmNcPlan
+  conform_area:
+    display: Conformarea
+    type: string
+    required: false
+    description: Field ConformArea from SqmNcPlan
+  action_number:
+    display: Actionnumber
+    type: decimal
+    required: false
+    description: Field ActionNumber from SqmNcPlan
+  nc_action:
+    display: Ncaction
+    type: string
+    required: false
+    description: Field NcAction from SqmNcPlan
+  stake_holder:
+    display: Stakeholder
+    type: string
+    required: false
+    description: Field StakeHolder from SqmNcPlan
+  action_hours:
+    display: Actionhours
+    type: decimal
+    required: false
+    description: Field ActionHours from SqmNcPlan

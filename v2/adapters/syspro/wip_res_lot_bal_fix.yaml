@@ -1,0 +1,11 @@
+concept: wip_res_lot_bal_fix
+table: WipResLotBalFix
+alias: wrlbf
+fields:
+  run_date_time: wrlbf.RunDateTime
+  lot: wrlbf.Lot
+  stock_code: wrlbf.StockCode
+  warehouse: wrlbf.Warehouse
+  bin: wrlbf.Bin
+  old_lot_qty_reserved: wrlbf.OldLotQtyReserved
+  new_lot_qty_reserved: wrlbf.NewLotQtyReserved

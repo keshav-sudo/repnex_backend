@@ -1,0 +1,38 @@
+concept: wip_arc_co_prd_mat_cst
+display_name: WipArcCoPrdMatCst
+module: work_in_progress
+description: Auto-generated representation of the physical table WipArcCoPrdMatCst.
+synonyms:
+- wiparccoprdmatcst
+- wip arc co prd mat cst
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipArcCoPrdMatCst
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipArcCoPrdMatCst
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipArcCoPrdMatCst
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipArcCoPrdMatCst
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from WipArcCoPrdMatCst
+  pct_material_cost:
+    display: Pctmaterialcost
+    type: decimal
+    required: false
+    description: Field PctMaterialCost from WipArcCoPrdMatCst

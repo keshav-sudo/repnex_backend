@@ -1,0 +1,18 @@
+concept: srs_archive_apr
+table: SrsArchiveAPR
+alias: saapr
+fields:
+  archive_date: saapr.ArchiveDate
+  archive_time: saapr.ArchiveTime
+  operator: saapr.Operator
+  archive_id: saapr.ArchiveId
+  archive_type: saapr.ArchiveType
+  archive_file: saapr.ArchiveFile
+  bank: saapr.Bank
+  check_currency: saapr.CheckCurrency
+  check_date_cymd: saapr.CheckDateCymd
+  cheque_number: saapr.ChequeNumber
+  payment_date_cymd: saapr.PaymentDateCymd
+  remittance_name: saapr.RemittanceName
+  supplier: saapr.Supplier
+  supplier_name: saapr.SupplierName

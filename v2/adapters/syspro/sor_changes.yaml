@@ -1,0 +1,34 @@
+concept: sor_changes
+table: SorChanges
+alias: sc3
+fields:
+  trn_date: sc3.TrnDate
+  trn_time: sc3.TrnTime
+  sales_order: sc3.SalesOrder
+  sales_order_line: sc3.SalesOrderLine
+  line_type: sc3.LineType
+  change_value: sc3.ChangeValue
+  change_cost: sc3.ChangeCost
+  product_class: sc3.ProductClass
+  customer: sc3.Customer
+  branch: sc3.Branch
+  document_type: sc3.DocumentType
+  salesperson: sc3.Salesperson
+  area: sc3.Area
+  user_field1: sc3.UserField1
+  stock_code: sc3.StockCode
+  description: sc3.Description
+  warehouse: sc3.Warehouse
+  new_warehouse: sc3.NewWarehouse
+  order_qty: sc3.OrderQty
+  order_uom: sc3.OrderUom
+  new_order_qty: sc3.NewOrderQty
+  price: sc3.Price
+  price_uom: sc3.PriceUom
+  new_price: sc3.NewPrice
+  new_price_uom: sc3.NewPriceUom
+  discount: sc3.Discount
+  new_discount: sc3.NewDiscount
+  operator: sc3.Operator
+  tax_code: sc3.TaxCode
+  reason_code: sc3.ReasonCode

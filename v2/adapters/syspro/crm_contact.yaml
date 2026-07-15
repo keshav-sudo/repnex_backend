@@ -1,0 +1,54 @@
+concept: crm_contact
+table: CrmContact
+alias: cc4
+fields:
+  contact_id: cc4.ContactId
+  full_name: cc4.FullName
+  full_name_upper: cc4.FullNameUpper
+  government_id: cc4.GovernmentId
+  government_id_upper: cc4.GovernmentIdUpper
+  title: cc4.Title
+  first_name: cc4.FirstName
+  middle_name: cc4.MiddleName
+  last_name: cc4.LastName
+  suffix: cc4.Suffix
+  preferred_name: cc4.PreferredName
+  partner_name: cc4.PartnerName
+  gender: cc4.Gender
+  date_of_birth: cc4.DateOfBirth
+  preferred_language: cc4.PreferredLanguage
+  job_title: cc4.JobTitle
+  department: cc4.Department
+  office: cc4.Office
+  manager_name: cc4.ManagerName
+  assistant_name: cc4.AssistantName
+  contact_class: cc4.ContactClass
+  contact_type: cc4.ContactType
+  contact_category: cc4.ContactCategory
+  contact_territory: cc4.ContactTerritory
+  influence: cc4.Influence
+  contact_property: cc4.ContactProperty
+  comment: cc4.Comment
+  contact_method: cc4.ContactMethod
+  do_not_phone: cc4.DoNotPhone
+  do_not_email: cc4.DoNotEmail
+  do_not_sms_text: cc4.DoNotSmsText
+  do_not_fax: cc4.DoNotFax
+  do_not_post: cc4.DoNotPost
+  do_not_bulk_email: cc4.DoNotBulkEmail
+  do_not_bulk_sms_text: cc4.DoNotBulkSmsText
+  do_not_bulk_fax: cc4.DoNotBulkFax
+  do_not_bulk_post: cc4.DoNotBulkPost
+  contact_owner: cc4.ContactOwner
+  private: cc4.Private
+  contact_status: cc4.ContactStatus
+  default_flag: cc4.DefaultFlag
+  created_date: cc4.CreatedDate
+  created_time: cc4.CreatedTime
+  created_by: cc4.CreatedBy
+  last_changed_date: cc4.LastChangedDate
+  last_changed_time: cc4.LastChangedTime
+  last_changed_by: cc4.LastChangedBy
+  last_contact_date: cc4.LastContactDate
+  last_contact_time: cc4.LastContactTime
+  last_contact_by: cc4.LastContactBy

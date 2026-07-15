@@ -1,0 +1,8 @@
+concept: sqm_pros_doc
+table: SqmProsDoc
+alias: spd1
+fields:
+  nc_process: spd1.NcProcess
+  stand_doc: spd1.StandDoc
+  stand_file: spd1.StandFile
+  file_contents: spd1.FileContents

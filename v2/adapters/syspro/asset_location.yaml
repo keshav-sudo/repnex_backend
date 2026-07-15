@@ -1,0 +1,8 @@
+concept: asset_location
+table: AssetLocation
+alias: al
+fields:
+  location: al.Location
+  description: al.Description
+  count_in_progress: al.CountInProgress
+  verify_reqd: al.VerifyReqd

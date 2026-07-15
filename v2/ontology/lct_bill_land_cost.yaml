@@ -1,0 +1,28 @@
+concept: lct_bill_land_cost
+display_name: LctBillLandCost
+module: other
+description: Auto-generated representation of the physical table LctBillLandCost.
+synonyms:
+- lctbilllandcost
+- lct bill land cost
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LctBillLandCost
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from LctBillLandCost
+  cost_element:
+    display: Costelement
+    type: string
+    required: false
+    description: Field CostElement from LctBillLandCost
+  cost_calculation:
+    display: Costcalculation
+    type: string
+    required: false
+    description: Field CostCalculation from LctBillLandCost

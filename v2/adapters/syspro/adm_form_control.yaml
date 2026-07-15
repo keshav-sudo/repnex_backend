@@ -1,0 +1,17 @@
+concept: adm_form_control
+table: AdmFormControl
+alias: afc
+fields:
+  form_type: afc.FormType
+  sequence_number: afc.SequenceNumber
+  field_name: afc.FieldName
+  field_description: afc.FieldDescription
+  field_type: afc.FieldType
+  field_length: afc.FieldLength
+  field_decimals: afc.FieldDecimals
+  default_value: afc.DefaultValue
+  allow_null: afc.AllowNull
+  table_name: afc.TableName
+  form_number: afc.FormNumber
+  column_name: afc.ColumnName
+  index_flag: afc.IndexFlag

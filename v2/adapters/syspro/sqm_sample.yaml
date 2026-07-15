@@ -1,0 +1,9 @@
+concept: sqm_sample
+table: SqmSample
+alias: ss1
+fields:
+  plan_type: ss1.PlanType
+  lot_size_min: ss1.LotSizeMin
+  lot_size_max: ss1.LotSizeMax
+  inspect_level: ss1.InspectLevel
+  sample_code: ss1.SampleCode

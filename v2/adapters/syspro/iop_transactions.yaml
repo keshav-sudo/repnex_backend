@@ -1,0 +1,14 @@
+concept: iop_transactions
+table: IopTransactions
+alias: it
+fields:
+  stock_code: it.StockCode
+  version: it.Version
+  release: it.Release
+  warehouse: it.Warehouse
+  transaction_type: it.TransactionType
+  movement_date: it.MovementDate
+  quantity: it.Quantity
+  trans_count: it.TransCount
+  cost_value: it.CostValue
+  sales_value: it.SalesValue

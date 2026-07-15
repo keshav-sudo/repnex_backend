@@ -1,0 +1,9 @@
+concept: wip_master_plus
+table: WipMaster+
+alias: wm2
+fields:
+  job: wm2.Job
+  urgency: wm2.Urgency
+  delivery: wm2.Delivery
+  chasis_number: wm2.ChasisNumber
+  reason_code_for_delay: wm2.ReasonCodeForDelay

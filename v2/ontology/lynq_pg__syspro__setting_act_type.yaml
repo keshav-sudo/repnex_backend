@@ -1,0 +1,28 @@
+concept: lynq_pg__syspro__setting_act_type
+display_name: Lynq PG Syspro SettingActType
+module: other
+description: Auto-generated representation of the physical table Lynq_PG_Syspro_SettingActType.
+synonyms:
+- lynq_pg_syspro_settingacttype
+- lynq pg  syspro  setting act type
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_PG_Syspro_SettingActType
+  sett_id:
+    display: Settid
+    type: decimal
+    required: false
+    description: Field SettId from Lynq_PG_Syspro_SettingActType
+  activity_type:
+    display: Activitytype
+    type: decimal
+    required: false
+    description: Field ActivityType from Lynq_PG_Syspro_SettingActType
+  activity_type_desc:
+    display: Activitytypedesc
+    type: string
+    required: false
+    description: Field ActivityTypeDesc from Lynq_PG_Syspro_SettingActType

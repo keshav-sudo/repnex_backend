@@ -1,0 +1,598 @@
+concept: wip_arc_master
+display_name: WipArcMaster
+module: work_in_progress
+description: Auto-generated representation of the physical table WipArcMaster.
+synonyms:
+- wiparcmaster
+- wip arc master
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipArcMaster
+  job_description:
+    display: Jobdescription
+    type: string
+    required: false
+    description: Field JobDescription from WipArcMaster
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from WipArcMaster
+  job_type:
+    display: Jobtype
+    type: string
+    required: false
+    description: Field JobType from WipArcMaster
+  master_job:
+    display: Masterjob
+    type: string
+    required: false
+    description: Field MasterJob from WipArcMaster
+  priority:
+    display: Priority
+    type: decimal
+    required: false
+    description: Field Priority from WipArcMaster
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipArcMaster
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from WipArcMaster
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipArcMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from WipArcMaster
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from WipArcMaster
+  job_tender_date:
+    display: Jobtenderdate
+    type: date
+    required: false
+    description: Field JobTenderDate from WipArcMaster
+  job_delivery_date:
+    display: Jobdeliverydate
+    type: date
+    required: false
+    description: Field JobDeliveryDate from WipArcMaster
+  job_start_date:
+    display: Jobstartdate
+    type: date
+    required: false
+    description: Field JobStartDate from WipArcMaster
+  act_complete_date:
+    display: Actcompletedate
+    type: date
+    required: false
+    description: Field ActCompleteDate from WipArcMaster
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from WipArcMaster
+  seq_check_req:
+    display: Seqcheckreq
+    type: string
+    required: false
+    description: Field SeqCheckReq from WipArcMaster
+  date_calc_method:
+    display: Datecalcmethod
+    type: string
+    required: false
+    description: Field DateCalcMethod from WipArcMaster
+  exp_labour:
+    display: Explabour
+    type: decimal
+    required: false
+    description: Field ExpLabour from WipArcMaster
+  exp_material:
+    display: Expmaterial
+    type: decimal
+    required: false
+    description: Field ExpMaterial from WipArcMaster
+  qty_to_make:
+    display: Qtytomake
+    type: decimal
+    required: false
+    description: Field QtyToMake from WipArcMaster
+  qty_manufactured:
+    display: Qtymanufactured
+    type: decimal
+    required: false
+    description: Field QtyManufactured from WipArcMaster
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from WipArcMaster
+  est_source_num:
+    display: Estsourcenum
+    type: string
+    required: false
+    description: Field EstSourceNum from WipArcMaster
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from WipArcMaster
+  pct_complete_flag:
+    display: Pctcompleteflag
+    type: decimal
+    required: false
+    description: Field PctCompleteFlag from WipArcMaster
+  prt_fact_doc1:
+    display: Prtfactdoc1
+    type: string
+    required: false
+    description: Field PrtFactDoc1 from WipArcMaster
+  prt_fact_doc2:
+    display: Prtfactdoc2
+    type: string
+    required: false
+    description: Field PrtFactDoc2 from WipArcMaster
+  prt_fact_doc3:
+    display: Prtfactdoc3
+    type: string
+    required: false
+    description: Field PrtFactDoc3 from WipArcMaster
+  prt_fact_doc4:
+    display: Prtfactdoc4
+    type: string
+    required: false
+    description: Field PrtFactDoc4 from WipArcMaster
+  selling_price:
+    display: Sellingprice
+    type: decimal
+    required: false
+    description: Field SellingPrice from WipArcMaster
+  add_lab_pct:
+    display: Addlabpct
+    type: decimal
+    required: false
+    description: Field AddLabPct from WipArcMaster
+  add_mat_pct:
+    display: Addmatpct
+    type: decimal
+    required: false
+    description: Field AddMatPct from WipArcMaster
+  profit_pct:
+    display: Profitpct
+    type: decimal
+    required: false
+    description: Field ProfitPct from WipArcMaster
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from WipArcMaster
+  material_billed:
+    display: Materialbilled
+    type: decimal
+    required: false
+    description: Field MaterialBilled from WipArcMaster
+  labour_billed:
+    display: Labourbilled
+    type: decimal
+    required: false
+    description: Field LabourBilled from WipArcMaster
+  next_op_for_all:
+    display: Nextopforall
+    type: decimal
+    required: false
+    description: Field NextOpForAll from WipArcMaster
+  highest_op_posted:
+    display: Highestopposted
+    type: decimal
+    required: false
+    description: Field HighestOpPosted from WipArcMaster
+  total_qty_scrapped:
+    display: Totalqtyscrapped
+    type: decimal
+    required: false
+    description: Field TotalQtyScrapped from WipArcMaster
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from WipArcMaster
+  hold_flag:
+    display: Holdflag
+    type: string
+    required: false
+    description: Field HoldFlag from WipArcMaster
+  job_created_struc:
+    display: Jobcreatedstruc
+    type: string
+    required: false
+    description: Field JobCreatedStruc from WipArcMaster
+  lst_order_created:
+    display: Lstordercreated
+    type: string
+    required: false
+    description: Field LstOrderCreated from WipArcMaster
+  traceable_type:
+    display: Traceabletype
+    type: string
+    required: false
+    description: Field TraceableType from WipArcMaster
+  nxt_line_part_book:
+    display: Nxtlinepartbook
+    type: decimal
+    required: false
+    description: Field NxtLinePartBook from WipArcMaster
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from WipArcMaster
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from WipArcMaster
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from WipArcMaster
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from WipArcMaster
+  mat_cost_to_date1:
+    display: Matcosttodate1
+    type: decimal
+    required: false
+    description: Field MatCostToDate1 from WipArcMaster
+  mat_cost_to_date2:
+    display: Matcosttodate2
+    type: decimal
+    required: false
+    description: Field MatCostToDate2 from WipArcMaster
+  mat_cost_to_date3:
+    display: Matcosttodate3
+    type: decimal
+    required: false
+    description: Field MatCostToDate3 from WipArcMaster
+  lab_cost_to_date1:
+    display: Labcosttodate1
+    type: decimal
+    required: false
+    description: Field LabCostToDate1 from WipArcMaster
+  lab_cost_to_date2:
+    display: Labcosttodate2
+    type: decimal
+    required: false
+    description: Field LabCostToDate2 from WipArcMaster
+  lab_cost_to_date3:
+    display: Labcosttodate3
+    type: decimal
+    required: false
+    description: Field LabCostToDate3 from WipArcMaster
+  hrs_book_to_date1:
+    display: Hrsbooktodate1
+    type: decimal
+    required: false
+    description: Field HrsBookToDate1 from WipArcMaster
+  hrs_book_to_date2:
+    display: Hrsbooktodate2
+    type: decimal
+    required: false
+    description: Field HrsBookToDate2 from WipArcMaster
+  hrs_book_to_date3:
+    display: Hrsbooktodate3
+    type: decimal
+    required: false
+    description: Field HrsBookToDate3 from WipArcMaster
+  mat_value_issues1:
+    display: Matvalueissues1
+    type: decimal
+    required: false
+    description: Field MatValueIssues1 from WipArcMaster
+  mat_value_issues2:
+    display: Matvalueissues2
+    type: decimal
+    required: false
+    description: Field MatValueIssues2 from WipArcMaster
+  mat_value_issues3:
+    display: Matvalueissues3
+    type: decimal
+    required: false
+    description: Field MatValueIssues3 from WipArcMaster
+  lab_value_issues1:
+    display: Labvalueissues1
+    type: decimal
+    required: false
+    description: Field LabValueIssues1 from WipArcMaster
+  lab_value_issues2:
+    display: Labvalueissues2
+    type: decimal
+    required: false
+    description: Field LabValueIssues2 from WipArcMaster
+  lab_value_issues3:
+    display: Labvalueissues3
+    type: decimal
+    required: false
+    description: Field LabValueIssues3 from WipArcMaster
+  narration_num:
+    display: Narrationnum
+    type: decimal
+    required: false
+    description: Field NarrationNum from WipArcMaster
+  req_pln_flag:
+    display: Reqplnflag
+    type: string
+    required: false
+    description: Field ReqPlnFlag from WipArcMaster
+  date_job_lst_upd:
+    display: Datejoblstupd
+    type: date
+    required: false
+    description: Field DateJobLstUpd from WipArcMaster
+  time_job_lst_upd:
+    display: Timejoblstupd
+    type: decimal
+    required: false
+    description: Field TimeJobLstUpd from WipArcMaster
+  hierarchy_flag:
+    display: Hierarchyflag
+    type: string
+    required: false
+    description: Field HierarchyFlag from WipArcMaster
+  next_line_hier:
+    display: Nextlinehier
+    type: decimal
+    required: false
+    description: Field NextLineHier from WipArcMaster
+  est_trail_load:
+    display: Esttrailload
+    type: string
+    required: false
+    description: Field EstTrailLoad from WipArcMaster
+  ord_ent_source:
+    display: Ordentsource
+    type: string
+    required: false
+    description: Field OrdEntSource from WipArcMaster
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipArcMaster
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipArcMaster
+  allocation_line:
+    display: Allocationline
+    type: string
+    required: false
+    description: Field AllocationLine from WipArcMaster
+  purge_job:
+    display: Purgejob
+    type: string
+    required: false
+    description: Field PurgeJob from WipArcMaster
+  hierarchy_job:
+    display: Hierarchyjob
+    type: string
+    required: false
+    description: Field HierarchyJob from WipArcMaster
+  mrp_from_job:
+    display: Mrpfromjob
+    type: string
+    required: false
+    description: Field MrpFromJob from WipArcMaster
+  mrp_to_job:
+    display: Mrptojob
+    type: string
+    required: false
+    description: Field MrpToJob from WipArcMaster
+  orig_due_date:
+    display: Origduedate
+    type: date
+    required: false
+    description: Field OrigDueDate from WipArcMaster
+  gross_flg:
+    display: Grossflg
+    type: string
+    required: false
+    description: Field GrossFlg from WipArcMaster
+  gross_qty:
+    display: Grossqty
+    type: decimal
+    required: false
+    description: Field GrossQty from WipArcMaster
+  exp_lab_current:
+    display: Explabcurrent
+    type: decimal
+    required: false
+    description: Field ExpLabCurrent from WipArcMaster
+  exp_mat_current:
+    display: Expmatcurrent
+    type: decimal
+    required: false
+    description: Field ExpMatCurrent from WipArcMaster
+  reserved_lot_ser_flag:
+    display: Reservedlotserflag
+    type: string
+    required: false
+    description: Field ReservedLotSerFlag from WipArcMaster
+  notional_part:
+    display: Notionalpart
+    type: string
+    required: false
+    description: Field NotionalPart from WipArcMaster
+  co_product_cost_met:
+    display: Coproductcostmet
+    type: string
+    required: false
+    description: Field CoProductCostMet from WipArcMaster
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from WipArcMaster
+  co_product_type:
+    display: Coproducttype
+    type: string
+    required: false
+    description: Field CoProductType from WipArcMaster
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from WipArcMaster
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from WipArcMaster
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from WipArcMaster
+  conv_fact_uom:
+    display: Convfactuom
+    type: decimal
+    required: false
+    description: Field ConvFactUom from WipArcMaster
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from WipArcMaster
+  schedule_flag:
+    display: Scheduleflag
+    type: string
+    required: false
+    description: Field ScheduleFlag from WipArcMaster
+  sch_start_date:
+    display: Schstartdate
+    type: date
+    required: false
+    description: Field SchStartDate from WipArcMaster
+  sch_start_time:
+    display: Schstarttime
+    type: decimal
+    required: false
+    description: Field SchStartTime from WipArcMaster
+  sch_end_date:
+    display: Schenddate
+    type: date
+    required: false
+    description: Field SchEndDate from WipArcMaster
+  sch_end_time:
+    display: Schendtime
+    type: decimal
+    required: false
+    description: Field SchEndTime from WipArcMaster
+  qty_to_make_ent:
+    display: Qtytomakeent
+    type: decimal
+    required: false
+    description: Field QtyToMakeEnt from WipArcMaster
+  qty_manufactured_ent:
+    display: Qtymanufacturedent
+    type: decimal
+    required: false
+    description: Field QtyManufacturedEnt from WipArcMaster
+  tot_qty_scrapped_ent:
+    display: Totqtyscrappedent
+    type: decimal
+    required: false
+    description: Field TotQtyScrappedEnt from WipArcMaster
+  gross_qty_ent:
+    display: Grossqtyent
+    type: decimal
+    required: false
+    description: Field GrossQtyEnt from WipArcMaster
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from WipArcMaster
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from WipArcMaster
+  nest_allocs:
+    display: Nestallocs
+    type: string
+    required: false
+    description: Field NestAllocs from WipArcMaster
+  created_for_nest:
+    display: Createdfornest
+    type: string
+    required: false
+    description: Field CreatedForNest from WipArcMaster
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipArcMaster
+  wip_cur_branch:
+    display: Wipcurbranch
+    type: string
+    required: false
+    description: Field WipCurBranch from WipArcMaster
+  wip_ctl_cur_gl_code:
+    display: Wipctlcurglcode
+    type: string
+    required: false
+    description: Field WipCtlCurGlCode from WipArcMaster
+  dif_wip_branch:
+    display: Difwipbranch
+    type: string
+    required: false
+    description: Field DifWipBranch from WipArcMaster
+  maint_job:
+    display: Maintjob
+    type: string
+    required: false
+    description: Field MaintJob from WipArcMaster
+  maint_job_type:
+    display: Maintjobtype
+    type: string
+    required: false
+    description: Field MaintJobType from WipArcMaster
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from WipArcMaster
+  maint_service_type:
+    display: Maintservicetype
+    type: string
+    required: false
+    description: Field MaintServiceType from WipArcMaster
+  equipment_type:
+    display: Equipmenttype
+    type: string
+    required: false
+    description: Field EquipmentType from WipArcMaster
+  type_of_service:
+    display: Typeofservice
+    type: string
+    required: false
+    description: Field TypeOfService from WipArcMaster

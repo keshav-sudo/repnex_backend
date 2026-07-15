@@ -1,0 +1,53 @@
+concept: crm_org_list_defn
+display_name: CrmOrgListDefn
+module: crm
+description: Auto-generated representation of the physical table CrmOrgListDefn.
+synonyms:
+- crmorglistdefn
+- crm org list defn
+header_attributes:
+  list_file:
+    display: Listfile
+    type: string
+    required: false
+    description: Field ListFile from CrmOrgListDefn
+  list_type:
+    display: Listtype
+    type: string
+    required: false
+    description: Field ListType from CrmOrgListDefn
+  operator_role:
+    display: Operatorrole
+    type: string
+    required: false
+    description: Field OperatorRole from CrmOrgListDefn
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmOrgListDefn
+  update_oper:
+    display: Updateoper
+    type: string
+    required: false
+    description: Field UpdateOper from CrmOrgListDefn
+  update_date:
+    display: Updatedate
+    type: date
+    required: false
+    description: Field UpdateDate from CrmOrgListDefn
+  update_time:
+    display: Updatetime
+    type: decimal
+    required: false
+    description: Field UpdateTime from CrmOrgListDefn
+  temp_list:
+    display: Templist
+    type: string
+    required: false
+    description: Field TempList from CrmOrgListDefn
+  list_data:
+    display: Listdata
+    type: string
+    required: false
+    description: Field ListData from CrmOrgListDefn

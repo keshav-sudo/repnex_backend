@@ -1,0 +1,298 @@
+concept: bpo_detail
+display_name: BpoDetail
+module: other
+description: Auto-generated representation of the physical table BpoDetail.
+synonyms:
+- bpodetail
+- bpo detail
+header_attributes:
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from BpoDetail
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from BpoDetail
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from BpoDetail
+  m_stock_code:
+    display: Mstockcode
+    type: string
+    required: false
+    description: Field MStockCode from BpoDetail
+  m_stock_des:
+    display: Mstockdes
+    type: string
+    required: false
+    description: Field MStockDes from BpoDetail
+  m_warehouse:
+    display: Mwarehouse
+    type: string
+    required: false
+    description: Field MWarehouse from BpoDetail
+  m_order_uom:
+    display: Morderuom
+    type: string
+    required: false
+    description: Field MOrderUom from BpoDetail
+  m_stocking_uom:
+    display: Mstockinguom
+    type: string
+    required: false
+    description: Field MStockingUom from BpoDetail
+  m_minimum_qty:
+    display: Mminimumqty
+    type: decimal
+    required: false
+    description: Field MMinimumQty from BpoDetail
+  m_total_qty:
+    display: Mtotalqty
+    type: decimal
+    required: false
+    description: Field MTotalQty from BpoDetail
+  m_order_qty:
+    display: Morderqty
+    type: decimal
+    required: false
+    description: Field MOrderQty from BpoDetail
+  m_received_qty:
+    display: Mreceivedqty
+    type: decimal
+    required: false
+    description: Field MReceivedQty from BpoDetail
+  m_last_receipt_date:
+    display: Mlastreceiptdate
+    type: date
+    required: false
+    description: Field MLastReceiptDate from BpoDetail
+  m_sup_catalogue:
+    display: Msupcatalogue
+    type: string
+    required: false
+    description: Field MSupCatalogue from BpoDetail
+  m_disc_pct1:
+    display: Mdiscpct1
+    type: decimal
+    required: false
+    description: Field MDiscPct1 from BpoDetail
+  m_disc_pct2:
+    display: Mdiscpct2
+    type: decimal
+    required: false
+    description: Field MDiscPct2 from BpoDetail
+  m_disc_pct3:
+    display: Mdiscpct3
+    type: decimal
+    required: false
+    description: Field MDiscPct3 from BpoDetail
+  m_disc_val_flag:
+    display: Mdiscvalflag
+    type: string
+    required: false
+    description: Field MDiscValFlag from BpoDetail
+  m_disc_value:
+    display: Mdiscvalue
+    type: decimal
+    required: false
+    description: Field MDiscValue from BpoDetail
+  m_price:
+    display: Mprice
+    type: decimal
+    required: false
+    description: Field MPrice from BpoDetail
+  m_foreign_price:
+    display: Mforeignprice
+    type: decimal
+    required: false
+    description: Field MForeignPrice from BpoDetail
+  m_decimals_to_prt:
+    display: Mdecimalstoprt
+    type: decimal
+    required: false
+    description: Field MDecimalsToPrt from BpoDetail
+  m_conv_fact_prc_um:
+    display: Mconvfactprcum
+    type: decimal
+    required: false
+    description: Field MConvFactPrcUm from BpoDetail
+  m_mul_div_prc:
+    display: Mmuldivprc
+    type: string
+    required: false
+    description: Field MMulDivPrc from BpoDetail
+  m_price_uom:
+    display: Mpriceuom
+    type: string
+    required: false
+    description: Field MPriceUom from BpoDetail
+  m_tax_code:
+    display: Mtaxcode
+    type: string
+    required: false
+    description: Field MTaxCode from BpoDetail
+  m_conv_fact_ord_um:
+    display: Mconvfactordum
+    type: decimal
+    required: false
+    description: Field MConvFactOrdUm from BpoDetail
+  m_mul_div_alloc:
+    display: Mmuldivalloc
+    type: string
+    required: false
+    description: Field MMulDivAlloc from BpoDetail
+  m_product_class:
+    display: Mproductclass
+    type: string
+    required: false
+    description: Field MProductClass from BpoDetail
+  m_complete_flag:
+    display: Mcompleteflag
+    type: string
+    required: false
+    description: Field MCompleteFlag from BpoDetail
+  m_gl_code:
+    display: Mglcode
+    type: string
+    required: false
+    description: Field MGlCode from BpoDetail
+  m_resched_due_date:
+    display: Mreschedduedate
+    type: string
+    required: false
+    description: Field MReschedDueDate from BpoDetail
+  m_edi_extract_flag:
+    display: Mediextractflag
+    type: string
+    required: false
+    description: Field MEdiExtractFlag from BpoDetail
+  m_edi_action_flag:
+    display: Mediactionflag
+    type: string
+    required: false
+    description: Field MEdiActionFlag from BpoDetail
+  m_inspection_reqd:
+    display: Minspectionreqd
+    type: string
+    required: false
+    description: Field MInspectionReqd from BpoDetail
+  m_non_unit_mass:
+    display: Mnonunitmass
+    type: decimal
+    required: false
+    description: Field MNonUnitMass from BpoDetail
+  m_non_unit_vol:
+    display: Mnonunitvol
+    type: decimal
+    required: false
+    description: Field MNonUnitVol from BpoDetail
+  m_last_grn:
+    display: Mlastgrn
+    type: string
+    required: false
+    description: Field MLastGrn from BpoDetail
+  m_last_grn_qty:
+    display: Mlastgrnqty
+    type: decimal
+    required: false
+    description: Field MLastGrnQty from BpoDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BpoDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BpoDetail
+  n_comment:
+    display: Ncomment
+    type: string
+    required: false
+    description: Field NComment from BpoDetail
+  n_comment_from_lin:
+    display: Ncommentfromlin
+    type: decimal
+    required: false
+    description: Field NCommentFromLin from BpoDetail
+  n_msc_charge_value:
+    display: Nmscchargevalue
+    type: decimal
+    required: false
+    description: Field NMscChargeValue from BpoDetail
+  n_msc_charge_print:
+    display: Nmscchargeprint
+    type: string
+    required: false
+    description: Field NMscChargePrint from BpoDetail
+  n_com_print_type:
+    display: Ncomprinttype
+    type: string
+    required: false
+    description: Field NComPrintType from BpoDetail
+  n_msc_charge_tax:
+    display: Nmscchargetax
+    type: string
+    required: false
+    description: Field NMscChargeTax from BpoDetail
+  n_comment_flag:
+    display: Ncommentflag
+    type: string
+    required: false
+    description: Field NCommentFlag from BpoDetail
+  n_msc_charge_for:
+    display: Nmscchargefor
+    type: decimal
+    required: false
+    description: Field NMscChargeFor from BpoDetail
+  n_msc_charge_f_loc:
+    display: Nmscchargefloc
+    type: string
+    required: false
+    description: Field NMscChargeFLoc from BpoDetail
+  n_edi_extract:
+    display: Nediextract
+    type: string
+    required: false
+    description: Field NEdiExtract from BpoDetail
+  auto_voucher_reqd:
+    display: Autovoucherreqd
+    type: string
+    required: false
+    description: Field AutoVoucherReqd from BpoDetail
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from BpoDetail
+  intrastat_exempt:
+    display: Intrastatexempt
+    type: string
+    required: false
+    description: Field IntrastatExempt from BpoDetail
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from BpoDetail
+  triang_disp_state:
+    display: Triangdispstate
+    type: string
+    required: false
+    description: Field TriangDispState from BpoDetail
+  triang_dest_state:
+    display: Triangdeststate
+    type: string
+    required: false
+    description: Field TriangDestState from BpoDetail
+  orig_country:
+    display: Origcountry
+    type: string
+    required: false
+    description: Field OrigCountry from BpoDetail

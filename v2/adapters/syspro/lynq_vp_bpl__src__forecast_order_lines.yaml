@@ -1,0 +1,32 @@
+concept: lynq_vp_bpl__src__forecast_order_lines
+table: Lynq_VP_BPL_Src_ForecastOrderLines
+alias: lvpbplsfol
+fields:
+  id: lvpbplsfol.ID
+  type_id: lvpbplsfol.TypeID
+  ord_type: lvpbplsfol.OrdType
+  ord_number: lvpbplsfol.OrdNumber
+  ord_id_str: lvpbplsfol.OrdIDStr
+  ord_type_id: lvpbplsfol.OrdTypeID
+  status_code1: lvpbplsfol.StatusCode1
+  item_number: lvpbplsfol.ItemNumber
+  location_code: lvpbplsfol.LocationCode
+  line: lvpbplsfol.Line
+  quantity_required: lvpbplsfol.QuantityRequired
+  req_date: lvpbplsfol.ReqDate
+  material_wait_time: lvpbplsfol.MaterialWaitTime
+  customer_code: lvpbplsfol.CustomerCode
+  customer_name: lvpbplsfol.CustomerName
+  fld_date_time1: lvpbplsfol.FldDateTime1
+  fld_date_time2: lvpbplsfol.FldDateTime2
+  fld_date_time3: lvpbplsfol.FldDateTime3
+  fld_decimal1: lvpbplsfol.FldDecimal1
+  fld_decimal2: lvpbplsfol.FldDecimal2
+  fld_decimal3: lvpbplsfol.FldDecimal3
+  fld_decimal4: lvpbplsfol.FldDecimal4
+  fld_decimal5: lvpbplsfol.FldDecimal5
+  fld_string1: lvpbplsfol.FldString1
+  fld_string2: lvpbplsfol.FldString2
+  fld_string3: lvpbplsfol.FldString3
+  fld_string4: lvpbplsfol.FldString4
+  fld_string5: lvpbplsfol.FldString5

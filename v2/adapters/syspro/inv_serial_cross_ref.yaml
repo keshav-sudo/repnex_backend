@@ -1,0 +1,19 @@
+concept: inv_serial_cross_ref
+table: InvSerialCrossRef
+alias: iscr
+fields:
+  serial: iscr.Serial
+  stock_code: iscr.StockCode
+  version: iscr.Version
+  release: iscr.Release
+  lot: iscr.Lot
+  in_stock: iscr.InStock
+  in_inspect: iscr.InInspect
+  inspect_status: iscr.InspectStatus
+  in_wip_inspect: iscr.InWIPInspect
+  wip_inspect_status: iscr.WipInspectStatus
+  in_stock_take: iscr.InStockTake
+  create_serial: iscr.CreateSerial
+  reserved: iscr.Reserved
+  reserve_type: iscr.ReserveType
+  archived: iscr.Archived

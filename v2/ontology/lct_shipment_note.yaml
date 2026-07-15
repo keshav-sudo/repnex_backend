@@ -1,0 +1,28 @@
+concept: lct_shipment_note
+display_name: LctShipmentNote
+module: other
+description: Auto-generated representation of the physical table LctShipmentNote.
+synonyms:
+- lctshipmentnote
+- lct shipment note
+header_attributes:
+  vessel:
+    display: Vessel
+    type: string
+    required: false
+    description: Field Vessel from LctShipmentNote
+  departure_date:
+    display: Departuredate
+    type: date
+    required: false
+    description: Field DepartureDate from LctShipmentNote
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from LctShipmentNote
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from LctShipmentNote

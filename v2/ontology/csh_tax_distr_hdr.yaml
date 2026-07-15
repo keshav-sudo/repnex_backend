@@ -1,0 +1,48 @@
+concept: csh_tax_distr_hdr
+display_name: CshTaxDistrHdr
+module: cashbook
+description: Auto-generated representation of the physical table CshTaxDistrHdr.
+synonyms:
+- cshtaxdistrhdr
+- csh tax distr hdr
+header_attributes:
+  input_output:
+    display: Inputoutput
+    type: string
+    required: false
+    description: Field InputOutput from CshTaxDistrHdr
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshTaxDistrHdr
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshTaxDistrHdr
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from CshTaxDistrHdr
+  printed_flag:
+    display: Printedflag
+    type: decimal
+    required: false
+    description: Field PrintedFlag from CshTaxDistrHdr
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from CshTaxDistrHdr
+  amount_posted:
+    display: Amountposted
+    type: decimal
+    required: false
+    description: Field AmountPosted from CshTaxDistrHdr
+  jnl_tax_amount:
+    display: Jnltaxamount
+    type: decimal
+    required: false
+    description: Field JnlTaxAmount from CshTaxDistrHdr

@@ -1,0 +1,8 @@
+concept: adm_print_funct_ex
+table: AdmPrintFunctEx
+alias: apfe
+fields:
+  operator: apfe.Operator
+  function_type: apfe.FunctionType
+  line_number: apfe.LineNumber
+  driver_info: apfe.DriverInfo

@@ -1,0 +1,23 @@
+concept: adm_b2_b_paths
+display_name: AdmB2BPaths
+module: administration
+description: Auto-generated representation of the physical table AdmB2BPaths.
+synonyms:
+- admb2bpaths
+- adm b2 b paths
+header_attributes:
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from AdmB2BPaths
+  key_field:
+    display: Keyfield
+    type: string
+    required: false
+    description: Field KeyField from AdmB2BPaths
+  path:
+    display: Path
+    type: string
+    required: false
+    description: Field Path from AdmB2BPaths

@@ -1,0 +1,6 @@
+concept: asset_status
+table: AssetStatus
+alias: as3
+fields:
+  asset_status: as3.AssetStatus
+  description: as3.Description

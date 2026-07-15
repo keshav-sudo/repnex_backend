@@ -1,0 +1,7 @@
+concept: gen_rule_detail
+table: GenRuleDetail
+alias: grd
+fields:
+  gl_rule: grd.GlRule
+  statistical_gl_code: grd.StatisticalGlCode
+  destination_gl_code: grd.DestinationGlCode

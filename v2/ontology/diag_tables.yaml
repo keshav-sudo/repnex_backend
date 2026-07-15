@@ -1,0 +1,118 @@
+concept: diag_tables
+display_name: DiagTables
+module: other
+description: Auto-generated representation of the physical table DiagTables.
+synonyms:
+- diagtables
+- diag tables
+header_attributes:
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from DiagTables
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from DiagTables
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from DiagTables
+  conv_status:
+    display: Convstatus
+    type: decimal
+    required: false
+    description: Field ConvStatus from DiagTables
+  conv_message:
+    display: Convmessage
+    type: string
+    required: false
+    description: Field ConvMessage from DiagTables
+  user_col_cnt:
+    display: Usercolcnt
+    type: decimal
+    required: false
+    description: Field UserColCnt from DiagTables
+  user_trigger_cnt:
+    display: Usertriggercnt
+    type: decimal
+    required: false
+    description: Field UserTriggerCnt from DiagTables
+  user_computed_cnt:
+    display: Usercomputedcnt
+    type: decimal
+    required: false
+    description: Field UserComputedCnt from DiagTables
+  user_view_cnt:
+    display: Userviewcnt
+    type: decimal
+    required: false
+    description: Field UserViewCnt from DiagTables
+  user_constraint_cnt:
+    display: Userconstraintcnt
+    type: decimal
+    required: false
+    description: Field UserConstraintCnt from DiagTables
+  user_index_cnt:
+    display: Userindexcnt
+    type: decimal
+    required: false
+    description: Field UserIndexCnt from DiagTables
+  user_key_cnt:
+    display: Userkeycnt
+    type: decimal
+    required: false
+    description: Field UserKeyCnt from DiagTables
+  user_inv_col_cnt:
+    display: Userinvcolcnt
+    type: decimal
+    required: false
+    description: Field UserInvColCnt from DiagTables
+  dup_row_cnt:
+    display: Duprowcnt
+    type: decimal
+    required: false
+    description: Field DupRowCnt from DiagTables
+  key_found:
+    display: Keyfound
+    type: string
+    required: false
+    description: Field KeyFound from DiagTables
+  table_found:
+    display: Tablefound
+    type: string
+    required: false
+    description: Field TableFound from DiagTables
+  key_renamed:
+    display: Keyrenamed
+    type: string
+    required: false
+    description: Field KeyRenamed from DiagTables
+  key_on_diff_table:
+    display: Keyondifftable
+    type: string
+    required: false
+    description: Field KeyOnDiffTable from DiagTables
+  missing_columns:
+    display: Missingcolumns
+    type: decimal
+    required: false
+    description: Field MissingColumns from DiagTables
+  new_table:
+    display: Newtable
+    type: string
+    required: false
+    description: Field NewTable from DiagTables
+  conv_message_pre:
+    display: Convmessagepre
+    type: string
+    required: false
+    description: Field ConvMessagePre from DiagTables
+  user_cnt:
+    display: Usercnt
+    type: decimal
+    required: false
+    description: Field UserCnt from DiagTables

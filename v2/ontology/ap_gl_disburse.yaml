@@ -1,0 +1,278 @@
+concept: ap_gl_disburse
+display_name: ApGlDisburse
+module: accounts_payable
+description: Auto-generated representation of the physical table ApGlDisburse.
+synonyms:
+- apgldisburse
+- ap gl disburse
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from ApGlDisburse
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from ApGlDisburse
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from ApGlDisburse
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApGlDisburse
+  cheque_register:
+    display: Chequeregister
+    type: decimal
+    required: false
+    description: Field ChequeRegister from ApGlDisburse
+  distr_entry:
+    display: Distrentry
+    type: decimal
+    required: false
+    description: Field DistrEntry from ApGlDisburse
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApGlDisburse
+  entry_status:
+    display: Entrystatus
+    type: string
+    required: false
+    description: Field EntryStatus from ApGlDisburse
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from ApGlDisburse
+  cheque_date:
+    display: Chequedate
+    type: date
+    required: false
+    description: Field ChequeDate from ApGlDisburse
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApGlDisburse
+  hyphen:
+    display: Hyphen
+    type: string
+    required: false
+    description: Field Hyphen from ApGlDisburse
+  cheque:
+    display: Cheque
+    type: string
+    required: false
+    description: Field Cheque from ApGlDisburse
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from ApGlDisburse
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ApGlDisburse
+  supplier_name:
+    display: Suppliername
+    type: string
+    required: false
+    description: Field SupplierName from ApGlDisburse
+  disbursement_type:
+    display: Disbursementtype
+    type: string
+    required: false
+    description: Field DisbursementType from ApGlDisburse
+  cheque_updated:
+    display: Chequeupdated
+    type: string
+    required: false
+    description: Field ChequeUpdated from ApGlDisburse
+  gl_entries_group:
+    display: Glentriesgroup
+    type: decimal
+    required: false
+    description: Field GlEntriesGroup from ApGlDisburse
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from ApGlDisburse
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ApGlDisburse
+  post_conv_rate:
+    display: Postconvrate
+    type: decimal
+    required: false
+    description: Field PostConvRate from ApGlDisburse
+  post_mul_div:
+    display: Postmuldiv
+    type: string
+    required: false
+    description: Field PostMulDiv from ApGlDisburse
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ApGlDisburse
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from ApGlDisburse
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from ApGlDisburse
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ApGlDisburse
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from ApGlDisburse
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ApGlDisburse
+  analysis_entry:
+    display: Analysisentry
+    type: decimal
+    required: false
+    description: Field AnalysisEntry from ApGlDisburse
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ApGlDisburse
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from ApGlDisburse
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from ApGlDisburse
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from ApGlDisburse
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from ApGlDisburse
+  payment_reference:
+    display: Paymentreference
+    type: string
+    required: false
+    description: Field PaymentReference from ApGlDisburse
+  mult_cur_pay:
+    display: Multcurpay
+    type: string
+    required: false
+    description: Field MultCurPay from ApGlDisburse
+  pay_trn_value:
+    display: Paytrnvalue
+    type: decimal
+    required: false
+    description: Field PayTrnValue from ApGlDisburse
+  pay_currency:
+    display: Paycurrency
+    type: string
+    required: false
+    description: Field PayCurrency from ApGlDisburse
+  pay_conv_rate:
+    display: Payconvrate
+    type: decimal
+    required: false
+    description: Field PayConvRate from ApGlDisburse
+  pay_post_mul_div:
+    display: Paypostmuldiv
+    type: string
+    required: false
+    description: Field PayPostMulDiv from ApGlDisburse
+  gl_int_level:
+    display: Glintlevel
+    type: string
+    required: false
+    description: Field GlIntLevel from ApGlDisburse
+  group_payment:
+    display: Grouppayment
+    type: string
+    required: false
+    description: Field GroupPayment from ApGlDisburse
+  grp_pay_value:
+    display: Grppayvalue
+    type: decimal
+    required: false
+    description: Field GrpPayValue from ApGlDisburse
+  grp_pay_currency:
+    display: Grppaycurrency
+    type: string
+    required: false
+    description: Field GrpPayCurrency from ApGlDisburse
+  grp_pay_conv_rate:
+    display: Grppayconvrate
+    type: decimal
+    required: false
+    description: Field GrpPayConvRate from ApGlDisburse
+  grp_pay_post_mul_div:
+    display: Grppaypostmuldiv
+    type: string
+    required: false
+    description: Field GrpPayPostMulDiv from ApGlDisburse
+  group_inter_company:
+    display: Groupintercompany
+    type: string
+    required: false
+    description: Field GroupInterCompany from ApGlDisburse
+  primary_supplier:
+    display: Primarysupplier
+    type: string
+    required: false
+    description: Field PrimarySupplier from ApGlDisburse
+  primary_company:
+    display: Primarycompany
+    type: string
+    required: false
+    description: Field PrimaryCompany from ApGlDisburse
+  secondary_company:
+    display: Secondarycompany
+    type: string
+    required: false
+    description: Field SecondaryCompany from ApGlDisburse
+  xref_check_register:
+    display: Xrefcheckregister
+    type: decimal
+    required: false
+    description: Field XrefCheckRegister from ApGlDisburse
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from ApGlDisburse
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from ApGlDisburse

@@ -1,0 +1,83 @@
+concept: gtr_fifo_transfer
+display_name: GtrFifoTransfer
+module: other
+description: Auto-generated representation of the physical table GtrFifoTransfer.
+synonyms:
+- gtrfifotransfer
+- gtr fifo transfer
+header_attributes:
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from GtrFifoTransfer
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from GtrFifoTransfer
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from GtrFifoTransfer
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from GtrFifoTransfer
+  date_created:
+    display: Datecreated
+    type: date
+    required: false
+    description: Field DateCreated from GtrFifoTransfer
+  time_created:
+    display: Timecreated
+    type: decimal
+    required: false
+    description: Field TimeCreated from GtrFifoTransfer
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from GtrFifoTransfer
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from GtrFifoTransfer
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from GtrFifoTransfer
+  fifo_cost:
+    display: Fifocost
+    type: decimal
+    required: false
+    description: Field FifoCost from GtrFifoTransfer
+  date_last_receipt:
+    display: Datelastreceipt
+    type: date
+    required: false
+    description: Field DateLastReceipt from GtrFifoTransfer
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from GtrFifoTransfer
+  lot_serial:
+    display: Lotserial
+    type: string
+    required: false
+    description: Field LotSerial from GtrFifoTransfer
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from GtrFifoTransfer
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from GtrFifoTransfer

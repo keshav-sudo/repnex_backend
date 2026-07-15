@@ -1,0 +1,6 @@
+concept: wms_storage_hazard
+table: WmsStorageHazard
+alias: wsh
+fields:
+  storage_hazard: wsh.StorageHazard
+  description: wsh.Description

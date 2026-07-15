@@ -1,0 +1,6 @@
+concept: bom_component_type
+table: BomComponentType
+alias: bct
+fields:
+  component_type: bct.ComponentType
+  description: bct.Description

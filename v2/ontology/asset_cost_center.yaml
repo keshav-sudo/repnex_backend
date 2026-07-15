@@ -1,0 +1,23 @@
+concept: asset_cost_center
+display_name: AssetCostCenter
+module: assets
+description: Auto-generated representation of the physical table AssetCostCenter.
+synonyms:
+- assetcostcenter
+- asset cost center
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetCostCenter
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetCostCenter
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetCostCenter

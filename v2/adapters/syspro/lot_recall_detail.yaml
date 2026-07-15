@@ -1,0 +1,22 @@
+concept: lot_recall_detail
+table: LotRecallDetail
+alias: lrd
+fields:
+  product_recall: lrd.ProductRecall
+  stock_code: lrd.StockCode
+  warehouse: lrd.Warehouse
+  bin: lrd.Bin
+  lot: lrd.Lot
+  serial: lrd.Serial
+  hold_level: lrd.HoldLevel
+  status: lrd.Status
+  insp_quantity: lrd.InspQuantity
+  insp_complete: lrd.InspComplete
+  release_qty: lrd.ReleaseQty
+  scrap_qty: lrd.ScrapQty
+  last_trn_date: lrd.LastTrnDate
+  last_trn_time: lrd.LastTrnTime
+  reason_code: lrd.ReasonCode
+  on_hold_reason: lrd.OnHoldReason
+  scrap_reason_code: lrd.ScrapReasonCode
+  release_reason: lrd.ReleaseReason

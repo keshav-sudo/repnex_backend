@@ -1,0 +1,16 @@
+concept: adm_trigger
+table: AdmTrigger
+alias: at1
+fields:
+  trigger_program: at1.TriggerProgram
+  trigger_number: at1.TriggerNumber
+  trigger_sequence: at1.TriggerSequence
+  trigger_type: at1.TriggerType
+  program: at1.Program
+  start_folder: at1.StartFolder
+  trigger_code: at1.TriggerCode
+  message_text: at1.MessageText
+  operator: at1.Operator
+  program_to_run: at1.ProgramToRun
+  use_date: at1.UseDate
+  prevent_duplicate: at1.PreventDuplicate

@@ -1,0 +1,12 @@
+concept: lynq_vp__scheduler_record_detail
+table: Lynq_VP_SchedulerRecordDetail
+alias: lvpsrd
+fields:
+  id: lvpsrd.ID
+  header_id: lvpsrd.HeaderID
+  start_date: lvpsrd.StartDate
+  end_date: lvpsrd.EndDate
+  number_of_resources: lvpsrd.NumberOfResources
+  detail_type: lvpsrd.DetailType
+  finished_discretes: lvpsrd.FinishedDiscretes
+  in_process_discretes: lvpsrd.InProcessDiscretes

@@ -1,0 +1,28 @@
+concept: por_inspect_format
+display_name: PorInspectFormat
+module: procurement
+description: Auto-generated representation of the physical table PorInspectFormat.
+synonyms:
+- porinspectformat
+- por inspect format
+header_attributes:
+  por_ins_doc_type:
+    display: Porinsdoctype
+    type: string
+    required: false
+    description: Field PorInsDocType from PorInspectFormat
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from PorInspectFormat
+  document_record_type:
+    display: Documentrecordtype
+    type: string
+    required: false
+    description: Field DocumentRecordType from PorInspectFormat
+  document_info:
+    display: Documentinfo
+    type: string
+    required: false
+    description: Field DocumentInfo from PorInspectFormat

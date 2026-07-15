@@ -1,0 +1,10 @@
+concept: lynq_vp__resource_linear_mapping
+table: Lynq_VP_ResourceLinearMapping
+alias: lvprlm
+fields:
+  id: lvprlm.ID
+  vp_resource_id: lvprlm.VPResourceID
+  sys_resource_code: lvprlm.SysResourceCode
+  schema_id: lvprlm.SchemaID
+  equiv_sys_res_qty: lvprlm.EquivSysResQty
+  equiv_sys_res_hrs: lvprlm.EquivSysResHrs

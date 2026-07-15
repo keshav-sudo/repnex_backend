@@ -1,0 +1,178 @@
+concept: lot_transactions
+display_name: LotTransactions
+module: other
+description: Auto-generated representation of the physical table LotTransactions.
+synonyms:
+- lottransactions
+- lot transactions
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotTransactions
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from LotTransactions
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotTransactions
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from LotTransactions
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from LotTransactions
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from LotTransactions
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from LotTransactions
+  trn_quantity:
+    display: Trnquantity
+    type: decimal
+    required: false
+    description: Field TrnQuantity from LotTransactions
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from LotTransactions
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from LotTransactions
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from LotTransactions
+  doc_type:
+    display: Doctype
+    type: string
+    required: false
+    description: Field DocType from LotTransactions
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from LotTransactions
+  old_expiry_date:
+    display: Oldexpirydate
+    type: date
+    required: false
+    description: Field OldExpiryDate from LotTransactions
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from LotTransactions
+  new_expiry_date:
+    display: Newexpirydate
+    type: date
+    required: false
+    description: Field NewExpiryDate from LotTransactions
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from LotTransactions
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from LotTransactions
+  new_warehouse:
+    display: Newwarehouse
+    type: string
+    required: false
+    description: Field NewWarehouse from LotTransactions
+  concession_num:
+    display: Concessionnum
+    type: string
+    required: false
+    description: Field ConcessionNum from LotTransactions
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from LotTransactions
+  job_purch_order:
+    display: Jobpurchorder
+    type: string
+    required: false
+    description: Field JobPurchOrder from LotTransactions
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from LotTransactions
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from LotTransactions
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from LotTransactions
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from LotTransactions
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from LotTransactions
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from LotTransactions
+  bucket:
+    display: Bucket
+    type: decimal
+    required: false
+    description: Field Bucket from LotTransactions
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from LotTransactions
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from LotTransactions
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from LotTransactions
+  journal_line:
+    display: Journalline
+    type: decimal
+    required: false
+    description: Field JournalLine from LotTransactions
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from LotTransactions

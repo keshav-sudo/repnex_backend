@@ -1,0 +1,21 @@
+concept: mdn_detail_ser_rep_con
+table: MdnDetailSerRepCon
+alias: mdsrc
+fields:
+  key_invoice: mdsrc.KeyInvoice
+  key_sales_order: mdsrc.KeySalesOrder
+  key_sales_order_line: mdsrc.KeySalesOrderLine
+  key_dispatch_note: mdsrc.KeyDispatchNote
+  key_dispatch_line: mdsrc.KeyDispatchLine
+  key_record_count: mdsrc.KeyRecordCount
+  dispatch_note: mdsrc.DispatchNote
+  dispatch_note_line: mdsrc.DispatchNoteLine
+  sales_order: mdsrc.SalesOrder
+  sales_order_line: mdsrc.SalesOrderLine
+  lot: mdsrc.Lot
+  serial: mdsrc.Serial
+  stock_qty_to_ship: mdsrc.StockQtyToShip
+  qty_this_session: mdsrc.QtyThisSession
+  new_expiry_date: mdsrc.NewExpiryDate
+  new_scrap_date: mdsrc.NewScrapDate
+  bin: mdsrc.Bin

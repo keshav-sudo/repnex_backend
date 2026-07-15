@@ -1,0 +1,58 @@
+concept: csh_ar_payments_pos
+display_name: CshArPaymentsPos
+module: cashbook
+description: Auto-generated representation of the physical table CshArPaymentsPos.
+synonyms:
+- csharpaymentspos
+- csh ar payments pos
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshArPaymentsPos
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshArPaymentsPos
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from CshArPaymentsPos
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from CshArPaymentsPos
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from CshArPaymentsPos
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from CshArPaymentsPos
+  pos_transaction_type:
+    display: Postransactiontype
+    type: string
+    required: false
+    description: Field PosTransactionType from CshArPaymentsPos
+  pos_trans_branch:
+    display: Postransbranch
+    type: string
+    required: false
+    description: Field PosTransBranch from CshArPaymentsPos
+  pos_unique_id:
+    display: Posuniqueid
+    type: string
+    required: false
+    description: Field PosUniqueId from CshArPaymentsPos
+  pos_payment_line:
+    display: Pospaymentline
+    type: decimal
+    required: false
+    description: Field PosPaymentLine from CshArPaymentsPos

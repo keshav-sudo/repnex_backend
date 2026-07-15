@@ -1,0 +1,48 @@
+concept: bom_co_prd_mat_cost
+display_name: BomCoPrdMatCost
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomCoPrdMatCost.
+synonyms:
+- bomcoprdmatcost
+- bom co prd mat cost
+header_attributes:
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from BomCoPrdMatCost
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BomCoPrdMatCost
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BomCoPrdMatCost
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomCoPrdMatCost
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from BomCoPrdMatCost
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from BomCoPrdMatCost
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from BomCoPrdMatCost
+  pct_material_cost:
+    display: Pctmaterialcost
+    type: decimal
+    required: false
+    description: Field PctMaterialCost from BomCoPrdMatCost

@@ -1,0 +1,48 @@
+concept: sor_reprint_inv
+display_name: SorReprintInv
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorReprintInv.
+synonyms:
+- sorreprintinv
+- sor reprint inv
+header_attributes:
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SorReprintInv
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorReprintInv
+  invoice_source:
+    display: Invoicesource
+    type: string
+    required: false
+    description: Field InvoiceSource from SorReprintInv
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorReprintInv
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from SorReprintInv
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from SorReprintInv
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from SorReprintInv
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from SorReprintInv

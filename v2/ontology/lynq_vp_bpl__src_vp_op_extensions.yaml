@@ -1,0 +1,333 @@
+concept: lynq_vp_bpl__src_vp_op_extensions
+display_name: Lynq VP BPL Src VPOpExtensions
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_BPL_Src_VPOpExtensions.
+synonyms:
+- lynq_vp_bpl_src_vpopextensions
+- lynq vp bpl  src vp op extensions
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_BPL_Src_VPOpExtensions
+  ext_stmp:
+    display: Extstmp
+    type: string
+    required: false
+    description: Field ExtStmp from Lynq_VP_BPL_Src_VPOpExtensions
+  ext_type:
+    display: Exttype
+    type: string
+    required: false
+    description: Field ExtType from Lynq_VP_BPL_Src_VPOpExtensions
+  ord_type:
+    display: Ordtype
+    type: string
+    required: false
+    description: Field OrdType from Lynq_VP_BPL_Src_VPOpExtensions
+  ord_number:
+    display: Ordnumber
+    type: string
+    required: false
+    description: Field OrdNumber from Lynq_VP_BPL_Src_VPOpExtensions
+  oper_number:
+    display: Opernumber
+    type: decimal
+    required: false
+    description: Field OperNumber from Lynq_VP_BPL_Src_VPOpExtensions
+  path_number:
+    display: Pathnumber
+    type: decimal
+    required: false
+    description: Field PathNumber from Lynq_VP_BPL_Src_VPOpExtensions
+  par_path_number:
+    display: Parpathnumber
+    type: decimal
+    required: false
+    description: Field ParPathNumber from Lynq_VP_BPL_Src_VPOpExtensions
+  oper_sequence_number:
+    display: Opersequencenumber
+    type: decimal
+    required: false
+    description: Field OperSequenceNumber from Lynq_VP_BPL_Src_VPOpExtensions
+  rec_type:
+    display: Rectype
+    type: string
+    required: false
+    description: Field RecType from Lynq_VP_BPL_Src_VPOpExtensions
+  oper_type:
+    display: Opertype
+    type: string
+    required: false
+    description: Field OperType from Lynq_VP_BPL_Src_VPOpExtensions
+  oper_description:
+    display: Operdescription
+    type: string
+    required: false
+    description: Field OperDescription from Lynq_VP_BPL_Src_VPOpExtensions
+  wc_dept_code:
+    display: Wcdeptcode
+    type: string
+    required: false
+    description: Field WcDeptCode from Lynq_VP_BPL_Src_VPOpExtensions
+  wc_code:
+    display: Wccode
+    type: string
+    required: false
+    description: Field WcCode from Lynq_VP_BPL_Src_VPOpExtensions
+  ord_zone_type:
+    display: Ordzonetype
+    type: string
+    required: false
+    description: Field OrdZoneType from Lynq_VP_BPL_Src_VPOpExtensions
+  tool_cons_mthd:
+    display: Toolconsmthd
+    type: string
+    required: false
+    description: Field ToolConsMthd from Lynq_VP_BPL_Src_VPOpExtensions
+  setup_quantity_ordered:
+    display: Setupquantityordered
+    type: decimal
+    required: false
+    description: Field SetupQuantityOrdered from Lynq_VP_BPL_Src_VPOpExtensions
+  setup_quantity_reported:
+    display: Setupquantityreported
+    type: decimal
+    required: false
+    description: Field SetupQuantityReported from Lynq_VP_BPL_Src_VPOpExtensions
+  setup_batch_size:
+    display: Setupbatchsize
+    type: decimal
+    required: false
+    description: Field SetupBatchSize from Lynq_VP_BPL_Src_VPOpExtensions
+  setup_cycles_per_batch:
+    display: Setupcyclesperbatch
+    type: decimal
+    required: false
+    description: Field SetupCyclesPerBatch from Lynq_VP_BPL_Src_VPOpExtensions
+  setup_people_hrs_per_cycle:
+    display: Setuppeoplehrspercycle
+    type: decimal
+    required: false
+    description: Field SetupPeopleHrsPerCycle from Lynq_VP_BPL_Src_VPOpExtensions
+  setup_people_per_cycle:
+    display: Setuppeoplepercycle
+    type: decimal
+    required: false
+    description: Field SetupPeoplePerCycle from Lynq_VP_BPL_Src_VPOpExtensions
+  setup_machine_hrs_per_cycle:
+    display: Setupmachinehrspercycle
+    type: decimal
+    required: false
+    description: Field SetupMachineHrsPerCycle from Lynq_VP_BPL_Src_VPOpExtensions
+  setup_machines_per_cycle:
+    display: Setupmachinespercycle
+    type: decimal
+    required: false
+    description: Field SetupMachinesPerCycle from Lynq_VP_BPL_Src_VPOpExtensions
+  quantity_ordered:
+    display: Quantityordered
+    type: decimal
+    required: false
+    description: Field QuantityOrdered from Lynq_VP_BPL_Src_VPOpExtensions
+  quantity_reported:
+    display: Quantityreported
+    type: decimal
+    required: false
+    description: Field QuantityReported from Lynq_VP_BPL_Src_VPOpExtensions
+  batch_size:
+    display: Batchsize
+    type: decimal
+    required: false
+    description: Field BatchSize from Lynq_VP_BPL_Src_VPOpExtensions
+  cycles_per_batch:
+    display: Cyclesperbatch
+    type: decimal
+    required: false
+    description: Field CyclesPerBatch from Lynq_VP_BPL_Src_VPOpExtensions
+  people_hrs_per_cycle:
+    display: Peoplehrspercycle
+    type: decimal
+    required: false
+    description: Field PeopleHrsPerCycle from Lynq_VP_BPL_Src_VPOpExtensions
+  people_per_cycle:
+    display: Peoplepercycle
+    type: decimal
+    required: false
+    description: Field PeoplePerCycle from Lynq_VP_BPL_Src_VPOpExtensions
+  machine_hrs_per_cycle:
+    display: Machinehrspercycle
+    type: decimal
+    required: false
+    description: Field MachineHrsPerCycle from Lynq_VP_BPL_Src_VPOpExtensions
+  machines_per_cycle:
+    display: Machinespercycle
+    type: decimal
+    required: false
+    description: Field MachinesPerCycle from Lynq_VP_BPL_Src_VPOpExtensions
+  overlap_fg:
+    display: Overlapfg
+    type: string
+    required: false
+    description: Field OverlapFg from Lynq_VP_BPL_Src_VPOpExtensions
+  overlap_pt:
+    display: Overlappt
+    type: decimal
+    required: false
+    description: Field OverlapPt from Lynq_VP_BPL_Src_VPOpExtensions
+  move_time:
+    display: Movetime
+    type: decimal
+    required: false
+    description: Field MoveTime from Lynq_VP_BPL_Src_VPOpExtensions
+  queue_time:
+    display: Queuetime
+    type: decimal
+    required: false
+    description: Field QueueTime from Lynq_VP_BPL_Src_VPOpExtensions
+  wc_stop_time:
+    display: Wcstoptime
+    type: decimal
+    required: false
+    description: Field WcStopTime from Lynq_VP_BPL_Src_VPOpExtensions
+  processing_time:
+    display: Processingtime
+    type: decimal
+    required: false
+    description: Field ProcessingTime from Lynq_VP_BPL_Src_VPOpExtensions
+  status_code1:
+    display: Statuscode1
+    type: string
+    required: false
+    description: Field StatusCode1 from Lynq_VP_BPL_Src_VPOpExtensions
+  status_code2:
+    display: Statuscode2
+    type: string
+    required: false
+    description: Field StatusCode2 from Lynq_VP_BPL_Src_VPOpExtensions
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from Lynq_VP_BPL_Src_VPOpExtensions
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_date_time1:
+    display: Flddatetime1
+    type: date
+    required: false
+    description: Field FldDateTime1 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_date_time2:
+    display: Flddatetime2
+    type: date
+    required: false
+    description: Field FldDateTime2 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_date_time3:
+    display: Flddatetime3
+    type: date
+    required: false
+    description: Field FldDateTime3 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_decimal1:
+    display: Flddecimal1
+    type: decimal
+    required: false
+    description: Field FldDecimal1 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_decimal2:
+    display: Flddecimal2
+    type: decimal
+    required: false
+    description: Field FldDecimal2 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_decimal3:
+    display: Flddecimal3
+    type: decimal
+    required: false
+    description: Field FldDecimal3 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_decimal4:
+    display: Flddecimal4
+    type: decimal
+    required: false
+    description: Field FldDecimal4 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_decimal5:
+    display: Flddecimal5
+    type: decimal
+    required: false
+    description: Field FldDecimal5 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_string1:
+    display: Fldstring1
+    type: string
+    required: false
+    description: Field FldString1 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_string2:
+    display: Fldstring2
+    type: string
+    required: false
+    description: Field FldString2 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_string3:
+    display: Fldstring3
+    type: string
+    required: false
+    description: Field FldString3 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_string4:
+    display: Fldstring4
+    type: string
+    required: false
+    description: Field FldString4 from Lynq_VP_BPL_Src_VPOpExtensions
+  fld_string5:
+    display: Fldstring5
+    type: string
+    required: false
+    description: Field FldString5 from Lynq_VP_BPL_Src_VPOpExtensions
+  par_to_previous:
+    display: Partoprevious
+    type: string
+    required: false
+    description: Field ParToPrevious from Lynq_VP_BPL_Src_VPOpExtensions
+  run_labour_time_fixed:
+    display: Runlabourtimefixed
+    type: decimal
+    required: false
+    description: Field RunLabourTimeFixed from Lynq_VP_BPL_Src_VPOpExtensions
+  run_machine_time_fixed:
+    display: Runmachinetimefixed
+    type: decimal
+    required: false
+    description: Field RunMachineTimeFixed from Lynq_VP_BPL_Src_VPOpExtensions
+  setup_labour_time_fixed:
+    display: Setuplabourtimefixed
+    type: decimal
+    required: false
+    description: Field SetupLabourTimeFixed from Lynq_VP_BPL_Src_VPOpExtensions
+  setup_machine_time_fixed:
+    display: Setupmachinetimefixed
+    type: decimal
+    required: false
+    description: Field SetupMachineTimeFixed from Lynq_VP_BPL_Src_VPOpExtensions
+  completeness_flag:
+    display: Completenessflag
+    type: string
+    required: false
+    description: Field CompletenessFlag from Lynq_VP_BPL_Src_VPOpExtensions
+  outside_flag:
+    display: Outsideflag
+    type: string
+    required: false
+    description: Field OutsideFlag from Lynq_VP_BPL_Src_VPOpExtensions
+  status_code1_description:
+    display: Statuscode1Description
+    type: string
+    required: false
+    description: Field StatusCode1Description from Lynq_VP_BPL_Src_VPOpExtensions
+  status_code2_description:
+    display: Statuscode2Description
+    type: string
+    required: false
+    description: Field StatusCode2Description from Lynq_VP_BPL_Src_VPOpExtensions
+  oper_code:
+    display: Opercode
+    type: string
+    required: false
+    description: Field OperCode from Lynq_VP_BPL_Src_VPOpExtensions

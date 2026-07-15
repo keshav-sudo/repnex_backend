@@ -1,0 +1,73 @@
+concept: adm_usa_tax_history
+display_name: AdmUsaTaxHistory
+module: administration
+description: Auto-generated representation of the physical table AdmUsaTaxHistory.
+synonyms:
+- admusataxhistory
+- adm usa tax history
+header_attributes:
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from AdmUsaTaxHistory
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from AdmUsaTaxHistory
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from AdmUsaTaxHistory
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from AdmUsaTaxHistory
+  first_rate1:
+    display: Firstrate1
+    type: decimal
+    required: false
+    description: Field FirstRate1 from AdmUsaTaxHistory
+  first_limit1:
+    display: Firstlimit1
+    type: decimal
+    required: false
+    description: Field FirstLimit1 from AdmUsaTaxHistory
+  first_limit_value1:
+    display: Firstlimitvalue1
+    type: decimal
+    required: false
+    description: Field FirstLimitValue1 from AdmUsaTaxHistory
+  first_rate2:
+    display: Firstrate2
+    type: decimal
+    required: false
+    description: Field FirstRate2 from AdmUsaTaxHistory
+  first_limit2:
+    display: Firstlimit2
+    type: decimal
+    required: false
+    description: Field FirstLimit2 from AdmUsaTaxHistory
+  first_limit_value2:
+    display: Firstlimitvalue2
+    type: decimal
+    required: false
+    description: Field FirstLimitValue2 from AdmUsaTaxHistory
+  first_rate3:
+    display: Firstrate3
+    type: decimal
+    required: false
+    description: Field FirstRate3 from AdmUsaTaxHistory
+  first_limit3:
+    display: Firstlimit3
+    type: decimal
+    required: false
+    description: Field FirstLimit3 from AdmUsaTaxHistory
+  first_limit_value3:
+    display: Firstlimitvalue3
+    type: decimal
+    required: false
+    description: Field FirstLimitValue3 from AdmUsaTaxHistory

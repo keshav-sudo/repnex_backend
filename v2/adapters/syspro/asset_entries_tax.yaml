@@ -1,0 +1,51 @@
+concept: asset_entries_tax
+table: AssetEntriesTax
+alias: aet
+fields:
+  asset: aet.Asset
+  entry_year: aet.EntryYear
+  entry_month: aet.EntryMonth
+  system_date: aet.SystemDate
+  system_time: aet.SystemTime
+  entry_type: aet.EntryType
+  entry_date: aet.EntryDate
+  entry_amount: aet.EntryAmount
+  asset_cost: aet.AssetCost
+  asset_current_value: aet.AssetCurrentValue
+  entry_qty: aet.EntryQty
+  asset_qty: aet.AssetQty
+  depn_ytd: aet.DepnYtd
+  depn_prev_year: aet.DepnPrevYear
+  accum_depn: aet.AccumDepn
+  residual_value: aet.ResidualValue
+  depn_code: aet.DepnCode
+  depn_rate: aet.DepnRate
+  depn_start_date: aet.DepnStartDate
+  thruput_eul: aet.ThruputEul
+  reval_reserve_to_date: aet.RevalReserveToDate
+  stat_gl_code: aet.StatGlCode
+  number_of_periods: aet.NumberOfPeriods
+  number_of_years: aet.NumberOfYears
+  total_periods_td: aet.TotalPeriodsTd
+  min_book_value: aet.MinBookValue
+  suspend: aet.Suspend
+  reason: aet.Reason
+  asset_status: aet.AssetStatus
+  branch: aet.Branch
+  location: aet.Location
+  asset_group_code: aet.AssetGroupCode
+  asset_cost_center: aet.AssetCostCenter
+  company_before: aet.CompanyBefore
+  company_after: aet.CompanyAfter
+  branch_after: aet.BranchAfter
+  group_after: aet.GroupAfter
+  cost_center_after: aet.CostCenterAfter
+  gl_code: aet.GlCode
+  operator: aet.Operator
+  capex_code: aet.CapexCode
+  capex_line: aet.CapexLine
+  entry_reference: aet.EntryReference
+  narration: aet.Narration
+  asset_dist_reg: aet.AssetDistReg
+  sold_value: aet.SoldValue
+  disposal_cost: aet.DisposalCost

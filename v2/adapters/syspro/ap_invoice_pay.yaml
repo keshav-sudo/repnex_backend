@@ -1,0 +1,51 @@
+concept: ap_invoice_pay
+table: ApInvoicePay
+alias: aip
+fields:
+  supplier: aip.Supplier
+  invoice: aip.Invoice
+  entry_number: aip.EntryNumber
+  trn_type: aip.TrnType
+  journal_date: aip.JournalDate
+  journal: aip.Journal
+  payment_reference: aip.PaymentReference
+  trn_value: aip.TrnValue
+  trn_year: aip.TrnYear
+  trn_month: aip.TrnMonth
+  post_value: aip.PostValue
+  post_currency: aip.PostCurrency
+  post_conv_rate: aip.PostConvRate
+  post_mul_div: aip.PostMulDiv
+  account_cur: aip.AccountCur
+  account_conv_rate: aip.AccountConvRate
+  account_mul_div: aip.AccountMulDiv
+  triang_currency: aip.TriangCurrency
+  triang_conv_rate: aip.TriangConvRate
+  triang_mul_div: aip.TriangMulDiv
+  invoice_take_on: aip.InvoiceTakeOn
+  payment_number: aip.PaymentNumber
+  summary_entry_number: aip.SummaryEntryNumber
+  mult_cur_pay: aip.MultCurPay
+  pay_trn_value: aip.PayTrnValue
+  pay_currency: aip.PayCurrency
+  pay_conv_rate: aip.PayConvRate
+  pay_post_mul_div: aip.PayPostMulDiv
+  group_payment: aip.GroupPayment
+  grp_pay_value: aip.GrpPayValue
+  grp_pay_currency: aip.GrpPayCurrency
+  grp_pay_conv_rate: aip.GrpPayConvRate
+  grp_pay_post_mul_div: aip.GrpPayPostMulDiv
+  primary_supplier: aip.PrimarySupplier
+  primary_sup_name: aip.PrimarySupName
+  group_inter_company: aip.GroupInterCompany
+  primary_company: aip.PrimaryCompany
+  xref_sup_currency: aip.XrefSupCurrency
+  xref_cur_description: aip.XrefCurDescription
+  primary_ch_register: aip.PrimaryChRegister
+  local_value_prime: aip.LocalValuePrime
+  local_cur_primary: aip.LocalCurPrimary
+  local_value_second: aip.LocalValueSecond
+  local_cur_second: aip.LocalCurSecond
+  xref_loc_currency: aip.XrefLocCurrency
+  conv_rate_sec_prime: aip.ConvRateSecPrime
+  mul_div_sec_prime: aip.MulDivSecPrime

@@ -1,0 +1,423 @@
+concept: por_master_detail
+display_name: PorMasterDetail
+module: procurement
+description: Auto-generated representation of the physical table PorMasterDetail.
+synonyms:
+- pormasterdetail
+- por master detail
+header_attributes:
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from PorMasterDetail
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from PorMasterDetail
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from PorMasterDetail
+  m_stock_code:
+    display: Mstockcode
+    type: string
+    required: false
+    description: Field MStockCode from PorMasterDetail
+  m_stock_des:
+    display: Mstockdes
+    type: string
+    required: false
+    description: Field MStockDes from PorMasterDetail
+  m_warehouse:
+    display: Mwarehouse
+    type: string
+    required: false
+    description: Field MWarehouse from PorMasterDetail
+  m_order_uom:
+    display: Morderuom
+    type: string
+    required: false
+    description: Field MOrderUom from PorMasterDetail
+  m_stocking_uom:
+    display: Mstockinguom
+    type: string
+    required: false
+    description: Field MStockingUom from PorMasterDetail
+  m_order_qty:
+    display: Morderqty
+    type: decimal
+    required: false
+    description: Field MOrderQty from PorMasterDetail
+  m_received_qty:
+    display: Mreceivedqty
+    type: decimal
+    required: false
+    description: Field MReceivedQty from PorMasterDetail
+  m_latest_due_date:
+    display: Mlatestduedate
+    type: date
+    required: false
+    description: Field MLatestDueDate from PorMasterDetail
+  m_last_receipt_dat:
+    display: Mlastreceiptdat
+    type: date
+    required: false
+    description: Field MLastReceiptDat from PorMasterDetail
+  m_sup_catalogue:
+    display: Msupcatalogue
+    type: string
+    required: false
+    description: Field MSupCatalogue from PorMasterDetail
+  m_disc_pct1:
+    display: Mdiscpct1
+    type: decimal
+    required: false
+    description: Field MDiscPct1 from PorMasterDetail
+  m_disc_pct2:
+    display: Mdiscpct2
+    type: decimal
+    required: false
+    description: Field MDiscPct2 from PorMasterDetail
+  m_disc_pct3:
+    display: Mdiscpct3
+    type: decimal
+    required: false
+    description: Field MDiscPct3 from PorMasterDetail
+  m_disc_val_flag:
+    display: Mdiscvalflag
+    type: string
+    required: false
+    description: Field MDiscValFlag from PorMasterDetail
+  m_disc_value:
+    display: Mdiscvalue
+    type: decimal
+    required: false
+    description: Field MDiscValue from PorMasterDetail
+  m_price:
+    display: Mprice
+    type: decimal
+    required: false
+    description: Field MPrice from PorMasterDetail
+  m_foreign_price:
+    display: Mforeignprice
+    type: decimal
+    required: false
+    description: Field MForeignPrice from PorMasterDetail
+  m_decimals_to_prt:
+    display: Mdecimalstoprt
+    type: decimal
+    required: false
+    description: Field MDecimalsToPrt from PorMasterDetail
+  m_conv_fact_prc_um:
+    display: Mconvfactprcum
+    type: decimal
+    required: false
+    description: Field MConvFactPrcUm from PorMasterDetail
+  m_mul_div_prc:
+    display: Mmuldivprc
+    type: string
+    required: false
+    description: Field MMulDivPrc from PorMasterDetail
+  m_price_uom:
+    display: Mpriceuom
+    type: string
+    required: false
+    description: Field MPriceUom from PorMasterDetail
+  m_tax_code:
+    display: Mtaxcode
+    type: string
+    required: false
+    description: Field MTaxCode from PorMasterDetail
+  m_conv_fact_ord_um:
+    display: Mconvfactordum
+    type: decimal
+    required: false
+    description: Field MConvFactOrdUm from PorMasterDetail
+  m_mul_div_alloc:
+    display: Mmuldivalloc
+    type: string
+    required: false
+    description: Field MMulDivAlloc from PorMasterDetail
+  m_product_class:
+    display: Mproductclass
+    type: string
+    required: false
+    description: Field MProductClass from PorMasterDetail
+  m_complete_flag:
+    display: Mcompleteflag
+    type: string
+    required: false
+    description: Field MCompleteFlag from PorMasterDetail
+  m_job:
+    display: Mjob
+    type: string
+    required: false
+    description: Field MJob from PorMasterDetail
+  m_job_line:
+    display: Mjobline
+    type: string
+    required: false
+    description: Field MJobLine from PorMasterDetail
+  m_gl_code:
+    display: Mglcode
+    type: string
+    required: false
+    description: Field MGlCode from PorMasterDetail
+  m_user_auth_reqn:
+    display: Muserauthreqn
+    type: string
+    required: false
+    description: Field MUserAuthReqn from PorMasterDetail
+  m_requisition:
+    display: Mrequisition
+    type: string
+    required: false
+    description: Field MRequisition from PorMasterDetail
+  m_requisition_line:
+    display: Mrequisitionline
+    type: decimal
+    required: false
+    description: Field MRequisitionLine from PorMasterDetail
+  m_sales_order:
+    display: Msalesorder
+    type: string
+    required: false
+    description: Field MSalesOrder from PorMasterDetail
+  m_sales_order_line:
+    display: Msalesorderline
+    type: decimal
+    required: false
+    description: Field MSalesOrderLine from PorMasterDetail
+  m_orig_due_date:
+    display: Morigduedate
+    type: date
+    required: false
+    description: Field MOrigDueDate from PorMasterDetail
+  m_resched_due_date:
+    display: Mreschedduedate
+    type: string
+    required: false
+    description: Field MReschedDueDate from PorMasterDetail
+  m_lct_confirmed:
+    display: Mlctconfirmed
+    type: string
+    required: false
+    description: Field MLctConfirmed from PorMasterDetail
+  m_original_line:
+    display: Moriginalline
+    type: decimal
+    required: false
+    description: Field MOriginalLine from PorMasterDetail
+  m_subcontract_op:
+    display: Msubcontractop
+    type: decimal
+    required: false
+    description: Field MSubcontractOp from PorMasterDetail
+  m_edi_extract_flag:
+    display: Mediextractflag
+    type: string
+    required: false
+    description: Field MEdiExtractFlag from PorMasterDetail
+  m_edi_action_flag:
+    display: Mediactionflag
+    type: string
+    required: false
+    description: Field MEdiActionFlag from PorMasterDetail
+  m_inspection_reqd:
+    display: Minspectionreqd
+    type: string
+    required: false
+    description: Field MInspectionReqd from PorMasterDetail
+  m_nons_unit_mass:
+    display: Mnonsunitmass
+    type: decimal
+    required: false
+    description: Field MNonsUnitMass from PorMasterDetail
+  m_nons_unit_vol:
+    display: Mnonsunitvol
+    type: decimal
+    required: false
+    description: Field MNonsUnitVol from PorMasterDetail
+  m_version:
+    display: Mversion
+    type: string
+    required: false
+    description: Field MVersion from PorMasterDetail
+  m_release:
+    display: Mrelease
+    type: string
+    required: false
+    description: Field MRelease from PorMasterDetail
+  n_comment:
+    display: Ncomment
+    type: string
+    required: false
+    description: Field NComment from PorMasterDetail
+  n_comment_from_lin:
+    display: Ncommentfromlin
+    type: decimal
+    required: false
+    description: Field NCommentFromLin from PorMasterDetail
+  n_msc_charge_value:
+    display: Nmscchargevalue
+    type: decimal
+    required: false
+    description: Field NMscChargeValue from PorMasterDetail
+  n_msc_charge_print:
+    display: Nmscchargeprint
+    type: string
+    required: false
+    description: Field NMscChargePrint from PorMasterDetail
+  n_com_print_type:
+    display: Ncomprinttype
+    type: string
+    required: false
+    description: Field NComPrintType from PorMasterDetail
+  n_msc_charge_tax:
+    display: Nmscchargetax
+    type: string
+    required: false
+    description: Field NMscChargeTax from PorMasterDetail
+  n_comment_flag:
+    display: Ncommentflag
+    type: string
+    required: false
+    description: Field NCommentFlag from PorMasterDetail
+  n_msc_charge_for:
+    display: Nmscchargefor
+    type: decimal
+    required: false
+    description: Field NMscChargeFor from PorMasterDetail
+  n_msc_charge_f_loc:
+    display: Nmscchargefloc
+    type: string
+    required: false
+    description: Field NMscChargeFLoc from PorMasterDetail
+  n_edi_extract:
+    display: Nediextract
+    type: string
+    required: false
+    description: Field NEdiExtract from PorMasterDetail
+  m_ecc_flag:
+    display: Meccflag
+    type: string
+    required: false
+    description: Field MEccFlag from PorMasterDetail
+  m_blanket_date:
+    display: Mblanketdate
+    type: date
+    required: false
+    description: Field MBlanketDate from PorMasterDetail
+  m_contract_number:
+    display: Mcontractnumber
+    type: string
+    required: false
+    description: Field MContractNumber from PorMasterDetail
+  m_blanket_cont_line:
+    display: Mblanketcontline
+    type: decimal
+    required: false
+    description: Field MBlanketContLine from PorMasterDetail
+  asset_flag:
+    display: Assetflag
+    type: string
+    required: false
+    description: Field AssetFlag from PorMasterDetail
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from PorMasterDetail
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from PorMasterDetail
+  selection_code:
+    display: Selectioncode
+    type: string
+    required: false
+    description: Field SelectionCode from PorMasterDetail
+  selection_type:
+    display: Selectiontype
+    type: string
+    required: false
+    description: Field SelectionType from PorMasterDetail
+  user1:
+    display: User1
+    type: string
+    required: false
+    description: Field User1 from PorMasterDetail
+  order_line_status:
+    display: Orderlinestatus
+    type: string
+    required: false
+    description: Field OrderLineStatus from PorMasterDetail
+  auto_voucher_reqd:
+    display: Autovoucherreqd
+    type: string
+    required: false
+    description: Field AutoVoucherReqd from PorMasterDetail
+  include_in_mrp:
+    display: Includeinmrp
+    type: string
+    required: false
+    description: Field IncludeInMrp from PorMasterDetail
+  with_tax_expense_type:
+    display: Withtaxexpensetype
+    type: string
+    required: false
+    description: Field WithTaxExpenseType from PorMasterDetail
+  sourcing_policy:
+    display: Sourcingpolicy
+    type: string
+    required: false
+    description: Field SourcingPolicy from PorMasterDetail
+  sourcing_policy_type:
+    display: Sourcingpolicytype
+    type: string
+    required: false
+    description: Field SourcingPolicyType from PorMasterDetail
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from PorMasterDetail
+  rfq_line:
+    display: Rfqline
+    type: decimal
+    required: false
+    description: Field RfqLine from PorMasterDetail
+  intrastat_exempt:
+    display: Intrastatexempt
+    type: string
+    required: false
+    description: Field IntrastatExempt from PorMasterDetail
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from PorMasterDetail
+  triang_disp_state:
+    display: Triangdispstate
+    type: string
+    required: false
+    description: Field TriangDispState from PorMasterDetail
+  triang_dest_state:
+    display: Triangdeststate
+    type: string
+    required: false
+    description: Field TriangDestState from PorMasterDetail
+  orig_country:
+    display: Origcountry
+    type: string
+    required: false
+    description: Field OrigCountry from PorMasterDetail
+  serv_flag:
+    display: Servflag
+    type: string
+    required: false
+    description: Field ServFlag from PorMasterDetail

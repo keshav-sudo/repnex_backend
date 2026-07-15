@@ -1,0 +1,9 @@
+concept: inv_price_date
+table: InvPriceDate
+alias: ipd
+fields:
+  stock_code: ipd.StockCode
+  price_code: ipd.PriceCode
+  effective_date: ipd.EffectiveDate
+  end_date: ipd.EndDate
+  selling_price: ipd.SellingPrice

@@ -1,0 +1,20 @@
+concept: ecc_actions
+table: EccActions
+alias: ea
+fields:
+  change_order: ea.ChangeOrder
+  audit_sequence: ea.AuditSequence
+  action_sequence: ea.ActionSequence
+  status_code: ea.StatusCode
+  action_type: ea.ActionType
+  action_status: ea.ActionStatus
+  status_change: ea.StatusChange
+  required_date: ea.RequiredDate
+  completion_date: ea.CompletionDate
+  reminder_date: ea.ReminderDate
+  description: ea.Description
+  user_flag: ea.UserFlag
+  resp_person: ea.RespPerson
+  pos_next_status: ea.PosNextStatus
+  neg_next_status: ea.NegNextStatus
+  mixed_next_status: ea.MixedNextStatus

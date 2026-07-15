@@ -1,0 +1,11 @@
+concept: wip_inspect_bal
+table: WipInspectBal
+alias: wib
+fields:
+  run_date_time: wib.RunDateTime
+  insp_reference: wib.InspReference
+  lot: wib.Lot
+  cur_inspect_value: wib.CurInspectValue
+  clc_inspect_value: wib.ClcInspectValue
+  cur_inspect_qty: wib.CurInspectQty
+  clc_inspect_qty: wib.ClcInspectQty

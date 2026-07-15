@@ -1,0 +1,22 @@
+concept: lynq_me__received_message
+table: Lynq_ME_ReceivedMessage
+alias: lmerm
+fields:
+  id: lmerm.Id
+  receiver_code: lmerm.ReceiverCode
+  receiver_type_id: lmerm.ReceiverTypeId
+  sender_code: lmerm.SenderCode
+  sender_type_id: lmerm.SenderTypeId
+  received_date: lmerm.ReceivedDate
+  header: lmerm.Header
+  body: lmerm.Body
+  state_id: lmerm.StateId
+  type_name: lmerm.TypeName
+  measurement_code: lmerm.MeasurementCode
+  measurement_object_code: lmerm.MeasurementObjectCode
+  object_members: lmerm.ObjectMembers
+  terminal_id: lmerm.TerminalId
+  work_center_code: lmerm.WorkCenterCode
+  task_codes: lmerm.TaskCodes
+  triggered_value: lmerm.TriggeredValue
+  membership: lmerm.Membership

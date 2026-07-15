@@ -1,0 +1,103 @@
+concept: csh_flow_details
+display_name: CshFlowDetails
+module: cashbook
+description: Auto-generated representation of the physical table CshFlowDetails.
+synonyms:
+- cshflowdetails
+- csh flow details
+header_attributes:
+  model:
+    display: Model
+    type: string
+    required: false
+    description: Field Model from CshFlowDetails
+  inclusion_type:
+    display: Inclusiontype
+    type: string
+    required: false
+    description: Field InclusionType from CshFlowDetails
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from CshFlowDetails
+  collector:
+    display: Collector
+    type: decimal
+    required: false
+    description: Field Collector from CshFlowDetails
+  inclusion:
+    display: Inclusion
+    type: decimal
+    required: false
+    description: Field Inclusion from CshFlowDetails
+  identifier:
+    display: Identifier
+    type: string
+    required: false
+    description: Field Identifier from CshFlowDetails
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CshFlowDetails
+  value1:
+    display: Value1
+    type: decimal
+    required: false
+    description: Field Value1 from CshFlowDetails
+  value2:
+    display: Value2
+    type: decimal
+    required: false
+    description: Field Value2 from CshFlowDetails
+  value3:
+    display: Value3
+    type: decimal
+    required: false
+    description: Field Value3 from CshFlowDetails
+  value4:
+    display: Value4
+    type: decimal
+    required: false
+    description: Field Value4 from CshFlowDetails
+  value5:
+    display: Value5
+    type: decimal
+    required: false
+    description: Field Value5 from CshFlowDetails
+  value6:
+    display: Value6
+    type: decimal
+    required: false
+    description: Field Value6 from CshFlowDetails
+  value7:
+    display: Value7
+    type: decimal
+    required: false
+    description: Field Value7 from CshFlowDetails
+  value8:
+    display: Value8
+    type: decimal
+    required: false
+    description: Field Value8 from CshFlowDetails
+  value9:
+    display: Value9
+    type: decimal
+    required: false
+    description: Field Value9 from CshFlowDetails
+  value10:
+    display: Value10
+    type: decimal
+    required: false
+    description: Field Value10 from CshFlowDetails
+  value11:
+    display: Value11
+    type: decimal
+    required: false
+    description: Field Value11 from CshFlowDetails
+  value12:
+    display: Value12
+    type: decimal
+    required: false
+    description: Field Value12 from CshFlowDetails

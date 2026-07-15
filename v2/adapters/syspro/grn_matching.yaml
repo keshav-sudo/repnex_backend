@@ -1,0 +1,18 @@
+concept: grn_matching
+table: GrnMatching
+alias: gm2
+fields:
+  supplier: gm2.Supplier
+  grn: gm2.Grn
+  transaction_type: gm2.TransactionType
+  journal: gm2.Journal
+  entry_number: gm2.EntryNumber
+  invoice: gm2.Invoice
+  ap_journal: gm2.ApJournal
+  sub_entry_number: gm2.SubEntryNumber
+  matched_date: gm2.MatchedDate
+  matched_value: gm2.MatchedValue
+  matched_year: gm2.MatchedYear
+  matched_month: gm2.MatchedMonth
+  matched_qty: gm2.MatchedQty
+  transaction_code: gm2.TransactionCode

@@ -1,0 +1,153 @@
+concept: sqm_arc_test_data
+display_name: SqmArcTestData
+module: other
+description: Auto-generated representation of the physical table SqmArcTestData.
+synonyms:
+- sqmarctestdata
+- sqm arc test data
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmArcTestData
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmArcTestData
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmArcTestData
+  sample_number:
+    display: Samplenumber
+    type: decimal
+    required: false
+    description: Field SampleNumber from SqmArcTestData
+  sample_test:
+    display: Sampletest
+    type: decimal
+    required: false
+    description: Field SampleTest from SqmArcTestData
+  test_name:
+    display: Testname
+    type: string
+    required: false
+    description: Field TestName from SqmArcTestData
+  test_version:
+    display: Testversion
+    type: decimal
+    required: false
+    description: Field TestVersion from SqmArcTestData
+  field_id:
+    display: Fieldid
+    type: decimal
+    required: false
+    description: Field FieldId from SqmArcTestData
+  sqm_level:
+    display: Sqmlevel
+    type: string
+    required: false
+    description: Field SqmLevel from SqmArcTestData
+  data_type:
+    display: Datatype
+    type: string
+    required: false
+    description: Field DataType from SqmArcTestData
+  calculated_field:
+    display: Calculatedfield
+    type: string
+    required: false
+    description: Field CalculatedField from SqmArcTestData
+  numeric_result:
+    display: Numericresult
+    type: decimal
+    required: false
+    description: Field NumericResult from SqmArcTestData
+  alpha_result:
+    display: Alpharesult
+    type: string
+    required: false
+    description: Field AlphaResult from SqmArcTestData
+  boolean_result:
+    display: Booleanresult
+    type: string
+    required: false
+    description: Field BooleanResult from SqmArcTestData
+  list_result:
+    display: Listresult
+    type: string
+    required: false
+    description: Field ListResult from SqmArcTestData
+  list_cri_result:
+    display: Listcriresult
+    type: string
+    required: false
+    description: Field ListCriResult from SqmArcTestData
+  field_status:
+    display: Fieldstatus
+    type: string
+    required: false
+    description: Field FieldStatus from SqmArcTestData
+  date_result:
+    display: Dateresult
+    type: date
+    required: false
+    description: Field DateResult from SqmArcTestData
+  validation_req:
+    display: Validationreq
+    type: string
+    required: false
+    description: Field ValidationReq from SqmArcTestData
+  num_target:
+    display: Numtarget
+    type: decimal
+    required: false
+    description: Field NumTarget from SqmArcTestData
+  num_upper_target:
+    display: Numuppertarget
+    type: decimal
+    required: false
+    description: Field NumUpperTarget from SqmArcTestData
+  num_lower_target:
+    display: Numlowertarget
+    type: decimal
+    required: false
+    description: Field NumLowerTarget from SqmArcTestData
+  alpha_target:
+    display: Alphatarget
+    type: string
+    required: false
+    description: Field AlphaTarget from SqmArcTestData
+  list_flag:
+    display: Listflag
+    type: string
+    required: false
+    description: Field ListFlag from SqmArcTestData
+  expiry_flag:
+    display: Expiryflag
+    type: string
+    required: false
+    description: Field ExpiryFlag from SqmArcTestData
+  expiry_number:
+    display: Expirynumber
+    type: decimal
+    required: false
+    description: Field ExpiryNumber from SqmArcTestData
+  coc_flag:
+    display: Cocflag
+    type: string
+    required: false
+    description: Field CocFlag from SqmArcTestData
+  test_date:
+    display: Testdate
+    type: date
+    required: false
+    description: Field TestDate from SqmArcTestData
+  test_time:
+    display: Testtime
+    type: decimal
+    required: false
+    description: Field TestTime from SqmArcTestData

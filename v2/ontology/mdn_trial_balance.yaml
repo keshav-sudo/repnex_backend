@@ -1,0 +1,103 @@
+concept: mdn_trial_balance
+display_name: MdnTrialBalance
+module: other
+description: Auto-generated representation of the physical table MdnTrialBalance.
+synonyms:
+- mdntrialbalance
+- mdn trial balance
+header_attributes:
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from MdnTrialBalance
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from MdnTrialBalance
+  posting_period:
+    display: Postingperiod
+    type: decimal
+    required: false
+    description: Field PostingPeriod from MdnTrialBalance
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from MdnTrialBalance
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from MdnTrialBalance
+  cost:
+    display: Cost
+    type: decimal
+    required: false
+    description: Field Cost from MdnTrialBalance
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MdnTrialBalance
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MdnTrialBalance
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from MdnTrialBalance
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from MdnTrialBalance
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from MdnTrialBalance
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from MdnTrialBalance
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from MdnTrialBalance
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from MdnTrialBalance
+  last_period:
+    display: Lastperiod
+    type: decimal
+    required: false
+    description: Field LastPeriod from MdnTrialBalance
+  next_entry:
+    display: Nextentry
+    type: decimal
+    required: false
+    description: Field NextEntry from MdnTrialBalance
+  total_cost_debit:
+    display: Totalcostdebit
+    type: decimal
+    required: false
+    description: Field TotalCostDebit from MdnTrialBalance
+  total_cost_credit:
+    display: Totalcostcredit
+    type: decimal
+    required: false
+    description: Field TotalCostCredit from MdnTrialBalance
+  first_period:
+    display: Firstperiod
+    type: decimal
+    required: false
+    description: Field FirstPeriod from MdnTrialBalance

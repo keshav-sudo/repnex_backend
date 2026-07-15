@@ -1,0 +1,11 @@
+concept: whm_lpn_detail
+table: WhmLpnDetail
+alias: wld
+fields:
+  license_plate_number: wld.LicensePlateNumber
+  content_id: wld.ContentId
+  stock_code: wld.StockCode
+  serial: wld.Serial
+  lot: wld.Lot
+  current_quantity: wld.CurrentQuantity
+  available_quantity: wld.AvailableQuantity

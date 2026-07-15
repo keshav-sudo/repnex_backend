@@ -1,0 +1,17 @@
+concept: csh_jnl_pos
+table: CshJnlPos
+alias: cjp
+fields:
+  cb_trn_year: cjp.CbTrnYear
+  cb_trn_month: cjp.CbTrnMonth
+  journal: cjp.Journal
+  entry_number: cjp.EntryNumber
+  pos_tran_type: cjp.PosTranType
+  pos_transact_branch: cjp.PosTransactBranch
+  pos_unique_id: cjp.PosUniqueId
+  pos_payment_line: cjp.PosPaymentLine
+  pos_eod_branch: cjp.PosEodBranch
+  pos_eod_create_date: cjp.PosEodCreateDate
+  pos_eod_payment_code: cjp.PosEodPaymentCode
+  pos_eod_terminal: cjp.PosEodTerminal
+  pos_eod_batch: cjp.PosEodBatch

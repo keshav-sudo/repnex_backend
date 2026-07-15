@@ -1,0 +1,23 @@
+concept: wip_part_book
+table: WipPartBook
+alias: wpb1
+fields:
+  job: wpb1.Job
+  line: wpb1.Line
+  qty_supplied: wpb1.QtySupplied
+  trn_date: wpb1.TrnDate
+  journal: wpb1.Journal
+  labour_value: wpb1.LabourValue
+  material_value: wpb1.MaterialValue
+  reference: wpb1.Reference
+  add_reference: wpb1.AddReference
+  sales_order: wpb1.SalesOrder
+  master_job: wpb1.MasterJob
+  co_product_line: wpb1.CoProductLine
+  co_product: wpb1.CoProduct
+  qty_supplied_ent: wpb1.QtySuppliedEnt
+  gl_int_updated: wpb1.GlIntUpdated
+  gl_int_printed: wpb1.GlIntPrinted
+  gl_int_year: wpb1.GlIntYear
+  gl_int_period: wpb1.GlIntPeriod
+  gl_journal: wpb1.GlJournal

@@ -1,0 +1,23 @@
+concept: adm_form_list
+display_name: AdmFormList
+module: administration
+description: Auto-generated representation of the physical table AdmFormList.
+synonyms:
+- admformlist
+- adm form list
+header_attributes:
+  form_type:
+    display: Formtype
+    type: string
+    required: false
+    description: Field FormType from AdmFormList
+  field_name:
+    display: Fieldname
+    type: string
+    required: false
+    description: Field FieldName from AdmFormList
+  field_list:
+    display: Fieldlist
+    type: string
+    required: false
+    description: Field FieldList from AdmFormList

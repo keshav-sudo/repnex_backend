@@ -1,0 +1,378 @@
+concept: inv_document
+display_name: InvDocument
+module: inventory
+description: Auto-generated representation of the physical table InvDocument.
+synonyms:
+- invdocument
+- inv document
+header_attributes:
+  transaction_type:
+    display: Transactiontype
+    type: string
+    required: false
+    description: Field TransactionType from InvDocument
+  key_warehouse:
+    display: Keywarehouse
+    type: string
+    required: false
+    description: Field KeyWarehouse from InvDocument
+  key_bin:
+    display: Keybin
+    type: string
+    required: false
+    description: Field KeyBin from InvDocument
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvDocument
+  key_purchase_order:
+    display: Keypurchaseorder
+    type: string
+    required: false
+    description: Field KeyPurchaseOrder from InvDocument
+  key_purchase_ord_line:
+    display: Keypurchaseordline
+    type: decimal
+    required: false
+    description: Field KeyPurchaseOrdLine from InvDocument
+  jnl_year:
+    display: Jnlyear
+    type: decimal
+    required: false
+    description: Field JnlYear from InvDocument
+  jnl_month:
+    display: Jnlmonth
+    type: decimal
+    required: false
+    description: Field JnlMonth from InvDocument
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from InvDocument
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from InvDocument
+  transfer_warehouse:
+    display: Transferwarehouse
+    type: string
+    required: false
+    description: Field TransferWarehouse from InvDocument
+  transfer_bin:
+    display: Transferbin
+    type: string
+    required: false
+    description: Field TransferBin from InvDocument
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from InvDocument
+  issue_warehouse:
+    display: Issuewarehouse
+    type: string
+    required: false
+    description: Field IssueWarehouse from InvDocument
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from InvDocument
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from InvDocument
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from InvDocument
+  receipt_warehouse:
+    display: Receiptwarehouse
+    type: string
+    required: false
+    description: Field ReceiptWarehouse from InvDocument
+  receipt_bin:
+    display: Receiptbin
+    type: string
+    required: false
+    description: Field ReceiptBin from InvDocument
+  document:
+    display: Document
+    type: string
+    required: false
+    description: Field Document from InvDocument
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from InvDocument
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from InvDocument
+  supplier_name:
+    display: Suppliername
+    type: string
+    required: false
+    description: Field SupplierName from InvDocument
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvDocument
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvDocument
+  long_description:
+    display: Longdescription
+    type: string
+    required: false
+    description: Field LongDescription from InvDocument
+  stock_uom:
+    display: Stockuom
+    type: string
+    required: false
+    description: Field StockUom from InvDocument
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from InvDocument
+  trans_quantity:
+    display: Transquantity
+    type: decimal
+    required: false
+    description: Field TransQuantity from InvDocument
+  trans_value:
+    display: Transvalue
+    type: decimal
+    required: false
+    description: Field TransValue from InvDocument
+  trans_unit_cost:
+    display: Transunitcost
+    type: decimal
+    required: false
+    description: Field TransUnitCost from InvDocument
+  trans_mass:
+    display: Transmass
+    type: decimal
+    required: false
+    description: Field TransMass from InvDocument
+  trans_volume:
+    display: Transvolume
+    type: decimal
+    required: false
+    description: Field TransVolume from InvDocument
+  trans_date:
+    display: Transdate
+    type: date
+    required: false
+    description: Field TransDate from InvDocument
+  trans_warehouse:
+    display: Transwarehouse
+    type: string
+    required: false
+    description: Field TransWarehouse from InvDocument
+  trans_reference:
+    display: Transreference
+    type: string
+    required: false
+    description: Field TransReference from InvDocument
+  trans_add_ref:
+    display: Transaddref
+    type: string
+    required: false
+    description: Field TransAddRef from InvDocument
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from InvDocument
+  order_duedate:
+    display: Orderduedate
+    type: date
+    required: false
+    description: Field OrderDuedate from InvDocument
+  line_duedate:
+    display: Lineduedate
+    type: date
+    required: false
+    description: Field LineDuedate from InvDocument
+  order_quantity:
+    display: Orderquantity
+    type: decimal
+    required: false
+    description: Field OrderQuantity from InvDocument
+  out_order_qty:
+    display: Outorderqty
+    type: decimal
+    required: false
+    description: Field OutOrderQty from InvDocument
+  order_value_merch:
+    display: Ordervaluemerch
+    type: decimal
+    required: false
+    description: Field OrderValueMerch from InvDocument
+  order_value_non_merch:
+    display: Ordervaluenonmerch
+    type: decimal
+    required: false
+    description: Field OrderValueNonMerch from InvDocument
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from InvDocument
+  gl_code_debit:
+    display: Glcodedebit
+    type: string
+    required: false
+    description: Field GlCodeDebit from InvDocument
+  grn_source:
+    display: Grnsource
+    type: string
+    required: false
+    description: Field GrnSource from InvDocument
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvDocument
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from InvDocument
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvDocument
+  tariff:
+    display: Tariff
+    type: string
+    required: false
+    description: Field Tariff from InvDocument
+  requisition:
+    display: Requisition
+    type: string
+    required: false
+    description: Field Requisition from InvDocument
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from InvDocument
+  originator:
+    display: Originator
+    type: string
+    required: false
+    description: Field Originator from InvDocument
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from InvDocument
+  reject_scrap_code:
+    display: Rejectscrapcode
+    type: string
+    required: false
+    description: Field RejectScrapCode from InvDocument
+  stocked_flag:
+    display: Stockedflag
+    type: string
+    required: false
+    description: Field StockedFlag from InvDocument
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from InvDocument
+  serial_method:
+    display: Serialmethod
+    type: string
+    required: false
+    description: Field SerialMethod from InvDocument
+  delivery_note:
+    display: Deliverynote
+    type: string
+    required: false
+    description: Field DeliveryNote from InvDocument
+  gtr_line:
+    display: Gtrline
+    type: decimal
+    required: false
+    description: Field GtrLine from InvDocument
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from InvDocument
+  concession:
+    display: Concession
+    type: string
+    required: false
+    description: Field Concession from InvDocument
+  movt_stock_code:
+    display: Movtstockcode
+    type: string
+    required: false
+    description: Field MovtStockCode from InvDocument
+  movt_warehouse:
+    display: Movtwarehouse
+    type: string
+    required: false
+    description: Field MovtWarehouse from InvDocument
+  movt_post_year:
+    display: Movtpostyear
+    type: decimal
+    required: false
+    description: Field MovtPostYear from InvDocument
+  movt_post_month:
+    display: Movtpostmonth
+    type: decimal
+    required: false
+    description: Field MovtPostMonth from InvDocument
+  movt_date:
+    display: Movtdate
+    type: date
+    required: false
+    description: Field MovtDate from InvDocument
+  movt_time:
+    display: Movttime
+    type: decimal
+    required: false
+    description: Field MovtTime from InvDocument
+  movt_type:
+    display: Movttype
+    type: string
+    required: false
+    description: Field MovtType from InvDocument
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from InvDocument
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from InvDocument
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from InvDocument
+  journal_line:
+    display: Journalline
+    type: decimal
+    required: false
+    description: Field JournalLine from InvDocument

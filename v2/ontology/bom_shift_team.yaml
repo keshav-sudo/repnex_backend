@@ -1,0 +1,38 @@
+concept: bom_shift_team
+display_name: BomShiftTeam
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomShiftTeam.
+synonyms:
+- bomshiftteam
+- bom shift team
+header_attributes:
+  shift_team:
+    display: Shiftteam
+    type: string
+    required: false
+    description: Field ShiftTeam from BomShiftTeam
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomShiftTeam
+  site_code:
+    display: Sitecode
+    type: string
+    required: false
+    description: Field SiteCode from BomShiftTeam
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from BomShiftTeam
+  shift_team_contact:
+    display: Shiftteamcontact
+    type: string
+    required: false
+    description: Field ShiftTeamContact from BomShiftTeam
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from BomShiftTeam

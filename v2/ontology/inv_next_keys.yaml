@@ -1,0 +1,23 @@
+concept: inv_next_keys
+display_name: InvNextKeys
+module: inventory
+description: Auto-generated representation of the physical table InvNextKeys.
+synonyms:
+- invnextkeys
+- inv next keys
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from InvNextKeys
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from InvNextKeys
+  key_next:
+    display: Keynext
+    type: decimal
+    required: false
+    description: Field KeyNext from InvNextKeys

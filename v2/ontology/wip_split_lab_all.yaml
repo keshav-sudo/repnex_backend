@@ -1,0 +1,378 @@
+concept: wip_split_lab_all
+display_name: WipSplitLabAll
+module: work_in_progress
+description: Auto-generated representation of the physical table WipSplitLabAll.
+synonyms:
+- wipsplitlaball
+- wip split lab all
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipSplitLabAll
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from WipSplitLabAll
+  operation_split:
+    display: Operationsplit
+    type: decimal
+    required: false
+    description: Field OperationSplit from WipSplitLabAll
+  subcontract_op:
+    display: Subcontractop
+    type: string
+    required: false
+    description: Field SubcontractOp from WipSplitLabAll
+  i_machine:
+    display: Imachine
+    type: string
+    required: false
+    description: Field IMachine from WipSplitLabAll
+  i_exp_unit_run_tim:
+    display: Iexpunitruntim
+    type: decimal
+    required: false
+    description: Field IExpUnitRunTim from WipSplitLabAll
+  i_exp_set_up_time:
+    display: Iexpsetuptime
+    type: decimal
+    required: false
+    description: Field IExpSetUpTime from WipSplitLabAll
+  i_exp_startup_time:
+    display: Iexpstartuptime
+    type: decimal
+    required: false
+    description: Field IExpStartupTime from WipSplitLabAll
+  i_exp_shutdown_tim:
+    display: Iexpshutdowntim
+    type: decimal
+    required: false
+    description: Field IExpShutdownTim from WipSplitLabAll
+  i_wait_time:
+    display: Iwaittime
+    type: decimal
+    required: false
+    description: Field IWaitTime from WipSplitLabAll
+  i_wc_rate_ind:
+    display: Iwcrateind
+    type: decimal
+    required: false
+    description: Field IWcRateInd from WipSplitLabAll
+  i_startup_qty:
+    display: Istartupqty
+    type: decimal
+    required: false
+    description: Field IStartupQty from WipSplitLabAll
+  i_capacity_reqd:
+    display: Icapacityreqd
+    type: decimal
+    required: false
+    description: Field ICapacityReqd from WipSplitLabAll
+  i_max_work_operators:
+    display: Imaxworkoperators
+    type: decimal
+    required: false
+    description: Field IMaxWorkOperators from WipSplitLabAll
+  i_max_prod_units:
+    display: Imaxprodunits
+    type: decimal
+    required: false
+    description: Field IMaxProdUnits from WipSplitLabAll
+  sub_lead_time:
+    display: Subleadtime
+    type: decimal
+    required: false
+    description: Field SubLeadTime from WipSplitLabAll
+  sub_dock_to_stock:
+    display: Subdocktostock
+    type: decimal
+    required: false
+    description: Field SubDockToStock from WipSplitLabAll
+  sub_offsite_days:
+    display: Suboffsitedays
+    type: decimal
+    required: false
+    description: Field SubOffsiteDays from WipSplitLabAll
+  operation_status:
+    display: Operationstatus
+    type: string
+    required: false
+    description: Field OperationStatus from WipSplitLabAll
+  unit_value_reqd:
+    display: Unitvaluereqd
+    type: decimal
+    required: false
+    description: Field UnitValueReqd from WipSplitLabAll
+  run_time_issued:
+    display: Runtimeissued
+    type: decimal
+    required: false
+    description: Field RunTimeIssued from WipSplitLabAll
+  set_up_issued:
+    display: Setupissued
+    type: decimal
+    required: false
+    description: Field SetUpIssued from WipSplitLabAll
+  start_up_issued:
+    display: Startupissued
+    type: decimal
+    required: false
+    description: Field StartUpIssued from WipSplitLabAll
+  shutdown_issued:
+    display: Shutdownissued
+    type: decimal
+    required: false
+    description: Field ShutdownIssued from WipSplitLabAll
+  value_issued:
+    display: Valueissued
+    type: decimal
+    required: false
+    description: Field ValueIssued from WipSplitLabAll
+  pieces_completed:
+    display: Piecescompleted
+    type: decimal
+    required: false
+    description: Field PiecesCompleted from WipSplitLabAll
+  oper_completed:
+    display: Opercompleted
+    type: string
+    required: false
+    description: Field OperCompleted from WipSplitLabAll
+  qty_completed:
+    display: Qtycompleted
+    type: decimal
+    required: false
+    description: Field QtyCompleted from WipSplitLabAll
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from WipSplitLabAll
+  last_scrap_reason:
+    display: Lastscrapreason
+    type: string
+    required: false
+    description: Field LastScrapReason from WipSplitLabAll
+  planned_start_date:
+    display: Plannedstartdate
+    type: date
+    required: false
+    description: Field PlannedStartDate from WipSplitLabAll
+  planned_end_date:
+    display: Plannedenddate
+    type: date
+    required: false
+    description: Field PlannedEndDate from WipSplitLabAll
+  scheduled_start_date:
+    display: Scheduledstartdate
+    type: date
+    required: false
+    description: Field ScheduledStartDate from WipSplitLabAll
+  scheduled_start_time:
+    display: Scheduledstarttime
+    type: decimal
+    required: false
+    description: Field ScheduledStartTime from WipSplitLabAll
+  scheduled_end_date:
+    display: Scheduledenddate
+    type: date
+    required: false
+    description: Field ScheduledEndDate from WipSplitLabAll
+  scheduled_end_time:
+    display: Scheduledendtime
+    type: decimal
+    required: false
+    description: Field ScheduledEndTime from WipSplitLabAll
+  actual_start_date:
+    display: Actualstartdate
+    type: date
+    required: false
+    description: Field ActualStartDate from WipSplitLabAll
+  actual_finish_date:
+    display: Actualfinishdate
+    type: date
+    required: false
+    description: Field ActualFinishDate from WipSplitLabAll
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from WipSplitLabAll
+  work_centre_desc:
+    display: Workcentredesc
+    type: string
+    required: false
+    description: Field WorkCentreDesc from WipSplitLabAll
+  elapsed_time:
+    display: Elapsedtime
+    type: decimal
+    required: false
+    description: Field ElapsedTime from WipSplitLabAll
+  movement_time:
+    display: Movementtime
+    type: decimal
+    required: false
+    description: Field MovementTime from WipSplitLabAll
+  unit_num_of_pieces:
+    display: Unitnumofpieces
+    type: decimal
+    required: false
+    description: Field UnitNumOfPieces from WipSplitLabAll
+  tool_set:
+    display: Toolset
+    type: string
+    required: false
+    description: Field ToolSet from WipSplitLabAll
+  tool_set_qty:
+    display: Toolsetqty
+    type: decimal
+    required: false
+    description: Field ToolSetQty from WipSplitLabAll
+  tool_consumption:
+    display: Toolconsumption
+    type: decimal
+    required: false
+    description: Field ToolConsumption from WipSplitLabAll
+  capacity_issued:
+    display: Capacityissued
+    type: decimal
+    required: false
+    description: Field CapacityIssued from WipSplitLabAll
+  op_comp_via_job:
+    display: Opcompviajob
+    type: string
+    required: false
+    description: Field OpCompViaJob from WipSplitLabAll
+  transfer_qty_or_pct:
+    display: Transferqtyorpct
+    type: string
+    required: false
+    description: Field TransferQtyOrPct from WipSplitLabAll
+  transfer_qty_pct:
+    display: Transferqtypct
+    type: decimal
+    required: false
+    description: Field TransferQtyPct from WipSplitLabAll
+  parent_qty_planned:
+    display: Parentqtyplanned
+    type: decimal
+    required: false
+    description: Field ParentQtyPlanned from WipSplitLabAll
+  oper_yield_pct:
+    display: Operyieldpct
+    type: decimal
+    required: false
+    description: Field OperYieldPct from WipSplitLabAll
+  oper_yield_qty:
+    display: Operyieldqty
+    type: decimal
+    required: false
+    description: Field OperYieldQty from WipSplitLabAll
+  parent_iss_qty:
+    display: Parentissqty
+    type: decimal
+    required: false
+    description: Field ParentIssQty from WipSplitLabAll
+  i_time_taken:
+    display: Itimetaken
+    type: decimal
+    required: false
+    description: Field ITimeTaken from WipSplitLabAll
+  i_quantity:
+    display: Iquantity
+    type: decimal
+    required: false
+    description: Field IQuantity from WipSplitLabAll
+  max_op_span:
+    display: Maxopspan
+    type: decimal
+    required: false
+    description: Field MaxOpSpan from WipSplitLabAll
+  op_slack:
+    display: Opslack
+    type: decimal
+    required: false
+    description: Field OpSlack from WipSplitLabAll
+  i_startup_qty_ent:
+    display: Istartupqtyent
+    type: decimal
+    required: false
+    description: Field IStartupQtyEnt from WipSplitLabAll
+  i_quantity_ent:
+    display: Iquantityent
+    type: decimal
+    required: false
+    description: Field IQuantityEnt from WipSplitLabAll
+  i_exp_unit_run_tim_ent:
+    display: Iexpunitruntiment
+    type: decimal
+    required: false
+    description: Field IExpUnitRunTimEnt from WipSplitLabAll
+  i_time_taken_ent:
+    display: Itimetakenent
+    type: decimal
+    required: false
+    description: Field ITimeTakenEnt from WipSplitLabAll
+  qty_scrapped_ent:
+    display: Qtyscrappedent
+    type: decimal
+    required: false
+    description: Field QtyScrappedEnt from WipSplitLabAll
+  transfer_qty_pct_ent:
+    display: Transferqtypctent
+    type: decimal
+    required: false
+    description: Field TransferQtyPctEnt from WipSplitLabAll
+  parent_qty_plan_ent:
+    display: Parentqtyplanent
+    type: decimal
+    required: false
+    description: Field ParentQtyPlanEnt from WipSplitLabAll
+  oper_yield_qty_ent:
+    display: Operyieldqtyent
+    type: decimal
+    required: false
+    description: Field OperYieldQtyEnt from WipSplitLabAll
+  par_iss_qty_ent:
+    display: Parissqtyent
+    type: decimal
+    required: false
+    description: Field ParIssQtyEnt from WipSplitLabAll
+  resource_mask:
+    display: Resourcemask
+    type: string
+    required: false
+    description: Field ResourceMask from WipSplitLabAll
+  sch_start_run_date:
+    display: Schstartrundate
+    type: date
+    required: false
+    description: Field SchStartRunDate from WipSplitLabAll
+  sch_start_run_time:
+    display: Schstartruntime
+    type: decimal
+    required: false
+    description: Field SchStartRunTime from WipSplitLabAll
+  scheduled_machine:
+    display: Scheduledmachine
+    type: string
+    required: false
+    description: Field ScheduledMachine from WipSplitLabAll
+  schedule_status:
+    display: Schedulestatus
+    type: string
+    required: false
+    description: Field ScheduleStatus from WipSplitLabAll
+  op_split_flag:
+    display: Opsplitflag
+    type: string
+    required: false
+    description: Field OpSplitFlag from WipSplitLabAll
+  max_op_delay:
+    display: Maxopdelay
+    type: decimal
+    required: false
+    description: Field MaxOpDelay from WipSplitLabAll

@@ -1,0 +1,14 @@
+concept: prj_qot_mat_xref
+table: PrjQotMatXref
+alias: pqmx
+fields:
+  estimate: pqmx.Estimate
+  parent_part: pqmx.ParentPart
+  route: pqmx.Route
+  sequence_num: pqmx.SequenceNum
+  component: pqmx.Component
+  hierarchy_qot1: pqmx.HierarchyQot1
+  hierarchy_qot2: pqmx.HierarchyQot2
+  hierarchy_qot3: pqmx.HierarchyQot3
+  hierarchy_qot4: pqmx.HierarchyQot4
+  hierarchy_qot5: pqmx.HierarchyQot5

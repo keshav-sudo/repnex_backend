@@ -1,0 +1,18 @@
+concept: crm_category
+display_name: CrmCategory
+module: crm
+description: Auto-generated representation of the physical table CrmCategory.
+synonyms:
+- crmcategory
+- crm category
+header_attributes:
+  contact_category:
+    display: Contactcategory
+    type: string
+    required: false
+    description: Field ContactCategory from CrmCategory
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmCategory

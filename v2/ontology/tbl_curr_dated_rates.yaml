@@ -1,0 +1,63 @@
+concept: tbl_curr_dated_rates
+display_name: TblCurrDatedRates
+module: other
+description: Auto-generated representation of the physical table TblCurrDatedRates.
+synonyms:
+- tblcurrdatedrates
+- tbl curr dated rates
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from TblCurrDatedRates
+  currency_rate_type:
+    display: Currencyratetype
+    type: string
+    required: false
+    description: Field CurrencyRateType from TblCurrDatedRates
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from TblCurrDatedRates
+  effective_entry:
+    display: Effectiveentry
+    type: decimal
+    required: false
+    description: Field EffectiveEntry from TblCurrDatedRates
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from TblCurrDatedRates
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from TblCurrDatedRates
+  update_date:
+    display: Updatedate
+    type: date
+    required: false
+    description: Field UpdateDate from TblCurrDatedRates
+  update_time:
+    display: Updatetime
+    type: decimal
+    required: false
+    description: Field UpdateTime from TblCurrDatedRates
+  update_type:
+    display: Updatetype
+    type: string
+    required: false
+    description: Field UpdateType from TblCurrDatedRates
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from TblCurrDatedRates
+  reason_for_change:
+    display: Reasonforchange
+    type: string
+    required: false
+    description: Field ReasonForChange from TblCurrDatedRates

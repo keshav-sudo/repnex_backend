@@ -1,0 +1,73 @@
+concept: whm_pick_master
+display_name: WhmPickMaster
+module: other
+description: Auto-generated representation of the physical table WhmPickMaster.
+synonyms:
+- whmpickmaster
+- whm pick master
+header_attributes:
+  pick_number:
+    display: Picknumber
+    type: string
+    required: false
+    description: Field PickNumber from WhmPickMaster
+  pick_status:
+    display: Pickstatus
+    type: string
+    required: false
+    description: Field PickStatus from WhmPickMaster
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from WhmPickMaster
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from WhmPickMaster
+  comp_date:
+    display: Compdate
+    type: date
+    required: false
+    description: Field CompDate from WhmPickMaster
+  comp_time:
+    display: Comptime
+    type: decimal
+    required: false
+    description: Field CompTime from WhmPickMaster
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from WhmPickMaster
+  due_time:
+    display: Duetime
+    type: decimal
+    required: false
+    description: Field DueTime from WhmPickMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WhmPickMaster
+  pick_sequence:
+    display: Picksequence
+    type: string
+    required: false
+    description: Field PickSequence from WhmPickMaster
+  confirmed_date:
+    display: Confirmeddate
+    type: date
+    required: false
+    description: Field ConfirmedDate from WhmPickMaster
+  confirmed_time:
+    display: Confirmedtime
+    type: decimal
+    required: false
+    description: Field ConfirmedTime from WhmPickMaster
+  picked_for_wip:
+    display: Pickedforwip
+    type: string
+    required: false
+    description: Field PickedForWip from WhmPickMaster

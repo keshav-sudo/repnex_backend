@@ -1,0 +1,93 @@
+concept: cfg_option_comp
+display_name: CfgOptionComp
+module: other
+description: Auto-generated representation of the physical table CfgOptionComp.
+synonyms:
+- cfgoptioncomp
+- cfg option comp
+header_attributes:
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from CfgOptionComp
+  option_num:
+    display: Optionnum
+    type: decimal
+    required: false
+    description: Field OptionNum from CfgOptionComp
+  option_type:
+    display: Optiontype
+    type: string
+    required: false
+    description: Field OptionType from CfgOptionComp
+  option_description:
+    display: Optiondescription
+    type: string
+    required: false
+    description: Field OptionDescription from CfgOptionComp
+  min_num_components:
+    display: Minnumcomponents
+    type: decimal
+    required: false
+    description: Field MinNumComponents from CfgOptionComp
+  max_num_components:
+    display: Maxnumcomponents
+    type: decimal
+    required: false
+    description: Field MaxNumComponents from CfgOptionComp
+  min_tot_comp_qty:
+    display: Mintotcompqty
+    type: decimal
+    required: false
+    description: Field MinTotCompQty from CfgOptionComp
+  max_tot_comp_qty:
+    display: Maxtotcompqty
+    type: decimal
+    required: false
+    description: Field MaxTotCompQty from CfgOptionComp
+  qty_per_desc:
+    display: Qtyperdesc
+    type: string
+    required: false
+    description: Field QtyPerDesc from CfgOptionComp
+  min_num_operations:
+    display: Minnumoperations
+    type: decimal
+    required: false
+    description: Field MinNumOperations from CfgOptionComp
+  max_num_operations:
+    display: Maxnumoperations
+    type: decimal
+    required: false
+    description: Field MaxNumOperations from CfgOptionComp
+  min_time:
+    display: Mintime
+    type: decimal
+    required: false
+    description: Field MinTime from CfgOptionComp
+  max_time:
+    display: Maxtime
+    type: decimal
+    required: false
+    description: Field MaxTime from CfgOptionComp
+  ranges_maint_flag:
+    display: Rangesmaintflag
+    type: string
+    required: false
+    description: Field RangesMaintFlag from CfgOptionComp
+  offset_type:
+    display: Offsettype
+    type: string
+    required: false
+    description: Field OffsetType from CfgOptionComp
+  offset_days_op:
+    display: Offsetdaysop
+    type: decimal
+    required: false
+    description: Field OffsetDaysOp from CfgOptionComp
+  op_oper:
+    display: Opoper
+    type: decimal
+    required: false
+    description: Field OpOper from CfgOptionComp

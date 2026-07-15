@@ -1,0 +1,153 @@
+concept: por_ec_receipts
+display_name: PorEcReceipts
+module: procurement
+description: Auto-generated representation of the physical table PorEcReceipts.
+synonyms:
+- porecreceipts
+- por ec receipts
+header_attributes:
+  tariff_code:
+    display: Tariffcode
+    type: string
+    required: false
+    description: Field TariffCode from PorEcReceipts
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from PorEcReceipts
+  inventory_journal:
+    display: Inventoryjournal
+    type: decimal
+    required: false
+    description: Field InventoryJournal from PorEcReceipts
+  journal_entry:
+    display: Journalentry
+    type: decimal
+    required: false
+    description: Field JournalEntry from PorEcReceipts
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from PorEcReceipts
+  net_mass:
+    display: Netmass
+    type: decimal
+    required: false
+    description: Field NetMass from PorEcReceipts
+  supplementary_unit:
+    display: Supplementaryunit
+    type: string
+    required: false
+    description: Field SupplementaryUnit from PorEcReceipts
+  mode_of_transport:
+    display: Modeoftransport
+    type: decimal
+    required: false
+    description: Field ModeOfTransport from PorEcReceipts
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from PorEcReceipts
+  trn_nature:
+    display: Trnnature
+    type: decimal
+    required: false
+    description: Field TrnNature from PorEcReceipts
+  dispatch_national:
+    display: Dispatchnational
+    type: string
+    required: false
+    description: Field DispatchNational from PorEcReceipts
+  traders_reference:
+    display: Tradersreference
+    type: string
+    required: false
+    description: Field TradersReference from PorEcReceipts
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from PorEcReceipts
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from PorEcReceipts
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from PorEcReceipts
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from PorEcReceipts
+  arrival_nationality:
+    display: Arrivalnationality
+    type: string
+    required: false
+    description: Field ArrivalNationality from PorEcReceipts
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from PorEcReceipts
+  suppl_unit_code:
+    display: Supplunitcode
+    type: string
+    required: false
+    description: Field SupplUnitCode from PorEcReceipts
+  suppl_unit_qty:
+    display: Supplunitqty
+    type: decimal
+    required: false
+    description: Field SupplUnitQty from PorEcReceipts
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from PorEcReceipts
+  triangulation_role:
+    display: Triangulationrole
+    type: string
+    required: false
+    description: Field TriangulationRole from PorEcReceipts
+  orig_country:
+    display: Origcountry
+    type: string
+    required: false
+    description: Field OrigCountry from PorEcReceipts
+  inv_value:
+    display: Invvalue
+    type: decimal
+    required: false
+    description: Field InvValue from PorEcReceipts
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from PorEcReceipts
+  sup_conv_mul_div:
+    display: Supconvmuldiv
+    type: string
+    required: false
+    description: Field SupConvMulDiv from PorEcReceipts
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from PorEcReceipts
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from PorEcReceipts
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from PorEcReceipts

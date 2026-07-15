@@ -1,0 +1,18 @@
+concept: tbl_cur_hist
+table: TblCurHist
+alias: tch
+fields:
+  currency: tch.Currency
+  effective_date: tch.EffectiveDate
+  buy_exchange_rate: tch.BuyExchangeRate
+  buy_mul_div: tch.BuyMulDiv
+  buy_ec_decl_rate: tch.BuyEcDeclRate
+  buy_ec_decl_fact: tch.BuyEcDeclFact
+  sell_exchange_rate: tch.SellExchangeRate
+  sell_mul_div: tch.SellMulDiv
+  sell_ec_decl_rate: tch.SellEcDeclRate
+  sell_ec_decl_fact: tch.SellEcDeclFact
+  triang_reqd: tch.TriangReqd
+  intermediate_cur: tch.IntermediateCur
+  fixed_rate: tch.FixedRate
+  tolerance: tch.Tolerance

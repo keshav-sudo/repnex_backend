@@ -1,0 +1,10 @@
+concept: wip_arc_co_prd_mat_cst
+table: WipArcCoPrdMatCst
+alias: wacpmc
+fields:
+  job: wacpmc.Job
+  co_product_line: wacpmc.CoProductLine
+  stock_code: wacpmc.StockCode
+  warehouse: wacpmc.Warehouse
+  line: wacpmc.Line
+  pct_material_cost: wacpmc.PctMaterialCost

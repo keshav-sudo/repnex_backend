@@ -1,0 +1,43 @@
+concept: wpos_inv_master_barcode
+display_name: WposInvMasterBarcode
+module: other
+description: Auto-generated representation of the physical table WposInvMasterBarcode.
+synonyms:
+- wposinvmasterbarcode
+- wpos inv master barcode
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WposInvMasterBarcode
+  bar_code:
+    display: Barcode
+    type: string
+    required: false
+    description: Field BarCode from WposInvMasterBarcode
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WposInvMasterBarcode
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from WposInvMasterBarcode
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WposInvMasterBarcode
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WposInvMasterBarcode
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from WposInvMasterBarcode

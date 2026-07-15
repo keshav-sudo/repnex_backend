@@ -1,0 +1,7 @@
+concept: bom_narration
+table: BomNarration
+alias: bn
+fields:
+  narration_num: bn.NarrationNum
+  line: bn.Line
+  narration: bn.Narration

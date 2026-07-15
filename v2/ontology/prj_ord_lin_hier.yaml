@@ -1,0 +1,93 @@
+concept: prj_ord_lin_hier
+display_name: PrjOrdLinHier
+module: other
+description: Auto-generated representation of the physical table PrjOrdLinHier.
+synonyms:
+- prjordlinhier
+- prj ord lin hier
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from PrjOrdLinHier
+  hier_head:
+    display: Hierhead
+    type: string
+    required: false
+    description: Field HierHead from PrjOrdLinHier
+  section1:
+    display: Section1
+    type: string
+    required: false
+    description: Field Section1 from PrjOrdLinHier
+  section2:
+    display: Section2
+    type: string
+    required: false
+    description: Field Section2 from PrjOrdLinHier
+  section3:
+    display: Section3
+    type: string
+    required: false
+    description: Field Section3 from PrjOrdLinHier
+  section4:
+    display: Section4
+    type: string
+    required: false
+    description: Field Section4 from PrjOrdLinHier
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from PrjOrdLinHier
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from PrjOrdLinHier
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from PrjOrdLinHier
+  entry:
+    display: Entry
+    type: decimal
+    required: false
+    description: Field Entry from PrjOrdLinHier
+  post_date:
+    display: Postdate
+    type: date
+    required: false
+    description: Field PostDate from PrjOrdLinHier
+  val_orig_value:
+    display: Valorigvalue
+    type: decimal
+    required: false
+    description: Field ValOrigValue from PrjOrdLinHier
+  ptd_adjust_val:
+    display: Ptdadjustval
+    type: decimal
+    required: false
+    description: Field PtdAdjustVal from PrjOrdLinHier
+  ytd_adjust_val:
+    display: Ytdadjustval
+    type: decimal
+    required: false
+    description: Field YtdAdjustVal from PrjOrdLinHier
+  pyr_adjust_val:
+    display: Pyradjustval
+    type: decimal
+    required: false
+    description: Field PyrAdjustVal from PrjOrdLinHier
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from PrjOrdLinHier
+  line_ship_date:
+    display: Lineshipdate
+    type: date
+    required: false
+    description: Field LineShipDate from PrjOrdLinHier

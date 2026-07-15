@@ -1,0 +1,15 @@
+concept: gen_dimension_def
+table: GenDimensionDef
+alias: gdd
+fields:
+  company: gdd.Company
+  dimension_category: gdd.DimensionCategory
+  default_code: gdd.DefaultCode
+  table_name: gdd.TableName
+  dimension_code: gdd.DimensionCode
+  default_caption: gdd.DefaultCaption
+  posting_rule: gdd.PostingRule
+  entity_key1: gdd.EntityKey1
+  entity_key2: gdd.EntityKey2
+  entity_key3: gdd.EntityKey3
+  entity_key4: gdd.EntityKey4

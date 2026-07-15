@@ -1,0 +1,21 @@
+concept: wip_lab_bal
+table: WipLabBal
+alias: wlb
+fields:
+  run_date_time: wlb.RunDateTime
+  job: wlb.Job
+  operation: wlb.Operation
+  cur_startup_hours: wlb.CurStartupHours
+  clc_startup_hours: wlb.ClcStartupHours
+  cur_set_up_hours: wlb.CurSetUpHours
+  clc_set_up_hours: wlb.ClcSetUpHours
+  cur_run_time_hours: wlb.CurRunTimeHours
+  clc_run_time_hours: wlb.ClcRunTimeHours
+  cur_teardown_hours: wlb.CurTeardownHours
+  clc_teardown_hours: wlb.ClcTeardownHours
+  cur_trn_value: wlb.CurTrnValue
+  clc_trn_value: wlb.ClcTrnValue
+  cur_wc_rate_ind: wlb.CurWcRateInd
+  clc_wc_rate_ind: wlb.ClcWcRateInd
+  cur_capacity_issued: wlb.CurCapacityIssued
+  clc_capacity_issued: wlb.ClcCapacityIssued

@@ -1,0 +1,53 @@
+concept: iop_col_draft
+display_name: IopColDraft
+module: other
+description: Auto-generated representation of the physical table IopColDraft.
+synonyms:
+- iopcoldraft
+- iop col draft
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopColDraft
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopColDraft
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from IopColDraft
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from IopColDraft
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopColDraft
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopColDraft
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopColDraft
+  forecast_batch:
+    display: Forecastbatch
+    type: string
+    required: false
+    description: Field ForecastBatch from IopColDraft
+  freeze:
+    display: Freeze
+    type: string
+    required: false
+    description: Field Freeze from IopColDraft

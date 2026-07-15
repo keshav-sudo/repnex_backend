@@ -1,0 +1,16 @@
+concept: adm_b2_b_failed
+table: AdmB2BFailed
+alias: abbf
+fields:
+  business_object: abbf.BusinessObject
+  document_type: abbf.DocumentType
+  document_date: abbf.DocumentDate
+  document_time: abbf.DocumentTime
+  xml_fail_filename: abbf.XmlFailFilename
+  original_doc: abbf.OriginalDoc
+  contract: abbf.Contract
+  msg_id: abbf.MsgId
+  actioned_flag: abbf.ActionedFlag
+  actioned_by: abbf.ActionedBy
+  actioned_date: abbf.ActionedDate
+  operator: abbf.Operator

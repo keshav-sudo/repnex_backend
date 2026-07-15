@@ -1,0 +1,14 @@
+concept: req_header
+table: ReqHeader
+alias: rh
+fields:
+  requisition: rh.Requisition
+  reqn_status: rh.ReqnStatus
+  reqn_on_hold_flag: rh.ReqnOnHoldFlag
+  reqn_complete_flag: rh.ReqnCompleteFlag
+  reqn_next_line: rh.ReqnNextLine
+  document_format: rh.DocumentFormat
+  originator: rh.Originator
+  date_reqn_raised: rh.DateReqnRaised
+  reqn_value: rh.ReqnValue
+  approved_value: rh.ApprovedValue

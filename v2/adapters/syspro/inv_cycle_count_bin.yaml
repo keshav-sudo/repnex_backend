@@ -1,0 +1,17 @@
+concept: inv_cycle_count_bin
+table: InvCycleCountBin
+alias: iccb
+fields:
+  cycle_count: iccb.CycleCount
+  warehouse: iccb.Warehouse
+  stock_code: iccb.StockCode
+  bin: iccb.Bin
+  orig_qty_on_hand: iccb.OrigQtyOnHand
+  qty_captured: iccb.QtyCaptured
+  capture_date: iccb.CaptureDate
+  uom: iccb.Uom
+  reference: iccb.Reference
+  decimals: iccb.Decimals
+  created_bin_flag: iccb.CreatedBinFlag
+  fifo_bucket: iccb.FifoBucket
+  confirmed_flag: iccb.ConfirmedFlag

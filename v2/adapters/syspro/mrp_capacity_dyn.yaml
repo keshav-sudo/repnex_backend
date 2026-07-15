@@ -1,0 +1,13 @@
+concept: mrp_capacity_dyn
+table: MrpCapacityDyn
+alias: mcd
+fields:
+  work_centre: mcd.WorkCentre
+  profile_date: mcd.ProfileDate
+  source: mcd.Source
+  job: mcd.Job
+  operation: mcd.Operation
+  planned_capacity: mcd.PlannedCapacity
+  actual_capacity: mcd.ActualCapacity
+  complete: mcd.Complete
+  trial_load_flag: mcd.TrialLoadFlag

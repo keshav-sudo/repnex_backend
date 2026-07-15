@@ -1,0 +1,68 @@
+concept: asset_capex_amd_jnl
+display_name: AssetCapexAmdJnl
+module: assets
+description: Auto-generated representation of the physical table AssetCapexAmdJnl.
+synonyms:
+- assetcapexamdjnl
+- asset capex amd jnl
+header_attributes:
+  capex_file_name:
+    display: Capexfilename
+    type: string
+    required: false
+    description: Field CapexFileName from AssetCapexAmdJnl
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from AssetCapexAmdJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from AssetCapexAmdJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from AssetCapexAmdJnl
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from AssetCapexAmdJnl
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from AssetCapexAmdJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from AssetCapexAmdJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from AssetCapexAmdJnl
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from AssetCapexAmdJnl
+  before:
+    display: Before
+    type: string
+    required: false
+    description: Field Before from AssetCapexAmdJnl
+  after:
+    display: After
+    type: string
+    required: false
+    description: Field After from AssetCapexAmdJnl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AssetCapexAmdJnl

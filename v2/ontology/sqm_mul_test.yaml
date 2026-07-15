@@ -1,0 +1,163 @@
+concept: sqm_mul_test
+display_name: SqmMulTest
+module: other
+description: Auto-generated representation of the physical table SqmMulTest.
+synonyms:
+- sqmmultest
+- sqm mul test
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmMulTest
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmMulTest
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmMulTest
+  sample_number:
+    display: Samplenumber
+    type: decimal
+    required: false
+    description: Field SampleNumber from SqmMulTest
+  plan_type:
+    display: Plantype
+    type: string
+    required: false
+    description: Field PlanType from SqmMulTest
+  inspect_level:
+    display: Inspectlevel
+    type: string
+    required: false
+    description: Field InspectLevel from SqmMulTest
+  sample_completed:
+    display: Samplecompleted
+    type: string
+    required: false
+    description: Field SampleCompleted from SqmMulTest
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from SqmMulTest
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from SqmMulTest
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from SqmMulTest
+  end_time:
+    display: Endtime
+    type: decimal
+    required: false
+    description: Field EndTime from SqmMulTest
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from SqmMulTest
+  qty_sample:
+    display: Qtysample
+    type: decimal
+    required: false
+    description: Field QtySample from SqmMulTest
+  critical_req:
+    display: Criticalreq
+    type: string
+    required: false
+    description: Field CriticalReq from SqmMulTest
+  critical_all_acc:
+    display: Criticalallacc
+    type: string
+    required: false
+    description: Field CriticalAllAcc from SqmMulTest
+  critical_accept_num:
+    display: Criticalacceptnum
+    type: decimal
+    required: false
+    description: Field CriticalAcceptNum from SqmMulTest
+  critical_reject_num:
+    display: Criticalrejectnum
+    type: decimal
+    required: false
+    description: Field CriticalRejectNum from SqmMulTest
+  qty_critical_fail:
+    display: Qtycriticalfail
+    type: decimal
+    required: false
+    description: Field QtyCriticalFail from SqmMulTest
+  qty_critical_pass:
+    display: Qtycriticalpass
+    type: decimal
+    required: false
+    description: Field QtyCriticalPass from SqmMulTest
+  major_req:
+    display: Majorreq
+    type: string
+    required: false
+    description: Field MajorReq from SqmMulTest
+  major_all_acc:
+    display: Majorallacc
+    type: string
+    required: false
+    description: Field MajorAllAcc from SqmMulTest
+  major_accept_num:
+    display: Majoracceptnum
+    type: decimal
+    required: false
+    description: Field MajorAcceptNum from SqmMulTest
+  major_reject_num:
+    display: Majorrejectnum
+    type: decimal
+    required: false
+    description: Field MajorRejectNum from SqmMulTest
+  qty_major_fail:
+    display: Qtymajorfail
+    type: decimal
+    required: false
+    description: Field QtyMajorFail from SqmMulTest
+  qty_major_pass:
+    display: Qtymajorpass
+    type: decimal
+    required: false
+    description: Field QtyMajorPass from SqmMulTest
+  minor_req:
+    display: Minorreq
+    type: string
+    required: false
+    description: Field MinorReq from SqmMulTest
+  minor_all_acc:
+    display: Minorallacc
+    type: string
+    required: false
+    description: Field MinorAllAcc from SqmMulTest
+  minor_accept_num:
+    display: Minoracceptnum
+    type: decimal
+    required: false
+    description: Field MinorAcceptNum from SqmMulTest
+  minor_reject_num:
+    display: Minorrejectnum
+    type: decimal
+    required: false
+    description: Field MinorRejectNum from SqmMulTest
+  qty_minor_fail:
+    display: Qtyminorfail
+    type: decimal
+    required: false
+    description: Field QtyMinorFail from SqmMulTest
+  qty_minor_pass:
+    display: Qtyminorpass
+    type: decimal
+    required: false
+    description: Field QtyMinorPass from SqmMulTest

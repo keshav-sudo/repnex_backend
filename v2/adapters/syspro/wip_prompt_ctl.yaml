@@ -1,0 +1,11 @@
+concept: wip_prompt_ctl
+table: WipPromptCtl
+alias: wpc
+fields:
+  format_code: wpc.FormatCode
+  prompt_req_mode: wpc.PromptReqMode
+  description: wpc.Description
+  suppress_time: wpc.SuppressTime
+  update_qty_scrap: wpc.UpdateQtyScrap
+  auto_receipt: wpc.AutoReceipt
+  auto_part_bill: wpc.AutoPartBill

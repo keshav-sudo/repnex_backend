@@ -1,0 +1,33 @@
+concept: por_ec_receipts
+table: PorEcReceipts
+alias: per
+fields:
+  tariff_code: per.TariffCode
+  trn_year: per.TrnYear
+  inventory_journal: per.InventoryJournal
+  journal_entry: per.JournalEntry
+  trn_value: per.TrnValue
+  net_mass: per.NetMass
+  supplementary_unit: per.SupplementaryUnit
+  mode_of_transport: per.ModeOfTransport
+  delivery_terms: per.DeliveryTerms
+  trn_nature: per.TrnNature
+  dispatch_national: per.DispatchNational
+  traders_reference: per.TradersReference
+  trn_date: per.TrnDate
+  printed_flag: per.PrintedFlag
+  grn: per.Grn
+  currency: per.Currency
+  arrival_nationality: per.ArrivalNationality
+  trn_month: per.TrnMonth
+  suppl_unit_code: per.SupplUnitCode
+  suppl_unit_qty: per.SupplUnitQty
+  shipping_location: per.ShippingLocation
+  triangulation_role: per.TriangulationRole
+  orig_country: per.OrigCountry
+  inv_value: per.InvValue
+  trn_type: per.TrnType
+  sup_conv_mul_div: per.SupConvMulDiv
+  source_warehouse: per.SourceWarehouse
+  target_warehouse: per.TargetWarehouse
+  supplier: per.Supplier

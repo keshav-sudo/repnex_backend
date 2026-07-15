@@ -1,0 +1,10 @@
+concept: adm_form_data
+table: AdmFormData
+alias: afd
+fields:
+  form_type: afd.FormType
+  key_field: afd.KeyField
+  field_name: afd.FieldName
+  alpha_value: afd.AlphaValue
+  numeric_value: afd.NumericValue
+  date_value: afd.DateValue

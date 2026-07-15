@@ -1,0 +1,21 @@
+concept: lynq_me__statistics_storage_accumulator__temp_ins
+table: Lynq_ME_StatisticsStorageAccumulator_TempIns
+alias: lmessati
+fields:
+  id: lmessati.ID
+  pack_key: lmessati.PackKey
+  pack_id: lmessati.PackID
+  ins_id: lmessati.InsID
+  key_id: lmessati.KeyID
+  nl0: lmessati.NL0
+  nl1: lmessati.NL1
+  nl2: lmessati.NL2
+  nl3: lmessati.NL3
+  nd0: lmessati.ND0
+  nd1: lmessati.ND1
+  nd2: lmessati.ND2
+  nd3: lmessati.ND3
+  nd4: lmessati.ND4
+  nd5: lmessati.ND5
+  nd6: lmessati.ND6
+  nd7: lmessati.ND7

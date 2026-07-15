@@ -1,0 +1,31 @@
+concept: wip_distr_mat
+table: WipDistrMat
+alias: wdm
+fields:
+  gl_year: wdm.GlYear
+  gl_period: wdm.GlPeriod
+  gl_code: wdm.GlCode
+  journal: wdm.Journal
+  entry_number: wdm.EntryNumber
+  status: wdm.Status
+  job: wdm.Job
+  stock_code: wdm.StockCode
+  trn_date: wdm.TrnDate
+  distribution_value: wdm.DistributionValue
+  wip_ctl_gl_code: wdm.WipCtlGlCode
+  gl_entries_group: wdm.GlEntriesGroup
+  part_bill_zoom_key: wdm.PartBillZoomKey
+  sales_order: wdm.SalesOrder
+  co_product_line: wdm.CoProductLine
+  analysis_entry: wdm.AnalysisEntry
+  gl_int_updated: wdm.GlIntUpdated
+  gl_int_printed: wdm.GlIntPrinted
+  gl_int_year: wdm.GlIntYear
+  gl_int_period: wdm.GlIntPeriod
+  gl_journal: wdm.GlJournal
+  gl_int_level: wdm.GlIntLevel
+  wip_branch: wdm.WipBranch
+  dimension_entry: wdm.DimensionEntry
+  dimension_line: wdm.DimensionLine
+  service_gl_desc: wdm.ServiceGlDesc
+  equipment_code: wdm.EquipmentCode

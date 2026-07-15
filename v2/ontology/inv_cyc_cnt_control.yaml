@@ -1,0 +1,18 @@
+concept: inv_cyc_cnt_control
+display_name: InvCycCntControl
+module: inventory
+description: Auto-generated representation of the physical table InvCycCntControl.
+synonyms:
+- invcyccntcontrol
+- inv cyc cnt control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from InvCycCntControl
+  next_cycle_count_num:
+    display: Nextcyclecountnum
+    type: decimal
+    required: false
+    description: Field NextCycleCountNum from InvCycCntControl

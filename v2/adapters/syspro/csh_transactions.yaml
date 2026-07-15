@@ -1,0 +1,53 @@
+concept: csh_transactions
+table: CshTransactions
+alias: ct3
+fields:
+  bank: ct3.Bank
+  cb_trn_year: ct3.CbTrnYear
+  cb_trn_month: ct3.CbTrnMonth
+  cb_trn_date: ct3.CbTrnDate
+  cb_trn_time: ct3.CbTrnTime
+  trn_type: ct3.TrnType
+  trn_reference: ct3.TrnReference
+  trn_value: ct3.TrnValue
+  trn_date: ct3.TrnDate
+  narration: ct3.Narration
+  reconciled_flag: ct3.ReconciledFlag
+  reconciled_year: ct3.ReconciledYear
+  reconciled_month: ct3.ReconciledMonth
+  cheque: ct3.Cheque
+  cheque_type: ct3.ChequeType
+  next_gl_entry: ct3.NextGlEntry
+  void_flag: ct3.VoidFlag
+  bank_currency: ct3.BankCurrency
+  currency_value: ct3.CurrencyValue
+  post_currency: ct3.PostCurrency
+  conv_rate: ct3.ConvRate
+  mul_div: ct3.MulDiv
+  account_cur: ct3.AccountCur
+  acc_conv_rate: ct3.AccConvRate
+  acc_mul_div: ct3.AccMulDiv
+  triang_currency: ct3.TriangCurrency
+  triang_rate: ct3.TriangRate
+  triang_mul_div: ct3.TriangMulDiv
+  l_currency_value: ct3.LCurrencyValue
+  l_post_currency: ct3.LPostCurrency
+  l_conv_rate: ct3.LConvRate
+  l_mul_div: ct3.LMulDiv
+  l_account_cur: ct3.LAccountCur
+  l_acc_conv_rate: ct3.LAccConvRate
+  l_acc_mul_div: ct3.LAccMulDiv
+  l_triang_currency: ct3.LTriangCurrency
+  l_triang_rate: ct3.LTriangRate
+  l_triang_mul_div: ct3.LTriangMulDiv
+  trn_source: ct3.TrnSource
+  journal: ct3.Journal
+  eft_indicator: ct3.EftIndicator
+  supplier: ct3.Supplier
+  eft_batch: ct3.EftBatch
+  reconciled_date: ct3.ReconciledDate
+  payment_number: ct3.PaymentNumber
+  payment_reference: ct3.PaymentReference
+  mult_cur_pay: ct3.MultCurPay
+  group_pay: ct3.GroupPay
+  group_inter_company: ct3.GroupInterCompany

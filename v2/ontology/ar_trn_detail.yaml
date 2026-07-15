@@ -1,0 +1,453 @@
+concept: ar_trn_detail
+display_name: ArTrnDetail
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArTrnDetail.
+synonyms:
+- artrndetail
+- ar trn detail
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArTrnDetail
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArTrnDetail
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from ArTrnDetail
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArTrnDetail
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from ArTrnDetail
+  detail_line:
+    display: Detailline
+    type: decimal
+    required: false
+    description: Field DetailLine from ArTrnDetail
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ArTrnDetail
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArTrnDetail
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArTrnDetail
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArTrnDetail
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from ArTrnDetail
+  inter_branch_trf:
+    display: Interbranchtrf
+    type: string
+    required: false
+    description: Field InterBranchTrf from ArTrnDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ArTrnDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from ArTrnDetail
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArTrnDetail
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from ArTrnDetail
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from ArTrnDetail
+  tax_status:
+    display: Taxstatus
+    type: string
+    required: false
+    description: Field TaxStatus from ArTrnDetail
+  history_reqd:
+    display: Historyreqd
+    type: string
+    required: false
+    description: Field HistoryReqd from ArTrnDetail
+  customer_class:
+    display: Customerclass
+    type: string
+    required: false
+    description: Field CustomerClass from ArTrnDetail
+  qty_invoiced:
+    display: Qtyinvoiced
+    type: decimal
+    required: false
+    description: Field QtyInvoiced from ArTrnDetail
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from ArTrnDetail
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from ArTrnDetail
+  net_sales_value:
+    display: Netsalesvalue
+    type: decimal
+    required: false
+    description: Field NetSalesValue from ArTrnDetail
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from ArTrnDetail
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from ArTrnDetail
+  disc_value:
+    display: Discvalue
+    type: decimal
+    required: false
+    description: Field DiscValue from ArTrnDetail
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from ArTrnDetail
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from ArTrnDetail
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArTrnDetail
+  product_class_upd:
+    display: Productclassupd
+    type: string
+    required: false
+    description: Field ProductClassUpd from ArTrnDetail
+  gl_distr_upd:
+    display: Gldistrupd
+    type: string
+    required: false
+    description: Field GlDistrUpd from ArTrnDetail
+  salesperson_upd:
+    display: Salespersonupd
+    type: string
+    required: false
+    description: Field SalespersonUpd from ArTrnDetail
+  sales_gl_int_reqd:
+    display: Salesglintreqd
+    type: string
+    required: false
+    description: Field SalesGlIntReqd from ArTrnDetail
+  stock_upd:
+    display: Stockupd
+    type: string
+    required: false
+    description: Field StockUpd from ArTrnDetail
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from ArTrnDetail
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from ArTrnDetail
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from ArTrnDetail
+  sales_turn_o_prted:
+    display: Salesturnoprted
+    type: string
+    required: false
+    description: Field SalesTurnOPrted from ArTrnDetail
+  tax_code_fst:
+    display: Taxcodefst
+    type: string
+    required: false
+    description: Field TaxCodeFst from ArTrnDetail
+  tax_value_fst:
+    display: Taxvaluefst
+    type: decimal
+    required: false
+    description: Field TaxValueFst from ArTrnDetail
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from ArTrnDetail
+  contract_prc_num:
+    display: Contractprcnum
+    type: string
+    required: false
+    description: Field ContractPrcNum from ArTrnDetail
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from ArTrnDetail
+  line_invoice_disc:
+    display: Lineinvoicedisc
+    type: decimal
+    required: false
+    description: Field LineInvoiceDisc from ArTrnDetail
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from ArTrnDetail
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from ArTrnDetail
+  taxable_value:
+    display: Taxablevalue
+    type: decimal
+    required: false
+    description: Field TaxableValue from ArTrnDetail
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from ArTrnDetail
+  abc_upd:
+    display: Abcupd
+    type: string
+    required: false
+    description: Field AbcUpd from ArTrnDetail
+  buying_group:
+    display: Buyinggroup
+    type: string
+    required: false
+    description: Field BuyingGroup from ArTrnDetail
+  post_value:
+    display: Postvalue
+    type: decimal
+    required: false
+    description: Field PostValue from ArTrnDetail
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ArTrnDetail
+  post_conv_rate:
+    display: Postconvrate
+    type: decimal
+    required: false
+    description: Field PostConvRate from ArTrnDetail
+  post_mul_div:
+    display: Postmuldiv
+    type: string
+    required: false
+    description: Field PostMulDiv from ArTrnDetail
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ArTrnDetail
+  account_conv_rate:
+    display: Accountconvrate
+    type: decimal
+    required: false
+    description: Field AccountConvRate from ArTrnDetail
+  account_mul_div:
+    display: Accountmuldiv
+    type: string
+    required: false
+    description: Field AccountMulDiv from ArTrnDetail
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ArTrnDetail
+  triang_conv_rate:
+    display: Triangconvrate
+    type: decimal
+    required: false
+    description: Field TriangConvRate from ArTrnDetail
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ArTrnDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from ArTrnDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from ArTrnDetail
+  eec_invoice_flag:
+    display: Eecinvoiceflag
+    type: string
+    required: false
+    description: Field EecInvoiceFlag from ArTrnDetail
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ArTrnDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from ArTrnDetail
+  transaction_gl_code:
+    display: Transactionglcode
+    type: string
+    required: false
+    description: Field TransactionGlCode from ArTrnDetail
+  discount_gl_code:
+    display: Discountglcode
+    type: string
+    required: false
+    description: Field DiscountGlCode from ArTrnDetail
+  cost_gl_code:
+    display: Costglcode
+    type: string
+    required: false
+    description: Field CostGlCode from ArTrnDetail
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from ArTrnDetail
+  gl_int_printed:
+    display: Glintprinted
+    type: string
+    required: false
+    description: Field GlIntPrinted from ArTrnDetail
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from ArTrnDetail
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from ArTrnDetail
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from ArTrnDetail
+  control_type:
+    display: Controltype
+    type: string
+    required: false
+    description: Field ControlType from ArTrnDetail
+  tran_analysis_entry:
+    display: Trananalysisentry
+    type: decimal
+    required: false
+    description: Field TranAnalysisEntry from ArTrnDetail
+  dsc_analysis_entry:
+    display: Dscanalysisentry
+    type: decimal
+    required: false
+    description: Field DscAnalysisEntry from ArTrnDetail
+  cst_analysis_entry:
+    display: Cstanalysisentry
+    type: decimal
+    required: false
+    description: Field CstAnalysisEntry from ArTrnDetail
+  warehouse_account:
+    display: Warehouseaccount
+    type: string
+    required: false
+    description: Field WarehouseAccount from ArTrnDetail
+  wh_analysis_entry:
+    display: Whanalysisentry
+    type: decimal
+    required: false
+    description: Field WhAnalysisEntry from ArTrnDetail
+  warehouse_amount:
+    display: Warehouseamount
+    type: decimal
+    required: false
+    description: Field WarehouseAmount from ArTrnDetail
+  tax_account:
+    display: Taxaccount
+    type: string
+    required: false
+    description: Field TaxAccount from ArTrnDetail
+  gl_int_level:
+    display: Glintlevel
+    type: string
+    required: false
+    description: Field GlIntLevel from ArTrnDetail
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from ArTrnDetail
+  price_group_rule:
+    display: Pricegrouprule
+    type: decimal
+    required: false
+    description: Field PriceGroupRule from ArTrnDetail
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from ArTrnDetail
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from ArTrnDetail
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from ArTrnDetail
+  cat_line_number:
+    display: Catlinenumber
+    type: decimal
+    required: false
+    description: Field CatLineNumber from ArTrnDetail

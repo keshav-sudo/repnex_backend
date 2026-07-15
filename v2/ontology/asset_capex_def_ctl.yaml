@@ -1,0 +1,28 @@
+concept: asset_capex_def_ctl
+display_name: AssetCapexDefCtl
+module: assets
+description: Auto-generated representation of the physical table AssetCapexDefCtl.
+synonyms:
+- assetcapexdefctl
+- asset capex def ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from AssetCapexDefCtl
+  branch_reqd:
+    display: Branchreqd
+    type: string
+    required: false
+    description: Field BranchReqd from AssetCapexDefCtl
+  cost_center_reqd:
+    display: Costcenterreqd
+    type: string
+    required: false
+    description: Field CostCenterReqd from AssetCapexDefCtl
+  group_code_reqd:
+    display: Groupcodereqd
+    type: string
+    required: false
+    description: Field GroupCodeReqd from AssetCapexDefCtl

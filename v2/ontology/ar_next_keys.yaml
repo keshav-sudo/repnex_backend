@@ -1,0 +1,18 @@
+concept: ar_next_keys
+display_name: ArNextKeys
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArNextKeys.
+synonyms:
+- arnextkeys
+- ar next keys
+header_attributes:
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from ArNextKeys
+  key_next:
+    display: Keynext
+    type: decimal
+    required: false
+    description: Field KeyNext from ArNextKeys

@@ -1,0 +1,53 @@
+concept: inv_price_history
+display_name: InvPriceHistory
+module: inventory
+description: Auto-generated representation of the physical table InvPriceHistory.
+synonyms:
+- invpricehistory
+- inv price history
+header_attributes:
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from InvPriceHistory
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvPriceHistory
+  date_changed:
+    display: Datechanged
+    type: date
+    required: false
+    description: Field DateChanged from InvPriceHistory
+  time_changed:
+    display: Timechanged
+    type: decimal
+    required: false
+    description: Field TimeChanged from InvPriceHistory
+  new_selling_price:
+    display: Newsellingprice
+    type: decimal
+    required: false
+    description: Field NewSellingPrice from InvPriceHistory
+  old_selling_price:
+    display: Oldsellingprice
+    type: decimal
+    required: false
+    description: Field OldSellingPrice from InvPriceHistory
+  new_price_basis:
+    display: Newpricebasis
+    type: string
+    required: false
+    description: Field NewPriceBasis from InvPriceHistory
+  old_price_basis:
+    display: Oldpricebasis
+    type: string
+    required: false
+    description: Field OldPriceBasis from InvPriceHistory
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from InvPriceHistory

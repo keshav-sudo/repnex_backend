@@ -1,0 +1,19 @@
+concept: inv_on_hand_bal_fix
+table: InvOnHandBalFix
+alias: iohbf
+fields:
+  run_date: iohbf.RunDate
+  stock_code: iohbf.StockCode
+  warehouse: iohbf.Warehouse
+  line: iohbf.Line
+  old_quantity: iohbf.OldQuantity
+  new_quantity: iohbf.NewQuantity
+  old_cost: iohbf.OldCost
+  new_cost: iohbf.NewCost
+  correction_type: iohbf.CorrectionType
+  message: iohbf.Message
+  message_number: iohbf.MessageNumber
+  jnl_year: iohbf.JnlYear
+  jnl_month: iohbf.JnlMonth
+  journal: iohbf.Journal
+  entry_number: iohbf.EntryNumber

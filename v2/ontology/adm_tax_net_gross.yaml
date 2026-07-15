@@ -1,0 +1,18 @@
+concept: adm_tax_net_gross
+display_name: AdmTaxNetGross
+module: administration
+description: Auto-generated representation of the physical table AdmTaxNetGross.
+synonyms:
+- admtaxnetgross
+- adm tax net gross
+header_attributes:
+  state_code:
+    display: Statecode
+    type: string
+    required: false
+    description: Field StateCode from AdmTaxNetGross
+  tax_base_ind:
+    display: Taxbaseind
+    type: string
+    required: false
+    description: Field TaxBaseInd from AdmTaxNetGross

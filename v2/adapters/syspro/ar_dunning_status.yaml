@@ -1,0 +1,13 @@
+concept: ar_dunning_status
+table: ArDunningStatus
+alias: ads
+fields:
+  dunning_group: ads.DunningGroup
+  dunning_status: ads.DunningStatus
+  description: ads.Description
+  message: ads.Message
+  inv_selection: ads.InvSelection
+  no_days: ads.NoDays
+  min_bal: ads.MinBal
+  doc_format: ads.DocFormat
+  doc_method: ads.DocMethod

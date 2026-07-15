@@ -1,0 +1,41 @@
+concept: lynq_vp_bpl__src_mrp_materials
+table: Lynq_VP_BPL_Src_MRPMaterials
+alias: lvpbplsmrpm
+fields:
+  id: lvpbplsmrpm.ID
+  type_id: lvpbplsmrpm.TypeID
+  ord_type: lvpbplsmrpm.OrdType
+  ord_number: lvpbplsmrpm.OrdNumber
+  atch_ord_id_str: lvpbplsmrpm.AtchOrdIDStr
+  atch_oper_id_str: lvpbplsmrpm.AtchOperIDStr
+  atch_entity_type_id: lvpbplsmrpm.AtchEntityTypeID
+  atch_oper_number: lvpbplsmrpm.AtchOperNumber
+  atch_path_number: lvpbplsmrpm.AtchPathNumber
+  atch_par_path_number: lvpbplsmrpm.AtchParPathNumber
+  atch_oper_sequence_number: lvpbplsmrpm.AtchOperSequenceNumber
+  atch_rec_type: lvpbplsmrpm.AtchRecType
+  atch_oper_type: lvpbplsmrpm.AtchOperType
+  status_code1: lvpbplsmrpm.StatusCode1
+  item_number: lvpbplsmrpm.ItemNumber
+  location_code: lvpbplsmrpm.LocationCode
+  line: lvpbplsmrpm.Line
+  quantity_required: lvpbplsmrpm.QuantityRequired
+  req_date: lvpbplsmrpm.ReqDate
+  quantity_per: lvpbplsmrpm.QuantityPer
+  fixed_quantity_per: lvpbplsmrpm.FixedQuantityPer
+  scrap_persentage: lvpbplsmrpm.ScrapPersentage
+  scrap_quantity: lvpbplsmrpm.ScrapQuantity
+  material_wait_time: lvpbplsmrpm.MaterialWaitTime
+  fld_date_time1: lvpbplsmrpm.FldDateTime1
+  fld_date_time2: lvpbplsmrpm.FldDateTime2
+  fld_date_time3: lvpbplsmrpm.FldDateTime3
+  fld_decimal1: lvpbplsmrpm.FldDecimal1
+  fld_decimal2: lvpbplsmrpm.FldDecimal2
+  fld_decimal3: lvpbplsmrpm.FldDecimal3
+  fld_decimal4: lvpbplsmrpm.FldDecimal4
+  fld_decimal5: lvpbplsmrpm.FldDecimal5
+  fld_string1: lvpbplsmrpm.FldString1
+  fld_string2: lvpbplsmrpm.FldString2
+  fld_string3: lvpbplsmrpm.FldString3
+  fld_string4: lvpbplsmrpm.FldString4
+  fld_string5: lvpbplsmrpm.FldString5

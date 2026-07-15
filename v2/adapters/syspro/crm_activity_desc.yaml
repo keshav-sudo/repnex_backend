@@ -1,0 +1,6 @@
+concept: crm_activity_desc
+table: CrmActivityDesc
+alias: cad
+fields:
+  description_type: cad.DescriptionType
+  description: cad.Description

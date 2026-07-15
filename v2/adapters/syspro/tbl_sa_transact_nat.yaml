@@ -1,0 +1,6 @@
+concept: tbl_sa_transact_nat
+table: TblSaTransactNat
+alias: tstn
+fields:
+  transaction_nature: tstn.TransactionNature
+  description: tstn.Description

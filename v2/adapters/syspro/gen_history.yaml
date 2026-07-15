@@ -1,0 +1,23 @@
+concept: gen_history
+table: GenHistory
+alias: gh
+fields:
+  company: gh.Company
+  gl_code: gh.GlCode
+  gl_year: gh.GlYear
+  begin_year_balance: gh.BeginYearBalance
+  closing_bal_per1: gh.ClosingBalPer1
+  closing_bal_per2: gh.ClosingBalPer2
+  closing_bal_per3: gh.ClosingBalPer3
+  closing_bal_per4: gh.ClosingBalPer4
+  closing_bal_per5: gh.ClosingBalPer5
+  closing_bal_per6: gh.ClosingBalPer6
+  closing_bal_per7: gh.ClosingBalPer7
+  closing_bal_per8: gh.ClosingBalPer8
+  closing_bal_per9: gh.ClosingBalPer9
+  closing_bal_per10: gh.ClosingBalPer10
+  closing_bal_per11: gh.ClosingBalPer11
+  closing_bal_per12: gh.ClosingBalPer12
+  closing_bal_per13: gh.ClosingBalPer13
+  closing_bal_per14: gh.ClosingBalPer14
+  closing_bal_per15: gh.ClosingBalPer15

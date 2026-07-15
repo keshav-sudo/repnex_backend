@@ -1,0 +1,8 @@
+concept: int_edi_xref
+table: IntEdiXref
+alias: iex
+fields:
+  customer_po_number: iex.CustomerPoNumber
+  import_line_num: iex.ImportLineNum
+  sales_order: iex.SalesOrder
+  sales_order_line: iex.SalesOrderLine

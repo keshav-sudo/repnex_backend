@@ -1,0 +1,18 @@
+concept: gtr_balances_fix
+table: GtrBalancesFix
+alias: gbf
+fields:
+  run_date_time: gbf.RunDateTime
+  gtr_reference: gbf.GtrReference
+  source_warehouse: gbf.SourceWarehouse
+  target_warehouse: gbf.TargetWarehouse
+  line: gbf.Line
+  stock_code: gbf.StockCode
+  old_out_value: gbf.OldOutValue
+  new_out_value: gbf.NewOutValue
+  old_in_value: gbf.OldInValue
+  new_in_value: gbf.NewInValue
+  old_out_quantity: gbf.OldOutQuantity
+  new_out_quantity: gbf.NewOutQuantity
+  old_in_quantity: gbf.OldInQuantity
+  new_in_quantity: gbf.NewInQuantity

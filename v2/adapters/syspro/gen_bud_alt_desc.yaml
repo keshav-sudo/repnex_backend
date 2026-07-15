@@ -1,0 +1,7 @@
+concept: gen_bud_alt_desc
+table: GenBudAltDesc
+alias: gbad
+fields:
+  company: gbad.Company
+  budget_number: gbad.BudgetNumber
+  description: gbad.Description

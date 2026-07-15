@@ -1,0 +1,7 @@
+concept: inv_site_type
+table: InvSiteType
+alias: ist2
+fields:
+  site_type: ist2.SiteType
+  description: ist2.Description
+  site_type_parent: ist2.SiteTypeParent

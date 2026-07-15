@@ -1,0 +1,11 @@
+concept: wip_all_mat_lpn
+table: WipAllMatLpn
+alias: waml1
+fields:
+  job: waml1.Job
+  stock_code: waml1.StockCode
+  warehouse: waml1.Warehouse
+  line: waml1.Line
+  license_plate_number: waml1.LicensePlateNumber
+  qty_reserved: waml1.QtyReserved
+  qty_issued: waml1.QtyIssued

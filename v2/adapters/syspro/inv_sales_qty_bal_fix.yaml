@@ -1,0 +1,21 @@
+concept: inv_sales_qty_bal_fix
+table: InvSalesQtyBalFix
+alias: isqbf
+fields:
+  run_date_time: isqbf.RunDateTime
+  stock_code: isqbf.StockCode
+  warehouse: isqbf.Warehouse
+  active_sales: isqbf.ActiveSales
+  old_alloc_qty: isqbf.OldAllocQty
+  new_alloc_qty: isqbf.NewAllocQty
+  old_back_qty: isqbf.OldBackQty
+  new_back_qty: isqbf.NewBackQty
+  old_bin_ship_qty: isqbf.OldBinShipQty
+  new_bin_ship_qty: isqbf.NewBinShipQty
+  old_lot_ship_qty: isqbf.OldLotShipQty
+  new_lot_ship_qty: isqbf.NewLotShipQty
+  old_ser_ship_qty: isqbf.OldSerShipQty
+  new_ser_ship_qty: isqbf.NewSerShipQty
+  active_dispatches: isqbf.ActiveDispatches
+  old_disp_qty: isqbf.OldDispQty
+  new_disp_ship_qty: isqbf.NewDispShipQty

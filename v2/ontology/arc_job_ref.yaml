@@ -1,0 +1,73 @@
+concept: arc_job_ref
+display_name: ArcJobRef
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArcJobRef.
+synonyms:
+- arcjobref
+- arc job ref
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from ArcJobRef
+  archive_number:
+    display: Archivenumber
+    type: decimal
+    required: false
+    description: Field ArchiveNumber from ArcJobRef
+  job_description:
+    display: Jobdescription
+    type: string
+    required: false
+    description: Field JobDescription from ArcJobRef
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from ArcJobRef
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from ArcJobRef
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArcJobRef
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from ArcJobRef
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from ArcJobRef
+  job_completed:
+    display: Jobcompleted
+    type: date
+    required: false
+    description: Field JobCompleted from ArcJobRef
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from ArcJobRef
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from ArcJobRef
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from ArcJobRef
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from ArcJobRef

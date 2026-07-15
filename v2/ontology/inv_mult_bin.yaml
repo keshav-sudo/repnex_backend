@@ -1,0 +1,113 @@
+concept: inv_mult_bin
+display_name: InvMultBin
+module: inventory
+description: Auto-generated representation of the physical table InvMultBin.
+synonyms:
+- invmultbin
+- inv mult bin
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvMultBin
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvMultBin
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvMultBin
+  qty_on_hand1:
+    display: Qtyonhand1
+    type: decimal
+    required: false
+    description: Field QtyOnHand1 from InvMultBin
+  qty_on_hand2:
+    display: Qtyonhand2
+    type: decimal
+    required: false
+    description: Field QtyOnHand2 from InvMultBin
+  qty_on_hand3:
+    display: Qtyonhand3
+    type: decimal
+    required: false
+    description: Field QtyOnHand3 from InvMultBin
+  last_receipt_date:
+    display: Lastreceiptdate
+    type: date
+    required: false
+    description: Field LastReceiptDate from InvMultBin
+  last_issue_date:
+    display: Lastissuedate
+    type: date
+    required: false
+    description: Field LastIssueDate from InvMultBin
+  so_qty_to_ship:
+    display: Soqtytoship
+    type: decimal
+    required: false
+    description: Field SoQtyToShip from InvMultBin
+  note:
+    display: Note
+    type: string
+    required: false
+    description: Field Note from InvMultBin
+  qty_dispatched:
+    display: Qtydispatched
+    type: decimal
+    required: false
+    description: Field QtyDispatched from InvMultBin
+  on_hold:
+    display: Onhold
+    type: string
+    required: false
+    description: Field OnHold from InvMultBin
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from InvMultBin
+  qty_resv_pick:
+    display: Qtyresvpick
+    type: decimal
+    required: false
+    description: Field QtyResvPick from InvMultBin
+  prd_recall_flag:
+    display: Prdrecallflag
+    type: string
+    required: false
+    description: Field PrdRecallFlag from InvMultBin
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from InvMultBin
+  kanban_active:
+    display: Kanbanactive
+    type: string
+    required: false
+    description: Field KanbanActive from InvMultBin
+  kanban_pull_level:
+    display: Kanbanpulllevel
+    type: decimal
+    required: false
+    description: Field KanbanPullLevel from InvMultBin
+  kanban_pull_qty:
+    display: Kanbanpullqty
+    type: decimal
+    required: false
+    description: Field KanbanPullQty from InvMultBin
+  kanban_full_cont:
+    display: Kanbanfullcont
+    type: string
+    required: false
+    description: Field KanbanFullCont from InvMultBin
+  kanban_replen_flag:
+    display: Kanbanreplenflag
+    type: string
+    required: false
+    description: Field KanbanReplenFlag from InvMultBin

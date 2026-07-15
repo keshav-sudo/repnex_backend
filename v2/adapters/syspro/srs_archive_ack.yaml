@@ -1,0 +1,11 @@
+concept: srs_archive_ack
+table: SrsArchiveACK
+alias: saack
+fields:
+  archive_date: saack.ArchiveDate
+  archive_time: saack.ArchiveTime
+  operator: saack.Operator
+  archive_id: saack.ArchiveId
+  archive_type: saack.ArchiveType
+  archive_file: saack.ArchiveFile
+  internal_sales_order: saack.InternalSalesOrder

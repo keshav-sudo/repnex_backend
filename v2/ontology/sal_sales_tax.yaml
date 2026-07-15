@@ -1,0 +1,128 @@
+concept: sal_sales_tax
+display_name: SalSalesTax
+module: other
+description: Auto-generated representation of the physical table SalSalesTax.
+synonyms:
+- salsalestax
+- sal sales tax
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalSalesTax
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalSalesTax
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SalSalesTax
+  invoice_register:
+    display: Invoiceregister
+    type: decimal
+    required: false
+    description: Field InvoiceRegister from SalSalesTax
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SalSalesTax
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SalSalesTax
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from SalSalesTax
+  tax_exempt_o_ride:
+    display: Taxexemptoride
+    type: string
+    required: false
+    description: Field TaxExemptORide from SalSalesTax
+  exempt_value:
+    display: Exemptvalue
+    type: decimal
+    required: false
+    description: Field ExemptValue from SalSalesTax
+  non_exempt_value:
+    display: Nonexemptvalue
+    type: decimal
+    required: false
+    description: Field NonExemptValue from SalSalesTax
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from SalSalesTax
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from SalSalesTax
+  cash_credit:
+    display: Cashcredit
+    type: string
+    required: false
+    description: Field CashCredit from SalSalesTax
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SalSalesTax
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from SalSalesTax
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalSalesTax
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SalSalesTax
+  taxable_value:
+    display: Taxablevalue
+    type: decimal
+    required: false
+    description: Field TaxableValue from SalSalesTax
+  eec_invoice_flag:
+    display: Eecinvoiceflag
+    type: string
+    required: false
+    description: Field EecInvoiceFlag from SalSalesTax
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from SalSalesTax
+  tax_ret_submitted:
+    display: Taxretsubmitted
+    type: string
+    required: false
+    description: Field TaxRetSubmitted from SalSalesTax
+  year_ret_submitted:
+    display: Yearretsubmitted
+    type: decimal
+    required: false
+    description: Field YearRetSubmitted from SalSalesTax
+  mth_ret_submitted:
+    display: Mthretsubmitted
+    type: decimal
+    required: false
+    description: Field MthRetSubmitted from SalSalesTax
+  uk_vat_flag:
+    display: Ukvatflag
+    type: string
+    required: false
+    description: Field UkVatFlag from SalSalesTax

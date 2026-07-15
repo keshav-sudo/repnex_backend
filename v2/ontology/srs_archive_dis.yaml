@@ -1,0 +1,48 @@
+concept: srs_archive_dis
+display_name: SrsArchiveDIS
+module: other
+description: Auto-generated representation of the physical table SrsArchiveDIS.
+synonyms:
+- srsarchivedis
+- srs archive dis
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveDIS
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveDIS
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveDIS
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveDIS
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveDIS
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveDIS
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from SrsArchiveDIS
+  internal_sales_order:
+    display: Internalsalesorder
+    type: string
+    required: false
+    description: Field InternalSalesOrder from SrsArchiveDIS

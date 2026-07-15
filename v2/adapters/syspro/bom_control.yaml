@@ -1,0 +1,10 @@
+concept: bom_control
+table: BomControl
+alias: bc1
+fields:
+  ctl_flag: bc1.CtlFlag
+  change_flag: bc1.ChangeFlag
+  last_period_date: bc1.LastPeriodDate
+  last_month_date: bc1.LastMonthDate
+  last_year_date: bc1.LastYearDate
+  next_nar_code: bc1.NextNarCode

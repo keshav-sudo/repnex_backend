@@ -1,0 +1,11 @@
+concept: srs_archive_iss
+table: SrsArchiveISS
+alias: saiss
+fields:
+  archive_date: saiss.ArchiveDate
+  archive_time: saiss.ArchiveTime
+  operator: saiss.Operator
+  archive_id: saiss.ArchiveId
+  archive_type: saiss.ArchiveType
+  archive_file: saiss.ArchiveFile
+  issue_docno: saiss.IssueDocno

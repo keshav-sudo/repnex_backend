@@ -1,0 +1,18 @@
+concept: eam_schedule
+table: EamSchedule
+alias: es
+fields:
+  equipment_code: es.EquipmentCode
+  maint_service_type: es.MaintServiceType
+  date_created: es.DateCreated
+  line: es.Line
+  job_description: es.JobDescription
+  wip_branch: es.WipBranch
+  wip_ctl_gl_code: es.WipCtlGlCode
+  qty_required: es.QtyRequired
+  start_date: es.StartDate
+  end_date: es.EndDate
+  job_classification: es.JobClassification
+  confirmed_flag: es.ConfirmedFlag
+  job: es.Job
+  last_operator: es.LastOperator

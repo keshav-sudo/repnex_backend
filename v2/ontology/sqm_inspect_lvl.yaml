@@ -1,0 +1,23 @@
+concept: sqm_inspect_lvl
+display_name: SqmInspectLvl
+module: other
+description: Auto-generated representation of the physical table SqmInspectLvl.
+synonyms:
+- sqminspectlvl
+- sqm inspect lvl
+header_attributes:
+  plan_type:
+    display: Plantype
+    type: string
+    required: false
+    description: Field PlanType from SqmInspectLvl
+  inspect_level:
+    display: Inspectlevel
+    type: string
+    required: false
+    description: Field InspectLevel from SqmInspectLvl
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SqmInspectLvl

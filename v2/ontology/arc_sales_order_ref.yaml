@@ -1,0 +1,53 @@
+concept: arc_sales_order_ref
+display_name: ArcSalesOrderRef
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArcSalesOrderRef.
+synonyms:
+- arcsalesorderref
+- arc sales order ref
+header_attributes:
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from ArcSalesOrderRef
+  archive_number:
+    display: Archivenumber
+    type: decimal
+    required: false
+    description: Field ArchiveNumber from ArcSalesOrderRef
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from ArcSalesOrderRef
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArcSalesOrderRef
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from ArcSalesOrderRef
+  sales_order_date:
+    display: Salesorderdate
+    type: date
+    required: false
+    description: Field SalesOrderDate from ArcSalesOrderRef
+  alternate_key:
+    display: Alternatekey
+    type: string
+    required: false
+    description: Field AlternateKey from ArcSalesOrderRef
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArcSalesOrderRef
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArcSalesOrderRef

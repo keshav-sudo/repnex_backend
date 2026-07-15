@@ -1,0 +1,11 @@
+concept: lynq_me__statistics_storage_discrete
+table: Lynq_ME_StatisticsStorageDiscrete
+alias: lmessd
+fields:
+  id: lmessd.ID
+  key_id: lmessd.KeyID
+  aid: lmessd.AID
+  group_code: lmessd.GroupCode
+  moment: lmessd.Moment
+  s00: lmessd.S00
+  nd0: lmessd.ND0

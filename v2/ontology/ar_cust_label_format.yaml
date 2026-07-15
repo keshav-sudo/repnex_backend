@@ -1,0 +1,18 @@
+concept: ar_cust_label_format
+display_name: ArCustLabelFormat
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCustLabelFormat.
+synonyms:
+- arcustlabelformat
+- ar cust label format
+header_attributes:
+  perm_entry_format:
+    display: Permentryformat
+    type: string
+    required: false
+    description: Field PermEntryFormat from ArCustLabelFormat
+  preferences:
+    display: Preferences
+    type: string
+    required: false
+    description: Field Preferences from ArCustLabelFormat

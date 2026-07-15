@@ -1,0 +1,343 @@
+concept: lynq_vp__scheduler_record
+display_name: Lynq VP SchedulerRecord
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_SchedulerRecord.
+synonyms:
+- lynq_vp_schedulerrecord
+- lynq vp  scheduler record
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_SchedulerRecord
+  ord_sched_type:
+    display: Ordschedtype
+    type: string
+    required: false
+    description: Field OrdSchedType from Lynq_VP_SchedulerRecord
+  ord_number:
+    display: Ordnumber
+    type: string
+    required: false
+    description: Field OrdNumber from Lynq_VP_SchedulerRecord
+  oper_number:
+    display: Opernumber
+    type: decimal
+    required: false
+    description: Field OperNumber from Lynq_VP_SchedulerRecord
+  path_number:
+    display: Pathnumber
+    type: decimal
+    required: false
+    description: Field PathNumber from Lynq_VP_SchedulerRecord
+  oper_sequence_number:
+    display: Opersequencenumber
+    type: decimal
+    required: false
+    description: Field OperSequenceNumber from Lynq_VP_SchedulerRecord
+  wc_id:
+    display: Wcid
+    type: decimal
+    required: false
+    description: Field WcID from Lynq_VP_SchedulerRecord
+  is_resource:
+    display: Isresource
+    type: string
+    required: false
+    description: Field IsResource from Lynq_VP_SchedulerRecord
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from Lynq_VP_SchedulerRecord
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from Lynq_VP_SchedulerRecord
+  std_start_date:
+    display: Stdstartdate
+    type: date
+    required: false
+    description: Field StdStartDate from Lynq_VP_SchedulerRecord
+  std_due_date:
+    display: Stdduedate
+    type: date
+    required: false
+    description: Field StdDueDate from Lynq_VP_SchedulerRecord
+  change_type:
+    display: Changetype
+    type: decimal
+    required: false
+    description: Field ChangeType from Lynq_VP_SchedulerRecord
+  change_duration__min:
+    display: Changeduration Min
+    type: decimal
+    required: false
+    description: Field ChangeDuration_Min from Lynq_VP_SchedulerRecord
+  overlap_point:
+    display: Overlappoint
+    type: date
+    required: false
+    description: Field OverlapPoint from Lynq_VP_SchedulerRecord
+  planned_over_time:
+    display: Plannedovertime
+    type: date
+    required: false
+    description: Field PlannedOverTime from Lynq_VP_SchedulerRecord
+  req_res_qty:
+    display: Reqresqty
+    type: decimal
+    required: false
+    description: Field ReqResQty from Lynq_VP_SchedulerRecord
+  req_res_amt:
+    display: Reqresamt
+    type: decimal
+    required: false
+    description: Field ReqResAmt from Lynq_VP_SchedulerRecord
+  min_res_qty:
+    display: Minresqty
+    type: decimal
+    required: false
+    description: Field MinResQty from Lynq_VP_SchedulerRecord
+  max_res_qty:
+    display: Maxresqty
+    type: decimal
+    required: false
+    description: Field MaxResQty from Lynq_VP_SchedulerRecord
+  wc_load_level:
+    display: Wcloadlevel
+    type: decimal
+    required: false
+    description: Field WcLoadLevel from Lynq_VP_SchedulerRecord
+  use_processing_times:
+    display: Useprocessingtimes
+    type: string
+    required: false
+    description: Field UseProcessingTimes from Lynq_VP_SchedulerRecord
+  treat_processing_time_per_operation:
+    display: Treatprocessingtimeperoperation
+    type: string
+    required: false
+    description: Field TreatProcessingTimePerOperation from Lynq_VP_SchedulerRecord
+  float_resource_usage:
+    display: Floatresourceusage
+    type: string
+    required: false
+    description: Field FloatResourceUsage from Lynq_VP_SchedulerRecord
+  was_resized:
+    display: Wasresized
+    type: string
+    required: false
+    description: Field WasResized from Lynq_VP_SchedulerRecord
+  setup_point:
+    display: Setuppoint
+    type: date
+    required: false
+    description: Field SetupPoint from Lynq_VP_SchedulerRecord
+  outside_process_time_per_operation:
+    display: Outsideprocesstimeperoperation
+    type: string
+    required: false
+    description: Field OutsideProcessTimePerOperation from Lynq_VP_SchedulerRecord
+  scheduling_state:
+    display: Schedulingstate
+    type: decimal
+    required: false
+    description: Field SchedulingState from Lynq_VP_SchedulerRecord
+  minimal_time_consumption:
+    display: Minimaltimeconsumption
+    type: decimal
+    required: false
+    description: Field MinimalTimeConsumption from Lynq_VP_SchedulerRecord
+  orig__qty:
+    display: Orig Qty
+    type: decimal
+    required: false
+    description: Field Orig_Qty from Lynq_VP_SchedulerRecord
+  orig__ppl_qty:
+    display: Orig Pplqty
+    type: decimal
+    required: false
+    description: Field Orig_PplQty from Lynq_VP_SchedulerRecord
+  orig__ppl_hrs:
+    display: Orig Pplhrs
+    type: decimal
+    required: false
+    description: Field Orig_PplHrs from Lynq_VP_SchedulerRecord
+  orig__mch_qty:
+    display: Orig Mchqty
+    type: decimal
+    required: false
+    description: Field Orig_MchQty from Lynq_VP_SchedulerRecord
+  orig__mch_hrs:
+    display: Orig Mchhrs
+    type: decimal
+    required: false
+    description: Field Orig_MchHrs from Lynq_VP_SchedulerRecord
+  treat_outside_process_hours:
+    display: Treatoutsideprocesshours
+    type: string
+    required: false
+    description: Field TreatOutsideProcessHours from Lynq_VP_SchedulerRecord
+  omit_operation_setup_portion:
+    display: Omitoperationsetupportion
+    type: string
+    required: false
+    description: Field OmitOperationSetupPortion from Lynq_VP_SchedulerRecord
+  use_complex_scheduling:
+    display: Usecomplexscheduling
+    type: string
+    required: false
+    description: Field UseComplexScheduling from Lynq_VP_SchedulerRecord
+  processing_consumption:
+    display: Processingconsumption
+    type: string
+    required: false
+    description: Field ProcessingConsumption from Lynq_VP_SchedulerRecord
+  max_active_portion_part_interaption:
+    display: Maxactiveportionpartinteraption
+    type: decimal
+    required: false
+    description: Field MaxActivePortionPartInteraption from Lynq_VP_SchedulerRecord
+  use_overlapping:
+    display: Useoverlapping
+    type: string
+    required: false
+    description: Field UseOverlapping from Lynq_VP_SchedulerRecord
+  sf_operation_overlap_direction:
+    display: Sfoperationoverlapdirection
+    type: string
+    required: false
+    description: Field SFOperationOverlapDirection from Lynq_VP_SchedulerRecord
+  default_changeover_behaviour:
+    display: Defaultchangeoverbehaviour
+    type: string
+    required: false
+    description: Field DefaultChangeoverBehaviour from Lynq_VP_SchedulerRecord
+  use_alternative_w_cs:
+    display: Usealternativewcs
+    type: string
+    required: false
+    description: Field UseAlternativeWCs from Lynq_VP_SchedulerRecord
+  allow_portion_split:
+    display: Allowportionsplit
+    type: string
+    required: false
+    description: Field AllowPortionSplit from Lynq_VP_SchedulerRecord
+  apply_minimal_active_portion_part_length:
+    display: Applyminimalactiveportionpartlength
+    type: string
+    required: false
+    description: Field ApplyMinimalActivePortionPartLength from Lynq_VP_SchedulerRecord
+  apply_max_active_portion_part_interaption:
+    display: Applymaxactiveportionpartinteraption
+    type: string
+    required: false
+    description: Field ApplyMaxActivePortionPartInteraption from Lynq_VP_SchedulerRecord
+  use_move_times:
+    display: Usemovetimes
+    type: string
+    required: false
+    description: Field UseMoveTimes from Lynq_VP_SchedulerRecord
+  use_quee_times:
+    display: Usequeetimes
+    type: string
+    required: false
+    description: Field UseQueeTimes from Lynq_VP_SchedulerRecord
+  treat_move_times_hours:
+    display: Treatmovetimeshours
+    type: string
+    required: false
+    description: Field TreatMoveTimesHours from Lynq_VP_SchedulerRecord
+  treat_quee_times_hours:
+    display: Treatqueetimeshours
+    type: string
+    required: false
+    description: Field TreatQueeTimesHours from Lynq_VP_SchedulerRecord
+  move_days_as_next:
+    display: Movedaysasnext
+    type: string
+    required: false
+    description: Field MoveDaysAsNext from Lynq_VP_SchedulerRecord
+  queue_days_as_next:
+    display: Queuedaysasnext
+    type: string
+    required: false
+    description: Field QueueDaysAsNext from Lynq_VP_SchedulerRecord
+  use_move_times_for_empty_operations:
+    display: Usemovetimesforemptyoperations
+    type: string
+    required: false
+    description: Field UseMoveTimesForEmptyOperations from Lynq_VP_SchedulerRecord
+  use_quee_times_for_empty_operations:
+    display: Usequeetimesforemptyoperations
+    type: string
+    required: false
+    description: Field UseQueeTimesForEmptyOperations from Lynq_VP_SchedulerRecord
+  skip_not_productive_days_move:
+    display: Skipnotproductivedaysmove
+    type: string
+    required: false
+    description: Field SkipNotProductiveDaysMove from Lynq_VP_SchedulerRecord
+  skip_not_productive_days_queue:
+    display: Skipnotproductivedaysqueue
+    type: string
+    required: false
+    description: Field SkipNotProductiveDaysQueue from Lynq_VP_SchedulerRecord
+  move_que_selector:
+    display: Movequeselector
+    type: string
+    required: false
+    description: Field MoveQueSelector from Lynq_VP_SchedulerRecord
+  use_processing2_time:
+    display: Useprocessing2Time
+    type: string
+    required: false
+    description: Field UseProcessing2Time from Lynq_VP_SchedulerRecord
+  treat_processing2_times_per_operation:
+    display: Treatprocessing2Timesperoperation
+    type: string
+    required: false
+    description: Field TreatProcessing2TimesPerOperation from Lynq_VP_SchedulerRecord
+  processing2_consumption:
+    display: Processing2Consumption
+    type: string
+    required: false
+    description: Field Processing2Consumption from Lynq_VP_SchedulerRecord
+  schedule_processing_in_not_productive_zone:
+    display: Scheduleprocessinginnotproductivezone
+    type: string
+    required: false
+    description: Field ScheduleProcessingInNotProductiveZone from Lynq_VP_SchedulerRecord
+  schedule_processing2_in_not_productive_zone:
+    display: Scheduleprocessing2Innotproductivezone
+    type: string
+    required: false
+    description: Field ScheduleProcessing2InNotProductiveZone from Lynq_VP_SchedulerRecord
+  schedule_empty_operations:
+    display: Scheduleemptyoperations
+    type: string
+    required: false
+    description: Field ScheduleEmptyOperations from Lynq_VP_SchedulerRecord
+  add_to_empty_for_nothing_required_only:
+    display: Addtoemptyfornothingrequiredonly
+    type: string
+    required: false
+    description: Field AddToEmptyForNothingRequiredOnly from Lynq_VP_SchedulerRecord
+  use_setup_in_empty_operation:
+    display: Usesetupinemptyoperation
+    type: string
+    required: false
+    description: Field UseSetupInEmptyOperation from Lynq_VP_SchedulerRecord
+  use_processing_in_empty_operation:
+    display: Useprocessinginemptyoperation
+    type: string
+    required: false
+    description: Field UseProcessingInEmptyOperation from Lynq_VP_SchedulerRecord
+  use_processing2_in_empty_operation:
+    display: Useprocessing2Inemptyoperation
+    type: string
+    required: false
+    description: Field UseProcessing2InEmptyOperation from Lynq_VP_SchedulerRecord

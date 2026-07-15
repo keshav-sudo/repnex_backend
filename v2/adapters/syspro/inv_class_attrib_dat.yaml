@@ -1,0 +1,12 @@
+concept: inv_class_attrib_dat
+table: InvClassAttribDat
+alias: icad
+fields:
+  stock_class: icad.StockClass
+  class_attrib: icad.ClassAttrib
+  stock_code: icad.StockCode
+  version: icad.Version
+  release: icad.Release
+  alpha_value: icad.AlphaValue
+  numeric_value: icad.NumericValue
+  date_value: icad.DateValue

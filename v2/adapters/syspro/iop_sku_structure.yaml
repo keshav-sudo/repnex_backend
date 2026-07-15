@@ -1,0 +1,13 @@
+concept: iop_sku_structure
+table: IopSkuStructure
+alias: iss1
+fields:
+  collection: iss1.Collection
+  instance: iss1.Instance
+  stock_code: iss1.StockCode
+  version: iss1.Version
+  release: iss1.Release
+  warehouse: iss1.Warehouse
+  manual_add: iss1.ManualAdd
+  disaggregate: iss1.Disaggregate
+  abc_class: iss1.AbcClass

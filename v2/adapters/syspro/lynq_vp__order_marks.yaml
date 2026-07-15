@@ -1,0 +1,13 @@
+concept: lynq_vp__order_marks
+table: Lynq_VP_OrderMarks
+alias: lvpom
+fields:
+  id: lvpom.ID
+  order_type_code: lvpom.OrderTypeCode
+  order_number: lvpom.OrderNumber
+  operation_number: lvpom.OperationNumber
+  path_number: lvpom.PathNumber
+  sequence_number: lvpom.SequenceNumber
+  captured_mark_key: lvpom.CapturedMarkKey
+  captured_mark_value: lvpom.CapturedMarkValue
+  captured_mark_color: lvpom.CapturedMarkColor

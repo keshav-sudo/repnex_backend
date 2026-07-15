@@ -1,0 +1,353 @@
+concept: ar_trn_summary
+display_name: ArTrnSummary
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArTrnSummary.
+synonyms:
+- artrnsummary
+- ar trn summary
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArTrnSummary
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArTrnSummary
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from ArTrnSummary
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArTrnSummary
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from ArTrnSummary
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from ArTrnSummary
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArTrnSummary
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArTrnSummary
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArTrnSummary
+  order_type:
+    display: Ordertype
+    type: string
+    required: false
+    description: Field OrderType from ArTrnSummary
+  inter_branch_trf:
+    display: Interbranchtrf
+    type: string
+    required: false
+    description: Field InterBranchTrf from ArTrnSummary
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from ArTrnSummary
+  merchandise_value:
+    display: Merchandisevalue
+    type: decimal
+    required: false
+    description: Field MerchandiseValue from ArTrnSummary
+  freight_value:
+    display: Freightvalue
+    type: decimal
+    required: false
+    description: Field FreightValue from ArTrnSummary
+  other_value:
+    display: Othervalue
+    type: decimal
+    required: false
+    description: Field OtherValue from ArTrnSummary
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from ArTrnSummary
+  foreign_merch_val:
+    display: Foreignmerchval
+    type: decimal
+    required: false
+    description: Field ForeignMerchVal from ArTrnSummary
+  foreign_freight_val:
+    display: Foreignfreightval
+    type: decimal
+    required: false
+    description: Field ForeignFreightVal from ArTrnSummary
+  foreign_other_val:
+    display: Foreignotherval
+    type: decimal
+    required: false
+    description: Field ForeignOtherVal from ArTrnSummary
+  foreign_tax_val:
+    display: Foreigntaxval
+    type: decimal
+    required: false
+    description: Field ForeignTaxVal from ArTrnSummary
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from ArTrnSummary
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from ArTrnSummary
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ArTrnSummary
+  commission_value:
+    display: Commissionvalue
+    type: decimal
+    required: false
+    description: Field CommissionValue from ArTrnSummary
+  disc_value:
+    display: Discvalue
+    type: decimal
+    required: false
+    description: Field DiscValue from ArTrnSummary
+  merchandise_cost:
+    display: Merchandisecost
+    type: decimal
+    required: false
+    description: Field MerchandiseCost from ArTrnSummary
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from ArTrnSummary
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArTrnSummary
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from ArTrnSummary
+  tax_exempt_override:
+    display: Taxexemptoverride
+    type: string
+    required: false
+    description: Field TaxExemptOverride from ArTrnSummary
+  settlement_disc:
+    display: Settlementdisc
+    type: decimal
+    required: false
+    description: Field SettlementDisc from ArTrnSummary
+  exempt_value:
+    display: Exemptvalue
+    type: decimal
+    required: false
+    description: Field ExemptValue from ArTrnSummary
+  cash_credit:
+    display: Cashcredit
+    type: string
+    required: false
+    description: Field CashCredit from ArTrnSummary
+  tax_upd:
+    display: Taxupd
+    type: string
+    required: false
+    description: Field TaxUpd from ArTrnSummary
+  invoice_reg_prted:
+    display: Invoiceregprted
+    type: string
+    required: false
+    description: Field InvoiceRegPrted from ArTrnSummary
+  commissions_upd:
+    display: Commissionsupd
+    type: string
+    required: false
+    description: Field CommissionsUpd from ArTrnSummary
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from ArTrnSummary
+  ord_inv_xref_prted:
+    display: Ordinvxrefprted
+    type: string
+    required: false
+    description: Field OrdInvXrefPrted from ArTrnSummary
+  sales_turn_o_prted:
+    display: Salesturnoprted
+    type: string
+    required: false
+    description: Field SalesTurnOPrted from ArTrnSummary
+  invoice_count:
+    display: Invoicecount
+    type: decimal
+    required: false
+    description: Field InvoiceCount from ArTrnSummary
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArTrnSummary
+  interface_flag:
+    display: Interfaceflag
+    type: string
+    required: false
+    description: Field InterfaceFlag from ArTrnSummary
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from ArTrnSummary
+  fst_updated:
+    display: Fstupdated
+    type: string
+    required: false
+    description: Field FstUpdated from ArTrnSummary
+  credited_invoice:
+    display: Creditedinvoice
+    type: string
+    required: false
+    description: Field CreditedInvoice from ArTrnSummary
+  global_tax_upd:
+    display: Globaltaxupd
+    type: string
+    required: false
+    description: Field GlobalTaxUpd from ArTrnSummary
+  sales_order_job:
+    display: Salesorderjob
+    type: string
+    required: false
+    description: Field SalesOrderJob from ArTrnSummary
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ArTrnSummary
+  deposit_type:
+    display: Deposittype
+    type: string
+    required: false
+    description: Field DepositType from ArTrnSummary
+  last_printed_del:
+    display: Lastprinteddel
+    type: string
+    required: false
+    description: Field LastPrintedDel from ArTrnSummary
+  in_process_flag:
+    display: Inprocessflag
+    type: string
+    required: false
+    description: Field InProcessFlag from ArTrnSummary
+  sub_account:
+    display: Subaccount
+    type: string
+    required: false
+    description: Field SubAccount from ArTrnSummary
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from ArTrnSummary
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from ArTrnSummary
+  user_field3:
+    display: Userfield3
+    type: string
+    required: false
+    description: Field UserField3 from ArTrnSummary
+  eec_invoice_flag:
+    display: Eecinvoiceflag
+    type: string
+    required: false
+    description: Field EecInvoiceFlag from ArTrnSummary
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from ArTrnSummary
+  dispatch_account:
+    display: Dispatchaccount
+    type: string
+    required: false
+    description: Field DispatchAccount from ArTrnSummary
+  dis_analysis_entry:
+    display: Disanalysisentry
+    type: decimal
+    required: false
+    description: Field DisAnalysisEntry from ArTrnSummary
+  dispatch_amount:
+    display: Dispatchamount
+    type: decimal
+    required: false
+    description: Field DispatchAmount from ArTrnSummary
+  warehouse_account:
+    display: Warehouseaccount
+    type: string
+    required: false
+    description: Field WarehouseAccount from ArTrnSummary
+  wh_analysis_entry:
+    display: Whanalysisentry
+    type: decimal
+    required: false
+    description: Field WhAnalysisEntry from ArTrnSummary
+  warehouse_amount:
+    display: Warehouseamount
+    type: decimal
+    required: false
+    description: Field WarehouseAmount from ArTrnSummary
+  branch_sales_account:
+    display: Branchsalesaccount
+    type: string
+    required: false
+    description: Field BranchSalesAccount from ArTrnSummary
+  br_sales_ana_entry:
+    display: Brsalesanaentry
+    type: decimal
+    required: false
+    description: Field BrSalesAnaEntry from ArTrnSummary
+  branch_sales_amount:
+    display: Branchsalesamount
+    type: decimal
+    required: false
+    description: Field BranchSalesAmount from ArTrnSummary
+  branch_cost_account:
+    display: Branchcostaccount
+    type: string
+    required: false
+    description: Field BranchCostAccount from ArTrnSummary
+  br_cst_analysis_entry:
+    display: Brcstanalysisentry
+    type: decimal
+    required: false
+    description: Field BrCstAnalysisEntry from ArTrnSummary
+  branch_cost_amount:
+    display: Branchcostamount
+    type: decimal
+    required: false
+    description: Field BranchCostAmount from ArTrnSummary

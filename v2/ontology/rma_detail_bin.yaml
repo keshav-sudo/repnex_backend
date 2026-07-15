@@ -1,0 +1,38 @@
+concept: rma_detail_bin
+display_name: RmaDetailBin
+module: other
+description: Auto-generated representation of the physical table RmaDetailBin.
+synonyms:
+- rmadetailbin
+- rma detail bin
+header_attributes:
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RmaDetailBin
+  rma_line_number:
+    display: Rmalinenumber
+    type: decimal
+    required: false
+    description: Field RmaLineNumber from RmaDetailBin
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from RmaDetailBin
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from RmaDetailBin
+  stock_qty_to_receive:
+    display: Stockqtytoreceive
+    type: decimal
+    required: false
+    description: Field StockQtyToReceive from RmaDetailBin
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from RmaDetailBin

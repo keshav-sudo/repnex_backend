@@ -1,0 +1,93 @@
+concept: wip_job_amend_jnl
+display_name: WipJobAmendJnl
+module: work_in_progress
+description: Auto-generated representation of the physical table WipJobAmendJnl.
+synonyms:
+- wipjobamendjnl
+- wip job amend jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from WipJobAmendJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from WipJobAmendJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from WipJobAmendJnl
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipJobAmendJnl
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from WipJobAmendJnl
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipJobAmendJnl
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipJobAmendJnl
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from WipJobAmendJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from WipJobAmendJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from WipJobAmendJnl
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from WipJobAmendJnl
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from WipJobAmendJnl
+  before:
+    display: Before
+    type: string
+    required: false
+    description: Field Before from WipJobAmendJnl
+  after:
+    display: After
+    type: string
+    required: false
+    description: Field After from WipJobAmendJnl
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from WipJobAmendJnl
+  pick_number:
+    display: Picknumber
+    type: string
+    required: false
+    description: Field PickNumber from WipJobAmendJnl
+  pick_line:
+    display: Pickline
+    type: decimal
+    required: false
+    description: Field PickLine from WipJobAmendJnl

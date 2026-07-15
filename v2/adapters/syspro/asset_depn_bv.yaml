@@ -1,0 +1,28 @@
+concept: asset_depn_bv
+table: AssetDepnBv
+alias: adb
+fields:
+  asset: adb.Asset
+  asset_cost: adb.AssetCost
+  current_value: adb.CurrentValue
+  accum_depn: adb.AccumDepn
+  depn_prev_yr: adb.DepnPrevYr
+  depn_this_year: adb.DepnThisYear
+  depn_this_period: adb.DepnThisPeriod
+  residual_value: adb.ResidualValue
+  book_val_dep: adb.BookValDep
+  suspend: adb.Suspend
+  start_dep_date: adb.StartDepDate
+  depn_start_period: adb.DepnStartPeriod
+  depn_start_year: adb.DepnStartYear
+  thruput_eul: adb.ThruputEul
+  stat_gl_code: adb.StatGlCode
+  number_of_periods: adb.NumberOfPeriods
+  number_of_years: adb.NumberOfYears
+  reval_reserve_to_date: adb.RevalReserveToDate
+  sold_value: adb.SoldValue
+  disposal_cost: adb.DisposalCost
+  remaining_periods: adb.RemainingPeriods
+  total_periods_td: adb.TotalPeriodsTd
+  varying_anniversary: adb.VaryingAnniversary
+  reval_reason: adb.RevalReason

@@ -1,0 +1,133 @@
+concept: asset_depn_alt
+display_name: AssetDepnAlt
+module: assets
+description: Auto-generated representation of the physical table AssetDepnAlt.
+synonyms:
+- assetdepnalt
+- asset depn alt
+header_attributes:
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetDepnAlt
+  alt_code:
+    display: Altcode
+    type: decimal
+    required: false
+    description: Field AltCode from AssetDepnAlt
+  asset_cost:
+    display: Assetcost
+    type: decimal
+    required: false
+    description: Field AssetCost from AssetDepnAlt
+  current_value:
+    display: Currentvalue
+    type: decimal
+    required: false
+    description: Field CurrentValue from AssetDepnAlt
+  accum_depn:
+    display: Accumdepn
+    type: decimal
+    required: false
+    description: Field AccumDepn from AssetDepnAlt
+  depn_prev_yr:
+    display: Depnprevyr
+    type: decimal
+    required: false
+    description: Field DepnPrevYr from AssetDepnAlt
+  depn_this_year:
+    display: Depnthisyear
+    type: decimal
+    required: false
+    description: Field DepnThisYear from AssetDepnAlt
+  depn_this_period:
+    display: Depnthisperiod
+    type: decimal
+    required: false
+    description: Field DepnThisPeriod from AssetDepnAlt
+  residual_value:
+    display: Residualvalue
+    type: decimal
+    required: false
+    description: Field ResidualValue from AssetDepnAlt
+  book_val_dep:
+    display: Bookvaldep
+    type: string
+    required: false
+    description: Field BookValDep from AssetDepnAlt
+  suspend:
+    display: Suspend
+    type: string
+    required: false
+    description: Field Suspend from AssetDepnAlt
+  start_dep:
+    display: Startdep
+    type: date
+    required: false
+    description: Field StartDep from AssetDepnAlt
+  depn_start_period:
+    display: Depnstartperiod
+    type: decimal
+    required: false
+    description: Field DepnStartPeriod from AssetDepnAlt
+  depn_start_year:
+    display: Depnstartyear
+    type: decimal
+    required: false
+    description: Field DepnStartYear from AssetDepnAlt
+  thruput_eul:
+    display: Thruputeul
+    type: decimal
+    required: false
+    description: Field ThruputEul from AssetDepnAlt
+  stat_gl_code:
+    display: Statglcode
+    type: string
+    required: false
+    description: Field StatGlCode from AssetDepnAlt
+  number_of_periods:
+    display: Numberofperiods
+    type: decimal
+    required: false
+    description: Field NumberOfPeriods from AssetDepnAlt
+  number_of_years:
+    display: Numberofyears
+    type: decimal
+    required: false
+    description: Field NumberOfYears from AssetDepnAlt
+  reval_reserve_to_date:
+    display: Revalreservetodate
+    type: decimal
+    required: false
+    description: Field RevalReserveToDate from AssetDepnAlt
+  sold_value:
+    display: Soldvalue
+    type: decimal
+    required: false
+    description: Field SoldValue from AssetDepnAlt
+  disposal_cost:
+    display: Disposalcost
+    type: decimal
+    required: false
+    description: Field DisposalCost from AssetDepnAlt
+  remaining_periods:
+    display: Remainingperiods
+    type: decimal
+    required: false
+    description: Field RemainingPeriods from AssetDepnAlt
+  total_periods_td:
+    display: Totalperiodstd
+    type: decimal
+    required: false
+    description: Field TotalPeriodsTd from AssetDepnAlt
+  varying_anniversary:
+    display: Varyinganniversary
+    type: string
+    required: false
+    description: Field VaryingAnniversary from AssetDepnAlt
+  reval_reason:
+    display: Revalreason
+    type: string
+    required: false
+    description: Field RevalReason from AssetDepnAlt

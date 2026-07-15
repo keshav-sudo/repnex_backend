@@ -1,0 +1,16 @@
+concept: gen_reval_log
+table: GenRevalLog
+alias: grl
+fields:
+  company: grl.Company
+  post_currency: grl.PostCurrency
+  gl_year: grl.GlYear
+  gl_period: grl.GlPeriod
+  revaluation_date: grl.RevaluationDate
+  revaluation_time: grl.RevaluationTime
+  applied_reval_date: grl.AppliedRevalDate
+  ave_exchange_rate: grl.AveExchangeRate
+  ave_tri_exchange_rate: grl.AveTriExchangeRate
+  mth_end_exchange_rate: grl.MthEndExchangeRate
+  mnth_end_tri_exch_rate: grl.MnthEndTriExchRate
+  revaluation_type: grl.RevaluationType

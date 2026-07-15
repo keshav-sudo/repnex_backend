@@ -1,0 +1,56 @@
+concept: tpm_deduction_master
+table: TpmDeductionMaster
+alias: tdm
+fields:
+  customer: tdm.Customer
+  deduct_customer: tdm.DeductCustomer
+  trn_date: tdm.TrnDate
+  trn_time: tdm.TrnTime
+  copy_customer: tdm.CopyCustomer
+  copy_deduct_customer: tdm.CopyDeductCustomer
+  copy_trn_date: tdm.CopyTrnDate
+  copy_trn_time: tdm.CopyTrnTime
+  payment_cust: tdm.PaymentCust
+  pay_value: tdm.PayValue
+  deduct_total: tdm.DeductTotal
+  cheque_reference: tdm.ChequeReference
+  pay_date: tdm.PayDate
+  notation: tdm.Notation
+  narration: tdm.Narration
+  deduction_code: tdm.DeductionCode
+  begin_balance: tdm.BeginBalance
+  current_balance: tdm.CurrentBalance
+  deduct_amount: tdm.DeductAmount
+  reference: tdm.Reference
+  operator: tdm.Operator
+  change_operator: tdm.ChangeOperator
+  change_date: tdm.ChangeDate
+  follow_up_date: tdm.FollowUpDate
+  resolution_code: tdm.ResolutionCode
+  resolution_date: tdm.ResolutionDate
+  status: tdm.Status
+  printed_flag: tdm.PrintedFlag
+  adjust_ldg: tdm.AdjustLdg
+  entry_number: tdm.EntryNumber
+  sales_order: tdm.SalesOrder
+  customer_po_number: tdm.CustomerPoNumber
+  salesperson: tdm.Salesperson
+  branch: tdm.Branch
+  area: tdm.Area
+  terms_code: tdm.TermsCode
+  orig_disc_value: tdm.OrigDiscValue
+  trn_year: tdm.TrnYear
+  trn_month: tdm.TrnMonth
+  journal: tdm.Journal
+  jnl_entry_number: tdm.JnlEntryNumber
+  adjust_date: tdm.AdjustDate
+  currency_value: tdm.CurrencyValue
+  post_currency: tdm.PostCurrency
+  conv_rate: tdm.ConvRate
+  mul_div: tdm.MulDiv
+  account_cur: tdm.AccountCur
+  acc_conv_rate: tdm.AccConvRate
+  acc_mul_div: tdm.AccMulDiv
+  triang_currency: tdm.TriangCurrency
+  triang_rate: tdm.TriangRate
+  triang_mul_div: tdm.TriangMulDiv

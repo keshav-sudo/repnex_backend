@@ -1,0 +1,7 @@
+concept: sor_price_cat_promo
+table: SorPriceCatPromo
+alias: spcp
+fields:
+  catalogue: spcp.Catalogue
+  line_number: spcp.LineNumber
+  promotion_code: spcp.PromotionCode

@@ -1,0 +1,6 @@
+concept: ar_dunning_format
+table: ArDunningFormat
+alias: adf3
+fields:
+  doc_format: adf3.DocFormat
+  preferences: adf3.Preferences

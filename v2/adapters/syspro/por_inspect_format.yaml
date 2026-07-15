@@ -1,0 +1,8 @@
+concept: por_inspect_format
+table: PorInspectFormat
+alias: pif
+fields:
+  por_ins_doc_type: pif.PorInsDocType
+  document_format: pif.DocumentFormat
+  document_record_type: pif.DocumentRecordType
+  document_info: pif.DocumentInfo

@@ -1,0 +1,33 @@
+concept: mrp_exploded_res
+display_name: MrpExplodedRes
+module: mrp
+description: Auto-generated representation of the physical table MrpExplodedRes.
+synonyms:
+- mrpexplodedres
+- mrp exploded res
+header_attributes:
+  resource_code:
+    display: Resourcecode
+    type: string
+    required: false
+    description: Field ResourceCode from MrpExplodedRes
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpExplodedRes
+  required_date:
+    display: Requireddate
+    type: date
+    required: false
+    description: Field RequiredDate from MrpExplodedRes
+  quantity_reqd:
+    display: Quantityreqd
+    type: decimal
+    required: false
+    description: Field QuantityReqd from MrpExplodedRes
+  offset_days:
+    display: Offsetdays
+    type: decimal
+    required: false
+    description: Field OffsetDays from MrpExplodedRes

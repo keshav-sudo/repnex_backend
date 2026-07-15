@@ -1,0 +1,18 @@
+concept: gen_dimension_ent
+table: GenDimensionEnt
+alias: gde
+fields:
+  company: gde.Company
+  gl_year: gde.GlYear
+  gl_period: gde.GlPeriod
+  dimension_entry: gde.DimensionEntry
+  source: gde.Source
+  type: gde.Type
+  source_key: gde.SourceKey
+  num_dim_ent: gde.NumDimEnt
+  total_amount: gde.TotalAmount
+  gl_updated: gde.GlUpdated
+  sub_module_key: gde.SubModuleKey
+  gl_int_year: gde.GlIntYear
+  gl_int_period: gde.GlIntPeriod
+  gl_journal: gde.GlJournal

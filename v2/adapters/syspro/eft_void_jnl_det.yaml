@@ -1,0 +1,17 @@
+concept: eft_void_jnl_det
+table: EftVoidJnlDet
+alias: evjd
+fields:
+  bank: evjd.Bank
+  eft_number: evjd.EftNumber
+  supplier: evjd.Supplier
+  entry_number: evjd.EntryNumber
+  sub_entry_number: evjd.SubEntryNumber
+  invoice: evjd.Invoice
+  payment_value: evjd.PaymentValue
+  currency_value: evjd.CurrencyValue
+  post_currency: evjd.PostCurrency
+  invoice_date: evjd.InvoiceDate
+  invoice_type: evjd.InvoiceType
+  reference: evjd.Reference
+  payment_number: evjd.PaymentNumber

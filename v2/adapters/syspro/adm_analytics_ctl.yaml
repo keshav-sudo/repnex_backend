@@ -1,0 +1,7 @@
+concept: adm_analytics_ctl
+table: AdmAnalyticsCtl
+alias: aac1
+fields:
+  filter_site: aac1.FilterSite
+  filter_table: aac1.FilterTable
+  filter_value: aac1.FilterValue

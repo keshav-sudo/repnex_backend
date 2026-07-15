@@ -1,0 +1,78 @@
+concept: lynq_vp__stock_info_details
+display_name: Lynq VP StockInfoDetails
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_StockInfoDetails.
+synonyms:
+- lynq_vp_stockinfodetails
+- lynq vp  stock info details
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_StockInfoDetails
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from Lynq_VP_StockInfoDetails
+  location_code:
+    display: Locationcode
+    type: string
+    required: false
+    description: Field LocationCode from Lynq_VP_StockInfoDetails
+  date:
+    display: Date
+    type: date
+    required: false
+    description: Field Date from Lynq_VP_StockInfoDetails
+  moment:
+    display: Moment
+    type: date
+    required: false
+    description: Field Moment from Lynq_VP_StockInfoDetails
+  elem_type_id:
+    display: Elemtypeid
+    type: string
+    required: false
+    description: Field ElemTypeID from Lynq_VP_StockInfoDetails
+  elem_id_str:
+    display: Elemidstr
+    type: string
+    required: false
+    description: Field ElemIDStr from Lynq_VP_StockInfoDetails
+  ord_type_id:
+    display: Ordtypeid
+    type: string
+    required: false
+    description: Field OrdTypeID from Lynq_VP_StockInfoDetails
+  ord_id_str:
+    display: Ordidstr
+    type: string
+    required: false
+    description: Field OrdIDStr from Lynq_VP_StockInfoDetails
+  job_type_id:
+    display: Jobtypeid
+    type: string
+    required: false
+    description: Field JobTypeID from Lynq_VP_StockInfoDetails
+  job_id_str:
+    display: Jobidstr
+    type: string
+    required: false
+    description: Field JobIDStr from Lynq_VP_StockInfoDetails
+  qty:
+    display: Qty
+    type: decimal
+    required: false
+    description: Field Qty from Lynq_VP_StockInfoDetails
+  available:
+    display: Available
+    type: decimal
+    required: false
+    description: Field Available from Lynq_VP_StockInfoDetails
+  is_stocked:
+    display: Isstocked
+    type: string
+    required: false
+    description: Field IsStocked from Lynq_VP_StockInfoDetails

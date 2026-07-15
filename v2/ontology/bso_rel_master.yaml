@@ -1,0 +1,143 @@
+concept: bso_rel_master
+display_name: BsoRelMaster
+module: other
+description: Auto-generated representation of the physical table BsoRelMaster.
+synonyms:
+- bsorelmaster
+- bso rel master
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from BsoRelMaster
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from BsoRelMaster
+  cust_stock_code:
+    display: Custstockcode
+    type: string
+    required: false
+    description: Field CustStockCode from BsoRelMaster
+  next_rel_num:
+    display: Nextrelnum
+    type: decimal
+    required: false
+    description: Field NextRelNum from BsoRelMaster
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from BsoRelMaster
+  supply_wh:
+    display: Supplywh
+    type: string
+    required: false
+    description: Field SupplyWh from BsoRelMaster
+  shipment_days:
+    display: Shipmentdays
+    type: decimal
+    required: false
+    description: Field ShipmentDays from BsoRelMaster
+  num_day_drops:
+    display: Numdaydrops
+    type: decimal
+    required: false
+    description: Field NumDayDrops from BsoRelMaster
+  num_week_drops:
+    display: Numweekdrops
+    type: decimal
+    required: false
+    description: Field NumWeekDrops from BsoRelMaster
+  day_in_week:
+    display: Dayinweek
+    type: decimal
+    required: false
+    description: Field DayInWeek from BsoRelMaster
+  num_month_drops:
+    display: Nummonthdrops
+    type: decimal
+    required: false
+    description: Field NumMonthDrops from BsoRelMaster
+  day_in_month:
+    display: Dayinmonth
+    type: decimal
+    required: false
+    description: Field DayInMonth from BsoRelMaster
+  release_manager:
+    display: Releasemanager
+    type: string
+    required: false
+    description: Field ReleaseManager from BsoRelMaster
+  release_status:
+    display: Releasestatus
+    type: string
+    required: false
+    description: Field ReleaseStatus from BsoRelMaster
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from BsoRelMaster
+  price_contract_num:
+    display: Pricecontractnum
+    type: string
+    required: false
+    description: Field PriceContractNum from BsoRelMaster
+  contract_qty:
+    display: Contractqty
+    type: decimal
+    required: false
+    description: Field ContractQty from BsoRelMaster
+  total_delivered:
+    display: Totaldelivered
+    type: decimal
+    required: false
+    description: Field TotalDelivered from BsoRelMaster
+  stock_uom:
+    display: Stockuom
+    type: string
+    required: false
+    description: Field StockUom from BsoRelMaster
+  total_received:
+    display: Totalreceived
+    type: decimal
+    required: false
+    description: Field TotalReceived from BsoRelMaster
+  last_invoice:
+    display: Lastinvoice
+    type: string
+    required: false
+    description: Field LastInvoice from BsoRelMaster
+  date_last_inv:
+    display: Datelastinv
+    type: date
+    required: false
+    description: Field DateLastInv from BsoRelMaster
+  base_date:
+    display: Basedate
+    type: date
+    required: false
+    description: Field BaseDate from BsoRelMaster
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from BsoRelMaster
+  opening_cume:
+    display: Openingcume
+    type: decimal
+    required: false
+    description: Field OpeningCume from BsoRelMaster
+  buying_group:
+    display: Buyinggroup
+    type: string
+    required: false
+    description: Field BuyingGroup from BsoRelMaster
+  last_dispatch_note:
+    display: Lastdispatchnote
+    type: string
+    required: false
+    description: Field LastDispatchNote from BsoRelMaster

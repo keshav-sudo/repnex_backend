@@ -1,0 +1,7 @@
+concept: lynq_vp_bpl__src_vp_resource
+table: Lynq_VP_BPL_Src_VPResource
+alias: lvpbplsvpr
+fields:
+  id: lvpbplsvpr.ID
+  res_code: lvpbplsvpr.ResCode
+  res_desc: lvpbplsvpr.ResDesc

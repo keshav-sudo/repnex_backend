@@ -1,0 +1,118 @@
+concept: asset_control_bv
+display_name: AssetControlBv
+module: assets
+description: Auto-generated representation of the physical table AssetControlBv.
+synonyms:
+- assetcontrolbv
+- asset control bv
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from AssetControlBv
+  depn_value_ytd:
+    display: Depnvalueytd
+    type: decimal
+    required: false
+    description: Field DepnValueYtd from AssetControlBv
+  depn_reval_ytd:
+    display: Depnrevalytd
+    type: decimal
+    required: false
+    description: Field DepnRevalYtd from AssetControlBv
+  depn_ici_ytd:
+    display: Depniciytd
+    type: decimal
+    required: false
+    description: Field DepnIciYtd from AssetControlBv
+  depn_ico_ytd:
+    display: Depnicoytd
+    type: decimal
+    required: false
+    description: Field DepnIcoYtd from AssetControlBv
+  depn_adds_ytd:
+    display: Depnaddsytd
+    type: decimal
+    required: false
+    description: Field DepnAddsYtd from AssetControlBv
+  depn_disps_ytd:
+    display: Depndispsytd
+    type: decimal
+    required: false
+    description: Field DepnDispsYtd from AssetControlBv
+  depn_count_ytd:
+    display: Depncountytd
+    type: decimal
+    required: false
+    description: Field DepnCountYtd from AssetControlBv
+  depn_split_ytd:
+    display: Depnsplitytd
+    type: decimal
+    required: false
+    description: Field DepnSplitYtd from AssetControlBv
+  reval_ytd:
+    display: Revalytd
+    type: decimal
+    required: false
+    description: Field RevalYtd from AssetControlBv
+  ici_ytd:
+    display: Iciytd
+    type: decimal
+    required: false
+    description: Field IciYtd from AssetControlBv
+  ico_ytd:
+    display: Icoytd
+    type: decimal
+    required: false
+    description: Field IcoYtd from AssetControlBv
+  additions_ytd:
+    display: Additionsytd
+    type: decimal
+    required: false
+    description: Field AdditionsYtd from AssetControlBv
+  disposals_ytd:
+    display: Disposalsytd
+    type: decimal
+    required: false
+    description: Field DisposalsYtd from AssetControlBv
+  disposal_cost:
+    display: Disposalcost
+    type: decimal
+    required: false
+    description: Field DisposalCost from AssetControlBv
+  sold_value:
+    display: Soldvalue
+    type: decimal
+    required: false
+    description: Field SoldValue from AssetControlBv
+  count_ytd:
+    display: Countytd
+    type: decimal
+    required: false
+    description: Field CountYtd from AssetControlBv
+  split_ytd:
+    display: Splitytd
+    type: decimal
+    required: false
+    description: Field SplitYtd from AssetControlBv
+  change_ytd:
+    display: Changeytd
+    type: decimal
+    required: false
+    description: Field ChangeYtd from AssetControlBv
+  open_value:
+    display: Openvalue
+    type: decimal
+    required: false
+    description: Field OpenValue from AssetControlBv
+  open_depn_value:
+    display: Opendepnvalue
+    type: decimal
+    required: false
+    description: Field OpenDepnValue from AssetControlBv
+  open_depn_reval_value:
+    display: Opendepnrevalvalue
+    type: decimal
+    required: false
+    description: Field OpenDepnRevalValue from AssetControlBv

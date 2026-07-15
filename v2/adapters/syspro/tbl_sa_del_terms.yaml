@@ -1,0 +1,6 @@
+concept: tbl_sa_del_terms
+table: TblSaDelTerms
+alias: tsdt
+fields:
+  delivery_terms: tsdt.DeliveryTerms
+  description: tsdt.Description

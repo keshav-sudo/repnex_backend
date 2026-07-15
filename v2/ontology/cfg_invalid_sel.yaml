@@ -1,0 +1,33 @@
+concept: cfg_invalid_sel
+display_name: CfgInvalidSel
+module: other
+description: Auto-generated representation of the physical table CfgInvalidSel.
+synonyms:
+- cfginvalidsel
+- cfg invalid sel
+header_attributes:
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from CfgInvalidSel
+  selection_num1:
+    display: Selectionnum1
+    type: decimal
+    required: false
+    description: Field SelectionNum1 from CfgInvalidSel
+  criteria_num1:
+    display: Criterianum1
+    type: decimal
+    required: false
+    description: Field CriteriaNum1 from CfgInvalidSel
+  selection_num2:
+    display: Selectionnum2
+    type: decimal
+    required: false
+    description: Field SelectionNum2 from CfgInvalidSel
+  criteria_num2:
+    display: Criterianum2
+    type: decimal
+    required: false
+    description: Field CriteriaNum2 from CfgInvalidSel

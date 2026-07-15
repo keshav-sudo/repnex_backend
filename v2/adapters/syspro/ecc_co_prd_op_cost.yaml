@@ -1,0 +1,10 @@
+concept: ecc_co_prd_op_cost
+table: EccCoPrdOpCost
+alias: ecpoc
+fields:
+  change_order: ecpoc.ChangeOrder
+  stock_code: ecpoc.StockCode
+  route: ecpoc.Route
+  co_product_line: ecpoc.CoProductLine
+  operation: ecpoc.Operation
+  pct_labor_cost: ecpoc.PctLaborCost

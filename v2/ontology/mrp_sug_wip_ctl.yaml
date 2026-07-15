@@ -1,0 +1,428 @@
+concept: mrp_sug_wip_ctl
+display_name: MrpSugWipCtl
+module: mrp
+description: Auto-generated representation of the physical table MrpSugWipCtl.
+synonyms:
+- mrpsugwipctl
+- mrp sug wip ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from MrpSugWipCtl
+  next_job:
+    display: Nextjob
+    type: decimal
+    required: false
+    description: Field NextJob from MrpSugWipCtl
+  current_fin_period:
+    display: Currentfinperiod
+    type: decimal
+    required: false
+    description: Field CurrentFinPeriod from MrpSugWipCtl
+  current_fin_year:
+    display: Currentfinyear
+    type: decimal
+    required: false
+    description: Field CurrentFinYear from MrpSugWipCtl
+  next_lab_jnl:
+    display: Nextlabjnl
+    type: decimal
+    required: false
+    description: Field NextLabJnl from MrpSugWipCtl
+  next_lab_jnl_pr:
+    display: Nextlabjnlpr
+    type: decimal
+    required: false
+    description: Field NextLabJnlPr from MrpSugWipCtl
+  next_bill_jnl:
+    display: Nextbilljnl
+    type: decimal
+    required: false
+    description: Field NextBillJnl from MrpSugWipCtl
+  next_bill_jnl_pr:
+    display: Nextbilljnlpr
+    type: decimal
+    required: false
+    description: Field NextBillJnlPr from MrpSugWipCtl
+  cur_yr_mth_stat1:
+    display: Curyrmthstat1
+    type: string
+    required: false
+    description: Field CurYrMthStat1 from MrpSugWipCtl
+  cur_yr_mth_stat2:
+    display: Curyrmthstat2
+    type: string
+    required: false
+    description: Field CurYrMthStat2 from MrpSugWipCtl
+  cur_yr_mth_stat3:
+    display: Curyrmthstat3
+    type: string
+    required: false
+    description: Field CurYrMthStat3 from MrpSugWipCtl
+  cur_yr_mth_stat4:
+    display: Curyrmthstat4
+    type: string
+    required: false
+    description: Field CurYrMthStat4 from MrpSugWipCtl
+  cur_yr_mth_stat5:
+    display: Curyrmthstat5
+    type: string
+    required: false
+    description: Field CurYrMthStat5 from MrpSugWipCtl
+  cur_yr_mth_stat6:
+    display: Curyrmthstat6
+    type: string
+    required: false
+    description: Field CurYrMthStat6 from MrpSugWipCtl
+  cur_yr_mth_stat7:
+    display: Curyrmthstat7
+    type: string
+    required: false
+    description: Field CurYrMthStat7 from MrpSugWipCtl
+  cur_yr_mth_stat8:
+    display: Curyrmthstat8
+    type: string
+    required: false
+    description: Field CurYrMthStat8 from MrpSugWipCtl
+  cur_yr_mth_stat9:
+    display: Curyrmthstat9
+    type: string
+    required: false
+    description: Field CurYrMthStat9 from MrpSugWipCtl
+  cur_yr_mth_stat10:
+    display: Curyrmthstat10
+    type: string
+    required: false
+    description: Field CurYrMthStat10 from MrpSugWipCtl
+  cur_yr_mth_stat11:
+    display: Curyrmthstat11
+    type: string
+    required: false
+    description: Field CurYrMthStat11 from MrpSugWipCtl
+  cur_yr_mth_stat12:
+    display: Curyrmthstat12
+    type: string
+    required: false
+    description: Field CurYrMthStat12 from MrpSugWipCtl
+  cur_yr_mth_stat13:
+    display: Curyrmthstat13
+    type: string
+    required: false
+    description: Field CurYrMthStat13 from MrpSugWipCtl
+  cur_yr_mth_end1:
+    display: Curyrmthend1
+    type: date
+    required: false
+    description: Field CurYrMthEnd1 from MrpSugWipCtl
+  cur_yr_mth_end2:
+    display: Curyrmthend2
+    type: date
+    required: false
+    description: Field CurYrMthEnd2 from MrpSugWipCtl
+  cur_yr_mth_end3:
+    display: Curyrmthend3
+    type: date
+    required: false
+    description: Field CurYrMthEnd3 from MrpSugWipCtl
+  cur_yr_mth_end4:
+    display: Curyrmthend4
+    type: date
+    required: false
+    description: Field CurYrMthEnd4 from MrpSugWipCtl
+  cur_yr_mth_end5:
+    display: Curyrmthend5
+    type: date
+    required: false
+    description: Field CurYrMthEnd5 from MrpSugWipCtl
+  cur_yr_mth_end6:
+    display: Curyrmthend6
+    type: date
+    required: false
+    description: Field CurYrMthEnd6 from MrpSugWipCtl
+  cur_yr_mth_end7:
+    display: Curyrmthend7
+    type: date
+    required: false
+    description: Field CurYrMthEnd7 from MrpSugWipCtl
+  cur_yr_mth_end8:
+    display: Curyrmthend8
+    type: date
+    required: false
+    description: Field CurYrMthEnd8 from MrpSugWipCtl
+  cur_yr_mth_end9:
+    display: Curyrmthend9
+    type: date
+    required: false
+    description: Field CurYrMthEnd9 from MrpSugWipCtl
+  cur_yr_mth_end10:
+    display: Curyrmthend10
+    type: date
+    required: false
+    description: Field CurYrMthEnd10 from MrpSugWipCtl
+  cur_yr_mth_end11:
+    display: Curyrmthend11
+    type: date
+    required: false
+    description: Field CurYrMthEnd11 from MrpSugWipCtl
+  cur_yr_mth_end12:
+    display: Curyrmthend12
+    type: date
+    required: false
+    description: Field CurYrMthEnd12 from MrpSugWipCtl
+  cur_yr_mth_end13:
+    display: Curyrmthend13
+    type: date
+    required: false
+    description: Field CurYrMthEnd13 from MrpSugWipCtl
+  prv_yr_mth_stat1:
+    display: Prvyrmthstat1
+    type: string
+    required: false
+    description: Field PrvYrMthStat1 from MrpSugWipCtl
+  prv_yr_mth_stat2:
+    display: Prvyrmthstat2
+    type: string
+    required: false
+    description: Field PrvYrMthStat2 from MrpSugWipCtl
+  prv_yr_mth_stat3:
+    display: Prvyrmthstat3
+    type: string
+    required: false
+    description: Field PrvYrMthStat3 from MrpSugWipCtl
+  prv_yr_mth_stat4:
+    display: Prvyrmthstat4
+    type: string
+    required: false
+    description: Field PrvYrMthStat4 from MrpSugWipCtl
+  prv_yr_mth_stat5:
+    display: Prvyrmthstat5
+    type: string
+    required: false
+    description: Field PrvYrMthStat5 from MrpSugWipCtl
+  prv_yr_mth_stat6:
+    display: Prvyrmthstat6
+    type: string
+    required: false
+    description: Field PrvYrMthStat6 from MrpSugWipCtl
+  prv_yr_mth_stat7:
+    display: Prvyrmthstat7
+    type: string
+    required: false
+    description: Field PrvYrMthStat7 from MrpSugWipCtl
+  prv_yr_mth_stat8:
+    display: Prvyrmthstat8
+    type: string
+    required: false
+    description: Field PrvYrMthStat8 from MrpSugWipCtl
+  prv_yr_mth_stat9:
+    display: Prvyrmthstat9
+    type: string
+    required: false
+    description: Field PrvYrMthStat9 from MrpSugWipCtl
+  prv_yr_mth_stat10:
+    display: Prvyrmthstat10
+    type: string
+    required: false
+    description: Field PrvYrMthStat10 from MrpSugWipCtl
+  prv_yr_mth_stat11:
+    display: Prvyrmthstat11
+    type: string
+    required: false
+    description: Field PrvYrMthStat11 from MrpSugWipCtl
+  prv_yr_mth_stat12:
+    display: Prvyrmthstat12
+    type: string
+    required: false
+    description: Field PrvYrMthStat12 from MrpSugWipCtl
+  prv_yr_mth_stat13:
+    display: Prvyrmthstat13
+    type: string
+    required: false
+    description: Field PrvYrMthStat13 from MrpSugWipCtl
+  prv_yr_mth_end1:
+    display: Prvyrmthend1
+    type: date
+    required: false
+    description: Field PrvYrMthEnd1 from MrpSugWipCtl
+  prv_yr_mth_end2:
+    display: Prvyrmthend2
+    type: date
+    required: false
+    description: Field PrvYrMthEnd2 from MrpSugWipCtl
+  prv_yr_mth_end3:
+    display: Prvyrmthend3
+    type: date
+    required: false
+    description: Field PrvYrMthEnd3 from MrpSugWipCtl
+  prv_yr_mth_end4:
+    display: Prvyrmthend4
+    type: date
+    required: false
+    description: Field PrvYrMthEnd4 from MrpSugWipCtl
+  prv_yr_mth_end5:
+    display: Prvyrmthend5
+    type: date
+    required: false
+    description: Field PrvYrMthEnd5 from MrpSugWipCtl
+  prv_yr_mth_end6:
+    display: Prvyrmthend6
+    type: date
+    required: false
+    description: Field PrvYrMthEnd6 from MrpSugWipCtl
+  prv_yr_mth_end7:
+    display: Prvyrmthend7
+    type: date
+    required: false
+    description: Field PrvYrMthEnd7 from MrpSugWipCtl
+  prv_yr_mth_end8:
+    display: Prvyrmthend8
+    type: date
+    required: false
+    description: Field PrvYrMthEnd8 from MrpSugWipCtl
+  prv_yr_mth_end9:
+    display: Prvyrmthend9
+    type: date
+    required: false
+    description: Field PrvYrMthEnd9 from MrpSugWipCtl
+  prv_yr_mth_end10:
+    display: Prvyrmthend10
+    type: date
+    required: false
+    description: Field PrvYrMthEnd10 from MrpSugWipCtl
+  prv_yr_mth_end11:
+    display: Prvyrmthend11
+    type: date
+    required: false
+    description: Field PrvYrMthEnd11 from MrpSugWipCtl
+  prv_yr_mth_end12:
+    display: Prvyrmthend12
+    type: date
+    required: false
+    description: Field PrvYrMthEnd12 from MrpSugWipCtl
+  prv_yr_mth_end13:
+    display: Prvyrmthend13
+    type: date
+    required: false
+    description: Field PrvYrMthEnd13 from MrpSugWipCtl
+  low_unp_lab_year:
+    display: Lowunplabyear
+    type: decimal
+    required: false
+    description: Field LowUnpLabYear from MrpSugWipCtl
+  low_unp_lab_period:
+    display: Lowunplabperiod
+    type: decimal
+    required: false
+    description: Field LowUnpLabPeriod from MrpSugWipCtl
+  low_unp_lab_jnl:
+    display: Lowunplabjnl
+    type: decimal
+    required: false
+    description: Field LowUnpLabJnl from MrpSugWipCtl
+  low_unp_bill_year:
+    display: Lowunpbillyear
+    type: decimal
+    required: false
+    description: Field LowUnpBillYear from MrpSugWipCtl
+  low_unp_bill_prd:
+    display: Lowunpbillprd
+    type: decimal
+    required: false
+    description: Field LowUnpBillPrd from MrpSugWipCtl
+  low_unp_bill_jnl:
+    display: Lowunpbilljnl
+    type: decimal
+    required: false
+    description: Field LowUnpBillJnl from MrpSugWipCtl
+  next_kit_iss_doc:
+    display: Nextkitissdoc
+    type: decimal
+    required: false
+    description: Field NextKitIssDoc from MrpSugWipCtl
+  unp_lab_year:
+    display: Unplabyear
+    type: decimal
+    required: false
+    description: Field UnpLabYear from MrpSugWipCtl
+  unp_lab_period:
+    display: Unplabperiod
+    type: decimal
+    required: false
+    description: Field UnpLabPeriod from MrpSugWipCtl
+  unp_bill_year:
+    display: Unpbillyear
+    type: decimal
+    required: false
+    description: Field UnpBillYear from MrpSugWipCtl
+  unp_bill_period:
+    display: Unpbillperiod
+    type: decimal
+    required: false
+    description: Field UnpBillPeriod from MrpSugWipCtl
+  next_insp_reference:
+    display: Nextinspreference
+    type: decimal
+    required: false
+    description: Field NextInspReference from MrpSugWipCtl
+  next_insp_doc:
+    display: Nextinspdoc
+    type: decimal
+    required: false
+    description: Field NextInspDoc from MrpSugWipCtl
+  next_scr_doc:
+    display: Nextscrdoc
+    type: decimal
+    required: false
+    description: Field NextScrDoc from MrpSugWipCtl
+  low_unp_lab_upd_year:
+    display: Lowunplabupdyear
+    type: decimal
+    required: false
+    description: Field LowUnpLabUpdYear from MrpSugWipCtl
+  low_unp_lab_upd_period:
+    display: Lowunplabupdperiod
+    type: decimal
+    required: false
+    description: Field LowUnpLabUpdPeriod from MrpSugWipCtl
+  low_unp_lab_upd_jnl:
+    display: Lowunplabupdjnl
+    type: decimal
+    required: false
+    description: Field LowUnpLabUpdJnl from MrpSugWipCtl
+  low_unp_bill_upd_year:
+    display: Lowunpbillupdyear
+    type: decimal
+    required: false
+    description: Field LowUnpBillUpdYear from MrpSugWipCtl
+  low_unp_bill_upd_prd:
+    display: Lowunpbillupdprd
+    type: decimal
+    required: false
+    description: Field LowUnpBillUpdPrd from MrpSugWipCtl
+  low_unp_bill_upd_jnl:
+    display: Lowunpbillupdjnl
+    type: decimal
+    required: false
+    description: Field LowUnpBillUpdJnl from MrpSugWipCtl
+  unp_lab_upd_year:
+    display: Unplabupdyear
+    type: decimal
+    required: false
+    description: Field UnpLabUpdYear from MrpSugWipCtl
+  unp_lab_upd_period:
+    display: Unplabupdperiod
+    type: decimal
+    required: false
+    description: Field UnpLabUpdPeriod from MrpSugWipCtl
+  unp_bill_upd_year:
+    display: Unpbillupdyear
+    type: decimal
+    required: false
+    description: Field UnpBillUpdYear from MrpSugWipCtl
+  unp_bill_upd_period:
+    display: Unpbillupdperiod
+    type: decimal
+    required: false
+    description: Field UnpBillUpdPeriod from MrpSugWipCtl

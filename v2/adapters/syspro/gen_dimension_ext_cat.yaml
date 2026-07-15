@@ -1,0 +1,14 @@
+concept: gen_dimension_ext_cat
+table: GenDimensionExtCat
+alias: gdec
+fields:
+  company: gdec.Company
+  gl_year: gdec.GlYear
+  gl_period: gdec.GlPeriod
+  dimension_entry: gdec.DimensionEntry
+  dimension_line: gdec.DimensionLine
+  category_key: gdec.CategoryKey
+  dimension_category: gdec.DimensionCategory
+  category_desc: gdec.CategoryDesc
+  dimension_code: gdec.DimensionCode
+  code_desc: gdec.CodeDesc

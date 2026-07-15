@@ -1,0 +1,21 @@
+concept: gen_rec_jnl_ctl
+table: GenRecJnlCtl
+alias: grjc
+fields:
+  journal_code: grjc.JournalCode
+  num_of_entries: grjc.NumOfEntries
+  debit_amount: grjc.DebitAmount
+  credit_amount: grjc.CreditAmount
+  reference: grjc.Reference
+  notation: grjc.Notation
+  next_post_year: grjc.NextPostYear
+  genrjc_nper: grjc.GenrjcNper
+  genrjc_eyear: grjc.GenrjcEyear
+  next_post_period: grjc.NextPostPeriod
+  post_frequency: grjc.PostFrequency
+  last_year_posted: grjc.LastYearPosted
+  last_period_posted: grjc.LastPeriodPosted
+  last_jnl_posted_to: grjc.LastJnlPostedTo
+  source: grjc.Source
+  authorised_by: grjc.AuthorisedBy
+  authorised: grjc.Authorised

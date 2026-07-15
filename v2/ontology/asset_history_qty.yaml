@@ -1,0 +1,413 @@
+concept: asset_history_qty
+display_name: AssetHistoryQty
+module: assets
+description: Auto-generated representation of the physical table AssetHistoryQty.
+synonyms:
+- assethistoryqty
+- asset history qty
+header_attributes:
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetHistoryQty
+  depreciation_year:
+    display: Depreciationyear
+    type: decimal
+    required: false
+    description: Field DepreciationYear from AssetHistoryQty
+  inter_co_in_qty1:
+    display: Intercoinqty1
+    type: decimal
+    required: false
+    description: Field InterCoInQty1 from AssetHistoryQty
+  inter_co_in_qty2:
+    display: Intercoinqty2
+    type: decimal
+    required: false
+    description: Field InterCoInQty2 from AssetHistoryQty
+  inter_co_in_qty3:
+    display: Intercoinqty3
+    type: decimal
+    required: false
+    description: Field InterCoInQty3 from AssetHistoryQty
+  inter_co_in_qty4:
+    display: Intercoinqty4
+    type: decimal
+    required: false
+    description: Field InterCoInQty4 from AssetHistoryQty
+  inter_co_in_qty5:
+    display: Intercoinqty5
+    type: decimal
+    required: false
+    description: Field InterCoInQty5 from AssetHistoryQty
+  inter_co_in_qty6:
+    display: Intercoinqty6
+    type: decimal
+    required: false
+    description: Field InterCoInQty6 from AssetHistoryQty
+  inter_co_in_qty7:
+    display: Intercoinqty7
+    type: decimal
+    required: false
+    description: Field InterCoInQty7 from AssetHistoryQty
+  inter_co_in_qty8:
+    display: Intercoinqty8
+    type: decimal
+    required: false
+    description: Field InterCoInQty8 from AssetHistoryQty
+  inter_co_in_qty9:
+    display: Intercoinqty9
+    type: decimal
+    required: false
+    description: Field InterCoInQty9 from AssetHistoryQty
+  inter_co_in_qty10:
+    display: Intercoinqty10
+    type: decimal
+    required: false
+    description: Field InterCoInQty10 from AssetHistoryQty
+  inter_co_in_qty11:
+    display: Intercoinqty11
+    type: decimal
+    required: false
+    description: Field InterCoInQty11 from AssetHistoryQty
+  inter_co_in_qty12:
+    display: Intercoinqty12
+    type: decimal
+    required: false
+    description: Field InterCoInQty12 from AssetHistoryQty
+  inter_co_in_qty13:
+    display: Intercoinqty13
+    type: decimal
+    required: false
+    description: Field InterCoInQty13 from AssetHistoryQty
+  inter_co_out_qty1:
+    display: Intercooutqty1
+    type: decimal
+    required: false
+    description: Field InterCoOutQty1 from AssetHistoryQty
+  inter_co_out_qty2:
+    display: Intercooutqty2
+    type: decimal
+    required: false
+    description: Field InterCoOutQty2 from AssetHistoryQty
+  inter_co_out_qty3:
+    display: Intercooutqty3
+    type: decimal
+    required: false
+    description: Field InterCoOutQty3 from AssetHistoryQty
+  inter_co_out_qty4:
+    display: Intercooutqty4
+    type: decimal
+    required: false
+    description: Field InterCoOutQty4 from AssetHistoryQty
+  inter_co_out_qty5:
+    display: Intercooutqty5
+    type: decimal
+    required: false
+    description: Field InterCoOutQty5 from AssetHistoryQty
+  inter_co_out_qty6:
+    display: Intercooutqty6
+    type: decimal
+    required: false
+    description: Field InterCoOutQty6 from AssetHistoryQty
+  inter_co_out_qty7:
+    display: Intercooutqty7
+    type: decimal
+    required: false
+    description: Field InterCoOutQty7 from AssetHistoryQty
+  inter_co_out_qty8:
+    display: Intercooutqty8
+    type: decimal
+    required: false
+    description: Field InterCoOutQty8 from AssetHistoryQty
+  inter_co_out_qty9:
+    display: Intercooutqty9
+    type: decimal
+    required: false
+    description: Field InterCoOutQty9 from AssetHistoryQty
+  inter_co_out_qty10:
+    display: Intercooutqty10
+    type: decimal
+    required: false
+    description: Field InterCoOutQty10 from AssetHistoryQty
+  inter_co_out_qty11:
+    display: Intercooutqty11
+    type: decimal
+    required: false
+    description: Field InterCoOutQty11 from AssetHistoryQty
+  inter_co_out_qty12:
+    display: Intercooutqty12
+    type: decimal
+    required: false
+    description: Field InterCoOutQty12 from AssetHistoryQty
+  inter_co_out_qty13:
+    display: Intercooutqty13
+    type: decimal
+    required: false
+    description: Field InterCoOutQty13 from AssetHistoryQty
+  additions_qty1:
+    display: Additionsqty1
+    type: decimal
+    required: false
+    description: Field AdditionsQty1 from AssetHistoryQty
+  additions_qty2:
+    display: Additionsqty2
+    type: decimal
+    required: false
+    description: Field AdditionsQty2 from AssetHistoryQty
+  additions_qty3:
+    display: Additionsqty3
+    type: decimal
+    required: false
+    description: Field AdditionsQty3 from AssetHistoryQty
+  additions_qty4:
+    display: Additionsqty4
+    type: decimal
+    required: false
+    description: Field AdditionsQty4 from AssetHistoryQty
+  additions_qty5:
+    display: Additionsqty5
+    type: decimal
+    required: false
+    description: Field AdditionsQty5 from AssetHistoryQty
+  additions_qty6:
+    display: Additionsqty6
+    type: decimal
+    required: false
+    description: Field AdditionsQty6 from AssetHistoryQty
+  additions_qty7:
+    display: Additionsqty7
+    type: decimal
+    required: false
+    description: Field AdditionsQty7 from AssetHistoryQty
+  additions_qty8:
+    display: Additionsqty8
+    type: decimal
+    required: false
+    description: Field AdditionsQty8 from AssetHistoryQty
+  additions_qty9:
+    display: Additionsqty9
+    type: decimal
+    required: false
+    description: Field AdditionsQty9 from AssetHistoryQty
+  additions_qty10:
+    display: Additionsqty10
+    type: decimal
+    required: false
+    description: Field AdditionsQty10 from AssetHistoryQty
+  additions_qty11:
+    display: Additionsqty11
+    type: decimal
+    required: false
+    description: Field AdditionsQty11 from AssetHistoryQty
+  additions_qty12:
+    display: Additionsqty12
+    type: decimal
+    required: false
+    description: Field AdditionsQty12 from AssetHistoryQty
+  additions_qty13:
+    display: Additionsqty13
+    type: decimal
+    required: false
+    description: Field AdditionsQty13 from AssetHistoryQty
+  disposals_qty1:
+    display: Disposalsqty1
+    type: decimal
+    required: false
+    description: Field DisposalsQty1 from AssetHistoryQty
+  disposals_qty2:
+    display: Disposalsqty2
+    type: decimal
+    required: false
+    description: Field DisposalsQty2 from AssetHistoryQty
+  disposals_qty3:
+    display: Disposalsqty3
+    type: decimal
+    required: false
+    description: Field DisposalsQty3 from AssetHistoryQty
+  disposals_qty4:
+    display: Disposalsqty4
+    type: decimal
+    required: false
+    description: Field DisposalsQty4 from AssetHistoryQty
+  disposals_qty5:
+    display: Disposalsqty5
+    type: decimal
+    required: false
+    description: Field DisposalsQty5 from AssetHistoryQty
+  disposals_qty6:
+    display: Disposalsqty6
+    type: decimal
+    required: false
+    description: Field DisposalsQty6 from AssetHistoryQty
+  disposals_qty7:
+    display: Disposalsqty7
+    type: decimal
+    required: false
+    description: Field DisposalsQty7 from AssetHistoryQty
+  disposals_qty8:
+    display: Disposalsqty8
+    type: decimal
+    required: false
+    description: Field DisposalsQty8 from AssetHistoryQty
+  disposals_qty9:
+    display: Disposalsqty9
+    type: decimal
+    required: false
+    description: Field DisposalsQty9 from AssetHistoryQty
+  disposals_qty10:
+    display: Disposalsqty10
+    type: decimal
+    required: false
+    description: Field DisposalsQty10 from AssetHistoryQty
+  disposals_qty11:
+    display: Disposalsqty11
+    type: decimal
+    required: false
+    description: Field DisposalsQty11 from AssetHistoryQty
+  disposals_qty12:
+    display: Disposalsqty12
+    type: decimal
+    required: false
+    description: Field DisposalsQty12 from AssetHistoryQty
+  disposals_qty13:
+    display: Disposalsqty13
+    type: decimal
+    required: false
+    description: Field DisposalsQty13 from AssetHistoryQty
+  asset_count_qty1:
+    display: Assetcountqty1
+    type: decimal
+    required: false
+    description: Field AssetCountQty1 from AssetHistoryQty
+  asset_count_qty2:
+    display: Assetcountqty2
+    type: decimal
+    required: false
+    description: Field AssetCountQty2 from AssetHistoryQty
+  asset_count_qty3:
+    display: Assetcountqty3
+    type: decimal
+    required: false
+    description: Field AssetCountQty3 from AssetHistoryQty
+  asset_count_qty4:
+    display: Assetcountqty4
+    type: decimal
+    required: false
+    description: Field AssetCountQty4 from AssetHistoryQty
+  asset_count_qty5:
+    display: Assetcountqty5
+    type: decimal
+    required: false
+    description: Field AssetCountQty5 from AssetHistoryQty
+  asset_count_qty6:
+    display: Assetcountqty6
+    type: decimal
+    required: false
+    description: Field AssetCountQty6 from AssetHistoryQty
+  asset_count_qty7:
+    display: Assetcountqty7
+    type: decimal
+    required: false
+    description: Field AssetCountQty7 from AssetHistoryQty
+  asset_count_qty8:
+    display: Assetcountqty8
+    type: decimal
+    required: false
+    description: Field AssetCountQty8 from AssetHistoryQty
+  asset_count_qty9:
+    display: Assetcountqty9
+    type: decimal
+    required: false
+    description: Field AssetCountQty9 from AssetHistoryQty
+  asset_count_qty10:
+    display: Assetcountqty10
+    type: decimal
+    required: false
+    description: Field AssetCountQty10 from AssetHistoryQty
+  asset_count_qty11:
+    display: Assetcountqty11
+    type: decimal
+    required: false
+    description: Field AssetCountQty11 from AssetHistoryQty
+  asset_count_qty12:
+    display: Assetcountqty12
+    type: decimal
+    required: false
+    description: Field AssetCountQty12 from AssetHistoryQty
+  asset_count_qty13:
+    display: Assetcountqty13
+    type: decimal
+    required: false
+    description: Field AssetCountQty13 from AssetHistoryQty
+  asset_split_qty1:
+    display: Assetsplitqty1
+    type: decimal
+    required: false
+    description: Field AssetSplitQty1 from AssetHistoryQty
+  asset_split_qty2:
+    display: Assetsplitqty2
+    type: decimal
+    required: false
+    description: Field AssetSplitQty2 from AssetHistoryQty
+  asset_split_qty3:
+    display: Assetsplitqty3
+    type: decimal
+    required: false
+    description: Field AssetSplitQty3 from AssetHistoryQty
+  asset_split_qty4:
+    display: Assetsplitqty4
+    type: decimal
+    required: false
+    description: Field AssetSplitQty4 from AssetHistoryQty
+  asset_split_qty5:
+    display: Assetsplitqty5
+    type: decimal
+    required: false
+    description: Field AssetSplitQty5 from AssetHistoryQty
+  asset_split_qty6:
+    display: Assetsplitqty6
+    type: decimal
+    required: false
+    description: Field AssetSplitQty6 from AssetHistoryQty
+  asset_split_qty7:
+    display: Assetsplitqty7
+    type: decimal
+    required: false
+    description: Field AssetSplitQty7 from AssetHistoryQty
+  asset_split_qty8:
+    display: Assetsplitqty8
+    type: decimal
+    required: false
+    description: Field AssetSplitQty8 from AssetHistoryQty
+  asset_split_qty9:
+    display: Assetsplitqty9
+    type: decimal
+    required: false
+    description: Field AssetSplitQty9 from AssetHistoryQty
+  asset_split_qty10:
+    display: Assetsplitqty10
+    type: decimal
+    required: false
+    description: Field AssetSplitQty10 from AssetHistoryQty
+  asset_split_qty11:
+    display: Assetsplitqty11
+    type: decimal
+    required: false
+    description: Field AssetSplitQty11 from AssetHistoryQty
+  asset_split_qty12:
+    display: Assetsplitqty12
+    type: decimal
+    required: false
+    description: Field AssetSplitQty12 from AssetHistoryQty
+  asset_split_qty13:
+    display: Assetsplitqty13
+    type: decimal
+    required: false
+    description: Field AssetSplitQty13 from AssetHistoryQty
+  opening_qty:
+    display: Openingqty
+    type: decimal
+    required: false
+    description: Field OpeningQty from AssetHistoryQty

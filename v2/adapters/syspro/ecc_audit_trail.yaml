@@ -1,0 +1,12 @@
+concept: ecc_audit_trail
+table: EccAuditTrail
+alias: eat
+fields:
+  change_order: eat.ChangeOrder
+  audit_sequence: eat.AuditSequence
+  audit_date: eat.AuditDate
+  audit_time: eat.AuditTime
+  status_code: eat.StatusCode
+  description: eat.Description
+  ecc_user: eat.EccUser
+  event_type: eat.EventType

@@ -1,0 +1,53 @@
+concept: rma_detail_ser
+display_name: RmaDetailSer
+module: other
+description: Auto-generated representation of the physical table RmaDetailSer.
+synonyms:
+- rmadetailser
+- rma detail ser
+header_attributes:
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RmaDetailSer
+  rma_line_number:
+    display: Rmalinenumber
+    type: decimal
+    required: false
+    description: Field RmaLineNumber from RmaDetailSer
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from RmaDetailSer
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from RmaDetailSer
+  stock_qty_to_receive:
+    display: Stockqtytoreceive
+    type: decimal
+    required: false
+    description: Field StockQtyToReceive from RmaDetailSer
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from RmaDetailSer
+  new_expiry_date:
+    display: Newexpirydate
+    type: date
+    required: false
+    description: Field NewExpiryDate from RmaDetailSer
+  new_scrap_date:
+    display: Newscrapdate
+    type: date
+    required: false
+    description: Field NewScrapDate from RmaDetailSer
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from RmaDetailSer

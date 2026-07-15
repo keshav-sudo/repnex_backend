@@ -1,0 +1,6 @@
+concept: adm_alternate_cur
+table: AdmAlternateCur
+alias: aac
+fields:
+  currency: aac.Currency
+  rounding_gl: aac.RoundingGl

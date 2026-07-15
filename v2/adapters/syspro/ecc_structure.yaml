@@ -1,0 +1,49 @@
+concept: ecc_structure
+table: EccStructure
+alias: es3
+fields:
+  change_order: es3.ChangeOrder
+  parent_part: es3.ParentPart
+  route: es3.Route
+  sequence_num: es3.SequenceNum
+  component: es3.Component
+  com_version: es3.ComVersion
+  com_release: es3.ComRelease
+  ecc_consumption: es3.EccConsumption
+  structure_on_date: es3.StructureOnDate
+  structure_off_date: es3.StructureOffDate
+  op_offset_flag: es3.OpOffsetFlag
+  operation_offset: es3.OperationOffset
+  qty_per: es3.QtyPer
+  scrap_percentage: es3.ScrapPercentage
+  scrap_quantity: es3.ScrapQuantity
+  so_option_flag: es3.SoOptionFlag
+  so_print_flag: es3.SoPrintFlag
+  incl_scrap_flag: es3.InclScrapFlag
+  reason_for_change: es3.ReasonForChange
+  ref_designator: es3.RefDesignator
+  assembly_place: es3.AssemblyPlace
+  item_number: es3.ItemNumber
+  auto_narr_code: es3.AutoNarrCode
+  component_type: es3.ComponentType
+  incl_kit_issues: es3.InclKitIssues
+  create_sub_job: es3.CreateSubJob
+  wet_weight_percent: es3.WetWeightPercent
+  include_batch: es3.IncludeBatch
+  include_from_job: es3.IncludeFromJob
+  include_to_job: es3.IncludeToJob
+  fixed_qty_per_flag: es3.FixedQtyPerFlag
+  fixed_qty_per: es3.FixedQtyPer
+  roll_up_cost_flag: es3.RollUpCostFlag
+  warehouse: es3.Warehouse
+  ignore_floor_flag: es3.IgnoreFloorFlag
+  co_product_cost_val: es3.CoProductCostVal
+  uom_flag: es3.UomFlag
+  qty_per_ent: es3.QtyPerEnt
+  scrap_quantity_ent: es3.ScrapQuantityEnt
+  fixed_qty_per_ent: es3.FixedQtyPerEnt
+  product_code: es3.ProductCode
+  library_code: es3.LibraryCode
+  first_seq: es3.FirstSeq
+  second_seq: es3.SecondSeq
+  ovr_ecc_spec_iss: es3.OvrEccSpecIss

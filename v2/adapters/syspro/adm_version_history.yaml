@@ -1,0 +1,13 @@
+concept: adm_version_history
+table: AdmVersionHistory
+alias: avh
+fields:
+  update_date: avh.UpdateDate
+  database_version: avh.DatabaseVersion
+  description: avh.Description
+  syspro_full_version: avh.SysproFullVersion
+  syspro_version: avh.SysproVersion
+  syspro_sp: avh.SysproSp
+  update_source: avh.UpdateSource
+  update_source_info: avh.UpdateSourceInfo
+  baq_version: avh.BaqVersion

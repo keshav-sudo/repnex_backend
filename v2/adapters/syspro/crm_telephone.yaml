@@ -1,0 +1,12 @@
+concept: crm_telephone
+table: CrmTelephone
+alias: ct
+fields:
+  contact_id: ct.ContactId
+  telephone_type: ct.TelephoneType
+  description: ct.Description
+  telephone: ct.Telephone
+  telephone_extn: ct.TelephoneExtn
+  work_home_flag: ct.WorkHomeFlag
+  preferred: ct.Preferred
+  private: ct.Private

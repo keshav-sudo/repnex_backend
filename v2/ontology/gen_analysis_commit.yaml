@@ -1,0 +1,103 @@
+concept: gen_analysis_commit
+display_name: GenAnalysisCommit
+module: general_ledger
+description: Auto-generated representation of the physical table GenAnalysisCommit.
+synonyms:
+- genanalysiscommit
+- gen analysis commit
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenAnalysisCommit
+  section_number:
+    display: Sectionnumber
+    type: decimal
+    required: false
+    description: Field SectionNumber from GenAnalysisCommit
+  section_code:
+    display: Sectioncode
+    type: string
+    required: false
+    description: Field SectionCode from GenAnalysisCommit
+  commitment_type:
+    display: Commitmenttype
+    type: string
+    required: false
+    description: Field CommitmentType from GenAnalysisCommit
+  account_type:
+    display: Accounttype
+    type: string
+    required: false
+    description: Field AccountType from GenAnalysisCommit
+  prevcommitted:
+    display: Prevcommitted
+    type: decimal
+    required: false
+    description: Field Prevcommitted from GenAnalysisCommit
+  commitment1:
+    display: Commitment1
+    type: decimal
+    required: false
+    description: Field Commitment1 from GenAnalysisCommit
+  commitment2:
+    display: Commitment2
+    type: decimal
+    required: false
+    description: Field Commitment2 from GenAnalysisCommit
+  commitment3:
+    display: Commitment3
+    type: decimal
+    required: false
+    description: Field Commitment3 from GenAnalysisCommit
+  commitment4:
+    display: Commitment4
+    type: decimal
+    required: false
+    description: Field Commitment4 from GenAnalysisCommit
+  commitment5:
+    display: Commitment5
+    type: decimal
+    required: false
+    description: Field Commitment5 from GenAnalysisCommit
+  commitment6:
+    display: Commitment6
+    type: decimal
+    required: false
+    description: Field Commitment6 from GenAnalysisCommit
+  commitment7:
+    display: Commitment7
+    type: decimal
+    required: false
+    description: Field Commitment7 from GenAnalysisCommit
+  commitment8:
+    display: Commitment8
+    type: decimal
+    required: false
+    description: Field Commitment8 from GenAnalysisCommit
+  commitment9:
+    display: Commitment9
+    type: decimal
+    required: false
+    description: Field Commitment9 from GenAnalysisCommit
+  commitment10:
+    display: Commitment10
+    type: decimal
+    required: false
+    description: Field Commitment10 from GenAnalysisCommit
+  commitment11:
+    display: Commitment11
+    type: decimal
+    required: false
+    description: Field Commitment11 from GenAnalysisCommit
+  commitment12:
+    display: Commitment12
+    type: decimal
+    required: false
+    description: Field Commitment12 from GenAnalysisCommit
+  commitment13:
+    display: Commitment13
+    type: decimal
+    required: false
+    description: Field Commitment13 from GenAnalysisCommit

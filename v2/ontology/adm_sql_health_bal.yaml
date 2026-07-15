@@ -1,0 +1,103 @@
+concept: adm_sql_health_bal
+display_name: AdmSqlHealthBal
+module: administration
+description: Auto-generated representation of the physical table AdmSqlHealthBal.
+synonyms:
+- admsqlhealthbal
+- adm sql health bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from AdmSqlHealthBal
+  test_type:
+    display: Testtype
+    type: string
+    required: false
+    description: Field TestType from AdmSqlHealthBal
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from AdmSqlHealthBal
+  object_name:
+    display: Objectname
+    type: string
+    required: false
+    description: Field ObjectName from AdmSqlHealthBal
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from AdmSqlHealthBal
+  test_status:
+    display: Teststatus
+    type: string
+    required: false
+    description: Field TestStatus from AdmSqlHealthBal
+  index_name:
+    display: Indexname
+    type: string
+    required: false
+    description: Field IndexName from AdmSqlHealthBal
+  foreign_key_name:
+    display: Foreignkeyname
+    type: string
+    required: false
+    description: Field ForeignKeyName from AdmSqlHealthBal
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from AdmSqlHealthBal
+  exp_data_type:
+    display: Expdatatype
+    type: string
+    required: false
+    description: Field ExpDataType from AdmSqlHealthBal
+  act_data_type:
+    display: Actdatatype
+    type: string
+    required: false
+    description: Field ActDataType from AdmSqlHealthBal
+  exp_collation:
+    display: Expcollation
+    type: string
+    required: false
+    description: Field ExpCollation from AdmSqlHealthBal
+  act_collation:
+    display: Actcollation
+    type: string
+    required: false
+    description: Field ActCollation from AdmSqlHealthBal
+  exp_nullable:
+    display: Expnullable
+    type: string
+    required: false
+    description: Field ExpNullable from AdmSqlHealthBal
+  act_nullable:
+    display: Actnullable
+    type: string
+    required: false
+    description: Field ActNullable from AdmSqlHealthBal
+  exp_default_name:
+    display: Expdefaultname
+    type: string
+    required: false
+    description: Field ExpDefaultName from AdmSqlHealthBal
+  act_default_name:
+    display: Actdefaultname
+    type: string
+    required: false
+    description: Field ActDefaultName from AdmSqlHealthBal
+  exp_default_value:
+    display: Expdefaultvalue
+    type: string
+    required: false
+    description: Field ExpDefaultValue from AdmSqlHealthBal
+  act_default_value:
+    display: Actdefaultvalue
+    type: string
+    required: false
+    description: Field ActDefaultValue from AdmSqlHealthBal

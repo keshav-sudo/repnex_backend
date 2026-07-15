@@ -1,0 +1,24 @@
+concept: sqm_arc_nc_action
+table: SqmArcNcAction
+alias: sana
+fields:
+  conform_number: sana.ConformNumber
+  conform_area: sana.ConformArea
+  action_number: sana.ActionNumber
+  nc_action: sana.NcAction
+  stake_holder: sana.StakeHolder
+  action_status: sana.ActionStatus
+  action_started: sana.ActionStarted
+  action_completed: sana.ActionCompleted
+  started_date: sana.StartedDate
+  due_date: sana.DueDate
+  end_date: sana.EndDate
+  link_type: sana.LinkType
+  link_key: sana.LinkKey
+  narration: sana.Narration
+  audit_status: sana.AuditStatus
+  ca_implemented: sana.CaImplemented
+  ca_effective: sana.CaEffective
+  pa_implemented: sana.PaImplemented
+  pa_effective: sana.PaEffective
+  stand_updated: sana.StandUpdated

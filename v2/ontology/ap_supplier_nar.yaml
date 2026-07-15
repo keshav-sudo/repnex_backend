@@ -1,0 +1,33 @@
+concept: ap_supplier_nar
+display_name: ApSupplierNar
+module: accounts_payable
+description: Auto-generated representation of the physical table ApSupplierNar.
+synonyms:
+- apsuppliernar
+- ap supplier nar
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApSupplierNar
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApSupplierNar
+  note_type:
+    display: Notetype
+    type: string
+    required: false
+    description: Field NoteType from ApSupplierNar
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from ApSupplierNar
+  text:
+    display: Text
+    type: string
+    required: false
+    description: Field Text from ApSupplierNar

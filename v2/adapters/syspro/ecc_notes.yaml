@@ -1,0 +1,11 @@
+concept: ecc_notes
+table: EccNotes
+alias: en
+fields:
+  ecc_note_type: en.EccNoteType
+  note_document: en.NoteDocument
+  note_sequence: en.NoteSequence
+  operator: en.Operator
+  other_maintain: en.OtherMaintain
+  date_changed: en.DateChanged
+  description: en.Description

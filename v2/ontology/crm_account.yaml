@@ -1,0 +1,398 @@
+concept: crm_account
+display_name: CrmAccount
+module: crm
+description: Auto-generated representation of the physical table CrmAccount.
+synonyms:
+- crmaccount
+- crm account
+header_attributes:
+  account:
+    display: Account
+    type: string
+    required: false
+    description: Field Account from CrmAccount
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from CrmAccount
+  short_name:
+    display: Shortname
+    type: string
+    required: false
+    description: Field ShortName from CrmAccount
+  account_on_hold:
+    display: Accountonhold
+    type: string
+    required: false
+    description: Field AccountOnHold from CrmAccount
+  account_type:
+    display: Accounttype
+    type: string
+    required: false
+    description: Field AccountType from CrmAccount
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from CrmAccount
+  credit_limit:
+    display: Creditlimit
+    type: decimal
+    required: false
+    description: Field CreditLimit from CrmAccount
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from CrmAccount
+  salesperson1:
+    display: Salesperson1
+    type: string
+    required: false
+    description: Field Salesperson1 from CrmAccount
+  salesperson2:
+    display: Salesperson2
+    type: string
+    required: false
+    description: Field Salesperson2 from CrmAccount
+  salesperson3:
+    display: Salesperson3
+    type: string
+    required: false
+    description: Field Salesperson3 from CrmAccount
+  account_class:
+    display: Accountclass
+    type: string
+    required: false
+    description: Field AccountClass from CrmAccount
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from CrmAccount
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from CrmAccount
+  inv_disc_code:
+    display: Invdisccode
+    type: string
+    required: false
+    description: Field InvDiscCode from CrmAccount
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from CrmAccount
+  line_disc_code:
+    display: Linedisccode
+    type: string
+    required: false
+    description: Field LineDiscCode from CrmAccount
+  tax_status:
+    display: Taxstatus
+    type: string
+    required: false
+    description: Field TaxStatus from CrmAccount
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from CrmAccount
+  special_instrs:
+    display: Specialinstrs
+    type: string
+    required: false
+    description: Field SpecialInstrs from CrmAccount
+  price_category_table:
+    display: Pricecategorytable
+    type: string
+    required: false
+    description: Field PriceCategoryTable from CrmAccount
+  contact:
+    display: Contact
+    type: string
+    required: false
+    description: Field Contact from CrmAccount
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from CrmAccount
+  add_telephone:
+    display: Addtelephone
+    type: string
+    required: false
+    description: Field AddTelephone from CrmAccount
+  fax:
+    display: Fax
+    type: string
+    required: false
+    description: Field Fax from CrmAccount
+  telex:
+    display: Telex
+    type: string
+    required: false
+    description: Field Telex from CrmAccount
+  telephone_extn:
+    display: Telephoneextn
+    type: string
+    required: false
+    description: Field TelephoneExtn from CrmAccount
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from CrmAccount
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from CrmAccount
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from CrmAccount
+  user_field2:
+    display: Userfield2
+    type: decimal
+    required: false
+    description: Field UserField2 from CrmAccount
+  user_field3:
+    display: Userfield3
+    type: string
+    required: false
+    description: Field UserField3 from CrmAccount
+  user_field4:
+    display: Userfield4
+    type: string
+    required: false
+    description: Field UserField4 from CrmAccount
+  user_field5:
+    display: Userfield5
+    type: string
+    required: false
+    description: Field UserField5 from CrmAccount
+  price_code:
+    display: Pricecode
+    type: string
+    required: false
+    description: Field PriceCode from CrmAccount
+  gst_exempt_flag:
+    display: Gstexemptflag
+    type: string
+    required: false
+    description: Field GstExemptFlag from CrmAccount
+  gst_exempt_num:
+    display: Gstexemptnum
+    type: string
+    required: false
+    description: Field GstExemptNum from CrmAccount
+  gst_level:
+    display: Gstlevel
+    type: string
+    required: false
+    description: Field GstLevel from CrmAccount
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from CrmAccount
+  state_code:
+    display: Statecode
+    type: string
+    required: false
+    description: Field StateCode from CrmAccount
+  date_account_added:
+    display: Dateaccountadded
+    type: date
+    required: false
+    description: Field DateAccountAdded from CrmAccount
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from CrmAccount
+  sold_building:
+    display: Soldbuilding
+    type: string
+    required: false
+    description: Field SoldBuilding from CrmAccount
+  sold_street:
+    display: Soldstreet
+    type: string
+    required: false
+    description: Field SoldStreet from CrmAccount
+  sold_city:
+    display: Soldcity
+    type: string
+    required: false
+    description: Field SoldCity from CrmAccount
+  sold_locality:
+    display: Soldlocality
+    type: string
+    required: false
+    description: Field SoldLocality from CrmAccount
+  sold_state:
+    display: Soldstate
+    type: string
+    required: false
+    description: Field SoldState from CrmAccount
+  sold_country:
+    display: Soldcountry
+    type: string
+    required: false
+    description: Field SoldCountry from CrmAccount
+  sold_zip:
+    display: Soldzip
+    type: string
+    required: false
+    description: Field SoldZip from CrmAccount
+  sold_to_gps_lat:
+    display: Soldtogpslat
+    type: decimal
+    required: false
+    description: Field SoldToGpsLat from CrmAccount
+  sold_to_gps_long:
+    display: Soldtogpslong
+    type: decimal
+    required: false
+    description: Field SoldToGpsLong from CrmAccount
+  ship_building:
+    display: Shipbuilding
+    type: string
+    required: false
+    description: Field ShipBuilding from CrmAccount
+  ship_street:
+    display: Shipstreet
+    type: string
+    required: false
+    description: Field ShipStreet from CrmAccount
+  ship_city:
+    display: Shipcity
+    type: string
+    required: false
+    description: Field ShipCity from CrmAccount
+  ship_locality:
+    display: Shiplocality
+    type: string
+    required: false
+    description: Field ShipLocality from CrmAccount
+  ship_state:
+    display: Shipstate
+    type: string
+    required: false
+    description: Field ShipState from CrmAccount
+  ship_country:
+    display: Shipcountry
+    type: string
+    required: false
+    description: Field ShipCountry from CrmAccount
+  ship_zip:
+    display: Shipzip
+    type: string
+    required: false
+    description: Field ShipZip from CrmAccount
+  ship_to_gps_lat:
+    display: Shiptogpslat
+    type: decimal
+    required: false
+    description: Field ShipToGpsLat from CrmAccount
+  ship_to_gps_long:
+    display: Shiptogpslong
+    type: decimal
+    required: false
+    description: Field ShipToGpsLong from CrmAccount
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from CrmAccount
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from CrmAccount
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from CrmAccount
+  state1:
+    display: State1
+    type: string
+    required: false
+    description: Field State1 from CrmAccount
+  county_zip1:
+    display: Countyzip1
+    type: string
+    required: false
+    description: Field CountyZip1 from CrmAccount
+  city1:
+    display: City1
+    type: string
+    required: false
+    description: Field City1 from CrmAccount
+  default_ord_type:
+    display: Defaultordtype
+    type: string
+    required: false
+    description: Field DefaultOrdType from CrmAccount
+  po_number_mandatory:
+    display: Ponumbermandatory
+    type: string
+    required: false
+    description: Field PoNumberMandatory from CrmAccount
+  credit_check_flag:
+    display: Creditcheckflag
+    type: string
+    required: false
+    description: Field CreditCheckFlag from CrmAccount
+  company_tax_number:
+    display: Companytaxnumber
+    type: string
+    required: false
+    description: Field CompanyTaxNumber from CrmAccount
+  delivery_terms:
+    display: Deliveryterms
+    type: string
+    required: false
+    description: Field DeliveryTerms from CrmAccount
+  transaction_nature:
+    display: Transactionnature
+    type: decimal
+    required: false
+    description: Field TransactionNature from CrmAccount
+  delivery_terms_c:
+    display: Deliverytermsc
+    type: string
+    required: false
+    description: Field DeliveryTermsC from CrmAccount
+  transaction_nature_c:
+    display: Transactionnaturec
+    type: decimal
+    required: false
+    description: Field TransactionNatureC from CrmAccount
+  route_code:
+    display: Routecode
+    type: string
+    required: false
+    description: Field RouteCode from CrmAccount
+  sales_warehouse:
+    display: Saleswarehouse
+    type: string
+    required: false
+    description: Field SalesWarehouse from CrmAccount
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from CrmAccount
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from CrmAccount

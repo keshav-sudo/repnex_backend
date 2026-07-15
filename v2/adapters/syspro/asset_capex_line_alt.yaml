@@ -1,0 +1,12 @@
+concept: asset_capex_line_alt
+table: AssetCapexLineAlt
+alias: acla
+fields:
+  capex_code: acla.CapexCode
+  capex_line: acla.CapexLine
+  currency: acla.Currency
+  exchange_rate: acla.ExchangeRate
+  mul_div: acla.MulDiv
+  value_uncommitted: acla.ValueUncommitted
+  value_committed: acla.ValueCommitted
+  value_spent: acla.ValueSpent

@@ -1,0 +1,23 @@
+concept: adm_withholding_tax
+display_name: AdmWithholdingTax
+module: administration
+description: Auto-generated representation of the physical table AdmWithholdingTax.
+synonyms:
+- admwithholdingtax
+- adm withholding tax
+header_attributes:
+  with_tax_code:
+    display: Withtaxcode
+    type: string
+    required: false
+    description: Field WithTaxCode from AdmWithholdingTax
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmWithholdingTax
+  cur_tax_rate:
+    display: Curtaxrate
+    type: decimal
+    required: false
+    description: Field CurTaxRate from AdmWithholdingTax

@@ -1,0 +1,48 @@
+concept: gen_report_master
+display_name: GenReportMaster
+module: general_ledger
+description: Auto-generated representation of the physical table GenReportMaster.
+synonyms:
+- genreportmaster
+- gen report master
+header_attributes:
+  gl_report_code:
+    display: Glreportcode
+    type: string
+    required: false
+    description: Field GlReportCode from GenReportMaster
+  temp_rename_flag:
+    display: Temprenameflag
+    type: string
+    required: false
+    description: Field TempRenameFlag from GenReportMaster
+  report_line:
+    display: Reportline
+    type: string
+    required: false
+    description: Field ReportLine from GenReportMaster
+  report_line_type:
+    display: Reportlinetype
+    type: string
+    required: false
+    description: Field ReportLineType from GenReportMaster
+  report_section:
+    display: Reportsection
+    type: decimal
+    required: false
+    description: Field ReportSection from GenReportMaster
+  report_entry:
+    display: Reportentry
+    type: decimal
+    required: false
+    description: Field ReportEntry from GenReportMaster
+  record_type:
+    display: Recordtype
+    type: string
+    required: false
+    description: Field RecordType from GenReportMaster
+  report_info:
+    display: Reportinfo
+    type: string
+    required: false
+    description: Field ReportInfo from GenReportMaster

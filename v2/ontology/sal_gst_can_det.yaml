@@ -1,0 +1,143 @@
+concept: sal_gst_can_det
+display_name: SalGstCanDet
+module: other
+description: Auto-generated representation of the physical table SalGstCanDet.
+synonyms:
+- salgstcandet
+- sal gst can det
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from SalGstCanDet
+  gl_month:
+    display: Glmonth
+    type: decimal
+    required: false
+    description: Field GlMonth from SalGstCanDet
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from SalGstCanDet
+  collect_exempt:
+    display: Collectexempt
+    type: string
+    required: false
+    description: Field CollectExempt from SalGstCanDet
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SalGstCanDet
+  exempt_flag:
+    display: Exemptflag
+    type: string
+    required: false
+    description: Field ExemptFlag from SalGstCanDet
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from SalGstCanDet
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from SalGstCanDet
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SalGstCanDet
+  exemption_number:
+    display: Exemptionnumber
+    type: string
+    required: false
+    description: Field ExemptionNumber from SalGstCanDet
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from SalGstCanDet
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalGstCanDet
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from SalGstCanDet
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SalGstCanDet
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SalGstCanDet
+  qty_invoiced:
+    display: Qtyinvoiced
+    type: decimal
+    required: false
+    description: Field QtyInvoiced from SalGstCanDet
+  taxable_val:
+    display: Taxableval
+    type: decimal
+    required: false
+    description: Field TaxableVal from SalGstCanDet
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from SalGstCanDet
+  tax_rate:
+    display: Taxrate
+    type: decimal
+    required: false
+    description: Field TaxRate from SalGstCanDet
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from SalGstCanDet
+  tot_inv_value:
+    display: Totinvvalue
+    type: decimal
+    required: false
+    description: Field TotInvValue from SalGstCanDet
+  last_for_invoice:
+    display: Lastforinvoice
+    type: string
+    required: false
+    description: Field LastForInvoice from SalGstCanDet
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from SalGstCanDet
+  forced_exempt:
+    display: Forcedexempt
+    type: string
+    required: false
+    description: Field ForcedExempt from SalGstCanDet
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from SalGstCanDet
+  print_flag:
+    display: Printflag
+    type: string
+    required: false
+    description: Field PrintFlag from SalGstCanDet
+  cash_credit:
+    display: Cashcredit
+    type: string
+    required: false
+    description: Field CashCredit from SalGstCanDet

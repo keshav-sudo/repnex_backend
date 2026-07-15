@@ -1,0 +1,7 @@
+concept: adm_digital_tax_temp
+table: AdmDigitalTaxTemp
+alias: adtt
+fields:
+  code: adtt.Code
+  description: adtt.Description
+  operator: adtt.Operator

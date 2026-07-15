@@ -1,0 +1,83 @@
+concept: bom_parent_info
+display_name: BomParentInfo
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomParentInfo.
+synonyms:
+- bomparentinfo
+- bom parent info
+header_attributes:
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from BomParentInfo
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BomParentInfo
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BomParentInfo
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomParentInfo
+  co_product_cost_met:
+    display: Coproductcostmet
+    type: string
+    required: false
+    description: Field CoProductCostMet from BomParentInfo
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from BomParentInfo
+  co_product_type:
+    display: Coproducttype
+    type: string
+    required: false
+    description: Field CoProductType from BomParentInfo
+  co_product_next:
+    display: Coproductnext
+    type: decimal
+    required: false
+    description: Field CoProductNext from BomParentInfo
+  co_product_plan_prd:
+    display: Coproductplanprd
+    type: decimal
+    required: false
+    description: Field CoProductPlanPrd from BomParentInfo
+  any_operations:
+    display: Anyoperations
+    type: string
+    required: false
+    description: Field AnyOperations from BomParentInfo
+  any_materials:
+    display: Anymaterials
+    type: string
+    required: false
+    description: Field AnyMaterials from BomParentInfo
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from BomParentInfo
+  narrations:
+    display: Narrations
+    type: decimal
+    required: false
+    description: Field Narrations from BomParentInfo
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from BomParentInfo
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from BomParentInfo

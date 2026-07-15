@@ -1,0 +1,10 @@
+concept: ap_integration_det
+table: ApIntegrationDet
+alias: aid
+fields:
+  branch: aid.Branch
+  currency: aid.Currency
+  bank: aid.Bank
+  gl_exch_var_code: aid.GlExchVarCode
+  gl_exch_loss_code: aid.GlExchLossCode
+  un_realized_forex: aid.UnRealizedForex

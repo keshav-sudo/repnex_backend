@@ -1,0 +1,9 @@
+concept: sqm_nc_doc
+table: SqmNcDoc
+alias: snd1
+fields:
+  conform_number: snd1.ConformNumber
+  document_type: snd1.DocumentType
+  nc_document: snd1.NcDocument
+  nc_file: snd1.NcFile
+  file_contents: snd1.FileContents

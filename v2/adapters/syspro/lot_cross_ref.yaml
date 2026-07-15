@@ -1,0 +1,15 @@
+concept: lot_cross_ref
+table: LotCrossRef
+alias: lcr2
+fields:
+  lot: lcr2.Lot
+  stock_code: lcr2.StockCode
+  version: lcr2.Version
+  release: lcr2.Release
+  in_stock: lcr2.InStock
+  in_inspect: lcr2.InInspect
+  in_wip_inspect: lcr2.InWIPInspect
+  in_stock_take: lcr2.InStockTake
+  reserved: lcr2.Reserved
+  reserve_type: lcr2.ReserveType
+  archived: lcr2.Archived

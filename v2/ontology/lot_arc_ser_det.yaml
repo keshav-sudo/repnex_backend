@@ -1,0 +1,58 @@
+concept: lot_arc_ser_det
+display_name: LotArcSerDet
+module: other
+description: Auto-generated representation of the physical table LotArcSerDet.
+synonyms:
+- lotarcserdet
+- lot arc ser det
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotArcSerDet
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotArcSerDet
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from LotArcSerDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from LotArcSerDet
+  trn_qty:
+    display: Trnqty
+    type: decimal
+    required: false
+    description: Field TrnQty from LotArcSerDet
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from LotArcSerDet
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from LotArcSerDet
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from LotArcSerDet
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from LotArcSerDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from LotArcSerDet

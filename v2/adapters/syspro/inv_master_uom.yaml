@@ -1,0 +1,19 @@
+concept: inv_master_uom
+table: InvMasterUom
+alias: imu
+fields:
+  stock_code: imu.StockCode
+  uom_code: imu.UomCode
+  stock_units_per_uom: imu.StockUnitsPerUom
+  conv_fact: imu.ConvFact
+  mul_div: imu.MulDiv
+  barcode: imu.Barcode
+  rfid: imu.Rfid
+  dimension_unit: imu.DimensionUnit
+  physical_length: imu.PhysicalLength
+  physical_width: imu.PhysicalWidth
+  physical_height: imu.PhysicalHeight
+  mass_unit: imu.MassUnit
+  mass: imu.Mass
+  volume_unit: imu.VolumeUnit
+  volume: imu.Volume

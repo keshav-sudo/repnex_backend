@@ -1,0 +1,18 @@
+concept: ar_register_ref
+table: ArRegisterRef
+alias: arr
+fields:
+  trn_year: arr.TrnYear
+  trn_month: arr.TrnMonth
+  register: arr.Register
+  allocated_by_program: arr.AllocatedByProgram
+  allocated_date: arr.AllocatedDate
+  allocated_time: arr.AllocatedTime
+  allocated_by_oper: arr.AllocatedByOper
+  register_source: arr.RegisterSource
+  reference: arr.Reference
+  release_day: arr.ReleaseDay
+  customer: arr.Customer
+  status: arr.Status
+  closed_date: arr.ClosedDate
+  closed_time: arr.ClosedTime

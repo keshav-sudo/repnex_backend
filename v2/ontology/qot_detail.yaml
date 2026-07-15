@@ -1,0 +1,333 @@
+concept: qot_detail
+display_name: QotDetail
+module: other
+description: Auto-generated representation of the physical table QotDetail.
+synonyms:
+- qotdetail
+- qot detail
+header_attributes:
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from QotDetail
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from QotDetail
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from QotDetail
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from QotDetail
+  default_entry:
+    display: Defaultentry
+    type: decimal
+    required: false
+    description: Field DefaultEntry from QotDetail
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from QotDetail
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from QotDetail
+  fed_sales_tax:
+    display: Fedsalestax
+    type: string
+    required: false
+    description: Field FedSalesTax from QotDetail
+  m_stock_code:
+    display: Mstockcode
+    type: string
+    required: false
+    description: Field MStockCode from QotDetail
+  m_description:
+    display: Mdescription
+    type: string
+    required: false
+    description: Field MDescription from QotDetail
+  m_warehouse:
+    display: Mwarehouse
+    type: string
+    required: false
+    description: Field MWarehouse from QotDetail
+  m_uom:
+    display: Muom
+    type: string
+    required: false
+    description: Field MUom from QotDetail
+  m_decimals:
+    display: Mdecimals
+    type: decimal
+    required: false
+    description: Field MDecimals from QotDetail
+  m_line_ship_date:
+    display: Mlineshipdate
+    type: date
+    required: false
+    description: Field MLineShipDate from QotDetail
+  m_cus_stock_code:
+    display: Mcusstockcode
+    type: string
+    required: false
+    description: Field MCusStockCode from QotDetail
+  m_cus_retail_price:
+    display: Mcusretailprice
+    type: decimal
+    required: false
+    description: Field MCusRetailPrice from QotDetail
+  m_mass:
+    display: Mmass
+    type: decimal
+    required: false
+    description: Field MMass from QotDetail
+  m_volume:
+    display: Mvolume
+    type: decimal
+    required: false
+    description: Field MVolume from QotDetail
+  m_user_field1:
+    display: Muserfield1
+    type: string
+    required: false
+    description: Field MUserField1 from QotDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from QotDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from QotDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from QotDetail
+  m_bom_flag:
+    display: Mbomflag
+    type: string
+    required: false
+    description: Field MBomFlag from QotDetail
+  m_parent_kit_type:
+    display: Mparentkittype
+    type: string
+    required: false
+    description: Field MParentKitType from QotDetail
+  m_qty_per:
+    display: Mqtyper
+    type: decimal
+    required: false
+    description: Field MQtyPer from QotDetail
+  m_scrap_percentage:
+    display: Mscrappercentage
+    type: decimal
+    required: false
+    description: Field MScrapPercentage from QotDetail
+  m_print_component:
+    display: Mprintcomponent
+    type: string
+    required: false
+    description: Field MPrintComponent from QotDetail
+  m_component_seq:
+    display: Mcomponentseq
+    type: string
+    required: false
+    description: Field MComponentSeq from QotDetail
+  m_optional_flag:
+    display: Moptionalflag
+    type: string
+    required: false
+    description: Field MOptionalFlag from QotDetail
+  n_comment:
+    display: Ncomment
+    type: string
+    required: false
+    description: Field NComment from QotDetail
+  n_comment_from_lin:
+    display: Ncommentfromlin
+    type: decimal
+    required: false
+    description: Field NCommentFromLin from QotDetail
+  n_comment_type:
+    display: Ncommenttype
+    type: string
+    required: false
+    description: Field NCommentType from QotDetail
+  n_comment_text_typ:
+    display: Ncommenttexttyp
+    type: string
+    required: false
+    description: Field NCommentTextTyp from QotDetail
+  n_srv_inc_total:
+    display: Nsrvinctotal
+    type: string
+    required: false
+    description: Field NSrvIncTotal from QotDetail
+  n_srv_summary:
+    display: Nsrvsummary
+    type: string
+    required: false
+    description: Field NSrvSummary from QotDetail
+  n_srv_charge_type:
+    display: Nsrvchargetype
+    type: string
+    required: false
+    description: Field NSrvChargeType from QotDetail
+  n_srv_parent_line:
+    display: Nsrvparentline
+    type: decimal
+    required: false
+    description: Field NSrvParentLine from QotDetail
+  n_srv_qty_factor:
+    display: Nsrvqtyfactor
+    type: decimal
+    required: false
+    description: Field NSrvQtyFactor from QotDetail
+  n_srv_apply_factor:
+    display: Nsrvapplyfactor
+    type: string
+    required: false
+    description: Field NSrvApplyFactor from QotDetail
+  n_srv_decimal_rnd:
+    display: Nsrvdecimalrnd
+    type: decimal
+    required: false
+    description: Field NSrvDecimalRnd from QotDetail
+  n_srv_dec_rnd_flag:
+    display: Nsrvdecrndflag
+    type: string
+    required: false
+    description: Field NSrvDecRndFlag from QotDetail
+  n_srv_min_value:
+    display: Nsrvminvalue
+    type: decimal
+    required: false
+    description: Field NSrvMinValue from QotDetail
+  n_srv_max_value:
+    display: Nsrvmaxvalue
+    type: decimal
+    required: false
+    description: Field NSrvMaxValue from QotDetail
+  n_srv_mul_div:
+    display: Nsrvmuldiv
+    type: string
+    required: false
+    description: Field NSrvMulDiv from QotDetail
+  n_prt_on_inv:
+    display: Nprtoninv
+    type: string
+    required: false
+    description: Field NPrtOnInv from QotDetail
+  n_prt_on_del:
+    display: Nprtondel
+    type: string
+    required: false
+    description: Field NPrtOnDel from QotDetail
+  n_prt_on_ack:
+    display: Nprtonack
+    type: string
+    required: false
+    description: Field NPrtOnAck from QotDetail
+  n_prt_on_quote:
+    display: Nprtonquote
+    type: string
+    required: false
+    description: Field NPrtOnQuote from QotDetail
+  n_comment_flag1:
+    display: Ncommentflag1
+    type: decimal
+    required: false
+    description: Field NCommentFlag1 from QotDetail
+  n_comment_flag2:
+    display: Ncommentflag2
+    type: decimal
+    required: false
+    description: Field NCommentFlag2 from QotDetail
+  n_comment_flag3:
+    display: Ncommentflag3
+    type: decimal
+    required: false
+    description: Field NCommentFlag3 from QotDetail
+  n_comment_flag4:
+    display: Ncommentflag4
+    type: decimal
+    required: false
+    description: Field NCommentFlag4 from QotDetail
+  n_comment_flag5:
+    display: Ncommentflag5
+    type: decimal
+    required: false
+    description: Field NCommentFlag5 from QotDetail
+  n_comment_flag6:
+    display: Ncommentflag6
+    type: decimal
+    required: false
+    description: Field NCommentFlag6 from QotDetail
+  n_comment_po_job:
+    display: Ncommentpojob
+    type: string
+    required: false
+    description: Field NCommentPoJob from QotDetail
+  estimate:
+    display: Estimate
+    type: string
+    required: false
+    description: Field Estimate from QotDetail
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from QotDetail
+  n_charge_code:
+    display: Nchargecode
+    type: string
+    required: false
+    description: Field NChargeCode from QotDetail
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from QotDetail
+  material_alloc_line:
+    display: Materialallocline
+    type: string
+    required: false
+    description: Field MaterialAllocLine from QotDetail
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from QotDetail
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from QotDetail
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from QotDetail
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from QotDetail
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from QotDetail

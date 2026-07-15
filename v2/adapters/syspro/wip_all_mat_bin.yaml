@@ -1,0 +1,15 @@
+concept: wip_all_mat_bin
+table: WipAllMatBin
+alias: wamb
+fields:
+  job: wamb.Job
+  stock_code: wamb.StockCode
+  warehouse: wamb.Warehouse
+  line: wamb.Line
+  bin: wamb.Bin
+  qty_reserved: wamb.QtyReserved
+  qty_issued: wamb.QtyIssued
+  bin_completed: wamb.BinCompleted
+  version: wamb.Version
+  release: wamb.Release
+  neg_allocation: wamb.NegAllocation

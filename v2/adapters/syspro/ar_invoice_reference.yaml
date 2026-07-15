@@ -1,0 +1,18 @@
+concept: ar_invoice_reference
+table: ArInvoiceReference
+alias: air2
+fields:
+  invoice: air2.Invoice
+  document_type: air2.DocumentType
+  customer: air2.Customer
+  invoice_date: air2.InvoiceDate
+  sales_order: air2.SalesOrder
+  dispatch_note: air2.DispatchNote
+  allocated_by_program: air2.AllocatedByProgram
+  allocated_date: air2.AllocatedDate
+  allocated_time: air2.AllocatedTime
+  allocated_by_oper: air2.AllocatedByOper
+  created_by_program: air2.CreatedByProgram
+  created_date: air2.CreatedDate
+  created_time: air2.CreatedTime
+  created_by_oper: air2.CreatedByOper

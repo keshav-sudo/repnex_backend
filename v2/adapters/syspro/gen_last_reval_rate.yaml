@@ -1,0 +1,12 @@
+concept: gen_last_reval_rate
+table: GenLastRevalRate
+alias: glrr
+fields:
+  currency: glrr.Currency
+  company: glrr.Company
+  gl_code: glrr.GlCode
+  gl_year: glrr.GlYear
+  gl_period: glrr.GlPeriod
+  gl_line: glrr.GlLine
+  line: glrr.Line
+  last_rate: glrr.LastRate

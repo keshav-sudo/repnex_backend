@@ -1,0 +1,7 @@
+concept: adm_form_name
+table: AdmFormName
+alias: afn
+fields:
+  form_type: afn.FormType
+  form_number: afn.FormNumber
+  form_name: afn.FormName

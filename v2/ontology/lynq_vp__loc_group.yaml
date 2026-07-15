@@ -1,0 +1,23 @@
+concept: lynq_vp__loc_group
+display_name: Lynq VP LocGroup
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_LocGroup.
+synonyms:
+- lynq_vp_locgroup
+- lynq vp  loc group
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_LocGroup
+  location_code:
+    display: Locationcode
+    type: string
+    required: false
+    description: Field LocationCode from Lynq_VP_LocGroup
+  group_name:
+    display: Groupname
+    type: string
+    required: false
+    description: Field GroupName from Lynq_VP_LocGroup

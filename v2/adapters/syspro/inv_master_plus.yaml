@@ -1,0 +1,14 @@
+concept: inv_master_plus
+table: InvMaster+
+alias: im1
+fields:
+  stock_code: im1.StockCode
+  size1: im1.Size1
+  style: im1.Style
+  loading_factor: im1.LoadingFactor
+  look_ahead_window: im1.LookAheadWindow
+  gsm: im1.Gsm
+  color: im1.Color
+  quality: im1.Quality
+  stores: im1.Stores
+  foam_type: im1.FoamType

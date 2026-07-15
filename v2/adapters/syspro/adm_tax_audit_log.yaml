@@ -1,0 +1,17 @@
+concept: adm_tax_audit_log
+table: AdmTaxAuditLog
+alias: atal
+fields:
+  sales_order: atal.SalesOrder
+  run_date: atal.RunDate
+  run_time: atal.RunTime
+  sales_order_line: atal.SalesOrderLine
+  dispatch_note: atal.DispatchNote
+  dispatch_note_line: atal.DispatchNoteLine
+  line_type: atal.LineType
+  invoice_number: atal.InvoiceNumber
+  operator: atal.Operator
+  sales_order_init_line: atal.SalesOrderInitLine
+  text_line: atal.TextLine
+  submit_entry_number: atal.SubmitEntryNumber
+  customer: atal.Customer

@@ -1,0 +1,93 @@
+concept: csh_jnl_ctl
+display_name: CshJnlCtl
+module: cashbook
+description: Auto-generated representation of the physical table CshJnlCtl.
+synonyms:
+- cshjnlctl
+- csh jnl ctl
+header_attributes:
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshJnlCtl
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshJnlCtl
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from CshJnlCtl
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from CshJnlCtl
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from CshJnlCtl
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshJnlCtl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from CshJnlCtl
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from CshJnlCtl
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from CshJnlCtl
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from CshJnlCtl
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from CshJnlCtl
+  gl_int_printed:
+    display: Glintprinted
+    type: string
+    required: false
+    description: Field GlIntPrinted from CshJnlCtl
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from CshJnlCtl
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from CshJnlCtl
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from CshJnlCtl
+  cash_gl_code:
+    display: Cashglcode
+    type: string
+    required: false
+    description: Field CashGlCode from CshJnlCtl
+  gl_int_level:
+    display: Glintlevel
+    type: string
+    required: false
+    description: Field GlIntLevel from CshJnlCtl

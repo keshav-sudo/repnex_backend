@@ -1,0 +1,6 @@
+concept: csh_check_format
+table: CshCheckFormat
+alias: ccf
+fields:
+  bank: ccf.Bank
+  format_info: ccf.FormatInfo

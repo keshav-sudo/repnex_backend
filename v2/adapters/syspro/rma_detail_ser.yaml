@@ -1,0 +1,13 @@
+concept: rma_detail_ser
+table: RmaDetailSer
+alias: rds
+fields:
+  rma_number: rds.RmaNumber
+  rma_line_number: rds.RmaLineNumber
+  lot: rds.Lot
+  serial: rds.Serial
+  stock_qty_to_receive: rds.StockQtyToReceive
+  qty_this_session: rds.QtyThisSession
+  new_expiry_date: rds.NewExpiryDate
+  new_scrap_date: rds.NewScrapDate
+  bin: rds.Bin

@@ -1,0 +1,12 @@
+concept: csh_flow_model
+table: CshFlowModel
+alias: cfm
+fields:
+  model: cfm.Model
+  description: cfm.Description
+  currency: cfm.Currency
+  convert_to_local: cfm.ConvertToLocal
+  cur_budget: cfm.CurBudget
+  cur_budget_no: cfm.CurBudgetNo
+  next_budget: cfm.NextBudget
+  next_budget_no: cfm.NextBudgetNo

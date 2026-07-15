@@ -1,0 +1,63 @@
+concept: adm_version
+display_name: AdmVersion
+module: administration
+description: Auto-generated representation of the physical table AdmVersion.
+synonyms:
+- admversion
+- adm version
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from AdmVersion
+  update_date:
+    display: Updatedate
+    type: date
+    required: false
+    description: Field UpdateDate from AdmVersion
+  database_version:
+    display: Databaseversion
+    type: string
+    required: false
+    description: Field DatabaseVersion from AdmVersion
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmVersion
+  syspro_full_version:
+    display: Sysprofullversion
+    type: string
+    required: false
+    description: Field SysproFullVersion from AdmVersion
+  syspro_version:
+    display: Sysproversion
+    type: string
+    required: false
+    description: Field SysproVersion from AdmVersion
+  syspro_sp:
+    display: Sysprosp
+    type: string
+    required: false
+    description: Field SysproSp from AdmVersion
+  update_source:
+    display: Updatesource
+    type: string
+    required: false
+    description: Field UpdateSource from AdmVersion
+  update_source_info:
+    display: Updatesourceinfo
+    type: string
+    required: false
+    description: Field UpdateSourceInfo from AdmVersion
+  update_status:
+    display: Updatestatus
+    type: string
+    required: false
+    description: Field UpdateStatus from AdmVersion
+  baq_version:
+    display: Baqversion
+    type: string
+    required: false
+    description: Field BaqVersion from AdmVersion

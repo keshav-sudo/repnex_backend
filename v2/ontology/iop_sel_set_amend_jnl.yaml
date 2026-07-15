@@ -1,0 +1,828 @@
+concept: iop_sel_set_amend_jnl
+display_name: IopSelSetAmendJnl
+module: other
+description: Auto-generated representation of the physical table IopSelSetAmendJnl.
+synonyms:
+- iopselsetamendjnl
+- iop sel set amend jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from IopSelSetAmendJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from IopSelSetAmendJnl
+  selection_set:
+    display: Selectionset
+    type: string
+    required: false
+    description: Field SelectionSet from IopSelSetAmendJnl
+  jnl_printed:
+    display: Jnlprinted
+    type: string
+    required: false
+    description: Field JnlPrinted from IopSelSetAmendJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from IopSelSetAmendJnl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from IopSelSetAmendJnl
+  old_description:
+    display: Olddescription
+    type: string
+    required: false
+    description: Field OldDescription from IopSelSetAmendJnl
+  old_date_last_used:
+    display: Olddatelastused
+    type: date
+    required: false
+    description: Field OldDateLastUsed from IopSelSetAmendJnl
+  old_use_fg_col:
+    display: Oldusefgcol
+    type: string
+    required: false
+    description: Field OldUseFgCol from IopSelSetAmendJnl
+  old_collection:
+    display: Oldcollection
+    type: string
+    required: false
+    description: Field OldCollection from IopSelSetAmendJnl
+  old_instance:
+    display: Oldinstance
+    type: decimal
+    required: false
+    description: Field OldInstance from IopSelSetAmendJnl
+  old_stock_sel:
+    display: Oldstocksel
+    type: string
+    required: false
+    description: Field OldStockSel from IopSelSetAmendJnl
+  old_stock_from:
+    display: Oldstockfrom
+    type: string
+    required: false
+    description: Field OldStockFrom from IopSelSetAmendJnl
+  old_stock_to:
+    display: Oldstockto
+    type: string
+    required: false
+    description: Field OldStockTo from IopSelSetAmendJnl
+  old_warehouse_sel:
+    display: Oldwarehousesel
+    type: string
+    required: false
+    description: Field OldWarehouseSel from IopSelSetAmendJnl
+  old_warehouse_from:
+    display: Oldwarehousefrom
+    type: string
+    required: false
+    description: Field OldWarehouseFrom from IopSelSetAmendJnl
+  old_warehouse_to:
+    display: Oldwarehouseto
+    type: string
+    required: false
+    description: Field OldWarehouseTo from IopSelSetAmendJnl
+  old_supplier_sel:
+    display: Oldsuppliersel
+    type: string
+    required: false
+    description: Field OldSupplierSel from IopSelSetAmendJnl
+  old_supplier_from:
+    display: Oldsupplierfrom
+    type: string
+    required: false
+    description: Field OldSupplierFrom from IopSelSetAmendJnl
+  old_supplier_to:
+    display: Oldsupplierto
+    type: string
+    required: false
+    description: Field OldSupplierTo from IopSelSetAmendJnl
+  old_prod_class_sel:
+    display: Oldprodclasssel
+    type: string
+    required: false
+    description: Field OldProdClassSel from IopSelSetAmendJnl
+  old_prod_class_from:
+    display: Oldprodclassfrom
+    type: string
+    required: false
+    description: Field OldProdClassFrom from IopSelSetAmendJnl
+  old_prod_class_to:
+    display: Oldprodclassto
+    type: string
+    required: false
+    description: Field OldProdClassTo from IopSelSetAmendJnl
+  old_planner_sel:
+    display: Oldplannersel
+    type: string
+    required: false
+    description: Field OldPlannerSel from IopSelSetAmendJnl
+  old_planner_from:
+    display: Oldplannerfrom
+    type: string
+    required: false
+    description: Field OldPlannerFrom from IopSelSetAmendJnl
+  old_planner_to:
+    display: Oldplannerto
+    type: string
+    required: false
+    description: Field OldPlannerTo from IopSelSetAmendJnl
+  old_buyer_sel:
+    display: Oldbuyersel
+    type: string
+    required: false
+    description: Field OldBuyerSel from IopSelSetAmendJnl
+  old_buyer_from:
+    display: Oldbuyerfrom
+    type: string
+    required: false
+    description: Field OldBuyerFrom from IopSelSetAmendJnl
+  old_buyer_to:
+    display: Oldbuyerto
+    type: string
+    required: false
+    description: Field OldBuyerTo from IopSelSetAmendJnl
+  old_include_abc_a:
+    display: Oldincludeabca
+    type: decimal
+    required: false
+    description: Field OldIncludeAbcA from IopSelSetAmendJnl
+  old_include_abc_b:
+    display: Oldincludeabcb
+    type: decimal
+    required: false
+    description: Field OldIncludeAbcB from IopSelSetAmendJnl
+  old_include_abc_c:
+    display: Oldincludeabcc
+    type: decimal
+    required: false
+    description: Field OldIncludeAbcC from IopSelSetAmendJnl
+  old_include_abc_d:
+    display: Oldincludeabcd
+    type: decimal
+    required: false
+    description: Field OldIncludeAbcD from IopSelSetAmendJnl
+  old_include_abc_e:
+    display: Oldincludeabce
+    type: decimal
+    required: false
+    description: Field OldIncludeAbcE from IopSelSetAmendJnl
+  old_include_abc_none:
+    display: Oldincludeabcnone
+    type: decimal
+    required: false
+    description: Field OldIncludeAbcNone from IopSelSetAmendJnl
+  old_abc_type:
+    display: Oldabctype
+    type: string
+    required: false
+    description: Field OldAbcType from IopSelSetAmendJnl
+  old_abc_level:
+    display: Oldabclevel
+    type: string
+    required: false
+    description: Field OldAbcLevel from IopSelSetAmendJnl
+  old_abc_base:
+    display: Oldabcbase
+    type: string
+    required: false
+    description: Field OldAbcBase from IopSelSetAmendJnl
+  old_abc_months:
+    display: Oldabcmonths
+    type: decimal
+    required: false
+    description: Field OldAbcMonths from IopSelSetAmendJnl
+  old_pareto_break_ab:
+    display: Oldparetobreakab
+    type: decimal
+    required: false
+    description: Field OldParetoBreakAb from IopSelSetAmendJnl
+  old_pareto_break_bc:
+    display: Oldparetobreakbc
+    type: decimal
+    required: false
+    description: Field OldParetoBreakBc from IopSelSetAmendJnl
+  old_pareto_break_cd:
+    display: Oldparetobreakcd
+    type: decimal
+    required: false
+    description: Field OldParetoBreakCd from IopSelSetAmendJnl
+  old_include_adjust:
+    display: Oldincludeadjust
+    type: decimal
+    required: false
+    description: Field OldIncludeAdjust from IopSelSetAmendJnl
+  old_analyze_by_ecc:
+    display: Oldanalyzebyecc
+    type: decimal
+    required: false
+    description: Field OldAnalyzeByEcc from IopSelSetAmendJnl
+  old_manual_forecast:
+    display: Oldmanualforecast
+    type: decimal
+    required: false
+    description: Field OldManualForecast from IopSelSetAmendJnl
+  old_replenish_item:
+    display: Oldreplenishitem
+    type: decimal
+    required: false
+    description: Field OldReplenishItem from IopSelSetAmendJnl
+  old_inc_mto:
+    display: Oldincmto
+    type: decimal
+    required: false
+    description: Field OldIncMto from IopSelSetAmendJnl
+  old_inc_mps:
+    display: Oldincmps
+    type: decimal
+    required: false
+    description: Field OldIncMps from IopSelSetAmendJnl
+  old_inc_made_in:
+    display: Oldincmadein
+    type: decimal
+    required: false
+    description: Field OldIncMadeIn from IopSelSetAmendJnl
+  old_inc_bought_out:
+    display: Oldincboughtout
+    type: decimal
+    required: false
+    description: Field OldIncBoughtOut from IopSelSetAmendJnl
+  old_inc_sub_con:
+    display: Oldincsubcon
+    type: decimal
+    required: false
+    description: Field OldIncSubCon from IopSelSetAmendJnl
+  old_inc_kit:
+    display: Oldinckit
+    type: decimal
+    required: false
+    description: Field OldIncKit from IopSelSetAmendJnl
+  old_inc_co_prod:
+    display: Oldinccoprod
+    type: decimal
+    required: false
+    description: Field OldIncCoProd from IopSelSetAmendJnl
+  old_inc_by_prod:
+    display: Oldincbyprod
+    type: decimal
+    required: false
+    description: Field OldIncByProd from IopSelSetAmendJnl
+  old_excess_stock:
+    display: Oldexcessstock
+    type: string
+    required: false
+    description: Field OldExcessStock from IopSelSetAmendJnl
+  old_forecast_create:
+    display: Oldforecastcreate
+    type: string
+    required: false
+    description: Field OldForecastCreate from IopSelSetAmendJnl
+  old_inactivate_cur:
+    display: Oldinactivatecur
+    type: decimal
+    required: false
+    description: Field OldInactivateCur from IopSelSetAmendJnl
+  old_batch_target:
+    display: Oldbatchtarget
+    type: string
+    required: false
+    description: Field OldBatchTarget from IopSelSetAmendJnl
+  old_adjust_outliers:
+    display: Oldadjustoutliers
+    type: decimal
+    required: false
+    description: Field OldAdjustOutliers from IopSelSetAmendJnl
+  old_forecast_ref:
+    display: Oldforecastref
+    type: string
+    required: false
+    description: Field OldForecastRef from IopSelSetAmendJnl
+  old_inc_no_draft:
+    display: Oldincnodraft
+    type: decimal
+    required: false
+    description: Field OldIncNoDraft from IopSelSetAmendJnl
+  old_inc_no_current:
+    display: Oldincnocurrent
+    type: decimal
+    required: false
+    description: Field OldIncNoCurrent from IopSelSetAmendJnl
+  old_inc_prd_no_fore:
+    display: Oldincprdnofore
+    type: decimal
+    required: false
+    description: Field OldIncPrdNoFore from IopSelSetAmendJnl
+  old_only_if_diff:
+    display: Oldonlyifdiff
+    type: decimal
+    required: false
+    description: Field OldOnlyIfDiff from IopSelSetAmendJnl
+  old_percent_diff:
+    display: Oldpercentdiff
+    type: decimal
+    required: false
+    description: Field OldPercentDiff from IopSelSetAmendJnl
+  old_months_diff:
+    display: Oldmonthsdiff
+    type: decimal
+    required: false
+    description: Field OldMonthsDiff from IopSelSetAmendJnl
+  old_calendar:
+    display: Oldcalendar
+    type: string
+    required: false
+    description: Field OldCalendar from IopSelSetAmendJnl
+  old_options_maint:
+    display: Oldoptionsmaint
+    type: string
+    required: false
+    description: Field OldOptionsMaint from IopSelSetAmendJnl
+  old_update_live_fore:
+    display: Oldupdatelivefore
+    type: string
+    required: false
+    description: Field OldUpdateLiveFore from IopSelSetAmendJnl
+  old_batch_forecasts:
+    display: Oldbatchforecasts
+    type: string
+    required: false
+    description: Field OldBatchForecasts from IopSelSetAmendJnl
+  old_manual_forecasts:
+    display: Oldmanualforecasts
+    type: string
+    required: false
+    description: Field OldManualForecasts from IopSelSetAmendJnl
+  old_fams_and_groups:
+    display: Oldfamsandgroups
+    type: string
+    required: false
+    description: Field OldFamsAndGroups from IopSelSetAmendJnl
+  old_pareto_analysis:
+    display: Oldparetoanalysis
+    type: string
+    required: false
+    description: Field OldParetoAnalysis from IopSelSetAmendJnl
+  old_list_of_forecasts:
+    display: Oldlistofforecasts
+    type: string
+    required: false
+    description: Field OldListOfForecasts from IopSelSetAmendJnl
+  old_forecast_compare:
+    display: Oldforecastcompare
+    type: string
+    required: false
+    description: Field OldForecastCompare from IopSelSetAmendJnl
+  old_forecast_acc:
+    display: Oldforecastacc
+    type: string
+    required: false
+    description: Field OldForecastAcc from IopSelSetAmendJnl
+  old_policy_setting:
+    display: Oldpolicysetting
+    type: string
+    required: false
+    description: Field OldPolicySetting from IopSelSetAmendJnl
+  old_io_modelling:
+    display: Oldiomodelling
+    type: string
+    required: false
+    description: Field OldIoModelling from IopSelSetAmendJnl
+  old_fore_acc_cal:
+    display: Oldforeacccal
+    type: string
+    required: false
+    description: Field OldForeAccCal from IopSelSetAmendJnl
+  old_fore_acc_periods:
+    display: Oldforeaccperiods
+    type: decimal
+    required: false
+    description: Field OldForeAccPeriods from IopSelSetAmendJnl
+  old_fore_acc_compare:
+    display: Oldforeacccompare
+    type: string
+    required: false
+    description: Field OldForeAccCompare from IopSelSetAmendJnl
+  old_fore_acc_move_prd:
+    display: Oldforeaccmoveprd
+    type: decimal
+    required: false
+    description: Field OldForeAccMovePrd from IopSelSetAmendJnl
+  old_fore_acc_use:
+    display: Oldforeaccuse
+    type: string
+    required: false
+    description: Field OldForeAccUse from IopSelSetAmendJnl
+  old_fore_acc_no_snap:
+    display: Oldforeaccnosnap
+    type: decimal
+    required: false
+    description: Field OldForeAccNoSnap from IopSelSetAmendJnl
+  new_description:
+    display: Newdescription
+    type: string
+    required: false
+    description: Field NewDescription from IopSelSetAmendJnl
+  new_date_last_used:
+    display: Newdatelastused
+    type: date
+    required: false
+    description: Field NewDateLastUsed from IopSelSetAmendJnl
+  new_use_fg_collection:
+    display: Newusefgcollection
+    type: string
+    required: false
+    description: Field NewUseFgCollection from IopSelSetAmendJnl
+  new_collection:
+    display: Newcollection
+    type: string
+    required: false
+    description: Field NewCollection from IopSelSetAmendJnl
+  new_instance:
+    display: Newinstance
+    type: decimal
+    required: false
+    description: Field NewInstance from IopSelSetAmendJnl
+  new_stock_sel:
+    display: Newstocksel
+    type: string
+    required: false
+    description: Field NewStockSel from IopSelSetAmendJnl
+  new_stock_from:
+    display: Newstockfrom
+    type: string
+    required: false
+    description: Field NewStockFrom from IopSelSetAmendJnl
+  new_stock_to:
+    display: Newstockto
+    type: string
+    required: false
+    description: Field NewStockTo from IopSelSetAmendJnl
+  new_warehouse_sel:
+    display: Newwarehousesel
+    type: string
+    required: false
+    description: Field NewWarehouseSel from IopSelSetAmendJnl
+  new_warehouse_from:
+    display: Newwarehousefrom
+    type: string
+    required: false
+    description: Field NewWarehouseFrom from IopSelSetAmendJnl
+  new_warehouse_to:
+    display: Newwarehouseto
+    type: string
+    required: false
+    description: Field NewWarehouseTo from IopSelSetAmendJnl
+  new_supplier_sel:
+    display: Newsuppliersel
+    type: string
+    required: false
+    description: Field NewSupplierSel from IopSelSetAmendJnl
+  new_supplier_from:
+    display: Newsupplierfrom
+    type: string
+    required: false
+    description: Field NewSupplierFrom from IopSelSetAmendJnl
+  new_supplier_to:
+    display: Newsupplierto
+    type: string
+    required: false
+    description: Field NewSupplierTo from IopSelSetAmendJnl
+  new_prod_class_sel:
+    display: Newprodclasssel
+    type: string
+    required: false
+    description: Field NewProdClassSel from IopSelSetAmendJnl
+  new_prod_class_from:
+    display: Newprodclassfrom
+    type: string
+    required: false
+    description: Field NewProdClassFrom from IopSelSetAmendJnl
+  new_prod_class_to:
+    display: Newprodclassto
+    type: string
+    required: false
+    description: Field NewProdClassTo from IopSelSetAmendJnl
+  new_planner_sel:
+    display: Newplannersel
+    type: string
+    required: false
+    description: Field NewPlannerSel from IopSelSetAmendJnl
+  new_planner_from:
+    display: Newplannerfrom
+    type: string
+    required: false
+    description: Field NewPlannerFrom from IopSelSetAmendJnl
+  new_planner_to:
+    display: Newplannerto
+    type: string
+    required: false
+    description: Field NewPlannerTo from IopSelSetAmendJnl
+  new_buyer_sel:
+    display: Newbuyersel
+    type: string
+    required: false
+    description: Field NewBuyerSel from IopSelSetAmendJnl
+  new_buyer_from:
+    display: Newbuyerfrom
+    type: string
+    required: false
+    description: Field NewBuyerFrom from IopSelSetAmendJnl
+  new_buyer_to:
+    display: Newbuyerto
+    type: string
+    required: false
+    description: Field NewBuyerTo from IopSelSetAmendJnl
+  new_include_abc_a:
+    display: Newincludeabca
+    type: decimal
+    required: false
+    description: Field NewIncludeAbcA from IopSelSetAmendJnl
+  new_include_abc_b:
+    display: Newincludeabcb
+    type: decimal
+    required: false
+    description: Field NewIncludeAbcB from IopSelSetAmendJnl
+  new_include_abc_c:
+    display: Newincludeabcc
+    type: decimal
+    required: false
+    description: Field NewIncludeAbcC from IopSelSetAmendJnl
+  new_include_abc_d:
+    display: Newincludeabcd
+    type: decimal
+    required: false
+    description: Field NewIncludeAbcD from IopSelSetAmendJnl
+  new_include_abc_e:
+    display: Newincludeabce
+    type: decimal
+    required: false
+    description: Field NewIncludeAbcE from IopSelSetAmendJnl
+  new_include_abc_none:
+    display: Newincludeabcnone
+    type: decimal
+    required: false
+    description: Field NewIncludeAbcNone from IopSelSetAmendJnl
+  new_abc_type:
+    display: Newabctype
+    type: string
+    required: false
+    description: Field NewAbcType from IopSelSetAmendJnl
+  new_abc_level:
+    display: Newabclevel
+    type: string
+    required: false
+    description: Field NewAbcLevel from IopSelSetAmendJnl
+  new_abc_base:
+    display: Newabcbase
+    type: string
+    required: false
+    description: Field NewAbcBase from IopSelSetAmendJnl
+  new_abc_months:
+    display: Newabcmonths
+    type: decimal
+    required: false
+    description: Field NewAbcMonths from IopSelSetAmendJnl
+  new_pareto_break_ab:
+    display: Newparetobreakab
+    type: decimal
+    required: false
+    description: Field NewParetoBreakAb from IopSelSetAmendJnl
+  new_pareto_break_bc:
+    display: Newparetobreakbc
+    type: decimal
+    required: false
+    description: Field NewParetoBreakBc from IopSelSetAmendJnl
+  new_pareto_break_cd:
+    display: Newparetobreakcd
+    type: decimal
+    required: false
+    description: Field NewParetoBreakCd from IopSelSetAmendJnl
+  new_include_adjust:
+    display: Newincludeadjust
+    type: decimal
+    required: false
+    description: Field NewIncludeAdjust from IopSelSetAmendJnl
+  new_analyze_by_ecc:
+    display: Newanalyzebyecc
+    type: decimal
+    required: false
+    description: Field NewAnalyzeByEcc from IopSelSetAmendJnl
+  new_manual_forecast:
+    display: Newmanualforecast
+    type: decimal
+    required: false
+    description: Field NewManualForecast from IopSelSetAmendJnl
+  new_replenish_item:
+    display: Newreplenishitem
+    type: decimal
+    required: false
+    description: Field NewReplenishItem from IopSelSetAmendJnl
+  new_inc_mto:
+    display: Newincmto
+    type: decimal
+    required: false
+    description: Field NewIncMto from IopSelSetAmendJnl
+  new_inc_mps:
+    display: Newincmps
+    type: decimal
+    required: false
+    description: Field NewIncMps from IopSelSetAmendJnl
+  new_inc_made_in:
+    display: Newincmadein
+    type: decimal
+    required: false
+    description: Field NewIncMadeIn from IopSelSetAmendJnl
+  new_inc_bought_out:
+    display: Newincboughtout
+    type: decimal
+    required: false
+    description: Field NewIncBoughtOut from IopSelSetAmendJnl
+  new_inc_sub_con:
+    display: Newincsubcon
+    type: decimal
+    required: false
+    description: Field NewIncSubCon from IopSelSetAmendJnl
+  new_inc_kit:
+    display: Newinckit
+    type: decimal
+    required: false
+    description: Field NewIncKit from IopSelSetAmendJnl
+  new_inc_co_prod:
+    display: Newinccoprod
+    type: decimal
+    required: false
+    description: Field NewIncCoProd from IopSelSetAmendJnl
+  new_inc_by_prod:
+    display: Newincbyprod
+    type: decimal
+    required: false
+    description: Field NewIncByProd from IopSelSetAmendJnl
+  new_excess_stock:
+    display: Newexcessstock
+    type: string
+    required: false
+    description: Field NewExcessStock from IopSelSetAmendJnl
+  new_forecast_create:
+    display: Newforecastcreate
+    type: string
+    required: false
+    description: Field NewForecastCreate from IopSelSetAmendJnl
+  new_inactivate_cur:
+    display: Newinactivatecur
+    type: decimal
+    required: false
+    description: Field NewInactivateCur from IopSelSetAmendJnl
+  new_batch_target:
+    display: Newbatchtarget
+    type: string
+    required: false
+    description: Field NewBatchTarget from IopSelSetAmendJnl
+  new_adjust_outliers:
+    display: Newadjustoutliers
+    type: decimal
+    required: false
+    description: Field NewAdjustOutliers from IopSelSetAmendJnl
+  new_forecast_ref:
+    display: Newforecastref
+    type: string
+    required: false
+    description: Field NewForecastRef from IopSelSetAmendJnl
+  new_inc_no_draft:
+    display: Newincnodraft
+    type: decimal
+    required: false
+    description: Field NewIncNoDraft from IopSelSetAmendJnl
+  new_inc_no_current:
+    display: Newincnocurrent
+    type: decimal
+    required: false
+    description: Field NewIncNoCurrent from IopSelSetAmendJnl
+  new_inc_prd_no_fore:
+    display: Newincprdnofore
+    type: decimal
+    required: false
+    description: Field NewIncPrdNoFore from IopSelSetAmendJnl
+  new_only_if_diff:
+    display: Newonlyifdiff
+    type: decimal
+    required: false
+    description: Field NewOnlyIfDiff from IopSelSetAmendJnl
+  new_percent_diff:
+    display: Newpercentdiff
+    type: decimal
+    required: false
+    description: Field NewPercentDiff from IopSelSetAmendJnl
+  new_months_diff:
+    display: Newmonthsdiff
+    type: decimal
+    required: false
+    description: Field NewMonthsDiff from IopSelSetAmendJnl
+  new_calendar:
+    display: Newcalendar
+    type: string
+    required: false
+    description: Field NewCalendar from IopSelSetAmendJnl
+  new_options_maint:
+    display: Newoptionsmaint
+    type: string
+    required: false
+    description: Field NewOptionsMaint from IopSelSetAmendJnl
+  new_update_live_fore:
+    display: Newupdatelivefore
+    type: string
+    required: false
+    description: Field NewUpdateLiveFore from IopSelSetAmendJnl
+  new_batch_forecasts:
+    display: Newbatchforecasts
+    type: string
+    required: false
+    description: Field NewBatchForecasts from IopSelSetAmendJnl
+  new_manual_forecasts:
+    display: Newmanualforecasts
+    type: string
+    required: false
+    description: Field NewManualForecasts from IopSelSetAmendJnl
+  new_fams_and_groups:
+    display: Newfamsandgroups
+    type: string
+    required: false
+    description: Field NewFamsAndGroups from IopSelSetAmendJnl
+  new_pareto_analysis:
+    display: Newparetoanalysis
+    type: string
+    required: false
+    description: Field NewParetoAnalysis from IopSelSetAmendJnl
+  new_list_of_forecasts:
+    display: Newlistofforecasts
+    type: string
+    required: false
+    description: Field NewListOfForecasts from IopSelSetAmendJnl
+  new_forecast_compare:
+    display: Newforecastcompare
+    type: string
+    required: false
+    description: Field NewForecastCompare from IopSelSetAmendJnl
+  new_forecast_acc:
+    display: Newforecastacc
+    type: string
+    required: false
+    description: Field NewForecastAcc from IopSelSetAmendJnl
+  new_policy_setting:
+    display: Newpolicysetting
+    type: string
+    required: false
+    description: Field NewPolicySetting from IopSelSetAmendJnl
+  new_io_modelling:
+    display: Newiomodelling
+    type: string
+    required: false
+    description: Field NewIoModelling from IopSelSetAmendJnl
+  new_fore_acc_cal:
+    display: Newforeacccal
+    type: string
+    required: false
+    description: Field NewForeAccCal from IopSelSetAmendJnl
+  new_fore_acc_periods:
+    display: Newforeaccperiods
+    type: decimal
+    required: false
+    description: Field NewForeAccPeriods from IopSelSetAmendJnl
+  new_fore_acc_compare:
+    display: Newforeacccompare
+    type: string
+    required: false
+    description: Field NewForeAccCompare from IopSelSetAmendJnl
+  new_fore_acc_move_prd:
+    display: Newforeaccmoveprd
+    type: decimal
+    required: false
+    description: Field NewForeAccMovePrd from IopSelSetAmendJnl
+  new_fore_acc_use:
+    display: Newforeaccuse
+    type: string
+    required: false
+    description: Field NewForeAccUse from IopSelSetAmendJnl
+  new_fore_acc_no_snap:
+    display: Newforeaccnosnap
+    type: decimal
+    required: false
+    description: Field NewForeAccNoSnap from IopSelSetAmendJnl
+  old_inc_plan_bill:
+    display: Oldincplanbill
+    type: decimal
+    required: false
+    description: Field OldIncPlanBill from IopSelSetAmendJnl
+  new_inc_plan_bill:
+    display: Newincplanbill
+    type: decimal
+    required: false
+    description: Field NewIncPlanBill from IopSelSetAmendJnl

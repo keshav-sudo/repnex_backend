@@ -1,0 +1,33 @@
+concept: ar_cst_stk_prc
+table: ArCstStkPrc
+alias: acsp
+fields:
+  customer: acsp.Customer
+  stock_code: acsp.StockCode
+  last_price_paid1: acsp.LastPricePaid1
+  price_uom1: acsp.PriceUom1
+  qty_purch1: acsp.QtyPurch1
+  first_disc_pct1: acsp.FirstDiscPct1
+  second_disc1: acsp.SecondDisc1
+  third_disc1: acsp.ThirdDisc1
+  commission_code1: acsp.CommissionCode1
+  invoice1: acsp.Invoice1
+  invoice_date1: acsp.InvoiceDate1
+  last_price_paid2: acsp.LastPricePaid2
+  price_uom2: acsp.PriceUom2
+  qty_purch2: acsp.QtyPurch2
+  first_disc_pct2: acsp.FirstDiscPct2
+  second_disc_pct2: acsp.SecondDiscPct2
+  third_disc_pct2: acsp.ThirdDiscPct2
+  commission_code2: acsp.CommissionCode2
+  invoice2: acsp.Invoice2
+  invoice_date2: acsp.InvoiceDate2
+  gross_profit_pct: acsp.GrossProfitPct
+  cust_retail_price: acsp.CustRetailPrice
+  dangerous_flag: acsp.DangerousFlag
+  sales_order: acsp.SalesOrder
+  date_issued: acsp.DateIssued
+  unit_disc_flag1: acsp.UnitDiscFlag1
+  unit_disc_value1: acsp.UnitDiscValue1
+  unit_disc_flag2: acsp.UnitDiscFlag2
+  unit_disc_value2: acsp.UnitDiscValue2

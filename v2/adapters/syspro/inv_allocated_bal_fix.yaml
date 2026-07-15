@@ -1,0 +1,13 @@
+concept: inv_allocated_bal_fix
+table: InvAllocatedBalFix
+alias: iabf
+fields:
+  run_date: iabf.RunDate
+  stock_code: iabf.StockCode
+  warehouse: iabf.Warehouse
+  old_qty_in_inspection: iabf.OldQtyInInspection
+  new_qty_in_inspection: iabf.NewQtyInInspection
+  old_qty_on_order: iabf.OldQtyOnOrder
+  new_qty_on_order: iabf.NewQtyOnOrder
+  old_qty_allocated_wip: iabf.OldQtyAllocatedWip
+  new_qty_allocated_wip: iabf.NewQtyAllocatedWip

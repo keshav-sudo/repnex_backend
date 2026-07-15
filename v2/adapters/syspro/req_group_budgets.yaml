@@ -1,0 +1,23 @@
+concept: req_group_budgets
+table: ReqGroupBudgets
+alias: rgb
+fields:
+  requisition_group: rgb.RequisitionGroup
+  product_class: rgb.ProductClass
+  stock_code: rgb.StockCode
+  budget_year: rgb.BudgetYear
+  group_budget1: rgb.GroupBudget1
+  group_budget2: rgb.GroupBudget2
+  group_budget3: rgb.GroupBudget3
+  group_budget4: rgb.GroupBudget4
+  group_budget5: rgb.GroupBudget5
+  group_budget6: rgb.GroupBudget6
+  group_budget7: rgb.GroupBudget7
+  group_budget8: rgb.GroupBudget8
+  group_budget9: rgb.GroupBudget9
+  group_budget10: rgb.GroupBudget10
+  group_budget11: rgb.GroupBudget11
+  group_budget12: rgb.GroupBudget12
+  group_budget13: rgb.GroupBudget13
+  date_last_updated: rgb.DateLastUpdated
+  operator: rgb.Operator

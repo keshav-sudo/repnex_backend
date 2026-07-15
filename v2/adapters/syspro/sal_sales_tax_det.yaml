@@ -1,0 +1,14 @@
+concept: sal_sales_tax_det
+table: SalSalesTaxDet
+alias: sstd
+fields:
+  trn_year: sstd.TrnYear
+  trn_month: sstd.TrnMonth
+  trn_date: sstd.TrnDate
+  invoice_register: sstd.InvoiceRegister
+  invoice: sstd.Invoice
+  line: sstd.Line
+  tax_code: sstd.TaxCode
+  tax_value: sstd.TaxValue
+  taxable_value: sstd.TaxableValue
+  non_tax_value: sstd.NonTaxValue

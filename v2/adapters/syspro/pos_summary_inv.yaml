@@ -1,0 +1,15 @@
+concept: pos_summary_inv
+table: PosSummaryInv
+alias: psi
+fields:
+  cash_drawer: psi.CashDrawer
+  invoice: psi.Invoice
+  invoice_type: psi.InvoiceType
+  invoice_value_for: psi.InvoiceValueFor
+  currency: psi.Currency
+  payment_value_for: psi.PaymentValueFor
+  on_account_val_for: psi.OnAccountValFor
+  discount_value_for: psi.DiscountValueFor
+  adjustment_val_for: psi.AdjustmentValFor
+  customer: psi.Customer
+  payments_made_flag: psi.PaymentsMadeFlag

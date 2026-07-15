@@ -1,0 +1,48 @@
+concept: ar_ctl_health_bal
+display_name: ArCtlHealthBal
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCtlHealthBal.
+synonyms:
+- arctlhealthbal
+- ar ctl health bal
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from ArCtlHealthBal
+  trx_type:
+    display: Trxtype
+    type: string
+    required: false
+    description: Field TrxType from ArCtlHealthBal
+  balance_year:
+    display: Balanceyear
+    type: decimal
+    required: false
+    description: Field BalanceYear from ArCtlHealthBal
+  balance_month:
+    display: Balancemonth
+    type: decimal
+    required: false
+    description: Field BalanceMonth from ArCtlHealthBal
+  trx_amount:
+    display: Trxamount
+    type: decimal
+    required: false
+    description: Field TrxAmount from ArCtlHealthBal
+  trx_amount_before:
+    display: Trxamountbefore
+    type: decimal
+    required: false
+    description: Field TrxAmountBefore from ArCtlHealthBal
+  trx_amount_after:
+    display: Trxamountafter
+    type: decimal
+    required: false
+    description: Field TrxAmountAfter from ArCtlHealthBal
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ArCtlHealthBal

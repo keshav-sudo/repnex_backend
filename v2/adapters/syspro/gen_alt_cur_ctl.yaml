@@ -1,0 +1,18 @@
+concept: gen_alt_cur_ctl
+table: GenAltCurCtl
+alias: gacc
+fields:
+  currency: gacc.Currency
+  company: gacc.Company
+  gl_code: gacc.GlCode
+  next_gl_line_cur: gacc.NextGlLineCur
+  next_gl_line_pyr: gacc.NextGlLinePyr
+  next_line_cur: gacc.NextLineCur
+  next_line_pyr: gacc.NextLinePyr
+  ptd_debit_val: gacc.PtdDebitVal
+  ptd_credit_val: gacc.PtdCreditVal
+  current_balance: gacc.CurrentBalance
+  prv_prd_end_bal: gacc.PrvPrdEndBal
+  details_cur_year: gacc.DetailsCurYear
+  details_prv_year: gacc.DetailsPrvYear
+  historical_val: gacc.HistoricalVal

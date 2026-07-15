@@ -1,0 +1,708 @@
+concept: ar_control
+display_name: ArControl
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArControl.
+synonyms:
+- arcontrol
+- ar control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from ArControl
+  next_invoice:
+    display: Nextinvoice
+    type: decimal
+    required: false
+    description: Field NextInvoice from ArControl
+  next_credit:
+    display: Nextcredit
+    type: decimal
+    required: false
+    description: Field NextCredit from ArControl
+  next_debit:
+    display: Nextdebit
+    type: decimal
+    required: false
+    description: Field NextDebit from ArControl
+  ar_balance1:
+    display: Arbalance1
+    type: decimal
+    required: false
+    description: Field ArBalance1 from ArControl
+  ar_balance2:
+    display: Arbalance2
+    type: decimal
+    required: false
+    description: Field ArBalance2 from ArControl
+  ar_balance3:
+    display: Arbalance3
+    type: decimal
+    required: false
+    description: Field ArBalance3 from ArControl
+  mtd_sales1:
+    display: Mtdsales1
+    type: decimal
+    required: false
+    description: Field MtdSales1 from ArControl
+  mtd_sales2:
+    display: Mtdsales2
+    type: decimal
+    required: false
+    description: Field MtdSales2 from ArControl
+  mtd_sales3:
+    display: Mtdsales3
+    type: decimal
+    required: false
+    description: Field MtdSales3 from ArControl
+  mtd_tax1:
+    display: Mtdtax1
+    type: decimal
+    required: false
+    description: Field MtdTax1 from ArControl
+  mtd_tax2:
+    display: Mtdtax2
+    type: decimal
+    required: false
+    description: Field MtdTax2 from ArControl
+  mtd_tax3:
+    display: Mtdtax3
+    type: decimal
+    required: false
+    description: Field MtdTax3 from ArControl
+  mtd_ibt1:
+    display: Mtdibt1
+    type: decimal
+    required: false
+    description: Field MtdIbt1 from ArControl
+  mtd_ibt2:
+    display: Mtdibt2
+    type: decimal
+    required: false
+    description: Field MtdIbt2 from ArControl
+  mtd_ibt3:
+    display: Mtdibt3
+    type: decimal
+    required: false
+    description: Field MtdIbt3 from ArControl
+  mtd_adjustment1:
+    display: Mtdadjustment1
+    type: decimal
+    required: false
+    description: Field MtdAdjustment1 from ArControl
+  mtd_adjustment2:
+    display: Mtdadjustment2
+    type: decimal
+    required: false
+    description: Field MtdAdjustment2 from ArControl
+  mtd_adjustment3:
+    display: Mtdadjustment3
+    type: decimal
+    required: false
+    description: Field MtdAdjustment3 from ArControl
+  mtd_discounts1:
+    display: Mtddiscounts1
+    type: decimal
+    required: false
+    description: Field MtdDiscounts1 from ArControl
+  mtd_discounts2:
+    display: Mtddiscounts2
+    type: decimal
+    required: false
+    description: Field MtdDiscounts2 from ArControl
+  mtd_discounts3:
+    display: Mtddiscounts3
+    type: decimal
+    required: false
+    description: Field MtdDiscounts3 from ArControl
+  mtd_debits1:
+    display: Mtddebits1
+    type: decimal
+    required: false
+    description: Field MtdDebits1 from ArControl
+  mtd_debits2:
+    display: Mtddebits2
+    type: decimal
+    required: false
+    description: Field MtdDebits2 from ArControl
+  mtd_debits3:
+    display: Mtddebits3
+    type: decimal
+    required: false
+    description: Field MtdDebits3 from ArControl
+  mtd_payments1:
+    display: Mtdpayments1
+    type: decimal
+    required: false
+    description: Field MtdPayments1 from ArControl
+  mtd_payments2:
+    display: Mtdpayments2
+    type: decimal
+    required: false
+    description: Field MtdPayments2 from ArControl
+  mtd_payments3:
+    display: Mtdpayments3
+    type: decimal
+    required: false
+    description: Field MtdPayments3 from ArControl
+  mtd_credits1:
+    display: Mtdcredits1
+    type: decimal
+    required: false
+    description: Field MtdCredits1 from ArControl
+  mtd_credits2:
+    display: Mtdcredits2
+    type: decimal
+    required: false
+    description: Field MtdCredits2 from ArControl
+  mtd_credits3:
+    display: Mtdcredits3
+    type: decimal
+    required: false
+    description: Field MtdCredits3 from ArControl
+  mtd_error_cor1:
+    display: Mtderrorcor1
+    type: decimal
+    required: false
+    description: Field MtdErrorCor1 from ArControl
+  mtd_error_cor2:
+    display: Mtderrorcor2
+    type: decimal
+    required: false
+    description: Field MtdErrorCor2 from ArControl
+  mtd_error_cor3:
+    display: Mtderrorcor3
+    type: decimal
+    required: false
+    description: Field MtdErrorCor3 from ArControl
+  opening_balance1:
+    display: Openingbalance1
+    type: decimal
+    required: false
+    description: Field OpeningBalance1 from ArControl
+  opening_balance2:
+    display: Openingbalance2
+    type: decimal
+    required: false
+    description: Field OpeningBalance2 from ArControl
+  opening_balance3:
+    display: Openingbalance3
+    type: decimal
+    required: false
+    description: Field OpeningBalance3 from ArControl
+  prev_fin_chrg_yymm:
+    display: Prevfinchrgyymm
+    type: decimal
+    required: false
+    description: Field PrevFinChrgYymm from ArControl
+  fin_period:
+    display: Finperiod
+    type: decimal
+    required: false
+    description: Field FinPeriod from ArControl
+  fin_year:
+    display: Finyear
+    type: decimal
+    required: false
+    description: Field FinYear from ArControl
+  next_ar_jnl:
+    display: Nextarjnl
+    type: decimal
+    required: false
+    description: Field NextArJnl from ArControl
+  pr_next_ar_jnl:
+    display: Prnextarjnl
+    type: decimal
+    required: false
+    description: Field PrNextArJnl from ArControl
+  next_inv_reg:
+    display: Nextinvreg
+    type: decimal
+    required: false
+    description: Field NextInvReg from ArControl
+  pr_next_inv_reg:
+    display: Prnextinvreg
+    type: decimal
+    required: false
+    description: Field PrNextInvReg from ArControl
+  rejections_flag:
+    display: Rejectionsflag
+    type: string
+    required: false
+    description: Field RejectionsFlag from ArControl
+  last_perm_ent_date:
+    display: Lastpermentdate
+    type: date
+    required: false
+    description: Field LastPermEntDate from ArControl
+  ar_year:
+    display: Aryear
+    type: decimal
+    required: false
+    description: Field ArYear from ArControl
+  ar_month:
+    display: Armonth
+    type: decimal
+    required: false
+    description: Field ArMonth from ArControl
+  ar_journal:
+    display: Arjournal
+    type: decimal
+    required: false
+    description: Field ArJournal from ArControl
+  sa_year:
+    display: Sayear
+    type: decimal
+    required: false
+    description: Field SaYear from ArControl
+  sa_month:
+    display: Samonth
+    type: decimal
+    required: false
+    description: Field SaMonth from ArControl
+  sa_reg:
+    display: Sareg
+    type: decimal
+    required: false
+    description: Field SaReg from ArControl
+  dt_year:
+    display: Dtyear
+    type: decimal
+    required: false
+    description: Field DtYear from ArControl
+  dt_month:
+    display: Dtmonth
+    type: decimal
+    required: false
+    description: Field DtMonth from ArControl
+  dt_reg:
+    display: Dtreg
+    type: decimal
+    required: false
+    description: Field DtReg from ArControl
+  unp_bds_year:
+    display: Unpbdsyear
+    type: decimal
+    required: false
+    description: Field UnpBdsYear from ArControl
+  unp_bds_month:
+    display: Unpbdsmonth
+    type: decimal
+    required: false
+    description: Field UnpBdsMonth from ArControl
+  unp_bds_register:
+    display: Unpbdsregister
+    type: decimal
+    required: false
+    description: Field UnpBdsRegister from ArControl
+  unp_sls_year:
+    display: Unpslsyear
+    type: decimal
+    required: false
+    description: Field UnpSlsYear from ArControl
+  unp_sls_period:
+    display: Unpslsperiod
+    type: decimal
+    required: false
+    description: Field UnpSlsPeriod from ArControl
+  unp_pay_year:
+    display: Unppayyear
+    type: decimal
+    required: false
+    description: Field UnpPayYear from ArControl
+  unp_pay_period:
+    display: Unppayperiod
+    type: decimal
+    required: false
+    description: Field UnpPayPeriod from ArControl
+  cur_yr_mth_stat1:
+    display: Curyrmthstat1
+    type: string
+    required: false
+    description: Field CurYrMthStat1 from ArControl
+  cur_yr_mth_stat2:
+    display: Curyrmthstat2
+    type: string
+    required: false
+    description: Field CurYrMthStat2 from ArControl
+  cur_yr_mth_stat3:
+    display: Curyrmthstat3
+    type: string
+    required: false
+    description: Field CurYrMthStat3 from ArControl
+  cur_yr_mth_stat4:
+    display: Curyrmthstat4
+    type: string
+    required: false
+    description: Field CurYrMthStat4 from ArControl
+  cur_yr_mth_stat5:
+    display: Curyrmthstat5
+    type: string
+    required: false
+    description: Field CurYrMthStat5 from ArControl
+  cur_yr_mth_stat6:
+    display: Curyrmthstat6
+    type: string
+    required: false
+    description: Field CurYrMthStat6 from ArControl
+  cur_yr_mth_stat7:
+    display: Curyrmthstat7
+    type: string
+    required: false
+    description: Field CurYrMthStat7 from ArControl
+  cur_yr_mth_stat8:
+    display: Curyrmthstat8
+    type: string
+    required: false
+    description: Field CurYrMthStat8 from ArControl
+  cur_yr_mth_stat9:
+    display: Curyrmthstat9
+    type: string
+    required: false
+    description: Field CurYrMthStat9 from ArControl
+  cur_yr_mth_stat10:
+    display: Curyrmthstat10
+    type: string
+    required: false
+    description: Field CurYrMthStat10 from ArControl
+  cur_yr_mth_stat11:
+    display: Curyrmthstat11
+    type: string
+    required: false
+    description: Field CurYrMthStat11 from ArControl
+  cur_yr_mth_stat12:
+    display: Curyrmthstat12
+    type: string
+    required: false
+    description: Field CurYrMthStat12 from ArControl
+  cur_yr_mth_stat13:
+    display: Curyrmthstat13
+    type: string
+    required: false
+    description: Field CurYrMthStat13 from ArControl
+  cur_yr_mth_end1:
+    display: Curyrmthend1
+    type: date
+    required: false
+    description: Field CurYrMthEnd1 from ArControl
+  cur_yr_mth_end2:
+    display: Curyrmthend2
+    type: date
+    required: false
+    description: Field CurYrMthEnd2 from ArControl
+  cur_yr_mth_end3:
+    display: Curyrmthend3
+    type: date
+    required: false
+    description: Field CurYrMthEnd3 from ArControl
+  cur_yr_mth_end4:
+    display: Curyrmthend4
+    type: date
+    required: false
+    description: Field CurYrMthEnd4 from ArControl
+  cur_yr_mth_end5:
+    display: Curyrmthend5
+    type: date
+    required: false
+    description: Field CurYrMthEnd5 from ArControl
+  cur_yr_mth_end6:
+    display: Curyrmthend6
+    type: date
+    required: false
+    description: Field CurYrMthEnd6 from ArControl
+  cur_yr_mth_end7:
+    display: Curyrmthend7
+    type: date
+    required: false
+    description: Field CurYrMthEnd7 from ArControl
+  cur_yr_mth_end8:
+    display: Curyrmthend8
+    type: date
+    required: false
+    description: Field CurYrMthEnd8 from ArControl
+  cur_yr_mth_end9:
+    display: Curyrmthend9
+    type: date
+    required: false
+    description: Field CurYrMthEnd9 from ArControl
+  cur_yr_mth_end10:
+    display: Curyrmthend10
+    type: date
+    required: false
+    description: Field CurYrMthEnd10 from ArControl
+  cur_yr_mth_end11:
+    display: Curyrmthend11
+    type: date
+    required: false
+    description: Field CurYrMthEnd11 from ArControl
+  cur_yr_mth_end12:
+    display: Curyrmthend12
+    type: date
+    required: false
+    description: Field CurYrMthEnd12 from ArControl
+  cur_yr_mth_end13:
+    display: Curyrmthend13
+    type: date
+    required: false
+    description: Field CurYrMthEnd13 from ArControl
+  prv_yr_mth_stat1:
+    display: Prvyrmthstat1
+    type: string
+    required: false
+    description: Field PrvYrMthStat1 from ArControl
+  prv_yr_mth_stat2:
+    display: Prvyrmthstat2
+    type: string
+    required: false
+    description: Field PrvYrMthStat2 from ArControl
+  prv_yr_mth_stat3:
+    display: Prvyrmthstat3
+    type: string
+    required: false
+    description: Field PrvYrMthStat3 from ArControl
+  prv_yr_mth_stat4:
+    display: Prvyrmthstat4
+    type: string
+    required: false
+    description: Field PrvYrMthStat4 from ArControl
+  prv_yr_mth_stat5:
+    display: Prvyrmthstat5
+    type: string
+    required: false
+    description: Field PrvYrMthStat5 from ArControl
+  prv_yr_mth_stat6:
+    display: Prvyrmthstat6
+    type: string
+    required: false
+    description: Field PrvYrMthStat6 from ArControl
+  prv_yr_mth_stat7:
+    display: Prvyrmthstat7
+    type: string
+    required: false
+    description: Field PrvYrMthStat7 from ArControl
+  prv_yr_mth_stat8:
+    display: Prvyrmthstat8
+    type: string
+    required: false
+    description: Field PrvYrMthStat8 from ArControl
+  prv_yr_mth_stat9:
+    display: Prvyrmthstat9
+    type: string
+    required: false
+    description: Field PrvYrMthStat9 from ArControl
+  prv_yr_mth_stat10:
+    display: Prvyrmthstat10
+    type: string
+    required: false
+    description: Field PrvYrMthStat10 from ArControl
+  prv_yr_mth_stat11:
+    display: Prvyrmthstat11
+    type: string
+    required: false
+    description: Field PrvYrMthStat11 from ArControl
+  prv_yr_mth_stat12:
+    display: Prvyrmthstat12
+    type: string
+    required: false
+    description: Field PrvYrMthStat12 from ArControl
+  prv_yr_mth_stat13:
+    display: Prvyrmthstat13
+    type: string
+    required: false
+    description: Field PrvYrMthStat13 from ArControl
+  prv_yr_mth_end1:
+    display: Prvyrmthend1
+    type: date
+    required: false
+    description: Field PrvYrMthEnd1 from ArControl
+  prv_yr_mth_end2:
+    display: Prvyrmthend2
+    type: date
+    required: false
+    description: Field PrvYrMthEnd2 from ArControl
+  prv_yr_mth_end3:
+    display: Prvyrmthend3
+    type: date
+    required: false
+    description: Field PrvYrMthEnd3 from ArControl
+  prv_yr_mth_end4:
+    display: Prvyrmthend4
+    type: date
+    required: false
+    description: Field PrvYrMthEnd4 from ArControl
+  prv_yr_mth_end5:
+    display: Prvyrmthend5
+    type: date
+    required: false
+    description: Field PrvYrMthEnd5 from ArControl
+  prv_yr_mth_end6:
+    display: Prvyrmthend6
+    type: date
+    required: false
+    description: Field PrvYrMthEnd6 from ArControl
+  prv_yr_mth_end7:
+    display: Prvyrmthend7
+    type: date
+    required: false
+    description: Field PrvYrMthEnd7 from ArControl
+  prv_yr_mth_end8:
+    display: Prvyrmthend8
+    type: date
+    required: false
+    description: Field PrvYrMthEnd8 from ArControl
+  prv_yr_mth_end9:
+    display: Prvyrmthend9
+    type: date
+    required: false
+    description: Field PrvYrMthEnd9 from ArControl
+  prv_yr_mth_end10:
+    display: Prvyrmthend10
+    type: date
+    required: false
+    description: Field PrvYrMthEnd10 from ArControl
+  prv_yr_mth_end11:
+    display: Prvyrmthend11
+    type: date
+    required: false
+    description: Field PrvYrMthEnd11 from ArControl
+  prv_yr_mth_end12:
+    display: Prvyrmthend12
+    type: date
+    required: false
+    description: Field PrvYrMthEnd12 from ArControl
+  prv_yr_mth_end13:
+    display: Prvyrmthend13
+    type: date
+    required: false
+    description: Field PrvYrMthEnd13 from ArControl
+  debit_disc_req:
+    display: Debitdiscreq
+    type: string
+    required: false
+    description: Field DebitDiscReq from ArControl
+  next_credit_disc:
+    display: Nextcreditdisc
+    type: decimal
+    required: false
+    description: Field NextCreditDisc from ArControl
+  next_debit_disc:
+    display: Nextdebitdisc
+    type: decimal
+    required: false
+    description: Field NextDebitDisc from ArControl
+  per_credit_disc:
+    display: Percreditdisc
+    type: decimal
+    required: false
+    description: Field PerCreditDisc from ArControl
+  per_debit_disc:
+    display: Perdebitdisc
+    type: decimal
+    required: false
+    description: Field PerDebitDisc from ArControl
+  mtd_revaluations1:
+    display: Mtdrevaluations1
+    type: decimal
+    required: false
+    description: Field MtdRevaluations1 from ArControl
+  mtd_revaluations2:
+    display: Mtdrevaluations2
+    type: decimal
+    required: false
+    description: Field MtdRevaluations2 from ArControl
+  mtd_revaluations3:
+    display: Mtdrevaluations3
+    type: decimal
+    required: false
+    description: Field MtdRevaluations3 from ArControl
+  next_customer:
+    display: Nextcustomer
+    type: string
+    required: false
+    description: Field NextCustomer from ArControl
+  ar_upd_year:
+    display: Arupdyear
+    type: decimal
+    required: false
+    description: Field ArUpdYear from ArControl
+  ar_upd_month:
+    display: Arupdmonth
+    type: decimal
+    required: false
+    description: Field ArUpdMonth from ArControl
+  ar_upd_journal:
+    display: Arupdjournal
+    type: decimal
+    required: false
+    description: Field ArUpdJournal from ArControl
+  sa_upd_year:
+    display: Saupdyear
+    type: decimal
+    required: false
+    description: Field SaUpdYear from ArControl
+  sa_upd_month:
+    display: Saupdmonth
+    type: decimal
+    required: false
+    description: Field SaUpdMonth from ArControl
+  sa_upd_reg:
+    display: Saupdreg
+    type: decimal
+    required: false
+    description: Field SaUpdReg from ArControl
+  dt_upd_year:
+    display: Dtupdyear
+    type: decimal
+    required: false
+    description: Field DtUpdYear from ArControl
+  dt_upd_month:
+    display: Dtupdmonth
+    type: decimal
+    required: false
+    description: Field DtUpdMonth from ArControl
+  dt_upd_reg:
+    display: Dtupdreg
+    type: decimal
+    required: false
+    description: Field DtUpdReg from ArControl
+  unp_bds_upd_year:
+    display: Unpbdsupdyear
+    type: decimal
+    required: false
+    description: Field UnpBdsUpdYear from ArControl
+  unp_bds_upd_month:
+    display: Unpbdsupdmonth
+    type: decimal
+    required: false
+    description: Field UnpBdsUpdMonth from ArControl
+  unp_bds_upd_register:
+    display: Unpbdsupdregister
+    type: decimal
+    required: false
+    description: Field UnpBdsUpdRegister from ArControl
+  next_payment_number:
+    display: Nextpaymentnumber
+    type: decimal
+    required: false
+    description: Field NextPaymentNumber from ArControl
+  next_collector_run_no:
+    display: Nextcollectorrunno
+    type: decimal
+    required: false
+    description: Field NextCollectorRunNo from ArControl
+  mtd_tax_relief_val1:
+    display: Mtdtaxreliefval1
+    type: decimal
+    required: false
+    description: Field MtdTaxReliefVal1 from ArControl
+  mtd_tax_relief_val2:
+    display: Mtdtaxreliefval2
+    type: decimal
+    required: false
+    description: Field MtdTaxReliefVal2 from ArControl
+  mtd_tax_relief_val3:
+    display: Mtdtaxreliefval3
+    type: decimal
+    required: false
+    description: Field MtdTaxReliefVal3 from ArControl

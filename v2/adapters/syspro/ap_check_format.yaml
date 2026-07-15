@@ -1,0 +1,6 @@
+concept: ap_check_format
+table: ApCheckFormat
+alias: acf
+fields:
+  bank: acf.Bank
+  document_info: acf.DocumentInfo

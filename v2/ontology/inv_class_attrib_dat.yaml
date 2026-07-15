@@ -1,0 +1,48 @@
+concept: inv_class_attrib_dat
+display_name: InvClassAttribDat
+module: inventory
+description: Auto-generated representation of the physical table InvClassAttribDat.
+synonyms:
+- invclassattribdat
+- inv class attrib dat
+header_attributes:
+  stock_class:
+    display: Stockclass
+    type: string
+    required: false
+    description: Field StockClass from InvClassAttribDat
+  class_attrib:
+    display: Classattrib
+    type: string
+    required: false
+    description: Field ClassAttrib from InvClassAttribDat
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvClassAttribDat
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvClassAttribDat
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvClassAttribDat
+  alpha_value:
+    display: Alphavalue
+    type: string
+    required: false
+    description: Field AlphaValue from InvClassAttribDat
+  numeric_value:
+    display: Numericvalue
+    type: decimal
+    required: false
+    description: Field NumericValue from InvClassAttribDat
+  date_value:
+    display: Datevalue
+    type: date
+    required: false
+    description: Field DateValue from InvClassAttribDat

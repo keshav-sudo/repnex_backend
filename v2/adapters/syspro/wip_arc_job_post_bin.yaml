@@ -1,0 +1,9 @@
+concept: wip_arc_job_post_bin
+table: WipArcJobPostBin
+alias: wajpb
+fields:
+  job: wajpb.Job
+  line: wajpb.Line
+  lot: wajpb.Lot
+  bin: wajpb.Bin
+  stock_qty_issued: wajpb.StockQtyIssued

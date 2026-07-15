@@ -1,0 +1,6 @@
+concept: wms_storage_cond
+table: WmsStorageCond
+alias: wsc1
+fields:
+  storage_condition: wsc1.StorageCondition
+  description: wsc1.Description

@@ -1,0 +1,9 @@
+concept: bom_route
+table: BomRoute
+alias: br
+fields:
+  route: br.Route
+  description: br.Description
+  ecc_controlled: br.EccControlled
+  jobs_allowed: br.JobsAllowed
+  wip_branch: br.WipBranch

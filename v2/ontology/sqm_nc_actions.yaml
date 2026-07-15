@@ -1,0 +1,108 @@
+concept: sqm_nc_actions
+display_name: SqmNcActions
+module: other
+description: Auto-generated representation of the physical table SqmNcActions.
+synonyms:
+- sqmncactions
+- sqm nc actions
+header_attributes:
+  conform_number:
+    display: Conformnumber
+    type: string
+    required: false
+    description: Field ConformNumber from SqmNcActions
+  conform_area:
+    display: Conformarea
+    type: string
+    required: false
+    description: Field ConformArea from SqmNcActions
+  action_number:
+    display: Actionnumber
+    type: decimal
+    required: false
+    description: Field ActionNumber from SqmNcActions
+  nc_action:
+    display: Ncaction
+    type: string
+    required: false
+    description: Field NcAction from SqmNcActions
+  stake_holder:
+    display: Stakeholder
+    type: string
+    required: false
+    description: Field StakeHolder from SqmNcActions
+  action_status:
+    display: Actionstatus
+    type: string
+    required: false
+    description: Field ActionStatus from SqmNcActions
+  action_started:
+    display: Actionstarted
+    type: string
+    required: false
+    description: Field ActionStarted from SqmNcActions
+  action_completed:
+    display: Actioncompleted
+    type: string
+    required: false
+    description: Field ActionCompleted from SqmNcActions
+  started_date:
+    display: Starteddate
+    type: date
+    required: false
+    description: Field StartedDate from SqmNcActions
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from SqmNcActions
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from SqmNcActions
+  link_type:
+    display: Linktype
+    type: string
+    required: false
+    description: Field LinkType from SqmNcActions
+  link_key:
+    display: Linkkey
+    type: string
+    required: false
+    description: Field LinkKey from SqmNcActions
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from SqmNcActions
+  audit_status:
+    display: Auditstatus
+    type: string
+    required: false
+    description: Field AuditStatus from SqmNcActions
+  ca_implemented:
+    display: Caimplemented
+    type: string
+    required: false
+    description: Field CaImplemented from SqmNcActions
+  ca_effective:
+    display: Caeffective
+    type: string
+    required: false
+    description: Field CaEffective from SqmNcActions
+  pa_implemented:
+    display: Paimplemented
+    type: string
+    required: false
+    description: Field PaImplemented from SqmNcActions
+  pa_effective:
+    display: Paeffective
+    type: string
+    required: false
+    description: Field PaEffective from SqmNcActions
+  stand_updated:
+    display: Standupdated
+    type: string
+    required: false
+    description: Field StandUpdated from SqmNcActions

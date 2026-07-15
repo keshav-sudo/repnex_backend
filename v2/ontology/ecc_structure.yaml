@@ -1,0 +1,233 @@
+concept: ecc_structure
+display_name: EccStructure
+module: other
+description: Auto-generated representation of the physical table EccStructure.
+synonyms:
+- eccstructure
+- ecc structure
+header_attributes:
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccStructure
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from EccStructure
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from EccStructure
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from EccStructure
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from EccStructure
+  com_version:
+    display: Comversion
+    type: string
+    required: false
+    description: Field ComVersion from EccStructure
+  com_release:
+    display: Comrelease
+    type: string
+    required: false
+    description: Field ComRelease from EccStructure
+  ecc_consumption:
+    display: Eccconsumption
+    type: string
+    required: false
+    description: Field EccConsumption from EccStructure
+  structure_on_date:
+    display: Structureondate
+    type: date
+    required: false
+    description: Field StructureOnDate from EccStructure
+  structure_off_date:
+    display: Structureoffdate
+    type: date
+    required: false
+    description: Field StructureOffDate from EccStructure
+  op_offset_flag:
+    display: Opoffsetflag
+    type: string
+    required: false
+    description: Field OpOffsetFlag from EccStructure
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from EccStructure
+  qty_per:
+    display: Qtyper
+    type: decimal
+    required: false
+    description: Field QtyPer from EccStructure
+  scrap_percentage:
+    display: Scrappercentage
+    type: decimal
+    required: false
+    description: Field ScrapPercentage from EccStructure
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from EccStructure
+  so_option_flag:
+    display: Sooptionflag
+    type: string
+    required: false
+    description: Field SoOptionFlag from EccStructure
+  so_print_flag:
+    display: Soprintflag
+    type: string
+    required: false
+    description: Field SoPrintFlag from EccStructure
+  incl_scrap_flag:
+    display: Inclscrapflag
+    type: string
+    required: false
+    description: Field InclScrapFlag from EccStructure
+  reason_for_change:
+    display: Reasonforchange
+    type: string
+    required: false
+    description: Field ReasonForChange from EccStructure
+  ref_designator:
+    display: Refdesignator
+    type: string
+    required: false
+    description: Field RefDesignator from EccStructure
+  assembly_place:
+    display: Assemblyplace
+    type: string
+    required: false
+    description: Field AssemblyPlace from EccStructure
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from EccStructure
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from EccStructure
+  component_type:
+    display: Componenttype
+    type: string
+    required: false
+    description: Field ComponentType from EccStructure
+  incl_kit_issues:
+    display: Inclkitissues
+    type: string
+    required: false
+    description: Field InclKitIssues from EccStructure
+  create_sub_job:
+    display: Createsubjob
+    type: string
+    required: false
+    description: Field CreateSubJob from EccStructure
+  wet_weight_percent:
+    display: Wetweightpercent
+    type: decimal
+    required: false
+    description: Field WetWeightPercent from EccStructure
+  include_batch:
+    display: Includebatch
+    type: string
+    required: false
+    description: Field IncludeBatch from EccStructure
+  include_from_job:
+    display: Includefromjob
+    type: string
+    required: false
+    description: Field IncludeFromJob from EccStructure
+  include_to_job:
+    display: Includetojob
+    type: string
+    required: false
+    description: Field IncludeToJob from EccStructure
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from EccStructure
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from EccStructure
+  roll_up_cost_flag:
+    display: Rollupcostflag
+    type: string
+    required: false
+    description: Field RollUpCostFlag from EccStructure
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from EccStructure
+  ignore_floor_flag:
+    display: Ignorefloorflag
+    type: string
+    required: false
+    description: Field IgnoreFloorFlag from EccStructure
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from EccStructure
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from EccStructure
+  qty_per_ent:
+    display: Qtyperent
+    type: decimal
+    required: false
+    description: Field QtyPerEnt from EccStructure
+  scrap_quantity_ent:
+    display: Scrapquantityent
+    type: decimal
+    required: false
+    description: Field ScrapQuantityEnt from EccStructure
+  fixed_qty_per_ent:
+    display: Fixedqtyperent
+    type: decimal
+    required: false
+    description: Field FixedQtyPerEnt from EccStructure
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from EccStructure
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from EccStructure
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from EccStructure
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from EccStructure
+  ovr_ecc_spec_iss:
+    display: Ovreccspeciss
+    type: string
+    required: false
+    description: Field OvrEccSpecIss from EccStructure

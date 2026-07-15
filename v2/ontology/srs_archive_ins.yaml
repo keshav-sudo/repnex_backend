@@ -1,0 +1,43 @@
+concept: srs_archive_ins
+display_name: SrsArchiveINS
+module: other
+description: Auto-generated representation of the physical table SrsArchiveINS.
+synonyms:
+- srsarchiveins
+- srs archive ins
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveINS
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveINS
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveINS
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveINS
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveINS
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveINS
+  det_rep_document:
+    display: Detrepdocument
+    type: string
+    required: false
+    description: Field DetRepDocument from SrsArchiveINS

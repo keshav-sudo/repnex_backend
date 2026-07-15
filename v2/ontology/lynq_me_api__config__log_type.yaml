@@ -1,0 +1,18 @@
+concept: lynq_me_api__config__log_type
+display_name: Lynq ME API Config LogType
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_API_Config_LogType.
+synonyms:
+- lynq_me_api_config_logtype
+- lynq me api  config  log type
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_ME_API_Config_LogType
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from Lynq_ME_API_Config_LogType

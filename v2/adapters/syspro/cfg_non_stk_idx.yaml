@@ -1,0 +1,7 @@
+concept: cfg_non_stk_idx
+table: CfgNonStkIdx
+alias: cnsi
+fields:
+  product_code: cnsi.ProductCode
+  option_num: cnsi.OptionNum
+  line: cnsi.Line

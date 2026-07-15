@@ -1,0 +1,18 @@
+concept: crm_operator_contact
+display_name: CrmOperatorContact
+module: crm
+description: Auto-generated representation of the physical table CrmOperatorContact.
+synonyms:
+- crmoperatorcontact
+- crm operator contact
+header_attributes:
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from CrmOperatorContact
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmOperatorContact

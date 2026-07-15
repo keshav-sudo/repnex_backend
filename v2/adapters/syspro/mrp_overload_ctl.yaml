@@ -1,0 +1,8 @@
+concept: mrp_overload_ctl
+table: MrpOverloadCtl
+alias: moc
+fields:
+  operator: moc.Operator
+  start_date: moc.StartDate
+  incl_suggested_job: moc.InclSuggestedJob
+  end_date: moc.EndDate

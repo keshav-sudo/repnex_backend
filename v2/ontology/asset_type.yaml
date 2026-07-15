@@ -1,0 +1,18 @@
+concept: asset_type
+display_name: AssetType
+module: assets
+description: Auto-generated representation of the physical table AssetType.
+synonyms:
+- assettype
+- asset type
+header_attributes:
+  asset_type:
+    display: Assettype
+    type: string
+    required: false
+    description: Field AssetType from AssetType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetType

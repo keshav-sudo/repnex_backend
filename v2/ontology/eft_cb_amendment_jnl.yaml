@@ -1,0 +1,58 @@
+concept: eft_cb_amendment_jnl
+display_name: EftCbAmendmentJnl
+module: other
+description: Auto-generated representation of the physical table EftCbAmendmentJnl.
+synonyms:
+- eftcbamendmentjnl
+- eft cb amendment jnl
+header_attributes:
+  jnl_date:
+    display: Jnldate
+    type: date
+    required: false
+    description: Field JnlDate from EftCbAmendmentJnl
+  jnl_time:
+    display: Jnltime
+    type: decimal
+    required: false
+    description: Field JnlTime from EftCbAmendmentJnl
+  jnl_line:
+    display: Jnlline
+    type: decimal
+    required: false
+    description: Field JnlLine from EftCbAmendmentJnl
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from EftCbAmendmentJnl
+  journal_printed:
+    display: Journalprinted
+    type: string
+    required: false
+    description: Field JournalPrinted from EftCbAmendmentJnl
+  change_flag:
+    display: Changeflag
+    type: string
+    required: false
+    description: Field ChangeFlag from EftCbAmendmentJnl
+  column_name:
+    display: Columnname
+    type: string
+    required: false
+    description: Field ColumnName from EftCbAmendmentJnl
+  before:
+    display: Before
+    type: string
+    required: false
+    description: Field Before from EftCbAmendmentJnl
+  after:
+    display: After
+    type: string
+    required: false
+    description: Field After from EftCbAmendmentJnl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from EftCbAmendmentJnl

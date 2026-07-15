@@ -1,0 +1,18 @@
+concept: wip_master_sub
+display_name: WipMasterSub
+module: work_in_progress
+description: Auto-generated representation of the physical table WipMasterSub.
+synonyms:
+- wipmastersub
+- wip master sub
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipMasterSub
+  sub_job:
+    display: Subjob
+    type: string
+    required: false
+    description: Field SubJob from WipMasterSub

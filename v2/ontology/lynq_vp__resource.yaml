@@ -1,0 +1,23 @@
+concept: lynq_vp__resource
+display_name: Lynq VP Resource
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_Resource.
+synonyms:
+- lynq_vp_resource
+- lynq vp  resource
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_Resource
+  resource_code:
+    display: Resourcecode
+    type: string
+    required: false
+    description: Field ResourceCode from Lynq_VP_Resource
+  resource_description:
+    display: Resourcedescription
+    type: string
+    required: false
+    description: Field ResourceDescription from Lynq_VP_Resource

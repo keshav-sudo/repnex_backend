@@ -1,0 +1,10 @@
+concept: ap_dummy_check
+table: ApDummyCheck
+alias: adc
+fields:
+  payment_number: adc.PaymentNumber
+  supplier: adc.Supplier
+  dummy_cheque: adc.DummyCheque
+  post_year: adc.PostYear
+  post_month: adc.PostMonth
+  bank: adc.Bank

@@ -1,0 +1,11 @@
+concept: ecc_co_prd_mat_cost
+table: EccCoPrdMatCost
+alias: ecpmc
+fields:
+  change_order: ecpmc.ChangeOrder
+  parent_part: ecpmc.ParentPart
+  route: ecpmc.Route
+  co_product_line: ecpmc.CoProductLine
+  sequence_num: ecpmc.SequenceNum
+  component: ecpmc.Component
+  pct_material_cost: ecpmc.PctMaterialCost

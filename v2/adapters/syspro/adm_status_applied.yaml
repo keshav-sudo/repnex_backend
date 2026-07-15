@@ -1,0 +1,7 @@
+concept: adm_status_applied
+table: AdmStatusApplied
+alias: asa
+fields:
+  status_entity: asa.StatusEntity
+  adm_key_field: asa.AdmKeyField
+  status_code: asa.StatusCode

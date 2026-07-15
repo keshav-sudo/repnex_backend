@@ -1,0 +1,98 @@
+concept: adm_signature_log
+display_name: AdmSignatureLog
+module: administration
+description: Auto-generated representation of the physical table AdmSignatureLog.
+synonyms:
+- admsignaturelog
+- adm signature log
+header_attributes:
+  transaction_id:
+    display: Transactionid
+    type: string
+    required: false
+    description: Field TransactionId from AdmSignatureLog
+  signature_date:
+    display: Signaturedate
+    type: date
+    required: false
+    description: Field SignatureDate from AdmSignatureLog
+  signature_time:
+    display: Signaturetime
+    type: decimal
+    required: false
+    description: Field SignatureTime from AdmSignatureLog
+  signature_line:
+    display: Signatureline
+    type: decimal
+    required: false
+    description: Field SignatureLine from AdmSignatureLog
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmSignatureLog
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from AdmSignatureLog
+  log_only:
+    display: Logonly
+    type: string
+    required: false
+    description: Field LogOnly from AdmSignatureLog
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from AdmSignatureLog
+  computer_name:
+    display: Computername
+    type: string
+    required: false
+    description: Field ComputerName from AdmSignatureLog
+  program_name:
+    display: Programname
+    type: string
+    required: false
+    description: Field ProgramName from AdmSignatureLog
+  syspro_flag:
+    display: Sysproflag
+    type: string
+    required: false
+    description: Field SysproFlag from AdmSignatureLog
+  table_name:
+    display: Tablename
+    type: string
+    required: false
+    description: Field TableName from AdmSignatureLog
+  item_key:
+    display: Itemkey
+    type: string
+    required: false
+    description: Field ItemKey from AdmSignatureLog
+  transaction_qty:
+    display: Transactionqty
+    type: decimal
+    required: false
+    description: Field TransactionQty from AdmSignatureLog
+  transaction_value:
+    display: Transactionvalue
+    type: decimal
+    required: false
+    description: Field TransactionValue from AdmSignatureLog
+  condition_name:
+    display: Conditionname
+    type: string
+    required: false
+    description: Field ConditionName from AdmSignatureLog
+  transaction_guid:
+    display: Transactionguid
+    type: string
+    required: false
+    description: Field TransactionGuid from AdmSignatureLog
+  role:
+    display: Role
+    type: string
+    required: false
+    description: Field Role from AdmSignatureLog

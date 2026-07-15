@@ -1,0 +1,11 @@
+concept: bom_shift_all
+table: BomShiftAll
+alias: bsa
+fields:
+  shift_all_type: bsa.ShiftAllType
+  shift_code: bsa.ShiftCode
+  shift_alloc: bsa.ShiftAlloc
+  description: bsa.Description
+  active_dates: bsa.ActiveDates
+  on_date: bsa.OnDate
+  off_date: bsa.OffDate

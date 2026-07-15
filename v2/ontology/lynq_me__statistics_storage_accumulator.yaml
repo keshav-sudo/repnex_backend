@@ -1,0 +1,78 @@
+concept: lynq_me__statistics_storage_accumulator
+display_name: Lynq ME StatisticsStorageAccumulator
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_StatisticsStorageAccumulator.
+synonyms:
+- lynq_me_statisticsstorageaccumulator
+- lynq me  statistics storage accumulator
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_ME_StatisticsStorageAccumulator
+  key_id:
+    display: Keyid
+    type: decimal
+    required: false
+    description: Field KeyID from Lynq_ME_StatisticsStorageAccumulator
+  nl0:
+    display: Nl0
+    type: decimal
+    required: false
+    description: Field NL0 from Lynq_ME_StatisticsStorageAccumulator
+  nl1:
+    display: Nl1
+    type: decimal
+    required: false
+    description: Field NL1 from Lynq_ME_StatisticsStorageAccumulator
+  nl2:
+    display: Nl2
+    type: decimal
+    required: false
+    description: Field NL2 from Lynq_ME_StatisticsStorageAccumulator
+  nl3:
+    display: Nl3
+    type: decimal
+    required: false
+    description: Field NL3 from Lynq_ME_StatisticsStorageAccumulator
+  nd0:
+    display: Nd0
+    type: decimal
+    required: false
+    description: Field ND0 from Lynq_ME_StatisticsStorageAccumulator
+  nd1:
+    display: Nd1
+    type: decimal
+    required: false
+    description: Field ND1 from Lynq_ME_StatisticsStorageAccumulator
+  nd2:
+    display: Nd2
+    type: decimal
+    required: false
+    description: Field ND2 from Lynq_ME_StatisticsStorageAccumulator
+  nd3:
+    display: Nd3
+    type: decimal
+    required: false
+    description: Field ND3 from Lynq_ME_StatisticsStorageAccumulator
+  nd4:
+    display: Nd4
+    type: decimal
+    required: false
+    description: Field ND4 from Lynq_ME_StatisticsStorageAccumulator
+  nd5:
+    display: Nd5
+    type: decimal
+    required: false
+    description: Field ND5 from Lynq_ME_StatisticsStorageAccumulator
+  nd6:
+    display: Nd6
+    type: decimal
+    required: false
+    description: Field ND6 from Lynq_ME_StatisticsStorageAccumulator
+  nd7:
+    display: Nd7
+    type: decimal
+    required: false
+    description: Field ND7 from Lynq_ME_StatisticsStorageAccumulator

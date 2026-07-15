@@ -1,0 +1,23 @@
+concept: iop_year_start
+display_name: IopYearStart
+module: other
+description: Auto-generated representation of the physical table IopYearStart.
+synonyms:
+- iopyearstart
+- iop year start
+header_attributes:
+  calendar:
+    display: Calendar
+    type: string
+    required: false
+    description: Field Calendar from IopYearStart
+  forecast_year:
+    display: Forecastyear
+    type: decimal
+    required: false
+    description: Field ForecastYear from IopYearStart
+  year_start_date:
+    display: Yearstartdate
+    type: date
+    required: false
+    description: Field YearStartDate from IopYearStart

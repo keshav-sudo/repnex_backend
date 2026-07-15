@@ -1,0 +1,28 @@
+concept: bom_tool_set_tools
+display_name: BomToolSetTools
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomToolSetTools.
+synonyms:
+- bomtoolsettools
+- bom tool set tools
+header_attributes:
+  toolset:
+    display: Toolset
+    type: string
+    required: false
+    description: Field Toolset from BomToolSetTools
+  tool:
+    display: Tool
+    type: string
+    required: false
+    description: Field Tool from BomToolSetTools
+  quantity_used:
+    display: Quantityused
+    type: decimal
+    required: false
+    description: Field QuantityUsed from BomToolSetTools
+  usage_flad:
+    display: Usageflad
+    type: string
+    required: false
+    description: Field UsageFlad from BomToolSetTools

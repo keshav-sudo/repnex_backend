@@ -1,0 +1,10 @@
+concept: lynq_vp__activity
+table: Lynq_VP_Activity
+alias: lvpa
+fields:
+  id: lvpa.ID
+  activity_code: lvpa.ActivityCode
+  activity_desc: lvpa.ActivityDesc
+  is_working: lvpa.IsWorking
+  colour_code: lvpa.ColourCode
+  is_downtime: lvpa.IsDowntime

@@ -1,0 +1,23 @@
+concept: lynq_pg_il__general_info
+display_name: Lynq PG IL GeneralInfo
+module: other
+description: Auto-generated representation of the physical table Lynq_PG_IL_GeneralInfo.
+synonyms:
+- lynq_pg_il_generalinfo
+- lynq pg il  general info
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_PG_IL_GeneralInfo
+  name:
+    display: Name
+    type: string
+    required: false
+    description: Field Name from Lynq_PG_IL_GeneralInfo
+  value:
+    display: Value
+    type: string
+    required: false
+    description: Field Value from Lynq_PG_IL_GeneralInfo

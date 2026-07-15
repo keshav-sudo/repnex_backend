@@ -1,0 +1,9 @@
+concept: wip_job_post_bin
+table: WipJobPostBin
+alias: wjpb
+fields:
+  job: wjpb.Job
+  line: wjpb.Line
+  lot: wjpb.Lot
+  bin: wjpb.Bin
+  stock_qty_issued: wjpb.StockQtyIssued

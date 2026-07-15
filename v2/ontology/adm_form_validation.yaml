@@ -1,0 +1,33 @@
+concept: adm_form_validation
+display_name: AdmFormValidation
+module: administration
+description: Auto-generated representation of the physical table AdmFormValidation.
+synonyms:
+- admformvalidation
+- adm form validation
+header_attributes:
+  form_type:
+    display: Formtype
+    type: string
+    required: false
+    description: Field FormType from AdmFormValidation
+  field_name:
+    display: Fieldname
+    type: string
+    required: false
+    description: Field FieldName from AdmFormValidation
+  item:
+    display: Item
+    type: string
+    required: false
+    description: Field Item from AdmFormValidation
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AdmFormValidation
+  default_item:
+    display: Defaultitem
+    type: string
+    required: false
+    description: Field DefaultItem from AdmFormValidation

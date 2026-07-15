@@ -1,0 +1,9 @@
+concept: inv_site
+table: InvSite
+alias: is
+fields:
+  site_id: is.SiteId
+  site_type: is.SiteType
+  description: is.Description
+  site_id_parent: is.SiteIdParent
+  alloc_resolve_days: is.AllocResolveDays

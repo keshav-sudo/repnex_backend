@@ -1,0 +1,38 @@
+concept: wip_prompt_det
+display_name: WipPromptDet
+module: work_in_progress
+description: Auto-generated representation of the physical table WipPromptDet.
+synonyms:
+- wippromptdet
+- wip prompt det
+header_attributes:
+  format_code:
+    display: Formatcode
+    type: string
+    required: false
+    description: Field FormatCode from WipPromptDet
+  prompt_num:
+    display: Promptnum
+    type: decimal
+    required: false
+    description: Field PromptNum from WipPromptDet
+  prompt_req_mode:
+    display: Promptreqmode
+    type: string
+    required: false
+    description: Field PromptReqMode from WipPromptDet
+  alpha_default:
+    display: Alphadefault
+    type: string
+    required: false
+    description: Field AlphaDefault from WipPromptDet
+  numeric_default:
+    display: Numericdefault
+    type: decimal
+    required: false
+    description: Field NumericDefault from WipPromptDet
+  default_flag:
+    display: Defaultflag
+    type: string
+    required: false
+    description: Field DefaultFlag from WipPromptDet

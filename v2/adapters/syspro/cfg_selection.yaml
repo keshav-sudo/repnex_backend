@@ -1,0 +1,30 @@
+concept: cfg_selection
+table: CfgSelection
+alias: cs
+fields:
+  product_code: cs.ProductCode
+  selection_num: cs.SelectionNum
+  sel_criterion: cs.SelCriterion
+  description: cs.Description
+  cri_short_desc: cs.CriShortDesc
+  selection_flag: cs.SelectionFlag
+  short_desc: cs.ShortDesc
+  sel_ass_val_crit: cs.SelAssValCrit
+  sel_decimals: cs.SelDecimals
+  sel_use_increments: cs.SelUseIncrements
+  sel_prompt_for_val: cs.SelPromptForVal
+  sel_use_to_bld_par: cs.SelUseToBldPar
+  sel_alpha_numeric: cs.SelAlphaNumeric
+  sel_start_in_par: cs.SelStartInPar
+  sel_lgt_ent_parent: cs.SelLgtEntParent
+  sel_use_bld_par_de: cs.SelUseBldParDe
+  sel_sel_des_type: cs.SelSelDesType
+  sel_start_in_desc: cs.SelStartInDesc
+  sel_lgt_entry_desc: cs.SelLgtEntryDesc
+  sel_inc_cri_com: cs.SelIncCriCom
+  cri_from_value: cs.CriFromValue
+  cri_to_value: cs.CriToValue
+  cri_step_increment: cs.CriStepIncrement
+  cri_parent_string: cs.CriParentString
+  cri_description: cs.CriDescription
+  cri_comment: cs.CriComment

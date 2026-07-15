@@ -1,0 +1,98 @@
+concept: ecc_rev_history_cost
+display_name: EccRevHistoryCost
+module: other
+description: Auto-generated representation of the physical table EccRevHistoryCost.
+synonyms:
+- eccrevhistorycost
+- ecc rev history cost
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from EccRevHistoryCost
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from EccRevHistoryCost
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from EccRevHistoryCost
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from EccRevHistoryCost
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from EccRevHistoryCost
+  manuf_lead_time:
+    display: Manufleadtime
+    type: decimal
+    required: false
+    description: Field ManufLeadTime from EccRevHistoryCost
+  implosion_num:
+    display: Implosionnum
+    type: decimal
+    required: false
+    description: Field ImplosionNum from EccRevHistoryCost
+  labour_cost:
+    display: Labourcost
+    type: decimal
+    required: false
+    description: Field LabourCost from EccRevHistoryCost
+  material_cost:
+    display: Materialcost
+    type: decimal
+    required: false
+    description: Field MaterialCost from EccRevHistoryCost
+  fix_overhead:
+    display: Fixoverhead
+    type: decimal
+    required: false
+    description: Field FixOverhead from EccRevHistoryCost
+  variable_overhead:
+    display: Variableoverhead
+    type: decimal
+    required: false
+    description: Field VariableOverhead from EccRevHistoryCost
+  abc_pre_prod:
+    display: Abcpreprod
+    type: decimal
+    required: false
+    description: Field AbcPreProd from EccRevHistoryCost
+  abc_manufacturing:
+    display: Abcmanufacturing
+    type: decimal
+    required: false
+    description: Field AbcManufacturing from EccRevHistoryCost
+  abc_sales:
+    display: Abcsales
+    type: decimal
+    required: false
+    description: Field AbcSales from EccRevHistoryCost
+  abc_cum_pre_prod:
+    display: Abccumpreprod
+    type: decimal
+    required: false
+    description: Field AbcCumPreProd from EccRevHistoryCost
+  abc_cum_manuf:
+    display: Abccummanuf
+    type: decimal
+    required: false
+    description: Field AbcCumManuf from EccRevHistoryCost
+  std_lab_costs_bill:
+    display: Stdlabcostsbill
+    type: decimal
+    required: false
+    description: Field StdLabCostsBill from EccRevHistoryCost
+  sub_contract_cost:
+    display: Subcontractcost
+    type: decimal
+    required: false
+    description: Field SubContractCost from EccRevHistoryCost

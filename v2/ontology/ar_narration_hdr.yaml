@@ -1,0 +1,38 @@
+concept: ar_narration_hdr
+display_name: ArNarrationHdr
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArNarrationHdr.
+synonyms:
+- arnarrationhdr
+- ar narration hdr
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArNarrationHdr
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArNarrationHdr
+  invoice_type:
+    display: Invoicetype
+    type: string
+    required: false
+    description: Field InvoiceType from ArNarrationHdr
+  note_type:
+    display: Notetype
+    type: string
+    required: false
+    description: Field NoteType from ArNarrationHdr
+  date_last_modified:
+    display: Datelastmodified
+    type: date
+    required: false
+    description: Field DateLastModified from ArNarrationHdr
+  follow_up_date:
+    display: Followupdate
+    type: date
+    required: false
+    description: Field FollowUpDate from ArNarrationHdr

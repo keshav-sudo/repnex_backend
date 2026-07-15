@@ -1,0 +1,12 @@
+concept: srs_archive_inv
+table: SrsArchiveINV
+alias: sainv
+fields:
+  archive_date: sainv.ArchiveDate
+  archive_time: sainv.ArchiveTime
+  operator: sainv.Operator
+  archive_id: sainv.ArchiveId
+  archive_type: sainv.ArchiveType
+  archive_file: sainv.ArchiveFile
+  customer_code: sainv.CustomerCode
+  doc_type_num: sainv.DocTypeNum

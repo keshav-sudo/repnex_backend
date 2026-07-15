@@ -1,0 +1,73 @@
+concept: ar_balance_cor
+display_name: ArBalanceCor
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArBalanceCor.
+synonyms:
+- arbalancecor
+- ar balance cor
+header_attributes:
+  trx_source:
+    display: Trxsource
+    type: string
+    required: false
+    description: Field TrxSource from ArBalanceCor
+  trx_type:
+    display: Trxtype
+    type: string
+    required: false
+    description: Field TrxType from ArBalanceCor
+  balance_year:
+    display: Balanceyear
+    type: decimal
+    required: false
+    description: Field BalanceYear from ArBalanceCor
+  balance_month:
+    display: Balancemonth
+    type: decimal
+    required: false
+    description: Field BalanceMonth from ArBalanceCor
+  trx_date:
+    display: Trxdate
+    type: date
+    required: false
+    description: Field TrxDate from ArBalanceCor
+  trx_time:
+    display: Trxtime
+    type: decimal
+    required: false
+    description: Field TrxTime from ArBalanceCor
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArBalanceCor
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArBalanceCor
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArBalanceCor
+  trx_amount:
+    display: Trxamount
+    type: decimal
+    required: false
+    description: Field TrxAmount from ArBalanceCor
+  trx_amount_before:
+    display: Trxamountbefore
+    type: decimal
+    required: false
+    description: Field TrxAmountBefore from ArBalanceCor
+  trx_amount_after:
+    display: Trxamountafter
+    type: decimal
+    required: false
+    description: Field TrxAmountAfter from ArBalanceCor
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ArBalanceCor

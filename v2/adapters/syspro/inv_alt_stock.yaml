@@ -1,0 +1,9 @@
+concept: inv_alt_stock
+table: InvAltStock
+alias: ias
+fields:
+  stock_code: ias.StockCode
+  alt_stock_code: ias.AltStockCode
+  priority: ias.Priority
+  conv_fact: ias.ConvFact
+  conv_fact_mul_div: ias.ConvFactMulDiv

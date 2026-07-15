@@ -1,0 +1,7 @@
+concept: adm_tax_ext
+table: AdmTaxExt
+alias: ate
+fields:
+  tax_code: ate.TaxCode
+  tax_suspense_account: ate.TaxSuspenseAccount
+  tax_rounding_account: ate.TaxRoundingAccount

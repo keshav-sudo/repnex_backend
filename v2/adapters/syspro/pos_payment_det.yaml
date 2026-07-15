@@ -1,0 +1,20 @@
+concept: pos_payment_det
+table: PosPaymentDet
+alias: ppd
+fields:
+  cash_drawer: ppd.CashDrawer
+  invoice: ppd.Invoice
+  invoice_type: ppd.InvoiceType
+  pay_type: ppd.PayType
+  pay_count: ppd.PayCount
+  pay_value_f: ppd.PayValueF
+  pay_value_l: ppd.PayValueL
+  reference: ppd.Reference
+  jnl_notation: ppd.JnlNotation
+  credit_card: ppd.CreditCard
+  start_mmyy: ppd.StartMmyy
+  expiry_mmyy: ppd.ExpiryMmyy
+  authorisation_num: ppd.AuthorisationNum
+  exchange_rate: ppd.ExchangeRate
+  deposit_flag: ppd.DepositFlag
+  cash_in_out_flag: ppd.CashInOutFlag

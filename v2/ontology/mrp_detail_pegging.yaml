@@ -1,0 +1,103 @@
+concept: mrp_detail_pegging
+display_name: MrpDetailPegging
+module: mrp
+description: Auto-generated representation of the physical table MrpDetailPegging.
+synonyms:
+- mrpdetailpegging
+- mrp detail pegging
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpDetailPegging
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpDetailPegging
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpDetailPegging
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpDetailPegging
+  supply_demand_date:
+    display: Supplydemanddate
+    type: date
+    required: false
+    description: Field SupplyDemandDate from MrpDetailPegging
+  source_type:
+    display: Sourcetype
+    type: string
+    required: false
+    description: Field SourceType from MrpDetailPegging
+  orig_source_key:
+    display: Origsourcekey
+    type: string
+    required: false
+    description: Field OrigSourceKey from MrpDetailPegging
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from MrpDetailPegging
+  parent_stock_code:
+    display: Parentstockcode
+    type: string
+    required: false
+    description: Field ParentStockCode from MrpDetailPegging
+  parent_line:
+    display: Parentline
+    type: decimal
+    required: false
+    description: Field ParentLine from MrpDetailPegging
+  order_number:
+    display: Ordernumber
+    type: string
+    required: false
+    description: Field OrderNumber from MrpDetailPegging
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from MrpDetailPegging
+  line_number:
+    display: Linenumber
+    type: decimal
+    required: false
+    description: Field LineNumber from MrpDetailPegging
+  job_line:
+    display: Jobline
+    type: string
+    required: false
+    description: Field JobLine from MrpDetailPegging
+  user_code:
+    display: Usercode
+    type: string
+    required: false
+    description: Field UserCode from MrpDetailPegging
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from MrpDetailPegging
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from MrpDetailPegging
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from MrpDetailPegging
+  live_date:
+    display: Livedate
+    type: date
+    required: false
+    description: Field LiveDate from MrpDetailPegging

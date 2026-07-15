@@ -1,0 +1,63 @@
+concept: srs_archive_dsc
+display_name: SrsArchiveDSC
+module: other
+description: Auto-generated representation of the physical table SrsArchiveDSC.
+synonyms:
+- srsarchivedsc
+- srs archive dsc
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveDSC
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveDSC
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveDSC
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveDSC
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveDSC
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveDSC
+  customer_code:
+    display: Customercode
+    type: string
+    required: false
+    description: Field CustomerCode from SrsArchiveDSC
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from SrsArchiveDSC
+  document_number:
+    display: Documentnumber
+    type: decimal
+    required: false
+    description: Field DocumentNumber from SrsArchiveDSC
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from SrsArchiveDSC
+  system_date_cymd:
+    display: Systemdatecymd
+    type: date
+    required: false
+    description: Field SystemDateCymd from SrsArchiveDSC

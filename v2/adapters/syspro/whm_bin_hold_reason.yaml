@@ -1,0 +1,6 @@
+concept: whm_bin_hold_reason
+table: WhmBinHoldReason
+alias: wbhr
+fields:
+  reason_code: wbhr.ReasonCode
+  on_hold_reason: wbhr.OnHoldReason

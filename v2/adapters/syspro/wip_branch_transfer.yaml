@@ -1,0 +1,19 @@
+concept: wip_branch_transfer
+table: WipBranchTransfer
+alias: wbt1
+fields:
+  job: wbt1.Job
+  line: wbt1.Line
+  old_branch: wbt1.OldBranch
+  old_wip_ctl_gl_code: wbt1.OldWipCtlGlCode
+  new_branch: wbt1.NewBranch
+  new_wip_ctl_gl_code: wbt1.NewWipCtlGlCode
+  mat_cost: wbt1.MatCost
+  lab_cost: wbt1.LabCost
+  hrs_book: wbt1.HrsBook
+  trn_date: wbt1.TrnDate
+  mat_journal: wbt1.MatJournal
+  lab_journal: wbt1.LabJournal
+  hrs_journal: wbt1.HrsJournal
+  post_year: wbt1.PostYear
+  post_month: wbt1.PostMonth

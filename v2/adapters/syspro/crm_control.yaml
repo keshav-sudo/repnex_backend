@@ -1,0 +1,31 @@
+concept: crm_control
+table: CrmControl
+alias: cc5
+fields:
+  ctl_flag: cc5.CtlFlag
+  next_attachment: cc5.NextAttachment
+  next_body: cc5.NextBody
+  contact_prop_desc1: cc5.ContactPropDesc1
+  contact_prop_desc2: cc5.ContactPropDesc2
+  contact_prop_desc3: cc5.ContactPropDesc3
+  contact_prop_desc4: cc5.ContactPropDesc4
+  contact_prop_desc5: cc5.ContactPropDesc5
+  contact_prop_desc6: cc5.ContactPropDesc6
+  contact_prop_desc7: cc5.ContactPropDesc7
+  contact_prop_desc8: cc5.ContactPropDesc8
+  contact_prop_desc9: cc5.ContactPropDesc9
+  contact_prop_desc10: cc5.ContactPropDesc10
+  activity_flag_desc1: cc5.ActivityFlagDesc1
+  activity_flag_desc2: cc5.ActivityFlagDesc2
+  activity_flag_desc3: cc5.ActivityFlagDesc3
+  activity_flag_desc4: cc5.ActivityFlagDesc4
+  activity_flag_desc5: cc5.ActivityFlagDesc5
+  activity_flag_desc6: cc5.ActivityFlagDesc6
+  activity_flag_desc7: cc5.ActivityFlagDesc7
+  activity_flag_desc8: cc5.ActivityFlagDesc8
+  activity_flag_desc9: cc5.ActivityFlagDesc9
+  activity_flag_desc10: cc5.ActivityFlagDesc10
+  def_map_url: cc5.DefMapUrl
+  def_weather_url: cc5.DefWeatherUrl
+  def_org_seq: cc5.DefOrgSeq
+  next_complaint: cc5.NextComplaint

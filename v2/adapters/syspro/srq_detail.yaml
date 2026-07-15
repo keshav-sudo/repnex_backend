@@ -1,0 +1,15 @@
+concept: srq_detail
+table: SrqDetail
+alias: sd2
+fields:
+  rfq_reference: sd2.RfqReference
+  rfq_line: sd2.RfqLine
+  rfq_status: sd2.RfqStatus
+  requisition: sd2.Requisition
+  req_line: sd2.ReqLine
+  stock_code: sd2.StockCode
+  stock_description: sd2.StockDescription
+  warehouse: sd2.Warehouse
+  quantity: sd2.Quantity
+  uom: sd2.Uom
+  draw_office_num: sd2.DrawOfficeNum

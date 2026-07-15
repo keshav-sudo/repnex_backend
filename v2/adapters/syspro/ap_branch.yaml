@@ -1,0 +1,13 @@
+concept: ap_branch
+table: ApBranch
+alias: ab1
+fields:
+  branch: ab1.Branch
+  description: ab1.Description
+  ap_brn_gl_code: ab1.ApBrnGlCode
+  ap_brn_dsc_gl_code: ab1.ApBrnDscGlCode
+  po_prefix: ab1.PoPrefix
+  po_next_number: ab1.PoNextNumber
+  grn_prefix: ab1.GrnPrefix
+  grn_next_number: ab1.GrnNextNumber
+  nationality: ab1.Nationality

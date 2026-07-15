@@ -1,0 +1,43 @@
+concept: whm_outer_header
+display_name: WhmOuterHeader
+module: other
+description: Auto-generated representation of the physical table WhmOuterHeader.
+synonyms:
+- whmouterheader
+- whm outer header
+header_attributes:
+  outer_number:
+    display: Outernumber
+    type: string
+    required: false
+    description: Field OuterNumber from WhmOuterHeader
+  outer_status:
+    display: Outerstatus
+    type: string
+    required: false
+    description: Field OuterStatus from WhmOuterHeader
+  created_date:
+    display: Createddate
+    type: date
+    required: false
+    description: Field CreatedDate from WhmOuterHeader
+  dispatch_date:
+    display: Dispatchdate
+    type: date
+    required: false
+    description: Field DispatchDate from WhmOuterHeader
+  created_by:
+    display: Createdby
+    type: string
+    required: false
+    description: Field CreatedBy from WhmOuterHeader
+  dispatched_by:
+    display: Dispatchedby
+    type: string
+    required: false
+    description: Field DispatchedBy from WhmOuterHeader
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from WhmOuterHeader

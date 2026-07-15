@@ -1,0 +1,53 @@
+concept: inv_gtr_balance
+display_name: InvGtrBalance
+module: inventory
+description: Auto-generated representation of the physical table InvGtrBalance.
+synonyms:
+- invgtrbalance
+- inv gtr balance
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from InvGtrBalance
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvGtrBalance
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvGtrBalance
+  active_gtr:
+    display: Activegtr
+    type: decimal
+    required: false
+    description: Field ActiveGtr from InvGtrBalance
+  in_process_gtr:
+    display: Inprocessgtr
+    type: decimal
+    required: false
+    description: Field InProcessGtr from InvGtrBalance
+  whs_transit_val:
+    display: Whstransitval
+    type: decimal
+    required: false
+    description: Field WhsTransitVal from InvGtrBalance
+  gtr_transit_val:
+    display: Gtrtransitval
+    type: decimal
+    required: false
+    description: Field GtrTransitVal from InvGtrBalance
+  whs_transit_qty:
+    display: Whstransitqty
+    type: decimal
+    required: false
+    description: Field WhsTransitQty from InvGtrBalance
+  gtr_transit_qty:
+    display: Gtrtransitqty
+    type: decimal
+    required: false
+    description: Field GtrTransitQty from InvGtrBalance

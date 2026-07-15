@@ -1,0 +1,108 @@
+concept: wip_inspect_doc
+display_name: WipInspectDoc
+module: work_in_progress
+description: Auto-generated representation of the physical table WipInspectDoc.
+synonyms:
+- wipinspectdoc
+- wip inspect doc
+header_attributes:
+  trans_type:
+    display: Transtype
+    type: string
+    required: false
+    description: Field TransType from WipInspectDoc
+  document_num:
+    display: Documentnum
+    type: decimal
+    required: false
+    description: Field DocumentNum from WipInspectDoc
+  insp_reference:
+    display: Inspreference
+    type: string
+    required: false
+    description: Field InspReference from WipInspectDoc
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipInspectDoc
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipInspectDoc
+  reprint_flag:
+    display: Reprintflag
+    type: string
+    required: false
+    description: Field ReprintFlag from WipInspectDoc
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipInspectDoc
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipInspectDoc
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipInspectDoc
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipInspectDoc
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from WipInspectDoc
+  scrap_code:
+    display: Scrapcode
+    type: string
+    required: false
+    description: Field ScrapCode from WipInspectDoc
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from WipInspectDoc
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from WipInspectDoc
+  concession_num:
+    display: Concessionnum
+    type: string
+    required: false
+    description: Field ConcessionNum from WipInspectDoc
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from WipInspectDoc
+  job_delivery_date:
+    display: Jobdeliverydate
+    type: date
+    required: false
+    description: Field JobDeliveryDate from WipInspectDoc
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WipInspectDoc
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from WipInspectDoc
+  trn_document:
+    display: Trndocument
+    type: string
+    required: false
+    description: Field TrnDocument from WipInspectDoc

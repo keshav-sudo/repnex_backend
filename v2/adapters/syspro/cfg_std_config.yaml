@@ -1,0 +1,14 @@
+concept: cfg_std_config
+table: CfgStdConfig
+alias: csc
+fields:
+  product_code: csc.ProductCode
+  library_code: csc.LibraryCode
+  library_type: csc.LibraryType
+  first_seq: csc.FirstSeq
+  second_seq: csc.SecondSeq
+  avail_from_date: csc.AvailFromDate
+  avail_to_date: csc.AvailToDate
+  config_description: csc.ConfigDescription
+  component_qty: csc.ComponentQty
+  comp_operation: csc.CompOperation

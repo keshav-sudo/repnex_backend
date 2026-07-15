@@ -1,0 +1,68 @@
+concept: gtr_lot_detail
+display_name: GtrLotDetail
+module: other
+description: Auto-generated representation of the physical table GtrLotDetail.
+synonyms:
+- gtrlotdetail
+- gtr lot detail
+header_attributes:
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from GtrLotDetail
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from GtrLotDetail
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from GtrLotDetail
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from GtrLotDetail
+  entry:
+    display: Entry
+    type: decimal
+    required: false
+    description: Field Entry from GtrLotDetail
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from GtrLotDetail
+  source_bin:
+    display: Sourcebin
+    type: string
+    required: false
+    description: Field SourceBin from GtrLotDetail
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from GtrLotDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from GtrLotDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from GtrLotDetail
+  certificate:
+    display: Certificate
+    type: string
+    required: false
+    description: Field Certificate from GtrLotDetail
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from GtrLotDetail

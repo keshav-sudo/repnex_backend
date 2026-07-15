@@ -1,0 +1,43 @@
+concept: srs_archive_iss
+display_name: SrsArchiveISS
+module: other
+description: Auto-generated representation of the physical table SrsArchiveISS.
+synonyms:
+- srsarchiveiss
+- srs archive iss
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveISS
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveISS
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveISS
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveISS
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveISS
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveISS
+  issue_docno:
+    display: Issuedocno
+    type: string
+    required: false
+    description: Field IssueDocno from SrsArchiveISS

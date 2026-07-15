@@ -1,0 +1,118 @@
+concept: bom_shift_hdr
+display_name: BomShiftHdr
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomShiftHdr.
+synonyms:
+- bomshifthdr
+- bom shift hdr
+header_attributes:
+  shift_code:
+    display: Shiftcode
+    type: string
+    required: false
+    description: Field ShiftCode from BomShiftHdr
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomShiftHdr
+  rec_pattern:
+    display: Recpattern
+    type: string
+    required: false
+    description: Field RecPattern from BomShiftHdr
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from BomShiftHdr
+  end_type:
+    display: Endtype
+    type: string
+    required: false
+    description: Field EndType from BomShiftHdr
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from BomShiftHdr
+  occur:
+    display: Occur
+    type: decimal
+    required: false
+    description: Field Occur from BomShiftHdr
+  machine_eff:
+    display: Machineeff
+    type: decimal
+    required: false
+    description: Field MachineEff from BomShiftHdr
+  daily_type:
+    display: Dailytype
+    type: string
+    required: false
+    description: Field DailyType from BomShiftHdr
+  day_occur:
+    display: Dayoccur
+    type: decimal
+    required: false
+    description: Field DayOccur from BomShiftHdr
+  week_occur:
+    display: Weekoccur
+    type: decimal
+    required: false
+    description: Field WeekOccur from BomShiftHdr
+  monthly_type:
+    display: Monthlytype
+    type: string
+    required: false
+    description: Field MonthlyType from BomShiftHdr
+  month_day:
+    display: Monthday
+    type: decimal
+    required: false
+    description: Field MonthDay from BomShiftHdr
+  month_occ_day:
+    display: Monthoccday
+    type: string
+    required: false
+    description: Field MonthOccDay from BomShiftHdr
+  month_occur:
+    display: Monthoccur
+    type: decimal
+    required: false
+    description: Field MonthOccur from BomShiftHdr
+  mth_daily_pattern:
+    display: Mthdailypattern
+    type: string
+    required: false
+    description: Field MthDailyPattern from BomShiftHdr
+  year_occur:
+    display: Yearoccur
+    type: decimal
+    required: false
+    description: Field YearOccur from BomShiftHdr
+  yearly_type:
+    display: Yearlytype
+    type: string
+    required: false
+    description: Field YearlyType from BomShiftHdr
+  year_month:
+    display: Yearmonth
+    type: decimal
+    required: false
+    description: Field YearMonth from BomShiftHdr
+  year_day:
+    display: Yearday
+    type: decimal
+    required: false
+    description: Field YearDay from BomShiftHdr
+  year_occ_day:
+    display: Yearoccday
+    type: string
+    required: false
+    description: Field YearOccDay from BomShiftHdr
+  year_daily_pattern:
+    display: Yeardailypattern
+    type: string
+    required: false
+    description: Field YearDailyPattern from BomShiftHdr

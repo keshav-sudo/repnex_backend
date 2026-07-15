@@ -1,0 +1,15 @@
+concept: crm_comp_users
+table: CrmCompUsers
+alias: ccu
+fields:
+  user_code: ccu.UserCode
+  complaint_group: ccu.ComplaintGroup
+  user_name: ccu.UserName
+  branch: ccu.Branch
+  user_email: ccu.UserEmail
+  admin_user: ccu.AdminUser
+  can_add_complaint: ccu.CanAddComplaint
+  can_app_complaint: ccu.CanAppComplaint
+  on_hold_flag: ccu.OnHoldFlag
+  can_escalate: ccu.CanEscalate
+  can_route: ccu.CanRoute

@@ -1,0 +1,53 @@
+concept: sor_price_list_header
+display_name: SorPriceListHeader
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPriceListHeader.
+synonyms:
+- sorpricelistheader
+- sor price list header
+header_attributes:
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from SorPriceListHeader
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SorPriceListHeader
+  price_basis:
+    display: Pricebasis
+    type: string
+    required: false
+    description: Field PriceBasis from SorPriceListHeader
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from SorPriceListHeader
+  price_method:
+    display: Pricemethod
+    type: string
+    required: false
+    description: Field PriceMethod from SorPriceListHeader
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from SorPriceListHeader
+  closing_date:
+    display: Closingdate
+    type: date
+    required: false
+    description: Field ClosingDate from SorPriceListHeader
+  stock_selection:
+    display: Stockselection
+    type: string
+    required: false
+    description: Field StockSelection from SorPriceListHeader
+  price_list_status:
+    display: Priceliststatus
+    type: string
+    required: false
+    description: Field PriceListStatus from SorPriceListHeader

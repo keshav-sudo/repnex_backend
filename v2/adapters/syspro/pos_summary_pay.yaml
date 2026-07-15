@@ -1,0 +1,10 @@
+concept: pos_summary_pay
+table: PosSummaryPay
+alias: psp
+fields:
+  cash_drawer: psp.CashDrawer
+  payment_type: psp.PaymentType
+  currency: psp.Currency
+  total_paym_val_for: psp.TotalPaymValFor
+  total_paym_val_loc: psp.TotalPaymValLoc
+  num_of_payments: psp.NumOfPayments

@@ -1,0 +1,11 @@
+concept: sqm_test_header
+table: SqmTestHeader
+alias: sth
+fields:
+  test_name: sth.TestName
+  test_version: sth.TestVersion
+  critical_req: sth.CriticalReq
+  major_req: sth.MajorReq
+  minor_req: sth.MinorReq
+  file_contents: sth.FileContents
+  script_contents: sth.ScriptContents

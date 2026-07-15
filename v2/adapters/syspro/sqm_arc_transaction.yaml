@@ -1,0 +1,18 @@
+concept: sqm_arc_transaction
+table: SqmArcTransaction
+alias: sat
+fields:
+  inspect_type: sat.InspectType
+  inspect_number: sat.InspectNumber
+  lot: sat.Lot
+  trn_date: sat.TrnDate
+  line: sat.Line
+  trn_type: sat.TrnType
+  trn_qty: sat.TrnQty
+  accept_qty: sat.AcceptQty
+  reject_qty: sat.RejectQty
+  inspector_code: sat.InspectorCode
+  narration: sat.Narration
+  sample_number: sat.SampleNumber
+  sample_test: sat.SampleTest
+  trn_time: sat.TrnTime

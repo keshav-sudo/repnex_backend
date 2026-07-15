@@ -1,0 +1,26 @@
+concept: asset_control_tax
+table: AssetControlTax
+alias: act1
+fields:
+  ctl_flag: act1.CtlFlag
+  depn_value_ytd: act1.DepnValueYtd
+  depn_reval_ytd: act1.DepnRevalYtd
+  depn_ici_ytd: act1.DepnIciYtd
+  depn_ico_ytd: act1.DepnIcoYtd
+  depn_adds_ytd: act1.DepnAddsYtd
+  depn_disps_ytd: act1.DepnDispsYtd
+  depn_count_ytd: act1.DepnCountYtd
+  depn_split_ytd: act1.DepnSplitYtd
+  reval_ytd: act1.RevalYtd
+  ici_ytd: act1.IciYtd
+  ico_ytd: act1.IcoYtd
+  additions_ytd: act1.AdditionsYtd
+  disposals_ytd: act1.DisposalsYtd
+  disposal_cost: act1.DisposalCost
+  sold_value: act1.SoldValue
+  count_ytd: act1.CountYtd
+  split_ytd: act1.SplitYtd
+  change_ytd: act1.ChangeYtd
+  open_value: act1.OpenValue
+  open_depn_value: act1.OpenDepnValue
+  open_depn_reval_value: act1.OpenDepnRevalValue

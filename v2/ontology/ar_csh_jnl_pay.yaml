@@ -1,0 +1,268 @@
+concept: ar_csh_jnl_pay
+display_name: ArCshJnlPay
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCshJnlPay.
+synonyms:
+- arcshjnlpay
+- ar csh jnl pay
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArCshJnlPay
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArCshJnlPay
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ArCshJnlPay
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ArCshJnlPay
+  sub_entry:
+    display: Subentry
+    type: decimal
+    required: false
+    description: Field SubEntry from ArCshJnlPay
+  entry_flag:
+    display: Entryflag
+    type: string
+    required: false
+    description: Field EntryFlag from ArCshJnlPay
+  pay_inv_bal_prior:
+    display: Payinvbalprior
+    type: decimal
+    required: false
+    description: Field PayInvBalPrior from ArCshJnlPay
+  pay_inv_bal_pr_for:
+    display: Payinvbalprfor
+    type: decimal
+    required: false
+    description: Field PayInvBalPrFor from ArCshJnlPay
+  pay_gross_payment:
+    display: Paygrosspayment
+    type: decimal
+    required: false
+    description: Field PayGrossPayment from ArCshJnlPay
+  pay_gross_pay_for:
+    display: Paygrosspayfor
+    type: decimal
+    required: false
+    description: Field PayGrossPayFor from ArCshJnlPay
+  pay_disc_allowed:
+    display: Paydiscallowed
+    type: decimal
+    required: false
+    description: Field PayDiscAllowed from ArCshJnlPay
+  pay_disc_allow_for:
+    display: Paydiscallowfor
+    type: decimal
+    required: false
+    description: Field PayDiscAllowFor from ArCshJnlPay
+  pay_tax_amt_disc:
+    display: Paytaxamtdisc
+    type: decimal
+    required: false
+    description: Field PayTaxAmtDisc from ArCshJnlPay
+  pay_branch:
+    display: Paybranch
+    type: string
+    required: false
+    description: Field PayBranch from ArCshJnlPay
+  pay_invoice:
+    display: Payinvoice
+    type: string
+    required: false
+    description: Field PayInvoice from ArCshJnlPay
+  pay_document_type:
+    display: Paydocumenttype
+    type: string
+    required: false
+    description: Field PayDocumentType from ArCshJnlPay
+  pay_invoice_date:
+    display: Payinvoicedate
+    type: date
+    required: false
+    description: Field PayInvoiceDate from ArCshJnlPay
+  payment_gl_code:
+    display: Paymentglcode
+    type: string
+    required: false
+    description: Field PaymentGlCode from ArCshJnlPay
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from ArCshJnlPay
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ArCshJnlPay
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from ArCshJnlPay
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from ArCshJnlPay
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ArCshJnlPay
+  acc_conv_rate:
+    display: Accconvrate
+    type: decimal
+    required: false
+    description: Field AccConvRate from ArCshJnlPay
+  acc_mul_div:
+    display: Accmuldiv
+    type: string
+    required: false
+    description: Field AccMulDiv from ArCshJnlPay
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ArCshJnlPay
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from ArCshJnlPay
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ArCshJnlPay
+  res_cust_po_number:
+    display: Rescustponumber
+    type: string
+    required: false
+    description: Field ResCustPoNumber from ArCshJnlPay
+  res_invoice:
+    display: Resinvoice
+    type: string
+    required: false
+    description: Field ResInvoice from ArCshJnlPay
+  res_invoice_date:
+    display: Resinvoicedate
+    type: date
+    required: false
+    description: Field ResInvoiceDate from ArCshJnlPay
+  res_terms_code:
+    display: Restermscode
+    type: string
+    required: false
+    description: Field ResTermsCode from ArCshJnlPay
+  res_disc_amt:
+    display: Resdiscamt
+    type: decimal
+    required: false
+    description: Field ResDiscAmt from ArCshJnlPay
+  res_disc_amt_for:
+    display: Resdiscamtfor
+    type: decimal
+    required: false
+    description: Field ResDiscAmtFor from ArCshJnlPay
+  res_orig_inv_value:
+    display: Resoriginvvalue
+    type: decimal
+    required: false
+    description: Field ResOrigInvValue from ArCshJnlPay
+  res_orig_inv_v_for:
+    display: Resoriginvvfor
+    type: decimal
+    required: false
+    description: Field ResOrigInvVFor from ArCshJnlPay
+  pay_tax_amt_with:
+    display: Paytaxamtwith
+    type: decimal
+    required: false
+    description: Field PayTaxAmtWith from ArCshJnlPay
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ArCshJnlPay
+  collector:
+    display: Collector
+    type: string
+    required: false
+    description: Field Collector from ArCshJnlPay
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArCshJnlPay
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArCshJnlPay
+  collector_number_ar:
+    display: Collectornumberar
+    type: string
+    required: false
+    description: Field CollectorNumberAr from ArCshJnlPay
+  mult_cur_pay_rec:
+    display: Multcurpayrec
+    type: string
+    required: false
+    description: Field MultCurPayRec from ArCshJnlPay
+  pay_rec_currency:
+    display: Payreccurrency
+    type: string
+    required: false
+    description: Field PayRecCurrency from ArCshJnlPay
+  pay_rec_grs_value:
+    display: Payrecgrsvalue
+    type: decimal
+    required: false
+    description: Field PayRecGrsValue from ArCshJnlPay
+  pay_rec_dsc_value:
+    display: Payrecdscvalue
+    type: decimal
+    required: false
+    description: Field PayRecDscValue from ArCshJnlPay
+  pay_rec_net_value:
+    display: Payrecnetvalue
+    type: decimal
+    required: false
+    description: Field PayRecNetValue from ArCshJnlPay
+  pay_rec_conv_rte:
+    display: Payrecconvrte
+    type: decimal
+    required: false
+    description: Field PayRecConvRte from ArCshJnlPay
+  pay_rec_mul_div:
+    display: Payrecmuldiv
+    type: string
+    required: false
+    description: Field PayRecMulDiv from ArCshJnlPay
+  inter_company_trx:
+    display: Intercompanytrx
+    type: string
+    required: false
+    description: Field InterCompanyTrx from ArCshJnlPay
+  primary_company:
+    display: Primarycompany
+    type: string
+    required: false
+    description: Field PrimaryCompany from ArCshJnlPay
+  secondary_company:
+    display: Secondarycompany
+    type: string
+    required: false
+    description: Field SecondaryCompany from ArCshJnlPay

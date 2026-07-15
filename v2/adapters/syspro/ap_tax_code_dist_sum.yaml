@@ -1,0 +1,15 @@
+concept: ap_tax_code_dist_sum
+table: ApTaxCodeDistSum
+alias: atcds
+fields:
+  jnl_year: atcds.JnlYear
+  jnl_month: atcds.JnlMonth
+  journal: atcds.Journal
+  tax_code: atcds.TaxCode
+  distributed_amt: atcds.DistributedAmt
+  taxable_amount: atcds.TaxableAmount
+  tax_portion: atcds.TaxPortion
+  exempt_amount: atcds.ExemptAmount
+  tax_basis: atcds.TaxBasis
+  tax_rate: atcds.TaxRate
+  rev_charge_flag: atcds.RevChargeFlag

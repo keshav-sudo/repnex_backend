@@ -1,0 +1,12 @@
+concept: wip_nest_map
+table: WipNestMap
+alias: wnm
+fields:
+  format: wnm.Format
+  sequence: wnm.Sequence
+  database_name: wnm.DatabaseName
+  database_schema: wnm.DatabaseSchema
+  table_name: wnm.TableName
+  column_name: wnm.ColumnName
+  alpha_numeric_date: wnm.AlphaNumericDate
+  field_length: wnm.FieldLength

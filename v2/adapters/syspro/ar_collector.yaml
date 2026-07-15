@@ -1,0 +1,6 @@
+concept: ar_collector
+table: ArCollector
+alias: ac2
+fields:
+  collector: ac2.Collector
+  description: ac2.Description

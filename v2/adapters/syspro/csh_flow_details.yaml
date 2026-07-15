@@ -1,0 +1,23 @@
+concept: csh_flow_details
+table: CshFlowDetails
+alias: cfd
+fields:
+  model: cfd.Model
+  inclusion_type: cfd.InclusionType
+  line: cfd.Line
+  collector: cfd.Collector
+  inclusion: cfd.Inclusion
+  identifier: cfd.Identifier
+  description: cfd.Description
+  value1: cfd.Value1
+  value2: cfd.Value2
+  value3: cfd.Value3
+  value4: cfd.Value4
+  value5: cfd.Value5
+  value6: cfd.Value6
+  value7: cfd.Value7
+  value8: cfd.Value8
+  value9: cfd.Value9
+  value10: cfd.Value10
+  value11: cfd.Value11
+  value12: cfd.Value12

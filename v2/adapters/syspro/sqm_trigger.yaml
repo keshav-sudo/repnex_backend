@@ -1,0 +1,14 @@
+concept: sqm_trigger
+table: SqmTrigger
+alias: st2
+fields:
+  department: st2.Department
+  nc_trigger: st2.NcTrigger
+  description: st2.Description
+  conform_standard: st2.ConformStandard
+  trigger_apply: st2.TriggerApply
+  trigger_basis: st2.TriggerBasis
+  trigger_pct: st2.TriggerPct
+  trigger_reason: st2.TriggerReason
+  trigger_qty: st2.TriggerQty
+  trigger_value: st2.TriggerValue

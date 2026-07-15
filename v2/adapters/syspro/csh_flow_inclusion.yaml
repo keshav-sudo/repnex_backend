@@ -1,0 +1,31 @@
+concept: csh_flow_inclusion
+table: CshFlowInclusion
+alias: cfi
+fields:
+  model: cfi.Model
+  collector: cfi.Collector
+  inclusion: cfi.Inclusion
+  inclusion_type: cfi.InclusionType
+  prompt: cfi.Prompt
+  currency_all_sgl: cfi.CurrencyAllSgl
+  currency: cfi.Currency
+  bank_all_sgl: cfi.BankAllSgl
+  bank: cfi.Bank
+  gl_code_all_sgl: cfi.GlCodeAllSgl
+  from_gl_code: cfi.FromGlCode
+  to_gl_code: cfi.ToGlCode
+  gl_group_all_sgl: cfi.GlGroupAllSgl
+  gl_group: cfi.GlGroup
+  gl_asset: cfi.GlAsset
+  gl_liability: cfi.GlLiability
+  gl_revenue: cfi.GlRevenue
+  gl_expense: cfi.GlExpense
+  gl_capital: cfi.GlCapital
+  branch_all_sgl: cfi.BranchAllSgl
+  branch: cfi.Branch
+  area_all_sgl: cfi.AreaAllSgl
+  area: cfi.Area
+  ap_discount: cfi.ApDiscount
+  from_period: cfi.FromPeriod
+  to_period: cfi.ToPeriod
+  offset_days: cfi.OffsetDays

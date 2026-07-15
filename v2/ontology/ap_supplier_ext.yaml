@@ -1,0 +1,28 @@
+concept: ap_supplier_ext
+display_name: ApSupplierExt
+module: accounts_payable
+description: Auto-generated representation of the physical table ApSupplierExt.
+synonyms:
+- apsupplierext
+- ap supplier ext
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApSupplierExt
+  credit_limit:
+    display: Creditlimit
+    type: decimal
+    required: false
+    description: Field CreditLimit from ApSupplierExt
+  outstanding_po:
+    display: Outstandingpo
+    type: decimal
+    required: false
+    description: Field OutstandingPo from ApSupplierExt
+  outstanding_grn:
+    display: Outstandinggrn
+    type: decimal
+    required: false
+    description: Field OutstandingGrn from ApSupplierExt

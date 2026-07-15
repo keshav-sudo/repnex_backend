@@ -1,0 +1,18 @@
+concept: ar_discount_format
+display_name: ArDiscountFormat
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArDiscountFormat.
+synonyms:
+- ardiscountformat
+- ar discount format
+header_attributes:
+  discount_format:
+    display: Discountformat
+    type: string
+    required: false
+    description: Field DiscountFormat from ArDiscountFormat
+  format_info:
+    display: Formatinfo
+    type: string
+    required: false
+    description: Field FormatInfo from ArDiscountFormat

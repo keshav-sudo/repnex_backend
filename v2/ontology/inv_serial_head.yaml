@@ -1,0 +1,158 @@
+concept: inv_serial_head
+display_name: InvSerialHead
+module: inventory
+description: Auto-generated representation of the physical table InvSerialHead.
+synonyms:
+- invserialhead
+- inv serial head
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvSerialHead
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvSerialHead
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from InvSerialHead
+  next_detail_line:
+    display: Nextdetailline
+    type: decimal
+    required: false
+    description: Field NextDetailLine from InvSerialHead
+  serial_method:
+    display: Serialmethod
+    type: string
+    required: false
+    description: Field SerialMethod from InvSerialHead
+  serial_description:
+    display: Serialdescription
+    type: string
+    required: false
+    description: Field SerialDescription from InvSerialHead
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from InvSerialHead
+  scrap_date:
+    display: Scrapdate
+    type: date
+    required: false
+    description: Field ScrapDate from InvSerialHead
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from InvSerialHead
+  qty_available:
+    display: Qtyavailable
+    type: decimal
+    required: false
+    description: Field QtyAvailable from InvSerialHead
+  qty_on_hand:
+    display: Qtyonhand
+    type: decimal
+    required: false
+    description: Field QtyOnHand from InvSerialHead
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from InvSerialHead
+  service_flag:
+    display: Serviceflag
+    type: string
+    required: false
+    description: Field ServiceFlag from InvSerialHead
+  load_flag:
+    display: Loadflag
+    type: string
+    required: false
+    description: Field LoadFlag from InvSerialHead
+  service_depot_flag:
+    display: Servicedepotflag
+    type: string
+    required: false
+    description: Field ServiceDepotFlag from InvSerialHead
+  due_date:
+    display: Duedate
+    type: date
+    required: false
+    description: Field DueDate from InvSerialHead
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from InvSerialHead
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvSerialHead
+  archive_filename:
+    display: Archivefilename
+    type: string
+    required: false
+    description: Field ArchiveFilename from InvSerialHead
+  date_created:
+    display: Datecreated
+    type: date
+    required: false
+    description: Field DateCreated from InvSerialHead
+  prv_warehouse:
+    display: Prvwarehouse
+    type: string
+    required: false
+    description: Field PrvWarehouse from InvSerialHead
+  qty_in_transit_out:
+    display: Qtyintransitout
+    type: decimal
+    required: false
+    description: Field QtyInTransitOut from InvSerialHead
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvSerialHead
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvSerialHead
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvSerialHead
+  prv_bin:
+    display: Prvbin
+    type: string
+    required: false
+    description: Field PrvBin from InvSerialHead
+  serial_on_hold:
+    display: Serialonhold
+    type: string
+    required: false
+    description: Field SerialOnHold from InvSerialHead
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from InvSerialHead
+  prd_recall_flag:
+    display: Prdrecallflag
+    type: string
+    required: false
+    description: Field PrdRecallFlag from InvSerialHead
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from InvSerialHead

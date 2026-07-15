@@ -1,0 +1,9 @@
+concept: inv_ledger_int
+table: InvLedgerInt
+alias: ili
+fields:
+  warehouse: ili.Warehouse
+  product_class: ili.ProductClass
+  trn_type: ili.TrnType
+  gl_code: ili.GlCode
+  grn_gl_code_var: ili.GrnGlCodeVar

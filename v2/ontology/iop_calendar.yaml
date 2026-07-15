@@ -1,0 +1,53 @@
+concept: iop_calendar
+display_name: IopCalendar
+module: other
+description: Auto-generated representation of the physical table IopCalendar.
+synonyms:
+- iopcalendar
+- iop calendar
+header_attributes:
+  calendar:
+    display: Calendar
+    type: string
+    required: false
+    description: Field Calendar from IopCalendar
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from IopCalendar
+  calendar_units:
+    display: Calendarunits
+    type: string
+    required: false
+    description: Field CalendarUnits from IopCalendar
+  unit_multiples:
+    display: Unitmultiples
+    type: decimal
+    required: false
+    description: Field UnitMultiples from IopCalendar
+  week_day:
+    display: Weekday
+    type: decimal
+    required: false
+    description: Field WeekDay from IopCalendar
+  month_day:
+    display: Monthday
+    type: decimal
+    required: false
+    description: Field MonthDay from IopCalendar
+  start_method:
+    display: Startmethod
+    type: string
+    required: false
+    description: Field StartMethod from IopCalendar
+  first_month:
+    display: Firstmonth
+    type: decimal
+    required: false
+    description: Field FirstMonth from IopCalendar
+  first_week:
+    display: Firstweek
+    type: decimal
+    required: false
+    description: Field FirstWeek from IopCalendar

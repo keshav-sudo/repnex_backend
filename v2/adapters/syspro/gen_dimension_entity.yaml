@@ -1,0 +1,43 @@
+concept: gen_dimension_entity
+table: GenDimensionEntity
+alias: gde1
+fields:
+  type: gde1.Type
+  order_no: gde1.OrderNo
+  line: gde1.Line
+  stock_code: gde1.StockCode
+  warehouse: gde1.Warehouse
+  order_qty: gde1.OrderQty
+  qty_shipped: gde1.QtyShipped
+  qty_received: gde1.QtyReceived
+  qty_dispatched: gde1.QtyDispatched
+  entity_category1: gde1.EntityCategory1
+  entity_category2: gde1.EntityCategory2
+  entity_category3: gde1.EntityCategory3
+  entity_category4: gde1.EntityCategory4
+  entity_category5: gde1.EntityCategory5
+  entity_category6: gde1.EntityCategory6
+  entity_category7: gde1.EntityCategory7
+  entity_category8: gde1.EntityCategory8
+  entity_category9: gde1.EntityCategory9
+  entity_category10: gde1.EntityCategory10
+  entity_code1: gde1.EntityCode1
+  entity_code2: gde1.EntityCode2
+  entity_code3: gde1.EntityCode3
+  entity_code4: gde1.EntityCode4
+  entity_code5: gde1.EntityCode5
+  entity_code6: gde1.EntityCode6
+  entity_code7: gde1.EntityCode7
+  entity_code8: gde1.EntityCode8
+  entity_code9: gde1.EntityCode9
+  entity_code10: gde1.EntityCode10
+  entity_back_table1: gde1.EntityBackTable1
+  entity_back_table2: gde1.EntityBackTable2
+  entity_back_table3: gde1.EntityBackTable3
+  entity_back_table4: gde1.EntityBackTable4
+  entity_back_table5: gde1.EntityBackTable5
+  entity_back_table6: gde1.EntityBackTable6
+  entity_back_table7: gde1.EntityBackTable7
+  entity_back_table8: gde1.EntityBackTable8
+  entity_back_table9: gde1.EntityBackTable9
+  entity_back_table10: gde1.EntityBackTable10

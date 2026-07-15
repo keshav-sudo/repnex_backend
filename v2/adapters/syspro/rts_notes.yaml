@@ -1,0 +1,7 @@
+concept: rts_notes
+table: RtsNotes
+alias: rn
+fields:
+  rts_number: rn.RtsNumber
+  line: rn.Line
+  note: rn.Note

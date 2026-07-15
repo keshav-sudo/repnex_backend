@@ -1,0 +1,18 @@
+concept: sor_next_keys
+display_name: SorNextKeys
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorNextKeys.
+synonyms:
+- sornextkeys
+- sor next keys
+header_attributes:
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from SorNextKeys
+  key_next:
+    display: Keynext
+    type: decimal
+    required: false
+    description: Field KeyNext from SorNextKeys

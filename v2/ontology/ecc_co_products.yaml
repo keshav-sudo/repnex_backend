@@ -1,0 +1,93 @@
+concept: ecc_co_products
+display_name: EccCoProducts
+module: other
+description: Auto-generated representation of the physical table EccCoProducts.
+synonyms:
+- ecccoproducts
+- ecc co products
+header_attributes:
+  change_order:
+    display: Changeorder
+    type: string
+    required: false
+    description: Field ChangeOrder from EccCoProducts
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from EccCoProducts
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from EccCoProducts
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from EccCoProducts
+  co_product:
+    display: Coproduct
+    type: string
+    required: false
+    description: Field CoProduct from EccCoProducts
+  co_product_version:
+    display: Coproductversion
+    type: string
+    required: false
+    description: Field CoProductVersion from EccCoProducts
+  co_product_release:
+    display: Coproductrelease
+    type: string
+    required: false
+    description: Field CoProductRelease from EccCoProducts
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from EccCoProducts
+  optional_flag:
+    display: Optionalflag
+    type: string
+    required: false
+    description: Field OptionalFlag from EccCoProducts
+  qty_per:
+    display: Qtyper
+    type: decimal
+    required: false
+    description: Field QtyPer from EccCoProducts
+  pct_material_cost:
+    display: Pctmaterialcost
+    type: decimal
+    required: false
+    description: Field PctMaterialCost from EccCoProducts
+  pct_sub_contract_cost:
+    display: Pctsubcontractcost
+    type: decimal
+    required: false
+    description: Field PctSubContractCost from EccCoProducts
+  pct_labor_cost:
+    display: Pctlaborcost
+    type: decimal
+    required: false
+    description: Field PctLaborCost from EccCoProducts
+  plan_weight:
+    display: Planweight
+    type: decimal
+    required: false
+    description: Field PlanWeight from EccCoProducts
+  pct_quantity:
+    display: Pctquantity
+    type: decimal
+    required: false
+    description: Field PctQuantity from EccCoProducts
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from EccCoProducts
+  qty_per_ent:
+    display: Qtyperent
+    type: decimal
+    required: false
+    description: Field QtyPerEnt from EccCoProducts

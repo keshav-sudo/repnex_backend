@@ -1,0 +1,7 @@
+concept: bom_sched_group_det
+table: BomSchedGroupDet
+alias: bsgd
+fields:
+  scheduling_group: bsgd.SchedulingGroup
+  entity_identifier: bsgd.EntityIdentifier
+  entity: bsgd.Entity

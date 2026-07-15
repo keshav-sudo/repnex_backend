@@ -1,0 +1,188 @@
+concept: mrp_qot_structure
+display_name: MrpQotStructure
+module: mrp
+description: Auto-generated representation of the physical table MrpQotStructure.
+synonyms:
+- mrpqotstructure
+- mrp qot structure
+header_attributes:
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from MrpQotStructure
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from MrpQotStructure
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from MrpQotStructure
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from MrpQotStructure
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from MrpQotStructure
+  operation_flag:
+    display: Operationflag
+    type: string
+    required: false
+    description: Field OperationFlag from MrpQotStructure
+  qty_per:
+    display: Qtyper
+    type: decimal
+    required: false
+    description: Field QtyPer from MrpQotStructure
+  scrap_percentage:
+    display: Scrappercentage
+    type: decimal
+    required: false
+    description: Field ScrapPercentage from MrpQotStructure
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from MrpQotStructure
+  optional_flag:
+    display: Optionalflag
+    type: string
+    required: false
+    description: Field OptionalFlag from MrpQotStructure
+  print_flag:
+    display: Printflag
+    type: string
+    required: false
+    description: Field PrintFlag from MrpQotStructure
+  scrap_print:
+    display: Scrapprint
+    type: string
+    required: false
+    description: Field ScrapPrint from MrpQotStructure
+  reason_change:
+    display: Reasonchange
+    type: string
+    required: false
+    description: Field ReasonChange from MrpQotStructure
+  ref_designator:
+    display: Refdesignator
+    type: string
+    required: false
+    description: Field RefDesignator from MrpQotStructure
+  assembly_place:
+    display: Assemblyplace
+    type: string
+    required: false
+    description: Field AssemblyPlace from MrpQotStructure
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from MrpQotStructure
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from MrpQotStructure
+  component_type:
+    display: Componenttype
+    type: string
+    required: false
+    description: Field ComponentType from MrpQotStructure
+  kit_issue_flag:
+    display: Kitissueflag
+    type: string
+    required: false
+    description: Field KitIssueFlag from MrpQotStructure
+  non_stock_com:
+    display: Nonstockcom
+    type: string
+    required: false
+    description: Field NonStockCom from MrpQotStructure
+  margin_markup_pct:
+    display: Marginmarkuppct
+    type: decimal
+    required: false
+    description: Field MarginMarkupPct from MrpQotStructure
+  manual_cost:
+    display: Manualcost
+    type: decimal
+    required: false
+    description: Field ManualCost from MrpQotStructure
+  manual_cost_flag:
+    display: Manualcostflag
+    type: string
+    required: false
+    description: Field ManualCostFlag from MrpQotStructure
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpQotStructure
+  com_version:
+    display: Comversion
+    type: string
+    required: false
+    description: Field ComVersion from MrpQotStructure
+  com_release:
+    display: Comrelease
+    type: string
+    required: false
+    description: Field ComRelease from MrpQotStructure
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from MrpQotStructure
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from MrpQotStructure
+  uom_flag:
+    display: Uomflag
+    type: string
+    required: false
+    description: Field UomFlag from MrpQotStructure
+  qty_per_ent:
+    display: Qtyperent
+    type: decimal
+    required: false
+    description: Field QtyPerEnt from MrpQotStructure
+  scrap_quantity_ent:
+    display: Scrapquantityent
+    type: decimal
+    required: false
+    description: Field ScrapQuantityEnt from MrpQotStructure
+  fixed_qty_per_ent:
+    display: Fixedqtyperent
+    type: decimal
+    required: false
+    description: Field FixedQtyPerEnt from MrpQotStructure
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from MrpQotStructure
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from MrpQotStructure
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from MrpQotStructure
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from MrpQotStructure

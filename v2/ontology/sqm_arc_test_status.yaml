@@ -1,0 +1,108 @@
+concept: sqm_arc_test_status
+display_name: SqmArcTestStatus
+module: other
+description: Auto-generated representation of the physical table SqmArcTestStatus.
+synonyms:
+- sqmarcteststatus
+- sqm arc test status
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmArcTestStatus
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmArcTestStatus
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmArcTestStatus
+  sample_number:
+    display: Samplenumber
+    type: decimal
+    required: false
+    description: Field SampleNumber from SqmArcTestStatus
+  sample_test:
+    display: Sampletest
+    type: decimal
+    required: false
+    description: Field SampleTest from SqmArcTestStatus
+  number_tests:
+    display: Numbertests
+    type: decimal
+    required: false
+    description: Field NumberTests from SqmArcTestStatus
+  completed_tests:
+    display: Completedtests
+    type: decimal
+    required: false
+    description: Field CompletedTests from SqmArcTestStatus
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from SqmArcTestStatus
+  critical_status:
+    display: Criticalstatus
+    type: string
+    required: false
+    description: Field CriticalStatus from SqmArcTestStatus
+  major_status:
+    display: Majorstatus
+    type: string
+    required: false
+    description: Field MajorStatus from SqmArcTestStatus
+  minor_status:
+    display: Minorstatus
+    type: string
+    required: false
+    description: Field MinorStatus from SqmArcTestStatus
+  test_complete:
+    display: Testcomplete
+    type: string
+    required: false
+    description: Field TestComplete from SqmArcTestStatus
+  inspector_code:
+    display: Inspectorcode
+    type: string
+    required: false
+    description: Field InspectorCode from SqmArcTestStatus
+  test_status:
+    display: Teststatus
+    type: string
+    required: false
+    description: Field TestStatus from SqmArcTestStatus
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from SqmArcTestStatus
+  exp_end_date:
+    display: Expenddate
+    type: date
+    required: false
+    description: Field ExpEndDate from SqmArcTestStatus
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from SqmArcTestStatus
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from SqmArcTestStatus
+  end_time:
+    display: Endtime
+    type: decimal
+    required: false
+    description: Field EndTime from SqmArcTestStatus
+  insp_narration:
+    display: Inspnarration
+    type: string
+    required: false
+    description: Field InspNarration from SqmArcTestStatus

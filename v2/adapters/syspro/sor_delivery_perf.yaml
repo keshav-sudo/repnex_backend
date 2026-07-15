@@ -1,0 +1,32 @@
+concept: sor_delivery_perf
+table: SorDeliveryPerf
+alias: sdp
+fields:
+  trn_year: sdp.TrnYear
+  trn_month: sdp.TrnMonth
+  invoice_register: sdp.InvoiceRegister
+  invoice: sdp.Invoice
+  summary_line: sdp.SummaryLine
+  detail_line: sdp.DetailLine
+  invoice_date: sdp.InvoiceDate
+  branch: sdp.Branch
+  salesperson: sdp.Salesperson
+  customer: sdp.Customer
+  order_type: sdp.OrderType
+  stock_code: sdp.StockCode
+  warehouse: sdp.Warehouse
+  area: sdp.Area
+  product_class: sdp.ProductClass
+  customer_class: sdp.CustomerClass
+  qty_invoiced: sdp.QtyInvoiced
+  qty_outstanding: sdp.QtyOutstanding
+  net_sls_val_ex_tax: sdp.NetSlsValExTax
+  sales_order: sdp.SalesOrder
+  line_ship_date: sdp.LineShipDate
+  cust_request_date: sdp.CustRequestDate
+  sales_order_line: sdp.SalesOrderLine
+  operator: sdp.Operator
+  trn_date: sdp.TrnDate
+  trn_time: sdp.TrnTime
+  order_line_ship_date: sdp.OrderLineShipDate
+  sales_order_init_line: sdp.SalesOrderInitLine

@@ -1,0 +1,23 @@
+concept: rts_notes
+display_name: RtsNotes
+module: other
+description: Auto-generated representation of the physical table RtsNotes.
+synonyms:
+- rtsnotes
+- rts notes
+header_attributes:
+  rts_number:
+    display: Rtsnumber
+    type: string
+    required: false
+    description: Field RtsNumber from RtsNotes
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from RtsNotes
+  note:
+    display: Note
+    type: string
+    required: false
+    description: Field Note from RtsNotes

@@ -1,0 +1,132 @@
+concept: sales_order
+display_name: Sales Order
+module: sales_and_distribution
+description: A sales order raised for a customer. Covers header, line items, shipment
+  quantities, pricing and back-order tracking.
+synonyms:
+- SO
+- customer order
+- sales invoice order
+- dispatch order
+header_attributes:
+  sales_order:
+    display: Sales Order
+    type: string
+    required: false
+    description: Sales order field
+  customer_code:
+    display: Customer Code
+    type: string
+    required: false
+    description: Customer code field
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Salesperson field
+  customer_po:
+    display: Customer Po
+    type: string
+    required: false
+    description: Customer po field
+  order_date:
+    display: Order Date
+    type: date
+    required: false
+    description: Order date field
+  required_ship_date:
+    display: Required Ship Date
+    type: date
+    required: false
+    description: Required ship date field
+  order_status:
+    display: Order Status
+    type: string
+    required: false
+    description: Order status field
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Branch field
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Warehouse field
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Currency field
+  exchange_rate:
+    display: Exchange Rate
+    type: decimal
+    required: false
+    description: Exchange rate field
+  cancelled_flag:
+    display: Cancelled Flag
+    type: string
+    required: false
+    description: Cancelled flag field
+detail_attributes:
+  line_number:
+    display: Line Number
+    type: decimal
+    required: false
+    description: Line number field
+  stock_code:
+    display: Stock Code
+    type: string
+    required: false
+    description: Stock code field
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Description field
+  order_qty:
+    display: Order Qty
+    type: decimal
+    required: false
+    description: Order qty field
+  shipped_qty:
+    display: Shipped Qty
+    type: decimal
+    required: false
+    description: Shipped qty field
+  back_order_qty:
+    display: Back Order Qty
+    type: decimal
+    required: false
+    description: Back order qty field
+  unit_price:
+    display: Unit Price
+    type: decimal
+    required: false
+    description: Unit price field
+  unit_cost:
+    display: Unit Cost
+    type: decimal
+    required: false
+    description: Unit cost field
+  discount_pct:
+    display: Discount Pct
+    type: decimal
+    required: false
+    description: Discount pct field
+  tax_code:
+    display: Tax Code
+    type: string
+    required: false
+    description: Tax code field
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Warehouse field
+  product_class:
+    display: Product Class
+    type: string
+    required: false
+    description: Product class field

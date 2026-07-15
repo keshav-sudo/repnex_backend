@@ -1,0 +1,7 @@
+concept: bom_arc_narration
+table: BomArcNarration
+alias: ban
+fields:
+  narration_num: ban.NarrationNum
+  line: ban.Line
+  narration: ban.Narration

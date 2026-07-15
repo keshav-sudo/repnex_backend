@@ -1,0 +1,83 @@
+concept: wip_mat_bal_fix
+display_name: WipMatBalFix
+module: work_in_progress
+description: Auto-generated representation of the physical table WipMatBalFix.
+synonyms:
+- wipmatbalfix
+- wip mat bal fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from WipMatBalFix
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipMatBalFix
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipMatBalFix
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipMatBalFix
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from WipMatBalFix
+  old_qty_issued:
+    display: Oldqtyissued
+    type: decimal
+    required: false
+    description: Field OldQtyIssued from WipMatBalFix
+  new_qty_issued:
+    display: Newqtyissued
+    type: decimal
+    required: false
+    description: Field NewQtyIssued from WipMatBalFix
+  old_qty_issued_ent:
+    display: Oldqtyissuedent
+    type: decimal
+    required: false
+    description: Field OldQtyIssuedEnt from WipMatBalFix
+  new_qty_issued_ent:
+    display: Newqtyissuedent
+    type: decimal
+    required: false
+    description: Field NewQtyIssuedEnt from WipMatBalFix
+  old_value_issued:
+    display: Oldvalueissued
+    type: decimal
+    required: false
+    description: Field OldValueIssued from WipMatBalFix
+  new_value_issued:
+    display: Newvalueissued
+    type: decimal
+    required: false
+    description: Field NewValueIssued from WipMatBalFix
+  old_lot_qty_reserved:
+    display: Oldlotqtyreserved
+    type: decimal
+    required: false
+    description: Field OldLotQtyReserved from WipMatBalFix
+  new_lot_qty_reserved:
+    display: Newlotqtyreserved
+    type: decimal
+    required: false
+    description: Field NewLotQtyReserved from WipMatBalFix
+  old_ser_qty_reserved:
+    display: Oldserqtyreserved
+    type: decimal
+    required: false
+    description: Field OldSerQtyReserved from WipMatBalFix
+  new_ser_qty_reserved:
+    display: Newserqtyreserved
+    type: decimal
+    required: false
+    description: Field NewSerQtyReserved from WipMatBalFix

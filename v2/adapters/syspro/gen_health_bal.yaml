@@ -1,0 +1,15 @@
+concept: gen_health_bal
+table: GenHealthBal
+alias: ghb
+fields:
+  run_date_time: ghb.RunDateTime
+  currency: ghb.Currency
+  gl_code: ghb.GlCode
+  type: ghb.Type
+  hcheck_year: ghb.HcheckYear
+  hcheck_month: ghb.HcheckMonth
+  error_description: ghb.ErrorDescription
+  bal_value: ghb.BalValue
+  calc_value: ghb.CalcValue
+  diff_value: ghb.DiffValue
+  message: ghb.Message

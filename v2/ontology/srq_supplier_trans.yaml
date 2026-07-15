@@ -1,0 +1,53 @@
+concept: srq_supplier_trans
+display_name: SrqSupplierTrans
+module: other
+description: Auto-generated representation of the physical table SrqSupplierTrans.
+synonyms:
+- srqsuppliertrans
+- srq supplier trans
+header_attributes:
+  rfq_reference:
+    display: Rfqreference
+    type: string
+    required: false
+    description: Field RfqReference from SrqSupplierTrans
+  rfq_line:
+    display: Rfqline
+    type: decimal
+    required: false
+    description: Field RfqLine from SrqSupplierTrans
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from SrqSupplierTrans
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from SrqSupplierTrans
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from SrqSupplierTrans
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from SrqSupplierTrans
+  last_chg_date:
+    display: Lastchgdate
+    type: date
+    required: false
+    description: Field LastChgDate from SrqSupplierTrans
+  time_last_chg:
+    display: Timelastchg
+    type: decimal
+    required: false
+    description: Field TimeLastChg from SrqSupplierTrans
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrqSupplierTrans

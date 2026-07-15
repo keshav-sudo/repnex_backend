@@ -1,0 +1,468 @@
+concept: ar_csh_jnl_det
+display_name: ArCshJnlDet
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArCshJnlDet.
+synonyms:
+- arcshjnldet
+- ar csh jnl det
+header_attributes:
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from ArCshJnlDet
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from ArCshJnlDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ArCshJnlDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from ArCshJnlDet
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArCshJnlDet
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from ArCshJnlDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ArCshJnlDet
+  transaction_code:
+    display: Transactioncode
+    type: string
+    required: false
+    description: Field TransactionCode from ArCshJnlDet
+  cheque_date:
+    display: Chequedate
+    type: date
+    required: false
+    description: Field ChequeDate from ArCshJnlDet
+  cheque_value:
+    display: Chequevalue
+    type: decimal
+    required: false
+    description: Field ChequeValue from ArCshJnlDet
+  cheque_value_for:
+    display: Chequevaluefor
+    type: decimal
+    required: false
+    description: Field ChequeValueFor from ArCshJnlDet
+  debit_gl_code:
+    display: Debitglcode
+    type: string
+    required: false
+    description: Field DebitGlCode from ArCshJnlDet
+  deposit_amt_ref:
+    display: Depositamtref
+    type: decimal
+    required: false
+    description: Field DepositAmtRef from ArCshJnlDet
+  counter_pay_type:
+    display: Counterpaytype
+    type: string
+    required: false
+    description: Field CounterPayType from ArCshJnlDet
+  adj_invoice:
+    display: Adjinvoice
+    type: string
+    required: false
+    description: Field AdjInvoice from ArCshJnlDet
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArCshJnlDet
+  adj_invoice_date:
+    display: Adjinvoicedate
+    type: date
+    required: false
+    description: Field AdjInvoiceDate from ArCshJnlDet
+  adj_invoice_bal:
+    display: Adjinvoicebal
+    type: decimal
+    required: false
+    description: Field AdjInvoiceBal from ArCshJnlDet
+  adj_inv_bal_for:
+    display: Adjinvbalfor
+    type: decimal
+    required: false
+    description: Field AdjInvBalFor from ArCshJnlDet
+  adjustment_value:
+    display: Adjustmentvalue
+    type: decimal
+    required: false
+    description: Field AdjustmentValue from ArCshJnlDet
+  adjustment_val_for:
+    display: Adjustmentvalfor
+    type: decimal
+    required: false
+    description: Field AdjustmentValFor from ArCshJnlDet
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from ArCshJnlDet
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from ArCshJnlDet
+  gl_post_year:
+    display: Glpostyear
+    type: decimal
+    required: false
+    description: Field GlPostYear from ArCshJnlDet
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from ArCshJnlDet
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from ArCshJnlDet
+  interface_updated:
+    display: Interfaceupdated
+    type: string
+    required: false
+    description: Field InterfaceUpdated from ArCshJnlDet
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ArCshJnlDet
+  tax_portion_adj:
+    display: Taxportionadj
+    type: decimal
+    required: false
+    description: Field TaxPortionAdj from ArCshJnlDet
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from ArCshJnlDet
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from ArCshJnlDet
+  conv_rate:
+    display: Convrate
+    type: decimal
+    required: false
+    description: Field ConvRate from ArCshJnlDet
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from ArCshJnlDet
+  account_cur:
+    display: Accountcur
+    type: string
+    required: false
+    description: Field AccountCur from ArCshJnlDet
+  acc_conv_rate:
+    display: Accconvrate
+    type: decimal
+    required: false
+    description: Field AccConvRate from ArCshJnlDet
+  acc_mul_div:
+    display: Accmuldiv
+    type: string
+    required: false
+    description: Field AccMulDiv from ArCshJnlDet
+  triang_currency:
+    display: Triangcurrency
+    type: string
+    required: false
+    description: Field TriangCurrency from ArCshJnlDet
+  triang_rate:
+    display: Triangrate
+    type: decimal
+    required: false
+    description: Field TriangRate from ArCshJnlDet
+  triang_mul_div:
+    display: Triangmuldiv
+    type: string
+    required: false
+    description: Field TriangMulDiv from ArCshJnlDet
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from ArCshJnlDet
+  drawers_name:
+    display: Drawersname
+    type: string
+    required: false
+    description: Field DrawersName from ArCshJnlDet
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from ArCshJnlDet
+  drawers_bank:
+    display: Drawersbank
+    type: string
+    required: false
+    description: Field DrawersBank from ArCshJnlDet
+  drawers_bank_brnch:
+    display: Drawersbankbrnch
+    type: string
+    required: false
+    description: Field DrawersBankBrnch from ArCshJnlDet
+  bank_charge:
+    display: Bankcharge
+    type: decimal
+    required: false
+    description: Field BankCharge from ArCshJnlDet
+  adjustment_tax_code:
+    display: Adjustmenttaxcode
+    type: string
+    required: false
+    description: Field AdjustmentTaxCode from ArCshJnlDet
+  dr_analysis_entry:
+    display: Dranalysisentry
+    type: decimal
+    required: false
+    description: Field DrAnalysisEntry from ArCshJnlDet
+  adj_analysis_entry:
+    display: Adjanalysisentry
+    type: decimal
+    required: false
+    description: Field AdjAnalysisEntry from ArCshJnlDet
+  adjustment_gl_code:
+    display: Adjustmentglcode
+    type: string
+    required: false
+    description: Field AdjustmentGlCode from ArCshJnlDet
+  cash_gl_code:
+    display: Cashglcode
+    type: string
+    required: false
+    description: Field CashGlCode from ArCshJnlDet
+  payment_gl_code:
+    display: Paymentglcode
+    type: string
+    required: false
+    description: Field PaymentGlCode from ArCshJnlDet
+  deposit_gl_code:
+    display: Depositglcode
+    type: string
+    required: false
+    description: Field DepositGlCode from ArCshJnlDet
+  wth_tax_gl_code:
+    display: Wthtaxglcode
+    type: string
+    required: false
+    description: Field WthTaxGlCode from ArCshJnlDet
+  tax_gl_code:
+    display: Taxglcode
+    type: string
+    required: false
+    description: Field TaxGlCode from ArCshJnlDet
+  discount_gl_code:
+    display: Discountglcode
+    type: string
+    required: false
+    description: Field DiscountGlCode from ArCshJnlDet
+  sales_ctl_tax_gl_code:
+    display: Salesctltaxglcode
+    type: string
+    required: false
+    description: Field SalesCtlTaxGlCode from ArCshJnlDet
+  bank_charge_gl_code:
+    display: Bankchargeglcode
+    type: string
+    required: false
+    description: Field BankChargeGlCode from ArCshJnlDet
+  adjustment_ana_entry:
+    display: Adjustmentanaentry
+    type: decimal
+    required: false
+    description: Field AdjustmentAnaEntry from ArCshJnlDet
+  cash_ana_entry:
+    display: Cashanaentry
+    type: decimal
+    required: false
+    description: Field CashAnaEntry from ArCshJnlDet
+  payment_ana_entry:
+    display: Paymentanaentry
+    type: decimal
+    required: false
+    description: Field PaymentAnaEntry from ArCshJnlDet
+  deposit_ana_entry:
+    display: Depositanaentry
+    type: decimal
+    required: false
+    description: Field DepositAnaEntry from ArCshJnlDet
+  wth_tax_ana_entry:
+    display: Wthtaxanaentry
+    type: decimal
+    required: false
+    description: Field WthTaxAnaEntry from ArCshJnlDet
+  tax_ana_entry:
+    display: Taxanaentry
+    type: decimal
+    required: false
+    description: Field TaxAnaEntry from ArCshJnlDet
+  discount_ana_entry:
+    display: Discountanaentry
+    type: decimal
+    required: false
+    description: Field DiscountAnaEntry from ArCshJnlDet
+  sls_ctl_tax_ana_entry:
+    display: Slsctltaxanaentry
+    type: decimal
+    required: false
+    description: Field SlsCtlTaxAnaEntry from ArCshJnlDet
+  bank_charge_ana_entry:
+    display: Bankchargeanaentry
+    type: decimal
+    required: false
+    description: Field BankChargeAnaEntry from ArCshJnlDet
+  gl_int_updated:
+    display: Glintupdated
+    type: string
+    required: false
+    description: Field GlIntUpdated from ArCshJnlDet
+  gl_int_printed:
+    display: Glintprinted
+    type: string
+    required: false
+    description: Field GlIntPrinted from ArCshJnlDet
+  gl_int_year:
+    display: Glintyear
+    type: decimal
+    required: false
+    description: Field GlIntYear from ArCshJnlDet
+  gl_int_period:
+    display: Glintperiod
+    type: decimal
+    required: false
+    description: Field GlIntPeriod from ArCshJnlDet
+  gl_journal:
+    display: Gljournal
+    type: decimal
+    required: false
+    description: Field GlJournal from ArCshJnlDet
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ArCshJnlDet
+  collector:
+    display: Collector
+    type: string
+    required: false
+    description: Field Collector from ArCshJnlDet
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from ArCshJnlDet
+  invoice_notation:
+    display: Invoicenotation
+    type: string
+    required: false
+    description: Field InvoiceNotation from ArCshJnlDet
+  collector_number_ar:
+    display: Collectornumberar
+    type: string
+    required: false
+    description: Field CollectorNumberAr from ArCshJnlDet
+  gl_int_level:
+    display: Glintlevel
+    type: string
+    required: false
+    description: Field GlIntLevel from ArCshJnlDet
+  mult_cur_pay:
+    display: Multcurpay
+    type: string
+    required: false
+    description: Field MultCurPay from ArCshJnlDet
+  pay_rec_currency:
+    display: Payreccurrency
+    type: string
+    required: false
+    description: Field PayRecCurrency from ArCshJnlDet
+  pay_rec_cheque_value:
+    display: Payrecchequevalue
+    type: decimal
+    required: false
+    description: Field PayRecChequeValue from ArCshJnlDet
+  pay_rec_conv_rte:
+    display: Payrecconvrte
+    type: decimal
+    required: false
+    description: Field PayRecConvRte from ArCshJnlDet
+  pay_rec_mul_div:
+    display: Payrecmuldiv
+    type: string
+    required: false
+    description: Field PayRecMulDiv from ArCshJnlDet
+  group_pay:
+    display: Grouppay
+    type: string
+    required: false
+    description: Field GroupPay from ArCshJnlDet
+  inter_company_trx:
+    display: Intercompanytrx
+    type: string
+    required: false
+    description: Field InterCompanyTrx from ArCshJnlDet
+  primary_company:
+    display: Primarycompany
+    type: string
+    required: false
+    description: Field PrimaryCompany from ArCshJnlDet
+  secondary_company:
+    display: Secondarycompany
+    type: string
+    required: false
+    description: Field SecondaryCompany from ArCshJnlDet
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from ArCshJnlDet
+  dimension_line:
+    display: Dimensionline
+    type: decimal
+    required: false
+    description: Field DimensionLine from ArCshJnlDet
+  effective_date:
+    display: Effectivedate
+    type: date
+    required: false
+    description: Field EffectiveDate from ArCshJnlDet
+  effective_entry:
+    display: Effectiveentry
+    type: decimal
+    required: false
+    description: Field EffectiveEntry from ArCshJnlDet
+  bank_rate:
+    display: Bankrate
+    type: decimal
+    required: false
+    description: Field BankRate from ArCshJnlDet
+  bank_mul_div:
+    display: Bankmuldiv
+    type: string
+    required: false
+    description: Field BankMulDiv from ArCshJnlDet

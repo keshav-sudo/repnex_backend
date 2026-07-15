@@ -1,0 +1,8 @@
+concept: iop_fore_snapshot
+table: IopForeSnapshot
+alias: ifs
+fields:
+  id_number: ifs.IdNumber
+  date_prepared: ifs.DatePrepared
+  forecast_date: ifs.ForecastDate
+  forecast_qty: ifs.ForecastQty

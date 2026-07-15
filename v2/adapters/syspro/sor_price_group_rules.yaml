@@ -1,0 +1,16 @@
+concept: sor_price_group_rules
+table: SorPriceGroupRules
+alias: spgr
+fields:
+  price_group: spgr.PriceGroup
+  price_group_rule: spgr.PriceGroupRule
+  description: spgr.Description
+  configuration: spgr.Configuration
+  date_basis: spgr.DateBasis
+  price_list: spgr.PriceList
+  priority: spgr.Priority
+  inv_discount_code: spgr.InvDiscountCode
+  start_date: spgr.StartDate
+  closing_date: spgr.ClosingDate
+  price_basis: spgr.PriceBasis
+  price_indicator: spgr.PriceIndicator

@@ -1,0 +1,258 @@
+concept: iop_warehouse
+display_name: IopWarehouse
+module: other
+description: Auto-generated representation of the physical table IopWarehouse.
+synonyms:
+- iopwarehouse
+- iop warehouse
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopWarehouse
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopWarehouse
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopWarehouse
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopWarehouse
+  calendar:
+    display: Calendar
+    type: string
+    required: false
+    description: Field Calendar from IopWarehouse
+  algorithm:
+    display: Algorithm
+    type: string
+    required: false
+    description: Field Algorithm from IopWarehouse
+  override_alg:
+    display: Overridealg
+    type: string
+    required: false
+    description: Field OverrideAlg from IopWarehouse
+  alg_a_months:
+    display: Algamonths
+    type: decimal
+    required: false
+    description: Field AlgAMonths from IopWarehouse
+  alg_a_basis:
+    display: Algabasis
+    type: string
+    required: false
+    description: Field AlgABasis from IopWarehouse
+  alg_b_months:
+    display: Algbmonths
+    type: decimal
+    required: false
+    description: Field AlgBMonths from IopWarehouse
+  alg_c_months:
+    display: Algcmonths
+    type: decimal
+    required: false
+    description: Field AlgCMonths from IopWarehouse
+  alg_d_months:
+    display: Algdmonths
+    type: decimal
+    required: false
+    description: Field AlgDMonths from IopWarehouse
+  alg_f_smooth:
+    display: Algfsmooth
+    type: decimal
+    required: false
+    description: Field AlgFSmooth from IopWarehouse
+  alg_f_trend:
+    display: Algftrend
+    type: decimal
+    required: false
+    description: Field AlgFTrend from IopWarehouse
+  alg_g_coeff1:
+    display: Alggcoeff1
+    type: decimal
+    required: false
+    description: Field AlgGCoeff1 from IopWarehouse
+  alg_g_coeff2:
+    display: Alggcoeff2
+    type: decimal
+    required: false
+    description: Field AlgGCoeff2 from IopWarehouse
+  alg_g_coeff3:
+    display: Alggcoeff3
+    type: decimal
+    required: false
+    description: Field AlgGCoeff3 from IopWarehouse
+  alg_h_coeff1:
+    display: Alghcoeff1
+    type: decimal
+    required: false
+    description: Field AlgHCoeff1 from IopWarehouse
+  alg_h_coeff2:
+    display: Alghcoeff2
+    type: decimal
+    required: false
+    description: Field AlgHCoeff2 from IopWarehouse
+  alg_h_coeff3:
+    display: Alghcoeff3
+    type: decimal
+    required: false
+    description: Field AlgHCoeff3 from IopWarehouse
+  alg_h_coeff4:
+    display: Alghcoeff4
+    type: decimal
+    required: false
+    description: Field AlgHCoeff4 from IopWarehouse
+  alg_i_coeff1:
+    display: Algicoeff1
+    type: decimal
+    required: false
+    description: Field AlgICoeff1 from IopWarehouse
+  alg_i_coeff2:
+    display: Algicoeff2
+    type: decimal
+    required: false
+    description: Field AlgICoeff2 from IopWarehouse
+  alg_i_coeff3:
+    display: Algicoeff3
+    type: decimal
+    required: false
+    description: Field AlgICoeff3 from IopWarehouse
+  alg_j_coeff1:
+    display: Algjcoeff1
+    type: decimal
+    required: false
+    description: Field AlgJCoeff1 from IopWarehouse
+  alg_j_coeff2:
+    display: Algjcoeff2
+    type: decimal
+    required: false
+    description: Field AlgJCoeff2 from IopWarehouse
+  alg_j_coeff3:
+    display: Algjcoeff3
+    type: decimal
+    required: false
+    description: Field AlgJCoeff3 from IopWarehouse
+  alg_k_coeff1:
+    display: Algkcoeff1
+    type: decimal
+    required: false
+    description: Field AlgKCoeff1 from IopWarehouse
+  alg_k_coeff2:
+    display: Algkcoeff2
+    type: decimal
+    required: false
+    description: Field AlgKCoeff2 from IopWarehouse
+  alg_k_coeff3:
+    display: Algkcoeff3
+    type: decimal
+    required: false
+    description: Field AlgKCoeff3 from IopWarehouse
+  season_sides:
+    display: Seasonsides
+    type: decimal
+    required: false
+    description: Field SeasonSides from IopWarehouse
+  season_periods:
+    display: Seasonperiods
+    type: decimal
+    required: false
+    description: Field SeasonPeriods from IopWarehouse
+  season_coeff:
+    display: Seasoncoeff
+    type: decimal
+    required: false
+    description: Field SeasonCoeff from IopWarehouse
+  replenish_item:
+    display: Replenishitem
+    type: string
+    required: false
+    description: Field ReplenishItem from IopWarehouse
+  manual_forecast:
+    display: Manualforecast
+    type: string
+    required: false
+    description: Field ManualForecast from IopWarehouse
+  outlier_std_dev:
+    display: Outlierstddev
+    type: decimal
+    required: false
+    description: Field OutlierStdDev from IopWarehouse
+  forecast_format:
+    display: Forecastformat
+    type: string
+    required: false
+    description: Field ForecastFormat from IopWarehouse
+  abc_class:
+    display: Abcclass
+    type: string
+    required: false
+    description: Field AbcClass from IopWarehouse
+  aggregate_cost:
+    display: Aggregatecost
+    type: decimal
+    required: false
+    description: Field AggregateCost from IopWarehouse
+  aggregate_price:
+    display: Aggregateprice
+    type: decimal
+    required: false
+    description: Field AggregatePrice from IopWarehouse
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopWarehouse
+  user_field1:
+    display: Userfield1
+    type: string
+    required: false
+    description: Field UserField1 from IopWarehouse
+  user_field2:
+    display: Userfield2
+    type: string
+    required: false
+    description: Field UserField2 from IopWarehouse
+  user_field3:
+    display: Userfield3
+    type: string
+    required: false
+    description: Field UserField3 from IopWarehouse
+  user_field4:
+    display: Userfield4
+    type: string
+    required: false
+    description: Field UserField4 from IopWarehouse
+  user_field5:
+    display: Userfield5
+    type: string
+    required: false
+    description: Field UserField5 from IopWarehouse
+  user_field6:
+    display: Userfield6
+    type: string
+    required: false
+    description: Field UserField6 from IopWarehouse
+  fore_accuracy_days:
+    display: Foreaccuracydays
+    type: decimal
+    required: false
+    description: Field ForeAccuracyDays from IopWarehouse
+  int_demand_days:
+    display: Intdemanddays
+    type: decimal
+    required: false
+    description: Field IntDemandDays from IopWarehouse
+  int_demand_pct:
+    display: Intdemandpct
+    type: decimal
+    required: false
+    description: Field IntDemandPct from IopWarehouse

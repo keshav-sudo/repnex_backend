@@ -1,0 +1,108 @@
+concept: gen_analysis_budget
+display_name: GenAnalysisBudget
+module: general_ledger
+description: Auto-generated representation of the physical table GenAnalysisBudget.
+synonyms:
+- genanalysisbudget
+- gen analysis budget
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenAnalysisBudget
+  section_number:
+    display: Sectionnumber
+    type: decimal
+    required: false
+    description: Field SectionNumber from GenAnalysisBudget
+  section_code:
+    display: Sectioncode
+    type: string
+    required: false
+    description: Field SectionCode from GenAnalysisBudget
+  budget_type:
+    display: Budgettype
+    type: string
+    required: false
+    description: Field BudgetType from GenAnalysisBudget
+  account_type:
+    display: Accounttype
+    type: string
+    required: false
+    description: Field AccountType from GenAnalysisBudget
+  budget1:
+    display: Budget1
+    type: decimal
+    required: false
+    description: Field Budget1 from GenAnalysisBudget
+  budget2:
+    display: Budget2
+    type: decimal
+    required: false
+    description: Field Budget2 from GenAnalysisBudget
+  budget3:
+    display: Budget3
+    type: decimal
+    required: false
+    description: Field Budget3 from GenAnalysisBudget
+  budget4:
+    display: Budget4
+    type: decimal
+    required: false
+    description: Field Budget4 from GenAnalysisBudget
+  budget5:
+    display: Budget5
+    type: decimal
+    required: false
+    description: Field Budget5 from GenAnalysisBudget
+  budget6:
+    display: Budget6
+    type: decimal
+    required: false
+    description: Field Budget6 from GenAnalysisBudget
+  budget7:
+    display: Budget7
+    type: decimal
+    required: false
+    description: Field Budget7 from GenAnalysisBudget
+  budget8:
+    display: Budget8
+    type: decimal
+    required: false
+    description: Field Budget8 from GenAnalysisBudget
+  budget9:
+    display: Budget9
+    type: decimal
+    required: false
+    description: Field Budget9 from GenAnalysisBudget
+  budget10:
+    display: Budget10
+    type: decimal
+    required: false
+    description: Field Budget10 from GenAnalysisBudget
+  budget11:
+    display: Budget11
+    type: decimal
+    required: false
+    description: Field Budget11 from GenAnalysisBudget
+  budget12:
+    display: Budget12
+    type: decimal
+    required: false
+    description: Field Budget12 from GenAnalysisBudget
+  budget13:
+    display: Budget13
+    type: decimal
+    required: false
+    description: Field Budget13 from GenAnalysisBudget
+  budget14:
+    display: Budget14
+    type: decimal
+    required: false
+    description: Field Budget14 from GenAnalysisBudget
+  budget15:
+    display: Budget15
+    type: decimal
+    required: false
+    description: Field Budget15 from GenAnalysisBudget

@@ -1,0 +1,14 @@
+concept: mrp_requirement
+table: MrpRequirement
+alias: mr
+fields:
+  stock_code: mr.StockCode
+  version: mr.Version
+  release: mr.Release
+  warehouse: mr.Warehouse
+  supply_demand_date: mr.SupplyDemandDate
+  available_stock: mr.AvailableStock
+  planned_qty_due: mr.PlannedQtyDue
+  suggested_qty: mr.SuggestedQty
+  demand_qty: mr.DemandQty
+  net_result: mr.NetResult

@@ -1,0 +1,63 @@
+concept: adm_print_funct
+display_name: AdmPrintFunct
+module: administration
+description: Auto-generated representation of the physical table AdmPrintFunct.
+synonyms:
+- admprintfunct
+- adm print funct
+header_attributes:
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmPrintFunct
+  function_type:
+    display: Functiontype
+    type: string
+    required: false
+    description: Field FunctionType from AdmPrintFunct
+  printer_name:
+    display: Printername
+    type: string
+    required: false
+    description: Field PrinterName from AdmPrintFunct
+  prt_current:
+    display: Prtcurrent
+    type: string
+    required: false
+    description: Field PrtCurrent from AdmPrintFunct
+  last_win_info:
+    display: Lastwininfo
+    type: string
+    required: false
+    description: Field LastWinInfo from AdmPrintFunct
+  last_sys_info:
+    display: Lastsysinfo
+    type: string
+    required: false
+    description: Field LastSysInfo from AdmPrintFunct
+  print_attributes:
+    display: Printattributes
+    type: string
+    required: false
+    description: Field PrintAttributes from AdmPrintFunct
+  win_devmode:
+    display: Windevmode
+    type: string
+    required: false
+    description: Field WinDevmode from AdmPrintFunct
+  win_page_setup:
+    display: Winpagesetup
+    type: string
+    required: false
+    description: Field WinPageSetup from AdmPrintFunct
+  win_font_info:
+    display: Winfontinfo
+    type: string
+    required: false
+    description: Field WinFontInfo from AdmPrintFunct
+  extra_bytes:
+    display: Extrabytes
+    type: decimal
+    required: false
+    description: Field ExtraBytes from AdmPrintFunct

@@ -1,0 +1,18 @@
+concept: bso_rel_ack_ctl
+display_name: BsoRelAckCtl
+module: other
+description: Auto-generated representation of the physical table BsoRelAckCtl.
+synonyms:
+- bsorelackctl
+- bso rel ack ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from BsoRelAckCtl
+  next_seq_num:
+    display: Nextseqnum
+    type: decimal
+    required: false
+    description: Field NextSeqNum from BsoRelAckCtl

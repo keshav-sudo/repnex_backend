@@ -1,0 +1,6 @@
+concept: ap_sup_label_format
+table: ApSupLabelFormat
+alias: aslf
+fields:
+  perm_entry_format: aslf.PermEntryFormat
+  preferences: aslf.Preferences

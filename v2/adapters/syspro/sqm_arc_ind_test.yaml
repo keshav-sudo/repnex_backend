@@ -1,0 +1,21 @@
+concept: sqm_arc_ind_test
+table: SqmArcIndTest
+alias: sait
+fields:
+  inspect_type: sait.InspectType
+  inspect_number: sait.InspectNumber
+  lot: sait.Lot
+  sample_number: sait.SampleNumber
+  sample_test: sait.SampleTest
+  test_name: sait.TestName
+  test_version: sait.TestVersion
+  critical_status: sait.CriticalStatus
+  major_status: sait.MajorStatus
+  minor_status: sait.MinorStatus
+  test_complete: sait.TestComplete
+  inspector_code: sait.InspectorCode
+  test_status: sait.TestStatus
+  start_date: sait.StartDate
+  end_date: sait.EndDate
+  start_time: sait.StartTime
+  end_time: sait.EndTime

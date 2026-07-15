@@ -1,0 +1,1028 @@
+concept: lynq_me__trace__operation
+display_name: Lynq ME Trace Operation
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Trace_Operation.
+synonyms:
+- lynq_me_trace_operation
+- lynq me  trace  operation
+header_attributes:
+  o_id:
+    display: Oid
+    type: decimal
+    required: false
+    description: Field oId from Lynq_ME_Trace_Operation
+  o_code:
+    display: Ocode
+    type: string
+    required: false
+    description: Field oCode from Lynq_ME_Trace_Operation
+  o_job_code:
+    display: Ojobcode
+    type: string
+    required: false
+    description: Field oJobCode from Lynq_ME_Trace_Operation
+  o_project_code:
+    display: Oprojectcode
+    type: string
+    required: false
+    description: Field oProjectCode from Lynq_ME_Trace_Operation
+  o_facility_code:
+    display: Ofacilitycode
+    type: string
+    required: false
+    description: Field oFacilityCode from Lynq_ME_Trace_Operation
+  o_type1:
+    display: Otype1
+    type: string
+    required: false
+    description: Field oType1 from Lynq_ME_Trace_Operation
+  o_type2:
+    display: Otype2
+    type: string
+    required: false
+    description: Field oType2 from Lynq_ME_Trace_Operation
+  o_type3:
+    display: Otype3
+    type: string
+    required: false
+    description: Field oType3 from Lynq_ME_Trace_Operation
+  o_classification1:
+    display: Oclassification1
+    type: string
+    required: false
+    description: Field oClassification1 from Lynq_ME_Trace_Operation
+  o_classification2:
+    display: Oclassification2
+    type: string
+    required: false
+    description: Field oClassification2 from Lynq_ME_Trace_Operation
+  o_classification3:
+    display: Oclassification3
+    type: string
+    required: false
+    description: Field oClassification3 from Lynq_ME_Trace_Operation
+  o_group1:
+    display: Ogroup1
+    type: string
+    required: false
+    description: Field oGroup1 from Lynq_ME_Trace_Operation
+  o_group2:
+    display: Ogroup2
+    type: string
+    required: false
+    description: Field oGroup2 from Lynq_ME_Trace_Operation
+  o_group3:
+    display: Ogroup3
+    type: string
+    required: false
+    description: Field oGroup3 from Lynq_ME_Trace_Operation
+  o_category1:
+    display: Ocategory1
+    type: string
+    required: false
+    description: Field oCategory1 from Lynq_ME_Trace_Operation
+  o_category2:
+    display: Ocategory2
+    type: string
+    required: false
+    description: Field oCategory2 from Lynq_ME_Trace_Operation
+  o_category3:
+    display: Ocategory3
+    type: string
+    required: false
+    description: Field oCategory3 from Lynq_ME_Trace_Operation
+  o_outside_flag:
+    display: Ooutsideflag
+    type: string
+    required: false
+    description: Field oOutsideFlag from Lynq_ME_Trace_Operation
+  o_operational_code:
+    display: Ooperationalcode
+    type: string
+    required: false
+    description: Field oOperationalCode from Lynq_ME_Trace_Operation
+  o_operational_code_description:
+    display: Ooperationalcodedescription
+    type: string
+    required: false
+    description: Field oOperationalCodeDescription from Lynq_ME_Trace_Operation
+  o_refference:
+    display: Orefference
+    type: string
+    required: false
+    description: Field oRefference from Lynq_ME_Trace_Operation
+  o_note:
+    display: Onote
+    type: string
+    required: false
+    description: Field oNote from Lynq_ME_Trace_Operation
+  o_status_code1:
+    display: Ostatuscode1
+    type: string
+    required: false
+    description: Field oStatusCode1 from Lynq_ME_Trace_Operation
+  o_status_description1:
+    display: Ostatusdescription1
+    type: string
+    required: false
+    description: Field oStatusDescription1 from Lynq_ME_Trace_Operation
+  o_status_code2:
+    display: Ostatuscode2
+    type: string
+    required: false
+    description: Field oStatusCode2 from Lynq_ME_Trace_Operation
+  o_status_description2:
+    display: Ostatusdescription2
+    type: string
+    required: false
+    description: Field oStatusDescription2 from Lynq_ME_Trace_Operation
+  o_productive_flag:
+    display: Oproductiveflag
+    type: string
+    required: false
+    description: Field oProductiveFlag from Lynq_ME_Trace_Operation
+  o_number:
+    display: Onumber
+    type: decimal
+    required: false
+    description: Field oNumber from Lynq_ME_Trace_Operation
+  o_name:
+    display: Oname
+    type: string
+    required: false
+    description: Field oName from Lynq_ME_Trace_Operation
+  o_description1:
+    display: Odescription1
+    type: string
+    required: false
+    description: Field oDescription1 from Lynq_ME_Trace_Operation
+  o_description2:
+    display: Odescription2
+    type: string
+    required: false
+    description: Field oDescription2 from Lynq_ME_Trace_Operation
+  o_factory:
+    display: Ofactory
+    type: string
+    required: false
+    description: Field oFactory from Lynq_ME_Trace_Operation
+  o_department:
+    display: Odepartment
+    type: string
+    required: false
+    description: Field oDepartment from Lynq_ME_Trace_Operation
+  o_workcentre:
+    display: Oworkcentre
+    type: string
+    required: false
+    description: Field oWorkcentre from Lynq_ME_Trace_Operation
+  o_setup_quantity_ordered:
+    display: Osetupquantityordered
+    type: decimal
+    required: false
+    description: Field oSetupQuantityOrdered from Lynq_ME_Trace_Operation
+  o_setup_quantity_reported:
+    display: Osetupquantityreported
+    type: decimal
+    required: false
+    description: Field oSetupQuantityReported from Lynq_ME_Trace_Operation
+  o_quantity_ordered:
+    display: Oquantityordered
+    type: decimal
+    required: false
+    description: Field oQuantityOrdered from Lynq_ME_Trace_Operation
+  o_quantity_reported:
+    display: Oquantityreported
+    type: decimal
+    required: false
+    description: Field oQuantityReported from Lynq_ME_Trace_Operation
+  o_quantity_scraped:
+    display: Oquantityscraped
+    type: decimal
+    required: false
+    description: Field oQuantityScraped from Lynq_ME_Trace_Operation
+  o_quantity_rejected:
+    display: Oquantityrejected
+    type: decimal
+    required: false
+    description: Field oQuantityRejected from Lynq_ME_Trace_Operation
+  o_complete_flag:
+    display: Ocompleteflag
+    type: string
+    required: false
+    description: Field oCompleteFlag from Lynq_ME_Trace_Operation
+  o_complete_date:
+    display: Ocompletedate
+    type: date
+    required: false
+    description: Field oCompleteDate from Lynq_ME_Trace_Operation
+  o_setup_class:
+    display: Osetupclass
+    type: string
+    required: false
+    description: Field oSetupClass from Lynq_ME_Trace_Operation
+  o_fixed_setup_labor_time:
+    display: Ofixedsetuplabortime
+    type: decimal
+    required: false
+    description: Field oFixedSetupLaborTime from Lynq_ME_Trace_Operation
+  o_fixed_setup_machine_time:
+    display: Ofixedsetupmachinetime
+    type: decimal
+    required: false
+    description: Field oFixedSetupMachineTime from Lynq_ME_Trace_Operation
+  o_setup_batch_size:
+    display: Osetupbatchsize
+    type: decimal
+    required: false
+    description: Field oSetupBatchSize from Lynq_ME_Trace_Operation
+  o_setup_labor_resource_quantity:
+    display: Osetuplaborresourcequantity
+    type: decimal
+    required: false
+    description: Field oSetupLaborResourceQuantity from Lynq_ME_Trace_Operation
+  o_setup_machine_resource_quantity:
+    display: Osetupmachineresourcequantity
+    type: decimal
+    required: false
+    description: Field oSetupMachineResourceQuantity from Lynq_ME_Trace_Operation
+  o_fixed_run_labor_time:
+    display: Ofixedrunlabortime
+    type: decimal
+    required: false
+    description: Field oFixedRunLaborTime from Lynq_ME_Trace_Operation
+  o_variable_run_labor_time:
+    display: Ovariablerunlabortime
+    type: decimal
+    required: false
+    description: Field oVariableRunLaborTime from Lynq_ME_Trace_Operation
+  o_fixed_run_machine_time:
+    display: Ofixedrunmachinetime
+    type: decimal
+    required: false
+    description: Field oFixedRunMachineTime from Lynq_ME_Trace_Operation
+  o_variable_run_machine_time:
+    display: Ovariablerunmachinetime
+    type: decimal
+    required: false
+    description: Field oVariableRunMachineTime from Lynq_ME_Trace_Operation
+  o_run_batch_size:
+    display: Orunbatchsize
+    type: decimal
+    required: false
+    description: Field oRunBatchSize from Lynq_ME_Trace_Operation
+  o_run_labor_resource_quantity:
+    display: Orunlaborresourcequantity
+    type: decimal
+    required: false
+    description: Field oRunLaborResourceQuantity from Lynq_ME_Trace_Operation
+  o_run_machine_resource_quantity:
+    display: Orunmachineresourcequantity
+    type: decimal
+    required: false
+    description: Field oRunMachineResourceQuantity from Lynq_ME_Trace_Operation
+  o_outside_vendor_code:
+    display: Ooutsidevendorcode
+    type: string
+    required: false
+    description: Field oOutsideVendorCode from Lynq_ME_Trace_Operation
+  o_outside_vendor_name:
+    display: Ooutsidevendorname
+    type: string
+    required: false
+    description: Field oOutsideVendorName from Lynq_ME_Trace_Operation
+  o_fixed_process_time:
+    display: Ofixedprocesstime
+    type: decimal
+    required: false
+    description: Field oFixedProcessTime from Lynq_ME_Trace_Operation
+  o_fixed_wait_time:
+    display: Ofixedwaittime
+    type: decimal
+    required: false
+    description: Field oFixedWaitTime from Lynq_ME_Trace_Operation
+  o_tail_move_time:
+    display: Otailmovetime
+    type: decimal
+    required: false
+    description: Field oTailMoveTime from Lynq_ME_Trace_Operation
+  o_tail_queue_time:
+    display: Otailqueuetime
+    type: decimal
+    required: false
+    description: Field oTailQueueTime from Lynq_ME_Trace_Operation
+  o_transfer_method:
+    display: Otransfermethod
+    type: string
+    required: false
+    description: Field oTransferMethod from Lynq_ME_Trace_Operation
+  o_transfer_point:
+    display: Otransferpoint
+    type: decimal
+    required: false
+    description: Field oTransferPoint from Lynq_ME_Trace_Operation
+  o_parallel_to_previous_flag:
+    display: Oparalleltopreviousflag
+    type: string
+    required: false
+    description: Field oParallelToPreviousFlag from Lynq_ME_Trace_Operation
+  o_path_number:
+    display: Opathnumber
+    type: decimal
+    required: false
+    description: Field oPathNumber from Lynq_ME_Trace_Operation
+  o_parallel_number:
+    display: Oparallelnumber
+    type: decimal
+    required: false
+    description: Field oParallelNumber from Lynq_ME_Trace_Operation
+  o_mile_stone_flag:
+    display: Omilestoneflag
+    type: string
+    required: false
+    description: Field oMileStoneFlag from Lynq_ME_Trace_Operation
+  o_final_operation_flag:
+    display: Ofinaloperationflag
+    type: string
+    required: false
+    description: Field oFinalOperationFlag from Lynq_ME_Trace_Operation
+  o_scheduled_flag:
+    display: Oscheduledflag
+    type: string
+    required: false
+    description: Field oScheduledFlag from Lynq_ME_Trace_Operation
+  o_scheduled_start_date:
+    display: Oscheduledstartdate
+    type: date
+    required: false
+    description: Field oScheduledStartDate from Lynq_ME_Trace_Operation
+  o_scheduled_due_date:
+    display: Oscheduledduedate
+    type: date
+    required: false
+    description: Field oScheduledDueDate from Lynq_ME_Trace_Operation
+  o_original_start_date:
+    display: Ooriginalstartdate
+    type: date
+    required: false
+    description: Field oOriginalStartDate from Lynq_ME_Trace_Operation
+  o_original_due_date:
+    display: Ooriginalduedate
+    type: date
+    required: false
+    description: Field oOriginalDueDate from Lynq_ME_Trace_Operation
+  o_planned_setup_labor_time:
+    display: Oplannedsetuplabortime
+    type: decimal
+    required: false
+    description: Field oPlannedSetupLaborTime from Lynq_ME_Trace_Operation
+  o_actual_setup_labor_time:
+    display: Oactualsetuplabortime
+    type: decimal
+    required: false
+    description: Field oActualSetupLaborTime from Lynq_ME_Trace_Operation
+  o_planned_run_labor_time:
+    display: Oplannedrunlabortime
+    type: decimal
+    required: false
+    description: Field oPlannedRunLaborTime from Lynq_ME_Trace_Operation
+  o_actual_run_labor_time:
+    display: Oactualrunlabortime
+    type: decimal
+    required: false
+    description: Field oActualRunLaborTime from Lynq_ME_Trace_Operation
+  o_planner:
+    display: Oplanner
+    type: string
+    required: false
+    description: Field oPlanner from Lynq_ME_Trace_Operation
+  o_setup_labor_rate_indicator:
+    display: Osetuplaborrateindicator
+    type: string
+    required: false
+    description: Field oSetupLaborRateIndicator from Lynq_ME_Trace_Operation
+  o_run_labor_rate_indicator:
+    display: Orunlaborrateindicator
+    type: string
+    required: false
+    description: Field oRunLaborRateIndicator from Lynq_ME_Trace_Operation
+  o_process_labor_rate_indicator:
+    display: Oprocesslaborrateindicator
+    type: string
+    required: false
+    description: Field oProcessLaborRateIndicator from Lynq_ME_Trace_Operation
+  o_setup_rate:
+    display: Osetuprate
+    type: decimal
+    required: false
+    description: Field oSetupRate from Lynq_ME_Trace_Operation
+  o_run_time_rate:
+    display: Oruntimerate
+    type: decimal
+    required: false
+    description: Field oRunTimeRate from Lynq_ME_Trace_Operation
+  o_process_time_rate:
+    display: Oprocesstimerate
+    type: decimal
+    required: false
+    description: Field oProcessTimeRate from Lynq_ME_Trace_Operation
+  o_wait_time_rate:
+    display: Owaittimerate
+    type: decimal
+    required: false
+    description: Field oWaitTimeRate from Lynq_ME_Trace_Operation
+  o_setup_fixed_overhead:
+    display: Osetupfixedoverhead
+    type: decimal
+    required: false
+    description: Field oSetupFixedOverhead from Lynq_ME_Trace_Operation
+  o_setup_variable_overhead:
+    display: Osetupvariableoverhead
+    type: decimal
+    required: false
+    description: Field oSetupVariableOverhead from Lynq_ME_Trace_Operation
+  o_run_fixed_overhead:
+    display: Orunfixedoverhead
+    type: decimal
+    required: false
+    description: Field oRunFixedOverhead from Lynq_ME_Trace_Operation
+  o_run_variable_overhead:
+    display: Orunvariableoverhead
+    type: decimal
+    required: false
+    description: Field oRunVariableOverhead from Lynq_ME_Trace_Operation
+  o_total_planned_cost:
+    display: Ototalplannedcost
+    type: decimal
+    required: false
+    description: Field oTotalPlannedCost from Lynq_ME_Trace_Operation
+  o_attribute1:
+    display: Oattribute1
+    type: string
+    required: false
+    description: Field oAttribute1 from Lynq_ME_Trace_Operation
+  o_attribute2:
+    display: Oattribute2
+    type: string
+    required: false
+    description: Field oAttribute2 from Lynq_ME_Trace_Operation
+  o_attribute3:
+    display: Oattribute3
+    type: string
+    required: false
+    description: Field oAttribute3 from Lynq_ME_Trace_Operation
+  o_attribute4:
+    display: Oattribute4
+    type: string
+    required: false
+    description: Field oAttribute4 from Lynq_ME_Trace_Operation
+  o_attribute5:
+    display: Oattribute5
+    type: string
+    required: false
+    description: Field oAttribute5 from Lynq_ME_Trace_Operation
+  o_attribute6:
+    display: Oattribute6
+    type: string
+    required: false
+    description: Field oAttribute6 from Lynq_ME_Trace_Operation
+  o_attribute7:
+    display: Oattribute7
+    type: string
+    required: false
+    description: Field oAttribute7 from Lynq_ME_Trace_Operation
+  o_attribute8:
+    display: Oattribute8
+    type: string
+    required: false
+    description: Field oAttribute8 from Lynq_ME_Trace_Operation
+  o_attribute9:
+    display: Oattribute9
+    type: string
+    required: false
+    description: Field oAttribute9 from Lynq_ME_Trace_Operation
+  o_attribute10:
+    display: Oattribute10
+    type: string
+    required: false
+    description: Field oAttribute10 from Lynq_ME_Trace_Operation
+  o_req1:
+    display: Oreq1
+    type: decimal
+    required: false
+    description: Field oReq1 from Lynq_ME_Trace_Operation
+  o_req2:
+    display: Oreq2
+    type: decimal
+    required: false
+    description: Field oReq2 from Lynq_ME_Trace_Operation
+  o_req3:
+    display: Oreq3
+    type: decimal
+    required: false
+    description: Field oReq3 from Lynq_ME_Trace_Operation
+  o_req4:
+    display: Oreq4
+    type: decimal
+    required: false
+    description: Field oReq4 from Lynq_ME_Trace_Operation
+  o_req5:
+    display: Oreq5
+    type: decimal
+    required: false
+    description: Field oReq5 from Lynq_ME_Trace_Operation
+  o_req6:
+    display: Oreq6
+    type: decimal
+    required: false
+    description: Field oReq6 from Lynq_ME_Trace_Operation
+  o_req7:
+    display: Oreq7
+    type: decimal
+    required: false
+    description: Field oReq7 from Lynq_ME_Trace_Operation
+  o_req8:
+    display: Oreq8
+    type: decimal
+    required: false
+    description: Field oReq8 from Lynq_ME_Trace_Operation
+  o_req9:
+    display: Oreq9
+    type: decimal
+    required: false
+    description: Field oReq9 from Lynq_ME_Trace_Operation
+  o_req10:
+    display: Oreq10
+    type: decimal
+    required: false
+    description: Field oReq10 from Lynq_ME_Trace_Operation
+  o_param1:
+    display: Oparam1
+    type: string
+    required: false
+    description: Field oParam1 from Lynq_ME_Trace_Operation
+  o_param2:
+    display: Oparam2
+    type: string
+    required: false
+    description: Field oParam2 from Lynq_ME_Trace_Operation
+  o_param3:
+    display: Oparam3
+    type: string
+    required: false
+    description: Field oParam3 from Lynq_ME_Trace_Operation
+  o_param4:
+    display: Oparam4
+    type: string
+    required: false
+    description: Field oParam4 from Lynq_ME_Trace_Operation
+  o_param5:
+    display: Oparam5
+    type: string
+    required: false
+    description: Field oParam5 from Lynq_ME_Trace_Operation
+  o_param6:
+    display: Oparam6
+    type: string
+    required: false
+    description: Field oParam6 from Lynq_ME_Trace_Operation
+  o_param7:
+    display: Oparam7
+    type: string
+    required: false
+    description: Field oParam7 from Lynq_ME_Trace_Operation
+  o_param8:
+    display: Oparam8
+    type: string
+    required: false
+    description: Field oParam8 from Lynq_ME_Trace_Operation
+  o_param9:
+    display: Oparam9
+    type: string
+    required: false
+    description: Field oParam9 from Lynq_ME_Trace_Operation
+  o_param10:
+    display: Oparam10
+    type: string
+    required: false
+    description: Field oParam10 from Lynq_ME_Trace_Operation
+  o_decimal1:
+    display: Odecimal1
+    type: decimal
+    required: false
+    description: Field oDecimal1 from Lynq_ME_Trace_Operation
+  o_decimal2:
+    display: Odecimal2
+    type: decimal
+    required: false
+    description: Field oDecimal2 from Lynq_ME_Trace_Operation
+  o_decimal3:
+    display: Odecimal3
+    type: decimal
+    required: false
+    description: Field oDecimal3 from Lynq_ME_Trace_Operation
+  o_decimal4:
+    display: Odecimal4
+    type: decimal
+    required: false
+    description: Field oDecimal4 from Lynq_ME_Trace_Operation
+  o_decimal5:
+    display: Odecimal5
+    type: decimal
+    required: false
+    description: Field oDecimal5 from Lynq_ME_Trace_Operation
+  o_decimal6:
+    display: Odecimal6
+    type: decimal
+    required: false
+    description: Field oDecimal6 from Lynq_ME_Trace_Operation
+  o_decimal7:
+    display: Odecimal7
+    type: decimal
+    required: false
+    description: Field oDecimal7 from Lynq_ME_Trace_Operation
+  o_decimal8:
+    display: Odecimal8
+    type: decimal
+    required: false
+    description: Field oDecimal8 from Lynq_ME_Trace_Operation
+  o_decimal9:
+    display: Odecimal9
+    type: decimal
+    required: false
+    description: Field oDecimal9 from Lynq_ME_Trace_Operation
+  o_decimal10:
+    display: Odecimal10
+    type: decimal
+    required: false
+    description: Field oDecimal10 from Lynq_ME_Trace_Operation
+  o_date_time1:
+    display: Odatetime1
+    type: date
+    required: false
+    description: Field oDateTime1 from Lynq_ME_Trace_Operation
+  o_date_time2:
+    display: Odatetime2
+    type: date
+    required: false
+    description: Field oDateTime2 from Lynq_ME_Trace_Operation
+  o_date_time3:
+    display: Odatetime3
+    type: date
+    required: false
+    description: Field oDateTime3 from Lynq_ME_Trace_Operation
+  o_date_time4:
+    display: Odatetime4
+    type: date
+    required: false
+    description: Field oDateTime4 from Lynq_ME_Trace_Operation
+  o_date_time5:
+    display: Odatetime5
+    type: date
+    required: false
+    description: Field oDateTime5 from Lynq_ME_Trace_Operation
+  o_text1:
+    display: Otext1
+    type: string
+    required: false
+    description: Field oText1 from Lynq_ME_Trace_Operation
+  o_text2:
+    display: Otext2
+    type: string
+    required: false
+    description: Field oText2 from Lynq_ME_Trace_Operation
+  o_text3:
+    display: Otext3
+    type: string
+    required: false
+    description: Field oText3 from Lynq_ME_Trace_Operation
+  o_text4:
+    display: Otext4
+    type: string
+    required: false
+    description: Field oText4 from Lynq_ME_Trace_Operation
+  o_text5:
+    display: Otext5
+    type: string
+    required: false
+    description: Field oText5 from Lynq_ME_Trace_Operation
+  o_text6:
+    display: Otext6
+    type: string
+    required: false
+    description: Field oText6 from Lynq_ME_Trace_Operation
+  o_text7:
+    display: Otext7
+    type: string
+    required: false
+    description: Field oText7 from Lynq_ME_Trace_Operation
+  o_text8:
+    display: Otext8
+    type: string
+    required: false
+    description: Field oText8 from Lynq_ME_Trace_Operation
+  o_text9:
+    display: Otext9
+    type: string
+    required: false
+    description: Field oText9 from Lynq_ME_Trace_Operation
+  o_text10:
+    display: Otext10
+    type: string
+    required: false
+    description: Field oText10 from Lynq_ME_Trace_Operation
+  o_text11:
+    display: Otext11
+    type: string
+    required: false
+    description: Field oText11 from Lynq_ME_Trace_Operation
+  o_text12:
+    display: Otext12
+    type: string
+    required: false
+    description: Field oText12 from Lynq_ME_Trace_Operation
+  o_text13:
+    display: Otext13
+    type: string
+    required: false
+    description: Field oText13 from Lynq_ME_Trace_Operation
+  o_text14:
+    display: Otext14
+    type: string
+    required: false
+    description: Field oText14 from Lynq_ME_Trace_Operation
+  o_text15:
+    display: Otext15
+    type: string
+    required: false
+    description: Field oText15 from Lynq_ME_Trace_Operation
+  o_text16:
+    display: Otext16
+    type: string
+    required: false
+    description: Field oText16 from Lynq_ME_Trace_Operation
+  o_text17:
+    display: Otext17
+    type: string
+    required: false
+    description: Field oText17 from Lynq_ME_Trace_Operation
+  o_text18:
+    display: Otext18
+    type: string
+    required: false
+    description: Field oText18 from Lynq_ME_Trace_Operation
+  o_text19:
+    display: Otext19
+    type: string
+    required: false
+    description: Field oText19 from Lynq_ME_Trace_Operation
+  o_text20:
+    display: Otext20
+    type: string
+    required: false
+    description: Field oText20 from Lynq_ME_Trace_Operation
+  o_text21:
+    display: Otext21
+    type: string
+    required: false
+    description: Field oText21 from Lynq_ME_Trace_Operation
+  o_text22:
+    display: Otext22
+    type: string
+    required: false
+    description: Field oText22 from Lynq_ME_Trace_Operation
+  o_text23:
+    display: Otext23
+    type: string
+    required: false
+    description: Field oText23 from Lynq_ME_Trace_Operation
+  o_text24:
+    display: Otext24
+    type: string
+    required: false
+    description: Field oText24 from Lynq_ME_Trace_Operation
+  o_text25:
+    display: Otext25
+    type: string
+    required: false
+    description: Field oText25 from Lynq_ME_Trace_Operation
+  o_text26:
+    display: Otext26
+    type: string
+    required: false
+    description: Field oText26 from Lynq_ME_Trace_Operation
+  o_text27:
+    display: Otext27
+    type: string
+    required: false
+    description: Field oText27 from Lynq_ME_Trace_Operation
+  o_text28:
+    display: Otext28
+    type: string
+    required: false
+    description: Field oText28 from Lynq_ME_Trace_Operation
+  o_text29:
+    display: Otext29
+    type: string
+    required: false
+    description: Field oText29 from Lynq_ME_Trace_Operation
+  o_text30:
+    display: Otext30
+    type: string
+    required: false
+    description: Field oText30 from Lynq_ME_Trace_Operation
+  o_text31:
+    display: Otext31
+    type: string
+    required: false
+    description: Field oText31 from Lynq_ME_Trace_Operation
+  o_text32:
+    display: Otext32
+    type: string
+    required: false
+    description: Field oText32 from Lynq_ME_Trace_Operation
+  o_text33:
+    display: Otext33
+    type: string
+    required: false
+    description: Field oText33 from Lynq_ME_Trace_Operation
+  o_text34:
+    display: Otext34
+    type: string
+    required: false
+    description: Field oText34 from Lynq_ME_Trace_Operation
+  o_text35:
+    display: Otext35
+    type: string
+    required: false
+    description: Field oText35 from Lynq_ME_Trace_Operation
+  o_text36:
+    display: Otext36
+    type: string
+    required: false
+    description: Field oText36 from Lynq_ME_Trace_Operation
+  o_text37:
+    display: Otext37
+    type: string
+    required: false
+    description: Field oText37 from Lynq_ME_Trace_Operation
+  o_text38:
+    display: Otext38
+    type: string
+    required: false
+    description: Field oText38 from Lynq_ME_Trace_Operation
+  o_text39:
+    display: Otext39
+    type: string
+    required: false
+    description: Field oText39 from Lynq_ME_Trace_Operation
+  o_text40:
+    display: Otext40
+    type: string
+    required: false
+    description: Field oText40 from Lynq_ME_Trace_Operation
+  o_text41:
+    display: Otext41
+    type: string
+    required: false
+    description: Field oText41 from Lynq_ME_Trace_Operation
+  o_text42:
+    display: Otext42
+    type: string
+    required: false
+    description: Field oText42 from Lynq_ME_Trace_Operation
+  o_text43:
+    display: Otext43
+    type: string
+    required: false
+    description: Field oText43 from Lynq_ME_Trace_Operation
+  o_text44:
+    display: Otext44
+    type: string
+    required: false
+    description: Field oText44 from Lynq_ME_Trace_Operation
+  o_text45:
+    display: Otext45
+    type: string
+    required: false
+    description: Field oText45 from Lynq_ME_Trace_Operation
+  o_text46:
+    display: Otext46
+    type: string
+    required: false
+    description: Field oText46 from Lynq_ME_Trace_Operation
+  o_text47:
+    display: Otext47
+    type: string
+    required: false
+    description: Field oText47 from Lynq_ME_Trace_Operation
+  o_text48:
+    display: Otext48
+    type: string
+    required: false
+    description: Field oText48 from Lynq_ME_Trace_Operation
+  o_text49:
+    display: Otext49
+    type: string
+    required: false
+    description: Field oText49 from Lynq_ME_Trace_Operation
+  o_text50:
+    display: Otext50
+    type: string
+    required: false
+    description: Field oText50 from Lynq_ME_Trace_Operation
+  o_text51:
+    display: Otext51
+    type: string
+    required: false
+    description: Field oText51 from Lynq_ME_Trace_Operation
+  o_text52:
+    display: Otext52
+    type: string
+    required: false
+    description: Field oText52 from Lynq_ME_Trace_Operation
+  o_text53:
+    display: Otext53
+    type: string
+    required: false
+    description: Field oText53 from Lynq_ME_Trace_Operation
+  o_text54:
+    display: Otext54
+    type: string
+    required: false
+    description: Field oText54 from Lynq_ME_Trace_Operation
+  o_text55:
+    display: Otext55
+    type: string
+    required: false
+    description: Field oText55 from Lynq_ME_Trace_Operation
+  o_text56:
+    display: Otext56
+    type: string
+    required: false
+    description: Field oText56 from Lynq_ME_Trace_Operation
+  o_text57:
+    display: Otext57
+    type: string
+    required: false
+    description: Field oText57 from Lynq_ME_Trace_Operation
+  o_text58:
+    display: Otext58
+    type: string
+    required: false
+    description: Field oText58 from Lynq_ME_Trace_Operation
+  o_text59:
+    display: Otext59
+    type: string
+    required: false
+    description: Field oText59 from Lynq_ME_Trace_Operation
+  o_text60:
+    display: Otext60
+    type: string
+    required: false
+    description: Field oText60 from Lynq_ME_Trace_Operation
+  o_job_number:
+    display: Ojobnumber
+    type: string
+    required: false
+    description: Field oJobNumber from Lynq_ME_Trace_Operation
+  o_job_item:
+    display: Ojobitem
+    type: string
+    required: false
+    description: Field oJobItem from Lynq_ME_Trace_Operation
+  o_job_item_description1:
+    display: Ojobitemdescription1
+    type: string
+    required: false
+    description: Field oJobItemDescription1 from Lynq_ME_Trace_Operation
+  o_job_item_description2:
+    display: Ojobitemdescription2
+    type: string
+    required: false
+    description: Field oJobItemDescription2 from Lynq_ME_Trace_Operation
+  o_trace_date:
+    display: Otracedate
+    type: date
+    required: false
+    description: Field oTraceDate from Lynq_ME_Trace_Operation
+  o_scheduled_department:
+    display: Oscheduleddepartment
+    type: string
+    required: false
+    description: Field oScheduledDepartment from Lynq_ME_Trace_Operation
+  o_scheduled_workcentre:
+    display: Oscheduledworkcentre
+    type: string
+    required: false
+    description: Field oScheduledWorkcentre from Lynq_ME_Trace_Operation
+  o_time_uom_conversion:
+    display: Otimeuomconversion
+    type: decimal
+    required: false
+    description: Field oTimeUOMConversion from Lynq_ME_Trace_Operation
+  o_sequence_number:
+    display: Osequencenumber
+    type: decimal
+    required: false
+    description: Field oSequenceNumber from Lynq_ME_Trace_Operation

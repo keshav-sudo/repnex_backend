@@ -1,0 +1,83 @@
+concept: lot_arc_tracking
+display_name: LotArcTracking
+module: other
+description: Auto-generated representation of the physical table LotArcTracking.
+synonyms:
+- lotarctracking
+- lot arc tracking
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotArcTracking
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from LotArcTracking
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotArcTracking
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from LotArcTracking
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from LotArcTracking
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from LotArcTracking
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from LotArcTracking
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from LotArcTracking
+  parent_warehouse:
+    display: Parentwarehouse
+    type: string
+    required: false
+    description: Field ParentWarehouse from LotArcTracking
+  parent_lot:
+    display: Parentlot
+    type: string
+    required: false
+    description: Field ParentLot from LotArcTracking
+  parent_bin:
+    display: Parentbin
+    type: string
+    required: false
+    description: Field ParentBin from LotArcTracking
+  issue_line:
+    display: Issueline
+    type: decimal
+    required: false
+    description: Field IssueLine from LotArcTracking
+  issue_date:
+    display: Issuedate
+    type: date
+    required: false
+    description: Field IssueDate from LotArcTracking
+  m_allocation_line:
+    display: Mallocationline
+    type: string
+    required: false
+    description: Field MAllocationLine from LotArcTracking
+  master_job:
+    display: Masterjob
+    type: string
+    required: false
+    description: Field MasterJob from LotArcTracking

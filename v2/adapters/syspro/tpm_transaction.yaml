@@ -1,0 +1,23 @@
+concept: tpm_transaction
+table: TpmTransaction
+alias: tt
+fields:
+  trn_date: tt.TrnDate
+  trn_time: tt.TrnTime
+  customer: tt.Customer
+  promotion_code: tt.PromotionCode
+  deduction_code: tt.DeductionCode
+  invoice: tt.Invoice
+  line_number: tt.LineNumber
+  trn_type: tt.TrnType
+  promotion_type: tt.PromotionType
+  reference: tt.Reference
+  amount: tt.Amount
+  operator: tt.Operator
+  trn_year: tt.TrnYear
+  trn_month: tt.TrnMonth
+  journal: tt.Journal
+  invoice2: tt.Invoice2
+  sales_order: tt.SalesOrder
+  adjust_reference: tt.AdjustReference
+  deduction_id: tt.DeductionId

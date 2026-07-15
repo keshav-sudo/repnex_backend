@@ -1,0 +1,23 @@
+concept: gen_rule_detail
+display_name: GenRuleDetail
+module: general_ledger
+description: Auto-generated representation of the physical table GenRuleDetail.
+synonyms:
+- genruledetail
+- gen rule detail
+header_attributes:
+  gl_rule:
+    display: Glrule
+    type: string
+    required: false
+    description: Field GlRule from GenRuleDetail
+  statistical_gl_code:
+    display: Statisticalglcode
+    type: string
+    required: false
+    description: Field StatisticalGlCode from GenRuleDetail
+  destination_gl_code:
+    display: Destinationglcode
+    type: string
+    required: false
+    description: Field DestinationGlCode from GenRuleDetail

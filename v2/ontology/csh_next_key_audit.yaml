@@ -1,0 +1,58 @@
+concept: csh_next_key_audit
+display_name: CshNextKeyAudit
+module: cashbook
+description: Auto-generated representation of the physical table CshNextKeyAudit.
+synonyms:
+- cshnextkeyaudit
+- csh next key audit
+header_attributes:
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from CshNextKeyAudit
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from CshNextKeyAudit
+  post_period:
+    display: Postperiod
+    type: decimal
+    required: false
+    description: Field PostPeriod from CshNextKeyAudit
+  key_issued:
+    display: Keyissued
+    type: decimal
+    required: false
+    description: Field KeyIssued from CshNextKeyAudit
+  allocated_by_program:
+    display: Allocatedbyprogram
+    type: string
+    required: false
+    description: Field AllocatedByProgram from CshNextKeyAudit
+  called_from_program:
+    display: Calledfromprogram
+    type: string
+    required: false
+    description: Field CalledFromProgram from CshNextKeyAudit
+  allocated_date:
+    display: Allocateddate
+    type: date
+    required: false
+    description: Field AllocatedDate from CshNextKeyAudit
+  allocated_by_oper:
+    display: Allocatedbyoper
+    type: string
+    required: false
+    description: Field AllocatedByOper from CshNextKeyAudit
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from CshNextKeyAudit
+  closed_date:
+    display: Closeddate
+    type: date
+    required: false
+    description: Field ClosedDate from CshNextKeyAudit

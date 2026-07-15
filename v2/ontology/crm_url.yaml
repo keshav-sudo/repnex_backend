@@ -1,0 +1,38 @@
+concept: crm_url
+display_name: CrmUrl
+module: crm
+description: Auto-generated representation of the physical table CrmUrl.
+synonyms:
+- crmurl
+- crm url
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmUrl
+  url_type:
+    display: Urltype
+    type: decimal
+    required: false
+    description: Field UrlType from CrmUrl
+  url:
+    display: Url
+    type: string
+    required: false
+    description: Field Url from CrmUrl
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmUrl
+  preferred:
+    display: Preferred
+    type: string
+    required: false
+    description: Field Preferred from CrmUrl
+  private:
+    display: Private
+    type: string
+    required: false
+    description: Field Private from CrmUrl

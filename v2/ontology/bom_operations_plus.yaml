@@ -1,0 +1,48 @@
+concept: bom_operations_plus
+display_name: BomOperations+
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomOperations+.
+synonyms:
+- bomoperations+
+- bom operations plus
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from BomOperations+
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from BomOperations+
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from BomOperations+
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from BomOperations+
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from BomOperations+
+  color:
+    display: Color
+    type: string
+    required: false
+    description: Field Color from BomOperations+
+  max_operation_span:
+    display: Maxoperationspan
+    type: decimal
+    required: false
+    description: Field MaxOperationSpan from BomOperations+
+  operation_slack:
+    display: Operationslack
+    type: decimal
+    required: false
+    description: Field OperationSlack from BomOperations+

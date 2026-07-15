@@ -1,0 +1,53 @@
+concept: sal_gst_code_can_sum
+display_name: SalGstCodeCanSum
+module: other
+description: Auto-generated representation of the physical table SalGstCodeCanSum.
+synonyms:
+- salgstcodecansum
+- sal gst code can sum
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from SalGstCodeCanSum
+  gl_month:
+    display: Glmonth
+    type: decimal
+    required: false
+    description: Field GlMonth from SalGstCodeCanSum
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from SalGstCodeCanSum
+  collect_exempt:
+    display: Collectexempt
+    type: string
+    required: false
+    description: Field CollectExempt from SalGstCodeCanSum
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from SalGstCodeCanSum
+  cur_gst_rate:
+    display: Curgstrate
+    type: decimal
+    required: false
+    description: Field CurGstRate from SalGstCodeCanSum
+  prev_gst_bal:
+    display: Prevgstbal
+    type: decimal
+    required: false
+    description: Field PrevGstBal from SalGstCodeCanSum
+  exempt_val:
+    display: Exemptval
+    type: decimal
+    required: false
+    description: Field ExemptVal from SalGstCodeCanSum
+  fst_value:
+    display: Fstvalue
+    type: decimal
+    required: false
+    description: Field FstValue from SalGstCodeCanSum

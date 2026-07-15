@@ -1,0 +1,328 @@
+concept: qot_master
+display_name: QotMaster
+module: other
+description: Auto-generated representation of the physical table QotMaster.
+synonyms:
+- qotmaster
+- qot master
+header_attributes:
+  quote:
+    display: Quote
+    type: string
+    required: false
+    description: Field Quote from QotMaster
+  quote_version:
+    display: Quoteversion
+    type: decimal
+    required: false
+    description: Field QuoteVersion from QotMaster
+  quote_status:
+    display: Quotestatus
+    type: string
+    required: false
+    description: Field QuoteStatus from QotMaster
+  quote_active:
+    display: Quoteactive
+    type: string
+    required: false
+    description: Field QuoteActive from QotMaster
+  quote_description:
+    display: Quotedescription
+    type: string
+    required: false
+    description: Field QuoteDescription from QotMaster
+  classification:
+    display: Classification
+    type: string
+    required: false
+    description: Field Classification from QotMaster
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from QotMaster
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from QotMaster
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from QotMaster
+  profit_basis:
+    display: Profitbasis
+    type: string
+    required: false
+    description: Field ProfitBasis from QotMaster
+  global_profit_pct:
+    display: Globalprofitpct
+    type: decimal
+    required: false
+    description: Field GlobalProfitPct from QotMaster
+  lab_profit_basis:
+    display: Labprofitbasis
+    type: string
+    required: false
+    description: Field LabProfitBasis from QotMaster
+  labour_profit_pct:
+    display: Labourprofitpct
+    type: decimal
+    required: false
+    description: Field LabourProfitPct from QotMaster
+  mat_profit_basis:
+    display: Matprofitbasis
+    type: string
+    required: false
+    description: Field MatProfitBasis from QotMaster
+  mat_profit_pct:
+    display: Matprofitpct
+    type: decimal
+    required: false
+    description: Field MatProfitPct from QotMaster
+  probability_flag:
+    display: Probabilityflag
+    type: decimal
+    required: false
+    description: Field ProbabilityFlag from QotMaster
+  hierarchy_quote:
+    display: Hierarchyquote
+    type: string
+    required: false
+    description: Field HierarchyQuote from QotMaster
+  date_enquiry:
+    display: Dateenquiry
+    type: date
+    required: false
+    description: Field DateEnquiry from QotMaster
+  date_follow_up:
+    display: Datefollowup
+    type: date
+    required: false
+    description: Field DateFollowUp from QotMaster
+  date_tender_req:
+    display: Datetenderreq
+    type: date
+    required: false
+    description: Field DateTenderReq from QotMaster
+  date_printed:
+    display: Dateprinted
+    type: date
+    required: false
+    description: Field DatePrinted from QotMaster
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from QotMaster
+  date_confirm_rej:
+    display: Dateconfirmrej
+    type: date
+    required: false
+    description: Field DateConfirmRej from QotMaster
+  date_delivery_req:
+    display: Datedeliveryreq
+    type: date
+    required: false
+    description: Field DateDeliveryReq from QotMaster
+  dummy_sales_order:
+    display: Dummysalesorder
+    type: string
+    required: false
+    description: Field DummySalesOrder from QotMaster
+  dummy_so_updated:
+    display: Dummysoupdated
+    type: string
+    required: false
+    description: Field DummySoUpdated from QotMaster
+  implosion_ctl_num:
+    display: Implosionctlnum
+    type: decimal
+    required: false
+    description: Field ImplosionCtlNum from QotMaster
+  cont_price_allow:
+    display: Contpriceallow
+    type: string
+    required: false
+    description: Field ContPriceAllow from QotMaster
+  buying_group1:
+    display: Buyinggroup1
+    type: string
+    required: false
+    description: Field BuyingGroup1 from QotMaster
+  buying_group2:
+    display: Buyinggroup2
+    type: string
+    required: false
+    description: Field BuyingGroup2 from QotMaster
+  buying_group3:
+    display: Buyinggroup3
+    type: string
+    required: false
+    description: Field BuyingGroup3 from QotMaster
+  buying_group4:
+    display: Buyinggroup4
+    type: string
+    required: false
+    description: Field BuyingGroup4 from QotMaster
+  buying_group5:
+    display: Buyinggroup5
+    type: string
+    required: false
+    description: Field BuyingGroup5 from QotMaster
+  inv_disc_code:
+    display: Invdisccode
+    type: string
+    required: false
+    description: Field InvDiscCode from QotMaster
+  line_disc_code:
+    display: Linedisccode
+    type: string
+    required: false
+    description: Field LineDiscCode from QotMaster
+  discount_code:
+    display: Discountcode
+    type: string
+    required: false
+    description: Field DiscountCode from QotMaster
+  price_category_table:
+    display: Pricecategorytable
+    type: string
+    required: false
+    description: Field PriceCategoryTable from QotMaster
+  apply_order_disc:
+    display: Applyorderdisc
+    type: string
+    required: false
+    description: Field ApplyOrderDisc from QotMaster
+  apply_line_disc:
+    display: Applylinedisc
+    type: string
+    required: false
+    description: Field ApplyLineDisc from QotMaster
+  next_non_stock_num:
+    display: Nextnonstocknum
+    type: decimal
+    required: false
+    description: Field NextNonStockNum from QotMaster
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from QotMaster
+  reason_desc:
+    display: Reasondesc
+    type: string
+    required: false
+    description: Field ReasonDesc from QotMaster
+  issue_num:
+    display: Issuenum
+    type: decimal
+    required: false
+    description: Field IssueNum from QotMaster
+  previous_status:
+    display: Previousstatus
+    type: string
+    required: false
+    description: Field PreviousStatus from QotMaster
+  offer_desc1:
+    display: Offerdesc1
+    type: string
+    required: false
+    description: Field OfferDesc1 from QotMaster
+  offer_desc2:
+    display: Offerdesc2
+    type: string
+    required: false
+    description: Field OfferDesc2 from QotMaster
+  offer_desc3:
+    display: Offerdesc3
+    type: string
+    required: false
+    description: Field OfferDesc3 from QotMaster
+  offer_desc4:
+    display: Offerdesc4
+    type: string
+    required: false
+    description: Field OfferDesc4 from QotMaster
+  offer_desc5:
+    display: Offerdesc5
+    type: string
+    required: false
+    description: Field OfferDesc5 from QotMaster
+  offer_desc6:
+    display: Offerdesc6
+    type: string
+    required: false
+    description: Field OfferDesc6 from QotMaster
+  offer_prt1:
+    display: Offerprt1
+    type: string
+    required: false
+    description: Field OfferPrt1 from QotMaster
+  offer_prt2:
+    display: Offerprt2
+    type: string
+    required: false
+    description: Field OfferPrt2 from QotMaster
+  offer_prt3:
+    display: Offerprt3
+    type: string
+    required: false
+    description: Field OfferPrt3 from QotMaster
+  offer_prt4:
+    display: Offerprt4
+    type: string
+    required: false
+    description: Field OfferPrt4 from QotMaster
+  offer_prt5:
+    display: Offerprt5
+    type: string
+    required: false
+    description: Field OfferPrt5 from QotMaster
+  offer_prt6:
+    display: Offerprt6
+    type: string
+    required: false
+    description: Field OfferPrt6 from QotMaster
+  contact:
+    display: Contact
+    type: string
+    required: false
+    description: Field Contact from QotMaster
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from QotMaster
+  fax:
+    display: Fax
+    type: string
+    required: false
+    description: Field Fax from QotMaster
+  telephone:
+    display: Telephone
+    type: string
+    required: false
+    description: Field Telephone from QotMaster
+  non_stock_prefix:
+    display: Nonstockprefix
+    type: string
+    required: false
+    description: Field NonStockPrefix from QotMaster
+  change_date:
+    display: Changedate
+    type: date
+    required: false
+    description: Field ChangeDate from QotMaster
+  change_time:
+    display: Changetime
+    type: decimal
+    required: false
+    description: Field ChangeTime from QotMaster
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from QotMaster

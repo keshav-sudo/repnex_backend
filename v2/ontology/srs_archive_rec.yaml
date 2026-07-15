@@ -1,0 +1,43 @@
+concept: srs_archive_rec
+display_name: SrsArchiveREC
+module: other
+description: Auto-generated representation of the physical table SrsArchiveREC.
+synonyms:
+- srsarchiverec
+- srs archive rec
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveREC
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveREC
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveREC
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveREC
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveREC
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveREC
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from SrsArchiveREC

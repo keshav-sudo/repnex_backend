@@ -1,0 +1,568 @@
+concept: mrp_sug_job_al_lab
+display_name: MrpSugJobAlLab
+module: mrp
+description: Auto-generated representation of the physical table MrpSugJobAlLab.
+synonyms:
+- mrpsugjoballab
+- mrp sug job al lab
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpSugJobAlLab
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from MrpSugJobAlLab
+  subcontract_op:
+    display: Subcontractop
+    type: string
+    required: false
+    description: Field SubcontractOp from MrpSugJobAlLab
+  i_machine:
+    display: Imachine
+    type: string
+    required: false
+    description: Field IMachine from MrpSugJobAlLab
+  i_exp_unit_run_tim:
+    display: Iexpunitruntim
+    type: decimal
+    required: false
+    description: Field IExpUnitRunTim from MrpSugJobAlLab
+  i_exp_set_up_time:
+    display: Iexpsetuptime
+    type: decimal
+    required: false
+    description: Field IExpSetUpTime from MrpSugJobAlLab
+  i_exp_startup_time:
+    display: Iexpstartuptime
+    type: decimal
+    required: false
+    description: Field IExpStartupTime from MrpSugJobAlLab
+  i_exp_shutdown_tim:
+    display: Iexpshutdowntim
+    type: decimal
+    required: false
+    description: Field IExpShutdownTim from MrpSugJobAlLab
+  i_wait_time:
+    display: Iwaittime
+    type: decimal
+    required: false
+    description: Field IWaitTime from MrpSugJobAlLab
+  i_wc_rate_ind:
+    display: Iwcrateind
+    type: decimal
+    required: false
+    description: Field IWcRateInd from MrpSugJobAlLab
+  i_startup_qty:
+    display: Istartupqty
+    type: decimal
+    required: false
+    description: Field IStartupQty from MrpSugJobAlLab
+  i_capacity_reqd:
+    display: Icapacityreqd
+    type: decimal
+    required: false
+    description: Field ICapacityReqd from MrpSugJobAlLab
+  i_max_work_opertrs:
+    display: Imaxworkopertrs
+    type: decimal
+    required: false
+    description: Field IMaxWorkOpertrs from MrpSugJobAlLab
+  i_max_prod_units:
+    display: Imaxprodunits
+    type: decimal
+    required: false
+    description: Field IMaxProdUnits from MrpSugJobAlLab
+  i_time_taken:
+    display: Itimetaken
+    type: decimal
+    required: false
+    description: Field ITimeTaken from MrpSugJobAlLab
+  i_quantity:
+    display: Iquantity
+    type: decimal
+    required: false
+    description: Field IQuantity from MrpSugJobAlLab
+  max_op_span:
+    display: Maxopspan
+    type: decimal
+    required: false
+    description: Field MaxOpSpan from MrpSugJobAlLab
+  op_slack:
+    display: Opslack
+    type: decimal
+    required: false
+    description: Field OpSlack from MrpSugJobAlLab
+  i_startup_qty_ent:
+    display: Istartupqtyent
+    type: decimal
+    required: false
+    description: Field IStartupQtyEnt from MrpSugJobAlLab
+  i_quantity_ent:
+    display: Iquantityent
+    type: decimal
+    required: false
+    description: Field IQuantityEnt from MrpSugJobAlLab
+  i_exp_unit_run_tim_ent:
+    display: Iexpunitruntiment
+    type: decimal
+    required: false
+    description: Field IExpUnitRunTimEnt from MrpSugJobAlLab
+  i_time_taken_ent:
+    display: Itimetakenent
+    type: decimal
+    required: false
+    description: Field ITimeTakenEnt from MrpSugJobAlLab
+  sub_supplier:
+    display: Subsupplier
+    type: string
+    required: false
+    description: Field SubSupplier from MrpSugJobAlLab
+  sup_po_stk_code:
+    display: Suppostkcode
+    type: string
+    required: false
+    description: Field SupPoStkCode from MrpSugJobAlLab
+  sub_qty_per:
+    display: Subqtyper
+    type: decimal
+    required: false
+    description: Field SubQtyPer from MrpSugJobAlLab
+  sub_order_uom:
+    display: Suborderuom
+    type: string
+    required: false
+    description: Field SubOrderUom from MrpSugJobAlLab
+  sub_unit_value:
+    display: Subunitvalue
+    type: decimal
+    required: false
+    description: Field SubUnitValue from MrpSugJobAlLab
+  sub_what_if_value:
+    display: Subwhatifvalue
+    type: decimal
+    required: false
+    description: Field SubWhatIfValue from MrpSugJobAlLab
+  sub_planner:
+    display: Subplanner
+    type: string
+    required: false
+    description: Field SubPlanner from MrpSugJobAlLab
+  sub_buyer:
+    display: Subbuyer
+    type: string
+    required: false
+    description: Field SubBuyer from MrpSugJobAlLab
+  sub_lead_time:
+    display: Subleadtime
+    type: decimal
+    required: false
+    description: Field SubLeadTime from MrpSugJobAlLab
+  sub_dock_to_stock:
+    display: Subdocktostock
+    type: decimal
+    required: false
+    description: Field SubDockToStock from MrpSugJobAlLab
+  sub_offsite_days:
+    display: Suboffsitedays
+    type: decimal
+    required: false
+    description: Field SubOffsiteDays from MrpSugJobAlLab
+  sch_start_date:
+    display: Schstartdate
+    type: date
+    required: false
+    description: Field SchStartDate from MrpSugJobAlLab
+  sch_start_time:
+    display: Schstarttime
+    type: decimal
+    required: false
+    description: Field SchStartTime from MrpSugJobAlLab
+  sch_end_date:
+    display: Schenddate
+    type: date
+    required: false
+    description: Field SchEndDate from MrpSugJobAlLab
+  sch_end_time:
+    display: Schendtime
+    type: decimal
+    required: false
+    description: Field SchEndTime from MrpSugJobAlLab
+  operation_status:
+    display: Operationstatus
+    type: string
+    required: false
+    description: Field OperationStatus from MrpSugJobAlLab
+  op_split_flag:
+    display: Opsplitflag
+    type: string
+    required: false
+    description: Field OpSplitFlag from MrpSugJobAlLab
+  max_op_delay:
+    display: Maxopdelay
+    type: decimal
+    required: false
+    description: Field MaxOpDelay from MrpSugJobAlLab
+  unit_value_reqd:
+    display: Unitvaluereqd
+    type: decimal
+    required: false
+    description: Field UnitValueReqd from MrpSugJobAlLab
+  run_time_issued:
+    display: Runtimeissued
+    type: decimal
+    required: false
+    description: Field RunTimeIssued from MrpSugJobAlLab
+  set_up_issued:
+    display: Setupissued
+    type: decimal
+    required: false
+    description: Field SetUpIssued from MrpSugJobAlLab
+  start_up_issued:
+    display: Startupissued
+    type: decimal
+    required: false
+    description: Field StartUpIssued from MrpSugJobAlLab
+  shutdown_issued:
+    display: Shutdownissued
+    type: decimal
+    required: false
+    description: Field ShutdownIssued from MrpSugJobAlLab
+  value_issued:
+    display: Valueissued
+    type: decimal
+    required: false
+    description: Field ValueIssued from MrpSugJobAlLab
+  pieces_completed:
+    display: Piecescompleted
+    type: decimal
+    required: false
+    description: Field PiecesCompleted from MrpSugJobAlLab
+  value_billed:
+    display: Valuebilled
+    type: decimal
+    required: false
+    description: Field ValueBilled from MrpSugJobAlLab
+  oper_completed:
+    display: Opercompleted
+    type: string
+    required: false
+    description: Field OperCompleted from MrpSugJobAlLab
+  qty_completed:
+    display: Qtycompleted
+    type: decimal
+    required: false
+    description: Field QtyCompleted from MrpSugJobAlLab
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from MrpSugJobAlLab
+  last_scrap_reason:
+    display: Lastscrapreason
+    type: string
+    required: false
+    description: Field LastScrapReason from MrpSugJobAlLab
+  planned_queue_date:
+    display: Plannedqueuedate
+    type: date
+    required: false
+    description: Field PlannedQueueDate from MrpSugJobAlLab
+  planned_start_date:
+    display: Plannedstartdate
+    type: date
+    required: false
+    description: Field PlannedStartDate from MrpSugJobAlLab
+  planned_end_date:
+    display: Plannedenddate
+    type: date
+    required: false
+    description: Field PlannedEndDate from MrpSugJobAlLab
+  actual_queue_date:
+    display: Actualqueuedate
+    type: date
+    required: false
+    description: Field ActualQueueDate from MrpSugJobAlLab
+  actual_start_date:
+    display: Actualstartdate
+    type: date
+    required: false
+    description: Field ActualStartDate from MrpSugJobAlLab
+  actual_finish_date:
+    display: Actualfinishdate
+    type: date
+    required: false
+    description: Field ActualFinishDate from MrpSugJobAlLab
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from MrpSugJobAlLab
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from MrpSugJobAlLab
+  non_conform_flag:
+    display: Nonconformflag
+    type: string
+    required: false
+    description: Field NonConformFlag from MrpSugJobAlLab
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from MrpSugJobAlLab
+  work_centre_desc:
+    display: Workcentredesc
+    type: string
+    required: false
+    description: Field WorkCentreDesc from MrpSugJobAlLab
+  elapsed_time:
+    display: Elapsedtime
+    type: decimal
+    required: false
+    description: Field ElapsedTime from MrpSugJobAlLab
+  movement_time:
+    display: Movementtime
+    type: decimal
+    required: false
+    description: Field MovementTime from MrpSugJobAlLab
+  unit_num_of_pieces:
+    display: Unitnumofpieces
+    type: decimal
+    required: false
+    description: Field UnitNumOfPieces from MrpSugJobAlLab
+  inspection_flag:
+    display: Inspectionflag
+    type: string
+    required: false
+    description: Field InspectionFlag from MrpSugJobAlLab
+  milestone:
+    display: Milestone
+    type: string
+    required: false
+    description: Field Milestone from MrpSugJobAlLab
+  minor_set_up:
+    display: Minorsetup
+    type: decimal
+    required: false
+    description: Field MinorSetUp from MrpSugJobAlLab
+  minor_set_up_code:
+    display: Minorsetupcode
+    type: string
+    required: false
+    description: Field MinorSetUpCode from MrpSugJobAlLab
+  tool_set:
+    display: Toolset
+    type: string
+    required: false
+    description: Field ToolSet from MrpSugJobAlLab
+  tool_set_qty:
+    display: Toolsetqty
+    type: decimal
+    required: false
+    description: Field ToolSetQty from MrpSugJobAlLab
+  tool_consumption:
+    display: Toolconsumption
+    type: decimal
+    required: false
+    description: Field ToolConsumption from MrpSugJobAlLab
+  queue_time:
+    display: Queuetime
+    type: decimal
+    required: false
+    description: Field QueueTime from MrpSugJobAlLab
+  milestone_comp:
+    display: Milestonecomp
+    type: string
+    required: false
+    description: Field MilestoneComp from MrpSugJobAlLab
+  calc_elapsed_time:
+    display: Calcelapsedtime
+    type: string
+    required: false
+    description: Field CalcElapsedTime from MrpSugJobAlLab
+  hier_head1:
+    display: Hierhead1
+    type: string
+    required: false
+    description: Field HierHead1 from MrpSugJobAlLab
+  hier_head2:
+    display: Hierhead2
+    type: string
+    required: false
+    description: Field HierHead2 from MrpSugJobAlLab
+  hier_head3:
+    display: Hierhead3
+    type: string
+    required: false
+    description: Field HierHead3 from MrpSugJobAlLab
+  hier_head4:
+    display: Hierhead4
+    type: string
+    required: false
+    description: Field HierHead4 from MrpSugJobAlLab
+  hier_head5:
+    display: Hierhead5
+    type: string
+    required: false
+    description: Field HierHead5 from MrpSugJobAlLab
+  capacity_issued:
+    display: Capacityissued
+    type: decimal
+    required: false
+    description: Field CapacityIssued from MrpSugJobAlLab
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpSugJobAlLab
+  op_comp_via_job:
+    display: Opcompviajob
+    type: string
+    required: false
+    description: Field OpCompViaJob from MrpSugJobAlLab
+  transfer_qty_or_pct:
+    display: Transferqtyorpct
+    type: string
+    required: false
+    description: Field TransferQtyOrPct from MrpSugJobAlLab
+  transfer_qty_pct:
+    display: Transferqtypct
+    type: decimal
+    required: false
+    description: Field TransferQtyPct from MrpSugJobAlLab
+  parent_qty_planned:
+    display: Parentqtyplanned
+    type: decimal
+    required: false
+    description: Field ParentQtyPlanned from MrpSugJobAlLab
+  oper_yield_pct:
+    display: Operyieldpct
+    type: decimal
+    required: false
+    description: Field OperYieldPct from MrpSugJobAlLab
+  oper_yield_qty:
+    display: Operyieldqty
+    type: decimal
+    required: false
+    description: Field OperYieldQty from MrpSugJobAlLab
+  par_iss_qty:
+    display: Parissqty
+    type: decimal
+    required: false
+    description: Field ParIssQty from MrpSugJobAlLab
+  hours_billed:
+    display: Hoursbilled
+    type: decimal
+    required: false
+    description: Field HoursBilled from MrpSugJobAlLab
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from MrpSugJobAlLab
+  qty_scrapped_ent:
+    display: Qtyscrappedent
+    type: decimal
+    required: false
+    description: Field QtyScrappedEnt from MrpSugJobAlLab
+  transfer_qty_pct_ent:
+    display: Transferqtypctent
+    type: decimal
+    required: false
+    description: Field TransferQtyPctEnt from MrpSugJobAlLab
+  parent_qty_plan_ent:
+    display: Parentqtyplanent
+    type: decimal
+    required: false
+    description: Field ParentQtyPlanEnt from MrpSugJobAlLab
+  oper_yield_qty_ent:
+    display: Operyieldqtyent
+    type: decimal
+    required: false
+    description: Field OperYieldQtyEnt from MrpSugJobAlLab
+  par_iss_qty_ent:
+    display: Parissqtyent
+    type: decimal
+    required: false
+    description: Field ParIssQtyEnt from MrpSugJobAlLab
+  qty_completed_ent:
+    display: Qtycompletedent
+    type: decimal
+    required: false
+    description: Field QtyCompletedEnt from MrpSugJobAlLab
+  resource_mask:
+    display: Resourcemask
+    type: string
+    required: false
+    description: Field ResourceMask from MrpSugJobAlLab
+  sch_start_run_date:
+    display: Schstartrundate
+    type: date
+    required: false
+    description: Field SchStartRunDate from MrpSugJobAlLab
+  sch_start_run_time:
+    display: Schstartruntime
+    type: decimal
+    required: false
+    description: Field SchStartRunTime from MrpSugJobAlLab
+  scheduled_machine:
+    display: Scheduledmachine
+    type: string
+    required: false
+    description: Field ScheduledMachine from MrpSugJobAlLab
+  allow_op_split:
+    display: Allowopsplit
+    type: string
+    required: false
+    description: Field AllowOpSplit from MrpSugJobAlLab
+  created_by:
+    display: Createdby
+    type: string
+    required: false
+    description: Field CreatedBy from MrpSugJobAlLab
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from MrpSugJobAlLab
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from MrpSugJobAlLab
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from MrpSugJobAlLab
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from MrpSugJobAlLab
+  job_nest:
+    display: Jobnest
+    type: string
+    required: false
+    description: Field JobNest from MrpSugJobAlLab
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from MrpSugJobAlLab
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from MrpSugJobAlLab
+  production_bin:
+    display: Productionbin
+    type: string
+    required: false
+    description: Field ProductionBin from MrpSugJobAlLab

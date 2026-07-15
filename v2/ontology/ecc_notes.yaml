@@ -1,0 +1,43 @@
+concept: ecc_notes
+display_name: EccNotes
+module: other
+description: Auto-generated representation of the physical table EccNotes.
+synonyms:
+- eccnotes
+- ecc notes
+header_attributes:
+  ecc_note_type:
+    display: Eccnotetype
+    type: string
+    required: false
+    description: Field EccNoteType from EccNotes
+  note_document:
+    display: Notedocument
+    type: string
+    required: false
+    description: Field NoteDocument from EccNotes
+  note_sequence:
+    display: Notesequence
+    type: decimal
+    required: false
+    description: Field NoteSequence from EccNotes
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from EccNotes
+  other_maintain:
+    display: Othermaintain
+    type: decimal
+    required: false
+    description: Field OtherMaintain from EccNotes
+  date_changed:
+    display: Datechanged
+    type: date
+    required: false
+    description: Field DateChanged from EccNotes
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EccNotes

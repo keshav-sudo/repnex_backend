@@ -1,0 +1,10 @@
+concept: crm_url
+table: CrmUrl
+alias: cu
+fields:
+  contact_id: cu.ContactId
+  url_type: cu.UrlType
+  url: cu.Url
+  description: cu.Description
+  preferred: cu.Preferred
+  private: cu.Private

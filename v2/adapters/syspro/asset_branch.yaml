@@ -1,0 +1,12 @@
+concept: asset_branch
+table: AssetBranch
+alias: ab2
+fields:
+  branch: ab2.Branch
+  description: ab2.Description
+  mtd_labour: ab2.MtdLabour
+  mtd_revenue: ab2.MtdRevenue
+  mtd_purchases: ab2.MtdPurchases
+  ytd_labour: ab2.YtdLabour
+  ytd_revenue: ab2.YtdRevenue
+  ytd_purchases: ab2.YtdPurchases

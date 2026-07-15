@@ -1,0 +1,15 @@
+concept: sqm_arc_nc_tran
+table: SqmArcNcTran
+alias: sant
+fields:
+  conform_number: sant.ConformNumber
+  trn_date: sant.TrnDate
+  line: sant.Line
+  conform_area: sant.ConformArea
+  action_number: sant.ActionNumber
+  stake_holder: sant.StakeHolder
+  action_type: sant.ActionType
+  field_updated: sant.FieldUpdated
+  old_field: sant.OldField
+  new_field: sant.NewField
+  tran_note: sant.TranNote

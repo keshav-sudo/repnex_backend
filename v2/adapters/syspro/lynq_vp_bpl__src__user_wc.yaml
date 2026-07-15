@@ -1,0 +1,7 @@
+concept: lynq_vp_bpl__src__user_wc
+table: Lynq_VP_BPL_Src_UserWc
+alias: lvpbplsuw
+fields:
+  id: lvpbplsuw.ID
+  usr_name: lvpbplsuw.UsrName
+  wc_id: lvpbplsuw.WcID

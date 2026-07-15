@@ -1,0 +1,15 @@
+concept: asset_health_bal
+table: AssetHealthBal
+alias: ahb
+fields:
+  run_date_time: ahb.RunDateTime
+  asset: ahb.Asset
+  origin: ahb.Origin
+  type: ahb.Type
+  hcheck_year: ahb.HcheckYear
+  hcheck_month: ahb.HcheckMonth
+  actual_value: ahb.ActualValue
+  calc_value: ahb.CalcValue
+  diff_value: ahb.DiffValue
+  message: ahb.Message
+  self_healing_flag: ahb.SelfHealingFlag

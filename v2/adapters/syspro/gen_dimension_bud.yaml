@@ -1,0 +1,27 @@
+concept: gen_dimension_bud
+table: GenDimensionBud
+alias: gdb
+fields:
+  company: gdb.Company
+  gl_code: gdb.GlCode
+  dimension_category: gdb.DimensionCategory
+  dimension_code: gdb.DimensionCode
+  budget_type: gdb.BudgetType
+  budget_number: gdb.BudgetNumber
+  revision_level: gdb.RevisionLevel
+  date_last_modified: gdb.DateLastModified
+  budget1: gdb.Budget1
+  budget2: gdb.Budget2
+  budget3: gdb.Budget3
+  budget4: gdb.Budget4
+  budget5: gdb.Budget5
+  budget6: gdb.Budget6
+  budget7: gdb.Budget7
+  budget8: gdb.Budget8
+  budget9: gdb.Budget9
+  budget10: gdb.Budget10
+  budget11: gdb.Budget11
+  budget12: gdb.Budget12
+  budget13: gdb.Budget13
+  budget14: gdb.Budget14
+  budget15: gdb.Budget15

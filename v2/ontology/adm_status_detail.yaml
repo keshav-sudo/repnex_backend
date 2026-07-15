@@ -1,0 +1,28 @@
+concept: adm_status_detail
+display_name: AdmStatusDetail
+module: administration
+description: Auto-generated representation of the physical table AdmStatusDetail.
+synonyms:
+- admstatusdetail
+- adm status detail
+header_attributes:
+  status_entity:
+    display: Statusentity
+    type: string
+    required: false
+    description: Field StatusEntity from AdmStatusDetail
+  status_code:
+    display: Statuscode
+    type: string
+    required: false
+    description: Field StatusCode from AdmStatusDetail
+  status_business_proc:
+    display: Statusbusinessproc
+    type: string
+    required: false
+    description: Field StatusBusinessProc from AdmStatusDetail
+  status_process_flag:
+    display: Statusprocessflag
+    type: string
+    required: false
+    description: Field StatusProcessFlag from AdmStatusDetail

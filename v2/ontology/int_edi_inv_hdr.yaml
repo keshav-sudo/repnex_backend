@@ -1,0 +1,158 @@
+concept: int_edi_inv_hdr
+display_name: IntEdiInvHdr
+module: other
+description: Auto-generated representation of the physical table IntEdiInvHdr.
+synonyms:
+- intediinvhdr
+- int edi inv hdr
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from IntEdiInvHdr
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from IntEdiInvHdr
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from IntEdiInvHdr
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from IntEdiInvHdr
+  document_date:
+    display: Documentdate
+    type: date
+    required: false
+    description: Field DocumentDate from IntEdiInvHdr
+  salesperson:
+    display: Salesperson
+    type: string
+    required: false
+    description: Field Salesperson from IntEdiInvHdr
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from IntEdiInvHdr
+  last_del_note:
+    display: Lastdelnote
+    type: string
+    required: false
+    description: Field LastDelNote from IntEdiInvHdr
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from IntEdiInvHdr
+  sales_order_date:
+    display: Salesorderdate
+    type: date
+    required: false
+    description: Field SalesOrderDate from IntEdiInvHdr
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from IntEdiInvHdr
+  doc_value_exc_tax:
+    display: Docvalueexctax
+    type: decimal
+    required: false
+    description: Field DocValueExcTax from IntEdiInvHdr
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from IntEdiInvHdr
+  gross_doc_value:
+    display: Grossdocvalue
+    type: decimal
+    required: false
+    description: Field GrossDocValue from IntEdiInvHdr
+  total_discount:
+    display: Totaldiscount
+    type: decimal
+    required: false
+    description: Field TotalDiscount from IntEdiInvHdr
+  ship_to_name:
+    display: Shiptoname
+    type: string
+    required: false
+    description: Field ShipToName from IntEdiInvHdr
+  ship_address1:
+    display: Shipaddress1
+    type: string
+    required: false
+    description: Field ShipAddress1 from IntEdiInvHdr
+  ship_address2:
+    display: Shipaddress2
+    type: string
+    required: false
+    description: Field ShipAddress2 from IntEdiInvHdr
+  ship_address3:
+    display: Shipaddress3
+    type: string
+    required: false
+    description: Field ShipAddress3 from IntEdiInvHdr
+  ship_address3_loc:
+    display: Shipaddress3Loc
+    type: string
+    required: false
+    description: Field ShipAddress3Loc from IntEdiInvHdr
+  ship_address4:
+    display: Shipaddress4
+    type: string
+    required: false
+    description: Field ShipAddress4 from IntEdiInvHdr
+  ship_address5:
+    display: Shipaddress5
+    type: string
+    required: false
+    description: Field ShipAddress5 from IntEdiInvHdr
+  postal_code:
+    display: Postalcode
+    type: string
+    required: false
+    description: Field PostalCode from IntEdiInvHdr
+  ship_gps_lat:
+    display: Shipgpslat
+    type: decimal
+    required: false
+    description: Field ShipGpsLat from IntEdiInvHdr
+  ship_gps_long:
+    display: Shipgpslong
+    type: decimal
+    required: false
+    description: Field ShipGpsLong from IntEdiInvHdr
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from IntEdiInvHdr
+  terms_code:
+    display: Termscode
+    type: string
+    required: false
+    description: Field TermsCode from IntEdiInvHdr
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from IntEdiInvHdr
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from IntEdiInvHdr
+  extended_tax_code:
+    display: Extendedtaxcode
+    type: string
+    required: false
+    description: Field ExtendedTaxCode from IntEdiInvHdr

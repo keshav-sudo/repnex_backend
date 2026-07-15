@@ -1,0 +1,26 @@
+concept: gen_category
+table: GenCategory
+alias: gc
+fields:
+  reval_category: gc.RevalCategory
+  description: gc.Description
+  type1: gc.Type1
+  type2: gc.Type2
+  type3: gc.Type3
+  type4: gc.Type4
+  type5: gc.Type5
+  type6: gc.Type6
+  type7: gc.Type7
+  type8: gc.Type8
+  type9: gc.Type9
+  type10: gc.Type10
+  gain_loss_account1: gc.GainLossAccount1
+  gain_loss_account2: gc.GainLossAccount2
+  gain_loss_account3: gc.GainLossAccount3
+  gain_loss_account4: gc.GainLossAccount4
+  gain_loss_account5: gc.GainLossAccount5
+  gain_loss_account6: gc.GainLossAccount6
+  gain_loss_account7: gc.GainLossAccount7
+  gain_loss_account8: gc.GainLossAccount8
+  gain_loss_account9: gc.GainLossAccount9
+  gain_loss_account10: gc.GainLossAccount10

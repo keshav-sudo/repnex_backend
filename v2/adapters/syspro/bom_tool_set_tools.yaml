@@ -1,0 +1,8 @@
+concept: bom_tool_set_tools
+table: BomToolSetTools
+alias: btst
+fields:
+  toolset: btst.Toolset
+  tool: btst.Tool
+  quantity_used: btst.QuantityUsed
+  usage_flad: btst.UsageFlad

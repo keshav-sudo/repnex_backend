@@ -1,0 +1,13 @@
+concept: sqm_nc_department
+table: SqmNcDepartment
+alias: snd
+fields:
+  department: snd.Department
+  description: snd.Description
+  owner: snd.Owner
+  manager: snd.Manager
+  investigator: snd.Investigator
+  close_out_actions: snd.CloseOutActions
+  ca_actions: snd.CaActions
+  pa_actions: snd.PaActions
+  auditor: snd.Auditor

@@ -1,0 +1,19 @@
+concept: iop_proxies
+table: IopProxies
+alias: ip3
+fields:
+  stock_code: ip3.StockCode
+  version: ip3.Version
+  release: ip3.Release
+  warehouse: ip3.Warehouse
+  proxy_stock_code: ip3.ProxyStockCode
+  proxy_version: ip3.ProxyVersion
+  proxy_release: ip3.ProxyRelease
+  proxy_end_date: ip3.ProxyEndDate
+  use_percent: ip3.UsePercent
+  reduce_proxy: ip3.ReduceProxy
+  proxy_start_date: ip3.ProxyStartDate
+  reduce_percent: ip3.ReducePercent
+  proxy_warehouse: ip3.ProxyWarehouse
+  use_warehouse_flag: ip3.UseWarehouseFlag
+  use_proxy_wh_flag: ip3.UseProxyWhFlag

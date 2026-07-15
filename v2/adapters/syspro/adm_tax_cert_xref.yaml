@@ -1,0 +1,7 @@
+concept: adm_tax_cert_xref
+table: AdmTaxCertXref
+alias: atcx
+fields:
+  customer: atcx.Customer
+  client_id: atcx.ClientId
+  states_list: atcx.StatesList

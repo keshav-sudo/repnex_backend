@@ -1,0 +1,18 @@
+concept: ar_perm_entry_format
+display_name: ArPermEntryFormat
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArPermEntryFormat.
+synonyms:
+- arpermentryformat
+- ar perm entry format
+header_attributes:
+  perm_entry_format:
+    display: Permentryformat
+    type: string
+    required: false
+    description: Field PermEntryFormat from ArPermEntryFormat
+  preferences:
+    display: Preferences
+    type: string
+    required: false
+    description: Field Preferences from ArPermEntryFormat

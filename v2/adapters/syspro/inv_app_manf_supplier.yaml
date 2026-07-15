@@ -1,0 +1,15 @@
+concept: inv_app_manf_supplier
+table: InvAppManfSupplier
+alias: iams1
+fields:
+  stock_code: iams1.StockCode
+  app_manufacturer: iams1.AppManufacturer
+  man_part_number: iams1.ManPartNumber
+  supplier: iams1.Supplier
+  supplier_info1: iams1.SupplierInfo1
+  supplier_info2: iams1.SupplierInfo2
+  supplier_info3: iams1.SupplierInfo3
+  supplier_info4: iams1.SupplierInfo4
+  supplier_info5: iams1.SupplierInfo5
+  supplier_info6: iams1.SupplierInfo6
+  preferred_flag: iams1.PreferredFlag

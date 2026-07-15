@@ -1,0 +1,13 @@
+concept: sor_customer_bal
+table: SorCustomerBal
+alias: scb
+fields:
+  run_date_time: scb.RunDateTime
+  customer: scb.Customer
+  outst_ord_val: scb.OutstOrdVal
+  num_outst_ord: scb.NumOutstOrd
+  rel_ord_os_value: scb.RelOrdOsValue
+  ar_cus_outst_ord_val: scb.ArCusOutstOrdVal
+  ar_cus_num_outst_ord: scb.ArCusNumOutstOrd
+  ar_cus_rel_ord_os_value: scb.ArCusRelOrdOsValue
+  message: scb.Message

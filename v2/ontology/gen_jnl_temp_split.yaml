@@ -1,0 +1,43 @@
+concept: gen_jnl_temp_split
+display_name: GenJnlTempSplit
+module: general_ledger
+description: Auto-generated representation of the physical table GenJnlTempSplit.
+synonyms:
+- genjnltempsplit
+- gen jnl temp split
+header_attributes:
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from GenJnlTempSplit
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from GenJnlTempSplit
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from GenJnlTempSplit
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from GenJnlTempSplit
+  template_line_no:
+    display: Templatelineno
+    type: decimal
+    required: false
+    description: Field TemplateLineNo from GenJnlTempSplit
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenJnlTempSplit
+  entry_value:
+    display: Entryvalue
+    type: decimal
+    required: false
+    description: Field EntryValue from GenJnlTempSplit

@@ -1,0 +1,58 @@
+concept: mrp_requirement
+display_name: MrpRequirement
+module: mrp
+description: Auto-generated representation of the physical table MrpRequirement.
+synonyms:
+- mrprequirement
+- mrp requirement
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpRequirement
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpRequirement
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpRequirement
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from MrpRequirement
+  supply_demand_date:
+    display: Supplydemanddate
+    type: date
+    required: false
+    description: Field SupplyDemandDate from MrpRequirement
+  available_stock:
+    display: Availablestock
+    type: decimal
+    required: false
+    description: Field AvailableStock from MrpRequirement
+  planned_qty_due:
+    display: Plannedqtydue
+    type: decimal
+    required: false
+    description: Field PlannedQtyDue from MrpRequirement
+  suggested_qty:
+    display: Suggestedqty
+    type: decimal
+    required: false
+    description: Field SuggestedQty from MrpRequirement
+  demand_qty:
+    display: Demandqty
+    type: decimal
+    required: false
+    description: Field DemandQty from MrpRequirement
+  net_result:
+    display: Netresult
+    type: decimal
+    required: false
+    description: Field NetResult from MrpRequirement

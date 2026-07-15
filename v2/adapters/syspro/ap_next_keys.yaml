@@ -1,0 +1,6 @@
+concept: ap_next_keys
+table: ApNextKeys
+alias: ank
+fields:
+  key_type: ank.KeyType
+  key_next: ank.KeyNext

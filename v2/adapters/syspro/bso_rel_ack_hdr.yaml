@@ -1,0 +1,19 @@
+concept: bso_rel_ack_hdr
+table: BsoRelAckHdr
+alias: brah
+fields:
+  customer: brah.Customer
+  customer_po_number: brah.CustomerPoNumber
+  cust_stock_code: brah.CustStockCode
+  sequence_num: brah.SequenceNum
+  req_rel_date: brah.ReqRelDate
+  rel_reference: brah.RelReference
+  open_cume_qty: brah.OpenCumeQty
+  uom: brah.Uom
+  release_manager: brah.ReleaseManager
+  sales_order: brah.SalesOrder
+  stock_code: brah.StockCode
+  description: brah.Description
+  decimals: brah.Decimals
+  ack_printed: brah.AckPrinted
+  ack_edi_flag: brah.AckEdiFlag

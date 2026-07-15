@@ -1,0 +1,23 @@
+concept: wip_branch
+table: WipBranch
+alias: wb1
+fields:
+  branch: wb1.Branch
+  description: wb1.Description
+  wip_brn_gl_code: wb1.WipBrnGlCode
+  wip_var_brn_gl_code: wb1.WipVarBrnGlCode
+  wip_auto_brn_gl_code: wb1.WipAutoBrnGlCode
+  wip_insp_brn_gl_code: wb1.WipInspBrnGlCode
+  branch_job_prefix: wb1.BranchJobPrefix
+  branch_job_suffix: wb1.BranchJobSuffix
+  wip_inspect_prefix: wb1.WipInspectPrefix
+  next_insp_reference: wb1.NextInspReference
+  branch_addr_build: wb1.BranchAddrBuild
+  branch_addr1: wb1.BranchAddr1
+  branch_addr2: wb1.BranchAddr2
+  branch_addr_loc: wb1.BranchAddrLoc
+  branch_addr3: wb1.BranchAddr3
+  branch_addr_country: wb1.BranchAddrCountry
+  branch_postal_code: wb1.BranchPostalCode
+  branch_gps_lat: wb1.BranchGpsLat
+  branch_gps_long: wb1.BranchGpsLong

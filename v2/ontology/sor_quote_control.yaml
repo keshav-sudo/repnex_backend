@@ -1,0 +1,18 @@
+concept: sor_quote_control
+display_name: SorQuoteControl
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorQuoteControl.
+synonyms:
+- sorquotecontrol
+- sor quote control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from SorQuoteControl
+  next_quick_quote:
+    display: Nextquickquote
+    type: decimal
+    required: false
+    description: Field NextQuickQuote from SorQuoteControl

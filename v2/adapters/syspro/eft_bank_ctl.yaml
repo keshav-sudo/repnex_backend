@@ -1,0 +1,16 @@
+concept: eft_bank_ctl
+table: EftBankCtl
+alias: ebc
+fields:
+  bank: ebc.Bank
+  eft_xml_output: ebc.EftXmlOutput
+  eft_xml_file_name: ebc.EftXmlFileName
+  eft_xml_location: ebc.EftXmlLocation
+  eft_xml_directory: ebc.EftXmlDirectory
+  eft_xml_extract_type: ebc.EftXmlExtractType
+  eft_global_ref: ebc.EftGlobalRef
+  format_code: ebc.FormatCode
+  company_name: ebc.CompanyName
+  pay_file_name: ebc.PayFileName
+  pay_location: ebc.PayLocation
+  pay_directory: ebc.PayDirectory

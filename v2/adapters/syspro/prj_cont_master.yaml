@@ -1,0 +1,44 @@
+concept: prj_cont_master
+table: PrjContMaster
+alias: pcm
+fields:
+  contract: pcm.Contract
+  contract_desc1: pcm.ContractDesc1
+  contract_desc2: pcm.ContractDesc2
+  contract_desc3: pcm.ContractDesc3
+  contract_desc4: pcm.ContractDesc4
+  contract_desc5: pcm.ContractDesc5
+  responsibility: pcm.Responsibility
+  resp_person: pcm.RespPerson
+  est_compl_date: pcm.EstComplDate
+  next_review_date: pcm.NextReviewDate
+  next_billing_date: pcm.NextBillingDate
+  last_review_date: pcm.LastReviewDate
+  actual_compl_date: pcm.ActualComplDate
+  hierarchy_code: pcm.HierarchyCode
+  customer: pcm.Customer
+  retention_customer: pcm.RetentionCustomer
+  retention_prd: pcm.RetentionPrd
+  retention_pct: pcm.RetentionPct
+  follow_up_prd: pcm.FollowUpPrd
+  prg_billing_method: pcm.PrgBillingMethod
+  bill_day_of_month: pcm.BillDayOfMonth
+  number_of_billings: pcm.NumberOfBillings
+  billing_percent: pcm.BillingPercent
+  notational_bill_val: pcm.NotationalBillVal
+  deposit_required: pcm.DepositRequired
+  deposit_method: pcm.DepositMethod
+  deposit_type: pcm.DepositType
+  deposit_percent: pcm.DepositPercent
+  deposit_prod_class: pcm.DepositProdClass
+  deposit_comment: pcm.DepositComment
+  deposit_tax_code: pcm.DepositTaxCode
+  deposit_gst_tax_code: pcm.DepositGstTaxCode
+  retention_required: pcm.RetentionRequired
+  retention_method: pcm.RetentionMethod
+  retention_type: pcm.RetentionType
+  retention_prod_class: pcm.RetentionProdClass
+  retention_comment: pcm.RetentionComment
+  retention_tax_code: pcm.RetentionTaxCode
+  retention_gst_tax_cod: pcm.RetentionGstTaxCod
+  terms_code: pcm.TermsCode

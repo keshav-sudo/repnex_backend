@@ -1,0 +1,58 @@
+concept: mrp_req_ctl
+display_name: MrpReqCtl
+module: mrp
+description: Auto-generated representation of the physical table MrpReqCtl.
+synonyms:
+- mrpreqctl
+- mrp req ctl
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from MrpReqCtl
+  supply_demand_date:
+    display: Supplydemanddate
+    type: date
+    required: false
+    description: Field SupplyDemandDate from MrpReqCtl
+  snapshot_date:
+    display: Snapshotdate
+    type: date
+    required: false
+    description: Field SnapshotDate from MrpReqCtl
+  snapshot_time:
+    display: Snapshottime
+    type: decimal
+    required: false
+    description: Field SnapshotTime from MrpReqCtl
+  use_build_sched:
+    display: Usebuildsched
+    type: string
+    required: false
+    description: Field UseBuildSched from MrpReqCtl
+  use_rule_a:
+    display: Userulea
+    type: string
+    required: false
+    description: Field UseRuleA from MrpReqCtl
+  create_peg_info:
+    display: Createpeginfo
+    type: string
+    required: false
+    description: Field CreatePegInfo from MrpReqCtl
+  any_live_files_upd:
+    display: Anylivefilesupd
+    type: string
+    required: false
+    description: Field AnyLiveFilesUpd from MrpReqCtl
+  any_snap_files_upd:
+    display: Anysnapfilesupd
+    type: string
+    required: false
+    description: Field AnySnapFilesUpd from MrpReqCtl
+  next_sug_job:
+    display: Nextsugjob
+    type: decimal
+    required: false
+    description: Field NextSugJob from MrpReqCtl

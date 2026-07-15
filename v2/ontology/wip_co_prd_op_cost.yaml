@@ -1,0 +1,28 @@
+concept: wip_co_prd_op_cost
+display_name: WipCoPrdOpCost
+module: work_in_progress
+description: Auto-generated representation of the physical table WipCoPrdOpCost.
+synonyms:
+- wipcoprdopcost
+- wip co prd op cost
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipCoPrdOpCost
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipCoPrdOpCost
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from WipCoPrdOpCost
+  pct_labor_cost:
+    display: Pctlaborcost
+    type: decimal
+    required: false
+    description: Field PctLaborCost from WipCoPrdOpCost

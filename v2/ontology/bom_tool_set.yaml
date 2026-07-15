@@ -1,0 +1,23 @@
+concept: bom_tool_set
+display_name: BomToolSet
+module: bill_of_materials
+description: Auto-generated representation of the physical table BomToolSet.
+synonyms:
+- bomtoolset
+- bom tool set
+header_attributes:
+  tool_set:
+    display: Toolset
+    type: string
+    required: false
+    description: Field ToolSet from BomToolSet
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from BomToolSet
+  num_available:
+    display: Numavailable
+    type: decimal
+    required: false
+    description: Field NumAvailable from BomToolSet

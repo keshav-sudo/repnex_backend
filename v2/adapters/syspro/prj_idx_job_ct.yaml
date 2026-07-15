@@ -1,0 +1,7 @@
+concept: prj_idx_job_ct
+table: PrjIdxJobCt
+alias: pijc
+fields:
+  contract: pijc.Contract
+  hierarchy_type: pijc.HierarchyType
+  job_estimate: pijc.JobEstimate

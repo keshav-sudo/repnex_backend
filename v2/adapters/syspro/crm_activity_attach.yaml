@@ -1,0 +1,12 @@
+concept: crm_activity_attach
+table: CrmActivityAttach
+alias: caa
+fields:
+  contact_id: caa.ContactId
+  start_date: caa.StartDate
+  start_time: caa.StartTime
+  attachment_file: caa.AttachmentFile
+  attachment_name: caa.AttachmentName
+  attachment_ext: caa.AttachmentExt
+  attachment_size: caa.AttachmentSize
+  attachment_url: caa.AttachmentUrl

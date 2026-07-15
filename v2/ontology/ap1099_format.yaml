@@ -1,0 +1,28 @@
+concept: ap1099_format
+display_name: Ap1099Format
+module: accounts_payable
+description: Auto-generated representation of the physical table Ap1099Format.
+synonyms:
+- ap1099format
+- ap1099 format
+header_attributes:
+  ap1099_label_format:
+    display: Ap1099Labelformat
+    type: decimal
+    required: false
+    description: Field Ap1099LabelFormat from Ap1099Format
+  label_description:
+    display: Labeldescription
+    type: string
+    required: false
+    description: Field LabelDescription from Ap1099Format
+  min_ytd_payment:
+    display: Minytdpayment
+    type: decimal
+    required: false
+    description: Field MinYtdPayment from Ap1099Format
+  document_info:
+    display: Documentinfo
+    type: string
+    required: false
+    description: Field DocumentInfo from Ap1099Format

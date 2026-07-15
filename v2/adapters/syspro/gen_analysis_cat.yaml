@@ -1,0 +1,17 @@
+concept: gen_analysis_cat
+table: GenAnalysisCat
+alias: gac
+fields:
+  company: gac.Company
+  analysis_category: gac.AnalysisCategory
+  description: gac.Description
+  type1_description: gac.Type1Description
+  type1_compulsory: gac.Type1Compulsory
+  type2_description: gac.Type2Description
+  type2_compulsory: gac.Type2Compulsory
+  type3_description: gac.Type3Description
+  type3_compulsory: gac.Type3Compulsory
+  type4_description: gac.Type4Description
+  type4_compulsory: gac.Type4Compulsory
+  type5_description: gac.Type5Description
+  type5_compulsory: gac.Type5Compulsory

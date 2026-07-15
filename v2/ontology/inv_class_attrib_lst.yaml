@@ -1,0 +1,23 @@
+concept: inv_class_attrib_lst
+display_name: InvClassAttribLst
+module: inventory
+description: Auto-generated representation of the physical table InvClassAttribLst.
+synonyms:
+- invclassattriblst
+- inv class attrib lst
+header_attributes:
+  stock_class:
+    display: Stockclass
+    type: string
+    required: false
+    description: Field StockClass from InvClassAttribLst
+  class_attrib:
+    display: Classattrib
+    type: string
+    required: false
+    description: Field ClassAttrib from InvClassAttribLst
+  field_list:
+    display: Fieldlist
+    type: string
+    required: false
+    description: Field FieldList from InvClassAttribLst

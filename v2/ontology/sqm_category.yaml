@@ -1,0 +1,18 @@
+concept: sqm_category
+display_name: SqmCategory
+module: other
+description: Auto-generated representation of the physical table SqmCategory.
+synonyms:
+- sqmcategory
+- sqm category
+header_attributes:
+  cause_cat:
+    display: Causecat
+    type: string
+    required: false
+    description: Field CauseCat from SqmCategory
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SqmCategory

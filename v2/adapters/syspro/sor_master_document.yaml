@@ -1,0 +1,9 @@
+concept: sor_master_document
+table: SorMasterDocument
+alias: smd
+fields:
+  sales_order: smd.SalesOrder
+  document: smd.Document
+  recog_doc: smd.RecogDoc
+  tags: smd.Tags
+  transaction_guid: smd.TransactionGuid

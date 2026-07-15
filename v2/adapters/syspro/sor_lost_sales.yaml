@@ -1,0 +1,24 @@
+concept: sor_lost_sales
+table: SorLostSales
+alias: sls
+fields:
+  trn_date: sls.TrnDate
+  trn_time: sls.TrnTime
+  lost_sale_value: sls.LostSaleValue
+  cost_value: sls.CostValue
+  customer: sls.Customer
+  user_field1: sls.UserField1
+  stock_code: sls.StockCode
+  description: sls.Description
+  product_class: sls.ProductClass
+  warehouse: sls.Warehouse
+  quantity_lost: sls.QuantityLost
+  quantity_requested: sls.QuantityRequested
+  quantity_uom: sls.QuantityUom
+  price: sls.Price
+  price_uom: sls.PriceUom
+  reason_code: sls.ReasonCode
+  version: sls.Version
+  release: sls.Release
+  sales_order: sls.SalesOrder
+  sales_order_line: sls.SalesOrderLine

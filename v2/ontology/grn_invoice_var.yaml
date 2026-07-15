@@ -1,0 +1,68 @@
+concept: grn_invoice_var
+display_name: GrnInvoiceVar
+module: other
+description: Auto-generated representation of the physical table GrnInvoiceVar.
+synonyms:
+- grninvoicevar
+- grn invoice var
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from GrnInvoiceVar
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from GrnInvoiceVar
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from GrnInvoiceVar
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from GrnInvoiceVar
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from GrnInvoiceVar
+  ap_journal:
+    display: Apjournal
+    type: decimal
+    required: false
+    description: Field ApJournal from GrnInvoiceVar
+  ap_entry_number:
+    display: Apentrynumber
+    type: decimal
+    required: false
+    description: Field ApEntryNumber from GrnInvoiceVar
+  grn_value:
+    display: Grnvalue
+    type: decimal
+    required: false
+    description: Field GrnValue from GrnInvoiceVar
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from GrnInvoiceVar
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from GrnInvoiceVar
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from GrnInvoiceVar
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from GrnInvoiceVar

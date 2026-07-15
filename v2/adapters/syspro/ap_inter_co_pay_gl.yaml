@@ -1,0 +1,6 @@
+concept: ap_inter_co_pay_gl
+table: ApInterCoPayGl
+alias: aicpg
+fields:
+  secondary_company: aicpg.SecondaryCompany
+  gl_inter_co_pay_code: aicpg.GlInterCoPayCode

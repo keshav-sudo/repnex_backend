@@ -1,0 +1,33 @@
+concept: req_capex
+display_name: ReqCapex
+module: other
+description: Auto-generated representation of the physical table ReqCapex.
+synonyms:
+- reqcapex
+- req capex
+header_attributes:
+  capex_num:
+    display: Capexnum
+    type: string
+    required: false
+    description: Field CapexNum from ReqCapex
+  capex_description:
+    display: Capexdescription
+    type: string
+    required: false
+    description: Field CapexDescription from ReqCapex
+  authorising_user:
+    display: Authorisinguser
+    type: string
+    required: false
+    description: Field AuthorisingUser from ReqCapex
+  max_value:
+    display: Maxvalue
+    type: decimal
+    required: false
+    description: Field MaxValue from ReqCapex
+  accum_po_value:
+    display: Accumpovalue
+    type: decimal
+    required: false
+    description: Field AccumPoValue from ReqCapex

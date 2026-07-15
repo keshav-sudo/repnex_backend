@@ -1,0 +1,68 @@
+concept: gen_rec_jnl_det
+display_name: GenRecJnlDet
+module: general_ledger
+description: Auto-generated representation of the physical table GenRecJnlDet.
+synonyms:
+- genrecjnldet
+- gen rec jnl det
+header_attributes:
+  journal_code:
+    display: Journalcode
+    type: string
+    required: false
+    description: Field JournalCode from GenRecJnlDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from GenRecJnlDet
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from GenRecJnlDet
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GenRecJnlDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from GenRecJnlDet
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from GenRecJnlDet
+  entry_value:
+    display: Entryvalue
+    type: decimal
+    required: false
+    description: Field EntryValue from GenRecJnlDet
+  line_type:
+    display: Linetype
+    type: string
+    required: false
+    description: Field LineType from GenRecJnlDet
+  target_dr_gl_code:
+    display: Targetdrglcode
+    type: string
+    required: false
+    description: Field TargetDrGlCode from GenRecJnlDet
+  target_cr_gl_code:
+    display: Targetcrglcode
+    type: string
+    required: false
+    description: Field TargetCrGlCode from GenRecJnlDet
+  transfer_pct:
+    display: Transferpct
+    type: decimal
+    required: false
+    description: Field TransferPct from GenRecJnlDet
+  dimension_entry:
+    display: Dimensionentry
+    type: decimal
+    required: false
+    description: Field DimensionEntry from GenRecJnlDet

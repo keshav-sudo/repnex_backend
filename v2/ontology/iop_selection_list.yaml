@@ -1,0 +1,23 @@
+concept: iop_selection_list
+display_name: IopSelectionList
+module: other
+description: Auto-generated representation of the physical table IopSelectionList.
+synonyms:
+- iopselectionlist
+- iop selection list
+header_attributes:
+  selection_set:
+    display: Selectionset
+    type: string
+    required: false
+    description: Field SelectionSet from IopSelectionList
+  list_type:
+    display: Listtype
+    type: string
+    required: false
+    description: Field ListType from IopSelectionList
+  list_entry:
+    display: Listentry
+    type: string
+    required: false
+    description: Field ListEntry from IopSelectionList

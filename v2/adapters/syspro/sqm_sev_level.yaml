@@ -1,0 +1,12 @@
+concept: sqm_sev_level
+table: SqmSevLevel
+alias: ssl
+fields:
+  severity_level: ssl.SeverityLevel
+  sev_level_desc: ssl.SevLevelDesc
+  req_close: ssl.ReqClose
+  req_ca: ssl.ReqCa
+  req_pa: ssl.ReqPa
+  req_audit: ssl.ReqAudit
+  time_resolve: ssl.TimeResolve
+  priority_rate: ssl.PriorityRate

@@ -1,0 +1,21 @@
+concept: por_delivery_addr
+table: PorDeliveryAddr
+alias: pda
+fields:
+  delivery_addr_code: pda.DeliveryAddrCode
+  delivery_name: pda.DeliveryName
+  delivery_addr1: pda.DeliveryAddr1
+  delivery_addr2: pda.DeliveryAddr2
+  delivery_addr3: pda.DeliveryAddr3
+  delivery_addr3_loc: pda.DeliveryAddr3Loc
+  delivery_addr4: pda.DeliveryAddr4
+  delivery_addr5: pda.DeliveryAddr5
+  delivery_post_code: pda.DeliveryPostCode
+  delivery_gps_lat: pda.DeliveryGpsLat
+  delivery_gps_long: pda.DeliveryGpsLong
+  language_code: pda.LanguageCode
+  state: pda.State
+  county_zip: pda.CountyZip
+  city: pda.City
+  shipping_location: pda.ShippingLocation
+  delivery_terms: pda.DeliveryTerms

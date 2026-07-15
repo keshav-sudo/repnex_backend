@@ -1,0 +1,93 @@
+concept: inv_sales_qty_bal_fix
+display_name: InvSalesQtyBalFix
+module: inventory
+description: Auto-generated representation of the physical table InvSalesQtyBalFix.
+synonyms:
+- invsalesqtybalfix
+- inv sales qty bal fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from InvSalesQtyBalFix
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvSalesQtyBalFix
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvSalesQtyBalFix
+  active_sales:
+    display: Activesales
+    type: decimal
+    required: false
+    description: Field ActiveSales from InvSalesQtyBalFix
+  old_alloc_qty:
+    display: Oldallocqty
+    type: decimal
+    required: false
+    description: Field OldAllocQty from InvSalesQtyBalFix
+  new_alloc_qty:
+    display: Newallocqty
+    type: decimal
+    required: false
+    description: Field NewAllocQty from InvSalesQtyBalFix
+  old_back_qty:
+    display: Oldbackqty
+    type: decimal
+    required: false
+    description: Field OldBackQty from InvSalesQtyBalFix
+  new_back_qty:
+    display: Newbackqty
+    type: decimal
+    required: false
+    description: Field NewBackQty from InvSalesQtyBalFix
+  old_bin_ship_qty:
+    display: Oldbinshipqty
+    type: decimal
+    required: false
+    description: Field OldBinShipQty from InvSalesQtyBalFix
+  new_bin_ship_qty:
+    display: Newbinshipqty
+    type: decimal
+    required: false
+    description: Field NewBinShipQty from InvSalesQtyBalFix
+  old_lot_ship_qty:
+    display: Oldlotshipqty
+    type: decimal
+    required: false
+    description: Field OldLotShipQty from InvSalesQtyBalFix
+  new_lot_ship_qty:
+    display: Newlotshipqty
+    type: decimal
+    required: false
+    description: Field NewLotShipQty from InvSalesQtyBalFix
+  old_ser_ship_qty:
+    display: Oldsershipqty
+    type: decimal
+    required: false
+    description: Field OldSerShipQty from InvSalesQtyBalFix
+  new_ser_ship_qty:
+    display: Newsershipqty
+    type: decimal
+    required: false
+    description: Field NewSerShipQty from InvSalesQtyBalFix
+  active_dispatches:
+    display: Activedispatches
+    type: decimal
+    required: false
+    description: Field ActiveDispatches from InvSalesQtyBalFix
+  old_disp_qty:
+    display: Olddispqty
+    type: decimal
+    required: false
+    description: Field OldDispQty from InvSalesQtyBalFix
+  new_disp_ship_qty:
+    display: Newdispshipqty
+    type: decimal
+    required: false
+    description: Field NewDispShipQty from InvSalesQtyBalFix

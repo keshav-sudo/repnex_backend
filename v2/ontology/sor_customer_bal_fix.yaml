@@ -1,0 +1,53 @@
+concept: sor_customer_bal_fix
+display_name: SorCustomerBalFix
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorCustomerBalFix.
+synonyms:
+- sorcustomerbalfix
+- sor customer bal fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from SorCustomerBalFix
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorCustomerBalFix
+  old_outst_ord_val:
+    display: Oldoutstordval
+    type: decimal
+    required: false
+    description: Field OldOutstOrdVal from SorCustomerBalFix
+  new_outst_ord_val:
+    display: Newoutstordval
+    type: decimal
+    required: false
+    description: Field NewOutstOrdVal from SorCustomerBalFix
+  old_num_outst_ord:
+    display: Oldnumoutstord
+    type: decimal
+    required: false
+    description: Field OldNumOutstOrd from SorCustomerBalFix
+  new_num_outst_ord:
+    display: Newnumoutstord
+    type: decimal
+    required: false
+    description: Field NewNumOutstOrd from SorCustomerBalFix
+  old_rel_ord_os_value:
+    display: Oldrelordosvalue
+    type: decimal
+    required: false
+    description: Field OldRelOrdOsValue from SorCustomerBalFix
+  new_rel_ord_os_value:
+    display: Newrelordosvalue
+    type: decimal
+    required: false
+    description: Field NewRelOrdOsValue from SorCustomerBalFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from SorCustomerBalFix

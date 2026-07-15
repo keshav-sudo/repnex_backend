@@ -1,0 +1,58 @@
+concept: ap_next_key_audit
+display_name: ApNextKeyAudit
+module: accounts_payable
+description: Auto-generated representation of the physical table ApNextKeyAudit.
+synonyms:
+- apnextkeyaudit
+- ap next key audit
+header_attributes:
+  key_type:
+    display: Keytype
+    type: string
+    required: false
+    description: Field KeyType from ApNextKeyAudit
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from ApNextKeyAudit
+  post_period:
+    display: Postperiod
+    type: decimal
+    required: false
+    description: Field PostPeriod from ApNextKeyAudit
+  key_issued:
+    display: Keyissued
+    type: decimal
+    required: false
+    description: Field KeyIssued from ApNextKeyAudit
+  allocated_by_program:
+    display: Allocatedbyprogram
+    type: string
+    required: false
+    description: Field AllocatedByProgram from ApNextKeyAudit
+  called_from_program:
+    display: Calledfromprogram
+    type: string
+    required: false
+    description: Field CalledFromProgram from ApNextKeyAudit
+  allocated_date:
+    display: Allocateddate
+    type: date
+    required: false
+    description: Field AllocatedDate from ApNextKeyAudit
+  allocated_by_oper:
+    display: Allocatedbyoper
+    type: string
+    required: false
+    description: Field AllocatedByOper from ApNextKeyAudit
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from ApNextKeyAudit
+  closed_date:
+    display: Closeddate
+    type: date
+    required: false
+    description: Field ClosedDate from ApNextKeyAudit

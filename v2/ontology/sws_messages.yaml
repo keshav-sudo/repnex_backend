@@ -1,0 +1,83 @@
+concept: sws_messages
+display_name: SwsMessages
+module: other
+description: Auto-generated representation of the physical table SwsMessages.
+synonyms:
+- swsmessages
+- sws messages
+header_attributes:
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from SwsMessages
+  date_created:
+    display: Datecreated
+    type: date
+    required: false
+    description: Field DateCreated from SwsMessages
+  time_created:
+    display: Timecreated
+    type: decimal
+    required: false
+    description: Field TimeCreated from SwsMessages
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from SwsMessages
+  expiry_time:
+    display: Expirytime
+    type: decimal
+    required: false
+    description: Field ExpiryTime from SwsMessages
+  category:
+    display: Category
+    type: string
+    required: false
+    description: Field Category from SwsMessages
+  status:
+    display: Status
+    type: decimal
+    required: false
+    description: Field Status from SwsMessages
+  action_id:
+    display: Actionid
+    type: decimal
+    required: false
+    description: Field ActionId from SwsMessages
+  subject:
+    display: Subject
+    type: string
+    required: false
+    description: Field Subject from SwsMessages
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from SwsMessages
+  priority:
+    display: Priority
+    type: decimal
+    required: false
+    description: Field Priority from SwsMessages
+  actioning_operator:
+    display: Actioningoperator
+    type: string
+    required: false
+    description: Field ActioningOperator from SwsMessages
+  operator_created:
+    display: Operatorcreated
+    type: string
+    required: false
+    description: Field OperatorCreated from SwsMessages
+  workflow_name:
+    display: Workflowname
+    type: string
+    required: false
+    description: Field WorkflowName from SwsMessages
+  workflow_key:
+    display: Workflowkey
+    type: string
+    required: false
+    description: Field WorkflowKey from SwsMessages

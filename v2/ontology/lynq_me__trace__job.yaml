@@ -1,0 +1,738 @@
+concept: lynq_me__trace__job
+display_name: Lynq ME Trace Job
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Trace_Job.
+synonyms:
+- lynq_me_trace_job
+- lynq me  trace  job
+header_attributes:
+  j_id:
+    display: Jid
+    type: decimal
+    required: false
+    description: Field jId from Lynq_ME_Trace_Job
+  j_code:
+    display: Jcode
+    type: string
+    required: false
+    description: Field jCode from Lynq_ME_Trace_Job
+  j_order:
+    display: Jorder
+    type: string
+    required: false
+    description: Field jOrder from Lynq_ME_Trace_Job
+  j_type:
+    display: Jtype
+    type: string
+    required: false
+    description: Field jType from Lynq_ME_Trace_Job
+  j_designation:
+    display: Jdesignation
+    type: string
+    required: false
+    description: Field jDesignation from Lynq_ME_Trace_Job
+  j_description1:
+    display: Jdescription1
+    type: string
+    required: false
+    description: Field jDescription1 from Lynq_ME_Trace_Job
+  j_description2:
+    display: Jdescription2
+    type: string
+    required: false
+    description: Field jDescription2 from Lynq_ME_Trace_Job
+  j_description3:
+    display: Jdescription3
+    type: string
+    required: false
+    description: Field jDescription3 from Lynq_ME_Trace_Job
+  j_classification1:
+    display: Jclassification1
+    type: string
+    required: false
+    description: Field jClassification1 from Lynq_ME_Trace_Job
+  j_classification2:
+    display: Jclassification2
+    type: string
+    required: false
+    description: Field jClassification2 from Lynq_ME_Trace_Job
+  j_classification3:
+    display: Jclassification3
+    type: string
+    required: false
+    description: Field jClassification3 from Lynq_ME_Trace_Job
+  j_priority:
+    display: Jpriority
+    type: decimal
+    required: false
+    description: Field jPriority from Lynq_ME_Trace_Job
+  j_status1:
+    display: Jstatus1
+    type: string
+    required: false
+    description: Field jStatus1 from Lynq_ME_Trace_Job
+  j_status2:
+    display: Jstatus2
+    type: string
+    required: false
+    description: Field jStatus2 from Lynq_ME_Trace_Job
+  j_status3:
+    display: Jstatus3
+    type: string
+    required: false
+    description: Field jStatus3 from Lynq_ME_Trace_Job
+  j_attribute1:
+    display: Jattribute1
+    type: string
+    required: false
+    description: Field jAttribute1 from Lynq_ME_Trace_Job
+  j_attribute2:
+    display: Jattribute2
+    type: string
+    required: false
+    description: Field jAttribute2 from Lynq_ME_Trace_Job
+  j_attribute3:
+    display: Jattribute3
+    type: string
+    required: false
+    description: Field jAttribute3 from Lynq_ME_Trace_Job
+  j_item:
+    display: Jitem
+    type: string
+    required: false
+    description: Field jItem from Lynq_ME_Trace_Job
+  j_item_description1:
+    display: Jitemdescription1
+    type: string
+    required: false
+    description: Field jItemDescription1 from Lynq_ME_Trace_Job
+  j_item_description2:
+    display: Jitemdescription2
+    type: string
+    required: false
+    description: Field jItemDescription2 from Lynq_ME_Trace_Job
+  j_item_serial_lot:
+    display: Jitemseriallot
+    type: string
+    required: false
+    description: Field jItemSerialLot from Lynq_ME_Trace_Job
+  j_item_category1:
+    display: Jitemcategory1
+    type: string
+    required: false
+    description: Field jItemCategory1 from Lynq_ME_Trace_Job
+  j_item_category2:
+    display: Jitemcategory2
+    type: string
+    required: false
+    description: Field jItemCategory2 from Lynq_ME_Trace_Job
+  j_item_category3:
+    display: Jitemcategory3
+    type: string
+    required: false
+    description: Field jItemCategory3 from Lynq_ME_Trace_Job
+  j_item_attribute1:
+    display: Jitemattribute1
+    type: string
+    required: false
+    description: Field jItemAttribute1 from Lynq_ME_Trace_Job
+  j_item_attribute2:
+    display: Jitemattribute2
+    type: string
+    required: false
+    description: Field jItemAttribute2 from Lynq_ME_Trace_Job
+  j_item_attribute3:
+    display: Jitemattribute3
+    type: string
+    required: false
+    description: Field jItemAttribute3 from Lynq_ME_Trace_Job
+  j_item_param1:
+    display: Jitemparam1
+    type: string
+    required: false
+    description: Field jItemParam1 from Lynq_ME_Trace_Job
+  j_item_param2:
+    display: Jitemparam2
+    type: string
+    required: false
+    description: Field jItemParam2 from Lynq_ME_Trace_Job
+  j_item_param3:
+    display: Jitemparam3
+    type: string
+    required: false
+    description: Field jItemParam3 from Lynq_ME_Trace_Job
+  j_item_decimal1:
+    display: Jitemdecimal1
+    type: decimal
+    required: false
+    description: Field jItemDecimal1 from Lynq_ME_Trace_Job
+  j_item_decimal2:
+    display: Jitemdecimal2
+    type: decimal
+    required: false
+    description: Field jItemDecimal2 from Lynq_ME_Trace_Job
+  j_item_decimal3:
+    display: Jitemdecimal3
+    type: decimal
+    required: false
+    description: Field jItemDecimal3 from Lynq_ME_Trace_Job
+  j_location_code1:
+    display: Jlocationcode1
+    type: string
+    required: false
+    description: Field jLocationCode1 from Lynq_ME_Trace_Job
+  j_location_code2:
+    display: Jlocationcode2
+    type: string
+    required: false
+    description: Field jLocationCode2 from Lynq_ME_Trace_Job
+  j_warehouse:
+    display: Jwarehouse
+    type: string
+    required: false
+    description: Field jWarehouse from Lynq_ME_Trace_Job
+  j_storage:
+    display: Jstorage
+    type: string
+    required: false
+    description: Field jStorage from Lynq_ME_Trace_Job
+  j_bin:
+    display: Jbin
+    type: string
+    required: false
+    description: Field jBin from Lynq_ME_Trace_Job
+  j_source:
+    display: Jsource
+    type: string
+    required: false
+    description: Field jSource from Lynq_ME_Trace_Job
+  j_project1:
+    display: Jproject1
+    type: string
+    required: false
+    description: Field jProject1 from Lynq_ME_Trace_Job
+  j_project2:
+    display: Jproject2
+    type: string
+    required: false
+    description: Field jProject2 from Lynq_ME_Trace_Job
+  j_parent_job_code:
+    display: Jparentjobcode
+    type: string
+    required: false
+    description: Field jParentJobCode from Lynq_ME_Trace_Job
+  j_parent_job_type:
+    display: Jparentjobtype
+    type: string
+    required: false
+    description: Field jParentJobType from Lynq_ME_Trace_Job
+  j_parent_job_order:
+    display: Jparentjoborder
+    type: string
+    required: false
+    description: Field jParentJobOrder from Lynq_ME_Trace_Job
+  j_customer_no:
+    display: Jcustomerno
+    type: string
+    required: false
+    description: Field jCustomerNo from Lynq_ME_Trace_Job
+  j_customer_name:
+    display: Jcustomername
+    type: string
+    required: false
+    description: Field jCustomerName from Lynq_ME_Trace_Job
+  j_customer_order:
+    display: Jcustomerorder
+    type: string
+    required: false
+    description: Field jCustomerOrder from Lynq_ME_Trace_Job
+  j_customer_order_line1:
+    display: Jcustomerorderline1
+    type: string
+    required: false
+    description: Field jCustomerOrderLine1 from Lynq_ME_Trace_Job
+  j_customer_order_line2:
+    display: Jcustomerorderline2
+    type: string
+    required: false
+    description: Field jCustomerOrderLine2 from Lynq_ME_Trace_Job
+  j_uom:
+    display: Juom
+    type: string
+    required: false
+    description: Field jUom from Lynq_ME_Trace_Job
+  j_uom_conv_factor1:
+    display: Juomconvfactor1
+    type: decimal
+    required: false
+    description: Field jUomConvFactor1 from Lynq_ME_Trace_Job
+  j_uom_conv_factor2:
+    display: Juomconvfactor2
+    type: decimal
+    required: false
+    description: Field jUomConvFactor2 from Lynq_ME_Trace_Job
+  j_uom_conv_factor3:
+    display: Juomconvfactor3
+    type: decimal
+    required: false
+    description: Field jUomConvFactor3 from Lynq_ME_Trace_Job
+  j_bom:
+    display: Jbom
+    type: string
+    required: false
+    description: Field jBom from Lynq_ME_Trace_Job
+  j_bom_revision:
+    display: Jbomrevision
+    type: string
+    required: false
+    description: Field jBomRevision from Lynq_ME_Trace_Job
+  j_bom_version:
+    display: Jbomversion
+    type: string
+    required: false
+    description: Field jBomVersion from Lynq_ME_Trace_Job
+  j_routing:
+    display: Jrouting
+    type: string
+    required: false
+    description: Field jRouting from Lynq_ME_Trace_Job
+  j_routing_revision:
+    display: Jroutingrevision
+    type: string
+    required: false
+    description: Field jRoutingRevision from Lynq_ME_Trace_Job
+  j_routing_version:
+    display: Jroutingversion
+    type: string
+    required: false
+    description: Field jRoutingVersion from Lynq_ME_Trace_Job
+  j_currency:
+    display: Jcurrency
+    type: string
+    required: false
+    description: Field jCurrency from Lynq_ME_Trace_Job
+  j_currency_conv_factor:
+    display: Jcurrencyconvfactor
+    type: decimal
+    required: false
+    description: Field jCurrencyConvFactor from Lynq_ME_Trace_Job
+  j_total_cost:
+    display: Jtotalcost
+    type: decimal
+    required: false
+    description: Field jTotalCost from Lynq_ME_Trace_Job
+  j_material_cost:
+    display: Jmaterialcost
+    type: decimal
+    required: false
+    description: Field jMaterialCost from Lynq_ME_Trace_Job
+  j_labor_cost:
+    display: Jlaborcost
+    type: decimal
+    required: false
+    description: Field jLaborCost from Lynq_ME_Trace_Job
+  j_overhead_cost:
+    display: Joverheadcost
+    type: decimal
+    required: false
+    description: Field jOverheadCost from Lynq_ME_Trace_Job
+  j_outside_cost:
+    display: Joutsidecost
+    type: decimal
+    required: false
+    description: Field jOutsideCost from Lynq_ME_Trace_Job
+  j_actual_total_cost:
+    display: Jactualtotalcost
+    type: decimal
+    required: false
+    description: Field jActualTotalCost from Lynq_ME_Trace_Job
+  j_actual_material_cost:
+    display: Jactualmaterialcost
+    type: decimal
+    required: false
+    description: Field jActualMaterialCost from Lynq_ME_Trace_Job
+  j_actual_labor_cost:
+    display: Jactuallaborcost
+    type: decimal
+    required: false
+    description: Field jActualLaborCost from Lynq_ME_Trace_Job
+  j_actual_overhead_cost:
+    display: Jactualoverheadcost
+    type: decimal
+    required: false
+    description: Field jActualOverheadCost from Lynq_ME_Trace_Job
+  j_actual_outside_cost:
+    display: Jactualoutsidecost
+    type: decimal
+    required: false
+    description: Field jActualOutsideCost from Lynq_ME_Trace_Job
+  j_margin:
+    display: Jmargin
+    type: decimal
+    required: false
+    description: Field jMargin from Lynq_ME_Trace_Job
+  j_planned_labor:
+    display: Jplannedlabor
+    type: decimal
+    required: false
+    description: Field jPlannedLabor from Lynq_ME_Trace_Job
+  j_actual_labor:
+    display: Jactuallabor
+    type: decimal
+    required: false
+    description: Field jActualLabor from Lynq_ME_Trace_Job
+  j_quantity_ordered:
+    display: Jquantityordered
+    type: decimal
+    required: false
+    description: Field jQuantityOrdered from Lynq_ME_Trace_Job
+  j_quantity_completed:
+    display: Jquantitycompleted
+    type: decimal
+    required: false
+    description: Field jQuantityCompleted from Lynq_ME_Trace_Job
+  j_quantity_scrapped:
+    display: Jquantityscrapped
+    type: decimal
+    required: false
+    description: Field jQuantityScrapped from Lynq_ME_Trace_Job
+  j_quantity_rejected:
+    display: Jquantityrejected
+    type: decimal
+    required: false
+    description: Field jQuantityRejected from Lynq_ME_Trace_Job
+  j_quantity_required:
+    display: Jquantityrequired
+    type: decimal
+    required: false
+    description: Field jQuantityRequired from Lynq_ME_Trace_Job
+  j_created_date:
+    display: Jcreateddate
+    type: date
+    required: false
+    description: Field jCreatedDate from Lynq_ME_Trace_Job
+  j_required_date:
+    display: Jrequireddate
+    type: date
+    required: false
+    description: Field jRequiredDate from Lynq_ME_Trace_Job
+  j_scheduled_method:
+    display: Jscheduledmethod
+    type: string
+    required: false
+    description: Field jScheduledMethod from Lynq_ME_Trace_Job
+  j_scheduled_flag:
+    display: Jscheduledflag
+    type: string
+    required: false
+    description: Field jScheduledFlag from Lynq_ME_Trace_Job
+  j_planner:
+    display: Jplanner
+    type: string
+    required: false
+    description: Field jPlanner from Lynq_ME_Trace_Job
+  j_start_date:
+    display: Jstartdate
+    type: date
+    required: false
+    description: Field jStartDate from Lynq_ME_Trace_Job
+  j_end_date:
+    display: Jenddate
+    type: date
+    required: false
+    description: Field jEndDate from Lynq_ME_Trace_Job
+  j_last_activity_date:
+    display: Jlastactivitydate
+    type: date
+    required: false
+    description: Field jLastActivityDate from Lynq_ME_Trace_Job
+  j_completion_date:
+    display: Jcompletiondate
+    type: date
+    required: false
+    description: Field jCompletionDate from Lynq_ME_Trace_Job
+  j_req1:
+    display: Jreq1
+    type: decimal
+    required: false
+    description: Field jReq1 from Lynq_ME_Trace_Job
+  j_req2:
+    display: Jreq2
+    type: decimal
+    required: false
+    description: Field jReq2 from Lynq_ME_Trace_Job
+  j_req3:
+    display: Jreq3
+    type: decimal
+    required: false
+    description: Field jReq3 from Lynq_ME_Trace_Job
+  j_req4:
+    display: Jreq4
+    type: decimal
+    required: false
+    description: Field jReq4 from Lynq_ME_Trace_Job
+  j_req5:
+    display: Jreq5
+    type: decimal
+    required: false
+    description: Field jReq5 from Lynq_ME_Trace_Job
+  j_req6:
+    display: Jreq6
+    type: decimal
+    required: false
+    description: Field jReq6 from Lynq_ME_Trace_Job
+  j_req7:
+    display: Jreq7
+    type: decimal
+    required: false
+    description: Field jReq7 from Lynq_ME_Trace_Job
+  j_req8:
+    display: Jreq8
+    type: decimal
+    required: false
+    description: Field jReq8 from Lynq_ME_Trace_Job
+  j_req9:
+    display: Jreq9
+    type: decimal
+    required: false
+    description: Field jReq9 from Lynq_ME_Trace_Job
+  j_req10:
+    display: Jreq10
+    type: decimal
+    required: false
+    description: Field jReq10 from Lynq_ME_Trace_Job
+  j_param1:
+    display: Jparam1
+    type: string
+    required: false
+    description: Field jParam1 from Lynq_ME_Trace_Job
+  j_param2:
+    display: Jparam2
+    type: string
+    required: false
+    description: Field jParam2 from Lynq_ME_Trace_Job
+  j_param3:
+    display: Jparam3
+    type: string
+    required: false
+    description: Field jParam3 from Lynq_ME_Trace_Job
+  j_param4:
+    display: Jparam4
+    type: string
+    required: false
+    description: Field jParam4 from Lynq_ME_Trace_Job
+  j_param5:
+    display: Jparam5
+    type: string
+    required: false
+    description: Field jParam5 from Lynq_ME_Trace_Job
+  j_param6:
+    display: Jparam6
+    type: string
+    required: false
+    description: Field jParam6 from Lynq_ME_Trace_Job
+  j_param7:
+    display: Jparam7
+    type: string
+    required: false
+    description: Field jParam7 from Lynq_ME_Trace_Job
+  j_param8:
+    display: Jparam8
+    type: string
+    required: false
+    description: Field jParam8 from Lynq_ME_Trace_Job
+  j_param9:
+    display: Jparam9
+    type: string
+    required: false
+    description: Field jParam9 from Lynq_ME_Trace_Job
+  j_param10:
+    display: Jparam10
+    type: string
+    required: false
+    description: Field jParam10 from Lynq_ME_Trace_Job
+  j_param11:
+    display: Jparam11
+    type: string
+    required: false
+    description: Field jParam11 from Lynq_ME_Trace_Job
+  j_param12:
+    display: Jparam12
+    type: string
+    required: false
+    description: Field jParam12 from Lynq_ME_Trace_Job
+  j_param13:
+    display: Jparam13
+    type: string
+    required: false
+    description: Field jParam13 from Lynq_ME_Trace_Job
+  j_param14:
+    display: Jparam14
+    type: string
+    required: false
+    description: Field jParam14 from Lynq_ME_Trace_Job
+  j_param15:
+    display: Jparam15
+    type: string
+    required: false
+    description: Field jParam15 from Lynq_ME_Trace_Job
+  j_text1:
+    display: Jtext1
+    type: string
+    required: false
+    description: Field jText1 from Lynq_ME_Trace_Job
+  j_text2:
+    display: Jtext2
+    type: string
+    required: false
+    description: Field jText2 from Lynq_ME_Trace_Job
+  j_text3:
+    display: Jtext3
+    type: string
+    required: false
+    description: Field jText3 from Lynq_ME_Trace_Job
+  j_text4:
+    display: Jtext4
+    type: string
+    required: false
+    description: Field jText4 from Lynq_ME_Trace_Job
+  j_text5:
+    display: Jtext5
+    type: string
+    required: false
+    description: Field jText5 from Lynq_ME_Trace_Job
+  j_text6:
+    display: Jtext6
+    type: string
+    required: false
+    description: Field jText6 from Lynq_ME_Trace_Job
+  j_text7:
+    display: Jtext7
+    type: string
+    required: false
+    description: Field jText7 from Lynq_ME_Trace_Job
+  j_text8:
+    display: Jtext8
+    type: string
+    required: false
+    description: Field jText8 from Lynq_ME_Trace_Job
+  j_text9:
+    display: Jtext9
+    type: string
+    required: false
+    description: Field jText9 from Lynq_ME_Trace_Job
+  j_text10:
+    display: Jtext10
+    type: string
+    required: false
+    description: Field jText10 from Lynq_ME_Trace_Job
+  j_int1:
+    display: Jint1
+    type: decimal
+    required: false
+    description: Field jInt1 from Lynq_ME_Trace_Job
+  j_int2:
+    display: Jint2
+    type: decimal
+    required: false
+    description: Field jInt2 from Lynq_ME_Trace_Job
+  j_int3:
+    display: Jint3
+    type: decimal
+    required: false
+    description: Field jInt3 from Lynq_ME_Trace_Job
+  j_int4:
+    display: Jint4
+    type: decimal
+    required: false
+    description: Field jInt4 from Lynq_ME_Trace_Job
+  j_int5:
+    display: Jint5
+    type: decimal
+    required: false
+    description: Field jInt5 from Lynq_ME_Trace_Job
+  j_decimal1:
+    display: Jdecimal1
+    type: decimal
+    required: false
+    description: Field jDecimal1 from Lynq_ME_Trace_Job
+  j_decimal2:
+    display: Jdecimal2
+    type: decimal
+    required: false
+    description: Field jDecimal2 from Lynq_ME_Trace_Job
+  j_decimal3:
+    display: Jdecimal3
+    type: decimal
+    required: false
+    description: Field jDecimal3 from Lynq_ME_Trace_Job
+  j_decimal4:
+    display: Jdecimal4
+    type: decimal
+    required: false
+    description: Field jDecimal4 from Lynq_ME_Trace_Job
+  j_decimal5:
+    display: Jdecimal5
+    type: decimal
+    required: false
+    description: Field jDecimal5 from Lynq_ME_Trace_Job
+  j_date1:
+    display: Jdate1
+    type: date
+    required: false
+    description: Field jDate1 from Lynq_ME_Trace_Job
+  j_date2:
+    display: Jdate2
+    type: date
+    required: false
+    description: Field jDate2 from Lynq_ME_Trace_Job
+  j_date3:
+    display: Jdate3
+    type: date
+    required: false
+    description: Field jDate3 from Lynq_ME_Trace_Job
+  j_date4:
+    display: Jdate4
+    type: date
+    required: false
+    description: Field jDate4 from Lynq_ME_Trace_Job
+  j_date5:
+    display: Jdate5
+    type: date
+    required: false
+    description: Field jDate5 from Lynq_ME_Trace_Job
+  j_trace_date:
+    display: Jtracedate
+    type: date
+    required: false
+    description: Field jTraceDate from Lynq_ME_Trace_Job
+  j_planned_machine_time:
+    display: Jplannedmachinetime
+    type: decimal
+    required: false
+    description: Field jPlannedMachineTime from Lynq_ME_Trace_Job
+  j_actual_machine_time:
+    display: Jactualmachinetime
+    type: decimal
+    required: false
+    description: Field jActualMachineTime from Lynq_ME_Trace_Job
+  j_reference:
+    display: Jreference
+    type: string
+    required: false
+    description: Field jReference from Lynq_ME_Trace_Job
+  j_bin_flag:
+    display: Jbinflag
+    type: string
+    required: false
+    description: Field jBinFlag from Lynq_ME_Trace_Job
+  j_traceable_flag:
+    display: Jtraceableflag
+    type: string
+    required: false
+    description: Field jTraceableFlag from Lynq_ME_Trace_Job
+  j_name:
+    display: Jname
+    type: string
+    required: false
+    description: Field jName from Lynq_ME_Trace_Job

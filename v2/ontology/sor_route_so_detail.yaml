@@ -1,0 +1,63 @@
+concept: sor_route_so_detail
+display_name: SorRouteSoDetail
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorRouteSoDetail.
+synonyms:
+- sorroutesodetail
+- sor route so detail
+header_attributes:
+  route_code:
+    display: Routecode
+    type: string
+    required: false
+    description: Field RouteCode from SorRouteSoDetail
+  delivery_date:
+    display: Deliverydate
+    type: date
+    required: false
+    description: Field DeliveryDate from SorRouteSoDetail
+  delivery_seq:
+    display: Deliveryseq
+    type: decimal
+    required: false
+    description: Field DeliverySeq from SorRouteSoDetail
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SorRouteSoDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from SorRouteSoDetail
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from SorRouteSoDetail
+  dispatch_note_line:
+    display: Dispatchnoteline
+    type: decimal
+    required: false
+    description: Field DispatchNoteLine from SorRouteSoDetail
+  line_volume:
+    display: Linevolume
+    type: decimal
+    required: false
+    description: Field LineVolume from SorRouteSoDetail
+  line_mass:
+    display: Linemass
+    type: decimal
+    required: false
+    description: Field LineMass from SorRouteSoDetail
+  route_distance:
+    display: Routedistance
+    type: decimal
+    required: false
+    description: Field RouteDistance from SorRouteSoDetail
+  line_quantity:
+    display: Linequantity
+    type: decimal
+    required: false
+    description: Field LineQuantity from SorRouteSoDetail

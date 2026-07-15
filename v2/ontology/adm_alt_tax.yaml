@@ -1,0 +1,18 @@
+concept: adm_alt_tax
+display_name: AdmAltTax
+module: administration
+description: Auto-generated representation of the physical table AdmAltTax.
+synonyms:
+- admalttax
+- adm alt tax
+header_attributes:
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from AdmAltTax
+  alt_tax_code:
+    display: Alttaxcode
+    type: string
+    required: false
+    description: Field AltTaxCode from AdmAltTax

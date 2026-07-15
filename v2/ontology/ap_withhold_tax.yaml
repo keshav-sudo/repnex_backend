@@ -1,0 +1,118 @@
+concept: ap_withhold_tax
+display_name: ApWithholdTax
+module: accounts_payable
+description: Auto-generated representation of the physical table ApWithholdTax.
+synonyms:
+- apwithholdtax
+- ap withhold tax
+header_attributes:
+  paym_year:
+    display: Paymyear
+    type: decimal
+    required: false
+    description: Field PaymYear from ApWithholdTax
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApWithholdTax
+  payment_period:
+    display: Paymentperiod
+    type: decimal
+    required: false
+    description: Field PaymentPeriod from ApWithholdTax
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ApWithholdTax
+  cheque_register:
+    display: Chequeregister
+    type: decimal
+    required: false
+    description: Field ChequeRegister from ApWithholdTax
+  distr_entry:
+    display: Distrentry
+    type: decimal
+    required: false
+    description: Field DistrEntry from ApWithholdTax
+  cheque:
+    display: Cheque
+    type: string
+    required: false
+    description: Field Cheque from ApWithholdTax
+  paym_date:
+    display: Paymdate
+    type: date
+    required: false
+    description: Field PaymDate from ApWithholdTax
+  with_tax_code:
+    display: Withtaxcode
+    type: string
+    required: false
+    description: Field WithTaxCode from ApWithholdTax
+  with_tax_rate:
+    display: Withtaxrate
+    type: decimal
+    required: false
+    description: Field WithTaxRate from ApWithholdTax
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApWithholdTax
+  with_taxable_value:
+    display: Withtaxablevalue
+    type: decimal
+    required: false
+    description: Field WithTaxableValue from ApWithholdTax
+  with_tax_value:
+    display: Withtaxvalue
+    type: decimal
+    required: false
+    description: Field WithTaxValue from ApWithholdTax
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApWithholdTax
+  primary_supplier:
+    display: Primarysupplier
+    type: string
+    required: false
+    description: Field PrimarySupplier from ApWithholdTax
+  primary_sup_name:
+    display: Primarysupname
+    type: string
+    required: false
+    description: Field PrimarySupName from ApWithholdTax
+  group_inter_company:
+    display: Groupintercompany
+    type: string
+    required: false
+    description: Field GroupInterCompany from ApWithholdTax
+  primary_company:
+    display: Primarycompany
+    type: string
+    required: false
+    description: Field PrimaryCompany from ApWithholdTax
+  bank_description:
+    display: Bankdescription
+    type: string
+    required: false
+    description: Field BankDescription from ApWithholdTax
+  xref_ch_register:
+    display: Xrefchregister
+    type: decimal
+    required: false
+    description: Field XrefChRegister from ApWithholdTax
+  primary_pay_number:
+    display: Primarypaynumber
+    type: string
+    required: false
+    description: Field PrimaryPayNumber from ApWithholdTax
+  payment_bank:
+    display: Paymentbank
+    type: string
+    required: false
+    description: Field PaymentBank from ApWithholdTax

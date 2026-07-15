@@ -1,0 +1,6 @@
+concept: iop_collection
+table: IopCollection
+alias: ic3
+fields:
+  collection: ic3.Collection
+  description: ic3.Description

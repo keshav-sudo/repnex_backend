@@ -1,0 +1,38 @@
+concept: abc_structure
+display_name: AbcStructure
+module: other
+description: Auto-generated representation of the physical table AbcStructure.
+synonyms:
+- abcstructure
+- abc structure
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from AbcStructure
+  incident:
+    display: Incident
+    type: string
+    required: false
+    description: Field Incident from AbcStructure
+  element:
+    display: Element
+    type: string
+    required: false
+    description: Field Element from AbcStructure
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from AbcStructure
+  driver_qty:
+    display: Driverqty
+    type: decimal
+    required: false
+    description: Field DriverQty from AbcStructure
+  multiplier_flg:
+    display: Multiplierflg
+    type: string
+    required: false
+    description: Field MultiplierFlg from AbcStructure

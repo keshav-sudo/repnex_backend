@@ -1,0 +1,8 @@
+concept: adm_tax_return_period
+table: AdmTaxReturnPeriod
+alias: atrp
+fields:
+  tax_year: atrp.TaxYear
+  tax_period: atrp.TaxPeriod
+  tax_date_from: atrp.TaxDateFrom
+  tax_date_to: atrp.TaxDateTo

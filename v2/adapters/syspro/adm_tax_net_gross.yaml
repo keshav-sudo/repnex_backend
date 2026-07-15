@@ -1,0 +1,6 @@
+concept: adm_tax_net_gross
+table: AdmTaxNetGross
+alias: atng
+fields:
+  state_code: atng.StateCode
+  tax_base_ind: atng.TaxBaseInd

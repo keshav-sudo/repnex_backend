@@ -1,0 +1,33 @@
+concept: rma_comment
+display_name: RmaComment
+module: other
+description: Auto-generated representation of the physical table RmaComment.
+synonyms:
+- rmacomment
+- rma comment
+header_attributes:
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RmaComment
+  rma_line_number:
+    display: Rmalinenumber
+    type: decimal
+    required: false
+    description: Field RmaLineNumber from RmaComment
+  comment_line:
+    display: Commentline
+    type: decimal
+    required: false
+    description: Field CommentLine from RmaComment
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from RmaComment
+  comment_date:
+    display: Commentdate
+    type: date
+    required: false
+    description: Field CommentDate from RmaComment

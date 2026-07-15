@@ -1,0 +1,24 @@
+concept: gen_analysis_budget
+table: GenAnalysisBudget
+alias: gab
+fields:
+  company: gab.Company
+  section_number: gab.SectionNumber
+  section_code: gab.SectionCode
+  budget_type: gab.BudgetType
+  account_type: gab.AccountType
+  budget1: gab.Budget1
+  budget2: gab.Budget2
+  budget3: gab.Budget3
+  budget4: gab.Budget4
+  budget5: gab.Budget5
+  budget6: gab.Budget6
+  budget7: gab.Budget7
+  budget8: gab.Budget8
+  budget9: gab.Budget9
+  budget10: gab.Budget10
+  budget11: gab.Budget11
+  budget12: gab.Budget12
+  budget13: gab.Budget13
+  budget14: gab.Budget14
+  budget15: gab.Budget15

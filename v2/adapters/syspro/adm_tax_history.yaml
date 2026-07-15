@@ -1,0 +1,7 @@
+concept: adm_tax_history
+table: AdmTaxHistory
+alias: ath
+fields:
+  tax_code: ath.TaxCode
+  tax_eff_date: ath.TaxEffDate
+  prv_tax_rate: ath.PrvTaxRate

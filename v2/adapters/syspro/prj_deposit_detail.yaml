@@ -1,0 +1,11 @@
+concept: prj_deposit_detail
+table: PrjDepositDetail
+alias: pdd1
+fields:
+  contract: pdd1.Contract
+  job: pdd1.Job
+  deposit_line: pdd1.DepositLine
+  deposit_value: pdd1.DepositValue
+  comment: pdd1.Comment
+  sales_order: pdd1.SalesOrder
+  invoice: pdd1.Invoice

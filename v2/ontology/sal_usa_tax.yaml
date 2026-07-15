@@ -1,0 +1,178 @@
+concept: sal_usa_tax
+display_name: SalUsaTax
+module: other
+description: Auto-generated representation of the physical table SalUsaTax.
+synonyms:
+- salusatax
+- sal usa tax
+header_attributes:
+  state:
+    display: State
+    type: string
+    required: false
+    description: Field State from SalUsaTax
+  county_zip:
+    display: Countyzip
+    type: string
+    required: false
+    description: Field CountyZip from SalUsaTax
+  city:
+    display: City
+    type: string
+    required: false
+    description: Field City from SalUsaTax
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalUsaTax
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalUsaTax
+  invoice_register:
+    display: Invoiceregister
+    type: decimal
+    required: false
+    description: Field InvoiceRegister from SalUsaTax
+  invoice_reg_line:
+    display: Invoiceregline
+    type: decimal
+    required: false
+    description: Field InvoiceRegLine from SalUsaTax
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SalUsaTax
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SalUsaTax
+  comp_exempt_flag:
+    display: Compexemptflag
+    type: string
+    required: false
+    description: Field CompExemptFlag from SalUsaTax
+  total_invoice:
+    display: Totalinvoice
+    type: decimal
+    required: false
+    description: Field TotalInvoice from SalUsaTax
+  total_taxable:
+    display: Totaltaxable
+    type: decimal
+    required: false
+    description: Field TotalTaxable from SalUsaTax
+  total_use_taxable:
+    display: Totalusetaxable
+    type: decimal
+    required: false
+    description: Field TotalUseTaxable from SalUsaTax
+  total_exempt:
+    display: Totalexempt
+    type: decimal
+    required: false
+    description: Field TotalExempt from SalUsaTax
+  total_sales_tax:
+    display: Totalsalestax
+    type: decimal
+    required: false
+    description: Field TotalSalesTax from SalUsaTax
+  total_use_tax:
+    display: Totalusetax
+    type: decimal
+    required: false
+    description: Field TotalUseTax from SalUsaTax
+  tax_rate1:
+    display: Taxrate1
+    type: decimal
+    required: false
+    description: Field TaxRate1 from SalUsaTax
+  tax_rate2:
+    display: Taxrate2
+    type: decimal
+    required: false
+    description: Field TaxRate2 from SalUsaTax
+  tax_rate3:
+    display: Taxrate3
+    type: decimal
+    required: false
+    description: Field TaxRate3 from SalUsaTax
+  tax_use_rate1:
+    display: Taxuserate1
+    type: decimal
+    required: false
+    description: Field TaxUseRate1 from SalUsaTax
+  tax_use_rate2:
+    display: Taxuserate2
+    type: decimal
+    required: false
+    description: Field TaxUseRate2 from SalUsaTax
+  tax_use_rate3:
+    display: Taxuserate3
+    type: decimal
+    required: false
+    description: Field TaxUseRate3 from SalUsaTax
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from SalUsaTax
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalUsaTax
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from SalUsaTax
+  county_code:
+    display: Countycode
+    type: string
+    required: false
+    description: Field CountyCode from SalUsaTax
+  line_printed:
+    display: Lineprinted
+    type: string
+    required: false
+    description: Field LinePrinted from SalUsaTax
+  tax_exempt_number:
+    display: Taxexemptnumber
+    type: string
+    required: false
+    description: Field TaxExemptNumber from SalUsaTax
+  tax_exempt_flag:
+    display: Taxexemptflag
+    type: string
+    required: false
+    description: Field TaxExemptFlag from SalUsaTax
+  doc_type:
+    display: Doctype
+    type: string
+    required: false
+    description: Field DocType from SalUsaTax
+  cash_credit:
+    display: Cashcredit
+    type: string
+    required: false
+    description: Field CashCredit from SalUsaTax
+  order_memo:
+    display: Ordermemo
+    type: string
+    required: false
+    description: Field OrderMemo from SalUsaTax
+  freight_charges:
+    display: Freightcharges
+    type: decimal
+    required: false
+    description: Field FreightCharges from SalUsaTax
+  usa_or_normal_tax:
+    display: Usaornormaltax
+    type: string
+    required: false
+    description: Field UsaOrNormalTax from SalUsaTax

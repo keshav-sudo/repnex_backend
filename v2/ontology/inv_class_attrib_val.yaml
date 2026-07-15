@@ -1,0 +1,33 @@
+concept: inv_class_attrib_val
+display_name: InvClassAttribVal
+module: inventory
+description: Auto-generated representation of the physical table InvClassAttribVal.
+synonyms:
+- invclassattribval
+- inv class attrib val
+header_attributes:
+  stock_class:
+    display: Stockclass
+    type: string
+    required: false
+    description: Field StockClass from InvClassAttribVal
+  class_attrib:
+    display: Classattrib
+    type: string
+    required: false
+    description: Field ClassAttrib from InvClassAttribVal
+  item:
+    display: Item
+    type: string
+    required: false
+    description: Field Item from InvClassAttribVal
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvClassAttribVal
+  default_item:
+    display: Defaultitem
+    type: string
+    required: false
+    description: Field DefaultItem from InvClassAttribVal

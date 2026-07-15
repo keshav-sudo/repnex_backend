@@ -1,0 +1,43 @@
+concept: lct_tariff
+display_name: LctTariff
+module: other
+description: Auto-generated representation of the physical table LctTariff.
+synonyms:
+- lcttariff
+- lct tariff
+header_attributes:
+  tariff_code:
+    display: Tariffcode
+    type: string
+    required: false
+    description: Field TariffCode from LctTariff
+  lct_country_status:
+    display: Lctcountrystatus
+    type: string
+    required: false
+    description: Field LctCountryStatus from LctTariff
+  tariff_desc:
+    display: Tariffdesc
+    type: string
+    required: false
+    description: Field TariffDesc from LctTariff
+  tariff_class:
+    display: Tariffclass
+    type: string
+    required: false
+    description: Field TariffClass from LctTariff
+  duty_rate1:
+    display: Dutyrate1
+    type: decimal
+    required: false
+    description: Field DutyRate1 from LctTariff
+  duty_rate2:
+    display: Dutyrate2
+    type: decimal
+    required: false
+    description: Field DutyRate2 from LctTariff
+  duty_rate3:
+    display: Dutyrate3
+    type: decimal
+    required: false
+    description: Field DutyRate3 from LctTariff

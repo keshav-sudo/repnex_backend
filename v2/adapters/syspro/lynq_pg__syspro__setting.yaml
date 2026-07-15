@@ -1,0 +1,34 @@
+concept: lynq_pg__syspro__setting
+table: Lynq_PG_Syspro_Setting
+alias: lpgss
+fields:
+  id: lpgss.Id
+  setting_id: lpgss.SettingId
+  wcf_address: lpgss.WCFAddress
+  operator_code: lpgss.OperatorCode
+  operator_password: lpgss.OperatorPassword
+  company_code: lpgss.CompanyCode
+  company_password: lpgss.CompanyPassword
+  cut_off_interval: lpgss.CutOffInterval
+  upload_system_type: lpgss.UploadSystemType
+  vp_connection_string: lpgss.VPConnectionString
+  me_connection_string: lpgss.MEConnectionString
+  binding_type: lpgss.BindingType
+  xml_parameters: lpgss.XmlParameters
+  language_code: lpgss.LanguageCode
+  log_level: lpgss.LogLevel
+  encore_instance: lpgss.EncoreInstance
+  decimals: lpgss.Decimals
+  non_stock_product_class: lpgss.NonStockProductClass
+  use_def_scrap_reason: lpgss.UseDefScrapReason
+  def_scrap_reason: lpgss.DefScrapReason
+  post_non_productive_time: lpgss.PostNonProductiveTime
+  non_productive_code: lpgss.NonProductiveCode
+  post_job_receipt: lpgss.PostJobReceipt
+  job_receipt__inspect_lot_flag: lpgss.JobReceipt_InspectLotFlag
+  job_receipt__cost_basis: lpgss.JobReceipt_CostBasis
+  job_receipt__increase_sales_order_qty: lpgss.JobReceipt_IncreaseSalesOrderQty
+  job_receipt__lot_numbers_processing: lpgss.JobReceipt_LotNumbersProcessing
+  non_productive_wc_code: lpgss.NonProductiveWCCode
+  non_productive_wc_rate: lpgss.NonProductiveWCRate
+  job_receipt__ser_number_processing: lpgss.JobReceipt_SerNumberProcessing

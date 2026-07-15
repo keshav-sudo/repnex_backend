@@ -1,0 +1,7 @@
+concept: sal_branch_ext
+table: SalBranchExt
+alias: sbe
+fields:
+  branch: sbe.Branch
+  tax_suspense_account: sbe.TaxSuspenseAccount
+  tax_rounding_account: sbe.TaxRoundingAccount

@@ -1,0 +1,23 @@
+concept: sor_quote_list_type
+display_name: SorQuoteListType
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorQuoteListType.
+synonyms:
+- sorquotelisttype
+- sor quote list type
+header_attributes:
+  quote_list_type:
+    display: Quotelisttype
+    type: string
+    required: false
+    description: Field QuoteListType from SorQuoteListType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SorQuoteListType
+  inactive_flag:
+    display: Inactiveflag
+    type: decimal
+    required: false
+    description: Field InactiveFlag from SorQuoteListType

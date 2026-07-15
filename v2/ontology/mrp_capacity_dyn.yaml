@@ -1,0 +1,53 @@
+concept: mrp_capacity_dyn
+display_name: MrpCapacityDyn
+module: mrp
+description: Auto-generated representation of the physical table MrpCapacityDyn.
+synonyms:
+- mrpcapacitydyn
+- mrp capacity dyn
+header_attributes:
+  work_centre:
+    display: Workcentre
+    type: string
+    required: false
+    description: Field WorkCentre from MrpCapacityDyn
+  profile_date:
+    display: Profiledate
+    type: date
+    required: false
+    description: Field ProfileDate from MrpCapacityDyn
+  source:
+    display: Source
+    type: string
+    required: false
+    description: Field Source from MrpCapacityDyn
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from MrpCapacityDyn
+  operation:
+    display: Operation
+    type: decimal
+    required: false
+    description: Field Operation from MrpCapacityDyn
+  planned_capacity:
+    display: Plannedcapacity
+    type: decimal
+    required: false
+    description: Field PlannedCapacity from MrpCapacityDyn
+  actual_capacity:
+    display: Actualcapacity
+    type: decimal
+    required: false
+    description: Field ActualCapacity from MrpCapacityDyn
+  complete:
+    display: Complete
+    type: string
+    required: false
+    description: Field Complete from MrpCapacityDyn
+  trial_load_flag:
+    display: Trialloadflag
+    type: string
+    required: false
+    description: Field TrialLoadFlag from MrpCapacityDyn

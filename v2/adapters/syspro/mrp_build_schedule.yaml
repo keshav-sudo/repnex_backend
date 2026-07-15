@@ -1,0 +1,18 @@
+concept: mrp_build_schedule
+table: MrpBuildSchedule
+alias: mbs
+fields:
+  stock_code: mbs.StockCode
+  warehouse: mbs.Warehouse
+  date_required: mbs.DateRequired
+  line: mbs.Line
+  outst_qty_to_make: mbs.OutstQtyToMake
+  reference: mbs.Reference
+  resource_parent: mbs.ResourceParent
+  total_qty_received: mbs.TotalQtyReceived
+  orig_date_reqd: mbs.OrigDateReqd
+  original_line: mbs.OriginalLine
+  orig_outst_qty: mbs.OrigOutstQty
+  version: mbs.Version
+  release: mbs.Release
+  route: mbs.Route

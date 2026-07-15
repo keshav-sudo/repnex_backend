@@ -1,0 +1,198 @@
+concept: rma_cross_shipment
+display_name: RmaCrossShipment
+module: other
+description: Auto-generated representation of the physical table RmaCrossShipment.
+synonyms:
+- rmacrossshipment
+- rma cross shipment
+header_attributes:
+  rma_number:
+    display: Rmanumber
+    type: string
+    required: false
+    description: Field RmaNumber from RmaCrossShipment
+  rma_line_number:
+    display: Rmalinenumber
+    type: decimal
+    required: false
+    description: Field RmaLineNumber from RmaCrossShipment
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from RmaCrossShipment
+  non_stock_flag:
+    display: Nonstockflag
+    type: string
+    required: false
+    description: Field NonStockFlag from RmaCrossShipment
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from RmaCrossShipment
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from RmaCrossShipment
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from RmaCrossShipment
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from RmaCrossShipment
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from RmaCrossShipment
+  purchase_date:
+    display: Purchasedate
+    type: date
+    required: false
+    description: Field PurchaseDate from RmaCrossShipment
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from RmaCrossShipment
+  qty_cross_shipped:
+    display: Qtycrossshipped
+    type: decimal
+    required: false
+    description: Field QtyCrossShipped from RmaCrossShipment
+  date_cross_shipped:
+    display: Datecrossshipped
+    type: date
+    required: false
+    description: Field DateCrossShipped from RmaCrossShipment
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from RmaCrossShipment
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from RmaCrossShipment
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from RmaCrossShipment
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from RmaCrossShipment
+  tax_flag:
+    display: Taxflag
+    type: string
+    required: false
+    description: Field TaxFlag from RmaCrossShipment
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from RmaCrossShipment
+  tax_gst:
+    display: Taxgst
+    type: string
+    required: false
+    description: Field TaxGST from RmaCrossShipment
+  cus_sup_stk_code:
+    display: Cussupstkcode
+    type: string
+    required: false
+    description: Field CusSupStkCode from RmaCrossShipment
+  unit_quantity:
+    display: Unitquantity
+    type: string
+    required: false
+    description: Field UnitQuantity from RmaCrossShipment
+  conv_fact_unit_q:
+    display: Convfactunitq
+    type: decimal
+    required: false
+    description: Field ConvFactUnitQ from RmaCrossShipment
+  alt_uom_unit_q:
+    display: Altuomunitq
+    type: string
+    required: false
+    description: Field AltUomUnitQ from RmaCrossShipment
+  decimals_unit_q:
+    display: Decimalsunitq
+    type: decimal
+    required: false
+    description: Field DecimalsUnitQ from RmaCrossShipment
+  ecc_flag:
+    display: Eccflag
+    type: string
+    required: false
+    description: Field EccFlag from RmaCrossShipment
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from RmaCrossShipment
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from RmaCrossShipment
+  selection_code:
+    display: Selectioncode
+    type: string
+    required: false
+    description: Field SelectionCode from RmaCrossShipment
+  selection_type:
+    display: Selectiontype
+    type: string
+    required: false
+    description: Field SelectionType from RmaCrossShipment
+  line_disc_pct1:
+    display: Linediscpct1
+    type: decimal
+    required: false
+    description: Field LineDiscPct1 from RmaCrossShipment
+  line_disc_pct2:
+    display: Linediscpct2
+    type: decimal
+    required: false
+    description: Field LineDiscPct2 from RmaCrossShipment
+  line_disc_pct3:
+    display: Linediscpct3
+    type: decimal
+    required: false
+    description: Field LineDiscPct3 from RmaCrossShipment
+  line_disc_val_flag:
+    display: Linediscvalflag
+    type: string
+    required: false
+    description: Field LineDiscValFlag from RmaCrossShipment
+  line_disc_value:
+    display: Linediscvalue
+    type: decimal
+    required: false
+    description: Field LineDiscValue from RmaCrossShipment
+  ord_disc_pct1:
+    display: Orddiscpct1
+    type: decimal
+    required: false
+    description: Field OrdDiscPct1 from RmaCrossShipment
+  ord_disc_pct2:
+    display: Orddiscpct2
+    type: decimal
+    required: false
+    description: Field OrdDiscPct2 from RmaCrossShipment
+  ord_disc_pct3:
+    display: Orddiscpct3
+    type: decimal
+    required: false
+    description: Field OrdDiscPct3 from RmaCrossShipment

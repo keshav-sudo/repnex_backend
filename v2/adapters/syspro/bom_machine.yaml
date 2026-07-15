@@ -1,0 +1,15 @@
+concept: bom_machine
+table: BomMachine
+alias: bm
+fields:
+  machine: bm.Machine
+  description: bm.Description
+  mtd_std_hrs_earned: bm.MtdStdHrsEarned
+  mtd_non_prod_hours: bm.MtdNonProdHours
+  mtd_act_prod_hours: bm.MtdActProdHours
+  std_hrs_per_month: bm.StdHrsPerMonth
+  work_centre: bm.WorkCentre
+  shift_id: bm.ShiftId
+  wip_branch: bm.WipBranch
+  prod_line: bm.ProdLine
+  shift_code: bm.ShiftCode

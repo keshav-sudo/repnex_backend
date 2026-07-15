@@ -1,0 +1,418 @@
+concept: iop_selection_set
+display_name: IopSelectionSet
+module: other
+description: Auto-generated representation of the physical table IopSelectionSet.
+synonyms:
+- iopselectionset
+- iop selection set
+header_attributes:
+  selection_set:
+    display: Selectionset
+    type: string
+    required: false
+    description: Field SelectionSet from IopSelectionSet
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from IopSelectionSet
+  date_last_used:
+    display: Datelastused
+    type: date
+    required: false
+    description: Field DateLastUsed from IopSelectionSet
+  use_fg_collection:
+    display: Usefgcollection
+    type: string
+    required: false
+    description: Field UseFgCollection from IopSelectionSet
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopSelectionSet
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopSelectionSet
+  stock_sel:
+    display: Stocksel
+    type: string
+    required: false
+    description: Field StockSel from IopSelectionSet
+  stock_from:
+    display: Stockfrom
+    type: string
+    required: false
+    description: Field StockFrom from IopSelectionSet
+  stock_to:
+    display: Stockto
+    type: string
+    required: false
+    description: Field StockTo from IopSelectionSet
+  warehouse_sel:
+    display: Warehousesel
+    type: string
+    required: false
+    description: Field WarehouseSel from IopSelectionSet
+  warehouse_from:
+    display: Warehousefrom
+    type: string
+    required: false
+    description: Field WarehouseFrom from IopSelectionSet
+  warehouse_to:
+    display: Warehouseto
+    type: string
+    required: false
+    description: Field WarehouseTo from IopSelectionSet
+  supplier_sel:
+    display: Suppliersel
+    type: string
+    required: false
+    description: Field SupplierSel from IopSelectionSet
+  supplier_from:
+    display: Supplierfrom
+    type: string
+    required: false
+    description: Field SupplierFrom from IopSelectionSet
+  supplier_to:
+    display: Supplierto
+    type: string
+    required: false
+    description: Field SupplierTo from IopSelectionSet
+  prod_class_sel:
+    display: Prodclasssel
+    type: string
+    required: false
+    description: Field ProdClassSel from IopSelectionSet
+  prod_class_from:
+    display: Prodclassfrom
+    type: string
+    required: false
+    description: Field ProdClassFrom from IopSelectionSet
+  prod_class_to:
+    display: Prodclassto
+    type: string
+    required: false
+    description: Field ProdClassTo from IopSelectionSet
+  planner_sel:
+    display: Plannersel
+    type: string
+    required: false
+    description: Field PlannerSel from IopSelectionSet
+  planner_from:
+    display: Plannerfrom
+    type: string
+    required: false
+    description: Field PlannerFrom from IopSelectionSet
+  planner_to:
+    display: Plannerto
+    type: string
+    required: false
+    description: Field PlannerTo from IopSelectionSet
+  buyer_sel:
+    display: Buyersel
+    type: string
+    required: false
+    description: Field BuyerSel from IopSelectionSet
+  buyer_from:
+    display: Buyerfrom
+    type: string
+    required: false
+    description: Field BuyerFrom from IopSelectionSet
+  buyer_to:
+    display: Buyerto
+    type: string
+    required: false
+    description: Field BuyerTo from IopSelectionSet
+  include_abc_a:
+    display: Includeabca
+    type: decimal
+    required: false
+    description: Field IncludeAbcA from IopSelectionSet
+  include_abc_b:
+    display: Includeabcb
+    type: decimal
+    required: false
+    description: Field IncludeAbcB from IopSelectionSet
+  include_abc_c:
+    display: Includeabcc
+    type: decimal
+    required: false
+    description: Field IncludeAbcC from IopSelectionSet
+  include_abc_d:
+    display: Includeabcd
+    type: decimal
+    required: false
+    description: Field IncludeAbcD from IopSelectionSet
+  include_abc_e:
+    display: Includeabce
+    type: decimal
+    required: false
+    description: Field IncludeAbcE from IopSelectionSet
+  include_abc_none:
+    display: Includeabcnone
+    type: decimal
+    required: false
+    description: Field IncludeAbcNone from IopSelectionSet
+  abc_type:
+    display: Abctype
+    type: string
+    required: false
+    description: Field AbcType from IopSelectionSet
+  abc_level:
+    display: Abclevel
+    type: string
+    required: false
+    description: Field AbcLevel from IopSelectionSet
+  abc_base:
+    display: Abcbase
+    type: string
+    required: false
+    description: Field AbcBase from IopSelectionSet
+  abc_months:
+    display: Abcmonths
+    type: decimal
+    required: false
+    description: Field AbcMonths from IopSelectionSet
+  pareto_break_ab:
+    display: Paretobreakab
+    type: decimal
+    required: false
+    description: Field ParetoBreakAb from IopSelectionSet
+  pareto_break_bc:
+    display: Paretobreakbc
+    type: decimal
+    required: false
+    description: Field ParetoBreakBc from IopSelectionSet
+  pareto_break_cd:
+    display: Paretobreakcd
+    type: decimal
+    required: false
+    description: Field ParetoBreakCd from IopSelectionSet
+  include_adjust:
+    display: Includeadjust
+    type: decimal
+    required: false
+    description: Field IncludeAdjust from IopSelectionSet
+  analyze_by_ecc:
+    display: Analyzebyecc
+    type: decimal
+    required: false
+    description: Field AnalyzeByEcc from IopSelectionSet
+  manual_forecast:
+    display: Manualforecast
+    type: decimal
+    required: false
+    description: Field ManualForecast from IopSelectionSet
+  replenish_item:
+    display: Replenishitem
+    type: decimal
+    required: false
+    description: Field ReplenishItem from IopSelectionSet
+  inc_mto:
+    display: Incmto
+    type: decimal
+    required: false
+    description: Field IncMto from IopSelectionSet
+  inc_mps:
+    display: Incmps
+    type: decimal
+    required: false
+    description: Field IncMps from IopSelectionSet
+  inc_made_in:
+    display: Incmadein
+    type: decimal
+    required: false
+    description: Field IncMadeIn from IopSelectionSet
+  inc_bought_out:
+    display: Incboughtout
+    type: decimal
+    required: false
+    description: Field IncBoughtOut from IopSelectionSet
+  inc_sub_con:
+    display: Incsubcon
+    type: decimal
+    required: false
+    description: Field IncSubCon from IopSelectionSet
+  inc_kit:
+    display: Inckit
+    type: decimal
+    required: false
+    description: Field IncKit from IopSelectionSet
+  inc_co_prod:
+    display: Inccoprod
+    type: decimal
+    required: false
+    description: Field IncCoProd from IopSelectionSet
+  inc_by_prod:
+    display: Incbyprod
+    type: decimal
+    required: false
+    description: Field IncByProd from IopSelectionSet
+  excess_stock:
+    display: Excessstock
+    type: string
+    required: false
+    description: Field ExcessStock from IopSelectionSet
+  forecast_create:
+    display: Forecastcreate
+    type: string
+    required: false
+    description: Field ForecastCreate from IopSelectionSet
+  inactivate_cur:
+    display: Inactivatecur
+    type: decimal
+    required: false
+    description: Field InactivateCur from IopSelectionSet
+  batch_target:
+    display: Batchtarget
+    type: string
+    required: false
+    description: Field BatchTarget from IopSelectionSet
+  adjust_outliers:
+    display: Adjustoutliers
+    type: decimal
+    required: false
+    description: Field AdjustOutliers from IopSelectionSet
+  forecast_ref:
+    display: Forecastref
+    type: string
+    required: false
+    description: Field ForecastRef from IopSelectionSet
+  inc_no_draft:
+    display: Incnodraft
+    type: decimal
+    required: false
+    description: Field IncNoDraft from IopSelectionSet
+  inc_no_current:
+    display: Incnocurrent
+    type: decimal
+    required: false
+    description: Field IncNoCurrent from IopSelectionSet
+  inc_prd_no_fore:
+    display: Incprdnofore
+    type: decimal
+    required: false
+    description: Field IncPrdNoFore from IopSelectionSet
+  only_if_diff:
+    display: Onlyifdiff
+    type: decimal
+    required: false
+    description: Field OnlyIfDiff from IopSelectionSet
+  percent_diff:
+    display: Percentdiff
+    type: decimal
+    required: false
+    description: Field PercentDiff from IopSelectionSet
+  months_diff:
+    display: Monthsdiff
+    type: decimal
+    required: false
+    description: Field MonthsDiff from IopSelectionSet
+  calendar:
+    display: Calendar
+    type: string
+    required: false
+    description: Field Calendar from IopSelectionSet
+  options_maint:
+    display: Optionsmaint
+    type: string
+    required: false
+    description: Field OptionsMaint from IopSelectionSet
+  update_live_fore:
+    display: Updatelivefore
+    type: string
+    required: false
+    description: Field UpdateLiveFore from IopSelectionSet
+  batch_forecasts:
+    display: Batchforecasts
+    type: string
+    required: false
+    description: Field BatchForecasts from IopSelectionSet
+  manual_forecasts:
+    display: Manualforecasts
+    type: string
+    required: false
+    description: Field ManualForecasts from IopSelectionSet
+  fams_and_groups:
+    display: Famsandgroups
+    type: string
+    required: false
+    description: Field FamsAndGroups from IopSelectionSet
+  pareto_analysis:
+    display: Paretoanalysis
+    type: string
+    required: false
+    description: Field ParetoAnalysis from IopSelectionSet
+  list_of_forecasts:
+    display: Listofforecasts
+    type: string
+    required: false
+    description: Field ListOfForecasts from IopSelectionSet
+  forecast_compare:
+    display: Forecastcompare
+    type: string
+    required: false
+    description: Field ForecastCompare from IopSelectionSet
+  forecast_accuracy:
+    display: Forecastaccuracy
+    type: string
+    required: false
+    description: Field ForecastAccuracy from IopSelectionSet
+  policy_setting:
+    display: Policysetting
+    type: string
+    required: false
+    description: Field PolicySetting from IopSelectionSet
+  io_modelling:
+    display: Iomodelling
+    type: string
+    required: false
+    description: Field IoModelling from IopSelectionSet
+  fore_acc_cal:
+    display: Foreacccal
+    type: string
+    required: false
+    description: Field ForeAccCal from IopSelectionSet
+  fore_acc_periods:
+    display: Foreaccperiods
+    type: decimal
+    required: false
+    description: Field ForeAccPeriods from IopSelectionSet
+  fore_acc_compare:
+    display: Foreacccompare
+    type: string
+    required: false
+    description: Field ForeAccCompare from IopSelectionSet
+  fore_acc_move_periods:
+    display: Foreaccmoveperiods
+    type: decimal
+    required: false
+    description: Field ForeAccMovePeriods from IopSelectionSet
+  fore_acc_use:
+    display: Foreaccuse
+    type: string
+    required: false
+    description: Field ForeAccUse from IopSelectionSet
+  fore_acc_no_snap:
+    display: Foreaccnosnap
+    type: decimal
+    required: false
+    description: Field ForeAccNoSnap from IopSelectionSet
+  freeze_in_lead:
+    display: Freezeinlead
+    type: decimal
+    required: false
+    description: Field FreezeInLead from IopSelectionSet
+  delete_draft:
+    display: Deletedraft
+    type: decimal
+    required: false
+    description: Field DeleteDraft from IopSelectionSet
+  inc_plan_bill:
+    display: Incplanbill
+    type: decimal
+    required: false
+    description: Field IncPlanBill from IopSelectionSet

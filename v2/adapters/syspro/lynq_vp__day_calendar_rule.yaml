@@ -1,0 +1,12 @@
+concept: lynq_vp__day_calendar_rule
+table: Lynq_VP_DayCalendarRule
+alias: lvpdcr
+fields:
+  id: lvpdcr.ID
+  wc_id: lvpdcr.WcID
+  rule_code: lvpdcr.RuleCode
+  rule_description: lvpdcr.RuleDescription
+  is_default: lvpdcr.IsDefault
+  day_of_week: lvpdcr.DayOfWeek
+  rule_color: lvpdcr.RuleColor
+  template_id: lvpdcr.TemplateID

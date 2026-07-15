@@ -1,0 +1,6 @@
+concept: bom_sched_group
+table: BomSchedGroup
+alias: bsg
+fields:
+  scheduling_group: bsg.SchedulingGroup
+  description: bsg.Description

@@ -1,0 +1,33 @@
+concept: adm_rtp_product
+display_name: AdmRtpProduct
+module: administration
+description: Auto-generated representation of the physical table AdmRtpProduct.
+synonyms:
+- admrtpproduct
+- adm rtp product
+header_attributes:
+  rtp_product_code:
+    display: Rtpproductcode
+    type: string
+    required: false
+    description: Field RtpProductCode from AdmRtpProduct
+  rtp_product_desc:
+    display: Rtpproductdesc
+    type: string
+    required: false
+    description: Field RtpProductDesc from AdmRtpProduct
+  rtp_product_license:
+    display: Rtpproductlicense
+    type: string
+    required: false
+    description: Field RtpProductLicense from AdmRtpProduct
+  rtp_product_access:
+    display: Rtpproductaccess
+    type: string
+    required: false
+    description: Field RtpProductAccess from AdmRtpProduct
+  run_time_linked_oper:
+    display: Runtimelinkedoper
+    type: string
+    required: false
+    description: Field RunTimeLinkedOper from AdmRtpProduct

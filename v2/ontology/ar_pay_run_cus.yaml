@@ -1,0 +1,88 @@
+concept: ar_pay_run_cus
+display_name: ArPayRunCus
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArPayRunCus.
+synonyms:
+- arpayruncus
+- ar pay run cus
+header_attributes:
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ArPayRunCus
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArPayRunCus
+  customer_name:
+    display: Customername
+    type: string
+    required: false
+    description: Field CustomerName from ArPayRunCus
+  cus_balance:
+    display: Cusbalance
+    type: decimal
+    required: false
+    description: Field CusBalance from ArPayRunCus
+  pay_amount:
+    display: Payamount
+    type: decimal
+    required: false
+    description: Field PayAmount from ArPayRunCus
+  total_pay_amount:
+    display: Totalpayamount
+    type: decimal
+    required: false
+    description: Field TotalPayAmount from ArPayRunCus
+  sum_credit_amount:
+    display: Sumcreditamount
+    type: decimal
+    required: false
+    description: Field SumCreditAmount from ArPayRunCus
+  pdc_amount:
+    display: Pdcamount
+    type: decimal
+    required: false
+    description: Field PdcAmount from ArPayRunCus
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from ArPayRunCus
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from ArPayRunCus
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ArPayRunCus
+  payment_rate:
+    display: Paymentrate
+    type: decimal
+    required: false
+    description: Field PaymentRate from ArPayRunCus
+  payment_mul_div:
+    display: Paymentmuldiv
+    type: string
+    required: false
+    description: Field PaymentMulDiv from ArPayRunCus
+  gl_exch_var_code:
+    display: Glexchvarcode
+    type: string
+    required: false
+    description: Field GlExchVarCode from ArPayRunCus
+  multi_pay_flag:
+    display: Multipayflag
+    type: string
+    required: false
+    description: Field MultiPayFlag from ArPayRunCus
+  multi_pay_amount:
+    display: Multipayamount
+    type: decimal
+    required: false
+    description: Field MultiPayAmount from ArPayRunCus

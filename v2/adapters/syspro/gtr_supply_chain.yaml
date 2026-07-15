@@ -1,0 +1,13 @@
+concept: gtr_supply_chain
+table: GtrSupplyChain
+alias: gsc
+fields:
+  stock_code: gsc.StockCode
+  chain_number: gsc.ChainNumber
+  level_number: gsc.LevelNumber
+  target_warehouse: gsc.TargetWarehouse
+  source_warehouse: gsc.SourceWarehouse
+  lead_time: gsc.LeadTime
+  gl_code: gsc.GlCode
+  cost_multiplier: gsc.CostMultiplier
+  buying_rule_flag: gsc.BuyingRuleFlag

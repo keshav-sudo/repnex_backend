@@ -1,0 +1,8 @@
+concept: por_stock_comment
+table: PorStockComment
+alias: psc
+fields:
+  stock_code: psc.StockCode
+  comment_code: psc.CommentCode
+  comment1: psc.Comment1
+  comment2: psc.Comment2

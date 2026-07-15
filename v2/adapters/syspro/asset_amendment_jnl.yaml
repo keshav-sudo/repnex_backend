@@ -1,0 +1,15 @@
+concept: asset_amendment_jnl
+table: AssetAmendmentJnl
+alias: aaj2
+fields:
+  asset_file_name: aaj2.AssetFileName
+  jnl_date: aaj2.JnlDate
+  jnl_time: aaj2.JnlTime
+  jnl_line: aaj2.JnlLine
+  asset: aaj2.Asset
+  journal_printed: aaj2.JournalPrinted
+  change_flag: aaj2.ChangeFlag
+  column_name: aaj2.ColumnName
+  before: aaj2.Before
+  after: aaj2.After
+  operator_code: aaj2.OperatorCode

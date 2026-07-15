@@ -1,0 +1,58 @@
+concept: cfg_std_config
+display_name: CfgStdConfig
+module: other
+description: Auto-generated representation of the physical table CfgStdConfig.
+synonyms:
+- cfgstdconfig
+- cfg std config
+header_attributes:
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from CfgStdConfig
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from CfgStdConfig
+  library_type:
+    display: Librarytype
+    type: string
+    required: false
+    description: Field LibraryType from CfgStdConfig
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from CfgStdConfig
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from CfgStdConfig
+  avail_from_date:
+    display: Availfromdate
+    type: date
+    required: false
+    description: Field AvailFromDate from CfgStdConfig
+  avail_to_date:
+    display: Availtodate
+    type: date
+    required: false
+    description: Field AvailToDate from CfgStdConfig
+  config_description:
+    display: Configdescription
+    type: string
+    required: false
+    description: Field ConfigDescription from CfgStdConfig
+  component_qty:
+    display: Componentqty
+    type: decimal
+    required: false
+    description: Field ComponentQty from CfgStdConfig
+  comp_operation:
+    display: Compoperation
+    type: string
+    required: false
+    description: Field CompOperation from CfgStdConfig

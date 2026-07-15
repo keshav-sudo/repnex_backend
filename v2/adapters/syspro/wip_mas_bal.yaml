@@ -1,0 +1,26 @@
+concept: wip_mas_bal
+table: WipMasBal
+alias: wmb
+fields:
+  run_date_time: wmb.RunDateTime
+  job: wmb.Job
+  cur_hrs_book_to_date: wmb.CurHrsBookToDate
+  clc_hrs_book_to_date: wmb.ClcHrsBookToDate
+  cur_mat_cost_to_date: wmb.CurMatCostToDate
+  clc_mat_cost_to_date: wmb.ClcMatCostToDate
+  cur_lab_cost_to_date: wmb.CurLabCostToDate
+  clc_lab_cost_to_date: wmb.ClcLabCostToDate
+  cur_lab_value_issues: wmb.CurLabValueIssues
+  clc_lab_value_issues: wmb.ClcLabValueIssues
+  cur_qty_manufactured: wmb.CurQtyManufactured
+  clc_qty_manufactured: wmb.ClcQtyManufactured
+  cur_qty_manu_ent: wmb.CurQtyManuEnt
+  clc_qty_manu_ent: wmb.ClcQtyManuEnt
+  cur_inspect_value: wmb.CurInspectValue
+  clc_inspect_value: wmb.ClcInspectValue
+  cur_inspect_qty_manu: wmb.CurInspectQtyManu
+  clc_inspect_qty_manu: wmb.ClcInspectQtyManu
+  cur_mat_value_issues: wmb.CurMatValueIssues
+  clc_mat_value_issues: wmb.ClcMatValueIssues
+  cur_next_op_for_all: wmb.CurNextOpForAll
+  clc_next_op_for_all: wmb.ClcNextOpForAll

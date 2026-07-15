@@ -1,0 +1,23 @@
+concept: eft_non_extract_det
+table: EftNonExtractDet
+alias: ened
+fields:
+  bank: ened.Bank
+  trn_source: ened.TrnSource
+  supplier: ened.Supplier
+  trn_date: ened.TrnDate
+  entry_number: ened.EntryNumber
+  invoice: ened.Invoice
+  payment_value: ened.PaymentValue
+  currency_value: ened.CurrencyValue
+  post_currency: ened.PostCurrency
+  invoice_date: ened.InvoiceDate
+  invoice_type: ened.InvoiceType
+  reference: ened.Reference
+  cb_bank: ened.CbBank
+  cb_trn_year: ened.CbTrnYear
+  cb_trn_month: ened.CbTrnMonth
+  cb_trn_date: ened.CbTrnDate
+  cb_trn_time: ened.CbTrnTime
+  cb_entry_number: ened.CbEntryNumber
+  payment_number: ened.PaymentNumber

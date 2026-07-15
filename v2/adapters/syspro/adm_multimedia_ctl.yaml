@@ -1,0 +1,8 @@
+concept: adm_multimedia_ctl
+table: AdmMultimediaCtl
+alias: amc
+fields:
+  object_type: amc.ObjectType
+  description: amc.Description
+  icon_number: amc.IconNumber
+  object_parameter: amc.ObjectParameter

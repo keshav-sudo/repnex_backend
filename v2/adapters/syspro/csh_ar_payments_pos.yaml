@@ -1,0 +1,14 @@
+concept: csh_ar_payments_pos
+table: CshArPaymentsPos
+alias: capp
+fields:
+  bank: capp.Bank
+  cb_trn_year: capp.CbTrnYear
+  trn_month: capp.TrnMonth
+  cb_trn_date: capp.CbTrnDate
+  cb_trn_time: capp.CbTrnTime
+  entry_number: capp.EntryNumber
+  pos_transaction_type: capp.PosTransactionType
+  pos_trans_branch: capp.PosTransBranch
+  pos_unique_id: capp.PosUniqueId
+  pos_payment_line: capp.PosPaymentLine

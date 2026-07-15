@@ -1,0 +1,37 @@
+concept: adm_tax
+table: AdmTax
+alias: at
+fields:
+  tax_code: at.TaxCode
+  description: at.Description
+  cur_tax_rate: at.CurTaxRate
+  prv_tax_rate: at.PrvTaxRate
+  tax_eff_date: at.TaxEffDate
+  tax_basis: at.TaxBasis
+  tax_neutral_basis: at.TaxNeutralBasis
+  tax_price_code: at.TaxPriceCode
+  tax_inc_excl: at.TaxIncExcl
+  gl_tax_gl_code: at.GlTaxGlCode
+  ap_tax_gl_code: at.ApTaxGlCode
+  ptd_tot_exempt: at.PtdTotExempt
+  ptd_tot_non_exempt: at.PtdTotNonExempt
+  ptd_tot_tax_amt: at.PtdTotTaxAmt
+  mtd_tot_exempt: at.MtdTotExempt
+  mtd_tot_non_exempt: at.MtdTotNonExempt
+  mtd_tot_tax_amt: at.MtdTotTaxAmt
+  ytd_tot_exempt: at.YtdTotExempt
+  ytd_tot_non_exempt: at.YtdTotNonExempt
+  ytd_tot_tax_amt: at.YtdTotTaxAmt
+  tax_rate_decimals: at.TaxRateDecimals
+  use_gst_flag: at.UseGstFlag
+  ptd_gst: at.PtdGst
+  ytd_gst: at.YtdGst
+  cb_dep_tax_gl_code: at.CbDepTaxGlCode
+  cb_wth_tax_gl_code: at.CbWthTaxGlCode
+  rev_charge_flag: at.RevChargeFlag
+  gl_rev_chg_gl_code: at.GlRevChgGlCode
+  ap_rev_chg_gl_code: at.ApRevChgGlCode
+  rev_chg_cur_tax_rate: at.RevChgCurTaxRate
+  rev_chg_prv_tax_rate: at.RevChgPrvTaxRate
+  rev_chg_tax_eff_date: at.RevChgTaxEffDate
+  price_list: at.PriceList

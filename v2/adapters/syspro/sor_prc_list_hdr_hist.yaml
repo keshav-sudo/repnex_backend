@@ -1,0 +1,20 @@
+concept: sor_prc_list_hdr_hist
+table: SorPrcListHdrHist
+alias: splhh
+fields:
+  price_list: splhh.PriceList
+  date_changed: splhh.DateChanged
+  time_changed: splhh.TimeChanged
+  start_new_date: splhh.StartNewDate
+  start_old_date: splhh.StartOldDate
+  closing_new_date: splhh.ClosingNewDate
+  closing_old_date: splhh.ClosingOldDate
+  operator: splhh.Operator
+  price_list_status_new: splhh.PriceListStatusNew
+  price_list_status_old: splhh.PriceListStatusOld
+  description_new: splhh.DescriptionNew
+  description_old: splhh.DescriptionOld
+  change_flag: splhh.ChangeFlag
+  currency: splhh.Currency
+  price_method: splhh.PriceMethod
+  stock_selection: splhh.StockSelection

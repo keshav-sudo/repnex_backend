@@ -1,0 +1,58 @@
+concept: sqm_stakeholder
+display_name: SqmStakeholder
+module: other
+description: Auto-generated representation of the physical table SqmStakeholder.
+synonyms:
+- sqmstakeholder
+- sqm stakeholder
+header_attributes:
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from SqmStakeholder
+  stake_holder:
+    display: Stakeholder
+    type: string
+    required: false
+    description: Field StakeHolder from SqmStakeholder
+  owner:
+    display: Owner
+    type: string
+    required: false
+    description: Field Owner from SqmStakeholder
+  manager:
+    display: Manager
+    type: string
+    required: false
+    description: Field Manager from SqmStakeholder
+  invest_report:
+    display: Investreport
+    type: string
+    required: false
+    description: Field InvestReport from SqmStakeholder
+  close_out_actions:
+    display: Closeoutactions
+    type: string
+    required: false
+    description: Field CloseOutActions from SqmStakeholder
+  ca_actions:
+    display: Caactions
+    type: string
+    required: false
+    description: Field CaActions from SqmStakeholder
+  pa_actions:
+    display: Paactions
+    type: string
+    required: false
+    description: Field PaActions from SqmStakeholder
+  ncr_audit:
+    display: Ncraudit
+    type: string
+    required: false
+    description: Field NcrAudit from SqmStakeholder
+  req_email:
+    display: Reqemail
+    type: string
+    required: false
+    description: Field ReqEmail from SqmStakeholder

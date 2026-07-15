@@ -1,0 +1,18 @@
+concept: crm_account_type
+display_name: CrmAccountType
+module: crm
+description: Auto-generated representation of the physical table CrmAccountType.
+synonyms:
+- crmaccounttype
+- crm account type
+header_attributes:
+  account_type:
+    display: Accounttype
+    type: string
+    required: false
+    description: Field AccountType from CrmAccountType
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmAccountType

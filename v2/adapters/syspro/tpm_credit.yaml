@@ -1,0 +1,6 @@
+concept: tpm_credit
+table: TpmCredit
+alias: tc2
+fields:
+  customer: tc2.Customer
+  customer_sub: tc2.CustomerSub

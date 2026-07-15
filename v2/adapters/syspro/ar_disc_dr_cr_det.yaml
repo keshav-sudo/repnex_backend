@@ -1,0 +1,29 @@
+concept: ar_disc_dr_cr_det
+table: ArDiscDrCrDet
+alias: addcd
+fields:
+  customer: addcd.Customer
+  disc_dr_cr: addcd.DiscDrCr
+  sequence: addcd.Sequence
+  document_type: addcd.DocumentType
+  invoice: addcd.Invoice
+  entry_number: addcd.EntryNumber
+  pay_date: addcd.PayDate
+  cash_journal: addcd.CashJournal
+  jnl_entry: addcd.JnlEntry
+  dr_cr_type: addcd.DrCrType
+  dr_cr_value: addcd.DrCrValue
+  dr_cr_tax: addcd.DrCrTax
+  post_year: addcd.PostYear
+  post_period: addcd.PostPeriod
+  currency_value: addcd.CurrencyValue
+  post_currency: addcd.PostCurrency
+  conv_rate: addcd.ConvRate
+  mul_div: addcd.MulDiv
+  account_cur: addcd.AccountCur
+  acc_conv_rate: addcd.AccConvRate
+  acc_mul_div: addcd.AccMulDiv
+  triang_currency: addcd.TriangCurrency
+  triang_rate: addcd.TriangRate
+  triang_mul_div: addcd.TriangMulDiv
+  tax_code: addcd.TaxCode

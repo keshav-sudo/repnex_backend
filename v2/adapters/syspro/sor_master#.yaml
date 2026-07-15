@@ -1,0 +1,7 @@
+concept: sor_master#
+table: SorMaster#
+alias: sm1
+fields:
+  sales_order: sm1.SalesOrder
+  post_date_time: sm1.PostDateTime
+  order_value: sm1.OrderValue

@@ -1,0 +1,19 @@
+concept: crm_address
+table: CrmAddress
+alias: ca3
+fields:
+  contact_id: ca3.ContactId
+  address_type: ca3.AddressType
+  description: ca3.Description
+  building: ca3.Building
+  street: ca3.Street
+  city: ca3.City
+  locality: ca3.Locality
+  state: ca3.State
+  country: ca3.Country
+  zip: ca3.Zip
+  address_gps_lat: ca3.AddressGpsLat
+  address_gps_long: ca3.AddressGpsLong
+  work_home_flag: ca3.WorkHomeFlag
+  preferred: ca3.Preferred
+  private: ca3.Private

@@ -1,0 +1,21 @@
+concept: ar_perm_entries
+table: ArPermEntries
+alias: ape1
+fields:
+  reference: ape1.Reference
+  release_day: ape1.ReleaseDay
+  customer: ape1.Customer
+  entry_type: ape1.EntryType
+  invoice_value: ape1.InvoiceValue
+  cost_value: ape1.CostValue
+  tax_code: ape1.TaxCode
+  product_class: ape1.ProductClass
+  next_post_period: ape1.NextPostPeriod
+  expiry_date: ape1.ExpiryDate
+  transfer_freq: ape1.TransferFreq
+  posted_flag: ape1.PostedFlag
+  gst_code: ape1.GstCode
+  entry_description: ape1.EntryDescription
+  extra_desc: ape1.ExtraDesc
+  nationality: ape1.Nationality
+  tax_regn_num: ape1.TaxRegnNum

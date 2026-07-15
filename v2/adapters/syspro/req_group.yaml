@@ -1,0 +1,6 @@
+concept: req_group
+table: ReqGroup
+alias: rg
+fields:
+  requisition_group: rg.RequisitionGroup
+  group_description: rg.GroupDescription

@@ -1,0 +1,58 @@
+concept: ar_dunning_invoices
+display_name: ArDunningInvoices
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArDunningInvoices.
+synonyms:
+- ardunninginvoices
+- ar dunning invoices
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArDunningInvoices
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArDunningInvoices
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArDunningInvoices
+  dunning_group:
+    display: Dunninggroup
+    type: string
+    required: false
+    description: Field DunningGroup from ArDunningInvoices
+  dunning_status:
+    display: Dunningstatus
+    type: decimal
+    required: false
+    description: Field DunningStatus from ArDunningInvoices
+  dunning_date:
+    display: Dunningdate
+    type: date
+    required: false
+    description: Field DunningDate from ArDunningInvoices
+  invoice_bal1:
+    display: Invoicebal1
+    type: decimal
+    required: false
+    description: Field InvoiceBal1 from ArDunningInvoices
+  invoice_bal2:
+    display: Invoicebal2
+    type: decimal
+    required: false
+    description: Field InvoiceBal2 from ArDunningInvoices
+  invoice_bal3:
+    display: Invoicebal3
+    type: decimal
+    required: false
+    description: Field InvoiceBal3 from ArDunningInvoices
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ArDunningInvoices

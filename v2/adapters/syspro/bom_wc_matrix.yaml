@@ -1,0 +1,7 @@
+concept: bom_wc_matrix
+table: BomWcMatrix
+alias: bwm
+fields:
+  this_work_centre: bwm.ThisWorkCentre
+  next_work_centre: bwm.NextWorkCentre
+  movement_time: bwm.MovementTime

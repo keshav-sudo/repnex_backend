@@ -1,0 +1,98 @@
+concept: iop_supply_method
+display_name: IopSupplyMethod
+module: other
+description: Auto-generated representation of the physical table IopSupplyMethod.
+synonyms:
+- iopsupplymethod
+- iop supply method
+header_attributes:
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopSupplyMethod
+  supply_code:
+    display: Supplycode
+    type: string
+    required: false
+    description: Field SupplyCode from IopSupplyMethod
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopSupplyMethod
+  supply_type:
+    display: Supplytype
+    type: string
+    required: false
+    description: Field SupplyType from IopSupplyMethod
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from IopSupplyMethod
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from IopSupplyMethod
+  source_wh:
+    display: Sourcewh
+    type: string
+    required: false
+    description: Field SourceWh from IopSupplyMethod
+  plan_order_freq:
+    display: Planorderfreq
+    type: string
+    required: false
+    description: Field PlanOrderFreq from IopSupplyMethod
+  interval_period:
+    display: Intervalperiod
+    type: decimal
+    required: false
+    description: Field IntervalPeriod from IopSupplyMethod
+  day_of_week_month:
+    display: Dayofweekmonth
+    type: decimal
+    required: false
+    description: Field DayOfWeekMonth from IopSupplyMethod
+  delivery_method:
+    display: Deliverymethod
+    type: string
+    required: false
+    description: Field DeliveryMethod from IopSupplyMethod
+  int_lead_time:
+    display: Intleadtime
+    type: decimal
+    required: false
+    description: Field IntLeadTime from IopSupplyMethod
+  sup_lead_time:
+    display: Supleadtime
+    type: decimal
+    required: false
+    description: Field SupLeadTime from IopSupplyMethod
+  inspect_lead:
+    display: Inspectlead
+    type: decimal
+    required: false
+    description: Field InspectLead from IopSupplyMethod
+  major_order_mult:
+    display: Majorordermult
+    type: decimal
+    required: false
+    description: Field MajorOrderMult from IopSupplyMethod
+  minor_order_mult:
+    display: Minorordermult
+    type: decimal
+    required: false
+    description: Field MinorOrderMult from IopSupplyMethod
+  order_minimum:
+    display: Orderminimum
+    type: decimal
+    required: false
+    description: Field OrderMinimum from IopSupplyMethod
+  order_maximum:
+    display: Ordermaximum
+    type: decimal
+    required: false
+    description: Field OrderMaximum from IopSupplyMethod

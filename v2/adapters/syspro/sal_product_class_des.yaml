@@ -1,0 +1,6 @@
+concept: sal_product_class_des
+table: SalProductClassDes
+alias: spcd
+fields:
+  product_class: spcd.ProductClass
+  description: spcd.Description

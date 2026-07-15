@@ -1,0 +1,21 @@
+concept: wip_job_amend_jnl
+table: WipJobAmendJnl
+alias: wjaj
+fields:
+  jnl_date: wjaj.JnlDate
+  jnl_time: wjaj.JnlTime
+  jnl_line: wjaj.JnlLine
+  job: wjaj.Job
+  operation: wjaj.Operation
+  stock_code: wjaj.StockCode
+  warehouse: wjaj.Warehouse
+  line: wjaj.Line
+  journal_printed: wjaj.JournalPrinted
+  change_flag: wjaj.ChangeFlag
+  table_name: wjaj.TableName
+  column_name: wjaj.ColumnName
+  before: wjaj.Before
+  after: wjaj.After
+  operator_code: wjaj.OperatorCode
+  pick_number: wjaj.PickNumber
+  pick_line: wjaj.PickLine

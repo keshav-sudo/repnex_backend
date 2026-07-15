@@ -1,0 +1,29 @@
+concept: por_hist_receipt
+table: PorHistReceipt
+alias: phr
+fields:
+  supplier: phr.Supplier
+  stock_code: phr.StockCode
+  jnl_date: phr.JnlDate
+  journal: phr.Journal
+  journal_entry: phr.JournalEntry
+  po_date: phr.PoDate
+  purchase_order: phr.PurchaseOrder
+  purchase_order_lin: phr.PurchaseOrderLin
+  line_due_date: phr.LineDueDate
+  date_received: phr.DateReceived
+  qty_received: phr.QtyReceived
+  price_received: phr.PriceReceived
+  reject_code: phr.RejectCode
+  reference: phr.Reference
+  add_reference: phr.AddReference
+  warehouse: phr.Warehouse
+  orig_purch_price: phr.OrigPurchPrice
+  orig_purch_prc_for: phr.OrigPurchPrcFor
+  currency: phr.Currency
+  price_uom: phr.PriceUom
+  exchange_rate: phr.ExchangeRate
+  mul_div: phr.MulDiv
+  version: phr.Version
+  release: phr.Release
+  delivery_method: phr.DeliveryMethod

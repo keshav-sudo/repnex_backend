@@ -1,0 +1,14 @@
+concept: srs_archive_wii
+table: SrsArchiveWII
+alias: sawii
+fields:
+  archive_date: sawii.ArchiveDate
+  archive_time: sawii.ArchiveTime
+  operator: sawii.Operator
+  archive_id: sawii.ArchiveId
+  archive_type: sawii.ArchiveType
+  archive_file: sawii.ArchiveFile
+  det_job: sawii.DetJob
+  det_lot: sawii.DetLot
+  det_reference: sawii.DetReference
+  det_warehouse: sawii.DetWarehouse

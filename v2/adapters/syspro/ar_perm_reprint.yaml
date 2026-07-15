@@ -1,0 +1,31 @@
+concept: ar_perm_reprint
+table: ArPermReprint
+alias: apr
+fields:
+  invoice: apr.Invoice
+  invoice_date: apr.InvoiceDate
+  foreign_tax_code: apr.ForeignTaxCode
+  foreign_tax_val: apr.ForeignTaxVal
+  foreign_tax_amount: apr.ForeignTaxAmount
+  extended_tax_value: apr.ExtendedTaxValue
+  temp_tax_rate: apr.TempTaxRate
+  tax_rate: apr.TaxRate
+  orig_inv_value: apr.OrigInvValue
+  fst_code: apr.FstCode
+  fst_tax_val: apr.FstTaxVal
+  fst_tax_rate: apr.FstTaxRate
+  orig_disc_value: apr.OrigDiscValue
+  reference: apr.Reference
+  day_of_mth_rel: apr.DayOfMthRel
+  customer: apr.Customer
+  entry_type: apr.EntryType
+  invoice_value: apr.InvoiceValue
+  cost_value: apr.CostValue
+  tax_code: apr.TaxCode
+  product_class: apr.ProductClass
+  next_post_mmyy: apr.NextPostMmyy
+  expiry_date: apr.ExpiryDate
+  freq_of_transfer: apr.FreqOfTransfer
+  posted_flag: apr.PostedFlag
+  can_gst_code: apr.CanGstCode
+  entry_description: apr.EntryDescription

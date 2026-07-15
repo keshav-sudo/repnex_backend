@@ -1,0 +1,7 @@
+concept: inv_ledger_int_ctl
+table: InvLedgerIntCtl
+alias: ilic
+fields:
+  ctl_flag: ilic.CtlFlag
+  prod_class_req: ilic.ProdClassReq
+  trn_type_req: ilic.TrnTypeReq

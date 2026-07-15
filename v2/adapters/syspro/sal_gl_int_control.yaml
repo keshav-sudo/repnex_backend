@@ -1,0 +1,10 @@
+concept: sal_gl_int_control
+table: SalGlIntControl
+alias: sgic
+fields:
+  ctl_flag: sgic.CtlFlag
+  prod_class_req: sgic.ProdClassReq
+  area_required: sgic.AreaRequired
+  warehouse_req: sgic.WarehouseReq
+  pay_area_required: sgic.PayAreaRequired
+  counter_sa_pay_req: sgic.CounterSaPayReq

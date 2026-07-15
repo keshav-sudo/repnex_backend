@@ -1,0 +1,68 @@
+concept: sor_route_detail
+display_name: SorRouteDetail
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorRouteDetail.
+synonyms:
+- sorroutedetail
+- sor route detail
+header_attributes:
+  route_code:
+    display: Routecode
+    type: string
+    required: false
+    description: Field RouteCode from SorRouteDetail
+  delivery_date:
+    display: Deliverydate
+    type: date
+    required: false
+    description: Field DeliveryDate from SorRouteDetail
+  delivery_seq:
+    display: Deliveryseq
+    type: decimal
+    required: false
+    description: Field DeliverySeq from SorRouteDetail
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from SorRouteDetail
+  volume_used:
+    display: Volumeused
+    type: decimal
+    required: false
+    description: Field VolumeUsed from SorRouteDetail
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from SorRouteDetail
+  mass_used:
+    display: Massused
+    type: decimal
+    required: false
+    description: Field MassUsed from SorRouteDetail
+  load_complete_flag:
+    display: Loadcompleteflag
+    type: string
+    required: false
+    description: Field LoadCompleteFlag from SorRouteDetail
+  load_status:
+    display: Loadstatus
+    type: string
+    required: false
+    description: Field LoadStatus from SorRouteDetail
+  load_number:
+    display: Loadnumber
+    type: string
+    required: false
+    description: Field LoadNumber from SorRouteDetail
+  transport:
+    display: Transport
+    type: string
+    required: false
+    description: Field Transport from SorRouteDetail
+  employee:
+    display: Employee
+    type: string
+    required: false
+    description: Field Employee from SorRouteDetail

@@ -1,0 +1,29 @@
+concept: req_user
+table: ReqUser
+alias: ru
+fields:
+  user_code: ru.UserCode
+  user_name: ru.UserName
+  authority_level: ru.AuthorityLevel
+  max_line_value: ru.MaxLineValue
+  auth_warehouse: ru.AuthWarehouse
+  next_user: ru.NextUser
+  mandatory_chk_reqd: ru.MandatoryChkReqd
+  so_review_flag: ru.SoReviewFlag
+  maintain_reqn_flag: ru.MaintainReqnFlag
+  email: ru.Email
+  incl_planning: ru.InclPlanning
+  can_add_reqn: ru.CanAddReqn
+  can_add_reqn_details: ru.CanAddReqnDetails
+  can_chg_reqn_details: ru.CanChgReqnDetails
+  can_approve_reqn: ru.CanApproveReqn
+  can_create_order: ru.CanCreateOrder
+  max_approve_value: ru.MaxApproveValue
+  on_hold_flag: ru.OnHoldFlag
+  forward_to_user: ru.ForwardToUser
+  user_for_porder: ru.UserForPorder
+  requisition_group: ru.RequisitionGroup
+  admin_user_flag: ru.AdminUserFlag
+  admin_stop_flag: ru.AdminStopFlag
+  can_create_rfq: ru.CanCreateRfq
+  user_for_rfq: ru.UserForRfq

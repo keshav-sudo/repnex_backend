@@ -1,0 +1,53 @@
+concept: iop_con_draft
+display_name: IopConDraft
+module: other
+description: Auto-generated representation of the physical table IopConDraft.
+synonyms:
+- iopcondraft
+- iop con draft
+header_attributes:
+  collection:
+    display: Collection
+    type: string
+    required: false
+    description: Field Collection from IopConDraft
+  instance:
+    display: Instance
+    type: decimal
+    required: false
+    description: Field Instance from IopConDraft
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopConDraft
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopConDraft
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopConDraft
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from IopConDraft
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from IopConDraft
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopConDraft
+  freeze:
+    display: Freeze
+    type: string
+    required: false
+    description: Field Freeze from IopConDraft

@@ -1,0 +1,10 @@
+concept: sqm_inspect_doc
+table: SqmInspectDoc
+alias: sid
+fields:
+  inspect_type: sid.InspectType
+  inspect_number: sid.InspectNumber
+  lot: sid.Lot
+  sqm_doc: sid.SqmDoc
+  sqm_file: sid.SqmFile
+  file_contents: sid.FileContents

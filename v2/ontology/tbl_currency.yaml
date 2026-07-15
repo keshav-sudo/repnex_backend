@@ -1,0 +1,113 @@
+concept: tbl_currency
+display_name: TblCurrency
+module: other
+description: Auto-generated representation of the physical table TblCurrency.
+synonyms:
+- tblcurrency
+- tbl currency
+header_attributes:
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from TblCurrency
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblCurrency
+  buy_exchange_rate:
+    display: Buyexchangerate
+    type: decimal
+    required: false
+    description: Field BuyExchangeRate from TblCurrency
+  buy_mul_div:
+    display: Buymuldiv
+    type: string
+    required: false
+    description: Field BuyMulDiv from TblCurrency
+  buy_ec_decl_rate:
+    display: Buyecdeclrate
+    type: decimal
+    required: false
+    description: Field BuyEcDeclRate from TblCurrency
+  buy_ec_decl_fact:
+    display: Buyecdeclfact
+    type: string
+    required: false
+    description: Field BuyEcDeclFact from TblCurrency
+  sell_exchange_rate:
+    display: Sellexchangerate
+    type: decimal
+    required: false
+    description: Field SellExchangeRate from TblCurrency
+  sell_mul_div:
+    display: Sellmuldiv
+    type: string
+    required: false
+    description: Field SellMulDiv from TblCurrency
+  sell_ec_decl_rate:
+    display: Sellecdeclrate
+    type: decimal
+    required: false
+    description: Field SellEcDeclRate from TblCurrency
+  sell_ec_decl_fact:
+    display: Sellecdeclfact
+    type: string
+    required: false
+    description: Field SellEcDeclFact from TblCurrency
+  triang_reqd:
+    display: Triangreqd
+    type: string
+    required: false
+    description: Field TriangReqd from TblCurrency
+  intermediate_cur:
+    display: Intermediatecur
+    type: string
+    required: false
+    description: Field IntermediateCur from TblCurrency
+  fixed_rate:
+    display: Fixedrate
+    type: string
+    required: false
+    description: Field FixedRate from TblCurrency
+  tolerance:
+    display: Tolerance
+    type: decimal
+    required: false
+    description: Field Tolerance from TblCurrency
+  cdb_rate_based_on:
+    display: Cdbratebasedon
+    type: string
+    required: false
+    description: Field CdbRateBasedOn from TblCurrency
+  cdb_tolerance_ind:
+    display: Cdbtoleranceind
+    type: string
+    required: false
+    description: Field CdbToleranceInd from TblCurrency
+  cdb_tolerance:
+    display: Cdbtolerance
+    type: decimal
+    required: false
+    description: Field CdbTolerance from TblCurrency
+  eff_date_rate_chg_buy:
+    display: Effdateratechgbuy
+    type: date
+    required: false
+    description: Field EffDateRateChgBuy from TblCurrency
+  eff_ent_rate_chg_buy:
+    display: Effentratechgbuy
+    type: decimal
+    required: false
+    description: Field EffEntRateChgBuy from TblCurrency
+  eff_date_rate_chg_sell:
+    display: Effdateratechgsell
+    type: date
+    required: false
+    description: Field EffDateRateChgSell from TblCurrency
+  eff_ent_rate_chg_sell:
+    display: Effentratechgsell
+    type: decimal
+    required: false
+    description: Field EffEntRateChgSell from TblCurrency

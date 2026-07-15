@@ -1,0 +1,23 @@
+concept: crm_comp_routing
+display_name: CrmCompRouting
+module: crm
+description: Auto-generated representation of the physical table CrmCompRouting.
+synonyms:
+- crmcomprouting
+- crm comp routing
+header_attributes:
+  routing_id:
+    display: Routingid
+    type: string
+    required: false
+    description: Field RoutingId from CrmCompRouting
+  route_reason:
+    display: Routereason
+    type: string
+    required: false
+    description: Field RouteReason from CrmCompRouting
+  esclated_flag:
+    display: Esclatedflag
+    type: string
+    required: false
+    description: Field EsclatedFlag from CrmCompRouting

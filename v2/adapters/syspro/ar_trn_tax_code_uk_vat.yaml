@@ -1,0 +1,13 @@
+concept: ar_trn_tax_code_uk_vat
+table: ArTrnTaxCodeUkVat
+alias: attcuv
+fields:
+  trn_year: attcuv.TrnYear
+  trn_month: attcuv.TrnMonth
+  register: attcuv.Register
+  invoice: attcuv.Invoice
+  summary_line: attcuv.SummaryLine
+  tax_code: attcuv.TaxCode
+  taxable_value: attcuv.TaxableValue
+  tax_value: attcuv.TaxValue
+  non_tax_value: attcuv.NonTaxValue

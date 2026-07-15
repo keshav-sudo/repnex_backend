@@ -1,0 +1,25 @@
+concept: tbl_currency
+table: TblCurrency
+alias: tc
+fields:
+  currency: tc.Currency
+  description: tc.Description
+  buy_exchange_rate: tc.BuyExchangeRate
+  buy_mul_div: tc.BuyMulDiv
+  buy_ec_decl_rate: tc.BuyEcDeclRate
+  buy_ec_decl_fact: tc.BuyEcDeclFact
+  sell_exchange_rate: tc.SellExchangeRate
+  sell_mul_div: tc.SellMulDiv
+  sell_ec_decl_rate: tc.SellEcDeclRate
+  sell_ec_decl_fact: tc.SellEcDeclFact
+  triang_reqd: tc.TriangReqd
+  intermediate_cur: tc.IntermediateCur
+  fixed_rate: tc.FixedRate
+  tolerance: tc.Tolerance
+  cdb_rate_based_on: tc.CdbRateBasedOn
+  cdb_tolerance_ind: tc.CdbToleranceInd
+  cdb_tolerance: tc.CdbTolerance
+  eff_date_rate_chg_buy: tc.EffDateRateChgBuy
+  eff_ent_rate_chg_buy: tc.EffEntRateChgBuy
+  eff_date_rate_chg_sell: tc.EffDateRateChgSell
+  eff_ent_rate_chg_sell: tc.EffEntRateChgSell

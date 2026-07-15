@@ -1,0 +1,43 @@
+concept: iop_fore_archive
+display_name: IopForeArchive
+module: other
+description: Auto-generated representation of the physical table IopForeArchive.
+synonyms:
+- iopforearchive
+- iop fore archive
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopForeArchive
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopForeArchive
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopForeArchive
+  forecast_wh:
+    display: Forecastwh
+    type: string
+    required: false
+    description: Field ForecastWh from IopForeArchive
+  date_prepared:
+    display: Dateprepared
+    type: date
+    required: false
+    description: Field DatePrepared from IopForeArchive
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from IopForeArchive
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from IopForeArchive

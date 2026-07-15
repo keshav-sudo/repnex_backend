@@ -1,0 +1,53 @@
+concept: crm_email
+display_name: CrmEmail
+module: crm
+description: Auto-generated representation of the physical table CrmEmail.
+synonyms:
+- crmemail
+- crm email
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmEmail
+  email_type:
+    display: Emailtype
+    type: decimal
+    required: false
+    description: Field EmailType from CrmEmail
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CrmEmail
+  email:
+    display: Email
+    type: string
+    required: false
+    description: Field Email from CrmEmail
+  email_upper:
+    display: Emailupper
+    type: string
+    required: false
+    description: Field EmailUpper from CrmEmail
+  email_display_as:
+    display: Emaildisplayas
+    type: string
+    required: false
+    description: Field EmailDisplayAs from CrmEmail
+  work_home_flag:
+    display: Workhomeflag
+    type: string
+    required: false
+    description: Field WorkHomeFlag from CrmEmail
+  preferred:
+    display: Preferred
+    type: string
+    required: false
+    description: Field Preferred from CrmEmail
+  private:
+    display: Private
+    type: string
+    required: false
+    description: Field Private from CrmEmail

@@ -1,0 +1,23 @@
+concept: cfg_non_stk_idx
+display_name: CfgNonStkIdx
+module: other
+description: Auto-generated representation of the physical table CfgNonStkIdx.
+synonyms:
+- cfgnonstkidx
+- cfg non stk idx
+header_attributes:
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from CfgNonStkIdx
+  option_num:
+    display: Optionnum
+    type: decimal
+    required: false
+    description: Field OptionNum from CfgNonStkIdx
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from CfgNonStkIdx

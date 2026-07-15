@@ -1,0 +1,23 @@
+concept: adm_tax_cert_xref
+display_name: AdmTaxCertXref
+module: administration
+description: Auto-generated representation of the physical table AdmTaxCertXref.
+synonyms:
+- admtaxcertxref
+- adm tax cert xref
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from AdmTaxCertXref
+  client_id:
+    display: Clientid
+    type: string
+    required: false
+    description: Field ClientId from AdmTaxCertXref
+  states_list:
+    display: Stateslist
+    type: string
+    required: false
+    description: Field StatesList from AdmTaxCertXref

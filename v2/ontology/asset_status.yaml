@@ -1,0 +1,18 @@
+concept: asset_status
+display_name: AssetStatus
+module: assets
+description: Auto-generated representation of the physical table AssetStatus.
+synonyms:
+- assetstatus
+- asset status
+header_attributes:
+  asset_status:
+    display: Assetstatus
+    type: string
+    required: false
+    description: Field AssetStatus from AssetStatus
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetStatus

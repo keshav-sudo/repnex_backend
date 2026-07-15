@@ -1,0 +1,38 @@
+concept: sor_load_transport
+display_name: SorLoadTransport
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorLoadTransport.
+synonyms:
+- sorloadtransport
+- sor load transport
+header_attributes:
+  transport:
+    display: Transport
+    type: string
+    required: false
+    description: Field Transport from SorLoadTransport
+  transport_desc:
+    display: Transportdesc
+    type: string
+    required: false
+    description: Field TransportDesc from SorLoadTransport
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from SorLoadTransport
+  mass:
+    display: Mass
+    type: decimal
+    required: false
+    description: Field Mass from SorLoadTransport
+  volume:
+    display: Volume
+    type: decimal
+    required: false
+    description: Field Volume from SorLoadTransport
+  employee:
+    display: Employee
+    type: string
+    required: false
+    description: Field Employee from SorLoadTransport

@@ -1,0 +1,33 @@
+concept: inv_site
+display_name: InvSite
+module: inventory
+description: Auto-generated representation of the physical table InvSite.
+synonyms:
+- invsite
+- inv site
+header_attributes:
+  site_id:
+    display: Siteid
+    type: string
+    required: false
+    description: Field SiteId from InvSite
+  site_type:
+    display: Sitetype
+    type: string
+    required: false
+    description: Field SiteType from InvSite
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from InvSite
+  site_id_parent:
+    display: Siteidparent
+    type: string
+    required: false
+    description: Field SiteIdParent from InvSite
+  alloc_resolve_days:
+    display: Allocresolvedays
+    type: decimal
+    required: false
+    description: Field AllocResolveDays from InvSite

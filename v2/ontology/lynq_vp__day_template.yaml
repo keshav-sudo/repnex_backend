@@ -1,0 +1,28 @@
+concept: lynq_vp__day_template
+display_name: Lynq VP DayTemplate
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_DayTemplate.
+synonyms:
+- lynq_vp_daytemplate
+- lynq vp  day template
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_DayTemplate
+  day_template_name:
+    display: Daytemplatename
+    type: string
+    required: false
+    description: Field DayTemplateName from Lynq_VP_DayTemplate
+  day_template_description:
+    display: Daytemplatedescription
+    type: string
+    required: false
+    description: Field DayTemplateDescription from Lynq_VP_DayTemplate
+  group_name:
+    display: Groupname
+    type: string
+    required: false
+    description: Field GroupName from Lynq_VP_DayTemplate

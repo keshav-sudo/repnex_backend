@@ -1,0 +1,33 @@
+concept: inv_alt_stock
+display_name: InvAltStock
+module: inventory
+description: Auto-generated representation of the physical table InvAltStock.
+synonyms:
+- invaltstock
+- inv alt stock
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvAltStock
+  alt_stock_code:
+    display: Altstockcode
+    type: string
+    required: false
+    description: Field AltStockCode from InvAltStock
+  priority:
+    display: Priority
+    type: decimal
+    required: false
+    description: Field Priority from InvAltStock
+  conv_fact:
+    display: Convfact
+    type: decimal
+    required: false
+    description: Field ConvFact from InvAltStock
+  conv_fact_mul_div:
+    display: Convfactmuldiv
+    type: string
+    required: false
+    description: Field ConvFactMulDiv from InvAltStock

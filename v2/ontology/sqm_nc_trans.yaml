@@ -1,0 +1,63 @@
+concept: sqm_nc_trans
+display_name: SqmNcTrans
+module: other
+description: Auto-generated representation of the physical table SqmNcTrans.
+synonyms:
+- sqmnctrans
+- sqm nc trans
+header_attributes:
+  conform_number:
+    display: Conformnumber
+    type: string
+    required: false
+    description: Field ConformNumber from SqmNcTrans
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SqmNcTrans
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from SqmNcTrans
+  conform_area:
+    display: Conformarea
+    type: string
+    required: false
+    description: Field ConformArea from SqmNcTrans
+  action_number:
+    display: Actionnumber
+    type: decimal
+    required: false
+    description: Field ActionNumber from SqmNcTrans
+  stake_holder:
+    display: Stakeholder
+    type: string
+    required: false
+    description: Field StakeHolder from SqmNcTrans
+  action_type:
+    display: Actiontype
+    type: string
+    required: false
+    description: Field ActionType from SqmNcTrans
+  field_updated:
+    display: Fieldupdated
+    type: string
+    required: false
+    description: Field FieldUpdated from SqmNcTrans
+  old_field:
+    display: Oldfield
+    type: string
+    required: false
+    description: Field OldField from SqmNcTrans
+  new_field:
+    display: Newfield
+    type: string
+    required: false
+    description: Field NewField from SqmNcTrans
+  tran_note:
+    display: Trannote
+    type: string
+    required: false
+    description: Field TranNote from SqmNcTrans

@@ -1,0 +1,12 @@
+concept: ap_tax2_dist_sum
+table: ApTax2DistSum
+alias: atds
+fields:
+  jnl_year: atds.JnlYear
+  jnl_month: atds.JnlMonth
+  journal: atds.Journal
+  jnl_status: atds.JnlStatus
+  jnl_date: atds.JnlDate
+  invoice_value: atds.InvoiceValue
+  invoice_disc: atds.InvoiceDisc
+  invoice_tax: atds.InvoiceTax

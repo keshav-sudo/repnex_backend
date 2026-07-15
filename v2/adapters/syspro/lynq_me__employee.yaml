@@ -1,0 +1,50 @@
+concept: lynq_me__employee
+table: Lynq_ME_Employee
+alias: lmee
+fields:
+  id: lmee.ID
+  l_code: lmee.lCode
+  l_membership: lmee.lMembership
+  l_master_flag: lmee.lMasterFlag
+  l_name: lmee.lName
+  l_name1: lmee.lName1
+  l_name2: lmee.lName2
+  l_name3: lmee.lName3
+  l_param1: lmee.lParam1
+  l_param2: lmee.lParam2
+  l_param3: lmee.lParam3
+  l_param4: lmee.lParam4
+  l_param5: lmee.lParam5
+  l_req1: lmee.lReq1
+  l_req2: lmee.lReq2
+  l_req3: lmee.lReq3
+  l_req4: lmee.lReq4
+  l_req5: lmee.lReq5
+  l_text1: lmee.lText1
+  l_text2: lmee.lText2
+  l_text3: lmee.lText3
+  l_text4: lmee.lText4
+  l_text5: lmee.lText5
+  l_manager: lmee.lManager
+  l_int1: lmee.lInt1
+  l_int2: lmee.lInt2
+  l_int3: lmee.lInt3
+  l_int4: lmee.lInt4
+  l_int5: lmee.lInt5
+  l_decimal1: lmee.lDecimal1
+  l_decimal2: lmee.lDecimal2
+  l_decimal3: lmee.lDecimal3
+  l_decimal4: lmee.lDecimal4
+  l_decimal5: lmee.lDecimal5
+  l_date1: lmee.lDate1
+  l_date2: lmee.lDate2
+  l_date3: lmee.lDate3
+  l_date4: lmee.lDate4
+  l_date5: lmee.lDate5
+  l_facility_code: lmee.lFacilityCode
+  l_erp_specific: lmee.lErpSpecific
+  l_erp_reporter_code: lmee.lErpReporterCode
+  l_resource_qty: lmee.lResourceQty
+  l_type: lmee.lType
+  l_rate_indicator: lmee.lRateIndicator
+  l_rate: lmee.lRate

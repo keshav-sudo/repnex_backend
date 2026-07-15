@@ -1,0 +1,10 @@
+concept: ar_narration_hdr
+table: ArNarrationHdr
+alias: anh
+fields:
+  customer: anh.Customer
+  invoice: anh.Invoice
+  invoice_type: anh.InvoiceType
+  note_type: anh.NoteType
+  date_last_modified: anh.DateLastModified
+  follow_up_date: anh.FollowUpDate

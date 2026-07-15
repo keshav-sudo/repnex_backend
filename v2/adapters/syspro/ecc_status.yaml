@@ -1,0 +1,18 @@
+concept: ecc_status
+table: EccStatus
+alias: es2
+fields:
+  status_code: es2.StatusCode
+  description: es2.Description
+  next_status_method: es2.NextStatusMethod
+  ecn_status: es2.EcnStatus
+  maint_items_allow: es2.MaintItemsAllow
+  maint_hold_allow: es2.MaintHoldAllow
+  maint_rel_allow: es2.MaintRelAllow
+  maint_user_allow: es2.MaintUserAllow
+  maint_avail_allow: es2.MaintAvailAllow
+  maint_desc_allow: es2.MaintDescAllow
+  struct_enable_allow: es2.StructEnableAllow
+  struct_apply_allow: es2.StructApplyAllow
+  struct_cancel_allow: es2.StructCancelAllow
+  unset_ecc_allow: es2.UnsetEccAllow

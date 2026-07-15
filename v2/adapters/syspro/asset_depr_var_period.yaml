@@ -1,0 +1,8 @@
+concept: asset_depr_var_period
+table: AssetDeprVarPeriod
+alias: advp
+fields:
+  depreciation_code: advp.DepreciationCode
+  depreciation_year: advp.DepreciationYear
+  period: advp.Period
+  depn_pct: advp.DepnPct

@@ -1,0 +1,53 @@
+concept: sor_control
+display_name: SorControl
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorControl.
+synonyms:
+- sorcontrol
+- sor control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from SorControl
+  next_ord_num:
+    display: Nextordnum
+    type: decimal
+    required: false
+    description: Field NextOrdNum from SorControl
+  next_credit_memo:
+    display: Nextcreditmemo
+    type: decimal
+    required: false
+    description: Field NextCreditMemo from SorControl
+  next_debit_memo:
+    display: Nextdebitmemo
+    type: decimal
+    required: false
+    description: Field NextDebitMemo from SorControl
+  next_del_note:
+    display: Nextdelnote
+    type: decimal
+    required: false
+    description: Field NextDelNote from SorControl
+  next_disp_ref:
+    display: Nextdispref
+    type: decimal
+    required: false
+    description: Field NextDispRef from SorControl
+  next_rma_number:
+    display: Nextrmanumber
+    type: decimal
+    required: false
+    description: Field NextRmaNumber from SorControl
+  next_load_number:
+    display: Nextloadnumber
+    type: decimal
+    required: false
+    description: Field NextLoadNumber from SorControl
+  next_pick_number:
+    display: Nextpicknumber
+    type: decimal
+    required: false
+    description: Field NextPickNumber from SorControl

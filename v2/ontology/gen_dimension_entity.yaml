@@ -1,0 +1,203 @@
+concept: gen_dimension_entity
+display_name: GenDimensionEntity
+module: general_ledger
+description: Auto-generated representation of the physical table GenDimensionEntity.
+synonyms:
+- gendimensionentity
+- gen dimension entity
+header_attributes:
+  type:
+    display: Type
+    type: string
+    required: false
+    description: Field Type from GenDimensionEntity
+  order_no:
+    display: Orderno
+    type: string
+    required: false
+    description: Field OrderNo from GenDimensionEntity
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from GenDimensionEntity
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from GenDimensionEntity
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from GenDimensionEntity
+  order_qty:
+    display: Orderqty
+    type: decimal
+    required: false
+    description: Field OrderQty from GenDimensionEntity
+  qty_shipped:
+    display: Qtyshipped
+    type: decimal
+    required: false
+    description: Field QtyShipped from GenDimensionEntity
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from GenDimensionEntity
+  qty_dispatched:
+    display: Qtydispatched
+    type: decimal
+    required: false
+    description: Field QtyDispatched from GenDimensionEntity
+  entity_category1:
+    display: Entitycategory1
+    type: string
+    required: false
+    description: Field EntityCategory1 from GenDimensionEntity
+  entity_category2:
+    display: Entitycategory2
+    type: string
+    required: false
+    description: Field EntityCategory2 from GenDimensionEntity
+  entity_category3:
+    display: Entitycategory3
+    type: string
+    required: false
+    description: Field EntityCategory3 from GenDimensionEntity
+  entity_category4:
+    display: Entitycategory4
+    type: string
+    required: false
+    description: Field EntityCategory4 from GenDimensionEntity
+  entity_category5:
+    display: Entitycategory5
+    type: string
+    required: false
+    description: Field EntityCategory5 from GenDimensionEntity
+  entity_category6:
+    display: Entitycategory6
+    type: string
+    required: false
+    description: Field EntityCategory6 from GenDimensionEntity
+  entity_category7:
+    display: Entitycategory7
+    type: string
+    required: false
+    description: Field EntityCategory7 from GenDimensionEntity
+  entity_category8:
+    display: Entitycategory8
+    type: string
+    required: false
+    description: Field EntityCategory8 from GenDimensionEntity
+  entity_category9:
+    display: Entitycategory9
+    type: string
+    required: false
+    description: Field EntityCategory9 from GenDimensionEntity
+  entity_category10:
+    display: Entitycategory10
+    type: string
+    required: false
+    description: Field EntityCategory10 from GenDimensionEntity
+  entity_code1:
+    display: Entitycode1
+    type: string
+    required: false
+    description: Field EntityCode1 from GenDimensionEntity
+  entity_code2:
+    display: Entitycode2
+    type: string
+    required: false
+    description: Field EntityCode2 from GenDimensionEntity
+  entity_code3:
+    display: Entitycode3
+    type: string
+    required: false
+    description: Field EntityCode3 from GenDimensionEntity
+  entity_code4:
+    display: Entitycode4
+    type: string
+    required: false
+    description: Field EntityCode4 from GenDimensionEntity
+  entity_code5:
+    display: Entitycode5
+    type: string
+    required: false
+    description: Field EntityCode5 from GenDimensionEntity
+  entity_code6:
+    display: Entitycode6
+    type: string
+    required: false
+    description: Field EntityCode6 from GenDimensionEntity
+  entity_code7:
+    display: Entitycode7
+    type: string
+    required: false
+    description: Field EntityCode7 from GenDimensionEntity
+  entity_code8:
+    display: Entitycode8
+    type: string
+    required: false
+    description: Field EntityCode8 from GenDimensionEntity
+  entity_code9:
+    display: Entitycode9
+    type: string
+    required: false
+    description: Field EntityCode9 from GenDimensionEntity
+  entity_code10:
+    display: Entitycode10
+    type: string
+    required: false
+    description: Field EntityCode10 from GenDimensionEntity
+  entity_back_table1:
+    display: Entitybacktable1
+    type: string
+    required: false
+    description: Field EntityBackTable1 from GenDimensionEntity
+  entity_back_table2:
+    display: Entitybacktable2
+    type: string
+    required: false
+    description: Field EntityBackTable2 from GenDimensionEntity
+  entity_back_table3:
+    display: Entitybacktable3
+    type: string
+    required: false
+    description: Field EntityBackTable3 from GenDimensionEntity
+  entity_back_table4:
+    display: Entitybacktable4
+    type: string
+    required: false
+    description: Field EntityBackTable4 from GenDimensionEntity
+  entity_back_table5:
+    display: Entitybacktable5
+    type: string
+    required: false
+    description: Field EntityBackTable5 from GenDimensionEntity
+  entity_back_table6:
+    display: Entitybacktable6
+    type: string
+    required: false
+    description: Field EntityBackTable6 from GenDimensionEntity
+  entity_back_table7:
+    display: Entitybacktable7
+    type: string
+    required: false
+    description: Field EntityBackTable7 from GenDimensionEntity
+  entity_back_table8:
+    display: Entitybacktable8
+    type: string
+    required: false
+    description: Field EntityBackTable8 from GenDimensionEntity
+  entity_back_table9:
+    display: Entitybacktable9
+    type: string
+    required: false
+    description: Field EntityBackTable9 from GenDimensionEntity
+  entity_back_table10:
+    display: Entitybacktable10
+    type: string
+    required: false
+    description: Field EntityBackTable10 from GenDimensionEntity

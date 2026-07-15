@@ -1,0 +1,32 @@
+concept: inv_journal_ctl
+table: InvJournalCtl
+alias: ijc
+fields:
+  year_post: ijc.YearPost
+  month_post: ijc.MonthPost
+  journal: ijc.Journal
+  trn_type: ijc.TrnType
+  jnl_date: ijc.JnlDate
+  warehouse: ijc.Warehouse
+  ledg_warehouse: ijc.LedgWarehouse
+  ledg_non_stocked: ijc.LedgNonStocked
+  file_extract_flag: ijc.FileExtractFlag
+  ledg_code_cost: ijc.LedgCodeCost
+  ledg_sub_contract: ijc.LedgSubContract
+  operator: ijc.Operator
+  ledg_variance_acc: ijc.LedgVarianceAcc
+  year_post_ledg: ijc.YearPostLedg
+  ledg_period: ijc.LedgPeriod
+  ledg_grn_price_var: ijc.LedgGrnPriceVar
+  goods_in_tran_ctl: ijc.GoodsInTranCtl
+  goods_in_tran_jnl: ijc.GoodsInTranJnl
+  wip_inspect_ctl: ijc.WipInspectCtl
+  analysis_entry: ijc.AnalysisEntry
+  gl_int_updated: ijc.GlIntUpdated
+  gl_int_printed: ijc.GlIntPrinted
+  gl_int_year: ijc.GlIntYear
+  gl_int_period: ijc.GlIntPeriod
+  gl_journal: ijc.GlJournal
+  gl_int_level: ijc.GlIntLevel
+  dimension_entry: ijc.DimensionEntry
+  dimension_line: ijc.DimensionLine

@@ -1,0 +1,10 @@
+concept: sqm_next_key_audit
+table: SqmNextKeyAudit
+alias: snka1
+fields:
+  key_type: snka1.KeyType
+  key_issued: snka1.KeyIssued
+  allocated_by_program: snka1.AllocatedByProgram
+  called_from_program: snka1.CalledFromProgram
+  allocated_date: snka1.AllocatedDate
+  allocated_by_oper: snka1.AllocatedByOper

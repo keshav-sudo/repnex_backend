@@ -1,0 +1,23 @@
+concept: tbl_so_std_com
+display_name: TblSoStdCom
+module: other
+description: Auto-generated representation of the physical table TblSoStdCom.
+synonyms:
+- tblsostdcom
+- tbl so std com
+header_attributes:
+  comment_code:
+    display: Commentcode
+    type: string
+    required: false
+    description: Field CommentCode from TblSoStdCom
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from TblSoStdCom
+  comment:
+    display: Comment
+    type: string
+    required: false
+    description: Field Comment from TblSoStdCom

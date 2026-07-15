@@ -1,0 +1,16 @@
+concept: whm_mission
+table: WhmMission
+alias: wm
+fields:
+  mission: wm.Mission
+  source: wm.Source
+  status: wm.Status
+  start_date: wm.StartDate
+  start_time: wm.StartTime
+  comp_date: wm.CompDate
+  comp_time: wm.CompTime
+  due_date: wm.DueDate
+  due_time: wm.DueTime
+  team: wm.Team
+  employee: wm.Employee
+  priority: wm.Priority

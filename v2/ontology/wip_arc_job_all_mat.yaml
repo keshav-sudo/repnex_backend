@@ -1,0 +1,408 @@
+concept: wip_arc_job_all_mat
+display_name: WipArcJobAllMat
+module: work_in_progress
+description: Auto-generated representation of the physical table WipArcJobAllMat.
+synonyms:
+- wiparcjoballmat
+- wip arc job all mat
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipArcJobAllMat
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipArcJobAllMat
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipArcJobAllMat
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from WipArcJobAllMat
+  stock_description:
+    display: Stockdescription
+    type: string
+    required: false
+    description: Field StockDescription from WipArcJobAllMat
+  unit_qty_reqd:
+    display: Unitqtyreqd
+    type: decimal
+    required: false
+    description: Field UnitQtyReqd from WipArcJobAllMat
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from WipArcJobAllMat
+  operation_offset:
+    display: Operationoffset
+    type: decimal
+    required: false
+    description: Field OperationOffset from WipArcJobAllMat
+  op_offset_flag:
+    display: Opoffsetflag
+    type: string
+    required: false
+    description: Field OpOffsetFlag from WipArcJobAllMat
+  uom:
+    display: Uom
+    type: string
+    required: false
+    description: Field Uom from WipArcJobAllMat
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WipArcJobAllMat
+  qty_issued:
+    display: Qtyissued
+    type: decimal
+    required: false
+    description: Field QtyIssued from WipArcJobAllMat
+  value_issued:
+    display: Valueissued
+    type: decimal
+    required: false
+    description: Field ValueIssued from WipArcJobAllMat
+  qty_billed:
+    display: Qtybilled
+    type: decimal
+    required: false
+    description: Field QtyBilled from WipArcJobAllMat
+  value_billed:
+    display: Valuebilled
+    type: decimal
+    required: false
+    description: Field ValueBilled from WipArcJobAllMat
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from WipArcJobAllMat
+  alloc_completed:
+    display: Alloccompleted
+    type: string
+    required: false
+    description: Field AllocCompleted from WipArcJobAllMat
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from WipArcJobAllMat
+  auto_narr_code:
+    display: Autonarrcode
+    type: decimal
+    required: false
+    description: Field AutoNarrCode from WipArcJobAllMat
+  phantom_parent:
+    display: Phantomparent
+    type: string
+    required: false
+    description: Field PhantomParent from WipArcJobAllMat
+  non_conform_flag:
+    display: Nonconformflag
+    type: string
+    required: false
+    description: Field NonConformFlag from WipArcJobAllMat
+  apply_cost_uom:
+    display: Applycostuom
+    type: string
+    required: false
+    description: Field ApplyCostUom from WipArcJobAllMat
+  cost_uom:
+    display: Costuom
+    type: string
+    required: false
+    description: Field CostUom from WipArcJobAllMat
+  bulk_issue_item:
+    display: Bulkissueitem
+    type: string
+    required: false
+    description: Field BulkIssueItem from WipArcJobAllMat
+  scrap_percentage:
+    display: Scrappercentage
+    type: decimal
+    required: false
+    description: Field ScrapPercentage from WipArcJobAllMat
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from WipArcJobAllMat
+  incl_scrap_on_doc:
+    display: Inclscrapondoc
+    type: string
+    required: false
+    description: Field InclScrapOnDoc from WipArcJobAllMat
+  dock_to_stock:
+    display: Docktostock
+    type: decimal
+    required: false
+    description: Field DockToStock from WipArcJobAllMat
+  hierarchy_job1:
+    display: Hierarchyjob1
+    type: string
+    required: false
+    description: Field HierarchyJob1 from WipArcJobAllMat
+  hierarchy_job2:
+    display: Hierarchyjob2
+    type: string
+    required: false
+    description: Field HierarchyJob2 from WipArcJobAllMat
+  hierarchy_job3:
+    display: Hierarchyjob3
+    type: string
+    required: false
+    description: Field HierarchyJob3 from WipArcJobAllMat
+  hierarchy_job4:
+    display: Hierarchyjob4
+    type: string
+    required: false
+    description: Field HierarchyJob4 from WipArcJobAllMat
+  hierarchy_job5:
+    display: Hierarchyjob5
+    type: string
+    required: false
+    description: Field HierarchyJob5 from WipArcJobAllMat
+  kit_issue_item:
+    display: Kitissueitem
+    type: string
+    required: false
+    description: Field KitIssueItem from WipArcJobAllMat
+  completed_job_flag:
+    display: Completedjobflag
+    type: string
+    required: false
+    description: Field CompletedJobFlag from WipArcJobAllMat
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipArcJobAllMat
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipArcJobAllMat
+  ecc_consumption:
+    display: Eccconsumption
+    type: string
+    required: false
+    description: Field EccConsumption from WipArcJobAllMat
+  sub_job:
+    display: Subjob
+    type: string
+    required: false
+    description: Field SubJob from WipArcJobAllMat
+  fixed_qty_per_flag:
+    display: Fixedqtyperflag
+    type: string
+    required: false
+    description: Field FixedQtyPerFlag from WipArcJobAllMat
+  fixed_qty_per:
+    display: Fixedqtyper
+    type: decimal
+    required: false
+    description: Field FixedQtyPer from WipArcJobAllMat
+  net_unit_qty_reqd:
+    display: Netunitqtyreqd
+    type: decimal
+    required: false
+    description: Field NetUnitQtyReqd from WipArcJobAllMat
+  reserved_lot_ser_flag:
+    display: Reservedlotserflag
+    type: string
+    required: false
+    description: Field ReservedLotSerFlag from WipArcJobAllMat
+  roll_up_cost_flag:
+    display: Rollupcostflag
+    type: string
+    required: false
+    description: Field RollUpCostFlag from WipArcJobAllMat
+  co_product_cost_val:
+    display: Coproductcostval
+    type: string
+    required: false
+    description: Field CoProductCostVal from WipArcJobAllMat
+  reserved_lot_qty:
+    display: Reservedlotqty
+    type: decimal
+    required: false
+    description: Field ReservedLotQty from WipArcJobAllMat
+  reserved_ser_qty:
+    display: Reservedserqty
+    type: decimal
+    required: false
+    description: Field ReservedSerQty from WipArcJobAllMat
+  conv_fact_uom:
+    display: Convfactuom
+    type: decimal
+    required: false
+    description: Field ConvFactUom from WipArcJobAllMat
+  conv_mul_div:
+    display: Convmuldiv
+    type: string
+    required: false
+    description: Field ConvMulDiv from WipArcJobAllMat
+  unit_qty_reqd_ent:
+    display: Unitqtyreqdent
+    type: decimal
+    required: false
+    description: Field UnitQtyReqdEnt from WipArcJobAllMat
+  qty_issued_ent:
+    display: Qtyissuedent
+    type: decimal
+    required: false
+    description: Field QtyIssuedEnt from WipArcJobAllMat
+  qty_billed_ent:
+    display: Qtybilledent
+    type: decimal
+    required: false
+    description: Field QtyBilledEnt from WipArcJobAllMat
+  scrap_quantity_ent:
+    display: Scrapquantityent
+    type: decimal
+    required: false
+    description: Field ScrapQuantityEnt from WipArcJobAllMat
+  net_unit_qty_reqd_ent:
+    display: Netunitqtyreqdent
+    type: decimal
+    required: false
+    description: Field NetUnitQtyReqdEnt from WipArcJobAllMat
+  fixed_qty_per_ent:
+    display: Fixedqtyperent
+    type: decimal
+    required: false
+    description: Field FixedQtyPerEnt from WipArcJobAllMat
+  ref_designator:
+    display: Refdesignator
+    type: string
+    required: false
+    description: Field RefDesignator from WipArcJobAllMat
+  assembly_place:
+    display: Assemblyplace
+    type: string
+    required: false
+    description: Field AssemblyPlace from WipArcJobAllMat
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from WipArcJobAllMat
+  component_type:
+    display: Componenttype
+    type: string
+    required: false
+    description: Field ComponentType from WipArcJobAllMat
+  qty_tot_required:
+    display: Qtytotrequired
+    type: decimal
+    required: false
+    description: Field QtyTotRequired from WipArcJobAllMat
+  qty_tot_required_ent:
+    display: Qtytotrequiredent
+    type: decimal
+    required: false
+    description: Field QtyTotRequiredEnt from WipArcJobAllMat
+  qty_outstanding:
+    display: Qtyoutstanding
+    type: decimal
+    required: false
+    description: Field QtyOutstanding from WipArcJobAllMat
+  qty_outstanding_ent:
+    display: Qtyoutstandingent
+    type: decimal
+    required: false
+    description: Field QtyOutstandingEnt from WipArcJobAllMat
+  qty_to_issue:
+    display: Qtytoissue
+    type: decimal
+    required: false
+    description: Field QtyToIssue from WipArcJobAllMat
+  qty_to_issue_ent:
+    display: Qtytoissueent
+    type: decimal
+    required: false
+    description: Field QtyToIssueEnt from WipArcJobAllMat
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from WipArcJobAllMat
+  qty_reserved_ent:
+    display: Qtyreservedent
+    type: decimal
+    required: false
+    description: Field QtyReservedEnt from WipArcJobAllMat
+  line_status:
+    display: Linestatus
+    type: string
+    required: false
+    description: Field LineStatus from WipArcJobAllMat
+  sales_order_init_line:
+    display: Salesorderinitline
+    type: decimal
+    required: false
+    description: Field SalesOrderInitLine from WipArcJobAllMat
+  created_by:
+    display: Createdby
+    type: string
+    required: false
+    description: Field CreatedBy from WipArcJobAllMat
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from WipArcJobAllMat
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from WipArcJobAllMat
+  first_seq:
+    display: Firstseq
+    type: decimal
+    required: false
+    description: Field FirstSeq from WipArcJobAllMat
+  second_seq:
+    display: Secondseq
+    type: decimal
+    required: false
+    description: Field SecondSeq from WipArcJobAllMat
+  ovr_ecc_spec_iss:
+    display: Ovreccspeciss
+    type: string
+    required: false
+    description: Field OvrEccSpecIss from WipArcJobAllMat
+  job_nest:
+    display: Jobnest
+    type: string
+    required: false
+    description: Field JobNest from WipArcJobAllMat
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from WipArcJobAllMat
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from WipArcJobAllMat
+  pick_quantity:
+    display: Pickquantity
+    type: decimal
+    required: false
+    description: Field PickQuantity from WipArcJobAllMat
+  reserved_bin_qty:
+    display: Reservedbinqty
+    type: decimal
+    required: false
+    description: Field ReservedBinQty from WipArcJobAllMat

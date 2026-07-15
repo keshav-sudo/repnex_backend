@@ -1,0 +1,11 @@
+concept: inv_what_if_cost
+table: InvWhatIfCost
+alias: iwic
+fields:
+  stock_code: iwic.StockCode
+  warehouse: iwic.Warehouse
+  what_if_lab_cost: iwic.WhatIfLabCost
+  what_if_mat_cost: iwic.WhatIfMatCost
+  what_if_fix_cost: iwic.WhatIfFixCost
+  what_if_var_cost: iwic.WhatIfVarCost
+  what_if_sub_cont_cost: iwic.WhatIfSubContCost

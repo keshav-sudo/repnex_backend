@@ -1,0 +1,108 @@
+concept: sqm_test_status
+display_name: SqmTestStatus
+module: other
+description: Auto-generated representation of the physical table SqmTestStatus.
+synonyms:
+- sqmteststatus
+- sqm test status
+header_attributes:
+  inspect_type:
+    display: Inspecttype
+    type: string
+    required: false
+    description: Field InspectType from SqmTestStatus
+  inspect_number:
+    display: Inspectnumber
+    type: string
+    required: false
+    description: Field InspectNumber from SqmTestStatus
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from SqmTestStatus
+  sample_number:
+    display: Samplenumber
+    type: decimal
+    required: false
+    description: Field SampleNumber from SqmTestStatus
+  sample_test:
+    display: Sampletest
+    type: decimal
+    required: false
+    description: Field SampleTest from SqmTestStatus
+  number_tests:
+    display: Numbertests
+    type: decimal
+    required: false
+    description: Field NumberTests from SqmTestStatus
+  completed_tests:
+    display: Completedtests
+    type: decimal
+    required: false
+    description: Field CompletedTests from SqmTestStatus
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from SqmTestStatus
+  critical_status:
+    display: Criticalstatus
+    type: string
+    required: false
+    description: Field CriticalStatus from SqmTestStatus
+  major_status:
+    display: Majorstatus
+    type: string
+    required: false
+    description: Field MajorStatus from SqmTestStatus
+  minor_status:
+    display: Minorstatus
+    type: string
+    required: false
+    description: Field MinorStatus from SqmTestStatus
+  test_complete:
+    display: Testcomplete
+    type: string
+    required: false
+    description: Field TestComplete from SqmTestStatus
+  inspector_code:
+    display: Inspectorcode
+    type: string
+    required: false
+    description: Field InspectorCode from SqmTestStatus
+  test_status:
+    display: Teststatus
+    type: string
+    required: false
+    description: Field TestStatus from SqmTestStatus
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from SqmTestStatus
+  exp_end_date:
+    display: Expenddate
+    type: date
+    required: false
+    description: Field ExpEndDate from SqmTestStatus
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from SqmTestStatus
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from SqmTestStatus
+  end_time:
+    display: Endtime
+    type: decimal
+    required: false
+    description: Field EndTime from SqmTestStatus
+  insp_narration:
+    display: Inspnarration
+    type: string
+    required: false
+    description: Field InspNarration from SqmTestStatus

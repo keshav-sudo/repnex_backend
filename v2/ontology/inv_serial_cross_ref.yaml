@@ -1,0 +1,83 @@
+concept: inv_serial_cross_ref
+display_name: InvSerialCrossRef
+module: inventory
+description: Auto-generated representation of the physical table InvSerialCrossRef.
+synonyms:
+- invserialcrossref
+- inv serial cross ref
+header_attributes:
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from InvSerialCrossRef
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvSerialCrossRef
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvSerialCrossRef
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvSerialCrossRef
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvSerialCrossRef
+  in_stock:
+    display: Instock
+    type: string
+    required: false
+    description: Field InStock from InvSerialCrossRef
+  in_inspect:
+    display: Ininspect
+    type: string
+    required: false
+    description: Field InInspect from InvSerialCrossRef
+  inspect_status:
+    display: Inspectstatus
+    type: string
+    required: false
+    description: Field InspectStatus from InvSerialCrossRef
+  in_wip_inspect:
+    display: Inwipinspect
+    type: string
+    required: false
+    description: Field InWIPInspect from InvSerialCrossRef
+  wip_inspect_status:
+    display: Wipinspectstatus
+    type: string
+    required: false
+    description: Field WipInspectStatus from InvSerialCrossRef
+  in_stock_take:
+    display: Instocktake
+    type: string
+    required: false
+    description: Field InStockTake from InvSerialCrossRef
+  create_serial:
+    display: Createserial
+    type: string
+    required: false
+    description: Field CreateSerial from InvSerialCrossRef
+  reserved:
+    display: Reserved
+    type: string
+    required: false
+    description: Field Reserved from InvSerialCrossRef
+  reserve_type:
+    display: Reservetype
+    type: string
+    required: false
+    description: Field ReserveType from InvSerialCrossRef
+  archived:
+    display: Archived
+    type: string
+    required: false
+    description: Field Archived from InvSerialCrossRef

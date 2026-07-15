@@ -1,0 +1,158 @@
+concept: lynq_pg__syspro__setting
+display_name: Lynq PG Syspro Setting
+module: other
+description: Auto-generated representation of the physical table Lynq_PG_Syspro_Setting.
+synonyms:
+- lynq_pg_syspro_setting
+- lynq pg  syspro  setting
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field Id from Lynq_PG_Syspro_Setting
+  setting_id:
+    display: Settingid
+    type: decimal
+    required: false
+    description: Field SettingId from Lynq_PG_Syspro_Setting
+  wcf_address:
+    display: Wcfaddress
+    type: string
+    required: false
+    description: Field WCFAddress from Lynq_PG_Syspro_Setting
+  operator_code:
+    display: Operatorcode
+    type: string
+    required: false
+    description: Field OperatorCode from Lynq_PG_Syspro_Setting
+  operator_password:
+    display: Operatorpassword
+    type: string
+    required: false
+    description: Field OperatorPassword from Lynq_PG_Syspro_Setting
+  company_code:
+    display: Companycode
+    type: string
+    required: false
+    description: Field CompanyCode from Lynq_PG_Syspro_Setting
+  company_password:
+    display: Companypassword
+    type: string
+    required: false
+    description: Field CompanyPassword from Lynq_PG_Syspro_Setting
+  cut_off_interval:
+    display: Cutoffinterval
+    type: decimal
+    required: false
+    description: Field CutOffInterval from Lynq_PG_Syspro_Setting
+  upload_system_type:
+    display: Uploadsystemtype
+    type: decimal
+    required: false
+    description: Field UploadSystemType from Lynq_PG_Syspro_Setting
+  vp_connection_string:
+    display: Vpconnectionstring
+    type: string
+    required: false
+    description: Field VPConnectionString from Lynq_PG_Syspro_Setting
+  me_connection_string:
+    display: Meconnectionstring
+    type: string
+    required: false
+    description: Field MEConnectionString from Lynq_PG_Syspro_Setting
+  binding_type:
+    display: Bindingtype
+    type: decimal
+    required: false
+    description: Field BindingType from Lynq_PG_Syspro_Setting
+  xml_parameters:
+    display: Xmlparameters
+    type: string
+    required: false
+    description: Field XmlParameters from Lynq_PG_Syspro_Setting
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from Lynq_PG_Syspro_Setting
+  log_level:
+    display: Loglevel
+    type: string
+    required: false
+    description: Field LogLevel from Lynq_PG_Syspro_Setting
+  encore_instance:
+    display: Encoreinstance
+    type: string
+    required: false
+    description: Field EncoreInstance from Lynq_PG_Syspro_Setting
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from Lynq_PG_Syspro_Setting
+  non_stock_product_class:
+    display: Nonstockproductclass
+    type: string
+    required: false
+    description: Field NonStockProductClass from Lynq_PG_Syspro_Setting
+  use_def_scrap_reason:
+    display: Usedefscrapreason
+    type: string
+    required: false
+    description: Field UseDefScrapReason from Lynq_PG_Syspro_Setting
+  def_scrap_reason:
+    display: Defscrapreason
+    type: string
+    required: false
+    description: Field DefScrapReason from Lynq_PG_Syspro_Setting
+  post_non_productive_time:
+    display: Postnonproductivetime
+    type: string
+    required: false
+    description: Field PostNonProductiveTime from Lynq_PG_Syspro_Setting
+  non_productive_code:
+    display: Nonproductivecode
+    type: string
+    required: false
+    description: Field NonProductiveCode from Lynq_PG_Syspro_Setting
+  post_job_receipt:
+    display: Postjobreceipt
+    type: string
+    required: false
+    description: Field PostJobReceipt from Lynq_PG_Syspro_Setting
+  job_receipt__inspect_lot_flag:
+    display: Jobreceipt Inspectlotflag
+    type: string
+    required: false
+    description: Field JobReceipt_InspectLotFlag from Lynq_PG_Syspro_Setting
+  job_receipt__cost_basis:
+    display: Jobreceipt Costbasis
+    type: string
+    required: false
+    description: Field JobReceipt_CostBasis from Lynq_PG_Syspro_Setting
+  job_receipt__increase_sales_order_qty:
+    display: Jobreceipt Increasesalesorderqty
+    type: string
+    required: false
+    description: Field JobReceipt_IncreaseSalesOrderQty from Lynq_PG_Syspro_Setting
+  job_receipt__lot_numbers_processing:
+    display: Jobreceipt Lotnumbersprocessing
+    type: string
+    required: false
+    description: Field JobReceipt_LotNumbersProcessing from Lynq_PG_Syspro_Setting
+  non_productive_wc_code:
+    display: Nonproductivewccode
+    type: string
+    required: false
+    description: Field NonProductiveWCCode from Lynq_PG_Syspro_Setting
+  non_productive_wc_rate:
+    display: Nonproductivewcrate
+    type: decimal
+    required: false
+    description: Field NonProductiveWCRate from Lynq_PG_Syspro_Setting
+  job_receipt__ser_number_processing:
+    display: Jobreceipt Sernumberprocessing
+    type: string
+    required: false
+    description: Field JobReceipt_SerNumberProcessing from Lynq_PG_Syspro_Setting

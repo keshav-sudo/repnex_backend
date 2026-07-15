@@ -1,0 +1,243 @@
+concept: lynq_me__trace__employee
+display_name: Lynq ME Trace Employee
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Trace_Employee.
+synonyms:
+- lynq_me_trace_employee
+- lynq me  trace  employee
+header_attributes:
+  l_id:
+    display: Lid
+    type: decimal
+    required: false
+    description: Field lId from Lynq_ME_Trace_Employee
+  l_code:
+    display: Lcode
+    type: string
+    required: false
+    description: Field lCode from Lynq_ME_Trace_Employee
+  l_facility_code:
+    display: Lfacilitycode
+    type: string
+    required: false
+    description: Field lFacilityCode from Lynq_ME_Trace_Employee
+  l_membership:
+    display: Lmembership
+    type: string
+    required: false
+    description: Field lMembership from Lynq_ME_Trace_Employee
+  l_master_flag:
+    display: Lmasterflag
+    type: string
+    required: false
+    description: Field lMasterFlag from Lynq_ME_Trace_Employee
+  l_name:
+    display: Lname
+    type: string
+    required: false
+    description: Field lName from Lynq_ME_Trace_Employee
+  l_name1:
+    display: Lname1
+    type: string
+    required: false
+    description: Field lName1 from Lynq_ME_Trace_Employee
+  l_name2:
+    display: Lname2
+    type: string
+    required: false
+    description: Field lName2 from Lynq_ME_Trace_Employee
+  l_name3:
+    display: Lname3
+    type: string
+    required: false
+    description: Field lName3 from Lynq_ME_Trace_Employee
+  l_req1:
+    display: Lreq1
+    type: string
+    required: false
+    description: Field lReq1 from Lynq_ME_Trace_Employee
+  l_req2:
+    display: Lreq2
+    type: string
+    required: false
+    description: Field lReq2 from Lynq_ME_Trace_Employee
+  l_req3:
+    display: Lreq3
+    type: string
+    required: false
+    description: Field lReq3 from Lynq_ME_Trace_Employee
+  l_req4:
+    display: Lreq4
+    type: string
+    required: false
+    description: Field lReq4 from Lynq_ME_Trace_Employee
+  l_req5:
+    display: Lreq5
+    type: string
+    required: false
+    description: Field lReq5 from Lynq_ME_Trace_Employee
+  l_param1:
+    display: Lparam1
+    type: string
+    required: false
+    description: Field lParam1 from Lynq_ME_Trace_Employee
+  l_param2:
+    display: Lparam2
+    type: string
+    required: false
+    description: Field lParam2 from Lynq_ME_Trace_Employee
+  l_param3:
+    display: Lparam3
+    type: string
+    required: false
+    description: Field lParam3 from Lynq_ME_Trace_Employee
+  l_param4:
+    display: Lparam4
+    type: string
+    required: false
+    description: Field lParam4 from Lynq_ME_Trace_Employee
+  l_param5:
+    display: Lparam5
+    type: string
+    required: false
+    description: Field lParam5 from Lynq_ME_Trace_Employee
+  l_text1:
+    display: Ltext1
+    type: string
+    required: false
+    description: Field lText1 from Lynq_ME_Trace_Employee
+  l_text2:
+    display: Ltext2
+    type: string
+    required: false
+    description: Field lText2 from Lynq_ME_Trace_Employee
+  l_text3:
+    display: Ltext3
+    type: string
+    required: false
+    description: Field lText3 from Lynq_ME_Trace_Employee
+  l_text4:
+    display: Ltext4
+    type: string
+    required: false
+    description: Field lText4 from Lynq_ME_Trace_Employee
+  l_text5:
+    display: Ltext5
+    type: string
+    required: false
+    description: Field lText5 from Lynq_ME_Trace_Employee
+  l_int1:
+    display: Lint1
+    type: decimal
+    required: false
+    description: Field lInt1 from Lynq_ME_Trace_Employee
+  l_int2:
+    display: Lint2
+    type: decimal
+    required: false
+    description: Field lInt2 from Lynq_ME_Trace_Employee
+  l_int3:
+    display: Lint3
+    type: decimal
+    required: false
+    description: Field lInt3 from Lynq_ME_Trace_Employee
+  l_int4:
+    display: Lint4
+    type: decimal
+    required: false
+    description: Field lInt4 from Lynq_ME_Trace_Employee
+  l_int5:
+    display: Lint5
+    type: decimal
+    required: false
+    description: Field lInt5 from Lynq_ME_Trace_Employee
+  l_decimal1:
+    display: Ldecimal1
+    type: decimal
+    required: false
+    description: Field lDecimal1 from Lynq_ME_Trace_Employee
+  l_decimal2:
+    display: Ldecimal2
+    type: decimal
+    required: false
+    description: Field lDecimal2 from Lynq_ME_Trace_Employee
+  l_decimal3:
+    display: Ldecimal3
+    type: decimal
+    required: false
+    description: Field lDecimal3 from Lynq_ME_Trace_Employee
+  l_decimal4:
+    display: Ldecimal4
+    type: decimal
+    required: false
+    description: Field lDecimal4 from Lynq_ME_Trace_Employee
+  l_decimal5:
+    display: Ldecimal5
+    type: decimal
+    required: false
+    description: Field lDecimal5 from Lynq_ME_Trace_Employee
+  l_date1:
+    display: Ldate1
+    type: date
+    required: false
+    description: Field lDate1 from Lynq_ME_Trace_Employee
+  l_date2:
+    display: Ldate2
+    type: date
+    required: false
+    description: Field lDate2 from Lynq_ME_Trace_Employee
+  l_date3:
+    display: Ldate3
+    type: date
+    required: false
+    description: Field lDate3 from Lynq_ME_Trace_Employee
+  l_date4:
+    display: Ldate4
+    type: date
+    required: false
+    description: Field lDate4 from Lynq_ME_Trace_Employee
+  l_date5:
+    display: Ldate5
+    type: date
+    required: false
+    description: Field lDate5 from Lynq_ME_Trace_Employee
+  l_manager:
+    display: Lmanager
+    type: string
+    required: false
+    description: Field lManager from Lynq_ME_Trace_Employee
+  l_trace_date:
+    display: Ltracedate
+    type: date
+    required: false
+    description: Field lTraceDate from Lynq_ME_Trace_Employee
+  l_erp_specific:
+    display: Lerpspecific
+    type: string
+    required: false
+    description: Field lErpSpecific from Lynq_ME_Trace_Employee
+  l_erp_reporter_code:
+    display: Lerpreportercode
+    type: string
+    required: false
+    description: Field lErpReporterCode from Lynq_ME_Trace_Employee
+  l_resource_qty:
+    display: Lresourceqty
+    type: decimal
+    required: false
+    description: Field lResourceQty from Lynq_ME_Trace_Employee
+  l_type:
+    display: Ltype
+    type: string
+    required: false
+    description: Field lType from Lynq_ME_Trace_Employee
+  l_rate_indicator:
+    display: Lrateindicator
+    type: string
+    required: false
+    description: Field lRateIndicator from Lynq_ME_Trace_Employee
+  l_rate:
+    display: Lrate
+    type: decimal
+    required: false
+    description: Field lRate from Lynq_ME_Trace_Employee

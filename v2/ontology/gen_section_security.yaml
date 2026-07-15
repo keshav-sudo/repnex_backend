@@ -1,0 +1,63 @@
+concept: gen_section_security
+display_name: GenSectionSecurity
+module: general_ledger
+description: Auto-generated representation of the physical table GenSectionSecurity.
+synonyms:
+- gensectionsecurity
+- gen section security
+header_attributes:
+  security_type:
+    display: Securitytype
+    type: string
+    required: false
+    description: Field SecurityType from GenSectionSecurity
+  section_number:
+    display: Sectionnumber
+    type: decimal
+    required: false
+    description: Field SectionNumber from GenSectionSecurity
+  parent_section:
+    display: Parentsection
+    type: string
+    required: false
+    description: Field ParentSection from GenSectionSecurity
+  security_level:
+    display: Securitylevel
+    type: string
+    required: false
+    description: Field SecurityLevel from GenSectionSecurity
+  security_key:
+    display: Securitykey
+    type: string
+    required: false
+    description: Field SecurityKey from GenSectionSecurity
+  child_section:
+    display: Childsection
+    type: string
+    required: false
+    description: Field ChildSection from GenSectionSecurity
+  all_none_list:
+    display: Allnonelist
+    type: string
+    required: false
+    description: Field AllNoneList from GenSectionSecurity
+  date_modified:
+    display: Datemodified
+    type: date
+    required: false
+    description: Field DateModified from GenSectionSecurity
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from GenSectionSecurity
+  allow_children:
+    display: Allowchildren
+    type: string
+    required: false
+    description: Field AllowChildren from GenSectionSecurity
+  allow_root_query:
+    display: Allowrootquery
+    type: string
+    required: false
+    description: Field AllowRootQuery from GenSectionSecurity

@@ -1,0 +1,153 @@
+concept: mrp_gtr_detail
+display_name: MrpGtrDetail
+module: mrp
+description: Auto-generated representation of the physical table MrpGtrDetail.
+synonyms:
+- mrpgtrdetail
+- mrp gtr detail
+header_attributes:
+  gtr_reference:
+    display: Gtrreference
+    type: string
+    required: false
+    description: Field GtrReference from MrpGtrDetail
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from MrpGtrDetail
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from MrpGtrDetail
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from MrpGtrDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from MrpGtrDetail
+  transf_comp_period:
+    display: Transfcompperiod
+    type: decimal
+    required: false
+    description: Field TransfCompPeriod from MrpGtrDetail
+  transf_comp_year:
+    display: Transfcompyear
+    type: decimal
+    required: false
+    description: Field TransfCompYear from MrpGtrDetail
+  gtr_quantity:
+    display: Gtrquantity
+    type: decimal
+    required: false
+    description: Field GtrQuantity from MrpGtrDetail
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from MrpGtrDetail
+  initial_value:
+    display: Initialvalue
+    type: decimal
+    required: false
+    description: Field InitialValue from MrpGtrDetail
+  value_received_src:
+    display: Valuereceivedsrc
+    type: decimal
+    required: false
+    description: Field ValueReceivedSrc from MrpGtrDetail
+  unit_cost:
+    display: Unitcost
+    type: decimal
+    required: false
+    description: Field UnitCost from MrpGtrDetail
+  cost_uom:
+    display: Costuom
+    type: string
+    required: false
+    description: Field CostUom from MrpGtrDetail
+  value_received_tgt:
+    display: Valuereceivedtgt
+    type: decimal
+    required: false
+    description: Field ValueReceivedTgt from MrpGtrDetail
+  product_class:
+    display: Productclass
+    type: string
+    required: false
+    description: Field ProductClass from MrpGtrDetail
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from MrpGtrDetail
+  area:
+    display: Area
+    type: string
+    required: false
+    description: Field Area from MrpGtrDetail
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MrpGtrDetail
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MrpGtrDetail
+  delivery_note:
+    display: Deliverynote
+    type: string
+    required: false
+    description: Field DeliveryNote from MrpGtrDetail
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from MrpGtrDetail
+  transf_doc_num:
+    display: Transfdocnum
+    type: string
+    required: false
+    description: Field TransfDocNum from MrpGtrDetail
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from MrpGtrDetail
+  expected_due_date:
+    display: Expectedduedate
+    type: date
+    required: false
+    description: Field ExpectedDueDate from MrpGtrDetail
+  transfer_complete:
+    display: Transfercomplete
+    type: string
+    required: false
+    description: Field TransferComplete from MrpGtrDetail
+  lock_flag:
+    display: Lockflag
+    type: string
+    required: false
+    description: Field LockFlag from MrpGtrDetail
+  next_entry:
+    display: Nextentry
+    type: decimal
+    required: false
+    description: Field NextEntry from MrpGtrDetail
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from MrpGtrDetail
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from MrpGtrDetail

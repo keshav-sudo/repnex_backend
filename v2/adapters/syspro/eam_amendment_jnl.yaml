@@ -1,0 +1,57 @@
+concept: eam_amendment_jnl
+table: EamAmendmentJnl
+alias: eaj
+fields:
+  jnl_date: eaj.JnlDate
+  jnl_time: eaj.JnlTime
+  jnl_line: eaj.JnlLine
+  equipment_code: eaj.EquipmentCode
+  maint_service_type: eaj.MaintServiceType
+  route: eaj.Route
+  sequence_num: eaj.SequenceNum
+  component: eaj.Component
+  operator_name: eaj.OperatorName
+  jnl_printed: eaj.JnlPrinted
+  change_flag: eaj.ChangeFlag
+  old_description: eaj.OldDescription
+  old_com_revision: eaj.OldComRevision
+  old_com_release: eaj.OldComRelease
+  old_ecc_consumption: eaj.OldEccConsumption
+  old_op_offset_flag: eaj.OldOpOffsetFlag
+  old_operation_offset: eaj.OldOperationOffset
+  old_qty_per: eaj.OldQtyPer
+  old_qty_per_ent: eaj.OldQtyPerEnt
+  old_auto_narr_code: eaj.OldAutoNarrCode
+  old_incl_kit_issues: eaj.OldInclKitIssues
+  old_warehouse: eaj.OldWarehouse
+  old_uom_flag: eaj.OldUomFlag
+  old_non_stock_com: eaj.OldNonStockCom
+  old_non_stk_cost: eaj.OldNonStkCost
+  old_max_decimals: eaj.OldMaxDecimals
+  old_unit_of_measure: eaj.OldUnitOfMeasure
+  old_reason_for_change: eaj.OldReasonForChange
+  old_scrap_qty: eaj.OldScrapQty
+  old_scrap_qty_ent: eaj.OldScrapQtyEnt
+  old_scrap_perc: eaj.OldScrapPerc
+  old_incl_scrap_flag: eaj.OldInclScrapFlag
+  new_description: eaj.NewDescription
+  new_com_revision: eaj.NewComRevision
+  new_com_release: eaj.NewComRelease
+  new_ecc_consumption: eaj.NewEccConsumption
+  new_op_offset_flag: eaj.NewOpOffsetFlag
+  new_operation_offset: eaj.NewOperationOffset
+  new_qty_per: eaj.NewQtyPer
+  new_qty_per_ent: eaj.NewQtyPerEnt
+  new_auto_narr_code: eaj.NewAutoNarrCode
+  new_incl_kit_issues: eaj.NewInclKitIssues
+  new_warehouse: eaj.NewWarehouse
+  new_uom_flag: eaj.NewUomFlag
+  new_non_stock_com: eaj.NewNonStockCom
+  new_non_stk_cost: eaj.NewNonStkCost
+  new_max_decimals: eaj.NewMaxDecimals
+  new_unit_of_measure: eaj.NewUnitOfMeasure
+  new_reason_for_change: eaj.NewReasonForChange
+  new_scrap_qty: eaj.NewScrapQty
+  new_scrap_qty_ent: eaj.NewScrapQtyEnt
+  new_scrap_perc: eaj.NewScrapPerc
+  new_incl_scrap_flag: eaj.NewInclScrapFlag

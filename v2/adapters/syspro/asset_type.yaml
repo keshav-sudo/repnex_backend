@@ -1,0 +1,6 @@
+concept: asset_type
+table: AssetType
+alias: at2
+fields:
+  asset_type: at2.AssetType
+  description: at2.Description

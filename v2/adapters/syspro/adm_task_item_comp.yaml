@@ -1,0 +1,32 @@
+concept: adm_task_item_comp
+table: AdmTaskItemComp
+alias: atic
+fields:
+  operator: atic.Operator
+  task_group: atic.TaskGroup
+  start_date: atic.StartDate
+  sequence_number: atic.SequenceNumber
+  description: atic.Description
+  comment: atic.Comment
+  task_type: atic.TaskType
+  icon_number: atic.IconNumber
+  program: atic.Program
+  start_folder: atic.StartFolder
+  flex_gen_method: atic.FlexGenMethod
+  task_completed: atic.TaskCompleted
+  remind_if_due: atic.RemindIfDue
+  insert_in_outlook: atic.InsertInOutlook
+  occurrance: atic.Occurrance
+  number_of_days: atic.NumberOfDays
+  number_of_weeks: atic.NumberOfWeeks
+  day_of_week_flag: atic.DayOfWeekFlag
+  every_sunday: atic.EverySunday
+  every_monday: atic.EveryMonday
+  every_tuesday: atic.EveryTuesday
+  every_wednesday: atic.EveryWednesday
+  every_thursday: atic.EveryThursday
+  every_friday: atic.EveryFriday
+  monthly_flag: atic.MonthlyFlag
+  fixed_days: atic.FixedDays
+  day_within_month: atic.DayWithinMonth
+  day_flag: atic.DayFlag

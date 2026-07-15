@@ -1,0 +1,23 @@
+concept: tpm_prom_threshold
+display_name: TpmPromThreshold
+module: other
+description: Auto-generated representation of the physical table TpmPromThreshold.
+synonyms:
+- tpmpromthreshold
+- tpm prom threshold
+header_attributes:
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from TpmPromThreshold
+  threshold:
+    display: Threshold
+    type: decimal
+    required: false
+    description: Field Threshold from TpmPromThreshold
+  qty_to_ship:
+    display: Qtytoship
+    type: decimal
+    required: false
+    description: Field QtyToShip from TpmPromThreshold

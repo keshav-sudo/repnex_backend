@@ -1,0 +1,8 @@
+concept: lct_bill_land_cost
+table: LctBillLandCost
+alias: lblc
+fields:
+  stock_code: lblc.StockCode
+  route: lblc.Route
+  cost_element: lblc.CostElement
+  cost_calculation: lblc.CostCalculation

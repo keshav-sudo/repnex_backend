@@ -1,0 +1,10 @@
+concept: adm_srs_doc_folders
+table: AdmSrsDocFolders
+alias: asdf
+fields:
+  info_type: asdf.InfoType
+  operator: asdf.Operator
+  print_date: asdf.PrintDate
+  print_time: asdf.PrintTime
+  computer_name: asdf.ComputerName
+  folder: asdf.Folder

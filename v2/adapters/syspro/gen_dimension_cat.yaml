@@ -1,0 +1,14 @@
+concept: gen_dimension_cat
+table: GenDimensionCat
+alias: gdc
+fields:
+  company: gdc.Company
+  dimension_category: gdc.DimensionCategory
+  description: gdc.Description
+  status: gdc.Status
+  entity_backed: gdc.EntityBacked
+  dataset: gdc.Dataset
+  caption: gdc.Caption
+  active_from_date: gdc.ActiveFromDate
+  active_to_date: gdc.ActiveToDate
+  category_key: gdc.CategoryKey

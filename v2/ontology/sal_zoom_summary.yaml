@@ -1,0 +1,53 @@
+concept: sal_zoom_summary
+display_name: SalZoomSummary
+module: other
+description: Auto-generated representation of the physical table SalZoomSummary.
+synonyms:
+- salzoomsummary
+- sal zoom summary
+header_attributes:
+  sequence1:
+    display: Sequence1
+    type: string
+    required: false
+    description: Field Sequence1 from SalZoomSummary
+  sequence2:
+    display: Sequence2
+    type: string
+    required: false
+    description: Field Sequence2 from SalZoomSummary
+  sequence3:
+    display: Sequence3
+    type: string
+    required: false
+    description: Field Sequence3 from SalZoomSummary
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from SalZoomSummary
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from SalZoomSummary
+  register:
+    display: Register
+    type: decimal
+    required: false
+    description: Field Register from SalZoomSummary
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from SalZoomSummary
+  summary_line:
+    display: Summaryline
+    type: decimal
+    required: false
+    description: Field SummaryLine from SalZoomSummary
+  detail_line:
+    display: Detailline
+    type: decimal
+    required: false
+    description: Field DetailLine from SalZoomSummary

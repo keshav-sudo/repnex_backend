@@ -1,0 +1,51 @@
+concept: asset_entries_bv
+table: AssetEntriesBv
+alias: aeb
+fields:
+  asset: aeb.Asset
+  entry_year: aeb.EntryYear
+  entry_month: aeb.EntryMonth
+  system_date: aeb.SystemDate
+  system_time: aeb.SystemTime
+  entry_type: aeb.EntryType
+  entry_date: aeb.EntryDate
+  entry_amount: aeb.EntryAmount
+  asset_cost: aeb.AssetCost
+  asset_current_value: aeb.AssetCurrentValue
+  entry_qty: aeb.EntryQty
+  asset_qty: aeb.AssetQty
+  depn_ytd: aeb.DepnYtd
+  depn_prev_year: aeb.DepnPrevYear
+  accum_depn: aeb.AccumDepn
+  residual_value: aeb.ResidualValue
+  depn_code: aeb.DepnCode
+  depn_rate: aeb.DepnRate
+  depn_start_date: aeb.DepnStartDate
+  thruput_eul: aeb.ThruputEul
+  reval_reserve_to_date: aeb.RevalReserveToDate
+  stat_gl_code: aeb.StatGlCode
+  number_of_periods: aeb.NumberOfPeriods
+  number_of_years: aeb.NumberOfYears
+  total_periods_td: aeb.TotalPeriodsTd
+  min_book_value: aeb.MinBookValue
+  suspend: aeb.Suspend
+  reason: aeb.Reason
+  asset_status: aeb.AssetStatus
+  branch: aeb.Branch
+  location: aeb.Location
+  asset_group_code: aeb.AssetGroupCode
+  asset_cost_center: aeb.AssetCostCenter
+  company_before: aeb.CompanyBefore
+  company_after: aeb.CompanyAfter
+  branch_after: aeb.BranchAfter
+  group_after: aeb.GroupAfter
+  cost_center_after: aeb.CostCenterAfter
+  gl_code: aeb.GlCode
+  operator: aeb.Operator
+  capex_code: aeb.CapexCode
+  capex_line: aeb.CapexLine
+  entry_reference: aeb.EntryReference
+  narration: aeb.Narration
+  asset_dist_reg: aeb.AssetDistReg
+  sold_value: aeb.SoldValue
+  disposal_cost: aeb.DisposalCost

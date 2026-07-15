@@ -1,0 +1,10 @@
+concept: sor_next_key_audit
+table: SorNextKeyAudit
+alias: snka
+fields:
+  key_type: snka.KeyType
+  key_issued: snka.KeyIssued
+  allocated_by_program: snka.AllocatedByProgram
+  called_from_program: snka.CalledFromProgram
+  allocated_date: snka.AllocatedDate
+  allocated_by_oper: snka.AllocatedByOper

@@ -1,0 +1,68 @@
+concept: sor_quote
+display_name: SorQuote
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorQuote.
+synonyms:
+- sorquote
+- sor quote
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from SorQuote
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from SorQuote
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from SorQuote
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SorQuote
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SorQuote
+  follow_up_date:
+    display: Followupdate
+    type: date
+    required: false
+    description: Field FollowUpDate from SorQuote
+  reminder:
+    display: Reminder
+    type: string
+    required: false
+    description: Field Reminder from SorQuote
+  quote_print_flag:
+    display: Quoteprintflag
+    type: string
+    required: false
+    description: Field QuotePrintFlag from SorQuote
+  quote_format:
+    display: Quoteformat
+    type: string
+    required: false
+    description: Field QuoteFormat from SorQuote
+  quick_quote:
+    display: Quickquote
+    type: string
+    required: false
+    description: Field QuickQuote from SorQuote
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from SorQuote
+  price_group_level:
+    display: Pricegrouplevel
+    type: string
+    required: false
+    description: Field PriceGroupLevel from SorQuote

@@ -1,0 +1,58 @@
+concept: sqm_trigger
+display_name: SqmTrigger
+module: other
+description: Auto-generated representation of the physical table SqmTrigger.
+synonyms:
+- sqmtrigger
+- sqm trigger
+header_attributes:
+  department:
+    display: Department
+    type: string
+    required: false
+    description: Field Department from SqmTrigger
+  nc_trigger:
+    display: Nctrigger
+    type: string
+    required: false
+    description: Field NcTrigger from SqmTrigger
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SqmTrigger
+  conform_standard:
+    display: Conformstandard
+    type: string
+    required: false
+    description: Field ConformStandard from SqmTrigger
+  trigger_apply:
+    display: Triggerapply
+    type: string
+    required: false
+    description: Field TriggerApply from SqmTrigger
+  trigger_basis:
+    display: Triggerbasis
+    type: string
+    required: false
+    description: Field TriggerBasis from SqmTrigger
+  trigger_pct:
+    display: Triggerpct
+    type: decimal
+    required: false
+    description: Field TriggerPct from SqmTrigger
+  trigger_reason:
+    display: Triggerreason
+    type: string
+    required: false
+    description: Field TriggerReason from SqmTrigger
+  trigger_qty:
+    display: Triggerqty
+    type: decimal
+    required: false
+    description: Field TriggerQty from SqmTrigger
+  trigger_value:
+    display: Triggervalue
+    type: decimal
+    required: false
+    description: Field TriggerValue from SqmTrigger

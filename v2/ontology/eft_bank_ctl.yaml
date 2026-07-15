@@ -1,0 +1,68 @@
+concept: eft_bank_ctl
+display_name: EftBankCtl
+module: other
+description: Auto-generated representation of the physical table EftBankCtl.
+synonyms:
+- eftbankctl
+- eft bank ctl
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from EftBankCtl
+  eft_xml_output:
+    display: Eftxmloutput
+    type: string
+    required: false
+    description: Field EftXmlOutput from EftBankCtl
+  eft_xml_file_name:
+    display: Eftxmlfilename
+    type: string
+    required: false
+    description: Field EftXmlFileName from EftBankCtl
+  eft_xml_location:
+    display: Eftxmllocation
+    type: string
+    required: false
+    description: Field EftXmlLocation from EftBankCtl
+  eft_xml_directory:
+    display: Eftxmldirectory
+    type: string
+    required: false
+    description: Field EftXmlDirectory from EftBankCtl
+  eft_xml_extract_type:
+    display: Eftxmlextracttype
+    type: string
+    required: false
+    description: Field EftXmlExtractType from EftBankCtl
+  eft_global_ref:
+    display: Eftglobalref
+    type: string
+    required: false
+    description: Field EftGlobalRef from EftBankCtl
+  format_code:
+    display: Formatcode
+    type: string
+    required: false
+    description: Field FormatCode from EftBankCtl
+  company_name:
+    display: Companyname
+    type: string
+    required: false
+    description: Field CompanyName from EftBankCtl
+  pay_file_name:
+    display: Payfilename
+    type: string
+    required: false
+    description: Field PayFileName from EftBankCtl
+  pay_location:
+    display: Paylocation
+    type: string
+    required: false
+    description: Field PayLocation from EftBankCtl
+  pay_directory:
+    display: Paydirectory
+    type: string
+    required: false
+    description: Field PayDirectory from EftBankCtl

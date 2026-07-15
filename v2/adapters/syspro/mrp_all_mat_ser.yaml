@@ -1,0 +1,20 @@
+concept: mrp_all_mat_ser
+table: MrpAllMatSer
+alias: mams
+fields:
+  job: mams.Job
+  stock_code: mams.StockCode
+  warehouse: mams.Warehouse
+  line: mams.Line
+  serial: mams.Serial
+  serial_method: mams.SerialMethod
+  expiry_date: mams.ExpiryDate
+  qty_reserved: mams.QtyReserved
+  qty_issued: mams.QtyIssued
+  location: mams.Location
+  lot: mams.Lot
+  version: mams.Version
+  release: mams.Release
+  ser_complete: mams.SerComplete
+  neg_allocation: mams.NegAllocation
+  bin: mams.Bin

@@ -1,0 +1,108 @@
+concept: ap_jnl_control
+display_name: ApJnlControl
+module: accounts_payable
+description: Auto-generated representation of the physical table ApJnlControl.
+synonyms:
+- apjnlcontrol
+- ap jnl control
+header_attributes:
+  fin_year:
+    display: Finyear
+    type: decimal
+    required: false
+    description: Field FinYear from ApJnlControl
+  fin_month:
+    display: Finmonth
+    type: decimal
+    required: false
+    description: Field FinMonth from ApJnlControl
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from ApJnlControl
+  journal_status:
+    display: Journalstatus
+    type: string
+    required: false
+    description: Field JournalStatus from ApJnlControl
+  journal_date:
+    display: Journaldate
+    type: date
+    required: false
+    description: Field JournalDate from ApJnlControl
+  date_prepared:
+    display: Dateprepared
+    type: date
+    required: false
+    description: Field DatePrepared from ApJnlControl
+  num_entries_jnl:
+    display: Numentriesjnl
+    type: decimal
+    required: false
+    description: Field NumEntriesJnl from ApJnlControl
+  beg_ap_balance:
+    display: Begapbalance
+    type: decimal
+    required: false
+    description: Field BegApBalance from ApJnlControl
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from ApJnlControl
+  credit_memo_value:
+    display: Creditmemovalue
+    type: decimal
+    required: false
+    description: Field CreditMemoValue from ApJnlControl
+  debit_memo_value:
+    display: Debitmemovalue
+    type: decimal
+    required: false
+    description: Field DebitMemoValue from ApJnlControl
+  adjustment_value:
+    display: Adjustmentvalue
+    type: decimal
+    required: false
+    description: Field AdjustmentValue from ApJnlControl
+  end_ap_balance:
+    display: Endapbalance
+    type: decimal
+    required: false
+    description: Field EndApBalance from ApJnlControl
+  gl_year:
+    display: Glyear
+    type: decimal
+    required: false
+    description: Field GlYear from ApJnlControl
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from ApJnlControl
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ApJnlControl
+  revaluation_value:
+    display: Revaluationvalue
+    type: decimal
+    required: false
+    description: Field RevaluationValue from ApJnlControl
+  tax_relief_value:
+    display: Taxreliefvalue
+    type: decimal
+    required: false
+    description: Field TaxReliefValue from ApJnlControl
+  with_tax_value:
+    display: Withtaxvalue
+    type: decimal
+    required: false
+    description: Field WithTaxValue from ApJnlControl
+  tax_portion_disc:
+    display: Taxportiondisc
+    type: decimal
+    required: false
+    description: Field TaxPortionDisc from ApJnlControl

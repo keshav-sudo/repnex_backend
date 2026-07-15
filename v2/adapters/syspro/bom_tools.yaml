@@ -1,0 +1,7 @@
+concept: bom_tools
+table: BomTools
+alias: bt
+fields:
+  tool: bt.Tool
+  description: bt.Description
+  quantity: bt.Quantity

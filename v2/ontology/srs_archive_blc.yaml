@@ -1,0 +1,43 @@
+concept: srs_archive_blc
+display_name: SrsArchiveBLC
+module: other
+description: Auto-generated representation of the physical table SrsArchiveBLC.
+synonyms:
+- srsarchiveblc
+- srs archive blc
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveBLC
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveBLC
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveBLC
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveBLC
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveBLC
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveBLC
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from SrsArchiveBLC

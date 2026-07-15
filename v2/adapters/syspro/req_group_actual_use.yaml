@@ -1,0 +1,34 @@
+concept: req_group_actual_use
+table: ReqGroupActualUse
+alias: rgau
+fields:
+  requisition_group: rgau.RequisitionGroup
+  product_class: rgau.ProductClass
+  stock_code: rgau.StockCode
+  budget_year: rgau.BudgetYear
+  group_approved1: rgau.GroupApproved1
+  group_approved2: rgau.GroupApproved2
+  group_approved3: rgau.GroupApproved3
+  group_approved4: rgau.GroupApproved4
+  group_approved5: rgau.GroupApproved5
+  group_approved6: rgau.GroupApproved6
+  group_approved7: rgau.GroupApproved7
+  group_approved8: rgau.GroupApproved8
+  group_approved9: rgau.GroupApproved9
+  group_approved10: rgau.GroupApproved10
+  group_approved11: rgau.GroupApproved11
+  group_approved12: rgau.GroupApproved12
+  group_approved13: rgau.GroupApproved13
+  group_actual1: rgau.GroupActual1
+  group_actual2: rgau.GroupActual2
+  group_actual3: rgau.GroupActual3
+  group_actual4: rgau.GroupActual4
+  group_actual5: rgau.GroupActual5
+  group_actual6: rgau.GroupActual6
+  group_actual7: rgau.GroupActual7
+  group_actual8: rgau.GroupActual8
+  group_actual9: rgau.GroupActual9
+  group_actual10: rgau.GroupActual10
+  group_actual11: rgau.GroupActual11
+  group_actual12: rgau.GroupActual12
+  group_actual13: rgau.GroupActual13

@@ -1,0 +1,20 @@
+concept: por_scrap_reject_ins
+table: PorScrapRejectIns
+alias: psri
+fields:
+  supplier: psri.Supplier
+  stock_code: psri.StockCode
+  grn: psri.Grn
+  line: psri.Line
+  po_date: psri.PoDate
+  purchase_order: psri.PurchaseOrder
+  orig_line_due_date: psri.OrigLineDueDate
+  scrap_reject_date: psri.ScrapRejectDate
+  reject_code: psri.RejectCode
+  warehouse: psri.Warehouse
+  document_num: psri.DocumentNum
+  lot: psri.Lot
+  scrap_reject_flag: psri.ScrapRejectFlag
+  scrap_reject_qty: psri.ScrapRejectQty
+  po_line: psri.PoLine
+  operator: psri.Operator

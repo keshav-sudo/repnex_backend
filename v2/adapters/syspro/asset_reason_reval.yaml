@@ -1,0 +1,6 @@
+concept: asset_reason_reval
+table: AssetReasonReval
+alias: arr2
+fields:
+  reval_reason: arr2.RevalReason
+  description: arr2.Description

@@ -1,0 +1,88 @@
+concept: tpm_promo_det_trans
+display_name: TpmPromoDetTrans
+module: other
+description: Auto-generated representation of the physical table TpmPromoDetTrans.
+synonyms:
+- tpmpromodettrans
+- tpm promo det trans
+header_attributes:
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from TpmPromoDetTrans
+  invoice_line:
+    display: Invoiceline
+    type: decimal
+    required: false
+    description: Field InvoiceLine from TpmPromoDetTrans
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from TpmPromoDetTrans
+  tpm_sequence:
+    display: Tpmsequence
+    type: decimal
+    required: false
+    description: Field TpmSequence from TpmPromoDetTrans
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from TpmPromoDetTrans
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from TpmPromoDetTrans
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from TpmPromoDetTrans
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from TpmPromoDetTrans
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from TpmPromoDetTrans
+  transaction_value:
+    display: Transactionvalue
+    type: decimal
+    required: false
+    description: Field TransactionValue from TpmPromoDetTrans
+  promotion_type:
+    display: Promotiontype
+    type: string
+    required: false
+    description: Field PromotionType from TpmPromoDetTrans
+  globalflag:
+    display: Globalflag
+    type: string
+    required: false
+    description: Field Globalflag from TpmPromoDetTrans
+  original_price:
+    display: Originalprice
+    type: decimal
+    required: false
+    description: Field OriginalPrice from TpmPromoDetTrans
+  so_charge_line:
+    display: Sochargeline
+    type: decimal
+    required: false
+    description: Field SoChargeLine from TpmPromoDetTrans
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from TpmPromoDetTrans
+  free_goods_stock:
+    display: Freegoodsstock
+    type: string
+    required: false
+    description: Field FreeGoodsStock from TpmPromoDetTrans

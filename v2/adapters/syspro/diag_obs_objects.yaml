@@ -1,0 +1,7 @@
+concept: diag_obs_objects
+table: DiagObsObjects
+alias: doo
+fields:
+  table_name: doo.TableName
+  object_type: doo.ObjectType
+  object_name: doo.ObjectName

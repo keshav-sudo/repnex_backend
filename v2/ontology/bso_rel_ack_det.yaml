@@ -1,0 +1,63 @@
+concept: bso_rel_ack_det
+display_name: BsoRelAckDet
+module: other
+description: Auto-generated representation of the physical table BsoRelAckDet.
+synonyms:
+- bsorelackdet
+- bso rel ack det
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from BsoRelAckDet
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from BsoRelAckDet
+  cust_stock_code:
+    display: Custstockcode
+    type: string
+    required: false
+    description: Field CustStockCode from BsoRelAckDet
+  sequence_num:
+    display: Sequencenum
+    type: decimal
+    required: false
+    description: Field SequenceNum from BsoRelAckDet
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from BsoRelAckDet
+  release_date:
+    display: Releasedate
+    type: date
+    required: false
+    description: Field ReleaseDate from BsoRelAckDet
+  exist_cume:
+    display: Existcume
+    type: decimal
+    required: false
+    description: Field ExistCume from BsoRelAckDet
+  request_cume:
+    display: Requestcume
+    type: decimal
+    required: false
+    description: Field RequestCume from BsoRelAckDet
+  accept_cume:
+    display: Acceptcume
+    type: decimal
+    required: false
+    description: Field AcceptCume from BsoRelAckDet
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from BsoRelAckDet
+  decimals:
+    display: Decimals
+    type: decimal
+    required: false
+    description: Field Decimals from BsoRelAckDet

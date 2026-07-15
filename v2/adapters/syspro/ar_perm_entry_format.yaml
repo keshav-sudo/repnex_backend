@@ -1,0 +1,6 @@
+concept: ar_perm_entry_format
+table: ArPermEntryFormat
+alias: apef
+fields:
+  perm_entry_format: apef.PermEntryFormat
+  preferences: apef.Preferences

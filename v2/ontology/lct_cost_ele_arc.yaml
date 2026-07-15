@@ -1,0 +1,98 @@
+concept: lct_cost_ele_arc
+display_name: LctCostEleArc
+module: other
+description: Auto-generated representation of the physical table LctCostEleArc.
+synonyms:
+- lctcostelearc
+- lct cost ele arc
+header_attributes:
+  vessel:
+    display: Vessel
+    type: string
+    required: false
+    description: Field Vessel from LctCostEleArc
+  departure_date:
+    display: Departuredate
+    type: date
+    required: false
+    description: Field DepartureDate from LctCostEleArc
+  shipment_reference:
+    display: Shipmentreference
+    type: string
+    required: false
+    description: Field ShipmentReference from LctCostEleArc
+  purchase_order:
+    display: Purchaseorder
+    type: string
+    required: false
+    description: Field PurchaseOrder from LctCostEleArc
+  purchase_order_lin:
+    display: Purchaseorderlin
+    type: decimal
+    required: false
+    description: Field PurchaseOrderLin from LctCostEleArc
+  element_seq_num:
+    display: Elementseqnum
+    type: decimal
+    required: false
+    description: Field ElementSeqNum from LctCostEleArc
+  element:
+    display: Element
+    type: string
+    required: false
+    description: Field Element from LctCostEleArc
+  tot_expected_cost:
+    display: Totexpectedcost
+    type: decimal
+    required: false
+    description: Field TotExpectedCost from LctCostEleArc
+  total_actual_cost:
+    display: Totalactualcost
+    type: decimal
+    required: false
+    description: Field TotalActualCost from LctCostEleArc
+  total_grn_value:
+    display: Totalgrnvalue
+    type: decimal
+    required: false
+    description: Field TotalGrnValue from LctCostEleArc
+  invoice_count:
+    display: Invoicecount
+    type: decimal
+    required: false
+    description: Field InvoiceCount from LctCostEleArc
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from LctCostEleArc
+  total_dutiable_val:
+    display: Totaldutiableval
+    type: decimal
+    required: false
+    description: Field TotalDutiableVal from LctCostEleArc
+  custom_currency:
+    display: Customcurrency
+    type: string
+    required: false
+    description: Field CustomCurrency from LctCostEleArc
+  tariff_code_custom:
+    display: Tariffcodecustom
+    type: string
+    required: false
+    description: Field TariffCodeCustom from LctCostEleArc
+  tariff_code_county:
+    display: Tariffcodecounty
+    type: string
+    required: false
+    description: Field TariffCodeCounty from LctCostEleArc
+  calculation_code:
+    display: Calculationcode
+    type: string
+    required: false
+    description: Field CalculationCode from LctCostEleArc
+  fixed_cost_element:
+    display: Fixedcostelement
+    type: decimal
+    required: false
+    description: Field FixedCostElement from LctCostEleArc

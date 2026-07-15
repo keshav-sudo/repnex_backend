@@ -1,0 +1,9 @@
+concept: lynq_me_api__config__perform_logic_data_exchange_log
+table: Lynq_ME_API_Config_PerformLogicDataExchangeLog
+alias: lmeapicpldel
+fields:
+  id: lmeapicpldel.Id
+  log_type_id: lmeapicpldel.LogTypeId
+  created_date_utc: lmeapicpldel.CreatedDateUTC
+  message: lmeapicpldel.Message
+  stack_trace: lmeapicpldel.StackTrace

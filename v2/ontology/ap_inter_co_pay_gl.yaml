@@ -1,0 +1,18 @@
+concept: ap_inter_co_pay_gl
+display_name: ApInterCoPayGl
+module: accounts_payable
+description: Auto-generated representation of the physical table ApInterCoPayGl.
+synonyms:
+- apintercopaygl
+- ap inter co pay gl
+header_attributes:
+  secondary_company:
+    display: Secondarycompany
+    type: string
+    required: false
+    description: Field SecondaryCompany from ApInterCoPayGl
+  gl_inter_co_pay_code:
+    display: Glintercopaycode
+    type: string
+    required: false
+    description: Field GlInterCoPayCode from ApInterCoPayGl

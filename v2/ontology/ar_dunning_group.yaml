@@ -1,0 +1,18 @@
+concept: ar_dunning_group
+display_name: ArDunningGroup
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArDunningGroup.
+synonyms:
+- ardunninggroup
+- ar dunning group
+header_attributes:
+  dunning_group:
+    display: Dunninggroup
+    type: string
+    required: false
+    description: Field DunningGroup from ArDunningGroup
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from ArDunningGroup

@@ -1,0 +1,11 @@
+concept: srs_archive_stk
+table: SrsArchiveSTK
+alias: sastk
+fields:
+  archive_date: sastk.ArchiveDate
+  archive_time: sastk.ArchiveTime
+  operator: sastk.Operator
+  archive_id: sastk.ArchiveId
+  archive_type: sastk.ArchiveType
+  archive_file: sastk.ArchiveFile
+  rec_docno: sastk.RecDocno

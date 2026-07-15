@@ -1,0 +1,15 @@
+concept: gtr_serial_detail
+table: GtrSerialDetail
+alias: gsd
+fields:
+  gtr_reference: gsd.GtrReference
+  source_warehouse: gsd.SourceWarehouse
+  target_warehouse: gsd.TargetWarehouse
+  line: gsd.Line
+  entry: gsd.Entry
+  lot: gsd.Lot
+  serial: gsd.Serial
+  qty_received: gsd.QtyReceived
+  expiry_date: gsd.ExpiryDate
+  scrap_date: gsd.ScrapDate
+  source_bin: gsd.SourceBin

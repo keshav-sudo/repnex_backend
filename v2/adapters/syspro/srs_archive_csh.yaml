@@ -1,0 +1,15 @@
+concept: srs_archive_csh
+table: SrsArchiveCSH
+alias: sacsh
+fields:
+  archive_date: sacsh.ArchiveDate
+  archive_time: sacsh.ArchiveTime
+  operator: sacsh.Operator
+  archive_id: sacsh.ArchiveId
+  archive_type: sacsh.ArchiveType
+  archive_file: sacsh.ArchiveFile
+  bank_id: sacsh.BankId
+  bank_name: sacsh.BankName
+  payment_date_cymd: sacsh.PaymentDateCymd
+  supplier_name: sacsh.SupplierName
+  tot_check_number: sacsh.TotCheckNumber

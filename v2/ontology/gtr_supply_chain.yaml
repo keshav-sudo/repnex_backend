@@ -1,0 +1,53 @@
+concept: gtr_supply_chain
+display_name: GtrSupplyChain
+module: other
+description: Auto-generated representation of the physical table GtrSupplyChain.
+synonyms:
+- gtrsupplychain
+- gtr supply chain
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from GtrSupplyChain
+  chain_number:
+    display: Chainnumber
+    type: decimal
+    required: false
+    description: Field ChainNumber from GtrSupplyChain
+  level_number:
+    display: Levelnumber
+    type: decimal
+    required: false
+    description: Field LevelNumber from GtrSupplyChain
+  target_warehouse:
+    display: Targetwarehouse
+    type: string
+    required: false
+    description: Field TargetWarehouse from GtrSupplyChain
+  source_warehouse:
+    display: Sourcewarehouse
+    type: string
+    required: false
+    description: Field SourceWarehouse from GtrSupplyChain
+  lead_time:
+    display: Leadtime
+    type: decimal
+    required: false
+    description: Field LeadTime from GtrSupplyChain
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GtrSupplyChain
+  cost_multiplier:
+    display: Costmultiplier
+    type: decimal
+    required: false
+    description: Field CostMultiplier from GtrSupplyChain
+  buying_rule_flag:
+    display: Buyingruleflag
+    type: decimal
+    required: false
+    description: Field BuyingRuleFlag from GtrSupplyChain

@@ -1,0 +1,9 @@
+concept: adm_b2_b_failed_ctl
+table: AdmB2BFailedCtl
+alias: abbfc
+fields:
+  ctl_flag: abbfc.CtlFlag
+  next_b2_f_file: abbfc.NextB2FFile
+  num_days_fail: abbfc.NumDaysFail
+  num_days_actioned: abbfc.NumDaysActioned
+  failed_doc_path: abbfc.FailedDocPath

@@ -1,0 +1,8 @@
+concept: wip_co_prd_op_cost
+table: WipCoPrdOpCost
+alias: wcpoc
+fields:
+  job: wcpoc.Job
+  co_product_line: wcpoc.CoProductLine
+  operation: wcpoc.Operation
+  pct_labor_cost: wcpoc.PctLaborCost

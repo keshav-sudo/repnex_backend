@@ -1,0 +1,28 @@
+concept: ecc_status_event
+table: EccStatusEvent
+alias: ese
+fields:
+  status_code: ese.StatusCode
+  event_number: ese.EventNumber
+  description_fixed: ese.DescriptionFixed
+  description: ese.Description
+  event_type: ese.EventType
+  action_user_fixed: ese.ActionUserFixed
+  ecc_user: ese.EccUser
+  action_days_fixed: ese.ActionDaysFixed
+  action_days: ese.ActionDays
+  review_action: ese.ReviewAction
+  reminder_days_fixed: ese.ReminderDaysFixed
+  reminder_days: ese.ReminderDays
+  status_change: ese.StatusChange
+  mail_users: ese.MailUsers
+  email_fixed: ese.EmailFixed
+  mail_subject: ese.MailSubject
+  mail_message: ese.MailMessage
+  pos_response: ese.PosResponse
+  neg_response: ese.NegResponse
+  pos_next_status: ese.PosNextStatus
+  neg_next_status: ese.NegNextStatus
+  mixed_next_status: ese.MixedNextStatus
+  oper_action: ese.OperAction
+  action_type: ese.ActionType

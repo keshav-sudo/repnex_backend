@@ -1,0 +1,38 @@
+concept: wip_co_prd_mat_cost
+display_name: WipCoPrdMatCost
+module: work_in_progress
+description: Auto-generated representation of the physical table WipCoPrdMatCost.
+synonyms:
+- wipcoprdmatcost
+- wip co prd mat cost
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipCoPrdMatCost
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipCoPrdMatCost
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipCoPrdMatCost
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipCoPrdMatCost
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from WipCoPrdMatCost
+  pct_material_cost:
+    display: Pctmaterialcost
+    type: decimal
+    required: false
+    description: Field PctMaterialCost from WipCoPrdMatCost

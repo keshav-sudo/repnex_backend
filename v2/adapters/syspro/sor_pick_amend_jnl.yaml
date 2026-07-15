@@ -1,0 +1,15 @@
+concept: sor_pick_amend_jnl
+table: SorPickAmendJnl
+alias: spaj
+fields:
+  jnl_date_time: spaj.JnlDateTime
+  jnl_line: spaj.JnlLine
+  pick_number: spaj.PickNumber
+  pick_line: spaj.PickLine
+  sales_order: spaj.SalesOrder
+  sales_order_line: spaj.SalesOrderLine
+  journal_printed: spaj.JournalPrinted
+  column_name: spaj.ColumnName
+  before: spaj.Before
+  after: spaj.After
+  operator_code: spaj.OperatorCode

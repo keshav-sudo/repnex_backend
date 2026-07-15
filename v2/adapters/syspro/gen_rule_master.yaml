@@ -1,0 +1,9 @@
+concept: gen_rule_master
+table: GenRuleMaster
+alias: grm1
+fields:
+  gl_rule: grm1.GlRule
+  source_gl_code: grm1.SourceGlCode
+  rule_select: grm1.RuleSelect
+  source_mov_bal: grm1.SourceMovBal
+  stat_mov_bal: grm1.StatMovBal

@@ -1,0 +1,15 @@
+concept: rma_restock_comp
+table: RmaRestockComp
+alias: rrc
+fields:
+  rma_number: rrc.RmaNumber
+  rma_line_number: rrc.RmaLineNumber
+  parent_part: rrc.ParentPart
+  route: rrc.Route
+  sequence_num: rrc.SequenceNum
+  component: rrc.Component
+  qty_received: rrc.QtyReceived
+  qty_restock: rrc.QtyRestock
+  qty_scrap: rrc.QtyScrap
+  scrap_action: rrc.ScrapAction
+  part_category: rrc.PartCategory

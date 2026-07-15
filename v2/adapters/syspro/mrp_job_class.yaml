@@ -1,0 +1,15 @@
+concept: mrp_job_class
+table: MrpJobClass
+alias: mjc
+fields:
+  job_classification: mjc.JobClassification
+  class_description: mjc.ClassDescription
+  class_job_prefix: mjc.ClassJobPrefix
+  class_job_suffix: mjc.ClassJobSuffix
+  wip_ctl_gl_code: mjc.WipCtlGlCode
+  wip_ins_gl_code: mjc.WipInsGlCode
+  wip_auto_gl_code: mjc.WipAutoGlCode
+  wip_var_gl_code: mjc.WipVarGlCode
+  wip_inspect_prefix: mjc.WipInspectPrefix
+  next_insp_reference: mjc.NextInspReference
+  wip_branch: mjc.WipBranch

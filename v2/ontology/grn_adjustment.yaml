@@ -1,0 +1,78 @@
+concept: grn_adjustment
+display_name: GrnAdjustment
+module: other
+description: Auto-generated representation of the physical table GrnAdjustment.
+synonyms:
+- grnadjustment
+- grn adjustment
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from GrnAdjustment
+  grn:
+    display: Grn
+    type: string
+    required: false
+    description: Field Grn from GrnAdjustment
+  grn_source:
+    display: Grnsource
+    type: string
+    required: false
+    description: Field GrnSource from GrnAdjustment
+  orig_journal:
+    display: Origjournal
+    type: decimal
+    required: false
+    description: Field OrigJournal from GrnAdjustment
+  orig_journal_entry:
+    display: Origjournalentry
+    type: decimal
+    required: false
+    description: Field OrigJournalEntry from GrnAdjustment
+  adj_journal:
+    display: Adjjournal
+    type: decimal
+    required: false
+    description: Field AdjJournal from GrnAdjustment
+  adj_journal_entry:
+    display: Adjjournalentry
+    type: decimal
+    required: false
+    description: Field AdjJournalEntry from GrnAdjustment
+  adj_journal_date:
+    display: Adjjournaldate
+    type: date
+    required: false
+    description: Field AdjJournalDate from GrnAdjustment
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from GrnAdjustment
+  adj_year:
+    display: Adjyear
+    type: decimal
+    required: false
+    description: Field AdjYear from GrnAdjustment
+  adj_month:
+    display: Adjmonth
+    type: decimal
+    required: false
+    description: Field AdjMonth from GrnAdjustment
+  adj_reference:
+    display: Adjreference
+    type: string
+    required: false
+    description: Field AdjReference from GrnAdjustment
+  grn_adj_value:
+    display: Grnadjvalue
+    type: decimal
+    required: false
+    description: Field GrnAdjValue from GrnAdjustment
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from GrnAdjustment

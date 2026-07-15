@@ -1,0 +1,218 @@
+concept: sal_branch
+display_name: SalBranch
+module: other
+description: Auto-generated representation of the physical table SalBranch.
+synonyms:
+- salbranch
+- sal branch
+header_attributes:
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SalBranch
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SalBranch
+  branch_addr0_build:
+    display: Branchaddr0Build
+    type: string
+    required: false
+    description: Field BranchAddr0Build from SalBranch
+  branch_addr1:
+    display: Branchaddr1
+    type: string
+    required: false
+    description: Field BranchAddr1 from SalBranch
+  branch_addr2:
+    display: Branchaddr2
+    type: string
+    required: false
+    description: Field BranchAddr2 from SalBranch
+  branch_addr2_loc:
+    display: Branchaddr2Loc
+    type: string
+    required: false
+    description: Field BranchAddr2Loc from SalBranch
+  branch_addr3:
+    display: Branchaddr3
+    type: string
+    required: false
+    description: Field BranchAddr3 from SalBranch
+  branch_addr3_country:
+    display: Branchaddr3Country
+    type: string
+    required: false
+    description: Field BranchAddr3Country from SalBranch
+  branch_postal_code:
+    display: Branchpostalcode
+    type: string
+    required: false
+    description: Field BranchPostalCode from SalBranch
+  branch_gps_lat:
+    display: Branchgpslat
+    type: decimal
+    required: false
+    description: Field BranchGpsLat from SalBranch
+  branch_gps_long:
+    display: Branchgpslong
+    type: decimal
+    required: false
+    description: Field BranchGpsLong from SalBranch
+  frt_cos_acc:
+    display: Frtcosacc
+    type: string
+    required: false
+    description: Field FrtCosAcc from SalBranch
+  sales_ctl_acc:
+    display: Salesctlacc
+    type: string
+    required: false
+    description: Field SalesCtlAcc from SalBranch
+  cos_ctl_acc:
+    display: Cosctlacc
+    type: string
+    required: false
+    description: Field CosCtlAcc from SalBranch
+  frt_sales_acc:
+    display: Frtsalesacc
+    type: string
+    required: false
+    description: Field FrtSalesAcc from SalBranch
+  fin_charge_acc:
+    display: Finchargeacc
+    type: string
+    required: false
+    description: Field FinChargeAcc from SalBranch
+  rounding_acc:
+    display: Roundingacc
+    type: string
+    required: false
+    description: Field RoundingAcc from SalBranch
+  sales_tax_acc:
+    display: Salestaxacc
+    type: string
+    required: false
+    description: Field SalesTaxAcc from SalBranch
+  fst_acc:
+    display: Fstacc
+    type: string
+    required: false
+    description: Field FstAcc from SalBranch
+  deposit_acc:
+    display: Depositacc
+    type: string
+    required: false
+    description: Field DepositAcc from SalBranch
+  prefix_next_inv:
+    display: Prefixnextinv
+    type: string
+    required: false
+    description: Field PrefixNextInv from SalBranch
+  next_invoice:
+    display: Nextinvoice
+    type: decimal
+    required: false
+    description: Field NextInvoice from SalBranch
+  next_credit_note:
+    display: Nextcreditnote
+    type: decimal
+    required: false
+    description: Field NextCreditNote from SalBranch
+  next_debit_note:
+    display: Nextdebitnote
+    type: decimal
+    required: false
+    description: Field NextDebitNote from SalBranch
+  prefix_next_so:
+    display: Prefixnextso
+    type: string
+    required: false
+    description: Field PrefixNextSo from SalBranch
+  next_sales_order:
+    display: Nextsalesorder
+    type: decimal
+    required: false
+    description: Field NextSalesOrder from SalBranch
+  next_so_cr_note:
+    display: Nextsocrnote
+    type: decimal
+    required: false
+    description: Field NextSoCrNote from SalBranch
+  next_so_db_note:
+    display: Nextsodbnote
+    type: decimal
+    required: false
+    description: Field NextSoDbNote from SalBranch
+  next_del_note:
+    display: Nextdelnote
+    type: decimal
+    required: false
+    description: Field NextDelNote from SalBranch
+  prefix_next_rma:
+    display: Prefixnextrma
+    type: string
+    required: false
+    description: Field PrefixNextRma from SalBranch
+  next_rma:
+    display: Nextrma
+    type: decimal
+    required: false
+    description: Field NextRma from SalBranch
+  nationality:
+    display: Nationality
+    type: string
+    required: false
+    description: Field Nationality from SalBranch
+  next_credit_disc:
+    display: Nextcreditdisc
+    type: decimal
+    required: false
+    description: Field NextCreditDisc from SalBranch
+  next_debit_disc:
+    display: Nextdebitdisc
+    type: decimal
+    required: false
+    description: Field NextDebitDisc from SalBranch
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from SalBranch
+  quote_prefix:
+    display: Quoteprefix
+    type: string
+    required: false
+    description: Field QuotePrefix from SalBranch
+  next_quote:
+    display: Nextquote
+    type: decimal
+    required: false
+    description: Field NextQuote from SalBranch
+  quick_quote_prefix:
+    display: Quickquoteprefix
+    type: string
+    required: false
+    description: Field QuickQuotePrefix from SalBranch
+  next_quick_quote:
+    display: Nextquickquote
+    type: decimal
+    required: false
+    description: Field NextQuickQuote from SalBranch
+  vat_registration_no:
+    display: Vatregistrationno
+    type: string
+    required: false
+    description: Field VatRegistrationNo from SalBranch
+  user_tax_reference:
+    display: Usertaxreference
+    type: string
+    required: false
+    description: Field UserTaxReference from SalBranch
+  exclude_from_avalara:
+    display: Excludefromavalara
+    type: string
+    required: false
+    description: Field ExcludeFromAvalara from SalBranch

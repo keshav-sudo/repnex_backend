@@ -1,0 +1,8 @@
+concept: wip_scrap_code
+table: WipScrapCode
+alias: wsc
+fields:
+  record_flag: wsc.RecordFlag
+  non_prod_scrap: wsc.NonProdScrap
+  description: wsc.Description
+  expense_gl_code: wsc.ExpenseGlCode

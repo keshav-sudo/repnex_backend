@@ -1,0 +1,16 @@
+concept: asset_capex_amd_jnl
+table: AssetCapexAmdJnl
+alias: acaj
+fields:
+  capex_file_name: acaj.CapexFileName
+  jnl_date: acaj.JnlDate
+  jnl_time: acaj.JnlTime
+  jnl_line: acaj.JnlLine
+  capex_code: acaj.CapexCode
+  capex_line: acaj.CapexLine
+  journal_printed: acaj.JournalPrinted
+  change_flag: acaj.ChangeFlag
+  column_name: acaj.ColumnName
+  before: acaj.Before
+  after: acaj.After
+  operator: acaj.Operator

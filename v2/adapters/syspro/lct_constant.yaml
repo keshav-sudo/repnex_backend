@@ -1,0 +1,6 @@
+concept: lct_constant
+table: LctConstant
+alias: lc
+fields:
+  constant: lc.Constant
+  constant_value: lc.ConstantValue

@@ -1,0 +1,9 @@
+concept: mrp_sug_job_al_lab_plus
+table: MrpSugJobAlLab+
+alias: msjal1
+fields:
+  job: msjal1.Job
+  operation: msjal1.Operation
+  color: msjal1.Color
+  max_operation_span: msjal1.MaxOperationSpan
+  operation_slack: msjal1.OperationSlack

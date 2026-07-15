@@ -1,0 +1,63 @@
+concept: eam_equip_reg
+display_name: EamEquipReg
+module: other
+description: Auto-generated representation of the physical table EamEquipReg.
+synonyms:
+- eamequipreg
+- eam equip reg
+header_attributes:
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from EamEquipReg
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from EamEquipReg
+  equipment_serial:
+    display: Equipmentserial
+    type: string
+    required: false
+    description: Field EquipmentSerial from EamEquipReg
+  link_to_asset:
+    display: Linktoasset
+    type: string
+    required: false
+    description: Field LinkToAsset from EamEquipReg
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from EamEquipReg
+  asset_capex:
+    display: Assetcapex
+    type: string
+    required: false
+    description: Field AssetCapex from EamEquipReg
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from EamEquipReg
+  link_job_capex:
+    display: Linkjobcapex
+    type: string
+    required: false
+    description: Field LinkJobCapex from EamEquipReg
+  type_of_asset:
+    display: Typeofasset
+    type: string
+    required: false
+    description: Field TypeOfAsset from EamEquipReg
+  machine:
+    display: Machine
+    type: string
+    required: false
+    description: Field Machine from EamEquipReg
+  equipment_type:
+    display: Equipmenttype
+    type: string
+    required: false
+    description: Field EquipmentType from EamEquipReg

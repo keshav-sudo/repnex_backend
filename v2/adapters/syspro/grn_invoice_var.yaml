@@ -1,0 +1,16 @@
+concept: grn_invoice_var
+table: GrnInvoiceVar
+alias: giv
+fields:
+  supplier: giv.Supplier
+  grn: giv.Grn
+  journal: giv.Journal
+  entry_number: giv.EntryNumber
+  invoice: giv.Invoice
+  ap_journal: giv.ApJournal
+  ap_entry_number: giv.ApEntryNumber
+  grn_value: giv.GrnValue
+  invoice_value: giv.InvoiceValue
+  printed_flag: giv.PrintedFlag
+  journal_date: giv.JournalDate
+  operator: giv.Operator

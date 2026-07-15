@@ -1,0 +1,148 @@
+concept: sor_price_cat_detail
+display_name: SorPriceCatDetail
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPriceCatDetail.
+synonyms:
+- sorpricecatdetail
+- sor price cat detail
+header_attributes:
+  catalogue:
+    display: Catalogue
+    type: string
+    required: false
+    description: Field Catalogue from SorPriceCatDetail
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorPriceCatDetail
+  line_number:
+    display: Linenumber
+    type: decimal
+    required: false
+    description: Field LineNumber from SorPriceCatDetail
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from SorPriceCatDetail
+  price_group_rule:
+    display: Pricegrouprule
+    type: decimal
+    required: false
+    description: Field PriceGroupRule from SorPriceCatDetail
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from SorPriceCatDetail
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from SorPriceCatDetail
+  price:
+    display: Price
+    type: decimal
+    required: false
+    description: Field Price from SorPriceCatDetail
+  price_basis:
+    display: Pricebasis
+    type: string
+    required: false
+    description: Field PriceBasis from SorPriceCatDetail
+  tax_code:
+    display: Taxcode
+    type: string
+    required: false
+    description: Field TaxCode from SorPriceCatDetail
+  tax_percentage:
+    display: Taxpercentage
+    type: decimal
+    required: false
+    description: Field TaxPercentage from SorPriceCatDetail
+  tax_inc_excl:
+    display: Taxincexcl
+    type: string
+    required: false
+    description: Field TaxIncExcl from SorPriceCatDetail
+  tax_value:
+    display: Taxvalue
+    type: decimal
+    required: false
+    description: Field TaxValue from SorPriceCatDetail
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from SorPriceCatDetail
+  threshold_qty:
+    display: Thresholdqty
+    type: decimal
+    required: false
+    description: Field ThresholdQty from SorPriceCatDetail
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from SorPriceCatDetail
+  promotion_value:
+    display: Promotionvalue
+    type: decimal
+    required: false
+    description: Field PromotionValue from SorPriceCatDetail
+  invoice_price:
+    display: Invoiceprice
+    type: decimal
+    required: false
+    description: Field InvoicePrice from SorPriceCatDetail
+  customer_price:
+    display: Customerprice
+    type: decimal
+    required: false
+    description: Field CustomerPrice from SorPriceCatDetail
+  threshold:
+    display: Threshold
+    type: decimal
+    required: false
+    description: Field Threshold from SorPriceCatDetail
+  tpm_threshold_qty:
+    display: Tpmthresholdqty
+    type: decimal
+    required: false
+    description: Field TpmThresholdQty from SorPriceCatDetail
+  tpm_stock_code:
+    display: Tpmstockcode
+    type: string
+    required: false
+    description: Field TpmStockCode from SorPriceCatDetail
+  disc_pct1:
+    display: Discpct1
+    type: decimal
+    required: false
+    description: Field DiscPct1 from SorPriceCatDetail
+  disc_pct2:
+    display: Discpct2
+    type: decimal
+    required: false
+    description: Field DiscPct2 from SorPriceCatDetail
+  disc_pct3:
+    display: Discpct3
+    type: decimal
+    required: false
+    description: Field DiscPct3 from SorPriceCatDetail
+  disc_value:
+    display: Discvalue
+    type: decimal
+    required: false
+    description: Field DiscValue from SorPriceCatDetail
+  mark_up_pct:
+    display: Markuppct
+    type: decimal
+    required: false
+    description: Field MarkUpPct from SorPriceCatDetail
+  gross_price:
+    display: Grossprice
+    type: decimal
+    required: false
+    description: Field GrossPrice from SorPriceCatDetail

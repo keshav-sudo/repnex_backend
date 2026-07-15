@@ -1,0 +1,43 @@
+concept: sor_con_qty_disc_brk
+display_name: SorConQtyDiscBrk
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorConQtyDiscBrk.
+synonyms:
+- sorconqtydiscbrk
+- sor con qty disc brk
+header_attributes:
+  contract_type:
+    display: Contracttype
+    type: string
+    required: false
+    description: Field ContractType from SorConQtyDiscBrk
+  customer_buy_grp:
+    display: Customerbuygrp
+    type: string
+    required: false
+    description: Field CustomerBuyGrp from SorConQtyDiscBrk
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from SorConQtyDiscBrk
+  contract:
+    display: Contract
+    type: string
+    required: false
+    description: Field Contract from SorConQtyDiscBrk
+  qty_break:
+    display: Qtybreak
+    type: decimal
+    required: false
+    description: Field QtyBreak from SorConQtyDiscBrk
+  qty_price:
+    display: Qtyprice
+    type: string
+    required: false
+    description: Field QtyPrice from SorConQtyDiscBrk
+  price_list:
+    display: Pricelist
+    type: string
+    required: false
+    description: Field PriceList from SorConQtyDiscBrk

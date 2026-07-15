@@ -1,0 +1,11 @@
+concept: iop_fore_archive
+table: IopForeArchive
+alias: ifa
+fields:
+  stock_code: ifa.StockCode
+  version: ifa.Version
+  release: ifa.Release
+  forecast_wh: ifa.ForecastWh
+  date_prepared: ifa.DatePrepared
+  forecast_date: ifa.ForecastDate
+  forecast_qty: ifa.ForecastQty

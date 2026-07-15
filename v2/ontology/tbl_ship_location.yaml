@@ -1,0 +1,18 @@
+concept: tbl_ship_location
+display_name: TblShipLocation
+module: other
+description: Auto-generated representation of the physical table TblShipLocation.
+synonyms:
+- tblshiplocation
+- tbl ship location
+header_attributes:
+  shipping_location:
+    display: Shippinglocation
+    type: string
+    required: false
+    description: Field ShippingLocation from TblShipLocation
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from TblShipLocation

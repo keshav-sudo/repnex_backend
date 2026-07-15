@@ -1,0 +1,238 @@
+concept: tpm_deduct_tran
+display_name: TpmDeductTran
+module: other
+description: Auto-generated representation of the physical table TpmDeductTran.
+synonyms:
+- tpmdeducttran
+- tpm deduct tran
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from TpmDeductTran
+  deduct_customer:
+    display: Deductcustomer
+    type: string
+    required: false
+    description: Field DeductCustomer from TpmDeductTran
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from TpmDeductTran
+  trn_time:
+    display: Trntime
+    type: decimal
+    required: false
+    description: Field TrnTime from TpmDeductTran
+  org_customer:
+    display: Orgcustomer
+    type: string
+    required: false
+    description: Field OrgCustomer from TpmDeductTran
+  org_deduct_customer:
+    display: Orgdeductcustomer
+    type: string
+    required: false
+    description: Field OrgDeductCustomer from TpmDeductTran
+  org_trn_date:
+    display: Orgtrndate
+    type: date
+    required: false
+    description: Field OrgTrnDate from TpmDeductTran
+  org_trn_time:
+    display: Orgtrntime
+    type: decimal
+    required: false
+    description: Field OrgTrnTime from TpmDeductTran
+  last_customer:
+    display: Lastcustomer
+    type: string
+    required: false
+    description: Field LastCustomer from TpmDeductTran
+  last_deduct_customer:
+    display: Lastdeductcustomer
+    type: string
+    required: false
+    description: Field LastDeductCustomer from TpmDeductTran
+  last_trn_date:
+    display: Lasttrndate
+    type: date
+    required: false
+    description: Field LastTrnDate from TpmDeductTran
+  last_trn_time:
+    display: Lasttrntime
+    type: decimal
+    required: false
+    description: Field LastTrnTime from TpmDeductTran
+  payment_value:
+    display: Paymentvalue
+    type: decimal
+    required: false
+    description: Field PaymentValue from TpmDeductTran
+  deduct_total:
+    display: Deducttotal
+    type: decimal
+    required: false
+    description: Field DeductTotal from TpmDeductTran
+  cheque_reference:
+    display: Chequereference
+    type: string
+    required: false
+    description: Field ChequeReference from TpmDeductTran
+  pay_date:
+    display: Paydate
+    type: date
+    required: false
+    description: Field PayDate from TpmDeductTran
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from TpmDeductTran
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from TpmDeductTran
+  transaction_code:
+    display: Transactioncode
+    type: string
+    required: false
+    description: Field TransactionCode from TpmDeductTran
+  new_deduct_code:
+    display: Newdeductcode
+    type: string
+    required: false
+    description: Field NewDeductCode from TpmDeductTran
+  new_customer:
+    display: Newcustomer
+    type: string
+    required: false
+    description: Field NewCustomer from TpmDeductTran
+  deduction_code:
+    display: Deductioncode
+    type: string
+    required: false
+    description: Field DeductionCode from TpmDeductTran
+  deduction_amount:
+    display: Deductionamount
+    type: decimal
+    required: false
+    description: Field DeductionAmount from TpmDeductTran
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from TpmDeductTran
+  printed_flag:
+    display: Printedflag
+    type: string
+    required: false
+    description: Field PrintedFlag from TpmDeductTran
+  adjust_ldg:
+    display: Adjustldg
+    type: string
+    required: false
+    description: Field AdjustLdg from TpmDeductTran
+  adjust_date:
+    display: Adjustdate
+    type: date
+    required: false
+    description: Field AdjustDate from TpmDeductTran
+  offset_ldg:
+    display: Offsetldg
+    type: string
+    required: false
+    description: Field OffsetLdg from TpmDeductTran
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from TpmDeductTran
+  resolution_code:
+    display: Resolutioncode
+    type: string
+    required: false
+    description: Field ResolutionCode from TpmDeductTran
+  resolution_date:
+    display: Resolutiondate
+    type: date
+    required: false
+    description: Field ResolutionDate from TpmDeductTran
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from TpmDeductTran
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from TpmDeductTran
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from TpmDeductTran
+  promotion_seq:
+    display: Promotionseq
+    type: decimal
+    required: false
+    description: Field PromotionSeq from TpmDeductTran
+  change_operator:
+    display: Changeoperator
+    type: string
+    required: false
+    description: Field ChangeOperator from TpmDeductTran
+  change_date:
+    display: Changedate
+    type: date
+    required: false
+    description: Field ChangeDate from TpmDeductTran
+  reinstate_operator:
+    display: Reinstateoperator
+    type: string
+    required: false
+    description: Field ReinstateOperator from TpmDeductTran
+  reinstate_date:
+    display: Reinstatedate
+    type: date
+    required: false
+    description: Field ReinstateDate from TpmDeductTran
+  reinstate_cust:
+    display: Reinstatecust
+    type: string
+    required: false
+    description: Field ReinstateCust from TpmDeductTran
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from TpmDeductTran
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from TpmDeductTran
+  trn_year:
+    display: Trnyear
+    type: decimal
+    required: false
+    description: Field TrnYear from TpmDeductTran
+  trn_month:
+    display: Trnmonth
+    type: decimal
+    required: false
+    description: Field TrnMonth from TpmDeductTran
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from TpmDeductTran
+  trn_description:
+    display: Trndescription
+    type: string
+    required: false
+    description: Field TrnDescription from TpmDeductTran

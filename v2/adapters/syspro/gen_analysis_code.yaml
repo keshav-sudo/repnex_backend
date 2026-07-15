@@ -1,0 +1,9 @@
+concept: gen_analysis_code
+table: GenAnalysisCode
+alias: gac1
+fields:
+  company: gac1.Company
+  analysis_category: gac1.AnalysisCategory
+  analysis_type: gac1.AnalysisType
+  analysis_code: gac1.AnalysisCode
+  description: gac1.Description

@@ -1,0 +1,58 @@
+concept: iop_new_forecast
+display_name: IopNewForecast
+module: other
+description: Auto-generated representation of the physical table IopNewForecast.
+synonyms:
+- iopnewforecast
+- iop new forecast
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopNewForecast
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopNewForecast
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopNewForecast
+  forecast_wh:
+    display: Forecastwh
+    type: string
+    required: false
+    description: Field ForecastWh from IopNewForecast
+  calendar:
+    display: Calendar
+    type: string
+    required: false
+    description: Field Calendar from IopNewForecast
+  forecast_date:
+    display: Forecastdate
+    type: date
+    required: false
+    description: Field ForecastDate from IopNewForecast
+  forecast_qty:
+    display: Forecastqty
+    type: decimal
+    required: false
+    description: Field ForecastQty from IopNewForecast
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from IopNewForecast
+  forecast_batch:
+    display: Forecastbatch
+    type: string
+    required: false
+    description: Field ForecastBatch from IopNewForecast
+  freeze:
+    display: Freeze
+    type: string
+    required: false
+    description: Field Freeze from IopNewForecast

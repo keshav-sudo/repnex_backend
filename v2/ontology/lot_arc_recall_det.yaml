@@ -1,0 +1,98 @@
+concept: lot_arc_recall_det
+display_name: LotArcRecallDet
+module: other
+description: Auto-generated representation of the physical table LotArcRecallDet.
+synonyms:
+- lotarcrecalldet
+- lot arc recall det
+header_attributes:
+  product_recall:
+    display: Productrecall
+    type: string
+    required: false
+    description: Field ProductRecall from LotArcRecallDet
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from LotArcRecallDet
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from LotArcRecallDet
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from LotArcRecallDet
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from LotArcRecallDet
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from LotArcRecallDet
+  hold_level:
+    display: Holdlevel
+    type: string
+    required: false
+    description: Field HoldLevel from LotArcRecallDet
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from LotArcRecallDet
+  insp_quantity:
+    display: Inspquantity
+    type: decimal
+    required: false
+    description: Field InspQuantity from LotArcRecallDet
+  insp_complete:
+    display: Inspcomplete
+    type: string
+    required: false
+    description: Field InspComplete from LotArcRecallDet
+  release_qty:
+    display: Releaseqty
+    type: decimal
+    required: false
+    description: Field ReleaseQty from LotArcRecallDet
+  scrap_qty:
+    display: Scrapqty
+    type: decimal
+    required: false
+    description: Field ScrapQty from LotArcRecallDet
+  last_trn_date:
+    display: Lasttrndate
+    type: date
+    required: false
+    description: Field LastTrnDate from LotArcRecallDet
+  last_trn_time:
+    display: Lasttrntime
+    type: decimal
+    required: false
+    description: Field LastTrnTime from LotArcRecallDet
+  reason_code:
+    display: Reasoncode
+    type: string
+    required: false
+    description: Field ReasonCode from LotArcRecallDet
+  on_hold_reason:
+    display: Onholdreason
+    type: string
+    required: false
+    description: Field OnHoldReason from LotArcRecallDet
+  scrap_reason_code:
+    display: Scrapreasoncode
+    type: string
+    required: false
+    description: Field ScrapReasonCode from LotArcRecallDet
+  release_reason:
+    display: Releasereason
+    type: string
+    required: false
+    description: Field ReleaseReason from LotArcRecallDet

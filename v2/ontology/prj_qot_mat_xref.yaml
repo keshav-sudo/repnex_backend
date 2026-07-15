@@ -1,0 +1,58 @@
+concept: prj_qot_mat_xref
+display_name: PrjQotMatXref
+module: other
+description: Auto-generated representation of the physical table PrjQotMatXref.
+synonyms:
+- prjqotmatxref
+- prj qot mat xref
+header_attributes:
+  estimate:
+    display: Estimate
+    type: string
+    required: false
+    description: Field Estimate from PrjQotMatXref
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from PrjQotMatXref
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from PrjQotMatXref
+  sequence_num:
+    display: Sequencenum
+    type: string
+    required: false
+    description: Field SequenceNum from PrjQotMatXref
+  component:
+    display: Component
+    type: string
+    required: false
+    description: Field Component from PrjQotMatXref
+  hierarchy_qot1:
+    display: Hierarchyqot1
+    type: string
+    required: false
+    description: Field HierarchyQot1 from PrjQotMatXref
+  hierarchy_qot2:
+    display: Hierarchyqot2
+    type: string
+    required: false
+    description: Field HierarchyQot2 from PrjQotMatXref
+  hierarchy_qot3:
+    display: Hierarchyqot3
+    type: string
+    required: false
+    description: Field HierarchyQot3 from PrjQotMatXref
+  hierarchy_qot4:
+    display: Hierarchyqot4
+    type: string
+    required: false
+    description: Field HierarchyQot4 from PrjQotMatXref
+  hierarchy_qot5:
+    display: Hierarchyqot5
+    type: string
+    required: false
+    description: Field HierarchyQot5 from PrjQotMatXref

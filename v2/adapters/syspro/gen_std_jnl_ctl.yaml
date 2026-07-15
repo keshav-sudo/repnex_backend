@@ -1,0 +1,10 @@
+concept: gen_std_jnl_ctl
+table: GenStdJnlCtl
+alias: gsjc
+fields:
+  journal_code: gsjc.JournalCode
+  no_of_entries: gsjc.NoOfEntries
+  total_debit: gsjc.TotalDebit
+  total_credit: gsjc.TotalCredit
+  reference: gsjc.Reference
+  notation: gsjc.Notation

@@ -1,0 +1,118 @@
+concept: csh_tax_distr_det
+display_name: CshTaxDistrDet
+module: cashbook
+description: Auto-generated representation of the physical table CshTaxDistrDet.
+synonyms:
+- cshtaxdistrdet
+- csh tax distr det
+header_attributes:
+  input_output:
+    display: Inputoutput
+    type: string
+    required: false
+    description: Field InputOutput from CshTaxDistrDet
+  cb_trn_year:
+    display: Cbtrnyear
+    type: decimal
+    required: false
+    description: Field CbTrnYear from CshTaxDistrDet
+  cb_trn_month:
+    display: Cbtrnmonth
+    type: decimal
+    required: false
+    description: Field CbTrnMonth from CshTaxDistrDet
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Field Journal from CshTaxDistrDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from CshTaxDistrDet
+  printed_flag:
+    display: Printedflag
+    type: decimal
+    required: false
+    description: Field PrintedFlag from CshTaxDistrDet
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from CshTaxDistrDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from CshTaxDistrDet
+  entry_date:
+    display: Entrydate
+    type: date
+    required: false
+    description: Field EntryDate from CshTaxDistrDet
+  trn_value:
+    display: Trnvalue
+    type: decimal
+    required: false
+    description: Field TrnValue from CshTaxDistrDet
+  tot_tax_value:
+    display: Tottaxvalue
+    type: decimal
+    required: false
+    description: Field TotTaxValue from CshTaxDistrDet
+  cheque:
+    display: Cheque
+    type: decimal
+    required: false
+    description: Field Cheque from CshTaxDistrDet
+  entry_type:
+    display: Entrytype
+    type: string
+    required: false
+    description: Field EntryType from CshTaxDistrDet
+  cb_trn_date:
+    display: Cbtrndate
+    type: date
+    required: false
+    description: Field CbTrnDate from CshTaxDistrDet
+  cb_trn_time:
+    display: Cbtrntime
+    type: decimal
+    required: false
+    description: Field CbTrnTime from CshTaxDistrDet
+  tax_ret_submitted:
+    display: Taxretsubmitted
+    type: string
+    required: false
+    description: Field TaxRetSubmitted from CshTaxDistrDet
+  year_ret_submitted:
+    display: Yearretsubmitted
+    type: decimal
+    required: false
+    description: Field YearRetSubmitted from CshTaxDistrDet
+  mth_ret_submitted:
+    display: Mthretsubmitted
+    type: decimal
+    required: false
+    description: Field MthRetSubmitted from CshTaxDistrDet
+  jnl_cb_trn_year:
+    display: Jnlcbtrnyear
+    type: decimal
+    required: false
+    description: Field JnlCbTrnYear from CshTaxDistrDet
+  jnl_cb_trn_month:
+    display: Jnlcbtrnmonth
+    type: decimal
+    required: false
+    description: Field JnlCbTrnMonth from CshTaxDistrDet
+  jnl_journal:
+    display: Jnljournal
+    type: decimal
+    required: false
+    description: Field JnlJournal from CshTaxDistrDet
+  jnl_entry_number:
+    display: Jnlentrynumber
+    type: decimal
+    required: false
+    description: Field JnlEntryNumber from CshTaxDistrDet

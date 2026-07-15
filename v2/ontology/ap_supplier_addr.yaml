@@ -1,0 +1,128 @@
+concept: ap_supplier_addr
+display_name: ApSupplierAddr
+module: accounts_payable
+description: Auto-generated representation of the physical table ApSupplierAddr.
+synonyms:
+- apsupplieraddr
+- ap supplier addr
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApSupplierAddr
+  sup_addr1:
+    display: Supaddr1
+    type: string
+    required: false
+    description: Field SupAddr1 from ApSupplierAddr
+  sup_addr2:
+    display: Supaddr2
+    type: string
+    required: false
+    description: Field SupAddr2 from ApSupplierAddr
+  sup_addr3:
+    display: Supaddr3
+    type: string
+    required: false
+    description: Field SupAddr3 from ApSupplierAddr
+  sup_addr3_loc:
+    display: Supaddr3Loc
+    type: string
+    required: false
+    description: Field SupAddr3Loc from ApSupplierAddr
+  sup_addr4:
+    display: Supaddr4
+    type: string
+    required: false
+    description: Field SupAddr4 from ApSupplierAddr
+  sup_addr5:
+    display: Supaddr5
+    type: string
+    required: false
+    description: Field SupAddr5 from ApSupplierAddr
+  sup_postal_code:
+    display: Suppostalcode
+    type: string
+    required: false
+    description: Field SupPostalCode from ApSupplierAddr
+  sup_add_gps_lat:
+    display: Supaddgpslat
+    type: decimal
+    required: false
+    description: Field SupAddGpsLat from ApSupplierAddr
+  sup_add_gps_long:
+    display: Supaddgpslong
+    type: decimal
+    required: false
+    description: Field SupAddGpsLong from ApSupplierAddr
+  remit_name:
+    display: Remitname
+    type: string
+    required: false
+    description: Field RemitName from ApSupplierAddr
+  remit_addr1:
+    display: Remitaddr1
+    type: string
+    required: false
+    description: Field RemitAddr1 from ApSupplierAddr
+  remit_addr2:
+    display: Remitaddr2
+    type: string
+    required: false
+    description: Field RemitAddr2 from ApSupplierAddr
+  remit_addr3:
+    display: Remitaddr3
+    type: string
+    required: false
+    description: Field RemitAddr3 from ApSupplierAddr
+  remit_addr3_loc:
+    display: Remitaddr3Loc
+    type: string
+    required: false
+    description: Field RemitAddr3Loc from ApSupplierAddr
+  remit_addr4:
+    display: Remitaddr4
+    type: string
+    required: false
+    description: Field RemitAddr4 from ApSupplierAddr
+  remit_addr5:
+    display: Remitaddr5
+    type: string
+    required: false
+    description: Field RemitAddr5 from ApSupplierAddr
+  remit_postal_code:
+    display: Remitpostalcode
+    type: string
+    required: false
+    description: Field RemitPostalCode from ApSupplierAddr
+  remit_gps_lat:
+    display: Remitgpslat
+    type: decimal
+    required: false
+    description: Field RemitGpsLat from ApSupplierAddr
+  remit_gps_long:
+    display: Remitgpslong
+    type: decimal
+    required: false
+    description: Field RemitGpsLong from ApSupplierAddr
+  fax_remit_contact:
+    display: Faxremitcontact
+    type: string
+    required: false
+    description: Field FaxRemitContact from ApSupplierAddr
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from ApSupplierAddr
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from ApSupplierAddr
+  language_code_rem:
+    display: Languagecoderem
+    type: string
+    required: false
+    description: Field LanguageCodeRem from ApSupplierAddr

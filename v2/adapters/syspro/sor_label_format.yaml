@@ -1,0 +1,8 @@
+concept: sor_label_format
+table: SorLabelFormat
+alias: slf
+fields:
+  label_form_type: slf.LabelFormType
+  document_format: slf.DocumentFormat
+  document_record_type: slf.DocumentRecordType
+  document_info: slf.DocumentInfo

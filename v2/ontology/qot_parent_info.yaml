@@ -1,0 +1,43 @@
+concept: qot_parent_info
+display_name: QotParentInfo
+module: other
+description: Auto-generated representation of the physical table QotParentInfo.
+synonyms:
+- qotparentinfo
+- qot parent info
+header_attributes:
+  parent_part:
+    display: Parentpart
+    type: string
+    required: false
+    description: Field ParentPart from QotParentInfo
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from QotParentInfo
+  any_operations:
+    display: Anyoperations
+    type: string
+    required: false
+    description: Field AnyOperations from QotParentInfo
+  any_materials:
+    display: Anymaterials
+    type: string
+    required: false
+    description: Field AnyMaterials from QotParentInfo
+  narrations:
+    display: Narrations
+    type: decimal
+    required: false
+    description: Field Narrations from QotParentInfo
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from QotParentInfo
+  library_code:
+    display: Librarycode
+    type: string
+    required: false
+    description: Field LibraryCode from QotParentInfo

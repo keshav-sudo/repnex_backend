@@ -1,0 +1,6 @@
+concept: lynq_me_api__config__log_type
+table: Lynq_ME_API_Config_LogType
+alias: lmeapiclt
+fields:
+  id: lmeapiclt.Id
+  name: lmeapiclt.Name

@@ -1,0 +1,238 @@
+concept: ap_pay_run_hdr
+display_name: ApPayRunHdr
+module: accounts_payable
+description: Auto-generated representation of the physical table ApPayRunHdr.
+synonyms:
+- appayrunhdr
+- ap pay run hdr
+header_attributes:
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from ApPayRunHdr
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApPayRunHdr
+  payment_date:
+    display: Paymentdate
+    type: date
+    required: false
+    description: Field PaymentDate from ApPayRunHdr
+  ch_print_date:
+    display: Chprintdate
+    type: date
+    required: false
+    description: Field ChPrintDate from ApPayRunHdr
+  ch_reg_print_date:
+    display: Chregprintdate
+    type: date
+    required: false
+    description: Field ChRegPrintDate from ApPayRunHdr
+  num_suppliers:
+    display: Numsuppliers
+    type: decimal
+    required: false
+    description: Field NumSuppliers from ApPayRunHdr
+  num_invoices:
+    display: Numinvoices
+    type: decimal
+    required: false
+    description: Field NumInvoices from ApPayRunHdr
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApPayRunHdr
+  payment_type:
+    display: Paymenttype
+    type: string
+    required: false
+    description: Field PaymentType from ApPayRunHdr
+  gross_pay_value:
+    display: Grosspayvalue
+    type: decimal
+    required: false
+    description: Field GrossPayValue from ApPayRunHdr
+  disc_pay_value:
+    display: Discpayvalue
+    type: decimal
+    required: false
+    description: Field DiscPayValue from ApPayRunHdr
+  with_tax_value:
+    display: Withtaxvalue
+    type: decimal
+    required: false
+    description: Field WithTaxValue from ApPayRunHdr
+  net_pay_value:
+    display: Netpayvalue
+    type: decimal
+    required: false
+    description: Field NetPayValue from ApPayRunHdr
+  payment_run_status:
+    display: Paymentrunstatus
+    type: string
+    required: false
+    description: Field PaymentRunStatus from ApPayRunHdr
+  pay_year:
+    display: Payyear
+    type: decimal
+    required: false
+    description: Field PayYear from ApPayRunHdr
+  pay_month:
+    display: Paymonth
+    type: decimal
+    required: false
+    description: Field PayMonth from ApPayRunHdr
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from ApPayRunHdr
+  group_code:
+    display: Groupcode
+    type: string
+    required: false
+    description: Field GroupCode from ApPayRunHdr
+  ap_post_method:
+    display: Appostmethod
+    type: string
+    required: false
+    description: Field ApPostMethod from ApPayRunHdr
+  eft_void:
+    display: Eftvoid
+    type: string
+    required: false
+    description: Field EftVoid from ApPayRunHdr
+  ch_register:
+    display: Chregister
+    type: decimal
+    required: false
+    description: Field ChRegister from ApPayRunHdr
+  payment_reference:
+    display: Paymentreference
+    type: string
+    required: false
+    description: Field PaymentReference from ApPayRunHdr
+  eft_remit_print:
+    display: Eftremitprint
+    type: string
+    required: false
+    description: Field EftRemitPrint from ApPayRunHdr
+  mult_cur_pay:
+    display: Multcurpay
+    type: string
+    required: false
+    description: Field MultCurPay from ApPayRunHdr
+  pay_grs_value:
+    display: Paygrsvalue
+    type: decimal
+    required: false
+    description: Field PayGrsValue from ApPayRunHdr
+  pay_net_value:
+    display: Paynetvalue
+    type: decimal
+    required: false
+    description: Field PayNetValue from ApPayRunHdr
+  pay_with_value:
+    display: Paywithvalue
+    type: decimal
+    required: false
+    description: Field PayWithValue from ApPayRunHdr
+  pay_dsc_value:
+    display: Paydscvalue
+    type: decimal
+    required: false
+    description: Field PayDscValue from ApPayRunHdr
+  pay_currency:
+    display: Paycurrency
+    type: string
+    required: false
+    description: Field PayCurrency from ApPayRunHdr
+  group_payment:
+    display: Grouppayment
+    type: string
+    required: false
+    description: Field GroupPayment from ApPayRunHdr
+  group_supplier:
+    display: Groupsupplier
+    type: string
+    required: false
+    description: Field GroupSupplier from ApPayRunHdr
+  group_value:
+    display: Groupvalue
+    type: decimal
+    required: false
+    description: Field GroupValue from ApPayRunHdr
+  group_pay_currency:
+    display: Grouppaycurrency
+    type: string
+    required: false
+    description: Field GroupPayCurrency from ApPayRunHdr
+  group_conv_rate:
+    display: Groupconvrate
+    type: decimal
+    required: false
+    description: Field GroupConvRate from ApPayRunHdr
+  group_post_mul_div:
+    display: Grouppostmuldiv
+    type: string
+    required: false
+    description: Field GroupPostMulDiv from ApPayRunHdr
+  group_check:
+    display: Groupcheck
+    type: decimal
+    required: false
+    description: Field GroupCheck from ApPayRunHdr
+  grp_check_date:
+    display: Grpcheckdate
+    type: date
+    required: false
+    description: Field GrpCheckDate from ApPayRunHdr
+  xref_payment_number:
+    display: Xrefpaymentnumber
+    type: string
+    required: false
+    description: Field XrefPaymentNumber from ApPayRunHdr
+  int_by_bo:
+    display: Intbybo
+    type: string
+    required: false
+    description: Field IntByBo from ApPayRunHdr
+  reg_printed:
+    display: Regprinted
+    type: string
+    required: false
+    description: Field RegPrinted from ApPayRunHdr
+  group_inter_company:
+    display: Groupintercompany
+    type: string
+    required: false
+    description: Field GroupInterCompany from ApPayRunHdr
+  cdb_apply:
+    display: Cdbapply
+    type: string
+    required: false
+    description: Field CdbApply from ApPayRunHdr
+  cdb_date:
+    display: Cdbdate
+    type: date
+    required: false
+    description: Field CdbDate from ApPayRunHdr
+  cdb_rate:
+    display: Cdbrate
+    type: decimal
+    required: false
+    description: Field CdbRate from ApPayRunHdr
+  cdb_mul_div:
+    display: Cdbmuldiv
+    type: string
+    required: false
+    description: Field CdbMulDiv from ApPayRunHdr
+  use_original_pay_rate:
+    display: Useoriginalpayrate
+    type: string
+    required: false
+    description: Field UseOriginalPayRate from ApPayRunHdr

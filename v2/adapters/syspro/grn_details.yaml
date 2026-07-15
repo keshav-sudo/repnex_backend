@@ -1,0 +1,51 @@
+concept: grn_details
+table: GrnDetails
+alias: gd
+fields:
+  supplier: gd.Supplier
+  grn: gd.Grn
+  grn_source: gd.GrnSource
+  journal: gd.Journal
+  journal_entry: gd.JournalEntry
+  orig_receipt_date: gd.OrigReceiptDate
+  debit_rec_gl_code: gd.DebitRecGlCode
+  grn_year: gd.GrnYear
+  grn_month: gd.GrnMonth
+  purchase_order: gd.PurchaseOrder
+  purchase_order_lin: gd.PurchaseOrderLin
+  stock_code: gd.StockCode
+  stock_description: gd.StockDescription
+  sup_catalogue_num: gd.SupCatalogueNum
+  warehouse: gd.Warehouse
+  qty_received: gd.QtyReceived
+  qty_uom: gd.QtyUom
+  decimals: gd.Decimals
+  job: gd.Job
+  subcontract_op: gd.SubcontractOp
+  delivery_note: gd.DeliveryNote
+  source_code: gd.SourceCode
+  orig_grn_value: gd.OrigGrnValue
+  cur_grn_value: gd.CurGrnValue
+  matched_value: gd.MatchedValue
+  std_grn_value: gd.StdGrnValue
+  price_var_printed: gd.PriceVarPrinted
+  audit_trail_printd: gd.AuditTrailPrintd
+  grn_matched_flag: gd.GrnMatchedFlag
+  product_class: gd.ProductClass
+  grn_matched_year: gd.GrnMatchedYear
+  grn_matched_month: gd.GrnMatchedMonth
+  orig_purch_value: gd.OrigPurchValue
+  cost_mult_flag: gd.CostMultFlag
+  currency_value: gd.CurrencyValue
+  post_currency: gd.PostCurrency
+  conv_rate: gd.ConvRate
+  mul_div: gd.MulDiv
+  account_cur: gd.AccountCur
+  acc_conv_rate: gd.AccConvRate
+  acc_mul_div: gd.AccMulDiv
+  triang_currency: gd.TriangCurrency
+  triang_rate: gd.TriangRate
+  triang_mul_div: gd.TriangMulDiv
+  m_tax_code: gd.MTaxCode
+  with_tax_expense_type: gd.WithTaxExpenseType
+  tariff_code: gd.TariffCode

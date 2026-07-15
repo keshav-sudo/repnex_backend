@@ -1,0 +1,33 @@
+concept: gen_analysis_code
+display_name: GenAnalysisCode
+module: general_ledger
+description: Auto-generated representation of the physical table GenAnalysisCode.
+synonyms:
+- genanalysiscode
+- gen analysis code
+header_attributes:
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from GenAnalysisCode
+  analysis_category:
+    display: Analysiscategory
+    type: string
+    required: false
+    description: Field AnalysisCategory from GenAnalysisCode
+  analysis_type:
+    display: Analysistype
+    type: decimal
+    required: false
+    description: Field AnalysisType from GenAnalysisCode
+  analysis_code:
+    display: Analysiscode
+    type: string
+    required: false
+    description: Field AnalysisCode from GenAnalysisCode
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from GenAnalysisCode

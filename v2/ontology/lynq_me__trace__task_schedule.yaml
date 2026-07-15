@@ -1,0 +1,248 @@
+concept: lynq_me__trace__task_schedule
+display_name: Lynq ME Trace TaskSchedule
+module: other
+description: Auto-generated representation of the physical table Lynq_ME_Trace_TaskSchedule.
+synonyms:
+- lynq_me_trace_taskschedule
+- lynq me  trace  task schedule
+header_attributes:
+  s_id:
+    display: Sid
+    type: decimal
+    required: false
+    description: Field sId from Lynq_ME_Trace_TaskSchedule
+  s_code:
+    display: Scode
+    type: string
+    required: false
+    description: Field sCode from Lynq_ME_Trace_TaskSchedule
+  s_task_code:
+    display: Staskcode
+    type: string
+    required: false
+    description: Field sTaskCode from Lynq_ME_Trace_TaskSchedule
+  s_facility_code:
+    display: Sfacilitycode
+    type: string
+    required: false
+    description: Field sFacilityCode from Lynq_ME_Trace_TaskSchedule
+  s_start:
+    display: Sstart
+    type: date
+    required: false
+    description: Field sStart from Lynq_ME_Trace_TaskSchedule
+  s_end:
+    display: Send
+    type: date
+    required: false
+    description: Field sEnd from Lynq_ME_Trace_TaskSchedule
+  s_duration:
+    display: Sduration
+    type: decimal
+    required: false
+    description: Field sDuration from Lynq_ME_Trace_TaskSchedule
+  s_resources:
+    display: Sresources
+    type: decimal
+    required: false
+    description: Field sResources from Lynq_ME_Trace_TaskSchedule
+  s_quantity:
+    display: Squantity
+    type: decimal
+    required: false
+    description: Field sQuantity from Lynq_ME_Trace_TaskSchedule
+  s_type:
+    display: Stype
+    type: string
+    required: false
+    description: Field sType from Lynq_ME_Trace_TaskSchedule
+  s_name1:
+    display: Sname1
+    type: string
+    required: false
+    description: Field sName1 from Lynq_ME_Trace_TaskSchedule
+  s_name2:
+    display: Sname2
+    type: string
+    required: false
+    description: Field sName2 from Lynq_ME_Trace_TaskSchedule
+  s_description1:
+    display: Sdescription1
+    type: string
+    required: false
+    description: Field sDescription1 from Lynq_ME_Trace_TaskSchedule
+  s_description2:
+    display: Sdescription2
+    type: string
+    required: false
+    description: Field sDescription2 from Lynq_ME_Trace_TaskSchedule
+  s_req1:
+    display: Sreq1
+    type: decimal
+    required: false
+    description: Field sReq1 from Lynq_ME_Trace_TaskSchedule
+  s_req2:
+    display: Sreq2
+    type: decimal
+    required: false
+    description: Field sReq2 from Lynq_ME_Trace_TaskSchedule
+  s_req3:
+    display: Sreq3
+    type: decimal
+    required: false
+    description: Field sReq3 from Lynq_ME_Trace_TaskSchedule
+  s_req4:
+    display: Sreq4
+    type: decimal
+    required: false
+    description: Field sReq4 from Lynq_ME_Trace_TaskSchedule
+  s_req5:
+    display: Sreq5
+    type: decimal
+    required: false
+    description: Field sReq5 from Lynq_ME_Trace_TaskSchedule
+  s_param1:
+    display: Sparam1
+    type: string
+    required: false
+    description: Field sParam1 from Lynq_ME_Trace_TaskSchedule
+  s_param2:
+    display: Sparam2
+    type: string
+    required: false
+    description: Field sParam2 from Lynq_ME_Trace_TaskSchedule
+  s_param3:
+    display: Sparam3
+    type: string
+    required: false
+    description: Field sParam3 from Lynq_ME_Trace_TaskSchedule
+  s_param4:
+    display: Sparam4
+    type: string
+    required: false
+    description: Field sParam4 from Lynq_ME_Trace_TaskSchedule
+  s_param5:
+    display: Sparam5
+    type: string
+    required: false
+    description: Field sParam5 from Lynq_ME_Trace_TaskSchedule
+  s_text1:
+    display: Stext1
+    type: string
+    required: false
+    description: Field sText1 from Lynq_ME_Trace_TaskSchedule
+  s_text2:
+    display: Stext2
+    type: string
+    required: false
+    description: Field sText2 from Lynq_ME_Trace_TaskSchedule
+  s_text3:
+    display: Stext3
+    type: string
+    required: false
+    description: Field sText3 from Lynq_ME_Trace_TaskSchedule
+  s_text4:
+    display: Stext4
+    type: string
+    required: false
+    description: Field sText4 from Lynq_ME_Trace_TaskSchedule
+  s_text5:
+    display: Stext5
+    type: string
+    required: false
+    description: Field sText5 from Lynq_ME_Trace_TaskSchedule
+  s_int1:
+    display: Sint1
+    type: decimal
+    required: false
+    description: Field sInt1 from Lynq_ME_Trace_TaskSchedule
+  s_int2:
+    display: Sint2
+    type: decimal
+    required: false
+    description: Field sInt2 from Lynq_ME_Trace_TaskSchedule
+  s_int3:
+    display: Sint3
+    type: decimal
+    required: false
+    description: Field sInt3 from Lynq_ME_Trace_TaskSchedule
+  s_int4:
+    display: Sint4
+    type: decimal
+    required: false
+    description: Field sInt4 from Lynq_ME_Trace_TaskSchedule
+  s_int5:
+    display: Sint5
+    type: decimal
+    required: false
+    description: Field sInt5 from Lynq_ME_Trace_TaskSchedule
+  s_decimal1:
+    display: Sdecimal1
+    type: decimal
+    required: false
+    description: Field sDecimal1 from Lynq_ME_Trace_TaskSchedule
+  s_decimal2:
+    display: Sdecimal2
+    type: decimal
+    required: false
+    description: Field sDecimal2 from Lynq_ME_Trace_TaskSchedule
+  s_decimal3:
+    display: Sdecimal3
+    type: decimal
+    required: false
+    description: Field sDecimal3 from Lynq_ME_Trace_TaskSchedule
+  s_decimal4:
+    display: Sdecimal4
+    type: decimal
+    required: false
+    description: Field sDecimal4 from Lynq_ME_Trace_TaskSchedule
+  s_decimal5:
+    display: Sdecimal5
+    type: decimal
+    required: false
+    description: Field sDecimal5 from Lynq_ME_Trace_TaskSchedule
+  s_date1:
+    display: Sdate1
+    type: date
+    required: false
+    description: Field sDate1 from Lynq_ME_Trace_TaskSchedule
+  s_date2:
+    display: Sdate2
+    type: date
+    required: false
+    description: Field sDate2 from Lynq_ME_Trace_TaskSchedule
+  s_date3:
+    display: Sdate3
+    type: date
+    required: false
+    description: Field sDate3 from Lynq_ME_Trace_TaskSchedule
+  s_date4:
+    display: Sdate4
+    type: date
+    required: false
+    description: Field sDate4 from Lynq_ME_Trace_TaskSchedule
+  s_date5:
+    display: Sdate5
+    type: date
+    required: false
+    description: Field sDate5 from Lynq_ME_Trace_TaskSchedule
+  s_trace_date:
+    display: Stracedate
+    type: date
+    required: false
+    description: Field sTraceDate from Lynq_ME_Trace_TaskSchedule
+  s_job_code:
+    display: Sjobcode
+    type: string
+    required: false
+    description: Field sJobCode from Lynq_ME_Trace_TaskSchedule
+  s_operation_code:
+    display: Soperationcode
+    type: string
+    required: false
+    description: Field sOperationCode from Lynq_ME_Trace_TaskSchedule
+  s_name:
+    display: Sname
+    type: string
+    required: false
+    description: Field sName from Lynq_ME_Trace_TaskSchedule

@@ -1,0 +1,63 @@
+concept: wip_all_mat_bin
+display_name: WipAllMatBin
+module: work_in_progress
+description: Auto-generated representation of the physical table WipAllMatBin.
+synonyms:
+- wipallmatbin
+- wip all mat bin
+header_attributes:
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from WipAllMatBin
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipAllMatBin
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipAllMatBin
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from WipAllMatBin
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WipAllMatBin
+  qty_reserved:
+    display: Qtyreserved
+    type: decimal
+    required: false
+    description: Field QtyReserved from WipAllMatBin
+  qty_issued:
+    display: Qtyissued
+    type: decimal
+    required: false
+    description: Field QtyIssued from WipAllMatBin
+  bin_completed:
+    display: Bincompleted
+    type: string
+    required: false
+    description: Field BinCompleted from WipAllMatBin
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipAllMatBin
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipAllMatBin
+  neg_allocation:
+    display: Negallocation
+    type: string
+    required: false
+    description: Field NegAllocation from WipAllMatBin

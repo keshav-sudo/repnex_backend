@@ -1,0 +1,18 @@
+concept: inv_alt_supplier
+display_name: InvAltSupplier
+module: inventory
+description: Auto-generated representation of the physical table InvAltSupplier.
+synonyms:
+- invaltsupplier
+- inv alt supplier
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvAltSupplier
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from InvAltSupplier

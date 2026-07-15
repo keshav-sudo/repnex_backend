@@ -1,0 +1,7 @@
+concept: lynq_vp__file_content
+table: Lynq_VP_FileContent
+alias: lvpfc
+fields:
+  id: lvpfc.ID
+  file_id: lvpfc.FileID
+  data: lvpfc.DATA

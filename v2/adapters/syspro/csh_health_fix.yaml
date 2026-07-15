@@ -1,0 +1,13 @@
+concept: csh_health_fix
+table: CshHealthFix
+alias: chf
+fields:
+  run_date_time: chf.RunDateTime
+  bank: chf.Bank
+  type: chf.Type
+  hfix_year: chf.HfixYear
+  hfix_month: chf.HfixMonth
+  bank_value: chf.BankValue
+  calc_value: chf.CalcValue
+  diff_value: chf.DiffValue
+  message: chf.Message

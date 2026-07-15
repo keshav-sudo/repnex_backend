@@ -1,0 +1,40 @@
+concept: mrp_qot_structure
+table: MrpQotStructure
+alias: mqs
+fields:
+  parent_part: mqs.ParentPart
+  route: mqs.Route
+  sequence_num: mqs.SequenceNum
+  component: mqs.Component
+  operation: mqs.Operation
+  operation_flag: mqs.OperationFlag
+  qty_per: mqs.QtyPer
+  scrap_percentage: mqs.ScrapPercentage
+  scrap_quantity: mqs.ScrapQuantity
+  optional_flag: mqs.OptionalFlag
+  print_flag: mqs.PrintFlag
+  scrap_print: mqs.ScrapPrint
+  reason_change: mqs.ReasonChange
+  ref_designator: mqs.RefDesignator
+  assembly_place: mqs.AssemblyPlace
+  item_number: mqs.ItemNumber
+  auto_narr_code: mqs.AutoNarrCode
+  component_type: mqs.ComponentType
+  kit_issue_flag: mqs.KitIssueFlag
+  non_stock_com: mqs.NonStockCom
+  margin_markup_pct: mqs.MarginMarkupPct
+  manual_cost: mqs.ManualCost
+  manual_cost_flag: mqs.ManualCostFlag
+  warehouse: mqs.Warehouse
+  com_version: mqs.ComVersion
+  com_release: mqs.ComRelease
+  fixed_qty_per_flag: mqs.FixedQtyPerFlag
+  fixed_qty_per: mqs.FixedQtyPer
+  uom_flag: mqs.UomFlag
+  qty_per_ent: mqs.QtyPerEnt
+  scrap_quantity_ent: mqs.ScrapQuantityEnt
+  fixed_qty_per_ent: mqs.FixedQtyPerEnt
+  product_code: mqs.ProductCode
+  library_code: mqs.LibraryCode
+  first_seq: mqs.FirstSeq
+  second_seq: mqs.SecondSeq

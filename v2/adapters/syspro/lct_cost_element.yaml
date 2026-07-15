@@ -1,0 +1,17 @@
+concept: lct_cost_element
+table: LctCostElement
+alias: lce
+fields:
+  element: lce.Element
+  description: lce.Description
+  supplier: lce.Supplier
+  expected_rate: lce.ExpectedRate
+  expected_cur: lce.ExpectedCur
+  apportion_meth: lce.ApportionMeth
+  app_meth_calc_code: lce.AppMethCalcCode
+  gl_code: lce.GlCode
+  expected_desc: lce.ExpectedDesc
+  show_sequence: lce.ShowSequence
+  used_fixed_cost: lce.UsedFixedCost
+  fixed_cost: lce.FixedCost
+  minimum_value: lce.MinimumValue

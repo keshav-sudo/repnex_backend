@@ -1,0 +1,28 @@
+concept: mrp_forecast_jnl
+table: MrpForecastJnl
+alias: mfj
+fields:
+  journal: mfj.Journal
+  jnl_entry_number: mfj.JnlEntryNumber
+  journal_printed: mfj.JournalPrinted
+  jnl_date: mfj.JnlDate
+  stock_code: mfj.StockCode
+  forecast_wh: mfj.ForecastWh
+  forecast_date: mfj.ForecastDate
+  qty_required: mfj.QtyRequired
+  description: mfj.Description
+  reference: mfj.Reference
+  customer: mfj.Customer
+  resource_parent: mfj.ResourceParent
+  inactive_flag: mfj.InactiveFlag
+  forecast_type: mfj.ForecastType
+  maint_function: mfj.MaintFunction
+  old_forecast_date: mfj.OldForecastDate
+  old_qty_reqd: mfj.OldQtyReqd
+  old_customer: mfj.OldCustomer
+  old_inactive_flag: mfj.OldInactiveFlag
+  old_forecast_type: mfj.OldForecastType
+  old_resource_parnt: mfj.OldResourceParnt
+  version: mfj.Version
+  release: mfj.Release
+  operator: mfj.Operator

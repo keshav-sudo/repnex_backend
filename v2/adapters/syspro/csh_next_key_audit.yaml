@@ -1,0 +1,14 @@
+concept: csh_next_key_audit
+table: CshNextKeyAudit
+alias: cnka
+fields:
+  key_type: cnka.KeyType
+  post_year: cnka.PostYear
+  post_period: cnka.PostPeriod
+  key_issued: cnka.KeyIssued
+  allocated_by_program: cnka.AllocatedByProgram
+  called_from_program: cnka.CalledFromProgram
+  allocated_date: cnka.AllocatedDate
+  allocated_by_oper: cnka.AllocatedByOper
+  status: cnka.Status
+  closed_date: cnka.ClosedDate

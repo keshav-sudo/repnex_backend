@@ -1,0 +1,7 @@
+concept: crm_comp_severity
+table: CrmCompSeverity
+alias: ccs
+fields:
+  severity_id: ccs.SeverityId
+  severity_desc: ccs.SeverityDesc
+  resolve_in: ccs.ResolveIn

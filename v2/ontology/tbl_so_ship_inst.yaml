@@ -1,0 +1,23 @@
+concept: tbl_so_ship_inst
+display_name: TblSoShipInst
+module: other
+description: Auto-generated representation of the physical table TblSoShipInst.
+synonyms:
+- tblsoshipinst
+- tbl so ship inst
+header_attributes:
+  shipping_instrs:
+    display: Shippinginstrs
+    type: string
+    required: false
+    description: Field ShippingInstrs from TblSoShipInst
+  instruction_text:
+    display: Instructiontext
+    type: string
+    required: false
+    description: Field InstructionText from TblSoShipInst
+  tpm_pickup_flag:
+    display: Tpmpickupflag
+    type: string
+    required: false
+    description: Field TpmPickupFlag from TblSoShipInst

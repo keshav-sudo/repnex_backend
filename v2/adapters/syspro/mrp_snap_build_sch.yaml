@@ -1,0 +1,18 @@
+concept: mrp_snap_build_sch
+table: MrpSnapBuildSch
+alias: msbs
+fields:
+  stock_code: msbs.StockCode
+  warehouse: msbs.Warehouse
+  date_required: msbs.DateRequired
+  line: msbs.Line
+  outst_qty_to_make: msbs.OutstQtyToMake
+  reference: msbs.Reference
+  resource_parent: msbs.ResourceParent
+  total_qty_received: msbs.TotalQtyReceived
+  orig_date_reqd: msbs.OrigDateReqd
+  original_line: msbs.OriginalLine
+  orig_outst_qty: msbs.OrigOutstQty
+  version: msbs.Version
+  release: msbs.Release
+  route: msbs.Route

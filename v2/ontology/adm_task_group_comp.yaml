@@ -1,0 +1,63 @@
+concept: adm_task_group_comp
+display_name: AdmTaskGroupComp
+module: administration
+description: Auto-generated representation of the physical table AdmTaskGroupComp.
+synonyms:
+- admtaskgroupcomp
+- adm task group comp
+header_attributes:
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from AdmTaskGroupComp
+  task_group:
+    display: Taskgroup
+    type: string
+    required: false
+    description: Field TaskGroup from AdmTaskGroupComp
+  auto_run:
+    display: Autorun
+    type: decimal
+    required: false
+    description: Field AutoRun from AdmTaskGroupComp
+  auto_check:
+    display: Autocheck
+    type: decimal
+    required: false
+    description: Field AutoCheck from AdmTaskGroupComp
+  auto_mark_complete:
+    display: Automarkcomplete
+    type: decimal
+    required: false
+    description: Field AutoMarkComplete from AdmTaskGroupComp
+  prompt_bet_tasks:
+    display: Promptbettasks
+    type: decimal
+    required: false
+    description: Field PromptBetTasks from AdmTaskGroupComp
+  suppress_errors:
+    display: Suppresserrors
+    type: decimal
+    required: false
+    description: Field SuppressErrors from AdmTaskGroupComp
+  stop_if_error:
+    display: Stopiferror
+    type: decimal
+    required: false
+    description: Field StopIfError from AdmTaskGroupComp
+  auto_lockout:
+    display: Autolockout
+    type: decimal
+    required: false
+    description: Field AutoLockout from AdmTaskGroupComp
+  kill_all:
+    display: Killall
+    type: decimal
+    required: false
+    description: Field KillAll from AdmTaskGroupComp
+  email_log_file:
+    display: Emaillogfile
+    type: decimal
+    required: false
+    description: Field EmailLogFile from AdmTaskGroupComp

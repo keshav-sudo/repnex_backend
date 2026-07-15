@@ -1,0 +1,21 @@
+concept: asset_lab_jnl
+table: AssetLabJnl
+alias: alj
+fields:
+  batch: alj.Batch
+  line: alj.Line
+  expense: alj.Expense
+  employee: alj.Employee
+  branch: alj.Branch
+  entry_date: alj.EntryDate
+  trn_month: alj.TrnMonth
+  asset: alj.Asset
+  total_time: alj.TotalTime
+  total_value: alj.TotalValue
+  lab_analysis_upd: alj.LabAnalysisUpd
+  print_status: alj.PrintStatus
+  week: alj.Week
+  asset_type: alj.AssetType
+  location_char: alj.LocationChar
+  branch_char: alj.BranchChar
+  payroll_rate: alj.PayrollRate

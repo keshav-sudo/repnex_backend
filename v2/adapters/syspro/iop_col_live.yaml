@@ -1,0 +1,14 @@
+concept: iop_col_live
+table: IopColLive
+alias: icl
+fields:
+  collection: icl.Collection
+  instance: icl.Instance
+  forecast_date: icl.ForecastDate
+  forecast_qty: icl.ForecastQty
+  cost_value: icl.CostValue
+  sales_value: icl.SalesValue
+  reference: icl.Reference
+  forecast_batch: icl.ForecastBatch
+  date_prepared: icl.DatePrepared
+  operator_code: icl.OperatorCode

@@ -1,0 +1,73 @@
+concept: eft_void_jnl_det
+display_name: EftVoidJnlDet
+module: other
+description: Auto-generated representation of the physical table EftVoidJnlDet.
+synonyms:
+- eftvoidjnldet
+- eft void jnl det
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from EftVoidJnlDet
+  eft_number:
+    display: Eftnumber
+    type: string
+    required: false
+    description: Field EftNumber from EftVoidJnlDet
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from EftVoidJnlDet
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from EftVoidJnlDet
+  sub_entry_number:
+    display: Subentrynumber
+    type: decimal
+    required: false
+    description: Field SubEntryNumber from EftVoidJnlDet
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from EftVoidJnlDet
+  payment_value:
+    display: Paymentvalue
+    type: decimal
+    required: false
+    description: Field PaymentValue from EftVoidJnlDet
+  currency_value:
+    display: Currencyvalue
+    type: decimal
+    required: false
+    description: Field CurrencyValue from EftVoidJnlDet
+  post_currency:
+    display: Postcurrency
+    type: string
+    required: false
+    description: Field PostCurrency from EftVoidJnlDet
+  invoice_date:
+    display: Invoicedate
+    type: date
+    required: false
+    description: Field InvoiceDate from EftVoidJnlDet
+  invoice_type:
+    display: Invoicetype
+    type: string
+    required: false
+    description: Field InvoiceType from EftVoidJnlDet
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from EftVoidJnlDet
+  payment_number:
+    display: Paymentnumber
+    type: string
+    required: false
+    description: Field PaymentNumber from EftVoidJnlDet

@@ -1,0 +1,6 @@
+concept: tbl_ship_location
+table: TblShipLocation
+alias: tsl
+fields:
+  shipping_location: tsl.ShippingLocation
+  description: tsl.Description

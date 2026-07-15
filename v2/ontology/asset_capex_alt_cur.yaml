@@ -1,0 +1,53 @@
+concept: asset_capex_alt_cur
+display_name: AssetCapexAltCur
+module: assets
+description: Auto-generated representation of the physical table AssetCapexAltCur.
+synonyms:
+- assetcapexaltcur
+- asset capex alt cur
+header_attributes:
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from AssetCapexAltCur
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from AssetCapexAltCur
+  value_budgeted:
+    display: Valuebudgeted
+    type: decimal
+    required: false
+    description: Field ValueBudgeted from AssetCapexAltCur
+  value_uncommitted:
+    display: Valueuncommitted
+    type: decimal
+    required: false
+    description: Field ValueUncommitted from AssetCapexAltCur
+  value_committed:
+    display: Valuecommitted
+    type: decimal
+    required: false
+    description: Field ValueCommitted from AssetCapexAltCur
+  value_spent:
+    display: Valuespent
+    type: decimal
+    required: false
+    description: Field ValueSpent from AssetCapexAltCur
+  exchange_rate:
+    display: Exchangerate
+    type: decimal
+    required: false
+    description: Field ExchangeRate from AssetCapexAltCur
+  mul_div:
+    display: Muldiv
+    type: string
+    required: false
+    description: Field MulDiv from AssetCapexAltCur
+  revaluation_date:
+    display: Revaluationdate
+    type: date
+    required: false
+    description: Field RevaluationDate from AssetCapexAltCur

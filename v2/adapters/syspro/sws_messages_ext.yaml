@@ -1,0 +1,11 @@
+concept: sws_messages_ext
+table: SwsMessagesExt
+alias: sme
+fields:
+  operator_code: sme.OperatorCode
+  date_created: sme.DateCreated
+  time_created: sme.TimeCreated
+  store_type1: sme.StoreType1
+  store_data1: sme.StoreData1
+  store_type2: sme.StoreType2
+  store_data2: sme.StoreData2

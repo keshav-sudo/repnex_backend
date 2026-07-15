@@ -1,0 +1,20 @@
+concept: wip_scrap_det
+table: WipScrapDet
+alias: wsd
+fields:
+  record_flag: wsd.RecordFlag
+  non_prod_scrap: wsd.NonProdScrap
+  work_centre: wsd.WorkCentre
+  date_entry: wsd.DateEntry
+  journal: wsd.Journal
+  jnl_ent_num: wsd.JnlEntNum
+  stock_code: wsd.StockCode
+  job: wsd.Job
+  operation: wsd.Operation
+  qty_transferred: wsd.QtyTransferred
+  qty_scrapped: wsd.QtyScrapped
+  hours_entered: wsd.HoursEntered
+  value_entered: wsd.ValueEntered
+  version: wsd.Version
+  release: wsd.Release
+  co_product_line: wsd.CoProductLine

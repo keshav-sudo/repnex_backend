@@ -1,0 +1,7 @@
+concept: adm_withholding_tax
+table: AdmWithholdingTax
+alias: awt
+fields:
+  with_tax_code: awt.WithTaxCode
+  description: awt.Description
+  cur_tax_rate: awt.CurTaxRate

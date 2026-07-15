@@ -1,0 +1,52 @@
+concept: lynq_me__trace__task_schedule
+table: Lynq_ME_Trace_TaskSchedule
+alias: lmetts
+fields:
+  s_id: lmetts.sId
+  s_code: lmetts.sCode
+  s_task_code: lmetts.sTaskCode
+  s_facility_code: lmetts.sFacilityCode
+  s_start: lmetts.sStart
+  s_end: lmetts.sEnd
+  s_duration: lmetts.sDuration
+  s_resources: lmetts.sResources
+  s_quantity: lmetts.sQuantity
+  s_type: lmetts.sType
+  s_name1: lmetts.sName1
+  s_name2: lmetts.sName2
+  s_description1: lmetts.sDescription1
+  s_description2: lmetts.sDescription2
+  s_req1: lmetts.sReq1
+  s_req2: lmetts.sReq2
+  s_req3: lmetts.sReq3
+  s_req4: lmetts.sReq4
+  s_req5: lmetts.sReq5
+  s_param1: lmetts.sParam1
+  s_param2: lmetts.sParam2
+  s_param3: lmetts.sParam3
+  s_param4: lmetts.sParam4
+  s_param5: lmetts.sParam5
+  s_text1: lmetts.sText1
+  s_text2: lmetts.sText2
+  s_text3: lmetts.sText3
+  s_text4: lmetts.sText4
+  s_text5: lmetts.sText5
+  s_int1: lmetts.sInt1
+  s_int2: lmetts.sInt2
+  s_int3: lmetts.sInt3
+  s_int4: lmetts.sInt4
+  s_int5: lmetts.sInt5
+  s_decimal1: lmetts.sDecimal1
+  s_decimal2: lmetts.sDecimal2
+  s_decimal3: lmetts.sDecimal3
+  s_decimal4: lmetts.sDecimal4
+  s_decimal5: lmetts.sDecimal5
+  s_date1: lmetts.sDate1
+  s_date2: lmetts.sDate2
+  s_date3: lmetts.sDate3
+  s_date4: lmetts.sDate4
+  s_date5: lmetts.sDate5
+  s_trace_date: lmetts.sTraceDate
+  s_job_code: lmetts.sJobCode
+  s_operation_code: lmetts.sOperationCode
+  s_name: lmetts.sName

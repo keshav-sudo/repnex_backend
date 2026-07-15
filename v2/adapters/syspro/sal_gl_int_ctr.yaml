@@ -1,0 +1,8 @@
+concept: sal_gl_int_ctr
+table: SalGlIntCtr
+alias: sgic1
+fields:
+  branch: sgic1.Branch
+  area: sgic1.Area
+  payment_type: sgic1.PaymentType
+  payment_gl_code: sgic1.PaymentGlCode

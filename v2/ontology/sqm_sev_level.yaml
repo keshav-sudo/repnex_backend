@@ -1,0 +1,48 @@
+concept: sqm_sev_level
+display_name: SqmSevLevel
+module: other
+description: Auto-generated representation of the physical table SqmSevLevel.
+synonyms:
+- sqmsevlevel
+- sqm sev level
+header_attributes:
+  severity_level:
+    display: Severitylevel
+    type: string
+    required: false
+    description: Field SeverityLevel from SqmSevLevel
+  sev_level_desc:
+    display: Sevleveldesc
+    type: string
+    required: false
+    description: Field SevLevelDesc from SqmSevLevel
+  req_close:
+    display: Reqclose
+    type: string
+    required: false
+    description: Field ReqClose from SqmSevLevel
+  req_ca:
+    display: Reqca
+    type: string
+    required: false
+    description: Field ReqCa from SqmSevLevel
+  req_pa:
+    display: Reqpa
+    type: string
+    required: false
+    description: Field ReqPa from SqmSevLevel
+  req_audit:
+    display: Reqaudit
+    type: string
+    required: false
+    description: Field ReqAudit from SqmSevLevel
+  time_resolve:
+    display: Timeresolve
+    type: decimal
+    required: false
+    description: Field TimeResolve from SqmSevLevel
+  priority_rate:
+    display: Priorityrate
+    type: decimal
+    required: false
+    description: Field PriorityRate from SqmSevLevel

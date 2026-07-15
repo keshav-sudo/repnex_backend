@@ -1,0 +1,43 @@
+concept: csh_flow_collector
+display_name: CshFlowCollector
+module: cashbook
+description: Auto-generated representation of the physical table CshFlowCollector.
+synonyms:
+- cshflowcollector
+- csh flow collector
+header_attributes:
+  model:
+    display: Model
+    type: string
+    required: false
+    description: Field Model from CshFlowCollector
+  collector:
+    display: Collector
+    type: decimal
+    required: false
+    description: Field Collector from CshFlowCollector
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from CshFlowCollector
+  sequence:
+    display: Sequence
+    type: decimal
+    required: false
+    description: Field Sequence from CshFlowCollector
+  collector_type:
+    display: Collectortype
+    type: string
+    required: false
+    description: Field CollectorType from CshFlowCollector
+  update_date:
+    display: Updatedate
+    type: date
+    required: false
+    description: Field UpdateDate from CshFlowCollector
+  update_time:
+    display: Updatetime
+    type: decimal
+    required: false
+    description: Field UpdateTime from CshFlowCollector

@@ -1,0 +1,13 @@
+concept: crm_email
+table: CrmEmail
+alias: ce
+fields:
+  contact_id: ce.ContactId
+  email_type: ce.EmailType
+  description: ce.Description
+  email: ce.Email
+  email_upper: ce.EmailUpper
+  email_display_as: ce.EmailDisplayAs
+  work_home_flag: ce.WorkHomeFlag
+  preferred: ce.Preferred
+  private: ce.Private

@@ -1,0 +1,12 @@
+concept: mrp_notional_sch
+table: MrpNotionalSch
+alias: mns1
+fields:
+  stock_code: mns1.StockCode
+  version: mns1.Version
+  release: mns1.Release
+  warehouse: mns1.Warehouse
+  route: mns1.Route
+  date_required: mns1.DateRequired
+  quantity_to_make: mns1.QuantityToMake
+  fixed_date_flag: mns1.FixedDateFlag

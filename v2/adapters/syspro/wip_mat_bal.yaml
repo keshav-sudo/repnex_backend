@@ -1,0 +1,19 @@
+concept: wip_mat_bal
+table: WipMatBal
+alias: wmb1
+fields:
+  run_date_time: wmb1.RunDateTime
+  job: wmb1.Job
+  stock_code: wmb1.StockCode
+  warehouse: wmb1.Warehouse
+  line: wmb1.Line
+  cur_qty_issued: wmb1.CurQtyIssued
+  clc_qty_issued: wmb1.ClcQtyIssued
+  cur_qty_issued_ent: wmb1.CurQtyIssuedEnt
+  clc_qty_issued_ent: wmb1.ClcQtyIssuedEnt
+  cur_value_issued: wmb1.CurValueIssued
+  clc_value_issued: wmb1.ClcValueIssued
+  cur_lot_qty_reserved: wmb1.CurLotQtyReserved
+  clc_lot_qty_reserved: wmb1.ClcLotQtyReserved
+  cur_ser_qty_reserved: wmb1.CurSerQtyReserved
+  clc_ser_qty_reserved: wmb1.ClcSerQtyReserved

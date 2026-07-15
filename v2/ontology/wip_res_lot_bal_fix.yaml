@@ -1,0 +1,43 @@
+concept: wip_res_lot_bal_fix
+display_name: WipResLotBalFix
+module: work_in_progress
+description: Auto-generated representation of the physical table WipResLotBalFix.
+synonyms:
+- wipreslotbalfix
+- wip res lot bal fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from WipResLotBalFix
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipResLotBalFix
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipResLotBalFix
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WipResLotBalFix
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WipResLotBalFix
+  old_lot_qty_reserved:
+    display: Oldlotqtyreserved
+    type: decimal
+    required: false
+    description: Field OldLotQtyReserved from WipResLotBalFix
+  new_lot_qty_reserved:
+    display: Newlotqtyreserved
+    type: decimal
+    required: false
+    description: Field NewLotQtyReserved from WipResLotBalFix

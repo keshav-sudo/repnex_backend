@@ -1,0 +1,11 @@
+concept: iop_collect_sales
+table: IopCollectSales
+alias: ics2
+fields:
+  collection: ics2.Collection
+  instance: ics2.Instance
+  movement_date: ics2.MovementDate
+  trans_count: ics2.TransCount
+  quantity: ics2.Quantity
+  cost_value: ics2.CostValue
+  sales_value: ics2.SalesValue

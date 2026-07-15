@@ -1,0 +1,6 @@
+concept: asset_capex_type
+table: AssetCapexType
+alias: act
+fields:
+  capex_type: act.CapexType
+  description: act.Description

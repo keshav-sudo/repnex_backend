@@ -1,0 +1,17 @@
+concept: ar_balance_cor
+table: ArBalanceCor
+alias: abc
+fields:
+  trx_source: abc.TrxSource
+  trx_type: abc.TrxType
+  balance_year: abc.BalanceYear
+  balance_month: abc.BalanceMonth
+  trx_date: abc.TrxDate
+  trx_time: abc.TrxTime
+  customer: abc.Customer
+  invoice: abc.Invoice
+  document_type: abc.DocumentType
+  trx_amount: abc.TrxAmount
+  trx_amount_before: abc.TrxAmountBefore
+  trx_amount_after: abc.TrxAmountAfter
+  message: abc.Message

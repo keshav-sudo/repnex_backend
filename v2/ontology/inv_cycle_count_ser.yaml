@@ -1,0 +1,73 @@
+concept: inv_cycle_count_ser
+display_name: InvCycleCountSer
+module: inventory
+description: Auto-generated representation of the physical table InvCycleCountSer.
+synonyms:
+- invcyclecountser
+- inv cycle count ser
+header_attributes:
+  cycle_count:
+    display: Cyclecount
+    type: string
+    required: false
+    description: Field CycleCount from InvCycleCountSer
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvCycleCountSer
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvCycleCountSer
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvCycleCountSer
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from InvCycleCountSer
+  original_quantity:
+    display: Originalquantity
+    type: decimal
+    required: false
+    description: Field OriginalQuantity from InvCycleCountSer
+  captured_quantity:
+    display: Capturedquantity
+    type: decimal
+    required: false
+    description: Field CapturedQuantity from InvCycleCountSer
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvCycleCountSer
+  create_serial:
+    display: Createserial
+    type: string
+    required: false
+    description: Field CreateSerial from InvCycleCountSer
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvCycleCountSer
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvCycleCountSer
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvCycleCountSer
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from InvCycleCountSer

@@ -1,0 +1,32 @@
+concept: gen_alt_cur_det
+table: GenAltCurDet
+alias: gacd
+fields:
+  currency: gacd.Currency
+  company: gacd.Company
+  gl_code: gacd.GlCode
+  gl_year: gacd.GlYear
+  gl_period: gacd.GlPeriod
+  gl_line: gacd.GlLine
+  line: gacd.Line
+  source: gacd.Source
+  gl_journal: gacd.GlJournal
+  gl_jnl_date: gacd.GlJnlDate
+  reference: gacd.Reference
+  entry_value: gacd.EntryValue
+  comment: gacd.Comment
+  provision: gacd.Provision
+  amended: gacd.Amended
+  origin: gacd.Origin
+  origin_zoom_key: gacd.OriginZoomKey
+  entries_group: gacd.EntriesGroup
+  base_cur_value: gacd.BaseCurValue
+  conv_rate: gacd.ConvRate
+  mul_div: gacd.MulDiv
+  triang_currency: gacd.TriangCurrency
+  triang_conv_rate: gacd.TriangConvRate
+  triang_mul_div: gacd.TriangMulDiv
+  post_currency: gacd.PostCurrency
+  post_value: gacd.PostValue
+  prior_rate: gacd.PriorRate
+  prior_value: gacd.PriorValue

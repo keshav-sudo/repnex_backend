@@ -1,0 +1,9 @@
+concept: req_comment
+table: ReqComment
+alias: rc1
+fields:
+  requisition: rc1.Requisition
+  requisition_line: rc1.RequisitionLine
+  narration_type: rc1.NarrationType
+  line: rc1.Line
+  text: rc1.Text

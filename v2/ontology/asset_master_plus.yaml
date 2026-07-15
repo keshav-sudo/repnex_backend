@@ -1,0 +1,28 @@
+concept: asset_master_plus
+display_name: AssetMaster+
+module: assets
+description: Auto-generated representation of the physical table AssetMaster+.
+synonyms:
+- assetmaster+
+- asset master plus
+header_attributes:
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetMaster+
+  label:
+    display: Label
+    type: string
+    required: false
+    description: Field Label from AssetMaster+
+  color:
+    display: Color
+    type: string
+    required: false
+    description: Field Color from AssetMaster+
+  kva_rating:
+    display: Kvarating
+    type: decimal
+    required: false
+    description: Field KvaRating from AssetMaster+

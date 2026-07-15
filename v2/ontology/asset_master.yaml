@@ -1,0 +1,403 @@
+concept: asset_master
+display_name: AssetMaster
+module: assets
+description: Auto-generated representation of the physical table AssetMaster.
+synonyms:
+- assetmaster
+- asset master
+header_attributes:
+  asset:
+    display: Asset
+    type: string
+    required: false
+    description: Field Asset from AssetMaster
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from AssetMaster
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from AssetMaster
+  asset_type:
+    display: Assettype
+    type: string
+    required: false
+    description: Field AssetType from AssetMaster
+  registration_num:
+    display: Registrationnum
+    type: string
+    required: false
+    description: Field RegistrationNum from AssetMaster
+  chassis_num:
+    display: Chassisnum
+    type: string
+    required: false
+    description: Field ChassisNum from AssetMaster
+  engine:
+    display: Engine
+    type: string
+    required: false
+    description: Field Engine from AssetMaster
+  agreement_num:
+    display: Agreementnum
+    type: string
+    required: false
+    description: Field AgreementNum from AssetMaster
+  purchase_date:
+    display: Purchasedate
+    type: date
+    required: false
+    description: Field PurchaseDate from AssetMaster
+  first_instal_date:
+    display: Firstinstaldate
+    type: date
+    required: false
+    description: Field FirstInstalDate from AssetMaster
+  date_sold:
+    display: Datesold
+    type: date
+    required: false
+    description: Field DateSold from AssetMaster
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from AssetMaster
+  gl_code:
+    display: Glcode
+    type: string
+    required: false
+    description: Field GlCode from AssetMaster
+  asset_group_code:
+    display: Assetgroupcode
+    type: string
+    required: false
+    description: Field AssetGroupCode from AssetMaster
+  agreement_code:
+    display: Agreementcode
+    type: string
+    required: false
+    description: Field AgreementCode from AssetMaster
+  new_old_flag:
+    display: Newoldflag
+    type: string
+    required: false
+    description: Field NewOldFlag from AssetMaster
+  lease_period:
+    display: Leaseperiod
+    type: decimal
+    required: false
+    description: Field LeasePeriod from AssetMaster
+  total_interest:
+    display: Totalinterest
+    type: decimal
+    required: false
+    description: Field TotalInterest from AssetMaster
+  monthly_instal:
+    display: Monthlyinstal
+    type: decimal
+    required: false
+    description: Field MonthlyInstal from AssetMaster
+  mtd_purchases:
+    display: Mtdpurchases
+    type: decimal
+    required: false
+    description: Field MtdPurchases from AssetMaster
+  mtd_labour:
+    display: Mtdlabour
+    type: decimal
+    required: false
+    description: Field MtdLabour from AssetMaster
+  mtd_revenue:
+    display: Mtdrevenue
+    type: decimal
+    required: false
+    description: Field MtdRevenue from AssetMaster
+  ytd_purchases:
+    display: Ytdpurchases
+    type: decimal
+    required: false
+    description: Field YtdPurchases from AssetMaster
+  ytd_labour:
+    display: Ytdlabour
+    type: decimal
+    required: false
+    description: Field YtdLabour from AssetMaster
+  ytd_revenue:
+    display: Ytdrevenue
+    type: decimal
+    required: false
+    description: Field YtdRevenue from AssetMaster
+  ytd_interest_paid:
+    display: Ytdinterestpaid
+    type: decimal
+    required: false
+    description: Field YtdInterestPaid from AssetMaster
+  ytd_installments:
+    display: Ytdinstallments
+    type: decimal
+    required: false
+    description: Field YtdInstallments from AssetMaster
+  accum_purchases:
+    display: Accumpurchases
+    type: decimal
+    required: false
+    description: Field AccumPurchases from AssetMaster
+  accum_labour:
+    display: Accumlabour
+    type: decimal
+    required: false
+    description: Field AccumLabour from AssetMaster
+  accum_revenue:
+    display: Accumrevenue
+    type: decimal
+    required: false
+    description: Field AccumRevenue from AssetMaster
+  accum_interest:
+    display: Accuminterest
+    type: decimal
+    required: false
+    description: Field AccumInterest from AssetMaster
+  accum_installments:
+    display: Accuminstallments
+    type: decimal
+    required: false
+    description: Field AccumInstallments from AssetMaster
+  capital_outst:
+    display: Capitaloutst
+    type: decimal
+    required: false
+    description: Field CapitalOutst from AssetMaster
+  interest_outst:
+    display: Interestoutst
+    type: decimal
+    required: false
+    description: Field InterestOutst from AssetMaster
+  deposit_value:
+    display: Depositvalue
+    type: decimal
+    required: false
+    description: Field DepositValue from AssetMaster
+  tax_paid:
+    display: Taxpaid
+    type: decimal
+    required: false
+    description: Field TaxPaid from AssetMaster
+  next_trn_line:
+    display: Nexttrnline
+    type: decimal
+    required: false
+    description: Field NextTrnLine from AssetMaster
+  final_installment:
+    display: Finalinstallment
+    type: decimal
+    required: false
+    description: Field FinalInstallment from AssetMaster
+  account_type:
+    display: Accounttype
+    type: string
+    required: false
+    description: Field AccountType from AssetMaster
+  dep_prd_mth_sold:
+    display: Depprdmthsold
+    type: decimal
+    required: false
+    description: Field DepPrdMthSold from AssetMaster
+  dep_prd_year_sold:
+    display: Depprdyearsold
+    type: decimal
+    required: false
+    description: Field DepPrdYearSold from AssetMaster
+  group_code_prev_mth:
+    display: Groupcodeprevmth
+    type: string
+    required: false
+    description: Field GroupCodePrevMth from AssetMaster
+  asset_id:
+    display: Assetid
+    type: string
+    required: false
+    description: Field AssetId from AssetMaster
+  prev_location:
+    display: Prevlocation
+    type: string
+    required: false
+    description: Field PrevLocation from AssetMaster
+  asset_cost_center:
+    display: Assetcostcenter
+    type: string
+    required: false
+    description: Field AssetCostCenter from AssetMaster
+  capex_code:
+    display: Capexcode
+    type: string
+    required: false
+    description: Field CapexCode from AssetMaster
+  cycle_count:
+    display: Cyclecount
+    type: string
+    required: false
+    description: Field CycleCount from AssetMaster
+  resp_user:
+    display: Respuser
+    type: string
+    required: false
+    description: Field RespUser from AssetMaster
+  asset_owner:
+    display: Assetowner
+    type: string
+    required: false
+    description: Field AssetOwner from AssetMaster
+  prev_branch:
+    display: Prevbranch
+    type: string
+    required: false
+    description: Field PrevBranch from AssetMaster
+  original_asset_qty:
+    display: Originalassetqty
+    type: decimal
+    required: false
+    description: Field OriginalAssetQty from AssetMaster
+  asset_qty:
+    display: Assetqty
+    type: decimal
+    required: false
+    description: Field AssetQty from AssetMaster
+  asset_status:
+    display: Assetstatus
+    type: string
+    required: false
+    description: Field AssetStatus from AssetMaster
+  original_asset_value:
+    display: Originalassetvalue
+    type: decimal
+    required: false
+    description: Field OriginalAssetValue from AssetMaster
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from AssetMaster
+  orig_start_depn_date:
+    display: Origstartdepndate
+    type: date
+    required: false
+    description: Field OrigStartDepnDate from AssetMaster
+  orig_start_period:
+    display: Origstartperiod
+    type: decimal
+    required: false
+    description: Field OrigStartPeriod from AssetMaster
+  orig_start_year:
+    display: Origstartyear
+    type: decimal
+    required: false
+    description: Field OrigStartYear from AssetMaster
+  purchase_period:
+    display: Purchaseperiod
+    type: decimal
+    required: false
+    description: Field PurchasePeriod from AssetMaster
+  purchase_year:
+    display: Purchaseyear
+    type: decimal
+    required: false
+    description: Field PurchaseYear from AssetMaster
+  master_asset:
+    display: Masterasset
+    type: string
+    required: false
+    description: Field MasterAsset from AssetMaster
+  user_def1:
+    display: Userdef1
+    type: decimal
+    required: false
+    description: Field UserDef1 from AssetMaster
+  user_def2:
+    display: Userdef2
+    type: date
+    required: false
+    description: Field UserDef2 from AssetMaster
+  user_def3:
+    display: Userdef3
+    type: string
+    required: false
+    description: Field UserDef3 from AssetMaster
+  user_def4:
+    display: Userdef4
+    type: string
+    required: false
+    description: Field UserDef4 from AssetMaster
+  memo_date:
+    display: Memodate
+    type: date
+    required: false
+    description: Field MemoDate from AssetMaster
+  capex_line:
+    display: Capexline
+    type: decimal
+    required: false
+    description: Field CapexLine from AssetMaster
+  disposed_flag:
+    display: Disposedflag
+    type: string
+    required: false
+    description: Field DisposedFlag from AssetMaster
+  alt_flag1:
+    display: Altflag1
+    type: string
+    required: false
+    description: Field AltFlag1 from AssetMaster
+  alt_flag2:
+    display: Altflag2
+    type: string
+    required: false
+    description: Field AltFlag2 from AssetMaster
+  alt_flag3:
+    display: Altflag3
+    type: string
+    required: false
+    description: Field AltFlag3 from AssetMaster
+  alt_flag4:
+    display: Altflag4
+    type: string
+    required: false
+    description: Field AltFlag4 from AssetMaster
+  alt_flag5:
+    display: Altflag5
+    type: string
+    required: false
+    description: Field AltFlag5 from AssetMaster
+  alt_flag6:
+    display: Altflag6
+    type: string
+    required: false
+    description: Field AltFlag6 from AssetMaster
+  alt_flag7:
+    display: Altflag7
+    type: string
+    required: false
+    description: Field AltFlag7 from AssetMaster
+  alt_flag8:
+    display: Altflag8
+    type: string
+    required: false
+    description: Field AltFlag8 from AssetMaster
+  alt_flag9:
+    display: Altflag9
+    type: string
+    required: false
+    description: Field AltFlag9 from AssetMaster
+  alt_flag10:
+    display: Altflag10
+    type: string
+    required: false
+    description: Field AltFlag10 from AssetMaster
+  disposal_reason:
+    display: Disposalreason
+    type: string
+    required: false
+    description: Field DisposalReason from AssetMaster

@@ -1,0 +1,12 @@
+concept: csh_tax_distr_hdr
+table: CshTaxDistrHdr
+alias: ctdh
+fields:
+  input_output: ctdh.InputOutput
+  cb_trn_year: ctdh.CbTrnYear
+  cb_trn_month: ctdh.CbTrnMonth
+  journal: ctdh.Journal
+  printed_flag: ctdh.PrintedFlag
+  journal_date: ctdh.JournalDate
+  amount_posted: ctdh.AmountPosted
+  jnl_tax_amount: ctdh.JnlTaxAmount

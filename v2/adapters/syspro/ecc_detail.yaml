@@ -1,0 +1,10 @@
+concept: ecc_detail
+table: EccDetail
+alias: ed
+fields:
+  change_note: ed.ChangeNote
+  stock_code: ed.StockCode
+  version: ed.Version
+  release: ed.Release
+  new_version: ed.NewVersion
+  new_release: ed.NewRelease

@@ -1,0 +1,9 @@
+concept: tbl_po_discount
+table: TblPoDiscount
+alias: tpd
+fields:
+  discount_code: tpd.DiscountCode
+  description: tpd.Description
+  discount_pct1: tpd.DiscountPct1
+  discount_pct2: tpd.DiscountPct2
+  discount_pct3: tpd.DiscountPct3

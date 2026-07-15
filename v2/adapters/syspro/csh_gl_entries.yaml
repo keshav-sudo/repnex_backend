@@ -1,0 +1,28 @@
+concept: csh_gl_entries
+table: CshGlEntries
+alias: cge
+fields:
+  bank: cge.Bank
+  cb_trn_year: cge.CbTrnYear
+  cb_trn_month: cge.CbTrnMonth
+  cb_trn_date: cge.CbTrnDate
+  cb_trn_time: cge.CbTrnTime
+  detail_count: cge.DetailCount
+  company: cge.Company
+  gl_code: cge.GlCode
+  trn_value: cge.TrnValue
+  journal: cge.Journal
+  notation: cge.Notation
+  currency_value: cge.CurrencyValue
+  post_currency: cge.PostCurrency
+  conv_rate: cge.ConvRate
+  mul_div: cge.MulDiv
+  account_cur: cge.AccountCur
+  acc_conv_rate: cge.AccConvRate
+  acc_mul_div: cge.AccMulDiv
+  triang_currency: cge.TriangCurrency
+  triang_rate: cge.TriangRate
+  triang_mul_div: cge.TriangMulDiv
+  cb_adj_year: cge.CbAdjYear
+  cb_adj_month: cge.CbAdjMonth
+  tax_entry: cge.TaxEntry

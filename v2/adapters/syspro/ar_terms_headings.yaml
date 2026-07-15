@@ -1,0 +1,12 @@
+concept: ar_terms_headings
+table: ArTermsHeadings
+alias: ath1
+fields:
+  ageing_code: ath1.AgeingCode
+  description: ath1.Description
+  ageing_head1: ath1.AgeingHead1
+  ageing_head2: ath1.AgeingHead2
+  ageing_head3: ath1.AgeingHead3
+  ageing_head4: ath1.AgeingHead4
+  ageing_head5: ath1.AgeingHead5
+  ageing_head6: ath1.AgeingHead6

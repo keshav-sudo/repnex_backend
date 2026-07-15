@@ -1,0 +1,8 @@
+concept: lynq_pg__syspro__diversion_code_mapping
+table: Lynq_PG_Syspro_DiversionCodeMapping
+alias: lpgsdcm
+fields:
+  id: lpgsdcm.Id
+  syspro_setting_id: lpgsdcm.SysproSettingId
+  lynq_code: lpgsdcm.LynqCode
+  erp_code: lpgsdcm.ERPCode

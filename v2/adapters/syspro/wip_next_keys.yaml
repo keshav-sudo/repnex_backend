@@ -1,0 +1,6 @@
+concept: wip_next_keys
+table: WipNextKeys
+alias: wnk
+fields:
+  key_type: wnk.KeyType
+  key_next: wnk.KeyNext

@@ -1,0 +1,8 @@
+concept: sor_document_format
+table: SorDocumentFormat
+alias: sdf
+fields:
+  sor_document_type: sdf.SorDocumentType
+  document_format: sdf.DocumentFormat
+  document_record_type: sdf.DocumentRecordType
+  document_info: sdf.DocumentInfo

@@ -1,0 +1,15 @@
+concept: eam_equip_reg
+table: EamEquipReg
+alias: eer
+fields:
+  equipment_code: eer.EquipmentCode
+  description: eer.Description
+  equipment_serial: eer.EquipmentSerial
+  link_to_asset: eer.LinkToAsset
+  asset: eer.Asset
+  asset_capex: eer.AssetCapex
+  capex_line: eer.CapexLine
+  link_job_capex: eer.LinkJobCapex
+  type_of_asset: eer.TypeOfAsset
+  machine: eer.Machine
+  equipment_type: eer.EquipmentType

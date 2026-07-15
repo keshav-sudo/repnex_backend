@@ -1,0 +1,25 @@
+concept: gtr_transactions
+table: GtrTransactions
+alias: gt1
+fields:
+  gtr_reference: gt1.GtrReference
+  source_warehouse: gt1.SourceWarehouse
+  target_warehouse: gt1.TargetWarehouse
+  line: gt1.Line
+  entry: gt1.Entry
+  transaction_typ: gt1.TransactionTyp
+  quantity: gt1.Quantity
+  src_unit_cost: gt1.SrcUnitCost
+  src_value: gt1.SrcValue
+  tgt_unit_cost: gt1.TgtUnitCost
+  tgt_value: gt1.TgtValue
+  comment: gt1.Comment
+  posting_period: gt1.PostingPeriod
+  posting_year: gt1.PostingYear
+  inv_journal: gt1.InvJournal
+  inv_jnl_entry: gt1.InvJnlEntry
+  transaction_date: gt1.TransactionDate
+  transaction_hh: gt1.TransactionHh
+  transaction_mm: gt1.TransactionMm
+  operator: gt1.Operator
+  bin: gt1.Bin

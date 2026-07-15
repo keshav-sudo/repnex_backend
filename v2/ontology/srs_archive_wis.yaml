@@ -1,0 +1,53 @@
+concept: srs_archive_wis
+display_name: SrsArchiveWIS
+module: other
+description: Auto-generated representation of the physical table SrsArchiveWIS.
+synonyms:
+- srsarchivewis
+- srs archive wis
+header_attributes:
+  archive_date:
+    display: Archivedate
+    type: date
+    required: false
+    description: Field ArchiveDate from SrsArchiveWIS
+  archive_time:
+    display: Archivetime
+    type: decimal
+    required: false
+    description: Field ArchiveTime from SrsArchiveWIS
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from SrsArchiveWIS
+  archive_id:
+    display: Archiveid
+    type: string
+    required: false
+    description: Field ArchiveId from SrsArchiveWIS
+  archive_type:
+    display: Archivetype
+    type: decimal
+    required: false
+    description: Field ArchiveType from SrsArchiveWIS
+  archive_file:
+    display: Archivefile
+    type: string
+    required: false
+    description: Field ArchiveFile from SrsArchiveWIS
+  det_job:
+    display: Detjob
+    type: string
+    required: false
+    description: Field DetJob from SrsArchiveWIS
+  det_lot:
+    display: Detlot
+    type: string
+    required: false
+    description: Field DetLot from SrsArchiveWIS
+  det_reference:
+    display: Detreference
+    type: string
+    required: false
+    description: Field DetReference from SrsArchiveWIS

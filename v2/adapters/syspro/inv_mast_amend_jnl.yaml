@@ -1,0 +1,14 @@
+concept: inv_mast_amend_jnl
+table: InvMastAmendJnl
+alias: imaj
+fields:
+  jnl_date: imaj.JnlDate
+  jnl_time: imaj.JnlTime
+  jnl_line: imaj.JnlLine
+  stock_code: imaj.StockCode
+  journal_printed: imaj.JournalPrinted
+  change_flag: imaj.ChangeFlag
+  column_name: imaj.ColumnName
+  before: imaj.Before
+  after: imaj.After
+  operator_code: imaj.OperatorCode

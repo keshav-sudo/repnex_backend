@@ -1,0 +1,14 @@
+concept: ap_supp_health_bal
+table: ApSuppHealthBal
+alias: ashb1
+fields:
+  run_date_time: ashb1.RunDateTime
+  supplier: ashb1.Supplier
+  trx_type: ashb1.TrxType
+  hcheck_year: ashb1.HcheckYear
+  hcheck_month: ashb1.HcheckMonth
+  currency: ashb1.Currency
+  trx_amt_vary: ashb1.TrxAmtVary
+  trx_amt_actual: ashb1.TrxAmtActual
+  trx_amt_calc: ashb1.TrxAmtCalc
+  message: ashb1.Message

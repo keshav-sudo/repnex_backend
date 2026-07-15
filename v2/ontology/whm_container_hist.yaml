@@ -1,0 +1,58 @@
+concept: whm_container_hist
+display_name: WhmContainerHist
+module: other
+description: Auto-generated representation of the physical table WhmContainerHist.
+synonyms:
+- whmcontainerhist
+- whm container hist
+header_attributes:
+  license_plate_number:
+    display: Licenseplatenumber
+    type: string
+    required: false
+    description: Field LicensePlateNumber from WhmContainerHist
+  container:
+    display: Container
+    type: string
+    required: false
+    description: Field Container from WhmContainerHist
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from WhmContainerHist
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WhmContainerHist
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from WhmContainerHist
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from WhmContainerHist
+  trn_type:
+    display: Trntype
+    type: string
+    required: false
+    description: Field TrnType from WhmContainerHist
+  current_quantity:
+    display: Currentquantity
+    type: decimal
+    required: false
+    description: Field CurrentQuantity from WhmContainerHist
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from WhmContainerHist
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from WhmContainerHist

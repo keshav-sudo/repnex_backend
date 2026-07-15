@@ -1,0 +1,28 @@
+concept: sor_document_format
+display_name: SorDocumentFormat
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorDocumentFormat.
+synonyms:
+- sordocumentformat
+- sor document format
+header_attributes:
+  sor_document_type:
+    display: Sordocumenttype
+    type: string
+    required: false
+    description: Field SorDocumentType from SorDocumentFormat
+  document_format:
+    display: Documentformat
+    type: string
+    required: false
+    description: Field DocumentFormat from SorDocumentFormat
+  document_record_type:
+    display: Documentrecordtype
+    type: string
+    required: false
+    description: Field DocumentRecordType from SorDocumentFormat
+  document_info:
+    display: Documentinfo
+    type: string
+    required: false
+    description: Field DocumentInfo from SorDocumentFormat

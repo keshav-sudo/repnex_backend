@@ -1,0 +1,7 @@
+concept: asset_mechanic
+table: AssetMechanic
+alias: am4
+fields:
+  mechanic: am4.Mechanic
+  description: am4.Description
+  mechanic_rate: am4.MechanicRate

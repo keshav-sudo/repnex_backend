@@ -1,0 +1,9 @@
+concept: rts_document_format
+table: RtsDocumentFormat
+alias: rdf1
+fields:
+  rts_document_type: rdf1.RtsDocumentType
+  document_format: rdf1.DocumentFormat
+  description: rdf1.Description
+  format_info1: rdf1.FormatInfo1
+  format_info2: rdf1.FormatInfo2

@@ -1,0 +1,58 @@
+concept: qot_control
+display_name: QotControl
+module: other
+description: Auto-generated representation of the physical table QotControl.
+synonyms:
+- qotcontrol
+- qot control
+header_attributes:
+  ctl_flag:
+    display: Ctlflag
+    type: string
+    required: false
+    description: Field CtlFlag from QotControl
+  next_quote:
+    display: Nextquote
+    type: decimal
+    required: false
+    description: Field NextQuote from QotControl
+  next_dummy_so:
+    display: Nextdummyso
+    type: decimal
+    required: false
+    description: Field NextDummySo from QotControl
+  offer_desc1:
+    display: Offerdesc1
+    type: string
+    required: false
+    description: Field OfferDesc1 from QotControl
+  offer_desc2:
+    display: Offerdesc2
+    type: string
+    required: false
+    description: Field OfferDesc2 from QotControl
+  offer_desc3:
+    display: Offerdesc3
+    type: string
+    required: false
+    description: Field OfferDesc3 from QotControl
+  offer_desc4:
+    display: Offerdesc4
+    type: string
+    required: false
+    description: Field OfferDesc4 from QotControl
+  offer_desc5:
+    display: Offerdesc5
+    type: string
+    required: false
+    description: Field OfferDesc5 from QotControl
+  offer_desc6:
+    display: Offerdesc6
+    type: string
+    required: false
+    description: Field OfferDesc6 from QotControl
+  next_estimate:
+    display: Nextestimate
+    type: string
+    required: false
+    description: Field NextEstimate from QotControl

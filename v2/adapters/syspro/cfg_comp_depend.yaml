@@ -1,0 +1,12 @@
+concept: cfg_comp_depend
+table: CfgCompDepend
+alias: ccd
+fields:
+  product_code: ccd.ProductCode
+  option_num: ccd.OptionNum
+  line: ccd.Line
+  depend_component: ccd.DependComponent
+  factor: ccd.Factor
+  link_type: ccd.LinkType
+  option_linked: ccd.OptionLinked
+  linked_line: ccd.LinkedLine

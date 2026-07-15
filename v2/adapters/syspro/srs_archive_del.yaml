@@ -1,0 +1,12 @@
+concept: srs_archive_del
+table: SrsArchiveDEL
+alias: sadel
+fields:
+  archive_date: sadel.ArchiveDate
+  archive_time: sadel.ArchiveTime
+  operator: sadel.Operator
+  archive_id: sadel.ArchiveId
+  archive_type: sadel.ArchiveType
+  archive_file: sadel.ArchiveFile
+  gen_delivery_note: sadel.GenDeliveryNote
+  internal_sales_order: sadel.InternalSalesOrder

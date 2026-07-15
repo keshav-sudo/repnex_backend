@@ -1,0 +1,14 @@
+concept: ap_next_key_audit
+table: ApNextKeyAudit
+alias: anka
+fields:
+  key_type: anka.KeyType
+  post_year: anka.PostYear
+  post_period: anka.PostPeriod
+  key_issued: anka.KeyIssued
+  allocated_by_program: anka.AllocatedByProgram
+  called_from_program: anka.CalledFromProgram
+  allocated_date: anka.AllocatedDate
+  allocated_by_oper: anka.AllocatedByOper
+  status: anka.Status
+  closed_date: anka.ClosedDate

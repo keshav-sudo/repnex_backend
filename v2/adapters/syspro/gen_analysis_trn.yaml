@@ -1,0 +1,19 @@
+concept: gen_analysis_trn
+table: GenAnalysisTrn
+alias: gat
+fields:
+  company: gat.Company
+  gl_year: gat.GlYear
+  gl_period: gat.GlPeriod
+  analysis_entry: gat.AnalysisEntry
+  line_number: gat.LineNumber
+  from_date: gat.FromDate
+  to_date: gat.ToDate
+  analysis_category: gat.AnalysisCategory
+  analysis_code1: gat.AnalysisCode1
+  analysis_code2: gat.AnalysisCode2
+  analysis_code3: gat.AnalysisCode3
+  analysis_code4: gat.AnalysisCode4
+  analysis_code5: gat.AnalysisCode5
+  comment: gat.Comment
+  entry_value: gat.EntryValue

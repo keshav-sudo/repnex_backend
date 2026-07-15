@@ -1,0 +1,32 @@
+concept: sal_target_spread
+table: SalTargetSpread
+alias: sts
+fields:
+  target_type: sts.TargetType
+  target_sum_seq: sts.TargetSumSeq
+  sales_spread1: sts.SalesSpread1
+  sales_spread2: sts.SalesSpread2
+  sales_spread3: sts.SalesSpread3
+  sales_spread4: sts.SalesSpread4
+  sales_spread5: sts.SalesSpread5
+  sales_spread6: sts.SalesSpread6
+  sales_spread7: sts.SalesSpread7
+  sales_spread8: sts.SalesSpread8
+  sales_spread9: sts.SalesSpread9
+  sales_spread10: sts.SalesSpread10
+  sales_spread11: sts.SalesSpread11
+  sales_spread12: sts.SalesSpread12
+  sales_spread13: sts.SalesSpread13
+  profit_spread1: sts.ProfitSpread1
+  profit_spread2: sts.ProfitSpread2
+  profit_spread3: sts.ProfitSpread3
+  profit_spread4: sts.ProfitSpread4
+  profit_spread5: sts.ProfitSpread5
+  profit_spread6: sts.ProfitSpread6
+  profit_spread7: sts.ProfitSpread7
+  profit_spread8: sts.ProfitSpread8
+  profit_spread9: sts.ProfitSpread9
+  profit_spread10: sts.ProfitSpread10
+  profit_spread11: sts.ProfitSpread11
+  profit_spread12: sts.ProfitSpread12
+  profit_spread13: sts.ProfitSpread13

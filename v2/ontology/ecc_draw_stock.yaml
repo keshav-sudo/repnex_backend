@@ -1,0 +1,18 @@
+concept: ecc_draw_stock
+display_name: EccDrawStock
+module: other
+description: Auto-generated representation of the physical table EccDrawStock.
+synonyms:
+- eccdrawstock
+- ecc draw stock
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from EccDrawStock
+  draw_office_num:
+    display: Drawofficenum
+    type: string
+    required: false
+    description: Field DrawOfficeNum from EccDrawStock

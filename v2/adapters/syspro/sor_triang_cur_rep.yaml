@@ -1,0 +1,16 @@
+concept: sor_triang_cur_rep
+table: SorTriangCurRep
+alias: stcr
+fields:
+  invoice: stcr.Invoice
+  sales_order: stcr.SalesOrder
+  dispatch_note: stcr.DispatchNote
+  post_currency: stcr.PostCurrency
+  post_conv_rate: stcr.PostConvRate
+  post_mul_div: stcr.PostMulDiv
+  account_cur: stcr.AccountCur
+  account_conv_rate: stcr.AccountConvRate
+  account_mul_div: stcr.AccountMulDiv
+  triang_currency: stcr.TriangCurrency
+  triang_conv_rate: stcr.TriangConvRate
+  triang_mul_div: stcr.TriangMulDiv

@@ -1,0 +1,50 @@
+concept: asset_capex_line
+table: AssetCapexLine
+alias: acl
+fields:
+  capex_code: acl.CapexCode
+  capex_line: acl.CapexLine
+  asset: acl.Asset
+  description: acl.Description
+  branch: acl.Branch
+  asset_group_code: acl.AssetGroupCode
+  asset_cost_center: acl.AssetCostCenter
+  capex_type: acl.CapexType
+  catalogue: acl.Catalogue
+  system_date: acl.SystemDate
+  approval_status: acl.ApprovalStatus
+  operator: acl.Operator
+  operator_approved: acl.OperatorApproved
+  date_approved: acl.DateApproved
+  last_requisition: acl.LastRequisition
+  last_purchase_order: acl.LastPurchaseOrder
+  last_job: acl.LastJob
+  last_grn: acl.LastGrn
+  last_part_billing: acl.LastPartBilling
+  originator: acl.Originator
+  start_year: acl.StartYear
+  start_period: acl.StartPeriod
+  supplier: acl.Supplier
+  unit_cost: acl.UnitCost
+  asset_qty: acl.AssetQty
+  uom: acl.Uom
+  exchange_rate: acl.ExchangeRate
+  currency: acl.Currency
+  mul_div: acl.MulDiv
+  supplier2: acl.Supplier2
+  unit_cost2: acl.UnitCost2
+  asset_qty2: acl.AssetQty2
+  uom2: acl.Uom2
+  exchange_rate2: acl.ExchangeRate2
+  currency2: acl.Currency2
+  mul_div2: acl.MulDiv2
+  supplier3: acl.Supplier3
+  unit_cost3: acl.UnitCost3
+  asset_qty3: acl.AssetQty3
+  uom3: acl.Uom3
+  exchange_rate3: acl.ExchangeRate3
+  currency3: acl.Currency3
+  mul_div3: acl.MulDiv3
+  value_uncommitted: acl.ValueUncommitted
+  value_committed: acl.ValueCommitted
+  value_spent: acl.ValueSpent

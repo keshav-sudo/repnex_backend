@@ -1,0 +1,58 @@
+concept: iop_transactions
+display_name: IopTransactions
+module: other
+description: Auto-generated representation of the physical table IopTransactions.
+synonyms:
+- ioptransactions
+- iop transactions
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopTransactions
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopTransactions
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopTransactions
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopTransactions
+  transaction_type:
+    display: Transactiontype
+    type: string
+    required: false
+    description: Field TransactionType from IopTransactions
+  movement_date:
+    display: Movementdate
+    type: date
+    required: false
+    description: Field MovementDate from IopTransactions
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from IopTransactions
+  trans_count:
+    display: Transcount
+    type: decimal
+    required: false
+    description: Field TransCount from IopTransactions
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopTransactions
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopTransactions

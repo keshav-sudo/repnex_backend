@@ -1,0 +1,68 @@
+concept: grn_price_variance
+display_name: GrnPriceVariance
+module: other
+description: Auto-generated representation of the physical table GrnPriceVariance.
+synonyms:
+- grnpricevariance
+- grn price variance
+header_attributes:
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from GrnPriceVariance
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from GrnPriceVariance
+  post_year:
+    display: Postyear
+    type: decimal
+    required: false
+    description: Field PostYear from GrnPriceVariance
+  post_month:
+    display: Postmonth
+    type: decimal
+    required: false
+    description: Field PostMonth from GrnPriceVariance
+  ap_journal:
+    display: Apjournal
+    type: decimal
+    required: false
+    description: Field ApJournal from GrnPriceVariance
+  ap_journal_entry:
+    display: Apjournalentry
+    type: decimal
+    required: false
+    description: Field ApJournalEntry from GrnPriceVariance
+  var_date:
+    display: Vardate
+    type: date
+    required: false
+    description: Field VarDate from GrnPriceVariance
+  grn_value:
+    display: Grnvalue
+    type: decimal
+    required: false
+    description: Field GrnValue from GrnPriceVariance
+  invoice_value:
+    display: Invoicevalue
+    type: decimal
+    required: false
+    description: Field InvoiceValue from GrnPriceVariance
+  price_var_printed:
+    display: Pricevarprinted
+    type: string
+    required: false
+    description: Field PriceVarPrinted from GrnPriceVariance
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from GrnPriceVariance
+  report_type:
+    display: Reporttype
+    type: string
+    required: false
+    description: Field ReportType from GrnPriceVariance

@@ -1,0 +1,48 @@
+concept: iop_movements
+display_name: IopMovements
+module: other
+description: Auto-generated representation of the physical table IopMovements.
+synonyms:
+- iopmovements
+- iop movements
+header_attributes:
+  id_number:
+    display: Idnumber
+    type: decimal
+    required: false
+    description: Field IdNumber from IopMovements
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from IopMovements
+  opening_qty:
+    display: Openingqty
+    type: decimal
+    required: false
+    description: Field OpeningQty from IopMovements
+  qty_received:
+    display: Qtyreceived
+    type: decimal
+    required: false
+    description: Field QtyReceived from IopMovements
+  qty_issued:
+    display: Qtyissued
+    type: decimal
+    required: false
+    description: Field QtyIssued from IopMovements
+  value_received:
+    display: Valuereceived
+    type: decimal
+    required: false
+    description: Field ValueReceived from IopMovements
+  value_issued:
+    display: Valueissued
+    type: decimal
+    required: false
+    description: Field ValueIssued from IopMovements
+  number_stock_outs:
+    display: Numberstockouts
+    type: decimal
+    required: false
+    description: Field NumberStockOuts from IopMovements

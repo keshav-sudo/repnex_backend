@@ -1,0 +1,14 @@
+concept: whm_container_hist
+table: WhmContainerHist
+alias: wch
+fields:
+  license_plate_number: wch.LicensePlateNumber
+  container: wch.Container
+  line: wch.Line
+  stock_code: wch.StockCode
+  warehouse: wch.Warehouse
+  bin: wch.Bin
+  trn_type: wch.TrnType
+  current_quantity: wch.CurrentQuantity
+  transaction_date: wch.TransactionDate
+  operator: wch.Operator

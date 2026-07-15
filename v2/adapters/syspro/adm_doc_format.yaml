@@ -1,0 +1,10 @@
+concept: adm_doc_format
+table: AdmDocFormat
+alias: adf
+fields:
+  document_name: adf.DocumentName
+  document_format: adf.DocumentFormat
+  document_record_type: adf.DocumentRecordType
+  table_number: adf.TableNumber
+  table_row: adf.TableRow
+  document_info: adf.DocumentInfo

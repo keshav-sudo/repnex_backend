@@ -1,0 +1,23 @@
+concept: inv_class
+display_name: InvClass
+module: inventory
+description: Auto-generated representation of the physical table InvClass.
+synonyms:
+- invclass
+- inv class
+header_attributes:
+  stock_class:
+    display: Stockclass
+    type: string
+    required: false
+    description: Field StockClass from InvClass
+  class_description:
+    display: Classdescription
+    type: string
+    required: false
+    description: Field ClassDescription from InvClass
+  class_type:
+    display: Classtype
+    type: string
+    required: false
+    description: Field ClassType from InvClass

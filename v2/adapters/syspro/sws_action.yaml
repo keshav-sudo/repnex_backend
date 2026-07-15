@@ -1,0 +1,7 @@
+concept: sws_action
+table: SwsAction
+alias: sa2
+fields:
+  action_id: sa2.ActionId
+  action_number: sa2.ActionNumber
+  description: sa2.Description

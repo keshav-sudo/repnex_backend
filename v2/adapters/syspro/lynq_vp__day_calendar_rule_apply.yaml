@@ -1,0 +1,7 @@
+concept: lynq_vp__day_calendar_rule_apply
+table: Lynq_VP_DayCalendarRuleApply
+alias: lvpdcra
+fields:
+  id: lvpdcra.ID
+  rule_id: lvpdcra.RuleID
+  date: lvpdcra.Date

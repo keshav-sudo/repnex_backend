@@ -1,0 +1,38 @@
+concept: crm_activity_attend_u
+display_name: CrmActivityAttendU
+module: crm
+description: Auto-generated representation of the physical table CrmActivityAttendU.
+synonyms:
+- crmactivityattendu
+- crm activity attend u
+header_attributes:
+  contact_id:
+    display: Contactid
+    type: string
+    required: false
+    description: Field ContactId from CrmActivityAttendU
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from CrmActivityAttendU
+  start_time:
+    display: Starttime
+    type: decimal
+    required: false
+    description: Field StartTime from CrmActivityAttendU
+  attendee_line:
+    display: Attendeeline
+    type: decimal
+    required: false
+    description: Field AttendeeLine from CrmActivityAttendU
+  attendee_name:
+    display: Attendeename
+    type: string
+    required: false
+    description: Field AttendeeName from CrmActivityAttendU
+  attendee_type:
+    display: Attendeetype
+    type: string
+    required: false
+    description: Field AttendeeType from CrmActivityAttendU

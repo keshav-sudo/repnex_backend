@@ -1,0 +1,93 @@
+concept: inv_cycle_count_capt
+display_name: InvCycleCountCapt
+module: inventory
+description: Auto-generated representation of the physical table InvCycleCountCapt.
+synonyms:
+- invcyclecountcapt
+- inv cycle count capt
+header_attributes:
+  cycle_count:
+    display: Cyclecount
+    type: string
+    required: false
+    description: Field CycleCount from InvCycleCountCapt
+  capture_date:
+    display: Capturedate
+    type: date
+    required: false
+    description: Field CaptureDate from InvCycleCountCapt
+  capture_time:
+    display: Capturetime
+    type: decimal
+    required: false
+    description: Field CaptureTime from InvCycleCountCapt
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from InvCycleCountCapt
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvCycleCountCapt
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from InvCycleCountCapt
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from InvCycleCountCapt
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from InvCycleCountCapt
+  original_quantity:
+    display: Originalquantity
+    type: decimal
+    required: false
+    description: Field OriginalQuantity from InvCycleCountCapt
+  captured_quantity:
+    display: Capturedquantity
+    type: decimal
+    required: false
+    description: Field CapturedQuantity from InvCycleCountCapt
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvCycleCountCapt
+  create_lot_flag:
+    display: Createlotflag
+    type: string
+    required: false
+    description: Field CreateLotFlag from InvCycleCountCapt
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvCycleCountCapt
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvCycleCountCapt
+  operator:
+    display: Operator
+    type: string
+    required: false
+    description: Field Operator from InvCycleCountCapt
+  verdict:
+    display: Verdict
+    type: string
+    required: false
+    description: Field Verdict from InvCycleCountCapt
+  confirm_date:
+    display: Confirmdate
+    type: date
+    required: false
+    description: Field ConfirmDate from InvCycleCountCapt

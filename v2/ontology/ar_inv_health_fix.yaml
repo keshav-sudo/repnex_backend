@@ -1,0 +1,58 @@
+concept: ar_inv_health_fix
+display_name: ArInvHealthFix
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArInvHealthFix.
+synonyms:
+- arinvhealthfix
+- ar inv health fix
+header_attributes:
+  run_date_time:
+    display: Rundatetime
+    type: date
+    required: false
+    description: Field RunDateTime from ArInvHealthFix
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArInvHealthFix
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArInvHealthFix
+  document_type:
+    display: Documenttype
+    type: string
+    required: false
+    description: Field DocumentType from ArInvHealthFix
+  balance_year:
+    display: Balanceyear
+    type: decimal
+    required: false
+    description: Field BalanceYear from ArInvHealthFix
+  balance_month:
+    display: Balancemonth
+    type: decimal
+    required: false
+    description: Field BalanceMonth from ArInvHealthFix
+  trx_amount_value:
+    display: Trxamountvalue
+    type: decimal
+    required: false
+    description: Field TrxAmountValue from ArInvHealthFix
+  trx_amount_before:
+    display: Trxamountbefore
+    type: decimal
+    required: false
+    description: Field TrxAmountBefore from ArInvHealthFix
+  trx_amount_after:
+    display: Trxamountafter
+    type: decimal
+    required: false
+    description: Field TrxAmountAfter from ArInvHealthFix
+  message:
+    display: Message
+    type: string
+    required: false
+    description: Field Message from ArInvHealthFix

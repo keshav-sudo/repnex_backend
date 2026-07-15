@@ -1,0 +1,13 @@
+concept: bom_prod_line
+table: BomProdLine
+alias: bpl
+fields:
+  prod_line: bpl.ProdLine
+  description: bpl.Description
+  site_code: bpl.SiteCode
+  work_centre: bpl.WorkCentre
+  shift_code: bpl.ShiftCode
+  machine: bpl.Machine
+  prod_line_contact: bpl.ProdLineContact
+  telephone: bpl.Telephone
+  wip_branch: bpl.WipBranch

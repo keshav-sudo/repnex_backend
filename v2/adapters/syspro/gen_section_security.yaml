@@ -1,0 +1,15 @@
+concept: gen_section_security
+table: GenSectionSecurity
+alias: gss
+fields:
+  security_type: gss.SecurityType
+  section_number: gss.SectionNumber
+  parent_section: gss.ParentSection
+  security_level: gss.SecurityLevel
+  security_key: gss.SecurityKey
+  child_section: gss.ChildSection
+  all_none_list: gss.AllNoneList
+  date_modified: gss.DateModified
+  operator: gss.Operator
+  allow_children: gss.AllowChildren
+  allow_root_query: gss.AllowRootQuery

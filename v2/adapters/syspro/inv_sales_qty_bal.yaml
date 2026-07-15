@@ -1,0 +1,23 @@
+concept: inv_sales_qty_bal
+table: InvSalesQtyBal
+alias: isqb
+fields:
+  run_date_time: isqb.RunDateTime
+  stock_code: isqb.StockCode
+  warehouse: isqb.Warehouse
+  active_lines: isqb.ActiveLines
+  in_process_lines: isqb.InProcessLines
+  whs_alloc_qty: isqb.WhsAllocQty
+  sor_alloc_qty: isqb.SorAllocQty
+  whs_back_qty: isqb.WhsBackQty
+  sor_back_qty: isqb.SorBackQty
+  whs_bin_ship_qty: isqb.WhsBinShipQty
+  sor_bin_ship_qty: isqb.SorBinShipQty
+  whs_lot_ship_qty: isqb.WhsLotShipQty
+  sor_lot_ship_qty: isqb.SorLotShipQty
+  whs_ser_ship_qty: isqb.WhsSerShipQty
+  sor_ser_ship_qty: isqb.SorSerShipQty
+  active_dispatches: isqb.ActiveDispatches
+  in_process_dsp: isqb.InProcessDsp
+  whs_disp_qty: isqb.WhsDispQty
+  sor_disp_ship_qty: isqb.SorDispShipQty

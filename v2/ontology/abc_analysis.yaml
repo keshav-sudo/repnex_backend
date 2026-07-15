@@ -1,0 +1,108 @@
+concept: abc_analysis
+display_name: AbcAnalysis
+module: other
+description: Auto-generated representation of the physical table AbcAnalysis.
+synonyms:
+- abcanalysis
+- abc analysis
+header_attributes:
+  element:
+    display: Element
+    type: string
+    required: false
+    description: Field Element from AbcAnalysis
+  incident:
+    display: Incident
+    type: string
+    required: false
+    description: Field Incident from AbcAnalysis
+  trn_date:
+    display: Trndate
+    type: date
+    required: false
+    description: Field TrnDate from AbcAnalysis
+  inv_reg_journal:
+    display: Invregjournal
+    type: decimal
+    required: false
+    description: Field InvRegJournal from AbcAnalysis
+  entry_number:
+    display: Entrynumber
+    type: decimal
+    required: false
+    description: Field EntryNumber from AbcAnalysis
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from AbcAnalysis
+  gl_period:
+    display: Glperiod
+    type: decimal
+    required: false
+    description: Field GlPeriod from AbcAnalysis
+  route:
+    display: Route
+    type: string
+    required: false
+    description: Field Route from AbcAnalysis
+  calculation_method:
+    display: Calculationmethod
+    type: string
+    required: false
+    description: Field CalculationMethod from AbcAnalysis
+  group_code:
+    display: Groupcode
+    type: string
+    required: false
+    description: Field GroupCode from AbcAnalysis
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from AbcAnalysis
+  add_reference:
+    display: Addreference
+    type: string
+    required: false
+    description: Field AddReference from AbcAnalysis
+  document_num:
+    display: Documentnum
+    type: string
+    required: false
+    description: Field DocumentNum from AbcAnalysis
+  trn_qty:
+    display: Trnqty
+    type: decimal
+    required: false
+    description: Field TrnQty from AbcAnalysis
+  customer_supplier:
+    display: Customersupplier
+    type: string
+    required: false
+    description: Field CustomerSupplier from AbcAnalysis
+  cust_sup_mult:
+    display: Custsupmult
+    type: decimal
+    required: false
+    description: Field CustSupMult from AbcAnalysis
+  abc_qty:
+    display: Abcqty
+    type: decimal
+    required: false
+    description: Field AbcQty from AbcAnalysis
+  abc_rate:
+    display: Abcrate
+    type: decimal
+    required: false
+    description: Field AbcRate from AbcAnalysis
+  abc_value:
+    display: Abcvalue
+    type: decimal
+    required: false
+    description: Field AbcValue from AbcAnalysis
+  print_status:
+    display: Printstatus
+    type: string
+    required: false
+    description: Field PrintStatus from AbcAnalysis

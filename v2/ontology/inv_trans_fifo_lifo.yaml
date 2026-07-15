@@ -1,0 +1,88 @@
+concept: inv_trans_fifo_lifo
+display_name: InvTransFifoLifo
+module: inventory
+description: Auto-generated representation of the physical table InvTransFifoLifo.
+synonyms:
+- invtransfifolifo
+- inv trans fifo lifo
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvTransFifoLifo
+  recevie_wh:
+    display: Receviewh
+    type: string
+    required: false
+    description: Field RecevieWh from InvTransFifoLifo
+  date_created:
+    display: Datecreated
+    type: date
+    required: false
+    description: Field DateCreated from InvTransFifoLifo
+  time_created:
+    display: Timecreated
+    type: decimal
+    required: false
+    description: Field TimeCreated from InvTransFifoLifo
+  qty_outstanding:
+    display: Qtyoutstanding
+    type: decimal
+    required: false
+    description: Field QtyOutstanding from InvTransFifoLifo
+  fifo_lifo_cost:
+    display: Fifolifocost
+    type: decimal
+    required: false
+    description: Field FifoLifoCost from InvTransFifoLifo
+  reference:
+    display: Reference
+    type: string
+    required: false
+    description: Field Reference from InvTransFifoLifo
+  add_reference:
+    display: Addreference
+    type: string
+    required: false
+    description: Field AddReference from InvTransFifoLifo
+  from_warehouse:
+    display: Fromwarehouse
+    type: string
+    required: false
+    description: Field FromWarehouse from InvTransFifoLifo
+  lot_serial:
+    display: Lotserial
+    type: string
+    required: false
+    description: Field LotSerial from InvTransFifoLifo
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from InvTransFifoLifo
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from InvTransFifoLifo
+  transaction_type:
+    display: Transactiontype
+    type: string
+    required: false
+    description: Field TransactionType from InvTransFifoLifo
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from InvTransFifoLifo
+  dispatch_note_line:
+    display: Dispatchnoteline
+    type: decimal
+    required: false
+    description: Field DispatchNoteLine from InvTransFifoLifo
+  gtr_date:
+    display: Gtrdate
+    type: date
+    required: false
+    description: Field GtrDate from InvTransFifoLifo

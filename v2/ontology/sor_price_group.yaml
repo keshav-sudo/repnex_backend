@@ -1,0 +1,43 @@
+concept: sor_price_group
+display_name: SorPriceGroup
+module: sales_and_distribution
+description: Auto-generated representation of the physical table SorPriceGroup.
+synonyms:
+- sorpricegroup
+- sor price group
+header_attributes:
+  price_group:
+    display: Pricegroup
+    type: string
+    required: false
+    description: Field PriceGroup from SorPriceGroup
+  description:
+    display: Description
+    type: string
+    required: false
+    description: Field Description from SorPriceGroup
+  selection_type:
+    display: Selectiontype
+    type: string
+    required: false
+    description: Field SelectionType from SorPriceGroup
+  branch:
+    display: Branch
+    type: string
+    required: false
+    description: Field Branch from SorPriceGroup
+  geo_area:
+    display: Geoarea
+    type: string
+    required: false
+    description: Field GeoArea from SorPriceGroup
+  customer_class:
+    display: Customerclass
+    type: string
+    required: false
+    description: Field CustomerClass from SorPriceGroup
+  custom_form:
+    display: Customform
+    type: string
+    required: false
+    description: Field CustomForm from SorPriceGroup

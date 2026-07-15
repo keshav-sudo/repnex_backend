@@ -1,0 +1,9 @@
+concept: gtr_wh_matrix
+table: GtrWhMatrix
+alias: gwm
+fields:
+  source_warehouse: gwm.SourceWarehouse
+  target_warehouse: gwm.TargetWarehouse
+  lead_time: gwm.LeadTime
+  transf_cost_gl: gwm.TransfCostGl
+  multiplier: gwm.Multiplier

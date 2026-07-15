@@ -1,0 +1,9 @@
+concept: eam_service_gl
+table: EamServiceGl
+alias: esg
+fields:
+  equipment_code: esg.EquipmentCode
+  gl_code: esg.GlCode
+  description: esg.Description
+  only_expense: esg.OnlyExpense
+  service_notes: esg.ServiceNotes

@@ -1,0 +1,17 @@
+concept: inv_cycle_count_ser
+table: InvCycleCountSer
+alias: iccs
+fields:
+  cycle_count: iccs.CycleCount
+  warehouse: iccs.Warehouse
+  stock_code: iccs.StockCode
+  bin: iccs.Bin
+  serial: iccs.Serial
+  original_quantity: iccs.OriginalQuantity
+  captured_quantity: iccs.CapturedQuantity
+  reference: iccs.Reference
+  create_serial: iccs.CreateSerial
+  lot: iccs.Lot
+  version: iccs.Version
+  release: iccs.Release
+  confirmed_flag: iccs.ConfirmedFlag

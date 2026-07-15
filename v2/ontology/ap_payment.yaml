@@ -1,0 +1,66 @@
+concept: ap_payment
+display_name: AP Payment
+module: accounts_payable
+description: A payment transaction applied against a supplier invoice in Accounts
+  Payable.
+synonyms:
+- supplier payment
+- vendor payment
+- cheque payment
+- AP payment run
+header_attributes:
+  supplier_code:
+    display: Supplier Code
+    type: string
+    required: false
+    description: Supplier code field
+  invoice_number:
+    display: Invoice Number
+    type: string
+    required: false
+    description: Invoice number field
+  journal_date:
+    display: Journal Date
+    type: date
+    required: false
+    description: Journal date field
+  payment_reference:
+    display: Payment Reference
+    type: string
+    required: false
+    description: Payment reference field
+  transaction_value:
+    display: Transaction Value
+    type: decimal
+    required: false
+    description: Transaction value field
+  journal:
+    display: Journal
+    type: decimal
+    required: false
+    description: Journal field
+  trn_year:
+    display: Trn Year
+    type: decimal
+    required: false
+    description: Trn year field
+  trn_month:
+    display: Trn Month
+    type: decimal
+    required: false
+    description: Trn month field
+  trn_type:
+    display: Trn Type
+    type: string
+    required: false
+    description: Trn type field
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Currency field
+  payment_number:
+    display: Payment Number
+    type: string
+    required: false
+    description: Payment number field

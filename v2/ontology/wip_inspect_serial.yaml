@@ -1,0 +1,133 @@
+concept: wip_inspect_serial
+display_name: WipInspectSerial
+module: work_in_progress
+description: Auto-generated representation of the physical table WipInspectSerial.
+synonyms:
+- wipinspectserial
+- wip inspect serial
+header_attributes:
+  insp_reference:
+    display: Inspreference
+    type: string
+    required: false
+    description: Field InspReference from WipInspectSerial
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from WipInspectSerial
+  serial:
+    display: Serial
+    type: string
+    required: false
+    description: Field Serial from WipInspectSerial
+  status:
+    display: Status
+    type: string
+    required: false
+    description: Field Status from WipInspectSerial
+  qty_inspected:
+    display: Qtyinspected
+    type: decimal
+    required: false
+    description: Field QtyInspected from WipInspectSerial
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from WipInspectSerial
+  qty_accepted:
+    display: Qtyaccepted
+    type: decimal
+    required: false
+    description: Field QtyAccepted from WipInspectSerial
+  qty_scrapped:
+    display: Qtyscrapped
+    type: decimal
+    required: false
+    description: Field QtyScrapped from WipInspectSerial
+  qty_reworked:
+    display: Qtyreworked
+    type: decimal
+    required: false
+    description: Field QtyReworked from WipInspectSerial
+  transaction_date:
+    display: Transactiondate
+    type: date
+    required: false
+    description: Field TransactionDate from WipInspectSerial
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from WipInspectSerial
+  document_num:
+    display: Documentnum
+    type: string
+    required: false
+    description: Field DocumentNum from WipInspectSerial
+  transf_to_new_wh:
+    display: Transftonewwh
+    type: string
+    required: false
+    description: Field TransfToNewWh from WipInspectSerial
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from WipInspectSerial
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from WipInspectSerial
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from WipInspectSerial
+  rework_job:
+    display: Reworkjob
+    type: string
+    required: false
+    description: Field ReworkJob from WipInspectSerial
+  expiry_date:
+    display: Expirydate
+    type: date
+    required: false
+    description: Field ExpiryDate from WipInspectSerial
+  location:
+    display: Location
+    type: string
+    required: false
+    description: Field Location from WipInspectSerial
+  co_product_line:
+    display: Coproductline
+    type: decimal
+    required: false
+    description: Field CoProductLine from WipInspectSerial
+  qty_inspected_ent:
+    display: Qtyinspectedent
+    type: decimal
+    required: false
+    description: Field QtyInspectedEnt from WipInspectSerial
+  quantity_ent:
+    display: Quantityent
+    type: decimal
+    required: false
+    description: Field QuantityEnt from WipInspectSerial
+  qty_accepted_ent:
+    display: Qtyacceptedent
+    type: decimal
+    required: false
+    description: Field QtyAcceptedEnt from WipInspectSerial
+  qty_scrapped_ent:
+    display: Qtyscrappedent
+    type: decimal
+    required: false
+    description: Field QtyScrappedEnt from WipInspectSerial
+  qty_reworked_ent:
+    display: Qtyreworkedent
+    type: decimal
+    required: false
+    description: Field QtyReworkedEnt from WipInspectSerial

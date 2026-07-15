@@ -1,0 +1,78 @@
+concept: mdn_detail_bin_cons
+display_name: MdnDetailBinCons
+module: other
+description: Auto-generated representation of the physical table MdnDetailBinCons.
+synonyms:
+- mdndetailbincons
+- mdn detail bin cons
+header_attributes:
+  key_invoice:
+    display: Keyinvoice
+    type: string
+    required: false
+    description: Field KeyInvoice from MdnDetailBinCons
+  key_sales_order:
+    display: Keysalesorder
+    type: string
+    required: false
+    description: Field KeySalesOrder from MdnDetailBinCons
+  key_sales_order_line:
+    display: Keysalesorderline
+    type: decimal
+    required: false
+    description: Field KeySalesOrderLine from MdnDetailBinCons
+  key_dispatch_note:
+    display: Keydispatchnote
+    type: string
+    required: false
+    description: Field KeyDispatchNote from MdnDetailBinCons
+  key_dispatch_line:
+    display: Keydispatchline
+    type: decimal
+    required: false
+    description: Field KeyDispatchLine from MdnDetailBinCons
+  key_record_count:
+    display: Keyrecordcount
+    type: decimal
+    required: false
+    description: Field KeyRecordCount from MdnDetailBinCons
+  dispatch_note:
+    display: Dispatchnote
+    type: string
+    required: false
+    description: Field DispatchNote from MdnDetailBinCons
+  dispatch_note_line:
+    display: Dispatchnoteline
+    type: decimal
+    required: false
+    description: Field DispatchNoteLine from MdnDetailBinCons
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from MdnDetailBinCons
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from MdnDetailBinCons
+  lot:
+    display: Lot
+    type: string
+    required: false
+    description: Field Lot from MdnDetailBinCons
+  bin:
+    display: Bin
+    type: string
+    required: false
+    description: Field Bin from MdnDetailBinCons
+  stock_qty_to_ship:
+    display: Stockqtytoship
+    type: decimal
+    required: false
+    description: Field StockQtyToShip from MdnDetailBinCons
+  qty_this_session:
+    display: Qtythissession
+    type: decimal
+    required: false
+    description: Field QtyThisSession from MdnDetailBinCons

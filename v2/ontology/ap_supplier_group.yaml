@@ -1,0 +1,28 @@
+concept: ap_supplier_group
+display_name: ApSupplierGroup
+module: accounts_payable
+description: Auto-generated representation of the physical table ApSupplierGroup.
+synonyms:
+- apsuppliergroup
+- ap supplier group
+header_attributes:
+  group_supplier:
+    display: Groupsupplier
+    type: string
+    required: false
+    description: Field GroupSupplier from ApSupplierGroup
+  company:
+    display: Company
+    type: string
+    required: false
+    description: Field Company from ApSupplierGroup
+  supplier:
+    display: Supplier
+    type: string
+    required: false
+    description: Field Supplier from ApSupplierGroup
+  currency:
+    display: Currency
+    type: string
+    required: false
+    description: Field Currency from ApSupplierGroup

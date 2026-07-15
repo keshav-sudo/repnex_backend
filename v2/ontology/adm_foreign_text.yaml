@@ -1,0 +1,28 @@
+concept: adm_foreign_text
+display_name: AdmForeignText
+module: administration
+description: Auto-generated representation of the physical table AdmForeignText.
+synonyms:
+- admforeigntext
+- adm foreign text
+header_attributes:
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from AdmForeignText
+  text_type_flag:
+    display: Texttypeflag
+    type: string
+    required: false
+    description: Field TextTypeFlag from AdmForeignText
+  adm_key_field:
+    display: Admkeyfield
+    type: string
+    required: false
+    description: Field AdmKeyField from AdmForeignText
+  text:
+    display: Text
+    type: string
+    required: false
+    description: Field Text from AdmForeignText

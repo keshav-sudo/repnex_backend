@@ -1,0 +1,36 @@
+concept: gen_section
+table: GenSection
+alias: gs
+fields:
+  section_number: gs.SectionNumber
+  section_code: gs.SectionCode
+  description: gs.Description
+  account_type: gs.AccountType
+  expense_type: gs.ExpenseType
+  gl_group: gs.GlGroup
+  budget_method: gs.BudgetMethod
+  control_acc_flag: gs.ControlAccFlag
+  tax_code: gs.TaxCode
+  integration_method: gs.IntegrationMethod
+  alt_description: gs.AltDescription
+  tax2_code: gs.Tax2Code
+  reval_category: gs.RevalCategory
+  alt_cur_indicator: gs.AltCurIndicator
+  gl_unit_of_measure: gs.GlUnitOfMeasure
+  business_process1: gs.BusinessProcess1
+  business_process2: gs.BusinessProcess2
+  business_process3: gs.BusinessProcess3
+  business_process4: gs.BusinessProcess4
+  business_process5: gs.BusinessProcess5
+  business_process6: gs.BusinessProcess6
+  business_process7: gs.BusinessProcess7
+  business_process8: gs.BusinessProcess8
+  business_process9: gs.BusinessProcess9
+  business_process10: gs.BusinessProcess10
+  gl_tag: gs.GlTag
+  analysis_required: gs.AnalysisRequired
+  analysis_category: gs.AnalysisCategory
+  current_ind: gs.CurrentInd
+  ret_earns_account: gs.RetEarnsAccount
+  tax_account: gs.TaxAccount
+  interest_account: gs.InterestAccount

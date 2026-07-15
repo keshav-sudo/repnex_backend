@@ -1,0 +1,11 @@
+concept: srs_archive_tra
+table: SrsArchiveTRA
+alias: satra
+fields:
+  archive_date: satra.ArchiveDate
+  archive_time: satra.ArchiveTime
+  operator: satra.Operator
+  archive_id: satra.ArchiveId
+  archive_type: satra.ArchiveType
+  archive_file: satra.ArchiveFile
+  transfer_docno: satra.TransferDocno

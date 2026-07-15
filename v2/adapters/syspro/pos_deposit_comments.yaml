@@ -1,0 +1,10 @@
+concept: pos_deposit_comments
+table: PosDepositComments
+alias: pdc
+fields:
+  sales_order: pdc.SalesOrder
+  deposit_date: pdc.DepositDate
+  invoice: pdc.Invoice
+  comment_line: pdc.CommentLine
+  comment: pdc.Comment
+  comment_date: pdc.CommentDate

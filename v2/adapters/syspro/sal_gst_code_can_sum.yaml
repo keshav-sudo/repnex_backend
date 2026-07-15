@@ -1,0 +1,13 @@
+concept: sal_gst_code_can_sum
+table: SalGstCodeCanSum
+alias: sgccs
+fields:
+  gl_year: sgccs.GlYear
+  gl_month: sgccs.GlMonth
+  register: sgccs.Register
+  collect_exempt: sgccs.CollectExempt
+  tax_code: sgccs.TaxCode
+  cur_gst_rate: sgccs.CurGstRate
+  prev_gst_bal: sgccs.PrevGstBal
+  exempt_val: sgccs.ExemptVal
+  fst_value: sgccs.FstValue

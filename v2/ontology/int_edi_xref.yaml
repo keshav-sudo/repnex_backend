@@ -1,0 +1,28 @@
+concept: int_edi_xref
+display_name: IntEdiXref
+module: other
+description: Auto-generated representation of the physical table IntEdiXref.
+synonyms:
+- intedixref
+- int edi xref
+header_attributes:
+  customer_po_number:
+    display: Customerponumber
+    type: string
+    required: false
+    description: Field CustomerPoNumber from IntEdiXref
+  import_line_num:
+    display: Importlinenum
+    type: decimal
+    required: false
+    description: Field ImportLineNum from IntEdiXref
+  sales_order:
+    display: Salesorder
+    type: string
+    required: false
+    description: Field SalesOrder from IntEdiXref
+  sales_order_line:
+    display: Salesorderline
+    type: decimal
+    required: false
+    description: Field SalesOrderLine from IntEdiXref

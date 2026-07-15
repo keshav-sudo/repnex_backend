@@ -1,0 +1,30 @@
+concept: ap_perm_entries
+table: ApPermEntries
+alias: ape
+fields:
+  release_day: ape.ReleaseDay
+  supplier: ape.Supplier
+  invoice: ape.Invoice
+  invoice_line: ape.InvoiceLine
+  entry_type: ape.EntryType
+  expiry_date: ape.ExpiryDate
+  invoice_value: ape.InvoiceValue
+  gl_code: ape.GlCode
+  next_post_period: ape.NextPostPeriod
+  transfer_freq: ape.TransferFreq
+  cumulative_value: ape.CumulativeValue
+  posted_flag: ape.PostedFlag
+  discount_pct: ape.DiscountPct
+  reference: ape.Reference
+  notation: ape.Notation
+  tax_value: ape.TaxValue
+  tax_code: ape.TaxCode
+  tax2_value: ape.Tax2Value
+  tax2_code: ape.Tax2Code
+  analysis_entry: ape.AnalysisEntry
+  nationality: ape.Nationality
+  tax_regn_num: ape.TaxRegnNum
+  with_tax_expense_type: ape.WithTaxExpenseType
+  with_tax_code: ape.WithTaxCode
+  dimension_entry: ape.DimensionEntry
+  dimension_line: ape.DimensionLine

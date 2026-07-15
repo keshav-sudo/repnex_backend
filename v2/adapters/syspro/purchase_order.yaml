@@ -1,0 +1,34 @@
+concept: purchase_order
+table: PorMasterHdr
+alias: ph
+fields:
+  purchase_order: ph.PurchaseOrder
+  supplier_code: ph.Supplier
+  order_status: ph.OrderStatus
+  order_date: ph.OrderEntryDate
+  due_date: ph.OrderDueDate
+  warehouse: ph.Warehouse
+  buyer: ph.Buyer
+  currency: ph.Currency
+  exchange_rate: ph.ExchangeRate
+  payment_terms: ph.PaymentTerms
+  cancelled_flag: ph.CancelledFlag
+calculated_fields:
+  outstanding_qty: (pd.MOrderQty - pd.MReceivedQty)
+balance_mapping:
+  table: PorMasterDetail
+  alias: pd
+  join_on: ph.PurchaseOrder = pd.PurchaseOrder
+  fields:
+    line_number: pd.Line
+    stock_code: pd.MStockCode
+    description: pd.MStockDes
+    order_qty: pd.MOrderQty
+    received_qty: pd.MReceivedQty
+    unit_price: pd.MPrice
+    line_due_date: pd.MLatestDueDate
+    line_complete: pd.MCompleteFlag
+    tax_code: pd.MTaxCode
+    product_class: pd.MProductClass
+default_filters:
+  active_only: ph.CancelledFlag = 'N'

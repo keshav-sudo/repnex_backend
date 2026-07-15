@@ -1,0 +1,78 @@
+concept: eam_schedule
+display_name: EamSchedule
+module: other
+description: Auto-generated representation of the physical table EamSchedule.
+synonyms:
+- eamschedule
+- eam schedule
+header_attributes:
+  equipment_code:
+    display: Equipmentcode
+    type: string
+    required: false
+    description: Field EquipmentCode from EamSchedule
+  maint_service_type:
+    display: Maintservicetype
+    type: string
+    required: false
+    description: Field MaintServiceType from EamSchedule
+  date_created:
+    display: Datecreated
+    type: date
+    required: false
+    description: Field DateCreated from EamSchedule
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from EamSchedule
+  job_description:
+    display: Jobdescription
+    type: string
+    required: false
+    description: Field JobDescription from EamSchedule
+  wip_branch:
+    display: Wipbranch
+    type: string
+    required: false
+    description: Field WipBranch from EamSchedule
+  wip_ctl_gl_code:
+    display: Wipctlglcode
+    type: string
+    required: false
+    description: Field WipCtlGlCode from EamSchedule
+  qty_required:
+    display: Qtyrequired
+    type: decimal
+    required: false
+    description: Field QtyRequired from EamSchedule
+  start_date:
+    display: Startdate
+    type: date
+    required: false
+    description: Field StartDate from EamSchedule
+  end_date:
+    display: Enddate
+    type: date
+    required: false
+    description: Field EndDate from EamSchedule
+  job_classification:
+    display: Jobclassification
+    type: string
+    required: false
+    description: Field JobClassification from EamSchedule
+  confirmed_flag:
+    display: Confirmedflag
+    type: string
+    required: false
+    description: Field ConfirmedFlag from EamSchedule
+  job:
+    display: Job
+    type: string
+    required: false
+    description: Field Job from EamSchedule
+  last_operator:
+    display: Lastoperator
+    type: string
+    required: false
+    description: Field LastOperator from EamSchedule

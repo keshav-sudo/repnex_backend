@@ -1,0 +1,9 @@
+concept: mrp_exploded_res
+table: MrpExplodedRes
+alias: mer
+fields:
+  resource_code: mer.ResourceCode
+  line: mer.Line
+  required_date: mer.RequiredDate
+  quantity_reqd: mer.QuantityReqd
+  offset_days: mer.OffsetDays

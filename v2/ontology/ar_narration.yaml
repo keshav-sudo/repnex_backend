@@ -1,0 +1,38 @@
+concept: ar_narration
+display_name: ArNarration
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArNarration.
+synonyms:
+- arnarration
+- ar narration
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArNarration
+  invoice:
+    display: Invoice
+    type: string
+    required: false
+    description: Field Invoice from ArNarration
+  invoice_type:
+    display: Invoicetype
+    type: string
+    required: false
+    description: Field InvoiceType from ArNarration
+  note_type:
+    display: Notetype
+    type: string
+    required: false
+    description: Field NoteType from ArNarration
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from ArNarration
+  notation:
+    display: Notation
+    type: string
+    required: false
+    description: Field Notation from ArNarration

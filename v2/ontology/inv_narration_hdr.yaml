@@ -1,0 +1,33 @@
+concept: inv_narration_hdr
+display_name: InvNarrationHdr
+module: inventory
+description: Auto-generated representation of the physical table InvNarrationHdr.
+synonyms:
+- invnarrationhdr
+- inv narration hdr
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from InvNarrationHdr
+  text_type:
+    display: Texttype
+    type: string
+    required: false
+    description: Field TextType from InvNarrationHdr
+  language_code:
+    display: Languagecode
+    type: string
+    required: false
+    description: Field LanguageCode from InvNarrationHdr
+  date_last_modified:
+    display: Datelastmodified
+    type: date
+    required: false
+    description: Field DateLastModified from InvNarrationHdr
+  optional_note:
+    display: Optionalnote
+    type: string
+    required: false
+    description: Field OptionalNote from InvNarrationHdr

@@ -1,0 +1,10 @@
+concept: sqm_nc_plan
+table: SqmNcPlan
+alias: snp
+fields:
+  conform_standard: snp.ConformStandard
+  conform_area: snp.ConformArea
+  action_number: snp.ActionNumber
+  nc_action: snp.NcAction
+  stake_holder: snp.StakeHolder
+  action_hours: snp.ActionHours

@@ -1,0 +1,6 @@
+concept: sqm_aq_limit
+table: SqmAqLimit
+alias: sal
+fields:
+  plan_type: sal.PlanType
+  acc_quality_limit: sal.AccQualityLimit

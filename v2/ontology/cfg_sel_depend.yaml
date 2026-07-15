@@ -1,0 +1,38 @@
+concept: cfg_sel_depend
+display_name: CfgSelDepend
+module: other
+description: Auto-generated representation of the physical table CfgSelDepend.
+synonyms:
+- cfgseldepend
+- cfg sel depend
+header_attributes:
+  product_code:
+    display: Productcode
+    type: string
+    required: false
+    description: Field ProductCode from CfgSelDepend
+  depend_value_flag:
+    display: Dependvalueflag
+    type: string
+    required: false
+    description: Field DependValueFlag from CfgSelDepend
+  option_num:
+    display: Optionnum
+    type: decimal
+    required: false
+    description: Field OptionNum from CfgSelDepend
+  line:
+    display: Line
+    type: decimal
+    required: false
+    description: Field Line from CfgSelDepend
+  req_selection:
+    display: Reqselection
+    type: decimal
+    required: false
+    description: Field ReqSelection from CfgSelDepend
+  req_criteria:
+    display: Reqcriteria
+    type: decimal
+    required: false
+    description: Field ReqCriteria from CfgSelDepend

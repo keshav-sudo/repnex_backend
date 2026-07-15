@@ -1,0 +1,73 @@
+concept: iop_sales_returns
+display_name: IopSalesReturns
+module: other
+description: Auto-generated representation of the physical table IopSalesReturns.
+synonyms:
+- iopsalesreturns
+- iop sales returns
+header_attributes:
+  stock_code:
+    display: Stockcode
+    type: string
+    required: false
+    description: Field StockCode from IopSalesReturns
+  version:
+    display: Version
+    type: string
+    required: false
+    description: Field Version from IopSalesReturns
+  release:
+    display: Release
+    type: string
+    required: false
+    description: Field Release from IopSalesReturns
+  warehouse:
+    display: Warehouse
+    type: string
+    required: false
+    description: Field Warehouse from IopSalesReturns
+  movement_date:
+    display: Movementdate
+    type: date
+    required: false
+    description: Field MovementDate from IopSalesReturns
+  ytd_trans_count:
+    display: Ytdtranscount
+    type: decimal
+    required: false
+    description: Field YtdTransCount from IopSalesReturns
+  ytd_quantity:
+    display: Ytdquantity
+    type: decimal
+    required: false
+    description: Field YtdQuantity from IopSalesReturns
+  ytd_cost_value:
+    display: Ytdcostvalue
+    type: decimal
+    required: false
+    description: Field YtdCostValue from IopSalesReturns
+  ytd_sales_value:
+    display: Ytdsalesvalue
+    type: decimal
+    required: false
+    description: Field YtdSalesValue from IopSalesReturns
+  trans_count:
+    display: Transcount
+    type: decimal
+    required: false
+    description: Field TransCount from IopSalesReturns
+  quantity:
+    display: Quantity
+    type: decimal
+    required: false
+    description: Field Quantity from IopSalesReturns
+  cost_value:
+    display: Costvalue
+    type: decimal
+    required: false
+    description: Field CostValue from IopSalesReturns
+  sales_value:
+    display: Salesvalue
+    type: decimal
+    required: false
+    description: Field SalesValue from IopSalesReturns

@@ -1,0 +1,18 @@
+concept: ap_check_format
+display_name: ApCheckFormat
+module: accounts_payable
+description: Auto-generated representation of the physical table ApCheckFormat.
+synonyms:
+- apcheckformat
+- ap check format
+header_attributes:
+  bank:
+    display: Bank
+    type: string
+    required: false
+    description: Field Bank from ApCheckFormat
+  document_info:
+    display: Documentinfo
+    type: string
+    required: false
+    description: Field DocumentInfo from ApCheckFormat

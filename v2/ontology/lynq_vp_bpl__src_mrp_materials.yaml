@@ -1,0 +1,193 @@
+concept: lynq_vp_bpl__src_mrp_materials
+display_name: Lynq VP BPL Src MRPMaterials
+module: other
+description: Auto-generated representation of the physical table Lynq_VP_BPL_Src_MRPMaterials.
+synonyms:
+- lynq_vp_bpl_src_mrpmaterials
+- lynq vp bpl  src mrp materials
+header_attributes:
+  id:
+    display: Id
+    type: decimal
+    required: false
+    description: Field ID from Lynq_VP_BPL_Src_MRPMaterials
+  type_id:
+    display: Typeid
+    type: string
+    required: false
+    description: Field TypeID from Lynq_VP_BPL_Src_MRPMaterials
+  ord_type:
+    display: Ordtype
+    type: string
+    required: false
+    description: Field OrdType from Lynq_VP_BPL_Src_MRPMaterials
+  ord_number:
+    display: Ordnumber
+    type: string
+    required: false
+    description: Field OrdNumber from Lynq_VP_BPL_Src_MRPMaterials
+  atch_ord_id_str:
+    display: Atchordidstr
+    type: string
+    required: false
+    description: Field AtchOrdIDStr from Lynq_VP_BPL_Src_MRPMaterials
+  atch_oper_id_str:
+    display: Atchoperidstr
+    type: string
+    required: false
+    description: Field AtchOperIDStr from Lynq_VP_BPL_Src_MRPMaterials
+  atch_entity_type_id:
+    display: Atchentitytypeid
+    type: string
+    required: false
+    description: Field AtchEntityTypeID from Lynq_VP_BPL_Src_MRPMaterials
+  atch_oper_number:
+    display: Atchopernumber
+    type: decimal
+    required: false
+    description: Field AtchOperNumber from Lynq_VP_BPL_Src_MRPMaterials
+  atch_path_number:
+    display: Atchpathnumber
+    type: decimal
+    required: false
+    description: Field AtchPathNumber from Lynq_VP_BPL_Src_MRPMaterials
+  atch_par_path_number:
+    display: Atchparpathnumber
+    type: decimal
+    required: false
+    description: Field AtchParPathNumber from Lynq_VP_BPL_Src_MRPMaterials
+  atch_oper_sequence_number:
+    display: Atchopersequencenumber
+    type: decimal
+    required: false
+    description: Field AtchOperSequenceNumber from Lynq_VP_BPL_Src_MRPMaterials
+  atch_rec_type:
+    display: Atchrectype
+    type: string
+    required: false
+    description: Field AtchRecType from Lynq_VP_BPL_Src_MRPMaterials
+  atch_oper_type:
+    display: Atchopertype
+    type: string
+    required: false
+    description: Field AtchOperType from Lynq_VP_BPL_Src_MRPMaterials
+  status_code1:
+    display: Statuscode1
+    type: string
+    required: false
+    description: Field StatusCode1 from Lynq_VP_BPL_Src_MRPMaterials
+  item_number:
+    display: Itemnumber
+    type: string
+    required: false
+    description: Field ItemNumber from Lynq_VP_BPL_Src_MRPMaterials
+  location_code:
+    display: Locationcode
+    type: string
+    required: false
+    description: Field LocationCode from Lynq_VP_BPL_Src_MRPMaterials
+  line:
+    display: Line
+    type: string
+    required: false
+    description: Field Line from Lynq_VP_BPL_Src_MRPMaterials
+  quantity_required:
+    display: Quantityrequired
+    type: decimal
+    required: false
+    description: Field QuantityRequired from Lynq_VP_BPL_Src_MRPMaterials
+  req_date:
+    display: Reqdate
+    type: date
+    required: false
+    description: Field ReqDate from Lynq_VP_BPL_Src_MRPMaterials
+  quantity_per:
+    display: Quantityper
+    type: decimal
+    required: false
+    description: Field QuantityPer from Lynq_VP_BPL_Src_MRPMaterials
+  fixed_quantity_per:
+    display: Fixedquantityper
+    type: decimal
+    required: false
+    description: Field FixedQuantityPer from Lynq_VP_BPL_Src_MRPMaterials
+  scrap_persentage:
+    display: Scrappersentage
+    type: decimal
+    required: false
+    description: Field ScrapPersentage from Lynq_VP_BPL_Src_MRPMaterials
+  scrap_quantity:
+    display: Scrapquantity
+    type: decimal
+    required: false
+    description: Field ScrapQuantity from Lynq_VP_BPL_Src_MRPMaterials
+  material_wait_time:
+    display: Materialwaittime
+    type: decimal
+    required: false
+    description: Field MaterialWaitTime from Lynq_VP_BPL_Src_MRPMaterials
+  fld_date_time1:
+    display: Flddatetime1
+    type: date
+    required: false
+    description: Field FldDateTime1 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_date_time2:
+    display: Flddatetime2
+    type: date
+    required: false
+    description: Field FldDateTime2 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_date_time3:
+    display: Flddatetime3
+    type: date
+    required: false
+    description: Field FldDateTime3 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_decimal1:
+    display: Flddecimal1
+    type: decimal
+    required: false
+    description: Field FldDecimal1 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_decimal2:
+    display: Flddecimal2
+    type: decimal
+    required: false
+    description: Field FldDecimal2 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_decimal3:
+    display: Flddecimal3
+    type: decimal
+    required: false
+    description: Field FldDecimal3 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_decimal4:
+    display: Flddecimal4
+    type: decimal
+    required: false
+    description: Field FldDecimal4 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_decimal5:
+    display: Flddecimal5
+    type: decimal
+    required: false
+    description: Field FldDecimal5 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_string1:
+    display: Fldstring1
+    type: string
+    required: false
+    description: Field FldString1 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_string2:
+    display: Fldstring2
+    type: string
+    required: false
+    description: Field FldString2 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_string3:
+    display: Fldstring3
+    type: string
+    required: false
+    description: Field FldString3 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_string4:
+    display: Fldstring4
+    type: string
+    required: false
+    description: Field FldString4 from Lynq_VP_BPL_Src_MRPMaterials
+  fld_string5:
+    display: Fldstring5
+    type: string
+    required: false
+    description: Field FldString5 from Lynq_VP_BPL_Src_MRPMaterials

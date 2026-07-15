@@ -1,0 +1,8 @@
+concept: asset_integ_ctl
+table: AssetIntegCtl
+alias: aic2
+fields:
+  ctl_flag: aic2.CtlFlag
+  branch_reqd: aic2.BranchReqd
+  cost_center_reqd: aic2.CostCenterReqd
+  group_code_reqd: aic2.GroupCodeReqd

@@ -1,0 +1,43 @@
+concept: ar_post_dated_ch
+display_name: ArPostDatedCh
+module: accounts_receivable
+description: Auto-generated representation of the physical table ArPostDatedCh.
+synonyms:
+- arpostdatedch
+- ar post dated ch
+header_attributes:
+  customer:
+    display: Customer
+    type: string
+    required: false
+    description: Field Customer from ArPostDatedCh
+  available_date:
+    display: Availabledate
+    type: date
+    required: false
+    description: Field AvailableDate from ArPostDatedCh
+  cheque:
+    display: Cheque
+    type: string
+    required: false
+    description: Field Cheque from ArPostDatedCh
+  amount:
+    display: Amount
+    type: decimal
+    required: false
+    description: Field Amount from ArPostDatedCh
+  narration:
+    display: Narration
+    type: string
+    required: false
+    description: Field Narration from ArPostDatedCh
+  payment_run_flag:
+    display: Paymentrunflag
+    type: string
+    required: false
+    description: Field PaymentRunFlag from ArPostDatedCh
+  collector_number_ar:
+    display: Collectornumberar
+    type: string
+    required: false
+    description: Field CollectorNumberAr from ArPostDatedCh

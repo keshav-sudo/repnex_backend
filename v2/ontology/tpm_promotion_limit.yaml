@@ -1,0 +1,43 @@
+concept: tpm_promotion_limit
+display_name: TpmPromotionLimit
+module: other
+description: Auto-generated representation of the physical table TpmPromotionLimit.
+synonyms:
+- tpmpromotionlimit
+- tpm promotion limit
+header_attributes:
+  promotion_code:
+    display: Promotioncode
+    type: string
+    required: false
+    description: Field PromotionCode from TpmPromotionLimit
+  promotion_limit:
+    display: Promotionlimit
+    type: decimal
+    required: false
+    description: Field PromotionLimit from TpmPromotionLimit
+  promotion_value:
+    display: Promotionvalue
+    type: decimal
+    required: false
+    description: Field PromotionValue from TpmPromotionLimit
+  promotion_amount:
+    display: Promotionamount
+    type: decimal
+    required: false
+    description: Field PromotionAmount from TpmPromotionLimit
+  promotion_quantity:
+    display: Promotionquantity
+    type: decimal
+    required: false
+    description: Field PromotionQuantity from TpmPromotionLimit
+  promotion_mass:
+    display: Promotionmass
+    type: decimal
+    required: false
+    description: Field PromotionMass from TpmPromotionLimit
+  promotion_volume:
+    display: Promotionvolume
+    type: decimal
+    required: false
+    description: Field PromotionVolume from TpmPromotionLimit
