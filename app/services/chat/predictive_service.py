@@ -176,7 +176,7 @@ async def detect_and_run_predictive(
 
     intent = IntentResult(
         template_id="predictive_customer_analysis",
-        params={"target": target, "customer_filter": customer_filter},
+        params={"target": "customer", "customer_filter": customer_filter},
         confidence=1.0,
         rationale="agentic_rfm_prediction",
     )
