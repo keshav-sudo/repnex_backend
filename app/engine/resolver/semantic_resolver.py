@@ -41,20 +41,22 @@ CRITICAL RULES:
 8. ARITHMETIC & NEGATIVE VALUES: Pay close attention to negative and positive values. When calculating margins, balances, or outstanding values, ensure you use the correct mathematical sign (+ or -) and logic. Outstanding balance filters must check for non-zero or positive/negative amounts as appropriate (e.g. outstanding invoices typically have a positive remaining balance, while negative amounts might indicate credit notes or pre-payments depending on the field meaning).
 9. PREDICTIVE & PROBABILITY QUERIES: If the user asks "which customer is likely to order next",
    "reorder probability", "churn risk", or any forecasting question — DO NOT respond with CONVERSATIONAL.
-   Instead, generate an RFM (Recency, Frequency, Monetary) SQL query using SorMaster only (never SorMaster#).
-   CRITICAL JOIN RULE: Always join ArCustomer to SorMaster ON ArCustomer.Customer = SorMaster.Customer.
-   Never join on SalesOrder. Score each customer on:
-   - Recency: Days since their last OrderDate (lower = higher priority, use DATEDIFF or TIMESTAMPDIFF)
-   - Frequency: COUNT of SalesOrder in last 12 months
-   - Monetary: not needed if OrderValue column absent — omit or use COUNT only
+   Instead, generate an RFM query using ArInvoice joined with ArCustomer.
+   CRITICAL: Use ONLY these tables which are confirmed to exist: ArInvoice, ArCustomer, ArCustomerBal.
+   NEVER use SorMaster, SorDetail, or any table not in the LIVE DATABASE SCHEMA above.
+   Score each customer on:
+   - Recency: Days since their last InvoiceDate
+   - Frequency: COUNT of Invoice records in last 12 months
    Correct MySQL example pattern:
-     SELECT sm.Customer, MAX(sm.OrderDate) AS LastOrderDate,
-       COUNT(sm.SalesOrder) AS OrderFrequency,
-       DATEDIFF(NOW(), MAX(sm.OrderDate)) AS DaysSinceLastOrder
-     FROM SorMaster sm
-     WHERE sm.OrderDate >= DATE_SUB(NOW(), INTERVAL 12 MONTH)
-     GROUP BY sm.Customer
-     ORDER BY DaysSinceLastOrder ASC, OrderFrequency DESC
+     SELECT ai.Customer, c.Name,
+       MAX(ai.InvoiceDate) AS LastInvoiceDate,
+       COUNT(ai.Invoice) AS InvoiceFrequency,
+       DATEDIFF(NOW(), MAX(ai.InvoiceDate)) AS DaysSinceLastInvoice
+     FROM ArInvoice ai
+     LEFT JOIN ArCustomer c ON ai.Customer = c.Customer
+     WHERE ai.InvoiceDate >= DATE_SUB(NOW(), INTERVAL 12 MONTH)
+     GROUP BY ai.Customer, c.Name
+     ORDER BY DaysSinceLastInvoice ASC, InvoiceFrequency DESC
      LIMIT 20
 """
 
