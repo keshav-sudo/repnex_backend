@@ -165,10 +165,15 @@ async def chat(
     # ── Translate NL → SQL via SemanticResolver ─────────────────────────────
     target_dialect = conn.db_type.value if conn else None
     resolver = SemanticResolver(erp_type=erp_type, target_dialect=target_dialect)
+    # Pass the live synced schema from the connection so the LLM uses actual table names
+    live_schema = None
+    if conn and conn.schema_info and conn.schema_info.get("tables"):
+        live_schema = conn.schema_info
     try:
         history_window = list(session.context_window[:-1]) if session and len(session.context_window) > 1 else None
         generated_sql = await resolver.translate_to_sql(
-            nl, start_date=start_date, end_date=end_date, history=history_window
+            nl, start_date=start_date, end_date=end_date, history=history_window,
+            live_schema=live_schema,
         )
     except Exception as exc:
         log.error("semantic_translation_failed", extra={"err": str(exc)}, exc_info=True)

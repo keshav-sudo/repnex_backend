@@ -81,6 +81,7 @@ class SemanticResolver:
         start_date: str | None = None,
         end_date: str | None = None,
         history: list[dict] | None = None,
+        live_schema: dict | None = None,
     ) -> str:
         """Translate a natural language query into a valid SQL string.
 
@@ -92,6 +93,17 @@ class SemanticResolver:
         dialect = self.target_dialect or get_dialect(self.erp_type, meta)
         context = self._context_builder.build()
 
+        # If a live synced schema exists, prepend it so the LLM uses actual table names
+        if live_schema and live_schema.get("tables"):
+            live_lines = ["\n--- LIVE DATABASE SCHEMA (USE THESE EXACT TABLE & COLUMN NAMES) ---"]
+            live_lines.append("CRITICAL: The tables below are the ACTUAL tables in the connected database.")
+            live_lines.append("Always prefer these table names over any other references.")
+            for tbl in live_schema["tables"]:
+                tbl_name = tbl.get("name", "")
+                cols = ", ".join(c.get("name", "") for c in tbl.get("columns", []))
+                live_lines.append(f"  Table: {tbl_name}  Columns: [{cols}]")
+            context = "\n".join(live_lines) + "\n\n" + context
+
         system_prompt = _SYSTEM_PROMPT_TEMPLATE.format(
             context=context,
             dialect_instructions=build_dialect_instructions(dialect),
@@ -102,7 +114,8 @@ class SemanticResolver:
 
         log.info(
             "semantic_translate",
-            extra={"erp": self.erp_type, "dialect": dialect, "nl": natural_language[:120]},
+            extra={"erp": self.erp_type, "dialect": dialect, "nl": natural_language[:120],
+                   "live_schema": bool(live_schema)},
         )
 
         history_str = ""
