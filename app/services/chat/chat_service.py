@@ -133,7 +133,8 @@ async def chat(
     start_date, end_date = resolve_relative_date_range(nl)
 
     # ── Translate NL → SQL via SemanticResolver ─────────────────────────────
-    resolver = SemanticResolver(erp_type=erp_type)
+    target_dialect = conn.db_type.value if conn else None
+    resolver = SemanticResolver(erp_type=erp_type, target_dialect=target_dialect)
     try:
         history_window = list(session.context_window[:-1]) if session and len(session.context_window) > 1 else None
         generated_sql = await resolver.translate_to_sql(

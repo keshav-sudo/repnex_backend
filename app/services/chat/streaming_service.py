@@ -47,7 +47,8 @@ async def run_via_rest(
         org = None
     erp_type = determine_erp_type(conn, org)
 
-    resolver = SemanticResolver(erp_type=erp_type)
+    target_dialect = conn.db_type.value if conn else None
+    resolver = SemanticResolver(erp_type=erp_type, target_dialect=target_dialect)
     generated_sql = await resolver.translate_to_sql(natural_language)
     if generated_sql.startswith("CONVERSATIONAL:"):
         raise ValidationFailed(generated_sql[len("CONVERSATIONAL:"):])
@@ -142,7 +143,8 @@ async def run_streaming(
         org = None
     erp_type = determine_erp_type(conn, org)
 
-    resolver = SemanticResolver(erp_type=erp_type)
+    target_dialect = conn.db_type.value if conn else None
+    resolver = SemanticResolver(erp_type=erp_type, target_dialect=target_dialect)
     history = list(session.context_window) if session and session.context_window else None
     generated_sql = await resolver.translate_to_sql(natural_language, history=history)
     if generated_sql.startswith("CONVERSATIONAL:"):

@@ -85,7 +85,7 @@ def fix_tsql_to_mysql(sql: str) -> str:
         return f"DATE_ADD({date_expr}, INTERVAL {n} {interval})"
 
     sql = re.sub(
-        r"\bDATEADD\s*\(\s*(\w+)\s*,\s*(-?\d+)\s*,\s*([^)]+)\)",
+        r"\bDATEADD\s*\(\s*(\w+)\s*,\s*(-?\d+)\s*,\s*([^()]+(?:\([^()]*\)[^()]*)*)\)",
         _dateadd_to_mysql,
         sql,
         flags=re.IGNORECASE,

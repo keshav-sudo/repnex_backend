@@ -38,6 +38,7 @@ CRITICAL RULES:
    IS available and what the user can ask instead. Do NOT generate invalid SQL.
 7. When using Reference SQL Examples from the adapter context, adapt them to the user's specific
    question but preserve the join logic and column references exactly.
+8. ARITHMETIC & NEGATIVE VALUES: Pay close attention to negative and positive values. When calculating margins, balances, or outstanding values, ensure you use the correct mathematical sign (+ or -) and logic. Outstanding balance filters must check for non-zero or positive/negative amounts as appropriate (e.g. outstanding invoices typically have a positive remaining balance, while negative amounts might indicate credit notes or pre-payments depending on the field meaning).
 """
 
 
@@ -48,8 +49,13 @@ class SemanticResolver:
         erp_type: Normalised ERP identifier (e.g. 'syspro', 'helios', 'epicor').
     """
 
-    def __init__(self, erp_type: str = "syspro") -> None:
+    def __init__(self, erp_type: str = "syspro", target_dialect: str | None = None, *args, **kwargs) -> None:
         self.erp_type = erp_type.lower().strip()
+        if target_dialect:
+            td = target_dialect.lower().strip()
+            self.target_dialect = "postgres" if td == "cloudsql" else td
+        else:
+            self.target_dialect = None
         self._context_builder = ContextBuilder(self.erp_type)
 
     async def translate_to_sql(
@@ -66,7 +72,7 @@ class SemanticResolver:
             when the query cannot be answered from the available schema.
         """
         meta = self._context_builder.load_meta()
-        dialect = get_dialect(self.erp_type, meta)
+        dialect = self.target_dialect or get_dialect(self.erp_type, meta)
         context = self._context_builder.build()
 
         system_prompt = _SYSTEM_PROMPT_TEMPLATE.format(

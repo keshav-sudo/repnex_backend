@@ -87,7 +87,8 @@ async def execute_with_params(
     erp_type = determine_erp_type(conn, org)
 
     # ── Translate with date params ─────────────────────────────────────────
-    resolver = SemanticResolver(erp_type=erp_type)
+    target_dialect = conn.db_type.value if conn else None
+    resolver = SemanticResolver(erp_type=erp_type, target_dialect=target_dialect)
     try:
         generated_sql = await resolver.translate_to_sql(nl, start_date=start_date, end_date=end_date)
     except Exception as exc:
