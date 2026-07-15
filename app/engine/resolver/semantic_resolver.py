@@ -41,18 +41,21 @@ CRITICAL RULES:
 8. ARITHMETIC & NEGATIVE VALUES: Pay close attention to negative and positive values. When calculating margins, balances, or outstanding values, ensure you use the correct mathematical sign (+ or -) and logic. Outstanding balance filters must check for non-zero or positive/negative amounts as appropriate (e.g. outstanding invoices typically have a positive remaining balance, while negative amounts might indicate credit notes or pre-payments depending on the field meaning).
 9. PREDICTIVE & PROBABILITY QUERIES: If the user asks "which customer is likely to order next",
    "reorder probability", "churn risk", or any forecasting question — DO NOT respond with CONVERSATIONAL.
-   Instead, generate an RFM (Recency, Frequency, Monetary) SQL query using available order history tables
-   (e.g. SorMaster, SorDetail). Score each customer on:
-   - Recency: Days since their last order (lower = higher priority)
-   - Frequency: Number of orders placed in the last 12 months
-   - Monetary: Total order value in the last 12 months
-   Rank customers by a composite score. Example pattern:
-   SELECT Customer, MAX(OrderDate) AS LastOrderDate,
-     COUNT(SalesOrder) AS OrderFrequency,
-     SUM(TotalValue) AS TotalValue,
-     DATEDIFF(day/NOW(), MAX(OrderDate)) AS DaysSinceLastOrder
-   FROM SorMaster WHERE OrderDate >= <12 months ago>
-   GROUP BY Customer ORDER BY DaysSinceLastOrder ASC, OrderFrequency DESC
+   Instead, generate an RFM (Recency, Frequency, Monetary) SQL query using SorMaster only (never SorMaster#).
+   CRITICAL JOIN RULE: Always join ArCustomer to SorMaster ON ArCustomer.Customer = SorMaster.Customer.
+   Never join on SalesOrder. Score each customer on:
+   - Recency: Days since their last OrderDate (lower = higher priority, use DATEDIFF or TIMESTAMPDIFF)
+   - Frequency: COUNT of SalesOrder in last 12 months
+   - Monetary: not needed if OrderValue column absent — omit or use COUNT only
+   Correct MySQL example pattern:
+     SELECT sm.Customer, MAX(sm.OrderDate) AS LastOrderDate,
+       COUNT(sm.SalesOrder) AS OrderFrequency,
+       DATEDIFF(NOW(), MAX(sm.OrderDate)) AS DaysSinceLastOrder
+     FROM SorMaster sm
+     WHERE sm.OrderDate >= DATE_SUB(NOW(), INTERVAL 12 MONTH)
+     GROUP BY sm.Customer
+     ORDER BY DaysSinceLastOrder ASC, OrderFrequency DESC
+     LIMIT 20
 """
 
 

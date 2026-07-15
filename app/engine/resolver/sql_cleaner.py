@@ -100,6 +100,20 @@ def fix_tsql_to_mysql(sql: str) -> str:
     # 7. LEN(x) → CHAR_LENGTH(x)
     sql = re.sub(r"\bLEN\s*\(", "CHAR_LENGTH(", sql, flags=re.IGNORECASE)
 
+    # 8. Syspro archive table names ending in # (e.g. SorMaster#) break MySQL
+    #    because '#' is a comment character. Backtick-escape the whole table name.
+    #    e.g.  SorMaster#  →  `SorMaster#`
+    #    Also strip any alias that follows to keep syntax clean.
+    def _escape_hash_table(m: re.Match) -> str:
+        name = m.group(1)  # e.g. SorMaster
+        return f"`{name}#`"
+
+    sql = re.sub(
+        r"\b([A-Za-z][A-Za-z0-9_]*)#(?=[\s,;()]|$)",
+        _escape_hash_table,
+        sql,
+    )
+
     return sql
 
 
