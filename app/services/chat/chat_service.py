@@ -71,6 +71,36 @@ async def chat(
         except Exception as exc:
             log.warning("session_load_failed", extra={"err": str(exc)})
 
+    # ── Try Customer Margin Diagnostics ──────────────────────────────────────
+    try:
+        from app.services.chat.diagnostic_service import detect_and_run_diagnostic
+        diagnostic_response = await detect_and_run_diagnostic(
+            db, current, data.connection_id, nl
+        )
+        if diagnostic_response:
+            if session:
+                try:
+                    await session_service.append_turn(
+                        db, session,
+                        role="assistant",
+                        content=diagnostic_response.message or "",
+                        type=diagnostic_response.type,
+                        sql=diagnostic_response.sql,
+                        rows=diagnostic_response.rows,
+                        columns=diagnostic_response.columns,
+                        rows_returned=diagnostic_response.rows_returned,
+                        execution_time_ms=diagnostic_response.execution_time_ms,
+                        template_id=diagnostic_response.template_id,
+                        template_description=diagnostic_response.template_description,
+                        extracted_params=diagnostic_response.extracted_params or (diagnostic_response.intent.params if diagnostic_response.intent else {}),
+                        suggestions=diagnostic_response.suggestions,
+                    )
+                except Exception as exc:
+                    log.warning("session_append_failed", extra={"err": str(exc)})
+            return diagnostic_response
+    except Exception as e:
+        log.warning("diagnostic_run_failed", extra={"err": str(e)})
+
     # ── 1. Classify intent ──────────────────────────────────────────────────
     classification = None
     try:
