@@ -101,6 +101,36 @@ async def chat(
     except Exception as e:
         log.warning("diagnostic_run_failed", extra={"err": str(e)})
 
+    # ── Try Predictive Customer Order Analysis ────────────────────────────────
+    try:
+        from app.services.chat.predictive_service import detect_and_run_predictive
+        predictive_response = await detect_and_run_predictive(
+            db, current, data.connection_id, nl
+        )
+        if predictive_response:
+            if session:
+                try:
+                    await session_service.append_turn(
+                        db, session,
+                        role="assistant",
+                        content=predictive_response.message or "",
+                        type=predictive_response.type,
+                        sql=predictive_response.sql,
+                        rows=predictive_response.rows,
+                        columns=predictive_response.columns,
+                        rows_returned=predictive_response.rows_returned,
+                        execution_time_ms=predictive_response.execution_time_ms,
+                        template_id=predictive_response.template_id,
+                        template_description=predictive_response.template_description,
+                        extracted_params=predictive_response.extracted_params or (predictive_response.intent.params if predictive_response.intent else {}),
+                        suggestions=predictive_response.suggestions,
+                    )
+                except Exception as exc:
+                    log.warning("session_append_failed", extra={"err": str(exc)})
+            return predictive_response
+    except Exception as e:
+        log.warning("predictive_run_failed", extra={"err": str(e)})
+
     # ── 1. Classify intent ──────────────────────────────────────────────────
     classification = None
     try:
