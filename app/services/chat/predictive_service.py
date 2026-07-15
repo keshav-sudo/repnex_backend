@@ -205,17 +205,21 @@ async def detect_and_run_predictive(
 # ── Data Fetchers ─────────────────────────────────────────────────────────────
 
 async def _fetch_invoice_history(conn: Any, customer_filter: str | None) -> List[Dict]:
-    """Fetch 12-month invoice history from ArInvoice."""
+    """Fetch 12-month invoice history from ArInvoice relative to latest invoice date."""
     is_pg = conn.db_type.value in ("postgres", "cloudsql")
 
+    # Use max invoice date as reference point so it works on historical databases
+    ref_date_sql = "(SELECT COALESCE(MAX(InvoiceDate), NOW()) FROM ArInvoice)"
     if is_pg:
-        date_filter = "ai.InvoiceDate >= CURRENT_DATE - INTERVAL '365 days'"
-        p1 = "$1" if customer_filter else None
+        date_filter = f"ai.InvoiceDate >= {ref_date_sql} - INTERVAL '365 days'"
     else:
-        date_filter = "ai.InvoiceDate >= DATE_SUB(NOW(), INTERVAL 365 DAY)"
-        p1 = "%s" if customer_filter else None
+        date_filter = f"ai.InvoiceDate >= DATE_SUB({ref_date_sql}, INTERVAL 365 DAY)"
 
-    where_customer = f" AND ai.Customer = {p1}" if customer_filter else ""
+    where_customer = ""
+    if customer_filter:
+        from app.engine.parameter_binder import sanitize_string
+        sanitized = sanitize_string(customer_filter)
+        where_customer = f" AND ai.Customer = '{sanitized}'"
 
     sql = f"""
     SELECT
@@ -230,10 +234,9 @@ async def _fetch_invoice_history(conn: Any, customer_filter: str | None) -> List
     ORDER BY ai.Customer, ai.InvoiceDate
     """
 
-    params = [customer_filter] if customer_filter else []
     bound = BoundQuery(sql=sql, params={}, db_type=conn.db_type.value)
     try:
-        res = await execute_collect(conn, bound, params=params or None)
+        res = await execute_collect(conn, bound)
         return res.rows or []
     except Exception as e:
         log.error(f"invoice_history_fetch_failed: {e}")
@@ -245,7 +248,7 @@ async def _fetch_customer_names(conn: Any) -> Dict[str, str]:
     sql = "SELECT Customer, Name FROM ArCustomer"
     bound = BoundQuery(sql=sql, params={}, db_type=conn.db_type.value)
     try:
-        res = await execute_collect(conn, bound, params=None)
+        res = await execute_collect(conn, bound)
         return {
             r.get("Customer") or r.get("customer"): r.get("Name") or r.get("name") or ""
             for r in (res.rows or [])
@@ -259,7 +262,7 @@ async def _fetch_balances(conn: Any) -> Dict[str, float]:
     sql = "SELECT Customer, Balance FROM ArCustomerBal"
     bound = BoundQuery(sql=sql, params={}, db_type=conn.db_type.value)
     try:
-        res = await execute_collect(conn, bound, params=None)
+        res = await execute_collect(conn, bound)
         return {
             r.get("Customer") or r.get("customer"): float(r.get("Balance") or r.get("balance") or 0)
             for r in (res.rows or [])
@@ -287,7 +290,9 @@ def _calculate_predictions(
         if inv_date:
             customer_invoices.setdefault(cust, []).append(inv_date)
 
-    today = date.today()
+    # Use max invoice date from dataset as 'today' to keep calculations accurate for historical data
+    all_dates = [d for dates in customer_invoices.values() for d in dates]
+    today = max(all_dates) if all_dates else date.today()
     predictions = []
 
     for cust, dates in customer_invoices.items():
