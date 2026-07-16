@@ -395,6 +395,11 @@ async def execute_mongo_collect(
                         else:
                             source_path = f"${tbl_alias}.{field}"
                         project_stage[alias] = source_path
+            
+            # Exclude _id unless explicitly selected/aliased in columns
+            has_id_alias = any(col["alias"] in ("_id", "id") for col in parsed["columns"])
+            if not has_id_alias:
+                project_stage["_id"] = 0
         
         if project_stage:
             pipeline.append({"$project": project_stage})
