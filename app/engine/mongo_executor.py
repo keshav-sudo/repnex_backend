@@ -47,6 +47,8 @@ def _parse_sql_to_mongo(sql: str) -> dict:
     Parse a simple or join SQL SELECT statement into MongoDB parameters.
     """
     sql_clean = re.sub(r"\s+", " ", sql).strip().rstrip(";")
+    # Strip square brackets, backticks, and double quotes to handle T-SQL-like dialects
+    sql_clean = sql_clean.replace("[", "").replace("]", "").replace("`", "").replace('"', "")
     
     # 1. Parse LIMIT
     limit_match = re.search(r"\bLIMIT\s+(\d+)", sql_clean, re.IGNORECASE)
@@ -75,14 +77,22 @@ def _parse_sql_to_mongo(sql: str) -> dict:
             direction = -1 if len(toks) > 1 and toks[1].upper() == "DESC" else 1
             sort_fields.append((field, direction))
 
-    # 4. Parse WHERE
+    # 4. Parse GROUP BY
+    group_match = re.search(r"\bGROUP\s+BY\s+(.+)$", sql_clean, re.IGNORECASE)
+    group_fields = []
+    if group_match:
+        group_raw = group_match.group(1).strip()
+        sql_clean = sql_clean[:group_match.start()].strip()
+        group_fields = [f.strip().split(".")[-1] for f in group_raw.split(",")]
+
+    # 5. Parse WHERE
     where_match = re.search(r"\bWHERE\s+(.+)$", sql_clean, re.IGNORECASE)
     where_clause = None
     if where_match:
         where_clause = where_match.group(1).strip()
         sql_clean = sql_clean[:where_match.start()].strip()
 
-    # 5. Parse SELECT columns
+    # 6. Parse SELECT columns
     select_match = re.match(r"\bSELECT\s+(.+?)\s+FROM\s+(.+)$", sql_clean, re.IGNORECASE)
     columns = []
     primary_table = None
@@ -121,16 +131,28 @@ def _parse_sql_to_mongo(sql: str) -> dict:
         if cols_raw != "*":
             cols_parts = [c.strip() for c in cols_raw.split(",")]
             for part in cols_parts:
-                m = re.match(r"(?:(\w+)\.)?(\w+)(?:\s+(?:AS\s+)?(\w+))?", part, re.IGNORECASE)
-                if m:
-                    tbl_alias = m.group(1)
-                    field_name = m.group(2)
-                    col_alias = m.group(3) or field_name
+                fm = re.match(r"^(\w+)\((.+?)\)(?:\s+(?:AS\s+)?(\w+))?$", part, re.IGNORECASE)
+                if fm:
+                    func = fm.group(1)
+                    expr = fm.group(2)
+                    alias = fm.group(3) or expr.split(".")[-1]
                     columns.append({
-                        "tbl_alias": tbl_alias,
-                        "field": field_name,
-                        "alias": col_alias
+                        "func": func,
+                        "field": expr,
+                        "alias": alias,
+                        "tbl_alias": None
                     })
+                else:
+                    m = re.match(r"(?:(\w+)\.)?(\w+)(?:\s+(?:AS\s+)?(\w+))?", part, re.IGNORECASE)
+                    if m:
+                        tbl_alias = m.group(1)
+                        field_name = m.group(2)
+                        col_alias = m.group(3) or field_name
+                        columns.append({
+                            "tbl_alias": tbl_alias,
+                            "field": field_name,
+                            "alias": col_alias
+                        })
 
     return {
         "collection": primary_table,
@@ -139,6 +161,7 @@ def _parse_sql_to_mongo(sql: str) -> dict:
         "joins": joins,
         "where_clause": where_clause,
         "sort_fields": sort_fields,
+        "group_fields": group_fields,
         "limit": limit,
         "skip": skip
     }
@@ -328,26 +351,55 @@ async def execute_mongo_collect(
             })
             active_aliases.add(j_alias)
 
-        # 3. Project stage
+        # 3. Group stage (GROUP BY)
+        if parsed["group_fields"]:
+            group_stage = {
+                "_id": {f: f"${f}" for f in parsed["group_fields"]}
+            }
+            for col in parsed["columns"]:
+                if col.get("func"):
+                    func_name = col["func"].upper()
+                    alias = col["alias"]
+                    expr = col["field"]
+                    expr_field = expr.split(".")[-1]
+                    if expr_field == "id":
+                        expr_field = "_id"
+
+                    if func_name == "COUNT":
+                        group_stage[alias] = {"$sum": 1}
+                    elif func_name == "SUM":
+                        group_stage[alias] = {"$sum": f"${expr_field}"}
+                    elif func_name == "AVG":
+                        group_stage[alias] = {"$avg": f"${expr_field}"}
+            pipeline.append({"$group": group_stage})
+
+        # 4. Project stage
         project_stage = {}
         if parsed["columns"]:
             for col in parsed["columns"]:
-                tbl_alias = col["tbl_alias"]
-                field = col["field"]
                 alias = col["alias"]
-                if field == "id":
-                    field = "_id"
-
-                if tbl_alias == primary_alias or not tbl_alias:
-                    source_path = f"${field}"
+                if col.get("func"):
+                    project_stage[alias] = f"${alias}"
                 else:
-                    source_path = f"${tbl_alias}.{field}"
-                project_stage[alias] = source_path
+                    field = col["field"]
+                    if field == "id":
+                        field = "_id"
+
+                    # If we have a group by, the fields are nested under _id
+                    if parsed["group_fields"] and field in parsed["group_fields"]:
+                        project_stage[alias] = f"$_id.{field}"
+                    else:
+                        tbl_alias = col["tbl_alias"]
+                        if tbl_alias == primary_alias or not tbl_alias:
+                            source_path = f"${field}"
+                        else:
+                            source_path = f"${tbl_alias}.{field}"
+                        project_stage[alias] = source_path
         
         if project_stage:
             pipeline.append({"$project": project_stage})
 
-        # 4. Sort stage
+        # 5. Sort stage
         if parsed["sort_fields"]:
             sort_stage = {}
             for field, direction in parsed["sort_fields"]:
@@ -356,6 +408,7 @@ async def execute_mongo_collect(
                 if field_name == "id":
                     field_name = "_id"
 
+                # Find if sorted field maps to a projected alias
                 projected_alias = None
                 for col in parsed["columns"]:
                     c_field = col["field"]
@@ -370,7 +423,7 @@ async def execute_mongo_collect(
             if sort_stage:
                 pipeline.append({"$sort": sort_stage})
 
-        # 5. Skip and Limit stages
+        # 6. Skip and Limit stages
         if parsed["skip"] > 0:
             pipeline.append({"$skip": parsed["skip"]})
         
