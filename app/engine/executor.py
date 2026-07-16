@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from app.core.config import get_settings
-from app.core.database.models import DBConnection
+from app.core.database.models import DBConnection, DBType
 from app.core.database.target_pool import get_target_pool_registry
 from app.core.exceptions import TargetDBError
 from app.engine.parameter_binder import BoundQuery
@@ -23,6 +23,29 @@ class ExecutionResult:
 
 async def execute_collect(conn: DBConnection, bound: BoundQuery) -> ExecutionResult:
     s = get_settings()
+
+    # ── MongoDB: native executor, bypass SQL pool ─────────────────────────
+    if conn.db_type == DBType.mongodb:
+        from app.engine.mongo_executor import execute_mongo_collect
+        try:
+            rows, columns, elapsed_ms = await execute_mongo_collect(
+                conn, bound.sql, max_rows=s.EXECUTOR_MAX_ROWS
+            )
+        except TargetDBError:
+            raise
+        except Exception as exc:
+            raise TargetDBError(f"MongoDB execution error: {exc}") from exc
+
+        truncated = len(rows) >= s.EXECUTOR_MAX_ROWS
+        return ExecutionResult(
+            rows=rows,
+            rows_returned=len(rows),
+            execution_time_ms=elapsed_ms,
+            truncated=truncated,
+            columns=columns,
+        )
+
+    # ── SQL databases: existing pool registry path ────────────────────────
     rows: list[dict[str, Any]] = []
     truncated = False
     started = time.perf_counter()
@@ -75,7 +98,16 @@ def clean_row_data(val: Any) -> Any:
 async def execute_stream(
     conn: DBConnection, bound: BoundQuery
 ) -> AsyncIterator[list[dict[str, Any]]]:
+    """Streaming executor — SQL databases only. MongoDB uses execute_collect directly."""
     s = get_settings()
+
+    if conn.db_type == DBType.mongodb:
+        # MongoDB doesn't stream via the pool — delegate to collect
+        from app.engine.mongo_executor import execute_mongo_collect
+        rows, _cols, _ms = await execute_mongo_collect(conn, bound.sql, max_rows=s.EXECUTOR_MAX_ROWS)
+        yield rows
+        return
+
     pool = await get_target_pool_registry().get_pool(conn)
     sent = 0
     try:
@@ -100,4 +132,5 @@ async def execute_stream(
         raise
     except Exception as e:  # pragma: no cover
         raise TargetDBError(f"Unexpected target error: {str(e)}") from e
+
 
