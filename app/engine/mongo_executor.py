@@ -202,9 +202,25 @@ def _get_mongo_client_and_db(conn: DBConnection):
     return client, db_name
 
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Public executor
-# ──────────────────────────────────────────────────────────────────────────────
+def clean_mongo_value(val: Any) -> Any:
+    if val is None:
+        return None
+    val_type_str = type(val).__name__
+    if val_type_str == "ObjectId":
+        return str(val)
+    elif isinstance(val, dict):
+        return {k: clean_mongo_value(v) for k, v in val.items()}
+    elif isinstance(val, list):
+        return [clean_mongo_value(x) for x in val]
+    elif hasattr(val, "isoformat"):
+        return val.isoformat()
+    elif isinstance(val, bytes):
+        try:
+            return val.decode("utf-8")
+        except UnicodeDecodeError:
+            return f"0x{val.hex()}"
+    return val
+
 
 async def execute_mongo_collect(
     conn: DBConnection, sql: str, max_rows: int = _LIMIT_DEFAULT
@@ -255,19 +271,7 @@ async def execute_mongo_collect(
         raise TargetDBError(f"MongoDB query failed on '{collection_name}': {exc}") from exc
 
     # Clean rows — remove ObjectId / convert to str-safe dicts
-    rows = []
-    for doc in raw_rows:
-        clean = {}
-        for k, v in doc.items():
-            if k == "_id":
-                clean["_id"] = str(v)
-            elif hasattr(v, "isoformat"):
-                clean[k] = v.isoformat()
-            elif isinstance(v, (dict, list)):
-                clean[k] = str(v)
-            else:
-                clean[k] = v
-        rows.append(clean)
+    rows = [clean_mongo_value(doc) for doc in raw_rows]
 
     columns = list(rows[0].keys()) if rows else []
     elapsed_ms = int((time.perf_counter() - started) * 1000)
