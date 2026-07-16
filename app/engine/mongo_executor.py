@@ -44,89 +44,116 @@ _LIMIT_DEFAULT = 500
 
 def _parse_sql_to_mongo(sql: str) -> dict:
     """
-    Parse a simple SELECT statement into MongoDB find() arguments.
-    Returns a dict with keys: collection, projection, filter, sort, limit, skip.
+    Parse a simple or join SQL SELECT statement into MongoDB parameters.
     """
-    sql = sql.strip().rstrip(";")
+    sql_clean = re.sub(r"\s+", " ", sql).strip().rstrip(";")
+    
+    # 1. Parse LIMIT
+    limit_match = re.search(r"\bLIMIT\s+(\d+)", sql_clean, re.IGNORECASE)
+    limit = _LIMIT_DEFAULT
+    if limit_match:
+        limit = int(limit_match.group(1))
+        sql_clean = sql_clean[:limit_match.start()].strip()
+        
+    # 2. Parse OFFSET/SKIP
+    offset_match = re.search(r"\b(?:SKIP|OFFSET)\s+(\d+)", sql_clean, re.IGNORECASE)
+    skip = 0
+    if offset_match:
+        skip = int(offset_match.group(1))
+        sql_clean = sql_clean[:offset_match.start()].strip()
 
-    result: dict[str, Any] = {
-        "collection": None,
-        "projection": None,
-        "filter": {},
-        "sort": None,
-        "limit": _LIMIT_DEFAULT,
-        "skip": 0,
-        "is_aggregate": False,
-        "pipeline": [],
-    }
-
-    # ── LIMIT / SKIP ──────────────────────────────────────────────────────────
-    m = re.search(r"\bLIMIT\s+(\d+)", sql, re.IGNORECASE)
-    if m:
-        result["limit"] = int(m.group(1))
-        sql = sql[: m.start()].strip()
-
-    m = re.search(r"\b(?:SKIP|OFFSET)\s+(\d+)", sql, re.IGNORECASE)
-    if m:
-        result["skip"] = int(m.group(1))
-        sql = sql[: m.start()].strip()
-
-    # ── ORDER BY ──────────────────────────────────────────────────────────────
-    m = re.search(r"\bORDER\s+BY\s+(.+?)(?:\s+(?:WHERE|LIMIT|SKIP|$))", sql, re.IGNORECASE)
-    if not m:
-        m = re.search(r"\bORDER\s+BY\s+(.+)$", sql, re.IGNORECASE)
-    if m:
-        order_raw = m.group(1).strip()
-        sql = sql[: m.start()].strip()
+    # 3. Parse ORDER BY
+    order_match = re.search(r"\bORDER\s+BY\s+(.+)$", sql_clean, re.IGNORECASE)
+    sort_fields = []
+    if order_match:
+        order_raw = order_match.group(1).strip()
+        sql_clean = sql_clean[:order_match.start()].strip()
         parts = [p.strip() for p in order_raw.split(",")]
-        sort_list = []
         for p in parts:
             toks = p.split()
             field = toks[0]
             direction = -1 if len(toks) > 1 and toks[1].upper() == "DESC" else 1
-            sort_list.append((field, direction))
-        result["sort"] = sort_list
+            sort_fields.append((field, direction))
 
-    # ── WHERE ─────────────────────────────────────────────────────────────────
-    where_match = re.search(r"\bWHERE\s+(.+?)(?:\s+(?:ORDER|LIMIT|SKIP|$))", sql, re.IGNORECASE)
-    if not where_match:
-        where_match = re.search(r"\bWHERE\s+(.+)$", sql, re.IGNORECASE)
+    # 4. Parse WHERE
+    where_match = re.search(r"\bWHERE\s+(.+)$", sql_clean, re.IGNORECASE)
+    where_clause = None
     if where_match:
         where_clause = where_match.group(1).strip()
-        sql = sql[: where_match.start()].strip()
-        result["filter"] = _parse_where(where_clause)
+        sql_clean = sql_clean[:where_match.start()].strip()
 
-    # ── FROM <collection> ─────────────────────────────────────────────────────
-    from_match = re.search(r"\bFROM\s+([`\"\[\]]?)(\w+)[`\"\[\]]?", sql, re.IGNORECASE)
-    if from_match:
-        result["collection"] = from_match.group(2)
-        sql = sql[: from_match.start()].strip()
+    # 5. Parse SELECT columns
+    select_match = re.match(r"\bSELECT\s+(.+?)\s+FROM\s+(.+)$", sql_clean, re.IGNORECASE)
+    columns = []
+    primary_table = None
+    primary_alias = None
+    joins = []
 
-    # ── SELECT <columns> ─────────────────────────────────────────────────────
-    select_match = re.match(r"\bSELECT\s+(.+)$", sql, re.IGNORECASE)
     if select_match:
         cols_raw = select_match.group(1).strip()
-        if cols_raw != "*":
-            cols = [c.strip().strip("`\"[]").split(".")[-1] for c in cols_raw.split(",")]
-            # Remove aggregate functions for now
-            cols = [c for c in cols if not re.search(r"\(", c)]
-            if cols:
-                result["projection"] = {c: 1 for c in cols}
+        rest = select_match.group(2).strip()
 
-    return result
+        # Parse FROM table and possible alias
+        from_part_match = re.match(r"^(\w+)(?:\s+(?:AS\s+)?(\w+))?(.*)$", rest, re.IGNORECASE)
+        if from_part_match:
+            primary_table = from_part_match.group(1)
+            primary_alias = from_part_match.group(2) or primary_table
+            joins_raw = from_part_match.group(3).strip()
+            
+            # Parse Joins
+            join_pattern = r"(?:(LEFT|INNER|RIGHT)?\s*JOIN\s+(\w+)(?:\s+(?:AS\s+)?(\w+))?\s+ON\s+([\w\.]+)\s*=\s*([\w\.]+))"
+            join_matches = re.finditer(join_pattern, joins_raw, re.IGNORECASE)
+            for jm in join_matches:
+                j_type = jm.group(1) or "LEFT"
+                j_table = jm.group(2)
+                j_alias = jm.group(3) or j_table
+                left_f = jm.group(4)
+                right_f = jm.group(5)
+                joins.append({
+                    "type": j_type.upper(),
+                    "table": j_table,
+                    "alias": j_alias,
+                    "left_field": left_f,
+                    "right_field": right_f
+                })
+
+        # Parse columns
+        if cols_raw != "*":
+            cols_parts = [c.strip() for c in cols_raw.split(",")]
+            for part in cols_parts:
+                m = re.match(r"(?:(\w+)\.)?(\w+)(?:\s+(?:AS\s+)?(\w+))?", part, re.IGNORECASE)
+                if m:
+                    tbl_alias = m.group(1)
+                    field_name = m.group(2)
+                    col_alias = m.group(3) or field_name
+                    columns.append({
+                        "tbl_alias": tbl_alias,
+                        "field": field_name,
+                        "alias": col_alias
+                    })
+
+    return {
+        "collection": primary_table,
+        "primary_alias": primary_alias,
+        "columns": columns,
+        "joins": joins,
+        "where_clause": where_clause,
+        "sort_fields": sort_fields,
+        "limit": limit,
+        "skip": skip
+    }
 
 
 def _parse_where(clause: str) -> dict:
-    """Very lightweight WHERE → MongoDB filter dict converter."""
+    """Very lightweight WHERE → MongoDB filter dict converter supporting dot-notation."""
     mongo_filter: dict[str, Any] = {}
 
-    # AND split (simple, not nested)
     conditions = re.split(r"\bAND\b", clause, flags=re.IGNORECASE)
     for cond in conditions:
         cond = cond.strip()
 
         # field IN (v1, v2, ...)
-        m = re.match(r"(\w+)\s+IN\s*\((.+)\)", cond, re.IGNORECASE)
+        m = re.match(r"([\w\.]+)\s+IN\s*\((.+)\)", cond, re.IGNORECASE)
         if m:
             field = m.group(1)
             vals_raw = m.group(2)
@@ -135,7 +162,7 @@ def _parse_where(clause: str) -> dict:
             continue
 
         # field NOT IN (...)
-        m = re.match(r"(\w+)\s+NOT\s+IN\s*\((.+)\)", cond, re.IGNORECASE)
+        m = re.match(r"([\w\.]+)\s+NOT\s+IN\s*\((.+)\)", cond, re.IGNORECASE)
         if m:
             field = m.group(1)
             vals_raw = m.group(2)
@@ -144,7 +171,7 @@ def _parse_where(clause: str) -> dict:
             continue
 
         # field LIKE '%val%'
-        m = re.match(r"(\w+)\s+LIKE\s+'([^']*)'", cond, re.IGNORECASE)
+        m = re.match(r"([\w\.]+)\s+LIKE\s+'([^']*)'", cond, re.IGNORECASE)
         if m:
             field = m.group(1)
             pattern = m.group(2).replace("%", ".*").replace("_", ".")
@@ -152,7 +179,7 @@ def _parse_where(clause: str) -> dict:
             continue
 
         # field IS NULL / IS NOT NULL
-        m = re.match(r"(\w+)\s+IS\s+(NOT\s+)?NULL", cond, re.IGNORECASE)
+        m = re.match(r"([\w\.]+)\s+IS\s+(NOT\s+)?NULL", cond, re.IGNORECASE)
         if m:
             field = m.group(1)
             is_not = bool(m.group(2))
@@ -160,12 +187,11 @@ def _parse_where(clause: str) -> dict:
             continue
 
         # field >= val  /  field <= val  /  field > val  /  field < val  /  field != val  / field = val
-        m = re.match(r"(\w+)\s*(>=|<=|!=|<>|>|<|=)\s*('?[^']*'?)", cond)
+        m = re.match(r"([\w\.]+)\s*(>=|<=|!=|<>|>|<|=)\s*('?[^']*'?)", cond)
         if m:
             field = m.group(1)
             op = m.group(2)
             raw_val = m.group(3).strip().strip("'\"")
-            # Try to cast to number
             try:
                 val: Any = int(raw_val)
             except ValueError:
@@ -236,34 +262,125 @@ async def execute_mongo_collect(
     if not collection_name:
         raise TargetDBError(f"Could not determine collection from query: {sql}")
 
-    log.info(
-        "mongo_query_parsed",
-        extra={
-            "collection": collection_name,
-            "filter": str(parsed["filter"]),
-            "projection": str(parsed["projection"]),
-            "limit": parsed["limit"],
-        },
-    )
+    primary_alias = parsed.get("primary_alias") or collection_name
 
     try:
         client, db_name = _get_mongo_client_and_db(conn)
         db = client[db_name]
 
-        cursor = db[collection_name].find(
-            parsed["filter"] or {},
-            parsed["projection"] or None,
-        )
+        pipeline = []
 
-        if parsed["sort"]:
-            cursor = cursor.sort(parsed["sort"])
-        if parsed["skip"]:
-            cursor = cursor.skip(parsed["skip"])
+        # 1. Match stage (WHERE)
+        if parsed["where_clause"]:
+            raw_filter = _parse_where(parsed["where_clause"])
+            clean_filter = {}
+            for k, v in raw_filter.items():
+                parts = k.split(".")
+                if len(parts) > 1 and parts[0] == primary_alias:
+                    clean_key = ".".join(parts[1:])
+                else:
+                    clean_key = k
+                if clean_key == "id":
+                    clean_key = "_id"
+                clean_filter[clean_key] = v
+            if clean_filter:
+                pipeline.append({"$match": clean_filter})
 
+        # 2. Lookups and Unwinds for joins
+        active_aliases = {primary_alias}
+        for j in parsed["joins"]:
+            j_alias = j["alias"]
+            j_table = j["table"]
+
+            lf_parts = j["left_field"].split(".")
+            if lf_parts[-1] == "id":
+                lf_parts[-1] = "_id"
+            left_f = ".".join(lf_parts)
+
+            rf_parts = j["right_field"].split(".")
+            if rf_parts[-1] == "id":
+                rf_parts[-1] = "_id"
+            right_f = ".".join(rf_parts)
+
+            lf_alias, lf_field = left_f.split(".", 1) if "." in left_f else (None, left_f)
+            rf_alias, rf_field = right_f.split(".", 1) if "." in right_f else (None, right_f)
+
+            if lf_alias in active_aliases:
+                local_path = lf_field if lf_alias == primary_alias else f"{lf_alias}.{lf_field}"
+                foreign_path = rf_field
+            else:
+                local_path = rf_field if rf_alias == primary_alias else f"{rf_alias}.{rf_field}"
+                foreign_path = lf_field
+
+            pipeline.append({
+                "$lookup": {
+                    "from": j_table,
+                    "localField": local_path,
+                    "foreignField": foreign_path,
+                    "as": j_alias
+                }
+            })
+            pipeline.append({
+                "$unwind": {
+                    "path": f"${j_alias}",
+                    "preserveNullAndEmptyArrays": True
+                }
+            })
+            active_aliases.add(j_alias)
+
+        # 3. Project stage
+        project_stage = {}
+        if parsed["columns"]:
+            for col in parsed["columns"]:
+                tbl_alias = col["tbl_alias"]
+                field = col["field"]
+                alias = col["alias"]
+                if field == "id":
+                    field = "_id"
+
+                if tbl_alias == primary_alias or not tbl_alias:
+                    source_path = f"${field}"
+                else:
+                    source_path = f"${tbl_alias}.{field}"
+                project_stage[alias] = source_path
+        
+        if project_stage:
+            pipeline.append({"$project": project_stage})
+
+        # 4. Sort stage
+        if parsed["sort_fields"]:
+            sort_stage = {}
+            for field, direction in parsed["sort_fields"]:
+                f_parts = field.split(".")
+                field_name = f_parts[-1]
+                if field_name == "id":
+                    field_name = "_id"
+
+                projected_alias = None
+                for col in parsed["columns"]:
+                    c_field = col["field"]
+                    if c_field == "id":
+                        c_field = "_id"
+                    if c_field == field_name and (not col["tbl_alias"] or col["tbl_alias"] == f_parts[0] if len(f_parts) > 1 else True):
+                        projected_alias = col["alias"]
+                        break
+                
+                sort_key = projected_alias or field_name
+                sort_stage[sort_key] = direction
+            if sort_stage:
+                pipeline.append({"$sort": sort_stage})
+
+        # 5. Skip and Limit stages
+        if parsed["skip"] > 0:
+            pipeline.append({"$skip": parsed["skip"]})
+        
         limit = min(parsed["limit"], max_rows)
-        cursor = cursor.limit(limit)
+        # pyrefly: ignore [bad-argument-type]
+        pipeline.append({"$limit": limit})
 
+        cursor = db[collection_name].aggregate(pipeline)
         raw_rows = await cursor.to_list(length=limit)
+
         client.close()
     except TargetDBError:
         raise
