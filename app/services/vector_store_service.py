@@ -10,30 +10,43 @@ log = get_logger(__name__)
 
 async def get_embedding(text: str) -> List[float]:
     """Generate 1024-dimensional embedding using OpenAI's text-embedding-3-small."""
+    res = await get_embeddings([text])
+    return res[0] if res else [0.0] * 1024
+
+async def get_embeddings(texts: List[str]) -> List[List[float]]:
+    """Generate 1024-dimensional embeddings using OpenAI's text-embedding-3-small in a batch."""
+    if not texts:
+        return []
+        
     s = get_settings()
     api_key = s.OPENAI_API_KEY.strip()
     is_dummy = not api_key or api_key in ("your-openai-api-key", "test", "dummy", "")
     
     if is_dummy:
-        # Generate deterministic mock 1024-dim vector
-        h = int(hashlib.md5(text.encode("utf-8")).hexdigest(), 16)
-        random.seed(h)
-        return [random.uniform(-1, 1) for _ in range(1024)]
+        results = []
+        for text in texts:
+            h = int(hashlib.md5(text.encode("utf-8")).hexdigest(), 16)
+            random.seed(h)
+            results.append([random.uniform(-1, 1) for _ in range(1024)])
+        return results
         
     try:
         client = AsyncOpenAI(api_key=api_key)
         response = await client.embeddings.create(
-            input=text,
+            input=texts,
             model="text-embedding-3-small",
             dimensions=1024
         )
-        return response.data[0].embedding
+        return [item.embedding for item in response.data]
     except Exception as e:
-        log.error("embedding_generation_failed", extra={"error": str(e)})
-        # Graceful fallback to pseudo-random vector so app doesn't crash on network error
-        h = int(hashlib.md5(text.encode("utf-8")).hexdigest(), 16)
-        random.seed(h)
-        return [random.uniform(-1, 1) for _ in range(1024)]
+        log.error("embeddings_generation_failed", extra={"error": str(e), "count": len(texts)})
+        # Graceful fallback to pseudo-random vectors
+        results = []
+        for text in texts:
+            h = int(hashlib.md5(text.encode("utf-8")).hexdigest(), 16)
+            random.seed(h)
+            results.append([random.uniform(-1, 1) for _ in range(1024)])
+        return results
 
 async def upsert_vectors(connection_id: str, vectors: List[Dict[str, Any]]):
     """
@@ -48,16 +61,37 @@ async def upsert_vectors(connection_id: str, vectors: List[Dict[str, Any]]):
         log.warning("pinecone_not_configured_skipping_upsert")
         return
         
-    # Prepare payloads
+    # 1. Collect all texts that need embeddings
+    texts_to_embed = []
+    vector_indices_to_embed = []
+    
+    for idx, vec in enumerate(vectors):
+        values = vec.get("values")
+        meta = vec.get("metadata", {})
+        text_content = meta.get("text_content", "")
+        if not values and text_content:
+            texts_to_embed.append(text_content)
+            vector_indices_to_embed.append(idx)
+            
+    # 2. Batch get embeddings from OpenAI (in chunks of 100 to avoid token limits per request)
+    embedded_values = {}
+    batch_embed_size = 100
+    for i in range(0, len(texts_to_embed), batch_embed_size):
+        chunk = texts_to_embed[i:i + batch_embed_size]
+        embeddings = await get_embeddings(chunk)
+        for offset, emb in enumerate(embeddings):
+            original_idx = vector_indices_to_embed[i + offset]
+            embedded_values[original_idx] = emb
+
+    # 3. Build the final Pinecone vectors payload
     pinecone_vectors = []
-    for vec in vectors:
+    for idx, vec in enumerate(vectors):
         meta = vec.get("metadata", {})
         meta["connection_id"] = str(connection_id)
         
-        text_content = meta.get("text_content", "")
         values = vec.get("values")
-        if not values and text_content:
-            values = await get_embedding(text_content)
+        if not values:
+            values = embedded_values.get(idx)
             
         if not values:
             continue
