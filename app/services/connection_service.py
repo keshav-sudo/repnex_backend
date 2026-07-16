@@ -30,6 +30,22 @@ from app.schemas.connection import (
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 
+def _build_mongo_uri(host: str, port: int, db_name: str, username: str, password: str) -> str:
+    from urllib.parse import quote_plus
+    
+    if "mongodb+srv://" in host or "mongodb://" in host:
+        return host
+        
+    is_srv = ".mongodb.net" in host or not port or port == 0
+    scheme = "mongodb+srv" if is_srv else "mongodb"
+    port_str = "" if is_srv else f":{port or 27017}"
+    
+    if username and password:
+        return f"{scheme}://{quote_plus(username)}:{quote_plus(password)}@{host}{port_str}/{db_name or ''}"
+    else:
+        return f"{scheme}://{host}{port_str}/{db_name or ''}"
+
+
 async def list_connections(
     db: AsyncIOMotorDatabase, current: CurrentUser
 ) -> list[ConnectionRead]:
@@ -177,20 +193,13 @@ async def test_connection(
     started = time.perf_counter()
     if conn.db_type == DBType.mongodb:
         from motor.motor_asyncio import AsyncIOMotorClient
-        from urllib.parse import quote_plus
         
         enc_user = getattr(conn, "encrypted_username", "")
         enc_pass = getattr(conn, "encrypted_password", "")
         username = decrypt(enc_user) if enc_user else ""
         password = decrypt(enc_pass) if enc_pass else ""
         
-        if "mongodb+srv://" in conn.host or "mongodb://" in conn.host:
-            mongo_uri = conn.host
-        else:
-            if username and password:
-                mongo_uri = f"mongodb://{quote_plus(username)}:{quote_plus(password)}@{conn.host}:{conn.port or 27017}/{conn.db_name or ''}"
-            else:
-                mongo_uri = f"mongodb://{conn.host}:{conn.port or 27017}/{conn.db_name or ''}"
+        mongo_uri = _build_mongo_uri(conn.host, conn.port, conn.db_name, username, password)
         try:
             client = AsyncIOMotorClient(mongo_uri, serverSelectionTimeoutMS=5000)
             await client.admin.command("ping")
@@ -230,18 +239,11 @@ async def test_raw_connection(
     db_type = DBType(data.db_type)
     if db_type == DBType.mongodb:
         from motor.motor_asyncio import AsyncIOMotorClient
-        from urllib.parse import quote_plus
         
         username = data.username or ""
         password = data.password or ""
         
-        if "mongodb+srv://" in data.host or "mongodb://" in data.host:
-            mongo_uri = data.host
-        else:
-            if username and password:
-                mongo_uri = f"mongodb://{quote_plus(username)}:{quote_plus(password)}@{data.host}:{data.port or 27017}/{data.db_name or ''}"
-            else:
-                mongo_uri = f"mongodb://{data.host}:{data.port or 27017}/{data.db_name or ''}"
+        mongo_uri = _build_mongo_uri(data.host, data.port, data.db_name, username, password)
         try:
             client = AsyncIOMotorClient(mongo_uri, serverSelectionTimeoutMS=5000)
             await client.admin.command("ping")
@@ -444,20 +446,13 @@ async def sync_schema(
 
     if conn.db_type == DBType.mongodb:
         from motor.motor_asyncio import AsyncIOMotorClient
-        from urllib.parse import quote_plus
         
         enc_user = getattr(conn, "encrypted_username", "")
         enc_pass = getattr(conn, "encrypted_password", "")
         username = decrypt(enc_user) if enc_user else ""
         password = decrypt(enc_pass) if enc_pass else ""
         
-        if "mongodb+srv://" in conn.host or "mongodb://" in conn.host:
-            mongo_uri = conn.host
-        else:
-            if username and password:
-                mongo_uri = f"mongodb://{quote_plus(username)}:{quote_plus(password)}@{conn.host}:{conn.port or 27017}/{conn.db_name or ''}"
-            else:
-                mongo_uri = f"mongodb://{conn.host}:{conn.port or 27017}/{conn.db_name or ''}"
+        mongo_uri = _build_mongo_uri(conn.host, conn.port, conn.db_name, username, password)
         
         try:
             client = AsyncIOMotorClient(mongo_uri, serverSelectionTimeoutMS=5000)

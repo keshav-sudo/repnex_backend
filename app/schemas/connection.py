@@ -42,7 +42,10 @@ def _parse_connection_string(cs: str) -> dict:
         }
         result["db_type"] = mapping.get(scheme, "mssql")
         result["host"] = parsed.hostname or ""
-        result["port"] = parsed.port or {"mssql": 1433, "postgres": 5432, "mysql": 3306, "oracle": 1521, "mongodb": 27017}.get(result["db_type"], 1433)
+        if parsed.scheme == "mongodb+srv":
+            result["port"] = 0
+        else:
+            result["port"] = parsed.port or {"mssql": 1433, "postgres": 5432, "mysql": 3306, "oracle": 1521, "mongodb": 27017}.get(result["db_type"], 1433)
         result["db_name"] = parsed.path.lstrip("/")
         result["username"] = unquote(parsed.username or "")
         result["password"] = unquote(parsed.password or "")
