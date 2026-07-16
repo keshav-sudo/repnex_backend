@@ -143,69 +143,16 @@ async def sync_schema(
 @router.post("/{conn_id}/generate-adapters")
 async def generate_adapters_endpoint(
     conn_id: uuid.UUID,
-    background_tasks: Any,
     current: CurrentUser = Depends(bind_tenant_context),
     db: AsyncIOMotorDatabase = Depends(get_db),
     _rl: None = Depends(rate_limit("api")),
 ) -> dict:
-    """
-    Immediately returns { status: 'started', job_id } and runs the heavy
-    LLM + Pinecone work in a FastAPI background task.
-    Poll GET /{conn_id}/adapter-status to check progress.
-    """
-    from fastapi import BackgroundTasks
     from app.services.adapter_generator_service import generate_and_index_adapters
-    from datetime import datetime, UTC
-
-    job_id = str(uuid.uuid4())
-    conn_str = str(conn_id)
-
-    # Store initial job record
-    await db["adapter_jobs"].update_one(
-        {"connection_id": conn_str},
-        {"$set": {
-            "connection_id": conn_str,
-            "job_id": job_id,
-            "status": "running",
-            "progress": "Starting AI schema mapping...",
-            "started_at": datetime.now(UTC),
-            "finished_at": None,
-            "result": None,
-            "error": None,
-        }},
-        upsert=True,
-    )
-
-    async def _run():
-        try:
-            res = await generate_and_index_adapters(db, current, conn_id)
-            await db["adapter_jobs"].update_one(
-                {"connection_id": conn_str},
-                {"$set": {
-                    "status": "done",
-                    "progress": f"Completed — {res.get('concepts_count', 0)} concepts, {res.get('vectors_indexed', 0)} vectors indexed.",
-                    "finished_at": datetime.now(UTC),
-                    "result": res,
-                    "error": None,
-                }},
-            )
-        except Exception as exc:
-            await db["adapter_jobs"].update_one(
-                {"connection_id": conn_str},
-                {"$set": {
-                    "status": "failed",
-                    "progress": str(exc),
-                    "finished_at": datetime.now(UTC),
-                    "error": str(exc),
-                }},
-            )
-
-    # FastAPI background task — request returns immediately
-    bt = BackgroundTasks()
-    bt.add_task(_run)
-    await bt()   # schedule without blocking
-
-    return {"status": "started", "job_id": job_id}
+    try:
+        res = await generate_and_index_adapters(db, current, conn_id)
+        return res
+    except Exception as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
 
 
 @router.get("/{conn_id}/adapter-status")
