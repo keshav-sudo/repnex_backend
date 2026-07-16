@@ -27,6 +27,11 @@ def determine_erp_type(conn: Any | None, org: dict | None) -> str:
             return "epicor"
         if "syspro" in conn_name:
             return "syspro"
+        
+        # If it doesn't match any predefined templates, treat as a dynamic user connection (UUID)
+        conn_id = getattr(conn, "id", None)
+        if conn_id:
+            return str(conn_id)
 
     if org:
         system_name = org.get("erpSystem", "").lower()
