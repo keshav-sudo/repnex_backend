@@ -384,6 +384,75 @@ async def sync_schema(
     db: AsyncIOMotorDatabase, current: CurrentUser, conn_id: uuid.UUID
 ) -> ConnectionRead:
     conn = await get_connection(db, current, conn_id)
+
+    if conn.db_type == DBType.mongodb:
+        from motor.motor_asyncio import AsyncIOMotorClient
+        from urllib.parse import quote_plus
+        
+        enc_user = getattr(conn, "encrypted_username", "")
+        enc_pass = getattr(conn, "encrypted_password", "")
+        username = decrypt(enc_user) if enc_user else ""
+        password = decrypt(enc_pass) if enc_pass else ""
+        
+        if "mongodb+srv://" in conn.host or "mongodb://" in conn.host:
+            mongo_uri = conn.host
+        else:
+            if username and password:
+                mongo_uri = f"mongodb://{quote_plus(username)}:{quote_plus(password)}@{conn.host}:{conn.port or 27017}/{conn.db_name or ''}"
+            else:
+                mongo_uri = f"mongodb://{conn.host}:{conn.port or 27017}/{conn.db_name or ''}"
+        
+        try:
+            client = AsyncIOMotorClient(mongo_uri, serverSelectionTimeoutMS=5000)
+            m_db = client[conn.db_name or "admin"]
+            collections = await m_db.list_collection_names()
+            
+            tables_list = []
+            for coll_name in collections:
+                docs = await m_db[coll_name].find().limit(10).to_list(length=10)
+                fields_map = {}
+                for doc in docs:
+                    def parse_doc(d, prefix=""):
+                        for k, v in d.items():
+                            field_path = f"{prefix}{k}" if not prefix else f"{prefix}.{k}"
+                            if isinstance(v, dict):
+                                fields_map[field_path] = "object"
+                                parse_doc(v, field_path + ".")
+                            elif isinstance(v, list):
+                                fields_map[field_path] = "array"
+                            else:
+                                t = type(v).__name__
+                                if t == "str":
+                                    fields_map[field_path] = "string"
+                                elif t == "int":
+                                    fields_map[field_path] = "integer"
+                                elif t in ("float", "decimal"):
+                                    fields_map[field_path] = "double"
+                                elif t == "bool":
+                                    fields_map[field_path] = "boolean"
+                                elif "datetime" in t:
+                                    fields_map[field_path] = "datetime"
+                                else:
+                                    fields_map[field_path] = "string"
+                    parse_doc(doc)
+                
+                columns = [{"name": name, "type": t_name} for name, t_name in fields_map.items()]
+                tables_list.append({"name": coll_name, "columns": columns})
+            
+            await db[DBConnectionModel.COLLECTION].update_one(
+                {"_id": str(conn_id)},
+                {"$set": {
+                    "schema_info": {"tables": tables_list},
+                    "schema_last_synced_at": datetime.now(UTC)
+                }}
+            )
+            updated_doc = await db[DBConnectionModel.COLLECTION].find_one({"_id": str(conn_id)})
+            conn = DBConnectionModel(**updated_doc)
+        except Exception as e:
+            raise ValueError(f"MongoDB schema sync failed: {str(e)}")
+        
+        return ConnectionRead.model_validate(conn)
+
     pool = await get_target_pool_registry().get_pool(conn)
 
     if conn.db_type == DBType.postgres or conn.db_type == DBType.cloudsql:

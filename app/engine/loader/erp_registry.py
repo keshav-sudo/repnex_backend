@@ -23,6 +23,24 @@ class ERPPaths:
 def get_erp_paths(erp_type: str) -> ERPPaths:
     """Return resolved filesystem paths for a given ERP type."""
     erp = erp_type.lower().strip()
+    
+    # If erp_type is a UUID connection ID, use connection-specific subdirs
+    is_uuid = False
+    try:
+        import uuid
+        uuid.UUID(erp)
+        is_uuid = True
+    except ValueError:
+        pass
+        
+    if is_uuid:
+        return ERPPaths(
+            erp_type=erp,
+            ontology_dir=V2_DIR / "ontology",
+            adapter_dir=V2_DIR / "adapters" / erp,
+            relationship_file=V2_DIR / "relationships" / erp / "joins.yaml",
+        )
+
     return ERPPaths(
         erp_type=erp,
         ontology_dir=V2_DIR / "ontology",

@@ -150,7 +150,7 @@ I hope this helps!""")
     resolver = SemanticResolver(erp_type="syspro")
     resolver._context_builder = MagicMock()
     resolver._context_builder.load_meta = MagicMock(return_value={"conventions": {"dialect": "mssql"}})
-    resolver._context_builder.build = MagicMock(return_value="Mock prompt context")
+    resolver._context_builder.build = AsyncMock(return_value="Mock prompt context")
 
     sql = await resolver.translate_to_sql("give me all tax paid companies")
 
@@ -203,7 +203,7 @@ async def test_semantic_resolver_with_history(mock_get_llm):
     resolver = SemanticResolver(erp_type="syspro")
     resolver._context_builder = MagicMock()
     resolver._context_builder.load_meta = MagicMock(return_value={"conventions": {"dialect": "mssql"}})
-    resolver._context_builder.build = MagicMock(return_value="Mock prompt context")
+    resolver._context_builder.build = AsyncMock(return_value="Mock prompt context")
 
     history = [
         {"role": "user", "content": "show suppliers", "sql": "SELECT * FROM ApSupplier"},

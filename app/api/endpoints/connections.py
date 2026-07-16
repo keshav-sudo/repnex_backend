@@ -140,6 +140,21 @@ async def sync_schema(
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
 
 
+@router.post("/{conn_id}/generate-adapters")
+async def generate_adapters_endpoint(
+    conn_id: uuid.UUID,
+    current: CurrentUser = Depends(bind_tenant_context),
+    db: AsyncIOMotorDatabase = Depends(get_db),
+    _rl: None = Depends(rate_limit("api")),
+) -> dict:
+    from app.services.adapter_generator_service import generate_and_index_adapters
+    try:
+        res = await generate_and_index_adapters(db, current, conn_id)
+        return res
+    except Exception as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+
+
 @router.post("/{conn_id}/access", response_model=AccessGrantRead, status_code=status.HTTP_201_CREATED)
 async def grant_access(
     conn_id: uuid.UUID,

@@ -71,9 +71,15 @@ class SemanticResolver:
             A raw SQL string, or a string prefixed with ``CONVERSATIONAL:``
             when the query cannot be answered from the available schema.
         """
-        meta = self._context_builder.load_meta()
+        import asyncio
+        import inspect
+        meta_res = self._context_builder.load_meta()
+        if inspect.iscoroutine(meta_res) or asyncio.iscoroutine(meta_res):
+            meta = await meta_res
+        else:
+            meta = meta_res
         dialect = self.target_dialect or get_dialect(self.erp_type, meta)
-        context = self._context_builder.build()
+        context = await self._context_builder.build(natural_language)
 
         system_prompt = _SYSTEM_PROMPT_TEMPLATE.format(
             context=context,

@@ -53,6 +53,12 @@ class Settings(BaseSettings):
     LLM_MAX_RETRIES: int = 2
     INTENT_MIN_CONFIDENCE: float = 0.55
 
+    # Pinecone Vector Store
+    PINECONE_API_KEY: str = ""
+    PINECONE_HOST: str = ""
+    PINECONE_INDEX_NAME: str = "repnex"
+    PINECONE_NAMESPACE: str = "repnex"
+
     # LLM — DeepSeek (OpenAI-compatible, used as primary when key is set)
     DEEPSEEK_API_KEY: str = ""
     DEEPSEEK_MODEL: str = "deepseek-chat"

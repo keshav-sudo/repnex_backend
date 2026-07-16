@@ -46,6 +46,7 @@ class DBType(str, enum.Enum):
     mssql = "mssql"
     oracle = "oracle"
     cloudsql = "cloudsql"
+    mongodb = "mongodb"
 
 
 class SessionStatus(str, enum.Enum):

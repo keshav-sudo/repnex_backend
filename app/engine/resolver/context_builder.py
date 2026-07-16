@@ -26,16 +26,109 @@ class ContextBuilder:
 
     # ── Public ─────────────────────────────────────────────────────────────
 
-    def build(self) -> str:
+    async def build(self, natural_language_query: str | None = None) -> str:
         """Load all YAML files and return a structured prompt context string."""
-        ontology = load_ontology(self._paths.ontology_dir)
-        adapters = load_adapters(self._paths.adapter_dir)
-        joins = load_joins(self._paths.relationship_file)
-        meta = load_meta(self._paths.adapter_dir)
+        # Check if this is a connection-specific V2 schema (UUID erp_type)
+        is_uuid = False
+        try:
+            import uuid
+            uuid.UUID(self.erp_type)
+            is_uuid = True
+        except ValueError:
+            pass
+
+        configs = []
+        if is_uuid:
+            from app.core.database.mongo import get_db as get_mongo_db
+            try:
+                db = get_mongo_db()
+                cursor = db["semantic_configs"].find({"connection_id": self.erp_type})
+                configs = await cursor.to_list(length=1000)
+            except Exception as e:
+                log.error("load_configs_from_db_failed", extra={"connection_id": self.erp_type, "error": str(e)})
+
+        if configs:
+            ontology = {}
+            adapters = {}
+            joins = {}
+            meta = {}
+            for cfg in configs:
+                cfg_type = cfg.get("type")
+                cfg_data = cfg.get("data") or {}
+                if cfg_type == "ontology":
+                    concept = cfg.get("concept")
+                    if concept:
+                        ontology[concept] = cfg_data
+                elif cfg_type == "adapter":
+                    concept = cfg.get("concept")
+                    if concept:
+                        adapters[concept] = cfg_data
+                elif cfg_type == "joins":
+                    joins = cfg_data
+                elif cfg_type == "meta":
+                    meta = cfg_data
+        else:
+            ontology = load_ontology(self._paths.ontology_dir, connection_id=self.erp_type)
+            adapters = load_adapters(self._paths.adapter_dir)
+            joins = load_joins(self._paths.relationship_file)
+            meta = load_meta(self._paths.adapter_dir)
+
+        if natural_language_query:
+            if is_uuid:
+                from app.services.vector_store_service import search_relevant_schema
+                matches = await search_relevant_schema(self.erp_type, natural_language_query, top_k=20)
+                
+                allowed_tables = set()
+                allowed_concepts = set()
+                for match in matches:
+                    metadata = match.get("metadata", {})
+                    t_name = metadata.get("table_name")
+                    c_name = metadata.get("concept")
+                    if t_name:
+                        allowed_tables.add(t_name)
+                    if c_name:
+                        allowed_concepts.add(c_name)
+                
+                # Filter ontology, adapters, meta, and joins
+                ontology = {k: v for k, v in ontology.items() if k in allowed_concepts}
+                adapters = {
+                    k: v for k, v in adapters.items()
+                    if k in allowed_concepts or v.get("table") in allowed_tables
+                }
+                if "tables" in meta:
+                    meta["tables"] = {k: v for k, v in meta["tables"].items() if k in allowed_tables}
+                if "relationships" in joins:
+                    joins["relationships"] = [
+                        rel for rel in joins["relationships"]
+                        if rel.get("from_concept") in allowed_concepts and rel.get("to_concept") in allowed_concepts
+                    ]
+
         return self._assemble(ontology, adapters, joins, meta)
 
-    def load_meta(self) -> dict:
+    async def load_meta(self) -> dict:
         """Expose meta for dialect detection without re-loading all files."""
+        is_uuid = False
+        try:
+            import uuid
+            uuid.UUID(self.erp_type)
+            is_uuid = True
+        except ValueError:
+            pass
+
+        if is_uuid:
+            from app.core.database.mongo import get_db as get_mongo_db
+            try:
+                db = get_mongo_db()
+                cfg = await db["semantic_configs"].find_one({
+                    "connection_id": self.erp_type,
+                    "type": "meta"
+                })
+                if cfg:
+                    return cfg.get("data") or {}
+            except Exception as e:
+                log.error("load_meta_from_db_failed", extra={"connection_id": self.erp_type, "error": str(e)})
+            return {}
+
         return load_meta(self._paths.adapter_dir)
 
     # ── Private ────────────────────────────────────────────────────────────

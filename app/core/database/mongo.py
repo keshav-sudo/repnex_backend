@@ -107,6 +107,13 @@ async def ensure_indexes(database: AsyncIOMotorDatabase) -> None:
                            name="ix_db_connections_org_active"),
             ])
 
+            # ── semantic_configs ───────────────────────────────────────────────────────
+            await database["semantic_configs"].create_indexes([
+                IndexModel([("connection_id", ASCENDING), ("type", ASCENDING), ("concept", ASCENDING)],
+                           unique=True, name="uq_semantic_configs_conn_type_concept"),
+                IndexModel([("connection_id", ASCENDING)], name="ix_semantic_configs_conn_id"),
+            ])
+
             # ── db_connection_access ───────────────────────────────────────────────────
             await database["db_connection_access"].create_indexes([
                 IndexModel([("connection_id", ASCENDING), ("user_id", ASCENDING)],

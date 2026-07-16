@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlparse
 from app.schemas.common import ORMBase
 from pydantic import BaseModel, Field, model_validator
 
-DBType = Literal["postgres", "mysql", "mssql", "oracle", "cloudsql"]
+DBType = Literal["postgres", "mysql", "mssql", "oracle", "cloudsql", "mongodb"]
 
 
 def _parse_connection_string(cs: str) -> dict:
@@ -145,6 +145,7 @@ class ConnectionCreate(BaseModel):
                     "mssql": 1433,
                     "oracle": 1521,
                     "cloudsql": 5432,
+                    "mongodb": 27017,
                 }
                 self.port = default_ports.get(self.db_type, 1433)
                 if not self.port:
@@ -175,6 +176,7 @@ class ListDatabasesRequest(BaseModel):
                 "mssql": 1433,
                 "oracle": 1521,
                 "cloudsql": 5432,
+                "mongodb": 27017,
             }
             self.port = default_ports.get(self.db_type, 1433)
         return self
