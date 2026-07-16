@@ -16,7 +16,7 @@ from app.core.database.models import (
 from app.core.database.target_pool import get_target_pool_registry
 from app.core.exceptions import Forbidden, NotFound
 from app.core.security.auth import CurrentUser
-from app.core.security.encryption import encrypt
+from app.core.security.encryption import decrypt, encrypt
 from app.schemas.connection import (
     AccessGrantRead,
     AccessGrantRequest,
