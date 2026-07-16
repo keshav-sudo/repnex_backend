@@ -51,8 +51,8 @@ async def generate_and_index_adapters(
         tables = conn.schema_info["tables"]
         log.info("start_adapter_generation", extra={"conn_id": conn_str, "tables_count": len(tables)})
         
-        # 2. Chunk tables into batches of 20
-        chunk_size = 20
+        # 2. Chunk tables into batches of 3 to avoid LLM timeouts
+        chunk_size = 3
         chunks = [tables[i:i + chunk_size] for i in range(0, len(tables), chunk_size)]
         
         await db["adapter_jobs"].update_one(
