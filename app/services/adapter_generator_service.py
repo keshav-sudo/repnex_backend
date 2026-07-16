@@ -1,3 +1,4 @@
+import asyncio
 import json
 import os
 import uuid
@@ -39,8 +40,8 @@ async def generate_and_index_adapters(
     all_concepts = []
     all_joins = []
     
-    # 3. Process each chunk via LLM mapping prompt
-    for idx, chunk in enumerate(chunks):
+    # 3. Process each chunk via LLM mapping prompt concurrently
+    async def process_chunk(idx, chunk):
         # Format chunk tables for the prompt
         chunk_text = []
         for t in chunk:
@@ -95,12 +96,17 @@ CRITICAL RULES:
 """
         try:
             res = await llm.chat_json(system=system_prompt, user=user_prompt)
-            if "concepts" in res:
-                all_concepts.extend(res["concepts"])
-            if "joins" in res:
-                all_joins.extend(res["joins"])
+            return res.get("concepts", []), res.get("joins", [])
         except Exception as e:
             log.error("llm_chunk_mapping_failed", extra={"chunk_index": idx, "error": str(e)})
+            return [], []
+
+    tasks = [process_chunk(idx, chunk) for idx, chunk in enumerate(chunks)]
+    results = await asyncio.gather(*tasks)
+    
+    for concepts, joins in results:
+        all_concepts.extend(concepts)
+        all_joins.extend(joins)
             
     # 4. Prepare local folders under v2 directory or save to DB if UUID
     conn_str = str(connection_id)
