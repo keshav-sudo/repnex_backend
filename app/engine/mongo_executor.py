@@ -49,6 +49,8 @@ def _parse_sql_to_mongo(sql: str) -> dict:
     sql_clean = re.sub(r"\s+", " ", sql).strip().rstrip(";")
     # Strip square brackets, backticks, and double quotes to handle T-SQL-like dialects
     sql_clean = sql_clean.replace("[", "").replace("]", "").replace("`", "").replace('"', "")
+    # Clean double dots (..) to avoid empty components in field paths
+    sql_clean = sql_clean.replace("..", ".")
     
     # 1. Parse LIMIT
     limit_match = re.search(r"\bLIMIT\s+(\d+)", sql_clean, re.IGNORECASE)
