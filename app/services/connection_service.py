@@ -175,6 +175,38 @@ async def test_connection(
 ) -> TestConnectionResponse:
     conn = await get_connection(db, current, conn_id)
     started = time.perf_counter()
+    if conn.db_type == DBType.mongodb:
+        from motor.motor_asyncio import AsyncIOMotorClient
+        from urllib.parse import quote_plus
+        
+        enc_user = getattr(conn, "encrypted_username", "")
+        enc_pass = getattr(conn, "encrypted_password", "")
+        username = decrypt(enc_user) if enc_user else ""
+        password = decrypt(enc_pass) if enc_pass else ""
+        
+        if "mongodb+srv://" in conn.host or "mongodb://" in conn.host:
+            mongo_uri = conn.host
+        else:
+            if username and password:
+                mongo_uri = f"mongodb://{quote_plus(username)}:{quote_plus(password)}@{conn.host}:{conn.port or 27017}/{conn.db_name or ''}"
+            else:
+                mongo_uri = f"mongodb://{conn.host}:{conn.port or 27017}/{conn.db_name or ''}"
+        try:
+            client = AsyncIOMotorClient(mongo_uri, serverSelectionTimeoutMS=5000)
+            await client.admin.command("ping")
+            client.close()
+        except Exception as e:
+            return TestConnectionResponse(ok=False, error=f"MongoDB connection failed: {e}")
+        
+        tested_at = datetime.now(UTC)
+        await db[DBConnectionModel.COLLECTION].update_one(
+            {"_id": str(conn_id)},
+            {"$set": {"last_tested_at": tested_at}}
+        )
+        return TestConnectionResponse(
+            ok=True, latency_ms=int((time.perf_counter() - started) * 1000)
+        )
+
     try:
         pool = await get_target_pool_registry().get_pool(conn)
         await pool.execute_one("SELECT 1 AS ok", {}, timeout=30.0)
@@ -194,6 +226,32 @@ async def test_connection(
 async def test_raw_connection(
     current: CurrentUser, data: ConnectionCreate
 ) -> TestConnectionResponse:
+    started = time.perf_counter()
+    db_type = DBType(data.db_type)
+    if db_type == DBType.mongodb:
+        from motor.motor_asyncio import AsyncIOMotorClient
+        from urllib.parse import quote_plus
+        
+        username = data.username or ""
+        password = data.password or ""
+        
+        if "mongodb+srv://" in data.host or "mongodb://" in data.host:
+            mongo_uri = data.host
+        else:
+            if username and password:
+                mongo_uri = f"mongodb://{quote_plus(username)}:{quote_plus(password)}@{data.host}:{data.port or 27017}/{data.db_name or ''}"
+            else:
+                mongo_uri = f"mongodb://{data.host}:{data.port or 27017}/{data.db_name or ''}"
+        try:
+            client = AsyncIOMotorClient(mongo_uri, serverSelectionTimeoutMS=5000)
+            await client.admin.command("ping")
+            client.close()
+        except Exception as e:
+            return TestConnectionResponse(ok=False, error=f"MongoDB connection failed: {e}")
+        return TestConnectionResponse(
+            ok=True, latency_ms=int((time.perf_counter() - started) * 1000)
+        )
+
     temp_conn = DBConnectionModel(
         _id=str(uuid.uuid4()),
         org_id=str(current.org_id),
@@ -208,7 +266,6 @@ async def test_raw_connection(
         ssl_enabled=data.ssl_enabled,
         is_active=True,
     )
-    started = time.perf_counter()
     try:
         registry = get_target_pool_registry()
         pool = await registry._build(temp_conn)
