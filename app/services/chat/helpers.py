@@ -17,11 +17,10 @@ log = get_logger(__name__)
 def determine_erp_type(conn: Any | None, org: dict | None) -> str:
     """Dynamically determine ERP type from connection and organisation metadata."""
     if conn:
-        db_type_str = str(getattr(conn, "db_type", "")).lower()
-        if "postgres" in db_type_str or "supabase" in db_type_str:
-            return "helios"
-        conn_name = getattr(conn, "name", "").lower()
-        if "helios" in conn_name or "supabase" in conn_name or "postgres" in conn_name:
+        conn_name = str(getattr(conn, "name", "")).lower()
+        
+        # Check if it matches Helios ERP (either named helios or supabase adapter)
+        if "helios" in conn_name or "supabase" in conn_name:
             return "helios"
         if "epicor" in conn_name:
             return "epicor"
@@ -35,7 +34,7 @@ def determine_erp_type(conn: Any | None, org: dict | None) -> str:
 
     if org:
         system_name = org.get("erpSystem", "").lower()
-        if "helios" in system_name or "supabase" in system_name or "postgres" in system_name:
+        if "helios" in system_name or "supabase" in system_name:
             return "helios"
         if "epicor" in system_name:
             return "epicor"
